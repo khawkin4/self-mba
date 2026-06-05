@@ -1,118 +1,135 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>01 · Accounting</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="progress"></div>
 <header class="mod-header"><a href="index.html" class="home">← All modules</a>
 <div class="badge core">01</div>
 <h1>Accounting</h1></header>
 <nav class="toc"><a href="#lesson">Lesson</a> <a href="#videos">Source: Lectures</a> <a href="#discuss">Discussions</a> <a href="#fin">Financials</a></nav>
-<main><section id="lesson" class="lesson"><!-- LESSON: Accounting — Reading the Scoreboard. Authored from the corpus; numbers are live AAPL FY2025 (EDGAR). -->
-<p class="lead">Before you can judge a business, run one, or invest in one, you have to read its scoreboard. That scoreboard is three financial statements. Learn to read them and you can understand <em>any</em> company on earth — from a corner cafe to Apple. This lesson teaches you to read all three, using Apple's real, most-recent numbers.</p>
+<main><section id="lesson" class="lesson"><!-- LESSON: Accounting — interactive, visual-first, grounded in the 01-accounting corpus. Live AAPL FY2025 numbers. -->
+<p class="lead">Every business keeps score with <b>three financial statements</b>. Learn to read them and you can size up <em>any</em> company — a corner cafe or Apple. This is a hands-on lesson: <b>tap the cards, the diagrams, and the quiz</b>. We'll use Apple's real, latest numbers throughout.</p>
 
-<div class="big-idea">
-<h3>The one idea to hold onto</h3>
-<p>A company publishes <b>three</b> statements because there are <b>three</b> different questions you can ask about money — and no single statement answers all three:</p>
-<ul>
-<li><b>Income Statement</b> — “Did we sell things <em>profitably</em>?” (covers a <em>period</em>, like a video of the whole year)</li>
-<li><b>Balance Sheet</b> — “What do we <em>own</em> and what do we <em>owe</em>?” (a single <em>moment</em>, like a photo)</li>
-<li><b>Cash Flow Statement</b> — “Did <em>real cash</em> actually move?” (a <em>period</em> again)</li>
-</ul>
+<h2>1 · Three statements, three questions</h2>
+<p>Tap each to see the question it answers 👇</p>
+<div class="reveal">
+  <button class="reveal-q">📈 The Income Statement</button>
+  <div class="reveal-a"><p><b>"Did we sell things <em>profitably</em>?"</b> Covers a <em>period</em> (a quarter or year) — like a video of the whole season. Starts with sales at the top, subtracts costs down to profit at the bottom.</p></div>
+</div>
+<div class="reveal">
+  <button class="reveal-q">⚖️ The Balance Sheet</button>
+  <div class="reveal-a"><p><b>"What do we <em>own</em>, and what do we <em>owe</em>?"</b> A single <em>moment</em> in time — like a photo. Lists everything the company controls and everything it owes, on one date.</p></div>
+</div>
+<div class="reveal">
+  <button class="reveal-q">💵 The Cash Flow Statement</button>
+  <div class="reveal-a"><p><b>"Did <em>real cash</em> actually move?"</b> A <em>period</em> again. Profit can be an accounting opinion; this statement tracks actual dollars in and out — the reality check.</p></div>
+</div>
+<blockquote class="srcq"><p>"This is one of the three major financial statements in accounting, along with a balance sheet and the cash flow statement."</p>
+<cite><a href="https://www.youtube.com/watch?v=hrSUq4wcd0g" target="_blank" rel="noopener">— Accounting Stuff, "The Income Statement Explained"</a> · in your corpus</cite></blockquote>
+
+<h2>2 · The vocabulary — flip to learn</h2>
+<p>These are the exact words analysts and founders use. <b>Tap a card to flip it.</b></p>
+<div class="fc-grid">
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Revenue</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Total money customers paid you. The "top line" — it sits at the top of the income statement.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>COGS</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Cost of Goods Sold — the direct cost to make what you sold (Apple's chips, glass, assembly).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Gross Profit</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Revenue − COGS. What's left after building the product, before other costs. Signals pricing power.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>OpEx</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Operating Expenses — running costs not tied to one unit: salaries, R&amp;D, marketing, rent.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Net Income</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The "bottom line." Profit after EVERYTHING — COGS, OpEx, interest, tax. The most-quoted number in business.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Assets</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Everything the company controls: cash, factories, inventory, patents.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Liabilities</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Everything the company owes: debt, unpaid bills, future obligations.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Equity</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Assets − Liabilities. The owners' true stake — the "net worth" of the business.</span></span></button>
 </div>
 
-<h2>Part 1 · The vocabulary (in plain English)</h2>
-<p>Every term below is industry-standard — these are the exact words analysts, founders, and bankers use. We'll define each, then immediately see it in Apple's real results.</p>
-
-<dl class="terms">
-<dt>Revenue <span class="aka">(a.k.a. “the top line,” “sales”)</span></dt>
-<dd>The total money customers paid you for your products/services in the period. It's called the “top line” because it sits at the <em>top</em> of the income statement.</dd>
-
-<dt>COGS <span class="aka">(Cost of Goods Sold)</span></dt>
-<dd>The direct cost of making the thing you sold — for Apple, the chips, glass, aluminum, and assembly that go <em>into</em> an iPhone. Not rent or marketing — just the cost of the product itself.</dd>
-
-<dt>Gross Profit &amp; Gross Margin</dt>
-<dd><b>Gross Profit = Revenue − COGS.</b> What's left after paying to <em>make</em> the product, before any other costs. <b>Gross Margin</b> is that as a percentage of revenue — a pure read on <em>pricing power</em>. A 70% gross margin means the product sells for far more than it costs to build.</dd>
-
-<dt>Operating Expenses <span class="aka">(OpEx)</span></dt>
-<dd>The costs of <em>running</em> the business that aren't tied to one product unit: salaries, R&amp;D, marketing, rent.</dd>
-
-<dt>Net Income <span class="aka">(a.k.a. “the bottom line,” “earnings,” “profit”)</span></dt>
-<dd>What's left after <em>everything</em> — COGS, OpEx, interest, taxes. The single most-quoted number in business. <b>Net Margin</b> = Net Income ÷ Revenue.</dd>
-
-<dt>Assets / Liabilities / Equity</dt>
-<dd><b>Assets</b> = everything the company controls (cash, factories, inventory). <b>Liabilities</b> = everything it owes (debt, bills). <b>Equity</b> = what's truly left for the owners after debts — the “net worth” of the business.</dd>
-</dl>
-
-<h2>Part 2 · The accounting equation (the law that never breaks)</h2>
-<p>The balance sheet is built on one unbreakable rule. It's called the <b>accounting equation</b>, and it <em>always</em> holds — that's why it's a “balance” sheet:</p>
-
+<h2>3 · The law that never breaks</h2>
+<p>The balance sheet rests on one unbreakable rule — that's why it's called a <em>balance</em> sheet:</p>
 <div class="equation">Assets&nbsp; = &nbsp;Liabilities&nbsp; + &nbsp;Equity</div>
-
-<p>Think of it intuitively: everything you <em>own</em> (assets) was paid for either with <em>borrowed</em> money (liabilities) or <em>your own</em> money (equity). There's no third source. Here it is with Apple's real FY2025 balance sheet:</p>
-
+<p>Intuitively: everything you <em>own</em> was paid for with either <em>borrowed</em> money or <em>your own</em> money. No third source. Here's Apple's real balance sheet — <b>tap each segment</b>:</p>
 <figure class="viz">
-<svg viewBox="0 0 720 150" role="img" aria-label="Apple's balance sheet: Assets equal Liabilities plus Equity">
+<svg viewBox="0 0 720 150" role="img" aria-label="Apple balance sheet: assets equal liabilities plus equity">
   <text x="0" y="20" class="vlabel">Assets — everything Apple controls</text>
-  <rect x="0" y="28" width="700" height="34" rx="5" class="bar-asset"/>
+  <rect x="0" y="28" width="700" height="34" rx="5" class="bar-asset" data-tip="Assets: $359.2B — cash, equipment, inventory, investments. Everything Apple controls."/>
   <text x="350" y="50" class="bar-txt">$359.2B</text>
-  <text x="0" y="95" class="vlabel">…funded by Liabilities (owed) + Equity (owners')</text>
-  <rect x="0" y="103" width="556" height="34" rx="5" class="bar-liab"/>
+  <text x="0" y="95" class="vlabel">…funded by Liabilities + Equity</text>
+  <rect x="0" y="103" width="556" height="34" rx="5" class="bar-liab" data-tip="Liabilities: $285.5B — debt and obligations Apple owes to others."/>
   <text x="278" y="125" class="bar-txt">Liabilities $285.5B</text>
-  <rect x="560" y="103" width="140" height="34" rx="5" class="bar-eq"/>
-  <text x="630" y="125" class="bar-txt-sm">Equity $73.7B</text>
+  <rect x="560" y="103" width="140" height="34" rx="5" class="bar-eq" data-tip="Equity: $73.7B — the owners' stake left after all debts."/>
+  <text x="630" y="125" class="bar-txt-sm">Equity</text>
 </svg>
-<figcaption>$285.5B + $73.7B = $359.2B. The two rows are the same length — the sheet balances. Always.</figcaption>
+<figcaption>$285.5B + $73.7B = $359.2B. Both rows are the same length — it balances. Always.</figcaption>
 </figure>
 
-<h2>Part 3 · The income statement, as a waterfall</h2>
-<p>The income statement is just subtraction, top to bottom: start with revenue, subtract costs in stages, and whatever survives at the bottom is profit. Watch Apple's real FY2025 money flow down — and notice how much of each dollar survives:</p>
-
+<h2>4 · Watch a dollar flow down the income statement</h2>
+<p>The income statement is just subtraction, top to bottom. <b>Tap each bar</b> to see what gets taken out — and how much of Apple's revenue survives as profit:</p>
 <figure class="viz">
-<svg viewBox="0 0 720 210" role="img" aria-label="Apple income statement waterfall from revenue to net income">
+<svg viewBox="0 0 720 200" role="img" aria-label="Apple income statement waterfall">
   <text x="0" y="18" class="vlabel">Revenue (top line)</text>
-  <rect x="0" y="24" width="700" height="30" rx="4" class="bar-rev"/>
-  <text x="350" y="44" class="bar-txt">$416.2B &nbsp;— 100%</text>
-
-  <text x="0" y="80" class="vlabel">− Cost of goods sold ($221.0B) leaves Gross Profit</text>
-  <rect x="0" y="86" width="328" height="30" rx="4" class="bar-gross"/>
-  <text x="164" y="106" class="bar-txt">Gross Profit $195.2B — 47%</text>
-
-  <text x="0" y="142" class="vlabel">− Operating costs, interest &amp; tax leaves Net Income</text>
-  <rect x="0" y="148" width="188" height="30" rx="4" class="bar-net"/>
-  <text x="94" y="168" class="bar-txt-sm">Net $112.0B</text>
-  <text x="200" y="168" class="vlabel-in">27% of every dollar is pure profit</text>
+  <rect x="0" y="24" width="700" height="30" rx="4" class="bar-rev" data-tip="Revenue: $416.2B (100%). Total money from selling iPhones, services, Macs, etc."/>
+  <text x="350" y="44" class="bar-txt">$416.2B · 100%</text>
+  <text x="0" y="78" class="vlabel">− COGS ($221.0B) = Gross Profit</text>
+  <rect x="0" y="84" width="328" height="30" rx="4" class="bar-gross" data-tip="Gross Profit: $195.2B (47%). After paying to BUILD the products. Apple keeps ~47¢ per $1 — that's pricing power."/>
+  <text x="164" y="104" class="bar-txt">Gross Profit $195.2B · 47%</text>
+  <text x="0" y="138" class="vlabel">− OpEx, interest &amp; tax = Net Income</text>
+  <rect x="0" y="144" width="188" height="30" rx="4" class="bar-net" data-tip="Net Income: $112.0B (27%). The bottom line, after EVERYTHING. A grocery chain keeps ~2¢ per $1; Apple keeps ~27¢."/>
+  <text x="94" y="164" class="bar-txt-sm">Net $112B</text>
 </svg>
-<figcaption>Each bar's width = its share of revenue. Apple keeps <b>~27¢ of profit on every $1</b> of sales — extraordinary for a hardware company, and a direct signal of brand power.</figcaption>
+<figcaption>Each bar's width = its share of revenue. Apple keeps <b>~27¢ of pure profit on every $1</b> — extraordinary for hardware.</figcaption>
 </figure>
 
-<h2>Part 4 · Worked example — what these numbers actually <em>tell</em> you</h2>
+<h2>5 · What the numbers actually tell you</h2>
 <div class="example">
-<p><b>Gross margin = 195.2 ÷ 416.2 = 46.9%.</b> Almost half of every sale is left after building the product. That's <em>pricing power</em> — customers pay a premium Apple doesn't have to “earn” with cheap inputs.</p>
-<p><b>Net margin = 112.0 ÷ 416.2 = 26.9%.</b> After <em>all</em> costs, more than a quarter is profit. For comparison, a typical grocery chain runs a ~2% net margin. Same word — “profit” — wildly different businesses.</p>
-<p><b>The earnings-quality check:</b> Apple's <em>operating cash flow</em> was <b>$111.5B</b> — almost identical to its $112.0B net income. That's a green flag: the reported profit is backed by <em>real cash arriving</em>, not accounting estimates. When cash flow is much <em>lower</em> than net income, dig deeper.</p>
+<p><b>Gross margin = 195.2 ÷ 416.2 = 46.9%</b> → nearly half of every sale survives building the product. That's <em>pricing power</em>.</p>
+<p><b>Net margin = 112.0 ÷ 416.2 = 26.9%</b> → over a quarter is profit after everything. A typical grocer runs ~2%. Same word "profit," wildly different business.</p>
+<p><b>Earnings-quality check:</b> Apple's operating cash flow was <b>$111.5B</b> — almost identical to its $112.0B net income. Green flag: the profit is backed by <em>real cash</em>, not estimates.</p>
 </div>
+<blockquote class="srcq"><p>"So now we know that product sales accounted for about 82 percent of revenue."</p>
+<cite><a href="https://www.youtube.com/watch?v=7OjsEF04V8o" target="_blank" rel="noopener">— Learn to Invest, "How to Read an Annual Report"</a> · in your corpus</cite></blockquote>
 
 <div class="pitfall">
-<h3>⚠️ The thing that trips up every beginner: profit ≠ cash</h3>
-<p>A company can be <b>profitable on paper and still go bankrupt</b> if cash doesn't arrive in time (you booked a $1M sale, but the customer pays in 90 days, while payroll is due Friday). That's <em>exactly</em> why the cash flow statement exists as a separate scoreboard. “Profit is an opinion; cash is a fact.”</p>
+<h3>⚠️ The #1 beginner trap: profit ≠ cash</h3>
+<p>A company can be <b>profitable on paper yet go bankrupt</b> — you book a $1M sale, but the customer pays in 90 days while payroll is due Friday. That's <em>why</em> the cash flow statement exists. <em>"Profit is an opinion; cash is a fact."</em></p>
+</div>
+
+<h2>6 · Check yourself</h2>
+<div class="quizq" data-correct="1">
+  <p class="q">A company has Revenue $500, COGS $300, all other costs $150. What's its net income?</p>
+  <button class="opt">$200</button>
+  <button class="opt">$50</button>
+  <button class="opt">$350</button>
+  <p class="fb">Gross profit = 500 − 300 = $200, then − $150 of other costs = <b>$50</b> net income (a 10% net margin).</p>
+</div>
+<div class="quizq" data-correct="2">
+  <p class="q">If Assets are $80 and Liabilities are $50, what is Equity?</p>
+  <button class="opt">$130</button>
+  <button class="opt">$80</button>
+  <button class="opt">$30</button>
+  <p class="fb">Equity = Assets − Liabilities = 80 − 50 = <b>$30</b> — the owners' true stake.</p>
+</div>
+<div class="quizq" data-correct="2">
+  <p class="q">A startup reports $2M profit but can't make payroll. Which statement reveals the problem?</p>
+  <button class="opt">The income statement</button>
+  <button class="opt">The balance sheet</button>
+  <button class="opt">The cash flow statement</button>
+  <p class="fb">The profit is tied up in unpaid invoices — the <b>cash flow statement</b> exposes the cash gap the income statement hides.</p>
 </div>
 
 <div class="pitfall subtle">
-<h3>🔎 One subtlety to graduate you to Course 02</h3>
-<p>Apple's equity looks <em>small</em> ($73.7B) next to its $112B profit — that would imply a >150% return on equity, which seems impossible. The reason: Apple has spent years <b>buying back its own shares</b>, which shrinks equity. So a ratio can “lie” without context. <em>How</em> a company chooses to use its profit — buybacks vs. dividends vs. reinvestment — is the subject of <b>Capital Allocation</b> (Course 02 &amp; Exec module E2).</p>
-</div>
-
-<h2>Check yourself</h2>
-<div class="quiz">
-<details><summary>1. A company has Revenue $500, COGS $300, all other costs $150. What's its gross profit, net income, and net margin?</summary>
-<p>Gross profit = 500 − 300 = <b>$200</b>. Net income = 200 − 150 = <b>$50</b>. Net margin = 50 ÷ 500 = <b>10%</b>.</p></details>
-<details><summary>2. If a company's Assets are $80 and Liabilities are $50, what is Equity — and what does it represent?</summary>
-<p>Equity = 80 − 50 = <b>$30</b>. It's the owners' true stake — what would remain for them if every asset were sold and every debt paid.</p></details>
-<details><summary>3. A startup reports $2M in profit but can't make payroll. How is that possible — and which statement reveals it?</summary>
-<p>Its profit is tied up in unpaid customer invoices (or inventory), so the <em>cash</em> hasn't arrived. The <b>cash flow statement</b> exposes this gap that the income statement hides.</p></details>
+<h3>🔎 One subtlety → your bridge to Course 02</h3>
+<p>Apple's equity ($73.7B) looks tiny next to its $112B profit — implying a &gt;150% return on equity. The reason: years of <b>share buybacks</b> shrink equity, so a ratio can "lie" without context. <em>How</em> a company uses its profit — buybacks vs. dividends vs. reinvestment — is <b>Capital Allocation</b> (Course 02 &amp; Exec E2).</p>
 </div>
 
 <div class="apply-box">
 <h3>🎯 Your move (the Course 01 output)</h3>
-<p>Run <code>python3 _ingest/edgar.py company MSFT</code>, then fill in the same four numbers for Microsoft — gross margin, net margin, equity, and the cash-vs-profit check — and compare them to Apple below. Two great companies, two different financial shapes.</p>
+<p>Run <code>python3 _ingest/edgar.py company MSFT</code>, then compute Microsoft's gross margin, net margin, and equity — and compare its financial "shape" to Apple's. Two great companies, two different profiles.</p>
+</div>
+
+<div class="src-list">
+<h4>📚 Taught from these sources in your corpus</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=hrSUq4wcd0g" target="_blank" rel="noopener">Accounting Stuff — The Income Statement Explained</a></li>
+<li><a href="https://www.youtube.com/watch?v=Q0o9S0q0Rr4" target="_blank" rel="noopener">Hamish Hodder — How To Read An Annual Report (10-K)</a></li>
+<li><a href="https://www.youtube.com/watch?v=lQSviPyM9DY" target="_blank" rel="noopener">Warren Buffett — How To Understand Annual Reports</a></li>
+<li><a href="https://www.youtube.com/watch?v=7OjsEF04V8o" target="_blank" rel="noopener">Learn to Invest — How to Read an Annual Report</a></li>
+</ul>
+<p style="margin:8px 0 0;color:var(--dim)">Full transcripts of every lecture are below ↓</p>
 </div>
 </section><div class="source-divider"><span>Source material — go deeper</span></div><section id="videos"><h2>Lectures <span class="count">10</span></h2><article class="card vid">
 <div class="card-head"><a class="ttl" href="https://www.youtube.com/watch?v=Q0o9S0q0Rr4" target="_blank" rel="noopener">How To Read An Annual Report (10-K)</a> <span class="sig">signal 1</span></div>
@@ -278,6 +295,8 @@ What it&#x27;s actually us…</p></article><article class="card thread">
   Equity                   $343.48B   (FY end 2025-06-30)
   OperatingCashFlow        $136.16B   (FY end 2025-06-30)
   GrossProfit              $193.89B   (FY end 2025-06-30)</div></section></main>
+<div class="done-wrap"><button id="mark-done" data-mod="core-01-accounting.html"><span class="cp-tick">✓</span> <span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button></div>
 <div class="pn-wrap"><a class="pn next" href="core-02-corporate-finance.html">02 Corporate Finance &amp; Valuation →</a></div>
 <a href="#" class="top">↑ Top</a>
+<script src="lesson.js"></script>
 </body></html>

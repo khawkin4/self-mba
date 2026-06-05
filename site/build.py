@@ -159,14 +159,19 @@ def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None):
     pn = ""
     if prevnext[0]: pn += f'<a class="pn" href="{prevnext[0][0]}">← {esc(prevnext[0][1])}</a>'
     if prevnext[1]: pn += f'<a class="pn next" href="{prevnext[1][0]}">{esc(prevnext[1][1])} →</a>'
+    done_btn = (f'<button id="mark-done" data-mod="{track}-{mid}.html"><span class="cp-tick">✓</span> '
+                f'<span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button>') if lesson else ""
     return HEAD.format(title=f"{c} · {title}", css="style.css") + f"""
+{'<div id="progress"></div>' if lesson else ''}
 <header class="mod-header"><a href="index.html" class="home">← All modules</a>
 <div class="badge {('exec' if track=='exec' else 'core')}">{esc(c)}</div>
 <h1>{esc(title)}</h1></header>
 <nav class="toc">{" ".join(toc)}</nav>
 <main>{"".join(sections)}</main>
+<div class="done-wrap">{done_btn}</div>
 <div class="pn-wrap">{pn}</div>
 <a href="#" class="top">↑ Top</a>
+<script src="lesson.js"></script>
 </body></html>"""
 
 def render_index(modules, stats):
@@ -176,8 +181,8 @@ def render_index(modules, stats):
             c = code(track, mid); title = TITLES.get(mid, mid)
             words = sum(len(x.get("transcript") or "") for x in v) // 5
             lesson_tag = '<span class="lesson-tag">✦ Lesson ready</span>' if load_lesson(track, mid) else '<span class="lesson-tag pending">Sources only</span>'
-            out.append(f"""<a class="mcard" href="{track}-{mid}.html">
-<div class="mcard-top"><span class="badge {('exec' if track=='exec' else 'core')}">{esc(c)}</span>{lesson_tag}</div>
+            out.append(f"""<a class="mcard" href="{track}-{mid}.html" data-mod="{track}-{mid}">
+<div class="mcard-top"><span class="badge {('exec' if track=='exec' else 'core')}">{esc(c)}</span>{lesson_tag}<span class="done-tick">✓</span></div>
 <h3>{esc(title)}</h3>
 <div class="mstats"><span>{len(v)} lectures</span><span>{words:,} words</span>{f'<span>{len(r)} threads</span>' if r else ''}{f'<span>{len(e)} filings</span>' if e else ''}</div></a>""")
         return "".join(out)
@@ -200,6 +205,7 @@ function filt(){{var q=document.getElementById('q').value.toLowerCase();
 document.querySelectorAll('.mcard').forEach(function(c){{
 c.style.display = c.textContent.toLowerCase().includes(q) ? '' : 'none';}});}}
 </script>
+<script src="index.js"></script>
 </body></html>"""
 
 CSS = """
@@ -279,6 +285,99 @@ figure.viz figcaption{font-size:.88rem;color:var(--dim);margin-top:12px;text-ali
 .apply-box h3{margin-bottom:6px}.apply-box code{background:var(--bg);padding:2px 6px;border-radius:5px;font-size:.9rem}
 .source-divider{text-align:center;margin:44px 0 8px;border-top:1px solid var(--line)}
 .source-divider span{position:relative;top:-12px;background:var(--bg);padding:0 16px;color:var(--dim);font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}
+/* ---------- INTERACTIVE COMPONENTS ---------- */
+#progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--core),var(--accent));z-index:50;transition:width .1s}
+.tip{position:absolute;z-index:60;background:#1c1a17;color:#fff;font-size:.82rem;padding:8px 12px;border-radius:8px;max-width:260px;pointer-events:none;opacity:0;transform:translate(-50%,-100%);transition:opacity .12s;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.tip.show{opacity:1}
+.hot{cursor:pointer;transition:opacity .15s}.hot:hover{opacity:.85}.hot.active{stroke:var(--ink);stroke-width:2}
+/* flip cards */
+.fc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:20px 0}
+.fc{perspective:900px;background:none;border:0;padding:0;height:120px;cursor:pointer;font:inherit;text-align:left}
+.fc-inner{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.fc.flipped .fc-inner{transform:rotateY(180deg)}
+.fc-f,.fc-b{position:absolute;inset:0;backface-visibility:hidden;border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;justify-content:center}
+.fc-f{background:var(--card)}.fc-f b{font-size:1.05rem}.fc-f .hint{font-size:.72rem;color:var(--dim);margin-top:auto}
+.fc-b{background:var(--core);color:#fff;transform:rotateY(180deg);font-size:.85rem;line-height:1.4}
+/* reveal */
+.reveal{border:1px solid var(--line);border-radius:12px;margin:12px 0;overflow:hidden;background:var(--card)}
+.reveal-q{width:100%;text-align:left;background:none;border:0;padding:16px 18px;font:600 1.05rem inherit;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.reveal-q::after{content:"+";color:var(--accent);font-size:1.3rem;flex:none}
+.reveal.open .reveal-q::after{content:"−"}
+.reveal-a{max-height:0;overflow:hidden;transition:max-height .3s;padding:0 18px}
+.reveal.open .reveal-a{max-height:340px;padding:0 18px 16px}
+/* quiz */
+.quizq{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin:14px 0}
+.quizq .q{font-weight:600;margin:0 0 12px}
+.opt{display:block;width:100%;text-align:left;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:11px 14px;margin:7px 0;font:inherit;cursor:pointer;transition:.12s}
+.opt:hover{border-color:var(--accent)}.quizq.done .opt{cursor:default}
+.opt.right{background:rgba(47,111,79,.16);border-color:var(--core);font-weight:600}
+.opt.wrong{background:rgba(180,40,40,.14);border-color:#b42828}
+.fb{display:none;margin:12px 0 0;padding:12px 14px;background:var(--bg);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;font-size:.92rem}
+.fb.show{display:block}
+/* source quote */
+.srcq{margin:18px 0;padding:16px 20px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--exec);border-radius:0 12px 12px 0}
+.srcq p{margin:0 0 8px;font-style:italic}.srcq cite{font-style:normal;font-size:.85rem;color:var(--dim)}
+.srcq cite a{color:var(--exec);text-decoration:none;font-weight:600}.srcq cite a:hover{text-decoration:underline}
+.src-list{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 20px;margin:18px 0;font-size:.9rem}
+.src-list h4{margin:0 0 8px}.src-list a{color:var(--exec);text-decoration:none}.src-list li{margin:5px 0}
+/* completion */
+.done-wrap{max-width:820px;margin:30px auto 0;padding:0 20px;text-align:center}
+#mark-done{background:var(--card);border:1.5px solid var(--line);border-radius:30px;padding:12px 26px;font:600 .95rem inherit;color:var(--dim);cursor:pointer;transition:.15s}
+#mark-done .cp-tick{opacity:.3}#mark-done .cp-on{display:none}
+#mark-done:hover{border-color:var(--core)}
+#mark-done.checked{background:var(--core);color:#fff;border-color:var(--core)}
+#mark-done.checked .cp-tick{opacity:1}#mark-done.checked .cp-on{display:inline}#mark-done.checked .cp-off{display:none}
+.done-tick{margin-left:auto;color:var(--core);font-weight:800;opacity:0;transition:.15s}
+.mcard.completed .done-tick{opacity:1}.mcard.completed{border-color:var(--core)}
+.mcard-top{display:flex;align-items:center;gap:8px}
+"""
+
+LESSON_JS = r"""
+(function(){
+  var bar=document.getElementById('progress');
+  if(bar){addEventListener('scroll',function(){
+    var h=document.documentElement,sc=h.scrollTop,mx=h.scrollHeight-h.clientHeight;
+    bar.style.width=(mx>0?100*sc/mx:0)+'%';},{passive:true});}
+  // flip cards
+  document.querySelectorAll('.fc').forEach(function(c){
+    c.addEventListener('click',function(){c.classList.toggle('flipped');});});
+  // click-to-reveal
+  document.querySelectorAll('.reveal .reveal-q').forEach(function(q){
+    q.addEventListener('click',function(){q.parentNode.classList.toggle('open');});});
+  // MCQ quiz w/ instant feedback
+  document.querySelectorAll('.quizq').forEach(function(q){
+    var correct=+q.dataset.correct, opts=q.querySelectorAll('.opt');
+    opts.forEach(function(b,i){b.addEventListener('click',function(){
+      if(q.classList.contains('done'))return; q.classList.add('done');
+      b.classList.add(i===correct?'right':'wrong');
+      if(i!==correct)opts[correct].classList.add('right');
+      var fb=q.querySelector('.fb'); if(fb)fb.classList.add('show');});});});
+  // SVG / element hotspots -> floating tooltip
+  var tip=document.createElement('div'); tip.className='tip'; document.body.appendChild(tip);
+  function place(e){var t=e.touches?e.touches[0]:e; tip.style.left=t.clientX+'px';
+    tip.style.top=(t.clientY+window.scrollY-12)+'px';}
+  document.querySelectorAll('[data-tip]').forEach(function(el){
+    el.classList.add('hot');
+    function show(e){tip.textContent=el.dataset.tip; tip.classList.add('show'); place(e);}
+    el.addEventListener('mouseenter',show); el.addEventListener('mousemove',place);
+    el.addEventListener('mouseleave',function(){tip.classList.remove('show');});
+    el.addEventListener('click',function(e){show(e);
+      document.querySelectorAll('[data-tip].active').forEach(function(o){if(o!==el)o.classList.remove('active');});
+      el.classList.toggle('active');});});
+  document.addEventListener('click',function(e){
+    if(!e.target.closest('[data-tip]'))tip.classList.remove('show');});
+  // module completion (persisted; surfaced on index)
+  var done=document.getElementById('mark-done');
+  if(done){var key='mba-done-'+(done.dataset.mod||location.pathname.split('/').pop());
+    if(localStorage.getItem(key)==='1')done.classList.add('checked');
+    done.addEventListener('click',function(){done.classList.toggle('checked');
+      localStorage.setItem(key,done.classList.contains('checked')?'1':'0');});}
+})();
+"""
+
+INDEX_JS = r"""
+(function(){document.querySelectorAll('.mcard[data-mod]').forEach(function(c){
+  if(localStorage.getItem('mba-done-'+c.dataset.mod+'.html')==='1')c.classList.add('completed');});})();
 """
 
 def main():
@@ -287,6 +386,8 @@ def main():
     manifest = json.load(open(os.path.join(INGEST, "manifest.json")))
     os.makedirs(DIST, exist_ok=True)
     open(os.path.join(DIST, "style.css"), "w").write(CSS)
+    open(os.path.join(DIST, "lesson.js"), "w").write(LESSON_JS)
+    open(os.path.join(DIST, "index.js"), "w").write(INDEX_JS)
 
     modules = {"core": [], "exec": []}
     order = []  # (track, mid, filename, title)
