@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Local ingest caches / scratch (keep the engine + notes, drop transient pulls)
+_ingest/cache/
+_ingest/*.tmp
+_ingest/raw/
+
+# Editor / vault cruft (if you later open this in Obsidian)
+.obsidian/workspace*
+.trash/
