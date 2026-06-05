@@ -1,0 +1,280 @@
+#!/usr/bin/env python3
+"""
+Static-site generator for the Compounding MBA.
+
+Reads the latest raw pull (_ingest/raw/<date>/) and emits a browsable,
+scrollable course site into site/dist/:
+  - index.html            module grid (Core + Executive), corpus stats, search
+  - <track>-<module>.html one page per module: videos w/ collapsible transcripts,
+                          Reddit discussions, EDGAR financials
+  - style.css
+
+Stdlib only. No server needed — open site/dist/index.html in a browser.
+Rebuild anytime after a new pull:  python3 site/build.py
+"""
+import glob, html, json, os, re
+from datetime import date
+
+HOME = os.path.expanduser("~")
+ROOT = os.path.join(HOME, "self-mba")
+INGEST = os.path.join(ROOT, "_ingest")
+DIST = os.path.join(ROOT, "site", "dist")
+
+TITLES = {
+    "01-accounting": "Accounting", "02-corporate-finance": "Corporate Finance & Valuation",
+    "03-micro-strategy": "Microeconomics & Strategy", "04-competitive-strategy": "Competitive Strategy",
+    "05-marketing-brand": "Marketing & Brand", "06-operations": "Operations & Supply Chain",
+    "07-data-analytics": "Data, Analytics & Decisions", "08-negotiation": "Negotiation",
+    "09-leadership-ob": "Leadership & Org Behavior", "10-entrepreneurship": "Entrepreneurship & Venture",
+    "11-global-macro": "Global Strategy & Macro", "12-capstone": "Capstone",
+    "E1-leading-at-scale": "Leading at Scale", "E2-capital-allocation": "Capital Allocation",
+    "E3-mergers-acquisitions": "M&A & Restructuring", "E4-governance-board": "Governance & The Board",
+    "E5-transformation": "Transformation at Scale", "E6-crisis-leadership": "Crisis Leadership",
+    "E7-exec-presence-comms": "Executive Presence & Comms", "E8-stakeholder-ir": "Stakeholder & Investor Relations",
+    "E9-geopolitics-macro": "Geopolitics & Macro", "E10-digital-ai": "Digital & AI Transformation",
+    "E11-operating-system": "Personal Operating System", "E12-culture-strategy": "Culture as Strategy",
+}
+
+def esc(s):
+    return html.escape(str(s if s is not None else ""))
+
+def latest_raw():
+    dirs = sorted(glob.glob(os.path.join(INGEST, "raw", "*")))
+    dirs = [d for d in dirs if os.path.isdir(d) and re.search(r"\d{4}-\d{2}-\d{2}$", d)]
+    if not dirs:
+        raise SystemExit("No raw pulls found. Run _ingest/pull.py first.")
+    return dirs[-1]
+
+def fmt_int(v):
+    try: return f"{int(float(v)):,}"
+    except (ValueError, TypeError): return str(v or "")
+
+def fmt_dur(v):
+    try:
+        s = int(float(v)); return f"{s//60}:{s%60:02d}"
+    except (ValueError, TypeError): return ""
+
+def code(track, mid):
+    return mid.split("-")[0].upper() if track == "exec" else mid.split("-")[0]
+
+def load_module(mdir):
+    vids, reddit = [], []
+    for f in sorted(glob.glob(os.path.join(mdir, "yt_*.json"))):
+        try: vids += json.load(open(f))
+        except Exception: pass
+    for f in sorted(glob.glob(os.path.join(mdir, "reddit_*.json"))):
+        try: reddit += json.load(open(f))
+        except Exception: pass
+    # de-dupe videos by id, keep highest signal
+    seen = {}
+    for v in vids:
+        k = v.get("id")
+        if k not in seen or int(v.get("signal", 0) or 0) > int(seen[k].get("signal", 0) or 0):
+            seen[k] = v
+    vids = sorted(seen.values(), key=lambda v: (int(v.get("signal", 0) or 0), len(v.get("transcript") or "")), reverse=True)
+    reddit = [r for r in reddit if r.get("title")]
+    reddit.sort(key=lambda r: (int(r.get("signal", 0) or 0), int(float(r.get("ups", 0) or 0))), reverse=True)
+    edgar = []
+    for f in sorted(glob.glob(os.path.join(mdir, "edgar_*.txt"))):
+        edgar.append(open(f, encoding="utf-8").read())
+    return vids, reddit, edgar
+
+def sig_badge(s):
+    s = int(s or 0)
+    if s <= 0: return ""
+    cls = "sig-hi" if s >= 2 else "sig"
+    return f'<span class="{cls}">signal {s}</span>'
+
+# ---------- page rendering ----------
+HEAD = """<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title><link rel="stylesheet" href="{css}"></head><body>"""
+
+def render_video(v):
+    tr = (v.get("transcript") or "").strip()
+    meta = " · ".join(x for x in [esc(v.get("channel")), fmt_dur(v.get("duration")),
+                                  (fmt_int(v.get("views")) + " views") if v.get("views") not in (None, "", "NA") else ""] if x)
+    body = ""
+    if tr:
+        # paragraphize a flat transcript for readability
+        paras = re.split(r"(?<=[.!?])\s+(?=[A-Z])", tr)
+        chunks, buf = [], ""
+        for p in paras:
+            buf += p + " "
+            if len(buf) > 600:
+                chunks.append(buf.strip()); buf = ""
+        if buf.strip(): chunks.append(buf.strip())
+        inner = "".join(f"<p>{esc(c)}</p>" for c in chunks)
+        words = len(tr) // 5
+        body = f"""<details class="tr"><summary>Read transcript · ~{words:,} words · {words//150} min read</summary>
+<div class="tr-body">{inner}</div></details>"""
+    else:
+        body = '<div class="no-tr">No transcript available — watch on YouTube.</div>'
+    return f"""<article class="card vid">
+<div class="card-head"><a class="ttl" href="{esc(v.get('url'))}" target="_blank" rel="noopener">{esc(v.get('title'))}</a> {sig_badge(v.get('signal'))}</div>
+<div class="meta">{meta}</div>{body}</article>"""
+
+def render_reddit(r):
+    txt = (r.get("selftext") or "").strip()
+    excerpt = (txt[:600] + "…") if len(txt) > 600 else txt
+    return f"""<article class="card thread">
+<div class="card-head"><a class="ttl" href="{esc(r.get('url'))}" target="_blank" rel="noopener">{esc(r.get('title'))}</a> {sig_badge(r.get('signal'))}</div>
+<div class="meta">r/{esc(r.get('sub'))} · ▲ {fmt_int(r.get('ups'))} · 💬 {fmt_int(r.get('comments'))} · u/{esc(r.get('author'))}</div>
+{('<p class="excerpt">'+esc(excerpt)+'</p>') if excerpt else ''}</article>"""
+
+def render_edgar(blocks):
+    out = []
+    for b in blocks:
+        lines = []
+        for ln in b.splitlines():
+            if ln.startswith("## "): lines.append(f"<h4>{esc(ln[3:])}</h4>")
+            elif ln.startswith("# "): lines.append(f"<h3>{esc(ln[2:])}</h3>")
+            else: lines.append(esc(ln))
+        out.append('<div class="edgar">' + "\n".join(lines) + "</div>")
+    return "".join(out)
+
+def render_module(track, mid, vids, reddit, edgar, prevnext):
+    c = code(track, mid)
+    title = TITLES.get(mid, mid)
+    toc = ['<a href="#videos">Lectures</a>']
+    if reddit: toc.append('<a href="#discuss">Discussions</a>')
+    if edgar: toc.append('<a href="#fin">Financials</a>')
+    vids_html = "".join(render_video(v) for v in vids) or "<p class='empty'>No lectures pulled.</p>"
+    sections = [f'<section id="videos"><h2>Lectures <span class="count">{len(vids)}</span></h2>{vids_html}</section>']
+    if reddit:
+        sections.append(f'<section id="discuss"><h2>Practitioner Discussions <span class="count">{len(reddit)}</span></h2>{"".join(render_reddit(r) for r in reddit)}</section>')
+    if edgar:
+        sections.append(f'<section id="fin"><h2>Live Financials (SEC EDGAR) <span class="count">{len(edgar)}</span></h2>{render_edgar(edgar)}</section>')
+    pn = ""
+    if prevnext[0]: pn += f'<a class="pn" href="{prevnext[0][0]}">← {esc(prevnext[0][1])}</a>'
+    if prevnext[1]: pn += f'<a class="pn next" href="{prevnext[1][0]}">{esc(prevnext[1][1])} →</a>'
+    return HEAD.format(title=f"{c} · {title}", css="style.css") + f"""
+<header class="mod-header"><a href="index.html" class="home">← All modules</a>
+<div class="badge {('exec' if track=='exec' else 'core')}">{esc(c)}</div>
+<h1>{esc(title)}</h1></header>
+<nav class="toc">{" ".join(toc)}</nav>
+<main>{"".join(sections)}</main>
+<div class="pn-wrap">{pn}</div>
+<a href="#" class="top">↑ Top</a>
+</body></html>"""
+
+def render_index(modules, stats):
+    def cards(track):
+        out = []
+        for mid, v, r, e in modules[track]:
+            c = code(track, mid); title = TITLES.get(mid, mid)
+            words = sum(len(x.get("transcript") or "") for x in v) // 5
+            out.append(f"""<a class="mcard" href="{track}-{mid}.html">
+<div class="mcard-top"><span class="badge {('exec' if track=='exec' else 'core')}">{esc(c)}</span></div>
+<h3>{esc(title)}</h3>
+<div class="mstats"><span>{len(v)} lectures</span><span>{words:,} words</span>{f'<span>{len(r)} threads</span>' if r else ''}{f'<span>{len(e)} filings</span>' if e else ''}</div></a>""")
+        return "".join(out)
+    return HEAD.format(title="The Compounding MBA", css="style.css") + f"""
+<header class="hero">
+<h1>The Compounding MBA</h1>
+<p class="sub">A self-directed, master's-level business education — assembled from elite sources and made browsable.</p>
+<div class="corpus"><b>{stats['modules']}</b> modules · <b>{stats['videos']}</b> lectures · <b>{stats['words']:,}</b> words · <b>{stats['threads']}</b> discussions · <b>{stats['filings']}</b> filings <span class="dim">· pulled {stats['date']}</span></div>
+<input id="q" placeholder="Filter modules…" oninput="filt()">
+</header>
+<main>
+<h2 class="track-h">Core Curriculum</h2>
+<div class="grid">{cards('core')}</div>
+<h2 class="track-h">Executive Track</h2>
+<div class="grid">{cards('exec')}</div>
+</main>
+<footer>Generated from <code>~/self-mba/_ingest/raw/{stats['date']}</code> · rebuild with <code>python3 site/build.py</code></footer>
+<script>
+function filt(){{var q=document.getElementById('q').value.toLowerCase();
+document.querySelectorAll('.mcard').forEach(function(c){{
+c.style.display = c.textContent.toLowerCase().includes(q) ? '' : 'none';}});}}
+</script>
+</body></html>"""
+
+CSS = """
+:root{--bg:#faf8f4;--card:#fff;--ink:#1c1a17;--dim:#6b6356;--line:#e7e1d6;--core:#2f6f4f;--exec:#7a3b8f;--accent:#b45309;--sig:#fef3c7;--sighi:#fde68a}
+@media(prefers-color-scheme:dark){:root{--bg:#16140f;--card:#211e18;--ink:#ece7dd;--dim:#9b9384;--line:#332e25;--sig:#3a330f;--sighi:#4d4310}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}main{max-width:820px;margin:0 auto;padding:0 20px 80px}
+/* hero / index */
+.hero{max-width:820px;margin:0 auto;padding:64px 20px 28px;text-align:center}
+.hero h1{font-size:2.6rem;margin:0 0 8px;letter-spacing:-.02em}
+.sub{color:var(--dim);font-size:1.1rem;margin:0 auto 20px;max-width:600px}
+.corpus{font-size:.92rem;color:var(--dim);margin-bottom:22px}.corpus b{color:var(--ink)}.dim{opacity:.7}
+#q{width:100%;max-width:420px;padding:12px 16px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font-size:1rem}
+.track-h{max-width:820px;margin:36px auto 14px;padding:0 20px;font-size:1.15rem;letter-spacing:.04em;text-transform:uppercase;color:var(--dim)}
+.grid{max-width:820px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.mcard{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;text-decoration:none;transition:.15s}
+.mcard:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08);border-color:var(--accent)}
+.mcard h3{margin:10px 0 12px;font-size:1.12rem;line-height:1.3}
+.mstats{display:flex;flex-wrap:wrap;gap:6px}.mstats span{font-size:.74rem;color:var(--dim);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 7px}
+.badge{display:inline-block;font-weight:700;font-size:.78rem;color:#fff;border-radius:6px;padding:3px 9px}
+.badge.core{background:var(--core)}.badge.exec{background:var(--exec)}
+/* module page */
+.mod-header{max-width:820px;margin:0 auto;padding:40px 20px 10px}
+.home{color:var(--dim);text-decoration:none;font-size:.9rem}
+.mod-header h1{font-size:2.1rem;margin:12px 0 0;letter-spacing:-.02em}
+.toc{position:sticky;top:0;z-index:5;background:var(--bg);max-width:820px;margin:0 auto;padding:12px 20px;border-bottom:1px solid var(--line);display:flex;gap:18px}
+.toc a{color:var(--dim);text-decoration:none;font-size:.9rem;font-weight:600}.toc a:hover{color:var(--accent)}
+section{margin-top:38px}section h2{font-size:1.4rem;border-bottom:2px solid var(--line);padding-bottom:8px}
+.count{font-size:.8rem;color:var(--dim);font-weight:400;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1px 10px;margin-left:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin:14px 0}
+.card-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.ttl{font-weight:600;font-size:1.08rem;text-decoration:none;line-height:1.35}.ttl:hover{color:var(--accent);text-decoration:underline}
+.meta{color:var(--dim);font-size:.85rem;margin-top:5px}
+.sig,.sig-hi{font-size:.7rem;border-radius:5px;padding:2px 7px;color:#7a5a00;background:var(--sig);white-space:nowrap}.sig-hi{background:var(--sighi);font-weight:600}
+.tr{margin-top:12px}.tr summary{cursor:pointer;color:var(--accent);font-weight:600;font-size:.9rem}
+.tr-body{margin-top:12px;font-family:Georgia,"Times New Roman",serif;font-size:1.05rem;line-height:1.75;border-left:3px solid var(--line);padding-left:18px;max-height:560px;overflow:auto}
+.tr-body p{margin:0 0 14px}.no-tr{margin-top:10px;color:var(--dim);font-size:.88rem;font-style:italic}
+.excerpt{color:var(--dim);font-size:.92rem;margin:10px 0 0}
+.edgar{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin:14px 0;font-family:ui-monospace,Menlo,monospace;font-size:.85rem;white-space:pre-wrap;line-height:1.55}
+.edgar h3{font-family:inherit;font-size:1.1rem;margin:0 0 6px;font-weight:700}.edgar h4{margin:14px 0 4px;color:var(--accent);font-size:.95rem}
+.empty{color:var(--dim)}
+.pn-wrap{max-width:820px;margin:40px auto;padding:0 20px;display:flex;justify-content:space-between;gap:12px}
+.pn{flex:1;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;text-decoration:none;color:var(--dim);font-weight:600}
+.pn.next{text-align:right}.pn:hover{border-color:var(--accent);color:var(--ink)}
+.top{position:fixed;bottom:22px;right:22px;background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+footer{max-width:820px;margin:0 auto;padding:30px 20px;color:var(--dim);font-size:.82rem;text-align:center;border-top:1px solid var(--line)}
+footer code,.dim code{background:var(--card);padding:1px 5px;border-radius:4px}
+"""
+
+def main():
+    raw = latest_raw()
+    pull_date = os.path.basename(raw)
+    manifest = json.load(open(os.path.join(INGEST, "manifest.json")))
+    os.makedirs(DIST, exist_ok=True)
+    open(os.path.join(DIST, "style.css"), "w").write(CSS)
+
+    modules = {"core": [], "exec": []}
+    order = []  # (track, mid, filename, title)
+    for track in ("core", "exec"):
+        for mid in manifest.get(track, {}):
+            if mid.startswith("_"): continue
+            mdir = os.path.join(raw, track, mid)
+            v, r, e = load_module(mdir) if os.path.isdir(mdir) else ([], [], [])
+            modules[track].append((mid, v, r, e))
+            order.append((track, mid, f"{track}-{mid}.html", TITLES.get(mid, mid)))
+
+    # module pages with prev/next
+    flat = [(t, m, modules[t][i][1], modules[t][i][2], modules[t][i][3])
+            for t in ("core", "exec") for i, (m, *_ ) in enumerate(modules[t])]
+    for idx, (track, mid, v, r, e) in enumerate(flat):
+        prev = (order[idx-1][2], f"{code(*order[idx-1][:2])} {order[idx-1][3]}") if idx > 0 else None
+        nxt = (order[idx+1][2], f"{code(*order[idx+1][:2])} {order[idx+1][3]}") if idx < len(flat)-1 else None
+        page = render_module(track, mid, v, r, e, (prev, nxt))
+        open(os.path.join(DIST, f"{track}-{mid}.html"), "w", encoding="utf-8").write(page)
+
+    stats = {
+        "date": pull_date, "modules": len(flat),
+        "videos": sum(len(v) for _,_,v,_,_ in flat),
+        "words": sum(len(x.get("transcript") or "") for _,_,v,_,_ in flat for x in v) // 5,
+        "threads": sum(len(r) for _,_,_,r,_ in flat),
+        "filings": sum(len(e) for _,_,_,_,e in flat),
+    }
+    open(os.path.join(DIST, "index.html"), "w", encoding="utf-8").write(render_index(modules, stats))
+    print(f"Built site -> {DIST}")
+    print(f"  {stats['modules']} module pages · {stats['videos']} lectures · {stats['words']:,} words · {stats['threads']} threads")
+    print(f"  open: {os.path.join(DIST, 'index.html')}")
+
+if __name__ == "__main__":
+    main()
