@@ -18,7 +18,12 @@ from datetime import date
 HOME = os.path.expanduser("~")
 ROOT = os.path.join(HOME, "self-mba")
 INGEST = os.path.join(ROOT, "_ingest")
+LESSONS = os.path.join(ROOT, "lessons")
 DIST = os.path.join(ROOT, "site", "dist")
+
+def load_lesson(track, mid):
+    p = os.path.join(LESSONS, f"{track}-{mid}.html")
+    return open(p, encoding="utf-8").read() if os.path.exists(p) else None
 
 TITLES = {
     "01-accounting": "Accounting", "02-corporate-finance": "Corporate Finance & Valuation",
@@ -133,14 +138,20 @@ def render_edgar(blocks):
         out.append('<div class="edgar">' + "\n".join(lines) + "</div>")
     return "".join(out)
 
-def render_module(track, mid, vids, reddit, edgar, prevnext):
+def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None):
     c = code(track, mid)
     title = TITLES.get(mid, mid)
-    toc = ['<a href="#videos">Lectures</a>']
+    toc = []
+    if lesson: toc.append('<a href="#lesson">Lesson</a>')
+    toc.append('<a href="#videos">Source: Lectures</a>')
     if reddit: toc.append('<a href="#discuss">Discussions</a>')
     if edgar: toc.append('<a href="#fin">Financials</a>')
+    sections = []
+    if lesson:
+        sections.append(f'<section id="lesson" class="lesson">{lesson}</section>')
+        sections.append('<div class="source-divider"><span>Source material — go deeper</span></div>')
     vids_html = "".join(render_video(v) for v in vids) or "<p class='empty'>No lectures pulled.</p>"
-    sections = [f'<section id="videos"><h2>Lectures <span class="count">{len(vids)}</span></h2>{vids_html}</section>']
+    sections.append(f'<section id="videos"><h2>Lectures <span class="count">{len(vids)}</span></h2>{vids_html}</section>')
     if reddit:
         sections.append(f'<section id="discuss"><h2>Practitioner Discussions <span class="count">{len(reddit)}</span></h2>{"".join(render_reddit(r) for r in reddit)}</section>')
     if edgar:
@@ -164,8 +175,9 @@ def render_index(modules, stats):
         for mid, v, r, e in modules[track]:
             c = code(track, mid); title = TITLES.get(mid, mid)
             words = sum(len(x.get("transcript") or "") for x in v) // 5
+            lesson_tag = '<span class="lesson-tag">✦ Lesson ready</span>' if load_lesson(track, mid) else '<span class="lesson-tag pending">Sources only</span>'
             out.append(f"""<a class="mcard" href="{track}-{mid}.html">
-<div class="mcard-top"><span class="badge {('exec' if track=='exec' else 'core')}">{esc(c)}</span></div>
+<div class="mcard-top"><span class="badge {('exec' if track=='exec' else 'core')}">{esc(c)}</span>{lesson_tag}</div>
 <h3>{esc(title)}</h3>
 <div class="mstats"><span>{len(v)} lectures</span><span>{words:,} words</span>{f'<span>{len(r)} threads</span>' if r else ''}{f'<span>{len(e)} filings</span>' if e else ''}</div></a>""")
         return "".join(out)
@@ -236,6 +248,37 @@ section{margin-top:38px}section h2{font-size:1.4rem;border-bottom:2px solid var(
 .top{position:fixed;bottom:22px;right:22px;background:var(--accent);color:#fff;border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.2)}
 footer{max-width:820px;margin:0 auto;padding:30px 20px;color:var(--dim);font-size:.82rem;text-align:center;border-top:1px solid var(--line)}
 footer code,.dim code{background:var(--card);padding:1px 5px;border-radius:4px}
+.lesson-tag{font-size:.66rem;font-weight:700;color:var(--core);background:rgba(47,111,79,.12);border-radius:20px;padding:2px 8px}
+.lesson-tag.pending{color:var(--dim);background:var(--bg);border:1px solid var(--line);font-weight:500}
+/* ---------- LESSON typography ---------- */
+.lesson{font-size:1.06rem;line-height:1.72}
+.lesson h2{font-size:1.5rem;margin-top:36px;border:0;padding:0;letter-spacing:-.01em}
+.lesson h3{font-size:1.1rem;margin:0 0 8px}
+.lesson .lead{font-size:1.2rem;line-height:1.6;color:var(--ink)}
+.lesson em{font-style:italic;color:var(--accent)}
+.big-idea{background:linear-gradient(135deg,rgba(47,111,79,.1),rgba(180,83,9,.08));border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin:22px 0}
+.big-idea h3{color:var(--core)}.big-idea ul{margin:8px 0 0;padding-left:20px}.big-idea li{margin:6px 0}
+dl.terms{margin:18px 0}dl.terms dt{font-weight:700;font-size:1.05rem;margin-top:16px}
+dl.terms dt .aka{font-weight:400;font-size:.85rem;color:var(--dim);font-style:italic}
+dl.terms dd{margin:4px 0 0;padding-left:0;color:var(--ink)}
+.equation{font-family:Georgia,serif;font-size:1.5rem;text-align:center;background:var(--card);border:2px solid var(--accent);border-radius:12px;padding:18px;margin:20px 0;letter-spacing:.02em}
+figure.viz{margin:24px 0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+figure.viz svg{width:100%;height:auto}
+figure.viz figcaption{font-size:.88rem;color:var(--dim);margin-top:12px;text-align:center}
+.vlabel{font:600 12px sans-serif;fill:var(--dim)}.vlabel-in{font:600 12px sans-serif;fill:var(--accent)}
+.bar-txt{font:700 14px sans-serif;fill:#fff;text-anchor:middle}.bar-txt-sm{font:700 11px sans-serif;fill:#fff;text-anchor:middle}
+.bar-asset{fill:#475569}.bar-liab{fill:#b45309}.bar-eq{fill:#2f6f4f}
+.bar-rev{fill:#475569}.bar-gross{fill:#2f6f4f}.bar-net{fill:#b45309}
+.example{background:var(--card);border-left:4px solid var(--core);border-radius:0 12px 12px 0;padding:16px 22px;margin:20px 0}
+.example p{margin:8px 0}
+.pitfall{background:rgba(180,83,9,.08);border:1px solid rgba(180,83,9,.3);border-radius:14px;padding:16px 22px;margin:20px 0}
+.pitfall.subtle{background:var(--card);border-color:var(--line)}.pitfall h3{margin-bottom:6px}
+.quiz details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:10px 0}
+.quiz summary{cursor:pointer;font-weight:600}.quiz details[open] summary{margin-bottom:8px;color:var(--accent)}
+.apply-box{background:linear-gradient(135deg,rgba(180,83,9,.12),rgba(47,111,79,.08));border:1px solid var(--accent);border-radius:14px;padding:18px 24px;margin:28px 0}
+.apply-box h3{margin-bottom:6px}.apply-box code{background:var(--bg);padding:2px 6px;border-radius:5px;font-size:.9rem}
+.source-divider{text-align:center;margin:44px 0 8px;border-top:1px solid var(--line)}
+.source-divider span{position:relative;top:-12px;background:var(--bg);padding:0 16px;color:var(--dim);font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}
 """
 
 def main():
@@ -261,7 +304,7 @@ def main():
     for idx, (track, mid, v, r, e) in enumerate(flat):
         prev = (order[idx-1][2], f"{code(*order[idx-1][:2])} {order[idx-1][3]}") if idx > 0 else None
         nxt = (order[idx+1][2], f"{code(*order[idx+1][:2])} {order[idx+1][3]}") if idx < len(flat)-1 else None
-        page = render_module(track, mid, v, r, e, (prev, nxt))
+        page = render_module(track, mid, v, r, e, (prev, nxt), lesson=load_lesson(track, mid))
         open(os.path.join(DIST, f"{track}-{mid}.html"), "w", encoding="utf-8").write(page)
 
     stats = {
