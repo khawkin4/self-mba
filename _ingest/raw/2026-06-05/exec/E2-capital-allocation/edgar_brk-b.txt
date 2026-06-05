@@ -1,0 +1,24 @@
+# BERKSHIRE HATHAWAY INC  (CIK 1067983)
+  SIC: Fire, Marine & Casualty Insurance  ·  Exchange: NYSE, NYSE
+
+## Recent key filings
+  2026-05-07  8-K       acc:0001193125-26-212148
+  2026-05-04  10-Q      acc:0001193125-26-202243
+  2026-04-16  8-K       acc:0001193125-26-159326
+  2026-03-13  DEF 14A   acc:0001193125-26-106253
+  2026-03-05  8-K       acc:0001193125-26-092557
+  2026-03-02  8-K       acc:0001193125-26-085801
+  2026-03-02  10-K      acc:0001193125-26-083899
+  2025-12-11  8-K       acc:0001193125-25-314935
+  2025-11-21  8-K       acc:0001193125-25-290864
+  2025-11-03  8-K       acc:0001193125-25-262260
+  2025-11-03  10-Q      acc:0001193125-25-261548
+  2025-10-03  8-K       acc:0001193125-25-229405
+
+## Key financials (latest annual, XBRL)
+  Revenues                 $371.44B   (FY end 2025-12-31)
+  NetIncome                 $66.97B   (FY end 2025-12-31)
+  Assets                 $1,222.18B   (FY end 2025-12-31)
+  Liabilities              $502.47B   (FY end 2025-12-31)
+  Equity                   $717.42B   (FY end 2025-12-31)
+  OperatingCashFlow         $45.97B   (FY end 2025-12-31)

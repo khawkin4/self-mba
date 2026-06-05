@@ -5,10 +5,10 @@ __pycache__/
 # macOS
 .DS_Store
 
-# Local ingest caches / scratch (keep the engine + notes, drop transient pulls)
+# Local ingest caches / scratch
 _ingest/cache/
 _ingest/*.tmp
-_ingest/raw/
+# NOTE: _ingest/raw/ is tracked (corpus backed up to GitHub by request).
 
 # Editor / vault cruft (if you later open this in Obsidian)
 .obsidian/workspace*

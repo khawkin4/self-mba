@@ -1,0 +1,23 @@
+# Walt Disney Co  (CIK 1744489)
+  SIC: Services-Miscellaneous Amusement & Recreation  ·  Exchange: NYSE
+
+## Recent key filings
+  2026-05-06  10-Q      acc:0001744489-26-000037
+  2026-05-06  8-K       acc:0001744489-26-000036
+  2026-03-20  8-K       acc:0001628280-26-020172
+  2026-03-03  8-K       acc:0001193125-26-088356
+  2026-02-24  8-K       acc:0001744489-26-000025
+  2026-02-12  8-K       acc:0001193125-26-048674
+  2026-02-03  8-K       acc:0001744489-26-000022
+  2026-02-02  10-Q      acc:0001744489-26-000019
+  2026-02-02  8-K       acc:0001744489-26-000018
+  2026-01-22  DEF 14A   acc:0001744489-26-000013
+  2025-12-09  8-K       acc:0001744489-25-000159
+  2025-11-13  10-K      acc:0001744489-25-000155
+
+## Key financials (latest annual, XBRL)
+  Revenues                  $94.42B   (FY end 2025-09-27)
+  NetIncome                 $12.40B   (FY end 2025-09-27)
+  Assets                   $197.51B   (FY end 2025-09-27)
+  Equity                   $109.87B   (FY end 2025-09-27)
+  OperatingCashFlow         $18.10B   (FY end 2025-09-27)

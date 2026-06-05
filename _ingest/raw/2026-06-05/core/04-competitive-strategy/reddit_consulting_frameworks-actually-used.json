@@ -1,0 +1,79 @@
+[
+  {
+    "sub": "consulting",
+    "title": "How I helped creators and small agencies fix their KPI chaos",
+    "url": "https://reddit.com/r/consulting/comments/1txnm8q/how_i_helped_creators_and_small_agencies_fix/",
+    "ups": 0,
+    "comments": 5,
+    "created_utc": 1780672041.0,
+    "author": "Anglebuilder",
+    "selftext": "Over the last few months I’ve been working with creators and small agencies who all had the same problem: tons of data, zero clarity.\n\n\n\nAds performance, content metrics, sales, retention, campaign results… everything scattered across different sheets and tools. No single source of truth. No clear KPIs. No way to understand what’s actually working.\n\n\n\nI started building automated KPI dashboards in Google Sheets to give them one clean, readable view of their performance. No complex formulas, no endless reports — just the essential metrics that matter.\n\n\n\nWhat surprised me is how common the same mistakes are:\n\n\\- KPIs chosen randomly or without a real framework  \n\n\\- duplicated or inconsistent metrics  \n\n\\- no distinction between leading and lagging indicators  \n\n\\- data not normalized  \n\n\\- everything updated manually  \n\n\n\nI’m still refining the system and would love to hear how other consultants approach KPI design or automation.  \n\nWhat frameworks or tools do you use to keep data consistent across clients?\n\n",
+    "id": "1txnm8q",
+    "signal": 1,
+    "hits": [
+      "manually"
+    ],
+    "passages": [
+      {
+        "phrase": "manually",
+        "text": "metrics  \n\n\\- no distinction between leading and lagging indicators  \n\n\\- data not normalized  \n\n\\- everything updated manually  \n\n\n\nI’m still refining the system and would love to hear how other consultants approach KPI design or automation.  \n\nW"
+      }
+    ]
+  },
+  {
+    "sub": "consulting",
+    "title": "How are you all keeping track of clients? (Solo Consultants)",
+    "url": "https://reddit.com/r/consulting/comments/1tx3606/how_are_you_all_keeping_track_of_clients_solo/",
+    "ups": 32,
+    "comments": 27,
+    "created_utc": 1780613275.0,
+    "author": "Neither_Kale_9355",
+    "selftext": "I’m trying to organize my pipeline. Wondering if I actually need a proper CRM or if a messy spreadsheet is still the way to go for solo consulting. What do you use?",
+    "id": "1tx3606",
+    "signal": 1,
+    "hits": [
+      "spreadsheet"
+    ],
+    "passages": [
+      {
+        "phrase": "spreadsheet",
+        "text": "I’m trying to organize my pipeline. Wondering if I actually need a proper CRM or if a messy spreadsheet is still the way to go for solo consulting. What do you use?"
+      }
+    ]
+  },
+  {
+    "sub": "consulting",
+    "title": "rant: your $250/hr rate is an illusion (do the math on your actual realization rate)",
+    "url": "https://reddit.com/r/consulting/comments/1tt657n/rant_your_250hr_rate_is_an_illusion_do_the_math/",
+    "ups": 0,
+    "comments": 15,
+    "created_utc": 1780258538.0,
+    "author": "Anglebuilder",
+    "selftext": "tbh I used to feel great quoting $250/hr to clients. Then I actually sat down this weekend, pulled my real P&amp;L and capacity data, and almost threw up.\n\nmy actual realization rate is closer to $85/hr. It’s depressing. We’re basically just subsidizing our clients' disorganization with our own unpaid time.\n\nwhere the bleed actually happens:\n\nthe \"quick 15 min sync\". It’s never 15 mins. It’s 10 mins prep, the call itself, and 15 mins of slack follow-ups. do that twice a week for 4 clients and you’re bleeding thousands a month in unbilled capacity.\n\nthe pitch black hole. spending 8 hours on a custom deck for a prospect that might close. if your close rate is 25%, you’re burning insane hours just to land one deal.\n\nthe fixed-retainer trap. you sell a $5k retainer expecting 20 hours of work. client demands endless micro-revisions and suddenly you’re 45 hours deep. your prestigious rate just tanked.\n\nI got so sick of tracking this bs manually that I built a programmatic sheet to just run a clinical margin autopsy on my own ops—cross-referencing real hours vs retainers to instantly flag which clients are toxic.",
+    "id": "1tt657n",
+    "signal": 1,
+    "hits": [
+      "manually"
+    ],
+    "passages": [
+      {
+        "phrase": "manually",
+        "text": "icro-revisions and suddenly you’re 45 hours deep. your prestigious rate just tanked.\n\nI got so sick of tracking this bs manually that I built a programmatic sheet to just run a clinical margin autopsy on my own ops—cross-referencing real hours vs r"
+      }
+    ]
+  },
+  {
+    "sub": "consulting",
+    "title": "What's the best, practical advice you have received about presentations and imposter syndrome in general?",
+    "url": "https://reddit.com/r/consulting/comments/1tubey6/whats_the_best_practical_advice_you_have_received/",
+    "ups": 54,
+    "comments": 31,
+    "created_utc": 1780361210.0,
+    "author": "GeneralOk4956",
+    "selftext": "I have been in consulting for 10+ years now and it is my first job out of college. I genuinely love the people I work with, the delivery part of the work and the constant change this job brings.\n\nAs I’ve progressed, I’m now interacting with more senior stakeholders more frequently and considered the senior people on the team (which I am still trying to get used to) - and it’s brought a new set of challenges I’m actively trying to figure out, especially around presentations and imposter syndrome.\n\nA few things I’ve been experiencing:\n\n**Presenting**  \nI still don’t feel like I’ve found my rhythm. If I wing it, I ramble and miss the points I actually wanted to land. If I prepare too much, I get stuck in my head trying to say everything “right.”  \nSomewhere in the middle is probably the answer…I just haven’t quite cracked the preparation and delivery yet.\n\n**Speaking up in the moment**  \nA couple of factors I am dealing with - English is my second language, I didn’t grow up in a culture where people jump in quickly, I catch myself worrying about how I come across, I don't want to sound \"salesy\", and honestly, writing and speaking didn’t come naturally to me growing up. I’m much better when I have time to process and come back with thoughtful questions - but that doesn’t always work in fast-moving client conversations.\n\nI’m curious - what’s the most practical advice you’ve received (or learned) when it comes to:\n\n* Presenting with clarity and confidence, but most importantly driving discussion\n* Managing imposter syndrome\n* Showing up authentically while still driving sales\n\nWould love to learn from you all!",
+    "id": "1tubey6",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  }
+]

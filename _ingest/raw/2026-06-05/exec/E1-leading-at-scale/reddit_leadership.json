@@ -1,0 +1,404 @@
+[
+  {
+    "sub": "Leadership",
+    "title": "I almost lost my best employee to burnout - manager lessons from I \nlearned from the Huberman Lab &amp; APA",
+    "url": "https://reddit.com/r/Leadership/comments/1nkuzn5/i_almost_lost_my_best_employee_to_burnout_manager/",
+    "ups": 352,
+    "comments": 55,
+    "created_utc": 1758259264.0,
+    "author": "logged_out_7",
+    "selftext": "A few months ago, I noticed one of my top engineers start to drift. They stopped speaking up in standups. Their commits slowed. Their energy just felt… off. I thought maybe they were distracted or just bored. But then they told me: “I don’t think I can do this anymore.” That was the wake-up call. I realized I’d missed all the early signs of burnout. I felt like I failed as a lead. That moment pushed me into a deep dive—reading research papers, listening to podcasts, devouring books, to figure out how to actually spot and prevent burnout before it’s too late. Here’s what I wish every manager knew, backed by real research, not corporate fluff.  \n  \nBurnout isn’t laziness or a vibe. It’s actually been classified by the World Health Organization as an occupational phenomenon with 3 clear signs: emotional exhaustion, depersonalization (a.k.a.cynicism), and reduced efficacy. Psychologist Christina Maslach developed the framework most HR teams use today (the Maslach Burnout Inventory), and it still holds up. You can spot it before it explodes, but only if you know where to look.\n\nFirst, energy drops usually come first. According to ScienceDirect, sleep problems, midday crashes, and the “Sunday Scaries” creeping in earlier are huge flags. One TED Talk by Arianna Huffington even reframed sleep as a success tool, not a luxury. At Google, we now talk about sleep like we talk about uptime.\n\nThen comes the shift in social tone. Cynicism sneaks in. People go camera-off. They stop joking. Stanford’s research on Zoom fatigue shows why this hits harder than you’d think, especially for women and junior folks. It’s not about introversion, it’s about depletion.\n\nQuality drops next. Not always huge errors. Just more rework. More “oops” moments. Studies from Mayo Clinic and others found that chronic stress literally impairs prefrontal cortex function—so decision-making and focus tank. It’s not a motivation issue. It’s a brain function Issue.\n\nOne concept that really stuck with me is the Job Demands Control model. If someone has high demands and low control, burnout skyrockets. So I started asking in 1:1s, “Where do you wish you had more say?” That small question flipped the power dynamic. Another one: the Effort Reward Imbalance theory. If people feel their effort isn’t matched by recognition or growth, they spiral. I now end the week asking, “What’s something you did this week that deserved more credit?” \n\nAfter reading Burnout by the Nagoski sisters, I understood how important it is to close the stress cycle physically. It’s an insanely good read, half psychology, half survival guide. They break down how emotional stress builds up in the body and how most people never release it. I started applying their techniques like shaking off stress post-work (literally dance-breaks lol), and saw results fast. Their Brené Brown interview on this still gives me chills. Also, One colleague put me onto BeFreed, an ai personalized learning app built by a team from Columbia University and Google that turns dense books and research into personalized podcast-style episodes. I was skeptical. But it blends ideas from books like Burnout by Emily and Amelia Nagoski, talks from Andrew Huberman, and Surgeon General frameworks into 10- to 40-minute deep dives. I chose a smoky, sarcastic host voice (think Samantha from Her) and it literally felt like therapy meets Harvard MBA. One episode broke down burnout using Huberman Lab protocols, the Maslach inventory, and Gallup’s 5 burnout drivers, all personalized to me. Genuinely mind-blowing.\n\nAnother game-changer was the Huberman Lab episode on “How to Control Cortisol.” It gave me a practical protocol: morning sunlight, consistent wake time, caffeine after 90 minutes, NSDR every afternoon. Sounds basic, but it rebalanced my stress baseline. Now I share those tactics with my whole team.\n\nI also started listening to Cal Newport’s Slow Productivity approach. He explains how our brains aren’t built for constant sprints. One thing he said stuck: “Focus is a skill. Burnout is what happens when we treat it like a faucet.” This helped me rebuild our work cycles.\n\nFor deeper reflection, I read Dying for a Paycheck by Jeffrey Pfeffer. This book will make you question everything you think you know about work culture. Pfeffer is a Stanford professor and backs every chapter with research on how workplace stress is killing people, literally. It was hard to read but necessary. I cried during chapter 3. It’s the best book I’ve ever read about the silent cost of overwork.\n\nLastly, I check in with this podcast once a week: Modern Wisdom by Chris Williamson. His burnout episode with Johann Hari (author of Lost Connections) reminded me how isolation and meaninglessness are the roots of a lot of mental crashes. That made me rethink how I run team rituals—not just productivity, but belonging.\n\nReading changed how I lead. It gave me language, tools, and frameworks I didn’t get in any manager training. It made me realize how little we actually understand about the human brain, and how much potential we waste by pushing people past their limits.\n\nSo yeah. Read more. Listen more. Get smart about burnout before it costs you your best people.\n\n",
+    "id": "1nkuzn5",
+    "signal": 2,
+    "hits": [
+      "hard to",
+      "i wish"
+    ],
+    "passages": [
+      {
+        "phrase": "hard to",
+        "text": "a Stanford professor and backs every chapter with research on how workplace stress is killing people, literally. It was hard to read but necessary. I cried during chapter 3. It’s the best book I’ve ever read about the silent cost of overwork.\n\nLas"
+      },
+      {
+        "phrase": "i wish",
+        "text": "to podcasts, devouring books, to figure out how to actually spot and prevent burnout before it’s too late. Here’s what I wish every manager knew, backed by real research, not corporate fluff.  \n  \nBurnout isn’t laziness or a vibe. It’s actually"
+      }
+    ]
+  },
+  {
+    "sub": "Leadership",
+    "title": "I’m officially being penalized for being a good manager. Why do I even bother?",
+    "url": "https://reddit.com/r/Leadership/comments/1rrdofa/im_officially_being_penalized_for_being_a_good/",
+    "ups": 317,
+    "comments": 83,
+    "created_utc": 1773280169.0,
+    "author": "SecureTaxi",
+    "selftext": "I’ve hit my breaking point. I lead a solid team, and I’ve always played by the rules: keep expectations clear, document everything, and try to be fair. But the \"merit\" system at my company is a literal joke.\n\nWe were told the baseline is 3% and bonuses are being squeezed. Standard corporate stuff, right? Fine. But here is where it gets infuriating.\n\nI have one report who has been a struggle all year. I didn't PIP him because he finally started showing signs of life in Q4, but he barely hit the \"Met Expectations\" cutoff. In his review, I was honest—I documented where he failed and where he finally improved.\n\nThe result? HR’s system gave him a 10% raise because he was \"underpaid\" according to their market data. Meanwhile, my absolute rockstars—the people carrying the department on their backs—were capped at 4% to 4.5%.\n\nI tried to manually override it to move some of that 10% to my top performers, and the system blocked me. So now, one of lowest performer is my highest-paid employee. I have to look my best people in the eye and tell them there's \"no budget\" while the guy who does the bare minimum just got a windfall.\n\nTo top it off, I have a counterpart (a peer who reports to my boss) who is the king of half-assing. I spend 20% of my week chasing him down or fixing his mistakes just so my team can actually do their jobs. My reward for being \"the reliable one\" is just more work and more stress while the slackers get paid more to do less. Brought it up to my boss but i dont think he has it in him to reprimand the guy.\n\nI’m at the point where I want to quiet quit, but it’s not in my DNA to suck at my job. But honestly? The \"competence penalty\" is real, and it’s exhausting. The system doesn't reward excellence; it rewards being a \"market adjustment\" statistic.\n\nHow do you stay motivated when the math literally tells your best people they aren't worth as much as the guy who almost got fired?",
+    "id": "1rrdofa",
+    "signal": 2,
+    "hits": [
+      "struggle",
+      "manually"
+    ],
+    "passages": [
+      {
+        "phrase": "struggle",
+        "text": "ueezed. Standard corporate stuff, right? Fine. But here is where it gets infuriating.\n\nI have one report who has been a struggle all year. I didn't PIP him because he finally started showing signs of life in Q4, but he barely hit the \"Met Expectati"
+      },
+      {
+        "phrase": "manually",
+        "text": "anwhile, my absolute rockstars—the people carrying the department on their backs—were capped at 4% to 4.5%.\n\nI tried to manually override it to move some of that 10% to my top performers, and the system blocked me. So now, one of lowest performer i"
+      }
+    ]
+  },
+  {
+    "sub": "Leadership",
+    "title": "Are all young employees like this?",
+    "url": "https://reddit.com/r/Leadership/comments/1l5y6ph/are_all_young_employees_like_this/",
+    "ups": 1955,
+    "comments": 681,
+    "created_utc": 1749338772.0,
+    "author": "Super-Tracy-222",
+    "selftext": "What a week I had. I’m in the C-Suite, and I hired an ops support person late last year to help me out. She’s under 30. For reference, we’re a totally remote company. \n\nIn January, I gave her feedback on a spreadsheet that had a ton of issues on it, and she completely shut down. Her body language was angry, she was slumped in her chair, she literally yelled at me, saying that our core values weren’t real and just totally off her rocket. No one was there to witness this, I was completely taken aback. \n\nI talked to my CEO, and we assumed she just must be unhappy in her job. I had to take it on the chin, be the bigger person, and have a reset meeting with her, acknowledging my directness, while she never apologized for her unhinged behavior. \n\nFast forward to last week, I had feedback I needed to give her, but based on last time, I was more prepared. I had it written out, and had asked HR to sit in on the call with me. I let her know via Slack and hour before the call that I was going to be giving her feedback and that I asked HR to be there to ensure she felt supported. \n\nShe declined the meeting. \n\nShe said she needed time to prepare. But she didn’t even know the details of what I wanted to talk to her about. \n\nSo I asked her if we could reschedule for the afternoon. No response. \n\nTwo hours later, I asked her via email to tell me when we can have this call, because I needed to give her this feedback. She replied and requested our CTO be present, as he was involved with this project with her. \n\nI replied, no, that this was a manager led discussion. Sent another meeting invite and she declined again. \n\nI’ll fast forward the story and say that I held strong and did not give her the power to dictate how I give her feedback and with whom, and she put in her notice rather than attend that meeting. \n\nI was floored. Is this a young person thing (I’m 45). I would NEVER decline a scheduled meeting with my boss. I’d never decline a meeting with my boss and HR, I mean, these aren’t options, right?\n\nThis whole thing gave me so much anxiety. It was so entitled and immature. Has anyone else dealt with this ever?\n ",
+    "id": "1l5y6ph",
+    "signal": 1,
+    "hits": [
+      "spreadsheet"
+    ],
+    "passages": [
+      {
+        "phrase": "spreadsheet",
+        "text": "r to help me out. She’s under 30. For reference, we’re a totally remote company. \n\nIn January, I gave her feedback on a spreadsheet that had a ton of issues on it, and she completely shut down. Her body language was angry, she was slumped in her chair"
+      }
+    ]
+  },
+  {
+    "sub": "Leadership",
+    "title": "What makes someone look \"executive\" vs just senior?",
+    "url": "https://reddit.com/r/Leadership/comments/1sqewko/what_makes_someone_look_executive_vs_just_senior/",
+    "ups": 890,
+    "comments": 133,
+    "created_utc": 1776658841.0,
+    "author": "rubyroozer",
+    "selftext": "I've been a Director for about 18 months and I keep hearing feedback that boils down to \"you're great at execution but you need more executive presence.\"\n\nWhich is frustrating because nobody can define what that actually means.\n\nOne person told me it's about \"gravitas.\" Another said it's how you show up in meetings. My skip-level said I need to \"think more strategically\" but when I asked for an example he just said \"you'll know it when you see it.\"\n\nSo I started watching the people in my company who DO get promoted to VP and above. Here's what I noticed:\n\n1. They almost never speak first in a meeting. They let other people talk, then they reframe or connect dots. Makes them look like they're synthesizing instead of reacting.\n\n2. They don't get defensive when someone challenges them. Like, at all. They just say \"good point, let me think about that\" and move on. I definitely don't do this yet.\n\n3. Their emails are weirdly short. No fluff, no over-explaining. Just the decision or the ask. I'm still writing paragraphs.\n\n4. They talk about tradeoffs, not just solutions. \"If we do X, we're deprioritizing Y, and here's why I think that's the right call.\" I usually just pitch the solution.\n\n5. They seem totally comfortable with ambiguity. I hate ambiguity. I want a clear plan. They're fine with \"we'll figure it out as we go.\"\n\nI wanted to see if there was a pattern in how I make decisions under pressure so I took an online work-style test called coached, and yeah, it says I default to \"get it done fast\" over \"make sure everyone's aligned first,\" which probably reads as tactical instead of strategic.\n\nStill not sure if this is actually fixable or if some people just have \"it\" and some don't.\n\nFor people who made the jump to VP or above, what did you actually change about how you operate? Was it a mindset thing or just specific behaviors?",
+    "id": "1sqewko",
+    "signal": 1,
+    "hits": [
+      "frustrating"
+    ],
+    "passages": [
+      {
+        "phrase": "frustrating",
+        "text": "I keep hearing feedback that boils down to \"you're great at execution but you need more executive presence.\"\n\nWhich is frustrating because nobody can define what that actually means.\n\nOne person told me it's about \"gravitas.\" Another said it's how yo"
+      }
+    ]
+  },
+  {
+    "sub": "Leadership",
+    "title": "Intern completed a task assigned to full-time employee because of leaderboard competition — what’s the best way to handle this?",
+    "url": "https://reddit.com/r/Leadership/comments/1np5bc0/intern_completed_a_task_assigned_to_fulltime/",
+    "ups": 811,
+    "comments": 250,
+    "created_utc": 1758696710.0,
+    "author": "ezio313",
+    "selftext": "I’m a team lead, and recently our CEO introduced a leaderboard to track completed tasks. Yesterday, I assigned a documentation task to a full-time employee with a deadline. At 3 AM, an intern messaged me saying he had taken the initiative and already completed it, he went on and assigned the task to themselves on the system and then informed the FTE about it.\n\nNow the full-timer is left out and frustrated, he told me he felt the task was sniped. The intern has the points under his name on the system now. \nHow should I handle ownership of tasks and recognition here? Should the credit go to the assigned person, the intern or what?",
+    "id": "1np5bc0",
+    "signal": 1,
+    "hits": [
+      "frustrated"
+    ],
+    "passages": [
+      {
+        "phrase": "frustrated",
+        "text": "d assigned the task to themselves on the system and then informed the FTE about it.\n\nNow the full-timer is left out and frustrated, he told me he felt the task was sniped. The intern has the points under his name on the system now. \nHow should I hand"
+      }
+    ]
+  },
+  {
+    "sub": "Leadership",
+    "title": "CEO's behavior is disgusting",
+    "url": "https://reddit.com/r/Leadership/comments/1l4o8rf/ceos_behavior_is_disgusting/",
+    "ups": 259,
+    "comments": 135,
+    "created_utc": 1749202538.0,
+    "author": "ms_overthinker",
+    "selftext": "I am a woman and I report directly to the CEO/solo founder. We are a small-ish company, about 100 people, with no investors. The CEO is married man with children. I cannot respect him and it is affecting my work.\n\nHis behavior is misogynistic. Here are some examples.\n\n1. At a recent team building event, the female host joked 3 times about getting a job at our company. Our CEO said every time in response, \"the interview is in my room tonight.\" The host was not happy and said, \"I don't want to hear that.\"\n\n 2. In work meetings, he often uses metaphors that are inappropriate. He will make points by talking about women's lingerie, picking the prettiest girl in the city, or how to make a woman sleep with you.\n\n 3. When he interviewed me for my job, he asked if I was married or getting married soon. He said it would be bad if I got pregnant and took maternity leave right after starting the job.\n\n 4. When there was an issue of sexual harassment between a director (a man) and the office administrator (a woman), he told the woman to pretend to have a boyfriend and post on social media some fake evidence to deter the director – instead of putting some actual accountability on the director. The director is still with the company and one his most favorite employees. \n\n5. He sent a picture of a girl with her cleavage out in a company group chat (i have the screenshot) to make a joke about something work related.\n \nIt is very hard to work for and respect a person who acts this way. Needless to say, I've been here less than a year and already looking for a job so i can finally leave. \n\nAnyone here have a similar, hopeless situation? Misery loves company. ",
+    "id": "1l4o8rf",
+    "signal": 1,
+    "hits": [
+      "hard to"
+    ],
+    "passages": [
+      {
+        "phrase": "hard to",
+        "text": "cleavage out in a company group chat (i have the screenshot) to make a joke about something work related.\n \nIt is very hard to work for and respect a person who acts this way. Needless to say, I've been here less than a year and already looking f"
+      }
+    ]
+  },
+  {
+    "sub": "Leadership",
+    "title": "Cfo wanted to outsource support for $180k savings, i did the math",
+    "url": "https://reddit.com/r/Leadership/comments/1oggnos/cfo_wanted_to_outsource_support_for_180k_savings/",
+    "ups": 3443,
+    "comments": 132,
+    "created_utc": 1761472315.0,
+    "author": "virtuallynudebot",
+    "selftext": "got called into a meeting where cfo proposed outsourcing entire support operation. save $180k yearly on paper. board loved it.\n\nspent two weeks analyzing what that actually meant.\n\nOur team knows product inside out. average resolution 11 hours. outsourced support standard is 24 to 48 hours because they handle 50 products and ours is just one.\n\nwe'd lose all product knowledge. 3 years of learning just gone. rebuilding with new team? 18 months minimum.\n\nTalked to our top 20 customers directly. asked if support quality mattered. 12 said they'd look at alternatives if support got worse.\n\nDid the math. $180k savings becomes $400k loss with churn. outsourcing contract was 18 month commitment so if it went bad we'd be stuck while customers left.\n\npresented to cfo and board. they backed off immediately.\n\nkept my team. still expensive. but kept customers and that's worth more than short term savings.\n\nEdit: thanks everyone! Didn't imagine this would blow up. Quick update: cfo wants the full analysis documented for next time this comes up. So in the meantime we're testing out implicit cloud to streamline some workflows since we still need to show we're cutting costs somewhere, let me know if you would like an update on that. team's relieved at least!",
+    "id": "1oggnos",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "I handed off a project to a new hire, and what happened next surprised me.",
+    "url": "https://reddit.com/r/Leadership/comments/1md6kyd/i_handed_off_a_project_to_a_new_hire_and_what/",
+    "ups": 1850,
+    "comments": 120,
+    "created_utc": 1753882031.0,
+    "author": "KashyapVartika",
+    "selftext": "We hired someone pretty junior for a content marketing role. Bright, but quiet. In the first few weeks, I noticed something: they weren’t asking a lot of questions, no constant check-ins. Just... working.\n\nAt first, I worried. Was I being too hands-off? Should I step in?\n\nBut instead of micromanaging, I decided to try something different. I gave them one clear goal, shared context, and said: “You don’t need to run everything by me, own this. If you need help, ask. Otherwise, it’s yours.”\n\nTwo weeks later, they presented a campaign idea I *wouldn’t have thought of myself*. It was original, tied perfectly to our audience, and honestly, it worked better than some of our ‘seasoned’ efforts.\n\nThat moment reminded me: trust is not something you earn *after* proving yourself. Sometimes, it’s what unlocks your best work.\n\nCurious to hear: Has trusting early ever backfired for you, or paid off? What’s your approach when managing someone new?\n\n",
+    "id": "1md6kyd",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "People don’t quit jobs, they quit bosses.",
+    "url": "https://reddit.com/r/Leadership/comments/1mlpw0w/people_dont_quit_jobs_they_quit_bosses/",
+    "ups": 1357,
+    "comments": 159,
+    "created_utc": 1754747325.0,
+    "author": "Generally_tolerable",
+    "selftext": "\n55f here - I’m late career, former executive. I found a unicorn job; lower level than I held previously but intellectually challenging, well compensated, nice people. I manage a tiny support staff but am primarily an IC. \n\nI have the misfortune of working for the worst manager I have ever encountered in my long career. Most of his behavior seems to stem from deep insecurities about everything. He believes that as long as he can find something to devalue or criticize, he is leading well, but he is deeply sensitive to perceived criticism himself. The result is unrelenting negativity, tension, and psychological maneuvering. It’s distressing and exhausting. \n\nMy financial plans have me working for three more years, although I could conceivably quit now, I don’t want to. It’s not likely I could find another job that suits me at this point in my career.\n\nWhat would you do? Invoke Radical Candor and let the chips fall where they may? (I’m not sure I could endure a tension level higher than it is now) Plan a quiet exit? Muscle through and try to compartmentalize? He’s done some stuff that is HR worthy but that’s never been a viable solution in my experience. I really like this job and my team seems to love me (and appreciate me as a protective layer.)\n\nI’m posting this here because I value the thoughtful responses on this sub - and also if just one person who considers themselves a good leader wonders if this might be a direct report writing about them, it will be worth it. ",
+    "id": "1mlpw0w",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "I realized that you shouldn't lead the same team for too long",
+    "url": "https://reddit.com/r/Leadership/comments/1nx6nwy/i_realized_that_you_shouldnt_lead_the_same_team/",
+    "ups": 1180,
+    "comments": 50,
+    "created_utc": 1759515066.0,
+    "author": "titsdown",
+    "selftext": "I took over an underperforming team a decade ago and immediately started delivering the goods. Prior to me there was a number of people that tried to fix this team and nobody could. Then I performed well every year since and developed a good reputation. \n\nBut... At some point everyone forgot how bad things were before I took over. Now this team's amazing performance is just the norm.\n\nAnd I think I finally understand why I see executives above me moving around all the time. I used to think it was because they were padding their resume, or building a bigger network, or learning new things. And all that might be true, but now I realize there's another huge reason, and it's to remind people how good you are and to never become underappreciated.\n\nI think my goal from here on out will be to take over a new team or department every 4-5 years.",
+    "id": "1nx6nwy",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "One of my top performers almost burned out quietly, and I didn’t see it coming.",
+    "url": "https://reddit.com/r/Leadership/comments/1ltojs0/one_of_my_top_performers_almost_burned_out/",
+    "ups": 734,
+    "comments": 89,
+    "created_utc": 1751875836.0,
+    "author": "KashyapVartika",
+    "selftext": "He was always on time. Always said, “I’ve got it.” Never complained.\n\nI thought he was doing great. But in a 1:1, he told me he was completely drained. Quietly overwhelmed. And when he finally needed help, everyone else was too busy.\n\nThat moment stuck with me.\n\nI realized I’d been praising results, but not checking on limits. I assumed silence meant everything was fine.\n\nSince then, I’ve started asking more than just, “How’s the work going?” Now I ask, “How are *you* doing?” and “When you need support, you can ask for it, right?”\n\nHave you ever missed the signs of burnout on your team? What did you do when you finally saw it?\n\n",
+    "id": "1ltojs0",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "I gave up.",
+    "url": "https://reddit.com/r/Leadership/comments/1mtyp8y/i_gave_up/",
+    "ups": 445,
+    "comments": 91,
+    "created_utc": 1755551499.0,
+    "author": "BAAUfish",
+    "selftext": "Just sharing that I gave up. I have a people-first leadership style that has always worked with every team I've led. Until this job. My boss is micromanaging and punitive. I was candid in our last meeting about not feeling supported, and this morning everything I shared was used against me. So, I resigned. \n\nI'm 58, I've been managing people and teams for 35 years. It's heartbreaking. I hope the good ones on this thread stay - you're needed. I just don't have it in me anymore. \n\nHoping to find something I truly love now. ",
+    "id": "1mtyp8y",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "The one sentence my therapist said that completely changed how I lead",
+    "url": "https://reddit.com/r/Leadership/comments/1l9pzag/the_one_sentence_my_therapist_said_that/",
+    "ups": 419,
+    "comments": 28,
+    "created_utc": 1749743604.0,
+    "author": "Thick_Sorbet_6225",
+    "selftext": "I used to think leadership was about control, controlling outcomes, controlling my image, controlling how others perceived me.\n\nBut behind the scenes, I was riddled with self-doubt. Constantly overthinking, second-guessing decisions, afraid to be seen as anything less than composed.\n\nThen my therapist said something that changed everything:\n\n**Confidence in leadership doesn’t come from knowing all the answers,  it comes from trusting yourself to handle what happens next.**\n\nThat stopped me in my tracks.\n\nBecause truthfully, I’d been waiting to feel confident before I made the big moves. But what if confidence doesn’t come before the decision… what if it grows after you’ve made it?\n\nThat shift in thinking changed the way I show up:\n\n* I stopped pretending I always had the answer and started listening more.\n* I took responsibility without self-judgement.\n* I began making clear, timely decisions, even without perfect data.\n\nAnd something surprising happened: my team became more open, more resilient, more innovative.  \nNot because I was flawless, but because I was real, and grounded, and willing to lead forward without waiting to feel ready.\n\nIf you’re in a position of leadership and find yourself doubting whether you’re enough… maybe confidence isn’t a pre-requisite. Maybe it’s the result of doing the hard things anyway.\n\n**Thoughts?**",
+    "id": "1l9pzag",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "Employers in the tech era have no idea how to measure productivity. That's why they want RTO.",
+    "url": "https://reddit.com/r/Leadership/comments/1mpfzfd/employers_in_the_tech_era_have_no_idea_how_to/",
+    "ups": 374,
+    "comments": 189,
+    "created_utc": 1755117620.0,
+    "author": "tantamle",
+    "selftext": "You often hear remote workers on Reddit say \"As long as I meet my deadlines, it's nobody's business what else I'm doing with my time\".\n\nWhat they aren't telling you is, they let their boss have the impression that a two day project takes ten days (or more). This, along with automation, is the secret sauce for the \"[overemployed](https://securityexecutivecouncil.com/insight/program-best-practices/issue-spotlight-overemployment-1966)\" movement, for example.\n\nTech and automation are a new frontier. 90% of companies have no clue how to estimate how long projects will take. Nor do they understand how to accurately measure productivity outside of bullshit metrics that can be fudged or completely circumvented. That's why they default to RTO. They assume that by being able to monitor employees in the office, they take the 'question mark' of remote work productivity out of the equation.\n\nWith that being said, I don't think RTO will actually help productivity much. Jobs that can be remote should all be remote. But this is the main reason companies want RTO and no one talks about it. That and to some extent the soft layoffs.",
+    "id": "1mpfzfd",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "What harsh truths have you learned working for some senior leaders that's not in books?",
+    "url": "https://reddit.com/r/Leadership/comments/1pquo28/what_harsh_truths_have_you_learned_working_for/",
+    "ups": 344,
+    "comments": 104,
+    "created_utc": 1766174142.0,
+    "author": "sothachbost",
+    "selftext": "I'll go first with some observations on a few human traits I've seen/experienced with leaders:\n\n* Missing budget/targets can immediately put them into reactive mode even though they talk long term strategy\n* Corporate ladder prospects easily cloud judgement and can outweigh doing the right thing \n* There's a high proportion of faking it until making it, particularly in board meetings\n* The better you are at your job, the more leaders lean on you\n* Poor performing team members can get away with far more over long periods than a slightly dipped high performer over a short period",
+    "id": "1pquo28",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "What’s the most underrated leadership skill you’ve discovered?",
+    "url": "https://reddit.com/r/Leadership/comments/1mg5az1/whats_the_most_underrated_leadership_skill_youve/",
+    "ups": 325,
+    "comments": 91,
+    "created_utc": 1754179838.0,
+    "author": "Expert_Nobody2965",
+    "selftext": "When I first stepped into a leadership role, I thought success was about always having answers and speaking up often. That’s what I saw other leaders do, so I copied it.\n\nAfter a while, though, I saw how this backfired. When individuals dominated discussions without meaning to, people stopped sharing ideas as freely, and I believe the best ideas were not share in these meetings.\n\nI decided to be different on purpose: I spoke last for each topic in the team meeting. I just listened, took notes, and only added a question or two when everybody has contributed to the discussion. The discussion was better, the ideas were stronger, and my team left feeling more engaged.\n\nThis experiment, at first, taught me something I didn’t expect: staying quiet at the right time can be a superpower.\n\nWhat about you? What’s a leadership skill you didn’t value at first but now consider essential?",
+    "id": "1mg5az1",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "High performers don’t always make great directors",
+    "url": "https://reddit.com/r/Leadership/comments/1ry2997/high_performers_dont_always_make_great_directors/",
+    "ups": 318,
+    "comments": 48,
+    "created_utc": 1773931286.0,
+    "author": "Mark__1997",
+    "selftext": "I think a lot of people assume the best individual contributors or managers naturally become the best directors. From what I’ve seen, that’s not always the case.\n\nHigh performers tend to be strong at execution. They solve problems quickly and take ownership. That’s what makes them valuable early on.\n\nBut at director level, the value is different. It becomes less about solving the problem yourself and more about setting direction and being accountable for outcomes you don’t directly control. The instinct to jump in and fix things can actually become a liability if it prevents others from stepping up or if it pulls you back into the weeds.\n\nThe people who make that transition well seem to let go of being the best executor and start thinking more in terms of incentives and long term impact.\n\nI believe it’s a different skill set, and not always an obvious one to develop.",
+    "id": "1ry2997",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "Do you have a README file about how to work with you.",
+    "url": "https://reddit.com/r/Leadership/comments/1pcchzm/do_you_have_a_readme_file_about_how_to_work_with/",
+    "ups": 300,
+    "comments": 50,
+    "created_utc": 1764691926.0,
+    "author": "DenizOkcu",
+    "selftext": "Anyone who has worked with me has probably heard those principles way too often 😅\n\nIn the 🇺🇸 people share them even before you meet the person.\n\nIn 🇩🇪 (where I work) not so much. But I like it, and I will continue using mine 😎\n\nI would love to read yours (or your manager's).\n\nHere is mine:\n\n# How to Work With Me\n\n# My Core Principles\n\n# 1. Trust Is Being Paid Upfront\n\nWhen you join my team, you start with my full trust, you don’t need to earn it first. I assume you care, you want to do great work, and you take responsibility. Our relationship starts from that foundation, and we build from there.\n\n# 2. Bias Toward Action\n\nProgress beats perfection. When something is unclear, take a small step. Build something, test something, draft something, momentum creates clarity.\n\n# 3. Always Assume Positive Intent\n\nConfusion comes from missing context, not bad intentions. If something feels off, start with curiosity. Ask questions. Seek understanding first. I’ll always do the same with you.\n\n# What I Value Most: Ownership\n\nThe strongest people I’ve worked with all have a deep sense of ownership. To me, that means:\n\n* Taking initiative without waiting to be asked.\n* Actively understanding how your work supports the team’s goals.\n* Prioritizing the team win over the personal win.\n* Making decisions that connect customer value with sustainable revenue.\n\nGreat work is impactful work, not just completed tasks.\n\n# How I Make Decisions\n\n* I optimize for good decisions made at the right time.\n* Reflection should focus on what we knew then, not what we know now.\n* Failures are part of learning, and learning is non‑negotiable.\n\nI’d rather we try something, learn from it, and iterate, than stay stuck discussing possibilities.\n\n# Feedback: Giving and Receiving\n\nI value honest, thoughtful feedback. If something I do doesn’t work for you or for the team, please tell me. If saying it directly feels uncomfortable, share it in a way that works for you, including through someone else.\n\nFeedback helps us all grow. Silence doesn’t.\n\n# What I Expect From You\n\n* Manage your manager, tell me what you need.\n* If you want something, ask. The worst answer you’ll get is “let’s discuss it later.”\n* Communicate clearly and make your impact visible.\n* Bring passion, curiosity, and initiative.\n* When you see a problem, come with options or approaches.\n* Don’t get discouraged if your idea isn’t chosen. One great idea will outweigh many that weren’t picked.\n\n# What You Can Expect From Me\n\n* I will support you, unblock you, and give you space to grow.\n* I will be transparent in my reasoning and decision-making.\n* I will give you context and trust you with autonomy from the start.\n* I will create an environment where you can do great work and take ownership confidently.\n\n# Final Thought\n\nOur best work happens when we move with intention, take ownership, assume positive intent, and stay focused on creating real value. My job is to help you do the best work of your career, and your job is to tell me what you need to get there.\n\nEdit: replaced link with content to prevent self-promotion",
+    "id": "1pcchzm",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "One of my reports refuses to join 1:1s, says we talk daily. How to i handle this?",
+    "url": "https://reddit.com/r/Leadership/comments/1n5cktf/one_of_my_reports_refuses_to_join_11s_says_we/",
+    "ups": 305,
+    "comments": 233,
+    "created_utc": 1756692578.0,
+    "author": "[deleted]",
+    "selftext": "He has one skip and weekly meetings with our onsite guy. He says my meeting is redundant because the onsite is where all the work is shared rendering mine \"useless\". Note that he was a colleague who is now reporting to me.",
+    "id": "1n5cktf",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "Some people aren't quiet in meetings because they have nothing to say, they're running an internal cost analysis on whether their contribution will be remembered as insight or remembered as the moment they spoke too much",
+    "url": "https://reddit.com/r/Leadership/comments/1t21p6p/some_people_arent_quiet_in_meetings_because_they/",
+    "ups": 288,
+    "comments": 47,
+    "created_utc": 1777755703.0,
+    "author": "Awwwwolf",
+    "selftext": "What do you think? i have seen this in person.",
+    "id": "1t21p6p",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "I analysed 247 CEO interviews from the world's largest wealth fund. Here are the 3 traits that actually separate elite leaders from the rest.",
+    "url": "https://reddit.com/r/Leadership/comments/1t0sgns/i_analysed_247_ceo_interviews_from_the_worlds/",
+    "ups": 282,
+    "comments": 44,
+    "created_utc": 1777639646.0,
+    "author": "Johanngross",
+    "selftext": "Nicolai Tangen (CEO of Norway’s $1.6T wealth fund) recently joked that sitting down with 200+ of the world’s top CEOs still hadn't made him a good listener.\n\nThat joke got me thinking: what if we could actually \"listen\" to all that data at scale?\n\nI decided to pull the transcripts from 247 episodes of his *In Good Company* podcast. I ran the text through a custom data workflow to cross-reference them and strip away the corporate PR. I wanted to find the actual, repeatable DNA that connects the world’s most successful organizations.\n\nI recently compiled all the findings into a book, but the core of what makes these leaders successful comes down to three very specific, recurring themes:\n\n**1. High-Agency Leadership (The Anti-Bureaucracy)**  \nThe most common thread among leaders is extreme \"high agency.\" They do not accept the premise of \"that's just how the industry works.\" When confronted with a roadblock, they don't ask *if* it can be solved; they ask *how*. More importantly, they ruthlessly flatten their own corporate hierarchies, so this mindset trickles down. They want decisions made by the people closest to the problem, not by committees.\n\n**2. Speed as a Defensible Moat**  \nPerfect is the enemy of compounding. In rapidly changing environments, the best organizations prioritize velocity over absolute precision. Elite leaders operate on the framework that it is better to decide with 70% of the information and course-correct later, rather than wait for 100% certainty and lose the opportunity entirely. Speed itself becomes their competitive advantage.\n\n**3. Culture is exactly what you tolerate**  \nAcross 247 interviews, one thing became clear: culture is not a mission statement on a wall. Culture is defined by who gets promoted, who gets fired, and what behaviors are allowed to slide during a crisis. Elite leaders know that if you tolerate a brilliant jerk, your culture is toxic, no matter what your HR handbook says. They are fiercely protective of who they let into the building.\n\nI was honestly surprised by how well the patterns held up across hundreds of conversations. Hope some of it is useful here.",
+    "id": "1t0sgns",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "Delivering HARD news",
+    "url": "https://reddit.com/r/Leadership/comments/1lr0zyz/delivering_hard_news/",
+    "ups": 277,
+    "comments": 49,
+    "created_utc": 1751577022.0,
+    "author": "Wonderful-Ad-6830",
+    "selftext": "This morning, I had to tell my team about the very unexpected death of a coworker. Forget budget cuts, RIFs, whatever. This is the hardest conversation I've ever had to have at work. Everything happened so fast and they didn't even know the coworker was ill. \n\nWe're all remote today due to tomorrow being a holiday so immediately told them no cameras required bc I knew I wouldn't be able to get through it without breaking down. \n\nIdk. I guess that's all I have to say. I'm just in shock still and have no idea how to process any of this. And it feels so cold and heartless when I immediately have to assign backup because we're in the middle of some major work and this person was an important lead. \n\nGood thing we all have a 3 day weekend to decompress. ",
+    "id": "1lr0zyz",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "What makes you think someone will go far (VP and above)",
+    "url": "https://reddit.com/r/Leadership/comments/1qm0bwt/what_makes_you_think_someone_will_go_far_vp_and/",
+    "ups": 273,
+    "comments": 96,
+    "created_utc": 1769292066.0,
+    "author": "AAAPAMA",
+    "selftext": "Have you ever come across someone at work and thought yourself “wow this person will be very successful in their careers?” And then later on you search them up again and they did (VP and above)? What qualities did they have?",
+    "id": "1qm0bwt",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "The most effective leaders I've worked with all shared one trait — they said what they actually meant",
+    "url": "https://reddit.com/r/Leadership/comments/1te6tf3/the_most_effective_leaders_ive_worked_with_all/",
+    "ups": 246,
+    "comments": 35,
+    "created_utc": 1778873925.0,
+    "author": "rwilkinson77",
+    "selftext": "In my experience the leaders who build the strongest teams are never the ones who manage feelings and smooth everything over. They're the ones who give direct feedback, have hard conversations early, and create cultures where honest communication is expected rather than punished.\n\nThe irony is that this gets mistaken for being harsh when it's actually the most respectful thing you can do for your team. What's your experience — do the best leaders you've encountered tend toward directness or diplomacy?",
+    "id": "1te6tf3",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "Leadership",
+    "title": "Do you think visible physical fitness is a benefit as a leader?",
+    "url": "https://reddit.com/r/Leadership/comments/1rbhabe/do_you_think_visible_physical_fitness_is_a/",
+    "ups": 235,
+    "comments": 98,
+    "created_utc": 1771751583.0,
+    "author": "Specific-Pomelo-6077",
+    "selftext": "Half of the upper leaders in my workplace are visibly physically fit, and their sporting achievements are well know - marathons, ultramarathons, ironmans, international sporting competitions. But it's half, the other half don't need to do this to be seen as competent leaders. But I do wonder if people subconsciously respect athletic people, or if it gives them a halo effect in some way. \n\n  \nI would also be interested in the difference between how it's perceived as a female vs. a male leader. For example, having an athletic body as a male is respected by male employees, but having an athletic body as a female means more likely to have employees sexualising you, or attracts other inappropriate behaviour. ",
+    "id": "1rbhabe",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  }
+]

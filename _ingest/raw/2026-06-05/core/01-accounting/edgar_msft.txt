@@ -1,0 +1,25 @@
+# MICROSOFT CORP  (CIK 789019)
+  SIC: Services-Prepackaged Software  ·  Exchange: Nasdaq
+
+## Recent key filings
+  2026-06-05  8-K       acc:0001193125-26-258667
+  2026-05-14  8-K       acc:0001193125-26-224155
+  2026-04-29  10-Q      acc:0001193125-26-191507
+  2026-04-29  8-K       acc:0001193125-26-191457
+  2026-01-28  10-Q      acc:0001193125-26-027207
+  2026-01-28  8-K       acc:0001193125-26-027198
+  2025-12-08  8-K       acc:0001193125-25-311196
+  2025-10-29  10-Q      acc:0001193125-25-256321
+  2025-10-29  8-K       acc:0001193125-25-256310
+  2025-10-21  DEF 14A   acc:0001193125-25-245150
+  2025-09-30  8-K       acc:0001193125-25-225125
+  2025-07-30  10-K      acc:0000950170-25-100235
+
+## Key financials (latest annual, XBRL)
+  Revenues                 $281.72B   (FY end 2025-06-30)
+  NetIncome                $101.83B   (FY end 2025-06-30)
+  Assets                   $619.00B   (FY end 2025-06-30)
+  Liabilities              $275.52B   (FY end 2025-06-30)
+  Equity                   $343.48B   (FY end 2025-06-30)
+  OperatingCashFlow        $136.16B   (FY end 2025-06-30)
+  GrossProfit              $193.89B   (FY end 2025-06-30)

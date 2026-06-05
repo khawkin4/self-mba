@@ -1,0 +1,25 @@
+# NETFLIX INC  (CIK 1065280)
+  SIC: Services-Video Tape Rental  ·  Exchange: Nasdaq
+
+## Recent key filings
+  2026-04-23  8-K       acc:0001065280-26-000139
+  2026-04-17  10-Q      acc:0001065280-26-000138
+  2026-04-16  DEF 14A   acc:0001193125-26-159286
+  2026-04-16  8-K       acc:0001065280-26-000137
+  2026-02-27  8-K       acc:0001193125-26-082247
+  2026-01-23  10-K      acc:0001065280-26-000034
+  2026-01-20  8-K       acc:0001065280-26-000033
+  2026-01-20  8-K       acc:0001193125-26-015951
+  2025-12-22  8-K       acc:0001193125-25-327462
+  2025-12-05  8-K       acc:0001193125-25-308651
+  2025-11-14  8-K       acc:0001065280-25-000450
+  2025-11-04  8-K       acc:0001065280-25-000408
+
+## Key financials (latest annual, XBRL)
+  Revenues                  $45.18B   (FY end 2025-12-31)
+  NetIncome                 $10.98B   (FY end 2025-12-31)
+  Assets                    $55.60B   (FY end 2025-12-31)
+  Liabilities               $28.98B   (FY end 2025-12-31)
+  Equity                    $26.62B   (FY end 2025-12-31)
+  OperatingCashFlow         $10.15B   (FY end 2025-12-31)
+  GrossProfit                $2.48B   (FY end 2020-12-31)

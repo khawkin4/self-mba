@@ -1,0 +1,433 @@
+[
+  {
+    "sub": "analytics",
+    "title": "Please read this if you are thinking of becoming data analyst...",
+    "url": "https://reddit.com/r/analytics/comments/1oj4j9r/please_read_this_if_you_are_thinking_of_becoming/",
+    "ups": 388,
+    "comments": 102,
+    "created_utc": 1761744509.0,
+    "author": "Physical-Hedgehog-80",
+    "selftext": "FIRSTLY I want to preface this by saying this is going to be a bit of a rant - a lot of what I'm saying has already been said on this sub but I just want to get some things off my chest.\n\nDon't get me wrong, there are perks to being a DA, especially early career.  Depending on how you play it you can have the flexibility to jump into various different career paths : data science, SWE, data engineer etc. I also love how it gives you opportunities to bridge the gap between stakeholders and tech.\n\nI've been working at my current company for a year and a half and while I am grateful I have a job given the current job market there are a few things that are REALLY weighing on me a lot:\n\n**1. Be wary!!** **Data Analyst = Excel/Dashboard Jockey (sometimes)**\n\nSo much of my workload is QAing spreadsheets\\*\\*,\\*\\* adhoc mindless data requests, updating PowerPoints and fixing dashboards.  It's reached a point where sometimes I want to scream, leave my job and become a plumber or elevator technician (which apparently aren't bad options according to reddit).\n\nI'm looking for other data analyst positions and I see a lot of other \"senior\" positions that are exactly the same responsibilities.  I've learned to ALWAYS ask about the job requirements in detail and in person, so many data analyst positions are not what they seem.\n\n**2. It's easy to fall behind the technology curve**\n\nThe staple DA tech stack would be SQL, Power BI and maybe some cloud.  You may get some opportunities to branch out but I look at friends in DS or SWE who are constantly picking up new skills in ML/Model Building etc. and it feels like I'm falling behind.\n\nA big part of this is that my company outsource a lot of technical work externally and I've found it really hard to get involved in anything more technical than building a Power BI dashboard.  ***Beware of companies that outsource all/most of their technical work because you will have limited progression!!***\n\n**3. People don't want data analysis, even when they need it**\n\nFrom my experience a lot of companies are not interested in seeing the bigger picture.  They have their KPIs which they want to meet and they are only really interested in those metrics.  You could build a state of the art model that gives a holistic view into your company's performance and models future strategies that will save millions but senior leadership will not be interested because it is not a dashboard visual of 5 to 10 KPIs that they need to meet by the end of the year.  It's this tunnel vision that drives me crazy sometimes.\n\nOK rant over. I realise a lot of these points are related to company culture and will vary from job to job, honestly I hope a lot of people have had a different experience working as a data analyst!  If so please do share.",
+    "id": "1oj4j9r",
+    "signal": 3,
+    "hits": [
+      "really hard",
+      "hard to",
+      "spreadsheet"
+    ],
+    "passages": [
+      {
+        "phrase": "really hard",
+        "text": "m falling behind.\n\nA big part of this is that my company outsource a lot of technical work externally and I've found it really hard to get involved in anything more technical than building a Power BI dashboard.  ***Beware of companies that outsource a"
+      },
+      {
+        "phrase": "hard to",
+        "text": "ng behind.\n\nA big part of this is that my company outsource a lot of technical work externally and I've found it really hard to get involved in anything more technical than building a Power BI dashboard.  ***Beware of companies that outsource all/"
+      },
+      {
+        "phrase": "spreadsheet",
+        "text": "g on me a lot:\n\n**1. Be wary!!** **Data Analyst = Excel/Dashboard Jockey (sometimes)**\n\nSo much of my workload is QAing spreadsheets\\*\\*,\\*\\* adhoc mindless data requests, updating PowerPoints and fixing dashboards.  It's reached a point where sometim"
+      }
+    ]
+  },
+  {
+    "sub": "analytics",
+    "title": "If you're considering a career in analytics: Go big or go home!",
+    "url": "https://reddit.com/r/analytics/comments/1nushh3/if_youre_considering_a_career_in_analytics_go_big/",
+    "ups": 378,
+    "comments": 101,
+    "created_utc": 1759274441.0,
+    "author": "[deleted]",
+    "selftext": "As someone who has been in a perpetual state of pursuing data analytics as a career since 2014, here is my honest, bleak, and unadulterated opinion on the prospects in this field.\n\nIf you think that data analytics will be anything like what you learned in a Google certification program or bootcamp, think again. Being a data analyst is no longer exclusively about providing insights through dashboards or reports. Companies seemingly want someone who understands the full tech stack backwards and forwards and who has deep understanding of ETLs, building pipelines, data architecture, etc. Basically they all want a data engineer who can also do the dashboards and reports.\n\nUnlike other career fields that have a natural progression from junior to senior level roles, the career ladder in data analytics is all but flat these days. Unless you're a data engineer or data scientist who does it all, you're going to struggle finding employment as a run of the mill DA or BI analyst who focuses on reports and dashboards. Those jobs don't really exist anymore as many companies want someone who apparently does everything. The field has been largely consolidated and frankly I don't think we're ever going back, especially with the advent of AI.\n\nUnless you go work for a company that capitalizes off user data and generates revenue from the data, you're likely always going to work on a skeleton crew where you're the only one doing what you do, and treated like a luxury item that most companies don't have the budget for. When times are good, the field may be thriving. But as soon as times get tough, DA teams are usually one of the first orgs to be cut. You will spend most of your time competing for scrap resources with other teams and trying to validate your existence.  Validating the reason for my being has been 95% of my job working as a data/BI analyst.\n\nEveryone wants you to be a master of their DA platforms but managers are hesitant to take chances on you if you did similar work elsewhere on a different platform. In other words, good luck crossing over if your last platform was Tableau but the company you're applying to exclusively uses Microsoft and PowerBI.  Perhaps one of the most frustrating aspects of this field is that everyone uses different tools, but hiring managers don't think you're smart enough or clever enough to figure out *their* tools.  I run into this issue SO BLEEPING MUCH!\n\nIn good faith, I can no longer recommend this field due to the lackluster career prospects it offers in relation to other fields. If you like numbers and data, but want stability and an actual career path that provides opportunities for career growth, I would personally point you towards something like accounting or finance. There will be ample jobs at most organizations in either of these areas, and there are actual career paths that one can work their way up by gaining more experience and/or additional credentials.  This is sadly not the case for most DA roles I've held in the past.\n\nGood luck!",
+    "id": "1nushh3",
+    "signal": 2,
+    "hits": [
+      "frustrating",
+      "struggle"
+    ],
+    "passages": [
+      {
+        "phrase": "frustrating",
+        "text": "latform was Tableau but the company you're applying to exclusively uses Microsoft and PowerBI.  Perhaps one of the most frustrating aspects of this field is that everyone uses different tools, but hiring managers don't think you're smart enough or cle"
+      },
+      {
+        "phrase": "struggle",
+        "text": "analytics is all but flat these days. Unless you're a data engineer or data scientist who does it all, you're going to struggle finding employment as a run of the mill DA or BI analyst who focuses on reports and dashboards. Those jobs don't really"
+      }
+    ]
+  },
+  {
+    "sub": "analytics",
+    "title": "Client pulling the plug, moving it all to Claude",
+    "url": "https://reddit.com/r/analytics/comments/1s9vluq/client_pulling_the_plug_moving_it_all_to_claude/",
+    "ups": 322,
+    "comments": 128,
+    "created_utc": 1775073609.0,
+    "author": "datawazo",
+    "selftext": "I've run a small analytics agency since 2017. Primarily in the database layer (organizing, cleaning prepping data) and then shipping it to PBI and Tableau for dashboards. \n\nMet with one of my favorite clients today for our weekly and he said he doesn't want to talk about PowerBI - he wanted to show me everything he's built himself in Claude. \n\n  \nWhat followed was an hour demo of - more or less - how he was planning on replacing us with this Claude Cowork pipeline. \n\nLuckily they are good people, and they like us, the conversation was along the lines of \n\n\"How can you support us transitioning in this direction\". \n\nIt just have easily could have been \"bye felicia\". \n\nBut man - what a wakeup call. I spent the next hour on the treadmill, crafting my advice.\n\nTheir plan was to have Claude sit directly on top of an ETL tool (won't name names, there are many options for this). They could ask it any question they wanted, AI would go to the tool, pull in the right data and answer the question. They'd even set it up to write to specific google sheets too. It was impressive. \n\nBut risky. Here were my bullets back. \n\n1. Traceability - when (not if) something goes wrong, how can you find it, and how easy is it to fix. It's a black box you don't have access to. Troubleshooting it is near impossible.\n\n2. Consistency - factoring just human nature aside, asking the exact same question on different days could lead to different results. Based on algorithm changes (infrequent but they happen) or based on existing/new context in a chat. It's really hard to guarantee consistency with AI. Try it yourself ask a question today, interact with the chat and ask the same question tomorrow, is the output identical? \n\n3. KPI definitions - you ask it for conversions from google ads. Does it know what a conversion is? Does it know how to calculate net sales? And tying to above, will it be the same twice?\n\nA few other things too like privacy and token usage. My suggestion was to do the ETL into BigQuery, then create a curated dbt layer with all the logic, proper naming, agreed kpi definitions, and condensed data in there. And then have Claude sit on top of that instead.\n\nIdk, we'll see where it goes. Eye opening day where, basically what I knew as always coming, came. ",
+    "id": "1s9vluq",
+    "signal": 2,
+    "hits": [
+      "really hard",
+      "hard to"
+    ],
+    "passages": [
+      {
+        "phrase": "really hard",
+        "text": "erent results. Based on algorithm changes (infrequent but they happen) or based on existing/new context in a chat. It's really hard to guarantee consistency with AI. Try it yourself ask a question today, interact with the chat and ask the same questio"
+      },
+      {
+        "phrase": "hard to",
+        "text": "esults. Based on algorithm changes (infrequent but they happen) or based on existing/new context in a chat. It's really hard to guarantee consistency with AI. Try it yourself ask a question today, interact with the chat and ask the same question t"
+      }
+    ]
+  },
+  {
+    "sub": "analytics",
+    "title": "Does anyone ever get tired of working with the \"offshore\" team?",
+    "url": "https://reddit.com/r/analytics/comments/1swknnq/does_anyone_ever_get_tired_of_working_with_the/",
+    "ups": 273,
+    "comments": 73,
+    "created_utc": 1777240094.0,
+    "author": "Juicymoosie99",
+    "selftext": "At my current company, the offshore team is a group of like six associates that we can barely understand, and we offloaded a huge amount of our labor to them. Running certain reports, doing operational tasks, things like that. This used to be handled by junior analysts that we were hiring straight out of college and training and mentoring to be the future of our company. But that no longer happens anymore! Now, whenever we need help, just give it to the offshore team and manage them as if you are a project manager for a group of people that are paid very little, and managing a huge amount of responsibilities that you have almost no oversight on \n\nIt's really tough, honestly, because you have no room to push back and leadership does not care what you think, no matter how many times they pretend that they do. We all put on our feedback surveys, associate voice surveys, that we want to hire more people and have more people on shore that we can rely on and trust, they just don't care. \n\nThe reason it bothers me so much is because it's really hard to have reliable analytics and motivate a team that doesn't even work for you or your company. They are just a bunch of contractors who are contracted to do basically maintenance mode tasks, the very bare minimum, and if they are not doing what they are supposed to do, the most you can do is have a conversation with them and try to motivate them to do it the right way. But other than that it's like dancing around with your hands tied. \n\nOne of my close colleagues works for Comcast and they have a huge India office now, after offshoring thousands of people. Analysts, data scientists data engineers everything. It sucks so damn much. Those people are the most incompetent unmotivated associates ever, they just seem to not have any interest in reporting on the right data and he tells me constantly how unbelievably unmotivated they are no matter what you do. The data is just wrong half the time and it feels defeating to be mentally invested in that when you have nothing that you can possibly do to make things better",
+    "id": "1swknnq",
+    "signal": 2,
+    "hits": [
+      "really hard",
+      "hard to"
+    ],
+    "passages": [
+      {
+        "phrase": "really hard",
+        "text": "people on shore that we can rely on and trust, they just don't care. \n\nThe reason it bothers me so much is because it's really hard to have reliable analytics and motivate a team that doesn't even work for you or your company. They are just a bunch of"
+      },
+      {
+        "phrase": "hard to",
+        "text": "on shore that we can rely on and trust, they just don't care. \n\nThe reason it bothers me so much is because it's really hard to have reliable analytics and motivate a team that doesn't even work for you or your company. They are just a bunch of co"
+      }
+    ]
+  },
+  {
+    "sub": "analytics",
+    "title": "How do you approach large-scale text analysis when results must be GDPR-safe?",
+    "url": "https://reddit.com/r/analytics/comments/1poaw59/how_do_you_approach_largescale_text_analysis_when/",
+    "ups": 832,
+    "comments": 7,
+    "created_utc": 1765912757.0,
+    "author": "Agile-Suit2937",
+    "selftext": "I’m interested in how people here handle large volumes of open-ended text (surveys, feedback, qualitative data) when privacy and compliance actually matter.\n\nMany LLM-based pipelines are fast, but in practice I’ve seen teams struggle with anonymization, reproducibility, explainability, and EU/GDPR constraints, especially when results are shared with non-technical stakeholders.\n\nWhat approaches have worked for you?\n\nCustom NLP pipelines, prompt-based workflows, hybrid rule + ML systems, or something else?",
+    "id": "1poaw59",
+    "signal": 1,
+    "hits": [
+      "struggle"
+    ],
+    "passages": [
+      {
+        "phrase": "struggle",
+        "text": "data) when privacy and compliance actually matter.\n\nMany LLM-based pipelines are fast, but in practice I’ve seen teams struggle with anonymization, reproducibility, explainability, and EU/GDPR constraints, especially when results are shared with n"
+      }
+    ]
+  },
+  {
+    "sub": "analytics",
+    "title": "I miss my junior days as an analyst…",
+    "url": "https://reddit.com/r/analytics/comments/1m7rsn4/i_miss_my_junior_days_as_an_analyst/",
+    "ups": 624,
+    "comments": 65,
+    "created_utc": 1753321929.0,
+    "author": "SerpantDildo",
+    "selftext": "Back when I was an individual contributor, things were simple. I opened my laptop, drank my monster energy, and dove into a dashboard. My biggest challenge was figuring out why the campaign table had 14 different definitions of “spend.” Life was beautiful.\n\nNow I spend most of my time managing “stakeholder expectations,” navigating the political landscape like I’m playing 4D chess with people who’ve never opened a dashboard but have strong opinions about color palettes and KPI definitions.\n\nI used to optimize media mix models. Now I optimize the wording in Teams messages so I don’t step on toes.\nI used to A/B test landing pages. Now I A/B test how direct I can be in a meeting without someone getting concerned about my tone.\nI used to ask “What does the data say?” Now I ask, “how are we going to bs the talking points this week”\n\nSure, I make more money now. I have a nicer title, I’m in meetings with leadership, and my calendar is a Tetris board of strategy sessions, alignment check-ins, and recurring “quick syncs” that never end quickly.\nBut I don’t touch data anymore. My brain doesn’t light up solving a tough query. It flickers nervously trying to remember which VP is quietly feuding with which other VP.\n\nSomewhere along the way, the craft got buried under the politics.\nAnd yes, I chose this path. I wanted to grow. But I can’t help missing the days when I had zeal. When I opened up a Jupyter notebook and felt excitement, not existential dread.\n\nNow I just forward emails and write one-pagers with sentences like “We’re working cross-functionally to ladder insights up to the business goals.”\n\nGod help me.\n\nAnyone else feeling this?",
+    "id": "1m7rsn4",
+    "signal": 1,
+    "hits": [
+      "biggest challenge"
+    ],
+    "passages": [
+      {
+        "phrase": "biggest challenge",
+        "text": "individual contributor, things were simple. I opened my laptop, drank my monster energy, and dove into a dashboard. My biggest challenge was figuring out why the campaign table had 14 different definitions of “spend.” Life was beautiful.\n\nNow I spend most"
+      }
+    ]
+  },
+  {
+    "sub": "analytics",
+    "title": "ceo cancels BI tooling, replaces it with AI, breaks everything",
+    "url": "https://reddit.com/r/analytics/comments/1sqwb5l/ceo_cancels_bi_tooling_replaces_it_with_ai_breaks/",
+    "ups": 446,
+    "comments": 85,
+    "created_utc": 1776706492.0,
+    "author": "nickvaliotti",
+    "selftext": "so i watched this happen with a client a coupla months ago. they had their dashboards in metabase, he cancelled &gt; handed the team claude &gt; \"dashboards are a waste and just go and ask ai\". as you can guess he then called me saying he thinks he broke sth. \n\nsales vp was pulling numbers and surprise surprise they didnt match with finance. obvi, there were a couple different definitions for \"active customer\" too. claude (with all my love to the tool) was hallucinating  retention figures because the underlying tables hadn't been cleaned since 2022. cherry on top data team spent their days explaining why the AI was wrong instead of actually building anything\n\nmy fav part is that claude worked exactly as designed. and poor metabase wasn't the bottleneck. all along it was the only thing forcing the company to have a conversation about metric definitions...\n\nheard almost the same story from another data consultant last week. different company, same swap, same outcome\n\nis this becoming a pattern or if we just both got unlucky clients?",
+    "id": "1sqwb5l",
+    "signal": 1,
+    "hits": [
+      "bottleneck"
+    ],
+    "passages": [
+      {
+        "phrase": "bottleneck",
+        "text": "tead of actually building anything\n\nmy fav part is that claude worked exactly as designed. and poor metabase wasn't the bottleneck. all along it was the only thing forcing the company to have a conversation about metric definitions...\n\nheard almost t"
+      }
+    ]
+  },
+  {
+    "sub": "analytics",
+    "title": "The biggest lie in data is the \"single source of truth\"",
+    "url": "https://reddit.com/r/analytics/comments/1ofx66j/the_biggest_lie_in_data_is_the_single_source_of/",
+    "ups": 196,
+    "comments": 83,
+    "created_utc": 1761412845.0,
+    "author": "writeafilthysong",
+    "selftext": "This is my own hot take that mirrors my struggles and experience.\n\nIs there a bigger lie in data or consulting than the DW companies promising that there is a \"single source of truth\" for data?\n\n1. The statement is a logical fallacy, a single source cannot give an objective truth.\n2. There is no way to capture all relevant data, there's always going to be something missing (important or otherwise). Any analysis has bias.\n3. System complexity will always create compound errors, as will time.\n4. Humans interpret things differently no matter what.\n\nAnyone have another maxim or mantra that they disagree with?\n\nTell me why I'm wrong.\n\n\n",
+    "id": "1ofx66j",
+    "signal": 1,
+    "hits": [
+      "struggle"
+    ],
+    "passages": [
+      {
+        "phrase": "struggle",
+        "text": "This is my own hot take that mirrors my struggles and experience.\n\nIs there a bigger lie in data or consulting than the DW companies promising that there is a \"single s"
+      }
+    ]
+  },
+  {
+    "sub": "analytics",
+    "title": "I went from Data Analyst to Head of Data in 4 years. AMA.",
+    "url": "https://reddit.com/r/analytics/comments/1mj8t3v/i_went_from_data_analyst_to_head_of_data_in_4/",
+    "ups": 835,
+    "comments": 150,
+    "created_utc": 1754496477.0,
+    "author": "InternationalStaff43",
+    "selftext": "For context, I quit my consulting job with nothing lined up about 5 years ago. The only skills I had from that role were SQL, Tableau, and some company-specific applications. I met a guy out in New York who was the CEO of a fast-growing startup and asked if he needed a data guy. I flew in for 5 in-person interviews and got the job. I used my SQL and Tableau skills, added Python and Excel, and was promoted to Lead Data Analyst after 1 year and more recently to Head of Data after making some large contributions to the company’s culture and top line.\n\nWe were acquired by our top investor group and now I mostly do data analyst mentoring on the side. I’ve seen countless mistakes that people make both in the application process and after being hired.  I’d love to answer some questions for you all!\n\nEDIT: Lots of great questions here, so I'll share some of my high-level answers. Hope they help!\n\nApplication Process:\n1. Email the hiring manager directly after submitting your application. You can find their email on RocketReach.\n\n2. Think about how you can contribute to the company before you join. What does their data team likely do all day? Come up with ways you can help and share them with the hiring manager.\n\n3. Have numbers on your resume. Even if they're estimates, include them. Hiring managers want to see A) you made an impact and B) that you understand true impact is quantifiable.\n\n4. Practice your interview answers but do NOT memorize them. Allow yourself to be genuine in the moment. Use AI apps like Vocal Image to improve your communication skills if needed. The goal is to speak at a steady pace while enunciating, making eye contact, smiling, projecting, and breathing. When in doubt: SLOW. DOWN. \n\n5. See if you can connect with a recruiter, tell them your story and skillset, and have them share your resume with their clients. They’re great advocates if they’re on your side.",
+    "id": "1mj8t3v",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "No one else to tell.. just got a huge promotion.",
+    "url": "https://reddit.com/r/analytics/comments/1rq3gud/no_one_else_to_tell_just_got_a_huge_promotion/",
+    "ups": 806,
+    "comments": 91,
+    "created_utc": 1773164025.0,
+    "author": "assblaster68",
+    "selftext": "Coming up on 5 years at my current company, 6 YOE.\n\nJust made director, and got a huge pay raise! Salary at 118k, and a bonus that brings TC to 160k/year.\n\nTrack thus far:\n\nYear 1: Data Analyst - 51k\n\nCompany change..\n\nYear 2: Data Analyst - 64k\n\nYear 3: Senior Data Analyst - 80k - Performance based promotion\n\nYear 4: Senior Data Analyst - 88k - 10% raise for performance\n\nYear 5: Senior Manager - 103k - New team\n\nYear 6: Director - 118k + 40k Bonus - Performance based\n\nJust hype. No team, no direct reports, just me and the grind.\n\nEdit: love all the haters :)",
+    "id": "1rq3gud",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "I helped my girlfriend improve her invoices in Excel and it blew her mind",
+    "url": "https://reddit.com/r/analytics/comments/1qyr7qc/i_helped_my_girlfriend_improve_her_invoices_in/",
+    "ups": 591,
+    "comments": 65,
+    "created_utc": 1770502701.0,
+    "author": "Precogvision",
+    "selftext": "My girlfriend's been creating invoices in Excel for her family's business that's overseas. But I realized it was taking her hours to create each invoice (she would have to translate all the factory info from Chinese/English, take basic calculations each time, and re-type a lot of fields. So I mentioned to her a while back that she would save so much time if she just created a template that automated the legwork of the process, but she didn't seem convinced. \n\nWell, yesterday, we finally sat down to look at it, and I made some pretty basic changes: a data-dump sheet in the background linked to the front-facing invoice, the translate() function to take out the manual translation process, and rounding/ceiling functions to clean everything up. Basically, it cut the process down from hours to what I imagine is an hour max for each invoice. \n\nThe funny part is that she was absolutely blown away each time I used one of these functions - apparently, she always associated Excel with being not very capable and for old people. I told her that we were barely scratching the surface of what Excel can do (I'm not even good with Excel lol) and that blew her mind even further. \n\nRecently, I've been trying to explain to her the concept of frontloading work to save time in the long-run, and I'm hopeful this illustrated it. Anyways, this was just a little win that made me happy, so wanted to share! :)",
+    "id": "1qyr7qc",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "Does anybody else enjoy injecting random UTM parameters into company websites?",
+    "url": "https://reddit.com/r/analytics/comments/1nojdxx/does_anybody_else_enjoy_injecting_random_utm/",
+    "ups": 462,
+    "comments": 41,
+    "created_utc": 1758638855.0,
+    "author": "thedevilsconcubine",
+    "selftext": "Sometimes when I open links with UTM parameters like`?utm_source=substack&amp;utm_medium=email`, I like to swap the terms with values like `source=xhamster` and `medium=video`. Does anybody else have the same guilty pleasure? And for those actively working in analytics - what do you do to prevent this from showing up during your next all hands meeting reviewing acquisition performance?",
+    "id": "1nojdxx",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "Most analytics jobs are fake productivity",
+    "url": "https://reddit.com/r/analytics/comments/1q7c8z2/most_analytics_jobs_are_fake_productivity/",
+    "ups": 451,
+    "comments": 95,
+    "created_utc": 1767880124.0,
+    "author": "Apprehensive_Pay6141",
+    "selftext": "This sounds harsh, but I can't unsee it anymore. Dashboards get built. Metrics get tracked. Decks get shared.\n\nAnd almost nothing changes. It feels like analytics exists so companies can feel responsible, while still doing whatever leadership already decided.\n\nSometimes I wonder if we’re just very well paid note takers for decisions that were never up for debate.\n\nAm I jaded, or is this way more common than people admit?\n\n",
+    "id": "1q7c8z2",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "If I build one more \"urgent\" dashboard that gets zero views, I’m going to lose my mind.",
+    "url": "https://reddit.com/r/analytics/comments/1ra18vt/if_i_build_one_more_urgent_dashboard_that_gets/",
+    "ups": 431,
+    "comments": 66,
+    "created_utc": 1771607617.0,
+    "author": "abralytics",
+    "selftext": "Context: I am the marketing analyst for a massive, global company. They have thousands of employees, endless layers of middle management, and a bottomless appetite for \"data-driven insights\" that nobody actually looks at.   \n  \nI’m hitting a wall, and I need to vent/get some advice before I just start sitting on my hands until its asked for 3 times.\n\nHere is the weekly cycle:\n\n* I get a frantic ping at 4:00 PM on a Tuesday. \"We need a deep dive on X. We needed this yesterday for a leadership sync.\"\n* I drop everything, pivot, clean the messy data, build the visualizations, provide some insights on the results, and send it over.\n* No \"thanks,\" no follow-up questions, nothing.\n* Two weeks later, the person who \"needed it yesterday\" is ASKING FOR THE SAME THING. It's demoralizing.\n\nHow do you guys handle this?\n\nI’ve tried the \"value-based\" approach where I ask what decision this data will drive before I build it, but they just give me some corporate buzzwords about \"visibility.\"",
+    "id": "1ra18vt",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "he finally did it!",
+    "url": "https://reddit.com/r/analytics/comments/1r8hwhp/he_finally_did_it/",
+    "ups": 343,
+    "comments": 53,
+    "created_utc": 1771454657.0,
+    "author": "sleepyhungryandtired",
+    "selftext": "apologies if this is inappropriate - i don’t know who to share this with who understands the relief and ecstasy i’m feeling currently\n\ni (21F) have been with my boyfriend (24M) for a little over 3 years. he graduated in management information systems and a ds minor as valedictorian of his major in 2023, and has been stuck in the job application rut for the last 3 years. after a year straight of self boredom via SQL dashboards &amp; tableau projects, he applied for MS programs and began completing the georgia tech ms in analytics degree while applying, which he’ll be done with in december.\n\n13,456 applications later, he got the call today. **incoming analyst - data science at a major fintech in new york!** so proud of him, as he knows, but please don’t lose hope if you’re also stuck in the endless and seemingly unfruitful phase of wrestling with this horrendous job market. there is light at the end of the tunnel, even if you had 0 internships, much experience, or went to an oversaturated undergrad.",
+    "id": "1r8hwhp",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "Ever since I was young, I wanted to transform unstructured data into actionable business insights",
+    "url": "https://reddit.com/r/analytics/comments/1ok6rql/ever_since_i_was_young_i_wanted_to_transform/",
+    "ups": 321,
+    "comments": 45,
+    "created_utc": 1761847009.0,
+    "author": "techcouture",
+    "selftext": "I came across this line on a hat recently and couldn’t stop laughing. It made me wonder how many of us actually started in analytics because we liked finding patterns, and what we really love is solving problems. How many of you are able to bring data into the problem solving sphere as opposed to just delivering reports? I'm lucky that I'm in consulting now so I can be a bit more selective about what projects I take on and don't. But I know that's not possible for everyone.",
+    "id": "1ok6rql",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "Entry level roles that we knew of is going to be non-existent",
+    "url": "https://reddit.com/r/analytics/comments/1qvil25/entry_level_roles_that_we_knew_of_is_going_to_be/",
+    "ups": 298,
+    "comments": 118,
+    "created_utc": 1770191761.0,
+    "author": "forbiscuit",
+    "selftext": "I work as a Senior/Staff DS at one of the $1T firms, and clocked 15 years in Data Analytics/Science roles. I have mentored hundreds of students who have passion in analytics the past 5 years: including resume checks, doing mock interviews, career guidance, and referrals for the exceptional students.\n\nHowever, the past year there has been significant top-down pressure to integrate AI into our workflow. This isn't isolated in my firm, it's impacting nearly every large company. Even the recent layoff from Amazon, Meta, and Google showed a lot of shedding of SWE roles, especially junior roles, given advent of AI.\n\nThis is specifically translated as the grunt work of drafting dashboards, coding, researching, etc. is all shifting to AI. These activities used to be the primary point for entry level roles. However, as more activities are shifting to AI, hiring will gradually be tighter and tighter as the work of 3-5 people can be done by a single person. It's becoming evident this is a phenomena will gain tremendous amount of momentum. A dramatic shift in how we approach job hunting is needed - especially those who are investing tremendous amount of capital into university programs.\n\nI'm starting an AMA based on what I've experienced so far and what I've noticed worked for students in the field. So I hope I can tackle as many questions as possible\n\n*I'm not taking in any mentees at this time.*",
+    "id": "1qvil25",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "People are wildly delusional",
+    "url": "https://reddit.com/r/analytics/comments/1lsd772/people_are_wildly_delusional/",
+    "ups": 268,
+    "comments": 58,
+    "created_utc": 1751731260.0,
+    "author": "Acceptable-Sense4601",
+    "selftext": "What’s the deal with people? “I took up space in college and never took math classes. In fact i hate math. I was going to go into art, but i can’t draw. Should i just dive right into making AI and ML models?” \n\nThese posts drive me nuts lol wtf",
+    "id": "1lsd772",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "Teaching data analytics has made me realize how much AI is eroding critical thinking skills.",
+    "url": "https://reddit.com/r/analytics/comments/1migjo0/teaching_data_analytics_has_made_me_realize_how/",
+    "ups": 261,
+    "comments": 45,
+    "created_utc": 1754417145.0,
+    "author": "tits_mcgee_92",
+    "selftext": "I just wanted to vent. I made an amusing post about this a few months back, but I wanted to talk about something a bit more serious: the erosion of critical thinking.\n\nI teach data analytics and data science concepts. One of my most common classes is 'SQL and Database Foundations'. I encourage my students to use AI, but not let it think for them. We go over best practices and things not to do.\n\nWhen we get to the end of the semester, my students who relied solely on AI always get stuck. This is because the last weeks projects are data analysis scenarios, where the questions asked are a bit more ambiguous and not just \"show me the top sales.\"\n\nI have two students this semester, who I knew relied heavily on AI, get stumped on ALL of these ambiguous questions. I scheduled a tutoring session with them, and to my surprise they both did not know what GROUP BY or ORDER BY did.\n\nPart of me wonders if I am responsible. I can tell who's using AI to think for them, but I get in trouble if I am too confrontational with it. Once you catch a student you can give them a warning, but when it inevitably happens you have to run it up the chain of command. You also run the risk of falsely accusing a student.\n\nThis doesn't apply solely to SQL classes. I have students with he most atrocious grammar when they submit some assignments, then suddenly they submit papers with no grammar mistakes. Sometimes they will accidentally submit the AI prompts with their paper, or copy and paste something incorrect like \"p-values\" when we're not talking about statistical models.\n\nAnyway, just wanted to rant! I'm understanding my other instructors share the same sentiment, and wondering if anyone on Reddit does too.",
+    "id": "1migjo0",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "Our activation rate dropped to 9% and I'm genuinely panicking right now.",
+    "url": "https://reddit.com/r/analytics/comments/1r9wfd8/our_activation_rate_dropped_to_9_and_im_genuinely/",
+    "ups": 261,
+    "comments": 60,
+    "created_utc": 1771596797.0,
+    "author": "Prestigious-Bath8022",
+    "selftext": "Like not even joking, my hands are shaking typing this.\n\nWe had a board meeting today and they asked why signups aren't converting to active users and I had to sit there and explain that people sign up, look at our analytics dashboard, get confused and leave. And I've tried literally everything I can think of and nothing is working.\n\nThe product is solid. Like genuinely good. Our paying customers love it. But getting new people to that point where they love it? Impossible apparently.\n\nMy cofounder keeps saying just make the onboarding better like oh cool thanks never thought of that. Super helpful advice bro.\n\nHas anyone actually solved this problem or do we all just pretend our activation rates are fine and hope for the best because I'm losing my mind over here.\n\n",
+    "id": "1r9wfd8",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "Everyone is an analyst now",
+    "url": "https://reddit.com/r/analytics/comments/1qqd9kr/everyone_is_an_analyst_now/",
+    "ups": 231,
+    "comments": 108,
+    "created_utc": 1769704046.0,
+    "author": "Lairy_Mary",
+    "selftext": "I work for an organisation that is spending so many hours thinking about how it can give all 4000 employees Power BI access to do what they want. As an analyst I'm getting worn down as everywhere I go people are asking me if they can just do the data themselves, someone even asked me if they could copy my data model today. That's with me providing really helpful reports, some with export functionality and I'm generally willing to help but my customer base is hundreds of people so I can't give everyone everything they need all the time but that's not unusual. In theory I love self serve but what I don't love is that idea that my job is so easy that any random employee can replicate it, I'm also worried that my job will become making models and dax measures for other people that don't understand it and then have to look as their ugly outputs. Management don't care at all, this is the pet project of a couple of engineers and I don't really know why. I'm wondering about my chances of finding somewhere less dysfunctional or are all analytical jobs going this way? ",
+    "id": "1qqd9kr",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "Is it me or does IT make it feel like their sole purpose is denying access to databases?",
+    "url": "https://reddit.com/r/analytics/comments/1rt3xm3/is_it_me_or_does_it_make_it_feel_like_their_sole/",
+    "ups": 221,
+    "comments": 66,
+    "created_utc": 1773445896.0,
+    "author": "captain_vee",
+    "selftext": "I met with IT today, our snowflake contract is ending so we need a game plan going forward. \n\nThis asshole “head of IT” tried to show me how I can pull all of that data in excel. Thanks - I love bloated excel workbooks and only being able to pull the metrics/segmentations that you deem useful and I love not being able to automate a damn thing.\n\nIs it just me and the places I work? ",
+    "id": "1rt3xm3",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "Anyone else still just work in excel even if you’re fluent in Python and sql?",
+    "url": "https://reddit.com/r/analytics/comments/1qjgrw6/anyone_else_still_just_work_in_excel_even_if/",
+    "ups": 218,
+    "comments": 54,
+    "created_utc": 1769045121.0,
+    "author": "SerpantDildo",
+    "selftext": "I spend years getting fluent in Python and SQL, can spin up notebooks, write clean queries, even explain why window functions are beautiful. Then a stakeholder asks for “just a quick cut” from a messy dataset they own and suddenly I’m three coffees deep in Excel, dragging formulas like it’s 2009.\n\nThere is something deeply efficient about opening a file, hitting VLOOKUP out of muscle memory, copy and pasting formulas, and shipping an answer in ten minutes instead of building a pipeline that is correct, elegant, reproducible, and completely unnecessary for the question being asked. Excel is not optimal. Excel is not scalable. Excel does not care. It just gets the job done while everyone else is still arguing about schema design.\n\nAt this point I’ve accepted that Excel is the last mile of analytics. Python and SQL do the heavy lifting, Excel takes the credit, and management remains extremely impressed by conditional formatting.",
+    "id": "1qjgrw6",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "Rant about recruiting as a manager of data science",
+    "url": "https://reddit.com/r/analytics/comments/1p922f1/rant_about_recruiting_as_a_manager_of_data_science/",
+    "ups": 211,
+    "comments": 140,
+    "created_utc": 1764354113.0,
+    "author": "[deleted]",
+    "selftext": "Throwaway for obvious reasons. I honestly don’t think I’ll ever be able to hire people for the two headcounts I have on my team's Langchain project.\n\nIt used to be so smooth. I collaborated for years with an HR partner who understood our team's needs, and the pipeline was great. Then that person was replaced by a new recruiter from a specific background, and suddenly, my candidate stream became a monoculture. I only get resumes from that one demographic now.\n\nTbh I wouldn't mind, because I understand that group is well represented in the CS field and the composition probably reflects that. However:\n\n1. Our organization cannot provide sponsorship for international candidates. Apparently, all the candidates *say* they don’t need sponsorship, but all the indicators point to them being on a student visa (e.g., no US work experience). HR has advised me that I can’t even ask about immigration status due to lawsuit fears.\n2. The quality of the resumes has declined significantly. Due to the oversaturated job market, we used to get resumes from Ivy League schools. Now, all the resumes are from no-name Indian schools (not IIT) followed by a master’s degree from schools like NEU or the New Jersey Institute of Technology.\n3. The resumes and claimed experience are very questionable. There's no way we can verify experience from non-Western countries. Resumes showing 10 years of experience can't answer basic OOP questions. One time, I was interviewing someone and a hidden earpiece fell out of their ear.\n\nI am genuinely sympathetic to the immense challenges people face with the immigration system, especially now. But I have a team to run and projects piling up. How can I deal with this situation? Am I stuck wasting my time in these interviews that lead to nowhere?",
+    "id": "1p922f1",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "analytics",
+    "title": "What are you upskilling in ?",
+    "url": "https://reddit.com/r/analytics/comments/1r16e0l/what_are_you_upskilling_in/",
+    "ups": 186,
+    "comments": 83,
+    "created_utc": 1770742968.0,
+    "author": "TheOG_DeadShoT",
+    "selftext": "Hey Analysts / Senior Analysts / Analytics Managers,\n\nThe analytics and BI job market feels tough right now. Roles are becoming fewer, and many companies are combining responsibilities into a single position (for example: Data Engineering + Analytics).\n\nI wanted to ask — what are you currently upskilling in?\n\nIt feels like the days when SQL, Python, and BI skills alone could land a job are slowly fading. I’m honestly a bit stressed because there are so many tools and technologies out there, and it’s confusing to figure out what’s actually worth learning.\n\nI’m currently stuck in my organization and want to make a switch, but I’m not sure what skills I should focus on to stay relevant and grow.\n\nWould really appreciate your suggestions.",
+    "id": "1r16e0l",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  }
+]

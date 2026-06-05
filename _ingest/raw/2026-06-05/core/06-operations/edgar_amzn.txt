@@ -1,0 +1,24 @@
+# AMAZON COM INC  (CIK 1018724)
+  SIC: Retail-Catalog & Mail-Order Houses  ·  Exchange: Nasdaq
+
+## Recent key filings
+  2026-05-22  8-K       acc:0001104659-26-065717
+  2026-04-30  10-Q      acc:0001018724-26-000014
+  2026-04-29  8-K       acc:0001018724-26-000012
+  2026-04-14  8-K       acc:0001104659-26-042880
+  2026-04-09  8-K       acc:0001104659-26-041034
+  2026-04-09  DEF 14A   acc:0001104659-26-041026
+  2026-03-16  8-K       acc:0001104659-26-028556
+  2026-03-13  8-K       acc:0001104659-26-027729
+  2026-02-27  8-K       acc:0001104659-26-021050
+  2026-02-06  10-K      acc:0001018724-26-000004
+  2026-02-05  8-K       acc:0001018724-26-000002
+  2025-11-20  8-K       acc:0001104659-25-114647
+
+## Key financials (latest annual, XBRL)
+  Revenues                 $716.92B   (FY end 2025-12-31)
+  NetIncome                 $77.67B   (FY end 2025-12-31)
+  Assets                   $818.04B   (FY end 2025-12-31)
+  Equity                   $411.06B   (FY end 2025-12-31)
+  OperatingCashFlow        $139.51B   (FY end 2025-12-31)
+  GrossProfit                $5.53B   (FY end 2009-12-31)
