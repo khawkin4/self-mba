@@ -1,0 +1,139 @@
+<!-- LESSON: Network Effects & Platform Strategy — net-new canon lesson (no existing course home). Grounded in the canon/platform-strategy corpus: Talks at Google "Andrew Chen | The Cold Start Problem" (TSnYO34b3TA), NFX "What Are Network Effects?" (aoeal3ljnqw), NFX "The right time to explore network effects" (PTpfi3yzgGM), David Halliday "2-Sided Markets: Platforms, Networks, & Economies of Scale" (7n_YlrAgbcg). Teaches the canon cluster: Parker/Van Alstyne/Choudary (Platform Revolution), Cusumano/Gawer/Yoffie (The Business of Platforms), Hagiu & Wright (Multi-Sided Platforms), Shapiro & Varian (Information Rules). -->
+<p class="lead">A pipeline business makes something and sells it. A <b>platform</b> doesn't make the thing at all — it owns the <em>connection</em> between the people who do. That one shift rewrites the economics: the platform never buys inventory, takes a cut of value it doesn't produce, and gets <em>more valuable the more people use it</em>. The whole discipline reduces to one engine and one trap. The engine is the <b>network effect</b>: each new user makes the product better for every other user, so the faster you grow the faster you grow. The trap is the <b>cold start</b>: that engine produces nothing until a critical mass shows up — and nobody wants to be first. This lesson builds both halves, using an a16z investor who ran growth at Uber, the VC firm that catalogued 15 kinds of network effect, and a walk-through of how Airbnb, Visa, and the App Store actually make money. Tap the cards, the diagrams, and the quizzes as you go.</p>
+
+<h2>1 · Pipelines vs. platforms: where the money comes from</h2>
+<p>Start with the business model, because it's the root of everything else. A traditional firm — call it Safeway — buys inputs, turns them into a finished good, and sells it for a markup. A platform inserts itself <em>between</em> two sides and charges a commission on a transaction it merely <b>facilitates</b>. It owns no inventory at all.</p>
+<blockquote class="srcq"><p>"The traditional business model is a company goes out, buys wholesale inputs, turns them into a finished product, and sells that finished product for a markup… Unlike Safeway, Airbnb never has a traditional cost of goods sold. Airbnb isn't buying a hotel and then renting you those rooms — Airbnb exists to facilitate that transaction."</p>
+<cite><a href="https://www.youtube.com/watch?v=7n_YlrAgbcg" target="_blank" rel="noopener">— David Halliday, "2-Sided Markets: Platforms, Networks, &amp; Economies of Scale"</a> · in your corpus</cite></blockquote>
+<div class="equation">Pipeline: profit = price − cost of goods &nbsp;|&nbsp; Platform: profit = commission × transactions it never owned</div>
+<p>This is the canon's <b>pipeline → platform</b> shift (Parker, Van Alstyne &amp; Choudary, <em>Platform Revolution</em>). It also explains the soaring valuations: software has near-zero marginal cost (Shapiro &amp; Varian, <em>Information Rules</em>), and a platform layers a network on top of that. But the model only works if both sides actually show up — which is the whole problem.</p>
+
+<h2>2 · The engine: demand-side economies of scale</h2>
+<p>In a pipeline, scale helps the <em>supply</em> side — make more, cost per unit drops. A platform's scale advantage runs the other way: it's on the <b>demand</b> side. Each new user is a reason for the next user to join. Andrew Chen, a general partner at a16z who ran growth at Uber, traces the idea to a 1908 line about the telephone.</p>
+<blockquote class="srcq"><p>"A telephone without a connection at the other end of the line is not even a toy or a scientific instrument. It is one of the most useless things in the world. Its value depends on the connection with the other telephone and increases with the number of connections."</p>
+<cite><a href="https://www.youtube.com/watch?v=TSnYO34b3TA" target="_blank" rel="noopener">— Theodore Vail (1908), quoted by Andrew Chen, "The Cold Start Problem," Talks at Google</a> · in your corpus</cite></blockquote>
+<p>Replace "telephone" with dating app, chat tool, or marketplace and you have the definition. The compounding is the point. NFX puts the loop in one line, and ranks it against the only other moats left in software.</p>
+<blockquote class="srcq"><p>"The more users you get, the bigger you get, the more valuable your product gets, the more ahead you'll get of your competitors — so the faster you go, the faster you go… In the digital age there's really only four defensibilities left: scale, embedding, brand, and the network effect. The network effect is the greatest of them all, because it's native to the digital environment."</p>
+<cite><a href="https://www.youtube.com/watch?v=aoeal3ljnqw" target="_blank" rel="noopener">— NFX, "What Are Network Effects? (Startup Mini-Series)"</a> · in your corpus</cite></blockquote>
+<p>Note "embedding" — that's Shapiro &amp; Varian's <b>lock-in / switching costs</b> renamed for the SaaS era ("you just charge more and more every year and there's not much you can do about it"). Network effects are the strongest of the four because they don't asymptote — past a threshold they show <b>increasing returns</b>: "every new incremental person increases the rate of return to everyone else."</p>
+
+<h2>3 · Two sides, and why one of them rides free</h2>
+<p>Most powerful platforms are <b>two-sided</b>: they need <em>both</em> a producer side and a consumer side, and the value to each comes from the size of the <em>other</em>. Halliday calls this the recursive loop — the heart of platform profitability.</p>
+<blockquote class="srcq"><p>"Larger platforms attract more customers because they attract more suppliers… if there are a lot of users, that attracts suppliers; if there are a lot of suppliers, that attracts more users. It's a recursive, cyclical pattern. The two main drivers of profitability are cross-side network effects and massive economies of scale."</p>
+<cite><a href="https://www.youtube.com/watch?v=7n_YlrAgbcg" target="_blank" rel="noopener">— David Halliday, "2-Sided Markets"</a> · in your corpus</cite></blockquote>
+<p>That cross-side pull is what Hagiu &amp; Wright (<em>Multi-Sided Platforms</em>) call <b>indirect network effects</b> — and it dictates the single most important pricing decision: <b>which side pays, and which side you subsidize.</b> The rule: subsidize the side that's more price-sensitive or that throws off more cross-side value; charge the other. <b>Tap each row</b> to see the lever in real platforms.</p>
+<figure class="viz">
+<svg viewBox="0 0 720 220" role="img" aria-label="Three two-sided platforms showing which side is subsidized and which side pays the commission">
+  <text x="0" y="16" class="vlabel">Google — subsidize users (free search), charge advertisers</text>
+  <rect x="0" y="22" width="700" height="28" rx="4" class="bar-net" data-tip="The price-sensitive side (searchers) rides free to maximise the audience; advertisers pay because that audience is what they're buying. Hagiu & Wright's rule: subsidize the side that draws the other."/>
+  <text x="350" y="41" class="bar-txt">Free side = searchers · Money side = advertisers</text>
+  <text x="0" y="64" class="vlabel">Visa — subsidize cardholders, charge merchants</text>
+  <rect x="60" y="70" width="580" height="28" rx="4" class="bar-gross" data-tip="Cardholders get rewards and feel no fee; merchants pay ~the percentage. The subsidized side doesn't even see the cost — it's baked into prices."/>
+  <text x="350" y="89" class="bar-txt">Cardholders feel nothing · stores 'know what's up'</text>
+  <text x="0" y="112" class="vlabel">App Store — charge developers (30%) · Play Store (15%)</text>
+  <rect x="130" y="118" width="440" height="28" rx="4" class="bar-rev" data-tip="Same lever, priced by lock-in: Apple's tighter ecosystem lets it take 30% where Google takes 15%. The take-rate tracks how trapped the paying side is."/>
+  <text x="350" y="137" class="bar-txt">Take-rate tracks how locked-in the paying side is</text>
+  <text x="0" y="186" class="vlabel">Subsidize the price-sensitive / network-driving side · charge the side that's locked in</text>
+  <text x="0" y="206" class="vlabel">Pricing both sides symmetrically is the classic strategic error (Hagiu &amp; Wright)</text>
+</svg>
+<figcaption>The Visa case from your corpus: "customers don't think they're paying it because they don't see the four percent that the stores are paying, but the stores certainly know what's up." The App Store's 30% vs. Play Store's 15% is the same lever, priced by lock-in.</figcaption>
+</figure>
+<blockquote class="srcq"><p>"App stores in the middle, generating a 30% commission… Google only gets 15% off the Play Store. We can guess that 30% on the App Store comes from this really tight ecosystem Apple has. If you're an iPhone user and you want an app, you really have no other choice — what are you going to do, switch to Android?"</p>
+<cite><a href="https://www.youtube.com/watch?v=7n_YlrAgbcg" target="_blank" rel="noopener">— David Halliday, "2-Sided Markets"</a> · in your corpus</cite></blockquote>
+<div class="reveal">
+  <button class="reveal-q">🤔 If subsidizing the right side is so clear, why do so many marketplaces burn cash and die?</button>
+  <div class="reveal-a"><p>Because the rule is "clearer in theory than execution" (Hagiu &amp; Wright). You have to actually <em>measure</em> the indirect network effect to know which side drives the other — and that's genuinely hard. Subsidize the wrong side, or both, and you torch capital with no flywheel (the WeWork failure mode). Worse, a heavily subsidized side is often <b>disloyal</b> — it multi-homes and never converts to the value you priced for. The pricing math is elegant; the binding constraint underneath it is usually just <em>getting the hard side to show up at all</em>.</p></div>
+</div>
+
+<h2>4 · The cold start: nobody wants to be first</h2>
+<p>Here is where most platforms die. The flywheel only spins once both sides are present — but neither side joins until the other is already there. This <b>chicken-and-egg / cold-start problem</b> is, per <em>Platform Revolution</em>, the hardest strategic problem in platform building. Chen's escape route is the opposite of "build it and they will come": you <b>hand-build the first network manually.</b></p>
+<blockquote class="srcq"><p>"They sat down, and they looked, and they had a killer product. They just needed that amazing high-quality atomic network. And they did the work to figure out how to do it. They manually did it — and then they found ways to operationalize it."</p>
+<cite><a href="https://www.youtube.com/watch?v=TSnYO34b3TA" target="_blank" rel="noopener">— Andrew Chen, "The Cold Start Problem," Talks at Google</a> · in your corpus</cite></blockquote>
+<p>The unit you build by hand is the <b>atomic network</b> — the smallest network that can stand on its own (one city for Uber, one campus, one subreddit). You also pick where to push: every two-sided market has an <b>easy side</b> and a <b>hard side</b>, and the hard side (usually supply) won't show up on its own — so you go and get it. Airbnb's own start was un-glamorous: the demand already existed on Craigslist, badly served.</p>
+<blockquote class="srcq"><p>"Craigslist, for many years, had a shared-housing category, and people were actually transacting on there… The problem is, at the time, no pictures, no inventory, no booking. You literally would just email them and go back and forth."</p>
+<cite><a href="https://www.youtube.com/watch?v=TSnYO34b3TA" target="_blank" rel="noopener">— Andrew Chen, "The Cold Start Problem," Talks at Google</a> · in your corpus</cite></blockquote>
+<p>Build enough atomic networks and you cross the <b>tipping point</b> — the moment you can spin up new networks on demand — and then ride <b>escape velocity</b>. Chen's five-stage arc: cold start → tipping point → escape velocity → ceiling → the <b>moat</b> ("how do you build the defensibility such that you can compete against new entrants"). One warning the canon stresses: don't confuse a network effect with a <b>viral effect</b>. NFX: "a viral effect is about acquisition… they're actually very different things." Cheap virality can fill a top-of-funnel while the network never reaches critical mass.</p>
+
+<h2>5 · The vocabulary — flip to learn</h2>
+<p>The exact terms the canon uses. <b>Tap a card to flip it.</b></p>
+<div class="fc-grid">
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Network Effect</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Each new user makes the product more valuable to every other user. The strongest of the four digital moats — it shows increasing returns instead of asymptoting.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Cross-Side / Indirect</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Value a user on one side gets from the size of the <em>other</em> side. It dictates which side you charge and which you subsidize (Hagiu &amp; Wright).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Pipeline vs. Platform</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Pipeline makes &amp; sells a good for a markup. Platform owns no inventory — it facilitates exchange and takes a commission (<em>Platform Revolution</em>).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Cold Start</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Chicken-and-egg: neither side joins until the other is present. The hardest problem in platform building — solved by hand, not by feature.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Atomic Network</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The smallest network that can stand on its own (one city, one campus). Build it manually, then operationalize and repeat (Andrew Chen).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Hard Side</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The side (usually supply) that won't show up on its own. Go and get it first; the easy side follows.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Tipping Point</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The threshold where you can create new networks on demand and increasing returns kick in → escape velocity. Same as a standards war tipping (Shapiro &amp; Varian).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Multi-Homing</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Users active on several platforms at once (a driver on Uber + Lyft). It weakens your network effect — fight it with switching costs or exclusivity (Cusumano).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Envelopment</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A platform competing with its own complementors ("Sherlocking"). Buys short-term revenue at long-term trust cost (Cusumano, Gawer &amp; Yoffie).</span></span></button>
+</div>
+
+<h2>6 · The strategic choices that keep a platform alive</h2>
+<p>Once the flywheel spins, the canon (Cusumano, Gawer &amp; Yoffie, <em>The Business of Platforms</em>) says durable platforms deliberately manage a handful of brutal tensions. First, a type distinction: <b>innovation platforms</b> let others build <em>on top</em> of you (iOS, AWS, Salesforce); <b>transaction platforms</b> facilitate <em>exchange</em> (Uber, Airbnb). The most durable are hybrids. Then the hard choices.</p>
+<figure class="viz">
+<svg viewBox="0 0 720 200" role="img" aria-label="Four strategic levers durable platforms must manage: openness, pricing, multi-homing, and envelopment">
+  <text x="0" y="16" class="vlabel">1 · How open? — too open loses quality/control; too closed limits growth</text>
+  <rect x="0" y="22" width="700" height="28" rx="4" class="bar-rev" data-tip="Openness is a dial, not a switch. App Store is curated (closed-ish); the web is open. You trade off quality &amp; control against the speed of ecosystem growth."/>
+  <text x="350" y="41" class="bar-txt">Tune openness against quality and growth</text>
+  <text x="0" y="64" class="vlabel">2 · How to price each side? — subsidize the side that draws the other</text>
+  <rect x="60" y="70" width="580" height="28" rx="4" class="bar-gross" data-tip="The Hagiu-Wright lever from Section 3: charge the locked-in side, subsidize the price-sensitive / network-driving side. Symmetric pricing is the classic error."/>
+  <text x="350" y="89" class="bar-txt">Charge one side, subsidize the other</text>
+  <text x="0" y="112" class="vlabel">3 · Fight multi-homing — raise switching costs / exclusivity</text>
+  <rect x="130" y="118" width="440" height="28" rx="4" class="bar-net" data-tip="If users sit on you AND rivals at once, your network effect leaks. Loyalty programs, exclusive supply, and embedding all raise the cost of leaving."/>
+  <text x="350" y="137" class="bar-txt">Make leaving expensive</text>
+  <text x="0" y="186" class="vlabel">4 · Envelopment — compete with your ecosystem? Revenue now vs. trust later</text>
+</svg>
+<figcaption>Cusumano's strategic menu. The "compete with your own complementors?" call (Sherlocking) buys short-term revenue but can poison the ecosystem — and the book admits it can't tell you the threshold. These are the co-opetition tensions of Brandenburger &amp; Nalebuff, at platform scale.</figcaption>
+</figure>
+<div class="example">
+<p><b>Worked example — you're launching a tutoring marketplace.</b> Don't open with "build the platform." (1) <b>Core interaction:</b> a student books a verified tutor for a subject — get that one exchange flawless before adding anything. (2) <b>Hard side:</b> tutors won't join an empty marketplace, so you <em>go get them</em> — recruit 30 great tutors in one ZIP code by hand. (3) <b>Atomic network:</b> make that one neighborhood + one subject actually liquid before expanding; a tutor who logs in to zero students churns forever. (4) <b>Pricing:</b> subsidize the scarce side (pay tutors a guarantee, or charge students nothing at first) until the cross-side loop turns. (5) <b>Moat later:</b> once liquid, raise switching costs — reviews, scheduling history, payments — so neither side multi-homes to a rival. You solved cold start by hand, then earned the network effect.</p>
+</div>
+
+<h2>7 · Check yourself</h2>
+<div class="quizq" data-correct="2">
+  <p class="q">What fundamentally separates a platform like Airbnb from a pipeline like Safeway?</p>
+  <button class="opt">Airbnb has higher marginal costs</button>
+  <button class="opt">Safeway has network effects; Airbnb doesn't</button>
+  <button class="opt">Airbnb owns no inventory — it takes a commission for facilitating a transaction</button>
+  <p class="fb">"Unlike Safeway, Airbnb never has a traditional cost of goods sold… Airbnb exists to facilitate that transaction." A platform monetizes a connection it doesn't own, via a take-rate.</p>
+</div>
+<div class="quizq" data-correct="1">
+  <p class="q">Google gives search away free and charges advertisers. Why subsidize the user side?</p>
+  <button class="opt">Users are more profitable than advertisers</button>
+  <button class="opt">The free side is price-sensitive and draws the other side, which is what advertisers are buying</button>
+  <button class="opt">It's illegal to charge for search</button>
+  <p class="fb">Hagiu &amp; Wright's rule: subsidize the price-sensitive / network-driving side, charge the other. The audience is the product advertisers pay for, so you maximize it by making it free.</p>
+</div>
+<div class="quizq" data-correct="0">
+  <p class="q">According to Andrew Chen, how did the winning platforms actually solve the cold-start problem?</p>
+  <button class="opt">They hand-built a high-quality "atomic network" manually, then operationalized it</button>
+  <button class="opt">They launched everywhere at once for maximum scale</button>
+  <button class="opt">They relied on viral acquisition loops to fill both sides automatically</button>
+  <p class="fb">"They manually did it, and then they found ways to operationalize it." The first network is hand-assembled, one node at a time — and a viral effect (acquisition) is <em>not</em> the same as a network effect.</p>
+</div>
+
+<div class="pitfall">
+<h3>⚠️ "Just build a platform" is not a strategy</h3>
+<p>The most expensive error in this whole field is hearing "platforms beat pipelines" and concluding every product should become one. Platform dynamics are <b>winner-take-most and brutal</b> — the graveyard of dead marketplaces is enormous, and cold start kills most of them before the flywheel ever turns. Two reality-checks the hype skips: a network effect is only <em>one</em> of four defensibilities, and Halliday stresses platforms also need <b>massive economies of scale</b> to turn a profit — cross-side effects alone don't pay the bills. Network effects also aren't permanent: multi-homing and disintermediation erode them, and at scale the "envelop everything" playbook now collides with antitrust. Most products should stay pipelines. Build a platform only when the core interaction genuinely needs both sides.</p>
+</div>
+
+<div class="pitfall subtle">
+<h3>🔎 One subtlety → your bridge to the rest of the shelf</h3>
+<p>Notice the throughline under every section: <b>defensibility is earned in the un-scalable early work</b>, not handed to you by the business model. The same loop that makes a platform unstoppable at scale ("the faster you go, the faster you go") produces <em>nothing</em> at zero — which is why founders sit down and build the first network by hand. That gap between the elegant steady-state economics (Shapiro &amp; Varian, Hagiu &amp; Wright) and the messy zero-to-tipping-point reality (Chen, NFX) is the deepest lesson here. It's the same pattern you'll meet in competitive strategy (a moat is built, not declared) and in entrepreneurship (traction precedes scale). The strategic skill isn't naming the network effect — it's knowing whether you've actually reached the tipping point, or just bought cheap virality that masks an empty room.</p>
+</div>
+
+<div class="apply-box">
+<h3>🎯 Your move</h3>
+<p>Pick one platform you use daily (Uber, Airbnb, LinkedIn, the App Store, a game). On paper, write four things: (1) its <b>core interaction</b> in one sentence — the single exchange it enables; (2) the <b>network effect</b> that compounds it — who gets more value as who else joins; (3) which side is <b>subsidized</b> and which side <b>pays</b>, and why; (4) how it likely solved <b>cold start</b> on the <em>hard</em> side — the first city, the first marquee users, the manual seeding. Then ask the killer question: if a well-funded clone launched tomorrow, what's the <b>moat</b> — switching costs, multi-homing friction, sheer scale — that keeps you from leaving?</p>
+</div>
+
+<div class="src-list">
+<h4>📚 Taught from these sources in your corpus</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=TSnYO34b3TA" target="_blank" rel="noopener">Talks at Google — Andrew Chen: The Cold Start Problem (atomic networks, hard side, tipping point, escape velocity)</a></li>
+<li><a href="https://www.youtube.com/watch?v=aoeal3ljnqw" target="_blank" rel="noopener">NFX — What Are Network Effects? (four defensibilities, increasing returns, viral ≠ network effect)</a></li>
+<li><a href="https://www.youtube.com/watch?v=7n_YlrAgbcg" target="_blank" rel="noopener">David Halliday — 2-Sided Markets: Platforms, Networks &amp; Economies of Scale (Airbnb, Visa, App Store)</a></li>
+<li><a href="https://www.youtube.com/watch?v=PTpfi3yzgGM" target="_blank" rel="noopener">NFX — The right time to explore network effects (capital efficiency, sequencing of moats)</a></li>
+</ul>
+<p style="margin:8px 0 0;color:var(--dim)">Canon notes behind this lesson: [[canon-parker-platform-revolution]] · [[canon-cusumano-business-of-platforms]] · [[canon-hagiu-wright-multi-sided-platforms]] · [[canon-shapiro-varian-information-rules]]</p>
+</div>

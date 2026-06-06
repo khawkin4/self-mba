@@ -1,0 +1,139 @@
+<!-- LESSON: Game Theory & Strategic Interaction — net-new canon lesson (no existing course home). Grounded in the 03-micro-strategy corpus: Big Think "3 game theory tactics" (von Neumann, minimax, repeated games), 365 Financial Analyst tobacco prisoner's-dilemma case, TED-Ed Hotelling clustering, Simon Sinek finite/infinite games. Teaches the canon cluster: Dixit & Nalebuff (Thinking Strategically), Schelling (Strategy of Conflict), Axelrod (Evolution of Cooperation), Brandenburger & Nalebuff (Co-opetition). -->
+<p class="lead">Every strategy you've learned so far assumed you were acting on a board that holds still. <b>Game theory is what happens when the board pushes back</b> — when the people across from you are running their own calculations about what <em>you'll</em> do. The single discipline of this whole field is one habit: before you move, work out the other side's <b>best response</b> — and then move as if they've already made it. This lesson builds that habit from a poker-table mathematician, a 1971 cigarette ban that made tobacco companies <em>richer</em>, and two ice-cream carts on a beach. Tap the cards, the payoff grids, and the quizzes as you go.</p>
+
+<h2>1 · The one habit: anticipate the response</h2>
+<p>Game theory was laid out by John von Neumann — who built it, of all things, on a stripped-down version of <b>poker</b> — in <em>The Theory of Games and Economic Behavior</em>, written with economist Oskar Morgenstern. Its definition is deceptively plain:</p>
+<blockquote class="srcq"><p>"Game theory is the study of decision making under conditions of uncertainty over time… any time you're interacting with another person who has their own interests and is trying to achieve their own ends — you're interacting in a strategic situation."</p>
+<cite><a href="https://www.youtube.com/watch?v=PsLaI4jDftA" target="_blank" rel="noopener">— Big Think, "3 game theory tactics, explained"</a> · in your corpus</cite></blockquote>
+<p>Against a sharp opponent, von Neumann's first prescription is the <b>minimax</b> rule: don't chase your best case — <em>minimize your maximum loss</em>. Ask "what's the worst my opponent could do to me?" and play the move that best guards against it. In a pure zero-sum game, the corpus notes, this isn't just safe — it's provably optimal.</p>
+<div class="equation">Before you move → assume the other side plays their <b>best response</b> → then choose</div>
+<p>This is what the canon calls <b>backward induction</b> (Dixit &amp; Nalebuff): "look forward, reason back." Solve the game from its end state to decide your first move. The rest of the lesson is just this habit applied to harder and harder situations.</p>
+
+<h2>2 · The Prisoner's Dilemma — when "rational" makes everyone worse off</h2>
+<p>The most important game in business is the one where both sides, each acting perfectly sensibly, walk straight into a worse outcome for both. Your corpus has a real example: in <b>1971</b> the U.S. banned cigarette TV advertising — and all four major tobacco firms posted <em>higher</em> profits afterward. Why? Because the ban did for them what they couldn't do for themselves: it ended a ruinous advertising arms race.</p>
+<p>Imagine two firms. Advertising is expensive and mostly just steals share from the other. <b>Tap each cell</b> to see why they're trapped.</p>
+<figure class="viz">
+<svg viewBox="0 0 720 300" role="img" aria-label="A 2x2 prisoner's dilemma payoff matrix for two tobacco firms choosing whether to advertise">
+  <text x="360" y="16" text-anchor="middle" class="vlabel">Company B</text>
+  <text x="250" y="40" text-anchor="middle" class="bar-txt-sm">Don't advertise</text>
+  <text x="470" y="40" text-anchor="middle" class="bar-txt-sm">Advertise</text>
+  <text x="60" y="120" text-anchor="middle" class="vlabel" transform="rotate(-90 60 150)">Company A</text>
+  <text x="110" y="110" text-anchor="middle" class="bar-txt-sm">Don't</text>
+  <text x="110" y="220" text-anchor="middle" class="bar-txt-sm">Advertise</text>
+  <rect x="150" y="56" width="220" height="100" rx="4" class="bar-net" data-tip="Both cooperate (no ads): $50M each. The best JOINT outcome — but unstable, because each is tempted to defect."/>
+  <text x="260" y="112" text-anchor="middle" class="bar-txt">$50M / $50M</text>
+  <rect x="380" y="56" width="220" height="100" rx="4" class="bar-gross" data-tip="A stays clean, B advertises: B grabs share and wins $60M; A is left with $25M. This temptation is what breaks cooperation."/>
+  <text x="490" y="112" text-anchor="middle" class="bar-txt">$25M / $60M</text>
+  <rect x="150" y="166" width="220" height="100" rx="4" class="bar-gross" data-tip="A advertises, B stays clean: A wins $60M, B gets $25M. Mirror image — whoever advertises while the other doesn't, wins."/>
+  <text x="260" y="222" text-anchor="middle" class="bar-txt">$60M / $25M</text>
+  <rect x="380" y="166" width="220" height="100" rx="4" class="bar-rev" data-tip="Both advertise: $40M each. WORSE for both than cooperating — yet this is the Nash equilibrium they rationally land on. The 1971 ad ban forced them OUT of this box."/>
+  <text x="490" y="222" text-anchor="middle" class="bar-txt">$40M / $40M</text>
+  <text x="360" y="292" text-anchor="middle" class="vlabel">Each cell: (Company A payoff / Company B payoff) · tap a cell for the logic</text>
+</svg>
+<figcaption>Both firms would earn $50M if neither advertised — but each can do better by defecting, so both advertise and land on $40M. The 1971 ban removed the option to defect, pushing both back toward cooperation. Payoffs from the tobacco case in your corpus.</figcaption>
+</figure>
+<blockquote class="srcq"><p>"It turns out tobacco companies would be better off without advertising — but only if all companies don't do it… Nash's equilibrium indicates companies will choose to advertise, and that's precisely what happened in practice."</p>
+<cite><a href="https://www.youtube.com/watch?v=27scYCyhd5o" target="_blank" rel="noopener">— 365 Financial Analyst, "Game theory lessons — Tobacco companies"</a> · in your corpus</cite></blockquote>
+<div class="reveal">
+  <button class="reveal-q">🤔 What exactly is a "Nash equilibrium," and why is $40M/$40M one?</button>
+  <div class="reveal-a"><p>A <b>Nash equilibrium</b> is a combination of choices where <em>no player can do better by changing their move alone</em>. At "both advertise" ($40M each), if either firm unilaterally stops advertising it drops to $25M — so neither will. It's <b>stable but not optimal</b>: the better joint outcome ($50M each) isn't an equilibrium because each side is tempted to defect from it. That gap — between what's individually rational and what's collectively best — is the heart of game theory.</p></div>
+</div>
+
+<h2>3 · Dominant strategies and why competitors cluster</h2>
+<p>In the tobacco game, "advertise" is a <b>dominant strategy</b> — it's the better move <em>no matter what the other firm does</em> (60 beats 50 if they stay clean; 40 beats 25 if they advertise). When every player has a dominant strategy, the equilibrium is locked in, even when it's bad for everyone. Dominant strategies are rare, but when they exist they're decisive.</p>
+<p>Nash equilibria also explain things that look irrational until you draw the game. Why do three coffee shops cluster on one corner while half the town has none? The TED-Ed "beach vendor" example in your corpus shows it: two ice-cream sellers who should spread out to serve the whole beach instead each creep toward the center to steal the other's customers — until they're back-to-back in the middle.</p>
+<blockquote class="srcq"><p>"In order to maximize sales… each vendor creeps toward the center. Game theorists see the spread-out version as the socially optimal solution — but it isn't the equilibrium. The equilibrium is both carts in the middle."</p>
+<cite><a href="https://www.youtube.com/watch?v=jILgxeNBK_8" target="_blank" rel="noopener">— TED-Ed, "Why do competitors open their stores next to one another?"</a> · in your corpus</cite></blockquote>
+<p>The customers at the ends get a worse deal; the vendors get a stable standoff. <b>Nash equilibrium ≠ best outcome</b> — it's just the place no one can unilaterally improve on. Spotting the difference is where strategy lives.</p>
+
+<h2>4 · The escape hatch: repeated games change everything</h2>
+<p>Here's the twist that rescues us from the dilemma. The prisoner's dilemma is brutal when you play <em>once</em>. But when you'll meet the same player <b>again and again</b>, cooperation becomes rational — because defection gets punished next round. Your corpus shows the highest-stakes version: how Reagan and Gorbachev escaped the Cold War's zero-sum trap.</p>
+<blockquote class="srcq"><p>"Rather than getting rid of a large percentage and hoping the USSR would too, they broke it into little interactions — the USSR eliminates a few weapons, then the U.S. does, they check, then the next stage. Taking a big interaction and breaking it into small parts can change a bad social dilemma into a positive interaction."</p>
+<cite><a href="https://www.youtube.com/watch?v=PsLaI4jDftA" target="_blank" rel="noopener">— Big Think, "3 game theory tactics, explained"</a> · in your corpus</cite></blockquote>
+<p>That is exactly the discovery behind Robert Axelrod's famous tournament (<em>The Evolution of Cooperation</em>): the winning strategy for a repeated prisoner's dilemma was the simplest one, <b>Tit for Tat</b> — cooperate first, then mirror whatever the other side did last. Its four winning traits: be <b>nice</b> (never defect first), <b>retaliatory</b> (punish defection at once), <b>forgiving</b> (return to cooperation the moment they do), and <b>clear</b> (be predictable so others can cooperate with you). In repeated games, predictable fairness beats clever maneuvering.</p>
+<p>Simon Sinek frames the same idea as <b>finite vs. infinite games</b>: play a long-term relationship as if it's a one-shot contest and you'll win battles while losing the war.</p>
+
+<h2>5 · The vocabulary — flip to learn</h2>
+<p>The exact terms the canon uses. <b>Tap a card to flip it.</b></p>
+<div class="fc-grid">
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Dominant Strategy</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A move that's best <em>regardless</em> of what the other player does. Rare, but decisive when it exists ("advertise" for the tobacco firms).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Nash Equilibrium</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A set of choices where no player can do better by changing alone. Stable — but not necessarily good for anyone.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Prisoner's Dilemma</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Both players defect though both would be better off cooperating — because each is individually tempted to defect.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Minimax</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Minimize your maximum loss. Against a strong opponent in a zero-sum game, this is the provably best guard.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Backward Induction</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Look forward, reason back: solve the game from its end state to decide what to do now.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Credible Commitment</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Schelling's move: <em>limiting your own options</em> (burning a bridge, a public pledge) makes a threat or promise believable — and powerful.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Focal Point</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A "Schelling point" — the obvious answer people coordinate on without communicating (meet in NYC → Grand Central at noon). Norms and defaults are focal points.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Tit for Tat</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Axelrod's winner: cooperate first, then mirror. Nice, retaliatory, forgiving, clear. Beats cleverness in repeated games.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Co-opetition</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Brandenburger &amp; Nalebuff: business isn't zero-sum. Compete and cooperate at once; grow the pie with complementors before fighting over slices.</span></span></button>
+</div>
+
+<h2>6 · The highest move: change the game itself</h2>
+<p>The masters don't just play the game in front of them — they <b>change it</b>. Three canonical levers:</p>
+<figure class="viz">
+<svg viewBox="0 0 720 200" role="img" aria-label="Three levers to change a strategic game: commitment, focal points, and adding complementors">
+  <text x="0" y="16" class="vlabel">1 · Credible commitment — limit your own options (Schelling)</text>
+  <rect x="0" y="22" width="700" height="28" rx="4" class="bar-rev" data-tip="Counterintuitively, REMOVING your own options gives you power. A public, costly-to-reverse pledge (a price guarantee, a burned boat) makes your threat or promise believable."/>
+  <text x="350" y="41" class="bar-txt">Make your threat/promise believable by burning your escape</text>
+  <text x="0" y="64" class="vlabel">2 · Focal points — coordinate without talking (Schelling)</text>
+  <rect x="60" y="70" width="580" height="28" rx="4" class="bar-gross" data-tip="When you can't communicate, both sides converge on the 'obvious' answer. Norms, defaults, and conventions resolve coordination without a single meeting."/>
+  <text x="350" y="89" class="bar-txt">Use the obvious default everyone expects</text>
+  <text x="0" y="112" class="vlabel">3 · Add a complementor — grow the pie (Brandenburger &amp; Nalebuff)</text>
+  <rect x="130" y="118" width="440" height="28" rx="4" class="bar-net" data-tip="A complementor makes YOUR product more valuable (hardware + software). Strengthening one can beat beating a competitor — change the players, not just the moves."/>
+  <text x="350" y="137" class="bar-txt">Make allies who make you more valuable</text>
+  <text x="0" y="186" class="vlabel">Don't just play the game well — change its players, rules, and scope</text>
+</svg>
+<figcaption>Thinking Strategically (Dixit &amp; Nalebuff) and The Strategy of Conflict (Schelling) supply the moves; Co-opetition (Brandenburger &amp; Nalebuff) reminds you the pie isn't fixed.</figcaption>
+</figure>
+<div class="example">
+<p><b>Worked example — a price war.</b> You and a rival keep cutting prices; it's the tobacco grid in disguise, and you're both sliding toward the bad Nash equilibrium ($40M/$40M). <b>Don't</b> ask "how do I win this round?" Ask the game-theory questions: (1) <b>Is this repeated?</b> If you'll compete for years, signal restraint and reward it — play Tit for Tat, not scorched earth. (2) <b>Can I make a credible commitment?</b> A public "everyday low price, price-matched" policy can paradoxically <em>stop</em> the war by making further cuts pointless for both. (3) <b>Is there a complementor?</b> Maybe the bigger prize is partnering with someone whose product makes yours more valuable, expanding the market instead of splitting it. You changed the game instead of losing it.</p>
+</div>
+
+<h2>7 · Check yourself</h2>
+<div class="quizq" data-correct="1">
+  <p class="q">Why did banning cigarette TV ads in 1971 <em>raise</em> tobacco-company profits?</p>
+  <button class="opt">Smokers bought more once ads disappeared</button>
+  <button class="opt">The ban ended a prisoner's-dilemma ad arms race the firms couldn't escape themselves</button>
+  <button class="opt">It let firms raise prices by law</button>
+  <p class="fb">The firms were trapped advertising ($40M each) when not advertising would earn more ($50M each) — but neither could stop unilaterally. The ban removed the option to defect, forcing the cooperative outcome.</p>
+</div>
+<div class="quizq" data-correct="2">
+  <p class="q">Two ice-cream vendors end up back-to-back in the middle of the beach. This is:</p>
+  <button class="opt">The socially optimal outcome</button>
+  <button class="opt">An irrational mistake</button>
+  <button class="opt">A Nash equilibrium — stable, but not best for customers</button>
+  <p class="fb">Each creeps center to steal share until neither can improve by moving alone — a Nash equilibrium. The spread-out version would serve customers better, but it isn't stable.</p>
+</div>
+<div class="quizq" data-correct="0">
+  <p class="q">In a <em>repeated</em> prisoner's dilemma, Axelrod's tournament-winning strategy was:</p>
+  <button class="opt">Tit for Tat — cooperate first, then mirror; nice, retaliatory, forgiving, clear</button>
+  <button class="opt">Always defect to stay safe</button>
+  <button class="opt">A complex unpredictable strategy to confuse opponents</button>
+  <p class="fb">The simplest strategy won. Cooperate first, then do whatever they last did. Predictable fairness beats cleverness when you'll interact again.</p>
+</div>
+
+<div class="pitfall">
+<h3>⚠️ Nash equilibrium is a description, not a goal</h3>
+<p>The classic error is treating "find the Nash equilibrium" as the answer. It isn't — it's the <em>diagnosis</em> of where naive self-interest lands. Often the whole point of strategy is to <b>escape</b> the equilibrium (repeat the game, commit credibly, add a complementor) or to <b>reshape</b> it. And remember the model's big assumption: it presumes rational players with known payoffs. Real people are predictably <em>irrational</em> and rarely know the true payoff matrix — which is exactly the bridge to behavioral decision science. Use game theory to <em>frame</em> the interaction, never to hand you a single number.</p>
+</div>
+
+<div class="pitfall subtle">
+<h3>🔎 One subtlety → your bridge to the rest of the shelf</h3>
+<p>Notice the throughline: the difference between a one-shot game and a repeated one changed <em>everything</em> — from defect to cooperate, from war to treaty. That single variable, "will we meet again?", is the hidden engine under negotiation (relationships vs. transactions), culture (reputation compounds), and trust itself. The deepest strategic skill isn't computing the equilibrium — it's recognizing <b>which game you're actually in</b>, and whether you can change it.</p>
+</div>
+
+<div class="apply-box">
+<h3>🎯 Your move</h3>
+<p>Pick one competitive situation you're in (a pricing fight, a negotiation, a turf clash between teams). On paper: (1) sketch the <b>2×2 payoff grid</b> — your two options × their two options, with rough payoffs in each cell; (2) circle the <b>Nash equilibrium</b> and ask whether it's actually good for you; (3) write one way to <b>change the game</b> — is it repeated (play Tit for Tat)? Can you make a <b>credible commitment</b>? Is there a <b>complementor</b> who'd grow the pie? The grid almost always reveals a move you couldn't see from inside the fight.</p>
+</div>
+
+<div class="src-list">
+<h4>📚 Taught from these sources in your corpus</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=PsLaI4jDftA" target="_blank" rel="noopener">Big Think — 3 game theory tactics, explained (von Neumann, minimax, repeated games)</a></li>
+<li><a href="https://www.youtube.com/watch?v=27scYCyhd5o" target="_blank" rel="noopener">365 Financial Analyst — Game theory lessons: the 1971 tobacco prisoner's dilemma</a></li>
+<li><a href="https://www.youtube.com/watch?v=jILgxeNBK_8" target="_blank" rel="noopener">TED-Ed — Why do competitors open their stores next to one another? (Hotelling / Nash)</a></li>
+<li><a href="https://www.youtube.com/watch?v=0bFs6ZiynSU" target="_blank" rel="noopener">TED Archive — Simon Sinek: What game theory teaches us about war (finite vs. infinite games)</a></li>
+<li><a href="https://www.youtube.com/watch?v=YueJukoFBMU" target="_blank" rel="noopener">One Minute Economics — Game Theory Explained in One Minute</a></li>
+</ul>
+<p style="margin:8px 0 0;color:var(--dim)">Canon notes behind this lesson: [[canon-dixit-nalebuff-thinking-strategically]] · [[canon-schelling-strategy-of-conflict]] · [[canon-axelrod-evolution-of-cooperation]] · [[canon-brandenburger-nalebuff-coopetition]]</p>
+</div>

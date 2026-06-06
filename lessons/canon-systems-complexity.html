@@ -1,0 +1,150 @@
+<!-- LESSON: Systems Thinking & Complexity — net-new canon lesson (no existing course home). Grounded in the canon/systems-complexity corpus: Readitfor.me & Miles MacFarlane (Senge's Fifth Discipline laws/archetypes), shan gordon (Senge keynote — the three boys & the feedback loop), Ashley Hodgson & Global Change Management (Meadows' 12 leverage points), Niko J & Management Whizz (the Beer Game / bullwhip effect). Teaches the canon cluster: Senge (The Fifth Discipline), Sterman (Business Dynamics), Meadows (Thinking in Systems / Leverage Points), Perrow (Normal Accidents), Jervis (System Effects). -->
+<p class="lead">Every lesson so far has handed you a lever and promised a result: pull here, profit there. <b>Systems thinking is the discipline that asks what else the lever is attached to.</b> In a connected system, the consequence of your action rarely lands where you aimed it — it ripples around feedback loops, gets delayed, and comes back wearing a disguise. The single habit of this field is to stop staring at events and start seeing the <em>structure</em> that produces them — because the same structure, handed to different people, produces the same mess. This lesson builds that habit from a four-stage beer supply chain that melts down with no villain, three six-year-olds who out-reasoned their teachers, and a ranked list of where to actually push. Tap the cards, the diagrams, and the quizzes as you go.</p>
+
+<h2>1 · The one shift: from events to structure</h2>
+<p>Peter Senge's <em>The Fifth Discipline</em> (1990) named the move that defines the whole cluster. Most of us live at the level of <b>events</b> — who did what to whom, this quarter's number, today's fire. Systems thinking pulls the camera back to ask what <em>structure</em> keeps generating those events. The punchline is uncomfortable: the structure usually matters more than the people.</p>
+<blockquote class="srcq"><p>"Senge makes the argument that the structure of the system influences the behavior more often than not… different people in the same structure tend to produce qualitatively similar results. While it's easier to find someone or something to blame, the problem usually lies in how the game or system was set up in the first place."</p>
+<cite><a href="https://www.youtube.com/watch?v=iC8rAs7Ozoc" target="_blank" rel="noopener">— Readitfor.me, "A Free Summary of The Fifth Discipline by Peter Senge"</a> · in your corpus</cite></blockquote>
+<div class="equation">Events (react) &nbsp;→&nbsp; Patterns of behavior (anticipate) &nbsp;→&nbsp; <b>Structure</b> (redesign)</div>
+<p>Those are the three levels of explanation, and only the deepest one lets you change anything for good. Senge's companion warning, MacFarlane's three-minute version, is why: nothing in a system stands alone.</p>
+<blockquote class="srcq"><p>"Everything is interconnected: people, the ideas, the context, history, goals, and so on. A change in one area will cause ripples of change and reactions elsewhere, often in unexpected ways… feedback loops are not really loops. We have to consider the many balancing and reinforcing influences that continually affect the system."</p>
+<cite><a href="https://www.youtube.com/watch?v=MQMRMAmT2gg" target="_blank" rel="noopener">— Miles MacFarlane, "The Fifth Discipline in Three Minutes"</a> · in your corpus</cite></blockquote>
+<p>That sentence — a change in one area ripples elsewhere in unexpected ways — is also Robert Jervis's entire book <em>System Effects</em> (1997): in interconnected systems, indirect effects dominate, and policies built to solve one problem routinely create another somewhere you weren't looking. The posture both demand is <b>radical humility about second- and third-order effects.</b></p>
+
+<h2>2 · Watch a system melt down: the Beer Game</h2>
+<p>The cleanest proof that "structure beats people" is a game you can lose without making a single dumb decision. Invented by Jay Forrester at MIT, the <b>Beer Game</b> is John Sterman's canonical demo in <em>Business Dynamics</em> (2000): a four-stage supply chain — factory → distributor → wholesaler → retailer — where each player makes a perfectly rational ordering decision using only the information in front of them.</p>
+<blockquote class="srcq"><p>"No communication is allowed between players… especially the customer demand is only known to the retailer… It's an interactive role-play modeling approach that requires players to solve typical supply chain coordination difficulties in the absence of information exchange and cooperation."</p>
+<cite><a href="https://www.youtube.com/watch?v=_Pet8OVY5pg" target="_blank" rel="noopener">— Management Whizz, "The Beer Game Explained"</a> · in your corpus</cite></blockquote>
+<p>Add a shipping <b>delay</b> between every stage and an information blackout, and a tiny blip in customer demand amplifies into wild over- and under-ordering upstream. That amplification has a name — the <b>bullwhip effect</b> — and you have lived through it. <b>Tap each stage</b> to see the order swing grow as it travels up the chain.</p>
+<figure class="viz">
+<svg viewBox="0 0 720 240" role="img" aria-label="The bullwhip effect: a small demand change at the retailer amplifies into larger order swings at each upstream stage of the supply chain">
+  <text x="0" y="16" class="vlabel">Retailer — sees a small, real bump in customer demand</text>
+  <rect x="0" y="22" width="120" height="28" rx="4" class="bar-net" data-tip="The retailer is the ONLY player who sees true customer demand. A modest, real +20% bump. So far, no chaos."/>
+  <text x="60" y="41" class="bar-txt-sm">+20%</text>
+  <text x="0" y="64" class="vlabel">Wholesaler — over-orders to cover the bump AND rebuild buffer</text>
+  <rect x="0" y="70" width="240" height="28" rx="4" class="bar-gross" data-tip="The wholesaler can't see end demand — only the retailer's order. Fearing a stockout across a delay, it pads the order. The swing grows."/>
+  <text x="120" y="89" class="bar-txt-sm">+45%</text>
+  <text x="0" y="112" class="vlabel">Distributor — overreacts to the wholesaler's inflated order</text>
+  <rect x="0" y="118" width="400" height="28" rx="4" class="bar-rev" data-tip="Each stage overreacts to local information across a delay. The distributor now sees a huge order and panics upward."/>
+  <text x="200" y="137" class="bar-txt">+80%</text>
+  <text x="0" y="160" class="vlabel">Factory — builds capacity for a demand spike that was never real</text>
+  <rect x="0" y="166" width="640" height="28" rx="4" class="bar-rev" data-tip="The factory sees the wildest swing of all — then a crash when everyone realizes they over-ordered. Boom, then bust. No villain: just delays + local overreaction + no shared information."/>
+  <text x="320" y="185" class="bar-txt">+150% … then a crash</text>
+  <text x="0" y="228" class="vlabel">Same +20% signal · width = order swing · the structure amplifies it at every delayed, blind stage</text>
+</svg>
+<figcaption>One small, real demand change becomes a 150% factory swing — then a collapse — purely from delays and local overreaction. Replace every player with a genius and the oscillation still happens. The fix isn't better people; it's sharing information and shortening delays. The bullwhip case is from your corpus.</figcaption>
+</figure>
+<blockquote class="srcq"><p>"Supply chain delays or increases in demands can cause all kinds of havoc on the supply chains, which we're currently experiencing in 2021 — and a little bit in 2020, with the initial pandemic with toilet paper."</p>
+<cite><a href="https://www.youtube.com/watch?v=NgYnDORn3iw" target="_blank" rel="noopener">— Niko J, "Beer Game Spreadsheet… Bullwhip Effect"</a> · in your corpus</cite></blockquote>
+<div class="reveal">
+  <button class="reveal-q">🤔 If no one made a bad call, who do you "blame" for the bullwhip?</button>
+  <div class="reveal-a"><p>No one — and that's Sterman's whole point. The oscillation is a property of the <b>structure</b>: delays between stages, plus an information blackout, plus each actor optimizing locally. Sterman's lesson is blunt — <em>if the system is designed to oscillate, replacing the people won't help.</em> The leverage isn't a pep talk; it's <b>reducing the delay</b> and <b>sharing demand information</b> end to end so no one is forced to guess across a blind gap. This is the same insight Toyota turned into just-in-time and Amazon turned into real-time demand visibility.</p></div>
+</div>
+
+<h2>3 · Why bolted-on fixes backfire: feedback and "normal accidents"</h2>
+<p>Because everything loops back, the obvious fix often makes things worse. Senge codified this in his "laws," and the corpus states the two that matter most:</p>
+<blockquote class="srcq"><p>"Law number one: today's problems come from yesterday's solutions… Law number two: the harder you push, the harder the system pushes back. This is called compensating feedback."</p>
+<cite><a href="https://www.youtube.com/watch?v=iC8rAs7Ozoc" target="_blank" rel="noopener">— Readitfor.me, "A Free Summary of The Fifth Discipline"</a> · in your corpus</cite></blockquote>
+<p>This is exactly why Charles Perrow's <em>Normal Accidents</em> (1984) warns against piling safety features onto a system. Perrow argues that when a system is <b>both tightly coupled</b> (events propagate fast, no slack to intervene) <b>and interactively complex</b> (parts interact in ways the designers never foresaw), serious accidents aren't anomalies — they're <em>normal</em>, statistically inevitable. The Beer Game is a toy version: tight coupling (delays you can't escape) plus complexity (no one sees the whole) produces failure no operator can stop. Perrow's fork is the key move: you can't safely keep both, so you must <b>reduce coupling</b> (add slack and buffers) <em>or</em> <b>reduce complexity</b> (simplify interactions) — and crucially, adding another automated "safety" layer usually <em>increases</em> complexity and backfires. A bolted-on monitor is Senge's "fix that fails."</p>
+
+<h2>4 · The vocabulary — flip to learn</h2>
+<p>The exact terms the canon uses. <b>Tap a card to flip it.</b></p>
+<div class="fc-grid">
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Structure → Behavior</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The core claim: the same structure produces the same behavior regardless of who's in it. Blame the design, not the people.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Stock &amp; Flow</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A stock is an accumulation (inventory, cash, trust); flows fill or drain it. Sterman models the world as stocks, flows, and delays.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Feedback Loop</b><span class="hint">tap to flip ↻</span></span><span class="fc-b"><em>Reinforcing</em> loops amplify (snowballs); <em>balancing</em> loops stabilize (thermostats). Most systems are tangles of both.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Delay</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The gap between action and effect. Delays + feedback = oscillation. The Beer Game's bullwhip is delay-driven chaos.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Bullwhip Effect</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A small demand change amplifies into huge swings upstream because each stage overreacts to local info across a delay.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Compensating Feedback</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Senge's Law 2: the harder you push, the harder the system pushes back. Your effort triggers a balancing loop that erases it.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Shifting the Burden</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">An archetype: a quick symptomatic fix relieves pressure but atrophies the real solution, so dependence on the fix grows.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Tight Coupling</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Perrow: events propagate fast with no slack to intervene. Combine with complexity and accidents become "normal."</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Leverage Point</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Meadows: a place to intervene where a small push yields a big change. Most people push the feeblest ones (parameters).</span></span></button>
+</div>
+
+<h2>5 · The boys who out-reasoned their teachers</h2>
+<p>Senge's favorite proof that humans are <em>natural</em> systems thinkers — we just get the lens trained out of us — is a recording of three small boys at recess who drew their own feedback loop. A fight kept breaking out; instead of blaming a kid, they diagrammed the structure.</p>
+<blockquote class="srcq"><p>"First we have mean words, then we have hurt feelings, and then we have more hurt feelings, we have more mean words, and then a fight breaks out… Then one of the other little boys goes, 'Well, we tried saying I'm sorry, but we actually don't think that's very high leverage.'"</p>
+<cite><a href="https://www.youtube.com/watch?v=CeOZzMmIekw" target="_blank" rel="noopener">— Peter Senge keynote (shan gordon), "Peter Senge Systems Thinking"</a> · in your corpus</cite></blockquote>
+<p>Six-year-olds, unprompted, found the reinforcing loop ("mean words → hurt feelings → more mean words"), tested an intervention ("I'm sorry"), and judged it <em>low leverage</em>. That is the entire discipline in miniature: see the loop, not the kid; then hunt for where a small push actually moves the system. Which raises the question Donella Meadows spent a career answering — <em>where</em> is the high-leverage push?</p>
+
+<h2>6 · Where to push: Meadows' leverage points</h2>
+<p>Donella Meadows' <em>Thinking in Systems</em> ranks twelve <b>leverage points</b> — places to intervene — from feeblest to most powerful. The cruel irony: the spots everyone instinctively reaches for (tweak a number, adjust a target) are the <em>weakest</em>, while the powerful ones (rules, information flows, goals, the governing paradigm) feel abstract and get ignored.</p>
+<blockquote class="srcq"><p>"She lists these leverage points in reverse order, least effective to most effective… She identifies paradigm shifts as the most important leverage point. A buffer is a stabilizing stock — stocks that are large relative to their flows create stability in the system."</p>
+<cite><a href="https://www.youtube.com/watch?v=9qL4KxqbrFM" target="_blank" rel="noopener">— Ashley Hodgson, "Thinking in Systems, Ch. 6: Leverage Points"</a> · in your corpus</cite></blockquote>
+<p>Meadows' rivers-vs-lakes example nails Perrow's "add slack" prescription: rivers flood and lakes don't, because a lake's large <b>stock buffers</b> its flow. Decouple a fragile system by making its buffer big relative to its throughput. <b>Tap each rung</b> — higher on the ladder means a smaller effort moves the whole system more.</p>
+<figure class="viz">
+<svg viewBox="0 0 720 240" role="img" aria-label="Meadows' leverage points as a ladder, from weak parameter tweaks at the bottom to powerful paradigm shifts at the top">
+  <text x="0" y="16" class="vlabel">Most effective ↑ — small push, system-wide change</text>
+  <rect x="0" y="22" width="700" height="26" rx="4" class="bar-net" data-tip="PARADIGM — the shared, usually unspoken belief the whole system rests on (e.g. 'what counts as a fair tax'). Change this and everything downstream reorganizes. Hardest to reach, biggest payoff."/>
+  <text x="350" y="40" class="bar-txt">Paradigm — the goal &amp; mindset the system serves</text>
+  <rect x="60" y="54" width="580" height="26" rx="4" class="bar-gross" data-tip="RULES & POWER — 'pay attention to the rules and who has the power over them.' Incentives and who sets them shape all behavior beneath them."/>
+  <text x="350" y="72" class="bar-txt">Rules · who holds power over them</text>
+  <rect x="120" y="86" width="460" height="26" rx="4" class="bar-gross" data-tip="INFORMATION FLOWS — give a missing feedback signal to whoever can act on it (the Beer Game fix: share demand data). Cheap and powerful."/>
+  <text x="350" y="104" class="bar-txt">Information flows · missing feedback</text>
+  <rect x="180" y="118" width="340" height="26" rx="4" class="bar-rev" data-tip="BUFFERS & STOCKS — slack and inventory that absorb shocks. Lakes don't flood; rivers do. This is Perrow's 'reduce coupling.'"/>
+  <text x="350" y="136" class="bar-txt">Buffers &amp; stocks (add slack)</text>
+  <rect x="240" y="150" width="220" height="26" rx="4" class="bar-rev" data-tip="PARAMETERS — taxes, subsidies, the thermostat setting, this quarter's target. What everyone fights over — and the FEEBLEST lever of all."/>
+  <text x="350" y="168" class="bar-txt">Numbers / parameters (feeblest)</text>
+  <text x="0" y="200" class="vlabel">Least effective ↓ — where most people spend all their effort</text>
+  <text x="0" y="228" class="vlabel">Width = how far up the ladder · the powerful rungs feel abstract, so they get ignored</text>
+</svg>
+<figcaption>Meadows orders interventions least-to-most effective; people crowd the bottom (numbers) and neglect the top (rules, information, paradigm). Buffers sit in the middle — the structural "add slack" move Perrow prescribes. Ordering and examples from your corpus.</figcaption>
+</figure>
+<blockquote class="srcq"><p>"It needs an understanding of all leverage points — from the change of a number up to the change of a paradigm — to manage global change effectively."</p>
+<cite><a href="https://www.youtube.com/watch?v=_EMnnq3teEs" target="_blank" rel="noopener">— Global Change Management, "The 12 Leverage Points by Donella Meadows"</a> · in your corpus</cite></blockquote>
+<div class="example">
+<p><b>Worked example — your team keeps missing deadlines.</b> The event-level move is to push harder: more status meetings, a stretch target, a stern email. Senge's Law 2 says the system pushes back — people pad estimates, hide slippage, and burn out (compensating feedback). Climb the ladder instead. <b>Parameter</b> (feeble): raise the deadline pressure — you just did, it failed. <b>Buffer</b> (slack): build schedule slack so one delay doesn't cascade — this is decoupling, straight out of Perrow. <b>Information flow</b> (strong): make a missing feedback signal visible — a shared board showing real progress so blockers surface in <em>days</em>, not at the deadline (the Beer-Game fix). <b>Paradigm</b> (strongest): is the team's actual goal "look busy and never say no" rather than "ship working software"? Change that belief and every downstream behavior reorganizes. You moved up from the lever that backfires to the levers that hold.</p>
+</div>
+
+<h2>7 · Check yourself</h2>
+<div class="quizq" data-correct="2">
+  <p class="q">In the Beer Game, a small demand bump becomes a 150% swing at the factory. The cause is:</p>
+  <button class="opt">An incompetent factory manager who panicked</button>
+  <button class="opt">Customers behaving irrationally</button>
+  <button class="opt">The structure — delays plus local overreaction plus no shared information</button>
+  <p class="fb">Sterman's point: replace every player with a genius and the oscillation still happens. The bullwhip is a property of the <b>structure</b> (delays + information blackout + local optimizing), not the people. Fix it by sharing demand info and shortening delays.</p>
+</div>
+<div class="quizq" data-correct="0">
+  <p class="q">According to Meadows, which of these is the <em>most</em> powerful leverage point?</p>
+  <button class="opt">The paradigm — the shared, usually unspoken goal the system serves</button>
+  <button class="opt">A number / parameter, like a tax rate or quarterly target</button>
+  <button class="opt">Adding another automated safety feature</button>
+  <button class="opt">Working harder against the constraint</button>
+  <p class="fb">Meadows ranks interventions least-to-most effective, and the <b>paradigm</b> sits at the top while numbers/parameters sit at the bottom. Most people spend all their effort on the feeblest rung — tweaking parameters — and ignore the powerful ones.</p>
+</div>
+<div class="quizq" data-correct="1">
+  <p class="q">Senge's "the harder you push, the harder the system pushes back" describes:</p>
+  <button class="opt">A motivational slogan about persistence</button>
+  <button class="opt">Compensating feedback — a balancing loop that erases your effort</button>
+  <button class="opt">Why you should always escalate faster</button>
+  <p class="fb">It's <b>compensating feedback</b>: your intervention triggers a balancing loop that pushes back, so brute force gets absorbed. The systems-thinking response is to find a higher leverage point, not to push harder.</p>
+</div>
+
+<div class="pitfall">
+<h3>⚠️ "It's the structure, not the people" is a diagnosis — not an alibi</h3>
+<p>The cluster's signature insight — structure drives behavior — is powerful and easy to abuse. Pushed too far it <em>excuses genuinely bad actors</em>: "the system made me do it" becomes a shrug. Sterman and Meadows both warn that models give false confidence — precise-looking output from guessed parameters, "all models are wrong." And Jervis's humility about second-order effects can curdle into <b>paralysis</b>: "any action might backfire, so do nothing" — which is itself a choice with system effects. Use systems thinking to locate the real leverage and to stay humble about ripples — never to avoid acting or to absolve someone who genuinely deserves it. The practitioner corpus (r/systemsthinking) names the daily version of this trap exactly: you become "so aware that event-level solutions don't last, but structure-level solutions are much harder to achieve, that you are caught between the urgent but ephemeral and the slow-burn but everlasting." The discipline is to act <em>and</em> stay humble — make small, reversible bets at the highest leverage point you can actually reach.</p>
+</div>
+
+<div class="pitfall subtle">
+<h3>🔎 One subtlety → your bridge to the rest of the shelf</h3>
+<p>Notice the single variable doing all the work across every example: the <b>delay</b>. The gap between action and consequence is what turns a sensible decision into a bullwhip, what makes "yesterday's solution" today's problem, and what makes tightly-coupled systems fail before anyone can intervene. Master one question — "where is the delay, and who can't see across it?" — and you hold the key to operations (inventory cycles), finance (boom-bust), org design (hiring sprees then freezes), and even how beliefs harden in a culture war. The deepest skill here isn't drawing loops; it's recognizing that the lever you're about to pull is attached to a system that will pull back.</p>
+</div>
+
+<div class="apply-box">
+<h3>🎯 Your move</h3>
+<p>Pick one recurring problem you keep "fixing" and it keeps coming back (a team that re-misses deadlines, inventory that booms then busts, a habit that won't stick). On paper: (1) draw the <b>feedback loop</b> — name two or three variables that cause each other in a circle, and mark whether it's <em>reinforcing</em> or <em>balancing</em>; (2) find the <b>delay</b> — where is there a gap between an action and its visible effect, and who can't see across it? (3) climb the <b>leverage ladder</b> — write the parameter fix you've been using, then one higher move: add a <b>buffer</b>, open an <b>information flow</b>, or question the <b>paradigm</b> the system is quietly optimizing for. The loop almost always reveals that the thing you keep doing is the feeblest lever on the board.</p>
+</div>
+
+<div class="src-list">
+<h4>📚 Taught from these sources in your corpus</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=iC8rAs7Ozoc" target="_blank" rel="noopener">Readitfor.me — A Free Summary of The Fifth Discipline by Peter Senge (structure→behavior, the laws, archetypes)</a></li>
+<li><a href="https://www.youtube.com/watch?v=MQMRMAmT2gg" target="_blank" rel="noopener">Miles MacFarlane — The Fifth Discipline in Three Minutes (interconnection, ripples, feedback)</a></li>
+<li><a href="https://www.youtube.com/watch?v=CeOZzMmIekw" target="_blank" rel="noopener">Peter Senge keynote (shan gordon) — the three boys and the feedback loop</a></li>
+<li><a href="https://www.youtube.com/watch?v=_Pet8OVY5pg" target="_blank" rel="noopener">Management Whizz — The Beer Game Explained (Forrester, coordination without information)</a></li>
+<li><a href="https://www.youtube.com/watch?v=NgYnDORn3iw" target="_blank" rel="noopener">Niko J — Beer Game Spreadsheet for Teaching Supply Chain Delays and the Bullwhip Effect</a></li>
+<li><a href="https://www.youtube.com/watch?v=9qL4KxqbrFM" target="_blank" rel="noopener">Ashley Hodgson — Thinking in Systems, Ch. 6: Leverage Points (Meadows; buffers; rivers vs. lakes)</a></li>
+<li><a href="https://www.youtube.com/watch?v=_EMnnq3teEs" target="_blank" rel="noopener">Global Change Management — The 12 Leverage Points by Donella Meadows</a></li>
+</ul>
+<p style="margin:8px 0 0;color:var(--dim)">Canon notes behind this lesson: [[canon-senge-fifth-discipline]] · [[canon-sterman-business-dynamics]] · [[canon-perrow-normal-accidents]] · [[canon-jervis-system-effects]] · [[canon-meadows-thinking-in-systems]] · [[canon-meadows-leverage-points]]</p>
+</div>

@@ -1,0 +1,170 @@
+<!-- LESSON: Information & Communication — net-new canon lesson (no existing course home). Grounded in the canon/information-communication corpus: Discern "Claude Shannon Explains Information Theory" (1afrzErFy_k), Computerphile "Why Information Theory is Important" (b6VdGHSV6qg), Art of the Problem "Shannon's Information Entropy" (R4OlXb9aTvQ); Tech@State "Keynote by Edward Tufte" (g9Y4SxgfGCg), Erik B "Edward Tufte Principles" (UuL6wPGTJZQ), Research By Design "Graphical EXCELLENCE… by Tufte" (T4_ja1VAhUs); Therapy in a Nutshell "Crucial Conversations Book Summary" (nrfjYwY5SSE), Crucial Learning "Crucial Conversations… What to Expect" (k2QuG-HLYR4), Successful By Design "Crucial Conversations Summary & Review" (Q2yG142cyNg). Teaches the canon cluster: Shannon (A Mathematical Theory of Communication), Tufte (The Visual Display of Quantitative Information), Patterson et al. (Crucial Conversations), Stone/Patton/Heen (Difficult Conversations). -->
+<p class="lead">Communication looks like one skill, but it's really a pipe with three places it can fail. A message can be <b>distorted in transit</b> (the channel is noisy), <b>distorted in display</b> (the chart lies or buries its point), or <b>distorted by emotion</b> (the human on the other end stops listening). This cluster gives you a precise instrument for each failure mode — a 1948 engineering theorem that defines information itself, a 1983 grammar for showing data honestly, and two field-tested playbooks for the conversations where stakes are high and tempers are higher. The throughline: <b>getting a message to <em>land</em> is a discipline, not a knack.</b> Tap the cards, the diagrams, and the quizzes as you go.</p>
+
+<h2>1 · What information actually <em>is</em>: the reduction of uncertainty</h2>
+<p>Before you can transmit a message well, you have to know what a message even <em>is</em>. Claude Shannon answered that in <em>A Mathematical Theory of Communication</em> (1948) — and his answer was radical: information has nothing to do with meaning. In his own recorded words:</p>
+<blockquote class="srcq"><p>"To measure information you have to look at it without regard to meaning — that upset a lot of people, that content is irrelevant. The point of sending a message is to remove uncertainty: something you didn't know, now you know."</p>
+<cite><a href="https://www.youtube.com/watch?v=1afrzErFy_k" target="_blank" rel="noopener">— Discern, "Claude Shannon Explains Information Theory"</a> · in your corpus</cite></blockquote>
+<p>So <b>information = surprise.</b> A message you could have predicted carries zero information; the more surprising it is, the more it tells you. Shannon's unit is the <b>bit</b> — the uncertainty of one fair coin toss — and the rule is brutally simple: "if something's completely predictable there's zero information; if something's completely random you need information about everything."</p>
+<div class="equation">Information = how much <b>uncertainty</b> a message removes &nbsp;·&nbsp; predictable → 0 bits</div>
+<p>The Computerphile explainer shows <em>why</em> surprise is measured with a logarithm — so that rare events score high without "going off the scale": "every time you halve the probability you only increase the amount you're surprised by by literally a bit." The <b>average</b> surprise of a source is its <b>entropy</b> — which Art of the Problem reframes beautifully as the expected number of yes/no questions you'd have to ask to pin the message down.</p>
+
+<h2>2 · Noise, redundancy, and "if you said it once, you haven't said it"</h2>
+<p>Real channels are <b>noisy</b> — distraction, competing messages, garbled wires. Shannon's second gift is the cure: <b>redundancy is not waste, it's error-correction.</b> Re-encoding the signal is how it survives the channel. This is the entire mathematics behind why an important message must be sent more than once, in more than one form. The corpus grounds it in working engineering, not metaphor:</p>
+<blockquote class="srcq"><p>"A lot of concepts in computer science are directly derived from this — things like compression, zip files, network error-correction codes or error-detection… are all directly related to information theory."</p>
+<cite><a href="https://www.youtube.com/watch?v=b6VdGHSV6qg" target="_blank" rel="noopener">— Computerphile, "Why Information Theory is Important"</a> · in your corpus</cite></blockquote>
+<p>There's also a hard ceiling. Every channel has a <b>capacity</b> — a maximum bits-per-second it can reliably carry — and you cannot beat it: "if you know the throughput in bits of a channel… there's no smart way of putting more information through it than whatever that number is." Below that ceiling lives entropy, the floor: you "can never do better than this on average" when compressing.</p>
+<p><b>The leadership translation</b> (and the trap): most communication fails because the channel is noisy, so the fix is <em>intentional</em> redundancy — say the important thing several ways, through several channels. <em>If you said it once, you haven't said it.</em> But redundancy has a ceiling too: past a point, repetition <em>becomes</em> noise (when everything is "urgent," nothing is). And remember Shannon's own warning — the math guarantees the <b>bits</b> arrive, never that the <b>idea</b> was any good.</p>
+<figure class="viz">
+<svg viewBox="0 0 720 230" role="img" aria-label="Shannon's communication model: a message passes from source through an encoder across a noisy channel to a decoder and destination">
+  <text x="0" y="16" class="vlabel">Shannon's channel — every message runs this gauntlet · tap each stage</text>
+  <rect x="0" y="30" width="120" height="46" rx="4" class="bar-net" data-tip="SOURCE: the message you want to send. Its information content = how much uncertainty it removes for the receiver. Predictable = 0 bits."/>
+  <text x="60" y="58" text-anchor="middle" class="bar-txt-sm">Source</text>
+  <rect x="150" y="30" width="120" height="46" rx="4" class="bar-gross" data-tip="ENCODE: turn the idea into a signal (words, an email, a chart). Smart encoding packs the message near channel capacity without exceeding it."/>
+  <text x="210" y="58" text-anchor="middle" class="bar-txt-sm">Encode</text>
+  <rect x="300" y="30" width="120" height="46" rx="4" class="bar-rev" data-tip="NOISE: distraction, competing messages, misreading. This is where meaning gets corrupted — and why a single send is rarely enough."/>
+  <text x="360" y="58" text-anchor="middle" class="bar-txt-sm">Noisy channel</text>
+  <rect x="450" y="30" width="120" height="46" rx="4" class="bar-gross" data-tip="DECODE: the receiver reconstructs the message. Redundancy (saying it 2–3 ways) is what lets them error-correct past the noise."/>
+  <text x="510" y="58" text-anchor="middle" class="bar-txt-sm">Decode</text>
+  <rect x="600" y="30" width="120" height="46" rx="4" class="bar-net" data-tip="DESTINATION: did the uncertainty actually get removed? If the idea didn't land, the channel — not the audience — usually failed."/>
+  <text x="660" y="58" text-anchor="middle" class="bar-txt-sm">Receiver</text>
+  <text x="60" y="120" class="vlabel">↑ 0 bits if predictable</text>
+  <text x="300" y="120" class="vlabel">↑ corruption happens HERE</text>
+  <text x="540" y="120" class="vlabel">↑ redundancy = error-correction</text>
+  <rect x="0" y="150" width="720" height="34" rx="4" class="bar-gross" data-tip="The fix for noise is intentional redundancy: re-send the same core idea, worded differently, through another channel. But past a ceiling, repetition becomes noise itself."/>
+  <text x="360" y="172" text-anchor="middle" class="bar-txt">Fix for noise → intentional redundancy (multiple ways · multiple channels)</text>
+  <text x="0" y="218" class="vlabel">The math certifies the bits survive — never that the idea was worth sending</text>
+</svg>
+<figcaption>Shannon's model: information is uncertainty removed; noise corrupts it; redundancy is the error-correction that gets it through. Channel capacity is a hard ceiling. Grounded in the Discern / Computerphile / Art of the Problem transcripts in your corpus.</figcaption>
+</figure>
+<div class="reveal">
+  <button class="reveal-q">🤔 If the math is "content-free," why does Shannon matter to a manager at all?</button>
+  <div class="reveal-a"><p>Because it isolates a failure mode you'd otherwise blame on people. When a strategy doesn't stick, the instinct is "my team didn't get it." Shannon reframes it: <b>the channel was noisy and you sent the message once.</b> That's a fixable transmission problem, not a competence problem. The discipline is to separate two questions you usually blur together — <em>did the bits arrive?</em> (Shannon's domain: redundancy, channels) and <em>was the idea good and persuasive?</em> (a different domain entirely — structure, narrative, the next books on the shelf). Solve transmission first; you can't persuade with a message that never landed.</p></div>
+</div>
+
+<h2>3 · Showing it: Tufte and the discipline of honest data</h2>
+<p>Words are one channel; <b>charts</b> are another — and they have their own grammar. Edward Tufte's <em>The Visual Display of Quantitative Information</em> (1983) treats data visualization as a cognitive discipline whose entire job is to respect the reader's eye. His frame for the whole field:</p>
+<blockquote class="srcq"><p>"The goal of analytical design is to make people smarter. A good start is to make our information displays worthy of the routine capabilities of the human eye-brain system."</p>
+<cite><a href="https://www.youtube.com/watch?v=g9Y4SxgfGCg" target="_blank" rel="noopener">— Tech@State, keynote by Dr. Edward Tufte</a> · in your corpus</cite></blockquote>
+<p>The eye is astonishingly high-bandwidth — Tufte notes the optic nerve carries roughly 10 megabits per second — so <b>under-loaded displays waste the reader.</b> His evidence is pointed: an ESPN sports table averages "150 to 200 numbers… per table," while "the average number of numbers on the government slide is 12." Push <b>data density</b> up; strip <b>chartjunk</b> out. The mechanism is the <b>data-ink ratio</b>:</p>
+<blockquote class="srcq"><p>"A large share of ink on a graphic should present data… data-ink is the non-erasable core of a graphic — the non-redundant ink arranged in response to variation in the numbers."</p>
+<cite><a href="https://www.youtube.com/watch?v=UuL6wPGTJZQ" target="_blank" rel="noopener">— Erik B, "Edward Tufte Principles" lecture</a> · in your corpus</cite></blockquote>
+<p>But the rule the corpus rates <em>above</em> erasing junk is <b>honesty</b>. Graphical excellence starts with not lying — no truncated axes, no area-for-length tricks (Tufte's "lie factor"), no cherry-picking:</p>
+<blockquote class="srcq"><p>"Number one is that our graphs should display our data honestly… we don't predetermine the outcome we want and then cherry-pick the data… we let the data speak for themselves."</p>
+<cite><a href="https://www.youtube.com/watch?v=T4_ja1VAhUs" target="_blank" rel="noopener">— Research By Design, "Graphical EXCELLENCE: Presenting Data Clearly by Tufte"</a> · in your corpus</cite></blockquote>
+<p>And the practitioner's caution against minimalism-as-vanity: "no one is that impressed by how pretty you make your chart." Erase junk <em>in service of the message</em> — substance over design — not as an aesthetic end. A light reference line, a label, a touch of color that <em>aids</em> a non-expert reader is not chartjunk; it's redundancy doing Shannon's job on the visual channel.</p>
+
+<h2>4 · The human channel goes crucial</h2>
+<p>The noisiest channel of all is a person whose emotions are running. Patterson, Grenny, McMillan &amp; Switzler's <em>Crucial Conversations</em> (2002) names the exact moment a conversation turns <b>crucial</b>: when <b>stakes are high, opinions differ, and emotions run strong.</b> Under those conditions people stop transmitting meaning and default to <b>silence</b> (withdraw, avoid, sugarcoat) or <b>violence</b> (control, label, attack). The book's central reframe is that those reactions are not the problem to argue with — they're a <em>signal</em>:</p>
+<blockquote class="srcq"><p>"This book challenges us to see silence or violence as a sign that the other person isn't feeling safe to talk… When we see this we have to stop ourselves and ask, what can I do to restore safety?"</p>
+<cite><a href="https://www.youtube.com/watch?v=nrfjYwY5SSE" target="_blank" rel="noopener">— Therapy in a Nutshell, "Crucial Conversations Book Summary"</a> · in your corpus</cite></blockquote>
+<p>The key move is counterintuitive: when the conversation gets heated, you don't push harder on <b>content</b> — you stop and repair <b>safety</b>, via mutual purpose ("we're on the same side") and mutual respect. The corpus dramatizes it. A manager, Esther, must confront a designer, Leia, about a client problem; Leia bristles — "Are you questioning my design skills?" — and Esther defuses it with a <b>contrasting statement</b> (clarify what you <em>don't</em> mean, then what you <em>do</em>):</p>
+<blockquote class="srcq"><p>"Oh, no, no — that's not it at all. I have no concerns with the quality of your work. Your past work speaks for itself. I'm just trying to figure out if there's a disconnect…"</p>
+<cite><a href="https://www.youtube.com/watch?v=k2QuG-HLYR4" target="_blank" rel="noopener">— Crucial Learning, "Crucial Conversations for Mastering Dialogue: What to Expect"</a> · in your corpus</cite></blockquote>
+<p>Safety restored, the real cause surfaces — the specs were wrong — instead of a blame spiral. And the cost of <em>not</em> doing this is measurable: co-author Joseph Grenny's study of 1,100 employees found "43% estimated they waste 2 weeks or more ruminating about an unresolved problem at work," and "one in three estimate their inability to speak up… has cost their organization at least $25,000."</p>
+
+<h2>5 · The three conversations hiding in every hard one</h2>
+<p>Its sister book — Stone, Patton &amp; Heen's <em>Difficult Conversations</em> (1999, from the Harvard Negotiation Project) — adds the diagnostic layer. Every difficult conversation is really <b>three conversations at once</b>, and most people try to have only the first, then are baffled when it fails:</p>
+<ul>
+<li><b>The "What Happened" conversation</b> — facts, interpretations, blame. The move: from <em>who's right</em> to <em>each person's story</em>; from blame to <b>contribution</b>.</li>
+<li><b>The Feelings conversation</b> — the emotions driving behavior that go unspoken. Name them, or they "run the conversation from underneath."</li>
+<li><b>The Identity conversation</b> — what this says about <em>me</em>: am I competent, am I a good person? This is why hard talks feel threatening. (Leia's "Are you questioning my design skills?" is a pure identity reaction.)</li>
+</ul>
+<p>The skill is to spot which layer is actually live and shift from <b>certainty to curiosity</b> — replace "you did X" with "I experienced X; help me understand your perspective." Notice this is the same unlock as Crucial Conversations under a different name: surface the feeling/identity threat, or it silently steers everything. And both books carry the same warning — these are skills you must run <em>live, under stress</em>, which is precisely when it's hardest:</p>
+<blockquote class="srcq"><p>"Human beings tend to behave their worst in the most critical moment… when you're under stress, blood is directed away from your brain into your muscles, so your thinking naturally suffers."</p>
+<cite><a href="https://www.youtube.com/watch?v=Q2yG142cyNg" target="_blank" rel="noopener">— Successful By Design, "Crucial Conversations Summary &amp; Review (ANIMATED)"</a> · in your corpus</cite></blockquote>
+
+<h2>6 · The vocabulary — flip to learn</h2>
+<p>The exact terms the canon uses. <b>Tap a card to flip it.</b></p>
+<div class="fc-grid">
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Information (bit)</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Shannon: the reduction of uncertainty. Measured in bits — one fair coin toss. Predictable message = 0 information; surprise = more.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Entropy</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The <em>average</em> surprise of a source — the expected number of yes/no questions to pin down its output. The floor for compression.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Channel capacity</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A hard ceiling on bits a channel can reliably carry. "No smart way of putting more information through than that number."</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Redundancy</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Not waste — error-correction. Re-encoding the signal is how it survives noise. <em>If you said it once, you haven't said it.</em></span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Data-ink ratio</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Tufte: every mark should encode data. Maximize the non-erasable, non-redundant ink; erase decoration.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Chartjunk</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">3-D effects, gradients, gratuitous gridlines. Doesn't just look bad — it actively interferes with understanding. Erase it.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Lie factor</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Ratio of the visual effect's size to the data's real change. &gt;1 = the graphic distorts (truncated axes, area-for-length).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Silence / Violence</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The two defaults when safety drops: withdraw/avoid (silence) or control/attack (violence). A signal to restore safety, not push content.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Contrasting</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Clarify what you <em>don't</em> mean, then what you <em>do</em>. Repairs safety fast: "I have no concerns with your work… I'm trying to…"</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Fact vs. Story</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Separate the bare fact ("she didn't reply") from the story you built on it ("she ignored me"). You feel your story, not the fact.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Three Conversations</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Stone: every hard talk is What-Happened + Feelings + Identity at once. Spot which layer is live.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Contribution &gt; Blame</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Shift from "who's at fault" to "how did each of us contribute." Opens problem-solving — but never use it to launder real accountability.</span></span></button>
+</div>
+
+<h2>7 · One mental model, four failure modes</h2>
+<p>Stack the four books and a single picture appears: a message must survive transmission, display, <em>and</em> emotion to land. Each book guards one gate. <b>Tap each layer.</b></p>
+<figure class="viz">
+<svg viewBox="0 0 720 230" role="img" aria-label="Four layers of communication fidelity: transmission, display, safety, and diagnosis, each guarded by a canon book">
+  <text x="0" y="16" class="vlabel">1 · Transmission — does the signal survive the noise? (Shannon)</text>
+  <rect x="0" y="22" width="700" height="28" rx="4" class="bar-rev" data-tip="SHANNON: information = uncertainty removed; noise corrupts it; redundancy is error-correction. Send the core idea 2–3 ways, through 2–3 channels."/>
+  <text x="350" y="41" class="bar-txt">Send it more than once, more than one way</text>
+  <text x="0" y="64" class="vlabel">2 · Display — does the chart reveal or obscure? (Tufte)</text>
+  <rect x="60" y="70" width="580" height="28" rx="4" class="bar-gross" data-tip="TUFTE: honesty first, then maximize data-ink and erase chartjunk. Make the display worthy of the eye-brain system — substance over design."/>
+  <text x="350" y="89" class="bar-txt">Honest first · data-ink up · chartjunk out</text>
+  <text x="0" y="112" class="vlabel">3 · Safety — is the human still listening? (Crucial Conversations)</text>
+  <rect x="130" y="118" width="440" height="28" rx="4" class="bar-gross" data-tip="PATTERSON et al.: when emotions run strong, people go silent or violent. Stop pushing content; restore safety with mutual purpose + contrasting."/>
+  <text x="350" y="137" class="bar-txt">Restore safety before content</text>
+  <text x="0" y="160" class="vlabel">4 · Diagnosis — which conversation is really happening? (Difficult Conversations)</text>
+  <rect x="200" y="166" width="300" height="28" rx="4" class="bar-net" data-tip="STONE/PATTON/HEEN: every hard talk is three at once — What-Happened, Feelings, Identity. Move from certainty to curiosity; surface the live layer."/>
+  <text x="350" y="185" class="bar-txt">Name the layer · curiosity over certainty</text>
+  <text x="0" y="218" class="vlabel">A message must clear all four gates to actually land</text>
+</svg>
+<figcaption>The cluster as one instrument: Shannon guards the wire, Tufte guards the page, Crucial Conversations guards the room, Difficult Conversations diagnoses what's really being said. Drawn from the corpus transcripts above.</figcaption>
+</figure>
+<div class="example">
+<p><b>Worked example — announcing a reorg.</b> You have to tell your team their reporting lines are changing. <b>Transmission (Shannon):</b> don't fire one all-staff email and assume it landed — the channel is noisy. Send the core message three ways: a live all-hands, a written FAQ, and a 1:1 from each manager. Redundancy is the error-correction. <b>Display (Tufte):</b> if you show the new org chart, make it honest and dense — no 3-D boxes, no decorative gradients; one clean diagram beats six busy slides. <b>Safety (Crucial Conversations):</b> in the room, people will go silent (shut down) or violent (attack the plan). Read that as a safety signal, not insubordination; open with contrasting — "This is <em>not</em> about anyone's performance; it <em>is</em> about getting closer to customers." <b>Diagnosis (Difficult Conversations):</b> the loud objection about "logistics" (What-Happened) is usually masking an Identity fear — "does this mean I'm being demoted?" Name that layer with curiosity and the real conversation can finally happen.</p>
+</div>
+
+<h2>8 · Check yourself</h2>
+<div class="quizq" data-correct="2">
+  <p class="q">In Shannon's theory, which message carries the <em>most</em> information?</p>
+  <button class="opt">A long, beautifully written essay</button>
+  <button class="opt">A message you could have predicted in advance</button>
+  <button class="opt">A surprising result you assigned low probability to</button>
+  <p class="fb">Information = uncertainty removed = <b>surprise</b>. A perfectly predictable message carries zero bits; the lower the probability of what you learn, the more information it conveys. Length and beauty are irrelevant to the math — "content is irrelevant."</p>
+</div>
+<div class="quizq" data-correct="0">
+  <p class="q">For Tufte, the very first quality of graphical excellence is:</p>
+  <button class="opt">Honesty — show the data as it is, don't predetermine the outcome and cherry-pick</button>
+  <button class="opt">Beauty — impress the reader with polish and 3-D effects</button>
+  <button class="opt">Brevity — always use the fewest possible data points</button>
+  <p class="fb">Honesty ranks above even erasing chartjunk. "We don't predetermine the outcome we want and then cherry-pick the data." A pretty chart that distorts (a high lie factor) fails the first test; "no one is that impressed by how pretty you make your chart."</p>
+</div>
+<div class="quizq" data-correct="1">
+  <p class="q">A teammate goes quiet and defensive mid-conversation. The Crucial Conversations move is to:</p>
+  <button class="opt">Push your point harder and more forcefully until they engage</button>
+  <button class="opt">Read it as lost safety and stop to restore it before continuing on content</button>
+  <button class="opt">End the conversation — they're clearly not ready</button>
+  <p class="fb">Silence or violence is a <b>safety signal</b>, not data to argue with. Stop pushing content and restore safety — mutual purpose, mutual respect, a contrasting statement ("I have no concerns with your work… I'm trying to…"). Then the real issue surfaces.</p>
+</div>
+
+<div class="pitfall">
+<h3>⚠️ Fidelity is not persuasion — don't over-literalize the math</h3>
+<p>The seductive error is treating Shannon as a theory of <em>communication</em> in the everyday sense. It isn't. The 1948 math is deliberately about <b>transmission, not meaning</b> — Shannon said so himself: "content is irrelevant." It certifies that the <em>bits</em> survive a noisy channel; it says nothing about whether the message persuades, whether the chart's story is the right one, or whether the idea deserved transmitting. A perfectly transmitted bad message is still bad. The same purity trap snares Tufte: maximal data-ink is not always maximal <em>comprehension</em> — a non-expert sometimes needs the reference line, the label, the splash of color you were told to erase. <b>Use these tools to get the message through cleanly; use judgment, narrative, and structure to make it worth getting through.</b></p>
+</div>
+
+<div class="pitfall subtle">
+<h3>🔎 One subtlety → your bridge to the rest of the shelf</h3>
+<p>Notice the same word kept reappearing across four very different books: <b>redundancy</b>. Shannon calls repetition error-correction; Tufte allows redundant ink when it <em>aids</em> the reader; Crucial Conversations has you re-state mutual purpose; Difficult Conversations has you name a layer out loud that everyone already half-feels. Saying the thing again, in another form, is not a failure of economy — it is <em>how meaning beats noise</em>, whether the noise is electrical, visual, or emotional. The deepest communication skill isn't eloquence; it's recognizing <b>which channel is corrupting your message</b> — the wire, the page, or the person — and applying the right redundancy. That recognition is the throughline into structure and narrative (Minto, Duarte), into command intent (Bungay's alignment gap), and into the negotiation and leadership shelves, where the same skill decides whether anyone follows you.</p>
+</div>
+
+<div class="apply-box">
+<h3>🎯 Your move</h3>
+<p>Take your single most important current message — a strategy, a change, a piece of feedback. On paper, run it through all four gates: (1) <b>Transmission</b> — are you relying on one channel? Re-send the same core idea two more ways, worded differently, and assume it hasn't landed yet. (2) <b>Display</b> — if there's a chart, delete every non-data mark (gridlines, 3-D, gradients) and check the axis for a lie factor. (3) <b>Safety</b> — if it's a live conversation, write one <b>contrasting statement</b> that defuses the biggest fear ("This is <em>not</em> X; it <em>is</em> Y"). (4) <b>Diagnosis</b> — name which of the three conversations (What-Happened, Feelings, Identity) is <em>really</em> driving the other person, and open with curiosity about their story, not your verdict.</p>
+</div>
+
+<div class="src-list">
+<h4>📚 Taught from these sources in your corpus</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=1afrzErFy_k" target="_blank" rel="noopener">Discern — Claude Shannon Explains Information Theory (information = removing uncertainty)</a></li>
+<li><a href="https://www.youtube.com/watch?v=b6VdGHSV6qg" target="_blank" rel="noopener">Computerphile — Why Information Theory is Important (surprisal, compression, channel capacity)</a></li>
+<li><a href="https://www.youtube.com/watch?v=R4OlXb9aTvQ" target="_blank" rel="noopener">Art of the Problem — Shannon's Information Entropy, Physical Analogy (entropy as expected yes/no questions)</a></li>
+<li><a href="https://www.youtube.com/watch?v=g9Y4SxgfGCg" target="_blank" rel="noopener">Tech@State — Data Visualization Keynote by Dr. Edward Tufte (make people smarter, data density)</a></li>
+<li><a href="https://www.youtube.com/watch?v=UuL6wPGTJZQ" target="_blank" rel="noopener">Erik B — "Edward Tufte Principles" lecture (data-ink ratio)</a></li>
+<li><a href="https://www.youtube.com/watch?v=T4_ja1VAhUs" target="_blank" rel="noopener">Research By Design — Graphical EXCELLENCE: Presenting Data Clearly by Tufte (honesty first)</a></li>
+<li><a href="https://www.youtube.com/watch?v=nrfjYwY5SSE" target="_blank" rel="noopener">Therapy in a Nutshell — Crucial Conversations Book Summary (silence/violence, restore safety)</a></li>
+<li><a href="https://www.youtube.com/watch?v=k2QuG-HLYR4" target="_blank" rel="noopener">Crucial Learning — Crucial Conversations for Mastering Dialogue: What to Expect (contrasting, the $25,000 cost)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Q2yG142cyNg" target="_blank" rel="noopener">Successful By Design — Crucial Conversations Summary &amp; Review (behaving worst under stress)</a></li>
+</ul>
+<p style="margin:8px 0 0;color:var(--dim)">Canon notes behind this lesson: [[canon-shannon-information-theory]] · [[canon-tufte-visual-display]] · [[canon-patterson-crucial-conversations]] · [[canon-stone-difficult-conversations]]</p>
+</div>

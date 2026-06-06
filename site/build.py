@@ -50,7 +50,30 @@ TITLES = {
     "E7-exec-presence-comms": "Executive Presence & Comms", "E8-stakeholder-ir": "Stakeholder & Investor Relations",
     "E9-geopolitics-macro": "Geopolitics & Macro", "E10-digital-ai": "Digital & AI Transformation",
     "E11-operating-system": "Personal Operating System", "E12-culture-strategy": "Culture as Strategy",
+    # --- The Canon (reading layer): one cluster per book-group ---
+    "strategy": "Strategy", "leadership-presence": "Leadership & Presence",
+    "mental-models": "Mental Models & Thinking", "org-design-mechanisms": "Org Design & Mechanisms",
+    "landscape-competitive": "Landscape & Competitive", "negotiation-influence": "Negotiation & Influence",
+    "execution-operations": "Execution & Operations", "culture-change": "Culture & Change",
+    "risk-fragility": "Risk, Uncertainty & Fragility", "product-innovation": "Product Thinking & Innovation",
+    "power-politics": "Power & Org Politics", "personal-effectiveness": "Personal Effectiveness",
+    "financial-literacy": "Financial Literacy for Operators", "behavioral-decision": "Behavioral Design & Decision Science",
+    "game-theory": "Game Theory & Strategic Interaction", "platform-strategy": "Network Effects & Platform Strategy",
+    "systems-complexity": "Systems Thinking & Complexity", "information-communication": "Information & Communication",
+    "economics-incentives": "Economics & Incentive Design", "history-judgment": "History & Judgment",
+    "communication-storytelling": "Communication & Storytelling", "design-problem-solving": "Design Thinking & Problem-Solving",
+    "ethics-judgment": "Ethics & Judgment",
 }
+
+# Canon clusters in display order → card codes C1..C23 (a reading layer, not a strict sequence)
+CANON_ORDER = [
+    "strategy", "leadership-presence", "mental-models", "org-design-mechanisms", "landscape-competitive",
+    "negotiation-influence", "execution-operations", "culture-change", "risk-fragility", "product-innovation",
+    "power-politics", "personal-effectiveness", "financial-literacy", "behavioral-decision", "game-theory",
+    "platform-strategy", "systems-complexity", "information-communication", "economics-incentives",
+    "history-judgment", "communication-storytelling", "design-problem-solving", "ethics-judgment",
+]
+CANON_CODE = {slug: f"C{i+1}" for i, slug in enumerate(CANON_ORDER)}
 
 def esc(s):
     return html.escape(str(s if s is not None else ""))
@@ -72,6 +95,7 @@ def fmt_dur(v):
     except (ValueError, TypeError): return ""
 
 def code(track, mid):
+    if track == "canon": return CANON_CODE.get(mid, "✦")
     return mid.split("-")[0].upper() if track == "exec" else mid.split("-")[0]
 
 def load_module(mdir):
@@ -214,7 +238,7 @@ def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None, summar
     if prevnext[1]: pn += f'<a class="pn next" href="{prevnext[1][0]}">{esc(prevnext[1][1])} →</a>'
     done_btn = (f'<button id="mark-done" data-mod="{track}-{mid}.html"><span class="cp-tick">✓</span> '
                 f'<span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button>') if lesson else ""
-    track_name = "Executive Track" if track == "exec" else "Core Curriculum"
+    track_name = {"exec": "Executive Track", "canon": "The Canon · Reading Layer"}.get(track, "Core Curriculum")
     return HEAD.format(title=f"{c} · {title}", css="style.css") + f"""
 {'<div id="progress"></div>' if lesson else ''}
 <header class="mod-header {('exec' if track=='exec' else 'core')}">
@@ -262,6 +286,8 @@ def render_index(modules, stats):
 <div class="grid">{cards('core')}</div>
 <div class="track-head"><span class="th-label">Executive Track</span><span class="th-rule"></span><span class="th-count">12 modules</span></div>
 <div class="grid">{cards('exec')}</div>
+<div class="track-head"><span class="th-label">The Canon · Reading Layer</span><span class="th-rule"></span><span class="th-count">23 clusters</span></div>
+<div class="grid">{cards('canon')}</div>
 </main>
 <footer>Generated from <code>~/self-mba/_ingest/raw/{stats['date']}</code> · rebuild with <code>python3 site/build.py</code></footer>
 <script>
@@ -496,9 +522,9 @@ def main():
     open(os.path.join(DIST, "lesson.js"), "w").write(LESSON_JS)
     open(os.path.join(DIST, "index.js"), "w").write(INDEX_JS)
 
-    modules = {"core": [], "exec": []}
+    modules = {"core": [], "exec": [], "canon": []}
     order = []  # (track, mid, filename, title)
-    for track in ("core", "exec"):
+    for track in ("core", "exec", "canon"):
         for mid in manifest.get(track, {}):
             if mid.startswith("_"): continue
             mdir = os.path.join(raw, track, mid)
@@ -508,7 +534,7 @@ def main():
 
     # module pages with prev/next
     flat = [(t, m, modules[t][i][1], modules[t][i][2], modules[t][i][3])
-            for t in ("core", "exec") for i, (m, *_ ) in enumerate(modules[t])]
+            for t in ("core", "exec", "canon") for i, (m, *_ ) in enumerate(modules[t])]
     for idx, (track, mid, v, r, e) in enumerate(flat):
         prev = (order[idx-1][2], f"{code(*order[idx-1][:2])} {order[idx-1][3]}") if idx > 0 else None
         nxt = (order[idx+1][2], f"{code(*order[idx+1][:2])} {order[idx+1][3]}") if idx < len(flat)-1 else None
