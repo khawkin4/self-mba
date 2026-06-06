@@ -1,0 +1,193 @@
+[
+  {
+    "lessonFile": "/Users/kalvaryhawkins/self-mba/lessons/core-02-corporate-finance.html",
+    "lessonTitle": "Corporate Finance & Valuation",
+    "clusters": [
+      "Financial Literacy for Operators"
+    ],
+    "focus": "margin of safety + skill-vs-luck as the operator's lens on valuation under uncertainty",
+    "notePaths": [
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-klarman-margin-of-safety.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-mauboussin-success-equation.md"
+    ],
+    "rawDirs": [
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/financial-literacy"
+    ]
+  },
+  {
+    "lessonFile": "/Users/kalvaryhawkins/self-mba/lessons/core-03-micro-strategy.html",
+    "lessonTitle": "Microeconomics & Strategy",
+    "clusters": [
+      "Economics & Incentive Design"
+    ],
+    "focus": "opportunity cost, information asymmetry (lemons), and agency/incentive design",
+    "notePaths": [
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-akerlof-market-for-lemons.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-alchian-demsetz-firm.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-jensen-meckling-agency-theory.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-mankiw-principles-of-economics.md"
+    ],
+    "rawDirs": [
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/economics-incentives"
+    ]
+  },
+  {
+    "lessonFile": "/Users/kalvaryhawkins/self-mba/lessons/core-04-competitive-strategy.html",
+    "lessonTitle": "Competitive Strategy",
+    "clusters": [
+      "Strategy",
+      "Landscape & Competitive Awareness",
+      "Design Thinking & Problem-Solving"
+    ],
+    "focus": "the strategy kernel/cascade, the 7 Powers + disruption, and finding the crux",
+    "notePaths": [
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-bungay-art-of-action.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-lafley-martin-playing-to-win.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-porter-competitive-strategy.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-rumelt-good-strategy.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-christensen-innovators-dilemma.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-grove-only-the-paranoid-survive.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-helmer-7-powers.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-martin-opposable-mind.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-meadows-leverage-points.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-rumelt-the-crux.md"
+    ],
+    "rawDirs": [
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/strategy",
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/landscape-competitive",
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/design-problem-solving"
+    ]
+  },
+  {
+    "lessonFile": "/Users/kalvaryhawkins/self-mba/lessons/core-06-operations.html",
+    "lessonTitle": "Operations & Supply Chain",
+    "clusters": [
+      "Execution & Operations"
+    ],
+    "focus": "theory of constraints, lean/TPS, and protecting the wildly important (4DX)",
+    "notePaths": [
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-4dx-four-disciplines-execution.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-bossidy-charan-execution.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-goldratt-the-goal.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-ohno-toyota-production-system.md"
+    ],
+    "rawDirs": [
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/execution-operations"
+    ]
+  },
+  {
+    "lessonFile": "/Users/kalvaryhawkins/self-mba/lessons/core-08-negotiation.html",
+    "lessonTitle": "Negotiation",
+    "clusters": [
+      "Negotiation & Influence"
+    ],
+    "focus": "ADD the influence/persuasion layer Voss+Fisher-Ury don't cover: Cialdini's 6 principles and Carnegie",
+    "notePaths": [
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-carnegie-win-friends.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-cialdini-influence.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-fisher-ury-getting-to-yes.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-voss-never-split-the-difference.md"
+    ],
+    "rawDirs": [
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/negotiation-influence"
+    ]
+  },
+  {
+    "lessonFile": "/Users/kalvaryhawkins/self-mba/lessons/core-09-leadership-ob.html",
+    "lessonTitle": "Leadership & Org Behavior",
+    "clusters": [
+      "Leadership & Presence",
+      "Org Design & Mechanisms",
+      "Power & Organizational Politics"
+    ],
+    "focus": "managerial leverage, intent-based leadership, mechanisms/OKRs, and the uncomfortable truth of power",
+    "notePaths": [
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-grove-high-output-management.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-marquet-turn-the-ship-around.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-scott-radical-candor.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-walsh-score-takes-care-of-itself.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-bezos-shareholder-letters.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-doerr-measure-what-matters.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-drucker-effective-executive.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-larson-elegant-puzzle.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-greene-48-laws-of-power.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-pfeffer-power.md"
+    ],
+    "rawDirs": [
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/leadership-presence",
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/org-design-mechanisms",
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/power-politics"
+    ]
+  },
+  {
+    "lessonFile": "/Users/kalvaryhawkins/self-mba/lessons/core-10-entrepreneurship.html",
+    "lessonTitle": "Entrepreneurship & Venture",
+    "clusters": [
+      "Product Thinking & Innovation"
+    ],
+    "focus": "build-measure-learn, zero-to-one monopoly, and empowered product teams",
+    "notePaths": [
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-cagan-inspired.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-ries-lean-startup.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-thiel-zero-to-one.md"
+    ],
+    "rawDirs": [
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/product-innovation"
+    ]
+  },
+  {
+    "lessonFile": "/Users/kalvaryhawkins/self-mba/lessons/exec-E7-exec-presence-comms.html",
+    "lessonTitle": "Executive Presence & Comms",
+    "clusters": [
+      "Communication & Storytelling"
+    ],
+    "focus": "answer-first (Minto pyramid), story structure (Duarte), and lead-with-why (Sinek)",
+    "notePaths": [
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-duarte-resonate.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-minto-pyramid-principle.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-sinek-start-with-why.md"
+    ],
+    "rawDirs": [
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/communication-storytelling"
+    ]
+  },
+  {
+    "lessonFile": "/Users/kalvaryhawkins/self-mba/lessons/exec-E11-operating-system.html",
+    "lessonTitle": "Personal Operating System",
+    "clusters": [
+      "Personal Effectiveness",
+      "Mental Models & Thinking"
+    ],
+    "focus": "deep work + atomic habits as systems, and the cross-disciplinary mental-models latticework",
+    "notePaths": [
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-clear-atomic-habits.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-covey-7-habits.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-newport-deep-work.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-kahneman-thinking-fast-and-slow.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-meadows-thinking-in-systems.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-munger-poor-charlies-almanack.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-parrish-great-mental-models.md"
+    ],
+    "rawDirs": [
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/personal-effectiveness",
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/mental-models"
+    ]
+  },
+  {
+    "lessonFile": "/Users/kalvaryhawkins/self-mba/lessons/exec-E12-culture-strategy.html",
+    "lessonTitle": "Culture as Strategy",
+    "clusters": [
+      "Culture & Change"
+    ],
+    "focus": "Schein's three levels, Kotter's 8 steps, Switch's Rider/Elephant/Path, and culture = what you do",
+    "notePaths": [
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-heath-switch.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-horowitz-what-you-do-is-who-you-are.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-kotter-leading-change.md",
+      "/Users/kalvaryhawkins/self-mba/notes/canon/canon-schein-organizational-culture.md"
+    ],
+    "rawDirs": [
+      "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/culture-change"
+    ]
+  }
+]
