@@ -3,7 +3,13 @@
     "domain": "Quantitative & Statistics",
     "emulates": "GMAT Quant",
     "q": "A subscription box company offers a plan that costs $18 per month plus a one-time $40 activation fee. A competitor offers a flat $25 per month with no activation fee. After how many full months does the cumulative cost of the first plan first become LESS than the cumulative cost of the competitor's plan?",
-    "opts": ["After 5 months", "After 6 months", "After 7 months", "After 8 months", "The first plan is never cheaper"],
+    "opts": [
+      "After 5 months",
+      "After 6 months",
+      "After 7 months",
+      "After 8 months",
+      "The first plan is never cheaper"
+    ],
     "correct": 1,
     "rationale": "Set 40 + 18m < 25m, so 40 < 7m, m > 5.71, meaning the first full month where it is cheaper is month 6. At 5 months the first plan costs 130 vs 125 (still more); at 6 it is 148 vs 150 (less). Options 0, 2, 3 mis-handle the threshold or the activation fee."
   },
@@ -11,7 +17,13 @@
     "domain": "Quantitative & Statistics",
     "emulates": "GMAT Quant",
     "q": "A factory's output of widgets increased by 25% in 2024 over 2023, then decreased by 20% in 2025 from its 2024 level. If 2025 output was 12,000 widgets, what was the 2023 output?",
-    "opts": ["10,800", "11,200", "12,000", "12,500", "15,000"],
+    "opts": [
+      "10,800",
+      "11,200",
+      "12,000",
+      "12,500",
+      "15,000"
+    ],
     "correct": 2,
     "rationale": "2024 = 12,000 / 0.80 = 15,000; 2023 = 15,000 / 1.25 = 12,000. The successive +25% then -20% exactly cancel. Choosing 15,000 (option 4) gives the 2024 figure; 10,800 and 11,200 come from applying the percentages in the wrong direction."
   },
@@ -19,7 +31,13 @@
     "domain": "Quantitative & Statistics",
     "emulates": "GMAT Quant",
     "q": "Two analysts working together can finish a valuation model in 4 hours. Working alone, the senior analyst would take 6 hours. How long would the junior analyst take to complete the model working alone?",
-    "opts": ["8 hours", "10 hours", "12 hours", "14 hours", "2 hours"],
+    "opts": [
+      "8 hours",
+      "10 hours",
+      "12 hours",
+      "14 hours",
+      "2 hours"
+    ],
     "correct": 2,
     "rationale": "Combined rate = 1/4 per hour; senior = 1/6 per hour; junior = 1/4 - 1/6 = 1/12, so 12 hours. Option 0 (8) wrongly assumes equal split of the difference; option 4 (2) confuses combined and individual rates."
   },
@@ -27,7 +45,13 @@
     "domain": "Quantitative & Statistics",
     "emulates": "GMAT Quant",
     "q": "A retailer marks up a jacket 60% above its $50 cost, then runs a promotion taking 30% off the marked price. What is the retailer's profit (or loss) per jacket sold during the promotion?",
-    "opts": ["Loss of $6", "Profit of $2", "Profit of $6", "Profit of $11", "Profit of $24"],
+    "opts": [
+      "Loss of $6",
+      "Profit of $2",
+      "Profit of $6",
+      "Profit of $11",
+      "Profit of $24"
+    ],
     "correct": 2,
     "rationale": "Marked price = 50 x 1.6 = 80; sale price = 80 x 0.70 = 56; profit = 56 - 50 = 6. Option 3 ($11) takes 30% off the cost rather than the marked price; option 4 ($24) ignores the discount entirely."
   },
@@ -35,7 +59,13 @@
     "domain": "Quantitative & Statistics",
     "emulates": "GMAT Quant",
     "q": "A startup's monthly recurring revenue grows according to the compound relationship MRR = 8,000 x (1.05)^n, where n is the number of months elapsed. To the nearest month, after how many months does MRR first exceed $13,000?",
-    "opts": ["8 months", "10 months", "12 months", "14 months", "16 months"],
+    "opts": [
+      "8 months",
+      "10 months",
+      "12 months",
+      "14 months",
+      "16 months"
+    ],
     "correct": 1,
     "rationale": "Solve 1.05^n > 13000/8000 = 1.625. ln(1.625)/ln(1.05) = 0.4855/0.0488 = 9.95, so n = 10. Option 0 (8) and option 2 (12) bracket the answer but do not satisfy the inequality at the boundary."
   },
@@ -43,15 +73,27 @@
     "domain": "Quantitative & Statistics",
     "emulates": "GMAT Quant",
     "q": "A portfolio holds 3 stocks and 2 bonds. A manager will select 2 of the holdings at random to feature in a report. What is the probability that the manager selects exactly one stock and one bond?",
-    "opts": ["3/10", "2/5", "3/5", "6/10", "7/10"],
+    "opts": [
+      "3/10",
+      "2/5",
+      "3/5",
+      "1/10",
+      "7/10"
+    ],
     "correct": 2,
-    "rationale": "Total ways = C(5,2) = 10. Favorable = 3 x 2 = 6. Probability = 6/10 = 3/5. Note option 3 (6/10) is numerically equal but not reduced; the test convention asks for the reduced form 3/5. Option 1 (2/5) is the complement-style error of choosing two of the same type."
+    "rationale": "Total ways = C(5,2) = 10. Favorable (one stock x one bond) = 3 x 2 = 6, so 6/10 = 3/5. Distractor 3/10 = P(both stocks); 1/10 = P(both bonds); 2/5 and 7/10 are mis-set ratios."
   },
   {
     "domain": "Quantitative & Statistics",
     "emulates": "GMAT Data Sufficiency",
     "q": "Is the average (arithmetic mean) monthly revenue of a 4-store chain greater than $50,000? (1) The total combined revenue of all four stores is $190,000. (2) The store with the highest revenue earns $70,000 per month. Which statement(s) suffice?",
-    "opts": ["Statement (1) ALONE is sufficient, but (2) alone is not", "Statement (2) ALONE is sufficient, but (1) alone is not", "BOTH statements TOGETHER are sufficient, but neither alone is", "EACH statement ALONE is sufficient", "Statements (1) and (2) TOGETHER are NOT sufficient"],
+    "opts": [
+      "Statement (1) ALONE is sufficient, but (2) alone is not",
+      "Statement (2) ALONE is sufficient, but (1) alone is not",
+      "BOTH statements TOGETHER are sufficient, but neither alone is",
+      "EACH statement ALONE is sufficient",
+      "Statements (1) and (2) TOGETHER are NOT sufficient"
+    ],
     "correct": 0,
     "rationale": "Mean = total/4. Statement (1) gives total 190,000, so mean = 47,500 < 50,000 — sufficient (answers 'no' definitively). Statement (2) alone fixes only one store and tells nothing about the total, so insufficient. Answer is (1) alone."
   },
@@ -59,7 +101,13 @@
     "domain": "Quantitative & Statistics",
     "emulates": "GMAT Data Sufficiency",
     "q": "A box contains red and blue marbles only. What is the probability of drawing a red marble at random? (1) There are 12 blue marbles in the box. (2) The ratio of red to blue marbles is 3 to 2. Which statement(s) suffice?",
-    "opts": ["Statement (1) ALONE is sufficient, but (2) alone is not", "Statement (2) ALONE is sufficient, but (1) alone is not", "BOTH statements TOGETHER are sufficient, but neither alone is", "EACH statement ALONE is sufficient", "Statements (1) and (2) TOGETHER are NOT sufficient"],
+    "opts": [
+      "Statement (1) ALONE is sufficient, but (2) alone is not",
+      "Statement (2) ALONE is sufficient, but (1) alone is not",
+      "BOTH statements TOGETHER are sufficient, but neither alone is",
+      "EACH statement ALONE is sufficient",
+      "Statements (1) and (2) TOGETHER are NOT sufficient"
+    ],
     "correct": 1,
     "rationale": "Probability of red = red/(red+blue). Statement (2) alone gives the ratio 3:2, so P(red) = 3/5 directly — sufficient. Statement (1) alone gives only a count of blue with no information on red — insufficient. Answer is (2) alone; the absolute counts are not needed for a probability."
   },
@@ -67,7 +115,12 @@
     "domain": "Quantitative & Statistics",
     "emulates": "StatQuest / Hypothesis Testing",
     "q": "A product team runs an A/B test on a new checkout button. The new variant shows a higher conversion rate with a p-value of 0.03 against a pre-registered significance level (alpha) of 0.05. Which interpretation is correct?",
-    "opts": ["There is a 3% probability that the null hypothesis is true", "If the null hypothesis (no difference) were true, there is a 3% chance of observing a result at least this extreme; since 0.03 < 0.05, reject the null", "There is a 97% probability the new button is better in the population", "The effect size is large because the p-value is small"],
+    "opts": [
+      "There is a 3% probability that the null hypothesis is true",
+      "If the null hypothesis (no difference) were true, there is a 3% chance of observing a result at least this extreme; since 0.03 < 0.05, reject the null",
+      "There is a 97% probability the new button is better in the population",
+      "The effect size is large because the p-value is small"
+    ],
     "correct": 1,
     "rationale": "A p-value is P(data at least this extreme | null true); 0.03 < 0.05 means reject the null. Option 0 inverts the conditional (the p-value is not the probability the null is true); option 2 misstates it as a confidence in the alternative; option 3 conflates significance with magnitude — a small p-value can accompany a tiny effect."
   },
@@ -75,7 +128,12 @@
     "domain": "Quantitative & Statistics",
     "emulates": "StatQuest / Regression",
     "q": "A simple linear regression predicts customer spend (dollars) from email opens: spend = 18 + 2.5(opens), with R-squared = 0.36. Which statement is the most defensible interpretation?",
-    "opts": ["Each additional email open causes $2.50 more spend", "36% of the variance in spend is explained by the number of opens, and each additional open is associated with $2.50 more predicted spend", "The model correctly predicts spend 36% of the time", "A customer with zero opens is predicted to spend $2.50"],
+    "opts": [
+      "Each additional email open causes $2.50 more spend",
+      "36% of the variance in spend is explained by the number of opens, and each additional open is associated with $2.50 more predicted spend",
+      "The model correctly predicts spend 36% of the time",
+      "A customer with zero opens is predicted to spend $2.50"
+    ],
     "correct": 1,
     "rationale": "R-squared = 0.36 means 36% of variance in the outcome is explained; the slope of 2.5 is an association (predicted change), not necessarily causal. Option 0 overclaims causation from observational regression; option 2 misreads R-squared as accuracy; option 3 confuses the intercept (18) with the slope."
   },
@@ -83,7 +141,13 @@
     "domain": "Quantitative & Statistics",
     "emulates": "StatQuest / Expected Value",
     "q": "A venture fund evaluates a deal: with probability 0.2 it returns 10x the $1M invested, with probability 0.3 it returns 2x, and with probability 0.5 it returns 0. What is the expected net profit on the $1M investment?",
-    "opts": ["-$200,000", "$1,600,000", "$2,600,000", "$3,600,000", "$0"],
+    "opts": [
+      "-$200,000",
+      "$1,600,000",
+      "$2,600,000",
+      "$3,600,000",
+      "$0"
+    ],
     "correct": 1,
     "rationale": "Expected gross return = 0.2(10M) + 0.3(2M) + 0.5(0) = 2M + 0.6M = 2.6M. Net profit = 2.6M - 1M invested = 1.6M. Option 2 ($2.6M) reports gross return without subtracting the investment; option 0 mistakenly nets only against probabilities."
   },
@@ -91,7 +155,12 @@
     "domain": "Quantitative & Statistics",
     "emulates": "GMAT Data Insights",
     "q": "A dashboard reports that median order value rose from $42 to $48 while mean order value fell from $61 to $55 over the same quarter. Which conclusion is best supported?",
-    "opts": ["Total revenue must have increased", "The distribution likely became less right-skewed, as very large orders shrank or grew fewer while typical orders rose", "The number of orders necessarily decreased", "Most customers spent less this quarter than last quarter"],
+    "opts": [
+      "Total revenue must have increased",
+      "The distribution likely became less right-skewed, as very large orders shrank or grew fewer while typical orders rose",
+      "The number of orders necessarily decreased",
+      "Most customers spent less this quarter than last quarter"
+    ],
     "correct": 1,
     "rationale": "Median up but mean down indicates the right tail (a few very large orders) pulled less, reducing right skew, while the typical (median) order increased. Option 0 and 2 require order counts, which are not given; option 3 contradicts the rising median, which shows the typical customer spent more."
   }
