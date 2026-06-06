@@ -75,6 +75,17 @@ CANON_ORDER = [
 ]
 CANON_CODE = {slug: f"C{i+1}" for i, slug in enumerate(CANON_ORDER)}
 
+# Technical Foundations (benchmark gap-fillers) → cards G1..G5
+TITLES.update({
+    "managerial-accounting": "Managerial & Cost Accounting",
+    "statistics-quant": "Quantitative Methods & Statistics",
+    "marketing-strategy": "Marketing Strategy & Positioning",
+    "information-systems": "Information Systems & Data",
+    "business-law": "The Legal Environment of Business",
+})
+GAP_ORDER = ["managerial-accounting", "statistics-quant", "marketing-strategy", "information-systems", "business-law"]
+GAP_CODE = {slug: f"G{i+1}" for i, slug in enumerate(GAP_ORDER)}
+
 def esc(s):
     return html.escape(str(s if s is not None else ""))
 
@@ -96,6 +107,7 @@ def fmt_dur(v):
 
 def code(track, mid):
     if track == "canon": return CANON_CODE.get(mid, "✦")
+    if track == "gaps": return GAP_CODE.get(mid, "✦")
     return mid.split("-")[0].upper() if track == "exec" else mid.split("-")[0]
 
 def load_module(mdir):
@@ -238,7 +250,8 @@ def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None, summar
     if prevnext[1]: pn += f'<a class="pn next" href="{prevnext[1][0]}">{esc(prevnext[1][1])} →</a>'
     done_btn = (f'<button id="mark-done" data-mod="{track}-{mid}.html"><span class="cp-tick">✓</span> '
                 f'<span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button>') if lesson else ""
-    track_name = {"exec": "Executive Track", "canon": "The Canon · Reading Layer"}.get(track, "Core Curriculum")
+    track_name = {"exec": "Executive Track", "canon": "The Canon · Reading Layer",
+                  "gaps": "Technical Foundations"}.get(track, "Core Curriculum")
     return HEAD.format(title=f"{c} · {title}", css="style.css") + f"""
 {'<div id="progress"></div>' if lesson else ''}
 <header class="mod-header {('exec' if track=='exec' else 'core')}">
@@ -288,6 +301,8 @@ def render_index(modules, stats):
 <div class="grid">{cards('exec')}</div>
 <div class="track-head"><span class="th-label">The Canon · Reading Layer</span><span class="th-rule"></span><span class="th-count">23 clusters</span></div>
 <div class="grid">{cards('canon')}</div>
+<div class="track-head"><span class="th-label">Technical Foundations</span><span class="th-rule"></span><span class="th-count">5 modules</span></div>
+<div class="grid">{cards('gaps')}</div>
 </main>
 <footer>Generated from <code>~/self-mba/_ingest/raw/{stats['date']}</code> · rebuild with <code>python3 site/build.py</code></footer>
 <script>
@@ -522,9 +537,9 @@ def main():
     open(os.path.join(DIST, "lesson.js"), "w").write(LESSON_JS)
     open(os.path.join(DIST, "index.js"), "w").write(INDEX_JS)
 
-    modules = {"core": [], "exec": [], "canon": []}
+    modules = {"core": [], "exec": [], "canon": [], "gaps": []}
     order = []  # (track, mid, filename, title)
-    for track in ("core", "exec", "canon"):
+    for track in ("core", "exec", "canon", "gaps"):
         for mid in manifest.get(track, {}):
             if mid.startswith("_"): continue
             mdir = os.path.join(raw, track, mid)
@@ -534,7 +549,7 @@ def main():
 
     # module pages with prev/next
     flat = [(t, m, modules[t][i][1], modules[t][i][2], modules[t][i][3])
-            for t in ("core", "exec", "canon") for i, (m, *_ ) in enumerate(modules[t])]
+            for t in ("core", "exec", "canon", "gaps") for i, (m, *_ ) in enumerate(modules[t])]
     for idx, (track, mid, v, r, e) in enumerate(flat):
         prev = (order[idx-1][2], f"{code(*order[idx-1][:2])} {order[idx-1][3]}") if idx > 0 else None
         nxt = (order[idx+1][2], f"{code(*order[idx+1][:2])} {order[idx+1][3]}") if idx < len(flat)-1 else None
