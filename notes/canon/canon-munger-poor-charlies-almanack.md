@@ -19,47 +19,47 @@
   incentive-analysis are powerful but not *generative*: they tell you what to avoid, not what to
   build. And "psychology of misjudgment" is easy to see in others, hard in yourself
   ([[canon-kahneman-thinking-fast-and-slow]] gives the rigorous version).
-- **Practitioner counterpoint:** *(researched 2026-06-05 — mental-models transcript corpus; Reddit pull empty, flagged for re-pull)*
-  The corpus confirms the folk wisdom: Munger's edge was *temperament*, not raw model-count. The
-  Swedish Investor's walk-through quotes Munger directly — *"It is remarkable how much long-term
-  advantage people like us have gotten by trying to be consistently not stupid instead of trying to
-  be very intelligent"* — and frames the whole latticework around **avoiding harm**: *"Anything
-  times 0 is 0, no matter how good of a performance that you put up before that."* Practitioners
-  also flag the *internalization* gap the way Voss-readers do: the Swedish Investor warns *"it isn't
-  the learning that's so hard. It's the unlearning,"* and the SXSW speaker admits the models took
-  him *"many many years… to understand"* even after Munger "dumbed it down." Knowing the models is
-  cheap; restructuring how you actually decide is the hard part.
-- **Researched layer** *(2026-06-05)*
-  - **Canonical explanation (sourced):** The latticework only pays off when models *stack*. The SXSW
-    speaker frames Munger's core mechanism: *"when you start cascading the models together in the
-    same direction for the same effort, that's when you get what Munger would call Lollapalooza
-    effects — 1 + 1 becomes 11"* (SXSW, "The Latticework of Mental Models For a Great Life!"). The
-    "bedrock model" beneath all of it is to *"take a simple idea and take it seriously… if you don't
-    go all in, it just doesn't work."* The Swedish Investor reduces the whole project to a
-    Swiss-Army-Knife: Munger *"estimates he's got about 100 mental models in his head which he uses
-    regularly,"* and the man-with-a-hammer is *"paying for his ignorance because he will torture
-    reality to fit the only model that he knows about."*
-  - **Real application (mined):** A vivid worked example of **inversion** — Munger telling how he set
-    his children a riddle (the activity whose national champion repeated *"65 years apart"*). Seven
-    children stalled; the PhD-physicist son *"just turned it around… can it be athletic? No 85-year-
-    old was ever going to win an athletic thing,"* ruled out chess the same way, and *"that led him
-    to checkers… took him about 15 seconds"* (The Free Bull, "Munger on His Favorite Mental Model").
-    The Swedish Investor mines the same move for life: *"How do you have a successful marriage?… Let's
-    try this one instead. How do you ruin a marriage?"* — solve for the **non-X** and avoid it. On
-    **incentives**, the SXSW speaker relays that *"Munger used to say that every year… whatever he
-    thought about the power of incentives in the past was not enough — it was even more powerful than
-    he thought."*
-  - **Where the corpus pushes back on the book:** The transcripts quietly correct the "more models =
-    better" reading. The real lever is **not-doing-stupid-things**, not erudition (*"consistently not
-    stupid instead of… very intelligent"*), and the binding constraint is **unlearning**, not
-    learning — you have to "crush your cherished beliefs," which the man with the hammer never will.
-    And the models resist quick adoption: the SXSW speaker concedes it took him *years* to absorb
-    Munger even after simplification — breadth on paper ≠ judgment under pressure.
-  - **Sources in corpus:** SXSW — "The Latticework of Mental Models For a Great Life!"
-    (youtube.com/watch?v=Z2J_8GHcrvQ) · The Swedish Investor — "Charlie Munger: Mental Models for the
-    Rest of Your Life" (youtube.com/watch?v=ywyQ_eNNCJU) · The Free Bull — "Charlie Munger on His
-    Favorite Mental Model" (youtube.com/watch?v=BRgnIyjRxmU). *(Reddit pull for this cluster returned
-    empty — corpus thin on practitioner threads, flagged for re-pull.)*
+- **Practitioner counterpoint:** *(researched 2026-06-06 — Munger, "The Psychology of Human Misjudgement" full speech, youtube.com/watch?v=pqzcCfUglws)*
+  The book-specific source is Munger's own keystone talk (Talk Eleven of the *Almanack*), and it
+  undercuts the tidy "collect 24 biases" reading from the inside. Munger's whole point is that he
+  *can't* keep them apart — the payoff is in the *interaction*: *"the one thing that causes the most
+  trouble is when you combine a bunch of these together, you get this la­la­palooza effect… they
+  don't discuss how these things combine, at least not very much. Do they multiply? Do they add?
+  How does it work?"* He also confesses the limit of his own method — incentives, the very first
+  model on his list, kept beating his estimate of them: *"I've been in the top 5% of my age cohort
+  all my life in understanding the power of incentives and all my life I've underestimated it."*
+  Knowing the model is cheap; the man who literally wrote the list still got surprised by it yearly.
+
+- **Researched layer** *(updated 2026-06-06)*
+  - **Canonical explanation (sourced):** The latticework is built from concrete, named failure modes,
+    not abstractions — Munger walks ~24 of them with case studies. **Incentive-caused bias:** the
+    FedEx night shift only worked once they *"paid them by the shift"* instead of by the hour, and a
+    surgeon shipping *"bushel baskets full of normal gallbladders"* genuinely believed *"the
+    gallbladder was the source of all medical evil"* — the bias *"both in one's own mind and that of
+    one's trusted advisor."* **Deprival super-reaction:** New Coke and a neighbor's *"180 degree view
+    of the harbor"* reduced to *"179 and 3/4"* triggering a Hatfield-McCoy feud — *"people do not
+    react symmetrically to loss and gain."* **Man-with-a-hammer:** even B.F. Skinner *"developed a
+    case of what I always call man with a hammer syndrome… to the man with a hammer, every problem
+    tends to look pretty much like a nail"* (Munger, "The Psychology of Human Misjudgement").
+  - **Real application (mined):** Munger applies the models to *markets*, not just life. He explains
+    why the efficient-market crowd was wrong by *stacking* models: *"the power of reinforcement…
+    you do something and the market goes up and you get paid and rewarded and applauded,"* plus
+    *"social proof — the prices in the market are the ultimate form of social proof,"* so *"the
+    combination is very powerful"* and produces *"waves of irrationality."* The practitioner move he
+    models is to invert the academic incentive: rather than become *"a truffle hound… an animal so
+    bred and trained for one narrow purpose,"* he took a *"man from Mars approach… I just reached in
+    and took what I thought I had to have"* across disciplines.
+  - **Where the corpus pushes back on the book:** The talk corrects the way the *Almanack* gets read
+    as a checklist. Munger explicitly says the biases are *under-studied precisely where they matter*
+    — *"how these things combine… doesn't seem to turn the psychology establishment on"* — so the
+    book's value is the *interaction effect*, not the enumerated list a reader can memorize. And it
+    concedes the limit honestly: when asked to tie the tendencies to his *own* investing decisions he
+    deflects — *"there's one big simple model… I don't have time for that one"* — leaving the
+    hardest part (how a master actually weights these live, under money pressure) unspecified.
+  - **Sources in corpus:** Munger — "The Psychology of Human Misjudgement (Full Speech)"
+    (youtube.com/watch?v=pqzcCfUglws). *(This cluster's Reddit pull, reddit_decisionmaking.json,
+    returned empty `[]`, so no practitioner threads are cited; the YouTube source is the book's own
+    keystone talk and carries the layer on its own.)*
 - **Links:** [[canon-parrish-great-mental-models]] · [[canon-kahneman-thinking-fast-and-slow]] ·
   [[canon-meadows-thinking-in-systems]] · [[canon-helmer-7-powers]]
 

@@ -22,47 +22,58 @@
   high-quality decisions. Best paired with a prescriptive layer — decision hygiene
   ([[canon-kahneman-sibony-sunstein-noise]]) or Allison's three models
   ([[canon-allison-essence-of-decision]]) — to turn the diagnosis into action.
-- **Practitioner counterpoint:** *(researched 2026-06-05 — behavioral-decision transcript corpus; Reddit pull empty, flagged for re-pull)*
-  The corpus has no March-specific practitioner threads, but adjacent experts validate his core
-  inversions from the field. **Gary Klein**, studying firefighters, found expert decision-makers
-  *don't* run the rational model: *"we don't look at any comparison between options… they said we
-  don't make decisions, which staggered us even more"* (Lootok). They pattern-match from experience —
-  March's "preferences discovered through action" seen live. **Thaler** confirms the bottleneck is
-  attention: *"a nudge is any small feature of the environment that attracts our attention and alters
-  our behavior"* — and *"to a first approximation everything matters"* (Sydney Executive Plus). The
-  usable move stands: manage **attention and timing**, not information. Pfeffer's politics is the
+- **Practitioner counterpoint:** *(researched 2026-06-06 — James G. March, "Intellectual Roots of the Garbage Can Model" interview transcript)*
+  March in his own words traces the model straight out of his earlier bounded-rationality work,
+  and the throughline is **attention, not information**: *"the limited rationality theory is a
+  theory of attention and the garbage can is a continuation of that focus on attention… the model
+  itself seems to me an attention allocation model… decision-making is very heavily an attention
+  allocation thing"* (SCREENINGORGANISATION EDITIONS). His starting jolt was that preferences
+  themselves misbehave: *"preferences are not stable, they're not consistent and they're not very
+  clear… you had to confront ambiguity — how do you make choices when your preferences are
+  unclear?"* That ambiguity is the *groundwork* for the whole model — exactly the note's claim that
+  preferences are **discovered through action**, not known in advance. Pfeffer's politics is the
   power-layer cousin ([[canon-pfeffer-power]]).
-- **Researched layer** *(2026-06-05)* *(corpus thin — no March-specific or Reddit sources; grounded in adjacent behavioral-decision transcripts, flagged for re-pull)*
-  - **Canonical explanation (sourced):** March's claim that real decisions don't follow the rational
-    model is corroborated by Gary Klein's field research on experts under pressure: *"the older
-    models of decision making is you have to look at all the options… and setting that up takes at
-    least a half hour. We often don't have the luxury of that half hour… we found what they were
-    doing is using their experience… relying on patterns that they had built up over 10, 15, 20
-    years"* (Lootok — Recognition-Primed Decision Model). Choice is recognition, not calculation —
-    March's **preferences-discovered-through-action** rendered concrete.
-  - **The attention bottleneck, verified:** Thaler reframes the scarce resource exactly as March
-    does — not information but attention. *"A nudge is any small feature of the environment that
-    attracts our attention and alters our behavior… without requiring anyone to do anything"* and
-    *"choice architecture and nudging are in some way inevitable… to a first approximation everything
-    matters"* (Sydney Executive Plus). The order/timing/framing of a choice — March's
-    **garbage-can timing** — does the work.
-  - **Real application (mined):** Pete Judo's summary gives the operational version: *"eye level is
-    buy-level… whoever decides which items are at eye level can have a significant influence on which
-    items get sold"* — a "solution" (the placement) shaping which "problem" (the purchase) gets
-    solved, independent of any rational deliberation by the chooser.
-  - **Where the corpus pushes back on the book:** Klein's whole program is a corrective to the
-    biases-and-errors framing — *"historically, decision researchers look at the kinds of errors and
-    biases… my research is just the opposite. I look at our strengths"* (TEDxDayton). Where March can
-    tip into fatalism ("it's all random"), practitioners show experienced operators reliably making
-    *good* fast decisions — the mess is navigable by expertise, not just luck. The prescriptive layer
-    March lacks lives in this expert-intuition + choice-architecture work.
-  - **Sources in corpus:** Lootok — "Recognition-Primed Decision Model - Gary Klein on Fresh
-    perspectives" (youtube.com/watch?v=_BIMU8zPcrM) · TEDx Talks — "Lightbulb Moment | Gary Klein |
-    TEDxDayton" (youtube.com/watch?v=n5OO9L67jL4) · Sydney Executive Plus — "Richard H. Thaler on
-    nudges and choice architecture" (youtube.com/watch?v=AZExnUKfik0) · Pete Judo — "Nudge explained
-    in less than 10 minutes" (youtube.com/watch?v=fA5eGIMZTRQ) · Dan Ariely — "Are we in control of
-    our decisions?" (youtube.com/watch?v=9X68dm92HVI). Reddit pull (reddit_decisionmaking.json) was
-    empty — flagged for re-pull.
+
+- **Researched layer** *(updated 2026-06-06)*
+  - **Canonical explanation (sourced):** The garbage can isn't a sequence — it's a collision.
+    March: *"preferences and solutions and problems… and individuals… were mixed in the garbage can
+    of a choice by their temporal simultaneity not by their causal linkages, so that what we
+    persistently observe is that organizations announce solutions to problems that don't have
+    anything to do with the problems but happen to be solutions that are around at that time"*
+    (SCREENINGORGANISATION EDITIONS — "Intellectual Roots of the Garbage Can Model"). The explainer
+    formalizes the mechanics: four **independent streams** — problems, solutions, decision makers,
+    and choice opportunities — that *"flow disconnected from each other [and] only meet when the
+    fourth stream of choice opportunity arises… connected with each other by chance"* (Leaders'
+    Decision-Making Lab — "Garbage can model of decision making [Game of theories #20]"). A
+    **solution looking for a problem** is structurally normal, not pathological: *"solutions don't
+    need to match an existing problem. Decision makers can use the solutions in the garbage can to
+    actively seek out problems that the solutions may be able to solve."*
+  - **The attention bottleneck, verified:** what gets decided depends on who is in the room and
+    what they happen to be watching — *"their participation in the decision-making process is
+    fluid… many things happen at once, all competing with each other for attention"* (Leaders'
+    Decision-Making Lab). March confirms the scarce resource is attention itself: *"the capabilities
+    they have to make choices depend very much on the movement of problems and solutions in and out
+    of their attention"* (SCREENINGORGANISATION EDITIONS) — March's **garbage-can timing** doing the
+    work, not information volume.
+  - **Real application (mined):** the model is self-illustrating. The explainer recounts how the
+    garbage can paper *was itself* a garbage-can outcome: at UC Irvine a dean search *"ended with
+    none of the potential candidates being chosen, and the head of the search committee ended up
+    taking the position of dean,"* with topics *"trumped by issues such as time constraints of the
+    search committee members"* and one member *"present in one meeting but absent from the following
+    meeting due to professional travel"* (Leaders' Decision-Making Lab). Fluid participation and
+    timing — not the merits — produced the decision.
+  - **Where the corpus pushes back on the book:** even sympathetic teachers flag the prescriptive
+    gap the note names. The explainer reports the model *"was criticized for amplifying the
+    'anarchic' nature of decision making,"* noting *"neo-institutional theory… complemented the
+    garbage can model by describing how decision making may occur in a more organized manner"*
+    (Leaders' Decision-Making Lab) — and openly asks whether it even survives the present: *"does the
+    garbage can model still apply when many decisions are made by algorithms?"* The diagnosis is
+    brilliant; the corrective layer lives elsewhere.
+  - **Sources in corpus:** SCREENINGORGANISATION EDITIONS — "James G. March - Intellectual Roots of
+    the 'Garbage Can Model'" (youtube.com/watch?v=5geJSDqGIr4) · Leaders' Decision-Making Lab —
+    "Garbage can model of decision making | Organizational decision making [Game of theories #20]"
+    (youtube.com/watch?v=F7iPVDly4Fo). No Reddit thread used: the cluster pull
+    (reddit_decisionmaking.json) returned empty.
 - **Links:** [[canon-allison-essence-of-decision]] · [[canon-kahneman-sibony-sunstein-noise]] ·
   [[canon-pfeffer-power]] · [[canon-meadows-thinking-in-systems]]
 

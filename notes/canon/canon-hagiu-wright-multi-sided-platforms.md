@@ -23,45 +23,58 @@
   execution. Over-subsidizing the wrong side (or both) is exactly how marketplaces **burn capital
   with no flywheel** (the WeWork/many-a-startup failure mode). And a heavily subsidized side can be
   **disloyal/multi-homing**, never converting to the value you priced for.
-- **Practitioner counterpoint:** *(researched 2026-06-05 — Talks at Google / NFX / David Halliday
-  transcript corpus; r/startups pull thin — flagged for re-pull)* — the operative question founders
-  ask is *which side is the "money side" and which is the "subsidy side,"* and is the cross-side pull
-  strong enough to justify the burn? Practitioners reframe Hagiu-Wright's symmetric "subsidize the
-  price-sensitive side" into a sequencing problem: Andrew Chen's distinction is the **"easy side"
-  vs. the "hard side of a network and where to focus"** (Talks at Google) — you don't just subsidize
-  the price-sensitive side, you *go and get* the hard side (supply) first, because it won't show up
-  on its own. NFX adds the defensibility frame: network effects are *"the more users you get… the
-  faster you go the faster you go"* — which is what the subsidy is actually buying. The micro
-  foundation under [[canon-cusumano-business-of-platforms]] and [[canon-parker-platform-revolution]].
-- **Researched layer** *(2026-06-05)*
-  - **Canonical explanation (sourced):** the corpus restates the core asymmetry exactly as
-    Hagiu-Wright frame it — a two-sided platform is a market-maker, not a reseller: *"unlike
-    Safeway, Airbnb never has a traditional cost of goods sold… Airbnb exists to facilitate that
-    transaction"* (David Halliday, "2-Sided Markets: Platforms, Networks, & Economies of Scale").
-    The engine is **cross-side network effects** — *"larger platforms attract more customers because
-    they attract more suppliers… if there are a lot of suppliers that attracts more users"* — which
-    is precisely the indirect-network-effect term that determines which side you charge and which
-    you subsidize.
-  - **Real application (mined):** the canonical "subsidize cardholders, charge merchants" case shows
-    up cleanly in Halliday's **Visa** walk-through — Visa sits *"at this multi-sided platform between
-    customers like us… retail stores… [and] the bank,"* and the subsidy logic is visible in who
-    feels the price: *"customers don't think they're paying it because they don't see the four
-    percent that the stores are paying, but the stores certainly know what's up."* The App Store
-    (30%) vs. Google Play (15%) commission gap is the same lever applied to the developer side,
-    priced by how locked-in each side is.
-  - **Where the corpus pushes back on the book:** practitioners argue the binding constraint isn't
-    *which* side to subsidize but *getting the hard side to show up at all*. Andrew Chen reframes the
-    whole problem as the **cold start** — start with **atomic networks**, distinguish the **"easy
-    side… [and] the hard side of a network and where to focus,"** and only then *"get into the
-    tipping point… and then off you go, escape velocity"* (Talks at Google). Subsidies are one
-    playbook element among many (*"using subsidies to build a lot of these… you have to pick and
-    choose what makes sense"*), not the master move Hagiu-Wright's pricing math implies — which is
-    exactly the note's "clearer in theory than execution" critique.
-  - **Sources in corpus:** David Halliday — "2-Sided Markets: Platforms, Networks, & Economies of
-    Scale" (youtube.com/watch?v=7n_YlrAgbcg) · Talks at Google — "Andrew Chen | The Cold Start
-    Problem: How to Start and Scale Network Effects" (youtube.com/watch?v=TSnYO34b3TA) · NFX — "What
-    Are Network Effects? (Startup Mini-Series)" (youtube.com/watch?v=aoeal3ljnqw). *(r/startups pull
-    returned only off-topic "I will not promote" idea posts — no substantive subsidy/which-side
-    threads; corpus thin on Reddit, flagged for re-pull.)*
+- **Practitioner counterpoint:** *(researched 2026-06-06 — The Strategy Breakdown, "Multi-Sided
+  Platforms, Ads & Data Network Effects: How Google Really Makes Money," youtube.com/watch?v=ynTbn2hILwA)*
+  — the corpus reframes Hagiu-Wright's "subsidize the right side" as a **deliberate, cold-blooded
+  pricing choice**, not a courtesy: *"making search free, it's not Google being nice, it's a
+  brilliant cold-blooded business strategy. When you make something free, you remove all the
+  friction."* The operative founder question becomes *who pays for the party and who comes for
+  free* — *"not all customers are created equal. One side basically gets a free ride… the service
+  is free because, let's be honest, we're picky. If Google started charging even a dollar, a lot of
+  us would look for alternatives."* That is the price-sensitivity test from the book, stated as an
+  operating rule. The practitioner addition Hagiu-Wright underweight: the subsidized side is also a
+  **chicken-and-egg sequencing** problem — *"the most successful platforms… don't try to solve both
+  problems at once. They pick one side and focus on it obsessively,"* building users first and only
+  then *"invit[ing] the advertisers to the party."* The micro foundation under
+  [[canon-cusumano-business-of-platforms]] and [[canon-parker-platform-revolution]].
+
+- **Researched layer** *(updated 2026-06-06)*
+  - **Canonical explanation (sourced):** the corpus restates Hagiu-Wright's asymmetry directly — a
+    platform is a matchmaker between two groups that need each other, not a reseller: *"it doesn't
+    really sell a single thing. Instead, it builds an environment, like a digital town square, where
+    different groups can find each other… if we, the users, don't show up, the advertisers have
+    nobody to talk to. And if the advertisers don't show up, well, Google doesn't make any money"*
+    (The Strategy Breakdown, "How Google Really Makes Money"). The same source names the **money
+    side / subsidy side** split that the book's pricing math implies: users ride free because they
+    are price-sensitive, advertisers pay because they are *"paying for access to us."* The older
+    David Halliday transcript supplies the market-maker mechanics — *"unlike Safeway, Airbnb never
+    has a traditional cost of goods sold… Airbnb exists to facilitate that transaction"* — and the
+    cross-side engine, *"larger platforms attract more customers because they attract more
+    suppliers,"* i.e. the indirect-network-effect term that sets which side you charge.
+  - **Real application (mined):** the advertiser side pays for **intent**, not eyeballs — *"access
+    to a massive audience at the exact moment they decide they want to buy something… high-intent
+    demand,"* which is why that side bears the price while users are subsidized. The subsidy then
+    compounds via the **data flywheel** — *"more users mean more searches, more searches mean more
+    data, more data makes the search results and the ad targeting way better… and the wheel just
+    spins faster"* — the concrete payoff a founder is buying with the free side. Halliday's **Visa**
+    walk-through shows the same lever in payments: cardholders subsidized, merchants charged, and
+    *"customers don't think they're paying it because they don't see the four percent that the stores
+    are paying."*
+  - **Where the corpus pushes back on the book:** the elegant "subsidize the right side" pricing
+    rule understates two operating risks. First, **sequencing beats symmetry** — you can't price both
+    sides into existence at once; *"they pick one side and focus on it obsessively,"* get to critical
+    scale, *then* monetize the other. Second, the subsidy buys a **fragile** flywheel, not a durable
+    one: *"this incredible machine is not invincible… there's this constant tug-of-war between
+    keeping us happy and keeping the advertisers happy,"* and the real threat is self-inflicted —
+    *"if they get too greedy, prioritize profits over the user experience, and break our trust, that
+    whole powerful flywheel… could just grind to a halt."* That is the note's "clearer in theory than
+    execution" critique made concrete: over-charging the subsidized side breaks the very effect you
+    priced for.
+  - **Sources in corpus:** The Strategy Breakdown — "Multi-Sided Platforms, Ads & Data Network
+    Effects: How Google Really Makes Money" (youtube.com/watch?v=ynTbn2hILwA) · David Halliday —
+    "2-Sided Markets: Platforms, Networks, & Economies of Scale" (youtube.com/watch?v=7n_YlrAgbcg).
+    *(r/startups pull for this cluster returned only off-topic "I will not promote" idea posts — no
+    substantive subsidy/which-side threads — so the researched layer rests on the two transcripts
+    above; Reddit remains thin for this specific note.)*
 - **Links:** [[canon-parker-platform-revolution]] · [[canon-cusumano-business-of-platforms]] ·
   [[canon-shapiro-varian-information-rules]] · [[canon-mankiw-principles-of-economics]]

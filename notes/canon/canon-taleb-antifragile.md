@@ -22,48 +22,52 @@
   cautionary case — efficiency optimization *removed* the buffers, creating fragility
   ([[canon-ohno-toyota-production-system]]). And Taleb's polemic tone oversells "everything robust
   is bad" — some systems *should* just be reliable.
-- **Practitioner counterpoint:** *(researched 2026-06-05 — FightMediocrity/Denis-the-Bear transcript corpus; r/startups + r/investing pull came back empty, flagged for re-pull)*
-  The corpus's sharpest practitioner read makes antifragility a **deliberate volume of small,
-  survivable failures**, not a metaphor. FightMediocrity's Air Force Academy story — going
-  door-to-door to borrow a car — lands the mechanism: *"the more doors I knocked on, the more
-  awkward situations I put myself in… the less I started to give a [—]… I wasn't a glass that was
-  going to break… I was turning into a diamond with every door."* He reframes it as reps to
-  failure: *"it's actually a lot easier to go to failure on your set in the gym than to go door to
-  door trying to sell a product or make those uncomfortable calls when you're an entrepreneur."*
-  Founders run the same engine — many cheap experiments, kill fast, let winners run — the barbell
-  of Lean Startup's MVPs ([[canon-ries-lean-startup]]) and Bezos's two-way doors
-  ([[canon-bezos-shareholder-letters]]).
-- **Researched layer** *(2026-06-05)* *(corpus thin — Reddit pull empty, flagged for re-pull)*
-  - **Canonical explanation (sourced):** Taleb defines the term *negatively*, against the dictionary.
-    Asked the opposite of fragile, *"people give you words… like resilient — you can't write it down
-    mathematically — or even more stupid words like robust… that's not the opposite of fragile.*
-    *If I'm sending a package to Siberia, fragile means handle with care; the opposite would not be
-    'I don't really care,' it would be 'likes disorder — shake me, I'll benefit from it'"* (Denis
-    The Bear). Mathematically he ties it to **nonlinearity**: *"a small shock has no impact, a large
-    shock has much more impact, disproportionately"* — fragility is a concave/accelerating reaction
-    to volatility, antifragility the convex one. The Swedish Investor formalizes the **triad** with
-    Norse imagery: Baldur (fragile, killed by the one overlooked mistletoe), the boar Sæhrímnir
-    (robust, resurrected each morning), the Vikings themselves (antifragile — unafraid of wounds,
-    so they out-fight "the fragile Englishman and Frenchman").
-  - **Real application (mined):** the **barbell**, applied to investing. *"What's most important is
-    NOT to lose"* — Buffett's *"never lose money"* and Dalio's *"make sure the probability of going
-    bust is nil."* Operationally: *"put a large chunk of your portfolio in hyper-conservative
-    investments and a smaller chunk in hyper-aggressive ones"* (The Swedish Investor). The convex
-    tail bets carry **optionality** — Graham buying companies priced below asset value: capped
-    downside, open upside.
+- **Practitioner counterpoint:** *(researched 2026-06-06 — book-specific "Antifragile by Nassim Taleb Book Summary" transcript, youtube.com/watch?v=IEoXLytLL7I)*
+  The book-specific pull sharpens antifragility into an **operating discipline of small, non-lethal
+  failures**, not a slogan. Its mechanism line: *"stochastic tinkering… small scale non-lethal
+  errors are part of how antifragile systems learn and adapt — by tinkering with different
+  approaches you expose yourself to lots of small mistakes but you gain valuable insights that make
+  you stronger over time."* The same source supplies the discipline's hard floor via the **turkey
+  problem**: *"imagine a turkey that is fed every day for a thousand days — from the turkey's
+  perspective life is great until Thanksgiving… just because things have been stable for a while
+  doesn't mean they'll stay that way."* Founders run the small-failure engine deliberately — many
+  cheap experiments, kill fast, let winners run — the barbell of Lean Startup's MVPs
+  ([[canon-ries-lean-startup]]) and Bezos's two-way doors ([[canon-bezos-shareholder-letters]]) —
+  while the turkey reminds them that a stable runway is *not* evidence the next shock can't be fatal.
+
+- **Researched layer** *(updated 2026-06-06)*
+  - **Canonical explanation (sourced):** the book-specific summary defines the term *against
+    resilience*: *"antifragility is not just about resilience or toughness — while something that's
+    resilient can withstand shocks, an antifragile system actually grows stronger when exposed to
+    stress, volatility and disorder,"* with the canonical worked example — *"think about your
+    muscles: when you work out they break down but they rebuild stronger"* ("Antifragile by Nassim
+    Taleb Book Summary"). The Swedish Investor formalizes the **triad** with Norse imagery: Baldur
+    (fragile, killed by the one overlooked mistletoe), the boar Sæhrímnir (robust, resurrected each
+    morning), the Vikings themselves (antifragile — unafraid of wounds, so they out-fight "the
+    fragile Englishman and Frenchman").
+  - **Real application (mined):** the **barbell**, applied to capital and energy allocation —
+    *"having most of your assets or energy in super-safe low-risk ventures while allocating a smaller
+    percentage to high-risk high-reward opportunities… you limit potential losses but are still
+    exposed to upside gains"* (book summary). Those tail bets are **convex**: *"convexity means some
+    strategies have limited downsides but unlimited upsides… think of an entrepreneur launching a
+    small startup — the initial investment might be modest but the potential payoff could be
+    massive,"* which is the same shape as **optionality** (The Swedish Investor's barbell of
+    hyper-conservative + hyper-aggressive holdings).
   - **Where the corpus pushes back on the book:** the transcripts surface the dosage caveat the
-    book under-stresses. The Swedish Investor's own summary flags that *"positive antifragile
-    systems are often better left alone"* and that the point isn't prediction at all —
-    *"predicting future events isn't possible, and largely irrelevant, as long as you can control
-    your exposure to them."* The practical reframe: stop forecasting the shock, **engineer the
-    payoff shape** so survivable stressors compound and fatal ones can't reach you. (Reddit
-    practitioner threads — r/startups, r/investing — came back empty this pull; the live-founder
-    reality-check on barbell *dosage* is the gap to fill on re-pull.)
-  - **Sources in corpus:** The Swedish Investor — "ANTIFRAGILE SUMMARY (BY NASSIM TALEB)"
-    (youtube.com/watch?v=-MMLea-_ifw) · Denis The Bear — "Nassim Taleb Explains Antifragility in
-    Under 5 Minutes" (youtube.com/watch?v=C40zwpdc_yo) · FightMediocrity — "How to Build Mental
-    Toughness – Antifragile by Nassim Taleb" (youtube.com/watch?v=YhwEmS3-tf8). Reddit:
-    r/decisionmaking pull returned 0 threads (flagged for re-pull).
+    book under-stresses. The book summary itself repeatedly qualifies the failures as *"small
+    scale, non-lethal"* — the toughening only holds below a fatal threshold — and pairs the upside
+    gospel with the turkey warning that *stable history is not safety*. The Swedish Investor adds
+    that the point isn't prediction at all: *"predicting future events isn't possible, and largely
+    irrelevant, as long as you can control your exposure to them."* The practical reframe: stop
+    forecasting the shock, **engineer the payoff shape** so survivable stressors compound and fatal
+    ones can't reach you. (Reddit pull — r/decisionmaking — returned 0 threads this cycle; a
+    live-founder reality-check on barbell *dosage* remains the one open gap, but the book-specific
+    video corpus now carries the note.)
+  - **Sources in corpus:** "Antifragile by Nassim Taleb Book Summary"
+    (youtube.com/watch?v=IEoXLytLL7I) · The Swedish Investor — "ANTIFRAGILE SUMMARY (BY NASSIM
+    TALEB)" (youtube.com/watch?v=-MMLea-_ifw) · Denis The Bear — "Nassim Taleb Explains
+    Antifragility in Under 5 Minutes" (youtube.com/watch?v=C40zwpdc_yo). Reddit: r/decisionmaking
+    pull returned 0 threads.
 - **Links:** [[canon-taleb-black-swan]] · [[canon-ries-lean-startup]] ·
   [[canon-bezos-shareholder-letters]] · [[canon-ohno-toyota-production-system]] ·
   [[canon-klarman-margin-of-safety]]

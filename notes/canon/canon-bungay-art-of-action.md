@@ -21,41 +21,42 @@
   [[canon-marquet-turn-the-ship-around]]). In low-trust or high-compliance environments
   (safety-critical, regulated) "freedom in the how" can be exactly wrong. And intent only aligns
   action if the *diagnosis* behind it was right.
-- **Practitioner counterpoint:** *(researched 2026-06-05 — r/strategy corpus + Rumelt/Lenny transcript; corpus thin — flagged for re-pull)*
-  Practitioners independently rediscover Bungay's thesis that the gap is in execution, not the plan.
-  An r/strategy post — "**Most organizations don't need a new strategy**" (45↑) — argues the instinct
-  to "launch a *strategy refresh*" is usually misdirected: *"the strategy isn't broken — the
-  communication and operating rhythm are,"* listing "**people are not aligned on what matters most**"
-  and "**roles and ownership are unclear**" as the real failures. That *is* Bungay's **alignment gap**.
-  A strategy-workshop research thread (27↑) names the same trap from the room: *"**alignment feels
-  shallow or forced**… good ideas don't turn into action,"* ending in *"**bad execution that good
-  strategy won't fix (more likely)**."* **But the corpus reality-check is that mission command rarely
-  survives the meeting:** the same thread reports "**loud voices dominate**" and "**groupthink in large
-  sessions**" — back-briefing is the cure Bungay prescribes, but the corpus shows orgs default to
-  PowerPoint broadcast instead of two-way intent.
-- **Researched layer** *(2026-06-05 — corpus thin for Bungay specifically; flagged for re-pull)*
-  - **Canonical explanation (sourced):** No dedicated Bungay transcript was in the corpus, but the
-    upstream kernel he executes *is* — Rumelt frames a strategy as something to be *done*, not
-    declared: *"don't call it a strategy, call it an **action agenda**… what are the **coherent
-    actions** we're going to take?"* (Lenny's Podcast — "Good Strategy, Bad Strategy", Richard
-    Rumelt). Bungay's move is to push that action agenda *down* the org via intent rather than detail,
-    closing the **alignment gap** between what HQ intends and what the front line understands.
-  - **Real application (mined):** the r/strategy "**Most organizations don't need a new strategy**"
-    post (45↑) is a clean field case — performance drops, leadership reaches for a "strategy refresh,"
-    but the author's diagnosis is pure Bungay: *"people are not aligned on what matters most,"* "roles
-    and ownership are unclear," "**meetings are full of updates, but short on decisions**." The fix is
-    not a better plan; it's communicating intent and an operating rhythm that converts intent into
-    adjustment.
-  - **Where the corpus pushes back on the book:** the strategy-workshop thread (27↑) shows *why*
-    mission command stalls in practice — "**low engagement**," "**alignment feels shallow or forced**
-    (question marks on buy-in)," "**loud voices dominate**." Bungay's back-brief assumes a room
-    where people will honestly surface what they didn't understand; the corpus says real rooms produce
-    performative agreement, so the **effects gap** reopens the moment everyone leaves the offsite.
-  - **Sources in corpus:** Lenny's Podcast — "Good Strategy, Bad Strategy | Richard Rumelt"
-    (youtube.com/watch?v=4uWKEG0s9Kc) · r/strategy "Most organizations don't need a new strategy"
-    (45↑) · r/strategy "Leaders who run strategy workshops — what's harder than it should be?" (27↑) ·
-    r/strategy "Levels of planning" (39↑). *(No Bungay-specific transcript in this pull — re-pull
-    recommended.)*
+- **Practitioner counterpoint:** *(researched 2026-06-06 — "Defining Your Strategic Intent with The Art of Action", B2M Online Coaching and Marketing, youtube.com/watch?v=NTgJOwa9tZc)*
+  A practitioner walkthrough turns Bungay's thesis into an eight-step operating drill — and the
+  opening line is pure Bungay: *"most organizations suffer from too much planning that do not achieve
+  the desired results — more planning is not the answer."* The video's whole move is to **limit
+  direction to defining and communicating the intent (what and why) and setting the boundaries**,
+  exactly the alignment-gap remedy. The sharp practitioner finding is *which* boundaries: of four
+  "where do we want to get to" items (sales +50%, 40% gross margin, enter a new market, launch a new
+  product) only **one can be the single major objective** — the rest get re-cast as **constraints** or
+  **lower-level objectives**. The corpus pushes Bungay further than the book's prose: it makes the
+  hard part operational — *"you can only have one major objective"* — which is where most intent
+  statements actually fail.
+
+- **Researched layer** *(updated 2026-06-06)*
+  - **Canonical explanation (sourced):** The B2M walkthrough states Bungay's core as *"the art of
+    action stresses the importance of a clear intent — what and why — and setting the boundaries,"*
+    then closes with the line the video pulls straight from the book: *"what cannot be made simple
+    cannot be made clear, and what is not clear will not get done"* ("Defining Your Strategic Intent
+    with The Art of Action", B2M Online Coaching and Marketing). This is the **alignment gap** made
+    procedural — intent precedes detail, and clarity is the gating constraint on execution.
+  - **Real application (mined):** the eight-step drill is the field artifact — steps 1–2 establish
+    where you are now (internal + external factors, e.g. a SWOT); step 4 forces *"the single major
+    objective to be achieved — you can only have one"*; step 5 demands the *why* *"as this helps both
+    understanding of the intent and motivation"*; steps 7–8 set **constraints** (margin, time, budget)
+    and **freedoms** — *"don't be too restrictive, otherwise you will stifle initiative."* That
+    freedoms step is mission command in miniature: bound the *what/why*, leave the *how* open.
+  - **Where the corpus pushes back on the book:** the same r/strategy thread that names the failure
+    also names why intent stalls — "**Most organizations don't need a new strategy**" (45↑) diagnoses
+    real orgs as *"people are not aligned on what matters most,"* "roles and ownership are unclear,"
+    "**meetings are full of updates, but short on decisions**." Bungay assumes leaders *can* name one
+    major objective and hold the boundary; the corpus says they reach for a "strategy refresh" instead
+    of doing the harder back-brief — the alignment gap reopens not because the framework is wrong but
+    because nobody enforces step 4's "you can only have one."
+  - **Sources in corpus:** "Defining Your Strategic Intent with The Art of Action", B2M Online
+    Coaching and Marketing (youtube.com/watch?v=NTgJOwa9tZc) · r/strategy "Most organizations don't
+    need a new strategy" (45↑) · r/strategy "Leaders who run strategy workshops — what's harder than it
+    should be?" (27↑).
 - **Links:** [[canon-rumelt-good-strategy]] · [[canon-marquet-turn-the-ship-around]] ·
   [[canon-grove-high-output-management]] · [[canon-meadows-thinking-in-systems]]
 

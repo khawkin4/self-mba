@@ -22,50 +22,49 @@
   **misused to launder real accountability** ("we both contributed" when one party is clearly at
   fault). And surfacing feelings/identity requires emotional skill the book assumes more than it
   builds.
-- **Practitioner counterpoint:** *(researched 2026-06-05 — Crucial Conversations transcript corpus; no
-  Difficult-Conversations-specific thread present)* Practitioners who teach this material converge on
-  **safety, not technique**, as the unlock — the same move Stone calls surfacing the Feelings/Identity
-  layers. A therapist reviewing the adjacent *Crucial Conversations* (Therapy in a Nutshell, 211k-view
-  summary) flags exactly the trap Stone warns about: she "*thought it would be another skills based
-  approach that teaches the right words to say to basically manipulate others… but in the long run that
-  approach I don't believe is very effective.*" Her #1 takeaway is to read defensiveness as a signal:
-  "*see silence or violence as a sign that the other person isn't feeling safe to talk.*" Co-author
-  Joseph Grenny quantifies the cost of skipping the conversation: in a study of 1,100 employees, **43%
-  waste two weeks or more ruminating** on an unresolved problem and **one in three** estimate a failure
-  to speak up cost their org **at least $25,000**. The execution-pressure cousin is Crucial
-  Conversations ([[canon-patterson-crucial-conversations]]); the candor frame is Scott
-  ([[canon-scott-radical-candor]]).
-- **Researched layer** *(2026-06-05)* *(corpus thin — flagged for re-pull: no Difficult-Conversations
-  or r/managers thread in this cluster; grounded in the adjacent Crucial Conversations transcripts that
-  cover the same skill domain)*
-  - **Canonical explanation (sourced):** The book's core mechanism — moving from *who's right* to *each
-    person's story*, and from blame to **contribution** — depends on making it safe to be honest. The
-    corpus states the precondition plainly: defensiveness is not data to argue with but a safety signal —
-    "*see silence or violence as a sign that the other person isn't feeling safe to talk… stop ourselves
-    and ask what can I do to restore safety?*" (Therapy in a Nutshell, "Crucial Conversations Book
-    Summary"). This is Stone's Feelings/Identity layers by another name: surface the threat or it "*runs
-    the conversation from underneath.*"
-  - **Real application (mined):** The Crucial Learning (co-author Joseph Grenny) clip dramatizes the
-    contribution-not-blame move as a **contrasting statement** — "*a skill where you clarify what you
-    don't intend followed by what you do intend.*" Manager Esther opens a mistake conversation; team
-    member Leia bristles ("*Are you questioning my design skills?*" — a pure Identity-layer reaction) and
-    Esther defuses it: "*Oh no, no — that's not it at all. I have no concerns with the quality of your
-    work… I'm just trying to…*" Naming what she does *not* mean restores safety before the facts dispute
-    resumes — exactly Stone's "I experienced X — help me understand your perspective."
-  - **Where the corpus pushes back on the book:** The practitioner reality-check is that the three-layer
-    model is **easy to read, hard to run live under stress** — "*human beings tend to behave their worst
-    in the most critical moment… when you're under stress, blood is directed away from your brain*"
-    (Successful By Design). And the therapist's warning cuts at the book's risk too: a skills-first
-    reading curdles into scripted manipulation; the durable version is genuine safety and curiosity, not
-    a rehearsed line. None of the corpus is a transcript *of Difficult Conversations itself* — the
-    book-specific practitioner debate (and the "contribution laundering accountability" critique in the
-    note's Breaks-when) still needs a dedicated re-pull.
-  - **Sources in corpus:** Therapy in a Nutshell — "Crucial Conversations Book Summary: How to Make It
-    Safe to Talk About Anything" (youtube.com/watch?v=nrfjYwY5SSE) · Crucial Learning — "Crucial
-    Conversations for Mastering Dialogue: What to Expect" (youtube.com/watch?v=k2QuG-HLYR4) · Successful
-    By Design — "Crucial Conversations Summary & Review (ANIMATED)" (youtube.com/watch?v=Q2yG142cyNg).
-    *(No Reddit thread on this book in the cluster corpus — r/managers / r/cscareerquestions re-pull
-    flagged.)*
+- **Practitioner counterpoint:** *(researched 2026-06-06 — Simon Sinek, "Try THIS the Next Time You Have
+  an Uncomfortable Conversation")* Sinek gives the book's "name the layer" move a concrete, real-world
+  script he ran with a friend: announce the hard conversation up front, ask permission, then run a
+  three-part disclosure he calls **FBI** — *"your **feelings**, the **behavior** that made you feel that
+  way, and the potential **impact**… be specific as you can, feelings do better than happy, sad, angry —
+  I'm really frustrated or I'm feeling distant from you."* This is Stone's Feelings layer made operational,
+  and the "**be specific**" warning maps directly onto Stone's *contribution-not-blame*: *"avoid things
+  like 'you always…' because they'll tell you the one time that they didn't and now you're backpedaling."*
+  The payoff was the book's promise — *"we ended up opening up to each other and revealing various
+  insecurities and fears… the relationship is even better now than it was before"* — i.e. surfacing the
+  Identity layer, not winning the facts. The execution-pressure cousin is Crucial Conversations
+  ([[canon-patterson-crucial-conversations]]); the candor frame is Scott ([[canon-scott-radical-candor]]).
+
+- **Researched layer** *(updated 2026-06-06)*
+  - **Canonical explanation (sourced):** A book-specific summary states Stone's core mechanism cleanly:
+    *"Every difficult conversation contains three layers: the What Happened layer, the Feelings layer, and
+    the Identity layer. Each layer asks a different question, so missing one can distort the entire
+    conversation"* (MindScience 360, "What Makes Conversations Break Down? | Separate Facts Feelings and
+    Identity," explicitly *"inspired by Difficult Conversations by Douglas Stone and Bruce Patton and
+    Sheila Heen"*). It also names the unlock — treat the talk *"as a learning task rather than a courtroom
+    debate"* — and the blame→contribution shift: *"Contribution is not a moral judgment; it is a map of how
+    the pattern formed… focusing on one villain blocks practical improvement."*
+  - **Real application (mined):** Sinek dramatizes running the three layers live. He opens by naming the
+    tension and asking consent — *"I need to have an uncomfortable conversation with you… can we have that
+    conversation"* — then uses **FBI** (feelings / behavior / impact) to surface the Feelings layer
+    without an accusation, closing on the Identity-level stake: *"my fear is that if you and I don't lean
+    into this now… this friendship will get destroyed and I would actually rather see it grow."* The
+    MindScience summary gives the parallel desk-side drill: *"choose one upcoming issue and write the
+    third story description in neutral language… plan one question to learn their story and one sentence to
+    share your impact."*
+  - **Where the corpus pushes back on the book:** Both sources concede the gap the note's Breaks-when
+    flags — the model is easy to read, hard to run live. Sinek admits the live fear directly: *"I'm afraid
+    that I'll say the wrong thing or it'll come out the wrong way and make things worse,"* and the durable
+    version is genuine willingness (*"this relationship matters to me"*), not a memorized script. The
+    MindScience summary likewise undercuts any one-shot reading: *"when progress happens, it comes from
+    repeated practice, not one perfect conversation."* Neither source resolves the "contribution can
+    launder accountability" critique — both keep contribution morally neutral, which is exactly when one
+    clearly-at-fault party can hide inside "we both contributed."
+  - **Sources in corpus:** MindScience 360 — "What Makes Conversations Break Down? | Separate Facts
+    Feelings and Identity" (youtube.com/watch?v=UYSgk1G0tHc) · Simon Sinek — "Try THIS the Next Time You
+    Have an Uncomfortable Conversation" (youtube.com/watch?v=RcGkHrPSzDc).
+    *(No Reddit thread on this book in the cluster corpus — the only reddit pull was r/dataisbeautiful,
+    off-topic.)*
 - **Links:** [[canon-patterson-crucial-conversations]] · [[canon-scott-radical-candor]] ·
   [[canon-voss-never-split-the-difference]] · [[canon-fisher-ury-getting-to-yes]]
 

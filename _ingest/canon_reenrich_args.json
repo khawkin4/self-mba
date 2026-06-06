@@ -1,0 +1,301 @@
+{
+  "notes": [
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-allison-essence-of-decision.md",
+      "book": "canon-allison-essence-of-decision",
+      "clusterName": "History & Judgment",
+      "clusterSlug": "history-judgment",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/history-judgment",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/history-judgment/yt_fix_allison-essence-of-decision.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-ariely-predictably-irrational.md",
+      "book": "canon-ariely-predictably-irrational",
+      "clusterName": "Behavioral Design & Decision Science",
+      "clusterSlug": "behavioral-decision",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision/yt_fix_ariely-predictably-irrational.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-badaracco-defining-moments.md",
+      "book": "canon-badaracco-defining-moments",
+      "clusterName": "Ethics & Judgment",
+      "clusterSlug": "ethics-judgment",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/ethics-judgment",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/ethics-judgment/yt_fix_badaracco-defining-moments.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-bungay-art-of-action.md",
+      "book": "canon-bungay-art-of-action",
+      "clusterName": "Strategy",
+      "clusterSlug": "strategy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/strategy",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/strategy/yt_fix_bungay-art-of-action.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-christensen-innovators-dilemma.md",
+      "book": "canon-christensen-innovators-dilemma",
+      "clusterName": "Landscape & Competitive Awareness",
+      "clusterSlug": "landscape-competitive",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/landscape-competitive",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/landscape-competitive/yt_fix_christensen-innovators-dilemma.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-cialdini-pre-suasion.md",
+      "book": "canon-cialdini-pre-suasion",
+      "clusterName": "Behavioral Design & Decision Science",
+      "clusterSlug": "behavioral-decision",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision/yt_fix_cialdini-pre-suasion.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-clausewitz-on-war.md",
+      "book": "canon-clausewitz-on-war",
+      "clusterName": "History & Judgment",
+      "clusterSlug": "history-judgment",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/history-judgment",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/history-judgment/yt_fix_clausewitz-on-war.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-covey-7-habits.md",
+      "book": "canon-covey-7-habits",
+      "clusterName": "Personal Effectiveness",
+      "clusterSlug": "personal-effectiveness",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/personal-effectiveness",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/personal-effectiveness/yt_fix_covey-7-habits.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-goldratt-the-goal.md",
+      "book": "canon-goldratt-the-goal",
+      "clusterName": "Execution & Operations",
+      "clusterSlug": "execution-operations",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/execution-operations",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/execution-operations/yt_fix_goldratt-the-goal.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-greene-48-laws-of-power.md",
+      "book": "canon-greene-48-laws-of-power",
+      "clusterName": "Power & Organizational Politics",
+      "clusterSlug": "power-politics",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/power-politics",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/power-politics/yt_fix_greene-48-laws-of-power.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-grove-only-the-paranoid-survive.md",
+      "book": "canon-grove-only-the-paranoid-survive",
+      "clusterName": "Landscape & Competitive Awareness",
+      "clusterSlug": "landscape-competitive",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/landscape-competitive",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/landscape-competitive/yt_fix_grove-only-the-paranoid-survive.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-hagiu-wright-multi-sided-platforms.md",
+      "book": "canon-hagiu-wright-multi-sided-platforms",
+      "clusterName": "Network Effects & Platform Strategy",
+      "clusterSlug": "platform-strategy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/platform-strategy",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/platform-strategy/yt_fix_hagiu-wright-multi-sided-platforms.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-kahneman-sibony-sunstein-noise.md",
+      "book": "canon-kahneman-sibony-sunstein-noise",
+      "clusterName": "Behavioral Design & Decision Science",
+      "clusterSlug": "behavioral-decision",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision/yt_fix_kahneman-sibony-sunstein-noise.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-kahneman-thinking-fast-and-slow.md",
+      "book": "canon-kahneman-thinking-fast-and-slow",
+      "clusterName": "Mental Models & Thinking",
+      "clusterSlug": "mental-models",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/mental-models",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/mental-models/yt_fix_kahneman-thinking-fast-and-slow.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-klein-sources-of-power.md",
+      "book": "canon-klein-sources-of-power",
+      "clusterName": "Behavioral Design & Decision Science",
+      "clusterSlug": "behavioral-decision",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision/yt_fix_klein-sources-of-power.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-march-primer-decision-making.md",
+      "book": "canon-march-primer-decision-making",
+      "clusterName": "Behavioral Design & Decision Science",
+      "clusterSlug": "behavioral-decision",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision/yt_fix_march-primer-decision-making.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-mauboussin-success-equation.md",
+      "book": "canon-mauboussin-success-equation",
+      "clusterName": "Financial Literacy for Operators",
+      "clusterSlug": "financial-literacy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/financial-literacy",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/financial-literacy/yt_fix_mauboussin-success-equation.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-meadows-leverage-points.md",
+      "book": "canon-meadows-leverage-points",
+      "clusterName": "Design Thinking & Problem-Solving",
+      "clusterSlug": "design-problem-solving",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/design-problem-solving",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/design-problem-solving/yt_fix_meadows-leverage-points.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-munger-poor-charlies-almanack.md",
+      "book": "canon-munger-poor-charlies-almanack",
+      "clusterName": "Mental Models & Thinking",
+      "clusterSlug": "mental-models",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/mental-models",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/mental-models/yt_fix_munger-poor-charlies-almanack.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-neustadt-may-thinking-in-time.md",
+      "book": "canon-neustadt-may-thinking-in-time",
+      "clusterName": "History & Judgment",
+      "clusterSlug": "history-judgment",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/history-judgment",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/history-judgment/yt_fix_neustadt-may-thinking-in-time.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-parker-platform-revolution.md",
+      "book": "canon-parker-platform-revolution",
+      "clusterName": "Network Effects & Platform Strategy",
+      "clusterSlug": "platform-strategy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/platform-strategy",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/platform-strategy/yt_fix_parker-platform-revolution.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-patterson-crucial-conversations.md",
+      "book": "canon-patterson-crucial-conversations",
+      "clusterName": "Information & Communication",
+      "clusterSlug": "information-communication",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/information-communication",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/information-communication/yt_fix_patterson-crucial-conversations.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-perrow-normal-accidents.md",
+      "book": "canon-perrow-normal-accidents",
+      "clusterName": "Systems Thinking & Complexity",
+      "clusterSlug": "systems-complexity",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/systems-complexity",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/systems-complexity/yt_fix_perrow-normal-accidents.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-pfeffer-power.md",
+      "book": "canon-pfeffer-power",
+      "clusterName": "Power & Organizational Politics",
+      "clusterSlug": "power-politics",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/power-politics",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/power-politics/yt_fix_pfeffer-power.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-rumelt-the-crux.md",
+      "book": "canon-rumelt-the-crux",
+      "clusterName": "Design Thinking & Problem-Solving",
+      "clusterSlug": "design-problem-solving",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/design-problem-solving",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/design-problem-solving/yt_fix_rumelt-the-crux.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-shannon-information-theory.md",
+      "book": "canon-shannon-information-theory",
+      "clusterName": "Information & Communication",
+      "clusterSlug": "information-communication",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/information-communication",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/information-communication/yt_fix_shannon-information-theory.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-shapiro-varian-information-rules.md",
+      "book": "canon-shapiro-varian-information-rules",
+      "clusterName": "Network Effects & Platform Strategy",
+      "clusterSlug": "platform-strategy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/platform-strategy",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/platform-strategy/yt_fix_shapiro-varian-information-rules.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-stone-difficult-conversations.md",
+      "book": "canon-stone-difficult-conversations",
+      "clusterName": "Information & Communication",
+      "clusterSlug": "information-communication",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/information-communication",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/information-communication/yt_fix_stone-difficult-conversations.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-taleb-antifragile.md",
+      "book": "canon-taleb-antifragile",
+      "clusterName": "Risk, Uncertainty & Fragility",
+      "clusterSlug": "risk-fragility",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/risk-fragility",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/risk-fragility/yt_fix_taleb-antifragile.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-taleb-black-swan.md",
+      "book": "canon-taleb-black-swan",
+      "clusterName": "Risk, Uncertainty & Fragility",
+      "clusterSlug": "risk-fragility",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/risk-fragility",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/risk-fragility/yt_fix_taleb-black-swan.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-tetlock-superforecasting.md",
+      "book": "canon-tetlock-superforecasting",
+      "clusterName": "Risk, Uncertainty & Fragility",
+      "clusterSlug": "risk-fragility",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/risk-fragility",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/risk-fragility/yt_fix_tetlock-superforecasting.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-thaler-sunstein-nudge.md",
+      "book": "canon-thaler-sunstein-nudge",
+      "clusterName": "Behavioral Design & Decision Science",
+      "clusterSlug": "behavioral-decision",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision/yt_fix_thaler-sunstein-nudge.json",
+      "hasFix": true
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-thucydides-peloponnesian-war.md",
+      "book": "canon-thucydides-peloponnesian-war",
+      "clusterName": "History & Judgment",
+      "clusterSlug": "history-judgment",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/history-judgment",
+      "fixFile": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/history-judgment/yt_fix_thucydides-peloponnesian-war.json",
+      "hasFix": true
+    }
+  ]
+}

@@ -21,55 +21,55 @@
   history's winners and back-fits a law). In high-trust modern orgs it's frequently the *wrong*
   strategy — Carnegie's sincerity ([[canon-carnegie-win-friends]]) and Radical Candor
   ([[canon-scott-radical-candor]]) out-compound it.
-- **Practitioner counterpoint:** *(researched 2026-06-05 — Robert Greene + Stanford GSB/Pfeffer
-  transcripts; r/cscareerquestions office-politics pull came back empty — flagged for re-pull)*
-  Greene himself frames the book as **defense, not offense**: *"a lot of it's about defense, knowing
-  that there are malevolent aggressive toxic people out there… here's how you defend yourself"*
-  (Robert Greene, "48 Laws… in Under 8 Minutes"). He motivates it by the cost of *not* knowing the
-  rules — getting *"fired, you don't know why,"* a *"business partner [who] ends up stealing your
-  company"* — *"it costs you years of emotional trauma."* **But the corpus's hardest pushback isn't
-  that power-play is corrosive — it's Jeff Pfeffer (Stanford) insisting the discomfort is the
-  problem:** the belief *"that the world is a just and fair place… that people can get ahead just on
-  the basis of their hard work"* is exactly what *"violates"* people's willingness to network,
-  flatter, or grab resources — and so they cede power to those who will. The practitioner verdict:
-  invaluable for *spotting* the moves, but the people who refuse to engage at all get out-maneuvered
-  by those who do.
-- **Researched layer** *(2026-06-05)*
+- **Practitioner counterpoint:** *(researched 2026-06-06 — Robert Greene, "The 48 Laws of Power
+  Summarized in Under 8 Minutes," youtube.com/watch?v=Ke5kFc7U1h8)* Greene himself frames the book
+  as **defense, not offense**: *"it's not about you going out and using all of these laws — a lot of
+  it's about defense, knowing that there are malevolent aggressive toxic people out there… here's
+  how you defend yourself, here are the rules of combat."* He motivates it by the cost of *not*
+  knowing the rules — getting *"fired, you don't know why,"* a *"business partner [who] ends up
+  stealing your company"* — *"it costs you years of emotional trauma."* **But the most revealing
+  thing is which laws he admits using on himself, not enemies:** he calls Law 11 (*"learn to keep
+  people dependent on you"*) *"perhaps the most important law of all,"* and his own application is
+  pure differentiation, not manipulation — *"I've created a position in my niche in the book world
+  where I don't have to depend on other people… I do something that nobody else can replace."* The
+  practitioner verdict: read defensively the laws are a survival kit; the ones that actually built
+  Greene's *durable* power (be irreplaceable, be bold, ignore petty attacks) are the least cynical
+  in the book.
+
+- **Researched layer** *(updated 2026-06-06)*
   - **Canonical explanation (sourced):** Greene's core claim is that **power is a hidden game with
     its own rules nobody teaches you.** In his own words: *"power is this kind of weird game that
     goes on in the world; it has its own rules, its own conventions, its own laws — but nobody talks
     about them… you're kind of thrown out into the world when you're 22 and suddenly you discover
-    that you're doing all of the wrong things"* (Robert Greene, "The 48 Laws of Power Summarized in
-    Under 8 Minutes"). The laws are the de-coded rulebook; the throughline — *"power is relational,
-    perception-driven, and often indirect"* — shows up verbatim in the laws themselves: *"keep people
-    off balance and in the dark by never revealing the purpose behind your actions"* (Law 3, "48 Laws
-    in Under 30 Minutes").
-  - **Real application (mined):** the animated walkthrough (illacertus) supplies the historical
-    case-studies the book back-fits — **Law 1 "Never outshine the master"**: *"Nicolas Fouquet made
-    the mistake of appearing larger than his King, Louis XIV, and spent his remaining days
-    incarcerated."* **Law 7 "Get others to do the work, take the credit"**: *"Thomas Edison wasn't
-    much of a scientist, but a businessman — he would capitalize on Nikola Tesla's genius and garner
-    all the credit."* **Law 3 (conceal intentions)** is shown failing in reverse: the Marquis de
-    Sévigné *"exposed his true feelings… and she lost all interest as he blurted out that he loved
-    her."*
-  - **Where the corpus pushes back on the book:** the academic source (Pfeffer) *agrees* with
-    Greene's amorality more than the note's high-trust optimism does. Pfeffer: *"your job as a leader
-    is not to be authentic or genuine or true to yourself; your job is to be true to what the
-    situation requires of you,"* and *"your direct hierarchical peers are also your competitors."*
-    That sharpens the real critique — not that Greene is *wrong* about how power works, but that he
-    is **survivorship-biased and silent on the compounding cost**: Pfeffer concedes the moves work,
-    yet the durable version is diagnosing *who actually holds power* (often *"an assistant or a
-    secretary… not high up on the org chart"*) and building real sources of it — not running 48
-    manipulations on colleagues you'll need again.
+    that you're doing all of the wrong things… and it's painful, it costs you years of emotional
+    trauma"* (Robert Greene, "The 48 Laws of Power Summarized in Under 8 Minutes,"
+    youtube.com/watch?v=Ke5kFc7U1h8). The laws are the de-coded rulebook; the throughline — *"power
+    is relational, perception-driven, and often indirect"* — shows up verbatim in the laws
+    themselves: *"keep people off balance and in the dark by never revealing the purpose behind your
+    actions… if they have no clue what you are up to, they cannot prepare a defense"* (Law 3, "The 48
+    Laws of Power in Under 30 Minutes," youtube.com/watch?v=Su36tpkuo1I).
+  - **Real application (mined):** Greene walks through laws he says he uses *"all the time"* in his
+    own career — and tellingly they read as craft, not con. **Law 11 (keep people dependent)** —
+    *"if you're replaceable in your job, if somebody younger, cheaper and better looking can take your
+    position, you'll be fired tomorrow… so I do something that nobody else can replace."* **Law 28
+    (act with boldness)** — when editors asked him to soften the book pre-publication, *"I said no,
+    you either take it as it is or [I'm] walking away from your very large advance… being bold and not
+    apologizing about it is what made it so successful."* **Law 36 (disdain things you cannot have —
+    ignoring is the best revenge)** — on a souring collaborator who *"kept coming at me… complaining,
+    blaming me, yelling,"* his move was *"I'm just going to ignore it… ignoring petty things is the
+    ultimate form of power"* (8-Minute summary, youtube.com/watch?v=Ke5kFc7U1h8).
+  - **Where the corpus pushes back on the book:** the book's framing is its own best critique of the
+    "amoral how-to" reading. Greene insists *"it's not about you going out and using all of these
+    laws"* and reports readers writing *"I'm not an evil person… but your book saved me from so many
+    bad situations"* — i.e. the value is **recognition and defense, not running 48 manipulations.**
+    That lines up with this note's core warning: deployed as offense ("conceal intentions," "take the
+    credit"), the laws build short-term advantage and long-term distrust; the ones that compounded
+    for Greene himself (irreplaceability, boldness, ignoring noise) are the ones that *don't* require
+    a mark.
   - **Sources in corpus:** Robert Greene — "The 48 Laws of Power Summarized in Under 8 Minutes"
-    (youtube.com/watch?v=Ke5kFc7U1h8) · Robert Greene — "The 48 Laws of Power in Under 30 Minutes"
-    (youtube.com/watch?v=Su36tpkuo1I) · illacertus — "The 48 Laws of Power (Animated)"
-    (youtube.com/watch?v=670ZGMBjrPI) · Stanford GSB — "Power: Why Some People Have It and Others
-    Don't" w/ Jeff Pfeffer (youtube.com/watch?v=0eFln_mdXGY) · Stanford GSB — "Jeffrey Pfeffer: Why
-    Cultivating Power is the Secret to Success" (youtube.com/watch?v=AozJ4AkgAMw) · Stanford GSB —
-    "'Power' Fireside Chat: Prof. Jeff Pfeffer and Dean Jon Levin" (youtube.com/watch?v=QXtVfrzPYqE).
-    *(r/cscareerquestions office-politics pull was empty — corpus thin on Reddit, flagged for
-    re-pull.)*
+    (youtube.com/watch?v=Ke5kFc7U1h8) · "The 48 Laws of Power in Under 30 Minutes"
+    (youtube.com/watch?v=Su36tpkuo1I). *(r/cscareerquestions office-politics pull returned empty;
+    no Reddit source cited.)*
 - **Links:** [[canon-pfeffer-power]] · [[canon-carnegie-win-friends]] ·
   [[canon-cialdini-influence]] · [[canon-scott-radical-candor]]
 

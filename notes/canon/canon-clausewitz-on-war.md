@@ -24,49 +24,48 @@
   game. *On War* is also famously **unfinished, abstract, and contradiction-laden** — easy to
   cherry-pick to justify whatever you already wanted. Use the *concepts* (friction, culminating
   point, purpose-over-method), not the militarism.
-- **Practitioner counterpoint:** *(researched 2026-06-05 — Clausewitz / Allison transcript corpus;
-  practitioner-forum pull thin — flagged for re-pull)* The concept operators reuse most is **fog of
-  war as a *business* condition, not a battlefield one**: the EDGE Challenges leadership series opens
-  by mapping it straight onto work — *"you're in a negotiation… or you're a manager, you have three
-  major initiatives happening… all these elements of uncertainty, what we call the fog of war"* (The
-  Chaos School). The matched complaint is the **planning-execution gulf**: *"war is simple, but the
-  simplest thing is difficult… no plan survives contact with the enemy"* — *"what you think is going
-  to be effortless suddenly, every step is a struggle"* (DoctrineLM / NotebookLM). On overreach, Graham
-  Allison supplies the live case for the **culminating point**: even deeply intertwined rivals can
-  blunder past it — *"in 1914 the British and German economies were so thickly interdependent"* that
-  war was thought impossible, *"but they did"* (Berggruen Institute). Thucydides is the canonical case
-  study in overreach ([[canon-thucydides-peloponnesian-war]]).
-- **Researched layer** *(2026-06-05)* *(corpus thin on practitioner forums — transcript-grounded)*
-  - **Canonical explanation (sourced):** Friction is the gap between the textbook and the world.
-    Clausewitz *"is really trying to get at the reality of war, not just the theory… he's coming right
-    out of the Napoleonic Wars… and yet he's so focused on how things never really go to plan — war is
-    simple, but the simplest thing is difficult,"* which the corpus glosses as *"no plan survives
-    contact with the enemy"* (DoctrineLM, *Friction in War* NotebookLM podcast). The companion idea —
-    **fog of war** — is *moral*, not just informational: *"people are not machines, they're human… they
-    have rational beliefs, they have irrational beliefs, and under pressure they may or may not act in a
-    way that you welcome — this creates uncertainty"* (The Chaos School).
+- **Practitioner counterpoint:** *(researched 2026-06-06 — "10 Strategic Principles from Clausewitz's
+  On War (Applied to Business & Life)," youtube.com/watch?v=w5DL0wmqd0k)* The concept operators reuse
+  most is **friction as a planning discipline, not a battlefield curiosity** — the applied read tells
+  you to *"plan for friction and build slack into every move… the countless small impediments ruining
+  perfect plans. Messages arrive late, roads flood, supplies vanish… Your project will lose a
+  developer, data, or direction at the worst moment,"* so you *"design buffers, backups, and simpler
+  processes that survive disruption"* and *"treat buffers as untouchable commitments."* The same source
+  operationalizes the **culminating point** as a stop-rule: *"recognize the culminating point and change
+  course before overreach… watch unit economics, churn, and team fatigue for inflection signals. Pause
+  expansion when indicators sour… Define stop rules now and honor them when momentum tempts you."*
+  Thucydides is the canonical case study in that overreach ([[canon-thucydides-peloponnesian-war]]).
+
+- **Researched layer** *(updated 2026-06-06)*
+  - **Canonical explanation (sourced):** Friction is the gap between the textbook and the world, and
+    the primary text refuses to soften it. Clausewitz reduces war to its hardest core — *"War is
+    nothing but a duel on an extensive scale… an act of violence intended to compel our opponent to
+    fulfil our will"* — and warns that *"the errors which proceed from a spirit of benevolence are the
+    worst"* (Carl von Clausewitz, *On War*, Book 1 Ch. 1, J.J. Graham translation, read by Illacertus).
+    The companion idea — the **trinity** — is why method never fully tames war: *"If War is an act of
+    force, it belongs necessarily also to the feelings,"* so rational calculation always rides on top
+    of chance and passion, never replacing them.
   - **Real application (mined):** The corpus translates the concepts out of the 1800s and into modern
-    decision-making. The Kriegsspiel discussion frames friction as why **real-time intelligence is a
-    fantasy** — *"you're accustomed to having real-time intelligence and radio communications and
-    subordinates that actually know how to follow orders… and you get really what's close to reality,
-    which is all of that gets messed up"* (International Kriegsspiel Society). The EDGE Challenges series
-    puts the manager *in* the fog: three initiatives running, teams across the state, *"what's the
-    competitor thinking, what's the customer thinking — all these elements of uncertainty."*
-  - **Where the corpus pushes back on the book:** Allison is the reality-check on **war-as-metaphor**.
-    Modern rivals are *"deeply intertwined economically… if we were to have a war between the US and
-    China, Walmarts would be empty and Chinese factories would be producing stuff for who?"* — commerce
-    is positive-sum and interdependent, exactly the case for [[canon-brandenburger-nalebuff-coopetition]]
-    over "crush the enemy." Yet his 1914 warning (*the most famous book in Europe was Norman Angell's
-    The Great Illusion… and they had the war anyway*) cuts the other way too: interdependence does **not**
-    guarantee peace, so the Clausewitzian read on chance and passion still earns its place.
-  - **Sources in corpus:** DoctrineLM — "Clausewitz On War, Book 1 Ch.7: Friction in War | NotebookLM
-    Podcast" (youtube.com/watch?v=CMXPrYaqFfE) · The Chaos School — "EDGE Challenges – Clausewitz #6
-    Friction in War and the Fog of War" (youtube.com/watch?v=9iYC2E8owm4) · International Kriegsspiel
-    Society — "Dealing with Fog of War and Command Friction – Clausewitz" (youtube.com/watch?v=RoJhq0qMHkw)
-    · Berggruen Institute — "Graham Allison: The Thucydides Trap" (youtube.com/watch?v=IO1ZEhREkQQ) ·
-    Munich Security Conference — "Graham Allison on the Thucydides Trap (2020)" (youtube.com/watch?v=rKBiaCa7wVk).
-    *(r/geopolitics pull returned only current-events headlines with no practitioner discussion of On War's
-    concepts — flagged for a r/strategy / r/WarCollege re-pull.)*
+    decision-making. The applied read maps **fog of war** onto operating without certainty —
+    *"act decisively with partial information by probing, not pausing… In product work, ship a minimum
+    viable slice to test demand and risks,"* and *"run three low-cost trials before committing heavy
+    resources"* — and maps **center of gravity** onto leverage: *"find the center of gravity and
+    protect or target it… address the true leverage point, not the loudest symptom"* (w5DL0wmqd0k). On
+    execution it echoes the book's preference for the robust over the clever: *"prefer simple plans
+    that survive chaos and fatigue better… if stressed, your plan should still work when tired,
+    distracted, and interrupted."*
+  - **Where the corpus pushes back on the book:** the applied source quietly defangs the militarism the
+    primary text revels in — it opens by promising to *"apply them to careers, businesses, and everyday
+    conflicts **without militarizing your mindset**,"* treating *On War* as *"practical philosophy for
+    action, resilience, and focus"* rather than a manual for destroying an enemy. That is exactly the
+    **war-as-metaphor** correction this note flags: Clausewitz's "disarm the enemy / utmost use of
+    force" frame is zero-sum, whereas most commerce is positive-sum and repeated, the case for
+    [[canon-brandenburger-nalebuff-coopetition]] over "crush the competitor."
+  - **Sources in corpus:** Carl von Clausewitz / Illacertus — "On War by Carl von Clausewitz
+    [Audiobook]" (youtube.com/watch?v=6x_TUlkXjCY), the J.J. Graham translation read in full ·
+    "10 Strategic Principles from Clausewitz's On War (Applied to Business & Life)"
+    (youtube.com/watch?v=w5DL0wmqd0k). *(r/geopolitics pull in this cluster returned only
+    current-events headlines with no discussion of On War's concepts, so it is not cited.)*
 - **Links:** [[canon-bungay-art-of-action]] · [[canon-rumelt-good-strategy]] ·
   [[canon-thucydides-peloponnesian-war]] · [[canon-schelling-strategy-of-conflict]] ·
   [[canon-brandenburger-nalebuff-coopetition]]

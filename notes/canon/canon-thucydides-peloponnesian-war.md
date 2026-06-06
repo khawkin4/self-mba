@@ -26,47 +26,46 @@
   presumptions as facts.** Ancient power-politics also maps imperfectly onto **positive-sum,
   interdependent** modern economies ([[canon-brandenburger-nalebuff-coopetition]]). Read it for the
   *pattern of hubris and overreach*, not as a deterministic law.
-- **Practitioner counterpoint:** *(researched 2026-06-05 — r/geopolitics + Allison/Munich Security
-  Conference transcript corpus)* The line analysts keep is the **Sicilian Expedition as cautionary
-  tale**: dominant players most often lose to *their own overreach*, not to a stronger enemy — and
-  the live corpus is full of it. r/geopolitics's top threads read like a modern Sicilian Expedition
-  catalogue: "**We Are Witnessing the Self-Immolation of a Superpower**" (1,400↑) and "**Trump is
-  facing the biggest US humiliation since Vietnam**" (1,665↑) frame decline as *self-inflicted*, not
-  imposed by a rising rival. **But Allison himself supplies the practitioner reality-check on the
-  framework:** "inevitable" is a mistranslation — *"he doesn't mean inevitable the way we might
-  think… he means very very very likely; it's baked into the structure of the situation but not a
-  hundred percent"* (Munich Security Conference). Of his 16 historical cases, **12 ended in war —
-  but four did not**, which is the whole point: the trap is escapable, and treating it as
-  deterministic is the misread. Grove's "only the paranoid" is the corporate echo
-  ([[canon-grove-only-the-paranoid-survive]]).
+- **Practitioner counterpoint:** *(researched 2026-06-06 — Caspian Report, "Geopolitics of the
+  Peloponnesian War, Part 1: Thucydides' Trap")* The analyst's reading is that Thucydides' real
+  contribution isn't the trap *label* but the **discipline of looking past the surface trigger to the
+  structural undercurrent.** The Corcyra dispute was *"a mere excuse to start the war"*; what actually
+  drove Athens and Sparta was not the peripheral town in dispute but *"how said dispute would affect
+  the balance of power between themselves."* Sparta's ultimatum *"did not aim to resolve disputes in
+  Corcyra… but instead was a wide-ranging set of demands whose collective aim was to end the Athenian
+  Empire."* The practitioner takeaway: *"we have to analyze conflicts not simply on the basis of
+  events at the surface level but also be aware of potential historical and geostrategic
+  undercurrents"* — the same diagnostic move modern flare-ups in the Balkans and Middle East demand.
+  Grove's "only the paranoid" is the corporate echo ([[canon-grove-only-the-paranoid-survive]]).
 
-- **Researched layer** *(2026-06-05)*
-  - **Canonical explanation (sourced):** the engine is **structural fear, not malice** — *"when a
-    rising power threatens to displace a ruling power… alarm bells should sound, extreme danger
-    ahead. In the book I look at the last 500 years and find 16 cases in which this happened; 12 of
-    them end in war"* (Graham Allison, Munich Security Conference). Thucydides' own line — the growth
-    of Athenian power *"and the alarm which this inspired in Sparta made war inevitable"* — is the
-    template, but Allison stresses the original Greek means *very likely*, baked into structure, not
-    100%.
-  - **Real application (mined):** the corpus maps the pattern onto US–China directly — *"if we were
-    to have a war between the US and China, Walmart[s] would be empty, and Chinese factories would be
-    producing stuff for who?"* (Berggruen Institute) — then warns that deep interdependence is **not**
-    a safeguard: in 1914 Britain and Germany were just as intertwined, and Norman Angell's *The Great
-    Illusion* argued war had become impossible — *"but they did"* fight. Markets, Allison notes, price
-    fat-tail risk badly, so booming markets are no all-clear.
-  - **Where the corpus pushes back on the book:** the Trap is **probabilistic, not a law** — the four
-    non-war cases (e.g. Spain–Portugal defused by the papal line of demarcation, the Cold War ending
-    without great-power war) are the escape routes, and Allison's own discomfort — *"hard to imagine
-    being comfortably adjusting to being number two… it certainly doesn't feel right for red, white
-    and blue Americans"* — names the psychological driver that makes the trap dangerous *and* the bias
-    that makes the analogy easy to over-apply (cf. [[canon-neustadt-may-thinking-in-time]]).
-  - **Sources in corpus:** Munich Security Conference — "Graham Allison on the Thucydides Trap | MSC
-    2020" (youtube.com/watch?v=rKBiaCa7wVk) · Berggruen Institute — "Graham Allison: The Thucydides
-    Trap" (youtube.com/watch?v=IO1ZEhREkQQ) · Lesser Known History — "Thucydides Trap: From Sparta and
-    Athens to Its Modern Context" (youtube.com/watch?v=H28xwjaB598) · r/geopolitics "We Are Witnessing
-    the Self-Immolation of a Superpower" (1,400↑), "Trump is facing the biggest US humiliation since
-    Vietnam" (1,665↑). *(Reddit side is a geopolitics news-headline pull, not threaded book
-    discussion — corpus thin on practitioner commentary, flagged for re-pull.)*
+- **Researched layer** *(updated 2026-06-06)*
+  - **Canonical explanation (sourced):** the engine is **structural fear, not the immediate
+    quarrel** — *"the growth of the power of Athens and the alarm which this inspired in Sparta made
+    war inevitable"* (Thucydides, quoted in Caspian Report, "Geopolitics of the Peloponnesian War,
+    Part 1"). The video stresses the radical move: the war happened *"not by accident, not by
+    individual leaders, but instead a natural outcome of long-term power shifts"* — Sparta's specific
+    fear being *"the dramatic growth of Athenian power, particularly hard power in the form of
+    Imperial subjugation and colonization."*
+  - **Real application (mined):** the **Melian Dialogue** is the corpus's sharpest application of raw
+    power realism — Athens to neutral Melos: *"the strong do what they can and the weak suffer what
+    they must"* and *"by a necessary law of their nature they rule wherever they can"* (Vox Stoica /
+    "Thucydides: Melian Dialogue"). The video frames it as **realism vs. idealism**: *"political
+    realists believe that maintaining power and acquiring more power are and ought to be the primary
+    motivations of States… questions of morality are secondary."* The decisive variable is not who is
+    just but who is strong — Melos invoked the gods and justice, and Athens *"utterly defeated the
+    small island nation."*
+  - **Where the corpus pushes back on the book:** the Melian video supplies its own
+    counter-case — realism only wins *when it carries the bigger battalions*: *"in World War II…
+    idealism achieved a victory over realism because the Allied Powers, who were primarily motivated
+    by moral sentiments, possessed military superiority over the Axis powers."* So the lesson is
+    **conditional, not a law** — outcomes hinge on relative strength, not on which doctrine is held,
+    which is exactly why treating "the strong do what they must" as a deterministic rule is the
+    misread (cf. [[canon-neustadt-may-thinking-in-time]]).
+  - **Sources in corpus:** Caspian Report — "Geopolitics of the Peloponnesian War, Part 1:
+    Thucydides' Trap" (youtube.com/watch?v=JGjjnK15pks) · "Thucydides: Melian Dialogue"
+    (youtube.com/watch?v=cHqi338seDQ). *(The r/geopolitics pull in this cluster is a current-events
+    news feed — Iran, Venezuela, Greenland — with no threaded discussion of Thucydides, so it is not
+    cited here; the two book-specific transcripts carry the layer.)*
 - **Links:** [[canon-clausewitz-on-war]] · [[canon-schelling-strategy-of-conflict]] ·
   [[canon-neustadt-may-thinking-in-time]] · [[canon-grove-only-the-paranoid-survive]]
 

@@ -20,46 +20,44 @@
   others' eyes), not "try to think harder." Some findings (notably priming) were hit by the
   replication crisis — hold the headline anecdotes loosely; the core (anchoring, loss aversion,
   overconfidence, planning fallacy) holds.
-- **Practitioner counterpoint:** *(researched 2026-06-05 — mental-models transcript corpus; r/decisionmaking
-  pull returned empty, flagged for re-pull)* The summarizers converge on Kahneman's own verdict that
-  insight ≠ correction: an Inc. Magazine interview has Kahneman himself note the **Müller-Lyer illusion**
-  is the model for bias — *"one continues to look longer than the other… the problem is with what we call
-  cognitive illusions"* — you *see* the lines are equal and still can't *unsee* the distortion. The applied
-  fix is structural, and the corpus's clearest version is Munger: identifying folly and **designing it out**
-  rather than out-thinking it — *"this process that I've gone through life doing of identifying folly and
-  trying to avoid it has worked wonderfully for me"* (The Free Bull). Munger's lever is **incentives over
-  willpower** — *"incentives are a lot more powerful than you think"* (SXSW), the applied form of "you can't
-  debias yourself solo" ([[canon-munger-poor-charlies-almanack]]).
-- **Researched layer** *(2026-06-05)* *(corpus thin — reddit pull empty, flagged for re-pull)*
-  - **Canonical explanation (sourced):** Kahneman frames the two systems as automatic vs. effortful —
-    *"system one is essentially what comes up automatically in your memory… you have no control of it
-    because it's automatic and involuntary; system two… is effortful and deliberate"* (Inc. Magazine).
-    The error mechanism is mistaking one for the other: *"most of us feel that we have reasons for what
-    we're doing but in fact we do what we're doing very largely because of reasons that we're not
-    necessarily completely aware of… the reasons are not necessarily the causes of our actions"* (Inc.).
-  - **The biases, verified across transcripts:** **anchoring** — two groups guessing the tallest
-    redwood's height after seeing "more/less than 1,200 ft" vs. "180 ft" averaged **844 ft vs. 282 ft**
-    (FightMediocrity); **loss aversion** — a +$1,000/−$1,000 coin flip is a game "most people do not want
-    to play" even when the payoff is shifted to +$1,100/−$1,000 and the expected value turns positive
-    (FightMediocrity); **System-2 laziness** — the bat-and-ball problem ("ball costs $0.10" feels right;
-    it's $0.05) because *"using system two consumes more energy… our mind tends to go for least effort"*
-    (HowtoDoit).
-  - **Real application (mined):** the **availability** example — frequent mainstream-media consumers
-    assign terrorism and plane crashes "a reasonable or even high probability" despite real odds "very
-    close to zero," because vividness, not base rate, drives the estimate (FightMediocrity). The applied
-    move is to anchor on the base rate deliberately (the note's Rep).
-  - **Where the corpus pushes back on the book:** insight doesn't debias — the Müller-Lyer illusion
-    *"is never quite as clearcut"* even once named (Inc.), so the durable fix is **structural**. The
-    corpus's answer is Munger: make *"identifying folly and trying to avoid it"* a lifelong process (The
-    Free Bull) and lean on **incentives, not willpower** — *"incentives are a lot more powerful than you
-    think"* (SXSW) — exactly the "design around, don't out-think" line.
-  - **Sources in corpus:** Inc. — "Daniel Kahneman: Thinking Fast vs. Thinking Slow"
-    (youtube.com/watch?v=PirFrDVRBo4) · FightMediocrity — "Thinking, Fast and Slow… Animated Book
-    Summary" (youtube.com/watch?v=uqXVAo7dVRU) · HowtoDoit — "Thinking Fast and Slow - System 1 & System
-    2" (youtube.com/watch?v=Cfd8z3l3TYk) · The Free Bull — "Charlie Munger on His Favorite Mental Model"
-    (youtube.com/watch?v=BRgnIyjRxmU) · SXSW — "The Latticework of Mental Models For a Great Life!"
-    (youtube.com/watch?v=Z2J_8GHcrvQ) · r/decisionmaking — *pull returned empty (0 threads), flagged for
-    re-pull.*
+- **Practitioner counterpoint:** *(researched 2026-06-06 — FightMediocrity "Thinking, Fast and Slow"
+  animated summary, youtube.com/watch?v=uqXVAo7dVRU)* The book-specific summary lands the core practical
+  warning: the failure mode is using fast thinking where slow thinking belongs. The summarizer frames it
+  with the bird-and-lion parable — System 1 over-generalizes ("if a bird flies over your kid will drop
+  dead") — then concludes *"the problem however really arises when we use system 1 instead of system 2
+  when system 2 would be the appropriate system to use and this leads us to all kinds of biases and
+  fallacies that are not optimal."* The applied lesson the video repeats — *"how can knowing this be
+  useful to you"* — is exactly anchoring-as-a-tool: if you're the buyer, don't let MSRP anchor you; if
+  you're the seller, set MSRP to anchor *them*. Knowing the mechanism is the lever, but only when paired
+  with structure, which is where Munger's "design folly out" answer comes in ([[canon-munger-poor-charlies-almanack]]).
+
+- **Researched layer** *(updated 2026-06-06)*
+  - **Canonical explanation (sourced):** The book-specific transcript draws the two systems cleanly —
+    *"system one is impulsive automatic and intuitive system two however is thoughtful deliberate and
+    calculating"* (HowtoDoit, "Thinking Fast and Slow - System 1 & System 2"). The error mechanism is
+    System 2's laziness: on the bat-and-ball problem (*"a bat and a ball together cost $1.10… how much
+    is the ball"* — the intuitive "10 cents" is wrong; it's 5 cents) the video explains *"this problem
+    exposes our mental laziness because using system two consumes more energy our mind tends to go for
+    least effort as possible"* (HowtoDoit). System 1 substitutes the easy question and System 2 rubber-
+    stamps it.
+  - **Real application (mined):** **anchoring as a usable tool.** The FightMediocrity summary runs
+    Kahneman's redwood experiment — one group asked if the tallest redwood is more/less than 1,200 ft,
+    another anchored on 180 ft — and reports mean guesses of **844 ft vs. 282 ft** (uqXVAo7dVRU). It
+    then turns it operational: *"if you're the buyer do you want to look at the MSRP and be anchored to
+    that if you're selling something how do you want to set up your MSRP to use anchoring to your
+    advantage."* The same video's **availability** point — heavy mainstream-media consumers fear
+    terrorism and plane crashes despite real odds *"very close to zero"* — is the case for deliberately
+    anchoring on the base rate (the note's Rep).
+  - **Where the corpus pushes back on the book:** the summaries are honest that System 1 isn't a bug to
+    delete — *"we should value system one because it has huge benefits it's the reason why we've
+    survived"* (FightMediocrity). The book over-indexes on cataloguing biases; the durable fix is
+    **structural, not willpower** — design the folly out the way Munger does, rather than trying to
+    out-think your own System 1 in the moment ([[canon-munger-poor-charlies-almanack]]).
+  - **Sources in corpus:** FightMediocrity — "THINKING, FAST AND SLOW BY DANIEL KAHNEMAN | ANIMATED
+    BOOK SUMMARY" (youtube.com/watch?v=uqXVAo7dVRU) · HowtoDoit — "Thinking Fast and Slow - System 1 &
+    System 2" (youtube.com/watch?v=Cfd8z3l3TYk) · Inc. Magazine — "Daniel Kahneman: Thinking Fast vs.
+    Thinking Slow" (youtube.com/watch?v=PirFrDVRBo4). *(r/decisionmaking pull still returned 0 threads —
+    no reddit source cited.)*
 - **Links:** [[canon-munger-poor-charlies-almanack]] · [[canon-parrish-great-mental-models]] ·
   [[canon-bezos-shareholder-letters]] · [[canon-scott-radical-candor]]
 

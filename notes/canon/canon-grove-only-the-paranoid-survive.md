@@ -21,39 +21,46 @@
   missing a real one. The framework is brilliant *in hindsight* but gives no clean test to
   distinguish the real inflection from the scare in real time. Grove's own answer — "experiment,
   let a thousand flowers bloom, then concentrate" — is costly and slow.
-- **Practitioner counterpoint:** *(researched 2026-06-05 — r/strategy corpus + Christensen transcripts; corpus thin — flagged for re-pull)*
-  The corpus has no Grove/Intel pull yet, but r/strategy practitioners independently confirm Grove's
-  hardest claim — that the threat is *seen from the inside and ignored*. A "**Most organizations don't
-  need a new strategy**" thread (45↑) argues the failure is rarely the strategy itself but the
-  operating rhythm: *"Good ideas don't turn into action… KPIs are tracked, but not reviewed… meetings
-  are full of updates, but short on decisions."* And a "**Leaders who run strategy workshops**" thread
-  (28↑) names exactly why Cassandras go unheard at the top: *"Low engagement… loud voices dominate…
-  groupthink in large sessions… alignment feels shallow or forced."* The recurring irony stands: even
-  managers who *know* the framework drown the weak signal in their own planning ritual.
-- **Researched layer** *(2026-06-05)* *(corpus thin — flagged for re-pull: no Grove/Intel/inflection-point pull on disk yet; built from the adjacent disruption corpus)*
-  - **Canonical explanation (sourced):** the corpus's closest mechanism to Grove's "10X force" is
-    Christensen's disruption — the *academic* account of why incumbents miss an inflection. Christensen
-    frames it as a *rational* trap, not negligence: *"the choice that you have to make is should we
-    make better products that we could sell for better profits to our best customers, or maybe we ought
-    to make worse products that none of our customers would buy that would ruin our margins"* (HBR,
-    "Disruptive Innovation Explained"). This is Grove's "senior people are last to see it" in economic
-    form — they see it and decline, because the threat enters at the unprofitable low end.
-  - **Real application (mined):** the canonical case is Toyota. *"Kia and Hyundai, the Koreans, have
-    stolen the bottom of the market from Toyota. Not because Toyota's asleep at the switch, but why
-    would they ever want to defend… the lowest profit part of their product line when they have the
-    privilege of competing in luxury cars against Mercedes?"* (Christensen, Saïd Business School,
-    Oxford). The inflection is visible — the *incentives* are what blind the incumbent, exactly Grove's
-    point that success makes you dismiss the threat.
-  - **Where the corpus pushes back on the book:** practitioners locate the failure one layer below
-    Grove's "be paranoid." r/strategy's "Most organizations don't need a new strategy" (45↑) insists
-    the gap is *operating rhythm* — *"meetings full of updates, but short on decisions"* — not missing
-    insight. Paranoia that never converts to a reviewed decision is theater; the Cassandra is heard and
-    still ignored.
-  - **Sources in corpus:** Harvard Business Review — "Disruptive Innovation Explained"
-    (youtube.com/watch?v=qDrMAzCHFUU) · Saïd Business School, Oxford — "Clayton Christensen: Disruptive
-    innovation" (youtube.com/watch?v=rpkoCZ4vBSI) · Startup Grind — "Clayton Christensen on How to Build
-    a Disruptive Business" (youtube.com/watch?v=Zn6-KksdOgE) · r/strategy "Most organizations don't need
-    a new strategy" (45↑), "Leaders who run strategy workshops — what's harder than it should be?" (28↑).
+- **Practitioner counterpoint:** *(researched 2026-06-06 — r/strategy "Most organizations don't need a new strategy" (45↑))*
+  Grove's hardest claim is that the Cassandra is *heard and still ignored* — and practitioners locate
+  exactly why: not missing insight, but a broken operating rhythm. The top "**Most organizations don't
+  need a new strategy**" thread (45↑) argues the failure is rarely the strategy itself: *"Good ideas
+  don't turn into action… KPIs are tracked, but not reviewed… meetings are full of updates, but short
+  on decisions."* This is the practitioner's gloss on Grove's own confession that he can't hand you a
+  test — paranoia that never converts to a *reviewed decision* is theater. A "**Leaders who run strategy
+  workshops**" thread (28↑) adds why the weak signal dies at the top: *"loud voices dominate…
+  groupthink in large sessions… alignment feels shallow or forced."*
+
+- **Researched layer** *(updated 2026-06-06)*
+  - **Canonical explanation (sourced):** the re-pull surfaced Grove's own 1996 MIT Sloan lecture, where
+    he names the mechanism directly. A 10X force is *"a 10 times increase relative to the other forces…
+    one of the forces that determine the well-being of a business really grows out of bound"* — and the
+    danger is the curve's subtle bend: *"The hardest time we all have at business is not a break point
+    in a curve… It is exactly at that subtle point where the curvature changes"* (Andrew Grove,
+    "Strategic Inflection Points," MIT Industry Leaders Program, 1996). Crucially, Grove admits there is
+    no clean test: *"For every real inflection point… there are 10 items that are really not much more
+    than noise when you look back retrospectively. So how do you tell one from the other? I wish I was
+    able to give you a little diskette… I can't."*
+  - **Real application (mined):** Grove's lived signal is **strategic dissonance** — and his rule is
+    that it surfaces from the bottom, not the top: *"the first recognition of it does not come from
+    senior management, people like me. But come from people who are in the front lines… Salesforce is
+    very likely to realize changing customer preferences much before sales management is"* (MIT lecture).
+    Those front-line people *"are going to start turning into being Cassandras."* His prescription:
+    *"Let chaos reign… let experimentation take place,"* then *"separate the signal from the noise…
+    experiment first and then pull in the reins and commit yourself."* The book summary corpus confirms
+    the canonical case set — the **Pentium floating-point bug** of 1994 (when consumers called Intel
+    directly, revealing it had become a household-name brand) and the **vertical-to-horizontal morphing**
+    of the computer industry that Compaq, Dell, and Novell rode while IBM's OS/2 stumbled (best book bits,
+    "Only the Paranoid Survive | Book Summary").
+  - **Where the corpus pushes back on the book:** Grove himself concedes the framework gives no real-time
+    test (the "I can't give you a diskette" admission), and r/strategy locates the practical failure one
+    layer below "be paranoid." The "Most organizations don't need a new strategy" thread (45↑) insists the
+    gap is *operating rhythm* — *"meetings full of updates, but short on decisions"* — so even a correctly
+    sensed inflection dies unless the rhythm converts it into a committed bet.
+  - **Sources in corpus:** Andrew Grove — "Strategic Inflection Points," MIT Industry Leaders Program 1996
+    (youtube.com/watch?v=LfU2Qu4MzZk) · best book bits — "Only the Paranoid Survive | Andrew Grove | Book
+    Summary" (youtube.com/watch?v=u4PjR99pyMs) · r/strategy "Most organizations don't need a new strategy"
+    (45↑), "Leaders who run strategy workshops — what's harder than it should be?" (28↑).
 - **Links:** [[canon-christensen-innovators-dilemma]] · [[canon-helmer-7-powers]] ·
   [[canon-porter-competitive-strategy]] · [[canon-meadows-thinking-in-systems]] ·
   [[canon-grove-high-output-management]]

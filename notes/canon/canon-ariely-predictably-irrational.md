@@ -21,45 +21,51 @@
   tactical and **erode once customers wise up** (over-used decoys read as manipulation). Cousin of
   Kahneman's biases and Cialdini's levers, with weaker external validity than either claims
   ([[canon-kahneman-thinking-fast-and-slow]], [[canon-cialdini-influence]]).
-- **Practitioner counterpoint:** *(researched 2026-06-05 — Ariely/Thaler transcript corpus; r/decisionmaking pull came back empty, flagged for re-pull)*
-  The corpus confirms what pricing folks exploit daily — relativity has no floor. A bread-maker
-  company "**came out with another more expensive bread maker so that they could start selling the
-  less expensive one**… all of a sudden there was something to compare it to" (FightMediocrity);
-  *"we have no idea about how much things should cost."* **But the durable, hard-to-undo lever is
-  social vs. market norms:** offer a neighbor $5 to help with your car and *"that will make you
-  angry and pissed off… as soon as I pay you $5, I've messed everything up"* — yet ask for free
-  help, or offer $1,000, and they gladly help. Practitioner reality-check from the adjacent Nudge
-  pull: the tactical biases (anchoring, FREE, decoy) are real but **size-dependent and defaults do
-  the heavy lifting** — *"the moment you set this as the default it has a huge power on whatever
-  people end up doing"* (Ariely, TED), which is why Thaler reframes the whole game as **choice
-  architecture**, not one cute effect.
-- **Researched layer** *(2026-06-05)* *(corpus thin — Reddit pull empty, flagged for re-pull)*
+- **Practitioner counterpoint:** *(researched 2026-06-06 — Ariely TED "Are we in control of our decisions?", youtube.com/watch?v=9X68dm92HVI)*
+  The book-specific transcript shows Ariely reverse-engineering the exact lever pricing teams pull —
+  and confirming it has no floor. He literally phoned *The Economist* about their three-tier ad
+  (online $59 / print $125 / both $125), ran it on 100 MIT students, and found the dominated middle
+  tier wasn't useless at all: *"it wasn't useless in a sense that it helped people figure out what
+  they wanted… print and web $125 looked like a fantastic deal and as a consequence people chose
+  it."* Strip the decoy out and *"the most popular option became the least popular."* His punchline
+  is the practitioner warning: *"we actually don't know our preferences that well, and because we
+  don't know our preferences that well, we're susceptible to all of these influences from the
+  external forces — the defaults, the particular option that are presented to us."* **The durable,
+  hard-to-undo lever is the default itself:** even expert physicians flip to hip-replacement once a
+  second untried drug makes the "pull back" path more complex — *"the moment you set this as the
+  default it has a huge power on whatever people end up doing."*
+
+- **Researched layer** *(updated 2026-06-06)*
   - **Canonical explanation (sourced):** Ariely's master metaphor is the **visual illusion** —
     irrationality isn't random, it's *built into* perception: *"the nice thing about visual illusion
     is we can easily demonstrate mistakes… I've proven to you that your eyes were deceiving you. Now
     the interesting thing is when I take the lines away it's as if you haven't learned anything"*
-    (Dan Ariely, TED). Cognitive illusions work the same way and persist even after you know about
-    them — which is exactly why the pricing distortions are *predictably* exploitable.
+    (Dan Ariely, TED "Are we in control of our decisions?"). His leap: *"if we have this predictable
+    repeatable mistakes in vision, which we're so good at, what's the chance that we don't make even
+    more mistakes in something we're not as good at — for example financial decision-making?"*
+    Cognitive illusions persist even once you know about them, which is exactly why the pricing
+    distortions are *predictably* exploitable.
   - **Real application (mined):** the **default effect** in organ donation — neighboring European
     countries with near-identical cultures show wildly different donor rates, driven entirely by
-    whether the form is opt-in or opt-out: *"the moment you set this as the default it has a huge
-    power on whatever people end up doing"* (TED). The commercial twin is the **decoy/relativity**
-    sell: the $99 bread maker only moved once a $199 model sat next to it; restaurants price a $70
-    wine so you reach for the $35 (FightMediocrity).
-  - **Where the corpus pushes back on the book:** the adjacent **Nudge** transcripts reframe Ariely's
-    catalog of effects as **choice architecture** — *"to a first approximation everything matters…
-    choice architecture and nudging are in some way inevitable"* (Thaler, Sydney Executive Plus). The
-    practitioner takeaway: don't chase a single effect; the *system of defaults* is where the durable
-    leverage (and the replication-proof results) actually live. The deepest non-pricing insight —
-    **social vs. market norms** — is the one effect the corpus treats as un-gameable: once money
-    enters a goodwill relationship, *"you can't go back."*
+    whether the DMV form is opt-in or opt-out: *"much of these decisions are not residing within us,
+    they're residing by the person who's designing that form"* (TED). The commercial twin is the
+    **decoy/relativity** sell, and Ariely also runs it forward into product: the same "I made it,
+    therefore I value it" wiring is the **IKEA effect** — cake mixes flopped until makers *took the
+    eggs out* so bakers had to add work, and *"somehow having to put work into something makes it
+    more appealing"* (TEDxMidwest).
+  - **Where the corpus pushes back on the book:** the same TEDxMidwest talk widens Ariely past
+    pricing tricks — his **Lego / Sisyphus** experiment shows motivation, not just choice, is
+    manipulable: shredding a worker's output drops builds from 11 to 7, and merely *ignoring* it is
+    nearly as corrosive as shredding it (*"if you really want to demotivate people… simply ignoring
+    them gets you a big part of the way"*). The practitioner takeaway: the decoy/FREE tactics are
+    real but tactical, while the durable, un-gameable leverage sits in **defaults and meaning** —
+    the architecture around the choice, not the cute effect inside it. This is the same conclusion
+    the adjacent **Nudge** pull reaches via *choice architecture* ([[canon-thaler-sunstein-nudge]]).
   - **Sources in corpus:** TED — "Are we in control of our decisions? | Dan Ariely"
-    (youtube.com/watch?v=9X68dm92HVI) · FightMediocrity — "Predictably Irrational by Dan Ariely"
-    (youtube.com/watch?v=-8qIpRRi4cU) · TEDxMidwest — "Predictably Irrational - basic human
-    motivations: Dan Ariely" (youtube.com/watch?v=wfcro5iM5vw) · Sydney Executive Plus — "Richard H.
-    Thaler on nudges and choice architecture" (youtube.com/watch?v=AZExnUKfik0) · Pete Judo — "Nudge
-    explained in less than 10 minutes" (youtube.com/watch?v=fA5eGIMZTRQ). *(r/decisionmaking pull
-    returned empty — no Reddit threads cited; re-pull needed.)*
+    (youtube.com/watch?v=9X68dm92HVI) · TEDxMidwest — "Predictably Irrational - basic human
+    motivations: Dan Ariely" (youtube.com/watch?v=wfcro5iM5vw) · FightMediocrity — "Predictably
+    Irrational by Dan Ariely" (youtube.com/watch?v=-8qIpRRi4cU). *(r/decisionmaking pull for this
+    cluster returned empty — no Reddit threads exist in the raw corpus to cite.)*
 - **Links:** [[canon-thaler-sunstein-nudge]] · [[canon-kahneman-thinking-fast-and-slow]] ·
   [[canon-cialdini-influence]] · [[canon-cialdini-pre-suasion]]
 

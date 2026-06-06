@@ -25,44 +25,51 @@
   power**; in steep hierarchies or abusive dynamics, "create safety" can't be done unilaterally. Deep
   overlap with Difficult Conversations ([[canon-stone-difficult-conversations]]) — same family, more
   in-the-moment.
-- **Practitioner counterpoint:** *(researched 2026-06-05 — Crucial Learning / Therapy-in-a-Nutshell
-  transcript corpus; reddit thin — flagged for re-pull)* The stickiest tool is **"separate fact from
-  story"** — most conflict escalates on the story we invented, not the fact. The corpus quantifies
-  the cost of *not* doing this: co-author **Joseph Grenny** reports that in a study of 1,100
-  employees, *"43% estimated they waste 2 weeks or more ruminating about an unresolved problem at
-  work,"* and *"one in three estimate their inability to speak up in a crucial moment has cost their
-  organization at least $25,000"* (Crucial Learning). **But a practitioner-therapist who reviewed the
-  book pushes back on absorbability:** the "master your stories" chapter *"feels like a couple of
-  books worth of information in one short chapter… I wonder if people are actually able to absorb it
-  in small doses"* (Therapy in a Nutshell). Radical Candor is the feedback-specific cousin
+- **Practitioner counterpoint:** *(researched 2026-06-06 — Crucial Learning "How Do I Start a Crucial
+  Conversation?" transcript, youtube.com/watch?v=e7ZM6E5DLaY)* The hardest part isn't the toolkit —
+  it's **getting started while anxious**, and the corpus's most usable tip is to **name the
+  awkwardness out loud as the opener**: *"start the conversation with that… 'I have something really
+  important to talk about and honestly I'm pretty worried about it because I care about you and I care
+  about this and I'm not sure I know how to do it in a way that's going to be safe for everyone.'"*
+  The practitioner reframes this as a **safety move, not a script** — *"being vulnerable about 'I
+  don't know how to have this conversation but I want to' … if people know that your intent is good …
+  they will allow you a lot of fumbles."* This directly answers the note's "breaks-when" (the tools
+  are hard under live pressure): the entry move is **declared good intent**, which buys slack for the
+  clumsy execution that follows. Radical Candor is the feedback-specific cousin
   ([[canon-scott-radical-candor]]).
 
-- **Researched layer** *(2026-06-05)* *(corpus thin — reddit pull for this cluster returned
-  r/dataisbeautiful, not r/managers/r/leadership; flagged for re-pull)*
-  - **Canonical explanation (sourced):** The core mechanism is **safety, not content**. A reviewer
-    distills it as *"this book is all about creating safety so that problems could be solved…
-    [people] become defensive not because of what is being said… but how they feel, or if they feel
-    it's a safe place"* (Therapy in a Nutshell / Successful By Design). The book's tell for lost
-    safety is the slide to **silence or violence**, which you re-stabilize with **mutual purpose +
-    mutual respect** — *"the dialogue cannot really resume until that respect has been restored."*
-  - **Real application (mined):** co-author Grenny's course demo — manager **Esther** must confront
-    **Leia** about a client-impacting mistake. Leia goes defensive (*"Are you questioning my design
-    skills?"*); Esther uses a **contrasting statement** — *"I have no concerns with the quality of
-    your work… I'm just trying to figure out if there's a disconnect"* — which restores safety and
-    surfaces the real cause (the **specs were wrong**) instead of a blame spiral (Crucial Learning).
-    The teen-curfew example reframes the same move: anchor on the **shared goal** (trust + safety),
-    not the contested number.
-  - **Where the corpus pushes back on the book:** the practitioner-therapist warns the toolkit is
-    **dense to internalize** — "master your stories" packs CBT + narrative therapy + Leadership and
-    Self-Deception into one chapter — and openly worries it can read as *"a skills-based approach
-    that teaches the right words to say to basically manipulate others,"* salvaged only when the
-    mutual purpose is **genuine**. (No reddit practitioner threads in this pull — re-pull
-    r/managers/r/leadership to corroborate the live-pressure critique.)
-  - **Sources in corpus:** Crucial Learning — "Crucial Conversations for Mastering Dialogue: What to
-    Expect" (youtube.com/watch?v=k2QuG-HLYR4) · Therapy in a Nutshell — "Crucial Conversations Book
-    Summary: How to Make It Safe to Talk About Anything" (youtube.com/watch?v=nrfjYwY5SSE) ·
-    Successful By Design — "Crucial Conversations Summary & Review (ANIMATED)"
-    (youtube.com/watch?v=Q2yG142cyNg).
+- **Researched layer** *(updated 2026-06-06)*
+  - **Canonical explanation (sourced):** The core mechanism is **safety, not content** — *"this book
+    is all about creating safety so that problems could be solved"* (Therapy in a Nutshell). The cost
+    of skipping it is concrete: co-author **Joseph Grenny** reports that in a study of 1,100
+    employees, *"43% estimated they waste 2 weeks or more ruminating about an unresolved problem at
+    work,"* and *"one in three estimate their inability to speak up in a crucial moment has cost their
+    organization at least $25,000 in lost time and resources"* (Crucial Learning — "Crucial
+    Conversations for Mastering Dialogue: What to Expect"). The book's tell for lost safety is the
+    slide to **silence or violence**, re-stabilized with **mutual purpose + mutual respect**.
+  - **Real application (mined):** Grenny's course demo — manager **Esther** must confront **Leia**
+    about a client-impacting mistake. Leia goes defensive (*"Are you questioning my design skills?"*);
+    Esther uses a **contrasting statement** — *"I have no concerns with the quality of your work…
+    I'm just trying to figure out if there's a disconnect between you and the client"* — which
+    restores safety and surfaces the real cause (the **specs were wrong**) instead of a blame spiral
+    (Crucial Learning). The new transcript adds the **opener** version of the same move for personal
+    stakes: lead with *"I'm feeling worried and nervous and anxious about this because it matters and
+    so do you"* to make it safe to *stumble through* the conversation (Crucial Learning — "How Do I
+    Start a Crucial Conversation?"). The teen-curfew example reframes it again: anchor on the **shared
+    goal** (trust + safety), not the contested number (Therapy in a Nutshell).
+  - **Where the corpus pushes back on the book:** the practitioner-therapist warns the toolkit can
+    read as *"a skills based approach that teaches the right words to say to basically manipulate
+    others… in the long run that approach I don't believe is very effective"* (Therapy in a
+    Nutshell) — salvaged only when the declared intent and mutual purpose are **genuine**, not a
+    rehearsed line. The same reviewer found the depth a pleasant surprise (*"half way between Sue
+    Johnson's emotion focused therapy and John Gottman's approach"*), which cuts both ways: it's
+    richer than a behavior-checklist but correspondingly **dense to internalize** under live pressure.
+  - **Sources in corpus:** Crucial Learning — "How Do I Start a Crucial Conversation?"
+    (youtube.com/watch?v=e7ZM6E5DLaY) · Crucial Learning — "Crucial Conversations for Mastering
+    Dialogue: What to Expect" (youtube.com/watch?v=k2QuG-HLYR4) · Therapy in a Nutshell — "Crucial
+    Conversations Book Summary: How to Make It Safe to Talk About Anything"
+    (youtube.com/watch?v=nrfjYwY5SSE) · Successful By Design — "Crucial Conversations Summary & Review
+    (ANIMATED)" (youtube.com/watch?v=Q2yG142cyNg).
 - **Links:** [[canon-stone-difficult-conversations]] · [[canon-scott-radical-candor]] ·
   [[canon-voss-never-split-the-difference]] · [[canon-carnegie-win-friends]]
 

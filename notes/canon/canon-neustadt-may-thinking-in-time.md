@@ -23,55 +23,52 @@
   calls for* is the meta-skill. It also can't manufacture good analogies if your historical knowledge
   is thin — garbage in. Availability bias makes the *vivid* analogy feel apt
   ([[canon-kahneman-thinking-fast-and-slow]]).
-- **Practitioner counterpoint:** *(researched 2026-06-05 — applied-history transcript corpus; r/geopolitics thin)*
-  The book's exact discipline shows up live in **Graham Allison's** handling of his own
-  Thucydides-Trap analogy — the *positive* model of testing a parallel rather than swallowing it.
-  Pressed at Munich on whether US–China war is "inevitable," Allison refuses the wholesale read:
-  *"if you look at the number of places Thucydides uses terms like the one that gets translated
-  inevitable, he doesn't mean inevitable the way we might think… he means very very very likely…
-  but not a hundred percent"* (Munich Security Conference 2020). That is **Likenesses-and-Differences
-  applied to a 2,500-year-old analogy** before it drives policy. The portable habit stands: when
-  someone says **"this is just like X,"** force the likenesses *and* differences list first
-  ([[canon-thucydides-peloponnesian-war]]). **Caveat on the corpus:** the r/geopolitics pull is raw
-  news headlines (e.g. *"Trump is facing the biggest US humiliation since Vietnam,"* 1,665↑) — itself
-  a live example of reflexive analogizing ("another Vietnam"), but **not** a practitioner-discussion
-  thread, so the practitioner critique below leans on transcript evidence and is flagged thin.
-- **Researched layer** *(2026-06-05)* *(corpus thin — Reddit unusable, transcript-only; flagged for re-pull of r/strategy + history/policy threads)*
-  - **Canonical explanation (sourced):** the corpus carries a direct line to the book's lineage —
-    co-author **Ernest May** is named on camera as the originator of HKS "applied history": *"there
-    was a former famous Professor here at the Kennedy School Ernest May… essence of decision —
-    understanding, explaining and predicting the actions of governments"* (Compass at Harvard Kennedy
-    School, HKS Compass #1). The mechanism Neustadt & May teach is exactly what Allison performs:
-    don't apply an analogy wholesale, **separate what's structurally similar from what only looks
-    similar.** Allison frames the Trap itself as *"the best lens available for piercing through the
-    noise and news of the day for the underlying dynamic"* (Munich Security Conference 2020) — a lens
-    to be *tested*, not a verdict.
-  - **Real application (mined):** the **1914 / today** comparison is a textbook Likenesses-and-
-    Differences run. Allison concedes the *likeness* — US–China economies are *"so thick that if we
-    were to have a war… Walmarts would be empty"* — then pulls the *difference/likeness* trap forward:
-    *"in 1914 the British and German economies were so thickly interdependent that the most famous
-    book in Europe… was 'The Great Illusion'… the illusion that nations could fight wars anymore…
-    But they did"* (Berggruen Institute). Interdependence *resembles* a peace guarantee; history says
-    test that before trusting it. He adds the trigger mechanism the book would want surfaced: war
-    comes not from a decision but from *"a vulnerability to events or incidents that would otherwise
-    be… easily managed"* — the Archduke's assassination that *"didn't even make the front page in
-    London or New York"* yet *"within five weeks had dragged all the great nations of Europe into a
-    war."*
-  - **Where the corpus pushes back on the book:** the **Essence of Decision** material is the live
-    rejoinder to clean analogy-testing — the *Rational Actor* model (treating "the nation as a single
-    entity… acting on behalf of the nation," Candy Young) is the very wholesale reading Neustadt & May
-    warn against, yet Allison shows decisions actually emerge from organizational outputs and
-    bureaucratic players, so even a *well-tested* analogy about "what State X will do" can be wrong if
-    you mis-model who's deciding. And the method is slow: the Compass talk jokes about *"squishing big
-    ideas down into four minutes"* — applied history is a 50-minute discipline colliding with
-    real-time decisions ([[canon-klein-sources-of-power]]).
-  - **Sources in corpus:** Munich Security Conference — "Graham Allison on the Thucydides Trap | MSC
-    2020" (youtube.com/watch?v=rKBiaCa7wVk) · Berggruen Institute — "Graham Allison: The Thucydides
-    Trap" (youtube.com/watch?v=IO1ZEhREkQQ) · Compass at Harvard Kennedy School — "Graham Allison:
-    Government Leadership, Essence of Decision and the Thucydides Trap | HKS Compass #1"
-    (youtube.com/watch?v=c9sAsu-FlAc) · Candy Young — "Introduction to Essence of Decision's 3 Models"
-    (youtube.com/watch?v=KhKqEHosFB4) · r/geopolitics pull (headlines only, no discussion threads —
-    *flagged for re-pull*).
+- **Practitioner counterpoint:** *(researched 2026-06-06 — book-specific transcript: MindfulMoments "Thinking in Time" walkthrough, jD34LNUe4YI)*
+  The corpus now carries the book's own paired examples, and they sharpen the discipline into a
+  before/after contrast. The **Cuban Missile Crisis** is the method working: Kennedy's circle
+  *"made a point of not using simple analogies… they didn't just say 'Khrushchev's just another
+  Hitler'… instead they dug deep"* into Soviet internal politics, which let them build Khrushchev
+  *"a way out where he wouldn't look weak."* The **Korean War** is the same crisis run *without*
+  the discipline: Truman's team *"were really influenced by what they remembered from the 1930s…
+  how letting Hitler get away with things led to World War II… they were so focused on that one
+  historical comparison it kept them from seeing other options"* — missing China's likely role and
+  the cost of escalation. Same shape, opposite habit. The portable rule: when someone says **"this
+  is just like X,"** force the likenesses *and* differences list first ([[canon-thucydides-peloponnesian-war]]).
+  A live specimen of the failure mode sits one folder over — the r/geopolitics pull is raw headlines,
+  including *"Trump is facing the biggest US humiliation since Vietnam"* (1,665↑), itself reflexive
+  *"another Vietnam"* analogizing rather than a tested parallel.
+
+- **Researched layer** *(updated 2026-06-06)*
+  - **Canonical explanation (sourced):** the book's central move is to refuse the wholesale analogy
+    and instead interrogate it. The transcript names the diagnostic tools directly — the **Goldberg
+    Rule** (*"what's the story here… tracing the problem back to its roots and understanding how it's
+    changed over time"*), **Known / Unclear / Presumed**, **Likenesses and Differences**, and
+    **Placement**. The recurring sin is *"reaching for the same old saying… 'this crisis is another
+    Munich' or another Vietnam… using the same tool for every single job"* (MindfulMoments,
+    "Thinking in Time: The Hidden Power of Historical Thinking"). The fix is structural: *"carefully
+    looking at both what's similar and what's different to avoid making that mistake."*
+  - **Real application (mined):** the transcript surfaces the book's own cases beyond Cuba/Korea.
+    On analogies misleading by surface fit, **Carter's SALT II** misread: he went in *"thinking it
+    would be easy comparing it to the successes he had had in domestic policy during his first 100
+    days. But international negotiations are completely different"* — *"like thinking that because you
+    can ride a bike you automatically know how to drive a car."* On **Placement**, the CIA at the
+    **Bay of Pigs**: *"the CIA had its own internal ways of doing things, a certain culture that
+    Kennedy just didn't get… he didn't understand how the agency's past shaped their actions."*
+    And on Known/Unclear/Presumed, the **1976 swine flu** program — fear of repeating *"the one in
+    1918"* drove a rushed vaccination push on an assumption that *"wasn't based on solid evidence…
+    a decision made to avoid one historical tragedy might have accidentally caused another one."*
+  - **Where the corpus pushes back on the book:** the second transcript shows the framework working
+    as a *retrospective audit* rather than a real-time crisis tool — a 3-book Korean War synthesis
+    explicitly adopts it *"to evaluate how decision-makers use, or let's be real, completely misuse
+    history during a crisis… we're going to use their diagnostic tools today"* (MindfulMoments,
+    "The Forgotten Korean War"). That's the honest tension: applied history is a slow, deliberate
+    discipline — powerful for set-piece review and post-mortems, awkward against the fast,
+    recognition-primed calls expertise should run on ([[canon-klein-sources-of-power]]).
+  - **Sources in corpus:** MindfulMoments: Nourish Your Mind on the Go — "Thinking in Time: The
+    Hidden Power of Historical Thinking in Modern Leadership" (youtube.com/watch?v=jD34LNUe4YI) ·
+    MindfulMoments — "The Forgotten Korean War – Deep Critique + 3-Book Synthesis with the Thinking
+    in Time Framework" (youtube.com/watch?v=1su8RL8Ky-M) · r/geopolitics pull (headlines only — used
+    as a live example of reflexive analogizing, not a practitioner thread).
 - **Links:** [[canon-allison-essence-of-decision]] · [[canon-kahneman-thinking-fast-and-slow]] ·
   [[canon-klein-sources-of-power]] · [[canon-thucydides-peloponnesian-war]]
 

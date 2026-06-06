@@ -23,40 +23,50 @@
   easy to *claim* in hindsight to dodge responsibility. The honest version needs Tetlock's
   scorekeeping discipline to tell a genuinely good process from a rationalized one
   ([[canon-tetlock-superforecasting]]).
-- **Practitioner counterpoint:** *(researched 2026-06-05 — Mauboussin transcript corpus; r/SecurityAnalysis pull was off-theme — see Researched layer)*
-  Mauboussin himself reframes the operator takeaway as a fight against your own narration: *"there's
-  a part of your brain they call the interpreter… it knows nothing about luck… all of our minds
-  create a story to explain what's happened"* (Russell Sarder interview). The practitioner discipline
-  is therefore to internalize **mean reversion** — *"an outcome that is far from average will be
-  followed by an outcome with an expected value closer to the average"* (Talks at Google) — and stop
-  chasing last year's winner or firing a good operator for one bad draw. Bezos's process-quality bent
-  fits here ([[canon-bezos-shareholder-letters]]).
-- **Researched layer** *(2026-06-05)*
+- **Practitioner counterpoint:** *(researched 2026-06-06 — Russell Sarder interview, "Why is it important to understand luck vs skill?")*
+  Mauboussin reframes the operator takeaway as a fight against your own narration: *"in our left
+  hemispheres… there's a part of your brain they call the interpreter, and this interpreter basically
+  you give it any effect and it comes up with a cause to explain it… the interpreter knows nothing
+  about luck… all of our minds create a story to explain what's happened"* (Russell Sarder). The
+  discipline is to notice you are *"constantly creating stories to explain the world and… most of them
+  don't make a lot of sense,"* then internalize **mean reversion** — *"an outcome that is far from
+  average will be followed by an outcome with an expected value closer to the average"* (Talks at
+  Google) — and stop chasing last year's winner or firing a good operator for one bad draw. Bezos's
+  process-quality bent fits here ([[canon-bezos-shareholder-letters]]).
+
+- **Researched layer** *(updated 2026-06-06)*
   - **Canonical explanation (sourced):** the engine of the book is the **paradox of skill** — *"in
     activities where both skill and luck contribute to outcomes, it is often the case that as skill
-    increases — skill improves — luck becomes more important"* (Talks at Google). Mauboussin's proof
-    is Ted Williams: nobody has hit .400 since 1941 not because hitters got worse but because *"the
-    standard deviation of skill for Major League Baseball players has gotten narrower"* — when the
-    field converges, the residual gaps in outcomes are luck.
-  - **Real application (mined):** Mauboussin's own hire is the case study. The senior interviewers
-    *"voted against hiring"* him; he got the offer only because an off-hand remark about a Washington
-    Redskins trash can *"hit the guy in the emotional seat"* and turned a 10-minute interview into 15.
-    A career launched on a coin-flip — the literal demonstration of crediting an outcome to skill when
-    luck did the work, and why he warns the *"interpreter"* in your left hemisphere *"comes up with a
-    cause to explain"* any effect (Russell Sarder).
+    increases — skill improves — luck becomes more important"* (Talks at Google). Mauboussin's proof is
+    Ted Williams, the last man to hit .400 (1941): nobody has repeated it not because hitters got worse
+    but because *"the standard deviation of skill for Major League Baseball players has gotten
+    narrower."* The math is exact in the transcript — batting-average SD fell from .032 in the 1940s to
+    ~.027 today, so *"a four standard deviation event in 2011… you would hit .380,"* short of .400.
+    When the field converges, the residual gaps in *outcomes* are luck — and he notes the same pattern
+    *"in the world of investing where the standard deviation of excess returns has been coming down
+    steadily for 50 years"* (Talks at Google).
+  - **Real application (mined):** two operator hooks from the Talks at Google session. First, his own
+    hire is the case study — the six senior interviewers *"voted against hiring"* him; he got the offer
+    only because an off-hand remark about a Washington Redskins trash can *"hit the guy in the emotional
+    seat"* and stretched a 10-minute interview to 15. *"My career was launched by a trash can. And that
+    was pure luck."* Second, the **"lose on purpose" litmus test** for whether a domain even contains
+    skill: *"ask if you can lose on purpose. If you can lose on purpose, there must be some skill. If
+    you can't lose on purpose, it's basically all luck"* — a fast operator screen for which results are
+    worth coaching on.
   - **Where the corpus pushes back on the book:** the transcript supplies the operator's reality-check
-    the book's clean continuum understates — **feedback quality gates whether you can even learn
-    skill.** *"As you slide over to the luck side of the continuum,"* the output stops being *"a very
-    clear indicator of… skill,"* so the 10,000-hours/deliberate-practice route only works *"where
-    you're getting great feedback."* In luck-heavy domains (investing) you can't cleanly grade your own
-    process from results — exactly the accountability gap flagged in **Breaks-when**, and why
-    Tetlock's scorekeeping ([[canon-tetlock-superforecasting]]) is the missing discipline.
-  - **Sources in corpus:** Talks at Google — "The Success Equation: Untangling Skill and Luck |
-    Michael Mauboussin" (youtube.com/watch?v=1JLfqBsX5Lc) · Russell Sarder — "Why is it important to
-    understand luck vs skill? Michael Mauboussin" (youtube.com/watch?v=X0TJuu1xP34). *(Reddit:
-    r/SecurityAnalysis pull for this cluster was a generic 12-thread recent-listings snapshot with no
-    skill-vs-luck / process-over-outcome discussion — corpus thin on the practitioner side, flagged
-    for re-pull targeting r/investing + r/SecurityAnalysis "process vs outcome" threads.)*
+    the clean continuum understates — **feedback quality gates whether you can even learn skill.** On
+    the skill side, *"deliberate practice"* works because *"the output of that participant is a very
+    clear indicator of his or her skill"* and you can give feedback to improve; but *"as you slide over
+    to the luck side of the continuum,"* output stops being *"a very clear indicator of… skill."* So in
+    luck-heavy domains (investing, one-off strategy bets) you can't cleanly grade your own process from
+    results — exactly the accountability gap flagged in **Breaks-when**, and why Tetlock's scorekeeping
+    ([[canon-tetlock-superforecasting]]) is the missing discipline.
+  - **Sources in corpus:** Talks at Google — "The Success Equation: Untangling Skill and Luck | Michael
+    Mauboussin" (youtube.com/watch?v=1JLfqBsX5Lc) · Russell Sarder — "Why is it important to understand
+    luck vs skill? Michael Mauboussin, Author (The Success Equation)"
+    (youtube.com/watch?v=X0TJuu1xP34). *(Reddit: the r/SecurityAnalysis pull for this cluster is a
+    generic recent-listings snapshot — Berkshire portfolio, SaaS, Q3 letters — with no skill-vs-luck /
+    process-over-outcome discussion, so nothing from it is cited here.)*
 - **Links:** [[canon-tetlock-superforecasting]] · [[canon-kahneman-thinking-fast-and-slow]] ·
   [[canon-klarman-margin-of-safety]] · [[canon-bezos-shareholder-letters]]
 

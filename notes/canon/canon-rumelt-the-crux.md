@@ -23,48 +23,48 @@
   betting everything on a mis-identified crux is catastrophic. It's a close cousin of Goldratt's
   single constraint ([[canon-goldratt-the-goal]]) and Meadows' highest leverage point
   ([[canon-meadows-leverage-points]]) — and shares their risk of misplacing the lever.
-- **Practitioner counterpoint:** *(researched 2026-06-05 — r/consulting + first-principles transcripts corpus)*
-  The crux discipline lives or dies on **finding the true problem before acting**, and the transcripts
-  hammer this: *"if i had 1 hour to solve a problem i'd spend 55 minutes thinking about the problem
-  and 5 minutes thinking about solutions… if you don't know your problems how will you even start
-  solving them"* (Smarter Living, First Principles). The corpus's sharpest *live* example of crux-
-  cracking is a viral r/consulting thread, "**I think I've met a PowerPoint God**" (2188↑): a BCG
-  consultant who *"didn't even know what WAF was at the beginning of the project"* still wins the
-  room because he isolates and frames the *one* pivotal finding the CEO cares about. **Where it
-  pushes back:** r/consulting's most-upvoted reframe — "**He gets paid to lead, not to read**"
-  (2598↑) — is the practitioner caution that *naming* the crux and *masking force against it* are two
-  different jobs; senior people who delegate the diagnosis can mass effort on a confidently-wrong
-  crux. The usable move stays: ask **"what's the *one* thing that, if we cracked it, makes the rest
-  easier?"** — and notice the urge to avoid the uncomfortable answer.
-- **Researched layer** *(2026-06-05)* *(corpus thin — strategy-specific Reddit pull missing; r/consulting is general-channel; flagged for re-pull of r/strategy)*
-  - **Canonical explanation (sourced):** Rumelt's crux is the strategy cousin of **first-principles
-    diagnosis** — you boil a tangled situation down to the indivisible hard part before reasoning
-    up. The corpus states the mechanism plainly: *"first principles are the fundamental building
-    blocks of an idea; they are the most indivisible parts that we know to be true… we do not think
-    we know a thing until we are acquainted with its primary conditions or first principles, and
-    have carried our analysis as far as its simplest elements"* (Freedom in Thought — *The Most
-    Powerful Way to Think*). The crux is that simplest element — *the* constraint everything else
-    hangs on.
-  - **Real application (mined):** Musk's battery case is the corpus's cleanest crux-isolation: the
-    industry assumed *"battery packs are really expensive and that's just the way they will always
-    be"*; reasoning from constituents (cobalt, nickel, aluminum, carbon on the London Metal
-    Exchange) collapsed the *real* number from ~$600 to ~$80/kWh (Innomind — *First Principles…by
-    Elon Musk*). The crux wasn't "make batteries cheaper" — it was "is the price floor a law of
-    nature or an unexamined assumption?"
-  - **Where the corpus pushes back on the book:** the strongest counterpoint isn't "one crux is too
-    few" — it's the **integrative-thinking** challenge to single-answer framing. Roger Martin's
-    corpus (already cross-linked) argues the best operators *"refuse to choose"* between two opposing
-    models and *"generate a creative resolution… superior to each"* (Book Splat! / Implement
-    Consulting — Lego Movie case). Read against Rumelt, the warning is concrete: some situations have
-    **two coupled cruxes** (protect-the-brand *and* get-Hollywood-talent), and forcing one destroys
-    the other — exactly the multi-front failure mode the note's "Breaks when" flags.
-  - **Sources in corpus:** Freedom in Thought — "The Most Powerful Way to Think | First Principles"
-    (youtube.com/watch?v=HZRDUZuIKg4) · Smarter Living — "The Most Powerful Way To Think - First
-    Principles" (youtube.com/watch?v=OwghcEhEdZg) · Innomind — "The First Principles Method
-    Explained by Elon Musk" (youtube.com/watch?v=NV3sBlRgzTI) · Book Splat! — "The Opposable Mind by
-    Roger Martin - Rapid Summary" (youtube.com/watch?v=NhzAjhrB_-Q) · Implement Consulting Group —
-    "Integrative thinking | Roger Martin" (youtube.com/watch?v=zwCSHs7OOxI) · r/consulting "I think
-    I've met a PowerPoint God" (2188↑), "He gets paid to lead, not to read" (2598↑).
+- **Practitioner counterpoint:** *(researched 2026-06-06 — Rumelt himself, "How to Solve the Crux" interview, youtube.com/watch?v=EJBP3ZjOEHA)*
+  Rumelt sets a bar most "strategies" fail in the same breath he defines the crux: *"a strategy needs
+  to identify a crux, it needs to be the **right** crux, and it needs to be **solvable**… if a company
+  comes up with a strategy to say we want to double our market share but they have not identified the
+  crux to get them there, that is not a useful strategy."* His diagnostic is brutal about what passes
+  for strategy in the room — the client's plan, he says, *"is usually a joyful look at how great things
+  are going to be next year… it's a sell job to the board of directors and Wall Street."* The
+  practitioner caution from the consulting floor sharpens this: r/consulting's most-upvoted strategy
+  meme — "**He gets paid to lead, not to read**" (2598↑) — is the live reminder that *naming* the crux
+  and *massing force against it* are different jobs; a leader who delegates the diagnosis can confidently
+  mass effort on the wrong crux (the companion thread "**I think I've met a PowerPoint God**," 2188↑,
+  prizes the analyst who isolates the *one* finding the CEO actually needs). The usable move stays: ask
+  **"what's the *one* thing that, if we cracked it, makes the rest easier?"** — and refuse to confuse an
+  ambition for an answer.
+
+- **Researched layer** *(updated 2026-06-06)*
+  - **Canonical explanation (sourced):** Rumelt reframes strategy as **problem-solving against a real
+    difficulty**, not a list of goals: *"strategy is problem solving… you need a strategy when you have
+    an opponent or a difficulty. If you don't have a difficulty and you don't have an opponent, then you
+    don't need a strategy"* (Rumelt, "How to Solve the Crux," youtube.com/watch?v=EJBP3ZjOEHA). The crux
+    is *the* solvable difficulty everything else hangs on, and finding it requires honest diagnosis, not
+    a deck: *"you have to try to understand what's the nature of the problems I face — what's difficult
+    here… a diagnosis is critical."* In a companion interview he gives the field-rename: *"don't call it
+    a strategy, call it an **action agenda**"* — coherent actions against the hard part, not aspirations
+    (Rumelt, "Good Strategy, Bad Strategy," youtube.com/watch?v=4uWKEG0s9Kc).
+  - **Real application (mined):** Rumelt's own diagnostic ritual is the cleanest crux-isolation in the
+    corpus — the first question to a client *after* they present their plan is to strip the "joyful look
+    at next year" and ask what's actually difficult. His historical case: in WWII the US faced *"war
+    looming up on both the east and the west… they understood they could not fight two world wars at
+    once and they made a decision — we're going to **concentrate on Europe**"* (EJBP3ZjOEHA). The crux
+    wasn't "win the war"; it was "which front, first" — and the answer was kept secret precisely because
+    concentration means visibly *under-resourcing* everything else.
+  - **Where the corpus pushes back on the book:** the consulting-floor caution is that crux-naming and
+    crux-cracking decouple under real org politics. Rumelt concedes the messy part himself — *"politically
+    we have huge problems doing this because you have all the different interest groups"* (his Bend, Oregon
+    homelessness example, EJBP3ZjOEHA) — which is exactly where the note's "Breaks when" bites: some
+    situations have **two coupled cruxes** and forcing one destroys the other. r/consulting's "**He gets
+    paid to lead, not to read**" (2598↑) is the human-scale version: the person setting the crux is often
+    *not* the person doing the diagnosis, so a confidently-wrong crux gets mass force behind it.
+  - **Sources in corpus:** Rumelt — "How to Solve the Crux" (youtube.com/watch?v=EJBP3ZjOEHA) · Rumelt —
+    "Good Strategy, Bad Strategy" (youtube.com/watch?v=4uWKEG0s9Kc) · r/consulting "He gets paid to lead,
+    not to read" (2598↑), "I think I've met a PowerPoint God" (2188↑).
 - **Links:** [[canon-rumelt-good-strategy]] · [[canon-goldratt-the-goal]] ·
   [[canon-meadows-leverage-points]] · [[canon-martin-opposable-mind]]
 
