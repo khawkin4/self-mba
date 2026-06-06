@@ -64,6 +64,15 @@ points to which lessons to deepen.
 | Date | Source | Scope | Score | Notes |
 |---|---|---|---|---|
 | 2026-06-06 | Damodaran Valuation **Quiz 1, Fall 1997** | 3 problems (implied ERP · FCFE · FCFF) | **3/3 exact** | Caught both traps: normalized NI off book-equity×ROE (not the bad-year figure) + resolved contradictory equity figures into a 25% market debt ratio; matched the implied-ERP convention (2.68%) and pre-flagged the key's 2.5% alternative. |
+| 2026-06-06 | Damodaran Valuation **Final, Fall 1997** (2-hr, worth 30%) | 11 sub-parts: multi-stage FCFE, FCFF w/ ROC reinvestment, Value/Sales (+relevered β restructuring), Black-Scholes equity-as-option, EVA synergy | **27/30 (90%)** | Exact matches on P1 (TV 23.01, value 10.67), P2 (netcapex 36, value 1134), P3 (V/S 0.552 → relevered 0.887), P4a (N(−d2) bankruptcy), P5 EVA (G&P 2700, BandAdd 800, synergy 1604). **One miss — P4b:** declared the debt face value "missing" when it was recoverable by back-solving the BS equity equation from 4a's d1/d2 (key K≈99.7 → 8.6%). A **multi-step-linkage** failure, not arithmetic — the exact pattern the Wharton/Brookings studies predicted. |
+
+### Synthesis (depth pass so far)
+On real, keyed graduate valuation exams the finance/valuation reasoning is **strong (90%+)**: it nails
+multi-stage DCF, FCFF/FCFE, relevering beta, Value/Sales, EVA, and option-based equity valuation. The
+**single recurring risk is multi-step linkage** — carrying one part's output into the next — not the
+math itself. Mitigation for the platform: when a problem spans parts, *explicitly* check whether an
+"unknown" is derivable from a prior part before declaring it missing. Next depth items (breadth):
+MIT 14.01 micro final, AICPA accounting set, Yale ECON 252.
 
 **Read:** clean pass on the *fundamentals* tier (Quiz 1 = "be brief", 1–4 pts/problem). The real
 stress test is the **finals.pdf** multi-stage problems (3-stage FCFF with margin/ROIC fade, terminal
