@@ -56,3 +56,17 @@ bank + international past papers are the realistic benchmark.
 5. **CFA Level-I sample set** — cross-domain, professional standard.
 Each: log score + per-topic misses → feeds the synthesis layer (BENCHMARK-MFT-MBA.md domain map) and
 points to which lessons to deepen.
+
+## Depth-pass log (real exams, worked vs. published key)
+
+> Worked from the source PDF, scored against the official Excel key; exam content not reproduced.
+
+| Date | Source | Scope | Score | Notes |
+|---|---|---|---|---|
+| 2026-06-06 | Damodaran Valuation **Quiz 1, Fall 1997** | 3 problems (implied ERP · FCFE · FCFF) | **3/3 exact** | Caught both traps: normalized NI off book-equity×ROE (not the bad-year figure) + resolved contradictory equity figures into a 25% market debt ratio; matched the implied-ERP convention (2.68%) and pre-flagged the key's 2.5% alternative. |
+
+**Read:** clean pass on the *fundamentals* tier (Quiz 1 = "be brief", 1–4 pts/problem). The real
+stress test is the **finals.pdf** multi-stage problems (3-stage FCFF with margin/ROIC fade, terminal
+value, relative-valuation cross-checks) — exactly the multi-step arithmetic where the Wharton (2023)
+and Brookings (2025) studies found models stumble. Next depth item: work one full valuation *final*
+problem, not a quiz.
