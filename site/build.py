@@ -292,6 +292,10 @@ def render_index(modules, stats):
 <h1>The Compounding <em>MBA</em></h1>
 <p class="sub">A master's-level business education, distilled from elite sources into interactive, visual lessons — and grounded in primary data.</p>
 <div class="ticker"><span><b>{stats['modules']}</b> modules</span><span><b>{stats['videos']}</b> lectures</span><span><b>{stats['words']:,}</b> words</span><span><b>{stats['threads']}</b> discussions</span><span><b>{stats['filings']}</b> filings</span></div>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin:0 0 26px">
+<a href="exam.html" style="display:inline-block;padding:12px 20px;border:1px solid var(--line2);border-radius:8px;color:var(--ink2);text-decoration:none;font:600 .8rem var(--mono);letter-spacing:.05em">📝 Self-diagnostic <span style="color:var(--dim)">· recall</span> &rarr;</a>
+<a href="benchmark-exam.html" style="display:inline-block;padding:12px 20px;border:1px solid var(--brass);border-radius:8px;color:var(--brass2);text-decoration:none;font:600 .8rem var(--mono);letter-spacing:.05em">🎯 Calibrated benchmark <span style="color:var(--dim)">· exam-level</span> &rarr;</a>
+</div>
 <input id="q" placeholder="Search modules…" oninput="filt()">
 </header>
 <main>
@@ -565,6 +569,10 @@ def main():
         "filings": sum(len(e) for _,_,_,_,e in flat),
     }
     open(os.path.join(DIST, "index.html"), "w", encoding="utf-8").write(render_index(modules, stats))
+    # regenerate the diagnostic + calibrated-benchmark exams
+    import subprocess
+    subprocess.run(["python3", os.path.join(INGEST, "build_exam.py")], check=False)
+    subprocess.run(["python3", os.path.join(INGEST, "build_benchmark.py")], check=False)
     print(f"Built site -> {DIST}")
     print(f"  {stats['modules']} module pages · {stats['videos']} lectures · {stats['words']:,} words · {stats['threads']} threads")
     print(f"  open: {os.path.join(DIST, 'index.html')}")

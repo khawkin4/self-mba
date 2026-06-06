@@ -1,0 +1,158 @@
+[
+  {
+    "domain": "Strategy",
+    "emulates": "MFT-MBA",
+    "q": "Lumora Tools makes premium cordless drills. Its two component suppliers (a single lithium-cell maker and a single brushless-motor maker) each account for 40% of Lumora's cost of goods, have no substitutes Lumora can switch to within two years, and sell to dozens of other tool brands. Meanwhile, hundreds of small online retailers each carry Lumora but none represents more than 2% of sales. Using Porter's Five Forces, which force is MOST likely to compress Lumora's margins, and why?",
+    "opts": [
+      "Buyer power, because Lumora sells through hundreds of retailers",
+      "Supplier power, because two concentrated, hard-to-switch suppliers control 80% of input cost and can capture value through pricing",
+      "Threat of substitutes, because cordless drills can be replaced by corded drills",
+      "Rivalry, because the tool industry has many brands"
+    ],
+    "correct": 1,
+    "rationale": "Concentrated suppliers with no near-term substitute and a large share of cost have the leverage to raise input prices and capture Lumora's margin. Buyer power is weak here because no single retailer is large; the question highlights supplier concentration as the binding constraint."
+  },
+  {
+    "domain": "Strategy",
+    "emulates": "GMAT Critical Reasoning",
+    "q": "A regional grocery chain argues: \"Our new self-checkout lanes cut average customer wait time from 6 minutes to 2 minutes. Since shorter waits drive loyalty, the lanes will raise our same-store sales next year.\" Which of the following, if true, most weakens this argument?",
+    "opts": [
+      "Competing chains in the region also installed self-checkout lanes the same quarter, so relative wait times across stores are unchanged",
+      "Self-checkout lanes cost less to operate than staffed registers",
+      "Some customers initially found the new machines confusing",
+      "The chain has loyal customers who have shopped there for years"
+    ],
+    "correct": 0,
+    "rationale": "If every competitor matched the improvement, the advantage is competed away and relative customer experience is unchanged, so the loyalty/sales lift fails to materialize. The other options address cost, transient confusion, or existing loyalty, none of which undercuts the causal link from relative wait time to incremental sales."
+  },
+  {
+    "domain": "Strategy",
+    "emulates": "MFT-MBA",
+    "q": "Two streaming firms, Nimbus and Vega, each decide whether to spend $200M on a marquee original series. If neither spends, each earns $500M. If both spend, each earns $380M. If only one spends, that firm earns $560M and the other earns $300M. Assuming a single simultaneous decision and rational, self-interested firms, what is the predicted outcome?",
+    "opts": [
+      "Neither spends, because $500M each is the highest joint payoff",
+      "Both spend, because spending is a dominant strategy even though both end up worse than if neither spent",
+      "They alternate spending year to year",
+      "Only the larger firm spends"
+    ],
+    "correct": 1,
+    "rationale": "Spending dominates: if the rival doesn't spend, 560 > 500; if the rival spends, 380 > 300. Both spend and land at $380M each, a prisoner's dilemma where the Nash equilibrium is worse than the cooperative $500M outcome."
+  },
+  {
+    "domain": "Strategy",
+    "emulates": "MFT-MBA",
+    "q": "DataNest sells a cloud accounting platform. Customers store years of historical records in DataNest's proprietary format, train staff on its workflows, and integrate it with payroll and tax tools via custom connectors. A rival offers nearly identical features at 20% lower price, yet DataNest's annual churn stays below 4%. Which of Helmer's 7 Powers BEST explains DataNest's durability?",
+    "opts": [
+      "Scale economies",
+      "Network effects",
+      "Switching costs",
+      "Branding"
+    ],
+    "correct": 2,
+    "rationale": "Accumulated data in a proprietary format, retrained staff, and custom integrations make leaving costly, so customers stay despite a cheaper rival, the definition of switching-cost power. Scale and network effects describe cost-per-unit and user-to-user value, not the lock-in described; branding is about willingness-to-pay from reputation, not exit cost."
+  },
+  {
+    "domain": "Strategy",
+    "emulates": "MFT-MBA",
+    "q": "A budget airline, SkyDart, builds its position on a single aircraft type, no assigned seats, no meals, 25-minute gate turnarounds, and point-to-point flights from secondary airports. A legacy carrier tries to copy SkyDart's low fares by launching a discount sub-brand while keeping its hub-and-spoke network, assigned seats, and frequent-flyer program. Drawing on Porter, why is the legacy carrier's effort likely to fail?",
+    "opts": [
+      "Low-cost flying is inherently unprofitable for any carrier",
+      "The legacy carrier's existing activities don't fit the low-cost position, so straddling forces compromised trade-offs that erode both businesses",
+      "The legacy carrier lacks enough capital to buy new planes",
+      "Secondary airports cannot handle large aircraft"
+    ],
+    "correct": 1,
+    "rationale": "SkyDart's advantage comes from a tightly fitting activity system; the legacy carrier's hub network and perks are incompatible with rapid turnarounds and point-to-point flying, so straddling produces suboptimal trade-offs. This is Porter's straddling trap, not a claim that low-cost flying or capital is the issue."
+  },
+  {
+    "domain": "Strategy",
+    "emulates": "GMAT Critical Reasoning",
+    "q": "An incumbent maker of high-end professional video cameras dismisses a startup selling cheap, lower-resolution cameras to amateurs: \"Our customers demand the highest image quality, and the startup's product is far inferior on every spec we measure. It poses no threat to us.\" Following Christensen's theory of disruptive innovation, which assumption is the incumbent's reasoning most dependent on?",
+    "opts": [
+      "That the startup will never be able to raise capital",
+      "That the dimensions of performance its current customers value today will remain the dimensions that determine competitiveness as the cheaper product improves",
+      "That amateurs will never want to film video",
+      "That image resolution is technically impossible to improve cheaply"
+    ],
+    "correct": 1,
+    "rationale": "Disruption works precisely because the low-end entrant improves on a trajectory and eventually becomes good enough on the metrics that matter while winning on price/convenience, so the incumbent's safety rests on assuming today's performance dimensions stay decisive. The other options are not what the argument hinges on."
+  },
+  {
+    "domain": "Strategy",
+    "emulates": "MFT-MBA",
+    "q": "A craft brewery can sell a six-pack for a maximum willingness-to-pay (WTP) of $14. Its willingness-to-sell (WTS) for the labor and inputs is $5, and it currently prices at $10. It is considering two moves: (A) a sponsorship that raises customers' WTP to $17 with no change in WTS, or (B) a supplier partnership that lowers WTS to $3 with no change in WTP. Using the value-stick framework, how does each move change total value created per six-pack relative to the current $9?",
+    "opts": [
+      "Move A raises value created to $12; Move B raises value created to $11",
+      "Move A leaves value created unchanged because price is fixed at $10",
+      "Both moves leave value created at $9 because price did not change",
+      "Move A lowers value created and Move B raises it"
+    ],
+    "correct": 0,
+    "rationale": "Value created = WTP minus WTS, independent of the price chosen. A: 17 minus 5 = 12. B: 14 minus 3 = 11. Price determines how value is split, not how much is created, so the options tying value to the $10 price are wrong."
+  },
+  {
+    "domain": "Strategy",
+    "emulates": "MFT-MBA",
+    "q": "Two adjacent ski resorts, Pinecrest and Summit, compete for the same weekend skiers and have set prices in a months-long standoff: each could cut its lift-ticket price to grab share, but both know the other would match within a day, leaving both worse off. They will compete every season indefinitely. Which strategic concept BEST describes the most rational approach for Pinecrest to sustain the higher-price outcome?",
+    "opts": [
+      "Treat each season as a one-shot game and cut price first to seize advantage",
+      "Recognize this as a repeated game and play a tit-for-tat strategy: hold price, match any cut quickly, and return to cooperation when the rival does",
+      "Minimax: assume the worst and cut price permanently to limit losses",
+      "Exit the market because the Nash equilibrium guarantees zero profit"
+    ],
+    "correct": 1,
+    "rationale": "Because the firms interact indefinitely, this is a repeated game where tit-for-tat (cooperate, punish defection immediately, then forgive) sustains the high-price cooperative outcome. Treating it as one-shot triggers the price war; minimax and exit both forfeit the cooperative gains the repeated structure makes achievable."
+  },
+  {
+    "domain": "Strategy",
+    "emulates": "MFT-MBA",
+    "q": "A consulting firm's leadership presents its 'strategy': \"Our vision is to be the most respected advisory brand in North America, growing revenue 15% annually while delighting every client.\" Applying Rumelt's framework of good vs. bad strategy, what is the central flaw in this statement?",
+    "opts": [
+      "It sets the growth target too low to motivate the firm",
+      "It states aspirations and goals but contains no diagnosis of the key challenge or coherent actions to overcome it",
+      "It focuses on clients rather than shareholders",
+      "It fails to mention specific competitors by name"
+    ],
+    "correct": 1,
+    "rationale": "Rumelt's kernel requires a diagnosis, a guiding policy, and coherent actions; this statement is a wish list of goals with no analysis of the obstacle or concrete moves, the hallmark of bad strategy. The other options misidentify the flaw, which is the absence of the kernel, not target levels or naming rivals."
+  },
+  {
+    "domain": "Strategy",
+    "emulates": "MFT-MBA",
+    "q": "GameForge, a console maker, finds that the more independent studios release titles for its console, the more attractive the console becomes to gamers, which in turn attracts still more studios. A rival console with equal hardware but far fewer exclusive titles struggles to gain users. Through the lens of Brandenburger and Nalebuff's co-opetition and the concept of complementors, what should GameForge prioritize?",
+    "opts": [
+      "Cutting hardware prices below cost to win a price war on the device itself",
+      "Investing in tools, revenue shares, and support that make studios (complementors) more successful, because growing the complementor ecosystem expands the value of the console",
+      "Acquiring the rival console maker to eliminate competition",
+      "Reducing the number of studios to keep the catalog exclusive and scarce"
+    ],
+    "correct": 1,
+    "rationale": "Studios are complementors whose success raises the console's value to gamers, a network-effect-driven ecosystem; co-opetition says grow the pie by strengthening complementors. Price wars and shrinking the catalog ignore the complementor dynamic that actually drives the platform's value."
+  },
+  {
+    "domain": "Strategy",
+    "emulates": "GMAT Critical Reasoning",
+    "q": "A specialty bookstore chain claims: \"Online retailers can undercut us on price, so the only way to survive is to match their prices.\" A strategy consultant disagrees, noting the chain hosts author events, offers expert curation, and creates a community gathering space that online sellers cannot replicate. Which principle best supports the consultant's objection to a pure price-matching response?",
+    "opts": [
+      "Operational effectiveness alone is sufficient for sustained advantage",
+      "Competing on the same dimension as a structurally lower-cost rival is a losing position; the chain should differentiate on a distinct value the rival cannot easily copy",
+      "Lower prices always increase total industry profitability",
+      "First movers always retain their advantage regardless of strategy"
+    ],
+    "correct": 1,
+    "rationale": "Matching prices forces the chain to fight on the rival's strongest dimension (cost), where it cannot win; differentiating on experiences online sellers cannot replicate raises willingness-to-pay and creates a defensible position. The other options state false generalizations that do not support differentiation."
+  },
+  {
+    "domain": "Strategy",
+    "emulates": "MFT-MBA",
+    "q": "A payments startup must decide whether to enter a market dominated by an incumbent. If the startup enters and the incumbent responds with a price war, the startup loses $30M and the incumbent loses $50M. If the startup enters and the incumbent accommodates, the startup gains $40M and the incumbent gains $20M. The incumbent publicly pre-commits, via an irreversible 'lowest-price guarantee, automatically matched' contract with all customers, to slash prices against any entrant. Using backward induction and credible commitment, how does this change the startup's decision?",
+    "opts": [
+      "It has no effect, because the incumbent would still prefer to accommodate once entry occurs",
+      "The credible, irreversible commitment makes the price-war threat believable, so the startup, reasoning that entry now leads to a $30M loss, is deterred from entering",
+      "The startup should enter anyway because the incumbent loses more in a price war",
+      "The startup should enter and immediately exit to collect the price guarantee"
+    ],
+    "correct": 1,
+    "rationale": "Without commitment the incumbent would rationally accommodate after entry (20 > -50), so the threat is empty. By irreversibly binding itself to match prices, the incumbent makes the war automatic and credible; the startup reasons backward, sees a guaranteed $30M loss, and stays out. The point of Schelling-style commitment is precisely to make the otherwise non-credible threat real."
+  }
+]

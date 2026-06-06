@@ -1,0 +1,105 @@
+[
+  {
+    "domain": "Economics",
+    "emulates": "CLEP Micro",
+    "q": "Brightwave Audio sells its wireless earbuds at $80 and moves 12,000 units per quarter. After a price cut to $68, quarterly volume rises to 15,600 units. Using the simple (point) percentage-change formula based on the original values, what is the price elasticity of demand, and how should the firm characterize it?",
+    "opts": [
+      "About -2.0, elastic, so the price cut raises total revenue",
+      "About -0.5, inelastic, so the price cut lowers total revenue",
+      "About -1.0, unit elastic, so total revenue is unchanged",
+      "About -1.5, inelastic, so the price cut leaves revenue unchanged"
+    ],
+    "correct": 0,
+    "rationale": "%ΔQ = +3,600/12,000 = +30%; %ΔP = -12/80 = -15%; elasticity = 30/-15 = -2.0 (elastic). Because |E|>1, the quantity gain outweighs the price drop and revenue rises (from $960k to $1,060.8k). The other options misstate either the magnitude or the revenue direction for elastic demand."
+  },
+  {
+    "domain": "Economics",
+    "emulates": "CLEP Micro",
+    "q": "A bakery can produce an extra batch of croissants for a marginal cost of $42. The 200 croissants in that batch would sell for $0.25 each. The baker notes that yesterday's $90 oven repair must be 'earned back.' From a profit-maximizing standpoint, should the baker produce the extra batch?",
+    "opts": [
+      "Yes, because marginal revenue ($50) exceeds marginal cost ($42); the $90 repair is a sunk cost and is irrelevant",
+      "No, because the $42 cost plus the $90 repair ($132) exceeds the $50 revenue",
+      "No, because the average cost per croissant is too high to justify the batch",
+      "Yes, but only after the $90 repair has been fully recovered by prior sales"
+    ],
+    "correct": 0,
+    "rationale": "Marginal revenue is 200 × $0.25 = $50 > marginal cost $42, so the batch adds $8 of profit. The $90 repair is already spent and unrecoverable (a sunk cost) and must be excluded from the forward-looking decision. Options including the repair commit the sunk-cost fallacy."
+  },
+  {
+    "domain": "Economics",
+    "emulates": "CFA L1",
+    "q": "In the market for a commodity, the demand and supply curves are Qd = 480 - 6P and Qs = -120 + 9P, where P is price in dollars and Q is quantity in thousands of units. The government imposes a price floor of $44. Which statement best describes the result?",
+    "opts": [
+      "A surplus of 60 thousand units arises, because the $44 floor is above the $40 equilibrium price",
+      "A shortage of 60 thousand units arises, because the $44 floor is below the equilibrium price",
+      "The floor is non-binding, because $44 lies below the $40 equilibrium price"
+    ],
+    "correct": 0,
+    "rationale": "Equilibrium: 480-6P = -120+9P → 600 = 15P → P=$40. A $44 floor lies above equilibrium and is therefore binding. At $44: Qs = -120+9(44) = 276 and Qd = 480-6(44) = 216, so the surplus is 276-216 = 60 thousand units. A binding floor creates a surplus, not a shortage, ruling out the other options."
+  },
+  {
+    "domain": "Economics",
+    "emulates": "CFA L1",
+    "q": "An analyst gathers data on a luxury watch line: when monthly household income rises 8%, quantity demanded rises 20%, holding price constant. The watch's income elasticity of demand is best described as indicating that the good is:",
+    "opts": [
+      "A normal good and, more specifically, a luxury (income elasticity = 2.5)",
+      "An inferior good (income elasticity = -2.5)",
+      "A normal necessity (income elasticity = 0.4)"
+    ],
+    "correct": 0,
+    "rationale": "Income elasticity = %ΔQ / %ΔIncome = 20% / 8% = 2.5. A positive value means a normal good; a value greater than 1 specifically marks a luxury. Inferior goods have negative income elasticity, and necessities have positive elasticity below 1."
+  },
+  {
+    "domain": "Economics",
+    "emulates": "GMAT Quant",
+    "q": "A consultant can spend her Saturday on exactly one of three activities. Tutoring pays $300. Freelance design pays $260 but requires $30 of software credits. A paid focus group pays $180. If she chooses freelance design, what is her opportunity cost for the day?",
+    "opts": [
+      "$300",
+      "$230",
+      "$270",
+      "$180",
+      "$330"
+    ],
+    "correct": 0,
+    "rationale": "Opportunity cost is the value of the single best forgone alternative, which is tutoring at $300 (the focus group at $180 is lower and is not the next best). The $30 software cost is a direct cost of the chosen activity, not part of opportunity cost. $230 (net of the cost) and $270 and $330 mix in the wrong figures."
+  },
+  {
+    "domain": "Economics",
+    "emulates": "GMAT Quant",
+    "q": "A coffee importer faces demand Qd = 900 - 5P (P in dollars per kg, Q in kg). At the current price of $90, the firm is considering a $10 price increase. By how much, and in which direction, does total revenue change as a result of moving from $90 to $100?",
+    "opts": [
+      "Revenue falls by $500 (from $40,500 to $40,000)",
+      "Revenue rises by $500 (from $40,000 to $40,500)",
+      "Revenue is unchanged at $40,500",
+      "Revenue falls by $4,500",
+      "Revenue rises by $4,000"
+    ],
+    "correct": 0,
+    "rationale": "At $90: Q=900-450=450, revenue=$40,500. At $100: Q=900-500=400, revenue=$40,000. Revenue falls by $500, indicating demand is elastic over this range so the price hike reduces revenue. The other options reverse the direction or miscompute the quantities."
+  },
+  {
+    "domain": "Economics",
+    "emulates": "CLEP Macro",
+    "q": "An economy is producing inside its production possibilities frontier (PPF) during a recession. Which single change is consistent with moving the economy toward a point ON the existing PPF without shifting the frontier itself?",
+    "opts": [
+      "Putting currently idle factories and unemployed workers back into production",
+      "A technological breakthrough that doubles output per worker",
+      "A large net increase in the working-age population through immigration",
+      "Discovery of new mineral reserves that expand the resource base"
+    ],
+    "correct": 0,
+    "rationale": "A point inside the PPF reflects unused resources; re-employing idle capacity moves the economy out to the frontier without changing it. The other three (new technology, more workers, more resources) shift the PPF outward rather than moving along it."
+  },
+  {
+    "domain": "Economics",
+    "emulates": "CFA L1",
+    "q": "Two crops compete for the same farmland. The cross-price elasticity of demand between Crop X and Crop Y is measured at +1.8. The price of Crop Y then falls sharply. Holding other factors constant, what is the most likely effect on the quantity of Crop X demanded, and what does the sign reveal about the goods' relationship?",
+    "opts": [
+      "Quantity of X demanded falls; the positive cross-price elasticity means X and Y are substitutes",
+      "Quantity of X demanded rises; the positive cross-price elasticity means X and Y are complements",
+      "Quantity of X demanded is unchanged; a positive value means the goods are unrelated"
+    ],
+    "correct": 0,
+    "rationale": "A positive cross-price elasticity identifies substitutes. When Y's price falls, buyers shift toward the now-cheaper Y, so quantity demanded of X falls. Complements have negative cross-price elasticity, and unrelated goods have a value near zero, so the other options misread the sign."
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "domain": "Marketing",
+    "emulates": "CLEP",
+    "q": "BrightLeaf Tea launched a subscription service. In 2025 it spent $84,000 on paid social and acquired 1,400 new subscribers from that channel. The average subscriber stays 26 months and pays a gross margin of $7.50 per month. What is the channel's LTV:CAC ratio, and does it clear the common 3:1 rule of thumb for healthy unit economics?",
+    "opts": [
+      "LTV $195, CAC $60, ratio 3.25:1 — clears the rule",
+      "LTV $195, CAC $60, ratio 0.31:1 — fails the rule",
+      "LTV $60, CAC $195, ratio 0.31:1 — fails the rule",
+      "LTV $195, CAC $84 — ratio 2.32:1 — fails the rule"
+    ],
+    "correct": 0,
+    "rationale": "LTV = $7.50 x 26 = $195; CAC = $84,000 / 1,400 = $60; ratio = 195/60 = 3.25, which clears 3:1. Option B inverts the ratio; C swaps LTV and CAC; D miscomputes CAC by ignoring the subscriber count."
+  },
+  {
+    "domain": "Marketing",
+    "emulates": "CLEP",
+    "q": "A regional gym chain divides its prospective market by 'fitness motivation' — splitting buyers into 'competitive athletes,' 'stress-relievers,' and 'social joiners.' This basis for segmentation is best classified as:",
+    "opts": [
+      "Demographic segmentation",
+      "Geographic segmentation",
+      "Psychographic segmentation",
+      "Behavioral segmentation"
+    ],
+    "correct": 2,
+    "rationale": "Segmenting by motivation, values, and lifestyle is psychographic (the 'why' of buying). Demographic is age/income/gender, geographic is location, and behavioral is usage rate/benefits sought/loyalty — none of which describe motivation-based groups."
+  },
+  {
+    "domain": "Marketing",
+    "emulates": "CLEP",
+    "q": "NovaBrew, a craft coffee startup, is choosing among four candidate segments. Management argues it should automatically pick the largest one. According to standard targeting criteria, which factor would MOST justify rejecting the largest segment in favor of a smaller one?",
+    "opts": [
+      "The largest segment has the highest unaided brand awareness",
+      "The smaller segment pays a premium price and is reachable through one low-cost channel",
+      "The largest segment has the most competitors already serving it",
+      "The smaller segment has a younger average age"
+    ],
+    "correct": 1,
+    "rationale": "Targeting weighs size, profitability, AND ease of reach — a small segment that pays premium prices (high profitability) and clusters in a cheap channel (low CAC) can be more attractive than a large one. Competitor count and age alone are not the decisive economic levers, and high awareness of the large segment argues for it, not against."
+  },
+  {
+    "domain": "Marketing",
+    "emulates": "CLEP",
+    "q": "A SaaS firm sells project-management software. Its CAC is $480 and customers churn at a flat 4% per month with a $40 monthly gross-margin contribution. Using the simplified LTV formula LTV = monthly margin / monthly churn rate, what is the LTV, and how many months of margin must a customer pay before the firm recovers its CAC (the payback period)?",
+    "opts": [
+      "LTV $1,000; payback 12 months",
+      "LTV $1,000; payback 16 months",
+      "LTV $160; payback 12 months",
+      "LTV $1,600; payback 12 months"
+    ],
+    "correct": 0,
+    "rationale": "LTV = $40 / 0.04 = $1,000. Payback period = CAC / monthly margin = $480 / $40 = 12 months. Option B miscomputes payback; C and D misapply the LTV formula."
+  },
+  {
+    "domain": "Marketing",
+    "emulates": "CLEP",
+    "q": "Per Byron Sharp's research in 'How Brands Grow,' a brand manager wants to grow market share. Which strategy is most consistent with Sharp's empirical 'laws,' particularly the double jeopardy law?",
+    "opts": [
+      "Concentrate spend on a loyalty program for the heaviest 10% of buyers",
+      "Narrow targeting to the single most profitable niche and ignore light buyers",
+      "Increase penetration by reaching more category buyers and reattracting lapsed ones, since loyalty follows penetration",
+      "Raise prices to maximize margin per loyal customer rather than chasing new buyers"
+    ],
+    "correct": 2,
+    "rationale": "Sharp shows growth comes from penetration (more buyers), and loyalty is a side effect of penetration, not the reverse — most sales come from numerous light buyers. Loyalty-only and niche-only strategies contradict the double jeopardy law; raising prices does not grow share."
+  },
+  {
+    "domain": "Marketing",
+    "emulates": "CLEP",
+    "q": "A meal-kit company sells boxes at $60 with variable costs of $36 per box. It runs a $9,000 promotional campaign and wants the campaign to break even on contribution. How many incremental boxes must the campaign generate?",
+    "opts": [
+      "150 boxes",
+      "250 boxes",
+      "375 boxes",
+      "600 boxes"
+    ],
+    "correct": 2,
+    "rationale": "Contribution margin per box = $60 - $36 = $24. Break-even units = $9,000 / $24 = 375 boxes. Option D uses revenue ($60) instead of contribution; A and B use incorrect margins."
+  },
+  {
+    "domain": "Marketing",
+    "emulates": "CLEP",
+    "q": "Using April Dunford's positioning method, a B2B analytics startup begins by asking 'What category are we in?' and gets stuck. According to Dunford's recommended order of operations, what should the team identify FIRST?",
+    "opts": [
+      "The market category that makes the value obvious",
+      "The competitive alternatives the customer would use if the product did not exist — including doing nothing",
+      "The best-fit customer's demographic profile",
+      "The list of product features the team is most proud of"
+    ],
+    "correct": 1,
+    "rationale": "Dunford's sequence starts with competitive alternatives (what you must beat, including the status quo), then differentiated capabilities, value themes, best-fit customers, and finally market category. Starting with category is the common mistake that gets teams stuck; features and demographics come later in the sequence."
+  },
+  {
+    "domain": "Marketing",
+    "emulates": "CLEP",
+    "q": "An e-commerce shoe brand has these monthly metrics: 50,000 site visitors, a 3% conversion rate to purchase, an average order value of $90, and a contribution margin of 40% of revenue. It spends $48,000 per month on ads. What is the monthly contribution margin generated from these purchases, and is the ad spend profitable on a contribution basis this month?",
+    "opts": [
+      "Contribution $54,000 — profitable (exceeds $48,000 spend)",
+      "Contribution $135,000 — profitable",
+      "Contribution $54,000 — not profitable",
+      "Contribution $4,500 — not profitable"
+    ],
+    "correct": 0,
+    "rationale": "Orders = 50,000 x 3% = 1,500; revenue = 1,500 x $90 = $135,000; contribution = 40% x $135,000 = $54,000, which exceeds the $48,000 spend, so it is profitable on a contribution basis. Option B uses revenue not contribution; C draws the wrong conclusion; D miscounts orders."
+  }
+]

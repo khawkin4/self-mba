@@ -1,0 +1,105 @@
+[
+  {
+    "domain": "Legal & Ethical",
+    "emulates": "CLEP",
+    "q": "On March 1, Delgado Catering emails Brightline Studios: \"We'll cater your launch party for $4,200 if you confirm by March 5.\" On March 3 Brightline replies: \"Agreed, but we want vegan options added at no extra charge.\" Delgado never responds, and on March 6 Brightline sues to enforce a $4,200 catering contract. Will Brightline succeed?",
+    "opts": [
+      "Yes — Brightline accepted within the deadline, so a binding contract formed at $4,200.",
+      "No — Brightline's reply changed a term, so it operated as a counteroffer that rejected the original offer; no contract formed.",
+      "Yes — because the offer was in writing, the Statute of Frauds makes it automatically enforceable.",
+      "No — catering contracts must always be in writing and signed by both parties to be enforceable."
+    ],
+    "correct": 1,
+    "rationale": "Under the mirror-image rule, an acceptance that adds or alters terms is a counteroffer that rejects the original offer, so no contract formed and Delgado was free to walk. Option A ignores the added term; C misstates the Statute of Frauds (which governs whether a writing is required, not automatic enforceability); D is false since this short-term service deal need not be written."
+  },
+  {
+    "domain": "Legal & Ethical",
+    "emulates": "CLEP",
+    "q": "Marisol, a freelance graphic designer, verbally agrees to design a logo for a bakery for $800, completes it, and delivers the files. The bakery owner says, \"Thanks — but since we never signed anything, we don't owe you.\" Which statement is most accurate?",
+    "opts": [
+      "The owner is right; oral agreements for services are never enforceable.",
+      "The contract is unenforceable because the Statute of Frauds requires all contracts over $500 to be in writing.",
+      "A binding oral contract exists — offer, acceptance, and consideration are present, and a one-time logo design need not be in writing.",
+      "Marisol can only recover if she registered the logo with the Copyright Office before delivery."
+    ],
+    "correct": 2,
+    "rationale": "Most contracts may be oral and fully enforceable; this deal has offer, acceptance, and consideration and falls outside the Statute of Frauds categories (real estate, debt guarantees, deals not performable within a year). The $500-writing rule (B) applies to sales of goods under the UCC, not a services contract; A is overbroad; D confuses payment for services with copyright registration."
+  },
+  {
+    "domain": "Legal & Ethical",
+    "emulates": "CLEP",
+    "q": "Northwind Spices uses a proprietary blend-and-roast process it has never disclosed, protected only by employee NDAs and locked-room access. A rival independently develops the same process through its own R&D and starts selling a competing product. Which is correct?",
+    "opts": [
+      "Northwind can sue for trade-secret misappropriation because it had the process first.",
+      "Northwind cannot win a trade-secret claim, because independent discovery is a lawful way to obtain the same information.",
+      "The rival infringed Northwind's patent on the process.",
+      "Northwind's NDAs automatically extend protection to anyone who later develops the process."
+    ],
+    "correct": 1,
+    "rationale": "Trade-secret law only bars improper acquisition (theft, breach of NDA, espionage); independent discovery and reverse engineering are lawful, so the rival is free to compete. A is wrong because priority alone confers no rights against independent discovery; C is wrong because an unpatented secret confers no patent rights; D misstates NDA scope, which binds only signatories."
+  },
+  {
+    "domain": "Legal & Ethical",
+    "emulates": "CLEP",
+    "q": "A startup wants to protect (1) its mobile app's source code, (2) its distinctive brand name and logo, and (3) a novel hardware mechanism inside its device. Which set of IP tools fits, in that order?",
+    "opts": [
+      "Patent; copyright; trademark",
+      "Trademark; patent; trade secret",
+      "Copyright; trademark; patent",
+      "Trade secret; copyright; trademark"
+    ],
+    "correct": 2,
+    "rationale": "Software source code is a creative work protected by copyright; a brand name/logo identifying source is a trademark; a novel, useful invention is protected by a patent. The other orderings mismatch the asset to the wrong mechanism — e.g., a brand name cannot be patented and an invention is not a copyright."
+  },
+  {
+    "domain": "Legal & Ethical",
+    "emulates": "CLEP",
+    "q": "A warehouse requires 8 hourly workers to clock in, then spend 12 minutes daily on unpaid pre-shift safety checks before going \"on the clock.\" Workers earn $25/hour and work 260 days/year. Over a 3-year back-pay lookback for all 8 workers, what is the approximate unpaid straight-time wage exposure (before any liquidated damages)?",
+    "opts": [
+      "About $7,800",
+      "About $15,600",
+      "About $31,200",
+      "About $62,400",
+      "About $124,800"
+    ],
+    "correct": 2,
+    "rationale": "12 min = 0.2 hr; 0.2 × $25 = $5/day per worker; × 260 days = $1,300/worker/year; × 8 workers = $10,400/year; × 3 years = $31,200. The distractors come from dropping the worker count, the 3-year lookback, or double-counting (e.g., adding liquidated damages that the question excludes)."
+  },
+  {
+    "domain": "Legal & Ethical",
+    "emulates": "CLEP",
+    "q": "Two weeks after an employee files an internal complaint that her manager is denying overtime to women on the team, the same manager fires her, citing \"poor attitude.\" The company is in an at-will state. The strongest legal characterization of the firing is:",
+    "opts": [
+      "Lawful — at-will employment lets an employer fire for any reason, including a bad attitude.",
+      "Potential retaliation — terminating an employee shortly after a protected complaint can support a retaliation claim even in an at-will state.",
+      "Lawful — internal complaints are not protected unless filed with a government agency first.",
+      "Unlawful only if the underlying overtime complaint is ultimately proven true."
+    ],
+    "correct": 1,
+    "rationale": "At-will employment does not permit firing for an illegal reason; retaliating against someone for a good-faith complaint about discrimination is prohibited, and close timing is evidence of retaliation. A ignores the illegal-reason exception; C is wrong because internal complaints are protected activity; D is wrong because retaliation liability does not require the original complaint to be proven correct."
+  },
+  {
+    "domain": "Legal & Ethical",
+    "emulates": "CFA L1",
+    "q": "At an industry conference dinner, a competitor proposes to an analyst's employer: \"Let's both hold our service prices above $90 this quarter so neither of us bleeds margin.\" The employer's regional manager verbally agrees. Under U.S. antitrust law, the agreement is best described as:",
+    "opts": [
+      "Permissible parallel pricing, since nothing was put in writing.",
+      "A per se illegal price-fixing agreement among competitors that can carry fines and criminal liability.",
+      "Lawful, because each firm still sets its own final price."
+    ],
+    "correct": 1,
+    "rationale": "An agreement among competitors to fix or hold prices is a per se Sherman Act violation regardless of whether it is written. Independent, unilateral pricing (parallel conduct without agreement) can be lawful, but here there was an actual agreement, defeating options A and C."
+  },
+  {
+    "domain": "Legal & Ethical",
+    "emulates": "CFA L1",
+    "q": "A portfolio manager learns, through a casual remark from a friend who is a senior executive at a target company, that an acquisition will be announced next week. The information is clearly material and not yet public. Acting on the firm's code of conduct and ethical standards, the manager should:",
+    "opts": [
+      "Trade immediately for client accounts, since the duty to clients to maximize returns comes first.",
+      "Refrain from trading or recommending the security on this information and report the matter, because acting on material nonpublic information would violate the prohibition on insider trading.",
+      "Trade only in personal accounts, since the prohibition applies solely to client accounts."
+    ],
+    "correct": 1,
+    "rationale": "Standards on material nonpublic information bar trading or causing others to trade on it, for any account, and require escalation; the duty to clients never overrides the integrity-of-markets prohibition. A wrongly elevates client returns over the law, and C is wrong because the prohibition covers personal and client trades alike."
+  }
+]

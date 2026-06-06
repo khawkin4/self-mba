@@ -1,0 +1,80 @@
+[
+  {
+    "domain": "International Business",
+    "emulates": "CFA L1",
+    "q": "Meridian Capital is valuing a manufacturing project located entirely in Veloria, an emerging market. The analyst uses a mature-market equity risk premium of 4.8%. Veloria's sovereign bond default spread is 3.2%. To convert the bond default spread into an equity exposure, the analyst applies an equity/bond volatility scalar of 1.45. Using Damodaran's country-ERP build-up, what total equity risk premium should Meridian apply to the Velorian project?",
+    "opts": [
+      "8.00%",
+      "9.44%",
+      "12.20%"
+    ],
+    "correct": 1,
+    "rationale": "Country ERP = mature premium + (default spread x scalar) = 4.8% + (3.2% x 1.45) = 4.8% + 4.64% = 9.44%. Option A simply adds 4.8% + 3.2% without scaling the default spread; option C scales the full sum or double-counts."
+  },
+  {
+    "domain": "International Business",
+    "emulates": "GMAT Quant",
+    "q": "A US importer agrees to pay a German supplier EUR 500,000 in 90 days. The current spot rate is 1.0800 USD/EUR. The US 90-day interest rate is 5.2% annualized; the eurozone 90-day rate is 3.6% annualized. Using covered interest rate parity, what is the no-arbitrage 90-day forward rate (USD per EUR), and roughly how many additional US dollars will the importer owe at the forward rate versus the spot rate?",
+    "opts": [
+      "Forward ~1.0843; about $2,150 more",
+      "Forward ~1.0757; about $2,150 less",
+      "Forward ~1.0800; no difference",
+      "Forward ~1.0930; about $6,500 more",
+      "Forward ~1.0620; about $9,000 less"
+    ],
+    "correct": 0,
+    "rationale": "Higher-interest currency (USD) trades at a forward discount, so EUR is at a forward premium: F = 1.0800 x (1 + 0.052/4)/(1 + 0.036/4) = 1.0800 x 1.013/1.009 = 1.0843. On EUR 500,000 the extra cost = (1.0843 - 1.0800) x 500,000 = ~$2,150. B reverses the parity direction; C ignores the rate differential; D and E use wrong magnitudes."
+  },
+  {
+    "domain": "International Business",
+    "emulates": "MFT-MBA",
+    "q": "Northwind Robotics, a US firm, wants to enter a politically volatile Southeast Asian market. It expects strong demand but is worried about expropriation risk, wants to retain control over proprietary motor-control IP, and prefers to limit capital at risk while still building local manufacturing presence over time. Which entry mode best balances these competing goals?",
+    "opts": [
+      "Wholly-owned greenfield subsidiary, to maximize control over IP and operations",
+      "Exporting through an independent local distributor, to minimize all in-country exposure",
+      "A joint venture with a well-connected local partner, with IP licensed under tightly scoped contractual protections",
+      "Franchising the full production system to multiple local operators to scale quickly"
+    ],
+    "correct": 2,
+    "rationale": "A JV with a local partner lowers capital at risk and political/expropriation exposure (local political cover) while building manufacturing presence; tightly scoped licensing limits IP leakage. A maximizes IP control but concentrates capital and expropriation risk; B builds no manufacturing presence; D disperses proprietary IP widely with weak control."
+  },
+  {
+    "domain": "International Business",
+    "emulates": "CFA L1",
+    "q": "Over the past year, Brava's currency (the bravo) depreciated 12% against the US dollar in nominal terms. Brava's inflation over that period was 15%; US inflation was 3%. What happened to the bravo's REAL exchange rate against the dollar, and what is the competitiveness implication for Brava's exporters?",
+    "opts": [
+      "The real rate appreciated, hurting export competitiveness",
+      "The real rate depreciated, helping export competitiveness",
+      "The real rate was unchanged, leaving competitiveness flat"
+    ],
+    "correct": 0,
+    "rationale": "Real change is approximately the nominal depreciation offset by the inflation differential: -12% (nominal fall in bravo) + (15% - 3%) = -12% + 12% = ~0 in PPP terms, but because Brava's 15% inflation fully exceeds the 12% nominal depreciation, domestic prices rose faster than the currency fell, so the real rate appreciated and exporters' goods became relatively more expensive abroad. To keep competitiveness flat the bravo would have had to fall 12% in real terms (i.e., ~24% nominally); it did not. B and C misread the direction and magnitude of the real adjustment."
+  },
+  {
+    "domain": "International Business",
+    "emulates": "MFT-MBA",
+    "q": "An analyst is assessing country risk for a new operation in Tarsis. Tarsis is an authoritarian state that has guaranteed stable tax and ownership rules for 20 years, has very low street-level violence, but ranks poorly on corruption and has courts that take 8-plus years to enforce a commercial contract. According to the Damodaran framework, which characterization is most accurate?",
+    "opts": [
+      "Low risk overall, because political stability and low violence dominate the other factors",
+      "Faces discontinuous (catastrophic) political risk plus a corruption 'tax' and weak property-rights enforcement, even though day-to-day rules look stable",
+      "Faces continuous political risk from frequent elections changing the rules",
+      "Effectively risk-free for foreign operators given the 20-year rule stability"
+    ],
+    "correct": 1,
+    "rationale": "Authoritarian regimes offer stable rules until the regime collapses, i.e., discontinuous/catastrophic risk; corruption acts as a hidden tax and 8+ year courts mean property rights are effectively unenforceable. A and D ignore corruption, weak courts, and regime-collapse risk; C describes a democracy's continuous (election-driven) risk, which does not fit an authoritarian state."
+  },
+  {
+    "domain": "International Business",
+    "emulates": "GMAT Quant",
+    "q": "Helios Foods earns revenue in three countries: 50% in the US (equity risk premium 4.8%), 30% in Brazil (ERP 8.3%), and 20% in Nigeria (ERP 11.5%). Following the rule that country risk should follow operations, what blended equity risk premium should be used to value Helios as a whole?",
+    "opts": [
+      "4.80%",
+      "6.69%",
+      "8.20%",
+      "7.19%",
+      "11.50%"
+    ],
+    "correct": 1,
+    "rationale": "Revenue-weighted ERP = 0.50(4.8%) + 0.30(8.3%) + 0.20(11.5%) = 2.40% + 2.49% + 2.30% = 6.69%. A uses only the HQ/US premium; C is a simple unweighted average of the three; E uses the riskiest country alone; D miscomputes the weighting."
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "domain": "Communication",
+    "emulates": "GMAT Verbal (Critical Reasoning)",
+    "q": "Priya, a supply-chain analyst at Meridian Foods, must email the COO a 600-word update covering a port delay, a vendor price increase, and a recommendation to switch the company's secondary freight forwarder. The COO is famously time-pressed and reads email on her phone between meetings. Priya's draft opens with three paragraphs of background on the port congestion before reaching her recommendation in the final line. Applying the pyramid principle, what is the single most important revision Priya should make?",
+    "opts": [
+      "Open with the recommendation to switch forwarders, then group the supporting reasons (delay, price increase) beneath it",
+      "Add a chart of historical port-congestion data to strengthen the background section",
+      "Cut the recommendation entirely and let the COO infer the next step from the facts",
+      "Reorder the background chronologically so the COO can follow the timeline of events"
+    ],
+    "correct": 0,
+    "rationale": "The pyramid principle puts the answer/recommendation first, then MECE supports below it, so a time-pressed reader gets the point immediately. Adding a chart or reordering background keeps the conclusion buried; omitting the recommendation abdicates the analyst's job."
+  },
+  {
+    "domain": "Communication",
+    "emulates": "CLEP (applied judgment)",
+    "q": "A product manager is presenting the same quarterly results to two audiences on the same day: (1) the engineering team that built the feature, and (2) the company's board of directors. The data and headline conclusion are identical. Which adaptation best reflects sound audience analysis?",
+    "opts": [
+      "Use the identical deck for both to ensure message consistency across the organization",
+      "Give engineering the implementation detail and tradeoffs, while leading the board with the business outcome and strategic implication",
+      "Give the board the full technical architecture so they appreciate the difficulty of the work",
+      "Shorten both presentations equally to respect everyone's time"
+    ],
+    "correct": 1,
+    "rationale": "Audience-first communication tailors emphasis and altitude to what each audience needs to decide or act on: engineers want technical tradeoffs, a board wants strategic and financial implications. A single identical deck or dumping architecture on the board ignores their differing decision needs."
+  },
+  {
+    "domain": "Communication",
+    "emulates": "GMAT Quant (data interpretation)",
+    "q": "A marketing director wants a bar chart to show that Q4 revenue ($10.4M) was dramatically higher than Q3 revenue ($10.0M). To exaggerate the gap, the designer starts the vertical axis at $9.9M instead of $0, so the Q4 bar appears roughly 5 times taller than the Q3 bar. If the axis were instead set correctly to start at $0, approximately how much taller would the Q4 bar be than the Q3 bar, and what is the integrity problem?",
+    "opts": [
+      "About 400% taller; truncating the axis understated the real difference",
+      "About 4% taller; truncating the axis at $9.9M visually exaggerates a small real difference",
+      "About 40% taller; the axis choice is irrelevant to perception",
+      "About 0.4% taller; a truncated axis is always the recommended practice",
+      "About 100% taller; the bars should be replaced with a pie chart"
+    ],
+    "correct": 1,
+    "rationale": "With a zero baseline the Q4 bar is 10.4/10.0 = 1.04, only ~4% taller. Truncating the axis to $9.9M inflates a trivial difference into an apparent 5x gap, the classic deceptive-chart integrity violation. The other figures misstate the true ratio or endorse the distortion."
+  },
+  {
+    "domain": "Communication",
+    "emulates": "CLEP (applied judgment)",
+    "q": "A division head must announce a reorganization that will move some employees to new managers. She wants the all-hands message to reduce anxiety and rumor. Drawing on the 'What? / So What? / Now What?' structure, which sequence best serves this goal?",
+    "opts": [
+      "Open with reassurance that nothing will really change, then mention the reorg only if asked",
+      "State the change (new reporting lines), explain why it matters (faster decisions, clearer ownership), then give the next step (1:1s scheduled this week)",
+      "List every individual reporting change first, then justify the strategy at the end",
+      "Begin with the long history of how the current structure evolved, then announce the change last"
+    ],
+    "correct": 1,
+    "rationale": "What/So-What/Now-What names the change, its significance, and the concrete next action, which is exactly what cuts rumor and anxiety. Burying or denying the change, or front-loading history and individual detail, leaves people uncertain about what to do next."
+  },
+  {
+    "domain": "Communication",
+    "emulates": "GMAT Verbal (Critical Reasoning)",
+    "q": "A consultant builds an answer-first pyramid deck recommending that a client exit its European market. The structure is clean and MECE, the slides flow logically, and executives find it persuasive. Two weeks later it emerges that the underlying market-size data was pulled from an outdated 2019 source and overstated the decline by half. Which conclusion is best supported?",
+    "opts": [
+      "The pyramid structure was the cause of the bad recommendation and should have been avoided",
+      "Strong structure is a multiplier on substance, so a clean answer-first deck made a wrong conclusion land harder and more convincingly",
+      "Because the logic flowed, the recommendation was sound regardless of the data",
+      "The fix is to add more supporting slides beneath the recommendation"
+    ],
+    "correct": 1,
+    "rationale": "Structure amplifies whatever it carries: an answer-first pyramid makes a wrong answer more persuasive, not more correct. The structure was not the cause, logical flow does not validate bad data, and adding slides cannot repair a flawed premise."
+  },
+  {
+    "domain": "Communication",
+    "emulates": "CLEP (applied judgment)",
+    "q": "A founder is choosing how to open two different communications. Communication A is a routine weekly status update to her standing project team. Communication B is a keynote meant to rally employees and investors behind a risky new vision. Which pairing of communication strategies is most appropriate?",
+    "opts": [
+      "A: open with a 'why' belief monologue; B: open with the bullet-point status table",
+      "A: open with the answer-first status summary; B: open with the 'what is vs. what could be' tension and the underlying 'why'",
+      "A and B: both open with a detailed chronological background to build context",
+      "A: open with vulnerability and a personal story; B: open with the project metrics"
+    ],
+    "correct": 1,
+    "rationale": "A routine update suits Minto's answer-first pyramid, while a vision keynote suits Duarte's what-is/what-could-be tension and Sinek's start-with-why. Swapping them wastes time on a status call and drains emotion from the keynote; chronological background buries the point in both."
+  }
+]

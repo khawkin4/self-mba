@@ -1,0 +1,92 @@
+[
+  {
+    "domain": "Finance",
+    "emulates": "CFA L1",
+    "q": "Mara deposits $8,000 into an account quoting a stated annual rate of 6%, compounded monthly. To the nearest dollar, what is the account balance after 3 years?",
+    "opts": ["$9,528", "$9,573", "$9,440"],
+    "correct": 1,
+    "rationale": "FV = 8,000 x (1 + 0.06/12)^(12x3) = 8,000 x (1.005)^36 = $9,573. Option $9,528 wrongly uses annual compounding (1.06^3); $9,440 understates the periods.",
+    "domain_topic": "Time value of money"
+  },
+  {
+    "domain": "Finance",
+    "emulates": "CFA L1",
+    "q": "A project costs $50,000 today and returns $18,000 at the end of each of the next four years. At a required return of 10%, the project's NPV is closest to:",
+    "opts": ["$7,058", "$22,000", "$13,200"],
+    "correct": 0,
+    "rationale": "NPV = -50,000 + 18,000 x [1 - 1.10^-4]/0.10 = -50,000 + 57,058 = $7,058. $22,000 is the undiscounted sum minus cost; $13,200 ignores discounting beyond a single rough adjustment.",
+    "domain_topic": "Capital budgeting / NPV"
+  },
+  {
+    "domain": "Finance",
+    "emulates": "CFA L1",
+    "q": "A 5-year bond with a $1,000 face value pays a 6% annual coupon in two equal semiannual installments. If the market yield (YTM) is 8%, the bond's price is closest to:",
+    "opts": ["$919", "$1,000", "$1,082"],
+    "correct": 0,
+    "rationale": "With coupon rate (6%) below yield (8%), the bond trades at a discount: 10 periods, $30 coupon, 4% per-period yield gives a price of about $919. $1,000 would require coupon = yield; $1,082 reflects a premium (yield below coupon).",
+    "domain_topic": "Fixed income valuation"
+  },
+  {
+    "domain": "Finance",
+    "emulates": "CFA L1",
+    "q": "Corwin Inc. has $60M of equity and $40M of debt at market value. Its cost of equity is 12%, its pre-tax cost of debt is 7%, and its marginal tax rate is 25%. The company's WACC is closest to:",
+    "opts": ["9.3%", "10.0%", "8.5%"],
+    "correct": 0,
+    "rationale": "WACC = 0.60(12%) + 0.40(7%)(1 - 0.25) = 7.2% + 2.1% = 9.3%. 10.0% omits the tax shield on debt; 8.5% misweights the components.",
+    "domain_topic": "Cost of capital / WACC"
+  },
+  {
+    "domain": "Finance",
+    "emulates": "CFA L1",
+    "q": "A stock is expected to pay a dividend of $2.50 next year. Dividends are expected to grow at a constant 4% indefinitely, and the required return on equity is 11%. Using the Gordon growth model, the stock's intrinsic value is closest to:",
+    "opts": ["$22.73", "$35.71", "$62.50"],
+    "correct": 1,
+    "rationale": "P0 = D1/(r - g) = 2.50/(0.11 - 0.04) = $35.71. $22.73 wrongly uses r alone (2.50/0.11); $62.50 wrongly divides by g (2.50/0.04).",
+    "domain_topic": "Equity valuation / DDM"
+  },
+  {
+    "domain": "Finance",
+    "emulates": "CFA L1",
+    "q": "A firm reports current assets of $240,000 (including $90,000 of inventory) and current liabilities of $120,000. Its quick (acid-test) ratio is:",
+    "opts": ["2.00", "1.25", "0.75"],
+    "correct": 1,
+    "rationale": "Quick ratio = (Current assets - Inventory)/Current liabilities = (240,000 - 90,000)/120,000 = 1.25. 2.00 is the current ratio (inventory not excluded); 0.75 incorrectly subtracts inventory from the denominator.",
+    "domain_topic": "Financial ratios / liquidity"
+  },
+  {
+    "domain": "Finance",
+    "emulates": "CFA L1",
+    "q": "A loan quotes a stated annual rate of 9% compounded quarterly. The effective annual rate (EAR) is closest to:",
+    "opts": ["9.00%", "9.31%", "9.42%"],
+    "correct": 1,
+    "rationale": "EAR = (1 + 0.09/4)^4 - 1 = (1.0225)^4 - 1 = 9.31%. 9.00% ignores compounding; 9.42% corresponds to monthly compounding, not quarterly.",
+    "domain_topic": "Interest rate conversions / EAR"
+  },
+  {
+    "domain": "Finance",
+    "emulates": "CFA L1",
+    "q": "Using DuPont analysis, a company has a net profit margin of 10%, total asset turnover of 0.80, and a financial leverage ratio (assets/equity) of 2.50. Its return on equity (ROE) is:",
+    "opts": ["8.0%", "20.0%", "12.5%"],
+    "correct": 1,
+    "rationale": "ROE = net profit margin x asset turnover x financial leverage = 0.10 x 0.80 x 2.50 = 20.0%. 8.0% is ROA (margin x turnover) without leverage; 12.5% mistakenly inverts the leverage factor.",
+    "domain_topic": "DuPont analysis / profitability"
+  },
+  {
+    "domain": "Finance",
+    "emulates": "CFA L1",
+    "q": "A retiree wants to receive $25,000 at the end of each year for the next 20 years. If funds earn 7% annually, the amount that must be invested today is closest to:",
+    "opts": ["$264,850", "$500,000", "$357,000"],
+    "correct": 0,
+    "rationale": "PV = 25,000 x [1 - 1.07^-20]/0.07 = 25,000 x 10.594 = $264,850. $500,000 is the undiscounted total; $357,000 applies an incorrect discount factor.",
+    "domain_topic": "Time value / annuities"
+  },
+  {
+    "domain": "Finance",
+    "emulates": "CFA L1",
+    "q": "A company reports EBIT of $900,000 and annual interest expense of $300,000. Its interest coverage (times-interest-earned) ratio is:",
+    "opts": ["0.33", "3.00", "1.50"],
+    "correct": 1,
+    "rationale": "Interest coverage = EBIT/Interest expense = 900,000/300,000 = 3.00. 0.33 inverts the ratio; 1.50 would result from incorrectly using net income or halving EBIT.",
+    "domain_topic": "Financial ratios / solvency"
+  }
+]

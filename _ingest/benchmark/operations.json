@@ -1,0 +1,66 @@
+[
+  {
+    "domain": "Operations",
+    "emulates": "GMAT Quant",
+    "q": "A custom-furniture workshop runs a four-station finishing line. Each station's processing capacity is: Sanding 140 chairs/day, Staining 95 chairs/day, Sealing 120 chairs/day, Inspection 110 chairs/day. Daily customer demand is 105 chairs. If the plant manager spends $40,000 to upgrade the Sanding station to 200 chairs/day, by how many chairs/day will the line's throughput increase?",
+    "opts": ["0 chairs/day", "5 chairs/day", "10 chairs/day", "60 chairs/day", "105 chairs/day"],
+    "correct": 0,
+    "rationale": "Throughput equals the capacity of the bottleneck, which is Staining at 95/day; upgrading Sanding (a non-bottleneck already at 140) raises no output and only builds WIP, so the increase is 0. The other answers wrongly credit the non-binding upgrade or confuse capacity gained at the wrong station with system throughput."
+  },
+  {
+    "domain": "Operations",
+    "emulates": "GMAT Quant",
+    "q": "At a passport-renewal office, applicants arrive and flow through a single processing system. On average 36 applicants arrive per hour, and at any moment there are on average 27 applicants in the system (waiting plus being served). Using Little's Law, what is the average time an applicant spends in the system?",
+    "opts": ["0.75 minutes", "13.3 minutes", "45 minutes", "48 minutes", "63 minutes"],
+    "correct": 2,
+    "rationale": "Little's Law: L = lambda x W, so W = L / lambda = 27 / 36 = 0.75 hours = 45 minutes. The 13.3 figure inverts the ratio, 48/63 add spurious arithmetic, and 0.75 minutes forgets to convert hours to minutes."
+  },
+  {
+    "domain": "Operations",
+    "emulates": "GMAT Data Insights",
+    "q": "A meal-kit company's packing line has stations with cycle times per box of: Picking 30 sec, Portioning 50 sec, Labeling 25 sec, Boxing 40 sec. The line operates 8 hours per day. What is the maximum number of boxes the line can complete in one day?",
+    "opts": ["240 boxes", "576 boxes", "720 boxes", "960 boxes", "1,152 boxes"],
+    "correct": 1,
+    "rationale": "The bottleneck is the slowest station, Portioning at 50 sec/box, giving a max rate of one box every 50 sec; 8 hours = 28,800 sec / 50 = 576 boxes. Faster stations cannot raise output, so answers using shorter cycle times (720, 960, 1,152) or summing times (240) are wrong."
+  },
+  {
+    "domain": "Operations",
+    "emulates": "MFT-MBA",
+    "q": "A plant manager has correctly identified the heat-treat oven as the system constraint. Following Goldratt's Five Focusing Steps, after the team has fully Exploited the oven (squeezing maximum output from existing capacity), what is the next step before spending capital to buy a second oven?",
+    "opts": ["Elevate the constraint by adding the new oven immediately", "Subordinate all other resources to the pace of the oven", "Re-identify the constraint from scratch", "Inflate finished-goods inventory to buffer downstream demand"],
+    "correct": 1,
+    "rationale": "The sequence is Identify, Exploit, Subordinate, Elevate, Repeat; Subordinate (pacing every non-constraint to the oven) comes before Elevate (capital spend). Elevating first wastes money, re-identifying skips a step, and building inventory contradicts the method."
+  },
+  {
+    "domain": "Operations",
+    "emulates": "GMAT Quant",
+    "q": "A contract assembler processes orders through three sequential stages with capacities of 600, 450, and 720 units per hour. Demand is 500 units/hour. Management reassigns one idle worker from the 720-unit stage to the 450-unit stage, raising that stage to 540 units/hour at no added cost. After the change, what is the new line throughput?",
+    "opts": ["450 units/hour", "500 units/hour", "540 units/hour", "600 units/hour", "720 units/hour"],
+    "correct": 1,
+    "rationale": "Originally the 450-unit stage was the bottleneck capping output at 450; after rebalancing it reaches 540, so the binding limit becomes demand at 500 (since all stages now exceed 500). Throughput cannot exceed demand, so 540/600/720 overstate it and 450 ignores the improvement."
+  },
+  {
+    "domain": "Operations",
+    "emulates": "MFT-MBA",
+    "q": "A components supplier ran pure just-in-time sourcing with zero buffer stock to minimize carrying cost. When its sole overseas carrier was disrupted by a sudden tariff and routing change, the landed cost of one critical single-sourced part spiked from $150 to $1,800 overnight, halting the line. Which adjustment best reflects the post-disruption lean practitioner consensus?",
+    "opts": ["Abandon lean entirely and return to large batch production across all inputs", "Hold just-in-case buffer stock specifically on critical, single-sourced inputs while keeping flow lean elsewhere", "Increase buffer inventory uniformly on every part regardless of risk", "Switch all parts to multiple suppliers and keep zero inventory"],
+    "correct": 1,
+    "rationale": "The practitioner swing is to lean the flow but insure the chokepoints with just-in-case buffers on critical single-sourced inputs. Abandoning lean or buffering every part uniformly destroys the cost advantage, and multi-sourcing alone does not address a sudden cost spike with zero cushion."
+  },
+  {
+    "domain": "Operations",
+    "emulates": "GMAT Data Insights",
+    "q": "Two retailers post nearly identical annual revenue. Retailer X earns a 9% net margin with asset turnover of 0.9x. Retailer Y earns a 3% net margin with asset turnover of 2.6x. Using the relationship Return on Assets = net margin x asset turnover, which statement is best supported?",
+    "opts": ["Retailer Y earns a higher ROA than Retailer X", "The two retailers earn roughly comparable ROA, with Y substituting turnover for margin", "Retailer X must hold fewer assets than Retailer Y", "Retailer Y is unprofitable because its margin is below 5%"],
+    "correct": 1,
+    "rationale": "ROA(X) = 9% x 0.9 = 8.1% and ROA(Y) = 3% x 2.6 = 7.8%, roughly comparable, with Y's high turnover offsetting its thin margin. Y does not clearly out-earn X, asset levels are not given directly, and a 3% margin is still profitable."
+  },
+  {
+    "domain": "Operations",
+    "emulates": "MFT-MBA",
+    "q": "On a Toyota-style assembly line, a worker notices a misaligned weld and pulls the andon cord. A yellow lamp lights and the team leader comes over; the issue is not resolved before the workstation boundary, so the line halts until it is fixed. Which lean principle does stopping the entire line to fix one defect best illustrate?",
+    "opts": ["Just-in-time (produce only what the next step pulls)", "Jidoka / quality at the source (never knowingly pass a defect downstream)", "Kaizen (rare, large-scale improvement projects)", "Asset turnover (selling the asset base quickly)"],
+    "correct": 1,
+    "rationale": "Stopping the line to fix a defect where it occurs is jidoka and quality at the source, catching problems before they roll downstream. Just-in-time governs flow/pull not defect detection, kaizen is continuous small (not rare large) improvement, and asset turnover is a financial-efficiency metric unrelated to the andon cord."
+  }
+]

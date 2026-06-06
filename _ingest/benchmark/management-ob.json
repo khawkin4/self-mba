@@ -1,0 +1,158 @@
+[
+  {
+    "domain": "Management & OB",
+    "emulates": "CLEP",
+    "q": "Maya manages a 9-person quality-assurance unit at a medical-device firm. The work is novel (a new product class), highly interdependent, and mistakes can reach patients. In her last three meetings, no one raised concerns even though defect data later showed problems they had privately noticed. Using Edmondson's framework, what is the single most effective FIRST move for Maya to increase the odds people will speak up?",
+    "opts": [
+      "Raise the team's performance targets and tie defect-catch rates to individual bonuses",
+      "Frame the work as a learning problem and openly acknowledge her own fallibility, inviting pushback",
+      "Schedule one-on-one performance reviews to identify which members are underperforming",
+      "Add an anonymous suggestion box so people can report concerns without attribution"
+    ],
+    "correct": 1,
+    "rationale": "Edmondson's concrete moves are framing work as a learning problem and acknowledging fallibility, which directly create permission for voice when work is uncertain and interdependent. Raising targets/bonuses adds accountability without safety (the Anxiety Zone); reviews increase fear; an anonymous box treats the symptom and signals that direct candor is still unsafe."
+  },
+  {
+    "domain": "Management & OB",
+    "emulates": "MFT-MBA",
+    "q": "A team operates under intense deadlines and very high quality standards, but members routinely hide errors and avoid asking questions for fear of looking incompetent. On Edmondson's psychological-safety x accountability 2x2, which quadrant is this team in, and what is the primary risk?",
+    "opts": [
+      "Comfort Zone — the risk is complacency and lack of stretch",
+      "Apathy Zone — the risk is disengagement and turnover",
+      "Anxiety Zone — the risk is that problems get hidden rather than solved",
+      "Learning Zone — the risk is burnout from sustained high performance"
+    ],
+    "correct": 2,
+    "rationale": "High accountability combined with low safety is the Anxiety Zone, where people conceal problems instead of surfacing them. Comfort is high-safety/low-accountability; Apathy is low/low; Learning is the high/high target zone."
+  },
+  {
+    "domain": "Management & OB",
+    "emulates": "CLEP",
+    "q": "Devin was just promoted to manage the five engineers who were his peers last month. Worried about seeming arrogant, he avoids giving direction, lets missed deadlines slide, and frames every request as an apology. Performance is slipping. Which corrective approach best fits the 'buddy-to-boss' problem?",
+    "opts": [
+      "Request a transfer of the most resistant former peers to another team",
+      "Acknowledge the awkwardness, ask the team for input, and then actually act like their manager",
+      "Wait six months for the relationships to reset before exercising any authority",
+      "Reassert control immediately by tightening rules and monitoring output closely"
+    ],
+    "correct": 1,
+    "rationale": "The 'three A's' fix is Acknowledge the awkwardness, Ask for input, and Act like their manager. Avoiding authority (the trap Devin is in) damages relationships more than using it; transferring people and heavy monitoring skip the relational acknowledgment and erode trust."
+  },
+  {
+    "domain": "Management & OB",
+    "emulates": "MFT-MBA",
+    "q": "A regional director spends most of her week personally reviewing every report and re-doing junior analysts' spreadsheets because she can do it faster. Applying Andrew Grove's concept of managerial leverage, what is the central error in how she allocates her time?",
+    "opts": [
+      "She is failing to document processes, which would let her delegate paperwork",
+      "She is measuring her output by what she personally does rather than by what her team produces, and is neglecting high-leverage acts like training and direction",
+      "She should reduce headcount so there are fewer reports to review",
+      "She should hold more status meetings so she can monitor work more closely"
+    ],
+    "correct": 1,
+    "rationale": "Grove's core claim is a manager's output equals the output of their team plus neighboring teams under their influence; the lever is choosing few high-leverage acts (training, 1-on-1s, direction) over doing the work. Doing analysts' work herself maximizes her personal output at the expense of team output. More status meetings is low-leverage monitoring; cutting headcount and just documenting miss the leverage point."
+  },
+  {
+    "domain": "Management & OB",
+    "emulates": "MFT-MBA",
+    "q": "A submarine captain in Marquet's model replaces 'May I have permission to...' with subordinates stating 'I intend to...'. This intent-based leadership reliably improves decisions ONLY when which two conditions are present?",
+    "opts": [
+      "Seniority and loyalty",
+      "Competence and clarity (of purpose)",
+      "Centralization and standardization",
+      "Incentive pay and tight monitoring"
+    ],
+    "correct": 1,
+    "rationale": "Marquet's leader-leader model rests on two pillars: technical competence to make good calls, and organizational clarity about purpose so decentralized decisions align. Without both, pushing authority down produces poor or misaligned choices; the other pairs describe control-based models, not intent-based leadership."
+  },
+  {
+    "domain": "Management & OB",
+    "emulates": "CLEP",
+    "q": "A product team sets the OKR Objective 'Become the easiest onboarding in our category' with key results including 'Reduce median time-to-first-value from 22 minutes to 8 minutes.' At quarter end they hit roughly 70% of their key results. According to Doerr's OKR philosophy, how should this outcome generally be interpreted?",
+    "opts": [
+      "A failure — the team should be placed on a performance plan for missing targets",
+      "Roughly the intended sweet spot for ambitious 'stretch' OKRs, signaling appropriately hard goals",
+      "A sign the targets were too hard and should be lowered next quarter to reach 100%",
+      "Irrelevant, because OKRs should be scored only as a binary done/not-done checklist"
+    ],
+    "correct": 1,
+    "rationale": "Doerr treats ~70% as the sweet spot for aspirational OKRs; consistently hitting 100% means goals were sandbagged. Punishing 70% (or tying it to comp) drives sandbagging, which is the #1 OKR failure mode; treating OKRs as a binary to-do list is the other named failure."
+  },
+  {
+    "domain": "Management & OB",
+    "emulates": "MFT-MBA",
+    "q": "An executive must decide whether to launch a low-cost pricing experiment in two non-core markets. It is easily reversible, and waiting for full data would cost a quarter of learning. Using Bezos's 'one-way vs. two-way door' framework, what is the appropriate decision approach?",
+    "opts": [
+      "Treat it as a one-way door: gather near-complete information before committing",
+      "Treat it as a two-way door: decide quickly with roughly 70% of the information and reverse if needed",
+      "Escalate it to the full board because all pricing decisions are high-stakes",
+      "Delay until a competitor moves first to reduce uncertainty"
+    ],
+    "correct": 1,
+    "rationale": "Reversible decisions are two-way doors and should be made fast at about 70% of the information, then unwound if wrong. Treating a reversible, low-cost experiment as a one-way door wastes time and learning; escalation and waiting compound that error."
+  },
+  {
+    "domain": "Management & OB",
+    "emulates": "MFT-MBA",
+    "q": "A manager is consistently kind and supportive but rarely tells reports when their work falls short, so problems persist and people don't grow. In Kim Scott's Radical Candor model (Care Personally x Challenge Directly), which quadrant does this manager occupy?",
+    "opts": [
+      "Obnoxious Aggression — high challenge, low care",
+      "Ruinous Empathy — high care, low challenge",
+      "Manipulative Insincerity — low care, low challenge",
+      "Radical Candor — high care, high challenge"
+    ],
+    "correct": 1,
+    "rationale": "Caring personally while failing to challenge directly is Ruinous Empathy, the most common managerial failure: kindness that withholds the honest feedback people need. Obnoxious Aggression challenges without care; Manipulative Insincerity lacks both; Radical Candor requires both."
+  },
+  {
+    "domain": "Management & OB",
+    "emulates": "MFT-MBA",
+    "q": "Jordan is interviewing for a senior analyst role. The market rate for the role is GBP 107,000-109,000. Jordan currently earns GBP 102,000 and has one other active interview that would plausibly match market. The hiring firm's reservation point (max it will pay) is GBP 110,000. The firm opens with GBP 101,000. Which statement is correct?",
+    "opts": [
+      "Jordan should accept GBP 101,000 because it beats unemployment",
+      "A ZOPA exists roughly between Jordan's reservation point (~GBP 105,000) and the firm's (~GBP 110,000), so Jordan should not accept the opening offer",
+      "No ZOPA exists, so Jordan should walk away immediately",
+      "Jordan should counter at GBP 130,000 to anchor as high as possible regardless of market data"
+    ],
+    "correct": 1,
+    "rationale": "Jordan's BATNA (current job plus a market-rate interview) sets a reservation point around GBP 105,000; the firm's is GBP 110,000, so a ZOPA of roughly GBP 105,000-110,000 exists and the GBP 101,000 opener is below Jordan's walk-away. Accepting 101k forfeits the ZOPA; there clearly is a ZOPA so walking is wrong; an absurd 130k anchor above the firm's reservation point ignores market reality and risks the deal."
+  },
+  {
+    "domain": "Management & OB",
+    "emulates": "CLEP",
+    "q": "In a contract dispute, the supplier states its position: 'We must have a 24-month exclusivity clause.' A skilled negotiator following the Fisher-Ury method makes which first move?",
+    "opts": [
+      "Immediately counter with a 6-month clause to split the difference",
+      "Ask why exclusivity matters to them, to surface the underlying interest behind the position",
+      "Reject the demand and present a stronger logical argument for non-exclusivity",
+      "Accept the clause to preserve goodwill and renegotiate later"
+    ],
+    "correct": 1,
+    "rationale": "Fisher and Ury teach negotiating interests, not positions; asking 'why' surfaces the underlying need (e.g., recouping tooling investment) that might be met another way without granting the position. Splitting the difference and trading arguments fight over positions; conceding abandons the negotiation."
+  },
+  {
+    "domain": "Management & OB",
+    "emulates": "MFT-MBA",
+    "q": "A customer-service rep is exhausted and initially refuses Chris Voss a refund. Voss says, 'It sounds like you've been incredibly patient with a frustrating system today.' Her tone softens and she grants the refund. Which technique did Voss use, and what is the mechanism?",
+    "opts": [
+      "Mirroring — repeating her last words makes her keep talking",
+      "Labeling — naming the emotion verbally, which diminishes a negative and builds rapport",
+      "Anchoring — setting an extreme reference point to shift the range",
+      "A calibrated 'no' question — giving her the safety of saying no"
+    ],
+    "correct": 1,
+    "rationale": "Prefacing an observation with 'it sounds like...' to name the counterpart's emotion is labeling, a form of tactical empathy; naming a feeling reduces its grip and builds connection. Mirroring repeats the last words; anchoring sets a number; a 'no' question is phrased to invite refusal."
+  },
+  {
+    "domain": "Management & OB",
+    "emulates": "CLEP",
+    "q": "Behavioral research on loss aversion finds that a loss is felt roughly twice as intensely as an equivalent gain. Chris Voss draws which tactical implication for negotiation?",
+    "opts": [
+      "Always present your offer as a large potential gain to excite the counterpart",
+      "The fear of loss drives decisions more than hope of gain, so defuse the counterpart's fears first to move them into a rational frame",
+      "Loss aversion is irrelevant once both parties know their BATNA",
+      "You should threaten the counterpart with what they will lose to pressure a fast yes"
+    ],
+    "correct": 1,
+    "rationale": "Because losses sting about twice as much as equal gains, the reasons someone won't deal are stronger than the reasons they will, so Voss diffuses those fears first to shift the counterpart from a fearful to a rational frame. Emphasizing only upside ignores the stronger loss driver; threats trigger defensiveness and damage the relationship; BATNA does not erase emotional loss aversion."
+  }
+]

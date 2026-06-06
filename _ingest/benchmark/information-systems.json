@@ -1,0 +1,80 @@
+[
+  {
+    "domain": "Information Systems",
+    "emulates": "CLEP",
+    "q": "Brightleaf Garden Supply runs four disconnected systems: a sales app, a QuickBooks ledger, a warehouse inventory tool, and a standalone payroll service. When a customer buys 50 bags of mulch, a clerk must re-key the order into sales, then again into inventory, then accounting reconciles totals at month-end. Brightleaf is evaluating an ERP migration. Which statement BEST describes the primary business value the ERP would deliver?",
+    "opts": [
+      "It would make each of the four existing applications run faster on its own server",
+      "A single transaction would update finance, inventory, and analytics from one entry against a shared data core, eliminating re-keying and reconciliation conflicts",
+      "It would remove the need for any underlying database by storing reports as static files",
+      "It would let each department keep its own separate database while emailing nightly summaries to the others"
+    ],
+    "correct": 1,
+    "rationale": "ERP's core value is integration onto one shared data core, so a single keystroke propagates across departments and ends duplicate entry and reconciliation drift. The others describe speed, database removal, or continued siloing, none of which is ERP's defining benefit."
+  },
+  {
+    "domain": "Information Systems",
+    "emulates": "CLEP",
+    "q": "A bookstore database has a Titles table with columns (title_id PK, name, isbn, publisher_id) and a Publishers table with columns (publisher_id PK, publisher_name, city). An analyst needs a report listing each book's name alongside its publisher's name without storing the publisher name twice. Which design element makes this possible, and what operation produces the report?",
+    "opts": [
+      "publisher_id in Titles is a foreign key referencing Publishers' primary key; a JOIN on publisher_id combines the rows",
+      "publisher_id in Titles is the primary key of Titles; an INSERT copies the publisher name into each book row",
+      "publisher_name is an index on Titles; a DELETE removes duplicate publisher rows before reporting",
+      "isbn is a foreign key referencing Publishers; a stored procedure duplicates the publisher name into Titles"
+    ],
+    "correct": 0,
+    "rationale": "publisher_id in Titles points at the Publishers primary key (a foreign key), and a JOIN on it links the tables so the name is stored once and referenced. The distractors misidentify keys, conflate INSERT/DELETE/indexes with linking, or duplicate data, defeating normalization."
+  },
+  {
+    "domain": "Information Systems",
+    "emulates": "CLEP",
+    "q": "At Cedar Analytics, the marketing dashboard reports 'active users' as 41,200 while the finance dashboard reports 'active users' as 33,500 for the same month. An audit confirms the raw event data is clean and identical; marketing counts anyone who logged in, while finance counts only users with a paid session. What is the correct data-governance remedy?",
+    "opts": [
+      "Purchase a faster business-intelligence tool so both dashboards refresh from the same cache",
+      "Delete the finance dashboard and standardize on the higher marketing figure",
+      "Assign a data owner and publish one documented definition of 'active user' as a single source of truth that both teams pull from",
+      "Encrypt the underlying event table so only one team can query it at a time"
+    ],
+    "correct": 2,
+    "rationale": "The data is clean; the failure is two undocumented definitions sharing one name, which governance fixes by naming an owner and publishing a single agreed definition. Faster tools, deleting a dashboard, or encryption address neither the definitional conflict nor accountability."
+  },
+  {
+    "domain": "Information Systems",
+    "emulates": "CLEP",
+    "q": "An e-commerce checkout must perform three database writes for a single purchase: decrement inventory by 1, insert an order record, and post a charge to the ledger. During one checkout, the inventory decrement and order insert succeed but the ledger write fails because the accounts service is down. Which relational-database feature ensures the database is NOT left in a half-completed, inconsistent state?",
+    "opts": [
+      "An index on the inventory column that speeds up the lookup",
+      "Wrapping the three writes in a transaction so that if any write fails, the whole set rolls back",
+      "A view that pre-joins the inventory and order tables for reporting",
+      "A foreign key linking the order record to the customer table"
+    ],
+    "correct": 1,
+    "rationale": "A transaction bundles the writes so a single failure rolls back the entire set, preserving consistency (the ACID guarantee). Indexes speed reads, views save query logic, and foreign keys enforce referential links, but none prevent a partially applied multi-write update."
+  },
+  {
+    "domain": "Information Systems",
+    "emulates": "CLEP",
+    "q": "Northwind Health is standing up a data-governance program. During the discovery phase it finds a customer table containing names, email addresses, and Social Security numbers. A new policy states that any field classified as personally identifiable information (PII) must be masked in all reports. To enforce this policy correctly, which sequence of governance activities applies?",
+    "opts": [
+      "Mask every column first, then decide later which fields are PII and unmask the rest",
+      "Classify the SSN field as PII, then apply the masking rule to that classified field wherever it is reported",
+      "Index the SSN column so masking runs faster, then skip classification since the policy already exists",
+      "Assign a data owner to the email field only, since SSNs are stored in the ERP and fall outside governance"
+    ],
+    "correct": 1,
+    "rationale": "Governance enforces a policy by first classifying the field (SSN as PII) and then applying the rule (masking) to that classification. Blanket masking, treating an index as a substitute for classification, or excluding SSNs from governance all misorder or skip the classify-then-enforce logic."
+  },
+  {
+    "domain": "Information Systems",
+    "emulates": "CLEP",
+    "q": "A regional manufacturer with three plants, one currency, and roughly 400 employees is selecting an ERP. It wants low up-front IT overhead, a subscription model, and a system sized for a growing mid-market firm rather than a multinational. Which combination of deployment model and ERP tier BEST fits these requirements?",
+    "opts": [
+      "On-premise deployment on a Tier 1 multinational platform such as SAP S/4HANA, for maximum control",
+      "Cloud (subscription) deployment on a Tier 2 mid-market platform such as NetSuite or Acumatica",
+      "On-premise deployment on an entry-level system intended for the smallest businesses",
+      "Cloud deployment on a Tier 1 platform built for multi-currency multinationals with long implementation timelines"
+    ],
+    "correct": 1,
+    "rationale": "Cloud deployment gives low IT overhead and a subscription model, and a Tier 2 platform is sized for growing mid-market firms, matching every stated requirement. Tier 1 systems are costly multinational-scale overkill, entry-level systems are too small, and on-premise adds the maintenance burden the firm wanted to avoid."
+  }
+]
