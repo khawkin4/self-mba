@@ -1,0 +1,20 @@
+{
+  "_comment": "Explicit EDGAR scope. EDGAR is a WORKED-EXAMPLE engine, not decoration. It appears ONLY in finance-relevant modules, integrated into the lesson (like Apple in Accounting). Non-financial modules (negotiation, leadership, culture, etc.) intentionally have NO EDGAR — filings teach nothing there.",
+  "use_edgar": {
+    "01-accounting":          {"tickers": ["AAPL", "MSFT"], "role": "read the 3 statements on a real 10-K; Apple vs Microsoft financial shape"},
+    "02-corporate-finance":   {"tickers": ["NVDA", "KO"],   "role": "build a DCF / margins from real cash flows; high-growth vs stable cashcow"},
+    "04-competitive-strategy":{"tickers": ["NFLX", "DIS"],  "role": "Five Forces backed by real risk factors + segment economics"},
+    "05-marketing-brand":     {"tickers": ["NKE"],          "role": "brand pricing power read in gross margin"},
+    "06-operations":          {"tickers": ["AMZN", "WMT"],  "role": "inventory turns / margin structure; Amazon vs Walmart ops"},
+    "12-capstone":            {"tickers": ["BRK-B"],        "role": "full integrative teardown"},
+    "E2-capital-allocation":  {"tickers": ["AAPL", "BRK-B"],"role": "buybacks vs reinvestment from real cash-flow statements"},
+    "E3-mergers-acquisitions":{"tickers": ["MSFT"],         "role": "acquirer balance-sheet capacity for deals"},
+    "E4-governance-board":    {"tickers": ["DIS", "JPM"],   "role": "DEF 14A proxies: exec comp + board structure"}
+  },
+  "no_edgar": [
+    "03-micro-strategy","07-data-analytics","08-negotiation","09-leadership-ob",
+    "10-entrepreneurship","11-global-macro","E1-leading-at-scale","E5-transformation",
+    "E6-crisis-leadership","E7-exec-presence-comms","E8-stakeholder-ir","E9-geopolitics-macro",
+    "E10-digital-ai","E11-operating-system","E12-culture-strategy"
+  ]
+}

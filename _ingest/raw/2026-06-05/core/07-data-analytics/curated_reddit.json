@@ -1,0 +1,176 @@
+[
+  {
+    "sub": "analytics",
+    "title": "What are you upskilling in ?",
+    "url": "https://reddit.com/r/analytics/comments/1r16e0l/what_are_you_upskilling_in/",
+    "ups": 186,
+    "comments": 83,
+    "created_utc": 1770742968.0,
+    "author": "TheOG_DeadShoT",
+    "selftext": "Hey Analysts / Senior Analysts / Analytics Managers,\n\nThe analytics and BI job market feels tough right now. Roles are becoming fewer, and many companies are combining responsibilities into a single position (for example: Data Engineering + Analytics).\n\nI wanted to ask \u2014 what are you currently upskilling in?\n\nIt feels like the days when SQL, Python, and BI skills alone could land a job are slowly fading. I\u2019m honestly a bit stressed because there are so many tools and technologies out there, and it\u2019s confusing to figure out what\u2019s actually worth learning.\n\nI\u2019m currently stuck in my organization and want to make a switch, but I\u2019m not sure what skills I should focus on to stay relevant and grow.\n\nWould really appreciate your suggestions.",
+    "id": "1r16e0l",
+    "signal": 0,
+    "hits": [],
+    "passages": [],
+    "edu_score": 8,
+    "edu_reasons": [
+      "teaches/explains",
+      "high engagement",
+      "rich discussion"
+    ]
+  },
+  {
+    "sub": "datascience",
+    "title": "I got three offers from a two month job search - here's what I wish I knew earlier",
+    "url": "https://reddit.com/r/datascience/comments/1pmmcwf/i_got_three_offers_from_a_two_month_job_search/",
+    "ups": 477,
+    "comments": 92,
+    "created_utc": 1765739818.0,
+    "author": "EvilGarlicFarts",
+    "selftext": "There's a lot of doom and gloom on reddit and elsewhere about the current state of the job market. And yes, it's bad. But reading all these stories of people going months and years without getting a job is the best way to ensure that you won't get a job either. Once you start panicking, you listen more to other people that are panicking and less to people who actually know what they're talking about. I'm not claiming to be one of those people, but I think my experience might be useful for some to hear.\n\nA quick summary of my journey: Worked for 5 years as a data scientist in Europe, moved to the US, got a job in San Francisco after 9 months, was laid off 9 months later, took several months off for personal reasons, and then got three good offers after about 2 months of pretty casual search. I've learnt a lot from this process though, and based on what I'm reading here and other places, I think many could benefit from learning from my experience. And for those with fewer years of experience reading this, you're definitely in a more difficult position than I was, but I still think many of my points are relevant for you as well.\n\nBefore I get to the actual advice, I want to flesh out my background a bit more, if you\u2019re interested in the context. If not, feel free to skip the next couple of paragraphs.\n\nI moved from Europe to the San Francisco area in the fall of 2023, after having worked as a data scientist for about 5 years at a startup. I did not consider myself a very talented DS at all, so I was very worried about not being able to find a job at all. With waiting for a work permit and being depressed for a while, it took me about 9 months before I started working, meaning that the gap on my resume kept growing while I was applying. I also did not have any network in the US, and had not had an interview for over 5 years, let alone one in the US interview culture.\n\nAfter struggling for months, I eventually got two offers in the same week; both came through LinkedIn, one through a cold referral ask, the other through reaching out to the HM directly (more on this in the \u201cReferrals are great, but not necessary\u201d section). I accepted one and worked there for 9 months before being part of a layoff. I then took about 4 months off before starting to apply seriously again (so yet another resume gap), and this time got three offers, two of which were remote. And I want to reiterate - I\u2019m not a great data scientist; not at all naturally inclined to do well in interviews; and I\u2019ve absolutely bombed a lot of them. But I feel like I\u2019ve really understood now what it takes to do well in the job market.\n\nSo, let\u2019s get to the meat of this: My learnings from two (eventually) successful job search journeys:\n\n# 1. Put yourself in the hiring manager\u2019s shoes!\n\nThis point is a bit fluffier than the rest, but I think it\u2019s actually the most important one, and most of the other points follow directly from this one. I\u2019d advice you to put aside your own feelings around how grueling the job search is for the job searcher, and think about this for a moment before moving on: It has never been harder to find a good candidate for a position. Every job posting gets bombarded with applications the moment it\u2019s posted, most of which are either fake (not a real person), severely unqualified, ineligible for the job (e.g. requiring visa sponsorship), or obviously AI generated. Also, be mindful of what the goal of the hiring manager is: Not to find the best possible candidate for this position - that\u2019s basically impossible for most jobs out there due to the volume of applications - but to find someone who is eligible to work, meets the technical requirements, is excited about the job, and is likely to accept an offer. And, most importantly, they want to achieve this while minimizing the number of candidates they interview. That\u2019s really, really difficult. So my first advice is: Feel empathy with the hiring manager! They\u2019re not enjoying this process either. Your approach to the job search should be to help the hiring manager realize that you\u2019re a great fit for this role.\n\n# 2. Only* apply for jobs that were recently posted\n\nFrom point 1, this should be obvious. Given the flood of applications, sending an application as soon as the job posting is opened dramatically increases your chances of your resume being read. Ideally you should apply within a day or two of the posting. \\*However, if you have (or can get) a referral, or your background aligns with the position very well, you should still apply (one of my offers were in this category), but you should also try other ways to boost your visibility in this case (see point 4).\n\n# 3. Only apply for jobs that actually interest you (or that you can at least make yourself interested in)\n\nThis might be a controversial point, and I\u2019d be interested in hearing your thoughts on this! But this was the insight that made the largest impact on my job search. When I first started searching, I was filtering jobs by whether or not I was somewhat qualified, and applied for every job where I thought I might pass the bar for being considered. In my first few months of the search, I probably applied for 5-20 jobs per day. I did spend a bit more time on the ones I was more interested in, but not a significant amount. This approach led to a lot of rejections, some recruiter calls that wen\u2019t tolerably well, but rarely did I progress past the HM interview, if I even got there.\n\nOnce I changed my approach to only consider jobs that interested me, my mindset changed fundamentally: I spent much more time on each application because I genuinely wanted to work there, not just anywhere. The process became more fun - I was more motivated to tailor my resume, send in my application quickly, reach out on LinkedIn, and prepare for the interviews. Also, as mentioned in point 1., one of the main things a recruiter and hiring manager are looking for is someone who actually really wants to work there. When the recruiter asks you why you applied for the position, your answer (while it can be prepared in advance) should be genuine, and you should show that excitement.\n\n# 4. Referrals are great, but not necessary\n\nAs mentioned in my background, I had no contacts in the US job market, but I still got 5 offers over the course of 1.5 years. Three were from cold applications, one from a LinkedIn-sourced referral, and one from reaching out to the HM on LinkedIn. So, while a standard application can definitely be enough, there are things you can do to increase your chances dramatically even without a network. I\u2019ll briefly describe the two methods that has worked for me:\n\n**a. Ask for referrals**\n\nA lof of people sympathize with you in your job search, and even if they\u2019re not the hiring manager, they also want the position to be filled. In addition, most people enjoy helping someone else. Keep in mind though: You have to meet them halfway. Make it easy for them to help you. Here\u2019s an example of a message I received that, while very polite and polished, did not make me eager to help this person:\n\n&gt;My name is XXX nice to meet you! I currently am a Chemical Engineer at 3M and have a passion for sustainability and I came across you and your previous company YYY.\n\n&gt;I would love to have a chance to meet you and and discuss what type of work you were involved in, and what your honest experience was like at YYY. Let me know if you would be willing to. Thanks!\n\nFor one, it\u2019s not clear what their goals are. I assume they are fishing for an eventual referral, but I don\u2019t want to meet with someone if they\u2019re not upfront about why they want to meet. Secondly, they\u2019re setting the barrier way to high: They\u2019re asking for a call to discuss my experience at a company I no longer work for.\n\nNot to tout my own horn here, but here\u2019s an example of a message I wrote which later ended up in a referral, and eventually a job offer:\n\n&gt;Hi XX,\n\n&gt;I was wondering if I could ask you some questions about what it's like to work with analytics engineering at YY? An AE position was just posted that looks very interesting to me, but with a somewhat different description than a typical AE role.\n\n&gt;Thanks!\n\nIn my opinion, this works because it makes it clear what I want (at least for now - I ask for a referral later in the conversation, but only after I\u2019ve clearly shown my interest and appreciated their help), and most importantly, I make it easy for them to engage. All they have to say is \u201cSure!\u201d.\n\n**b. Contact the hiring manager**\n\nThere are lots of posts on how to efficiently use LinkedIn in your job search, so I won\u2019t go into technical details here, but if you can find the hiring manager (or recruiter, though my success rate there is lower) on LinkedIn, try engaging with them! For one of my offers, I found that the HM had made a post on LinkedIn a couple of days before about the job opening, but there was very little engagement. My comment was simple - two sentences, very briefly stating my relevant experience, and that I've already applied.\n\nIt\u2019s worth repeating: Your goal is to help the HM see that you are a good fit for this role, while being mindful of their time. The opposite of that is comments like this:\n\n&gt;Hello! I am interested and would love to know more on this. I have a lot of experience in chemical engineering and data analysis, so I am very excited about this role. My email address is: [xxx@gmail.com](mailto:xxx@gmail.com)\n\nThis puts the burden on the HM to reach out to them, and to the HM, does not show any excitement about the role. From the HM\u2019s perspective, if they were actually excited, they would have put in more effort.\n\n# 5. Optimize your resume, but not for the AI\n\nYour resume is (most likely) not being filtered by an AI, so don\u2019t write your resume to optimize it for the AI! Obviously I\u2019m not a recruiter so don\u2019t take my word for this, but I\u2019ve seen plenty of writing from people who are not recruiters talking about AI filtering out candidates, and plenty of writing from actual recruiters saying this is not true (e.g. [from Matt Hearnden](https://www.linkedin.com/posts/matthearnden_jobsearchstrategies-jobseekertips-mythbusting-activity-7178752657287761921-EuVG?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAA9ETNgB78IwolyXuuK2cKuagOwBigm5I1s), who also co-hosted the excellent podcast [\\#opentowork](https://open.spotify.com/show/6zsTRagBhzqRA2TTLnpqH), which was very helpful in my job search).\n\nThat being said, do optimize your resume. How to do this has been repeated ad nauseum in other posts, so I\u2019ll be brief: Most importantly, every bullet point needs to show impact. Secondly, tailor your resume to the job description, for two reasons: One, obviously, to show that you can do the job. But secondly, to show that you are interested enough in the job to actually spend time on tailoring your resume! In the current state of AI-built resumes flying all over the place, an easy way to stand out is by showing you put in an effort.\n\n# 6. Prepare well for interviews\n\nThis goes without saying, so I\u2019ll just focus on the learnings that have been most useful to me. First, have your one-minute pitch about yourself locked down, and try to connect it to the company\u2019s mission and values as much as you can (I typically gave the same intro in every interview, and then ended it by connecting my experience and goals to what the company is doing). Secondly, really take the time to prepare for the behavioral interviews. I\u2019ve found practicing with an AI on this to be very useful - I\u2019d paste in the JD and some info about the company, and ask it to come up with potential questions I might be asked, to which I prepared and wrote down answers for. And third, for technical interviews, two pieces of advice: First, \u201cAce the data science interview\u201d - it\u2019s expensive, but absolutely worth it (I think chapter 3 on cold emails is quite outdated, but the rest of the book is gold - especially the product sense chapter and the exercises at the end of it!). Second, if you bomb a technical interview because you were asked about things you just didn\u2019t know, or the coding problems were too difficult - then you probably wouldn\u2019t have enjoyed the job anyways!\n\n# 7. Be excited!\n\nIt\u2019s been somewhat of a red thread through this whole post, but it bears repeating at the end: Be excited about the position you\u2019re applying and interviewing for! And if you\u2019re interviewing over video, be doubly excited, as emotions don\u2019t transmit as well through a screen. Smile as much as you can, especially in the first few minutes. This really makes a difference - it makes the interviewer more relaxed and excited to interview you, which in turns can make you more relaxed and perform better. Show the interviewer that you want to work with them. If you are excited about the role, it will also be easier to come up with good and genuine questions at the end that shows the interviewer that you\u2019re serious about the role.\n\nIf you\u2019ve read this far, thank you so much! I would love to hear your thoughts or disagreements, or if you think I\u2019m totally missing the mark on something. I\u2019m actually mostly writing this up for my own sake, so that the next time I\u2019m applying for jobs I can do so with confidence and manifest success.\n\n",
+    "id": "1pmmcwf",
+    "signal": 2,
+    "hits": [
+      "struggling",
+      "i wish"
+    ],
+    "passages": [
+      {
+        "phrase": "struggling",
+        "text": "any network in the US, and had not had an interview for over 5 years, let alone one in the US interview culture.\n\nAfter struggling for months, I eventually got two offers in the same week; both came through LinkedIn, one through a cold referral ask,"
+      }
+    ],
+    "edu_score": 6,
+    "edu_reasons": [
+      "substantive write-up",
+      "high engagement",
+      "rich discussion"
+    ]
+  },
+  {
+    "sub": "datascience",
+    "title": "A decade of being an average Data Scientist! My personal experience.",
+    "url": "https://reddit.com/r/datascience/comments/1t2nasr/a_decade_of_being_an_average_data_scientist_my/",
+    "ups": 1548,
+    "comments": 156,
+    "created_utc": 1777819326.0,
+    "author": "tits_mcgee_92",
+    "selftext": "Hello! I know there's people here with PhDs, working in FAANG, on top of the newest tech, and are absolutely brilliant Data Scientists.\n\nI'm not one of them.\n\nI've worked in medium to small companies with outdated technology, companies where I'm the only Analyst/Scientist, and places you've most likely never heard of. I don't do anything extraordinary, don't consider myself smart/brilliant, and I wouldn't pass a current day FAANG interview.\n\nBut I have still had an amazing experience being a Data Scientist, and I have made real impact with companies I've worked in. I still interview at companies and have no issues getting job offers (although it's much more difficult right now). I've always had a hunger and drive to learn new things, but I found that I have had a knack for translating complicated information into a way anyone can understand.\n\nI make sure I'm kind, compassionate, and show anyone that data can be interesting and fun. I don't live to make myself look smarter, especially at the expense of other people, so I love breaking down complicated concepts in a way anyone can understand!\n\nI love showing insight from data and directions we can go. I enjoy building models - even if a lot of them go nowhere. Some of the biggest impacts and decisions companies have made have come from bar charts and basic KPIs.\n\nAnd I plan to keep doing it. I'm so average, maybe even below average, but I love what I do and I lean into what I'm good with. I have seen such a drastic change in the field, especially with AI, and I'm currently adapting to those changes too. \n\nAnyway, I just wanted to share my positive experience from someone who is painfully average lol!! I wanted to show people, especially new grads and/or people pivoting into the field, that you don't have to be the smartest person in the room to get hired. You need to drill into the solid foundations and a have a drive to make change/bring value to a company.",
+    "id": "1t2nasr",
+    "signal": 1,
+    "hits": [
+      "painful"
+    ],
+    "passages": [
+      {
+        "phrase": "painful",
+        "text": "'m currently adapting to those changes too. \n\nAnyway, I just wanted to share my positive experience from someone who is painfully average lol!! I wanted to show people, especially new grads and/or people pivoting into the field, that you don't hav"
+      }
+    ],
+    "edu_score": 6,
+    "edu_reasons": [
+      "substantive write-up",
+      "high engagement",
+      "rich discussion"
+    ]
+  },
+  {
+    "sub": "datascience",
+    "title": "Data Science Has Become a Pseudo-Science",
+    "url": "https://reddit.com/r/datascience/comments/1lluwlv/data_science_has_become_a_pseudoscience/",
+    "ups": 2758,
+    "comments": 352,
+    "created_utc": 1751033504.0,
+    "author": "Raz4r",
+    "selftext": "I\u2019ve been working in data science for the last ten years, both in industry and academia, having pursued a master\u2019s and PhD in Europe. My experience in the industry, overall, has been very positive. I\u2019ve had the opportunity to work with brilliant people on exciting, high-impact projects. Of course, there were the usual high-stress situations, nonsense PowerPoints, and impossible deadlines, but the work largely felt meaningful.\n\nHowever, over the past two years or so, it feels like the field has taken a sharp turn. Just yesterday, I attended a technical presentation from the analytics team. The project aimed to identify anomalies in a dataset composed of multiple time series, each containing a clear inflection point. The team\u2019s hypothesis was that these trajectories might indicate entities engaged in some sort of fraud.\n\nThe team claimed to have solved the task using \u201cgenerative AI\u201d. They didn\u2019t go into methodological details but presented results that, according to them, were amazing. Curious, nespecially since the project was heading toward deployment, i asked about validation, performance metrics, or baseline comparisons. None were presented.\n\nLater, I found out that \u201cgenerative AI\u201d meant asking ChatGPT to generate a code. The code simply computed the mean of each series before and after the inflection point, then calculated the z-score of the difference. No model evaluation. No metrics. No baselines. Absolutely no model criticism. Just a naive approach, packaged and executed very, very quickly under the label of generative AI.\n\nThe moment I understood the proposed solution, my immediate thought was \"I need to get as far away from this company as possible\". I share this anecdote because it summarizes much of what I\u2019ve witnessed in the field over the past two years. It feels like data science is drifting toward a kind of pseudo-science where we consult a black-box oracle for answers, and questioning its outputs is treated as anti-innovation, while no one really understand how the outputs were generated.\n\nAfter several experiences like this, I\u2019m seriously considering focusing on academia. Working on projects like these is eroding any hope I have in the field. I know this won\u2019t work and yet, the label generative AI seems to make it unquestionable. So I came here to ask if is this experience shared among other DSs?\n\n",
+    "id": "1lluwlv",
+    "signal": 0,
+    "hits": [],
+    "passages": [],
+    "edu_score": 6,
+    "edu_reasons": [
+      "substantive write-up",
+      "high engagement",
+      "rich discussion"
+    ]
+  },
+  {
+    "sub": "datascience",
+    "title": "Why do new analysts often ignore R?",
+    "url": "https://reddit.com/r/datascience/comments/1nnvss1/why_do_new_analysts_often_ignore_r/",
+    "ups": 2483,
+    "comments": 286,
+    "created_utc": 1758568716.0,
+    "author": "ElectrikMetriks",
+    "selftext": "",
+    "id": "1nnvss1",
+    "signal": 0,
+    "hits": [],
+    "edu_score": 6,
+    "edu_reasons": [
+      "teaches/explains",
+      "high engagement",
+      "rich discussion"
+    ]
+  },
+  {
+    "sub": "datascience",
+    "title": "Saved $100k per year by explaining how AI/LLM work.",
+    "url": "https://reddit.com/r/datascience/comments/1lux7bt/saved_100k_per_year_by_explaining_how_aillm_work/",
+    "ups": 1188,
+    "comments": 99,
+    "created_utc": 1752001399.0,
+    "author": "tits_mcgee_92",
+    "selftext": "I work in a data science field, and I bring this up because I think it's data science related.\n\nWe have an internal website that is very bare bones. It's made to be simplistic, because it's the reference document for our end-users (1000 of them) use.\n\nExecutives heard about a software that would be completely AI driven, build detailed statistical insights, and change the world as they know it.\n\nI had a demo with the company and they explained its RAG capabilities, but mentioned it doesn't really \"learn\" like the assumption AI does. Our repo is so small and not at all needed for AI. We have used a fuzzy search that has worked for the past three years. Additionally, I have already built out dashboards that retrieve all the information executives have asked for via API (who's viewing pages, what are they searching, etc.)\n\nI showed the c-suite executives our current dashboards in Tableau, and how the actual search works. I also explained what RAG is, and how AI/LLMs work at a high level. I explained to them that AI is a fantastic tool, but I'm not sure if we should be spending 100k a year on it. They also asked if I have built any predictive models. I don't think they quite understood what that was as well, because we don't have the amount of data or need to predict anything.\n\nNeedless to say, they decided it was best not to move forward \"for now\". I am shocked, but also not, that executives want to change the structure of how my team and end-users digest information just because they heard \"AI is awesome!\" They had zero idea how anything works in our shop.\n\nOh yeah, our company has already laid of 250 people this year due to \"financial turbulence\", and now they're wanting to spend 100k on this?!\n\nIt just goes to show you how deep the AI train runs. Did I handle this correctly and can I put this on my resume? LOL",
+    "id": "1lux7bt",
+    "signal": 0,
+    "hits": [],
+    "passages": [],
+    "edu_score": 6,
+    "edu_reasons": [
+      "substantive write-up",
+      "high engagement",
+      "rich discussion"
+    ]
+  },
+  {
+    "sub": "datascience",
+    "title": "I have run DS interviews and wow!",
+    "url": "https://reddit.com/r/datascience/comments/1lhuk01/i_have_run_ds_interviews_and_wow/",
+    "ups": 838,
+    "comments": 281,
+    "created_utc": 1750616001.0,
+    "author": "Fl0wer_Boi",
+    "selftext": "Hey all,\nI have been responsible for technical interviews for a Data Scientist position and the experience was quite surprising to me. I thought some of you may appreciate some insights.\n\nA few disclaimers: I have no previous experience running interviews and have had no training at all so I have just gone with my intuition and any input from the hiring manager. As for my own competencies, I do hold a Master\u2019s degree that I only just graduated from and have no full-time work experience, so I went into this with severe imposter syndrome as I do just holding a DS title myself. But after all, as the only data scientist, I was the most qualified for the task.\n\nFor the interviews I was basically just tasked with getting a feeling of the technical skills of the candidates. I decided to write a simple predictive modeling case with no real requirements besides the solution being a notebook. I expected to see some simple solutions that would focus on well-structured modeling and sound generalization. No crazy accuracy or super sophisticated models.\n\nFor all interviews the candidate would run through his/her solution from data being loaded to test accuracy. I would then shoot some questions related to the decisions that were made. This is what stood out to me:\n\n1. Very few candidates really knew of other approaches to sorting out missing values than whatever approach they had taken. They also didn\u2019t really know what the pros/cons are of imputing rather than dropping data. Also, only a single candidate could explain why it is problematic to make the imputation before splitting the data.\n\n2. Very few candidates were familiar with the concept of class imbalance.\n\n3. For encoding of categorical variables, most candidates would either know of label or one-hot and no alternatives, they also didn\u2019t know of any potential drawbacks of either one.\n\n4. Not all candidates were familiar with cross-validation\n\n5. For model training very few candidates could really explain how they made their choice on optimization metric, what exactly it measured, or how different ones could be used for different tasks.\n\nOverall the vast majority of candidates had an extremely superficial understanding of ML fundamentals and didn\u2019t really seem to have any sense for their lack of knowledge.\nI am not entirely sure what went wrong. My guesses are that either the recruiter that sent candidates my way did a poor job with the screening. Perhaps my expectations are just too unrealistic, however I really hope that is not the case. My best guess is that the Data Scientist title is rapidly being diluted to a state where it is perfectly fine to not really know any ML.\nI am not joking - only two candidates could confidently explain all of their decisions to me and demonstrate knowledge of alternative approaches while not leaking data.\n\nWould love to hear some perspectives. Is this a common experience?\n",
+    "id": "1lhuk01",
+    "signal": 0,
+    "hits": [],
+    "passages": [],
+    "edu_score": 6,
+    "edu_reasons": [
+      "substantive write-up",
+      "high engagement",
+      "rich discussion"
+    ]
+  },
+  {
+    "sub": "datascience",
+    "title": "The \"Unicorn\" is Dead: A Four-Era History of the Data Scientist Role and Why We're All Engineers Now",
+    "url": "https://reddit.com/r/datascience/comments/1lmi8j8/the_unicorn_is_dead_a_fourera_history_of_the_data/",
+    "ups": 610,
+    "comments": 110,
+    "created_utc": 1751101019.0,
+    "author": "petburiraja",
+    "selftext": "Hey everyone,\n\nI\u2019ve been in this field for a while now, starting back when \"Big Data\" was the big buzzword, and I've been thinking a lot about how drastically our roles have changed. It feels like the job description for a \"Data Scientist\" has been rewritten three or four times over. The \"unicorn\" we all talked about a decade ago feels like a fossil today.\n\nI wanted to map out this evolution, partly to make sense of it for myself, but also to see if it resonates with your experiences. I see it as four distinct eras.\n\n---\n\n### **Era 1: The BI &amp; Stats Age (The \"Before Times,\" Pre-2010)**\n\nRemember this? Before \"Data Scientist\" was a thing, we were all in our separate corners.\n\n*   **Who we were:** BI Analysts, Statisticians, Database Admins, Quants.\n*   **What we did:** Our world revolved around historical reporting. We lived in SQL, wrestling with relational databases and using tools like Business Objects or good old Excel to build reports. The core question was always, **\"What happened last quarter?\"**\n*   **The \"advanced\" stuff:** If you were a true statistician, maybe you were building logistic regression models in SAS, but that felt very separate from the day-to-day business analytics. It was more academic, less integrated.\n\nThe mindset was purely descriptive. We were the historians of the company's data.\n\n### **Era 2: The Golden Age of the \"Unicorn\" (Roughly 2011-2018)**\n\nThis is when everything changed. *HBR* called our job the \"sexiest\" of the century, and the hype was real.\n\n*   **The trigger:** Hadoop and Spark made \"Big Data\" accessible, and Python with Scikit-learn became an absolute powerhouse. Suddenly, you could do serious modeling on your own machine.\n*   **The mission:** The game changed from \"What happened?\" to **\"What's *going* to happen?\"** We were all building churn models, recommendation engines, and trying to predict the future. The Jupyter Notebook was our kingdom.\n*   **The \"unicorn\" expectation:** This was the peak of the \"full-stack\" ideal. One person was supposed to understand the business, wrangle the data, build the model, and then explain it all in a PowerPoint deck. The *insight* from the model was the final product. It was an incredibly fun, creative, and exploratory time.\n\n### **Era 3: The Industrial Age &amp; The Great Bifurcation (Roughly 2019-2023)**\n\nThis is where, in my opinion, the \"unicorn\" myth started to crack. Companies realized a model sitting in a notebook doesn't actually *do* anything for the business. The focus shifted from *building models* to *deploying systems*.\n\n*   **The trigger:** The cloud matured. AWS, GCP, and Azure became the standard, and the discipline of MLOps was born. The problem wasn't \"can we predict it?\" anymore. It was, **\"Can we serve these predictions reliably to millions of users with low latency?\"**\n*   **The splintering:** The generalist \"Data Scientist\" role started to fracture into specialists because no single person could master it all:\n    *   **ML Engineers:** The software engineers who actually productionized the models.\n    *   **Data Engineers:** The unsung heroes who built the reliable data pipelines with tools like Airflow and dbt.\n    *   **Analytics Engineers:** The new role that owned the data modeling layer for BI.\n*   The mindset became engineering-first. We were building factories, not just artisanal products.\n\n### **Era 4: The Autonomous Age (2023 - Today and Beyond)**\n\nAnd then, everything changed again. The arrival of truly powerful LLMs completely upended the landscape.\n\n*   **The trigger:** ChatGPT went public, GPT-4 was released, and frameworks like LangChain gave us the tools to build on top of this new paradigm.\n*   **The mission:** The core question has evolved again. It's not just about prediction anymore; it's about **action and orchestration**. The question is, **\"How do we build a system that can understand a goal, create a plan, and execute it?\"**\n*   **The new reality:**\n    *   **Prediction becomes a feature, not the product.** An AI *agent* doesn't just predict churn; it takes an *action* to prevent it.\n    *   **We are all systems architects now.** We're not just building a model; we're building an intelligent, multi-step workflow. We're integrating vector databases, multiple APIs, and complex reasoning loops.\n    *   **The engineering rigor from Era 3 is now the mandatory foundation.** You can't build a reliable agent without solid MLOps and real-time data engineering (Kafka, Flink, etc.).\n\nIt feels like the \"science\" part of our job is now less about statistical analysis (AI can do a lot of that for us) and more about the rigorous, empirical science of architecting and evaluating these incredibly complex, often non-deterministic systems.\n\nSo, that's my take. The \"Data Scientist\" title isn't dead, but the \"unicorn\" generalist ideal of 2015 certainly is. We've been pushed to become deeper specialists, and for most of us on the building side, that specialty looks a lot more like engineering than anything else.\n\nCurious to hear if this matches up with what you're all seeing in your roles. Did I miss an era? Is your experience different?\n\nEDIT: In response to comments asking if this was written by AI: The underlying ideas are based on my own experience.\n\nHowever, I want to be transparent that I would not have been able to articulate my vague, intuitive thoughts about the changes in this field with such precision. \n\nI used AI specifically for the structurization and organization of the content.",
+    "id": "1lmi8j8",
+    "signal": 0,
+    "hits": [],
+    "passages": [],
+    "edu_score": 6,
+    "edu_reasons": [
+      "substantive write-up",
+      "high engagement",
+      "rich discussion"
+    ]
+  }
+]

@@ -67,9 +67,15 @@ def load_module(mdir):
     for f in sorted(glob.glob(os.path.join(mdir, "yt_*.json"))):
         try: vids += json.load(open(f))
         except Exception: pass
-    for f in sorted(glob.glob(os.path.join(mdir, "reddit_*.json"))):
-        try: reddit += json.load(open(f))
+    # Prefer the educationally re-scored, curated Reddit set; fall back to raw pulls.
+    curated = os.path.join(mdir, "curated_reddit.json")
+    if os.path.exists(curated):
+        try: reddit = json.load(open(curated))
         except Exception: pass
+    else:
+        for f in sorted(glob.glob(os.path.join(mdir, "reddit_*.json"))):
+            try: reddit += json.load(open(f))
+            except Exception: pass
     # de-dupe videos by id, keep highest signal
     seen = {}
     for v in vids:
@@ -78,7 +84,7 @@ def load_module(mdir):
             seen[k] = v
     vids = sorted(seen.values(), key=lambda v: (int(v.get("signal", 0) or 0), len(v.get("transcript") or "")), reverse=True)
     reddit = [r for r in reddit if r.get("title")]
-    reddit.sort(key=lambda r: (int(r.get("signal", 0) or 0), int(float(r.get("ups", 0) or 0))), reverse=True)
+    reddit.sort(key=lambda r: (int(r.get("edu_score", 0) or 0), int(r.get("signal", 0) or 0), int(float(r.get("ups", 0) or 0))), reverse=True)
     edgar = []
     for f in sorted(glob.glob(os.path.join(mdir, "edgar_*.txt"))):
         edgar.append(open(f, encoding="utf-8").read())

@@ -43,39 +43,23 @@
 <div class="tr-body"><p>Welcome! In this brief video, we will be discussing decision making without probabilities. In this first part, we will consider Maximax or the optimistic approach, the maximin also known as conservative or pessimistic approach, and the minimax regret approach to decision-making. The table seen here is referred to as a payoff table or decision table. the alternate is on the left here in the rows are referred to as Decision Alternatives. They are the options available for the decision maker to choose from We will assume that the decision maker can only choose one of these alternatives - invest in bonds stocks, or mutual funds.</p><p>In the columns we have the economic conditions. Since the decision maker does not have control over these, we refer to them as states of nature or outcomes. The values in the table are called payoffs. They could be profit, cost, distance, time, and so on. In this example we treat them as profits. The Maximax or Optimistic approach Using this optimistic approach, we choose the alternative with the best possible payoff. Looking at Bonds the best payoff is 45. The best is 70 for stocks, and the best is 53 for mutual funds. The overall best is 70. Therefore the decision is to invest in stocks. The maximin or conservative approach.</p><p>Using this pessimistic approach we choose the alternative with the best of the worst payoffs. We first choose the the worst payoff in each alternative and then choose the best of the worst. Looking at Bonds, the worst payoff is 5, the worst is -13 for stocks and the worst is -5 for mutual funds. The best of these is 5. Therefore the pessimistic or conservative approach is to invest in bonds. The minimax regret approach. Using this approach which choose the alternative with the minimum of all maximum regrets across all alternatives. Regret, also known as opportunity loss is the difference between the best payoff in a particular state of nature and the actual payoff received.</p><p>For example, if the economy is growing, the best payoff is 70. If we happened to have invested in bonds, then the regret will be 70 - 40 which is 30. If we invested in stocks then there is no regret. If we invested in mutual funds, then the regrets is 70 minus 53 which is 17. Again, if the economy stable, the best payoff is 45, so if we invested in bonds, there is no regret, the regret is 45 - 30 if we invested in stocks, if we invested in mutual funds there is also no regret. For declining economy the best payoff is 5. If we invested in bonds, there is no regret; if we invested in stocks the regret is five minus -13 which is 18; if we invested in mutual funds, the regret is 5 minus -5 which is 10.</p><p>Here is the regret table. Since the decision is to be made based on minimax regret, we first determine the maximum regret for each alternative and then choose the minimum. For bonds, the maximum regret is 30. For stocks it is 18, and for mutual funds, it is 17. The minimum of these maximum regrets is 17. The decision is to invest in mutual funds. See you in part 2. Thanks for watching!</p></div></details></article><article class="card vid">
 <div class="card-head"><a class="ttl" href="https://www.youtube.com/watch?v=TwG_xRj9S_0" target="_blank" rel="noopener">Payoff Table: Expected Value and Perfect Information for Costs</a> </div>
 <div class="meta">Joshua Emmanuel · 2:58 · 246,802 views</div><details class="tr"><summary>Read transcript · ~422 words · 2 min read</summary>
-<div class="tr-body"><p>Welcome! In this video, I will briefly show how to make decision based on Expected Value using this Payoff Table consisting of costs. I will also show how to calculate the Expected Value of Perfect Information when payoffs are costs. To calculate expected values, we need the probabilities of the states of nature. Suppose the probability for s1 is 0.3, 0.5 for s2, and since the probabilities must add up to 1, we know that the probability for s3 is 0.2. The expected value for the decision alternative d1 is calculated as 0.3*12 + 0.5*9 + 0.2*13 and that gives 10.7. For d2, the expected value is 11.6.</p><p>And for d3, it is 12.5. Since payoffs are costs, we make a decision by choosing the alternative with the lowest expected value. And that in this case is 10.7 So the decision is d1. Now, the expected value of perfect information is calculated as the absolute value of the difference between the expected value with perfect information and the expected value without perfect information. That is, if we have perfect information about the states of nature, how much is that information really worth, on average. The best expected value obtained earlier, that is, 10.7 is the expected value without perfect information.</p><p>The expected value with perfect information, EVwPI, is calculated based on the idea that we know the state of nature that will occur with certainty before making the decision. So if we know s1 is going to occur, we will choose d3 because it has the lowest cost of 5. If we’re certain s2 will occur, we choose d1 since it has the lowest cost of 9. And if we’re sure it is s3, we choose d2 at the lowest cost of 8. The expected value with perfect information is thus calculated as .3*5 + .5*9 + .2*8 And that gives 7.6. So EVPI is calculated as the absolute value of 7.6 minus 10.7. Which gives the absolute value of -3.1 and that gives 3.1 Note that, in profit problems, EVwPI is generally higher than EVwoPI so the absolute value may not be required.</p><p>But it is important in cost problems because EVwPI is usually less or equal to EVwoPI in cost problems. And that’s it. Thanks for watching.</p></div></details></article></section><section id="discuss"><h2>Practitioner Discussions <span class="count">50</span></h2><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1oj4j9r/please_read_this_if_you_are_thinking_of_becoming/" target="_blank" rel="noopener">Please read this if you are thinking of becoming data analyst...</a> <span class="sig-hi">signal 3</span></div>
-<div class="meta">r/analytics · ▲ 388 · 💬 102 · u/Physical-Hedgehog-80</div>
-<p class="excerpt">FIRSTLY I want to preface this by saying this is going to be a bit of a rant - a lot of what I&#x27;m saying has already been said on this sub but I just want to get some things off my chest.
+<div class="tr-body"><p>Welcome! In this video, I will briefly show how to make decision based on Expected Value using this Payoff Table consisting of costs. I will also show how to calculate the Expected Value of Perfect Information when payoffs are costs. To calculate expected values, we need the probabilities of the states of nature. Suppose the probability for s1 is 0.3, 0.5 for s2, and since the probabilities must add up to 1, we know that the probability for s3 is 0.2. The expected value for the decision alternative d1 is calculated as 0.3*12 + 0.5*9 + 0.2*13 and that gives 10.7. For d2, the expected value is 11.6.</p><p>And for d3, it is 12.5. Since payoffs are costs, we make a decision by choosing the alternative with the lowest expected value. And that in this case is 10.7 So the decision is d1. Now, the expected value of perfect information is calculated as the absolute value of the difference between the expected value with perfect information and the expected value without perfect information. That is, if we have perfect information about the states of nature, how much is that information really worth, on average. The best expected value obtained earlier, that is, 10.7 is the expected value without perfect information.</p><p>The expected value with perfect information, EVwPI, is calculated based on the idea that we know the state of nature that will occur with certainty before making the decision. So if we know s1 is going to occur, we will choose d3 because it has the lowest cost of 5. If we’re certain s2 will occur, we choose d1 since it has the lowest cost of 9. And if we’re sure it is s3, we choose d2 at the lowest cost of 8. The expected value with perfect information is thus calculated as .3*5 + .5*9 + .2*8 And that gives 7.6. So EVPI is calculated as the absolute value of 7.6 minus 10.7. Which gives the absolute value of -3.1 and that gives 3.1 Note that, in profit problems, EVwPI is generally higher than EVwoPI so the absolute value may not be required.</p><p>But it is important in cost problems because EVwPI is usually less or equal to EVwoPI in cost problems. And that’s it. Thanks for watching.</p></div></details></article></section><section id="discuss"><h2>Practitioner Discussions <span class="count">8</span></h2><article class="card thread">
+<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1r16e0l/what_are_you_upskilling_in/" target="_blank" rel="noopener">What are you upskilling in ?</a> </div>
+<div class="meta">r/analytics · ▲ 186 · 💬 83 · u/TheOG_DeadShoT</div>
+<p class="excerpt">Hey Analysts / Senior Analysts / Analytics Managers,
 
-Don&#x27;t get me wrong, there are perks to being a DA, especially early career.  Depending on how you play it you can have the flexibility to jump into various different career paths : data science, SWE, data engineer etc. I also love how it gives you opportunities to bridge the gap between stakeholders and tech.
+The analytics and BI job market feels tough right now. Roles are becoming fewer, and many companies are combining responsibilities into a single position (for example: Data Engineering + Analytics).
 
-I&#x27;ve been working at my current company for a year and a half and while I am grateful I have a job g…</p></article><article class="card thread">
+I wanted to ask — what are you currently upskilling in?
+
+It feels like the days when SQL, Python, and BI skills alone could land a job are slowly fading. I’m honestly a bit stressed because there are so many tools and technologies out there, and it’s confusing to figure out what’s actually worth learning.
+
+I’m currently stuck in my organization…</p></article><article class="card thread">
 <div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1pmmcwf/i_got_three_offers_from_a_two_month_job_search/" target="_blank" rel="noopener">I got three offers from a two month job search - here&#x27;s what I wish I knew earlier</a> <span class="sig-hi">signal 2</span></div>
 <div class="meta">r/datascience · ▲ 477 · 💬 92 · u/EvilGarlicFarts</div>
 <p class="excerpt">There&#x27;s a lot of doom and gloom on reddit and elsewhere about the current state of the job market. And yes, it&#x27;s bad. But reading all these stories of people going months and years without getting a job is the best way to ensure that you won&#x27;t get a job either. Once you start panicking, you listen more to other people that are panicking and less to people who actually know what they&#x27;re talking about. I&#x27;m not claiming to be one of those people, but I think my experience might be useful for some to hear.
 
 A quick summary of my journey: Worked for 5 years as a data scientist in Europe, moved to t…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1nushh3/if_youre_considering_a_career_in_analytics_go_big/" target="_blank" rel="noopener">If you&#x27;re considering a career in analytics: Go big or go home!</a> <span class="sig-hi">signal 2</span></div>
-<div class="meta">r/analytics · ▲ 378 · 💬 101 · u/[deleted]</div>
-<p class="excerpt">As someone who has been in a perpetual state of pursuing data analytics as a career since 2014, here is my honest, bleak, and unadulterated opinion on the prospects in this field.
-
-If you think that data analytics will be anything like what you learned in a Google certification program or bootcamp, think again. Being a data analyst is no longer exclusively about providing insights through dashboards or reports. Companies seemingly want someone who understands the full tech stack backwards and forwards and who has deep understanding of ETLs, building pipelines, data architecture, etc. Basically…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1s9vluq/client_pulling_the_plug_moving_it_all_to_claude/" target="_blank" rel="noopener">Client pulling the plug, moving it all to Claude</a> <span class="sig-hi">signal 2</span></div>
-<div class="meta">r/analytics · ▲ 322 · 💬 128 · u/datawazo</div>
-<p class="excerpt">I&#x27;ve run a small analytics agency since 2017. Primarily in the database layer (organizing, cleaning prepping data) and then shipping it to PBI and Tableau for dashboards. 
-
-Met with one of my favorite clients today for our weekly and he said he doesn&#x27;t want to talk about PowerBI - he wanted to show me everything he&#x27;s built himself in Claude. 
-
-  
-What followed was an hour demo of - more or less - how he was planning on replacing us with this Claude Cowork pipeline. 
-
-Luckily they are good people, and they like us, the conversation was along the lines of 
-
-&quot;How can you support us transitioning …</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1swknnq/does_anyone_ever_get_tired_of_working_with_the/" target="_blank" rel="noopener">Does anyone ever get tired of working with the &quot;offshore&quot; team?</a> <span class="sig-hi">signal 2</span></div>
-<div class="meta">r/analytics · ▲ 273 · 💬 73 · u/Juicymoosie99</div>
-<p class="excerpt">At my current company, the offshore team is a group of like six associates that we can barely understand, and we offloaded a huge amount of our labor to them. Running certain reports, doing operational tasks, things like that. This used to be handled by junior analysts that we were hiring straight out of college and training and mentoring to be the future of our company. But that no longer happens anymore! Now, whenever we need help, just give it to the offshore team and manage them as if you are a project manager for a group of people that are paid very little, and managing a huge amount of r…</p></article><article class="card thread">
 <div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1t2nasr/a_decade_of_being_an_average_data_scientist_my/" target="_blank" rel="noopener">A decade of being an average Data Scientist! My personal experience.</a> <span class="sig">signal 1</span></div>
 <div class="meta">r/datascience · ▲ 1,548 · 💬 156 · u/tits_mcgee_92</div>
 <p class="excerpt">Hello! I know there&#x27;s people here with PhDs, working in FAANG, on top of the newest tech, and are absolutely brilliant Data Scientists.
@@ -85,60 +69,6 @@ I&#x27;m not one of them.
 I&#x27;ve worked in medium to small companies with outdated technology, companies where I&#x27;m the only Analyst/Scientist, and places you&#x27;ve most likely never heard of. I don&#x27;t do anything extraordinary, don&#x27;t consider myself smart/brilliant, and I wouldn&#x27;t pass a current day FAANG interview.
 
 But I have still had an amazing experience being a Data Scientist, and I have made real impact with companies I&#x27;ve worked in. I still interview at compani…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1lcemw6/dont_be_the_data_scientist_whos_in_love_with/" target="_blank" rel="noopener">Don’t be the data scientist who’s in love with models, be the one who solves real problems</a> <span class="sig">signal 1</span></div>
-<div class="meta">r/datascience · ▲ 853 · 💬 97 · u/Odd-One8023</div>
-<p class="excerpt">work at a company with around 100 data scientists, ML and data engineers.
-
-The most frustrating part of working with many data scientists and honestly, I see this on this sub all the time too, is how obsessed some folks are with using ML or whatever the latest SoTA causal inference technique is. Earlier in my career plus during my masters, I was exactly the same, so I get it.
-
-But here’s the best advice I can give you: **don’t be that person.**
-
-Unless you’re literally working on a product where ML is the core feature, **your job is basically being an internal consultant.** That means understa…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1poaw59/how_do_you_approach_largescale_text_analysis_when/" target="_blank" rel="noopener">How do you approach large-scale text analysis when results must be GDPR-safe?</a> <span class="sig">signal 1</span></div>
-<div class="meta">r/analytics · ▲ 832 · 💬 7 · u/Agile-Suit2937</div>
-<p class="excerpt">I’m interested in how people here handle large volumes of open-ended text (surveys, feedback, qualitative data) when privacy and compliance actually matter.
-
-Many LLM-based pipelines are fast, but in practice I’ve seen teams struggle with anonymization, reproducibility, explainability, and EU/GDPR constraints, especially when results are shared with non-technical stakeholders.
-
-What approaches have worked for you?
-
-Custom NLP pipelines, prompt-based workflows, hybrid rule + ML systems, or something else?</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1m7rsn4/i_miss_my_junior_days_as_an_analyst/" target="_blank" rel="noopener">I miss my junior days as an analyst…</a> <span class="sig">signal 1</span></div>
-<div class="meta">r/analytics · ▲ 624 · 💬 65 · u/SerpantDildo</div>
-<p class="excerpt">Back when I was an individual contributor, things were simple. I opened my laptop, drank my monster energy, and dove into a dashboard. My biggest challenge was figuring out why the campaign table had 14 different definitions of “spend.” Life was beautiful.
-
-Now I spend most of my time managing “stakeholder expectations,” navigating the political landscape like I’m playing 4D chess with people who’ve never opened a dashboard but have strong opinions about color palettes and KPI definitions.
-
-I used to optimize media mix models. Now I optimize the wording in Teams messages so I don’t step on toe…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1r0dvmw/an_easy_process_to_make_sure_your_executive_team/" target="_blank" rel="noopener">An easy process to make sure your executive team understands the data</a> <span class="sig">signal 1</span></div>
-<div class="meta">r/datascience · ▲ 587 · 💬 35 · u/takenorinvalid</div>
-<p class="excerpt">A lot of teams struggle making reports digestible for executive teams. When we report data with all the complexity of the methods, limitations, confounds, and measurements of uncertainty, management tends to respond with a common refrain:
-
-**&quot;Keep it simple. The executives can&#x27;t wrap their minds around all of this.&quot;**
-
-But there&#x27;s a simple, two-step method you can use to make sure your data reports are always understood by the people in charge:
-
-1. Fire the executives
-2. Celebrate getting rid of the dead weight
-
-You&#x27;ll find this makes every part of your work faster, better, and more enjoyable.</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1sqwb5l/ceo_cancels_bi_tooling_replaces_it_with_ai_breaks/" target="_blank" rel="noopener">ceo cancels BI tooling, replaces it with AI, breaks everything</a> <span class="sig">signal 1</span></div>
-<div class="meta">r/analytics · ▲ 446 · 💬 85 · u/nickvaliotti</div>
-<p class="excerpt">so i watched this happen with a client a coupla months ago. they had their dashboards in metabase, he cancelled &amp;gt; handed the team claude &amp;gt; &quot;dashboards are a waste and just go and ask ai&quot;. as you can guess he then called me saying he thinks he broke sth. 
-
-sales vp was pulling numbers and surprise surprise they didnt match with finance. obvi, there were a couple different definitions for &quot;active customer&quot; too. claude (with all my love to the tool) was hallucinating  retention figures because the underlying tables hadn&#x27;t been cleaned since 2022. cherry on top data team spent their days exp…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1ofx66j/the_biggest_lie_in_data_is_the_single_source_of/" target="_blank" rel="noopener">The biggest lie in data is the &quot;single source of truth&quot;</a> <span class="sig">signal 1</span></div>
-<div class="meta">r/analytics · ▲ 196 · 💬 83 · u/writeafilthysong</div>
-<p class="excerpt">This is my own hot take that mirrors my struggles and experience.
-
-Is there a bigger lie in data or consulting than the DW companies promising that there is a &quot;single source of truth&quot; for data?
-
-1. The statement is a logical fallacy, a single source cannot give an objective truth.
-2. There is no way to capture all relevant data, there&#x27;s always going to be something missing (important or otherwise). Any analysis has bias.
-3. System complexity will always create compound errors, as will time.
-4. Humans interpret things differently no matter what.
-
-Anyone have another maxim or mantra that they di…</p></article><article class="card thread">
 <div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1lluwlv/data_science_has_become_a_pseudoscience/" target="_blank" rel="noopener">Data Science Has Become a Pseudo-Science</a> </div>
 <div class="meta">r/datascience · ▲ 2,758 · 💬 352 · u/Raz4r</div>
 <p class="excerpt">I’ve been working in data science for the last ten years, both in industry and academia, having pursued a master’s and PhD in Europe. My experience in the industry, overall, has been very positive. I’ve had the opportunity to work with brilliant people on exciting, high-impact projects. Of course, there were the usual high-stress situations, nonsense PowerPoints, and impossible deadlines, but the work largely felt meaningful.
@@ -147,34 +77,6 @@ However, over the past two years or so, it feels like the field has taken a shar
 <div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1nnvss1/why_do_new_analysts_often_ignore_r/" target="_blank" rel="noopener">Why do new analysts often ignore R?</a> </div>
 <div class="meta">r/datascience · ▲ 2,483 · 💬 286 · u/ElectrikMetriks</div>
 </article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1l9w0ln/significant_humor/" target="_blank" rel="noopener">Significant humor</a> </div>
-<div class="meta">r/datascience · ▲ 2,399 · 💬 62 · u/MamboAsher</div>
-<p class="excerpt">Saw this and found it hilarious , thought I’d share it here as this is one of the few places this joke might actually land. 
-
-
-Datetime.now() + timedelta(days=4)</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1mu3c6j/mit_report_95_of_generative_ai_pilots_at/" target="_blank" rel="noopener">MIT report: 95% of generative AI pilots at companies are failing</a> </div>
-<div class="meta">r/datascience · ▲ 2,303 · 💬 151 · u/CanYouPleaseChill</div>
-</article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1mlmwk0/ai_isnt_taking_your_job_executives_are/" target="_blank" rel="noopener">AI isn&#x27;t taking your job. Executives are.</a> </div>
-<div class="meta">r/datascience · ▲ 1,832 · 💬 182 · u/takenorinvalid</div>
-<p class="excerpt">If AI is ready to replace developers, why aren&#x27;t developers replacing themselves with AI and just taking it easy at work?
-
-I&#x27;m a Director at my company. I&#x27;m in the meetings and helping set up the tools that cost people their jobs. Here&#x27;s how they work:
-
-1. Claude AI writes some code
-
-2. The code gets passed to a developer for validation
-
-3. Since the developer&#x27;s &quot;just validating&quot;, he can be replaced with an overseas contractor that&#x27;ll work for a fraction of the pay
-
-We&#x27;ve tracked the tools, and we haven&#x27;t seen any evidence that having Claude take a crack at the code saves anybody any time - bu…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1lmv5uf/unpopular_opinion_these_are_the_most_useless/" target="_blank" rel="noopener">Unpopular Opinion: These are the most useless posters on LinkedIn</a> </div>
-<div class="meta">r/datascience · ▲ 1,328 · 💬 114 · u/OverratedDataScience</div>
-<p class="excerpt">LinkedIn influencers love to treat the two roles as different species. In most enterprises, especially in mid to small orgs, these roles are largely overlapping.</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1lohjp4/no_reason_to_complicate_things/" target="_blank" rel="noopener">No reason to complicate things.</a> </div>
-<div class="meta">r/datascience · ▲ 1,232 · 💬 75 · u/ElectrikMetriks</div>
-<p class="excerpt">There&#x27;s absolutely validity in doing more complex visuals.  But, sometimes simple is better if the audience is more likely to use it/understand it.</p></article><article class="card thread">
 <div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1lux7bt/saved_100k_per_year_by_explaining_how_aillm_work/" target="_blank" rel="noopener">Saved $100k per year by explaining how AI/LLM work.</a> </div>
 <div class="meta">r/datascience · ▲ 1,188 · 💬 99 · u/tits_mcgee_92</div>
 <p class="excerpt">I work in a data science field, and I bring this up because I think it&#x27;s data science related.
@@ -184,79 +86,12 @@ We have an internal website that is very bare bones. It&#x27;s made to be simpli
 Executives heard about a software that would be completely AI driven, build detailed statistical insights, and change the world as they know it.
 
 I had a demo with the company and they explained its RAG capabilities, but mentioned it doesn&#x27;t really &quot;learn&quot; like the assumption AI does. Our repo is so small and not at all needed for AI. We have use…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1qlb03x/went_on_a_date_and_the_girl_said_soooo_what_kind/" target="_blank" rel="noopener">Went on a date and the girl said... &quot;Soooo.... What kind of... data do you science???&quot;</a> </div>
-<div class="meta">r/datascience · ▲ 1,020 · 💬 157 · u/Training_Butterfly70</div>
-<p class="excerpt">Didn&#x27;t know what to say. Humor me with your responses.
-
-Update: I sent her this post and she loved it 🤣</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1l7cbkg/what_if_we_inverted_that_chart/" target="_blank" rel="noopener">&quot;What if we inverted that chart?&quot;</a> </div>
-<div class="meta">r/datascience · ▲ 987 · 💬 52 · u/ElectrikMetriks</div>
-</article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1srp178/warning_dont_get_gptbrained/" target="_blank" rel="noopener">Warning: Don&#x27;t get GPT-brained</a> </div>
-<div class="meta">r/datascience · ▲ 892 · 💬 114 · u/LeaguePrototype</div>
-<p class="excerpt">At my last role we had to move fast, so we relied on an LLM to help with a lot of the thinking and coding for us so we could focus on the business use case and managing meetings and stakeholders. The role was heavy on project management as well as development, research, and deployment so basically doing everything
-
-  
-While I got good at scoping projects and managing them, my technical skills totally deteriorated in less than 1 year. It&#x27;s scary going back to problems I know I can solve and but have some brain fog when getting to the answer. If I could have gone slower, had more time to thinkin…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1leh4wm/my_data_science_dream_is_slowly_dying/" target="_blank" rel="noopener">My data science dream is slowly dying</a> </div>
-<div class="meta">r/datascience · ▲ 851 · 💬 235 · u/FinalRide7181</div>
-<p class="excerpt">I am currently studying Data Science and really fell in love with the field, but the more i progress the more depressed i become.
-
-Over the past year, after watching job postings especially in tech I’ve realized most Data Scientist roles are basically advanced data analysts, focused on dashboards, metrics, A/B tests. (It is not a bad job dont get me wrong, but it is not the direction i want to take)
-
-The actual ML work seems to be done by ML Engineers, which often requires deep software engineering skills which something I’m not passionate about.
-
-Right now, I feel stuck. I don’t think I’d enj…</p></article><article class="card thread">
 <div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1lhuk01/i_have_run_ds_interviews_and_wow/" target="_blank" rel="noopener">I have run DS interviews and wow!</a> </div>
 <div class="meta">r/datascience · ▲ 838 · 💬 281 · u/Fl0wer_Boi</div>
 <p class="excerpt">Hey all,
 I have been responsible for technical interviews for a Data Scientist position and the experience was quite surprising to me. I thought some of you may appreciate some insights.
 
 A few disclaimers: I have no previous experience running interviews and have had no training at all so I have just gone with my intuition and any input from the hiring manager. As for my own competencies, I do hold a Master’s degree that I only just graduated from and have no full-time work experience, so I went into this with severe imposter syndrome as I do just holding a DS title myself. But after all, as …</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1mj8t3v/i_went_from_data_analyst_to_head_of_data_in_4/" target="_blank" rel="noopener">I went from Data Analyst to Head of Data in 4 years. AMA.</a> </div>
-<div class="meta">r/analytics · ▲ 835 · 💬 150 · u/InternationalStaff43</div>
-<p class="excerpt">For context, I quit my consulting job with nothing lined up about 5 years ago. The only skills I had from that role were SQL, Tableau, and some company-specific applications. I met a guy out in New York who was the CEO of a fast-growing startup and asked if he needed a data guy. I flew in for 5 in-person interviews and got the job. I used my SQL and Tableau skills, added Python and Excel, and was promoted to Lead Data Analyst after 1 year and more recently to Head of Data after making some large contributions to the company’s culture and top line.
-
-We were acquired by our top investor group an…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1rq3gud/no_one_else_to_tell_just_got_a_huge_promotion/" target="_blank" rel="noopener">No one else to tell.. just got a huge promotion.</a> </div>
-<div class="meta">r/analytics · ▲ 806 · 💬 91 · u/assblaster68</div>
-<p class="excerpt">Coming up on 5 years at my current company, 6 YOE.
-
-Just made director, and got a huge pay raise! Salary at 118k, and a bonus that brings TC to 160k/year.
-
-Track thus far:
-
-Year 1: Data Analyst - 51k
-
-Company change..
-
-Year 2: Data Analyst - 64k
-
-Year 3: Senior Data Analyst - 80k - Performance based promotion
-
-Year 4: Senior Data Analyst - 88k - 10% raise for performance
-
-Year 5: Senior Manager - 103k - New team
-
-Year 6: Director - 118k + 40k Bonus - Performance based
-
-Just hype. No team, no direct reports, just me and the grind.
-
-Edit: love all the haters :)</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1tjbn57/after_5_years_in_data_science_im_starting_to/" target="_blank" rel="noopener">After 5 years in data science, I’m starting to realize most “insights” we deliver are completely ignored. Is this normal?</a> </div>
-<div class="meta">r/datascience · ▲ 687 · 💬 153 · u/ExternalComment1738</div>
-<p class="excerpt">I’ve been in data science roles (both analytics and ML) for about 5 years now across a couple of companies. Lately I’ve been feeling a bit burned out because I keep seeing the same pattern:
-
-We spend weeks cleaning data, building dashboards, running statistical analysis, or training models… and then the stakeholders either:
-
-* Say “thanks” and never use it
-* Cherry-pick the numbers that support their existing opinion
-* Or just completely ignore the findings and go with gut feel anyway
-
-The worst part is when leadership asks for a “data-driven decision” but they’ve already decided what they wan…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1ld1nf6/just_tell_them_you_work_with_models_let_them/" target="_blank" rel="noopener">Just tell them you work with models.  Let them figure out the rest on their own.</a> </div>
-<div class="meta">r/datascience · ▲ 662 · 💬 15 · u/ElectrikMetriks</div>
-</article><article class="card thread">
 <div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1lmi8j8/the_unicorn_is_dead_a_fourera_history_of_the_data/" target="_blank" rel="noopener">The &quot;Unicorn&quot; is Dead: A Four-Era History of the Data Scientist Role and Why We&#x27;re All Engineers Now</a> </div>
 <div class="meta">r/datascience · ▲ 610 · 💬 110 · u/petburiraja</div>
 <p class="excerpt">Hey everyone,
@@ -269,136 +104,7 @@ I wanted to map out this evolution, partly to make sense of it for myself, but a
 
 ### **Era 1: The BI &amp;amp; Stats Age (The &quot;Before Times,&quot; Pre-2010)**
 
-Re…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1qyr7qc/i_helped_my_girlfriend_improve_her_invoices_in/" target="_blank" rel="noopener">I helped my girlfriend improve her invoices in Excel and it blew her mind</a> </div>
-<div class="meta">r/analytics · ▲ 591 · 💬 65 · u/Precogvision</div>
-<p class="excerpt">My girlfriend&#x27;s been creating invoices in Excel for her family&#x27;s business that&#x27;s overseas. But I realized it was taking her hours to create each invoice (she would have to translate all the factory info from Chinese/English, take basic calculations each time, and re-type a lot of fields. So I mentioned to her a while back that she would save so much time if she just created a template that automated the legwork of the process, but she didn&#x27;t seem convinced. 
-
-Well, yesterday, we finally sat down to look at it, and I made some pretty basic changes: a data-dump sheet in the background linked to …</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1oa93fw/anyone_else_tired_of_the_nonstop_llm_hype_in/" target="_blank" rel="noopener">Anyone else tired of the non-stop LLM hype in personal and/or professional life?</a> </div>
-<div class="meta">r/datascience · ▲ 576 · 💬 154 · u/BlackJack5027</div>
-<p class="excerpt">I have a complex relationship with LLMs. At work, I&#x27;m told they&#x27;re the best thing since the invention of the internet, electricity, or \[insert other trite comparison here\], and that I&#x27;ll lose my job to people who do use them if I won&#x27;t (I know I won&#x27;t lose my job). Yes, standard &quot;there are some amazing use cases, like the breast cancer imaging diagnostics&quot; applies, and I think it&#x27;s good for those like senior leaders where &quot;close enough&quot; is all they need. Yet, on the front line in a regulated industry where &quot;close enough&quot; doesn&#x27;t cut it,  what I see on a daily basis are models that:
-
-(a) can&#x27;…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1qrtgse/what_separates_data_scientists_who_earn_a_good/" target="_blank" rel="noopener">What separates data scientists who earn a good living (100k-200k) from those who earn 300k+ at FAANG?</a> </div>
-<div class="meta">r/datascience · ▲ 564 · 💬 206 · u/Tenet_Bull</div>
-<p class="excerpt">Is it just stock options and vesting? Or is it just FAANG is a lot of work. Why do some data scientists deserve that much? I work at a Fortune 500 and the ceiling for IC data scientists is around $200k unless you go into management of course. But how and why do people make 500k at Google without going into management? Obviously I’m talking about 1% or less of data scientists but still. I’m less than a year into my full time data scientist job and figuring out my goals and long term plans.</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1lzgfhq/i_suck_at_these_interviews/" target="_blank" rel="noopener">I suck at these interviews.</a> </div>
-<div class="meta">r/datascience · ▲ 535 · 💬 135 · u/JayBong2k</div>
-<p class="excerpt">I&#x27;m looking for a job again and while I have had quite a bit of hands-on practical work that has a lot of business impacts - revenue generation, cost reductions, increasing productivity etc 
-
-But I keep failing at &quot;Tell the assumptions of Linear regression&quot; or &quot;what is the formula for Sensitivity&quot;.
-
-While I&#x27;m aware of these concepts, and these things are tested out in model development phase, I never thought I had to mug these stuff up. 
-
-The interviews are so random - one could be hands on coding (love these), some would be a mix of theory, maths etc, and some might as well be in Greek and La…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1t19v2s/ds_market_is_kind_of_insane_right_now/" target="_blank" rel="noopener">DS market is kind of insane right now</a> </div>
-<div class="meta">r/datascience · ▲ 534 · 💬 160 · u/Alarming-Wish207</div>
-<p class="excerpt">So here&#x27;s the story: another team in my company opened an associate-level DS role last week, we got 300+ applications, and somehow there were 30+ senior-level guys applying for it. Not fake senior either. Like actually senior all with 10+ yoe. One of them even was a master from Harvard.
-
-I knew the market was bad, but seeing that kind of applicant piling up for an associate level role was still kind of unbelievable.
-
-Feels like a lot of experienced people are applying down-level after being laid off now just to stay employed. Which is fair enough, but also DAMN.
-
-Curious that are other people …</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/datascience/comments/1l8e4iq/the_higher_ups_asked_me_for_an_analysis_and_it/" target="_blank" rel="noopener">The higher ups asked me for an analysis and it worked.</a> </div>
-<div class="meta">r/datascience · ▲ 528 · 💬 45 · u/big_data_mike</div>
-<p class="excerpt">So I totally mean to brag here. Last week a group of directors said, “We suspect X is happening in the market, do we have data that demonstrates it?”
-
-And I thought to myself, here we go again. I’ve got to wade through our data swamp then tell them we don’t have the data that tells the story they want.
-
-Well I waded through the data swamp and the data was there. I made them a graph that definitively demonstrated that yes, X is happening as they suspected. It wasn’t super easy to figure out and it also didn’t require a super complex model to figure out either.</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1nojdxx/does_anybody_else_enjoy_injecting_random_utm/" target="_blank" rel="noopener">Does anybody else enjoy injecting random UTM parameters into company websites?</a> </div>
-<div class="meta">r/analytics · ▲ 462 · 💬 41 · u/thedevilsconcubine</div>
-<p class="excerpt">Sometimes when I open links with UTM parameters like`?utm_source=substack&amp;amp;utm_medium=email`, I like to swap the terms with values like `source=xhamster` and `medium=video`. Does anybody else have the same guilty pleasure? And for those actively working in analytics - what do you do to prevent this from showing up during your next all hands meeting reviewing acquisition performance?</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1q7c8z2/most_analytics_jobs_are_fake_productivity/" target="_blank" rel="noopener">Most analytics jobs are fake productivity</a> </div>
-<div class="meta">r/analytics · ▲ 451 · 💬 95 · u/Apprehensive_Pay6141</div>
-<p class="excerpt">This sounds harsh, but I can&#x27;t unsee it anymore. Dashboards get built. Metrics get tracked. Decks get shared.
-
-And almost nothing changes. It feels like analytics exists so companies can feel responsible, while still doing whatever leadership already decided.
-
-Sometimes I wonder if we’re just very well paid note takers for decisions that were never up for debate.
-
-Am I jaded, or is this way more common than people admit?</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1ra18vt/if_i_build_one_more_urgent_dashboard_that_gets/" target="_blank" rel="noopener">If I build one more &quot;urgent&quot; dashboard that gets zero views, I’m going to lose my mind.</a> </div>
-<div class="meta">r/analytics · ▲ 431 · 💬 66 · u/abralytics</div>
-<p class="excerpt">Context: I am the marketing analyst for a massive, global company. They have thousands of employees, endless layers of middle management, and a bottomless appetite for &quot;data-driven insights&quot; that nobody actually looks at.   
-  
-I’m hitting a wall, and I need to vent/get some advice before I just start sitting on my hands until its asked for 3 times.
-
-Here is the weekly cycle:
-
-* I get a frantic ping at 4:00 PM on a Tuesday. &quot;We need a deep dive on X. We needed this yesterday for a leadership sync.&quot;
-* I drop everything, pivot, clean the messy data, build the visualizations, provide some insight…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1r8hwhp/he_finally_did_it/" target="_blank" rel="noopener">he finally did it!</a> </div>
-<div class="meta">r/analytics · ▲ 343 · 💬 53 · u/sleepyhungryandtired</div>
-<p class="excerpt">apologies if this is inappropriate - i don’t know who to share this with who understands the relief and ecstasy i’m feeling currently
-
-i (21F) have been with my boyfriend (24M) for a little over 3 years. he graduated in management information systems and a ds minor as valedictorian of his major in 2023, and has been stuck in the job application rut for the last 3 years. after a year straight of self boredom via SQL dashboards &amp;amp; tableau projects, he applied for MS programs and began completing the georgia tech ms in analytics degree while applying, which he’ll be done with in december.
-
-13,…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1ok6rql/ever_since_i_was_young_i_wanted_to_transform/" target="_blank" rel="noopener">Ever since I was young, I wanted to transform unstructured data into actionable business insights</a> </div>
-<div class="meta">r/analytics · ▲ 321 · 💬 45 · u/techcouture</div>
-<p class="excerpt">I came across this line on a hat recently and couldn’t stop laughing. It made me wonder how many of us actually started in analytics because we liked finding patterns, and what we really love is solving problems. How many of you are able to bring data into the problem solving sphere as opposed to just delivering reports? I&#x27;m lucky that I&#x27;m in consulting now so I can be a bit more selective about what projects I take on and don&#x27;t. But I know that&#x27;s not possible for everyone.</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1qvil25/entry_level_roles_that_we_knew_of_is_going_to_be/" target="_blank" rel="noopener">Entry level roles that we knew of is going to be non-existent</a> </div>
-<div class="meta">r/analytics · ▲ 298 · 💬 118 · u/forbiscuit</div>
-<p class="excerpt">I work as a Senior/Staff DS at one of the $1T firms, and clocked 15 years in Data Analytics/Science roles. I have mentored hundreds of students who have passion in analytics the past 5 years: including resume checks, doing mock interviews, career guidance, and referrals for the exceptional students.
-
-However, the past year there has been significant top-down pressure to integrate AI into our workflow. This isn&#x27;t isolated in my firm, it&#x27;s impacting nearly every large company. Even the recent layoff from Amazon, Meta, and Google showed a lot of shedding of SWE roles, especially junior roles, giv…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1lsd772/people_are_wildly_delusional/" target="_blank" rel="noopener">People are wildly delusional</a> </div>
-<div class="meta">r/analytics · ▲ 268 · 💬 58 · u/Acceptable-Sense4601</div>
-<p class="excerpt">What’s the deal with people? “I took up space in college and never took math classes. In fact i hate math. I was going to go into art, but i can’t draw. Should i just dive right into making AI and ML models?” 
-
-These posts drive me nuts lol wtf</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1migjo0/teaching_data_analytics_has_made_me_realize_how/" target="_blank" rel="noopener">Teaching data analytics has made me realize how much AI is eroding critical thinking skills.</a> </div>
-<div class="meta">r/analytics · ▲ 261 · 💬 45 · u/tits_mcgee_92</div>
-<p class="excerpt">I just wanted to vent. I made an amusing post about this a few months back, but I wanted to talk about something a bit more serious: the erosion of critical thinking.
-
-I teach data analytics and data science concepts. One of my most common classes is &#x27;SQL and Database Foundations&#x27;. I encourage my students to use AI, but not let it think for them. We go over best practices and things not to do.
-
-When we get to the end of the semester, my students who relied solely on AI always get stuck. This is because the last weeks projects are data analysis scenarios, where the questions asked are a bit mor…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1r9wfd8/our_activation_rate_dropped_to_9_and_im_genuinely/" target="_blank" rel="noopener">Our activation rate dropped to 9% and I&#x27;m genuinely panicking right now.</a> </div>
-<div class="meta">r/analytics · ▲ 261 · 💬 60 · u/Prestigious-Bath8022</div>
-<p class="excerpt">Like not even joking, my hands are shaking typing this.
-
-We had a board meeting today and they asked why signups aren&#x27;t converting to active users and I had to sit there and explain that people sign up, look at our analytics dashboard, get confused and leave. And I&#x27;ve tried literally everything I can think of and nothing is working.
-
-The product is solid. Like genuinely good. Our paying customers love it. But getting new people to that point where they love it? Impossible apparently.
-
-My cofounder keeps saying just make the onboarding better like oh cool thanks never thought of that. Super hel…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1qqd9kr/everyone_is_an_analyst_now/" target="_blank" rel="noopener">Everyone is an analyst now</a> </div>
-<div class="meta">r/analytics · ▲ 231 · 💬 108 · u/Lairy_Mary</div>
-<p class="excerpt">I work for an organisation that is spending so many hours thinking about how it can give all 4000 employees Power BI access to do what they want. As an analyst I&#x27;m getting worn down as everywhere I go people are asking me if they can just do the data themselves, someone even asked me if they could copy my data model today. That&#x27;s with me providing really helpful reports, some with export functionality and I&#x27;m generally willing to help but my customer base is hundreds of people so I can&#x27;t give everyone everything they need all the time but that&#x27;s not unusual. In theory I love self serve but wha…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1rt3xm3/is_it_me_or_does_it_make_it_feel_like_their_sole/" target="_blank" rel="noopener">Is it me or does IT make it feel like their sole purpose is denying access to databases?</a> </div>
-<div class="meta">r/analytics · ▲ 221 · 💬 66 · u/captain_vee</div>
-<p class="excerpt">I met with IT today, our snowflake contract is ending so we need a game plan going forward. 
-
-This asshole “head of IT” tried to show me how I can pull all of that data in excel. Thanks - I love bloated excel workbooks and only being able to pull the metrics/segmentations that you deem useful and I love not being able to automate a damn thing.
-
-Is it just me and the places I work?</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1qjgrw6/anyone_else_still_just_work_in_excel_even_if/" target="_blank" rel="noopener">Anyone else still just work in excel even if you’re fluent in Python and sql?</a> </div>
-<div class="meta">r/analytics · ▲ 218 · 💬 54 · u/SerpantDildo</div>
-<p class="excerpt">I spend years getting fluent in Python and SQL, can spin up notebooks, write clean queries, even explain why window functions are beautiful. Then a stakeholder asks for “just a quick cut” from a messy dataset they own and suddenly I’m three coffees deep in Excel, dragging formulas like it’s 2009.
-
-There is something deeply efficient about opening a file, hitting VLOOKUP out of muscle memory, copy and pasting formulas, and shipping an answer in ten minutes instead of building a pipeline that is correct, elegant, reproducible, and completely unnecessary for the question being asked. Excel is not…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1p922f1/rant_about_recruiting_as_a_manager_of_data_science/" target="_blank" rel="noopener">Rant about recruiting as a manager of data science</a> </div>
-<div class="meta">r/analytics · ▲ 211 · 💬 140 · u/[deleted]</div>
-<p class="excerpt">Throwaway for obvious reasons. I honestly don’t think I’ll ever be able to hire people for the two headcounts I have on my team&#x27;s Langchain project.
-
-It used to be so smooth. I collaborated for years with an HR partner who understood our team&#x27;s needs, and the pipeline was great. Then that person was replaced by a new recruiter from a specific background, and suddenly, my candidate stream became a monoculture. I only get resumes from that one demographic now.
-
-Tbh I wouldn&#x27;t mind, because I understand that group is well represented in the CS field and the composition probably reflects that. How…</p></article><article class="card thread">
-<div class="card-head"><a class="ttl" href="https://reddit.com/r/analytics/comments/1r16e0l/what_are_you_upskilling_in/" target="_blank" rel="noopener">What are you upskilling in ?</a> </div>
-<div class="meta">r/analytics · ▲ 186 · 💬 83 · u/TheOG_DeadShoT</div>
-<p class="excerpt">Hey Analysts / Senior Analysts / Analytics Managers,
-
-The analytics and BI job market feels tough right now. Roles are becoming fewer, and many companies are combining responsibilities into a single position (for example: Data Engineering + Analytics).
-
-I wanted to ask — what are you currently upskilling in?
-
-It feels like the days when SQL, Python, and BI skills alone could land a job are slowly fading. I’m honestly a bit stressed because there are so many tools and technologies out there, and it’s confusing to figure out what’s actually worth learning.
-
-I’m currently stuck in my organization…</p></article></section></main>
+Re…</p></article></section></main>
 <div class="done-wrap"></div>
 <div class="pn-wrap"><a class="pn" href="core-06-operations.html">← 06 Operations &amp; Supply Chain</a><a class="pn next" href="core-08-negotiation.html">08 Negotiation →</a></div>
 <a href="#" class="top">↑ Top</a>

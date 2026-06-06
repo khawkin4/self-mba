@@ -169,6 +169,36 @@ Strategy before you can read a balance sheet.
 
 ---
 
+## The Canon (the reading layer)
+
+> Video and podcasts teach frameworks *fast*; books teach them *deep*. The Canon is the book
+> backbone — **44 distilled books across 13 clusters**, each as a note in `notes/canon/` using the
+> standard template, with the compounding fields the raw summaries lacked: **"Breaks when"** and
+> **`[[links]]`**. Index: [`notes/canon/CANON.md`](notes/canon/CANON.md).
+
+| Cluster | Books | Maps to |
+|---|---|---|
+| **Strategy** | Rumelt · Lafley & Martin · Porter · Bungay | 04, 12 |
+| **Leadership & Presence** | Grove (*High Output Mgmt*) · Marquet · Walsh · Scott | 09, E1, E7 |
+| **Mental Models & Thinking** | Munger · Meadows · Parrish · Kahneman | 07, E6, E11 |
+| **Org Design & Mechanisms** | Drucker · Larson · Bezos · Doerr | 09, E1, E8 |
+| **Landscape & Competitive** | Grove (*Only the Paranoid*) · Christensen · Helmer | 04, E9, 10 |
+| **Negotiation & Influence** | Fisher & Ury · Voss · Cialdini · Carnegie | 08, 05, E7 |
+| **Execution & Operations** | Bossidy & Charan · Goldratt · Ohno · 4DX | 06, E5, E1 |
+| **Culture & Change** | Schein · Kotter · Heath (*Switch*) · Horowitz | 09, E12, E5 |
+| **Risk, Uncertainty & Fragility** | Taleb (*Black Swan*) · Taleb (*Antifragile*) · Tetlock | 07, E6, E9 |
+| **Product Thinking & Innovation** | Ries · Thiel · Cagan | 10, E10, 04 |
+| **Power & Org Politics** | Pfeffer · Greene | 09, E1 |
+| **Personal Effectiveness** | Covey (*7 Habits*) · Newport · Clear | E11 |
+| **Financial Literacy for Operators** | Klarman · Mauboussin | 02, 07, E2 |
+
+**How it plugs into the loop:** when a course's framework comes up, pull the matching canon note and
+apply it to *one real company's data* (EDGAR via `_ingest/edgar.py`) — same Apply discipline as the
+data layer. Read one note, then follow its `[[ ]]` links to the two or three books it argues with;
+that disagreement *is* the compounding (e.g. Porter → Helmer → Christensen on what a moat really is).
+
+---
+
 ## Primary Data Sources (the empirical layer)
 
 > Content teaches the framework; **data lets you apply it to real companies.** This array
@@ -317,5 +347,6 @@ python3 edgar.py search "going concern"    # full-text search across ALL filers
 - [x] **Primary data array** — SEC EDGAR backbone + Damodaran/FRED/etc. (above)
 - [x] **Ingestion pipeline** — `_ingest/edgar.py` (built, tested on live SEC data) + `_ingest/README.md`
 - [x] **Course 01 seed** — worked 10-K note from real EDGAR data (`notes/01-accounting/aapl-10k-fy2025.md`)
+- [x] **The Canon** — 44 distilled books across 13 clusters in `notes/canon/` + index (`notes/canon/CANON.md`)
 - [ ] **Compounding loop** — `/schedule`d weekly auto-pull so content accumulates hands-free
 - [ ] **Research-skill wiring** — first transcript + Reddit batch per course (needs `/research` run)

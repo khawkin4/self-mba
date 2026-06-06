@@ -1,0 +1,36 @@
+# Note · Klein — *Sources of Power*
+
+> Canon · Cluster: Behavioral Design & Decision Science · Maps to **Course 07** (Data & Decision-Making), **E6** (Crisis Leadership)
+
+- **Source:** Gary Klein, *Sources of Power: How People Make Decisions* (1998)
+- **Core claim:** In **high-stakes, time-pressured** settings, experts **don't weigh pros and cons** —
+  they pattern-match. This is the pro-intuition counterweight to Kahneman's "distrust System 1."
+- **Framework — Recognition-Primed Decision (RPD):**
+  - The expert **recognizes a pattern** from experience → **mentally simulates a single course of
+    action** → if it works in the head, **executes**; only generates alternatives if the first option
+    fails simulation.
+  - This is why **experience matters** and why **expertise often can't be articulated** — it's tacit
+    pattern-matching built from thousands of cases (firefighters, ICU nurses, military commanders).
+  - Org implication: some decisions need analysis; **much of the time you should trust experienced
+    operators** and give them room to act on recognition.
+- **Applies when:** time-critical, recurring, feedback-rich domains where deep expertise exists —
+  incident response, operations, clinical/field judgment.
+- **Breaks when:** RPD is **only as good as the pattern library** — in **low-validity** environments
+  (noisy, slow/no feedback, non-recurring) the same confident intuition is *exactly* the System-1
+  trap Kahneman warns of ([[canon-kahneman-thinking-fast-and-slow]]). Kahneman & Klein's joint
+  "adversarial collaboration" resolved it: trust expert intuition **only** where the environment is
+  regular *and* the expert had repeated feedback to learn from. Misread the domain and recognition
+  becomes overconfident bias; it can also be hard to distinguish from noise
+  ([[canon-kahneman-sibony-sunstein-noise]]).
+- **Practitioner counterpoint:** (fill via `research` → r/sysadmin, r/emergencymedicine) — operators
+  describe "I just knew something was off" — real RPD; the discipline is knowing *which* domains
+  earn that trust. Grove's task-relevant maturity is the management hook
+  ([[canon-grove-high-output-management]]).
+- **Links:** [[canon-kahneman-thinking-fast-and-slow]] · [[canon-kahneman-sibony-sunstein-noise]] ·
+  [[canon-grove-high-output-management]] · [[canon-tetlock-superforecasting]]
+
+---
+### Rep
+Name one domain where you have *real* recognition (thousands of reps + fast feedback) and one where
+you only *feel* expert (rare events, slow feedback). Trust your gut in the first; force analysis in
+the second.

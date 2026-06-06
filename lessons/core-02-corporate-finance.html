@@ -1,0 +1,148 @@
+<!-- LESSON: Corporate Finance & Valuation — interactive, visual-first, grounded in the 02-corporate-finance corpus (Damodaran DCF lectures + WACC explainers). Real NVDA FY2026 & KO FY2025 numbers. -->
+<p class="lead">Accounting told you what a business <em>did</em>. Finance asks the harder question: <b>what is it worth right now?</b> The whole machine reduces to one idea — a dollar in the future is worth less than a dollar today, so to value anything you forecast its future cash and <b>discount it back</b>. This lesson builds that machine piece by piece, then turns it on two real companies: <b>NVIDIA</b> (high-growth) and <b>Coca-Cola</b> (a stable cash cow). Tap the cards, the diagrams, and the quizzes as you go.</p>
+
+<h2>1 · The one idea everything rests on: time value of money</h2>
+<p>Would you rather have $100 today or $100 in five years? Today — obviously. You could invest it, and there's risk you never see the future money at all. So future cash must be <em>shrunk</em> to compare it with cash in your hand. That shrinking is called <b>discounting</b>, and the rate you shrink it by is the <b>discount rate</b>.</p>
+<div class="equation">Present Value&nbsp; = &nbsp;Future Cash Flow&nbsp; ÷ &nbsp;(1 + r)<sup>n</sup></div>
+<p>Here <em>r</em> is the discount rate and <em>n</em> is how many years away the cash is. The further out the cash, the harder it shrinks. <b>Tap each bar</b> to watch $100 melt as it moves into the future at a 10% discount rate:</p>
+<figure class="viz">
+<svg viewBox="0 0 720 200" role="img" aria-label="A future $100 shrinking to its present value across years at a 10 percent discount rate">
+  <text x="0" y="16" class="vlabel">$100 received today</text>
+  <rect x="0" y="22" width="700" height="26" rx="4" class="bar-rev" data-tip="$100 today is worth exactly $100. No discounting — it is already in your hand."/>
+  <text x="350" y="40" class="bar-txt">$100.00 · now</text>
+  <text x="0" y="68" class="vlabel">$100 in 1 year ÷ (1.10)</text>
+  <rect x="0" y="74" width="636" height="26" rx="4" class="bar-gross" data-tip="$100 ÷ 1.10 = $90.90. One year of waiting at 10% knocks off about 9 dollars."/>
+  <text x="318" y="92" class="bar-txt">$90.90 · year 1</text>
+  <text x="0" y="120" class="vlabel">$100 in 3 years ÷ (1.10)³</text>
+  <rect x="0" y="126" width="526" height="26" rx="4" class="bar-gross" data-tip="$100 ÷ 1.10³ = $75.10. Compounding the discount three times cuts it by a quarter."/>
+  <text x="263" y="144" class="bar-txt">$75.10 · year 3</text>
+  <text x="0" y="172" class="vlabel">$100 in 5 years ÷ (1.10)⁵</text>
+  <rect x="0" y="178" width="435" height="26" rx="4" class="bar-net" data-tip="$100 ÷ 1.10⁵ = $62.10. Five years out, the same $100 is worth only about 62 cents on the dollar."/>
+  <text x="217" y="196" class="bar-txt">$62.10 · year 5</text>
+</svg>
+<figcaption>Same $100 every time — only the <em>timing</em> changes. Bar width = present value. Distance in time is the enemy of value.</figcaption>
+</figure>
+<div class="reveal">
+  <button class="reveal-q">🤔 So what <em>is</em> the discount rate, really?</button>
+  <div class="reveal-a"><p>It's the return you <em>demand</em> to part with your money, given the risk. Safe cash (a government bond) gets a low rate; risky cash (a startup's future profits) gets a high one. A higher discount rate shrinks future cash <em>harder</em> — which is exactly why risky companies are worth less per future dollar. We'll name this rate properly in Section 4.</p></div>
+</div>
+
+<h2>2 · Value vs. price — they are not the same thing</h2>
+<p>The market <em>price</em> is what people will pay today. <b>Intrinsic value</b> is what the cash flows are actually worth. They drift apart constantly — and the gap is where investors make (or lose) money. Damodaran hammers this point: pricing and valuing are two different jobs.</p>
+<blockquote class="srcq"><p>"The only way to address the question of whether the value dropped is to actually do an intrinsic valuation... pricing and value are different processes and we need to treat them differently."</p>
+<cite><a href="https://www.youtube.com/watch?v=qbSfHQNUGqg" target="_blank" rel="noopener">— Aswath Damodaran, "Session 1: Valuation - Themes and Overview"</a> · in your corpus</cite></blockquote>
+<p>The technique for computing intrinsic value is <b>Discounted Cash Flow (DCF)</b>: forecast a company's future cash, discount each year back to today, add it all up. That sum is the value. Everything else in this lesson is plumbing for that one sentence.</p>
+
+<h2>3 · The vocabulary — flip to learn</h2>
+<p>These are the exact words analysts use when they build a valuation. <b>Tap a card to flip it.</b></p>
+<div class="fc-grid">
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Present Value</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Today's worth of money you'll receive later, after discounting. The whole point of finance.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Discount Rate</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The return you demand for the risk of waiting. Higher risk → higher rate → smaller present value.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>DCF</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Discounted Cash Flow — forecast future cash, discount each year to today, sum it. = intrinsic value.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Free Cash Flow</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Cash left after running AND reinvesting in the business — the cash truly available to investors.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Cost of Equity</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The return shareholders demand. Risk-free rate + beta × the equity risk premium.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Cost of Debt</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The interest rate lenders charge — after tax, since interest is tax-deductible.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>WACC</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Weighted Average Cost of Capital — blend of cost of equity & debt by how much of each funds the firm. The discount rate for the whole business.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Terminal Value</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The value of all cash flows beyond the forecast — the company treated as a steady stream "in perpetuity."</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Intrinsic Value</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">What the cash flows are truly worth — vs. the market <em>price</em>, what people pay today.</span></span></button>
+</div>
+
+<h2>4 · The discount rate, named: cost of capital (WACC)</h2>
+<p>A business raises money two ways — from <b>equity</b> investors (owners) and from <b>lenders</b> (banks, bondholders). Each wants a return. Damodaran frames it cleanly: you must decide <em>whose</em> cash flows you're valuing.</p>
+<blockquote class="srcq"><p>"If I take a weighted average of your cost of equity and your cost of debt... You're taking a corporate finance class, right? What's that called? The cost of capital."</p>
+<cite><a href="https://www.youtube.com/watch?v=veSXjIzTa3c" target="_blank" rel="noopener">— Aswath Damodaran, "Session 3: Intrinsic and DCF Valuation - Laying the Groundwork"</a> · in your corpus</cite></blockquote>
+<p>To value the <em>whole business</em>, you discount the firm's cash by the blended cost of both money sources — the <b>WACC</b>:</p>
+<div class="equation">WACC&nbsp; = &nbsp;(E/V × Cost of Equity)&nbsp; + &nbsp;(D/V × Cost of Debt × [1 − tax])</div>
+<p>Where E is equity, D is debt, V = E + D. The cost of equity itself is built from a risk-free rate plus a risk premium scaled by <b>beta</b> (how volatile the stock is vs. the market):</p>
+<div class="equation">Cost of Equity&nbsp; = &nbsp;Risk-Free Rate&nbsp; + &nbsp;Beta × Equity Risk Premium</div>
+<div class="reveal">
+  <button class="reveal-q">🧮 Worked WACC (straight from the corpus)</button>
+  <div class="reveal-a"><p>Corporate Finance Institute's example "Brick-and-Mortar Co": cost of equity 15%, cost of debt 10%, 30% tax, $10M debt + $40M equity (so 80% equity / 20% debt). After-tax cost of debt = 10% × (1 − 0.30) = <b>7%</b>. WACC = (0.80 × 15%) + (0.20 × 7%) = 12% + 1.4% = <b>13.4%</b>. That 13.4% becomes the discount rate <em>r</em> from Section 1.</p></div>
+</div>
+<blockquote class="srcq"><p>"The combined cost is the weighted average cost of capital, which is the cost of funding the assets of the company."</p>
+<cite><a href="https://www.youtube.com/watch?v=iAYs2VFcB8g" target="_blank" rel="noopener">— Corporate Finance Institute, "Weighted Average Cost of Capital (WACC)"</a> · in your corpus</cite></blockquote>
+
+<h2>5 · Putting it together: the DCF formula</h2>
+<p>Now the machine assembles. Forecast <b>free cash flow</b> each year, discount each by the WACC, and add the <b>terminal value</b> for everything beyond your forecast:</p>
+<div class="equation">Value&nbsp; = &nbsp;Σ &nbsp;FCF<sub>t</sub> ÷ (1 + WACC)<sup>t</sup>&nbsp; + &nbsp;Terminal Value ÷ (1 + WACC)<sup>n</sup></div>
+<p>The Finance Storyteller describes exactly this assembly line — and warns it only works if your forecasts do:</p>
+<blockquote class="srcq"><p>"The value of a company today... is seen as the cash that the company currently has plus the estimates of future Free Cash Flows discounted back (using the Weighted Average Cost of Capital) to their present value."</p>
+<cite><a href="https://www.youtube.com/watch?v=1O-DbtVueMw" target="_blank" rel="noopener">— The Finance Storyteller, "WACC explained"</a> · in your corpus</cite></blockquote>
+<p>Once you have a business value, subtract debt to get <b>equity value</b>, divide by shares, and you have a per-share intrinsic value to compare against the market price.</p>
+
+<h2>6 · Two real companies: NVIDIA vs. Coca-Cola</h2>
+<p>A DCF is only as good as the <em>story</em> behind the numbers — and these two companies tell opposite stories. NVIDIA is a high-growth engine; Coca-Cola is a slow, dependable cash cow. Their real, latest figures show why. <b>Tap each bar.</b></p>
+<figure class="viz">
+<svg viewBox="0 0 720 230" role="img" aria-label="NVIDIA versus Coca-Cola revenue, gross profit and net income compared">
+  <text x="0" y="16" class="vlabel">NVIDIA — Revenue (FY end Jan 2026)</text>
+  <rect x="0" y="22" width="700" height="24" rx="4" class="bar-rev" data-tip="NVIDIA revenue: $215.94B. About 4.5× Coca-Cola's revenue."/>
+  <text x="350" y="39" class="bar-txt">$215.94B</text>
+  <text x="0" y="62" class="vlabel">NVIDIA — Gross Profit (71.1%) → Net Income (55.6%)</text>
+  <rect x="0" y="68" width="497" height="24" rx="4" class="bar-gross" data-tip="NVIDIA gross profit: $153.46B = 71.1% of revenue. Software-like margins."/>
+  <rect x="0" y="68" width="389" height="24" rx="4" class="bar-net" data-tip="NVIDIA net income: $120.07B = 55.6% net margin. It keeps over half of every dollar of sales."/>
+  <text x="245" y="85" class="bar-txt-sm">Net $120.07B · 55.6%</text>
+  <text x="0" y="120" class="vlabel">Coca-Cola — Revenue (FY end Dec 2025)</text>
+  <rect x="0" y="126" width="155" height="24" rx="4" class="bar-rev" data-tip="Coca-Cola revenue: $47.94B. Far smaller, but steady for decades."/>
+  <text x="77" y="143" class="bar-txt-sm">$47.94B</text>
+  <text x="0" y="166" class="vlabel">Coca-Cola — Gross Profit (61.6%) → Net Income (27.3%)</text>
+  <rect x="0" y="172" width="96" height="24" rx="4" class="bar-gross" data-tip="Coca-Cola gross profit: $29.54B = 61.6% of revenue. Strong, but below NVIDIA."/>
+  <rect x="0" y="172" width="42" height="24" rx="4" class="bar-net" data-tip="Coca-Cola net income: $13.11B = 27.3% net margin. Reliable, not explosive."/>
+  <text x="120" y="189" class="bar-txt-sm">Net $13.11B · 27.3%</text>
+</svg>
+<figcaption>All bars share one scale. NVIDIA's revenue alone (<b>$215.94B</b>) dwarfs Coca-Cola's whole income statement — and it keeps a far bigger slice as profit.</figcaption>
+</figure>
+<div class="example">
+<p><b>NVIDIA</b> — Gross margin = 153.46 ÷ 215.94 = <b>71.1%</b>. Net margin = 120.07 ÷ 215.94 = <b>55.6%</b>. Operating cash flow: <b>$102.72B</b>. It keeps more than half of every sales dollar as profit — a sign of a near-monopoly on AI chips.</p>
+<p><b>Coca-Cola</b> — Gross margin = 29.54 ÷ 47.94 = <b>61.6%</b>. Net margin = 13.11 ÷ 47.94 = <b>27.3%</b>. Operating cash flow: <b>$7.41B</b>. Lower margins, but a century of predictability.</p>
+<p><b>Why this matters for a DCF:</b> the <em>discount rate</em> and the <em>growth story</em> differ. Coca-Cola's cash is so predictable you can forecast it confidently and lean on a steady terminal value. NVIDIA's cash could compound spectacularly — or get competed away — so its forecast carries far more risk, which a careful analyst reflects in a higher discount rate and a much wider range of outcomes.</p>
+</div>
+
+<h2>7 · Check yourself</h2>
+<div class="quizq" data-correct="2">
+  <p class="q">At a 10% discount rate, is $100 received in 5 years worth more, the same, or less than $100 today?</p>
+  <button class="opt">More — it grows</button>
+  <button class="opt">Exactly the same</button>
+  <button class="opt">Less — about $62</button>
+  <p class="fb">$100 ÷ (1.10)⁵ = <b>$62.10</b>. Future cash is always worth less today; that shrinkage is discounting.</p>
+</div>
+<div class="quizq" data-correct="0">
+  <p class="q">A company is 80% equity (cost 15%) and 20% debt (after-tax cost 7%). What is its WACC?</p>
+  <button class="opt">13.4%</button>
+  <button class="opt">22.0%</button>
+  <button class="opt">11.0%</button>
+  <p class="fb">(0.80 × 15%) + (0.20 × 7%) = 12% + 1.4% = <b>13.4%</b> — the weighted blend of both money sources.</p>
+</div>
+<div class="quizq" data-correct="1">
+  <p class="q">A stock's market price is $42 but your DCF says its intrinsic value is $36. What does that gap suggest?</p>
+  <button class="opt">It's a bargain — buy</button>
+  <button class="opt">It looks overpriced — the market pays more than the cash is worth</button>
+  <button class="opt">Price and value are always equal</button>
+  <p class="fb">Price ($42) above intrinsic value ($36) means the market is paying more than the cash justifies — a potential <b>sell</b>. Price and value are different processes.</p>
+</div>
+
+<div class="pitfall">
+<h3>⚠️ Garbage in, garbage out: the discount-rate trap</h3>
+<p>Tiny changes in the discount rate swing the answer wildly. In Damodaran's Kennecott case, bankers justified an overpriced acquisition simply by using <em>too low</em> a discount rate: <em>"You take those same cash flows, you discount them at 10½%, you're going to come up with a much higher value... they used the wrong"</em> rate. A DCF can be made to "prove" almost any number. Always sanity-check the inputs, not just the output.</p>
+</div>
+
+<div class="pitfall subtle">
+<h3>🔎 One subtlety → your bridge to Course 03</h3>
+<p>Notice WACC contains an after-tax cost of debt, while equity gets no tax break — so <em>how much debt</em> a company carries changes its cost of capital and therefore its value. That trade-off — how much to borrow vs. fund with equity — is <b>capital structure</b>, the heart of the next course. Valuation tells you what a business is worth; capital structure asks how to finance it to be worth <em>more</em>.</p>
+</div>
+
+<div class="apply-box">
+<h3>🎯 Your move (the Course 02 output)</h3>
+<p>Run <code>python3 _ingest/edgar.py company KO</code> and <code>python3 _ingest/edgar.py company NVDA</code>. Pull each company's operating cash flow, then write a one-paragraph "story" for each: which is more predictable, which deserves a higher discount rate, and where you'd set a long-run growth rate for the terminal value. You've just sketched the front end of a real DCF.</p>
+</div>
+
+<div class="src-list">
+<h4>📚 Taught from these sources in your corpus</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=qbSfHQNUGqg" target="_blank" rel="noopener">Aswath Damodaran — Session 1: Valuation, Themes and Overview</a></li>
+<li><a href="https://www.youtube.com/watch?v=veSXjIzTa3c" target="_blank" rel="noopener">Aswath Damodaran — Session 3: Intrinsic and DCF Valuation, Laying the Groundwork</a></li>
+<li><a href="https://www.youtube.com/watch?v=1O-DbtVueMw" target="_blank" rel="noopener">The Finance Storyteller — WACC explained</a></li>
+<li><a href="https://www.youtube.com/watch?v=iAYs2VFcB8g" target="_blank" rel="noopener">Corporate Finance Institute — Weighted Average Cost of Capital (WACC)</a></li>
+<li><a href="https://www.youtube.com/watch?v=46oLXwClvkw" target="_blank" rel="noopener">Edspira — Weighted Average Cost of Capital (WACC)</a></li>
+</ul>
+<p style="margin:8px 0 0;color:var(--dim)">Full transcripts of every lecture are below ↓</p>
+</div>

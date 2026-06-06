@@ -1,0 +1,24 @@
+# JPMORGAN CHASE & CO  (CIK 19617)
+  SIC: National Commercial Banks  ·  Exchange: NYSE, NYSE, NYSE, NYSE, NYSE, NYSE, NYSE, NYSE, NYSE
+
+## Recent key filings
+  2026-06-02  8-K       acc:0001193125-26-253533
+  2026-05-27  8-K       acc:0001193125-26-242018
+  2026-05-21  8-K       acc:0000019617-26-000228
+  2026-05-07  8-K       acc:0001193125-26-211978
+  2026-05-01  10-Q      acc:0001628280-26-029344
+  2026-04-24  8-K       acc:0000019617-26-000119
+  2026-04-23  8-K       acc:0001193125-26-173739
+  2026-04-14  8-K       acc:0001628280-26-025013
+  2026-04-14  8-K       acc:0001628280-26-024990
+  2026-04-06  DEF 14A   acc:0000019617-26-000096
+  2026-02-23  8-K       acc:0001628280-26-010693
+  2026-02-13  10-K      acc:0001628280-26-008131
+
+## Key financials (latest annual, XBRL)
+  Revenues                 $182.45B   (FY end 2025-12-31)
+  NetIncome                 $57.05B   (FY end 2025-12-31)
+  Assets                 $4,424.90B   (FY end 2025-12-31)
+  Liabilities            $4,062.46B   (FY end 2025-12-31)
+  Equity                   $362.44B   (FY end 2025-12-31)
+  OperatingCashFlow       $-147.78B   (FY end 2025-12-31)
