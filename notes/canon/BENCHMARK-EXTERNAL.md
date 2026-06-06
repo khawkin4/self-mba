@@ -49,6 +49,46 @@
 | International Business | MFT-MBA international | scenario |
 | Communication | GMAT Reading Comp (adjacent) | applied judgment |
 
+## Real, previously-administered exams (public, WITH answer keys)
+
+> The truest "actuals": real graduate exams that were given to real students, posted free with
+> solutions. Verified live June 2026. **Copyright:** these are © their authors (Damodaran posts
+> freely but retains rights; MIT OCW is CC BY-NC-SA). The benchmark = *point the model (or yourself)
+> at the source PDF and score against the posted answer key* — do **not** copy the questions into
+> this repo. Each is a real, scoreable test battery.
+
+### Finance & Valuation — Aswath Damodaran (NYU Stern) · the motherlode
+The world's valuation authority, decades of his actual exams + Excel answer keys, free:
+- **Corporate Finance exams** — quizzes 1–3, a final, and **midterms spanning 1986–1997**, each with
+  Excel solution keys. → `pages.stern.nyu.edu/~adamodar/New_Home_Page/cfprob0.html`
+- **Valuation exams** — Quiz 1 (DCF basics), Quiz 2 (DCF loose ends + relative), Quiz 3 (relative +
+  private-company), Final (all valuation), all with Excel keys; an extensive historical set. →
+  `pages.stern.nyu.edu/~adamodar/New_Home_Page/eqexam.htm`
+- **Why it's ideal:** it *is* the valuation/capital-structure/risk hierarchy this project ranks first —
+  hundreds of graded, numerical, graduate-level questions with worked keys.
+
+### MIT Sloan — MIT OpenCourseWare (real Sloan course exams + solutions, free)
+- **15.401 Finance Theory I** (Fall 2008) — sample midterm + final with solution keys; most exam items
+  drawn from the posted *MIT Sloan Finance Problems and Solutions Collection*. →
+  `ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/pages/exams/`
+- **15.501 Introduction to Financial & Managerial Accounting** (Spring 2004) — finals from multiple
+  semesters (e.g. Dec-2002 final + solution), midterms, and an exam formula sheet. →
+  `ocw.mit.edu/courses/15-501-introduction-to-financial-and-managerial-accounting-spring-2004/pages/exams/`
+- **15.402 Finance Theory II** — practice midterm + final (capital structure, FCF valuation, WACC, APV).
+
+### Wharton (scattered, public)
+- FNCE 611/612 & ACCT 611 **waiver/placement exams** (full PDFs on `mba-inside.wharton.upenn.edu`).
+- FNCE 100 (Corporate Finance) midterm solutions on the instructor's `finance.wharton.upenn.edu` page.
+- *No* standardized "Wharton MBA final" exists — each professor writes their own; Terwiesch's 2023
+  operations-management exam (`mackinstitute.wharton.upenn.edu`) was a one-off research release.
+
+### Using these as a battery (no copying required)
+1. Pick a source exam (e.g. a Damodaran valuation final) — open the PDF from the link above.
+2. Answer it (you, or the model) **from the source**; grade against the posted Excel/PDF key.
+3. Record the score per topic; map to this file's domain table. Repeat across sources for breadth.
+> This is the highest-fidelity benchmark available for the finance/valuation stack — real exams, real
+> keys, real difficulty — and it sidesteps the copyright problem because nothing is reproduced here.
+
 ## How to read your two scores
 - **`benchmark-exam.html`** (our calibrated bank): an *application-level* proxy — harder than the
   lesson recall quizzes, written to the blueprints above. A weak domain here = a real study target.
