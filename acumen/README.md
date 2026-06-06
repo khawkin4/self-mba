@@ -16,13 +16,21 @@
   you gave me a matrix — give me a recommendation.* I do not write your memo.
 
 ## The loop (one case ≈ one rep)
+> Knowledge and reps interleave — you need a *floor* to start, then the rep itself tells you what to
+> learn next. Knowledge serves the rep; the rep directs the knowledge.
+
+0. **Prime** — before each rep, pull the *case-specific* knowledge from the shelf (`notes/canon`,
+   `lessons/`): the 3–5 frameworks the call actually needs + the figures to extract. Enough to make
+   the call competently — **not** everything. (`case-NN-prime.md`.)
 1. **Case set** — I give you a real company + a live, contestable decision. No fabricated numbers;
    you pull real data (EDGAR via `_ingest/edgar.py`).
 2. **You diagnose + decide** — name the *crux*, take a position, do the actual analysis.
 3. **You write the memo** — the 1-page exec deliverable (spec below). Take a stance; no hedging.
 4. **I red-team** — score on the rubric, then attack: the bear case, the hole, the question that
    sinks you in the boardroom.
-5. **Log** — update `JUDGMENT-LEDGER.md` with the score + the recurring pattern. This is how it
+5. **Learn the exposed gap** — the red-team surfaces exactly what you didn't understand. *That* is the
+   next study target — just-in-time, motivated, retained. This is how knowledge → understanding.
+6. **Log** — update `JUDGMENT-LEDGER.md` with the score + the recurring pattern. This is how it
    compounds — we watch your soft spots harden over cases.
 
 **Cadence:** ~1 case/week (or as fast as you want the reps). Difficulty escalates as scores rise.
