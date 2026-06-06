@@ -1,10 +1,10 @@
 {
   "date": "2026-06-05",
-  "elapsed_min": 18.9,
+  "elapsed_min": 22.1,
   "totals": {
-    "yt": 45,
-    "reddit": 27,
-    "edgar": 14
+    "yt": 53,
+    "reddit": 26,
+    "edgar": 0
   },
   "outdir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05"
 }

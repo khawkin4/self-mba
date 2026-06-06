@@ -1,0 +1,100 @@
+[
+  {
+    "sub": "startups",
+    "title": "Idea] A new kind of \"Integrated Social Network\" that replaces static PDF resumes and marriage biodatas with dynamic links anchored to your family tree. Thoughts? - I will not promote",
+    "url": "https://reddit.com/r/startups/comments/1twzsok/idea_a_new_kind_of_integrated_social_network_that/",
+    "ups": 0,
+    "comments": 8,
+    "created_utc": 1780605478.0,
+    "author": "Lost-Crab1444",
+    "selftext": "I’ve been working on a concept for an app called iTree (working name). I think it’s genuinely unique, but I need some brutal, honest product feedback to see if I'm missing a massive blind spot.\n\nThe Core Problem: \n\nContext Collapse &amp; The PDF Nightmare\n\nRight now, our digital identities are completely fragmented and stuck in the past.\n\n1. If you're job hunting, you're constantly updating static resume PDFs.\n\n2. If you're looking for a partner (especially in family-centric or community-based cultures like India), you're managing separate dating profiles or emailing traditional marriage \"biodata\" PDFs.\n\n3. On traditional social media, you suffer from \"context collapse\"—your boss, your grandmother, and a casual acquaintance all see the same profile.\n\nThe Solution: An Integrated Social Network\n\niTree is an integrated network built around an \"Identity Tree\" rather than an entertainment feed. It organizes your life by structural relationships—both familial and functional.\n\nHere’s the breakdown of how it works:\n\nThe Anchor (The Tree): You map your family tree. When your brother, cousin, or uncle joins, your trees link up automatically to form a verified kinship hierarchy.\n\nThe Gated Profiles: Within the app, you maintain three entirely separate, private profiles: Job (Resume), Dating, and Marriage.\n\nThe Dynamic Link: Instead of emailing a PDF, you send a secure link. If you update your employment history or marriage biodata on the app, the link automatically updates for anyone viewing it. No more version control issues.\n\nThe \"Social Navigation\" Magic:\n\nImagine you are at a large family gathering or a wedding. You see someone and wonder how you're related. Through the app, you can map the kinship instantly (e.g., \"Oh, she is my second cousin's long-distance cousin\"). If privacy permissions allow, you can request to view their shared profile or send a connection request.\n\nWhy This Layering Matters:\n\nUnlike LinkedIn or Tinder, having a verified family lineage built into the background of a profile adds a massive layer of trust and context, which is highly valuable in cultures where marriages are a union between families. For professional use, it makes community-based job referrals seamless, all while keeping your dating or marriage life completely invisible to recruiters.\n\nThe Honest Roadblocks (Where I need your feedback):\n\nI know the execution challenges are steep:\n\n1. The Trust/Privacy Wall: Putting your career, dating preferences, and entire family tree under one app roof is a massive data liability. Privacy controls would have to be incredibly granular (e.g., \"Only 3rd cousins can see my marriage profile, only recruiters can see my job link\")\n\n2. Onboarding Friction: Getting people to manually build out a family tree to unlock the network effects is a heavy lift.\n\n3. Legacy Systems: Corporate ATS (Applicant Tracking Systems) still love parsing raw PDFs.\n\nIs an integrated network like this a natural evolution for personal data management, or is it trying to do too much at once? Would you ever trust a platform like this, or would you stick to separate apps and PDFs?\n\nTear it apart!",
+    "id": "1twzsok",
+    "signal": 1,
+    "hits": [
+      "manually"
+    ],
+    "passages": [
+      {
+        "phrase": "manually",
+        "text": "d cousins can see my marriage profile, only recruiters can see my job link\")\n\n2. Onboarding Friction: Getting people to manually build out a family tree to unlock the network effects is a heavy lift.\n\n3. Legacy Systems: Corporate ATS (Applicant Tra"
+      }
+    ]
+  },
+  {
+    "sub": "startups",
+    "title": "Idea] A new kind of \"Integrated Social Network\" that replaces static PDF resumes and marriage biodatas with dynamic links anchored to your family tree. Thoughts? - I will not promote",
+    "url": "https://reddit.com/r/startups/comments/1twzpnw/idea_a_new_kind_of_integrated_social_network_that/",
+    "ups": 0,
+    "comments": 3,
+    "created_utc": 1780605291.0,
+    "author": "Lost-Crab1444",
+    "selftext": "I’ve been working on a concept for an app called iTree (working name). I think it’s genuinely unique, but I need some brutal, honest product feedback to see if I'm missing a massive blind spot.\n\nThe Core Problem: \n\nContext Collapse &amp; The PDF Nightmare\n\nRight now, our digital identities are completely fragmented and stuck in the past.\n\n1. If you're job hunting, you're constantly updating static resume PDFs.\n\n2. If you're looking for a partner (especially in family-centric or community-based cultures like India), you're managing separate dating profiles or emailing traditional marriage \"biodata\" PDFs.\n\n3. On traditional social media, you suffer from \"context collapse\"—your boss, your grandmother, and a casual acquaintance all see the same profile.\n\nThe Solution: An Integrated Social Network\n\niTree is an integrated network built around an \"Identity Tree\" rather than an entertainment feed. It organizes your life by structural relationships—both familial and functional.\n\nHere’s the breakdown of how it works:\n\nThe Anchor (The Tree): You map your family tree. When your brother, cousin, or uncle joins, your trees link up automatically to form a verified kinship hierarchy.\n\nThe Gated Profiles: Within the app, you maintain three entirely separate, private profiles: Job (Resume), Dating, and Marriage.\n\nThe Dynamic Link: Instead of emailing a PDF, you send a secure link. If you update your employment history or marriage biodata on the app, the link automatically updates for anyone viewing it. No more version control issues.\n\nThe \"Social Navigation\" Magic:\n\nImagine you are at a large family gathering or a wedding. You see someone and wonder how you're related. Through the app, you can map the kinship instantly (e.g., \"Oh, she is my second cousin's long-distance cousin\"). If privacy permissions allow, you can request to view their shared profile or send a connection request.\n\nWhy This Layering Matters:\n\nUnlike LinkedIn or Tinder, having a verified family lineage built into the background of a profile adds a massive layer of trust and context, which is highly valuable in cultures where marriages are a union between families. For professional use, it makes community-based job referrals seamless, all while keeping your dating or marriage life completely invisible to recruiters.\n\nThe Honest Roadblocks (Where I need your feedback):\n\nI know the execution challenges are steep:\n\n1. The Trust/Privacy Wall: Putting your career, dating preferences, and entire family tree under one app roof is a massive data liability. Privacy controls would have to be incredibly granular (e.g., \"Only 3rd cousins can see my marriage profile, only recruiters can see my job link\")\n\n2. Onboarding Friction: Getting people to manually build out a family tree to unlock the network effects is a heavy lift.\n\n3. Legacy Systems: Corporate ATS (Applicant Tracking Systems) still love parsing raw PDFs.\n\nIs an integrated network like this a natural evolution for personal data management, or is it trying to do too much at once? Would you ever trust a platform like this, or would you stick to separate apps and PDFs?\n\nTear it apart!",
+    "id": "1twzpnw",
+    "signal": 1,
+    "hits": [
+      "manually"
+    ],
+    "passages": [
+      {
+        "phrase": "manually",
+        "text": "d cousins can see my marriage profile, only recruiters can see my job link\")\n\n2. Onboarding Friction: Getting people to manually build out a family tree to unlock the network effects is a heavy lift.\n\n3. Legacy Systems: Corporate ATS (Applicant Tra"
+      }
+    ]
+  },
+  {
+    "sub": "startups",
+    "title": "Good Beta Users - Building a beauty &amp; wellness tracking app (I will not promote)",
+    "url": "https://reddit.com/r/startups/comments/1tvagis/good_beta_users_building_a_beauty_wellness/",
+    "ups": 2,
+    "comments": 5,
+    "created_utc": 1780449570.0,
+    "author": "FabulousPlace6554",
+    "selftext": "Hiya!\n\n\\*\\* I have read the rules\\*\\*\n\nI am a few weeks out from beta launching a mobile app (iOS and Android) that tracks skincare, haircare, makeup, and wellness all in one place.\n\nThe core problem I am trying to solve is that these categories are deeply connected. What you eat, how you sleep, and what you put on your hair all show up on your face. My goal was to build a platform that connects these items\n\nTarget is men/women who take their routines seriously. I am talking about people navigating layered skincare actives, hair routines, and intentional supplement tracking, workout, etc.\n\nRight now, I have about 35 waitlist signups from my personal network, and I am trying to figure out where to find the right beta users. FWIW I am currently bootstrapping.\n\nMY currrent thoughts and questions:\n\n1. With a consumer app with a target audience, where have you had the most success finding quality beta users? More concerned with getting insightful feedback vs volume.\n2. Is Reddit outreach in niche communities like [r/NaturalHair](/r/NaturalHair/) or [r/SkincareAddiction](/r/SkincareAddiction/) actually effective, or does it always just come across as spam? Has anyone been able to navigate well?\n3. I have an account on BetaTesting and I am familiar with Product Hunt. But worried about the high volume and maybe too tech-heavy for this specific target. Are there other communities, platforms, or even specific keywords I am missing for reaching women aged 25 to 40.\n\nI am genuinely looking to learn from people who have launched similar niche consumer apps, so any advice or insights would be massively appreciated. Thank you!  \n",
+    "id": "1tvagis",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "startups",
+    "title": "I will not promote: Looking for a GTM co-founder for a product intelligence SaaS - equity 15–20%, building in public, early stage.",
+    "url": "https://reddit.com/r/startups/comments/1ts3vil/i_will_not_promote_looking_for_a_gtm_cofounder/",
+    "ups": 0,
+    "comments": 17,
+    "created_utc": 1780157080.0,
+    "author": "No_Wealth_1630",
+    "selftext": "Hey there,\n\nI am a technical founder and I've been building an idea. It's a product intelligence platform that sits upstream of Jira and tells engineering teams what to fix next, based on real user complaints.\n\n**The short version**: It reads every App Store and Google Play review, semantically clusters the complaints that matter, ranks them by severity and trend velocity, detects churn signals, and sends evidence-backed tickets straight to Jira, Linear, or GitHub. After a fix ships, it monitors whether complaints actually dropped.\n\n**The positioning**: Jira tracks the work. The app suggests what the work should be.\n\n**The tech proposed:** The stack is solid (FastAPI, PostgreSQL + pgvector, semantic clustering via UMAP + HDBSCAN, Claude API for ticket generation). The product spec is detailed. What I don't have is a co-founder who can own distribution and GTM from day one.\n\n**What I'm looking for:**\n\nSomeone who has or is actively building an audience of PMs, mobile engineers, SaaS founders, or growth teams. You don't need to be technical. You need to understand the customer deeply, know how to reach them, and have the drive to validate this together from the ground up.\n\nConcretely:\n\n* You've done content, community, or growth work in a B2B SaaS context\n* You have a network in product, mobile, or SaaS spaces\n* You're comfortable going through early validation, customer conversations, and company registration as genuine co-founders\n* You can work equity-only through the validation phase\n\n**What I'm offering:**\n\n15–20% equity with a standard 4-year vest and 1-year cliff. The exact split depends on what you bring. This is a real co-founder role not an advisor, not a contractor.\n\n**Where we are:**\n\nPre-revenue. Product spec complete. Core ML pipeline designed. UI/UX designed. Starting to build toward an MVP. Looking for someone to come in now early enough to shape the product and GTM strategy together, not just execute someone else's vision.\n\n**Why this problem:**\n\nMost product teams receive thousands of reviews per month and act on almost none of them. The gap between user feedback and engineering action is enormous and almost entirely unsolved. Existing tools (Appbot, AppFollow, etc.) give you dashboards. Nobody closes the loop from complaint to ticket to verified fix. That's the wedge.\n\nIf this resonates, drop a comment or DM me. Tell me about your background, what audience or distribution you have, and why this problem interests you. I will respond to everyone.\n\n**Edit: I have a cofounder already, so looking for another so the split will be into 3 roughly**",
+    "id": "1ts3vil",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "startups",
+    "title": "I will not promote: Looking for a GTM co-founder for a product intelligence SaaS - equity 15–20%, building in public, early stage.",
+    "url": "https://reddit.com/r/startups/comments/1ts3o48/i_will_not_promote_looking_for_a_gtm_cofounder/",
+    "ups": 0,
+    "comments": 4,
+    "created_utc": 1780156600.0,
+    "author": "No_Wealth_1630",
+    "selftext": "Hey there,\n\nI am a technical founder and I've been building an idea. It's a product intelligence platform that sits upstream of Jira and tells engineering teams what to fix next, based on real user complaints.\n\n**The short version**: It reads every App Store and Google Play review, semantically clusters the complaints that matter, ranks them by severity and trend velocity, detects churn signals, and sends evidence-backed tickets straight to Jira, Linear, or GitHub. After a fix ships, it monitors whether complaints actually dropped.\n\n**The positioning**: Jira tracks the work. It decides what the work should be.\n\n**The tech is built**. The stack is solid (FastAPI, PostgreSQL + pgvector, semantic clustering via UMAP + HDBSCAN, Claude API for ticket generation). The product spec is detailed. What I don't have is a co-founder who can own distribution and GTM from day one.\n\n**What I'm looking for:**\n\nSomeone who has or is actively building an audience of PMs, mobile engineers, SaaS founders, or growth teams. You don't need to be technical. You need to understand the customer deeply, know how to reach them, and have the drive to validate this together from the ground up.\n\nConcretely:\n\n* You've done content, community, or growth work in a B2B SaaS context\n* You have a network in product, mobile, or SaaS spaces\n* You're comfortable going through early validation, customer conversations, and company registration as genuine co-founders\n* You can work equity-only through the validation phase\n\n**What I'm offering:**\n\n15–20% equity with a standard 4-year vest and 1-year cliff. The exact split depends on what you bring. This is a real co-founder role not an advisor, not a contractor.\n\n**Where we are:**\n\nPre-revenue. Product spec complete. Core ML pipeline designed. UI/UX designed. Starting to build toward an MVP. Looking for someone to come in now early enough to shape the product and GTM strategy together, not just execute someone else's vision.\n\n**Why this problem:**\n\nMost product teams receive thousands of reviews per month and act on almost none of them. The gap between user feedback and engineering action is enormous and almost entirely unsolved. Existing tools (Appbot, AppFollow, etc.) give you dashboards. Nobody closes the loop from complaint to ticket to verified fix. That's the wedge.\n\nIf this resonates, drop a comment or DM me. Tell me about your background, what audience or distribution you have, and why this problem interests you. I will respond to everyone.",
+    "id": "1ts3o48",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "startups",
+    "title": "Career advice (I will not promote)",
+    "url": "https://reddit.com/r/startups/comments/1tsxg43/career_advice_i_will_not_promote/",
+    "ups": 3,
+    "comments": 3,
+    "created_utc": 1780239123.0,
+    "author": "Initial-Asparagus194",
+    "selftext": "I have been interested in entrepreneurship since I was 10. I spent my lunch times sitting with my friend coming up with a nerf gun version of paintball business plan. I have started half a dozen little entrepreneurial ventures since I was a kid, first company at 15, now 20 I do 45k a month revenue passive. My point is I really wanna do this, but properly though.\n\nI have not worked for 3+ years in a propper business, understanding how different departments work, when and how you hire people, (further then this i dont even know what i dont know). Mentally i can see the path to getting an ecom brand to 3mil or something but i cant visualise the path to a 50mil, 300 mil proper company. Everything in excess of a 3 mil ecom brand seems like magic to me.\n\nMy question is, how do you break through that? Do you just come up with a magical products/service thats so in demand you get slack for poor marketing/operational ability and ultimately just figure it out, do you have to work for someone else to understand the pieces to to growing a 300 mil company, do you just do it and have a tiny chance you learn along the way, do you need a mentor, etc.\n\nBasically what I’m trying to ask is what steps do i need to take to break through my current understanding/limitations, maybe from someone whos made it to the other side?\n\nAppreciate advice :)",
+    "id": "1tsxg43",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  }
+]

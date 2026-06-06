@@ -1,0 +1,1229 @@
+{
+  "notes": [
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-4dx-four-disciplines-execution.md",
+      "book": "canon-4dx-four-disciplines-execution",
+      "clusterName": "Execution & Operations",
+      "clusterSlug": "execution-operations",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/execution-operations",
+      "rawFiles": [
+        "yt_4-disciplines-of-execution-lead-measures-whirlwind.json",
+        "yt_goldratt-theory-of-constraints-the-goal-bottleneck.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-akerlof-market-for-lemons.md",
+      "book": "canon-akerlof-market-for-lemons",
+      "clusterName": "Economics & Incentive Design",
+      "clusterSlug": "economics-incentives",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/economics-incentives",
+      "rawFiles": [
+        "reddit_AskEconomics.json",
+        "yt_akerlof-market-for-lemons-asymmetric-information.json",
+        "yt_principal-agent-problem-agency-theory-explained.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-alchian-demsetz-firm.md",
+      "book": "canon-alchian-demsetz-firm",
+      "clusterName": "Economics & Incentive Design",
+      "clusterSlug": "economics-incentives",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/economics-incentives",
+      "rawFiles": [
+        "reddit_AskEconomics.json",
+        "yt_akerlof-market-for-lemons-asymmetric-information.json",
+        "yt_principal-agent-problem-agency-theory-explained.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-allison-essence-of-decision.md",
+      "book": "canon-allison-essence-of-decision",
+      "clusterName": "History & Judgment",
+      "clusterSlug": "history-judgment",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/history-judgment",
+      "rawFiles": [
+        "reddit_geopolitics.json",
+        "yt_clausewitz-on-war-friction-fog.json",
+        "yt_graham-allison-essence-of-decision-three-models.json",
+        "yt_thucydides-trap-athens-sparta-allison.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-ariely-predictably-irrational.md",
+      "book": "canon-ariely-predictably-irrational",
+      "clusterName": "Behavioral Design & Decision Science",
+      "clusterSlug": "behavioral-decision",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_dan-ariely-predictably-irrational.json",
+        "yt_gary-klein-recognition-primed-decision-making.json",
+        "yt_richard-thaler-nudge-choice-architecture-defaults.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-axelrod-evolution-of-cooperation.md",
+      "book": "canon-axelrod-evolution-of-cooperation",
+      "clusterName": "Game Theory & Strategic Interaction",
+      "clusterSlug": "game-theory",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/game-theory",
+      "rawFiles": [
+        "reddit_gametheory.json",
+        "yt_axelrod-tit-for-tat-evolution-of-cooperation.json",
+        "yt_dixit-nalebuff-thinking-strategically-game-theory.json",
+        "yt_thomas-schelling-focal-point-credible-commitment.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-badaracco-defining-moments.md",
+      "book": "canon-badaracco-defining-moments",
+      "clusterName": "Ethics & Judgment",
+      "clusterSlug": "ethics-judgment",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/ethics-judgment",
+      "rawFiles": [
+        "reddit_Ethics.json",
+        "yt_michael-sandel-justice-what-is-the-right-thing-to-do.json",
+        "yt_right-versus-right-ethical-leadership-decisions.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-bezos-shareholder-letters.md",
+      "book": "canon-bezos-shareholder-letters",
+      "clusterName": "Org Design & Mechanisms",
+      "clusterSlug": "org-design-mechanisms",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/org-design-mechanisms",
+      "rawFiles": [
+        "reddit_ExperiencedDevs.json",
+        "reddit_managers.json",
+        "yt_jeff-bezos-shareholder-letters-mechanisms-day-1.json",
+        "yt_will-larson-engineering-management-elegant-puzzle.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-bossidy-charan-execution.md",
+      "book": "canon-bossidy-charan-execution",
+      "clusterName": "Execution & Operations",
+      "clusterSlug": "execution-operations",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/execution-operations",
+      "rawFiles": [
+        "yt_4-disciplines-of-execution-lead-measures-whirlwind.json",
+        "yt_goldratt-theory-of-constraints-the-goal-bottleneck.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-brandenburger-nalebuff-coopetition.md",
+      "book": "canon-brandenburger-nalebuff-coopetition",
+      "clusterName": "Game Theory & Strategic Interaction",
+      "clusterSlug": "game-theory",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/game-theory",
+      "rawFiles": [
+        "reddit_gametheory.json",
+        "yt_axelrod-tit-for-tat-evolution-of-cooperation.json",
+        "yt_dixit-nalebuff-thinking-strategically-game-theory.json",
+        "yt_thomas-schelling-focal-point-credible-commitment.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-bungay-art-of-action.md",
+      "book": "canon-bungay-art-of-action",
+      "clusterName": "Strategy",
+      "clusterSlug": "strategy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/strategy",
+      "rawFiles": [
+        "reddit_consulting_strategy-frameworks.json",
+        "reddit_strategy.json",
+        "yt_richard-rumelt-good-strategy-bad-strategy-kernel.json",
+        "yt_roger-martin-playing-to-win-strategy-cascade.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-cagan-inspired.md",
+      "book": "canon-cagan-inspired",
+      "clusterName": "Product Thinking & Innovation",
+      "clusterSlug": "product-innovation",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/product-innovation",
+      "rawFiles": [
+        "reddit_ProductManagement.json",
+        "yt_eric-ries-lean-startup-mvp-build-measure-learn.json",
+        "yt_marty-cagan-inspired-product-discovery.json",
+        "yt_peter-thiel-zero-to-one-monopoly.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-carnegie-win-friends.md",
+      "book": "canon-carnegie-win-friends",
+      "clusterName": "Negotiation & Influence",
+      "clusterSlug": "negotiation-influence",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/negotiation-influence",
+      "rawFiles": [
+        "reddit_negotiation.json",
+        "reddit_sales.json",
+        "yt_dale-carnegie-how-to-win-friends-and-influence-people.json",
+        "yt_robert-cialdini-influence-six-principles-persuasion.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-christensen-innovators-dilemma.md",
+      "book": "canon-christensen-innovators-dilemma",
+      "clusterName": "Landscape & Competitive Awareness",
+      "clusterSlug": "landscape-competitive",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/landscape-competitive",
+      "rawFiles": [
+        "reddit_strategy.json",
+        "yt_clayton-christensen-innovators-dilemma-disruption.json",
+        "yt_hamilton-helmer-7-powers-moat.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-cialdini-influence.md",
+      "book": "canon-cialdini-influence",
+      "clusterName": "Negotiation & Influence",
+      "clusterSlug": "negotiation-influence",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/negotiation-influence",
+      "rawFiles": [
+        "reddit_negotiation.json",
+        "reddit_sales.json",
+        "yt_dale-carnegie-how-to-win-friends-and-influence-people.json",
+        "yt_robert-cialdini-influence-six-principles-persuasion.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-cialdini-pre-suasion.md",
+      "book": "canon-cialdini-pre-suasion",
+      "clusterName": "Behavioral Design & Decision Science",
+      "clusterSlug": "behavioral-decision",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_dan-ariely-predictably-irrational.json",
+        "yt_gary-klein-recognition-primed-decision-making.json",
+        "yt_richard-thaler-nudge-choice-architecture-defaults.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-clausewitz-on-war.md",
+      "book": "canon-clausewitz-on-war",
+      "clusterName": "History & Judgment",
+      "clusterSlug": "history-judgment",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/history-judgment",
+      "rawFiles": [
+        "reddit_geopolitics.json",
+        "yt_clausewitz-on-war-friction-fog.json",
+        "yt_graham-allison-essence-of-decision-three-models.json",
+        "yt_thucydides-trap-athens-sparta-allison.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-clear-atomic-habits.md",
+      "book": "canon-clear-atomic-habits",
+      "clusterName": "Personal Effectiveness",
+      "clusterSlug": "personal-effectiveness",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/personal-effectiveness",
+      "rawFiles": [
+        "reddit_productivity.json",
+        "yt_cal-newport-deep-work.json",
+        "yt_james-clear-atomic-habits-four-laws.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-covey-7-habits.md",
+      "book": "canon-covey-7-habits",
+      "clusterName": "Personal Effectiveness",
+      "clusterSlug": "personal-effectiveness",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/personal-effectiveness",
+      "rawFiles": [
+        "reddit_productivity.json",
+        "yt_cal-newport-deep-work.json",
+        "yt_james-clear-atomic-habits-four-laws.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-cusumano-business-of-platforms.md",
+      "book": "canon-cusumano-business-of-platforms",
+      "clusterName": "Network Effects & Platform Strategy",
+      "clusterSlug": "platform-strategy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/platform-strategy",
+      "rawFiles": [
+        "reddit_startups_network-effects-platform.json",
+        "yt_platform-business-model-network-effects-cold-start.json",
+        "yt_two-sided-market-subsidize-which-side-pricing.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-dixit-nalebuff-thinking-strategically.md",
+      "book": "canon-dixit-nalebuff-thinking-strategically",
+      "clusterName": "Game Theory & Strategic Interaction",
+      "clusterSlug": "game-theory",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/game-theory",
+      "rawFiles": [
+        "reddit_gametheory.json",
+        "yt_axelrod-tit-for-tat-evolution-of-cooperation.json",
+        "yt_dixit-nalebuff-thinking-strategically-game-theory.json",
+        "yt_thomas-schelling-focal-point-credible-commitment.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-doerr-measure-what-matters.md",
+      "book": "canon-doerr-measure-what-matters",
+      "clusterName": "Org Design & Mechanisms",
+      "clusterSlug": "org-design-mechanisms",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/org-design-mechanisms",
+      "rawFiles": [
+        "reddit_ExperiencedDevs.json",
+        "reddit_managers.json",
+        "yt_jeff-bezos-shareholder-letters-mechanisms-day-1.json",
+        "yt_will-larson-engineering-management-elegant-puzzle.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-drucker-effective-executive.md",
+      "book": "canon-drucker-effective-executive",
+      "clusterName": "Org Design & Mechanisms",
+      "clusterSlug": "org-design-mechanisms",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/org-design-mechanisms",
+      "rawFiles": [
+        "reddit_ExperiencedDevs.json",
+        "reddit_managers.json",
+        "yt_jeff-bezos-shareholder-letters-mechanisms-day-1.json",
+        "yt_will-larson-engineering-management-elegant-puzzle.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-duarte-resonate.md",
+      "book": "canon-duarte-resonate",
+      "clusterName": "Communication & Storytelling",
+      "clusterSlug": "communication-storytelling",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/communication-storytelling",
+      "rawFiles": [
+        "reddit_PublicSpeaking.json",
+        "yt_barbara-minto-pyramid-principle.json",
+        "yt_nancy-duarte-resonate-presentation-structure.json",
+        "yt_simon-sinek-start-with-why-golden-circle.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-goldratt-the-goal.md",
+      "book": "canon-goldratt-the-goal",
+      "clusterName": "Execution & Operations",
+      "clusterSlug": "execution-operations",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/execution-operations",
+      "rawFiles": [
+        "yt_4-disciplines-of-execution-lead-measures-whirlwind.json",
+        "yt_goldratt-theory-of-constraints-the-goal-bottleneck.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-greene-48-laws-of-power.md",
+      "book": "canon-greene-48-laws-of-power",
+      "clusterName": "Power & Organizational Politics",
+      "clusterSlug": "power-politics",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/power-politics",
+      "rawFiles": [
+        "reddit_cscareerquestions_office-politics.json",
+        "yt_48-laws-of-power-robert-greene-summary.json",
+        "yt_jeffrey-pfeffer-power-organizational.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-grove-high-output-management.md",
+      "book": "canon-grove-high-output-management",
+      "clusterName": "Leadership & Presence",
+      "clusterSlug": "leadership-presence",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/leadership-presence",
+      "rawFiles": [
+        "reddit_leadership.json",
+        "reddit_managers.json",
+        "yt_andy-grove-high-output-management-leverage.json",
+        "yt_david-marquet-turn-the-ship-around-intent.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-grove-only-the-paranoid-survive.md",
+      "book": "canon-grove-only-the-paranoid-survive",
+      "clusterName": "Landscape & Competitive Awareness",
+      "clusterSlug": "landscape-competitive",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/landscape-competitive",
+      "rawFiles": [
+        "reddit_strategy.json",
+        "yt_clayton-christensen-innovators-dilemma-disruption.json",
+        "yt_hamilton-helmer-7-powers-moat.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-hagiu-wright-multi-sided-platforms.md",
+      "book": "canon-hagiu-wright-multi-sided-platforms",
+      "clusterName": "Network Effects & Platform Strategy",
+      "clusterSlug": "platform-strategy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/platform-strategy",
+      "rawFiles": [
+        "reddit_startups_network-effects-platform.json",
+        "yt_platform-business-model-network-effects-cold-start.json",
+        "yt_two-sided-market-subsidize-which-side-pricing.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-heath-switch.md",
+      "book": "canon-heath-switch",
+      "clusterName": "Culture & Change",
+      "clusterSlug": "culture-change",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/culture-change",
+      "rawFiles": [
+        "reddit_managers.json",
+        "yt_edgar-schein-three-levels-of-organizational-culture.json",
+        "yt_kotter-8-steps-leading-change.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-helmer-7-powers.md",
+      "book": "canon-helmer-7-powers",
+      "clusterName": "Landscape & Competitive Awareness",
+      "clusterSlug": "landscape-competitive",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/landscape-competitive",
+      "rawFiles": [
+        "reddit_strategy.json",
+        "yt_clayton-christensen-innovators-dilemma-disruption.json",
+        "yt_hamilton-helmer-7-powers-moat.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-horowitz-what-you-do-is-who-you-are.md",
+      "book": "canon-horowitz-what-you-do-is-who-you-are",
+      "clusterName": "Culture & Change",
+      "clusterSlug": "culture-change",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/culture-change",
+      "rawFiles": [
+        "reddit_managers.json",
+        "yt_edgar-schein-three-levels-of-organizational-culture.json",
+        "yt_kotter-8-steps-leading-change.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-jensen-meckling-agency-theory.md",
+      "book": "canon-jensen-meckling-agency-theory",
+      "clusterName": "Economics & Incentive Design",
+      "clusterSlug": "economics-incentives",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/economics-incentives",
+      "rawFiles": [
+        "reddit_AskEconomics.json",
+        "yt_akerlof-market-for-lemons-asymmetric-information.json",
+        "yt_principal-agent-problem-agency-theory-explained.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-jervis-system-effects.md",
+      "book": "canon-jervis-system-effects",
+      "clusterName": "Systems Thinking & Complexity",
+      "clusterSlug": "systems-complexity",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/systems-complexity",
+      "rawFiles": [
+        "reddit_systemsthinking.json",
+        "yt_beer-game-bullwhip-effect-supply-chain.json",
+        "yt_donella-meadows-leverage-points.json",
+        "yt_peter-senge-fifth-discipline-systems-thinking-archetypes.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-kahneman-sibony-sunstein-noise.md",
+      "book": "canon-kahneman-sibony-sunstein-noise",
+      "clusterName": "Behavioral Design & Decision Science",
+      "clusterSlug": "behavioral-decision",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_dan-ariely-predictably-irrational.json",
+        "yt_gary-klein-recognition-primed-decision-making.json",
+        "yt_richard-thaler-nudge-choice-architecture-defaults.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-kahneman-thinking-fast-and-slow.md",
+      "book": "canon-kahneman-thinking-fast-and-slow",
+      "clusterName": "Mental Models & Thinking",
+      "clusterSlug": "mental-models",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/mental-models",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_charlie-munger-mental-models-latticework.json",
+        "yt_kahneman-thinking-fast-and-slow-system-1-2.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-klarman-margin-of-safety.md",
+      "book": "canon-klarman-margin-of-safety",
+      "clusterName": "Financial Literacy for Operators",
+      "clusterSlug": "financial-literacy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/financial-literacy",
+      "rawFiles": [
+        "reddit_SecurityAnalysis.json",
+        "yt_michael-mauboussin-skill-versus-luck-success-equation.json",
+        "yt_seth-klarman-margin-of-safety-value-investing.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-klein-sources-of-power.md",
+      "book": "canon-klein-sources-of-power",
+      "clusterName": "Behavioral Design & Decision Science",
+      "clusterSlug": "behavioral-decision",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_dan-ariely-predictably-irrational.json",
+        "yt_gary-klein-recognition-primed-decision-making.json",
+        "yt_richard-thaler-nudge-choice-architecture-defaults.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-kotter-leading-change.md",
+      "book": "canon-kotter-leading-change",
+      "clusterName": "Culture & Change",
+      "clusterSlug": "culture-change",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/culture-change",
+      "rawFiles": [
+        "reddit_managers.json",
+        "yt_edgar-schein-three-levels-of-organizational-culture.json",
+        "yt_kotter-8-steps-leading-change.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-lafley-martin-playing-to-win.md",
+      "book": "canon-lafley-martin-playing-to-win",
+      "clusterName": "Strategy",
+      "clusterSlug": "strategy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/strategy",
+      "rawFiles": [
+        "reddit_consulting_strategy-frameworks.json",
+        "reddit_strategy.json",
+        "yt_richard-rumelt-good-strategy-bad-strategy-kernel.json",
+        "yt_roger-martin-playing-to-win-strategy-cascade.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-larson-elegant-puzzle.md",
+      "book": "canon-larson-elegant-puzzle",
+      "clusterName": "Org Design & Mechanisms",
+      "clusterSlug": "org-design-mechanisms",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/org-design-mechanisms",
+      "rawFiles": [
+        "reddit_ExperiencedDevs.json",
+        "reddit_managers.json",
+        "yt_jeff-bezos-shareholder-letters-mechanisms-day-1.json",
+        "yt_will-larson-engineering-management-elegant-puzzle.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-mankiw-principles-of-economics.md",
+      "book": "canon-mankiw-principles-of-economics",
+      "clusterName": "Economics & Incentive Design",
+      "clusterSlug": "economics-incentives",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/economics-incentives",
+      "rawFiles": [
+        "reddit_AskEconomics.json",
+        "yt_akerlof-market-for-lemons-asymmetric-information.json",
+        "yt_principal-agent-problem-agency-theory-explained.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-march-primer-decision-making.md",
+      "book": "canon-march-primer-decision-making",
+      "clusterName": "Behavioral Design & Decision Science",
+      "clusterSlug": "behavioral-decision",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_dan-ariely-predictably-irrational.json",
+        "yt_gary-klein-recognition-primed-decision-making.json",
+        "yt_richard-thaler-nudge-choice-architecture-defaults.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-marquet-turn-the-ship-around.md",
+      "book": "canon-marquet-turn-the-ship-around",
+      "clusterName": "Leadership & Presence",
+      "clusterSlug": "leadership-presence",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/leadership-presence",
+      "rawFiles": [
+        "reddit_leadership.json",
+        "reddit_managers.json",
+        "yt_andy-grove-high-output-management-leverage.json",
+        "yt_david-marquet-turn-the-ship-around-intent.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-martin-opposable-mind.md",
+      "book": "canon-martin-opposable-mind",
+      "clusterName": "Design Thinking & Problem-Solving",
+      "clusterSlug": "design-problem-solving",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/design-problem-solving",
+      "rawFiles": [
+        "reddit_consulting.json",
+        "yt_first-principles-thinking-problem-solving.json",
+        "yt_roger-martin-integrative-thinking-opposable-mind.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-mauboussin-success-equation.md",
+      "book": "canon-mauboussin-success-equation",
+      "clusterName": "Financial Literacy for Operators",
+      "clusterSlug": "financial-literacy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/financial-literacy",
+      "rawFiles": [
+        "reddit_SecurityAnalysis.json",
+        "yt_michael-mauboussin-skill-versus-luck-success-equation.json",
+        "yt_seth-klarman-margin-of-safety-value-investing.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-meadows-leverage-points.md",
+      "book": "canon-meadows-leverage-points",
+      "clusterName": "Design Thinking & Problem-Solving",
+      "clusterSlug": "design-problem-solving",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/design-problem-solving",
+      "rawFiles": [
+        "reddit_consulting.json",
+        "yt_first-principles-thinking-problem-solving.json",
+        "yt_roger-martin-integrative-thinking-opposable-mind.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-meadows-thinking-in-systems.md",
+      "book": "canon-meadows-thinking-in-systems",
+      "clusterName": "Mental Models & Thinking",
+      "clusterSlug": "mental-models",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/mental-models",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_charlie-munger-mental-models-latticework.json",
+        "yt_kahneman-thinking-fast-and-slow-system-1-2.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-minto-pyramid-principle.md",
+      "book": "canon-minto-pyramid-principle",
+      "clusterName": "Communication & Storytelling",
+      "clusterSlug": "communication-storytelling",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/communication-storytelling",
+      "rawFiles": [
+        "reddit_PublicSpeaking.json",
+        "yt_barbara-minto-pyramid-principle.json",
+        "yt_nancy-duarte-resonate-presentation-structure.json",
+        "yt_simon-sinek-start-with-why-golden-circle.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-munger-poor-charlies-almanack.md",
+      "book": "canon-munger-poor-charlies-almanack",
+      "clusterName": "Mental Models & Thinking",
+      "clusterSlug": "mental-models",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/mental-models",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_charlie-munger-mental-models-latticework.json",
+        "yt_kahneman-thinking-fast-and-slow-system-1-2.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-neustadt-may-thinking-in-time.md",
+      "book": "canon-neustadt-may-thinking-in-time",
+      "clusterName": "History & Judgment",
+      "clusterSlug": "history-judgment",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/history-judgment",
+      "rawFiles": [
+        "reddit_geopolitics.json",
+        "yt_clausewitz-on-war-friction-fog.json",
+        "yt_graham-allison-essence-of-decision-three-models.json",
+        "yt_thucydides-trap-athens-sparta-allison.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-newport-deep-work.md",
+      "book": "canon-newport-deep-work",
+      "clusterName": "Personal Effectiveness",
+      "clusterSlug": "personal-effectiveness",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/personal-effectiveness",
+      "rawFiles": [
+        "reddit_productivity.json",
+        "yt_cal-newport-deep-work.json",
+        "yt_james-clear-atomic-habits-four-laws.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-ohno-toyota-production-system.md",
+      "book": "canon-ohno-toyota-production-system",
+      "clusterName": "Execution & Operations",
+      "clusterSlug": "execution-operations",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/execution-operations",
+      "rawFiles": [
+        "yt_4-disciplines-of-execution-lead-measures-whirlwind.json",
+        "yt_goldratt-theory-of-constraints-the-goal-bottleneck.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-parker-platform-revolution.md",
+      "book": "canon-parker-platform-revolution",
+      "clusterName": "Network Effects & Platform Strategy",
+      "clusterSlug": "platform-strategy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/platform-strategy",
+      "rawFiles": [
+        "reddit_startups_network-effects-platform.json",
+        "yt_platform-business-model-network-effects-cold-start.json",
+        "yt_two-sided-market-subsidize-which-side-pricing.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-parrish-great-mental-models.md",
+      "book": "canon-parrish-great-mental-models",
+      "clusterName": "Mental Models & Thinking",
+      "clusterSlug": "mental-models",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/mental-models",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_charlie-munger-mental-models-latticework.json",
+        "yt_kahneman-thinking-fast-and-slow-system-1-2.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-patterson-crucial-conversations.md",
+      "book": "canon-patterson-crucial-conversations",
+      "clusterName": "Information & Communication",
+      "clusterSlug": "information-communication",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/information-communication",
+      "rawFiles": [
+        "reddit_dataisbeautiful.json",
+        "yt_claude-shannon-information-theory-explained.json",
+        "yt_crucial-conversations-skills-summary.json",
+        "yt_edward-tufte-data-visualization-chartjunk.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-perrow-normal-accidents.md",
+      "book": "canon-perrow-normal-accidents",
+      "clusterName": "Systems Thinking & Complexity",
+      "clusterSlug": "systems-complexity",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/systems-complexity",
+      "rawFiles": [
+        "reddit_systemsthinking.json",
+        "yt_beer-game-bullwhip-effect-supply-chain.json",
+        "yt_donella-meadows-leverage-points.json",
+        "yt_peter-senge-fifth-discipline-systems-thinking-archetypes.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-pfeffer-power.md",
+      "book": "canon-pfeffer-power",
+      "clusterName": "Power & Organizational Politics",
+      "clusterSlug": "power-politics",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/power-politics",
+      "rawFiles": [
+        "reddit_cscareerquestions_office-politics.json",
+        "yt_48-laws-of-power-robert-greene-summary.json",
+        "yt_jeffrey-pfeffer-power-organizational.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-porter-competitive-strategy.md",
+      "book": "canon-porter-competitive-strategy",
+      "clusterName": "Strategy",
+      "clusterSlug": "strategy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/strategy",
+      "rawFiles": [
+        "reddit_consulting_strategy-frameworks.json",
+        "reddit_strategy.json",
+        "yt_richard-rumelt-good-strategy-bad-strategy-kernel.json",
+        "yt_roger-martin-playing-to-win-strategy-cascade.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-ries-lean-startup.md",
+      "book": "canon-ries-lean-startup",
+      "clusterName": "Product Thinking & Innovation",
+      "clusterSlug": "product-innovation",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/product-innovation",
+      "rawFiles": [
+        "reddit_ProductManagement.json",
+        "yt_eric-ries-lean-startup-mvp-build-measure-learn.json",
+        "yt_marty-cagan-inspired-product-discovery.json",
+        "yt_peter-thiel-zero-to-one-monopoly.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-rumelt-good-strategy.md",
+      "book": "canon-rumelt-good-strategy",
+      "clusterName": "Strategy",
+      "clusterSlug": "strategy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/strategy",
+      "rawFiles": [
+        "reddit_consulting_strategy-frameworks.json",
+        "reddit_strategy.json",
+        "yt_richard-rumelt-good-strategy-bad-strategy-kernel.json",
+        "yt_roger-martin-playing-to-win-strategy-cascade.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-rumelt-the-crux.md",
+      "book": "canon-rumelt-the-crux",
+      "clusterName": "Design Thinking & Problem-Solving",
+      "clusterSlug": "design-problem-solving",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/design-problem-solving",
+      "rawFiles": [
+        "reddit_consulting.json",
+        "yt_first-principles-thinking-problem-solving.json",
+        "yt_roger-martin-integrative-thinking-opposable-mind.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-sandel-justice.md",
+      "book": "canon-sandel-justice",
+      "clusterName": "Ethics & Judgment",
+      "clusterSlug": "ethics-judgment",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/ethics-judgment",
+      "rawFiles": [
+        "reddit_Ethics.json",
+        "yt_michael-sandel-justice-what-is-the-right-thing-to-do.json",
+        "yt_right-versus-right-ethical-leadership-decisions.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-schein-organizational-culture.md",
+      "book": "canon-schein-organizational-culture",
+      "clusterName": "Culture & Change",
+      "clusterSlug": "culture-change",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/culture-change",
+      "rawFiles": [
+        "reddit_managers.json",
+        "yt_edgar-schein-three-levels-of-organizational-culture.json",
+        "yt_kotter-8-steps-leading-change.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-schelling-strategy-of-conflict.md",
+      "book": "canon-schelling-strategy-of-conflict",
+      "clusterName": "Game Theory & Strategic Interaction",
+      "clusterSlug": "game-theory",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/game-theory",
+      "rawFiles": [
+        "reddit_gametheory.json",
+        "yt_axelrod-tit-for-tat-evolution-of-cooperation.json",
+        "yt_dixit-nalebuff-thinking-strategically-game-theory.json",
+        "yt_thomas-schelling-focal-point-credible-commitment.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-scott-radical-candor.md",
+      "book": "canon-scott-radical-candor",
+      "clusterName": "Leadership & Presence",
+      "clusterSlug": "leadership-presence",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/leadership-presence",
+      "rawFiles": [
+        "reddit_leadership.json",
+        "reddit_managers.json",
+        "yt_andy-grove-high-output-management-leverage.json",
+        "yt_david-marquet-turn-the-ship-around-intent.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-senge-fifth-discipline.md",
+      "book": "canon-senge-fifth-discipline",
+      "clusterName": "Systems Thinking & Complexity",
+      "clusterSlug": "systems-complexity",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/systems-complexity",
+      "rawFiles": [
+        "reddit_systemsthinking.json",
+        "yt_beer-game-bullwhip-effect-supply-chain.json",
+        "yt_donella-meadows-leverage-points.json",
+        "yt_peter-senge-fifth-discipline-systems-thinking-archetypes.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-shannon-information-theory.md",
+      "book": "canon-shannon-information-theory",
+      "clusterName": "Information & Communication",
+      "clusterSlug": "information-communication",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/information-communication",
+      "rawFiles": [
+        "reddit_dataisbeautiful.json",
+        "yt_claude-shannon-information-theory-explained.json",
+        "yt_crucial-conversations-skills-summary.json",
+        "yt_edward-tufte-data-visualization-chartjunk.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-shapiro-varian-information-rules.md",
+      "book": "canon-shapiro-varian-information-rules",
+      "clusterName": "Network Effects & Platform Strategy",
+      "clusterSlug": "platform-strategy",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/platform-strategy",
+      "rawFiles": [
+        "reddit_startups_network-effects-platform.json",
+        "yt_platform-business-model-network-effects-cold-start.json",
+        "yt_two-sided-market-subsidize-which-side-pricing.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-sinek-start-with-why.md",
+      "book": "canon-sinek-start-with-why",
+      "clusterName": "Communication & Storytelling",
+      "clusterSlug": "communication-storytelling",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/communication-storytelling",
+      "rawFiles": [
+        "reddit_PublicSpeaking.json",
+        "yt_barbara-minto-pyramid-principle.json",
+        "yt_nancy-duarte-resonate-presentation-structure.json",
+        "yt_simon-sinek-start-with-why-golden-circle.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-sterman-business-dynamics.md",
+      "book": "canon-sterman-business-dynamics",
+      "clusterName": "Systems Thinking & Complexity",
+      "clusterSlug": "systems-complexity",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/systems-complexity",
+      "rawFiles": [
+        "reddit_systemsthinking.json",
+        "yt_beer-game-bullwhip-effect-supply-chain.json",
+        "yt_donella-meadows-leverage-points.json",
+        "yt_peter-senge-fifth-discipline-systems-thinking-archetypes.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-stone-difficult-conversations.md",
+      "book": "canon-stone-difficult-conversations",
+      "clusterName": "Information & Communication",
+      "clusterSlug": "information-communication",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/information-communication",
+      "rawFiles": [
+        "reddit_dataisbeautiful.json",
+        "yt_claude-shannon-information-theory-explained.json",
+        "yt_crucial-conversations-skills-summary.json",
+        "yt_edward-tufte-data-visualization-chartjunk.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-taleb-antifragile.md",
+      "book": "canon-taleb-antifragile",
+      "clusterName": "Risk, Uncertainty & Fragility",
+      "clusterSlug": "risk-fragility",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/risk-fragility",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_nassim-taleb-antifragile-explained.json",
+        "yt_philip-tetlock-superforecasting-calibration.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-taleb-black-swan.md",
+      "book": "canon-taleb-black-swan",
+      "clusterName": "Risk, Uncertainty & Fragility",
+      "clusterSlug": "risk-fragility",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/risk-fragility",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_nassim-taleb-antifragile-explained.json",
+        "yt_philip-tetlock-superforecasting-calibration.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-tetlock-superforecasting.md",
+      "book": "canon-tetlock-superforecasting",
+      "clusterName": "Risk, Uncertainty & Fragility",
+      "clusterSlug": "risk-fragility",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/risk-fragility",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_nassim-taleb-antifragile-explained.json",
+        "yt_philip-tetlock-superforecasting-calibration.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-thaler-sunstein-nudge.md",
+      "book": "canon-thaler-sunstein-nudge",
+      "clusterName": "Behavioral Design & Decision Science",
+      "clusterSlug": "behavioral-decision",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_dan-ariely-predictably-irrational.json",
+        "yt_gary-klein-recognition-primed-decision-making.json",
+        "yt_richard-thaler-nudge-choice-architecture-defaults.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-thiel-zero-to-one.md",
+      "book": "canon-thiel-zero-to-one",
+      "clusterName": "Product Thinking & Innovation",
+      "clusterSlug": "product-innovation",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/product-innovation",
+      "rawFiles": [
+        "reddit_ProductManagement.json",
+        "yt_eric-ries-lean-startup-mvp-build-measure-learn.json",
+        "yt_marty-cagan-inspired-product-discovery.json",
+        "yt_peter-thiel-zero-to-one-monopoly.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-thucydides-peloponnesian-war.md",
+      "book": "canon-thucydides-peloponnesian-war",
+      "clusterName": "History & Judgment",
+      "clusterSlug": "history-judgment",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/history-judgment",
+      "rawFiles": [
+        "reddit_geopolitics.json",
+        "yt_clausewitz-on-war-friction-fog.json",
+        "yt_graham-allison-essence-of-decision-three-models.json",
+        "yt_thucydides-trap-athens-sparta-allison.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-tufte-visual-display.md",
+      "book": "canon-tufte-visual-display",
+      "clusterName": "Information & Communication",
+      "clusterSlug": "information-communication",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/information-communication",
+      "rawFiles": [
+        "reddit_dataisbeautiful.json",
+        "yt_claude-shannon-information-theory-explained.json",
+        "yt_crucial-conversations-skills-summary.json",
+        "yt_edward-tufte-data-visualization-chartjunk.json"
+      ],
+      "enriched": false
+    },
+    {
+      "note": "/Users/kalvaryhawkins/self-mba/notes/canon/canon-walsh-score-takes-care-of-itself.md",
+      "book": "canon-walsh-score-takes-care-of-itself",
+      "clusterName": "Leadership & Presence",
+      "clusterSlug": "leadership-presence",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/leadership-presence",
+      "rawFiles": [
+        "reddit_leadership.json",
+        "reddit_managers.json",
+        "yt_andy-grove-high-output-management-leverage.json",
+        "yt_david-marquet-turn-the-ship-around-intent.json"
+      ],
+      "enriched": false
+    }
+  ],
+  "lessons": [
+    {
+      "clusterSlug": "behavioral-decision",
+      "clusterName": "Behavioral Design & Decision Science",
+      "lessonPath": "/Users/kalvaryhawkins/self-mba/lessons/canon-behavioral-decision.html",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/behavioral-decision",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_dan-ariely-predictably-irrational.json",
+        "yt_gary-klein-recognition-primed-decision-making.json",
+        "yt_richard-thaler-nudge-choice-architecture-defaults.json"
+      ],
+      "notePaths": [
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-ariely-predictably-irrational.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-cialdini-pre-suasion.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-kahneman-sibony-sunstein-noise.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-klein-sources-of-power.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-march-primer-decision-making.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-thaler-sunstein-nudge.md"
+      ],
+      "exists": false
+    },
+    {
+      "clusterSlug": "risk-fragility",
+      "clusterName": "Risk, Uncertainty & Fragility",
+      "lessonPath": "/Users/kalvaryhawkins/self-mba/lessons/canon-risk-fragility.html",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/risk-fragility",
+      "rawFiles": [
+        "reddit_decisionmaking.json",
+        "yt_nassim-taleb-antifragile-explained.json",
+        "yt_philip-tetlock-superforecasting-calibration.json"
+      ],
+      "notePaths": [
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-taleb-antifragile.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-taleb-black-swan.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-tetlock-superforecasting.md"
+      ],
+      "exists": false
+    },
+    {
+      "clusterSlug": "systems-complexity",
+      "clusterName": "Systems Thinking & Complexity",
+      "lessonPath": "/Users/kalvaryhawkins/self-mba/lessons/canon-systems-complexity.html",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/systems-complexity",
+      "rawFiles": [
+        "reddit_systemsthinking.json",
+        "yt_beer-game-bullwhip-effect-supply-chain.json",
+        "yt_donella-meadows-leverage-points.json",
+        "yt_peter-senge-fifth-discipline-systems-thinking-archetypes.json"
+      ],
+      "notePaths": [
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-jervis-system-effects.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-perrow-normal-accidents.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-senge-fifth-discipline.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-sterman-business-dynamics.md"
+      ],
+      "exists": false
+    },
+    {
+      "clusterSlug": "platform-strategy",
+      "clusterName": "Network Effects & Platform Strategy",
+      "lessonPath": "/Users/kalvaryhawkins/self-mba/lessons/canon-platform-strategy.html",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/platform-strategy",
+      "rawFiles": [
+        "reddit_startups_network-effects-platform.json",
+        "yt_platform-business-model-network-effects-cold-start.json",
+        "yt_two-sided-market-subsidize-which-side-pricing.json"
+      ],
+      "notePaths": [
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-cusumano-business-of-platforms.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-hagiu-wright-multi-sided-platforms.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-parker-platform-revolution.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-shapiro-varian-information-rules.md"
+      ],
+      "exists": false
+    },
+    {
+      "clusterSlug": "history-judgment",
+      "clusterName": "History & Judgment",
+      "lessonPath": "/Users/kalvaryhawkins/self-mba/lessons/canon-history-judgment.html",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/history-judgment",
+      "rawFiles": [
+        "reddit_geopolitics.json",
+        "yt_clausewitz-on-war-friction-fog.json",
+        "yt_graham-allison-essence-of-decision-three-models.json",
+        "yt_thucydides-trap-athens-sparta-allison.json"
+      ],
+      "notePaths": [
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-allison-essence-of-decision.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-clausewitz-on-war.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-neustadt-may-thinking-in-time.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-thucydides-peloponnesian-war.md"
+      ],
+      "exists": false
+    },
+    {
+      "clusterSlug": "power-politics",
+      "clusterName": "Power & Organizational Politics",
+      "lessonPath": "/Users/kalvaryhawkins/self-mba/lessons/canon-power-politics.html",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/power-politics",
+      "rawFiles": [
+        "reddit_cscareerquestions_office-politics.json",
+        "yt_48-laws-of-power-robert-greene-summary.json",
+        "yt_jeffrey-pfeffer-power-organizational.json"
+      ],
+      "notePaths": [
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-greene-48-laws-of-power.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-pfeffer-power.md"
+      ],
+      "exists": false
+    },
+    {
+      "clusterSlug": "information-communication",
+      "clusterName": "Information & Communication",
+      "lessonPath": "/Users/kalvaryhawkins/self-mba/lessons/canon-information-communication.html",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/information-communication",
+      "rawFiles": [
+        "reddit_dataisbeautiful.json",
+        "yt_claude-shannon-information-theory-explained.json",
+        "yt_crucial-conversations-skills-summary.json",
+        "yt_edward-tufte-data-visualization-chartjunk.json"
+      ],
+      "notePaths": [
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-patterson-crucial-conversations.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-shannon-information-theory.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-stone-difficult-conversations.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-tufte-visual-display.md"
+      ],
+      "exists": false
+    },
+    {
+      "clusterSlug": "ethics-judgment",
+      "clusterName": "Ethics & Judgment",
+      "lessonPath": "/Users/kalvaryhawkins/self-mba/lessons/canon-ethics-judgment.html",
+      "rawDir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05/canon/ethics-judgment",
+      "rawFiles": [
+        "reddit_Ethics.json",
+        "yt_michael-sandel-justice-what-is-the-right-thing-to-do.json",
+        "yt_right-versus-right-ethical-leadership-decisions.json"
+      ],
+      "notePaths": [
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-badaracco-defining-moments.md",
+        "/Users/kalvaryhawkins/self-mba/notes/canon/canon-sandel-justice.md"
+      ],
+      "exists": false
+    }
+  ]
+}

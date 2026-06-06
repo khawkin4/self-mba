@@ -1,0 +1,214 @@
+[
+  {
+    "sub": "ExperiencedDevs",
+    "title": "Today I announced that I won't be reviewing AI generated PRs at company meeting",
+    "url": "https://reddit.com/r/ExperiencedDevs/comments/1towli9/today_i_announced_that_i_wont_be_reviewing_ai/",
+    "ups": 1824,
+    "comments": 445,
+    "created_utc": 1779861404.0,
+    "author": "Evgenii42",
+    "selftext": "I was reviewing PRs from data scientists (python developers) for the web service. The data scientists were using Claude Code to generate changes to the web site (rails/vue) and send PRs to the web developers. I made a decision that I no longer want to review this code, since it's AI generated and people who generate it do not understand it. The reason is that I find it very easy for me to miss issues during such PR reviews, because the AI generated code looks good and plausible, so it will lead to bugs and security issues.\n\nToday we had a company-wide meeting, and during my turn I explained the issue and announced that I no longer be reviewing these PRs. It went surprisingly well. I got massive support from people and the leadership also acknowledged the issues. I can now go back to what I love the most -&gt; writing code :D.\n\n**Update**: I think I was not clear in my post and the title is misleading -&gt; I apologise. I have no issue with programmers using AI at all (I use it myself all the time). The problem is that the people who used the AI to  make those PRs **do not understand the code it generated**.\n\n**Update #2:** Thank you all for contributing to this discussion and for support, I learned a lot from your comments, with the two particular insights I want to highlight:\n\n1. The issue is code that nobody truly owns or understands. Review breaks down when the reviewer becomes the only person reasoning about the system.\n2. The cost ratio between generation and review has collapsed, and the reviewer absorbs most (all?) of it.",
+    "id": "1towli9",
+    "signal": 2,
+    "hits": [
+      "the problem is",
+      "the issue is"
+    ],
+    "passages": [
+      {
+        "phrase": "the problem is",
+        "text": "title is misleading -&gt; I apologise. I have no issue with programmers using AI at all (I use it myself all the time). The problem is that the people who used the AI to  make those PRs **do not understand the code it generated**.\n\n**Update #2:** Thank y"
+      },
+      {
+        "phrase": "the issue is",
+        "text": "scussion and for support, I learned a lot from your comments, with the two particular insights I want to highlight:\n\n1. The issue is code that nobody truly owns or understands. Review breaks down when the reviewer becomes the only person reasoning abou"
+      }
+    ]
+  },
+  {
+    "sub": "ExperiencedDevs",
+    "title": "An AI CEO finally said something honest",
+    "url": "https://reddit.com/r/ExperiencedDevs/comments/1r6olcv/an_ai_ceo_finally_said_something_honest/",
+    "ups": 23842,
+    "comments": 828,
+    "created_utc": 1771282005.0,
+    "author": "Tech-Cowboy",
+    "selftext": "Dax Raad from anoma.ly might be the only CEO speaking honestly about AI right now. His most recent take:\n\n“everyone's talking about their teams like they were at the peak of efficiency and bottlenecked by ability to produce code\n\nhere's what things actually look like\n\n\\- your org rarely has good ideas. ideas being expensive to implement was actually helping\n\n\\- majority of workers have no reason to be super motivated, they want to do their 9-5 and get back to their life\n\n\\- they're not using AI to be 10x more effective they're using it to churn out their tasks with less energy spend\n\n\\- the 2 people on your team that actually tried are now flattened by the slop code everyone is producing, they will quit soon\n\n\\- even when you produce work faster you're still bottlenecked by bureaucracy and the dozen other realities of shipping something real\n\n\\- your CFO is like what do you mean each engineer now costs $2000 extra per month in LLM bills”",
+    "id": "1r6olcv",
+    "signal": 1,
+    "hits": [
+      "bottleneck"
+    ],
+    "passages": [
+      {
+        "phrase": "bottleneck",
+        "text": "AI right now. His most recent take:\n\n“everyone's talking about their teams like they were at the peak of efficiency and bottlenecked by ability to produce code\n\nhere's what things actually look like\n\n\\- your org rarely has good ideas. ideas being exp"
+      },
+      {
+        "phrase": "bottleneck",
+        "text": "lattened by the slop code everyone is producing, they will quit soon\n\n\\- even when you produce work faster you're still bottlenecked by bureaucracy and the dozen other realities of shipping something real\n\n\\- your CFO is like what do you mean each en"
+      }
+    ]
+  },
+  {
+    "sub": "ExperiencedDevs",
+    "title": "The era of AI slop cleanup has begun",
+    "url": "https://reddit.com/r/ExperiencedDevs/comments/1mg2r6y/the_era_of_ai_slop_cleanup_has_begun/",
+    "ups": 4259,
+    "comments": 475,
+    "created_utc": 1754172624.0,
+    "author": "kcib",
+    "selftext": "I’m a freelance software engineer with about 8 years of experience mainly in early stage startups. At this point, I have a pretty steady flow of referrals. I don’t take every project on and not every one works out, but enough do that I can do it more than full time. \n\nLately, though, I have noticed a large increase in projects where they paid a ton of money for an internal software and it does not work well at all. Tons of errors, unreasonably slow, inefficient and taking up a lot of resources, and large security flaws. At first, I thought maybe people just hired bad developers. The bar is pretty low to call yourself a developer or even a software engineer anyways, but I’m seeing the same problems now on multiple projects. \n\nWhen I take on a project on, I always sign an NDA and look at their codebase to look at some upfront issues that I can bring up because, most of the time, the people hiring me aren’t technical and don’t understand what the problem is. This is probably the 5th time now that a lot of the code was obviously AI generated. Comments in the code that were obviously written by AI, algorithms that are inefficient and make no sense, cluttered data structures, inconsistent coding patterns, etc. The overall thing is that, yes it mostly works, but does so terribly to the point where it needs to be fixed. \n\nIt might be a few years before we start to see this on an enterprise scale, but I’m noticing this becoming a serious problem for small businesses and startups, especially when the founders / people are in charge aren’t technical enough to identify this ahead of time. ",
+    "id": "1mg2r6y",
+    "signal": 1,
+    "hits": [
+      "the problem is"
+    ],
+    "passages": [
+      {
+        "phrase": "the problem is",
+        "text": "t issues that I can bring up because, most of the time, the people hiring me aren’t technical and don’t understand what the problem is. This is probably the 5th time now that a lot of the code was obviously AI generated. Comments in the code that were ob"
+      }
+    ]
+  },
+  {
+    "sub": "ExperiencedDevs",
+    "title": "A 5 min weekly habit completely changed my performance review and got me a bigger raise",
+    "url": "https://reddit.com/r/ExperiencedDevs/comments/1n7zuba/a_5_min_weekly_habit_completely_changed_my/",
+    "ups": 1611,
+    "comments": 184,
+    "created_utc": 1756957380.0,
+    "author": "iSayKay",
+    "selftext": "I know like me a lot of y’all are coming up on your performance reviews or they just passed and I wanted to talk about a habit that I feel like a lot of people might not know about. \n\nWhen performance reviews came around I would spend hours searching slack and jira tickets about what I did the last year, it was incredibly frustrating. About two or so years ago I got a new manager that taught me about brag documents, basically you fill it out through out the year to have all your accomplishments in one document. We did monthly summaries, every month I’d fill out what I did for the month and send it to my manager. It helped a lot during last year’s performance review. Unfortunately, I started filling out my monthly summaries a month later or a few weeks after the week ended cause I was so busy. Still helpful but still stressed me out when I’m trying to focus on coding.\n\nI realized doing it weekly is the hack. Choose the same time every week for me it’s Friday at like 3 and I take 5 mins to log the top accomplishments from the week. Made it easier to make a habit of it rather than forcing myself to write a big review later in the month or year. \n\nFeel free to use this template, it’s simple but gets the job done. \n\n- win: shipped X / fixed Y\n- before / after: 310ms / 190ms \n- metric: \n- who benefited: \n- evidence: link/screenshot \n\n\nIve used notion, google doc and sheet and kudos notes and honestly they all work fine. Use what you feel the most comfortable with and will help you keep the habit up. \n\nif you track wins, what changed for you at review time? any tricks to keep the habit going in month 5–6 and beyond?\n\nTL;DR: track your accomplishments weekly, it makes it easier to remember what you did the last week rather than year. ",
+    "id": "1n7zuba",
+    "signal": 1,
+    "hits": [
+      "frustrating"
+    ],
+    "passages": [
+      {
+        "phrase": "frustrating",
+        "text": "iews came around I would spend hours searching slack and jira tickets about what I did the last year, it was incredibly frustrating. About two or so years ago I got a new manager that taught me about brag documents, basically you fill it out through o"
+      }
+    ]
+  },
+  {
+    "sub": "ExperiencedDevs",
+    "title": "My coworker uses AI to reply to my PR review and I hate it",
+    "url": "https://reddit.com/r/ExperiencedDevs/comments/1nq5npn/my_coworker_uses_ai_to_reply_to_my_pr_review_and/",
+    "ups": 1507,
+    "comments": 368,
+    "created_utc": 1758803958.0,
+    "author": "pyrrhicvictorylap",
+    "selftext": "I'm not against him using AI to write code (even though the code he produces clashes with the style, is harder to review, and has been known to not actually solve the bugs.) Given English is not his first language, and he isn't the best written communicator, I'm glad he's finding a tool that enables him to be productive.\n\nHowever, sometimes I'll spend 20 minutes writing a comment on his PR... giving context to some niche code path, how it interacts with other code paths, verbally retracing the conditions that can produce the bug, linking to historical commits helping us both understand the recent changes, etc.\n\nThen I'll get back 5 paragraphs of perfect English with a jovial tone saying my points are *so* valid and here's why my coworker made this change, and this and that...\n\n&gt;Thanks for the detailed feedback and for raising these points. I've looked through the logic, and I think we're on the same page. Here’s a breakdown of how this change fits in with your observations.\n\n&gt;You're absolutely right about the intended system behavior, especially regarding the FooClass workflow and how our SQL query is supposed to handle errors. The core issue we're hitting is a subtle race condition that causes a panic before our self-healing logic can engage.\n\n&gt;The \"Stuck Bar\" Problem &amp; FooClass: Your instinct is correct the foo.error IS NULL check in our query is designed to prevent exactly the kind of loop you described (link). The problem is that the current code panics before it ever gets a chance to call executeBaz(). Because the error state is never saved to the database, the query picks up the same problematic record on every run, leading to a crash loop.\n\n&gt;\\[Three more paragraphs\\]\n\n&gt;In short, this change is a defensive fix that ensures our state is updated correctly, allowing the rest of our robust logic (like the SQL query) to function as intended. It addresses the immediate panic while still validating your points about the overall system design.\n\nClearly my coworker took my painstaking reply, fed it into some model with a prompt like \"reply to this\", and copy/pasted it back.\n\nNow instead of trying to work through the language barrier, I'm forced to interact with yet another chatbot instead of a human.\n\nThe future is here and I hate it.",
+    "id": "1nq5npn",
+    "signal": 1,
+    "hits": [
+      "the problem is"
+    ],
+    "passages": [
+      {
+        "phrase": "the problem is",
+        "text": "correct the foo.error IS NULL check in our query is designed to prevent exactly the kind of loop you described (link). The problem is that the current code panics before it ever gets a chance to call executeBaz(). Because the error state is never saved"
+      }
+    ]
+  },
+  {
+    "sub": "ExperiencedDevs",
+    "title": "You should really consider letting some plates hit the floor.",
+    "url": "https://reddit.com/r/ExperiencedDevs/comments/1sfw7o5/you_should_really_consider_letting_some_plates/",
+    "ups": 2672,
+    "comments": 243,
+    "created_utc": 1775662271.0,
+    "author": "ninetofivedev",
+    "selftext": "So I need to start off this post with a few full disclosures because apparently if I'm not explicit with some remarks, everyone will focus on the obvious elephants in the room.\n\n*Note: All advice is mere suggestion. Nobody knows your situation better than you do. Exercise your best judgement. Not a single token was consumed in the generation of this post.*\n\n----\n\nNow that we have that out of the way, I want to talk about a trend that I see all too common in our industry. \n\nThere is this trend where management / executive leadership makes a decision, like downsizing the company, and the consequences of those decisions often fall on the employees. Now obviously business sometimes have to make hard decisions to stay afloat, like cutting jobs, reducing the workforce, whatever you want to call it.\n\nI'm here to tell you that you don't have to let the stress from those decision drown you.\n\nIn fact, I'm here to tell you that you shouldn't. A lot of the time, but not all the time, these decisions are bets. Management is betting they can reduce the workforce and continue to operate as efficiently. Because they're betting that you'll pick up the slack.\n\nBut you picking up the slack probably means getting less hours of sleep, spending less time with your family, stressing over the mere mountain of work that you've had to take on.\n\nI'm here to tell you that is not your responsibility. And you need to make sure that management feels that pain.\n\nWe should be able to live in a Western society where there are reasonable expectations for core working hours and work/life balance.\n\nSo let some plates hit the floor. Don't wake up to that page in the middle of the night. Don't praise others for putting in overtime to deal with something that should have been dealt with at a reasonable time.\n\nYou need to let these signals bubble up to the top. Especially if they added this responsibility with no increase in pay (and of course they did).\n",
+    "id": "1sfw7o5",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "ExperiencedDevs",
+    "title": "Thanks to all the AI coders out there, im busier than i've been in years",
+    "url": "https://reddit.com/r/ExperiencedDevs/comments/1o29tge/thanks_to_all_the_ai_coders_out_there_im_busier/",
+    "ups": 2141,
+    "comments": 279,
+    "created_utc": 1760025568.0,
+    "author": "minimal-salt",
+    "selftext": "I've been freelancing on the side for more than couple years now, mostly helping startups and smaller teams fix bugs, add features, the usual stuff.\n\nUsed to be maybe 1 or 2 projects a month. Now I'm turning people away because there's too much work coming in. And I'm pretty sure I know why.\n\nAbout 70% of the requests I get now are basically \"we built this with AI and it doesn't work, can you fix it?\"\n\ntbh I'm not mad about it. The money's good and the issues are usually pretty straightforward once you dig in. Last few weeks alone I've seen zero input validation, hallucinated libraries that don't exist, payment logic that does the opposite of what the comments say. The security stuff is wild. Apparently 45% of AI-generated code has vulnerabilities and I believe it.\n\nDon't get me wrong, people hired me to clean up messy code before AI too. But it used to be like 1 in 10 projects. Now it's most of them. And the pattern is always the same, looks clean, runs fine once and then falls apart when complexity hits.\n\nMy income's up like 40% from last year and I barely market myself anymore. People just find me when their vibe-coded MVP starts breaking under real use.\n\nSo yeah, thanks AI. Best thing that happened to my side hustle. Hope this keeps up:)",
+    "id": "1o29tge",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "ExperiencedDevs",
+    "title": "I'm 100% sure this post will be quickly deleted but I just have to write it because it's sad what is happenning and there's nothing more I can do. Moderation actions here are harmful and are destroying this sub",
+    "url": "https://reddit.com/r/ExperiencedDevs/comments/1rcb6mh/im_100_sure_this_post_will_be_quickly_deleted_but/",
+    "ups": 2063,
+    "comments": 459,
+    "created_utc": 1771832289.0,
+    "author": "amelix34",
+    "selftext": "There are many more examples from the past but I'll use only this one. Some guy posted his experience on how people using AI in his company pass the responsibility for code from them to code reviewers.\n\n[https://www.reddit.com/r/ExperiencedDevs/comments/1raer4s/vibe\\_coders\\_passing\\_responsibility\\_to\\_code/](https://www.reddit.com/r/ExperiencedDevs/comments/1raer4s/vibe_coders_passing_responsibility_to_code/)\n\nHis post was long, very accurate and with couple of good points. Below it there was a GREAT discussion with \\~500 comments where other people shared their experience. I copypasted link to this post to two of my friends that are also programmers like me. Today I entered the link and I saw that post was deleted because of \"Low Effort\" without any other explanation. I don't understand why they are doing this,  what's the point?\n\n",
+    "id": "1rcb6mh",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "ExperiencedDevs",
+    "title": "Junior devs not interested in software engineering",
+    "url": "https://reddit.com/r/ExperiencedDevs/comments/1mrfgm2/junior_devs_not_interested_in_software_engineering/",
+    "ups": 1807,
+    "comments": 856,
+    "created_utc": 1755304093.0,
+    "author": "creative-java-coffee",
+    "selftext": "My team currently has two junior devs both with 1 year old experience. Unlike all of the juniors I have met and mentored in my career, these two juniors startled me by their lack of interest in software engineering.\n\nThe first junior who just joined our company-\n\n•\t⁠When I talked with him about clean coding and modularizing the code (he wrote 2000+ lines in one single function), he merely responded, “Clean coding is not a real thing.”\n•\t⁠When I tried to tell him I think AI is a great tool, but it’s not there yet to replace real engineers and AI generated codes need to be reviewed to avoid hallucinations. He responded, “that’s just what you think.”\n•\t⁠His feedback to our daily stand up was, “Sorry, but I really don’t care about what other people are doing.”\n\nThe second junior who has been with the company for a year-\n\n•\t⁠When I told him that he should prioritize his own growth and take courses to acquire new skills, he just blanked out. I asked him if he knew any learning website such as Coursera or Udemy and he told me he had never heard of them before.\n•\t⁠He constantly complains about the tickets he works on which is our legacy system, but when I offered to talk with our EM to assign him more exciting work which will expand his skill sets, he told me he was not interested in working on the new system which uses modern tech stacks.\n\nI supposed I am just disappointed with these junior devs not only because after all these years, software engineering still gets me excited, but also it’s a joy for me to see juniors grow. And in the past, all of the juniors I had were all so eager to seize the opportunities to learn.\n\nEdit: Both of them can code, but aren’t interested in software engineering.",
+    "id": "1mrfgm2",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "ExperiencedDevs",
+    "title": "I miss having juniors around",
+    "url": "https://reddit.com/r/ExperiencedDevs/comments/1pt4yxh/i_miss_having_juniors_around/",
+    "ups": 1683,
+    "comments": 186,
+    "created_utc": 1766423435.0,
+    "author": "Deaf_Playa",
+    "selftext": "Juniors are some of the most creative thinkers in this industry because they haven't been conditioned to use tools and techniques that have matured over time. They're more malleable to new tech. Their solutions come from a place of curiousty rather than ego and it just feels nice to help someone else grow in their career.\n\nI miss being a mentor, I miss having study groups for certs, I miss my friends that were laid off this year and last :(",
+    "id": "1pt4yxh",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "ExperiencedDevs",
+    "title": "I'm giving up; Becoming a yes man.",
+    "url": "https://reddit.com/r/ExperiencedDevs/comments/1sgcy1e/im_giving_up_becoming_a_yes_man/",
+    "ups": 1668,
+    "comments": 330,
+    "created_utc": 1775701325.0,
+    "author": "AggravatingFlow1178",
+    "selftext": "I'm so tired of fighting for good engineering practices. Clean code, high quality tests, pragmatic use of AI, code de-duplication, extensible design, and so on. Yes all these things are good - but they have never once rewarded me.\n\nThe only thing I *ever* see get rewarded are\n\n1. High volume &amp; high quality engagement in meetings\n2. Ability to attach metrics to your work and then make those metrics look good\n3. Creating brand new features / tools (improving existing stuff is no-value)\n\nIt doesn't matter how clean we get the code. It doesn't matter how many defects we prevent. It doesn't matter that spending 20% more now means every quarter for the next 3 years we spend 10% less. It doesn't matter if you convince your tech lead or EM or PM to go a different way. It doesn't matter if you have high quality &amp; actionable metrics, you just need numbers that look good. 200% increase in usage sounds better than \"we have 2 new users\". None of it ever matters.\n\n99% of doing well in this industry a the senior+ level is treating every day like a sales meeting. You're not an engineer, you're an expensive product that needs to convince your customer to renew their subscription.",
+    "id": "1sgcy1e",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "ExperiencedDevs",
+    "title": "I’m told that our “engineering-focused” culture is offputting to women",
+    "url": "https://reddit.com/r/ExperiencedDevs/comments/1n5xc3s/im_told_that_our_engineeringfocused_culture_is/",
+    "ups": 1489,
+    "comments": 669,
+    "created_utc": 1756752884.0,
+    "author": "aitadiy",
+    "selftext": "I’m a computational scientist working at a biotech company at a level equivalent to a Principal/Staff IC at a software company. The world of scientific computing is famous for shoddy software: think one-off Python/R scripts with a single 10k line `__main__()` function, zero version control, and no semblance of engineering or coding rigor. While this is the unfortunate norm in most of academia and industry, the computational biology division of my company differentiates itself by eschewing this trend and acting like a real tech company. We take pride in having a very well-engineered codebase, and it’s a large factor in the company’s success in a very competitive market. The company’s customers consistently tell us that we have the best software and analytical methods in the field, which is a big reason why they use our products.\n\nThe computational biology division is about 90% men. About 25% of our hires are women, but their tenure at the company is much shorter than men’s (median of 2.5 years, compared with 5.5 years for men). A VP at the company (“Velma”) was tasked with improving this attrition discrepancy, and she met 1:1 with all senior members of the division, including myself.\n\nVelma told me that the reasons women give for leaving are not the usual suspects, like bro-y culture, intellectual dismissal, outright sexism, etc. Instead, she said that the overwhelming reason women are dissatisfied is our focus on “engineering minutiae” (her exact words). She gave an example of an interaction I had with “Susan” on our team. Susan wrote a tool that used O(n^(2)) memory, which worked fine on test data but blew up on real data. Rather than implement a simple algorithmic fix that would let it run in O(n) memory, Susan’s solution was to just provision a VM with a ludicrous amount of RAM (&gt;1 TB). I was responsible for reviewing her code, and she pushed back when I told her this would be unacceptable for production use. (Her pushback was along the lines of “the biggest AWS VM has 32 TB of RAM, so until we hit that I don’t see any problem.”) Furthermore, according to Velma, Susan was actually very upset that I asked her to implement the O(n) fix, feeling that I was “trying to run circles around her by showing off my knowledge of obscure CS trivia.” That said, Susan did not directly voice this displeasure to me, and with some guidance, ended up implementing the fix. Her tool now runs great in production. \n\nMy 1:1 with Velma was eye-opening. Thinking back, there is a definite pattern of women on the team writing code that is generally scientifically sound but poor from an engineering/CS standpoint. I did not realize that women specifically were consistently being put off when asked to address these problems. (The opposite problem crops up with some men on the team, whose code is overoptimized and overengineered to the point of unmaintainability. From what I can tell, they are not upset when asked to simplify things — the worst reaction I heard was something along the lines of “that was a bloody clever piece of code and it’s a pity people aren’t willing to take the time to understand it.”)\n\nVelma agreed wholeheartedly that we would not change our rigorous engineering standards, and that there is no quick-fix to this problem. She just asked that I be aware of it, and reflect over the coming months over potential ways we can address it. Given the fairly nuanced and levelheaded takes I’ve seen here on gender issues in tech, I thought I’d ask this sub for any advice or experience. Thanks so much!\n\nEdit: Thanks for all the great replies! Lots of things to think about. One common thread I want to address: I've seen several comments saying that this is jumping to conclusions based on a one-off anecdote. I only listed the Susan story as an example; Velma gave several other such examples, so she's not basing her conclusions on a one-off. Velma is being extremely rigorous about identifying this as a systemic problem; she went through transcripts of all of the division's exit interviews over the last few years, and interviewed multiple current team members.",
+    "id": "1n5xc3s",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  }
+]

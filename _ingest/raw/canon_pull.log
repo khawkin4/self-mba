@@ -18,3 +18,116 @@
 [22:58:24]   done canon/mental-models: 2 yt, 1 reddit, 0 edgar
 [22:58:24] [canon] org-design-mechanisms
 [22:58:24]     yt: 'Jeff Bezos shareholder letters mechanisms day 1'
+[22:58:48]     yt: 'Will Larson engineering management elegant puzzle'
+[22:59:14]     reddit: r/ExperiencedDevs
+[22:59:16]     reddit: r/managers
+[22:59:17]   done canon/org-design-mechanisms: 2 yt, 2 reddit, 0 edgar
+[22:59:17] [canon] landscape-competitive
+[22:59:17]     yt: 'Clayton Christensen innovators dilemma disruption'
+[22:59:43]     yt: 'Hamilton Helmer 7 powers moat'
+[23:00:08]     reddit: r/strategy
+[23:00:10]   done canon/landscape-competitive: 2 yt, 1 reddit, 0 edgar
+[23:00:10] [canon] negotiation-influence
+[23:00:10]     yt: 'Robert Cialdini influence six principles persuasion'
+[23:00:37]     yt: 'Dale Carnegie how to win friends and influence people'
+[23:01:04]     reddit: r/negotiation
+[23:01:05]     reddit: r/sales
+[23:01:07]   done canon/negotiation-influence: 2 yt, 2 reddit, 0 edgar
+[23:01:07] [canon] execution-operations
+[23:01:07]     yt: 'Goldratt theory of constraints the goal bottleneck'
+[23:01:31]     yt: '4 disciplines of execution lead measures whirlwind'
+[23:01:53]     reddit: r/operations
+[23:01:53]     ! exit 1: Traceback (most recent call last):
+  File "/Users/kalvaryhawkins/research-kit/.venv/bin/research", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+
+[23:01:54]   done canon/execution-operations: 2 yt, 0 reddit, 0 edgar
+[23:01:54] [canon] culture-change
+[23:01:54]     yt: 'Kotter 8 steps leading change'
+[23:02:16]     yt: 'Edgar Schein three levels of organizational culture'
+[23:02:38]     reddit: r/managers
+[23:02:39]   done canon/culture-change: 2 yt, 1 reddit, 0 edgar
+[23:02:39] [canon] risk-fragility
+[23:02:39]     yt: 'Nassim Taleb antifragile explained'
+[23:03:02]     yt: 'Philip Tetlock superforecasting calibration'
+[23:03:24]     reddit: r/decisionmaking
+[23:03:26]   done canon/risk-fragility: 2 yt, 1 reddit, 0 edgar
+[23:03:26] [canon] product-innovation
+[23:03:26]     yt: 'Eric Ries lean startup MVP build measure learn'
+[23:03:49]     yt: 'Marty Cagan inspired product discovery'
+[23:04:12]     yt: 'Peter Thiel zero to one monopoly'
+[23:04:35]     reddit: r/ProductManagement
+[23:04:37]   done canon/product-innovation: 3 yt, 1 reddit, 0 edgar
+[23:04:37] [canon] power-politics
+[23:04:37]     yt: 'Jeffrey Pfeffer power organizational'
+[23:04:59]     yt: '48 laws of power Robert Greene summary'
+[23:05:22]     reddit: r/cscareerquestions q=office politics
+[23:05:23]   done canon/power-politics: 2 yt, 1 reddit, 0 edgar
+[23:05:23] [canon] personal-effectiveness
+[23:05:23]     yt: 'Cal Newport deep work'
+[23:05:46]     yt: 'James Clear atomic habits four laws'
+[23:06:08]     reddit: r/productivity
+[23:06:10]   done canon/personal-effectiveness: 2 yt, 1 reddit, 0 edgar
+[23:06:10] [canon] financial-literacy
+[23:06:10]     yt: 'Seth Klarman margin of safety value investing'
+[23:06:32]     yt: 'Michael Mauboussin skill versus luck success equation'
+[23:06:54]     reddit: r/SecurityAnalysis
+[23:06:56]   done canon/financial-literacy: 2 yt, 1 reddit, 0 edgar
+[23:06:56] [canon] behavioral-decision
+[23:06:56]     yt: 'Richard Thaler nudge choice architecture defaults'
+[23:07:18]     yt: 'Dan Ariely predictably irrational'
+[23:08:01]     yt: 'Gary Klein recognition primed decision making'
+[23:08:23]     reddit: r/decisionmaking
+[23:08:24]   done canon/behavioral-decision: 3 yt, 1 reddit, 0 edgar
+[23:08:24] [canon] game-theory
+[23:08:24]     yt: 'Dixit Nalebuff thinking strategically game theory'
+[23:08:47]     yt: 'Thomas Schelling focal point credible commitment'
+[23:09:11]     yt: 'Axelrod tit for tat evolution of cooperation'
+[23:09:34]     reddit: r/gametheory
+[23:09:36]   done canon/game-theory: 3 yt, 1 reddit, 0 edgar
+[23:09:36] [canon] platform-strategy
+[23:09:36]     yt: 'platform business model network effects cold start'
+[23:10:00]     yt: 'two sided market subsidize which side pricing'
+[23:10:23]     reddit: r/startups q=network effects platform
+[23:10:25]   done canon/platform-strategy: 2 yt, 1 reddit, 0 edgar
+[23:10:25] [canon] systems-complexity
+[23:10:25]     yt: 'Peter Senge fifth discipline systems thinking archetypes'
+[23:10:49]     yt: 'beer game bullwhip effect supply chain'
+[23:11:11]     yt: 'Donella Meadows leverage points'
+[23:11:34]     reddit: r/systemsthinking
+[23:11:35]   done canon/systems-complexity: 3 yt, 1 reddit, 0 edgar
+[23:11:35] [canon] information-communication
+[23:11:35]     yt: 'Claude Shannon information theory explained'
+[23:11:59]     yt: 'Edward Tufte data visualization chartjunk'
+[23:12:21]     yt: 'crucial conversations skills summary'
+[23:12:45]     reddit: r/dataisbeautiful
+[23:12:47]   done canon/information-communication: 3 yt, 1 reddit, 0 edgar
+[23:12:47] [canon] economics-incentives
+[23:12:47]     yt: 'Akerlof market for lemons asymmetric information'
+[23:13:14]     yt: 'principal agent problem agency theory explained'
+[23:13:37]     reddit: r/AskEconomics
+[23:13:38]   done canon/economics-incentives: 2 yt, 1 reddit, 0 edgar
+[23:13:38] [canon] history-judgment
+[23:13:38]     yt: 'Graham Allison essence of decision three models'
+[23:14:02]     yt: 'Thucydides trap Athens Sparta Allison'
+[23:14:24]     yt: 'Clausewitz on war friction fog'
+[23:14:47]     reddit: r/geopolitics
+[23:14:48]   done canon/history-judgment: 3 yt, 1 reddit, 0 edgar
+[23:14:48] [canon] communication-storytelling
+[23:14:48]     yt: 'Barbara Minto pyramid principle'
+[23:15:11]     yt: 'Nancy Duarte resonate presentation structure'
+[23:15:44]     yt: 'Simon Sinek start with why golden circle'
+[23:16:28]     reddit: r/PublicSpeaking
+[23:16:29]   done canon/communication-storytelling: 3 yt, 1 reddit, 0 edgar
+[23:16:29] [canon] design-problem-solving
+[23:16:29]     yt: 'Roger Martin integrative thinking opposable mind'
+[23:16:51]     yt: 'first principles thinking problem solving'
+[23:17:15]     reddit: r/consulting
+[23:17:17]   done canon/design-problem-solving: 2 yt, 1 reddit, 0 edgar
+[23:17:17] [canon] ethics-judgment
+[23:17:17]     yt: 'Michael Sandel justice what is the right thing to do'
+[23:17:39]     yt: 'right versus right ethical leadership decisions'
+[23:18:02]     reddit: r/Ethics
+[23:18:03]   done canon/ethics-judgment: 2 yt, 1 reddit, 0 edgar
+[23:18:03] === DONE in 22.1 min — 53 yt files, 26 reddit files, 0 edgar files ===

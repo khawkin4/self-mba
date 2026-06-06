@@ -1,0 +1,190 @@
+[
+  {
+    "sub": "GAMETHEORY",
+    "title": "In the Monty Hall Problem, If the host didn’t know where the car was, but still revealed a goat behind a door by chance, why is it no longer 67% win if you switch?",
+    "url": "https://reddit.com/r/GAMETHEORY/comments/1ocdrhf/in_the_monty_hall_problem_if_the_host_didnt_know/",
+    "ups": 44,
+    "comments": 89,
+    "created_utc": 1761055225.0,
+    "author": "ChristianFidel",
+    "selftext": "Hey guys, I’m very confused why the problem is no longer 67% chance win if you switch, if the host still revealed a goat even though it was by chance and he didn’t know. Can someone please explain🙏",
+    "id": "1ocdrhf",
+    "signal": 1,
+    "hits": [
+      "the problem is"
+    ],
+    "passages": [
+      {
+        "phrase": "the problem is",
+        "text": "Hey guys, I’m very confused why the problem is no longer 67% chance win if you switch, if the host still revealed a goat even though it was by chance and he didn’t kn"
+      }
+    ]
+  },
+  {
+    "sub": "GAMETHEORY",
+    "title": "\"The Sole button\"",
+    "url": "https://reddit.com/r/GAMETHEORY/comments/1tjj3c0/the_sole_button/",
+    "ups": 33,
+    "comments": 37,
+    "created_utc": 1779366731.0,
+    "author": "VoXel_Vasudev",
+    "selftext": "You are in a sealed room with 100 strangers. In front of each person is a button. EDIT: NO one can see eachother and their actions.\n\nThe rule:\n\nexactly one person must press their button.\n\nIf nobody presses it, everyone dies.\n\nIf only one person presses it, Everyone lives\n\nIf more than one person presses it, everyone who pressed dies - but the rest survive.\n\nThere is no way to communicate. You have 60 seconds. What do you do?",
+    "id": "1tjj3c0",
+    "signal": 1,
+    "hits": [
+      "if only"
+    ],
+    "passages": [
+      {
+        "phrase": "if only",
+        "text": "other and their actions.\n\nThe rule:\n\nexactly one person must press their button.\n\nIf nobody presses it, everyone dies.\n\nIf only one person presses it, Everyone lives\n\nIf more than one person presses it, everyone who pressed dies - but the rest sur"
+      }
+    ]
+  },
+  {
+    "sub": "GAMETHEORY",
+    "title": "Problem on Game Theory from the Russian unified state exam",
+    "url": "https://reddit.com/r/GAMETHEORY/comments/1tvm84x/problem_on_game_theory_from_the_russian_unified/",
+    "ups": 31,
+    "comments": 6,
+    "created_utc": 1780485325.0,
+    "author": "dmitrevnik",
+    "selftext": "I found it interesting (which rarely happens with national CS exams) and visualized its underlying recursive algorithm for you to solve it yourself. The problem is as follows:\n\n**Petya** and **Vanya** are playing a game with a heap of stones, taking turns to move. Petya always goes first.\n\nLet the number of stones be *S*. On each turn, a player may perform one of two actions:\n\n1. Add **one** stone to the heap *(S + 1)*\n2. **Double** the number of stones in the heap *(S \\* 2)*\n\nInitially, there are *S* stones in the heap, where *1 ≤ S ≤ 28.*\n\nThe game ends immediately when the number of stones in the heap reaches 29 or more. In other words, the winner is the player who makes the final move and reaches *≥ 29* stones.\n\n**Find** the value of *S* such that Petya CANNOT win on his first turn, but Vanya is guaranteed to win on his very first turn, regardless of what move Petya makes.\n\nThe first figure shows how the game tree branches out - at each step, every decision splits into two new possibilities.\n\nThe answer is &gt;!*S = 14*!&lt;. The second figure visualizes exactly how the recursive function branches out, starting from this correct answer and resulting in *True*",
+    "id": "1tvm84x",
+    "signal": 1,
+    "hits": [
+      "the problem is"
+    ],
+    "passages": [
+      {
+        "phrase": "the problem is",
+        "text": "rarely happens with national CS exams) and visualized its underlying recursive algorithm for you to solve it yourself. The problem is as follows:\n\n**Petya** and **Vanya** are playing a game with a heap of stones, taking turns to move. Petya always goes"
+      }
+    ]
+  },
+  {
+    "sub": "GAMETHEORY",
+    "title": "What do y’all think about this simultaneous game?",
+    "url": "https://reddit.com/r/GAMETHEORY/comments/1syupxa/what_do_yall_think_about_this_simultaneous_game/",
+    "ups": 245,
+    "comments": 1168,
+    "created_utc": 1777458061.0,
+    "author": "Varyks",
+    "selftext": "Personally, I think this has been fun to model, and it’s rare to have such a large sample. ",
+    "id": "1syupxa",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "GAMETHEORY",
+    "title": "2025 Government Shutdown Extended Form Game Theory Help",
+    "url": "https://reddit.com/r/GAMETHEORY/comments/1nxmblw/2025_government_shutdown_extended_form_game/",
+    "ups": 208,
+    "comments": 36,
+    "created_utc": 1759558264.0,
+    "author": "Wooden_Marketing2522",
+    "selftext": "Hello all, I am very new to game theory and created my first game that I am looking for help either revising or expanding with new possibilities. I am interested in using game theory in politics (domestic and international) and I am trying to learn its practicality in those areas. Any help would be appreciated!\n\nPayoff scale: 1 to 6 points for either party depending on the benefits of each decision, explained at the bottom of the diagram briefly.\n\nThe game would end when the budget is passed and the shutdown is ended.\n\nAre there any other decisions each party could make? Curveballs? Like the Dems counter threatening, or the Reps using a declaration of a state of emergency to order a temporary funding? This is just for fun, so please feel free to add anything.",
+    "id": "1nxmblw",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "GAMETHEORY",
+    "title": "Why are infeasible strategies still listed in some game?",
+    "url": "https://reddit.com/r/GAMETHEORY/comments/1nq2pmg/why_are_infeasible_strategies_still_listed_in/",
+    "ups": 44,
+    "comments": 11,
+    "created_utc": 1758794534.0,
+    "author": "Novel_Estimate_3845",
+    "selftext": "In this centipede game, each player has four strategies:\n\nS1 = {dd, dc, cd, cc}\n\nHere’s my question: if Player 1 chooses d at the first node, the game ends immediately.\n\nSo it seems like we could represent the strategy set as:\n\nS1 = {d, cd, cc}\n\nWhy isn’t this done? What issues would arise if we did it this way?\n",
+    "id": "1nq2pmg",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "GAMETHEORY",
+    "title": "Why is the answer (A) instead of (D)?",
+    "url": "https://reddit.com/r/GAMETHEORY/comments/1ln5thw/why_is_the_answer_a_instead_of_d/",
+    "ups": 42,
+    "comments": 17,
+    "created_utc": 1751170797.0,
+    "author": "kirafome",
+    "selftext": "I understand that Choice L strictly dominates Choice R, but it doesn't dominate choice M. I was told that a strictly dominated strategy is the strategy that a player will pick regardless of what the opponent picks, but that doesn't make sense, because if Player A chooses Choice 3, then Player B wants to choose Choice M. Is the question only asking for the choice that strictly dominates another?",
+    "id": "1ln5thw",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "GAMETHEORY",
+    "title": "The intuitive answer is 1/3 because there is only one card out of three that fits the requirements. But I don't understand the math behind it",
+    "url": "https://reddit.com/r/GAMETHEORY/comments/1ltleup/the_intuitive_answer_is_13_because_there_is_only/",
+    "ups": 38,
+    "comments": 62,
+    "created_utc": 1751863873.0,
+    "author": "kirafome",
+    "selftext": "I understand where all the numbers come from, but I don't understand why it's set up like this. \n\nMy original answer was 1/3 because, well, only one card out of three can fit this requirement. But there's no way the question is that simple, right?\n\nThen I decided it was 1/6: a 1/3 chance to draw the black/white card, and then a 1/2 chance for it to be facing up correctly. \n\nThen when I looked at the question again, I thought the question assumes that the top side of the card is already white. So then, the chance is actually 1/2. Because if the top side is already white, there's a 1/2 chance it's the white card and a 1/2 chance it's the black/white card.\n\nI don't understand the math though. We are looking for the probability of the black/white card facing up correctly, so the numerator (1/6) is just the chance of drawing the correct card white-side up. And then, the denominator is calculating the chance that the bottom-side is black given any card? But why do we have to do it given any card, if we already assume the top side is white?",
+    "id": "1ltleup",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "GAMETHEORY",
+    "title": "You are playing a SINGLE ROUND of prisoner's dilemma. The twist: it is against your clone. What is the optimal move ?",
+    "url": "https://reddit.com/r/GAMETHEORY/comments/1l961st/you_are_playing_a_single_round_of_prisoners/",
+    "ups": 37,
+    "comments": 88,
+    "created_utc": 1749680544.0,
+    "author": "EXTRAVAGANT_COMMENT",
+    "selftext": "To clarify: \n\n * You are not trying to beat your clone, you are trying to maximize your own result. \n\n * The clone is an EXACT replica. It does not know it is a clone, it has your exact same memories and upbringing.",
+    "id": "1l961st",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "GAMETHEORY",
+    "title": "Game Theory Arcade is a small interactive lab for learning core game-theory ideas by actually playing them rather than just reading about them.",
+    "url": "https://reddit.com/r/GAMETHEORY/comments/1rrug9e/game_theory_arcade_is_a_small_interactive_lab_for/",
+    "ups": 31,
+    "comments": 14,
+    "created_utc": 1773330670.0,
+    "author": "[deleted]",
+    "selftext": "Game Theory Arcade is a small interactive lab for learning core game-theory ideas by actually playing them rather than just reading about them. You run short repeated games against simple bots (random, Tit-for-Tat, competitive, etc.) and watch how strategies evolve across rounds. Each move shows the payoff matrix, best responses, and where Nash equilibria sit in the game, so you can see why certain choices dominate and why “rational” one-shot decisions often perform badly over repeated interactions. The sessions track things like cooperation rates, realized equilibria, and discounted payoffs so you can experiment with strategies and immediately see the consequences. It’s basically a hands-on way to build intuition about concepts like dominant strategies, retaliation, cooperation, and equilibrium behaviour in classic games such as the Prisoner’s Dilemma. Designed and built as a simple teaching arcade rather than a textbook.",
+    "id": "1rrug9e",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "GAMETHEORY",
+    "title": "What would I be able to do if I learn game theory?",
+    "url": "https://reddit.com/r/GAMETHEORY/comments/1lp2ovs/what_would_i_be_able_to_do_if_i_learn_game_theory/",
+    "ups": 28,
+    "comments": 44,
+    "created_utc": 1751379065.0,
+    "author": "Ok-Current-464",
+    "selftext": "I want to understand whether or not it would be useful for me to learn the game theory.\n\nFor example, reasons why I learned other fields of math:\n\nLinear Algebra — 3D Graphics, AI\n\nReal Analysis — Physics, AI\n\n\nSo what practically I would be able to do if I learn game theory?",
+    "id": "1lp2ovs",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "GAMETHEORY",
+    "title": "Given the recent developments, is the Trump TACO theory true?",
+    "url": "https://reddit.com/r/GAMETHEORY/comments/1s1emkk/given_the_recent_developments_is_the_trump_taco/",
+    "ups": 23,
+    "comments": 19,
+    "created_utc": 1774266485.0,
+    "author": "BannedForThe7thTime",
+    "selftext": "",
+    "id": "1s1emkk",
+    "signal": 0,
+    "hits": []
+  }
+]

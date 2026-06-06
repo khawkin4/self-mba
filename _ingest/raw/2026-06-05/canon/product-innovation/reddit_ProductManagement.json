@@ -1,0 +1,181 @@
+[
+  {
+    "sub": "ProductManagement",
+    "title": "How I use Claude Code as a Product Manager",
+    "url": "https://reddit.com/r/ProductManagement/comments/1sppgwd/how_i_use_claude_code_as_a_product_manager/",
+    "ups": 824,
+    "comments": 220,
+    "created_utc": 1776595091.0,
+    "author": "akashkrr",
+    "selftext": "TL;DR: I’m a PM who somehow ended up spending most of my day in a terminal and VS Code — and I don’t hate it. A few months with Claude Code turned into a full personal AI work system: connected to databases, Slack, Notion, Gmail, Metabase via MCP servers. I’m now running simulations and data pipelines I genuinely couldn’t have done before, with no CS background. The real unlock was what I built around the AI — a custom memory system, a skill library, and a /akash skill trained on my own thinking style that gives me a second opinion that actually sounds like me. Almost didn’t start because it felt too technical. Once the first real workflow clicked, I just kept going. \n\nSomething hit me recently. More than half of my working day now happens in a terminal and VS Code. I'm a Product Manager. That's not supposed to be what my days look like.\n\nBut I've been using Claude Code for a few months now and things have kind of drifted in that direction, and honestly I don't mind it anymore. What started as me trying to get some data analysis done turned into building an entire work setup: workflows connected to databases, Notion, Slack, Gmail, Granola, Metabase. There's something called MCP servers that lets you plug all of this into one place, and once you set it up it starts to feel like the tools are actually built around how you work rather than the other way around.\n\nI've been doing data science work that I genuinely wouldn't have been able to do before this. Simulations, analysis pipelines, crunching operations data across hundreds of thousands of records. I don't have a CS background, never properly learned to code. But I've been close enough to technical work for long enough to understand what needs to happen, and Claude Code became the bridge between understanding something and actually being able to do it.\n\nWhat I think actually makes it useful is what you build around the AI, not just the AI itself. I have a custom memory system now where each session saves what worked, what went wrong, what decisions were made. I created something I call /session-learnings that goes through the whole conversation and stores everything into the project's folder. Each project has its own context and history so the next session picks up where the last one left off. I have hooks that fire when I'm giving feedback or catching something wrong, so corrections actually carry forward instead of getting lost. Git tracks everything.\n\nI also have a skill library at this point. Skills for pulling data from our databases, for building dashboards, for writing analysis documents that go to leadership. Some of them run agents in parallel, splitting a problem into pieces and working on each simultaneously, then combining the results. It sounds like a lot to set up but you just need to get started and work with Claude Code to build what works for you.\n\nThe one I keep thinking about is something I call /akash. It's a skill I've been slowly training on my own way of thinking. My analysis framework, how I structure decisions, how I frame things for different audiences. When I'm about to finalize something, I sometimes run it through /akash first, or just ask it what would I do here. It's a bit of a strange thing to describe but it works out to something like having a second opinion from someone who has read everything you've written and paid attention to all of it.\n\nI almost didn't start any of this. I kept convincing myself that Claude Code was too technical, that it was built for engineers and I'd spend more time confused than productive. I was using ChatGPT for most things and it was fine for writing and quick questions, but it had a ceiling. It couldn't connect to anything real, didn't know my context, and every conversation started fresh. I kept running into things I wanted to do that it just couldn't do.\n\nEventually I got over the hesitation and tried Claude Code properly. Once the first real thing worked, a workflow that actually pulled from production data and gave me something I could use, I just kept going.\n\nI want to write about what I've built and how it happened, for people in similar roles who are wondering whether any of this is actually worth the time. Not because I have it all figured out, but because I spent a while looking for this kind of writing and mostly couldn't find it.",
+    "id": "1sppgwd",
+    "signal": 1,
+    "hits": [
+      "couldn't find"
+    ],
+    "passages": [
+      {
+        "phrase": "couldn't find",
+        "text": "he time. Not because I have it all figured out, but because I spent a while looking for this kind of writing and mostly couldn't find it."
+      }
+    ]
+  },
+  {
+    "sub": "ProductManagement",
+    "title": "I messed up my Google PM Vibe Coding Interview",
+    "url": "https://reddit.com/r/ProductManagement/comments/1lw9r9h/i_messed_up_my_google_pm_vibe_coding_interview/",
+    "ups": 765,
+    "comments": 252,
+    "created_utc": 1752145011.0,
+    "author": "Longjumping-Buddy501",
+    "selftext": "I had my 2nd round of Google PM interview yesterday after doing well in my first round and was totally blindsided by the format. I had no clue there would be a vibe coding interview—I was expecting a traditional PM interview, but that didn’t happen.\n\nDuring the interview, I ended up being very unstructured. Having built AI applications at my own startup, I know the pitfalls of every tool out there, and in these situations, the main bottleneck is the backend. So, I focused all my energy on the backend during the interview.\n\nWhat I *should* have done was approach it like a product design interview: prepare a small PRD, use that to create a prompt, and then maybe run it in something like Firebase Studio, Lovable, or V0. Instead, I jumped into building my Langchain backend agent first and completely messed up the code for tool calling in Langchain. I was stressed and just blanked on the exact implementation.\n\nMy biggest regret is that, if I’d even had the slightest clue about the format, I would have come in with a structure prepared. I just didn’t manage my 45 minutes well. The knowledge was there, but the execution was honestly pathetic. Not sure what else to say—I guess I just needed to share.\n\nDeep down, what’s making me feel worse is that I don’t have too many opportunities—if I mess up the ones that come, it feels like I’m done for, especially since there are limited opportunities in India for AI jobs.\n\nEdit 1: Another reason for posting here is anyone who is planning on interviewing for a similar role knows there could be vibe coding interviews. In all my research I didn't find any mentions of a vibe coding interview, so hopefully this knowledge will help someone else in the future.\n\nEdit 2: I was interviewing for an L5 PM role (the JD mentions strong focus on AI/ML) so it is an AI PM role.   \nAlso the aim of the post has not been to garner sympathy (although I appreciate the positive and supportive comments), my aim was to solely narrate what the interview experience was like and what I could have done better. ",
+    "id": "1lw9r9h",
+    "signal": 1,
+    "hits": [
+      "bottleneck"
+    ],
+    "passages": [
+      {
+        "phrase": "bottleneck",
+        "text": "built AI applications at my own startup, I know the pitfalls of every tool out there, and in these situations, the main bottleneck is the backend. So, I focused all my energy on the backend during the interview.\n\nWhat I *should* have done was approac"
+      }
+    ]
+  },
+  {
+    "sub": "ProductManagement",
+    "title": "8 lessons I keep seeing after working with 100s of PMs (this is a long one)",
+    "url": "https://reddit.com/r/ProductManagement/comments/1lkhuwd/8_lessons_i_keep_seeing_after_working_with_100s/",
+    "ups": 2043,
+    "comments": 160,
+    "created_utc": 1750886273.0,
+    "author": "UpwardPM",
+    "selftext": "I’ve worked with hundreds of PMs across different industries, sometimes coaching directly, sometimes supporting other coaches or teams. PMs trying to get promoted. Some trying to get new jobs. Some stuck in execution hell, and some just trying to figure out what the hell their job even is.\n\nHere are 8 lessons I keep coming back to. No change your life in an instant, HAX. No theory. Just stuff that actually helps you grow, make impact, and not burn out.\n\nEach one includes something small you can do today. You prob wont do all of them, but if it's valuable pick one.\n\n**1. Visibility beats execution** (nothing new here, but it's true)\n\nYou can ship every sprint and still get labeled \"not strategic enough.\" I’ve seen it happen to PMs who absolutely crushed delivery, but nobody above them really got what they were doing or why it mattered.\n\nYou don’t get promoted for being useful. You get promoted for being visible and driving outcomes that sound important.\n\nwhat to do today: take your last project and rewrite the update to focus on business impact, not tasks. “We reduced churn by 10%” hits harder than “we rebuilt the dashboard.”\n\n**2. If your calendar’s a mess, your career probably is too**\n\nBack-to-back meetings, fires, random asks from stakeholders, grooming sessions, planning calls... then it’s Friday and you’re wondering why you havent done anything that actually matters.\n\nMost PMs don’t block time to think, so they never look strategic. They just react all week and hope someone notices how busy they are.\n\nwhat to do today: block 90 min on your calendar for “actual product work.” (the strategic thinking type) Literally label it that. Then protect it like your job depends on it.\n\n**3. Nobody really knows what PMs do (not even your manager)**\n\nYou’ll get called a ticket writer, a mini-CEO, a project manager, a product owner, or release manager. Whatever fits the other persons mental model. Don’t take it personally, but don’t just accept it either.\n\nYour job is to actively shape how ppl see your role, otherwise they’ll fill in the blanks for you.\n\nwhat to do today: write down 3 things ppl expect from you that aren’t really your job, and 3 things you do that no one sees. Then figure out how you’re gonna fix that perception gap.\n\n**4. Influence &gt; being right**\n\nYou can have the best data in the room and still lose if nobody trusts you or understands what you’re saying. The PMs who win are the ones who can connect with ppl, tell a clear story, and make stakeholders feel like part of the process.\n\nWhat to do today: before your next meeting, ask yourself what the other person actually cares about. Not what you care about. What they do. Then lead with that. A simple thought excercise is to ask - \"What do I want them to know? What do I want them to feel? What do i want them to do with the information?\"\n\n**5. Most PMs dont know what game they're playing**\n\nYou’re heads-down shipping features, but... why? To get promoted? Change jobs? Get out of a bad team? Just survive?\n\nA lot of PMs drift for years with no real plan. The ones who grow are intentional. They pick a lane.\n\nwhat to do today: Write down what success looks like for you 6 months from now. Then compare it to what you actually worked on last week. If it doesn’t match, that’s your signal.\n\n**6. Roadmaps are meaningless without a narrative**\n\nYou can build the best roadmap in the world, but if your stakeholders don't get how it helps them, they won't care. Most roadmap reviews are just a bunch of features with no story.\n\nwhat to do today: explain your roadmap to someone not in tech. If they can't repeat it back in their own words, simplify.\n\n**7. Always being available makes you look junior**\n\nIf you’re jumping on every ping, joining every meeting, saying “sure I’ll handle that” on every cross-functional thread... you look reactive. Not strategic.\n\nYou cant think long-term if youre always on call.\n\nwhat to do today: cancel or decline one meeting this week that’s just noise. No one’s gonna notice except you, and you’ll get an hour of your life back.\n\n**8. Perfectionism/procrastination is often just fear**\n\nThat doc you’ve been tweaking for 3 weeks? That spec you keep polishing? That message you haven’t sent yet? You’re not making it better, you’re avoiding feedback.\n\nThe best PMs I’ve worked with ship before they’re ready, then iterate.\n\nwhat to do today: go into your drafts, pick the thing you’ve been avoiding, and hit send. Seriously. Just send it.\n\n\n\nI could probably come up with more, but this post is already crazy long.\n\nHope it helps.\n\nCurious if any of these hit home, or if there's one you totally disagree with.",
+    "id": "1lkhuwd",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "ProductManagement",
+    "title": "Steal my 1-1 format. I've been told it's awesome.",
+    "url": "https://reddit.com/r/ProductManagement/comments/1mcc288/steal_my_11_format_ive_been_told_its_awesome/",
+    "ups": 910,
+    "comments": 191,
+    "created_utc": 1753797244.0,
+    "author": "Shannon_Vettes",
+    "selftext": "I hate it when 1-1s become only about the work. I'm a people person, I want my people happy &amp; motivated -- this is when the trust is highest, the collaboration is smoothest, and the productivity/quality are best in class.\n\nHere is how I do it, my team loves it, we do it in 30-45min typically.\n\n# First: 4H's check in:\n\n* **Outside of work:** How's your **Home**/**Health**? Is anything stopping you from bringing your best to work? \n* **Inside of work:** How are your **Happiness**/**Happenings?** Is the quality and amount of work right for you? Are your goals moving forward enough?\n\n***Why this works:*** *Sometimes life happens, it's great when you know that so you can adjust expectations and create a human-first work environment.*\n\n# Next: Top Topics:\n\n* Pick 2-3 things that are critical to discuss and you need feedback/input about.\n   * \"Let's set our agenda. Today I'd like to dig into {TOPIC 1} and {TOPIC 2} with you, what can help you the most today, any topics on your side?\"\n\n***Why this works:*** *Doesn't require a ton of prep, keeps the conversation focused on what you both want to get out of it.*\n\n# Last: Wrap up:\n\n* Always leave with next steps that set a clear expectation:\n   * Who\n   * does what\n   * by when\n* Red flag if you have more than 5, tone it down.\n\n \n*Edit: a few mentioned valid points I want to make sure get seen…\n\n- What if you don’t want to share personal info in any capacity bc you don’t trust the manager?\n\nDo not share info if you don’t feel safe. Just tell them all is good. Find safe spaces to share instead.\n\n- What if you as a manager don’t want to ask your team anything personal?\n\nIn that case, just focus on asking if there’s anything that will impact work instead of asking, is your personal life impacting anything at work. I like to ask about their 🔋 battery \n levels. Anything below 30% is a red flag.🚩 \n\n- What do you do if your person says that they are not OK?\n\nAccept that people who are not doing well are going to underperform anyway, so you might as well align the work to where they will perform better and win trust and rapport\nWith your humanity. Here are my steps to stop expecting optimal performance and adapt to the person’s context…\n\n1. Reduce workload: either kill projects or find others to balance the work the person is not doing. This is something to do immediately when someone says they are in the red and can’t function well.\n\n2. Easy mode on: orient work towards things they like to do and are naturally very proficient at. This is the worst time to stretch them.\n\n3. Set the rules: some people will take advantage of your empathy, so make sure they know that this context is not permanent and the employee still has to deliver value long term. Be clear on what the min-viable performance is for the role &amp; level. If the long term context prevents this, then you will be happy to adapt the role/level to one that fits their life better; know what those options are before this convo.\n\nDon’t do all 3 at once, and do #3 if there is a real risk that the person can’t do their job long term.\n\nCommenters also mentioned offering other support methods, leave of absence and other solutions that were great.\n\nWhat does your 1-1 agenda look like?",
+    "id": "1mcc288",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "ProductManagement",
+    "title": "Aakash Gupta tried to justify his false claims, gets called out again",
+    "url": "https://reddit.com/r/ProductManagement/comments/1slqn4a/aakash_gupta_tried_to_justify_his_false_claims/",
+    "ups": 890,
+    "comments": 189,
+    "created_utc": 1776213095.0,
+    "author": "NareModiNeJantaChodi",
+    "selftext": "",
+    "id": "1slqn4a",
+    "signal": 0,
+    "hits": []
+  },
+  {
+    "sub": "ProductManagement",
+    "title": "PM coach spreads interview fearmongering, Google director calls it out",
+    "url": "https://reddit.com/r/ProductManagement/comments/1skhrry/pm_coach_spreads_interview_fearmongering_google/",
+    "ups": 849,
+    "comments": 185,
+    "created_utc": 1776101394.0,
+    "author": "Ok_Quit9085",
+    "selftext": "",
+    "id": "1skhrry",
+    "signal": 0,
+    "hits": []
+  },
+  {
+    "sub": "ProductManagement",
+    "title": "I am so tired of this bs",
+    "url": "https://reddit.com/r/ProductManagement/comments/1tka9kb/i_am_so_tired_of_this_bs/",
+    "ups": 716,
+    "comments": 164,
+    "created_utc": 1779430319.0,
+    "author": "mustra",
+    "selftext": "It’s baffling how out of touch these people are.   \nOh you just got laid off because zuck’s new strategy is to use employees as training data generators for his coding models and you’re not an engineer?   \nGo pay for Lovable using this handy sponsored link.",
+    "id": "1tka9kb",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "ProductManagement",
+    "title": "Akash Gupta - Land a PM job",
+    "url": "https://reddit.com/r/ProductManagement/comments/1squyka/akash_gupta_land_a_pm_job/",
+    "ups": 661,
+    "comments": 167,
+    "created_utc": 1776703741.0,
+    "author": "Working_Fee_9581",
+    "selftext": "So recently, I had posted asking whether I should join Akash Gupta’s course for landing a PM job. Everyone replied to not join because he’s not trustable. As I had attended the seminar, I keep on getting the email promotions. In the email, that I received today, it was mentioned that Sarah Chen, who was in Cohort 1, got a job as a PM at OpenAI.\n\nI was like - let’s see who this person is, and whether they really got a job or not, and then what I found was very shocking - please see the images attached.\nThis guy is creating so much AI slop that he is not even verifying it or thinking that people can do cross reference. Is there no real person who got a job using his course? Could have mentioned them even if they are working in small companies.\n\nNow I’m also having doubts about the other people who are in his group selling the course.",
+    "id": "1squyka",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "ProductManagement",
+    "title": "Breaking through disfunction in orgs is a skill",
+    "url": "https://reddit.com/r/ProductManagement/comments/1mq115h/breaking_through_disfunction_in_orgs_is_a_skill/",
+    "ups": 595,
+    "comments": 104,
+    "created_utc": 1755178931.0,
+    "author": "tangerinepistachio",
+    "selftext": "Does this only happen in big companies? Curious what everyone’s experiences are. Happened to me at my FAANG role previously",
+    "id": "1mq115h",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "ProductManagement",
+    "title": "Rant: We are ruining the world",
+    "url": "https://reddit.com/r/ProductManagement/comments/1lixdcv/rant_we_are_ruining_the_world/",
+    "ups": 567,
+    "comments": 115,
+    "created_utc": 1750725485.0,
+    "author": "jungolungo",
+    "selftext": "*Disclaimer - I’ve been drinking and I’m hitting the wall*\n\nYep - it’s us. We are responsible for all of it. It’s death by 1,000 cuts. We are responsible for all the waste. Landfills full of our last best products while our current and future products will only serve to make future generations dumber. I saw some tech shitbag talking about waiting to have kids so they can have ai implanted in their brain. If that’s the shit you are working on, where is your humanity? \n\nThey say info sec people retire off grid, but that’s already where I’m headed. Maybe I get 10 more years before I’m made redundant…maybe it’s 5. I hate AI with everything I have to hate. Call me alarmist, but do you really think your children are going to have a fighting chance at anything? The only thing holding tech back right now is battery life. When one of you figures that out, it’s over. \n\nI hate this timeline. Loki should prune this shit.",
+    "id": "1lixdcv",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "ProductManagement",
+    "title": "996 culture has arrived in San Francisco",
+    "url": "https://reddit.com/r/ProductManagement/comments/1tj6ycs/996_culture_has_arrived_in_san_francisco/",
+    "ups": 563,
+    "comments": 339,
+    "created_utc": 1779330345.0,
+    "author": "dafuq343",
+    "selftext": "",
+    "id": "1tj6ycs",
+    "signal": 0,
+    "hits": []
+  },
+  {
+    "sub": "ProductManagement",
+    "title": "Our lead engineer quit and the whole company went into mini-panic mode",
+    "url": "https://reddit.com/r/ProductManagement/comments/1laggn7/our_lead_engineer_quit_and_the_whole_company_went/",
+    "ups": 545,
+    "comments": 199,
+    "created_utc": 1749822711.0,
+    "author": "PropertyDifficult270",
+    "selftext": "Last month, our lead engineer left for another company.  \nHe'd been with the product for 8 years and everyone relied on him for everything.\n\nAt first I thought \"we'll manage somehow\"... \n\nFrom customer support:   \n\"A customer is asking about this error message\"  \n → Before: Slack him, get answer in 5 mins  \n → Now: Engineers digging through code going \"maybe this...?\" \n\nFrom sales team:   \n\"I'm in a meeting, can this feature do XX?\"  \n → Before: \"Yes, but watch out for YY\" instant reply  \n → Now: \"Let me investigate... I'll get back tomorrow...\" \n\nThe worst part is seeing the engineering team burning out.   \n\"Another code investigation...\"   \n\"Spent all day investigating, no actual coding done\"   \n\"Honestly, I have no idea why half of this works the way it does\" \n\nBusiness teams are getting hesitant too:   \n\"They look busy, I feel bad asking questions\" \n\nBut they need answers to do their job,   \nand engineers' work stops every time they ask. \n\nHow do you all prevent this kind of single point of failure?   \nAlso, how much do you expect non-engineers to understand about how the product actually works?",
+    "id": "1laggn7",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  }
+]
