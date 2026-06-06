@@ -172,7 +172,7 @@ Strategy before you can read a balance sheet.
 ## The Canon (the reading layer)
 
 > Video and podcasts teach frameworks *fast*; books teach them *deep*. The Canon is the book
-> backbone — **44 distilled books across 13 clusters**, each as a note in `notes/canon/` using the
+> backbone — **82 distilled books across 23 clusters**, each as a note in `notes/canon/` using the
 > standard template, with the compounding fields the raw summaries lacked: **"Breaks when"** and
 > **`[[links]]`**. Index: [`notes/canon/CANON.md`](notes/canon/CANON.md).
 
@@ -191,6 +191,16 @@ Strategy before you can read a balance sheet.
 | **Power & Org Politics** | Pfeffer · Greene | 09, E1 |
 | **Personal Effectiveness** | Covey (*7 Habits*) · Newport · Clear | E11 |
 | **Financial Literacy for Operators** | Klarman · Mauboussin | 02, 07, E2 |
+| **Behavioral Design & Decision Science** | Thaler & Sunstein · Ariely · Cialdini (*Pre-Suasion*) · Kahneman/Sibony/Sunstein (*Noise*) · Klein · March | 07, 05, E11 |
+| **Game Theory & Strategic Interaction** | Dixit & Nalebuff · Brandenburger & Nalebuff · Schelling · Axelrod | 03, 04, E9 |
+| **Network Effects & Platform Strategy** | Parker et al. · Cusumano et al. · Hagiu & Wright · Shapiro & Varian | 04, 10, E10 |
+| **Systems Thinking & Complexity** | Senge · Sterman · Perrow · Jervis | 07, 06, E6 |
+| **Information & Communication** | Shannon · Tufte · Stone et al. · Patterson et al. | 07, 09, E7 |
+| **Economics & Incentive Design** | Mankiw · Alchian & Demsetz · Akerlof · Jensen & Meckling | 03, 09, E2 |
+| **History & Judgment** | Neustadt & May · Allison · Clausewitz · Thucydides | 11, 04, E9 |
+| **Communication & Storytelling** | Minto · Duarte · Sinek | 05, E7 |
+| **Design Thinking & Problem-Solving** | Martin · Rumelt (*The Crux*) · Meadows (*Leverage Points*) | 04, 07 |
+| **Ethics & Judgment** | Badaracco · Sandel | 09, 11, E4 |
 
 **How it plugs into the loop:** when a course's framework comes up, pull the matching canon note and
 apply it to *one real company's data* (EDGAR via `_ingest/edgar.py`) — same Apply discipline as the
@@ -347,6 +357,6 @@ python3 edgar.py search "going concern"    # full-text search across ALL filers
 - [x] **Primary data array** — SEC EDGAR backbone + Damodaran/FRED/etc. (above)
 - [x] **Ingestion pipeline** — `_ingest/edgar.py` (built, tested on live SEC data) + `_ingest/README.md`
 - [x] **Course 01 seed** — worked 10-K note from real EDGAR data (`notes/01-accounting/aapl-10k-fy2025.md`)
-- [x] **The Canon** — 44 distilled books across 13 clusters in `notes/canon/` + index (`notes/canon/CANON.md`)
+- [x] **The Canon** — 82 distilled books across 23 clusters in `notes/canon/` + index (`notes/canon/CANON.md`)
 - [ ] **Compounding loop** — `/schedule`d weekly auto-pull so content accumulates hands-free
 - [ ] **Research-skill wiring** — first transcript + Reddit batch per course (needs `/research` run)

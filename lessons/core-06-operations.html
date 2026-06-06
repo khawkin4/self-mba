@@ -1,0 +1,132 @@
+<!-- LESSON: Operations & Supply Chain — interactive, visual-first, grounded in the 06-operations corpus. Live AMZN FY2025 & WMT FY2026 numbers. -->
+<p class="lead">Marketing wins the sale, but <b>operations decides whether you make money on it</b>. Operations is the engine that turns raw inputs into delivered product — and the whole game is moving work through that engine <em>fast, cheap, and defect-free</em>. This is a hands-on lesson: <b>tap the cards, the diagrams, and the quiz</b>. We'll use the two retail giants — Amazon and Walmart — and their real, latest numbers to make it concrete.</p>
+
+<h2>1 · Three levers every operation pulls</h2>
+<p>Toyota built the most-copied operating system on earth around a single goal: highest quality, lowest cost, shortest lead time. Tap each lever to see what it means 👇</p>
+<div class="reveal">
+  <button class="reveal-q">⏱️ Lead time — speed</button>
+  <div class="reveal-a"><p><b>"How long from order to cash?"</b> The clock that runs from when a customer places an order to when you collect payment. Most of that time, the product is just <em>waiting</em>, not being worked on. Shrinking the wait is where the money hides.</p></div>
+</div>
+<div class="reveal">
+  <button class="reveal-q">🗑️ Waste — cost</button>
+  <div class="reveal-a"><p><b>"What are we paying for that the customer won't?"</b> In Lean, waste is <em>any action that consumes resources without adding value to the customer</em>. Toyota names seven types (TIMWOOD): Transport, Inventory, Motion, Waiting, Over-processing, Over-production, Defects.</p></div>
+</div>
+<div class="reveal">
+  <button class="reveal-q">✅ Quality at the source — defects</button>
+  <div class="reveal-a"><p><b>"Never knowingly pass a defect downstream."</b> Catch and fix problems where they happen instead of repairing finished product later. Stopping the line to fix one defect is cheaper than shipping a thousand bad ones.</p></div>
+</div>
+<blockquote class="srcq"><p>"all we are doing is looking at the timeline from when the customer gives us an order to the point at which we collect the cash and we're reducing that timeline by removing non-value added wastes"</p>
+<cite><a href="https://www.youtube.com/watch?v=sUtmosujXVE" target="_blank" rel="noopener">— EMS Consulting Group, "Lean Manufacturing: What is Lean and the Toyota Production System?"</a> · in your corpus</cite></blockquote>
+
+<h2>2 · The vocabulary — flip to learn</h2>
+<p>These are the exact words operations managers use on the factory floor and in the warehouse. <b>Tap a card to flip it.</b></p>
+<div class="fc-grid">
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Lean</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A systematic way to identify and eliminate waste through continuous improvement, flowing product at the pull of the customer. Coined to describe Toyota's system.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Just-in-Time (JIT)</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Produce or acquire goods exactly when needed — not before. Slashes warehouse cost and frees up cash tied in inventory.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Kaizen</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">"Change for the better." A culture of small, continuous, everyone-everywhere improvements rather than rare big projects.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Kanban</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A visual signal/card system that controls work flow — only make what the next step actually pulls, limiting work-in-progress.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Jidoka</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">"Automation with a human touch." Machines that detect a problem and stop themselves, so a defect can't roll forward.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Bottleneck</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The slowest step in a process — a resource whose capacity is at or below the demand on it. It caps the whole system's output.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Constraint</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The one limiting factor that holds back the whole organization's goal. Every bottleneck is a candidate, but only the binding one is THE constraint.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Throughput</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The rate finished, sellable product comes out the end. Improve it only by improving the constraint — nowhere else helps.</span></span></button>
+</div>
+
+<h2>3 · The Theory of Constraints in one line</h2>
+<p>If a chain breaks at its weakest link, strengthening any <em>other</em> link is wasted effort. The same is true for a process: <b>output is set by the slowest step</b>.</p>
+<div class="equation">System throughput&nbsp; = &nbsp;capacity of the bottleneck</div>
+<p>So improving a non-bottleneck step doesn't raise output — it just piles up work-in-progress in front of the real constraint. Here's a 4-station line making 100 units of demand a day. <b>Tap each bar</b> to see its capacity:</p>
+<figure class="viz">
+<svg viewBox="0 0 720 210" role="img" aria-label="A four-station process line where station B at 80 units per day is the bottleneck">
+  <text x="0" y="18" class="vlabel">Station A — cutting · capacity 120/day</text>
+  <rect x="0" y="24" width="600" height="26" rx="4" class="bar-rev" data-tip="Station A can do 120/day — more than demand. Speeding it up only floods B with parts that wait."/>
+  <text x="300" y="42" class="bar-txt">120 units/day</text>
+  <text x="0" y="70" class="vlabel">Station B — assembly · capacity 80/day ⬅ BOTTLENECK</text>
+  <rect x="0" y="76" width="400" height="26" rx="4" class="bar-net" data-tip="Station B is the bottleneck: only 80/day, below the 100 demand. The whole line can ship no more than 80 — fix THIS step."/>
+  <text x="200" y="94" class="bar-txt">80 units/day</text>
+  <text x="0" y="122" class="vlabel">Station C — paint · capacity 110/day</text>
+  <rect x="0" y="128" width="550" height="26" rx="4" class="bar-gross" data-tip="Station C can do 110/day but starves — it can only work on what B feeds it, so it never exceeds 80."/>
+  <text x="275" y="146" class="bar-txt">110 units/day</text>
+  <text x="0" y="174" class="vlabel">Station D — pack · capacity 130/day</text>
+  <rect x="0" y="180" width="650" height="26" rx="4" class="bar-gross" data-tip="Station D has the most capacity and matters least — it idles waiting on B's output."/>
+  <text x="325" y="198" class="bar-txt">130 units/day</text>
+</svg>
+<figcaption>Demand is 100/day, but the line ships only <b>80</b> — capped by station B. Every other improvement is invisible until B is fixed.</figcaption>
+</figure>
+<div class="reveal">
+  <button class="reveal-q">How do you fix a bottleneck without spending a dime?</button>
+  <div class="reveal-a"><p>In a ballpoint-pen assembly demo, a team cut a job from <b>90 seconds to 66 seconds — a 50% throughput gain — by re-balancing work</b>, not adding people. First synchronize upstream stations to the bottleneck (kill the work-in-progress pile), then move an idle worker's spare time over to help the constraint. Only if that's not enough do you add cost/resources. Identify → synchronize → redistribute → then add resources.</p></div>
+</div>
+<blockquote class="srcq"><p>"the bottleneck is the limiting operation you cannot work faster than the bottleneck and if the previous operations work faster it is of no use because the output does not go up and only WIP builds up in between"</p>
+<cite><a href="https://www.youtube.com/watch?v=Lorz-tRYwTQ" target="_blank" rel="noopener">— Shrinivas Gondhalekar, "TOC Theory of Constraints & De bottlenecking"</a> · in your corpus</cite></blockquote>
+<div class="pitfall">
+<h3>⚠️ Bottleneck ≠ constraint (the subtle trap)</h3>
+<p>A <b>bottleneck</b> is any resource with capacity at or below its demand. The <b>constraint</b> is the <em>one</em> bottleneck that limits the whole system's goal. A plant can have several bottlenecks, but pouring effort into a non-binding one just grows the queue in front of the real constraint — "the plant as a system will have no benefit from this so-called improvement." Always improve <em>the</em> constraint.</p>
+</div>
+
+<h2>4 · Two giants, same revenue, opposite operating models</h2>
+<p>Here's where operations gets real. Amazon and Walmart booked almost <b>identical revenue</b> last fiscal year — yet they make money in completely different ways. This is the operations manager's core trade-off: <b>fat margin vs. fast turnover</b>.</p>
+<figure class="viz">
+<svg viewBox="0 0 720 210" role="img" aria-label="Amazon versus Walmart net margin and asset turnover comparison">
+  <text x="0" y="18" class="vlabel">Net margin — profit kept per $1 of sales</text>
+  <rect x="0" y="24" width="473" height="28" rx="4" class="bar-net" data-tip="Amazon net margin: 10.83% ($77.67B profit on $716.92B revenue). Higher-margin AWS cloud + ads lift the blended figure."/>
+  <text x="236" y="43" class="bar-txt">Amazon 10.8%</text>
+  <rect x="0" y="58" width="134" height="28" rx="4" class="bar-liab" data-tip="Walmart net margin: 3.07% ($21.89B profit on $713.16B revenue). Thin grocery/retail margins — pennies per dollar."/>
+  <text x="160" y="77" class="vlabel">Walmart 3.1%</text>
+  <text x="0" y="118" class="vlabel">Asset turnover — sales generated per $1 of assets</text>
+  <rect x="0" y="124" width="168" height="28" rx="4" class="bar-liab" data-tip="Amazon asset turnover: 0.88x ($716.92B revenue / $818.04B assets). Heavy assets: warehouses, data centers."/>
+  <text x="190" y="143" class="vlabel">Amazon 0.88×</text>
+  <rect x="0" y="158" width="480" height="28" rx="4" class="bar-gross" data-tip="Walmart asset turnover: 2.51x ($713.16B revenue / $284.67B assets). Lean assets, fast inventory — sells its asset base 2.5x a year."/>
+  <text x="240" y="177" class="bar-txt">Walmart 2.51×</text>
+</svg>
+<figcaption>Amazon keeps <b>~3.5× more margin</b> per sale; Walmart spins its assets <b>~2.9× faster</b>. Two opposite paths to the same finish line.</figcaption>
+</figure>
+<div class="example">
+<p><b>Net margin</b> (Amazon) = 77.67 ÷ 716.92 = <b>10.8%</b>. <b>Net margin</b> (Walmart) = 21.89 ÷ 713.16 = <b>3.1%</b>. Walmart keeps about 3 cents of every sales dollar.</p>
+<p><b>Asset turnover</b> (Walmart) = 713.16 ÷ 284.67 = <b>2.51×</b> — it generates $2.51 of sales per $1 of assets. Amazon = 716.92 ÷ 818.04 = <b>0.88×</b>, weighed down by warehouses and AWS data centers.</p>
+<p><b>The punchline — Return on Assets ties out close:</b> margin × turnover = ROA. Amazon: 10.8% × 0.88 ≈ <b>9.5%</b>. Walmart: 3.1% × 2.51 ≈ <b>7.7%</b>. A razor-thin grocer competes with a tech-margin giant <em>because operational speed (turnover) substitutes for margin.</em> That's the whole secret of Walmart's model.</p>
+</div>
+
+<h2>5 · Check yourself</h2>
+<div class="quizq" data-correct="1">
+  <p class="q">A 4-step line has capacities 90, 60, 100, 120 units/hour. What is the line's throughput?</p>
+  <button class="opt">120 units/hour</button>
+  <button class="opt">60 units/hour</button>
+  <button class="opt">92.5 units/hour (the average)</button>
+  <p class="fb">Throughput equals the capacity of the slowest step — the bottleneck at <b>60</b>. No step can outrun it, and averaging is meaningless here.</p>
+</div>
+<div class="quizq" data-correct="2">
+  <p class="q">A factory keeps 3 months of parts in a warehouse "just in case." Which Lean idea attacks this most directly?</p>
+  <button class="opt">Jidoka (automation with a human touch)</button>
+  <button class="opt">Kaizen (continuous improvement)</button>
+  <button class="opt">Just-in-Time (produce/acquire only when needed)</button>
+  <p class="fb"><b>Just-in-Time</b> targets excess inventory — it frees the cash tied up in stock and cuts warehouse cost and obsolescence risk.</p>
+</div>
+<div class="quizq" data-correct="0">
+  <p class="q">Walmart and Amazon earn similar Return on Assets despite very different margins. Walmart pulls this off mainly through…</p>
+  <button class="opt">High asset turnover (selling its asset base fast)</button>
+  <button class="opt">A higher net profit margin than Amazon</button>
+  <button class="opt">Holding far more total assets than Amazon</button>
+  <p class="fb">Walmart's thin 3% margin is rescued by spinning assets <b>2.51×</b> a year vs Amazon's 0.88×. Speed of turnover substitutes for margin — and it actually holds <em>fewer</em> assets.</p>
+</div>
+
+<div class="pitfall subtle">
+<h3>🔎 One subtlety → your bridge to the next course</h3>
+<p>Notice the two giants made nearly the same revenue but Amazon holds <b>$818B in assets</b> to Walmart's <b>$285B</b>. Choosing how much capital to sink into warehouses, data centers, and inventory — and whether to own or rent that capacity — is an <b>operations decision that becomes a finance decision</b>. How a firm funds and allocates that asset base is the heart of Capital Allocation and Strategy in the courses ahead.</p>
+</div>
+
+<div class="apply-box">
+<h3>🎯 Your move (the Course 06 output)</h3>
+<p>Pick any process you touch — your morning routine, a coffee shop line, your team's deploy pipeline. Map the steps, time each one, and circle the slowest (the bottleneck). Then ask the four de-bottlenecking questions in order: can you <em>synchronize</em> upstream steps to it, <em>redistribute</em> idle effort toward it, and only then <em>add</em> resources? Estimate the throughput gain before spending a dollar.</p>
+</div>
+
+<div class="src-list">
+<h4>📚 Taught from these sources in your corpus</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=sUtmosujXVE" target="_blank" rel="noopener">EMS Consulting Group — Lean Manufacturing: What is Lean and the Toyota Production System?</a></li>
+<li><a href="https://www.youtube.com/watch?v=F5vtCRFRAK0" target="_blank" rel="noopener">Bloomberg Originals — How Toyota Changed The Way We Make Things</a></li>
+<li><a href="https://www.youtube.com/watch?v=Lorz-tRYwTQ" target="_blank" rel="noopener">Shrinivas Gondhalekar — TOC Theory of Constraints & De bottlenecking</a></li>
+<li><a href="https://www.youtube.com/watch?v=6UT1EnL7nOc" target="_blank" rel="noopener">HohmannChristian — The subtle difference between a constraint and a bottleneck</a></li>
+<li><a href="https://www.youtube.com/watch?v=amLFrkLNH40" target="_blank" rel="noopener">Farhat Lectures — Theory of Constraints and Bottlenecks (TOC)</a></li>
+</ul>
+<p style="margin:8px 0 0;color:var(--dim)">Full transcripts of every lecture are below ↓</p>
+</div>

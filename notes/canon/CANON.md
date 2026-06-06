@@ -1,7 +1,7 @@
 # The Canon — book backbone of The Compounding MBA
 
 > The **reading layer** that sits alongside the program's video / podcast / Reddit sources.
-> **44 distilled books across 13 clusters**, each in the standard note template — with the two fields
+> **82 distilled books across 23 clusters**, each in the standard note template — with the two fields
 > that make a note *compound*: **"Breaks when"** (failure modes) and **`[[links]]`** into the graph.
 > Started: 2026-06-05 · Format mirrors `notes/01-accounting/aapl-10k-fy2025.md`.
 
@@ -107,6 +107,84 @@ in the cross-links — read one note, follow its `[[ ]]` to the two or three it 
 | **Klarman — Margin of Safety** | Price ≠ value; buy below intrinsic value with a cushion; don't cut it so close a surprise kills you. | [[canon-klarman-margin-of-safety]] |
 | **Mauboussin — The Success Equation** | Separate skill from luck; judge process not outcome; expect mean reversion. | [[canon-mauboussin-success-equation]] |
 
+## Cluster 14 · Behavioral Design & Decision Science → Course 07, 05, E11
+| Book | One-line claim | Note |
+|---|---|---|
+| **Thaler & Sunstein — Nudge** | Choice architecture shapes decisions; defaults are the most powerful nudge. | [[canon-thaler-sunstein-nudge]] |
+| **Ariely — Predictably Irrational** | Specific, repeatable irrationalities — decoy, free, anchoring, endowment, social vs. market norms. | [[canon-ariely-predictably-irrational]] |
+| **Cialdini — Pre-Suasion** | What you do *before* the argument matters most; channel attention in the privileged moment. | [[canon-cialdini-pre-suasion]] |
+| **Kahneman, Sibony & Sunstein — Noise** | Bias's overlooked twin: random scatter; cut it with decision hygiene. | [[canon-kahneman-sibony-sunstein-noise]] |
+| **Klein — Sources of Power** | Experts pattern-match (recognition-primed decisions), not pro/con lists — trust it only in valid domains. | [[canon-klein-sources-of-power]] |
+| **March — A Primer on Decision Making** | Org decisions aren't rational; garbage-can model; the bottleneck is attention, not information. | [[canon-march-primer-decision-making]] |
+
+## Cluster 15 · Game Theory & Strategic Interaction → Course 03, 04, E9
+| Book | One-line claim | Note |
+|---|---|---|
+| **Dixit & Nalebuff — Thinking Strategically** | Anticipate others' best response; dominant strategies, Nash, backward induction, commitment. | [[canon-dixit-nalebuff-thinking-strategically]] |
+| **Brandenburger & Nalebuff — Co-opetition** | Business isn't zero-sum; the Value Net + complementors; change the game (PARTS). | [[canon-brandenburger-nalebuff-coopetition]] |
+| **Schelling — The Strategy of Conflict** | Power from limiting your own options; focal points coordinate without communication. | [[canon-schelling-strategy-of-conflict]] |
+| **Axelrod — The Evolution of Cooperation** | Tit for Tat wins repeated games: nice, retaliatory, forgiving, clear. | [[canon-axelrod-evolution-of-cooperation]] |
+
+## Cluster 16 · Network Effects & Platform Strategy → Course 04, 10, E10
+| Book | One-line claim | Note |
+|---|---|---|
+| **Parker et al. — Platform Revolution** | Platforms facilitate exchange; core interaction, network effects, cold-start is the hard problem. | [[canon-parker-platform-revolution]] |
+| **Cusumano et al. — The Business of Platforms** | Innovation vs. transaction platforms; openness, pricing, multi-homing, envelopment. | [[canon-cusumano-business-of-platforms]] |
+| **Hagiu & Wright — Multi-Sided Platforms** | Subsidize the price-sensitive / high-cross-effect side; measure indirect network effects. | [[canon-hagiu-wright-multi-sided-platforms]] |
+| **Shapiro & Varian — Information Rules** | Zero-marginal-cost economics; versioning, bundling, lock-in, standards wars. | [[canon-shapiro-varian-information-rules]] |
+
+## Cluster 17 · Systems Thinking & Complexity → Course 07, 06, E6
+| Book | One-line claim | Note |
+|---|---|---|
+| **Senge — The Fifth Discipline** | The learning organization; systems archetypes (shifting the burden, limits to growth). | [[canon-senge-fifth-discipline]] |
+| **Sterman — Business Dynamics** | Quantitative system dynamics; the Beer Game / bullwhip — structure produces oscillation. | [[canon-sterman-business-dynamics]] |
+| **Perrow — Normal Accidents** | Tightly-coupled + complex systems make accidents inevitable; reduce coupling or complexity. | [[canon-perrow-normal-accidents]] |
+| **Jervis — System Effects** | Interconnection means actions ripple far; radical humility about 2nd/3rd-order effects. | [[canon-jervis-system-effects]] |
+
+## Cluster 18 · Information & Communication → Course 07, 09, E7
+| Book | One-line claim | Note |
+|---|---|---|
+| **Shannon — Information Theory** | Information = reduced uncertainty; noisy channels need redundancy — say it 7 times. | [[canon-shannon-information-theory]] |
+| **Tufte — Visual Display of Quantitative Info** | Maximize data-ink; kill chartjunk; small multiples; watch the lie factor. | [[canon-tufte-visual-display]] |
+| **Stone, Patton & Heen — Difficult Conversations** | Three layers: what-happened, feelings, identity; move from certainty to curiosity. | [[canon-stone-difficult-conversations]] |
+| **Patterson et al. — Crucial Conversations** | High stakes → silence or violence; create safety, separate fact from story, dialogue. | [[canon-patterson-crucial-conversations]] |
+
+## Cluster 19 · Economics & Incentive Design → Course 03, 09, E2
+| Book | One-line claim | Note |
+|---|---|---|
+| **Mankiw — Principles of Economics** | Ten principles; for operators, opportunity cost + marginal thinking are the unlocks. | [[canon-mankiw-principles-of-economics]] |
+| **Alchian & Demsetz — Theory of the Firm** | Firms exist to solve team-production measurement; org design = monitoring + reward. | [[canon-alchian-demsetz-firm]] |
+| **Akerlof — The Market for Lemons** | Information asymmetry unravels markets; signaling, screening, reputation are the fixes. | [[canon-akerlof-market-for-lemons]] |
+| **Jensen & Meckling — Agency Theory** | Principal–agent interests diverge; align via monitoring, bonding, incentives (and beware gaming). | [[canon-jensen-meckling-agency-theory]] |
+
+## Cluster 20 · History & Judgment → Course 11, 04, E9
+| Book | One-line claim | Note |
+|---|---|---|
+| **Neustadt & May — Thinking in Time** | Test historical analogies: separate known/presumed/unknown; list likenesses *and* differences. | [[canon-neustadt-may-thinking-in-time]] |
+| **Allison — Essence of Decision** | Three lenses on org decisions: rational actor, organizational process, bureaucratic politics. | [[canon-allison-essence-of-decision]] |
+| **Clausewitz — On War** | Friction, fog, culminating point; war (and competition) is politics by other means. | [[canon-clausewitz-on-war]] |
+| **Thucydides — Peloponnesian War** | Rising vs. ruling power (the Trap); power realism; advantage erodes via overreach and hubris. | [[canon-thucydides-peloponnesian-war]] |
+
+## Cluster 21 · Communication & Storytelling → Course 05, E7
+| Book | One-line claim | Note |
+|---|---|---|
+| **Minto — The Pyramid Principle** | Answer first; MECE supporting groups; the McKinsey communication standard. | [[canon-minto-pyramid-principle]] |
+| **Duarte — Resonate** | Story not report; oscillate "what is / what could be"; the audience is the hero. | [[canon-duarte-resonate]] |
+| **Sinek — Start with Why** | Lead with purpose (the Golden Circle); people decide emotionally, justify rationally. | [[canon-sinek-start-with-why]] |
+
+## Cluster 22 · Design Thinking & Problem-Solving → Course 04, 07
+| Book | One-line claim | Note |
+|---|---|---|
+| **Martin — The Opposable Mind** | Integrative thinking: hold two opposing ideas and synthesize, instead of picking a side. | [[canon-martin-opposable-mind]] |
+| **Rumelt — The Crux** | Find the hard, *solvable* part that unlocks everything; concentrate force there. | [[canon-rumelt-the-crux]] |
+| **Meadows — Leverage Points** | Twelve places to intervene, ranked; goals and paradigm beat tweaking parameters. | [[canon-meadows-leverage-points]] |
+
+## Cluster 23 · Ethics & Judgment → Course 09, 11, E4
+| Book | One-line claim | Note |
+|---|---|---|
+| **Badaracco — Defining Moments** | The hardest calls are right-vs-right; the newspaper test; decisions shape character. | [[canon-badaracco-defining-moments]] |
+| **Sandel — Justice** | Three lenses — welfare, freedom, virtue; name which one each party is arguing from. | [[canon-sandel-justice]] |
+
 ---
 
 ## The cross-cluster spine (where the books argue with each other)
@@ -119,6 +197,17 @@ in the cross-links — read one note, follow its `[[ ]]` to the two or three it 
 - **Changing people & orgs:** Schein (assumptions, the diagnosis) → Kotter (8 steps, top-down) ⇄ Heath/Switch (Rider/Elephant/Path, bottom-up) → Horowitz (culture = what you do) → Clear (systems make it stick).
 - **Surviving the tails:** Taleb-Black Swan (the threat) → Taleb-Antifragile (the posture) → Klarman (margin of safety) → Ries/Antifragile (small capped-downside bets).
 - **The personal OS:** Covey (Quadrant 2) → Newport (deep work blocks) → Clear (habit systems) — the E11 stack.
+- **How decisions *really* get made:** Kahneman (System 1/2) ⇄ Klein (trust expert intuition — *only* in valid domains) → Kahneman-Noise (kill the scatter) → March (garbage can) → Allison (rational/process/politics).
+- **Designing the environment:** Thaler/Sunstein-Nudge (defaults) → Ariely (the irrational levers) → Cialdini-Pre-Suasion (pre-frame attention) → Clear/Heath (make it easy / shape the path).
+- **Strategic interaction:** Dixit/Nalebuff (anticipate the response) → Schelling (commitment + focal points) → Axelrod (cooperate in repeated games) → Brandenburger/Nalebuff (change the game, add complementors).
+- **Why moats exist (the rigorous chain):** Mankiw (markets) → Akerlof (asymmetry → signaling/brand) → Helmer (switching costs/network) → Shapiro/Varian (lock-in, standards) → Parker/Cusumano/Hagiu (platform network effects).
+- **Incentives & the firm:** Mankiw (incentives) → Alchian/Demsetz (firms solve measurement) → Jensen/Meckling (agency cost) → Doerr/Goodhart (alignment that gets *gamed*).
+- **The structure makes the behavior:** Meadows-Systems → Senge (archetypes) → Sterman (the bullwhip, quantified) → Perrow/Jervis (complexity → inevitable surprise) → Meadows-Leverage-Points (where to push).
+- **Make the message land:** Shannon (redundancy beats noise) → Minto (answer-first, MECE) ⇄ Duarte/Sinek (story + why) → Tufte (let the data speak).
+- **Talk through the hard stuff:** Scott-Candor (challenge + care) → Stone (3 layers) → Patterson (fact vs. story under pressure) → Voss (tactical empathy).
+- **Judgment from history:** Neustadt/May (test the analogy) → Allison (three lenses) → Clausewitz (friction, culminating point) → Thucydides (overreach & hubris).
+- **Find the one thing:** Rumelt-Good-Strategy (kernel) → Rumelt-Crux (the pivotal solvable challenge) → Goldratt (the constraint) → Meadows-Leverage-Points (highest leverage) — and Martin (refuse the *false* tradeoff, but not the real one).
+- **Doing right vs. right:** Badaracco (identity, newspaper test) ⇄ Sandel (welfare / freedom / virtue) → Horowitz (culture = what you do under pressure).
 
 ## Apply discipline (same as the data layer)
 For each canon framework, pull *one real company's data* and apply it:
@@ -130,3 +219,7 @@ For each canon framework, pull *one real company's data* and apply it:
 - Klarman → put a margin of safety band around the DCF you build in Course 02.
 - Mauboussin → re-grade one outcome on *process* quality, not result.
 - Fisher/Ury → write your BATNA before a real negotiation.
+- Jensen/Meckling → read a real DEF 14A and judge whether exec comp aligns or invites gaming (`edgar.py filings <TICKER> --form "DEF 14A"`).
+- Akerlof → name what buyers *can't* see about your product, and which signal closes the gap.
+- Parker/Hagiu → for a real platform, name its core interaction, money side, and how it solved cold-start.
+- Kahneman-Noise → run a noise audit: 3 people score the same case independently; measure the spread.

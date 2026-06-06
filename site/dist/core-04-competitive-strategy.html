@@ -6,14 +6,177 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css"></head><body>
 <div class="grain" aria-hidden="true"></div><div class="atmos" aria-hidden="true"></div>
-
+<div id="progress"></div>
 <header class="mod-header core">
 <a href="index.html" class="home">← Index</a>
 <div class="eyebrow"><span class="num">04</span> Core Curriculum</div>
 <h1>Competitive Strategy</h1>
 <div class="hairline"></div></header>
-<nav class="toc"><a href="#videos">Source: Lectures</a> <a href="#discuss">Discussions</a> <a href="#fin">Financials</a></nav>
-<main><section id="videos"><h2>Lectures <span class="count">8</span></h2><article class="card vid">
+<nav class="toc"><a href="#lesson">Lesson</a> <a href="#videos">Source: Lectures</a> <a href="#discuss">Discussions</a> <a href="#fin">Financials</a></nav>
+<main><section id="lesson" class="lesson"><!-- LESSON: Competitive Strategy — interactive, visual-first, grounded in the 04-competitive-strategy corpus. Porter's Five Forces + What is Strategy (positioning/trade-offs/fit) + value stick. Live NFLX & DIS FY2025 numbers from EDGAR. -->
+<p class="lead">Why do some industries <b>mint money</b> while others bleed for decades? And once you've picked a fight, how do you <em>win</em> it? This lesson teaches the two questions at the heart of competitive strategy — <b>where to compete</b> (Porter's Five Forces) and <b>how to be different</b> (positioning, trade-offs, fit) — then puts real numbers behind them with Netflix vs. Disney. <b>Tap the cards, the diagrams, and the quizzes.</b></p>
+
+<h2>1 · Strategy is not "be the biggest" — it's "be the most profitable"</h2>
+<p>Most people picture competition as a tug-of-war between direct rivals. Porter says that's <em>far</em> too narrow. Tap each idea 👇</p>
+<div class="reveal">
+  <button class="reveal-q">🥊 Competition is wider than your rivals</button>
+  <div class="reveal-a"><p>You're in a fight for profits with <b>five</b> parties, not one: rivals, <em>customers</em> (who want to pay less), <em>suppliers</em> (who want to charge more), <em>new entrants</em>, and <em>substitutes</em>. Each one can drain profit from your industry.</p></div>
+</div>
+<div class="reveal">
+  <button class="reveal-q">⭐ Some industries are structurally rich, others poor</button>
+  <div class="reveal-a"><p>Porter jokes about <b>"five-star industries"</b> where every force is gentle (soft drinks — "a license to mint money") and <b>"zero-star industries"</b> where every force is brutal (airlines — bottom of the profitability chart for decades). "Sexiness has nothing to do with industry profit."</p></div>
+</div>
+<div class="reveal">
+  <button class="reveal-q">📊 It's about structure, not who's biggest</button>
+  <div class="reveal-a"><p>Profitability is set by the industry's <em>underlying economic structure</em> — not by who has the most market share. Two firms in a great industry can both thrive; two firms in a terrible one can both starve.</p></div>
+</div>
+<blockquote class="srcq"><p>"It's not about who's the biggest, it's about who is the most profitable. And profitability is defined by five competitive forces."</p>
+<cite><a href="https://www.youtube.com/watch?v=XCWHSeDU-zk" target="_blank" rel="noopener">— Harvard Business Review, "The Explainer: The 5 Forces That Make Companies Successful"</a> · in your corpus</cite></blockquote>
+
+<h2>2 · The vocabulary — flip to learn</h2>
+<p>These are the exact terms strategists use. <b>Tap a card to flip it.</b></p>
+<div class="fc-grid">
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Rivalry</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">How hard existing competitors fight. Worst when many equal-sized firms compete on price with high exit barriers.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Buyer Power</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">How much leverage customers have to push your price down. High when buyers are big, few, well-informed, or can switch easily.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Supplier Power</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">How much leverage your input providers have. High when suppliers are few or unique — e.g. only Boeing &amp; Airbus sell jets.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Threat of Entry</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">How easily newcomers can pile in. Low when barriers (capital, brand, scale) are high; airlines suffer because you can just lease a plane.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Substitutes</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Different products that meet the same need — a train instead of a flight. They cap how much you can charge.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Positioning</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Choosing a unique and valuable place in the market by doing a <em>different</em> set of activities than rivals.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Trade-offs</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Deciding what <em>not</em> to do. Strategy means deliberately giving up some customers or features to excel at your chosen position.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Fit</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Activities locking together so each reinforces the others. Rivals must copy the <em>whole</em> system, not one piece — the deepest moat.</span></span></button>
+</div>
+
+<h2>3 · The Five Forces, drawn</h2>
+<p>Picture your firm in the center, squeezed by five forces. Strong forces (red, wide) drain profit; weak forces (green) leave it for you. <b>Tap each bar.</b></p>
+<figure class="viz">
+<svg viewBox="0 0 720 230" role="img" aria-label="Porter's Five Forces: rivalry in the center, surrounded by buyers, suppliers, entrants, substitutes">
+  <text x="0" y="16" class="vlabel">Each force, sized by how much profit it can drain (airline industry)</text>
+  <rect x="0" y="26" width="640" height="26" rx="4" class="bar-net" data-tip="Rivalry: brutal in airlines — fierce, almost pure price competition. Eats most of the profit."/>
+  <text x="320" y="44" class="bar-txt">① Rivalry — intense, on price</text>
+  <rect x="0" y="60" width="560" height="26" rx="4" class="bar-net" data-tip="Supplier power: Boeing, Airbus, GE, Rolls-Royce, plus unionized pilots who 'can literally shut you down.'"/>
+  <text x="280" y="78" class="bar-txt">② Suppliers — jets, fuel, unions</text>
+  <rect x="0" y="94" width="500" height="26" rx="4" class="bar-net" data-tip="Buyer power: travelers are fickle and price-sensitive; price-comparison sites (Skyscanner, Expedia) let them switch instantly."/>
+  <text x="250" y="112" class="bar-txt">③ Buyers — fickle, price-driven</text>
+  <rect x="0" y="128" width="470" height="26" rx="4" class="bar-net" data-tip="Threat of entry: low barriers — lease a plane, lease a gate, fly one route. New carriers keep coming."/>
+  <text x="235" y="146" class="bar-txt">④ New entrants — easy to start</text>
+  <rect x="0" y="162" width="360" height="26" rx="4" class="bar-gross" data-tip="Substitutes: trains, cars, video calls. Real but weaker than the other four forces here."/>
+  <text x="180" y="180" class="bar-txt">⑤ Substitutes — trains, cars</text>
+  <text x="0" y="212" class="vlabel">All five strong → a "zero-star" industry. Profit gets competed away.</text>
+</svg>
+<figcaption>In airlines <b>every</b> force is strong, so it's been near the bottom of the profitability charts for decades. Flip the colors green and you'd get soft drinks.</figcaption>
+</figure>
+<blockquote class="srcq"><p>"There's Five Star Industries where all the forces are attractive like soft drinks, there's zero Star Industries where all the forces are unfavorable like Airlines."</p>
+<cite><a href="https://www.youtube.com/watch?v=mYF2_FBCvXw" target="_blank" rel="noopener">— Harvard Business Review, "The Five Competitive Forces That Shape Strategy"</a> · in your corpus</cite></blockquote>
+
+<div class="example">
+<p><b>Worked example — score the coffee-shop industry (from the Sim Institute lecture):</b></p>
+<p>① <b>Rivalry: HIGH</b> — most cities are flooded with cafes. ② <b>Buyers: medium</b> — individuals can't haggle, but can switch shops and post reviews. ③ <b>Suppliers: LOW</b> — beans, milk, sugar have many interchangeable sources. ④ <b>Entry: HIGH</b> — easy and cheap to open a cafe. ⑤ <b>Substitutes: medium</b> — brewing at home, but few alternatives for "a place to meet friends." <b>Verdict:</b> structurally tough. The fix isn't to compete harder on price — it's to change a force: loyalty cards (lower buyer switching) or differentiation (soften rivalry).</p>
+</div>
+
+<h2>4 · Two ways to win: raise willingness-to-pay or lower willingness-to-sell</h2>
+<p>Strategy is "a plan to create value." Felix Oberholzer-Gee draws it as a <b>value stick</b>: willingness-to-pay (WTP) at the top, willingness-to-sell (WTS) at the bottom. The gap is the value created — and it splits three ways. <b>Tap each band.</b></p>
+<div class="equation">Value created&nbsp; = &nbsp;Willingness-to-Pay&nbsp; − &nbsp;Willingness-to-Sell</div>
+<figure class="viz">
+<svg viewBox="0 0 720 200" role="img" aria-label="The value stick: willingness to pay at top, price, firm margin, cost, willingness to sell at bottom">
+  <text x="0" y="16" class="vlabel">WTP — the most a customer would ever pay</text>
+  <rect x="0" y="24" width="700" height="22" rx="4" class="bar-rev" data-tip="Willingness-to-pay (WTP): the customer's ceiling. Raise it with quality, complements, or network effects."/>
+  <text x="350" y="40" class="bar-txt-sm">customer delight ↑</text>
+  <rect x="0" y="54" width="700" height="20" rx="4" class="bar-gross" data-tip="Customer surplus: WTP minus price. This is the value the customer keeps — why they buy."/>
+  <text x="350" y="69" class="bar-txt-sm">Customer's share (WTP − Price)</text>
+  <text x="0" y="94" class="vlabel">Price</text>
+  <rect x="0" y="100" width="700" height="26" rx="4" class="bar-net" data-tip="Firm's margin: the wedge between price and cost. This is the company's slice of the value created."/>
+  <text x="350" y="118" class="bar-txt">Firm's margin (Price − Cost)</text>
+  <text x="0" y="146" class="vlabel">Cost</text>
+  <rect x="0" y="152" width="700" height="20" rx="4" class="bar-gross" data-tip="Employee/supplier surplus: compensation minus willingness-to-sell. Lower WTS (better jobs, store-in-store deals) creates value, not just shifts it."/>
+  <text x="350" y="167" class="bar-txt-sm">Employee &amp; supplier share (Comp − WTS)</text>
+  <text x="0" y="190" class="vlabel">WTS — the least a worker/supplier would accept ↓</text>
+</svg>
+<figcaption>Widen the stick from <em>either</em> end. Best Buy survived Amazon by raising WTP (faster ship-from-store) <b>and</b> lowering WTS (store-in-store deals with Samsung &amp; Microsoft) — going from a $1B quarterly loss to 20%+ return on invested capital.</figcaption>
+</figure>
+<blockquote class="srcq"><p>"Strategy's simple. It's a plan to create value. ... Value is the difference between willingness to pay and willingness to sell."</p>
+<cite><a href="https://www.youtube.com/watch?v=o7Ik1OB4TaE" target="_blank" rel="noopener">— Harvard Business Review, "What Is Strategy? It's a Lot Simpler Than You Think"</a> · in your corpus</cite></blockquote>
+
+<h2>5 · Operational effectiveness is NOT strategy</h2>
+<p>The most common mistake: confusing <em>running faster</em> with <em>running somewhere different</em>. Being efficient (lean, benchmarked, low-defect) is necessary — but everyone is chasing the same "productivity frontier," and that frontier keeps moving. You're on a treadmill.</p>
+<blockquote class="srcq"><p>"All those companies obsessed with operational effectiveness are sprinting towards that line, but the problem is the line keeps moving."</p>
+<cite><a href="https://www.youtube.com/watch?v=_bBs9xIEXpU" target="_blank" rel="noopener">— CEO Corner Podcast, "What is Strategy? M. Porter | Harvard Business Review Insights"</a> · in your corpus</cite></blockquote>
+<p>Real strategy is <b>positioning + trade-offs + fit</b>. Southwest Airlines is the classic case: no assigned seats, no meals, one type of plane, short hops from secondary airports. Each choice is a <em>trade-off</em>, and they all <em>fit</em> — they all serve "low cost." A rival can copy any one piece, but copying the whole interlocking system is what's "very hard."</p>
+<blockquote class="srcq"><p>"It's very hard to copy fit if it's working really well."</p>
+<cite><a href="https://www.youtube.com/watch?v=TIepd72P9Xc" target="_blank" rel="noopener">— Kunal Cholera, "What is strategy - Michael porter - HBR article summary"</a> · in your corpus</cite></blockquote>
+<div class="pitfall">
+<h3>⚠️ The straddling trap</h3>
+<p>When Continental launched <b>Continental Lite</b> to fight Southwest <em>while</em> keeping its full-service business, it failed. Its hub-and-spoke system delayed the cheap flights; frequent-flyer perks couldn't apply cleanly. Trying to occupy two positions at once meant non-complementary activities and sub-optimal trade-offs — "straddling is potentially very expensive." <b>Saying no is part of the strategy.</b></p>
+</div>
+
+<h2>6 · Real numbers: Netflix vs. Disney</h2>
+<p>Same broad industry — entertainment — but very different competitive positions. Disney earns <b>2× Netflix's revenue</b> ($94.4B vs $45.2B, FY2025), yet look at how much of each sales dollar survives as profit. <b>Tap each bar.</b></p>
+<figure class="viz">
+<svg viewBox="0 0 720 170" role="img" aria-label="Net margin comparison: Netflix versus Disney">
+  <text x="0" y="16" class="vlabel">Net income kept per $1 of revenue (FY2025, from 10-K filings)</text>
+  <rect x="0" y="26" width="700" height="30" rx="4" class="bar-rev" data-tip="Netflix revenue: $45.18B. Pure streaming, asset-light, global scale on one platform."/>
+  <text x="350" y="46" class="bar-txt">Netflix revenue $45.2B = 100%</text>
+  <rect x="0" y="64" width="170" height="30" rx="4" class="bar-net" data-tip="Netflix net income: $10.98B → 24.3% net margin. Network effects + a focused, low-WTS content model."/>
+  <text x="85" y="84" class="bar-txt-sm">Net $11.0B · 24.3%</text>
+  <text x="0" y="118" class="vlabel">Disney — 2× the revenue, but thinner margin</text>
+  <rect x="0" y="126" width="700" height="14" rx="3" class="bar-rev" data-tip="Disney revenue: $94.42B across parks, studios, networks, and streaming."/>
+  <rect x="0" y="126" width="92" height="30" rx="4" class="bar-gross" data-tip="Disney net income: $12.40B → 13.1% net margin. Capital-heavy parks and a sprawling activity set dilute returns."/>
+  <text x="120" y="146" class="bar-txt-sm">Disney Net $12.4B · 13.1%</text>
+</svg>
+<figcaption>Netflix keeps <b>24.3¢</b> of every revenue dollar; Disney keeps <b>13.1¢</b>. Disney's huge top line doesn't translate into a fatter margin — its sprawling activity set (parks, studios, cable, streaming) is harder to make <em>fit</em>.</figcaption>
+</figure>
+<div class="example">
+<p><b>Do the math yourself (real EDGAR figures):</b></p>
+<p><b>Netflix net margin</b> = 10.98 ÷ 45.18 = <b>24.3%</b>. <b>Disney net margin</b> = 12.40 ÷ 94.42 = <b>13.1%</b>.</p>
+<p><b>Return on equity (ROE)</b> = net income ÷ equity. Netflix: 10.98 ÷ 26.62 = <b>41.2%</b>. Disney: 12.40 ÷ 109.87 = <b>11.3%</b>. Netflix turns each dollar of owner capital into nearly <b>4× the profit</b> Disney does.</p>
+<p><b>Return on assets (ROA)</b> = net income ÷ assets. Netflix: 10.98 ÷ 55.60 = <b>19.7%</b>. Disney: 12.40 ÷ 197.51 = <b>6.3%</b>. Netflix is <em>asset-light</em> (no theme parks to maintain); Disney's $197.5B asset base must work harder for thinner returns.</p>
+<p><b>Strategy read:</b> Netflix's tight positioning — one global streaming activity system with network effects — produces a structurally higher-margin business than Disney's deliberately broad, capital-heavy portfolio. Different positions, different economics.</p>
+</div>
+
+<h2>7 · Check yourself</h2>
+<div class="quizq" data-correct="1">
+  <p class="q">An industry has many equal-sized firms competing almost only on price, low barriers to entry, and powerful suppliers. What does the Five Forces model predict?</p>
+  <button class="opt">High, durable profits for everyone</button>
+  <button class="opt">Structurally low industry profitability</button>
+  <button class="opt">Profitability depends only on who has the biggest market share</button>
+  <p class="fb">Strong rivalry + easy entry + powerful suppliers all drain profit — a "zero-star" structure like airlines. Market share doesn't rescue a bad structure.</p>
+</div>
+<div class="quizq" data-correct="2">
+  <p class="q">Continental launched Continental Lite to fight Southwest while keeping full service, and failed. The core lesson is:</p>
+  <button class="opt">Low-cost airlines can never be beaten</button>
+  <button class="opt">Operational effectiveness is all that matters</button>
+  <button class="opt">Straddling two positions forces bad trade-offs — strategy requires choosing what NOT to do</button>
+  <p class="fb">Trying to occupy two positions at once created non-complementary activities. Trade-offs and fit are what make a position defensible.</p>
+</div>
+<div class="quizq" data-correct="0">
+  <p class="q">Netflix and Disney FY2025: Netflix earns $10.98B on $45.18B revenue; Disney earns $12.40B on $94.42B. Whose business keeps more of each sales dollar?</p>
+  <button class="opt">Netflix — 24.3% net margin vs Disney's 13.1%</button>
+  <button class="opt">Disney — it has more total revenue</button>
+  <button class="opt">They're identical because both are entertainment companies</button>
+  <p class="fb">Netflix: 10.98 ÷ 45.18 = 24.3%. Disney: 12.40 ÷ 94.42 = 13.1%. More revenue ≠ better margin; competitive position drives profitability.</p>
+</div>
+
+<div class="pitfall subtle">
+<h3>🔎 One subtlety → your bridge to Marketing &amp; Pricing</h3>
+<p>Five Forces and positioning tell you <em>where</em> profit lives and <em>why</em> a position is defensible — but they stop at the industry edge. <em>How</em> you actually move a customer's willingness-to-pay (brand, segmentation, differentiation messaging) and how you set the price that captures it is the work of <b>Marketing &amp; Pricing strategy</b> — the next course. Strategy chooses the hill; marketing climbs it.</p>
+</div>
+
+<div class="apply-box">
+<h3>🎯 Your move (the Course 04 output)</h3>
+<p>Pick an industry you know (your employer's, or one you're curious about) and score all five forces High / Medium / Low with one reason each. Then name the <b>single force</b> you'd try to change and one concrete action to do it (raise a barrier, lower buyer switching, build fit). That one-page analysis <em>is</em> a strategy diagnosis.</p>
+</div>
+
+<div class="src-list">
+<h4>📚 Taught from these sources in your corpus</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=mYF2_FBCvXw" target="_blank" rel="noopener">Harvard Business Review — The Five Competitive Forces That Shape Strategy</a></li>
+<li><a href="https://www.youtube.com/watch?v=XCWHSeDU-zk" target="_blank" rel="noopener">Harvard Business Review — The Explainer: The 5 Forces That Make Companies Successful</a></li>
+<li><a href="https://www.youtube.com/watch?v=ehSQR6oMBHA" target="_blank" rel="noopener">Sim Institute — The Five Forces Analysis explained</a></li>
+<li><a href="https://www.youtube.com/watch?v=o7Ik1OB4TaE" target="_blank" rel="noopener">Harvard Business Review — What Is Strategy? It's a Lot Simpler Than You Think</a></li>
+<li><a href="https://www.youtube.com/watch?v=TIepd72P9Xc" target="_blank" rel="noopener">Kunal Cholera — What is strategy: Michael Porter HBR article summary</a></li>
+</ul>
+<p style="margin:8px 0 0;color:var(--dim)">Full transcripts of every lecture are below ↓</p>
+</div>
+</section><div class="source-divider"><span>Source material — go deeper</span></div><section id="videos"><h2>Lectures <span class="count">8</span></h2><article class="card vid">
 <div class="card-head"><a class="ttl" href="https://www.youtube.com/watch?v=mYF2_FBCvXw" target="_blank" rel="noopener">The Five Competitive Forces That Shape Strategy</a> <span class="sig-hi">signal 3</span></div>
 <div class="meta">Harvard Business Review · 13:12 · 3,534,652 views</div><details class="tr"><summary>Read transcript · ~2,855 words · 19 min read</summary>
 <div class="tr-body"><p>[Music] I&#x27;m Tom Stewart editor and managing director of the Harvard Business Review Our Guest today is Michael Porter professor at Harvard University and head of the institute for strategy and competitiveness he&#x27;s the author of The forthcoming hbr article the five competitive forces that shape strategy a reaffirmation update and extension of his groundbreaking 19 1979 article how competitive forces shape strategy Mike thanks for joining the program um to start let&#x27;s remind our viewers of what the five competitive forces are well Tom uh the basic idea of the competitive forces starts with the notion that competition uh is often looked at too narrowly by managers and the five forces say that yes you&#x27;re competing with your direct competitors but you&#x27;re also in a fight for profits with a a a broader extended set of competitors customers uh who have bargaining power suppliers who can have bargaining power new entrance who might come in and kind of grab a piece of the action and and substitute products or services that essentially place a constraint or a cap on your profitability and growth so the five forces is kind of a holistic way of looking at any industry and understanding the structural underlining drivers of profitability in competition so I use these to think about my rival makes it difficult for me the threat of substitutes means I can&#x27;t overcharge the threat of new entrance means I can&#x27;t overcharge and and and the same thing the same thing with the with Supply and and and the and that there&#x27;s underlying drivers of each of those forces that the that the that the model really um uh sort of unveils and then you can actually apply this every industry is different every industry will have a different set of economic fundamentals but the five Forces help you home in on first of all what&#x27;s really causing profitability in your industry what are the trends that are the most most likely to be significant in changing the the game in the industry um you know where are the constraints which which if you can relax them might allow you to find a really strong competitive position so how would you apply this analysis to an industry Airlines for example Airlines is a great industry uh it&#x27;s actually uh uh you you&#x27;ll see in the article you&#x27;ve seen in the article that that there&#x27;s a chart that compares profitability of Industries and Airlines I think has been on the bottom of that list for decades it&#x27;s among one of the least profitable Industries known to man and uh and and the five forces really allows you very quickly to understand why I mean let&#x27;s just let&#x27;s just go around the go around the chart uh the nature of rivalry is incredibly intense and it&#x27;s almost exclusively on price uh it&#x27;s been very hard to differentiate to get the customer to wait even an extra two or three uh minutes for another flight if they can get on the flight at a cheaper price so there&#x27;s there&#x27;s been a very intense price competition low bearish entry uh constant stream of new Airlines coming into the industry despite the fact that the profitability is low it&#x27;s always puzzl me low barrier dentry because you can rent a plane you don&#x27;t have to buy a plan you can rent a pan you can lease a gate um you know it&#x27;s all generic technology um you can you can start with one flight between two City pairs you don&#x27;t have to you know there&#x27;s no real need to have a whole network in the beginning um and yet people keep coming in I think it&#x27;s just one of those sexy industry it&#x27;s a great example of how sexiness or coolness or hotness or chicness has nothing to do with industry profit the underlying structure is what drives profitability um you know the the customer is very fickle and price sensitive suppliers of of aircraft and aircraft engines uh and and even aircraft gates at at airports now have a lot of clout they can bargain away uh Mark most of the profits you know GE and Rolls-Royce and and and Airbus and Boeing make a lot more money than Airlines they get most of the profit and then of course there&#x27;s always a substitute of getting on the train or driving your car or or shipping your goods by uh by by air and and that that&#x27;s kind of kept a concern and you have powerful suppliers of Labor too that&#x27;s another powerful supplier right exactly here there&#x27;s a great case where you have where you have unionized Labor and and and and and unlike other Industries in this in this industry particularly with the pilots the labor can literally shut you down and and and there&#x27;s no way around them so um it it&#x27;s an industry where there there are spurts of of what you might call mediocre profitability uh punctuated by long periods of terrible profitability so every one of the five4 is very strong in that industry and you could take another industry where the five forces are are relatively benign in all like soft drinks I mean soft drinks has been a a a license to to Mint money and and and again it&#x27;s the opposite kind of analysis when I talk with students we we we kind of joke around there&#x27;s there&#x27;s Five Star Industries where all the forces are attractive like soft drinks there&#x27;s zero Star Industries where all the forces are unfavorable like Airlines and and and we&#x27;re always trying to understand okay what&#x27;s the configuration of under lying economic drivers that&#x27;s going to really shape the propit potential of this industry and then armed with that Insight uh what do I do about it you know H H how do I try to relax the constraint that&#x27;s holding back industry profitability how can I position myself to kind of insulate from some of the The gales Gale Winds of those forces U and those implications of the five forces are something that this new uh article has developed in much more detail you conceive this framework nearly three decades ago and it has been the most extensively used both in management scholarship and management practice of any of any strategy framework and I mean it really has CH it changed the definition of strategy in a lot of ways in these three decades what have you learned what have you learned about the application of these ideas in in in the real world of business well uh the the wonderful thing of course we learned is that that these these Concepts can be applied to literally any any industry it&#x27;s a product a service Hightech Tech low Tech emerging economies developed economies uh in indeed what what one of the powers of the framework is it helps you get avoid getting trapped or tricked by the the latest Trend or the latest technological sensation uh and really allows you to focus on the underlying fundamentals the internet&#x27;s a good example we got very very confused by the internet because people saw the internet as a force as opposed to really enabling technology that that might might or might not impact the underlying structure of the industry so so the I think one thing I&#x27;ve learned is is is the framework is is very very robust but I&#x27;ve also learned that there&#x27;s a lot of uh confusion and complexity in actually applying the framework in in in actual practice and we&#x27;ve tried to clear as many of those areas up as we could in this new article uh for example how do to think about rivalry what what&#x27;s the really how do we understand when rivalry is really positive sum which allows companies to you know many companies to do well and when does rivalry become really zero where where where everybody&#x27;s kind of dragged down into kind of a destructive battle that you can&#x27;t win that that&#x27;s I can understand Zero Sum I mean if we get in a price War the only one one who wins is the consumer which is nice if you&#x27;re a consumer but what what&#x27;s what do you mean by positive sum competition well you know the trouble with the zero some competition is then the the consumer gets a low price but they they they really get no choice and and and a positive some competitions where companies can compete on different attributes Services features uh customer support that&#x27;s actually relevant to particular groups of customers and and the most really positive some competition is where companies are really competing on different things in order to meet the needs of different growing up high and there&#x27;s a piece for each of us there&#x27;s a piece of us in fact one of the things we talk about in the new article one of the things I did in the new article that that we really probably didn&#x27;t have the experience to do uh so so many years ago was really talk a lot about the implications if this is the way competition Works what do you do about it and and one of them is might be in some Industries rather than to go for market share uh against your Rivals uh you might be much better off just really expanding the pie uh expanding the whole profit pool the industry that may be the best way for a market leader to actually improve their circumstances rather than to trigger a destructive battle uh you know with their head-to-head rival how should a company use get or get started using the five forces framework you&#x27;re working your strategy up you you decide this really works for me how do how do you how do you begin well I think industry analysis and looking at the competitive environment is is of course probably the starting basic discipline of any strategy formulation process if you don&#x27;t know the what your industry looks like if you don&#x27;t know how it&#x27;s changing if you don&#x27;t know what the drivers of competition are you might as well you know strategy is going to be you know marginally useful if if not destructive so so we got to start with industry analysis um you know figuring out what your industry is and and drawing the right boundaries and that&#x27;s not always easy it&#x27;s not always easy we&#x27;ve added a a a box in this new article which really addresses that question because I I encountered so many companies that struggled with industry definition um um uh you know identifying really uh what the industry structure is in in in your particular industry and then there&#x27;s another thing that that a lot of managers do they they kind of go through the industry analysis and they say okay this is good this is bad this is good this is bad so this is a attractive industry or an unattractive industry but of course the real question is how&#x27;s that industry changing um uh some have beli taken the five forces as really a static snapshot uh but of course the five forces give you the tools for understanding the Dynamics and where is that industry structure changing how are buyers and suppliers and substitutes and potential entry evolving and then what implications does that hold for your strategy how do you position yourself to find that spot within the industry that you&#x27;re where you can command a really good profit given the five forces how can you maybe reshape the nature of the industry structure and we&#x27;ve got some great new examples that are very very contemporary in this article that I I think will help the manager community and and the investor Community really understand the application of this sometimes when people think about strategy they think about a group of people maybe from a management consulting firm or maybe on the 33rd floor of the building whatever it is but but this sort of you know Elite strategy priesthood that goes and and and does this and they&#x27;re almost divorced from the from from the rest of the management of of the of of the company the 99% of the other people working in the company how can how can a strategy become part of the day-to-day life of a of a of a of a working stiff manager in a company how do you apply this framework this thinking how do you use it well we we we think that this way of looking at an industry needs to be very very broadly understood in the organization I mean and and and the thing about it is is that that managers even Rank and file employees it&#x27;s intuitive people understand yeah we have these customers we have these suppliers uh we&#x27;re struggling with them every day trying to they&#x27;re trying to get a better deal we&#x27;re trying to get a better deal so intuitively I think this is a way of helping people sort of step back from all the excruciating little details that that that characterize any business and say what&#x27;s really important here and then and then of course we&#x27;ve learned that strategy is completely useless again unless the results of the strategy process the position that you choose to occupy the way you&#x27;re going to drive your company is well understood quite broadly because the the number one uh purpose of strategy is alignment it it&#x27;s really to get all the people in the organization making good choices reinforcing each other&#x27;s choices because everybody&#x27;s pursuing a common value proposition a pro pro common way of gaining competitive Advantage so uh you know in I remember when I wrote this article uh there are many people who believe that strategy documents should be locked in the safe at night and uh should not be made available to the rank and file there was a concern that some competitor would find some secret well we&#x27;ve actually learned now that it&#x27;s the opposite you know you&#x27;ve got your your employees got to know your strategy your channels have to know your strategy your suppliers have to know your strategy and your competitors probably knew it already well and and frankly if you know again there&#x27;s there there competition is not Zero Sum if if every company finds a unique need that it can set out to meet if it it if it tries to div deliver something different than its Rivals multiple Rivals can be successful and and if your competitors kind of understand what you stand for and what your committ to maybe they&#x27;ll make a different Choice rather than get dragged into these kind of mindless price Wars that we see in so many Industries the five forces that shape strategy have been around for 30 years they&#x27;re going to be around for well they&#x27;ve been around they&#x27;ve been around for long they were around long before you wrote about they&#x27;ve been around as long as business has been around they&#x27;re going to be a around as long as business is around uh the new article just fabulous and thank you so much thank you well I&#x27;m uh looking forward to kind of getting another surge of uh of of feedback from the practitioners and and and and we we&#x27;ll we&#x27;ll keep uh learning thanks thanks Tom</p></div></details></article><article class="card vid">
@@ -158,7 +321,7 @@ Overall a very grounded, practical take on what “strategy” actually means in
   Equity                    $26.62B   (FY end 2025-12-31)
   OperatingCashFlow         $10.15B   (FY end 2025-12-31)
   GrossProfit                $2.48B   (FY end 2020-12-31)</div></section></main>
-<div class="done-wrap"></div>
+<div class="done-wrap"><button id="mark-done" data-mod="core-04-competitive-strategy.html"><span class="cp-tick">✓</span> <span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button></div>
 <div class="pn-wrap"><a class="pn" href="core-03-micro-strategy.html">← 03 Microeconomics &amp; Strategy</a><a class="pn next" href="core-05-marketing-brand.html">05 Marketing &amp; Brand →</a></div>
 <a href="#" class="top">↑ Top</a>
 <script src="lesson.js"></script>

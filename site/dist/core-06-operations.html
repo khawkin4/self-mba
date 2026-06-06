@@ -6,14 +6,146 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css"></head><body>
 <div class="grain" aria-hidden="true"></div><div class="atmos" aria-hidden="true"></div>
-
+<div id="progress"></div>
 <header class="mod-header core">
 <a href="index.html" class="home">← Index</a>
 <div class="eyebrow"><span class="num">06</span> Core Curriculum</div>
 <h1>Operations &amp; Supply Chain</h1>
 <div class="hairline"></div></header>
-<nav class="toc"><a href="#videos">Source: Lectures</a> <a href="#discuss">Discussions</a> <a href="#fin">Financials</a></nav>
-<main><section id="videos"><h2>Lectures <span class="count">10</span></h2><article class="card vid">
+<nav class="toc"><a href="#lesson">Lesson</a> <a href="#videos">Source: Lectures</a> <a href="#discuss">Discussions</a> <a href="#fin">Financials</a></nav>
+<main><section id="lesson" class="lesson"><!-- LESSON: Operations & Supply Chain — interactive, visual-first, grounded in the 06-operations corpus. Live AMZN FY2025 & WMT FY2026 numbers. -->
+<p class="lead">Marketing wins the sale, but <b>operations decides whether you make money on it</b>. Operations is the engine that turns raw inputs into delivered product — and the whole game is moving work through that engine <em>fast, cheap, and defect-free</em>. This is a hands-on lesson: <b>tap the cards, the diagrams, and the quiz</b>. We'll use the two retail giants — Amazon and Walmart — and their real, latest numbers to make it concrete.</p>
+
+<h2>1 · Three levers every operation pulls</h2>
+<p>Toyota built the most-copied operating system on earth around a single goal: highest quality, lowest cost, shortest lead time. Tap each lever to see what it means 👇</p>
+<div class="reveal">
+  <button class="reveal-q">⏱️ Lead time — speed</button>
+  <div class="reveal-a"><p><b>"How long from order to cash?"</b> The clock that runs from when a customer places an order to when you collect payment. Most of that time, the product is just <em>waiting</em>, not being worked on. Shrinking the wait is where the money hides.</p></div>
+</div>
+<div class="reveal">
+  <button class="reveal-q">🗑️ Waste — cost</button>
+  <div class="reveal-a"><p><b>"What are we paying for that the customer won't?"</b> In Lean, waste is <em>any action that consumes resources without adding value to the customer</em>. Toyota names seven types (TIMWOOD): Transport, Inventory, Motion, Waiting, Over-processing, Over-production, Defects.</p></div>
+</div>
+<div class="reveal">
+  <button class="reveal-q">✅ Quality at the source — defects</button>
+  <div class="reveal-a"><p><b>"Never knowingly pass a defect downstream."</b> Catch and fix problems where they happen instead of repairing finished product later. Stopping the line to fix one defect is cheaper than shipping a thousand bad ones.</p></div>
+</div>
+<blockquote class="srcq"><p>"all we are doing is looking at the timeline from when the customer gives us an order to the point at which we collect the cash and we're reducing that timeline by removing non-value added wastes"</p>
+<cite><a href="https://www.youtube.com/watch?v=sUtmosujXVE" target="_blank" rel="noopener">— EMS Consulting Group, "Lean Manufacturing: What is Lean and the Toyota Production System?"</a> · in your corpus</cite></blockquote>
+
+<h2>2 · The vocabulary — flip to learn</h2>
+<p>These are the exact words operations managers use on the factory floor and in the warehouse. <b>Tap a card to flip it.</b></p>
+<div class="fc-grid">
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Lean</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A systematic way to identify and eliminate waste through continuous improvement, flowing product at the pull of the customer. Coined to describe Toyota's system.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Just-in-Time (JIT)</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Produce or acquire goods exactly when needed — not before. Slashes warehouse cost and frees up cash tied in inventory.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Kaizen</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">"Change for the better." A culture of small, continuous, everyone-everywhere improvements rather than rare big projects.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Kanban</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A visual signal/card system that controls work flow — only make what the next step actually pulls, limiting work-in-progress.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Jidoka</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">"Automation with a human touch." Machines that detect a problem and stop themselves, so a defect can't roll forward.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Bottleneck</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The slowest step in a process — a resource whose capacity is at or below the demand on it. It caps the whole system's output.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Constraint</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The one limiting factor that holds back the whole organization's goal. Every bottleneck is a candidate, but only the binding one is THE constraint.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Throughput</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The rate finished, sellable product comes out the end. Improve it only by improving the constraint — nowhere else helps.</span></span></button>
+</div>
+
+<h2>3 · The Theory of Constraints in one line</h2>
+<p>If a chain breaks at its weakest link, strengthening any <em>other</em> link is wasted effort. The same is true for a process: <b>output is set by the slowest step</b>.</p>
+<div class="equation">System throughput&nbsp; = &nbsp;capacity of the bottleneck</div>
+<p>So improving a non-bottleneck step doesn't raise output — it just piles up work-in-progress in front of the real constraint. Here's a 4-station line making 100 units of demand a day. <b>Tap each bar</b> to see its capacity:</p>
+<figure class="viz">
+<svg viewBox="0 0 720 210" role="img" aria-label="A four-station process line where station B at 80 units per day is the bottleneck">
+  <text x="0" y="18" class="vlabel">Station A — cutting · capacity 120/day</text>
+  <rect x="0" y="24" width="600" height="26" rx="4" class="bar-rev" data-tip="Station A can do 120/day — more than demand. Speeding it up only floods B with parts that wait."/>
+  <text x="300" y="42" class="bar-txt">120 units/day</text>
+  <text x="0" y="70" class="vlabel">Station B — assembly · capacity 80/day ⬅ BOTTLENECK</text>
+  <rect x="0" y="76" width="400" height="26" rx="4" class="bar-net" data-tip="Station B is the bottleneck: only 80/day, below the 100 demand. The whole line can ship no more than 80 — fix THIS step."/>
+  <text x="200" y="94" class="bar-txt">80 units/day</text>
+  <text x="0" y="122" class="vlabel">Station C — paint · capacity 110/day</text>
+  <rect x="0" y="128" width="550" height="26" rx="4" class="bar-gross" data-tip="Station C can do 110/day but starves — it can only work on what B feeds it, so it never exceeds 80."/>
+  <text x="275" y="146" class="bar-txt">110 units/day</text>
+  <text x="0" y="174" class="vlabel">Station D — pack · capacity 130/day</text>
+  <rect x="0" y="180" width="650" height="26" rx="4" class="bar-gross" data-tip="Station D has the most capacity and matters least — it idles waiting on B's output."/>
+  <text x="325" y="198" class="bar-txt">130 units/day</text>
+</svg>
+<figcaption>Demand is 100/day, but the line ships only <b>80</b> — capped by station B. Every other improvement is invisible until B is fixed.</figcaption>
+</figure>
+<div class="reveal">
+  <button class="reveal-q">How do you fix a bottleneck without spending a dime?</button>
+  <div class="reveal-a"><p>In a ballpoint-pen assembly demo, a team cut a job from <b>90 seconds to 66 seconds — a 50% throughput gain — by re-balancing work</b>, not adding people. First synchronize upstream stations to the bottleneck (kill the work-in-progress pile), then move an idle worker's spare time over to help the constraint. Only if that's not enough do you add cost/resources. Identify → synchronize → redistribute → then add resources.</p></div>
+</div>
+<blockquote class="srcq"><p>"the bottleneck is the limiting operation you cannot work faster than the bottleneck and if the previous operations work faster it is of no use because the output does not go up and only WIP builds up in between"</p>
+<cite><a href="https://www.youtube.com/watch?v=Lorz-tRYwTQ" target="_blank" rel="noopener">— Shrinivas Gondhalekar, "TOC Theory of Constraints & De bottlenecking"</a> · in your corpus</cite></blockquote>
+<div class="pitfall">
+<h3>⚠️ Bottleneck ≠ constraint (the subtle trap)</h3>
+<p>A <b>bottleneck</b> is any resource with capacity at or below its demand. The <b>constraint</b> is the <em>one</em> bottleneck that limits the whole system's goal. A plant can have several bottlenecks, but pouring effort into a non-binding one just grows the queue in front of the real constraint — "the plant as a system will have no benefit from this so-called improvement." Always improve <em>the</em> constraint.</p>
+</div>
+
+<h2>4 · Two giants, same revenue, opposite operating models</h2>
+<p>Here's where operations gets real. Amazon and Walmart booked almost <b>identical revenue</b> last fiscal year — yet they make money in completely different ways. This is the operations manager's core trade-off: <b>fat margin vs. fast turnover</b>.</p>
+<figure class="viz">
+<svg viewBox="0 0 720 210" role="img" aria-label="Amazon versus Walmart net margin and asset turnover comparison">
+  <text x="0" y="18" class="vlabel">Net margin — profit kept per $1 of sales</text>
+  <rect x="0" y="24" width="473" height="28" rx="4" class="bar-net" data-tip="Amazon net margin: 10.83% ($77.67B profit on $716.92B revenue). Higher-margin AWS cloud + ads lift the blended figure."/>
+  <text x="236" y="43" class="bar-txt">Amazon 10.8%</text>
+  <rect x="0" y="58" width="134" height="28" rx="4" class="bar-liab" data-tip="Walmart net margin: 3.07% ($21.89B profit on $713.16B revenue). Thin grocery/retail margins — pennies per dollar."/>
+  <text x="160" y="77" class="vlabel">Walmart 3.1%</text>
+  <text x="0" y="118" class="vlabel">Asset turnover — sales generated per $1 of assets</text>
+  <rect x="0" y="124" width="168" height="28" rx="4" class="bar-liab" data-tip="Amazon asset turnover: 0.88x ($716.92B revenue / $818.04B assets). Heavy assets: warehouses, data centers."/>
+  <text x="190" y="143" class="vlabel">Amazon 0.88×</text>
+  <rect x="0" y="158" width="480" height="28" rx="4" class="bar-gross" data-tip="Walmart asset turnover: 2.51x ($713.16B revenue / $284.67B assets). Lean assets, fast inventory — sells its asset base 2.5x a year."/>
+  <text x="240" y="177" class="bar-txt">Walmart 2.51×</text>
+</svg>
+<figcaption>Amazon keeps <b>~3.5× more margin</b> per sale; Walmart spins its assets <b>~2.9× faster</b>. Two opposite paths to the same finish line.</figcaption>
+</figure>
+<div class="example">
+<p><b>Net margin</b> (Amazon) = 77.67 ÷ 716.92 = <b>10.8%</b>. <b>Net margin</b> (Walmart) = 21.89 ÷ 713.16 = <b>3.1%</b>. Walmart keeps about 3 cents of every sales dollar.</p>
+<p><b>Asset turnover</b> (Walmart) = 713.16 ÷ 284.67 = <b>2.51×</b> — it generates $2.51 of sales per $1 of assets. Amazon = 716.92 ÷ 818.04 = <b>0.88×</b>, weighed down by warehouses and AWS data centers.</p>
+<p><b>The punchline — Return on Assets ties out close:</b> margin × turnover = ROA. Amazon: 10.8% × 0.88 ≈ <b>9.5%</b>. Walmart: 3.1% × 2.51 ≈ <b>7.7%</b>. A razor-thin grocer competes with a tech-margin giant <em>because operational speed (turnover) substitutes for margin.</em> That's the whole secret of Walmart's model.</p>
+</div>
+
+<h2>5 · Check yourself</h2>
+<div class="quizq" data-correct="1">
+  <p class="q">A 4-step line has capacities 90, 60, 100, 120 units/hour. What is the line's throughput?</p>
+  <button class="opt">120 units/hour</button>
+  <button class="opt">60 units/hour</button>
+  <button class="opt">92.5 units/hour (the average)</button>
+  <p class="fb">Throughput equals the capacity of the slowest step — the bottleneck at <b>60</b>. No step can outrun it, and averaging is meaningless here.</p>
+</div>
+<div class="quizq" data-correct="2">
+  <p class="q">A factory keeps 3 months of parts in a warehouse "just in case." Which Lean idea attacks this most directly?</p>
+  <button class="opt">Jidoka (automation with a human touch)</button>
+  <button class="opt">Kaizen (continuous improvement)</button>
+  <button class="opt">Just-in-Time (produce/acquire only when needed)</button>
+  <p class="fb"><b>Just-in-Time</b> targets excess inventory — it frees the cash tied up in stock and cuts warehouse cost and obsolescence risk.</p>
+</div>
+<div class="quizq" data-correct="0">
+  <p class="q">Walmart and Amazon earn similar Return on Assets despite very different margins. Walmart pulls this off mainly through…</p>
+  <button class="opt">High asset turnover (selling its asset base fast)</button>
+  <button class="opt">A higher net profit margin than Amazon</button>
+  <button class="opt">Holding far more total assets than Amazon</button>
+  <p class="fb">Walmart's thin 3% margin is rescued by spinning assets <b>2.51×</b> a year vs Amazon's 0.88×. Speed of turnover substitutes for margin — and it actually holds <em>fewer</em> assets.</p>
+</div>
+
+<div class="pitfall subtle">
+<h3>🔎 One subtlety → your bridge to the next course</h3>
+<p>Notice the two giants made nearly the same revenue but Amazon holds <b>$818B in assets</b> to Walmart's <b>$285B</b>. Choosing how much capital to sink into warehouses, data centers, and inventory — and whether to own or rent that capacity — is an <b>operations decision that becomes a finance decision</b>. How a firm funds and allocates that asset base is the heart of Capital Allocation and Strategy in the courses ahead.</p>
+</div>
+
+<div class="apply-box">
+<h3>🎯 Your move (the Course 06 output)</h3>
+<p>Pick any process you touch — your morning routine, a coffee shop line, your team's deploy pipeline. Map the steps, time each one, and circle the slowest (the bottleneck). Then ask the four de-bottlenecking questions in order: can you <em>synchronize</em> upstream steps to it, <em>redistribute</em> idle effort toward it, and only then <em>add</em> resources? Estimate the throughput gain before spending a dollar.</p>
+</div>
+
+<div class="src-list">
+<h4>📚 Taught from these sources in your corpus</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=sUtmosujXVE" target="_blank" rel="noopener">EMS Consulting Group — Lean Manufacturing: What is Lean and the Toyota Production System?</a></li>
+<li><a href="https://www.youtube.com/watch?v=F5vtCRFRAK0" target="_blank" rel="noopener">Bloomberg Originals — How Toyota Changed The Way We Make Things</a></li>
+<li><a href="https://www.youtube.com/watch?v=Lorz-tRYwTQ" target="_blank" rel="noopener">Shrinivas Gondhalekar — TOC Theory of Constraints & De bottlenecking</a></li>
+<li><a href="https://www.youtube.com/watch?v=6UT1EnL7nOc" target="_blank" rel="noopener">HohmannChristian — The subtle difference between a constraint and a bottleneck</a></li>
+<li><a href="https://www.youtube.com/watch?v=amLFrkLNH40" target="_blank" rel="noopener">Farhat Lectures — Theory of Constraints and Bottlenecks (TOC)</a></li>
+</ul>
+<p style="margin:8px 0 0;color:var(--dim)">Full transcripts of every lecture are below ↓</p>
+</div>
+</section><div class="source-divider"><span>Source material — go deeper</span></div><section id="videos"><h2>Lectures <span class="count">10</span></h2><article class="card vid">
 <div class="card-head"><a class="ttl" href="https://www.youtube.com/watch?v=pzuUqzUM0YY" target="_blank" rel="noopener">13 Pillars of Toyota Production System— Explained With Examples— Lean Manufacturing</a> <span class="sig-hi">signal 2</span></div>
 <div class="meta">E-Concepts · 10:11 · 1,153 views</div><details class="tr"><summary>Read transcript · ~1,848 words · 12 min read</summary>
 <div class="tr-body"><p>welcome to EC Concepts the Toyota production system is known for its lean manufacturing techniques and has influenced businesses worldwide while emphasizing continuous Improvement respect for people and a focus on quality control the 13 pillars of the Toyota production system that we are going to discuss aim to streamline production processes eliminate waste and enhance process efficiency let&#x27;s review the first pillar of TPS called the kyaku stone kyaku stone is a tool that is used by Toyota to remove imperfections from manufactured car parts the size of a fist and made of gritty resins the stone is known as the devil&#x27;s tongue brushing the stone across the surface of a panel smoothens the metal so that it is ready for painting although a kanaku stone is a physical tool the concept of removing imperfections as part of quality control can be applied to any business operation for example checklists inspections check points and quality standards serve as kyaku Stones as they are used to examine any work in progress item for imperfections and flaws the second pillar of TPS is pooke which simply asks to avoid mistakes pokeo is a safeguard that prevents a process from proceeding to The Next Step until the proper conditions have been met so TPS employs devices that automatically stop the line if there is an error for example in the following diagram a limit switch detects undes desired assemblies and separates them from the desired ones alarms sensors checklists color codes warning signs or error detection systems are some examples of different pokeo designs to avoid mistakes in the manufacturing process next comes the third pillar of TPS called H H is the process of recognizing and learning from mistakes to prevent them from occurring again Toyota hosts Hans Kai meetings in which failures experience during the production process if there were any are reflected on and future prevention plans are put in place you can Implement H by following four steps your first step is to identify the problem and then take the responsibility remember it&#x27;s not the responsibility or fault of one team member but the whole team in the third step the root causes of the problem are listed and analyzed and then an improvement plan is created and implemented to eliminate the problem next comes the third pillar of TPS called andon andon refers to a visual aid tool used to inform and alarm workers of problems within their production process it is usually activated by a button or pull cord and hence production is automatically halted when a member of Staff pulls it as shown in the following diagram a visually aided tool alarms the workers about the current position of the operation by using different color codes the red color shows the production has stopped while the yellow color shows that the problem is unidentifiable and needs further investigation the green signal shows no issue in production and indicates smooth running operation next we have jidoka as a fourth pillar of the Toyota production system jidoka means automation with a human touch or simply autonomation designing equipment to detect problems and stop automatically when required are fundamentals to jidoka the concept of jidoka is to provide machines with the capability to detect abnormal conditions in the production line this allows s process operators the ability to quickly address the issue in the following diagram you can see how the process has improved from manual operation to fully automatic processing thus allowing operators more flexibility to resolve the problems following are the four steps to apply to judoka discover an abnormality stop the process fix the immediate problem investigate and solve the root cause the next pillar is the just in time methodology just in time production was pioneered by Toyota it is an inventory management approach where goods are produced or acquired exactly when needed minimizing storage costs and waste while improving efficiency it aims to reduce excess inventory and streamline production processes to meet demand more precisely stocking up on inventory to ensure demand is satisfied may seem ideal but it comes with a significant cost company&#x27;s risk Capital tied to inventory Warehouse costs and obsolescence to name a few some potential benefits of jit methodology include lower inventory storage costs minimize dead stock shorter production Cycles reduction in work in progress at number seven comes the pillar named he Juna it refers to reducing unevenness in production and minimizing overburden for the production team the main goal of he junka is to eliminate the possibility of more and Mory through leveling by volume and product type more and Mory are also the TPS pillars and will be studied later but let&#x27;s review an example first a Furniture Company receives an average of 700 orders a week for a specific desk chair however the exact number per day varies 150 on Monday 75 on Tuesday 90 on Wednesday and so on by implementing he junka the company would produce 100 chairs every day so we have reduced the unevenness in the production it is just a simple example for you to understand the basic concept in the end hunka can be implemented in two ways you can reduce the unevenness in the process either by doing leveling by volume or by type now the the next pillar is geni gutsu geni gutsu is the idea that the best way to solve a problem is to see it for yourself practicing geni genbutsu allows businesses to focus on facts and minimize biases that can be derived from reports teams are able to better visualize the problem to pinpoint the cause in a much faster and accurate manner in the Toyota production system managers are present on the factory floor this immersive approach means they fully understand the working environment and processes and can advise the best possible solution when a problem arises at number nine comes the famous pillar named Kaizen Kaizen is at the heart of the Toyota production system it is a philosophy of continuous Improvement where company employees at all levels work together to a achieve regular incremental improvements to the manufacturing process Kaizen simply means change for the better to improve productivity reduce waste eliminate unnecessary hard work and humanize the workplace in simple terms improves everybody every day and everywhere 5S framework of Kaizen is very famous and aims to create a clean organized and efficient work environment by eliminating clutter organizing items maintain Ming cleanliness establishing standards and sustaining these practices for continuous Improvement 5S methodology focuses on five principles sort set in order shine standardize and sustain 10th pillar of the Toyota production system is Canan Canan is a visual system that helps to control the flow of work within a process kban is an inventory control system used in just in time Jerry it manufacturing to track production and order new shipments of parts and materials by limiting work in progress and promoting continuous Improvement can ban can improve workflow efficiency and reduce bottlenecks can ban for manufacturing works by using a board often a whiteboard or digital board divided into columns representing the stages of the process some core practices of the can ban include visualize workflows limit uip improve collaboration implement feedback loops at number 11 comes the pillar GBA GBA means the real place if you&#x27;re a surgeon your genba is the operating room genba is the physical place where work is done and its philosophy is that all actions and processes are as transparent as possible a gba walk is walking around within your GBA with the purpose of understanding how work is being done Toyota team members regularly conduct GBA walks on the factory floor in order toid identify areas where potential improvements might be made and to better understand the workload of their colleagues when doing gble Walk you need to Define your purpose prepare your team focus on the process not the people take note of your observations share your findings and recommendations next comes the 12th principle called nemawashi nemawashi says that decisions shouldn&#x27;t be dictated by individuals they should be made as a team in the Toyota production system information is shared openly with employees in order to involve them in decision-making processes and allow them to voice their opinions applications of the Nashi approach include decision-making project planning consensus building quality improvement organizational change in the last we have muda muray and MOA strategy as the 13th pillar of TPS muda Mori and MOA 3M work in tandem to eliminate waste muda divides waste into seven categories also known as timwood Transportation inventory motion waiting overprocess over production and defects Mori means to overburden and this is avoided by even distribution of production tasks in the assembly processes Mora means unevenness which is eliminated in the Toyota production system by training workers to operate multiple machines so that there is cohesion between their operation in the diagram you can clearly see how we are wasting the resources that was all from my side I hope you have liked this video thank you so much</p></div></details></article><article class="card vid">
@@ -158,7 +290,7 @@ By this time next month the impact will be obvious to everybody, not just supply
   Assets                   $284.67B   (FY end 2026-01-31)
   Equity                    $99.62B   (FY end 2026-01-31)
   OperatingCashFlow         $41.56B   (FY end 2026-01-31)</div></section></main>
-<div class="done-wrap"></div>
+<div class="done-wrap"><button id="mark-done" data-mod="core-06-operations.html"><span class="cp-tick">✓</span> <span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button></div>
 <div class="pn-wrap"><a class="pn" href="core-05-marketing-brand.html">← 05 Marketing &amp; Brand</a><a class="pn next" href="core-07-data-analytics.html">07 Data, Analytics &amp; Decisions →</a></div>
 <a href="#" class="top">↑ Top</a>
 <script src="lesson.js"></script>

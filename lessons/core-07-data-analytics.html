@@ -1,0 +1,139 @@
+<!-- LESSON: Data, Analytics & Decisions — interactive, visual-first, grounded in the 07-data-analytics corpus. No financial data; teaches via frameworks and real examples. -->
+<p class="lead">Data doesn't make decisions — <b>people do</b>. This module is about the two skills that separate a data-literate manager from someone who just stares at dashboards: <b>running experiments to learn what actually works</b>, and <b>weighing evidence honestly before you act</b>. This is hands-on — <b>tap the cards, the diagrams, and the quizzes</b> as you go.</p>
+
+<h2>1 · Two ways to turn data into decisions</h2>
+<p>Almost every analytics question is really a <em>decision</em> question in disguise. The corpus teaches two complementary engines for it. Tap each 👇</p>
+<div class="reveal">
+  <button class="reveal-q">🧪 Run an experiment (A/B testing)</button>
+  <div class="reveal-a"><p><b>"Which option actually causes the better outcome?"</b> You <em>randomly</em> split users into groups, show each a different version, and measure the result. Randomization is the only reliable way to prove <em>cause and effect</em> rather than coincidence.</p></div>
+</div>
+<div class="reveal">
+  <button class="reveal-q">🎲 Reason under uncertainty (base rates & expected value)</button>
+  <div class="reveal-a"><p><b>"Given what usually happens, what should I expect?"</b> Before trusting your own analysis, ask what happened to <em>everyone else</em> in this same situation. Then think in <em>ranges and probabilities</em>, not single guesses.</p></div>
+</div>
+<blockquote class="srcq"><p>"a b testing is the practice of using randomized experiments for making business decisions"</p>
+<cite><a href="https://www.youtube.com/watch?v=Z85waabCGJQ" target="_blank" rel="noopener">— Wharton Human-AI Research, "The Art & Science of A/B Testing for Business Decisions"</a> · in your corpus</cite></blockquote>
+
+<h2>2 · The vocabulary — flip to learn</h2>
+<p>These are the exact terms practitioners use. <b>Tap a card to flip it.</b></p>
+<div class="fc-grid">
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>A/B Test</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A controlled experiment: randomly split users between version A and version B, then compare a chosen metric. More than two options = "A/B/n testing."</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Randomization</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Assigning users to groups by chance. It makes all the hidden factors (weather, payday, traffic source) average out equally — so the only systematic difference left is the thing you're testing.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Causal Inference</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Measuring true cause and effect, not just correlation. "Conversions rose <em>because</em> we changed the page" — not merely "rose <em>after</em>."</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Effect Size / Lift</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">How much better one version performed vs. the baseline. The number that actually drives the decision — big effects are easy to spot, small ones rarely matter.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>p-value</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The chance you'd see a result this extreme <em>if there were truly no difference</em>. Lower = stronger evidence. It is NOT "the probability A beats B."</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Base Rate</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">What usually happens to the whole reference class. The "outside view" — what happened to other people/companies who were in your exact position before.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Expected Value</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Each possible outcome weighted by its probability. Forces you to plan for a <em>range</em> of scenarios instead of betting on one guess.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Inside vs. Outside View</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Inside = your own detailed analysis of this case. Outside = the base rate from similar past cases. Good decisions use both; most people skip the outside view.</span></span></button>
+</div>
+
+<h2>3 · Why randomization is the magic ingredient</h2>
+<p>Imagine you redesign your homepage and conversions go up. Did the redesign <em>cause</em> it? Maybe — but payday, weather, a competitor's outage, and another team's ad campaign all moved at the same time. Those are <b>confounders</b>. Randomization splits users by coin-flip, so all those hidden factors land equally in both groups. The <em>only</em> thing left different is your change.</p>
+<div class="equation">Correlation ("rose after") &nbsp;≠&nbsp; Causation ("rose because")</div>
+<figure class="viz">
+<svg viewBox="0 0 720 200" role="img" aria-label="Randomization splits users so confounders balance and only the tested change differs">
+  <text x="0" y="18" class="vlabel">All visitors → randomly split 50 / 50</text>
+  <rect x="0" y="28" width="345" height="40" rx="5" class="bar-asset" data-tip="Group A sees the OLD homepage. Confounders (payday, weather, traffic source) are spread evenly here by chance."/>
+  <text x="172" y="53" class="bar-txt">Group A · sees version A</text>
+  <rect x="355" y="28" width="345" height="40" rx="5" class="bar-liab" data-tip="Group B sees the NEW homepage. The SAME mix of confounders lands here — so they cancel out between groups."/>
+  <text x="527" y="53" class="bar-txt">Group B · sees version B</text>
+  <text x="0" y="108" class="vlabel">Confounders average out equally → only the design differs</text>
+  <rect x="0" y="118" width="700" height="30" rx="5" class="bar-gross" data-tip="Because everything else is balanced, any difference in conversions can be attributed to the design change itself."/>
+  <text x="350" y="138" class="bar-txt">Measured difference = the true effect of the change</text>
+</svg>
+<figcaption>Randomization is called the <b>gold standard for measuring cause and effect</b> — it's the only design that neutralizes confounders you can't even see.</figcaption>
+</figure>
+<blockquote class="srcq"><p>"experimentation is the least arrogant method of gaining knowledge"</p>
+<cite><a href="https://www.youtube.com/watch?v=Z85waabCGJQ" target="_blank" rel="noopener">— Wharton Human-AI Research, "The Art & Science of A/B Testing for Business Decisions"</a> · in your corpus</cite></blockquote>
+
+<h2>4 · The five steps of a clean experiment</h2>
+<p>The lecturer lays out a repeatable process. Skip a step and your result is suspect.</p>
+<div class="example">
+<p><b>1. Hypotheses</b> — define the versions you'll test (e.g. orange button vs. green button).<br>
+<b>2. Evaluation criteria</b> — pick your one metric (e.g. conversion rate) <em>before</em> you start, so you can't cherry-pick later.<br>
+<b>3. Sample size / duration</b> — decide how long it runs up front.<br>
+<b>4. Run it</b> — randomly assign each visitor to a version and record what they do.<br>
+<b>5. Evaluate</b> — judge against the criteria you set, then ship the winner.</p>
+</div>
+<div class="pitfall">
+<h3>⚠️ The p-value trap</h3>
+<p>Most tools report "95% confidence" when the p-value hits 0.05 — and that phrasing is misleading. A p-value answers a backwards question: <em>"if there were no real difference, how often would I see a result this extreme?"</em> It is <b>not</b> the probability that A beats B. In the lecturer's large e-commerce dataset, a p-value of 0.05 corresponded to only a <b>~42% chance</b> of a true difference. If you genuinely need high confidence, demand p-values closer to <b>0.001</b> — not 0.05.</p>
+</div>
+
+<h2>5 · Two mindsets: precision vs. optimization</h2>
+<p>Here's the big idea the lecture builds toward. Experiments live on a spectrum between two goals — and most business problems sit far to the right, where managers wrongly apply the left-hand rules.</p>
+<figure class="viz">
+<svg viewBox="0 0 720 200" role="img" aria-label="Spectrum from hypothesis-testing precision mindset to metric-optimization risk mindset">
+  <text x="0" y="18" class="vlabel">A spectrum of experiment goals</text>
+  <rect x="0" y="30" width="250" height="46" rx="5" class="bar-net" data-tip="Hypothesis-testing / precision mindset: getting the decision exactly right matters, false positives are costly. Think clinical trials and vaccines. Needs HUGE samples."/>
+  <text x="125" y="51" class="bar-txt-sm">Precision</text>
+  <text x="125" y="67" class="bar-txt-sm">(hypothesis test)</text>
+  <rect x="260" y="30" width="180" height="46" rx="5" class="bar-gross" data-tip="Most real business tests live here: you want to maximize a metric over a fixed window, and a wrong call on a tiny effect costs almost nothing."/>
+  <text x="350" y="51" class="bar-txt-sm">← most business</text>
+  <text x="350" y="67" class="bar-txt-sm">decisions live here</text>
+  <rect x="450" y="30" width="250" height="46" rx="5" class="bar-rev" data-tip="Metric-optimization / risk mindset: maximize profit/conversions over a fixed period. Precision is nice-to-have; speed and volume of tests win."/>
+  <text x="575" y="51" class="bar-txt-sm">Optimization</text>
+  <text x="575" y="67" class="bar-txt-sm">(risk mindset)</text>
+  <text x="0" y="118" class="vlabel">Why optimization usually wins in business:</text>
+  <rect x="0" y="128" width="700" height="26" rx="4" class="bar-asset" data-tip="If there's truly no difference between A and B, picking the 'wrong' one costs nothing — they convert the same. So false positives are cheap."/>
+  <text x="350" y="146" class="bar-txt-sm">If A and B are basically tied, the 'wrong' choice costs ~nothing</text>
+  <rect x="0" y="162" width="700" height="26" rx="4" class="bar-liab" data-tip="Running a test too long has a real cost: customers stuck on the worse version who could have seen the better one. Decide early, deploy the winner."/>
+  <text x="350" y="180" class="bar-txt-sm">Running too long has a real cost — decide early, deploy the winner</text>
+</svg>
+<figcaption>Big effects are obvious with small samples; small effects barely matter. So <b>run many quick experiments</b> rather than one giant precise one — like a soccer game, you only need to find the one big winner.</figcaption>
+</figure>
+<blockquote class="srcq"><p>"there's a lot more value if you have a you know if you have a month's period of time it's a lot more value in say running four experiments uh for one week each as opposed to running one experiment for the whole month"</p>
+<cite><a href="https://www.youtube.com/watch?v=Z85waabCGJQ" target="_blank" rel="noopener">— Wharton Human-AI Research, "The Art & Science of A/B Testing for Business Decisions"</a> · in your corpus</cite></blockquote>
+
+<h2>6 · The other engine: base rates & the outside view</h2>
+<p>Experiments tell you what works when you can run a test. But many decisions can't be A/B tested — you only get one shot. For those, the corpus offers a second tool from investor <b>Michael Mauboussin</b>: anchor on the <b>base rate</b>.</p>
+<p>Your instinct is to gather facts about <em>this</em> case and project forward — the <b>inside view</b>. The base rate forces the <b>outside view</b>: treat your situation as one instance of a larger reference class and ask what happened to everyone else.</p>
+<div class="reveal">
+  <button class="reveal-q">📊 Worked example: the "20× sales" company</button>
+  <div class="reveal-a"><p>Your inside view says a hot startup trading at 20× sales has amazing growth and is worth buying. The outside view asks: <em>"Historically, what returns did investors get on ALL companies trading at 20× sales or more?"</em> The answer is sobering — that reference class has performed poorly. You might still be right, but the base rate tells you the odds you're fighting.</p></div>
+</div>
+<blockquote class="srcq"><p>"I'm going to basically ask what happened when other people or organizations were in this position before"</p>
+<cite><a href="https://www.youtube.com/watch?v=Yb4P-dFCz84" target="_blank" rel="noopener">— Excess Returns, "Practical Lessons from Michael Mauboussin"</a> · in your corpus</cite></blockquote>
+<p>Pair the base rate with <b>expected-value thinking</b>: don't forecast a single number. Build a <em>bear / base / bull</em> set of scenarios and weight them by probability — because, as Mauboussin puts it, <em>"more things can happen than will happen."</em></p>
+
+<h2>7 · Check yourself</h2>
+<div class="quizq" data-correct="2">
+  <p class="q">Conversions rose the week after you redesigned the homepage. Why can't you conclude the redesign caused it?</p>
+  <button class="opt">Because conversion rate is the wrong metric</button>
+  <button class="opt">Because the sample was too large</button>
+  <button class="opt">Because confounders (payday, weather, campaigns) also changed — only randomization isolates the cause</button>
+  <p class="fb">"Rose after" is correlation. Without randomly splitting users, you can't separate the redesign from every other factor moving at the same time. That's why randomization is the gold standard.</p>
+</div>
+<div class="quizq" data-correct="1">
+  <p class="q">Your A/B tool reports a p-value of 0.05 as "95% confident." What does the lecturer warn?</p>
+  <button class="opt">It means A beats B 95% of the time — trust it</button>
+  <button class="opt">It's misleading; a p-value isn't the probability A beats B, and 0.05 may mean only ~42% chance of a real difference</button>
+  <button class="opt">P-values are always wrong and should be ignored entirely</button>
+  <p class="fb">A p-value answers a backwards question. For true high confidence you need values closer to 0.001 — "95% confidence" from p=0.05 overstates how sure you really are.</p>
+</div>
+<div class="quizq" data-correct="0">
+  <p class="q">You have one month of traffic. Which approach does the corpus favor for maximizing results?</p>
+  <button class="opt">Run several short experiments and deploy winners early</button>
+  <button class="opt">Run one month-long experiment for maximum precision</button>
+  <button class="opt">Skip testing and trust your intuition</button>
+  <p class="fb">In the optimization mindset, big effects show up fast and small ones barely matter. More quick experiments beat one slow precise one — you're hunting for the rare big winner.</p>
+</div>
+
+<div class="pitfall subtle">
+<h3>🔎 One subtlety → your bridge to the rest of the program</h3>
+<p>Notice both engines fight the same enemy: <b>overconfidence in a single story</b>. A/B testing replaces "I know which design is best" with a coin-flip and a measurement; base rates replace "this time is different" with "what usually happens?" That humility — <em>thinking in probabilities and ranges</em> — is exactly the discipline you'll carry into <b>Marketing</b> (testing campaigns), <b>Strategy</b> (scenario planning), and any decision where the data is noisy.</p>
+</div>
+
+<div class="apply-box">
+<h3>🎯 Your move</h3>
+<p>Take one decision you're facing this week (a pricing tweak, a hiring choice, a feature). Write two columns. <b>Left — Inside view:</b> your specific analysis. <b>Right — Outside view:</b> the base rate ("what usually happens to people in this exact spot?"). Then ask: can I turn this into a small, randomized test instead of one big bet? If yes, design the 5-step experiment. If no, write a bear / base / bull scenario with rough probabilities.</p>
+</div>
+
+<div class="src-list">
+<h4>📚 Taught from these sources in your corpus</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Z85waabCGJQ" target="_blank" rel="noopener">Wharton Human-AI Research — The Art & Science of A/B Testing for Business Decisions</a></li>
+<li><a href="https://www.youtube.com/watch?v=Yb4P-dFCz84" target="_blank" rel="noopener">Excess Returns — Practical Lessons from Michael Mauboussin (Multiples, Base Rates and Expectations Investing)</a></li>
+</ul>
+<p style="margin:8px 0 0;color:var(--dim)">Full transcripts of every lecture are below ↓</p>
+</div>
