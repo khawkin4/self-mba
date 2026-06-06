@@ -1,0 +1,195 @@
+[
+  {
+    "sub": "BusinessIntelligence",
+    "title": "Anyone else seeing fewer dashboard requests this year?",
+    "url": "https://reddit.com/r/BusinessIntelligence/comments/1qulihh/anyone_else_seeing_fewer_dashboard_requests_this/",
+    "ups": 167,
+    "comments": 69,
+    "created_utc": 1770103424.0,
+    "author": "sdhilip",
+    "selftext": "Been doing BI consulting for about 10 years, mostly for small and medium businesses. Built hundreds of dashboards in Tableau and Power BI over that time.\n\nBut this year something changed. Dashboard requests dropped noticeably.\n\nWanted to share what I'm seeing and hear if others are experiencing the same.\n\n**What's happening with my clients**\n\nMy bigger clients still want dashboards for deep-dive analysis. But most of my SMB clients? They just want the key numbers. They don't want to log into a portal, find the right tab, filter five times just to see if sales are up.\n\nThey're asking for simpler solutions.\n\n**What I'm building instead**\n\nThree things have taken over most of my work:\n\n**1. Chatbots on top of their data**\n\nClients want to ask questions in plain English and get answers. The tricky part isn't the AI — it's building a solid semantic model underneath so the answers are actually accurate.\n\n**2. KPIs pushed to Slack/Teams/WhatsApp**\n\nLeadership doesn't want another login. They want key numbers delivered before their morning coffee. I'm building agents that pull from databases and push metrics directly to their existing channels.\n\n**3. Automated reports via email**\n\nSome clients still want a daily PDF or PPT summary in their inbox. Instead of building this manually, I'm using automation tools to pull data, generate the report, and send it out.\n\n**Why I think this is happening**\n\nBeyond the AI hype, SMBs are looking to cut costs. Connecting data sources and maintaining dashboards gets expensive. They want something simpler that fits their actual workflow.\n\n**One example**\n\nA small manufacturing client wanted a Power BI dashboard connecting Xero and Zoho. When we priced out the connectors, it blew their budget.\n\nWe stepped back. They didn't need a full dashboard, they needed daily visibility on a few numbers.\n\nBuilt an automation that hits both APIs and sends their KPIs to Teams every morning. Hosting cost is minimal. They're happy because it fits how they actually work.\n\n**The shift**\n\nIt feels like insights are moving from \"pull\" (log in, find the report) to \"push\" (data comes to you).\n\nCurious what others are seeing. Is dashboard work slowing down for you too? What tools are you using for these self-service use cases?",
+    "id": "1qulihh",
+    "signal": 2,
+    "hits": [
+      "the tricky part",
+      "manually"
+    ],
+    "passages": [
+      {
+        "phrase": "the tricky part",
+        "text": "most of my work:\n\n**1. Chatbots on top of their data**\n\nClients want to ask questions in plain English and get answers. The tricky part isn't the AI — it's building a solid semantic model underneath so the answers are actually accurate.\n\n**2. KPIs pushed"
+      },
+      {
+        "phrase": "manually",
+        "text": "omated reports via email**\n\nSome clients still want a daily PDF or PPT summary in their inbox. Instead of building this manually, I'm using automation tools to pull data, generate the report, and send it out.\n\n**Why I think this is happening**\n\nBey"
+      }
+    ]
+  },
+  {
+    "sub": "BusinessIntelligence",
+    "title": "The biggest data problem I keep running into isn't dirty data. It's teams defining the same metric differently.",
+    "url": "https://reddit.com/r/BusinessIntelligence/comments/1s077q9/the_biggest_data_problem_i_keep_running_into_isnt/",
+    "ups": 209,
+    "comments": 97,
+    "created_utc": 1774138708.0,
+    "author": "sdhilip",
+    "selftext": "I do data consulting and work with a lot of different companies. Recently got brought in to fix a client's data model. They use Snowflake. Data was clean. Pipelines ran fine. No issues there.\n\nThen I put two dashboards side by side. Revenue numbers didn't match.\n\nDug into it. Turns out two analysts had written two different calculations for \"Revenue.\" One was calculating gross revenue (total order amount). The other was calculating net revenue (order amount minus returns). Both named the metric \"Revenue.\" Both thought theirs was the correct one.\n\nNeither was wrong. They just never agreed on a single definition.\n\nThis wasn't some edge case. I've seen this play out over and over with different clients:\n\n\\- \"Active Customers\" .. one team counts anyone who logged in within the last 30 days. Another team counts anyone who made a purchase in the last 90 days. Same metric name, completely different numbers.\n\n\\- \"Churn Rate\" .. finance calculates it monthly based on subscription cancellations. Product calculates it based on users who haven't opened the app in 60 days. CEO gets two different churn numbers in the same board meeting.\n\n\\- \"MRR\" .. one report includes trial conversions from day one. Another only counts after the trial period ends. Finance and sales argue about it every quarter.\n\nThe data is fine in all these cases. The problem is nobody sat down and defined what these terms actually mean in one central place. Classic semantic layer problem.\n\nBut here's why I think this is becoming more urgent now.\n\nAI agents are starting to query business data directly. A human analyst who's been at the company for three years will look at a revenue number and think \"that looks low, something's off.\" They have context. They know that one product line got excluded last quarter. They know returns get processed with a two week lag.\n\nAn AI agent has none of that. It finds a column called \"Revenue,\" runs the calculation, and serves the answer with full confidence. If it picks up the wrong definition, it doesn't second guess anything. It just compounds the error into whatever it's building on top.\n\nWrong answers, served fast, at scale.\n\nSo I'm curious how people here are actually handling this:\n\n\\- Using a dedicated semantic layer like dbt metrics, AtScale, or something else?\n\n\\- Handling it inside your BI tool (Power BI semantic models, LookML, Tableau)?\n\n\\- Built something custom on top of your warehouse?\n\n\\- Or still mostly tribal knowledge and docs that nobody reads?\n\nNo judgment. I know the reality is messy. Just want to hear what's actually working and what isn't.",
+    "id": "1s077q9",
+    "signal": 1,
+    "hits": [
+      "the problem is"
+    ],
+    "passages": [
+      {
+        "phrase": "the problem is",
+        "text": "unts after the trial period ends. Finance and sales argue about it every quarter.\n\nThe data is fine in all these cases. The problem is nobody sat down and defined what these terms actually mean in one central place. Classic semantic layer problem.\n\nBut h"
+      }
+    ]
+  },
+  {
+    "sub": "BusinessIntelligence",
+    "title": "is there a reason all my data sources tell a different story or are they just messing with me?",
+    "url": "https://reddit.com/r/BusinessIntelligence/comments/1pi280g/is_there_a_reason_all_my_data_sources_tell_a/",
+    "ups": 133,
+    "comments": 39,
+    "created_utc": 1765268619.0,
+    "author": "Comfortable_Box_4527",
+    "selftext": "bro i swear i’m losing my mind.  \ni pulled the same metric from 3 different sources today and got three completely different numbers.\n\nlike  \nsource a: 12,000  \nsource b: 9,800  \nsource c: error connecting to server  \nsource d (that i didn’t even know existed): 14,500?\n\nhow. how are we all looking at the same company but seeing different universes?\n\nand of course leadership goes why don’t we have a single source of truth?  \nidk man maybe because half the org is running secret spreadsheets like it’s the wild west?\n\npls someone tell me your worst why are these numbers different nightmare.\n\n",
+    "id": "1pi280g",
+    "signal": 1,
+    "hits": [
+      "spreadsheet"
+    ],
+    "passages": [
+      {
+        "phrase": "spreadsheet",
+        "text": "urse leadership goes why don’t we have a single source of truth?  \nidk man maybe because half the org is running secret spreadsheets like it’s the wild west?\n\npls someone tell me your worst why are these numbers different nightmare."
+      }
+    ]
+  },
+  {
+    "sub": "BusinessIntelligence",
+    "title": "can someone explain why users ask for dashboards they literally never open?",
+    "url": "https://reddit.com/r/BusinessIntelligence/comments/1p9od0u/can_someone_explain_why_users_ask_for_dashboards/",
+    "ups": 1093,
+    "comments": 173,
+    "created_utc": 1764421123.0,
+    "author": "Different_Pain5781",
+    "selftext": "i checked our usage logs today and bro i’m actually crying. this one manager begged me for months to make him this super important dashboard. he would ping me nonstop like it was a life or death situation.  \nso i finally build it, make it clean, make it pretty, all that.\n\nguess how many times he opened it?  \ntwo. two times. In four months.  \n\nlike why do people treat dashboards like some kinda achievement badge. they don’t use them, they just want to say they have one.\n\nhow do you all deal with ppl who act like dashboards are trophies? \n\ndo you just build them anyway or do you start saying no?\n\n",
+    "id": "1p9od0u",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "BusinessIntelligence",
+    "title": "When I get complimented on my data...",
+    "url": "https://reddit.com/r/BusinessIntelligence/comments/1ocfvix/when_i_get_complimented_on_my_data/",
+    "ups": 595,
+    "comments": 16,
+    "created_utc": 1761060180.0,
+    "author": "tacogratis2",
+    "selftext": "",
+    "id": "1ocfvix",
+    "signal": 0,
+    "hits": []
+  },
+  {
+    "sub": "BusinessIntelligence",
+    "title": "Anyone here also hate Power BI?",
+    "url": "https://reddit.com/r/BusinessIntelligence/comments/1njpfek/anyone_here_also_hate_power_bi/",
+    "ups": 334,
+    "comments": 163,
+    "created_utc": 1758143485.0,
+    "author": "Middle_Currency_110",
+    "selftext": "I have tried to like it.\nI just can't \nPower Query is OK, so is DAX.\nBut the UI / dashboard builder and the non responsive charts...\nGive me Qlik, Tableu, Metabase he'll, even Excel any day.\n\nIf I never had to open PBI again, I would be happy.\n\nIs it just me?",
+    "id": "1njpfek",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "BusinessIntelligence",
+    "title": "Be honest does business intelligence actually change the way decisions get made?",
+    "url": "https://reddit.com/r/BusinessIntelligence/comments/1q0zdov/be_honest_does_business_intelligence_actually/",
+    "ups": 207,
+    "comments": 101,
+    "created_utc": 1767255821.0,
+    "author": "Apprehensive_Pay6141",
+    "selftext": "Most of the time, the decision is already made. BI just shows up afterward to make it look data driven.\n\nDashboards do not drive action. They validate opinions.  \nReal time data often does not help either. It adds noise, urgency and panic without clarity.  \nAnd a lot of the metrics we track exist simply because no one wants to admit they do not matter.\n\nI am not saying BI is useless. I am saying it has turned into a safety blanket instead of a decision tool.\n\nIf BI disappeared tomorrow would your company actually make worse decisions or would it just feel less confident about the same ones?\n\n",
+    "id": "1q0zdov",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "BusinessIntelligence",
+    "title": "8 Years running a business intelligence consultancy. Experience + AMA",
+    "url": "https://reddit.com/r/BusinessIntelligence/comments/1onovu3/8_years_running_a_business_intelligence/",
+    "ups": 194,
+    "comments": 174,
+    "created_utc": 1762205899.0,
+    "author": "datawazo",
+    "selftext": "Hey sub, \n\nI do this like once a year or so because there seems to be a lot of interest on and off about the life on the other side (running your own show). \n\nI started full time in November 2017. I am in New Brunswick, Canada. Have a team of 3 FTEs and a couple contractors. We've worked with about 150 clients. Some are ongoing partnerships, the longest having been there since day 1. Others are a couple week contract and you each go your separate ways. \n\nOur workload is about 30% database shit, 20% Tableau, 20% PBI, 10% Prep/Alteryx, 10% strategy and implementation - these are projects where were just hired to formally provide guidance and direction. I also personally do a bunch of corporate training which isn't factored into the above breakout but corporate training is about 10% of revenue.  \n\n**Client Acquisition:** Most of our clients early going (first 3 years) were from freelance sites. And the last 5 years we've completely moved away from platforms and bring clients in via LinkedIn, in person networking events and referrals. We are also partnered with a few larger consultancies to offer specialized pieces to their delivery through them. They do their own lead gen and bring us in on new projects. \n\n**This year** \\- I'm friggen tired. I'm old now. It's a grind. It's not that I'm not having fun, but just the constant mental load is really starting to wear me out. \n\nScaling from 1 person to 3 isn't just adding someone and they take 40 hours off your plate (obviously). We've successfully grown as a team, but we've had plenty of growing pains as well. It's not like you can just continuously throw more resources in and lower the company's dependency on me. \n\nI've put a lot of effort and money the last three months at becoming more scalable. And I'm going to continue that into the next year. \n\n**AI -** because I am sure people will ask. We've yet to see a true negative (or positive) impact of AI. The main players haven't integrated it very well. CoPilot in PBI and whatever tf the Tableau one is pulse or w/e- they just aren't good enough yet. Will they be? Probably. I certainly have people asking about it. But every pilot has fallen short and we've just reverted to building out basic dashboards. \n\nWe've also tried to integrate AI into the data side of the equation and again mixed success. It's smart enough to do 80% of things correctly but the other 20% it still needs help. And it doesn't tell you when it needs help so you're kind in the same spot you started. I think this will come before the data viz aspects though. \n\n**You want to do this too? -** Advice to anyone that wants to start this journey - get good at communicating the value of analytics. Be able to talk to ROI, be able to articulate what a restaurant gets with a dashboard, with an analysis, with a database. I think short of making the actual connections with people this is where a lot of people trip up. \"I'll build you a dashboard\" doesn't sell tickets. \"I'll give you a tool to reduce food waste before it happens\" is a more interesting conversation starter, \"and I already have a demo of what that looks like\" is an even better follow up. \n\nPeople hire consultants to provide excellence. So make sure you really can bring great value to a company. Be confident in yourself and be able to back it. It's not something I recommend to anyone that doesn't have experience in the field already.\n\nFeel free to pepper me with any questions. ",
+    "id": "1onovu3",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "BusinessIntelligence",
+    "title": "Anyone else feel like BI work is 30% dashboards and 70% just figuring out why the data doesn’t agree with reality?",
+    "url": "https://reddit.com/r/BusinessIntelligence/comments/1to1d4s/anyone_else_feel_like_bi_work_is_30_dashboards/",
+    "ups": 170,
+    "comments": 37,
+    "created_utc": 1779786393.0,
+    "author": "useless_substance",
+    "selftext": "I'm a junior BI analyst (still learning a lot, honestly), and most of my day is spent between Power BI, SQL, and people telling me “this number feels wrong” without being able to explain why.\n\nLast week we had a simple cost report go sideways because procurement data and warehouse data weren’t even talking the same language. Same product, different naming conventions, different “truth.” Took me longer to reconcile that than actually building the report.\n\nWhat’s been messing with me lately is how much of BI depends on upstream chaos. You can build the cleanest model ever, but if the source data is messy, you’re basically polishing noise.\n\nAt a point I was deep-diving into vendor cost breakdowns and ended up comparing Correction Supplies just to understand why our “standard” rates were all over the place. That curiosity somehow led me down a rabbit hole of supplier pricing structures, and I even found myself browsing Alibaba just to see how much of the variance is markup vs actual cost difference.\n\nI guess I’m still trying to figure out where BI ends and “data archaeology” begins. At what point do you stop fixing reports and start questioning the whole pipeline? Curious how others here handle this especially when stakeholders want perfect dashboards but the underlying data is… not perfect at all.",
+    "id": "1to1d4s",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "BusinessIntelligence",
+    "title": "What newer or lesser-known BI tools have actually impressed you lately?",
+    "url": "https://reddit.com/r/BusinessIntelligence/comments/1ou2snl/what_newer_or_lesserknown_bi_tools_have_actually/",
+    "ups": 162,
+    "comments": 121,
+    "created_utc": 1762844445.0,
+    "author": "Kimber976",
+    "selftext": "Kinda tired of hearing the same names Power BI, Tableau, Looker over and over. Curious what else people are using that actually feels modern or has made your life easier.  \n  \nAnything out there that surprised you with solid automation, smoother data pulls, or just better dashboarding overall? Always looking to try something fresh.  \n",
+    "id": "1ou2snl",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "BusinessIntelligence",
+    "title": "Used Calude Code to build the entire backend for a Power BI dashboard - from raw CSV to star schema in Snowflake in 18 minutes",
+    "url": "https://reddit.com/r/BusinessIntelligence/comments/1r723gx/used_calude_code_to_build_the_entire_backend_for/",
+    "ups": 142,
+    "comments": 59,
+    "created_utc": 1771322623.0,
+    "author": "sdhilip",
+    "selftext": "I’ve been building BI solutions for clients for years, using the usual stack of data pipelines, dimensional models, and Power BI dashboards. The backend work such as staging, transformations, and loading has always taken the longest.\n\nI’ve been testing Claude Code recently, and this week I explored how much backend work I could delegate to it, specifically data ingestion and modelling, not dashboard design.\n\n**What I asked it to do in a single prompt:**\n\n1. Create a work item in Azure DevOps Boards (Project: NYCData) to track the pipeline.\n2. Download the NYC Open Data CSV to the local environment (https://data.cityofnewyork.us/api/v3/views/8wbx-tsch/query.csv).\n3. Connect to Snowflake, create a new schema called NY in the PROJECT database, and load the CSV into a staging table.\n4. Create a new database called REPORT with a schema called DBO in Snowflake.\n5. Analyze the staging data in PROJECT.NY, review structure, columns, data types, and identify business keys.\n6. Design a star schema with fact and dimension tables suitable for Power BI reporting.\n7. Cleanse and transform the raw staging data.\n8. Create and load the dimension tables into REPORT.DBO.\n9. Create and load the fact table into REPORT.DBO.\n10. Write technical documentation covering the pipeline architecture, data model, and transformation logic.\n11. Validate Power BI connectivity to REPORT.DBO.\n12. Update and close the Azure DevOps work item.\n\n**What it delivered in 18 minutes:**\n\n1. 6 Snowflake tables: STG\\_FHV\\_VEHICLES as staging, DIM\\_DATE with 4,018 rows, DIM\\_DRIVER, DIM\\_VEHICLE, DIM\\_BASE, and FACT\\_FHV\\_LICENSE.\n2. Date strings parsed into proper DATE types, driver names split from LAST,FIRST format, base addresses parsed into city, state, and ZIP, vehicle age calculated, and license expiration flags added. Data integrity validated with zero orphaned keys across dimensions.\n3. Documentation generated covering the full architecture and transformation logic.\n4. Power BI connected directly to REPORT.DBO via the Snowflake connector.\n\n**The honest take:**\n\n1. This was a clean, well structured CSV. No messy source systems, no slowly changing dimensions, and no complex business rules from stakeholders who change requirements mid project.\n2. The hard part of BI has always been the “what should we measure and why” conversations. AI cannot replace that.\n3. But the mechanical work such as staging, transformations, DDL, loading, and documentation took 18 minutes instead of most of a day. For someone who builds 3 to 4 of these per month for different clients, that time savings compounds quickly.\n4. However, data governance is still a concern. Sending client data to AI tools requires careful consideration.\n\nI still defined the architecture including star schema design and staging versus reporting separation, reviewed the data model, and validated every table before connecting Power BI.\n\nHas anyone else used Claude Code or Codex for the pipeline or backend side of BI work? I am not talking about AI writing DAX or SQL queries. I mean building the full pipeline from source to reporting layer.\n\nWhat worked for you and what did not?\n\nFor this task, I consumed about 30,000 tokens.",
+    "id": "1r723gx",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  },
+  {
+    "sub": "BusinessIntelligence",
+    "title": "Is it just me, or is Business Intelligence way more about asking the right questions than building dashboards?",
+    "url": "https://reddit.com/r/BusinessIntelligence/comments/1s0somc/is_it_just_me_or_is_business_intelligence_way/",
+    "ups": 142,
+    "comments": 53,
+    "created_utc": 1774202866.0,
+    "author": "Ok-Ad-9710",
+    "selftext": "I feel like a lot of people (especially beginners) think BI = tools, dashboards, and visuals. But the more I learn, the more it seems like the real value is in understanding *what actually matters* to the business.\n\nLike, you can build a perfect dashboard—but if it answers the wrong question, it’s basically useless.\n\nCurious how others here see it:  \nDo you spend more time on the technical side (SQL, tools, dashboards) or on figuring out the right questions and context behind the data?\n\nFeels like that balance is what separates average BI work from actually impactful work.",
+    "id": "1s0somc",
+    "signal": 0,
+    "hits": [],
+    "passages": []
+  }
+]
