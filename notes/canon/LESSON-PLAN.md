@@ -81,9 +81,13 @@ Ranked by additive value + how much real corpus already exists to teach from:
       systems-complexity, platform-strategy, history-judgment, power-politics,
       information-communication, ethics-judgment}.html`.
 - [x] **Site wired** — `build.py` renders a `canon` track; rebuilt → 23 canon pages + index section.
-- [ ] **Enrichment pass:** fold canon depth into the 13 ENRICH-verdict course lessons (Cialdini/Carnegie
-      → `core-08`; Taleb already its own lesson; etc.).
-- [ ] **Targeted re-pull** for the 33 corpus-thin notes (add book/author-specific YT queries).
+- [x] **Targeted re-pull + re-enrich** — `_repull_thin.py` fetched a book-specific transcript for each
+      of the 33 thin notes; `canon_reenrich_thin_workflow.js` rebuilt their research layers from the new
+      material. **Corpus-thin: 33 → 0** (the 2 weakest, Parker & Shapiro/Varian, cite real adjacent
+      platform transcripts and honestly note the book-specific gap).
+- [x] **Fold into course lessons** — `canon_fold_workflow.js` appended a non-destructive, cited
+      "From the Canon" section to **10 course lessons** (Cialdini/Carnegie → `core-08`, 7 Powers + crux
+      → `core-04`, leverage/intent/power → `core-09`, etc.). Site rebuilt: 47 pages, 422 lectures, 1.42M words.
 
 ### Corpus-thin notes (flagged for re-pull)
 These got honest, lightly-sourced research layers because no book-specific transcript landed in the
