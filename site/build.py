@@ -25,6 +25,10 @@ def load_lesson(track, mid):
     p = os.path.join(LESSONS, f"{track}-{mid}.html")
     return open(p, encoding="utf-8").read() if os.path.exists(p) else None
 
+# Discussions (curated Reddit) didn't earn its place as a standalone section — the
+# practitioner signal is better woven into lessons. Data stays on disk; flip to re-enable.
+SHOW_DISCUSSIONS = False
+
 TITLES = {
     "01-accounting": "Accounting", "02-corporate-finance": "Corporate Finance & Valuation",
     "03-micro-strategy": "Microeconomics & Strategy", "04-competitive-strategy": "Competitive Strategy",
@@ -152,28 +156,29 @@ def render_edgar(blocks):
 def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None):
     c = code(track, mid)
     title = TITLES.get(mid, mid)
+    show_disc = SHOW_DISCUSSIONS and reddit
     toc = []
     if lesson: toc.append('<a href="#lesson">Lesson</a>')
     toc.append('<a href="#videos">Lectures · learn</a>')
-    if reddit: toc.append('<a href="#discuss">Discussions · reality</a>')
+    if show_disc: toc.append('<a href="#discuss">Discussions · reality</a>')
     if edgar: toc.append('<a href="#fin">Data · apply</a>')
     sections = []
     if lesson:
         sections.append(f'<section id="lesson" class="lesson">{lesson}</section>')
         # The connective tissue: name the learning loop so the sources aren't a junk drawer.
         modes = ["<b>learn</b> the theory (Lectures)"]
-        if reddit: modes.append("<b>stress-test</b> it against reality (Discussions)")
+        if show_disc: modes.append("<b>stress-test</b> it against reality (Discussions)")
         if edgar: modes.append("<b>apply</b> it to real data (Financials)")
         sections.append(
             '<div class="source-divider"><span>How to go deeper</span></div>'
             f'<p class="loop-line">The lesson above was <b>distilled from the sources below.</b> '
-            f'Use them in three modes: {" → ".join(modes)}.</p>')
+            f'Use them to {" → ".join(modes)}.</p>')
     vids_html = "".join(render_video(v) for v in vids) or "<p class='empty'>No lectures pulled.</p>"
     sections.append(
         f'<section id="videos"><h2>Lectures <span class="count">{len(vids)}</span></h2>'
         f'<p class="section-obj"><span class="obj-tag">Learn</span> The frameworks taught above come from these talks — watch any to go deeper on a concept.</p>'
         f'{vids_html}</section>')
-    if reddit:
+    if show_disc:
         sections.append(
             f'<section id="discuss"><h2>Practitioner Reality-Check <span class="count">{len(reddit)}</span></h2>'
             f'<p class="section-obj"><span class="obj-tag">Stress-test</span> Does the theory survive the real world? Curated from working practitioners — where they confirm, complicate, or push back on the frameworks.</p>'
