@@ -53,12 +53,12 @@ Then we widen to growth, value, and the competitive landscape, which hands off t
 - [x] `unit-04-is-it-healthy.md` — the 3-minute health check (margin + cash + leverage), capstone. RCL × COVID.
 
 **Arc B — Value & growth (what's a company worth):**
-- [ ] `unit-05` — Growth & returns: why growth isn't always good (does it earn more than money costs?).
-- [ ] `unit-06` — What's a business worth? the intuition behind valuation (a company = its future cash).
+- [x] `unit-05-growth-and-returns.md` — why growth isn't always good. Peloton's COVID boom/bust.
+- [x] `unit-06-whats-a-business-worth.md` — a company = its future cash, discounted to today.
 
 **Arc C — The landscape (why some businesses are just better):**
-- [ ] `unit-07` — Moats / competitive advantage — the bridge to `notes/canon` (Helmer, Porter) + `lessons/`.
-- [ ] `unit-08` — Reading the *words*, not just the numbers (10-K risk factors & MD&A) — qualitative literacy.
+- [x] `unit-07-the-landscape-moats.md` — moats / competitive advantage. Mastercard's durable margins vs cruise lines. Bridge to `notes/canon`.
+- [x] `unit-08-reading-the-words.md` — reading the 10-K's words (risk factors & MD&A) — qualitative literacy.
 
 **Then → climb the ladder:** `lessons/` (taught courses) → `notes/canon` (frameworks) → `acumen/`
 (the case method: make real calls, get red-teamed).

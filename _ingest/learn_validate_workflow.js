@@ -6,10 +6,10 @@ export const meta = {
 
 const DIR = '/Users/kalvaryhawkins/self-mba/learn'
 const UNITS = [
-  'unit-01-reading-the-scoreboard.md',
-  'unit-02-cash-vs-profit.md',
-  'unit-03-what-a-company-owns-and-owes.md',
-  'unit-04-is-it-healthy.md',
+  'unit-05-growth-and-returns.md',
+  'unit-06-whats-a-business-worth.md',
+  'unit-07-the-landscape-moats.md',
+  'unit-08-reading-the-words.md',
 ]
 
 const AUDIT_SCHEMA = {
