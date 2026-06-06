@@ -25,6 +25,14 @@ def load_lesson(track, mid):
     p = os.path.join(LESSONS, f"{track}-{mid}.html")
     return open(p, encoding="utf-8").read() if os.path.exists(p) else None
 
+def load_summaries(track, mid):
+    """Per-lecture extracted key points: { video_id: {gist, points[]} }."""
+    p = os.path.join(ROOT, "summaries", f"{track}-{mid}.json")
+    if os.path.exists(p):
+        try: return json.load(open(p))
+        except Exception: pass
+    return {}
+
 # Discussions (curated Reddit) didn't earn its place as a standalone section — the
 # practitioner signal is better woven into lessons. Data stays on disk; flip to re-enable.
 SHOW_DISCUSSIONS = False
@@ -106,17 +114,25 @@ HEAD = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="theme-color" content="#0c100e">
 <title>{title}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Literata:ital,opsz,wght@0,7..72,300..600;1,7..72,300..500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{css}"></head><body>
 <div class="grain" aria-hidden="true"></div><div class="atmos" aria-hidden="true"></div>"""
 
-def render_video(v):
+def render_video(v, summary=None):
     tr = (v.get("transcript") or "").strip()
+    url = esc(v.get("url"))
     meta = " · ".join(x for x in [esc(v.get("channel")), fmt_dur(v.get("duration")),
                                   (fmt_int(v.get("views")) + " views") if v.get("views") not in (None, "", "NA") else ""] if x)
-    body = ""
+    watch = f'<a class="watch" href="{url}" target="_blank" rel="noopener">Watch ↗</a>' if url else ""
+    # Extracted key points — read it here, no need to leave for YouTube.
+    summ = ""
+    if summary and summary.get("points"):
+        pts = "".join(f"<li>{esc(p)}</li>" for p in summary["points"])
+        gist = f'<p class="lec-gist">{esc(summary.get("gist",""))}</p>' if summary.get("gist") else ""
+        summ = f'<div class="lec-sum">{gist}<ul class="lec-pts">{pts}</ul></div>'
+    # Transcript stays as an optional collapsed extra.
+    tr_html = ""
     if tr:
-        # paragraphize a flat transcript for readability
         paras = re.split(r"(?<=[.!?])\s+(?=[A-Z])", tr)
         chunks, buf = [], ""
         for p in paras:
@@ -126,13 +142,13 @@ def render_video(v):
         if buf.strip(): chunks.append(buf.strip())
         inner = "".join(f"<p>{esc(c)}</p>" for c in chunks)
         words = len(tr) // 5
-        body = f"""<details class="tr"><summary>Read transcript · ~{words:,} words · {words//150} min read</summary>
-<div class="tr-body">{inner}</div></details>"""
-    else:
-        body = '<div class="no-tr">No transcript available — watch on YouTube.</div>'
+        lbl = "Full transcript" if summ else f"Read transcript · ~{words:,} words"
+        tr_html = f'<details class="tr"><summary>{lbl}</summary><div class="tr-body">{inner}</div></details>'
+    elif not summ:
+        tr_html = '<div class="no-tr">No transcript available — watch on YouTube.</div>'
     return f"""<article class="card vid">
-<div class="card-head"><a class="ttl" href="{esc(v.get('url'))}" target="_blank" rel="noopener">{esc(v.get('title'))}</a> {sig_badge(v.get('signal'))}</div>
-<div class="meta">{meta}</div>{body}</article>"""
+<div class="card-head"><span class="ttl">{esc(v.get('title'))}</span> {sig_badge(v.get('signal'))}</div>
+<div class="meta">{meta}{(' · ' + watch) if watch else ''}</div>{summ}{tr_html}</article>"""
 
 def render_reddit(r):
     txt = (r.get("selftext") or "").strip()
@@ -153,9 +169,10 @@ def render_edgar(blocks):
         out.append('<div class="edgar">' + "\n".join(lines) + "</div>")
     return "".join(out)
 
-def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None):
+def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None, summaries=None):
     c = code(track, mid)
     title = TITLES.get(mid, mid)
+    summaries = summaries or {}
     show_disc = SHOW_DISCUSSIONS and reddit
     toc = []
     if lesson: toc.append('<a href="#lesson">Lesson</a>')
@@ -173,10 +190,14 @@ def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None):
             '<div class="source-divider"><span>How to go deeper</span></div>'
             f'<p class="loop-line">The lesson above was <b>distilled from the sources below.</b> '
             f'Use them to {" → ".join(modes)}.</p>')
-    vids_html = "".join(render_video(v) for v in vids) or "<p class='empty'>No lectures pulled.</p>"
+    vids_html = "".join(render_video(v, summaries.get(v.get("id"))) for v in vids) or "<p class='empty'>No lectures pulled.</p>"
+    n_sum = sum(1 for v in vids if summaries.get(v.get("id")))
+    obj = ("The key points of each talk, extracted so you can learn them here — no need to leave. "
+           "Open the full transcript or watch only if you want more.") if n_sum else \
+          ("The frameworks taught above come from these talks — watch any to go deeper on a concept.")
     sections.append(
         f'<section id="videos"><h2>Lectures <span class="count">{len(vids)}</span></h2>'
-        f'<p class="section-obj"><span class="obj-tag">Learn</span> The frameworks taught above come from these talks — watch any to go deeper on a concept.</p>'
+        f'<p class="section-obj"><span class="obj-tag">Learn</span> {obj}</p>'
         f'{vids_html}</section>')
     if show_disc:
         sections.append(
@@ -258,7 +279,7 @@ CSS = """
 --ink:#f1ebda;--ink2:#d7d1c0;--dim:#8d978a;
 --brass:#cba24f;--brass2:#e6cb86;--core:#84ad8a;--exec:#cf8a5f;
 --wrong:#cf6a5a;
---serif:'Fraunces',Georgia,serif;--read:'Newsreader',Georgia,serif;--mono:'IBM Plex Mono',ui-monospace,monospace;
+--serif:'Fraunces',Georgia,serif;--read:'Literata',Georgia,serif;--mono:'IBM Plex Mono',ui-monospace,monospace;
 --wrap:880px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink2);font:18px/1.72 var(--read);-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -321,7 +342,13 @@ section>h2{font:300 clamp(1.7rem,3.5vw,2.3rem) var(--serif);color:var(--ink);let
 .ttl{font:500 1.18rem/1.35 var(--read);color:var(--ink);text-decoration:none}.ttl:hover{color:var(--brass2)}
 .meta{font:.74rem/1.6 var(--mono);color:var(--dim);text-transform:uppercase;letter-spacing:.03em;margin-top:7px}
 .sig,.sig-hi{font:.64rem var(--mono);letter-spacing:.08em;text-transform:uppercase;border-radius:30px;padding:3px 9px;color:var(--brass);border:1px solid color-mix(in srgb,var(--brass) 40%,transparent);white-space:nowrap}.sig-hi{color:var(--brass2);background:color-mix(in srgb,var(--brass) 14%,transparent)}
-.tr{margin-top:14px}.tr summary{cursor:pointer;font:500 .74rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--brass);list-style:none}.tr summary::-webkit-details-marker{display:none}.tr summary::before{content:"▸ ";color:var(--brass)}.tr[open] summary::before{content:"▾ "}
+.watch{font:.7rem var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--brass);text-decoration:none;white-space:nowrap}.watch:hover{color:var(--brass2)}
+.lec-sum{margin-top:14px;border-left:2px solid var(--core);padding-left:18px}
+.lec-gist{font:500 1.08rem/1.5 var(--read);color:var(--ink);margin:0 0 10px}
+.lec-pts{margin:0;padding-left:0;list-style:none}
+.lec-pts li{position:relative;padding-left:22px;margin:8px 0;color:var(--ink2);line-height:1.55}
+.lec-pts li::before{content:"→";position:absolute;left:0;color:var(--core);font-weight:600}
+.tr{margin-top:14px}.tr summary{cursor:pointer;font:500 .74rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim);list-style:none}.tr summary:hover{color:var(--brass)}.tr summary::-webkit-details-marker{display:none}.tr summary::before{content:"▸ ";color:var(--brass)}.tr[open] summary::before{content:"▾ "}
 .tr-body{margin-top:14px;font:1.12rem/1.85 var(--read);color:var(--ink2);border-left:2px solid var(--brass);padding-left:22px;max-height:580px;overflow:auto}
 .tr-body p{margin:0 0 16px}.no-tr{margin-top:10px;color:var(--dim);font-style:italic;font-size:.92rem}
 .excerpt{color:var(--ink2);font-size:1rem;margin:12px 0 0;opacity:.85}
@@ -485,7 +512,8 @@ def main():
     for idx, (track, mid, v, r, e) in enumerate(flat):
         prev = (order[idx-1][2], f"{code(*order[idx-1][:2])} {order[idx-1][3]}") if idx > 0 else None
         nxt = (order[idx+1][2], f"{code(*order[idx+1][:2])} {order[idx+1][3]}") if idx < len(flat)-1 else None
-        page = render_module(track, mid, v, r, e, (prev, nxt), lesson=load_lesson(track, mid))
+        page = render_module(track, mid, v, r, e, (prev, nxt),
+                             lesson=load_lesson(track, mid), summaries=load_summaries(track, mid))
         open(os.path.join(DIST, f"{track}-{mid}.html"), "w", encoding="utf-8").write(page)
 
     stats = {

@@ -1,0 +1,102 @@
+{
+  "Fi1wkUczuyk": {
+    "gist": "The three financial statements together reveal a business's health: what it owns, what it earns, and its cash.",
+    "points": [
+      "The balance sheet is a snapshot at one date; assets always equal liabilities plus equity (the accounting equation).",
+      "The income statement covers a period: revenue minus expenses equals net profit (e.g. $255M - $248M = $7M).",
+      "The cash flow statement tracks cash inflows and outflows, reconciling opening to closing cash on the balance sheet.",
+      "Cash-method accounting records revenue when cash is received; accrual recognizes revenue when earned, expenses when incurred.",
+      "Profit doesn't equal cash flow, which is why accrual businesses must prepare a separate cash flow statement."
+    ]
+  },
+  "CMv1zlZhb4Q": {
+    "gist": "Build a balance sheet from a trial balance, but remember revenue and expenses roll into retained earnings.",
+    "points": [
+      "A balance sheet is built from an adjusted trial balance, where total debits must equal total credits.",
+      "Current assets (receivables, prepaids) are short-term; non-current assets split into tangible and intangible.",
+      "The common mistake: forgetting that revenue and expense accounts flow into retained earnings within equity.",
+      "Retained earnings equals opening retained earnings minus dividends plus current-year net profit.",
+      "Equity has two parts: capital contributions (common stock) and retained earnings (accumulated profits)."
+    ]
+  },
+  "hrSUq4wcd0g": {
+    "gist": "The income statement reveals multiple profit layers, and gross margin trends expose hidden cost or pricing problems.",
+    "points": [
+      "Direct costs (cost of goods sold) are variable and trace to products; indirect costs (overheads) are often fixed.",
+      "Revenue minus direct costs equals gross profit; minus overheads equals operating profit (EBIT).",
+      "Operating profit is EBIT; subtracting interest and tax gives net profit, the bottom line.",
+      "Gross profit margin = (sales - COGS) / sales; in the example it fell from 70% to 64% despite higher sales.",
+      "Comparing line items across periods lets accountants build a narrative explaining what drove the changes."
+    ]
+  },
+  "0--AvwZabIQ": {
+    "gist": "Make an income statement by pulling revenue and categorized expenses from a trial balance below the line.",
+    "points": [
+      "The detailed income statement layers operating revenue, cost of sales, overheads, then interest and tax.",
+      "An adjusted trial balance separates balance-sheet accounts (above the line) from revenue and expenses (below).",
+      "Basic version: revenue $60M minus expenses $50.35M leaves $9.65M net profit.",
+      "Cost of sales is a direct operating cost; general, selling, marketing, depreciation are indirect operating costs.",
+      "Watch depreciation: if assets aren't used in operations, that depreciation becomes a non-operating cost instead."
+    ]
+  },
+  "_VS4ni14JHs": {
+    "gist": "Five balance-sheet numbers let you judge a company's financial health in seconds, like Chipotle's debt-free fortress.",
+    "points": [
+      "Assets are listed by liquidity; current assets convert to cash within a year, long-term assets benefit longer.",
+      "Goodwill is the cumulative premium paid for acquisitions; a large figure signals an acquisitive, riskier strategy.",
+      "The five key numbers: cash plus securities, total debt, goodwill, retained earnings, and treasury stock.",
+      "Treasury stock (negative) shows buybacks; Chipotle's -$5B means it actively returns capital to shareholders.",
+      "Chipotle had ~$1.9B cash and zero debt, making it a 'financial fortress' on quick inspection."
+    ]
+  },
+  "Q0o9S0q0Rr4": {
+    "gist": "Read the MD&A across many years, but the business and risk sections only once, to value a company.",
+    "points": [
+      "Find 10-Ks via 'company name + investor relations' or the SEC's annual filings; Form 10-K is the annual report.",
+      "Item 1 Business explains how the company makes and spends money (e.g. Texas Roadhouse spends ~$5.2M per new restaurant).",
+      "Risk factors list what could prevent your investment from delivering the expected return; read them thoroughly once.",
+      "MD&A is the most important section, explaining what drove success or failure and management's future strategy.",
+      "Notes to financial statements serve as a glossary; skip the ~100 pages of employment-agreement legal jargon."
+    ]
+  },
+  "BQHILdryQ_o": {
+    "gist": "Buffett buys when a company is obviously cheap from the annual report alone, skipping due diligence theater.",
+    "points": [
+      "Buffett invested $500M in PetroChina in 2002-03 reading only the annual report, no management contact or broker reports.",
+      "He valued PetroChina at ~$100B while it traded near $35B, so further precision was a waste of time.",
+      "His test: you only need to know someone is 'fat,' not their exact weight; the gap must hit you between the eyes.",
+      "If you can't decide from the figures alone, don't bother digging deeper; conventional due diligence rarely prevents mistakes.",
+      "Munger: thinking like engineers with margins of reliability beats paying fees for fine-grained third-party judgments."
+    ]
+  },
+  "7OjsEF04V8o": {
+    "gist": "Use common-size analysis, converting statement lines to percentages, to compare a company across years and rivals.",
+    "points": [
+      "Start with the Business section to understand the company, then decide whether to eliminate or keep analyzing it.",
+      "MD&A explains performance and segments; pairing it with the earnings call reveals management's tone and reactions.",
+      "Common-size analysis converts items to percentages (e.g. Apple's products were ~82% of revenue, declining over years).",
+      "On the income statement use total revenue as the base; on the balance sheet use total assets.",
+      "The current ratio compares current liabilities to current assets; footnotes explain unusual line items."
+    ]
+  },
+  "qM2_RlUb3jc": {
+    "gist": "A 10-K has four parts and items numbered 1-16; focus on business, financials, and MD&A.",
+    "points": [
+      "3M's 2017 10-K ran 176 pages, much of it exhibits like incentive plans the speaker never reads.",
+      "Priority reads: Item 1 Business, Item 6 selected financial data, Item 8 financial statements, then Item 7 MD&A.",
+      "Item 6 gives a five-year comparison of sales, net income, EPS, and debt to spot longer-term trends.",
+      "Item 9 disagreements with accountants and Item 1B unresolved staff comments are red flags worth studying carefully.",
+      "Parts III items (compensation, governance) are usually deferred to the separate proxy statement by reference."
+    ]
+  },
+  "3bgBeIZI0c0": {
+    "gist": "Read five 10-K sections; the biggest red flag is a business being disrupted despite beautiful financials.",
+    "points": [
+      "The five sections to read: business, risk factors, MD&A, financial statements with footnotes, and executive compensation.",
+      "Read Business first since you can't invest in what you don't understand; risk factors reveal how you could lose money.",
+      "Beware boilerplate risks; focus on risks specific to the company (e.g. Alphabet's ~98% reliance on advertising).",
+      "Bed Bath & Beyond had beautiful financials but flat shares for a decade because e-commerce disrupted it.",
+      "Check related-party transactions in footnotes, where insiders can siphon money; review at least five to ten years."
+    ]
+  }
+}

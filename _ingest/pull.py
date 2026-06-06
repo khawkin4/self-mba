@@ -95,7 +95,7 @@ def pull_module(track, name, spec, outdir, n_yt, n_reddit, transcripts):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--only", help="single module name, e.g. 01-accounting")
-    p.add_argument("--track", choices=["core", "exec"], help="limit to one track")
+    p.add_argument("--track", choices=["core", "exec", "canon"], help="limit to one track")
     p.add_argument("--n-yt", type=int, default=5)
     p.add_argument("--n-reddit", type=int, default=25)
     p.add_argument("--no-transcripts", action="store_true")

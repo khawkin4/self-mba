@@ -1,0 +1,20 @@
+[22:55:59] === bulk pull start -> /Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-05 ===
+[22:55:59] [canon] strategy
+[22:55:59]     yt: 'Richard Rumelt good strategy bad strategy kernel'
+[22:56:23]     yt: 'Roger Martin playing to win strategy cascade'
+[22:56:47]     reddit: r/strategy
+[22:56:48]     reddit: r/consulting q=strategy frameworks
+[22:56:49]   done canon/strategy: 2 yt, 2 reddit, 0 edgar
+[22:56:49] [canon] leadership-presence
+[22:56:49]     yt: 'Andy Grove High Output Management leverage'
+[22:57:12]     yt: 'David Marquet turn the ship around intent'
+[22:57:35]     reddit: r/leadership
+[22:57:36]     reddit: r/managers
+[22:57:38]   done canon/leadership-presence: 2 yt, 2 reddit, 0 edgar
+[22:57:38] [canon] mental-models
+[22:57:38]     yt: 'Charlie Munger mental models latticework'
+[22:58:00]     yt: 'Kahneman thinking fast and slow system 1 2'
+[22:58:23]     reddit: r/decisionmaking
+[22:58:24]   done canon/mental-models: 2 yt, 1 reddit, 0 edgar
+[22:58:24] [canon] org-design-mechanisms
+[22:58:24]     yt: 'Jeff Bezos shareholder letters mechanisms day 1'
