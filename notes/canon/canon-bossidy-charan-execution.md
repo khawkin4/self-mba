@@ -20,9 +20,48 @@
   [[canon-marquet-turn-the-ship-around]]). The book is strong on *what* execution requires, thinner
   on *how* in a knowledge-work / ambiguous-output context (it's rooted in industrial/GE-style ops).
   And "right people in right roles" presumes you can assess fit accurately — itself error-prone.
-- **Practitioner counterpoint:** (fill via `research` → r/managers, r/ExperiencedDevs) — operators
-  agree the "honest operating review" is where execution lives or dies, but warn it degrades into
-  status theater unless the leader actually probes the gaps.
+- **Practitioner counterpoint:** *(researched 2026-06-05 — r/managers + r/ExperiencedDevs corpus)*
+  Operators confirm the book's "honest dialogue" is exactly where execution dies — but they locate
+  the failure one level deeper than Bossidy does. A r/managers thread, "**The strangest part of
+  becoming a manager: you stop getting 'real' feedback**" (3,333↑), reports that ground truth
+  evaporates with seniority — *"the more senior you get, the less honest input you receive, right
+  when you probably need it the most… unless you actively fight for it, you can go months (or years)
+  thinking you're doing fine while blind spots just keep growing."* That is the "robust dialogue"
+  premise inverted: the operating review can't probe gaps the leader can no longer see. And on the
+  delivery side, r/ExperiencedDevs "**I'm giving up; Becoming a yes man**" (1,668↑) shows the review
+  degrading into status theater — what gets rewarded is *"high volume… engagement in meetings"* and
+  *"numbers that look good,"* not the un-glamorous defect-prevention that real execution depends on.
+- **Researched layer** *(2026-06-05)*
+  - **Canonical explanation (sourced):** The corpus's clearest articulation of Bossidy & Charan's
+    "execution is a discipline" thesis comes from the sibling book 4DX — *"everyone has good ideas
+    but what's rare is the ability to execute on those ideas; a good idea without execution is
+    worthless… the only way to reliably execute your good ideas and important goals is to have a
+    **system of execution**"* (Productivity Game on McChesney/Covey/Huling). That system names the
+    missing *how* the note flags Bossidy as thin on: a **cadence of accountability**, *"a rhythm of
+    regular and frequent team meetings… ideally no more than 20 minutes, [where] team members hold
+    each other accountable for commitments made to move the score"* (Chris McChesney, "4DX in a
+    Nutshell"). This is the operating-review discipline Bossidy describes, made concrete.
+  - **Real application (mined):** r/ExperiencedDevs "**A 5 min weekly habit completely changed my
+    performance review and got me a bigger raise**" (1,611↑) is the cadence working at IC scale — a
+    **brag document** filled in weekly so commitments-to-impact are tracked in real time rather than
+    reconstructed once a year. It is McChesney's "people are more likely to commit to their own
+    ideas than to orders from above" applied bottom-up. The corpus's operations counterpart — *The
+    Goal* / Theory of Constraints — supplies the *what to execute on*: *"every system has a
+    bottleneck… to improve the system you need to identify and address that bottleneck"* (Corporate
+    Stickman), the discipline that keeps the operating plan honest about where effort actually pays.
+  - **Where the corpus pushes back on the book:** *Execution* assumes the leader can run "robust,
+    honest dialogue." Practitioners report the dialogue is the first thing to corrupt: feedback
+    dries up at the top ("you stop getting 'real' feedback," 3,333↑) and the review rewards
+    meeting-theater over substance ("Becoming a yes man," 1,668↑). The mechanism Bossidy treats as a
+    leadership trait is, in the field, a **structural problem** — it has to be engineered (skip-level
+    questions, player-owned scoreboards, short fixed cadences), not willed.
+  - **Sources in corpus:** Productivity Game — "THE 4 DISCIPLINES OF EXECUTION by C. McChesney, S.
+    Covey, and J. Huling" (youtube.com/watch?v=2HKn49r3-Ko) · Chris McChesney — "The 4 Disciplines of
+    Execution in a Nutshell" (youtube.com/watch?v=mP7sq_tGZj8) · Corporate Stickman — "Fix
+    Bottlenecks & Boost Productivity | The Goal by Eliyahu Goldratt" (youtube.com/watch?v=_M00FIFLDUw)
+    · r/managers "The strangest part of becoming a manager: you stop getting 'real' feedback" (3,333↑)
+    · r/ExperiencedDevs "I'm giving up; Becoming a yes man" (1,668↑), "A 5 min weekly habit completely
+    changed my performance review and got me a bigger raise" (1,611↑).
 - **Links:** [[canon-rumelt-good-strategy]] · [[canon-bungay-art-of-action]] ·
   [[canon-larson-elegant-puzzle]] · [[canon-doerr-measure-what-matters]] ·
   [[canon-4dx-four-disciplines-execution]]

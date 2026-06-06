@@ -23,9 +23,44 @@
   decisions off the hook.** Best fused with March's garbage-can model (the randomness layer,
   [[canon-march-primer-decision-making]]) and Pfeffer's power (the how-to layer,
   [[canon-pfeffer-power]]).
-- **Practitioner counterpoint:** (fill via `research` → r/managers, org-behavior threads) — the
-  durable move: when a decision baffles you, **stop assuming Model I** — ask whether it's a *routine*
-  (II) or a *turf bargain* (III). Usually III.
+- **Practitioner counterpoint:** *(researched 2026-06-05 — Allison/HKS + classroom transcript corpus;
+  r/geopolitics pull thin — see flag)* The teaching corpus converges on Allison's own warning that
+  Model I feels complete but explains the *least*: Allison quotes JFK — *"the essence of ultimate
+  decision remains impenetrable to the observer, often indeed to the decider himself"* (HKS Compass) —
+  and an instructor underlines that **Model III's "resultant" "does not always presuppose intention…
+  it is simply how all of these players' activities add up"** (Candy Young, classroom). The durable
+  move survives intact: when a decision baffles you, **stop assuming Model I** — ask whether it's a
+  *routine* (II) or a *turf bargain* (III). Usually III. *(corpus thin — r/geopolitics pull was
+  breaking-news headlines with no discussion threads; flagged for re-pull of r/managers / r/IRstudies.)*
+- **Researched layer** *(2026-06-05)* *(corpus thin — transcripts strong, Reddit pull off-target)*
+  - **Canonical explanation (sourced):** Allison's core mechanism is **perceptual, not just
+    organizational** — what you "see" a government doing is a function of the **conceptual lens** you
+    bring. He uses Wittgenstein's duck-rabbit: *"the conceptual framework you bring to it will give
+    you an account of what you're likely to see… it's neither one of these"* (Graham Allison, HKS
+    Compass). **Model I (rational actor)** runs on *"the microeconomic model… value-maximizing
+    choices"*; Models II and III are the lenses that *"see more deeply into the disaggregated"*
+    reality behind a falsely unified state.
+  - **Real application (mined):** the corpus's sharpest case is **why the US chose blockade over
+    airstrike** — and it was *not* because blockade was more rational. *"The air strike was not
+    chosen because time was too short. The air force had no protocol for training and operationalizing
+    an air strike in the amount of time they had… Since the navy could respond more quickly, the naval
+    blockade option became more viable"* (All About Defense). That is **Model II in one move**: the
+    "decision" was an output of which organization already had a runnable SOP, not of optimized
+    interest. Mirror it: the Soviets' missiles were spotted because their *Eastern-Europe* deployment
+    protocol — tents, comms gear, communist insignia — was run unchanged in Cuba.
+  - **Where the corpus pushes back on the book:** instructors flag that **Model III explains
+    everything and therefore predicts little** — a "resultant" that *"does not always presuppose
+    intention"* (Candy Young) is powerful hindsight but weak foresight, exactly the note's
+    "explain-anything-after-the-fact" critique. The same teachers concede most managers still **default
+    to Model I most of the time** because it's cognitively cheap — which is *why* the framework has to
+    be deliberately applied, not assumed.
+  - **Sources in corpus:** Compass at Harvard Kennedy School — "Graham Allison: Government Leadership,
+    Essence of Decision and the Thucydides Trap" (youtube.com/watch?v=c9sAsu-FlAc) · All About Defense —
+    "Graham Allison's 3 Models of Foreign Policy" (youtube.com/watch?v=UHxStSywJ4k) · Candy Young —
+    "Introduction to Essence of Decision's 3 Models" (youtube.com/watch?v=KhKqEHosFB4) · Munich
+    Security Conference — "Graham Allison on the Thucydides Trap" (youtube.com/watch?v=rKBiaCa7wVk) ·
+    r/geopolitics breaking-news listing (12 posts, e.g. "Self-Immolation of a Superpower" 1400↑) —
+    headlines only, no discussion (flagged for re-pull).
 - **Links:** [[canon-march-primer-decision-making]] · [[canon-pfeffer-power]] ·
   [[canon-neustadt-may-thinking-in-time]] · [[canon-meadows-thinking-in-systems]]
 

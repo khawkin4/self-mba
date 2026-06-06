@@ -25,9 +25,44 @@
   power**; in steep hierarchies or abusive dynamics, "create safety" can't be done unilaterally. Deep
   overlap with Difficult Conversations ([[canon-stone-difficult-conversations]]) — same family, more
   in-the-moment.
-- **Practitioner counterpoint:** (fill via `research` → r/managers, r/leadership) — the stickiest
-  tool is **"separate fact from story"** — most conflict escalates on the story we invented, not the
-  fact. Radical Candor is the feedback-specific cousin ([[canon-scott-radical-candor]]).
+- **Practitioner counterpoint:** *(researched 2026-06-05 — Crucial Learning / Therapy-in-a-Nutshell
+  transcript corpus; reddit thin — flagged for re-pull)* The stickiest tool is **"separate fact from
+  story"** — most conflict escalates on the story we invented, not the fact. The corpus quantifies
+  the cost of *not* doing this: co-author **Joseph Grenny** reports that in a study of 1,100
+  employees, *"43% estimated they waste 2 weeks or more ruminating about an unresolved problem at
+  work,"* and *"one in three estimate their inability to speak up in a crucial moment has cost their
+  organization at least $25,000"* (Crucial Learning). **But a practitioner-therapist who reviewed the
+  book pushes back on absorbability:** the "master your stories" chapter *"feels like a couple of
+  books worth of information in one short chapter… I wonder if people are actually able to absorb it
+  in small doses"* (Therapy in a Nutshell). Radical Candor is the feedback-specific cousin
+  ([[canon-scott-radical-candor]]).
+
+- **Researched layer** *(2026-06-05)* *(corpus thin — reddit pull for this cluster returned
+  r/dataisbeautiful, not r/managers/r/leadership; flagged for re-pull)*
+  - **Canonical explanation (sourced):** The core mechanism is **safety, not content**. A reviewer
+    distills it as *"this book is all about creating safety so that problems could be solved…
+    [people] become defensive not because of what is being said… but how they feel, or if they feel
+    it's a safe place"* (Therapy in a Nutshell / Successful By Design). The book's tell for lost
+    safety is the slide to **silence or violence**, which you re-stabilize with **mutual purpose +
+    mutual respect** — *"the dialogue cannot really resume until that respect has been restored."*
+  - **Real application (mined):** co-author Grenny's course demo — manager **Esther** must confront
+    **Leia** about a client-impacting mistake. Leia goes defensive (*"Are you questioning my design
+    skills?"*); Esther uses a **contrasting statement** — *"I have no concerns with the quality of
+    your work… I'm just trying to figure out if there's a disconnect"* — which restores safety and
+    surfaces the real cause (the **specs were wrong**) instead of a blame spiral (Crucial Learning).
+    The teen-curfew example reframes the same move: anchor on the **shared goal** (trust + safety),
+    not the contested number.
+  - **Where the corpus pushes back on the book:** the practitioner-therapist warns the toolkit is
+    **dense to internalize** — "master your stories" packs CBT + narrative therapy + Leadership and
+    Self-Deception into one chapter — and openly worries it can read as *"a skills-based approach
+    that teaches the right words to say to basically manipulate others,"* salvaged only when the
+    mutual purpose is **genuine**. (No reddit practitioner threads in this pull — re-pull
+    r/managers/r/leadership to corroborate the live-pressure critique.)
+  - **Sources in corpus:** Crucial Learning — "Crucial Conversations for Mastering Dialogue: What to
+    Expect" (youtube.com/watch?v=k2QuG-HLYR4) · Therapy in a Nutshell — "Crucial Conversations Book
+    Summary: How to Make It Safe to Talk About Anything" (youtube.com/watch?v=nrfjYwY5SSE) ·
+    Successful By Design — "Crucial Conversations Summary & Review (ANIMATED)"
+    (youtube.com/watch?v=Q2yG142cyNg).
 - **Links:** [[canon-stone-difficult-conversations]] · [[canon-scott-radical-candor]] ·
   [[canon-voss-never-split-the-difference]] · [[canon-carnegie-win-friends]]
 

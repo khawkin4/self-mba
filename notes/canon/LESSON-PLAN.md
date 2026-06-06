@@ -70,9 +70,27 @@ Ranked by additive value + how much real corpus already exists to teach from:
 
 ## Status
 
-- [x] Pipeline proven end-to-end on the **Negotiation & Influence** cluster (notes enriched from real
-      on-disk transcripts + Reddit; viability judged → ENRICH existing `core-08`, don't duplicate).
+- [x] Pipeline proven end-to-end (Negotiation cluster, then scaled).
 - [x] Cluster → lesson viability map (this file).
-- [ ] Net-new lesson #1: **Game Theory** (next build).
-- [ ] Enrichment pass: fold canon depth into the 13 ENRICH-verdict lessons.
-- [ ] Scale: collect + enrich the remaining 78 notes' research layers (workflow-sized job).
+- [x] **Collection** — `canon` track added to `pull.py` + manifest (23 book-keyed clusters); pull ran
+      → 53 YouTube transcripts + 26 Reddit pulls in `_ingest/raw/2026-06-05/canon/`.
+- [x] **Enrichment** — all **82/82** notes now carry a cited *Researched layer* (workflow:
+      `_ingest/canon_workflow.js`, 89 agents). **33 flagged corpus-thin** (see list below) — honest
+      gaps where a book-specific transcript wasn't in the cluster pull; candidates for targeted re-pull.
+- [x] **Net-new lessons (9/9)** — `lessons/canon-{game-theory, behavioral-decision, risk-fragility,
+      systems-complexity, platform-strategy, history-judgment, power-politics,
+      information-communication, ethics-judgment}.html`.
+- [x] **Site wired** — `build.py` renders a `canon` track; rebuilt → 23 canon pages + index section.
+- [ ] **Enrichment pass:** fold canon depth into the 13 ENRICH-verdict course lessons (Cialdini/Carnegie
+      → `core-08`; Taleb already its own lesson; etc.).
+- [ ] **Targeted re-pull** for the 33 corpus-thin notes (add book/author-specific YT queries).
+
+### Corpus-thin notes (flagged for re-pull)
+These got honest, lightly-sourced research layers because no book-specific transcript landed in the
+cluster pull (the agent reused adjacent cluster material + flagged it rather than fabricate):
+Ariely, Akerlof, Allison, Badaracco, Bungay, Christensen, Cialdini (Pre-Suasion), Clausewitz, Covey,
+Cusumano, Goldratt, Greene, Grove (Only the Paranoid), Hagiu & Wright, Kahneman (TFS), Noise, Klein,
+March, Mauboussin, Meadows (Leverage Points), Munger, Neustadt & May, Parker, Parrish, Patterson,
+Perrow, Pfeffer, Rumelt (The Crux), Shannon, Shapiro & Varian, Stone, Taleb (×2), Tetlock, Thaler,
+Thucydides, Tufte. Fix: add author/title-specific `yt` queries to the relevant `manifest.json`
+`canon` clusters and re-run `pull.py --track canon`, then re-run the enrichment workflow on just these.

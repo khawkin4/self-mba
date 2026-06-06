@@ -24,9 +24,42 @@
   first iteration ([[canon-ries-lean-startup]]) — the truth is contingent: 0→1 needs thesis +
   conviction, but most ventures are closer to 1→n and *should* test first. "Start small and
   dominate" is also just Christensen/focus repackaged ([[canon-christensen-innovators-dilemma]]).
-- **Practitioner counterpoint:** (fill via `research` → r/startups, r/venturecapital) — VCs prize the
-  "secret" + "small monopoly" framing for *targeting*, but note Thiel's anti-competition stance is a
-  *post-hoc winner's* narrative more than a repeatable recipe.
+- **Practitioner counterpoint:** *(researched 2026-06-05 — Y Combinator / Stanford / Chicago Ideas Thiel transcripts; r/ProductManagement pull was off-topic)*
+  In the talks Thiel hands operators a *targeting* heuristic, not a recipe: **"you want to be the
+  last mover… the last company in a category — those are the ones that are really valuable"** (Y
+  Combinator), and the way to get there is to **"start small and monopolize"** a niche before
+  expanding. But he also gives away the tell that makes the framework hard to apply honestly — **"the
+  basic lie you tell as a non-monopoly is that we're in a very small market; the basic lie you tell as
+  a monopoly is that the market you're in is much bigger than it looks."** So in practice *every*
+  founder claims a "small monopoly," which is exactly why the framing flatters survivors: the
+  contrarian-truth bet is indistinguishable from a wrong bet *until it works*. The corpus' practitioner
+  side (r/ProductManagement) never engages the monopoly thesis at all — it's consumed with visibility,
+  org dysfunction and AI-tooling churn — a quiet reminder that most working product people live in
+  1→n execution, not 0→1 category creation.
+- **Researched layer** *(2026-06-05)*
+  - **Canonical explanation (sourced):** Thiel's value formula is *create X dollars of value and
+    capture Y% of X*, and **"the critical thing people always miss is that X and Y are completely
+    independent variables"** (Y Combinator). His proof is airlines vs. Google: *"the entire 100-year
+    history of the airline industry, the cumulative profits in the US have been approximately zero"* —
+    a huge, vital, perfectly-competitive industry that captures almost nothing — versus a far smaller
+    search market that, freed of competition since 2002, *"has been generating enormous cash flows."*
+    Hence **"competition is for losers"**: profit lives in the monopoly, not the market size.
+  - **Real application (mined):** the **"start small and dominate"** mechanic, in his own examples —
+    **"eBay you start with Pez dispensers, you move on to beanie babies, and eventually it's all these
+    different auctions"**; Facebook began with one campus and hit **"25–30% market penetration in two
+    or three months"** before expanding. Own a tiny market completely first, *then* scale into the
+    monopoly — the opposite of chasing a "$1T TAM" slide.
+  - **Where the corpus pushes back on the book:** Thiel himself supplies the critique. Because
+    monopolists *and* pretenders both narrate a unique "small market," **"the apparent difference is
+    very small"** between a real monopoly and a startup faking one — the thesis is only verifiable in
+    hindsight. And he concedes the deeper limit: **"there is no science to business… every great
+    company is one of a kind"** — i.e. *non-repeatable*, which is precisely the survivorship problem
+    the note flags against [[canon-ries-lean-startup]]'s test-first iteration.
+  - **Sources in corpus:** Y Combinator — "Competition is for Losers with Peter Thiel (How to Start a
+    Startup 2014: 5)" (youtube.com/watch?v=3Fx5Q8xGU8k) · Joel Moxley — "Peter Thiel — Competition Is
+    For Losers — Stanford CS 183B" (youtube.com/watch?v=gQPlhycLmMk) · Chicago Ideas — "Peter Thiel:
+    Going from Zero to One" (youtube.com/watch?v=rFZrL1RiuVI). *(r/ProductManagement corpus pulled but
+    off-topic for this book — flagged for a targeted r/startups re-pull.)*
 - **Links:** [[canon-ries-lean-startup]] · [[canon-helmer-7-powers]] ·
   [[canon-christensen-innovators-dilemma]] · [[canon-porter-competitive-strategy]]
 

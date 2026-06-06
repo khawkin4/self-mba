@@ -22,10 +22,53 @@
   ([[canon-heath-switch]]) — powerful, but environment design at *org* scale is a different beast
   (Meadows, structural leverage). And the "1% → 37×" math is a motivational metaphor, not a law —
   compounding isn't guaranteed and plateaus are real.
-- **Practitioner counterpoint:** (fill via `research` → r/getdisciplined, r/productivity) — the two
-  stickiest ideas in practice: **reduce friction** (make the good habit the path of least
-  resistance) and **identity** ("be the kind of person who…"). Same "systems > goals" spirit as OKRs
+- **Practitioner counterpoint:** *(researched 2026-06-05 — r/productivity corpus + James Clear transcripts)*
+  The corpus overwhelmingly validates **friction over willpower** as the lever that actually works.
+  The top relevant thread — "**How i finally stopped bed rotting for 4 hours every night (willpower
+  is a scam)**" (3,207↑) — is pure Law 3 inversion: a neuroscience student who knew the dopamine
+  pathways still failed on discipline, and only fixed it by *"turn[ing] my phone completely OFF
+  before i even walk in the door. Not silent. OFF. The 30 seconds it takes to reboot is usually
+  enough friction to kill the impulse."* The other recurring win is **make-it-easy / make-it-obvious
+  environment design** ("My Son's Weird Productivity Hack," 6,783↑ — a bowl of pumpkin seeds as a
+  visible progress cue; "broke my phone addiction," 2,429↑ — grayscale to make the cue
+  unattractive). **Where it strains:** the corpus's most-upvoted productivity posts are *not* habit
+  stories at all — "My wife's workday vs mine" (31,651↑) lands on *"I honestly think it is just
+  genetics,"* and "Waking up at 5AM is the most overrated life hack ever" (1,973↑) — a reminder that
+  practitioners credit temperament and life-meaning ("perpetually fatigued… a life that feels
+  meaningless," 2,324↑) at least as much as system design. Same "systems > goals" spirit as OKRs
   done right ([[canon-doerr-measure-what-matters]]).
+- **Researched layer** *(2026-06-05)*
+  - **Canonical explanation (sourced):** Clear builds every habit on the **cue → craving → response
+    → reward** loop, then attaches one law to each stage: *"for the cue the first law is to make it
+    obvious, for the craving the law is to make it attractive, response make it easy, and reward make
+    it satisfying… to break a bad habit you just invert each of the four laws"* (London Real). The
+    mechanism is not motivation but **environment design** — *"the things that are on your desk… your
+    kitchen counter… they influence your behaviors"* — and reward, because *"if a behavior is not
+    rewarding then it's unlikely to become a habit; you don't have any reason to repeat it"* (Peter
+    Attia MD).
+  - **Real application (mined):** Clear's own **make-it-obvious** flossing fix — *"my floss was in a
+    drawer… I just wouldn't see it. This time I bought a little bowl and put it right next to my
+    toothbrush… now I floss twice a day"* (London Real) — and the Massachusetts General cafeteria
+    study he cites: staff *"added water to all of the fridges… six months later water sales are up 25%
+    and soda sales are down 11%"* with nobody told or motivated. The corpus mirror is the
+    bed-rotting neuroscience student (3,207↑) who beat a 4-hour scroll habit purely by adding 30
+    seconds of reboot friction, and the pumpkin-seed bowl (6,783↑) as a homemade visible-progress
+    reward.
+  - **Where the corpus pushes back on the book:** practitioners confirm friction/environment works
+    for *individual* habits but quietly attribute the big gaps to things the four laws don't touch —
+    raw temperament (*"I honestly think it is just genetics,"* 31,651↑), sustainability of fashionable
+    routines (5AM wakeups "overrated," 1,973↑), and underlying meaning (chronic fog from *"a life
+    that feels meaningless or disconnected from your goals,"* 2,324↑). The "make it easy" lever is
+    real but thin against motivation deficits that are structural, not frictional — exactly the
+    note's "breaks-when."
+  - **Sources in corpus:** Mind Pump Clips — "James Clear's 4 Laws Of BEHAVIOR CHANGE"
+    (youtube.com/watch?v=PzJ6e2T-ogc) · Peter Attia MD — "How to make or break a habit with the 4
+    Laws of Behavior Change" (youtube.com/watch?v=zCkHtvu8Fs4) · London Real — "James Clear explains
+    The Four Laws of Behavior Change" (youtube.com/watch?v=SXRhy2_Ypcw) · r/productivity "How i
+    finally stopped bed rotting… (willpower is a scam)" (3,207↑), "My Son's Weird Productivity Hack"
+    (6,783↑), "From 8 hours to 30 minutes… broke my phone addiction" (2,429↑), "My wife's workday vs
+    mine" (31,651↑), "Waking up at 5AM is the most overrated life hack ever" (1,973↑), "I realized
+    why I was perpetually fatigued/brain fogged" (2,324↑).
 - **Links:** [[canon-covey-7-habits]] · [[canon-newport-deep-work]] · [[canon-heath-switch]] ·
   [[canon-doerr-measure-what-matters]]
 
