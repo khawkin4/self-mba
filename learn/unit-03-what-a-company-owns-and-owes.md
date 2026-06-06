@@ -5,6 +5,19 @@
 
 ---
 
+## Plain words first (read once)
+- **Debt** — money the company **borrowed and must repay**, plus **interest** (the fee a lender charges
+  for the loan), whatever happens.
+- **Revenue / profit** — *revenue* = money in from customers; *profit* = what's left after all costs (Unit 01).
+- **Creditors** — the people/banks the company **owes** (the lenders behind its debt).
+- **Income statement / cash flow statement** — the first two scoreboards (Units 01–02): *did it make a
+  profit?* and *did real cash come in?* This unit adds the third: *what does it own and owe?*
+- **Snapshot** — a balance sheet is measured **at one date** (e.g. Dec 31), not over a year.
+- **10-K / SEC / EDGAR** — a company's annual report, filed with the U.S. regulator (SEC) and free on its
+  EDGAR website. · **$X B** = X billion dollars.
+
+*(Assets, liabilities, and equity are the lesson itself — taught below.)*
+
 ## ① Material — what we're learning, and where it lives
 The third scoreboard is the **balance sheet** — a *snapshot* (at one date) of everything a company
 **owns** and **owes**. It's built on the one equation all of business accounting rests on:
@@ -64,17 +77,23 @@ and notice $23.7B + $8.8B = $32.5B. It always balances.)*
 that tell you about how risky the company was in 2022? *(Very — almost everything it owned was owed to
 creditors; one more bad year could have pushed debts past assets.)*
 
-**C. Stretch — real tool.** Pull a company with little debt and compare its cushion:
-```
-python3 _ingest/edgar.py facts AAPL
-```
-Is its equity a big or small slice of its assets — and what does that say about its resilience?
+**C. Reason it out (no computer needed).** A company has $200B of assets and $100B of liabilities. What
+is its equity, and what % of its assets is that cushion? Is it sturdier or shakier than Royal Caribbean
+in 2022 (~8%)? *(Equity = $100B; that's 50% of assets — far sturdier than RCL's 8%.)*
+
+**D. Optional — pull it yourself (only if you have this project set up).** With the repo running:
+`python3 _ingest/edgar.py facts AAPL` — then size its equity cushion against its assets. No setup? Skip it.
 
 ### Check yourself
 1. Equity = Assets − ______ ? *(Liabilities.)*
 2. When a company loses money, which part of the balance sheet shrinks first? *(Equity — the cushion.)*
 3. Why is a thin equity cushion dangerous even if the company is still alive? *(Little margin for the
    next shock; debts could exceed assets, and creditors must still be paid.)*
+4. True or false: a balance sheet shows what happened *over the whole year*. *(False — it's a
+   **snapshot at one date** (e.g. Dec 31). The income statement covers the year; the balance sheet is
+   the photo of what's owned and owed at that instant.)*
+5. Of the three scoreboards — income statement, cash flow statement, balance sheet — which one tells you
+   what a company **owns and owes**? *(The balance sheet.)*
 
 ### What's next
 **Unit 04 — Is It Healthy?** Put all three statements together into a 3-minute health check anyone can

@@ -17,6 +17,16 @@ A beginner needs all four, in order. A unit isn't done until it has all four.
 4. **Application** — a small, graded exercise the beginner can actually do — building toward real
    decisions (and eventually the `acumen/` case method).
 
+## Unit template rules (hardened by validation — see `VALIDATION.md`)
+Every unit must:
+1. **Define every term on first use** — a "Plain words first" block up top for any jargon (10-K, SEC,
+   EDGAR, fiscal year, debt, leverage, equity, OCF, "booked," "B"=billion…). A novice knows none of it.
+2. **Show every computation as a step**, not a result — decimal→% (×100), how a "swing" is measured,
+   compute the ugly numbers (don't write "deeply negative").
+3. **Keep the core Application code-free** — exercises a beginner can do with pen and paper; any
+   `edgar.py` command is a clearly-labeled **optional** extra ("only if you have the project set up").
+4. **Never test what wasn't taught** — assessment maps 1:1 to the unit's own objectives.
+
 ## The arc (how it climbs)
 `learn/` (zero → literacy, this dir) → `lessons/` (taught course material) → `notes/canon`
 (the framework library) → `acumen/` (the case method — make real calls, get red-teamed).

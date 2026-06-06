@@ -6,6 +6,14 @@
 
 ---
 
+## Plain words first (a quick refresher — this unit uses all three earlier units)
+- **Net margin** — profit ÷ revenue: how much of each sales dollar the company keeps. *(Unit 01)*
+- **Operating cash flow (OCF)** — the actual cash the normal business brought in this year. *(Unit 02)*
+- **Liabilities** — what the company owes others. **Equity** — the owners' cushion = assets − liabilities. *(Unit 03)*
+- **Leverage** — liabilities ÷ equity: **how many dollars owed per dollar of cushion.** Higher = more fragile.
+- **Capital-heavy** (capital-intensive) — a business that needs huge, expensive assets to run (ships,
+  planes, factories); these naturally carry more debt.
+
 ## ① Material — what we're learning
 No single number tells you if a business is healthy — you **triangulate** across the three statements.
 Here's the beginner's 3-minute check, one number from each:
@@ -61,12 +69,19 @@ danger signal.)*
 write one sentence a beginner could hand a friend: *is this company healthy, and why?* *(No — it's
 losing money and dangerously indebted; it's surviving, not thriving.)*
 
-**C. Stretch — your first real diagnosis.** Pick a company you know and run the full 3-minute check:
-```
-python3 _ingest/edgar.py facts <TICKER>     # e.g. SBUX, NKE, F
-```
-Pull revenue/profit (margin), operating cash flow, and liabilities÷equity. Write a two-line verdict.
-*This is the literacy you came for — you can now open any public company and form a first opinion.*
+**C. The cash check (no computer needed).** Two firms both report a $100M profit. Firm A's operating
+cash flow is +$140M; Firm B's is −$30M. Which would you trust more, and why? *(Firm A — its profit is
+backed by real cash; Firm B's profit isn't turning into cash, a warning sign to investigate.)*
+
+**D. Your first real diagnosis (no computer needed).** Here's a real company's snapshot — net margin
+**≈ +24%** ($4.27B profit on $17.9B revenue), operating cash flow **+$6.5B**, leverage **≈ 3.1×**
+($31.4B liabilities ÷ $10.2B equity). Run the 3-minute check and give a two-line verdict: healthy or
+not? *(Healthy — strong margin, gushing cash, only moderate leverage. This is Royal Caribbean in 2025:
+fully recovered — a long way from the 2022 alarm.)*
+
+**E. Optional — pull it yourself (only if you have this project set up).** With the repo running:
+`python3 _ingest/edgar.py facts <TICKER>` (e.g. SBUX, NKE, F), then run the full check. No setup? Skip —
+you've already done a real diagnosis in C–D.
 
 ### Check yourself
 1. Which three numbers make the beginner's health check, and which statement does each come from?
