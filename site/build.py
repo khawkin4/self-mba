@@ -154,19 +154,35 @@ def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None):
     title = TITLES.get(mid, mid)
     toc = []
     if lesson: toc.append('<a href="#lesson">Lesson</a>')
-    toc.append('<a href="#videos">Source: Lectures</a>')
-    if reddit: toc.append('<a href="#discuss">Discussions</a>')
-    if edgar: toc.append('<a href="#fin">Financials</a>')
+    toc.append('<a href="#videos">Lectures · learn</a>')
+    if reddit: toc.append('<a href="#discuss">Discussions · reality</a>')
+    if edgar: toc.append('<a href="#fin">Data · apply</a>')
     sections = []
     if lesson:
         sections.append(f'<section id="lesson" class="lesson">{lesson}</section>')
-        sections.append('<div class="source-divider"><span>Source material — go deeper</span></div>')
+        # The connective tissue: name the learning loop so the sources aren't a junk drawer.
+        modes = ["<b>learn</b> the theory (Lectures)"]
+        if reddit: modes.append("<b>stress-test</b> it against reality (Discussions)")
+        if edgar: modes.append("<b>apply</b> it to real data (Financials)")
+        sections.append(
+            '<div class="source-divider"><span>How to go deeper</span></div>'
+            f'<p class="loop-line">The lesson above was <b>distilled from the sources below.</b> '
+            f'Use them in three modes: {" → ".join(modes)}.</p>')
     vids_html = "".join(render_video(v) for v in vids) or "<p class='empty'>No lectures pulled.</p>"
-    sections.append(f'<section id="videos"><h2>Lectures <span class="count">{len(vids)}</span></h2>{vids_html}</section>')
+    sections.append(
+        f'<section id="videos"><h2>Lectures <span class="count">{len(vids)}</span></h2>'
+        f'<p class="section-obj"><span class="obj-tag">Learn</span> The frameworks taught above come from these talks — watch any to go deeper on a concept.</p>'
+        f'{vids_html}</section>')
     if reddit:
-        sections.append(f'<section id="discuss"><h2>Practitioner Discussions <span class="count">{len(reddit)}</span></h2>{"".join(render_reddit(r) for r in reddit)}</section>')
+        sections.append(
+            f'<section id="discuss"><h2>Practitioner Reality-Check <span class="count">{len(reddit)}</span></h2>'
+            f'<p class="section-obj"><span class="obj-tag">Stress-test</span> Does the theory survive the real world? Curated from working practitioners — where they confirm, complicate, or push back on the frameworks.</p>'
+            f'{"".join(render_reddit(r) for r in reddit)}</section>')
     if edgar:
-        sections.append(f'<section id="fin"><h2>Live Financials (SEC EDGAR) <span class="count">{len(edgar)}</span></h2>{render_edgar(edgar)}</section>')
+        sections.append(
+            f'<section id="fin"><h2>The Primary Data <span class="count">{len(edgar)}</span></h2>'
+            f'<p class="section-obj"><span class="obj-tag">Apply</span> The real SEC filings <b>behind the worked example above.</b> Run <code>edgar.py company TICKER</code> to do your own analysis.</p>'
+            f'{render_edgar(edgar)}</section>')
     pn = ""
     if prevnext[0]: pn += f'<a class="pn" href="{prevnext[0][0]}">← {esc(prevnext[0][1])}</a>'
     if prevnext[1]: pn += f'<a class="pn next" href="{prevnext[1][0]}">{esc(prevnext[1][1])} →</a>'
@@ -340,6 +356,12 @@ figure.viz figcaption{font:.92rem/1.5 var(--read);font-style:italic;color:var(--
 .apply-box code,.lesson code,.lead code{background:var(--bg);border:1px solid var(--line);padding:2px 7px;border-radius:4px;font:.88rem var(--mono);color:var(--brass2)}
 .source-divider{text-align:center;margin:60px 0 10px;border-top:1px solid var(--line)}
 .source-divider span{position:relative;top:-11px;background:var(--bg);padding:0 18px;font:500 .74rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.loop-line{max-width:62ch;margin:0 auto 8px;text-align:center;font:1.02rem/1.6 var(--read);color:var(--dim)}.loop-line b{color:var(--ink2)}
+.section-obj{font:1rem/1.55 var(--read);color:var(--dim);margin:0 0 18px;padding:12px 16px;background:var(--surface);border-radius:4px;border-left:3px solid var(--line2)}
+.section-obj b{color:var(--ink2)}.section-obj code{background:var(--bg);border:1px solid var(--line);padding:1px 6px;border-radius:4px;font:.84rem var(--mono);color:var(--brass2)}
+#videos .section-obj{border-left-color:var(--core)}#discuss .section-obj{border-left-color:var(--exec)}#fin .section-obj{border-left-color:var(--brass)}
+.obj-tag{display:inline-block;font:600 .64rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--bg);padding:3px 9px;border-radius:30px;margin-right:8px;vertical-align:middle}
+#videos .obj-tag{background:var(--core)}#discuss .obj-tag{background:var(--exec)}#fin .obj-tag{background:var(--brass)}
 /* ---------- INTERACTIVE COMPONENTS ---------- */
 #progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--brass),var(--core));z-index:50;transition:width .1s}
 .tip{position:absolute;z-index:60;background:var(--surface2);border:1px solid var(--brass);color:var(--ink);font:.84rem/1.45 var(--read);padding:10px 14px;border-radius:6px;max-width:280px;pointer-events:none;opacity:0;transform:translate(-50%,-100%);transition:opacity .12s;box-shadow:0 10px 30px rgba(0,0,0,.5)}

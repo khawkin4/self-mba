@@ -21,9 +21,35 @@
   ([[canon-voss-never-split-the-difference]]). "Objective criteria" presumes a shared standard
   exists; often the fight *is* over whose standard counts. Read the two together for the full
   picture.
-- **Practitioner counterpoint:** (fill via `research` → r/negotiation, r/salary) — the consensus:
-  **BATNA is the part that actually wins** — most "negotiation" outcomes are decided before the
-  conversation, by who has the better alternative.
+- **Practitioner counterpoint:** *(researched 2026-06-05 — r/negotiation corpus + Ury/BATNA transcripts)*
+  Practitioners converge that **BATNA decides the outcome before the talk starts**: the most-upvoted
+  Facebook-Marketplace flipper (hundreds of deals) says the *"single biggest mistake buyers make"* is
+  not knowing their number first; the recurring salary advice is "**know your walk-away and your
+  market rate before you reply.**" The "**accidentally lowballed myself**" thread (10↑) is the BATNA
+  lesson in the negative — anchoring yourself below market *before* establishing your alternative is
+  how people lose the negotiation in advance.
+
+- **Researched layer** *(2026-06-05)*
+  - **Canonical explanation (sourced):** BATNA, *"popularized in the 1980s by Roger Fisher and
+    William Ury of Harvard's negotiation program,"* sets your **reservation point** (worst deal
+    you'd accept); where both sides' reservation points overlap is the **ZOPA** — the zone of
+    possible agreement. *"It is never wise to enter into a negotiation without knowing your BATNA"*
+    (Sales Training Int'l / The Training Minute). **Build one in 3 steps:** list every fallback →
+    value each → pick the best.
+  - **Interests, not positions — from Ury himself:** Ury's own video recounts mediating a 25-year
+    secessionist war; he asked the guerrilla leaders *why* they wanted independence and got **dead
+    silence** — they'd never separated their **position** (independence) from their **interests**
+    (the economic/cultural/recognition needs behind it). *"What every successful negotiator does is
+    always look behind positions… you may not be able to give them their position, but you might be
+    able to meet their interests."*
+  - **The failure mode the corpus confirms:** the "tourist haggling for a rug" trap — *"once the
+    person knows you have no alternative… you are at their mercy"* (Business Guy). The book's
+    rational-interests frame also gets steamrolled by emotion, which is exactly the
+    [[canon-voss-never-split-the-difference]] critique — read the pair together.
+  - **Sources in corpus:** William Ury — "Interests Behind Negotiating Positions"
+    (youtube.com/watch?v=vdA2wecb4k0) · "The BATNA method," The Training Minute (r7LklyySFas) ·
+    "Negotiating Using BATNA and ZOPA," Sales Training Int'l (_1ugilqx6mw) · Business Guy —
+    "Negotiation 101: What is your BATNA?" (rlkyGPVr1N4) · r/negotiation salary/FB-Marketplace threads.
 - **Links:** [[canon-voss-never-split-the-difference]] · [[canon-cialdini-influence]] ·
   [[canon-carnegie-win-friends]] · [[canon-kahneman-thinking-fast-and-slow]]
 
