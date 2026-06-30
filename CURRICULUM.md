@@ -358,5 +358,6 @@ python3 edgar.py search "going concern"    # full-text search across ALL filers
 - [x] **Ingestion pipeline** — `_ingest/edgar.py` (built, tested on live SEC data) + `_ingest/README.md`
 - [x] **Course 01 seed** — worked 10-K note from real EDGAR data (`notes/01-accounting/aapl-10k-fy2025.md`)
 - [x] **The Canon** — 82 distilled books across 23 clusters in `notes/canon/` + index (`notes/canon/CANON.md`)
+- [x] **Applied-MBA media batch** — Tiger Sisters Podcast: 72 episodes ingested (`_ingest/raw/2026-06-29/media/tiger-sisters/`) + distilled into a hub (`notes/tiger-sisters-insights`), 4 deep-dive teaching notes, `learn/unit-10`, and a worked Apply rep (`notes/apply-stock-picking-nke`, real SEC data via `edgar.py`)
 - [ ] **Compounding loop** — `/schedule`d weekly auto-pull so content accumulates hands-free
 - [ ] **Research-skill wiring** — first transcript + Reddit batch per course (needs `/research` run)
