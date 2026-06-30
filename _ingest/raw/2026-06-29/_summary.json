@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-29",
+  "elapsed_min": 0,
+  "totals": {
+    "yt": 72,
+    "reddit": 0,
+    "edgar": 0
+  },
+  "outdir": "/Users/kalvaryhawkins/self-mba/_ingest/raw/2026-06-29",
+  "note": "Tiger Sisters Podcast channel pull (media/tiger-sisters). Transcripts via yt-dlp+chrome cookies."
+}
