@@ -12,8 +12,10 @@ scrollable course site into site/dist/:
 Stdlib only. No server needed — open site/dist/index.html in a browser.
 Rebuild anytime after a new pull:  python3 site/build.py
 """
-import glob, html, json, os, re
+import glob, html, json, os, re, time
 from datetime import date
+
+BUILD_VER = str(int(time.time()))
 
 HOME = os.path.expanduser("~")
 ROOT = os.path.join(HOME, "self-mba")
@@ -86,6 +88,40 @@ TITLES.update({
 GAP_ORDER = ["managerial-accounting", "statistics-quant", "marketing-strategy", "information-systems", "business-law"]
 GAP_CODE = {slug: f"G{i+1}" for i, slug in enumerate(GAP_ORDER)}
 
+# ---------- SVG icon system (replaces all emoji) ----------
+IC = {
+    'check': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>',
+    'pencil': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 2l3.5 3.5L5.5 14H2v-3.5z"/></svg>',
+    'target': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8" cy="8" r="6.5"/><circle cx="8" cy="8" r="3.5"/><circle cx="8" cy="8" r=".8" fill="currentColor"/></svg>',
+    'comment': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 1.5h13v9h-7l-4 3.5v-3.5h-2z"/></svg>',
+    'arrow-r': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg>',
+    'arrow-l': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg>',
+    'arrow-up': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4-4 4 4"/></svg>',
+    'diamond': '<svg class="ic" viewBox="0 0 16 16" fill="currentColor" opacity=".55"><path d="M8 2l5 6-5 6-5-6z"/></svg>',
+    'signal': '<svg class="ic ic-signal" viewBox="0 0 16 16" fill="currentColor"><rect x="1.5" y="10" width="2.5" height="5" rx=".6"/><rect x="6" y="6" width="2.5" height="9" rx=".6"/><rect x="10.5" y="2" width="2.5" height="13" rx=".6"/></svg>',
+    'play': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M4 2.5v11l9.5-5.5z"/></svg>',
+    'chart': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 14V8"/><path d="M6 14V4"/><path d="M10 14V9"/><path d="M14 14V2"/></svg>',
+    'home': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M1.5 7.5L8 1.5l6.5 6"/><path d="M3 7v7h10V7"/><path d="M6.5 14v-4h3v4"/></svg>',
+    'external': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v5H2V4h5"/><path d="M9 1h6v6"/><path d="M15 1L7.5 8.5"/></svg>',
+    'doc': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 1.5h6.5l3.5 3.5v9.5h-10z"/><path d="M10 1.5v3.5h3.5"/><path d="M6 7h4M6 9.5h4M6 12h2.5"/></svg>',
+    'lesson': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg>',
+    'folder': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg>',
+}
+
+import math
+def svg_progress_ring(pct, r=22, sw=3.5, color="var(--core)"):
+    circ = 2 * math.pi * r
+    offset = circ * (1 - pct / 100)
+    d = (r + sw + 1) * 2
+    cx = cy = r + sw + 1
+    return (f'<svg class="prog-ring" viewBox="0 0 {d} {d}" width="{d}" height="{d}">'
+            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="var(--line)" stroke-width="{sw}"/>'
+            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{color}" stroke-width="{sw}" '
+            f'stroke-dasharray="{circ:.1f}" stroke-dashoffset="{offset:.1f}" '
+            f'stroke-linecap="round" transform="rotate(-90 {cx} {cy})"/>'
+            f'<text x="{cx}" y="{cy}" text-anchor="middle" dominant-baseline="central" '
+            f'class="prog-pct">{int(pct)}%</text></svg>')
+
 def esc(s):
     return html.escape(str(s if s is not None else ""))
 
@@ -94,7 +130,8 @@ def latest_raw():
     dirs = [d for d in dirs if os.path.isdir(d) and re.search(r"\d{4}-\d{2}-\d{2}$", d)]
     if not dirs:
         raise SystemExit("No raw pulls found. Run _ingest/pull.py first.")
-    return dirs[-1]
+    with_modules = [d for d in dirs if os.path.isdir(os.path.join(d, "core"))]
+    return with_modules[-1] if with_modules else dirs[-1]
 
 def fmt_int(v):
     try: return f"{int(float(v)):,}"
@@ -106,8 +143,8 @@ def fmt_dur(v):
     except (ValueError, TypeError): return ""
 
 def code(track, mid):
-    if track == "canon": return CANON_CODE.get(mid, "✦")
-    if track == "gaps": return GAP_CODE.get(mid, "✦")
+    if track == "canon": return CANON_CODE.get(mid, IC['diamond'])
+    if track == "gaps": return GAP_CODE.get(mid, IC['diamond'])
     return mid.split("-")[0].upper() if track == "exec" else mid.split("-")[0]
 
 def load_module(mdir):
@@ -151,7 +188,7 @@ HEAD = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 <title>{title}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Literata:ital,opsz,wght@0,7..72,300..600;1,7..72,300..500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{css}"></head><body>
+<link rel="stylesheet" href="{css}?v=""" + BUILD_VER + """"></head><body>
 <div class="grain" aria-hidden="true"></div><div class="atmos" aria-hidden="true"></div>"""
 
 def render_video(v, summary=None):
@@ -191,7 +228,7 @@ def render_reddit(r):
     excerpt = (txt[:600] + "…") if len(txt) > 600 else txt
     return f"""<article class="card thread">
 <div class="card-head"><a class="ttl" href="{esc(r.get('url'))}" target="_blank" rel="noopener">{esc(r.get('title'))}</a> {sig_badge(r.get('signal'))}</div>
-<div class="meta">r/{esc(r.get('sub'))} · ▲ {fmt_int(r.get('ups'))} · 💬 {fmt_int(r.get('comments'))} · u/{esc(r.get('author'))}</div>
+<div class="meta">r/{esc(r.get('sub'))} · ▲ {fmt_int(r.get('ups'))} · {IC['comment']} {fmt_int(r.get('comments'))} · u/{esc(r.get('author'))}</div>
 {('<p class="excerpt">'+esc(excerpt)+'</p>') if excerpt else ''}</article>"""
 
 def render_edgar(blocks):
@@ -246,16 +283,16 @@ def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None, summar
             f'<p class="section-obj"><span class="obj-tag">Apply</span> The real SEC filings <b>behind the worked example above.</b> Run <code>edgar.py company TICKER</code> to do your own analysis.</p>'
             f'{render_edgar(edgar)}</section>')
     pn = ""
-    if prevnext[0]: pn += f'<a class="pn" href="{prevnext[0][0]}">← {esc(prevnext[0][1])}</a>'
-    if prevnext[1]: pn += f'<a class="pn next" href="{prevnext[1][0]}">{esc(prevnext[1][1])} →</a>'
-    done_btn = (f'<button id="mark-done" data-mod="{track}-{mid}.html"><span class="cp-tick">✓</span> '
+    if prevnext[0]: pn += f'<a class="pn" href="{prevnext[0][0]}">{IC["arrow-l"]} {esc(prevnext[0][1])}</a>'
+    if prevnext[1]: pn += f'<a class="pn next" href="{prevnext[1][0]}">{esc(prevnext[1][1])} {IC["arrow-r"]}</a>'
+    done_btn = (f'<button id="mark-done" data-mod="{track}-{mid}.html"><span class="cp-tick">{IC["check"]}</span> '
                 f'<span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button>') if lesson else ""
     track_name = {"exec": "Executive Track", "canon": "The Canon · Reading Layer",
                   "gaps": "Technical Foundations"}.get(track, "Core Curriculum")
     return HEAD.format(title=f"{c} · {title}", css="style.css") + f"""
 {'<div id="progress"></div>' if lesson else ''}
 <header class="mod-header {('exec' if track=='exec' else 'core')}">
-<a href="index.html" class="home">← Index</a>
+<a href="index.html" class="home">{IC['arrow-l']} Index</a>
 <div class="eyebrow"><span class="num">{esc(c)}</span> {track_name}</div>
 <h1>{esc(title)}</h1>
 <div class="hairline"></div></header>
@@ -263,49 +300,78 @@ def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None, summar
 <main>{"".join(sections)}</main>
 <div class="done-wrap">{done_btn}</div>
 <div class="pn-wrap">{pn}</div>
-<a href="#" class="top">↑ Top</a>
-<script src="lesson.js"></script>
+<a href="#" class="top">{IC['arrow-up']}</a>
+<script src="lesson.js?v={BUILD_VER}"></script>
 </body></html>"""
 
 def render_index(modules, stats):
+    # Compute lesson coverage per track
+    cov = {}
+    for track in ("core", "exec", "canon", "gaps"):
+        total = len(modules[track])
+        ready = sum(1 for mid, v, r, e in modules[track] if load_lesson(track, mid))
+        cov[track] = (ready, total, int(ready / total * 100) if total else 0)
+    total_lessons = sum(c[0] for c in cov.values())
+    total_modules = sum(c[1] for c in cov.values())
+    overall_pct = int(total_lessons / total_modules * 100) if total_modules else 0
+
     def cards(track):
         out = []
         for mid, v, r, e in modules[track]:
             c = code(track, mid); title = TITLES.get(mid, mid)
             words = sum(len(x.get("transcript") or "") for x in v) // 5
             ready = load_lesson(track, mid)
-            lesson_tag = '<span class="lesson-tag">Lesson ready</span>' if ready else '<span class="lesson-tag pending">Sources only</span>'
+            lesson_tag = f'<span class="lesson-tag">{IC["lesson"]} Lesson ready</span>' if ready else f'<span class="lesson-tag pending">{IC["folder"]} Sources only</span>'
             metas = [f"{len(v)} lectures", f"{words:,} words"]
             if r: metas.append(f"{len(r)} threads")
             if e: metas.append(f"{len(e)} filings")
             out.append(f"""<a class="mcard {('exec' if track=='exec' else 'core')}{' ready' if ready else ''}" href="{track}-{mid}.html" data-mod="{track}-{mid}">
 <div class="mcard-num">{esc(c)}</div>
 <div class="mcard-body">
-<div class="mcard-top">{lesson_tag}<span class="done-tick">✓ done</span></div>
+<div class="mcard-top">{lesson_tag}<span class="done-tick">{IC["check"]} done</span></div>
 <h3>{esc(title)}</h3>
 <div class="mstats">{"".join(f'<span>{m}</span>' for m in metas)}</div></div>
-<span class="mcard-arrow">→</span></a>""")
+<span class="mcard-arrow">{IC["arrow-r"]}</span></a>""")
         return "".join(out)
+
+    def track_head(label, track, count_label, color="var(--core)"):
+        r, t, pct = cov[track]
+        ring = svg_progress_ring(pct, r=18, sw=3, color=color)
+        return (f'<div class="track-head">'
+                f'<span class="th-label">{label}</span><span class="th-rule"></span>'
+                f'<span class="th-cov">{ring}<span class="th-cov-label">{r}/{t} lessons</span></span>'
+                f'<span class="th-count">{count_label}</span></div>')
+
+    # Visual stats dashboard
+    stats_viz = f"""<div class="stats-dash">
+<div class="stat-card"><div class="stat-num">{stats['modules']}</div><div class="stat-label">modules</div></div>
+<div class="stat-card"><div class="stat-num">{stats['videos']}</div><div class="stat-label">lectures</div></div>
+<div class="stat-card"><div class="stat-num">{stats['words']:,}</div><div class="stat-label">words of transcript</div></div>
+<div class="stat-card"><div class="stat-num">{total_lessons}</div><div class="stat-label">interactive lessons</div>
+<div class="stat-bar-wrap"><div class="stat-bar-fill" style="width:{overall_pct}%"></div></div>
+<div class="stat-sub">{overall_pct}% coverage</div></div>
+</div>"""
+
     return HEAD.format(title="The Compounding MBA", css="style.css") + f"""
 <header class="hero">
 <div class="eyebrow">Self-directed · Master's level</div>
 <h1>The Compounding <em>MBA</em></h1>
 <p class="sub">A master's-level business education, distilled from elite sources into interactive, visual lessons — and grounded in primary data.</p>
-<div class="ticker"><span><b>{stats['modules']}</b> modules</span><span><b>{stats['videos']}</b> lectures</span><span><b>{stats['words']:,}</b> words</span><span><b>{stats['threads']}</b> discussions</span><span><b>{stats['filings']}</b> filings</span></div>
-<div style="display:flex;gap:12px;flex-wrap:wrap;margin:0 0 26px">
-<a href="exam.html" style="display:inline-block;padding:12px 20px;border:1px solid var(--line2);border-radius:8px;color:var(--ink2);text-decoration:none;font:600 .8rem var(--mono);letter-spacing:.05em">📝 Self-diagnostic <span style="color:var(--dim)">· recall</span> &rarr;</a>
-<a href="benchmark-exam.html" style="display:inline-block;padding:12px 20px;border:1px solid var(--brass);border-radius:8px;color:var(--brass2);text-decoration:none;font:600 .8rem var(--mono);letter-spacing:.05em">🎯 Calibrated benchmark <span style="color:var(--dim)">· exam-level</span> &rarr;</a>
+{stats_viz}
+<div class="exam-links">
+<a class="exam-link" href="exam.html">{IC['pencil']} <span class="exam-title">Self-diagnostic</span> <span class="exam-sub">recall</span> {IC['arrow-r']}</a>
+<a class="exam-link bench" href="benchmark-exam.html">{IC['target']} <span class="exam-title">Calibrated benchmark</span> <span class="exam-sub">exam-level</span> {IC['arrow-r']}</a>
 </div>
 <input id="q" placeholder="Search modules…" oninput="filt()">
 </header>
 <main>
-<div class="track-head"><span class="th-label">Core Curriculum</span><span class="th-rule"></span><span class="th-count">12 modules</span></div>
+{track_head('Core Curriculum', 'core', '12 modules', 'var(--core)')}
 <div class="grid">{cards('core')}</div>
-<div class="track-head"><span class="th-label">Executive Track</span><span class="th-rule"></span><span class="th-count">12 modules</span></div>
+{track_head('Executive Track', 'exec', '12 modules', 'var(--exec)')}
 <div class="grid">{cards('exec')}</div>
-<div class="track-head"><span class="th-label">The Canon · Reading Layer</span><span class="th-rule"></span><span class="th-count">23 clusters</span></div>
+{track_head('The Canon · Reading Layer', 'canon', '23 clusters', 'var(--brass)')}
 <div class="grid">{cards('canon')}</div>
-<div class="track-head"><span class="th-label">Technical Foundations</span><span class="th-rule"></span><span class="th-count">5 modules</span></div>
+{track_head('Technical Foundations', 'gaps', '5 modules', 'var(--core)')}
 <div class="grid">{cards('gaps')}</div>
 </main>
 <footer>Generated from <code>~/self-mba/_ingest/raw/{stats['date']}</code> · rebuild with <code>python3 site/build.py</code></footer>
@@ -314,7 +380,7 @@ function filt(){{var q=document.getElementById('q').value.toLowerCase();
 document.querySelectorAll('.mcard').forEach(function(c){{
 c.style.display = c.textContent.toLowerCase().includes(q) ? '' : 'none';}});}}
 </script>
-<script src="index.js"></script>
+<script src="index.js?v=""" + BUILD_VER + """"></script>
 </body></html>"""
 
 CSS = """
@@ -330,6 +396,11 @@ CSS = """
 body{margin:0;background:var(--bg);color:var(--ink2);font:18px/1.72 var(--read);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 ::selection{background:var(--brass);color:#0c100e}
 a{color:inherit}main{max-width:var(--wrap);margin:0 auto;padding:0 24px 100px;position:relative;z-index:2}
+/* ---------- SVG ICON SYSTEM ---------- */
+.ic{display:inline-block;width:1em;height:1em;vertical-align:-.125em;flex-shrink:0}
+.ic-signal{width:1.1em}
+.lesson-tag .ic,.exam-link .ic,.done-tick .ic,.home .ic,.mcard-arrow .ic,.pn .ic,.top .ic,.cp-tick .ic{width:.85em;height:.85em}
+.top .ic{width:1.2em;height:1.2em;vertical-align:-.1em}
 .grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .atmos{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(1200px 620px at 50% -8%,rgba(203,162,79,.13),transparent 58%),radial-gradient(900px 520px at 88% 12%,rgba(132,173,138,.07),transparent 55%)}
 ::-webkit-scrollbar{width:11px;height:11px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--line2);border-radius:8px;border:3px solid var(--bg)}
@@ -342,12 +413,34 @@ a{color:inherit}main{max-width:var(--wrap);margin:0 auto;padding:0 24px 100px;po
 .sub{font-size:1.24rem;line-height:1.55;color:var(--dim);max-width:34ch;margin:0 0 30px;animation:rise .8s .26s both}
 .ticker{display:flex;flex-wrap:wrap;gap:0 26px;font:500 .78rem/2.4 var(--mono);letter-spacing:.04em;color:var(--dim);text-transform:uppercase;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0;margin-bottom:30px;animation:rise .8s .4s both}
 .ticker b{color:var(--brass2);font-weight:600}
+/* stats dashboard */
+.stats-dash{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-bottom:30px;animation:rise .8s .35s both}
+.stat-card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 20px;transition:border-color .2s}
+.stat-card:hover{border-color:var(--line2)}
+.stat-num{font:600 clamp(1.6rem,4vw,2.2rem) var(--serif);color:var(--brass2);letter-spacing:-.02em}
+.stat-label{font:500 .7rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-top:4px}
+.stat-bar-wrap{height:4px;background:var(--line);border-radius:4px;margin-top:10px;overflow:hidden}
+.stat-bar-fill{height:100%;background:linear-gradient(90deg,var(--core),var(--brass));border-radius:4px;transition:width .6s ease}
+.stat-sub{font:500 .64rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--core);margin-top:6px}
+/* exam links */
+.exam-links{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px;animation:rise .8s .45s both}
+.exam-link{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border:1px solid var(--line2);border-radius:8px;color:var(--ink2);text-decoration:none;font:600 .8rem var(--mono);letter-spacing:.05em;transition:.2s}
+.exam-link:hover{border-color:var(--brass);color:var(--ink);background:var(--surface)}
+.exam-link.bench{border-color:color-mix(in srgb,var(--brass) 50%,transparent);color:var(--brass2)}
+.exam-link.bench:hover{border-color:var(--brass);background:color-mix(in srgb,var(--brass) 8%,transparent)}
+.exam-title{text-transform:uppercase}.exam-sub{color:var(--dim);font-weight:400}
+.exam-link .ic:last-child{opacity:.5;transition:opacity .2s}.exam-link:hover .ic:last-child{opacity:1}
+/* progress rings */
+.prog-ring{flex-shrink:0}
+.prog-pct{font:600 .6rem var(--mono);fill:var(--ink2);letter-spacing:.02em}
 #q{width:100%;max-width:440px;padding:14px 4px;border:0;border-bottom:1px solid var(--line2);background:transparent;color:var(--ink);font:1.05rem var(--read);animation:rise .8s .5s both;transition:border-color .2s}
 #q::placeholder{color:var(--dim);font-style:italic}#q:focus{outline:0;border-color:var(--brass)}
 /* track header */
-.track-head{display:flex;align-items:center;gap:18px;max-width:var(--wrap);margin:54px auto 22px;padding:0 24px}
+.track-head{display:flex;align-items:center;gap:14px;max-width:var(--wrap);margin:54px auto 22px;padding:0 24px}
 .th-label{font:500 .82rem/1 var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--ink);white-space:nowrap}
 .th-rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line2),transparent)}
+.th-cov{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.th-cov-label{font:.68rem var(--mono);color:var(--dim);letter-spacing:.04em;text-transform:uppercase}
 .th-count{font:.78rem var(--mono);color:var(--dim);white-space:nowrap}
 /* module cards */
 .grid{max-width:var(--wrap);margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:0;border-top:1px solid var(--line)}
@@ -463,7 +556,8 @@ figure.viz figcaption{font:.92rem/1.5 var(--read);font-style:italic;color:var(--
 .quizq .q{font:500 1.12rem var(--read);color:var(--ink);margin:0 0 14px}
 .opt{display:block;width:100%;text-align:left;background:var(--bg);border:1px solid var(--line2);border-radius:4px;padding:13px 16px;margin:8px 0;font:1rem var(--read);color:var(--ink2);cursor:pointer;transition:.15s}
 .opt:hover{border-color:var(--brass);color:var(--ink)}.quizq.done .opt{cursor:default}
-.opt.right{background:color-mix(in srgb,var(--core) 18%,transparent);border-color:var(--core);color:var(--ink)}.opt.right::after{content:" ✓";color:var(--core);font-weight:700}
+.opt.right{background:color-mix(in srgb,var(--core) 18%,transparent);border-color:var(--core);color:var(--ink);position:relative;padding-right:36px}
+.opt.right::after{content:"";position:absolute;right:14px;top:50%;transform:translateY(-50%);width:16px;height:16px;background:var(--core);-webkit-mask:url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8.5l3.5 3.5 6.5-7'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8.5l3.5 3.5 6.5-7'/%3E%3C/svg%3E") center/contain no-repeat}
 .opt.wrong{background:color-mix(in srgb,var(--wrong) 16%,transparent);border-color:var(--wrong)}
 .fb{display:none;margin:14px 0 0;padding:14px 16px;background:var(--bg);border-left:3px solid var(--brass);border-radius:0 4px 4px 0;font-size:.98rem}
 .fb.show{display:block;animation:rise .4s both}
@@ -476,7 +570,7 @@ figure.viz figcaption{font:.92rem/1.5 var(--read);font-style:italic;color:var(--
 .src-list ul{margin:0;padding-left:18px}.src-list li{margin:6px 0}.src-list a{color:var(--ink2);text-decoration:none}.src-list a:hover{color:var(--brass2)}
 .done-wrap{max-width:var(--wrap);margin:40px auto 0;padding:0 24px;text-align:center;position:relative;z-index:2}
 #mark-done{background:transparent;border:1px solid var(--line2);border-radius:40px;padding:14px 30px;font:500 .8rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim);cursor:pointer;transition:.2s}
-#mark-done .cp-tick{opacity:.35}#mark-done .cp-on{display:none}
+#mark-done .cp-tick{opacity:.35;display:inline-flex}#mark-done .cp-on{display:none}
 #mark-done:hover{border-color:var(--core);color:var(--ink)}
 #mark-done.checked{background:var(--core);color:#0c140f;border-color:var(--core)}
 #mark-done.checked .cp-tick{opacity:1}#mark-done.checked .cp-on{display:inline}#mark-done.checked .cp-off{display:none}
