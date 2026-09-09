@@ -1,0 +1,3344 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:07.690 align:start position:0%
+ 
+[Music]
+
+00:00:07.690 --> 00:00:07.700 align:start position:0%
+[Music]
+ 
+
+00:00:07.700 --> 00:00:10.570 align:start position:0%
+[Music]
+selection<00:00:08.700><c> bias</c><00:00:09.050><c> backtest</c><00:00:10.050><c> overfitting</c>
+
+00:00:10.570 --> 00:00:10.580 align:start position:0%
+selection bias backtest overfitting
+ 
+
+00:00:10.580 --> 00:00:13.220 align:start position:0%
+selection bias backtest overfitting
+non-normality<00:00:11.580><c> these</c><00:00:12.420><c> are</c><00:00:12.599><c> serious</c><00:00:13.049><c> issues</c>
+
+00:00:13.220 --> 00:00:13.230 align:start position:0%
+non-normality these are serious issues
+ 
+
+00:00:13.230 --> 00:00:16.340 align:start position:0%
+non-normality these are serious issues
+in<00:00:13.440><c> finance</c><00:00:14.070><c> and</c><00:00:14.340><c> their</c><00:00:15.240><c> problems</c><00:00:15.870><c> not</c><00:00:16.020><c> just</c>
+
+00:00:16.340 --> 00:00:16.350 align:start position:0%
+in finance and their problems not just
+ 
+
+00:00:16.350 --> 00:00:19.010 align:start position:0%
+in finance and their problems not just
+for<00:00:16.789><c> researchers</c><00:00:17.789><c> but</c><00:00:18.029><c> also</c><00:00:18.210><c> practitioners</c>
+
+00:00:19.010 --> 00:00:19.020 align:start position:0%
+for researchers but also practitioners
+ 
+
+00:00:19.020 --> 00:00:21.859 align:start position:0%
+for researchers but also practitioners
+and<00:00:19.199><c> investors</c><00:00:19.880><c> thanks</c><00:00:20.880><c> for</c><00:00:21.000><c> joining</c><00:00:21.210><c> us</c><00:00:21.449><c> i'm</c>
+
+00:00:21.859 --> 00:00:21.869 align:start position:0%
+and investors thanks for joining us i'm
+ 
+
+00:00:21.869 --> 00:00:24.080 align:start position:0%
+and investors thanks for joining us i'm
+cathy<00:00:22.350><c> scott</c><00:00:22.410><c> with</c><00:00:22.980><c> institutional</c><00:00:23.699><c> investor</c>
+
+00:00:24.080 --> 00:00:24.090 align:start position:0%
+cathy scott with institutional investor
+ 
+
+00:00:24.090 --> 00:00:26.120 align:start position:0%
+cathy scott with institutional investor
+journals<00:00:24.570><c> and</c><00:00:24.810><c> I'm</c><00:00:25.230><c> visiting</c><00:00:25.380><c> with</c><00:00:25.619><c> Marcos</c>
+
+00:00:26.120 --> 00:00:26.130 align:start position:0%
+journals and I'm visiting with Marcos
+ 
+
+00:00:26.130 --> 00:00:28.880 align:start position:0%
+journals and I'm visiting with Marcos
+Lopez<00:00:26.220><c> de</c><00:00:26.789><c> Prado</c><00:00:27.090><c> he's</c><00:00:27.810><c> a</c><00:00:27.840><c> senior</c><00:00:28.289><c> executive</c>
+
+00:00:28.880 --> 00:00:28.890 align:start position:0%
+Lopez de Prado he's a senior executive
+ 
+
+00:00:28.890 --> 00:00:31.130 align:start position:0%
+Lopez de Prado he's a senior executive
+at<00:00:29.099><c> Guggenheim</c><00:00:29.580><c> Partners</c><00:00:29.609><c> in</c><00:00:30.210><c> New</c><00:00:30.330><c> York</c><00:00:30.599><c> and</c>
+
+00:00:31.130 --> 00:00:31.140 align:start position:0%
+at Guggenheim Partners in New York and
+ 
+
+00:00:31.140 --> 00:00:32.810 align:start position:0%
+at Guggenheim Partners in New York and
+he's<00:00:31.380><c> co-author</c><00:00:31.859><c> of</c><00:00:32.040><c> an</c><00:00:32.219><c> article</c><00:00:32.610><c> in</c><00:00:32.730><c> the</c>
+
+00:00:32.810 --> 00:00:32.820 align:start position:0%
+he's co-author of an article in the
+ 
+
+00:00:32.820 --> 00:00:34.700 align:start position:0%
+he's co-author of an article in the
+Journal<00:00:33.090><c> of</c><00:00:33.149><c> portfolio</c><00:00:33.690><c> management</c><00:00:33.719><c> 40th</c>
+
+00:00:34.700 --> 00:00:34.710 align:start position:0%
+Journal of portfolio management 40th
+ 
+
+00:00:34.710 --> 00:00:37.660 align:start position:0%
+Journal of portfolio management 40th
+anniversary<00:00:34.860><c> issue</c><00:00:35.750><c> welcome</c><00:00:36.750><c> Thank</c><00:00:37.440><c> You</c>
+
+00:00:37.660 --> 00:00:37.670 align:start position:0%
+anniversary issue welcome Thank You
+ 
+
+00:00:37.670 --> 00:00:40.780 align:start position:0%
+anniversary issue welcome Thank You
+Marcos<00:00:38.670><c> what</c><00:00:38.879><c> is</c><00:00:39.000><c> backtest</c><00:00:39.600><c> over-fitting</c><00:00:40.079><c> a</c>
+
+00:00:40.780 --> 00:00:40.790 align:start position:0%
+Marcos what is backtest over-fitting a
+ 
+
+00:00:40.790 --> 00:00:43.430 align:start position:0%
+Marcos what is backtest over-fitting a
+Baptist<00:00:41.790><c> is</c><00:00:42.000><c> a</c><00:00:42.030><c> historical</c><00:00:42.780><c> simulation</c><00:00:43.020><c> of</c>
+
+00:00:43.430 --> 00:00:43.440 align:start position:0%
+Baptist is a historical simulation of
+ 
+
+00:00:43.440 --> 00:00:45.529 align:start position:0%
+Baptist is a historical simulation of
+how<00:00:43.649><c> a</c><00:00:43.680><c> study</c><00:00:44.100><c> would</c><00:00:44.370><c> have</c><00:00:44.430><c> performed</c><00:00:45.090><c> in</c><00:00:45.270><c> past</c>
+
+00:00:45.529 --> 00:00:45.539 align:start position:0%
+how a study would have performed in past
+ 
+
+00:00:45.539 --> 00:00:48.110 align:start position:0%
+how a study would have performed in past
+this<00:00:46.469><c> performance</c><00:00:47.100><c> can</c><00:00:47.309><c> be</c><00:00:47.340><c> the</c><00:00:47.520><c> result</c><00:00:47.670><c> of</c>
+
+00:00:48.110 --> 00:00:48.120 align:start position:0%
+this performance can be the result of
+ 
+
+00:00:48.120 --> 00:00:50.299 align:start position:0%
+this performance can be the result of
+noise<00:00:48.600><c> or</c><00:00:48.899><c> it</c><00:00:49.110><c> can</c><00:00:49.260><c> be</c><00:00:49.350><c> the</c><00:00:49.469><c> result</c><00:00:49.590><c> of</c><00:00:49.890><c> signal</c>
+
+00:00:50.299 --> 00:00:50.309 align:start position:0%
+noise or it can be the result of signal
+ 
+
+00:00:50.309 --> 00:00:53.930 align:start position:0%
+noise or it can be the result of signal
+the<00:00:51.090><c> practice</c><00:00:51.539><c> is</c><00:00:51.780><c> fit</c><00:00:52.289><c> when</c><00:00:53.039><c> the</c><00:00:53.219><c> strategy</c><00:00:53.879><c> is</c>
+
+00:00:53.930 --> 00:00:53.940 align:start position:0%
+the practice is fit when the strategy is
+ 
+
+00:00:53.940 --> 00:00:55.910 align:start position:0%
+the practice is fit when the strategy is
+profit<00:00:54.390><c> inference</c><00:00:54.809><c> signal</c><00:00:55.260><c> and</c><00:00:55.469><c> it's</c>
+
+00:00:55.910 --> 00:00:55.920 align:start position:0%
+profit inference signal and it's
+ 
+
+00:00:55.920 --> 00:00:57.979 align:start position:0%
+profit inference signal and it's
+overfeed<00:00:56.489><c> when</c><00:00:56.820><c> the</c><00:00:56.969><c> practice</c><00:00:57.149><c> is</c><00:00:57.510><c> profiting</c>
+
+00:00:57.979 --> 00:00:57.989 align:start position:0%
+overfeed when the practice is profiting
+ 
+
+00:00:57.989 --> 00:00:59.990 align:start position:0%
+overfeed when the practice is profiting
+from<00:00:58.020><c> noise</c><00:00:58.530><c> and</c><00:00:58.559><c> that's</c><00:00:59.399><c> what</c><00:00:59.550><c> we</c><00:00:59.670><c> want</c><00:00:59.879><c> to</c>
+
+00:00:59.990 --> 00:01:00.000 align:start position:0%
+from noise and that's what we want to
+ 
+
+00:01:00.000 --> 00:01:02.479 align:start position:0%
+from noise and that's what we want to
+avoid<00:01:00.180><c> we</c><00:01:00.420><c> want</c><00:01:00.629><c> to</c><00:01:00.780><c> avoid</c><00:01:01.079><c> false</c><00:01:01.859><c> positives</c>
+
+00:01:02.479 --> 00:01:02.489 align:start position:0%
+avoid we want to avoid false positives
+ 
+
+00:01:02.489 --> 00:01:04.250 align:start position:0%
+avoid we want to avoid false positives
+we<00:01:02.609><c> want</c><00:01:02.820><c> to</c><00:01:02.910><c> body</c><00:01:03.120><c> strategies</c><00:01:03.899><c> that</c><00:01:04.140><c> are</c>
+
+00:01:04.250 --> 00:01:04.260 align:start position:0%
+we want to body strategies that are
+ 
+
+00:01:04.260 --> 00:01:06.380 align:start position:0%
+we want to body strategies that are
+profiting<00:01:04.769><c> for</c><00:01:05.040><c> noise</c><00:01:05.250><c> this</c><00:01:05.970><c> is</c><00:01:06.030><c> a</c><00:01:06.180><c> big</c>
+
+00:01:06.380 --> 00:01:06.390 align:start position:0%
+profiting for noise this is a big
+ 
+
+00:01:06.390 --> 00:01:09.980 align:start position:0%
+profiting for noise this is a big
+problem<00:01:06.659><c> in</c><00:01:06.869><c> finance</c><00:01:07.439><c> because</c><00:01:08.479><c> as</c><00:01:09.479><c> a</c><00:01:09.540><c> result</c>
+
+00:01:09.980 --> 00:01:09.990 align:start position:0%
+problem in finance because as a result
+ 
+
+00:01:09.990 --> 00:01:12.950 align:start position:0%
+problem in finance because as a result
+of<00:01:10.110><c> competition</c><00:01:10.430><c> the</c><00:01:11.430><c> ratio</c><00:01:11.970><c> of</c><00:01:12.150><c> signal</c><00:01:12.750><c> to</c>
+
+00:01:12.950 --> 00:01:12.960 align:start position:0%
+of competition the ratio of signal to
+ 
+
+00:01:12.960 --> 00:01:15.770 align:start position:0%
+of competition the ratio of signal to
+noise<00:01:12.990><c> is</c><00:01:13.439><c> very</c><00:01:13.530><c> low</c><00:01:13.950><c> and</c><00:01:14.250><c> as</c><00:01:14.640><c> a</c><00:01:14.700><c> result</c><00:01:15.180><c> it</c><00:01:15.720><c> is</c>
+
+00:01:15.770 --> 00:01:15.780 align:start position:0%
+noise is very low and as a result it is
+ 
+
+00:01:15.780 --> 00:01:17.870 align:start position:0%
+noise is very low and as a result it is
+very<00:01:16.229><c> likely</c><00:01:16.530><c> that</c><00:01:16.799><c> the</c><00:01:17.159><c> strategy</c><00:01:17.700><c> is</c>
+
+00:01:17.870 --> 00:01:17.880 align:start position:0%
+very likely that the strategy is
+ 
+
+00:01:17.880 --> 00:01:19.609 align:start position:0%
+very likely that the strategy is
+overfeed<00:01:18.509><c> much</c><00:01:18.750><c> more</c><00:01:18.960><c> likely</c><00:01:19.320><c> that</c><00:01:19.350><c> is</c>
+
+00:01:19.609 --> 00:01:19.619 align:start position:0%
+overfeed much more likely that is
+ 
+
+00:01:19.619 --> 00:01:22.190 align:start position:0%
+overfeed much more likely that is
+overfeed<00:01:20.159><c> unfit</c><00:01:20.610><c> and</c><00:01:21.479><c> what</c><00:01:21.689><c> about</c><00:01:21.869><c> selection</c>
+
+00:01:22.190 --> 00:01:22.200 align:start position:0%
+overfeed unfit and what about selection
+ 
+
+00:01:22.200 --> 00:01:25.460 align:start position:0%
+overfeed unfit and what about selection
+bias<00:01:22.790><c> selection</c><00:01:23.790><c> bias</c><00:01:24.090><c> of</c><00:01:24.299><c> course</c><00:01:24.600><c> when</c><00:01:25.170><c> a</c>
+
+00:01:25.460 --> 00:01:25.470 align:start position:0%
+bias selection bias of course when a
+ 
+
+00:01:25.470 --> 00:01:28.190 align:start position:0%
+bias selection bias of course when a
+researcher<00:01:26.150><c> only</c><00:01:27.150><c> punishes</c><00:01:27.659><c> positive</c>
+
+00:01:28.190 --> 00:01:28.200 align:start position:0%
+researcher only punishes positive
+ 
+
+00:01:28.200 --> 00:01:31.010 align:start position:0%
+researcher only punishes positive
+results<00:01:28.650><c> now</c><00:01:29.430><c> this</c><00:01:30.060><c> leads</c><00:01:30.299><c> to</c><00:01:30.479><c> a</c><00:01:30.600><c> winners</c>
+
+00:01:31.010 --> 00:01:31.020 align:start position:0%
+results now this leads to a winners
+ 
+
+00:01:31.020 --> 00:01:35.149 align:start position:0%
+results now this leads to a winners
+course<00:01:31.470><c> because</c><00:01:32.540><c> what</c><00:01:33.540><c> used</c><00:01:33.810><c> to</c><00:01:33.930><c> work</c><00:01:34.290><c> best</c><00:01:34.829><c> in</c>
+
+00:01:35.149 --> 00:01:35.159 align:start position:0%
+course because what used to work best in
+ 
+
+00:01:35.159 --> 00:01:37.760 align:start position:0%
+course because what used to work best in
+history<00:01:35.689><c> typically</c><00:01:36.689><c> is</c><00:01:36.900><c> not</c><00:01:37.140><c> going</c><00:01:37.439><c> to</c><00:01:37.619><c> work</c>
+
+00:01:37.760 --> 00:01:37.770 align:start position:0%
+history typically is not going to work
+ 
+
+00:01:37.770 --> 00:01:40.730 align:start position:0%
+history typically is not going to work
+best<00:01:38.130><c> in</c><00:01:38.460><c> the</c><00:01:38.579><c> future</c><00:01:38.729><c> so</c><00:01:39.570><c> the</c><00:01:40.049><c> problem</c><00:01:40.409><c> of</c><00:01:40.530><c> of</c>
+
+00:01:40.730 --> 00:01:40.740 align:start position:0%
+best in the future so the problem of of
+ 
+
+00:01:40.740 --> 00:01:44.210 align:start position:0%
+best in the future so the problem of of
+selection<00:01:41.640><c> bias</c><00:01:41.670><c> is</c><00:01:42.329><c> that</c><00:01:42.630><c> we</c><00:01:43.290><c> only</c><00:01:43.320><c> see</c><00:01:43.740><c> what</c>
+
+00:01:44.210 --> 00:01:44.220 align:start position:0%
+selection bias is that we only see what
+ 
+
+00:01:44.220 --> 00:01:47.090 align:start position:0%
+selection bias is that we only see what
+used<00:01:44.520><c> to</c><00:01:44.640><c> work</c><00:01:44.909><c> best</c><00:01:45.240><c> and</c><00:01:45.540><c> then</c><00:01:45.810><c> going</c><00:01:46.500><c> forward</c>
+
+00:01:47.090 --> 00:01:47.100 align:start position:0%
+used to work best and then going forward
+ 
+
+00:01:47.100 --> 00:01:52.249 align:start position:0%
+used to work best and then going forward
+it<00:01:47.579><c> tends</c><00:01:47.939><c> to</c><00:01:48.060><c> perform</c><00:01:49.310><c> worse</c><00:01:50.310><c> now</c><00:01:51.259><c> selection</c>
+
+00:01:52.249 --> 00:01:52.259 align:start position:0%
+it tends to perform worse now selection
+ 
+
+00:01:52.259 --> 00:01:54.830 align:start position:0%
+it tends to perform worse now selection
+bias<00:01:52.649><c> cannot</c><00:01:53.009><c> core</c><00:01:53.250><c> without</c><00:01:53.630><c> back</c><00:01:54.630><c> this</c>
+
+00:01:54.830 --> 00:01:54.840 align:start position:0%
+bias cannot core without back this
+ 
+
+00:01:54.840 --> 00:01:59.539 align:start position:0%
+bias cannot core without back this
+overfitting<00:01:55.470><c> but</c><00:01:56.369><c> combine</c><00:01:56.790><c> our</c><00:01:58.280><c> provide</c><00:01:59.280><c> a</c>
+
+00:01:59.539 --> 00:01:59.549 align:start position:0%
+overfitting but combine our provide a
+ 
+
+00:01:59.549 --> 00:02:03.709 align:start position:0%
+overfitting but combine our provide a
+horrible<00:02:00.119><c> situation</c><00:02:00.329><c> because</c><00:02:02.540><c> practice</c><00:02:03.540><c> over</c>
+
+00:02:03.709 --> 00:02:03.719 align:start position:0%
+horrible situation because practice over
+ 
+
+00:02:03.719 --> 00:02:08.059 align:start position:0%
+horrible situation because practice over
+feeling<00:02:03.960><c> makes</c><00:02:05.119><c> selection</c><00:02:06.119><c> bias</c><00:02:07.110><c> trivial</c>
+
+00:02:08.059 --> 00:02:08.069 align:start position:0%
+feeling makes selection bias trivial
+ 
+
+00:02:08.069 --> 00:02:10.100 align:start position:0%
+feeling makes selection bias trivial
+meaning<00:02:08.520><c> that</c><00:02:08.700><c> you</c><00:02:09.030><c> can</c><00:02:09.209><c> run</c><00:02:09.420><c> millions</c><00:02:09.810><c> of</c>
+
+00:02:10.100 --> 00:02:10.110 align:start position:0%
+meaning that you can run millions of
+ 
+
+00:02:10.110 --> 00:02:11.949 align:start position:0%
+meaning that you can run millions of
+simulations<00:02:10.709><c> and</c><00:02:10.950><c> then</c><00:02:11.370><c> only</c>
+
+00:02:11.949 --> 00:02:11.959 align:start position:0%
+simulations and then only
+ 
+
+00:02:11.959 --> 00:02:15.429 align:start position:0%
+simulations and then only
+the<00:02:12.769><c> best</c><00:02:13.010><c> result</c><00:02:13.700><c> so</c><00:02:14.540><c> what</c><00:02:14.659><c> exacerbates</c><00:02:15.319><c> the</c>
+
+00:02:15.429 --> 00:02:15.439 align:start position:0%
+the best result so what exacerbates the
+ 
+
+00:02:15.439 --> 00:02:17.199 align:start position:0%
+the best result so what exacerbates the
+problem<00:02:15.470><c> a</c><00:02:15.890><c> mean</c><00:02:16.010><c> if</c><00:02:16.099><c> you</c><00:02:16.189><c> have</c><00:02:16.459><c> one</c><00:02:16.819><c> or</c>
+
+00:02:17.199 --> 00:02:17.209 align:start position:0%
+problem a mean if you have one or
+ 
+
+00:02:17.209 --> 00:02:20.860 align:start position:0%
+problem a mean if you have one or
+another<00:02:18.019><c> is</c><00:02:18.950><c> bad</c><00:02:19.189><c> enough</c><00:02:19.489><c> but</c><00:02:19.790><c> generally</c><00:02:20.750><c> they</c>
+
+00:02:20.860 --> 00:02:20.870 align:start position:0%
+another is bad enough but generally they
+ 
+
+00:02:20.870 --> 00:02:23.619 align:start position:0%
+another is bad enough but generally they
+go<00:02:20.989><c> hand</c><00:02:21.260><c> in</c><00:02:21.349><c> hand</c><00:02:21.909><c> they</c><00:02:22.909><c> generally</c><00:02:23.450><c> go</c>
+
+00:02:23.619 --> 00:02:23.629 align:start position:0%
+go hand in hand they generally go
+ 
+
+00:02:23.629 --> 00:02:26.170 align:start position:0%
+go hand in hand they generally go
+hunting<00:02:24.079><c> have</c><00:02:24.260><c> in</c><00:02:24.470><c> hand</c><00:02:24.739><c> at</c><00:02:25.670><c> least</c><00:02:25.909><c> in</c><00:02:26.060><c> the</c>
+
+00:02:26.170 --> 00:02:26.180 align:start position:0%
+hunting have in hand at least in the
+ 
+
+00:02:26.180 --> 00:02:29.440 align:start position:0%
+hunting have in hand at least in the
+worst<00:02:26.450><c> cases</c><00:02:27.069><c> it</c><00:02:28.069><c> can</c><00:02:28.280><c> occur</c><00:02:28.670><c> that</c><00:02:28.849><c> the</c><00:02:28.970><c> person</c>
+
+00:02:29.440 --> 00:02:29.450 align:start position:0%
+worst cases it can occur that the person
+ 
+
+00:02:29.450 --> 00:02:33.009 align:start position:0%
+worst cases it can occur that the person
+can<00:02:30.260><c> engage</c><00:02:30.829><c> in</c><00:02:31.159><c> selection</c><00:02:31.939><c> bias</c><00:02:32.150><c> without</c><00:02:32.659><c> the</c>
+
+00:02:33.009 --> 00:02:33.019 align:start position:0%
+can engage in selection bias without the
+ 
+
+00:02:33.019 --> 00:02:36.190 align:start position:0%
+can engage in selection bias without the
+practice<00:02:33.500><c> but</c><00:02:34.099><c> when</c><00:02:34.510><c> selection</c><00:02:35.510><c> bias</c><00:02:35.689><c> occurs</c>
+
+00:02:36.190 --> 00:02:36.200 align:start position:0%
+practice but when selection bias occurs
+ 
+
+00:02:36.200 --> 00:02:38.289 align:start position:0%
+practice but when selection bias occurs
+in<00:02:36.590><c> combination</c><00:02:37.159><c> with</c><00:02:37.340><c> the</c><00:02:37.430><c> practice</c><00:02:37.849><c> this</c>
+
+00:02:38.289 --> 00:02:38.299 align:start position:0%
+in combination with the practice this
+ 
+
+00:02:38.299 --> 00:02:40.809 align:start position:0%
+in combination with the practice this
+leads<00:02:38.569><c> to</c><00:02:38.689><c> the</c><00:02:38.989><c> most</c><00:02:39.439><c> inflated</c><00:02:40.280><c> performance</c>
+
+00:02:40.809 --> 00:02:40.819 align:start position:0%
+leads to the most inflated performance
+ 
+
+00:02:40.819 --> 00:02:43.449 align:start position:0%
+leads to the most inflated performance
+and<00:02:41.209><c> what's</c><00:02:41.930><c> the</c><00:02:42.109><c> fundamental</c><00:02:42.439><c> cause</c><00:02:43.069><c> of</c><00:02:43.430><c> a</c>
+
+00:02:43.449 --> 00:02:43.459 align:start position:0%
+and what's the fundamental cause of a
+ 
+
+00:02:43.459 --> 00:02:45.940 align:start position:0%
+and what's the fundamental cause of a
+performance<00:02:44.180><c> inflation</c><00:02:44.750><c> the</c><00:02:45.379><c> fundamental</c>
+
+00:02:45.940 --> 00:02:45.950 align:start position:0%
+performance inflation the fundamental
+ 
+
+00:02:45.950 --> 00:02:48.129 align:start position:0%
+performance inflation the fundamental
+cause<00:02:46.159><c> is</c><00:02:46.400><c> what</c><00:02:46.579><c> is</c><00:02:46.730><c> known</c><00:02:46.970><c> as</c><00:02:47.269><c> the</c><00:02:47.599><c> multiple</c>
+
+00:02:48.129 --> 00:02:48.139 align:start position:0%
+cause is what is known as the multiple
+ 
+
+00:02:48.139 --> 00:02:50.110 align:start position:0%
+cause is what is known as the multiple
+testing<00:02:48.620><c> problem</c><00:02:48.980><c> and</c><00:02:49.220><c> let</c><00:02:49.579><c> me</c><00:02:49.730><c> illustrate</c><00:02:49.790><c> it</c>
+
+00:02:50.110 --> 00:02:50.120 align:start position:0%
+testing problem and let me illustrate it
+ 
+
+00:02:50.120 --> 00:02:53.710 align:start position:0%
+testing problem and let me illustrate it
+with<00:02:50.389><c> an</c><00:02:50.510><c> example</c><00:02:51.010><c> suppose</c><00:02:52.010><c> a</c><00:02:52.220><c> fair</c><00:02:52.670><c> die</c><00:02:52.970><c> the</c>
+
+00:02:53.710 --> 00:02:53.720 align:start position:0%
+with an example suppose a fair die the
+ 
+
+00:02:53.720 --> 00:02:56.559 align:start position:0%
+with an example suppose a fair die the
+probability<00:02:54.379><c> of</c><00:02:54.620><c> obtaining</c><00:02:54.799><c> a</c><00:02:55.370><c> six</c><00:02:55.909><c> is</c><00:02:56.150><c> one</c>
+
+00:02:56.559 --> 00:02:56.569 align:start position:0%
+probability of obtaining a six is one
+ 
+
+00:02:56.569 --> 00:03:00.699 align:start position:0%
+probability of obtaining a six is one
+over<00:02:56.720><c> six</c><00:02:57.109><c> now</c><00:02:57.400><c> consider</c><00:02:58.400><c> ten</c><00:02:58.760><c> fair</c><00:02:59.480><c> dies</c><00:02:59.750><c> if</c><00:03:00.439><c> I</c>
+
+00:03:00.699 --> 00:03:00.709 align:start position:0%
+over six now consider ten fair dies if I
+ 
+
+00:03:00.709 --> 00:03:03.520 align:start position:0%
+over six now consider ten fair dies if I
+roll<00:03:00.950><c> them</c><00:03:01.189><c> the</c><00:03:01.730><c> probability</c><00:03:02.389><c> that</c><00:03:02.420><c> I</c><00:03:02.599><c> get</c><00:03:03.049><c> in</c>
+
+00:03:03.520 --> 00:03:03.530 align:start position:0%
+roll them the probability that I get in
+ 
+
+00:03:03.530 --> 00:03:06.160 align:start position:0%
+roll them the probability that I get in
+each<00:03:03.889><c> of</c><00:03:04.099><c> them</c><00:03:04.340><c> the</c><00:03:04.760><c> six</c><00:03:05.030><c> is</c><00:03:05.480><c> less</c><00:03:05.750><c> than</c><00:03:05.930><c> one</c>
+
+00:03:06.160 --> 00:03:06.170 align:start position:0%
+each of them the six is less than one
+ 
+
+00:03:06.170 --> 00:03:08.580 align:start position:0%
+each of them the six is less than one
+over<00:03:06.349><c> sixty</c><00:03:06.889><c> million</c>
+
+00:03:08.580 --> 00:03:08.590 align:start position:0%
+over sixty million
+ 
+
+00:03:08.590 --> 00:03:11.949 align:start position:0%
+over sixty million
+suppose<00:03:09.590><c> now</c><00:03:09.920><c> that</c><00:03:10.129><c> I</c><00:03:10.609><c> roll</c><00:03:10.909><c> these</c><00:03:11.120><c> dies</c><00:03:11.420><c> a</c>
+
+00:03:11.949 --> 00:03:11.959 align:start position:0%
+suppose now that I roll these dies a
+ 
+
+00:03:11.959 --> 00:03:14.619 align:start position:0%
+suppose now that I roll these dies a
+large<00:03:12.560><c> number</c><00:03:12.859><c> of</c><00:03:13.069><c> times</c><00:03:13.370><c> until</c><00:03:13.879><c> eventually</c><00:03:14.120><c> I</c>
+
+00:03:14.619 --> 00:03:14.629 align:start position:0%
+large number of times until eventually I
+ 
+
+00:03:14.629 --> 00:03:19.539 align:start position:0%
+large number of times until eventually I
+get<00:03:15.049><c> all</c><00:03:15.459><c> sixes</c><00:03:16.870><c> if</c><00:03:17.870><c> I</c><00:03:18.139><c> show</c><00:03:19.010><c> you</c><00:03:19.040><c> this</c><00:03:19.310><c> last</c>
+
+00:03:19.539 --> 00:03:19.549 align:start position:0%
+get all sixes if I show you this last
+ 
+
+00:03:19.549 --> 00:03:22.539 align:start position:0%
+get all sixes if I show you this last
+outcome<00:03:20.209><c> you</c><00:03:21.109><c> will</c><00:03:21.290><c> be</c><00:03:21.470><c> led</c><00:03:21.709><c> to</c><00:03:21.949><c> believe</c><00:03:22.040><c> that</c>
+
+00:03:22.539 --> 00:03:22.549 align:start position:0%
+outcome you will be led to believe that
+ 
+
+00:03:22.549 --> 00:03:26.530 align:start position:0%
+outcome you will be led to believe that
+these<00:03:22.879><c> dies</c><00:03:23.180><c> are</c><00:03:23.599><c> unfair</c><00:03:24.530><c> and</c><00:03:25.209><c> why</c><00:03:26.209><c> are</c><00:03:26.389><c> you</c>
+
+00:03:26.530 --> 00:03:26.540 align:start position:0%
+these dies are unfair and why are you
+ 
+
+00:03:26.540 --> 00:03:28.270 align:start position:0%
+these dies are unfair and why are you
+believing<00:03:26.840><c> that</c><00:03:27.079><c> because</c><00:03:27.620><c> I'm</c><00:03:27.769><c> not</c><00:03:27.829><c> telling</c>
+
+00:03:28.270 --> 00:03:28.280 align:start position:0%
+believing that because I'm not telling
+ 
+
+00:03:28.280 --> 00:03:30.610 align:start position:0%
+believing that because I'm not telling
+you<00:03:28.489><c> that</c><00:03:28.730><c> in</c><00:03:29.299><c> order</c><00:03:29.750><c> to</c><00:03:29.930><c> achieve</c><00:03:30.049><c> that</c><00:03:30.470><c> result</c>
+
+00:03:30.610 --> 00:03:30.620 align:start position:0%
+you that in order to achieve that result
+ 
+
+00:03:30.620 --> 00:03:33.580 align:start position:0%
+you that in order to achieve that result
+I<00:03:31.099><c> had</c><00:03:31.760><c> to</c><00:03:31.909><c> roll</c><00:03:32.090><c> the</c><00:03:32.209><c> dice</c><00:03:32.419><c> tens</c><00:03:33.109><c> of</c><00:03:33.290><c> millions</c>
+
+00:03:33.580 --> 00:03:33.590 align:start position:0%
+I had to roll the dice tens of millions
+ 
+
+00:03:33.590 --> 00:03:35.939 align:start position:0%
+I had to roll the dice tens of millions
+of<00:03:33.680><c> times</c><00:03:33.919><c> that</c><00:03:34.760><c> is</c><00:03:34.909><c> the</c><00:03:35.060><c> problem</c><00:03:35.480><c> of</c>
+
+00:03:35.939 --> 00:03:35.949 align:start position:0%
+of times that is the problem of
+ 
+
+00:03:35.949 --> 00:03:37.420 align:start position:0%
+of times that is the problem of
+selection<00:03:36.949><c> bias</c>
+
+00:03:37.420 --> 00:03:37.430 align:start position:0%
+selection bias
+ 
+
+00:03:37.430 --> 00:03:41.229 align:start position:0%
+selection bias
+I'm<00:03:37.840><c> only</c><00:03:38.840><c> showing</c><00:03:39.049><c> you</c><00:03:39.500><c> the</c><00:03:39.919><c> outcome</c><00:03:40.220><c> that</c><00:03:40.819><c> I</c>
+
+00:03:41.229 --> 00:03:41.239 align:start position:0%
+I'm only showing you the outcome that I
+ 
+
+00:03:41.239 --> 00:03:43.509 align:start position:0%
+I'm only showing you the outcome that I
+want<00:03:41.720><c> you</c><00:03:41.840><c> to</c><00:03:41.989><c> show</c><00:03:42.199><c> and</c><00:03:42.530><c> I</c><00:03:42.859><c> don't</c><00:03:43.099><c> tell</c><00:03:43.340><c> you</c>
+
+00:03:43.509 --> 00:03:43.519 align:start position:0%
+want you to show and I don't tell you
+ 
+
+00:03:43.519 --> 00:03:46.930 align:start position:0%
+want you to show and I don't tell you
+how<00:03:43.819><c> hard</c><00:03:44.209><c> it</c><00:03:44.419><c> took</c><00:03:45.169><c> to</c><00:03:45.379><c> get</c><00:03:45.560><c> it</c><00:03:45.620><c> is</c><00:03:46.579><c> there</c><00:03:46.790><c> any</c>
+
+00:03:46.930 --> 00:03:46.940 align:start position:0%
+how hard it took to get it is there any
+ 
+
+00:03:46.940 --> 00:03:49.089 align:start position:0%
+how hard it took to get it is there any
+way<00:03:47.120><c> to</c><00:03:47.150><c> really</c><00:03:47.720><c> avoid</c><00:03:47.989><c> selection</c><00:03:48.620><c> bias</c><00:03:48.829><c> we</c>
+
+00:03:49.089 --> 00:03:49.099 align:start position:0%
+way to really avoid selection bias we
+ 
+
+00:03:49.099 --> 00:03:52.839 align:start position:0%
+way to really avoid selection bias we
+all<00:03:49.220><c> have</c><00:03:49.449><c> biases</c><00:03:50.590><c> yes</c><00:03:51.590><c> well</c><00:03:51.919><c> what</c><00:03:52.340><c> we</c><00:03:52.459><c> need</c><00:03:52.579><c> is</c>
+
+00:03:52.839 --> 00:03:52.849 align:start position:0%
+all have biases yes well what we need is
+ 
+
+00:03:52.849 --> 00:03:55.750 align:start position:0%
+all have biases yes well what we need is
+transparency<00:03:53.659><c> so</c><00:03:54.199><c> what</c><00:03:54.829><c> is</c><00:03:54.949><c> he</c><00:03:55.099><c> means</c><00:03:55.519><c> leaving</c>
+
+00:03:55.750 --> 00:03:55.760 align:start position:0%
+transparency so what is he means leaving
+ 
+
+00:03:55.760 --> 00:03:59.129 align:start position:0%
+transparency so what is he means leaving
+you<00:03:56.060><c> in</c><00:03:56.299><c> my</c><00:03:56.569><c> example</c><00:03:57.199><c> is</c><00:03:57.919><c> the</c><00:03:58.310><c> fact</c><00:03:58.579><c> that</c><00:03:58.699><c> I</c><00:03:58.879><c> am</c>
+
+00:03:59.129 --> 00:03:59.139 align:start position:0%
+you in my example is the fact that I am
+ 
+
+00:03:59.139 --> 00:04:02.409 align:start position:0%
+you in my example is the fact that I am
+concealing<00:04:00.139><c> information</c><00:04:00.560><c> I'm</c><00:04:01.519><c> not</c><00:04:01.579><c> telling</c>
+
+00:04:02.409 --> 00:04:02.419 align:start position:0%
+concealing information I'm not telling
+ 
+
+00:04:02.419 --> 00:04:06.520 align:start position:0%
+concealing information I'm not telling
+you<00:04:02.479><c> that</c><00:04:02.900><c> this</c><00:04:03.699><c> outcome</c><00:04:04.699><c> was</c><00:04:05.030><c> really</c><00:04:05.989><c> hard</c><00:04:06.290><c> to</c>
+
+00:04:06.520 --> 00:04:06.530 align:start position:0%
+you that this outcome was really hard to
+ 
+
+00:04:06.530 --> 00:04:09.460 align:start position:0%
+you that this outcome was really hard to
+obtain<00:04:06.650><c> and</c><00:04:07.780><c> because</c><00:04:08.780><c> you</c><00:04:08.930><c> just</c><00:04:09.079><c> see</c><00:04:09.319><c> the</c>
+
+00:04:09.460 --> 00:04:09.470 align:start position:0%
+obtain and because you just see the
+ 
+
+00:04:09.470 --> 00:04:12.789 align:start position:0%
+obtain and because you just see the
+final<00:04:10.010><c> outcome</c><00:04:10.489><c> the</c><00:04:10.849><c> ten</c><00:04:11.150><c> sixes</c><00:04:11.720><c> you</c><00:04:11.930><c> will</c><00:04:12.530><c> fit</c>
+
+00:04:12.789 --> 00:04:12.799 align:start position:0%
+final outcome the ten sixes you will fit
+ 
+
+00:04:12.799 --> 00:04:15.099 align:start position:0%
+final outcome the ten sixes you will fit
+you<00:04:13.010><c> will</c><00:04:13.190><c> believe</c><00:04:13.459><c> that</c><00:04:13.699><c> it</c><00:04:14.060><c> was</c><00:04:14.329><c> very</c><00:04:14.810><c> easy</c>
+
+00:04:15.099 --> 00:04:15.109 align:start position:0%
+you will believe that it was very easy
+ 
+
+00:04:15.109 --> 00:04:17.800 align:start position:0%
+you will believe that it was very easy
+to<00:04:15.349><c> obtain</c><00:04:15.440><c> meaning</c><00:04:15.889><c> that</c><00:04:16.070><c> it</c><00:04:16.430><c> is</c><00:04:16.639><c> signal</c><00:04:17.090><c> but</c>
+
+00:04:17.800 --> 00:04:17.810 align:start position:0%
+to obtain meaning that it is signal but
+ 
+
+00:04:17.810 --> 00:04:20.949 align:start position:0%
+to obtain meaning that it is signal but
+the<00:04:17.930><c> reality</c><00:04:18.440><c> is</c><00:04:18.680><c> because</c><00:04:19.549><c> these</c><00:04:20.000><c> dyes</c><00:04:20.510><c> are</c>
+
+00:04:20.949 --> 00:04:20.959 align:start position:0%
+the reality is because these dyes are
+ 
+
+00:04:20.959 --> 00:04:24.580 align:start position:0%
+the reality is because these dyes are
+far<00:04:21.380><c> fair</c><00:04:22.219><c> it</c><00:04:22.729><c> was</c><00:04:23.090><c> noise</c><00:04:23.419><c> it</c><00:04:23.750><c> was</c><00:04:24.020><c> really</c>
+
+00:04:24.580 --> 00:04:24.590 align:start position:0%
+far fair it was noise it was really
+ 
+
+00:04:24.590 --> 00:04:27.370 align:start position:0%
+far fair it was noise it was really
+hard<00:04:24.919><c> to</c><00:04:25.130><c> obtain</c><00:04:25.280><c> that</c><00:04:25.730><c> that</c><00:04:26.210><c> that</c><00:04:26.570><c> that</c>
+
+00:04:27.370 --> 00:04:27.380 align:start position:0%
+hard to obtain that that that that
+ 
+
+00:04:27.380 --> 00:04:31.480 align:start position:0%
+hard to obtain that that that that
+outcome<00:04:27.639><c> so</c><00:04:28.639><c> the</c><00:04:29.150><c> problem</c><00:04:29.480><c> of</c><00:04:29.830><c> back</c><00:04:30.830><c> of</c><00:04:31.100><c> over</c>
+
+00:04:31.480 --> 00:04:31.490 align:start position:0%
+outcome so the problem of back of over
+ 
+
+00:04:31.490 --> 00:04:33.760 align:start position:0%
+outcome so the problem of back of over
+feeding<00:04:31.880><c> and</c><00:04:32.120><c> selection</c><00:04:32.990><c> buyers</c><00:04:33.169><c> in</c><00:04:33.470><c> fact</c>
+
+00:04:33.760 --> 00:04:33.770 align:start position:0%
+feeding and selection buyers in fact
+ 
+
+00:04:33.770 --> 00:04:36.210 align:start position:0%
+feeding and selection buyers in fact
+leads<00:04:34.550><c> back</c><00:04:34.820><c> to</c><00:04:34.880><c> the</c><00:04:35.210><c> problem</c><00:04:35.660><c> of</c>
+
+00:04:36.210 --> 00:04:36.220 align:start position:0%
+leads back to the problem of
+ 
+
+00:04:36.220 --> 00:04:39.129 align:start position:0%
+leads back to the problem of
+transparency<00:04:37.220><c> and</c><00:04:37.540><c> disclose</c><00:04:38.540><c> in</c><00:04:38.750><c> the</c><00:04:38.840><c> number</c>
+
+00:04:39.129 --> 00:04:39.139 align:start position:0%
+transparency and disclose in the number
+ 
+
+00:04:39.139 --> 00:04:41.409 align:start position:0%
+transparency and disclose in the number
+of<00:04:39.260><c> trials</c><00:04:39.500><c> involved</c><00:04:39.949><c> in</c><00:04:40.040><c> the</c><00:04:40.100><c> discovery</c><00:04:40.430><c> so</c>
+
+00:04:41.409 --> 00:04:41.419 align:start position:0%
+of trials involved in the discovery so
+ 
+
+00:04:41.419 --> 00:04:43.689 align:start position:0%
+of trials involved in the discovery so
+it's<00:04:41.780><c> performance</c><00:04:42.199><c> inflation</c><00:04:43.040><c> form</c><00:04:43.310><c> of</c><00:04:43.430><c> fraud</c>
+
+00:04:43.689 --> 00:04:43.699 align:start position:0%
+it's performance inflation form of fraud
+ 
+
+00:04:43.699 --> 00:04:47.680 align:start position:0%
+it's performance inflation form of fraud
+it<00:04:44.330><c> depends</c><00:04:44.870><c> I</c><00:04:46.000><c> would</c><00:04:47.000><c> like</c><00:04:47.150><c> to</c><00:04:47.270><c> believe</c><00:04:47.389><c> that</c>
+
+00:04:47.680 --> 00:04:47.690 align:start position:0%
+it depends I would like to believe that
+ 
+
+00:04:47.690 --> 00:04:49.420 align:start position:0%
+it depends I would like to believe that
+in<00:04:47.810><c> most</c><00:04:47.960><c> cases</c><00:04:48.229><c> is</c><00:04:48.740><c> the</c><00:04:48.889><c> result</c><00:04:49.190><c> of</c>
+
+00:04:49.420 --> 00:04:49.430 align:start position:0%
+in most cases is the result of
+ 
+
+00:04:49.430 --> 00:04:53.020 align:start position:0%
+in most cases is the result of
+negligence<00:04:49.729><c> in</c><00:04:50.330><c> the</c><00:04:50.600><c> sense</c><00:04:50.990><c> that</c><00:04:52.000><c> there</c><00:04:53.000><c> are</c>
+
+00:04:53.020 --> 00:04:53.030 align:start position:0%
+negligence in the sense that there are
+ 
+
+00:04:53.030 --> 00:04:56.439 align:start position:0%
+negligence in the sense that there are
+many<00:04:53.750><c> researchers</c><00:04:54.910><c> in</c><00:04:55.910><c> many</c><00:04:56.270><c> different</c>
+
+00:04:56.439 --> 00:04:56.449 align:start position:0%
+many researchers in many different
+ 
+
+00:04:56.449 --> 00:04:59.890 align:start position:0%
+many researchers in many different
+fields<00:04:56.930><c> that</c><00:04:57.680><c> engage</c><00:04:58.370><c> in</c><00:04:58.820><c> empirical</c><00:04:59.540><c> research</c>
+
+00:04:59.890 --> 00:04:59.900 align:start position:0%
+fields that engage in empirical research
+ 
+
+00:04:59.900 --> 00:05:03.190 align:start position:0%
+fields that engage in empirical research
+and<00:05:00.729><c> for</c><00:05:01.729><c> one</c><00:05:01.910><c> reason</c><00:05:01.940><c> or</c><00:05:02.330><c> another</c><00:05:02.389><c> they</c><00:05:03.139><c> do</c>
+
+00:05:03.190 --> 00:05:03.200 align:start position:0%
+and for one reason or another they do
+ 
+
+00:05:03.200 --> 00:05:05.280 align:start position:0%
+and for one reason or another they do
+not<00:05:03.530><c> control</c><00:05:04.010><c> the</c><00:05:04.190><c> number</c><00:05:04.520><c> of</c><00:05:04.580><c> trials</c>
+
+00:05:05.280 --> 00:05:05.290 align:start position:0%
+not control the number of trials
+ 
+
+00:05:05.290 --> 00:05:09.010 align:start position:0%
+not control the number of trials
+involved<00:05:06.290><c> in</c><00:05:07.330><c> achieving</c><00:05:08.330><c> a</c><00:05:08.810><c> particular</c>
+
+00:05:09.010 --> 00:05:09.020 align:start position:0%
+involved in achieving a particular
+ 
+
+00:05:09.020 --> 00:05:13.870 align:start position:0%
+involved in achieving a particular
+result<00:05:10.600><c> now</c><00:05:11.830><c> if</c><00:05:12.830><c> they</c><00:05:13.040><c> don't</c><00:05:13.190><c> know</c><00:05:13.400><c> what</c><00:05:13.430><c> they</c>
+
+00:05:13.870 --> 00:05:13.880 align:start position:0%
+result now if they don't know what they
+ 
+
+00:05:13.880 --> 00:05:16.930 align:start position:0%
+result now if they don't know what they
+are<00:05:13.910><c> doing</c><00:05:14.180><c> we</c><00:05:15.050><c> cannot</c><00:05:15.290><c> say</c><00:05:15.500><c> that</c><00:05:15.530><c> is</c><00:05:15.979><c> fraud</c><00:05:16.610><c> I</c>
+
+00:05:16.930 --> 00:05:16.940 align:start position:0%
+are doing we cannot say that is fraud I
+ 
+
+00:05:16.940 --> 00:05:20.020 align:start position:0%
+are doing we cannot say that is fraud I
+think<00:05:17.780><c> the</c><00:05:17.900><c> issue</c><00:05:18.080><c> is</c><00:05:18.880><c> with</c><00:05:19.880><c> those</c>
+
+00:05:20.020 --> 00:05:20.030 align:start position:0%
+think the issue is with those
+ 
+
+00:05:20.030 --> 00:05:23.680 align:start position:0%
+think the issue is with those
+researchers<00:05:20.720><c> that</c><00:05:21.500><c> know</c><00:05:22.250><c> that</c><00:05:22.610><c> of</c><00:05:22.880><c> the</c>
+
+00:05:23.680 --> 00:05:23.690 align:start position:0%
+researchers that know that of the
+ 
+
+00:05:23.690 --> 00:05:25.029 align:start position:0%
+researchers that know that of the
+existence<00:05:24.050><c> of</c><00:05:24.169><c> the</c><00:05:24.320><c> multiple</c><00:05:24.800><c> testing</c>
+
+00:05:25.029 --> 00:05:25.039 align:start position:0%
+existence of the multiple testing
+ 
+
+00:05:25.039 --> 00:05:28.270 align:start position:0%
+existence of the multiple testing
+problem<00:05:25.430><c> and</c><00:05:25.720><c> still</c><00:05:26.720><c> they</c><00:05:27.440><c> conceal</c><00:05:28.100><c> the</c>
+
+00:05:28.270 --> 00:05:28.280 align:start position:0%
+problem and still they conceal the
+ 
+
+00:05:28.280 --> 00:05:30.700 align:start position:0%
+problem and still they conceal the
+number<00:05:28.550><c> of</c><00:05:28.639><c> trials</c><00:05:28.910><c> involved</c><00:05:29.600><c> in</c><00:05:29.840><c> a</c><00:05:30.080><c> discovery</c>
+
+00:05:30.700 --> 00:05:30.710 align:start position:0%
+number of trials involved in a discovery
+ 
+
+00:05:30.710 --> 00:05:33.879 align:start position:0%
+number of trials involved in a discovery
+just<00:05:31.370><c> because</c><00:05:31.729><c> they</c><00:05:31.940><c> want</c><00:05:32.240><c> to</c><00:05:32.860><c> promote</c><00:05:33.860><c> a</c>
+
+00:05:33.879 --> 00:05:33.889 align:start position:0%
+just because they want to promote a
+ 
+
+00:05:33.889 --> 00:05:35.080 align:start position:0%
+just because they want to promote a
+particular<00:05:34.190><c> outcome</c>
+
+00:05:35.080 --> 00:05:35.090 align:start position:0%
+particular outcome
+ 
+
+00:05:35.090 --> 00:05:37.900 align:start position:0%
+particular outcome
+ok<00:05:36.020><c> let's</c><00:05:36.229><c> step</c><00:05:36.440><c> back</c><00:05:36.470><c> a</c><00:05:36.680><c> minute</c><00:05:37.100><c> I</c><00:05:37.220><c> understood</c>
+
+00:05:37.900 --> 00:05:37.910 align:start position:0%
+ok let's step back a minute I understood
+ 
+
+00:05:37.910 --> 00:05:39.700 align:start position:0%
+ok let's step back a minute I understood
+the<00:05:38.060><c> example</c><00:05:38.479><c> about</c><00:05:38.660><c> the</c><00:05:38.840><c> die</c><00:05:39.080><c> give</c><00:05:39.500><c> me</c><00:05:39.620><c> an</c>
+
+00:05:39.700 --> 00:05:39.710 align:start position:0%
+the example about the die give me an
+ 
+
+00:05:39.710 --> 00:05:41.890 align:start position:0%
+the example about the die give me an
+example<00:05:40.070><c> of</c><00:05:40.400><c> an</c><00:05:40.610><c> investment</c><00:05:41.060><c> strategy</c><00:05:41.300><c> that's</c>
+
+00:05:41.890 --> 00:05:41.900 align:start position:0%
+example of an investment strategy that's
+ 
+
+00:05:41.900 --> 00:05:45.850 align:start position:0%
+example of an investment strategy that's
+been<00:05:42.020><c> overfit</c><00:05:42.729><c> my</c><00:05:43.729><c> favorite</c><00:05:44.090><c> examples</c><00:05:44.860><c> come</c>
+
+00:05:45.850 --> 00:05:45.860 align:start position:0%
+been overfit my favorite examples come
+ 
+
+00:05:45.860 --> 00:05:48.460 align:start position:0%
+been overfit my favorite examples come
+from<00:05:45.889><c> the</c><00:05:46.310><c> area</c><00:05:46.729><c> of</c><00:05:46.970><c> seasonal</c><00:05:47.660><c> patterns</c><00:05:48.200><c> and</c>
+
+00:05:48.460 --> 00:05:48.470 align:start position:0%
+from the area of seasonal patterns and
+ 
+
+00:05:48.470 --> 00:05:51.310 align:start position:0%
+from the area of seasonal patterns and
+we<00:05:49.340><c> could</c><00:05:49.490><c> discuss</c><00:05:49.820><c> of</c><00:05:50.330><c> course</c><00:05:50.419><c> examples</c>
+
+00:05:51.310 --> 00:05:51.320 align:start position:0%
+we could discuss of course examples
+ 
+
+00:05:51.320 --> 00:05:55.920 align:start position:0%
+we could discuss of course examples
+everywhere<00:05:53.349><c> but</c><00:05:54.349><c> in</c><00:05:54.919><c> the</c><00:05:54.979><c> case</c><00:05:55.160><c> of</c><00:05:55.340><c> seasonal</c>
+
+00:05:55.920 --> 00:05:55.930 align:start position:0%
+everywhere but in the case of seasonal
+ 
+
+00:05:55.930 --> 00:05:59.080 align:start position:0%
+everywhere but in the case of seasonal
+patterns<00:05:56.930><c> there</c><00:05:57.349><c> are</c><00:05:57.440><c> tons</c><00:05:58.250><c> of</c><00:05:58.400><c> publications</c>
+
+00:05:59.080 --> 00:05:59.090 align:start position:0%
+patterns there are tons of publications
+ 
+
+00:05:59.090 --> 00:06:03.550 align:start position:0%
+patterns there are tons of publications
+and<00:05:59.389><c> almanacs</c><00:06:00.080><c> that</c><00:06:00.830><c> promote</c><00:06:01.340><c> ideas</c><00:06:01.520><c> like</c><00:06:02.560><c> do</c>
+
+00:06:03.550 --> 00:06:03.560 align:start position:0%
+and almanacs that promote ideas like do
+ 
+
+00:06:03.560 --> 00:06:07.000 align:start position:0%
+and almanacs that promote ideas like do
+not<00:06:03.680><c> buy</c><00:06:03.889><c> stocks</c><00:06:04.310><c> on</c><00:06:04.460><c> Monday</c><00:06:04.820><c> or</c><00:06:05.650><c> buy</c><00:06:06.650><c> stocks</c>
+
+00:06:07.000 --> 00:06:07.010 align:start position:0%
+not buy stocks on Monday or buy stocks
+ 
+
+00:06:07.010 --> 00:06:09.370 align:start position:0%
+not buy stocks on Monday or buy stocks
+in<00:06:07.130><c> in</c><00:06:07.250><c> spring</c><00:06:07.820><c> or</c><00:06:08.120><c> buy</c><00:06:08.900><c> stocks</c><00:06:09.260><c> in</c>
+
+00:06:09.370 --> 00:06:09.380 align:start position:0%
+in in spring or buy stocks in
+ 
+
+00:06:09.380 --> 00:06:11.650 align:start position:0%
+in in spring or buy stocks in
+presidential<00:06:09.740><c> years</c><00:06:09.950><c> there</c><00:06:10.789><c> are</c><00:06:10.880><c> all</c><00:06:11.090><c> sorts</c>
+
+00:06:11.650 --> 00:06:11.660 align:start position:0%
+presidential years there are all sorts
+ 
+
+00:06:11.660 --> 00:06:15.700 align:start position:0%
+presidential years there are all sorts
+of<00:06:11.780><c> rules</c><00:06:13.419><c> associated</c><00:06:14.419><c> with</c><00:06:14.900><c> particular</c>
+
+00:06:15.700 --> 00:06:15.710 align:start position:0%
+of rules associated with particular
+ 
+
+00:06:15.710 --> 00:06:18.550 align:start position:0%
+of rules associated with particular
+piece<00:06:16.370><c> of</c><00:06:16.610><c> the</c><00:06:16.729><c> year</c><00:06:16.940><c> so</c><00:06:17.660><c> for</c><00:06:18.080><c> instance</c><00:06:18.380><c> let's</c>
+
+00:06:18.550 --> 00:06:18.560 align:start position:0%
+piece of the year so for instance let's
+ 
+
+00:06:18.560 --> 00:06:23.320 align:start position:0%
+piece of the year so for instance let's
+suppose<00:06:18.889><c> that</c><00:06:19.220><c> I</c><00:06:19.490><c> come</c><00:06:19.820><c> up</c><00:06:20.000><c> with</c><00:06:20.889><c> some</c><00:06:22.330><c> rule</c>
+
+00:06:23.320 --> 00:06:23.330 align:start position:0%
+suppose that I come up with some rule
+ 
+
+00:06:23.330 --> 00:06:25.390 align:start position:0%
+suppose that I come up with some rule
+that<00:06:23.360><c> tells</c><00:06:23.900><c> you</c><00:06:24.169><c> buy</c><00:06:24.530><c> stocks</c><00:06:24.860><c> on</c><00:06:24.979><c> Monday</c><00:06:25.280><c> and</c>
+
+00:06:25.390 --> 00:06:25.400 align:start position:0%
+that tells you buy stocks on Monday and
+ 
+
+00:06:25.400 --> 00:06:28.480 align:start position:0%
+that tells you buy stocks on Monday and
+sell<00:06:25.580><c> them</c><00:06:25.760><c> on</c><00:06:25.880><c> Wednesday</c><00:06:26.360><c> I</c><00:06:26.800><c> try</c><00:06:27.800><c> that</c><00:06:28.010><c> and</c>
+
+00:06:28.480 --> 00:06:28.490 align:start position:0%
+sell them on Wednesday I try that and
+ 
+
+00:06:28.490 --> 00:06:31.089 align:start position:0%
+sell them on Wednesday I try that and
+performance<00:06:29.090><c> is</c><00:06:29.180><c> bad</c><00:06:29.389><c> and</c><00:06:29.840><c> then</c><00:06:30.139><c> I</c><00:06:30.229><c> say</c><00:06:30.590><c> well</c><00:06:31.070><c> I</c>
+
+00:06:31.089 --> 00:06:31.099 align:start position:0%
+performance is bad and then I say well I
+ 
+
+00:06:31.099 --> 00:06:33.420 align:start position:0%
+performance is bad and then I say well I
+will<00:06:31.250><c> try</c><00:06:31.550><c> buy</c><00:06:31.910><c> stock</c><00:06:32.270><c> some</c><00:06:32.510><c> on</c><00:06:32.840><c> Tuesday</c>
+
+00:06:33.420 --> 00:06:33.430 align:start position:0%
+will try buy stock some on Tuesday
+ 
+
+00:06:33.430 --> 00:06:37.700 align:start position:0%
+will try buy stock some on Tuesday
+doubling<00:06:34.430><c> down</c><00:06:34.610><c> on</c><00:06:35.060><c> Wednesday</c><00:06:35.479><c> and</c>
+
+00:06:37.700 --> 00:06:37.710 align:start position:0%
+doubling down on Wednesday and
+ 
+
+00:06:37.710 --> 00:06:40.830 align:start position:0%
+doubling down on Wednesday and
+going<00:06:38.710><c> along</c><00:06:38.890><c> on</c><00:06:39.100><c> Thursday</c><00:06:39.610><c> and</c><00:06:39.790><c> that</c><00:06:40.540><c> doesn't</c>
+
+00:06:40.830 --> 00:06:40.840 align:start position:0%
+going along on Thursday and that doesn't
+ 
+
+00:06:40.840 --> 00:06:43.350 align:start position:0%
+going along on Thursday and that doesn't
+work<00:06:40.990><c> and</c><00:06:41.560><c> then</c><00:06:41.740><c> I</c><00:06:41.830><c> say</c><00:06:42.070><c> well</c><00:06:42.580><c> I</c><00:06:42.610><c> should</c><00:06:43.090><c> I</c>
+
+00:06:43.350 --> 00:06:43.360 align:start position:0%
+work and then I say well I should I
+ 
+
+00:06:43.360 --> 00:06:46.830 align:start position:0%
+work and then I say well I should I
+should<00:06:43.600><c> go</c><00:06:44.230><c> along</c><00:06:44.500><c> stocks</c><00:06:44.890><c> every</c><00:06:45.550><c> even</c><00:06:46.090><c> day</c><00:06:46.540><c> of</c>
+
+00:06:46.830 --> 00:06:46.840 align:start position:0%
+should go along stocks every even day of
+ 
+
+00:06:46.840 --> 00:06:51.530 align:start position:0%
+should go along stocks every even day of
+the<00:06:47.620><c> month</c><00:06:48.010><c> and</c><00:06:48.280><c> that</c><00:06:48.570><c> happens</c><00:06:49.570><c> to</c><00:06:49.690><c> work</c><00:06:49.840><c> now</c>
+
+00:06:51.530 --> 00:06:51.540 align:start position:0%
+the month and that happens to work now
+ 
+
+00:06:51.540 --> 00:06:53.400 align:start position:0%
+the month and that happens to work now
+eventually<00:06:52.540><c> there</c><00:06:52.930><c> are</c><00:06:53.020><c> so</c><00:06:53.230><c> many</c>
+
+00:06:53.400 --> 00:06:53.410 align:start position:0%
+eventually there are so many
+ 
+
+00:06:53.410 --> 00:06:55.290 align:start position:0%
+eventually there are so many
+combinations<00:06:53.800><c> that</c><00:06:54.340><c> eventually</c><00:06:54.700><c> there</c><00:06:55.180><c> will</c>
+
+00:06:55.290 --> 00:06:55.300 align:start position:0%
+combinations that eventually there will
+ 
+
+00:06:55.300 --> 00:06:58.110 align:start position:0%
+combinations that eventually there will
+be<00:06:55.360><c> one</c><00:06:55.720><c> combination</c><00:06:56.380><c> that</c><00:06:56.530><c> works</c><00:06:56.770><c> and</c><00:06:57.550><c> it</c>
+
+00:06:58.110 --> 00:06:58.120 align:start position:0%
+be one combination that works and it
+ 
+
+00:06:58.120 --> 00:07:00.720 align:start position:0%
+be one combination that works and it
+works<00:06:58.510><c> not</c><00:06:58.990><c> because</c><00:06:59.230><c> there</c><00:06:59.800><c> is</c><00:06:59.920><c> a</c><00:07:00.100><c> signal</c>
+
+00:07:00.720 --> 00:07:00.730 align:start position:0%
+works not because there is a signal
+ 
+
+00:07:00.730 --> 00:07:03.480 align:start position:0%
+works not because there is a signal
+under<00:07:01.000><c> that</c><00:07:01.870><c> behind</c><00:07:02.620><c> that</c><00:07:02.830><c> behavior</c>
+
+00:07:03.480 --> 00:07:03.490 align:start position:0%
+under that behind that behavior
+ 
+
+00:07:03.490 --> 00:07:05.280 align:start position:0%
+under that behind that behavior
+it<00:07:03.730><c> just</c><00:07:03.970><c> works</c><00:07:04.210><c> because</c><00:07:04.600><c> something</c><00:07:05.110><c> must</c>
+
+00:07:05.280 --> 00:07:05.290 align:start position:0%
+it just works because something must
+ 
+
+00:07:05.290 --> 00:07:08.180 align:start position:0%
+it just works because something must
+work<00:07:05.500><c> there</c><00:07:06.190><c> is</c><00:07:06.310><c> there</c><00:07:06.880><c> are</c><00:07:07.000><c> random</c><00:07:07.420><c> patterns</c>
+
+00:07:08.180 --> 00:07:08.190 align:start position:0%
+work there is there are random patterns
+ 
+
+00:07:08.190 --> 00:07:11.370 align:start position:0%
+work there is there are random patterns
+in<00:07:09.190><c> nature</c><00:07:09.250><c> and</c><00:07:09.910><c> eventually</c><00:07:10.750><c> something</c><00:07:11.350><c> will</c>
+
+00:07:11.370 --> 00:07:11.380 align:start position:0%
+in nature and eventually something will
+ 
+
+00:07:11.380 --> 00:07:14.400 align:start position:0%
+in nature and eventually something will
+appear<00:07:12.220><c> to</c><00:07:12.400><c> be</c><00:07:12.430><c> profitable</c><00:07:13.210><c> the</c><00:07:13.840><c> way</c><00:07:14.050><c> to</c><00:07:14.110><c> did</c>
+
+00:07:14.400 --> 00:07:14.410 align:start position:0%
+appear to be profitable the way to did
+ 
+
+00:07:14.410 --> 00:07:17.280 align:start position:0%
+appear to be profitable the way to did
+to<00:07:14.680><c> distinguish</c><00:07:15.520><c> between</c><00:07:15.640><c> these</c><00:07:16.290><c> random</c>
+
+00:07:17.280 --> 00:07:17.290 align:start position:0%
+to distinguish between these random
+ 
+
+00:07:17.290 --> 00:07:19.470 align:start position:0%
+to distinguish between these random
+patterns<00:07:17.680><c> and</c><00:07:17.890><c> signal</c><00:07:18.280><c> is</c><00:07:18.760><c> to</c><00:07:18.940><c> take</c><00:07:19.180><c> into</c>
+
+00:07:19.470 --> 00:07:19.480 align:start position:0%
+patterns and signal is to take into
+ 
+
+00:07:19.480 --> 00:07:22.080 align:start position:0%
+patterns and signal is to take into
+account<00:07:19.720><c> the</c><00:07:20.230><c> number</c><00:07:20.560><c> of</c><00:07:20.920><c> trials</c><00:07:21.580><c> that</c><00:07:21.760><c> took</c>
+
+00:07:22.080 --> 00:07:22.090 align:start position:0%
+account the number of trials that took
+ 
+
+00:07:22.090 --> 00:07:24.840 align:start position:0%
+account the number of trials that took
+to<00:07:22.450><c> uncover</c><00:07:23.200><c> that</c><00:07:23.620><c> result</c><00:07:24.010><c> why</c><00:07:24.550><c> is</c><00:07:24.610><c> this</c>
+
+00:07:24.840 --> 00:07:24.850 align:start position:0%
+to uncover that result why is this
+ 
+
+00:07:24.850 --> 00:07:27.330 align:start position:0%
+to uncover that result why is this
+research<00:07:25.210><c> relevant</c><00:07:25.510><c> to</c><00:07:25.870><c> investors</c><00:07:26.380><c> it's</c>
+
+00:07:27.330 --> 00:07:27.340 align:start position:0%
+research relevant to investors it's
+ 
+
+00:07:27.340 --> 00:07:30.930 align:start position:0%
+research relevant to investors it's
+relevant<00:07:27.640><c> because</c><00:07:29.460><c> essentially</c><00:07:30.460><c> what</c><00:07:30.700><c> we</c><00:07:30.910><c> are</c>
+
+00:07:30.930 --> 00:07:30.940 align:start position:0%
+relevant because essentially what we are
+ 
+
+00:07:30.940 --> 00:07:34.830 align:start position:0%
+relevant because essentially what we are
+saying<00:07:31.060><c> is</c><00:07:31.630><c> that</c><00:07:32.100><c> most</c><00:07:33.100><c> practiced</c><00:07:33.880><c> publish</c><00:07:34.600><c> in</c>
+
+00:07:34.830 --> 00:07:34.840 align:start position:0%
+saying is that most practiced publish in
+ 
+
+00:07:34.840 --> 00:07:37.620 align:start position:0%
+saying is that most practiced publish in
+the<00:07:34.900><c> academic</c><00:07:35.770><c> or</c><00:07:36.010><c> practitioners</c><00:07:37.000><c> literature</c>
+
+00:07:37.620 --> 00:07:37.630 align:start position:0%
+the academic or practitioners literature
+ 
+
+00:07:37.630 --> 00:07:40.770 align:start position:0%
+the academic or practitioners literature
+do<00:07:38.560><c> not</c><00:07:38.920><c> disclose</c><00:07:39.700><c> the</c><00:07:40.030><c> number</c><00:07:40.210><c> of</c><00:07:40.510><c> tasks</c>
+
+00:07:40.770 --> 00:07:40.780 align:start position:0%
+do not disclose the number of tasks
+ 
+
+00:07:40.780 --> 00:07:43.380 align:start position:0%
+do not disclose the number of tasks
+involved<00:07:41.590><c> in</c><00:07:41.740><c> a</c><00:07:41.800><c> discovery</c><00:07:42.390><c> these</c>
+
+00:07:43.380 --> 00:07:43.390 align:start position:0%
+involved in a discovery these
+ 
+
+00:07:43.390 --> 00:07:45.630 align:start position:0%
+involved in a discovery these
+discoveries<00:07:44.080><c> may</c><00:07:44.380><c> be</c><00:07:44.440><c> legitimate</c>
+
+00:07:45.630 --> 00:07:45.640 align:start position:0%
+discoveries may be legitimate
+ 
+
+00:07:45.640 --> 00:07:48.480 align:start position:0%
+discoveries may be legitimate
+however<00:07:46.480><c> the</c><00:07:46.960><c> empirical</c><00:07:47.530><c> evidence</c><00:07:47.770><c> presented</c>
+
+00:07:48.480 --> 00:07:48.490 align:start position:0%
+however the empirical evidence presented
+ 
+
+00:07:48.490 --> 00:07:51.300 align:start position:0%
+however the empirical evidence presented
+is<00:07:48.970><c> not</c><00:07:49.330><c> supported</c><00:07:49.870><c> there</c><00:07:50.710><c> is</c><00:07:50.830><c> no</c><00:07:51.040><c> way</c><00:07:51.280><c> to</c>
+
+00:07:51.300 --> 00:07:51.310 align:start position:0%
+is not supported there is no way to
+ 
+
+00:07:51.310 --> 00:07:53.880 align:start position:0%
+is not supported there is no way to
+determine<00:07:51.750><c> whether</c><00:07:52.750><c> a</c><00:07:53.200><c> discovery</c><00:07:53.830><c> is</c>
+
+00:07:53.880 --> 00:07:53.890 align:start position:0%
+determine whether a discovery is
+ 
+
+00:07:53.890 --> 00:07:55.590 align:start position:0%
+determine whether a discovery is
+legitimate<00:07:54.430><c> unless</c><00:07:54.910><c> we</c><00:07:55.180><c> know</c><00:07:55.390><c> the</c>
+
+00:07:55.590 --> 00:07:55.600 align:start position:0%
+legitimate unless we know the
+ 
+
+00:07:55.600 --> 00:07:57.990 align:start position:0%
+legitimate unless we know the
+circumstances<00:07:56.020><c> of</c><00:07:56.620><c> the</c><00:07:56.740><c> discovery</c><00:07:57.310><c> how</c><00:07:57.730><c> many</c>
+
+00:07:57.990 --> 00:07:58.000 align:start position:0%
+circumstances of the discovery how many
+ 
+
+00:07:58.000 --> 00:08:00.590 align:start position:0%
+circumstances of the discovery how many
+trials<00:07:58.390><c> it</c><00:07:58.960><c> took</c><00:07:59.320><c> to</c><00:07:59.620><c> reach</c><00:08:00.070><c> that</c><00:08:00.370><c> conclusion</c>
+
+00:08:00.590 --> 00:08:00.600 align:start position:0%
+trials it took to reach that conclusion
+ 
+
+00:08:00.600 --> 00:08:03.180 align:start position:0%
+trials it took to reach that conclusion
+these<00:08:01.600><c> particularly</c><00:08:02.320><c> problematic</c><00:08:02.680><c> in</c>
+
+00:08:03.180 --> 00:08:03.190 align:start position:0%
+these particularly problematic in
+ 
+
+00:08:03.190 --> 00:08:05.760 align:start position:0%
+these particularly problematic in
+finance<00:08:03.670><c> because</c><00:08:03.940><c> as</c><00:08:04.150><c> I</c><00:08:04.270><c> said</c><00:08:04.330><c> the</c><00:08:05.230><c> ratio</c><00:08:05.740><c> of</c>
+
+00:08:05.760 --> 00:08:05.770 align:start position:0%
+finance because as I said the ratio of
+ 
+
+00:08:05.770 --> 00:08:09.510 align:start position:0%
+finance because as I said the ratio of
+signal<00:08:06.310><c> to</c><00:08:06.460><c> noise</c><00:08:06.490><c> is</c><00:08:06.970><c> very</c><00:08:07.030><c> low</c><00:08:07.900><c> and</c><00:08:08.520><c> most</c>
+
+00:08:09.510 --> 00:08:09.520 align:start position:0%
+signal to noise is very low and most
+ 
+
+00:08:09.520 --> 00:08:12.330 align:start position:0%
+signal to noise is very low and most
+likely<00:08:09.960><c> discoveries</c><00:08:10.960><c> are</c><00:08:11.350><c> coming</c><00:08:11.920><c> from</c><00:08:12.070><c> noise</c>
+
+00:08:12.330 --> 00:08:12.340 align:start position:0%
+likely discoveries are coming from noise
+ 
+
+00:08:12.340 --> 00:08:14.930 align:start position:0%
+likely discoveries are coming from noise
+not<00:08:12.670><c> from</c><00:08:12.880><c> signal</c><00:08:13.270><c> so</c><00:08:13.720><c> it</c><00:08:14.020><c> is</c><00:08:14.170><c> key</c><00:08:14.830><c> that</c>
+
+00:08:14.930 --> 00:08:14.940 align:start position:0%
+not from signal so it is key that
+ 
+
+00:08:14.940 --> 00:08:18.810 align:start position:0%
+not from signal so it is key that
+whenever<00:08:15.940><c> an</c><00:08:16.450><c> investor</c><00:08:17.110><c> receives</c><00:08:17.800><c> a</c><00:08:18.160><c> backtest</c>
+
+00:08:18.810 --> 00:08:18.820 align:start position:0%
+whenever an investor receives a backtest
+ 
+
+00:08:18.820 --> 00:08:21.870 align:start position:0%
+whenever an investor receives a backtest
+this<00:08:19.510><c> investor</c><00:08:20.080><c> asks</c><00:08:20.710><c> questions</c><00:08:21.280><c> about</c><00:08:21.730><c> these</c>
+
+00:08:21.870 --> 00:08:21.880 align:start position:0%
+this investor asks questions about these
+ 
+
+00:08:21.880 --> 00:08:25.260 align:start position:0%
+this investor asks questions about these
+factors<00:08:22.360><c> how</c><00:08:22.600><c> many</c><00:08:22.840><c> trials</c><00:08:23.260><c> he</c><00:08:23.380><c> took</c><00:08:24.150><c> what</c><00:08:25.150><c> is</c>
+
+00:08:25.260 --> 00:08:25.270 align:start position:0%
+factors how many trials he took what is
+ 
+
+00:08:25.270 --> 00:08:28.770 align:start position:0%
+factors how many trials he took what is
+the<00:08:25.360><c> correlation</c><00:08:25.630><c> between</c><00:08:25.900><c> the</c><00:08:26.260><c> trials</c><00:08:27.780><c> what</c>
+
+00:08:28.770 --> 00:08:28.780 align:start position:0%
+the correlation between the trials what
+ 
+
+00:08:28.780 --> 00:08:31.260 align:start position:0%
+the correlation between the trials what
+is<00:08:28.900><c> the</c><00:08:29.080><c> the</c><00:08:29.440><c> Sharpe</c><00:08:29.680><c> ratio</c><00:08:29.850><c> if</c><00:08:30.850><c> the</c><00:08:31.030><c> Sharpe</c>
+
+00:08:31.260 --> 00:08:31.270 align:start position:0%
+is the the Sharpe ratio if the Sharpe
+ 
+
+00:08:31.270 --> 00:08:32.940 align:start position:0%
+is the the Sharpe ratio if the Sharpe
+ratio<00:08:31.330><c> publish</c><00:08:31.870><c> that</c><00:08:32.110><c> the</c><00:08:32.410><c> best</c><00:08:32.650><c> of</c><00:08:32.830><c> the</c>
+
+00:08:32.940 --> 00:08:32.950 align:start position:0%
+ratio publish that the best of the
+ 
+
+00:08:32.950 --> 00:08:34.800 align:start position:0%
+ratio publish that the best of the
+Sharpe<00:08:33.160><c> ratios</c><00:08:33.460><c> or</c><00:08:33.640><c> some</c><00:08:33.940><c> average</c><00:08:34.480><c> of</c><00:08:34.660><c> the</c>
+
+00:08:34.800 --> 00:08:34.810 align:start position:0%
+Sharpe ratios or some average of the
+ 
+
+00:08:34.810 --> 00:08:36.540 align:start position:0%
+Sharpe ratios or some average of the
+Sharpe<00:08:35.020><c> ratios</c><00:08:35.290><c> to</c><00:08:35.530><c> see</c><00:08:35.710><c> if</c><00:08:35.770><c> there</c><00:08:36.010><c> is</c><00:08:36.160><c> the</c>
+
+00:08:36.540 --> 00:08:36.550 align:start position:0%
+Sharpe ratios to see if there is the
+ 
+
+00:08:36.550 --> 00:08:37.350 align:start position:0%
+Sharpe ratios to see if there is the
+selection<00:08:36.880><c> bias</c>
+
+00:08:37.350 --> 00:08:37.360 align:start position:0%
+selection bias
+ 
+
+00:08:37.360 --> 00:08:40.200 align:start position:0%
+selection bias
+what<00:08:38.260><c> should</c><00:08:38.530><c> the</c><00:08:38.770><c> investor</c><00:08:39.340><c> tell</c><00:08:39.670><c> the</c>
+
+00:08:40.200 --> 00:08:40.210 align:start position:0%
+what should the investor tell the
+ 
+
+00:08:40.210 --> 00:08:42.690 align:start position:0%
+what should the investor tell the
+manager<00:08:40.810><c> who</c><00:08:41.170><c> doesn't</c><00:08:41.440><c> have</c><00:08:41.560><c> answers</c><00:08:41.830><c> well</c>
+
+00:08:42.690 --> 00:08:42.700 align:start position:0%
+manager who doesn't have answers well
+ 
+
+00:08:42.700 --> 00:08:46.050 align:start position:0%
+manager who doesn't have answers well
+not<00:08:43.570><c> having</c><00:08:43.750><c> an</c><00:08:43.960><c> answer</c><00:08:44.080><c> means</c><00:08:44.500><c> that</c><00:08:45.060><c> most</c>
+
+00:08:46.050 --> 00:08:46.060 align:start position:0%
+not having an answer means that most
+ 
+
+00:08:46.060 --> 00:08:49.500 align:start position:0%
+not having an answer means that most
+likely<00:08:46.570><c> that</c><00:08:47.170><c> portfolio</c><00:08:47.770><c> manager</c><00:08:48.370><c> came</c><00:08:49.300><c> up</c>
+
+00:08:49.500 --> 00:08:49.510 align:start position:0%
+likely that portfolio manager came up
+ 
+
+00:08:49.510 --> 00:08:51.520 align:start position:0%
+likely that portfolio manager came up
+with<00:08:49.690><c> the</c><00:08:49.810><c> discovery</c><00:08:50.320><c> without</c><00:08:50.770><c> control</c>
+
+00:08:51.520 --> 00:08:51.530 align:start position:0%
+with the discovery without control
+ 
+
+00:08:51.530 --> 00:08:54.580 align:start position:0%
+with the discovery without control
+the<00:08:52.250><c> circumstances</c><00:08:53.000><c> of</c><00:08:53.120><c> the</c><00:08:53.270><c> discovery</c><00:08:53.870><c> which</c>
+
+00:08:54.580 --> 00:08:54.590 align:start position:0%
+the circumstances of the discovery which
+ 
+
+00:08:54.590 --> 00:08:58.150 align:start position:0%
+the circumstances of the discovery which
+is<00:08:54.830><c> a</c><00:08:54.860><c> which</c><00:08:55.850><c> normally</c><00:08:56.480><c> would</c><00:08:57.470><c> mean</c><00:08:57.680><c> that</c><00:08:58.010><c> this</c>
+
+00:08:58.150 --> 00:08:58.160 align:start position:0%
+is a which normally would mean that this
+ 
+
+00:08:58.160 --> 00:08:59.710 align:start position:0%
+is a which normally would mean that this
+is<00:08:58.370><c> probably</c><00:08:58.580><c> the</c><00:08:58.760><c> result</c><00:08:59.000><c> of</c><00:08:59.360><c> forward</c>
+
+00:08:59.710 --> 00:08:59.720 align:start position:0%
+is probably the result of forward
+ 
+
+00:08:59.720 --> 00:09:01.750 align:start position:0%
+is probably the result of forward
+feeding<00:09:00.050><c> what</c><00:09:00.620><c> about</c><00:09:00.800><c> the</c><00:09:00.920><c> holdout</c><00:09:01.370><c> method</c>
+
+00:09:01.750 --> 00:09:01.760 align:start position:0%
+feeding what about the holdout method
+ 
+
+00:09:01.760 --> 00:09:03.640 align:start position:0%
+feeding what about the holdout method
+researchers<00:09:02.300><c> use</c><00:09:02.510><c> this</c><00:09:02.660><c> to</c><00:09:02.870><c> validate</c><00:09:03.020><c> their</c>
+
+00:09:03.640 --> 00:09:03.650 align:start position:0%
+researchers use this to validate their
+ 
+
+00:09:03.650 --> 00:09:07.450 align:start position:0%
+researchers use this to validate their
+tests<00:09:04.310><c> does</c><00:09:05.150><c> it</c><00:09:05.300><c> does</c><00:09:05.630><c> it</c><00:09:05.660><c> does</c><00:09:06.170><c> it</c><00:09:06.500><c> correct</c>
+
+00:09:07.450 --> 00:09:07.460 align:start position:0%
+tests does it does it does it correct
+ 
+
+00:09:07.460 --> 00:09:09.820 align:start position:0%
+tests does it does it does it correct
+for<00:09:07.730><c> overfitting</c><00:09:08.120><c> that's</c><00:09:09.020><c> a</c><00:09:09.140><c> great</c><00:09:09.380><c> question</c>
+
+00:09:09.820 --> 00:09:09.830 align:start position:0%
+for overfitting that's a great question
+ 
+
+00:09:09.830 --> 00:09:11.650 align:start position:0%
+for overfitting that's a great question
+and<00:09:10.070><c> in</c><00:09:10.310><c> fact</c><00:09:10.550><c> is</c><00:09:10.820><c> one</c><00:09:11.090><c> of</c><00:09:11.240><c> the</c><00:09:11.330><c> biggest</c>
+
+00:09:11.650 --> 00:09:11.660 align:start position:0%
+and in fact is one of the biggest
+ 
+
+00:09:11.660 --> 00:09:14.080 align:start position:0%
+and in fact is one of the biggest
+misunderstandings<00:09:12.400><c> in</c><00:09:13.400><c> empirical</c><00:09:13.760><c> research</c>
+
+00:09:14.080 --> 00:09:14.090 align:start position:0%
+misunderstandings in empirical research
+ 
+
+00:09:14.090 --> 00:09:16.240 align:start position:0%
+misunderstandings in empirical research
+in<00:09:14.450><c> finance</c><00:09:14.870><c> the</c><00:09:15.080><c> whole</c><00:09:15.650><c> that</c><00:09:15.830><c> method</c>
+
+00:09:16.240 --> 00:09:16.250 align:start position:0%
+in finance the whole that method
+ 
+
+00:09:16.250 --> 00:09:20.020 align:start position:0%
+in finance the whole that method
+consists<00:09:17.120><c> in</c><00:09:17.270><c> splitting</c><00:09:17.990><c> a</c><00:09:18.380><c> sample</c><00:09:19.100><c> into</c><00:09:19.610><c> two</c>
+
+00:09:20.020 --> 00:09:20.030 align:start position:0%
+consists in splitting a sample into two
+ 
+
+00:09:20.030 --> 00:09:22.840 align:start position:0%
+consists in splitting a sample into two
+or<00:09:20.180><c> more</c><00:09:20.210><c> subsamples</c><00:09:21.020><c> where</c><00:09:21.830><c> one</c><00:09:22.430><c> sub</c><00:09:22.640><c> sample</c>
+
+00:09:22.840 --> 00:09:22.850 align:start position:0%
+or more subsamples where one sub sample
+ 
+
+00:09:22.850 --> 00:09:25.600 align:start position:0%
+or more subsamples where one sub sample
+is<00:09:23.330><c> used</c><00:09:23.720><c> for</c><00:09:24.050><c> training</c><00:09:24.500><c> the</c><00:09:24.890><c> model</c><00:09:25.250><c> and</c>
+
+00:09:25.600 --> 00:09:25.610 align:start position:0%
+is used for training the model and
+ 
+
+00:09:25.610 --> 00:09:28.240 align:start position:0%
+is used for training the model and
+another<00:09:26.300><c> sub</c><00:09:26.870><c> sample</c><00:09:27.110><c> is</c><00:09:27.560><c> used</c><00:09:27.800><c> for</c><00:09:27.980><c> testing</c>
+
+00:09:28.240 --> 00:09:28.250 align:start position:0%
+another sub sample is used for testing
+ 
+
+00:09:28.250 --> 00:09:31.300 align:start position:0%
+another sub sample is used for testing
+what<00:09:29.030><c> we</c><00:09:29.180><c> have</c><00:09:29.360><c> learned</c><00:09:30.080><c> indeed</c><00:09:30.680><c> in</c><00:09:30.950><c> the</c><00:09:31.070><c> first</c>
+
+00:09:31.300 --> 00:09:31.310 align:start position:0%
+what we have learned indeed in the first
+ 
+
+00:09:31.310 --> 00:09:34.870 align:start position:0%
+what we have learned indeed in the first
+sub<00:09:31.490><c> sample</c><00:09:32.560><c> this</c><00:09:33.560><c> is</c><00:09:33.620><c> a</c><00:09:33.830><c> procedure</c><00:09:34.430><c> that</c><00:09:34.730><c> is</c>
+
+00:09:34.870 --> 00:09:34.880 align:start position:0%
+sub sample this is a procedure that is
+ 
+
+00:09:34.880 --> 00:09:37.150 align:start position:0%
+sub sample this is a procedure that is
+helpful<00:09:35.390><c> in</c><00:09:35.600><c> a</c><00:09:35.750><c> variety</c><00:09:35.930><c> of</c><00:09:36.290><c> settings</c><00:09:36.560><c> and</c><00:09:36.920><c> for</c>
+
+00:09:37.150 --> 00:09:37.160 align:start position:0%
+helpful in a variety of settings and for
+ 
+
+00:09:37.160 --> 00:09:40.000 align:start position:0%
+helpful in a variety of settings and for
+some<00:09:37.370><c> purposes</c><00:09:37.820><c> but</c><00:09:38.450><c> does</c><00:09:39.050><c> not</c><00:09:39.350><c> prevent</c>
+
+00:09:40.000 --> 00:09:40.010 align:start position:0%
+some purposes but does not prevent
+ 
+
+00:09:40.010 --> 00:09:43.240 align:start position:0%
+some purposes but does not prevent
+overfitting<00:09:40.970><c> and</c><00:09:41.390><c> the</c><00:09:41.870><c> reason</c><00:09:42.170><c> is</c><00:09:42.260><c> this</c><00:09:42.470><c> all</c>
+
+00:09:43.240 --> 00:09:43.250 align:start position:0%
+overfitting and the reason is this all
+ 
+
+00:09:43.250 --> 00:09:45.610 align:start position:0%
+overfitting and the reason is this all
+that<00:09:43.280><c> does</c><00:09:43.910><c> not</c><00:09:44.120><c> control</c><00:09:44.630><c> for</c><00:09:45.170><c> the</c><00:09:45.260><c> number</c><00:09:45.590><c> of</c>
+
+00:09:45.610 --> 00:09:45.620 align:start position:0%
+that does not control for the number of
+ 
+
+00:09:45.620 --> 00:09:48.940 align:start position:0%
+that does not control for the number of
+trials<00:09:46.130><c> involved</c><00:09:46.580><c> in</c><00:09:47.090><c> a</c><00:09:47.240><c> particular</c><00:09:47.900><c> outcome</c>
+
+00:09:48.940 --> 00:09:48.950 align:start position:0%
+trials involved in a particular outcome
+ 
+
+00:09:48.950 --> 00:09:53.290 align:start position:0%
+trials involved in a particular outcome
+and<00:09:49.190><c> as</c><00:09:49.850><c> a</c><00:09:49.970><c> result</c><00:09:50.320><c> hold</c><00:09:51.320><c> that</c><00:09:51.530><c> itself</c><00:09:52.300><c> falls</c>
+
+00:09:53.290 --> 00:09:53.300 align:start position:0%
+and as a result hold that itself falls
+ 
+
+00:09:53.300 --> 00:09:55.780 align:start position:0%
+and as a result hold that itself falls
+victim<00:09:53.570><c> of</c><00:09:53.960><c> overfitting</c><00:09:54.560><c> and</c><00:09:55.370><c> what</c><00:09:55.640><c> about</c>
+
+00:09:55.780 --> 00:09:55.790 align:start position:0%
+victim of overfitting and what about
+ 
+
+00:09:55.790 --> 00:09:57.700 align:start position:0%
+victim of overfitting and what about
+memory<00:09:56.270><c> effects</c><00:09:56.690><c> you</c><00:09:56.870><c> talk</c><00:09:57.080><c> about</c><00:09:57.230><c> that</c><00:09:57.500><c> a</c><00:09:57.530><c> lot</c>
+
+00:09:57.700 --> 00:09:57.710 align:start position:0%
+memory effects you talk about that a lot
+ 
+
+00:09:57.710 --> 00:09:59.560 align:start position:0%
+memory effects you talk about that a lot
+in<00:09:57.860><c> your</c><00:09:57.920><c> paper</c><00:09:58.160><c> let</c><00:09:59.030><c> me</c><00:09:59.150><c> explain</c><00:09:59.420><c> the</c>
+
+00:09:59.560 --> 00:09:59.570 align:start position:0%
+in your paper let me explain the
+ 
+
+00:09:59.570 --> 00:10:01.480 align:start position:0%
+in your paper let me explain the
+difference<00:09:59.870><c> between</c><00:09:59.930><c> memory</c><00:10:00.440><c> effects</c><00:10:00.980><c> and</c><00:10:01.310><c> no</c>
+
+00:10:01.480 --> 00:10:01.490 align:start position:0%
+difference between memory effects and no
+ 
+
+00:10:01.490 --> 00:10:04.480 align:start position:0%
+difference between memory effects and no
+memory<00:10:01.760><c> effects</c><00:10:02.240><c> with</c><00:10:02.420><c> an</c><00:10:02.540><c> example</c><00:10:02.839><c> a</c><00:10:03.490><c> coin</c>
+
+00:10:04.480 --> 00:10:04.490 align:start position:0%
+memory effects with an example a coin
+ 
+
+00:10:04.490 --> 00:10:07.960 align:start position:0%
+memory effects with an example a coin
+whether<00:10:04.790><c> fur</c><00:10:05.120><c> or</c><00:10:05.300><c> not</c><00:10:05.540><c> has</c><00:10:06.260><c> no</c><00:10:06.560><c> memory</c><00:10:06.980><c> meaning</c>
+
+00:10:07.960 --> 00:10:07.970 align:start position:0%
+whether fur or not has no memory meaning
+ 
+
+00:10:07.970 --> 00:10:11.320 align:start position:0%
+whether fur or not has no memory meaning
+that<00:10:08.180><c> I</c><00:10:08.480><c> can</c><00:10:09.020><c> flip</c><00:10:09.230><c> a</c><00:10:09.290><c> coin</c><00:10:09.560><c> and</c><00:10:09.890><c> I</c><00:10:10.460><c> will</c><00:10:10.700><c> I</c><00:10:11.060><c> I</c>
+
+00:10:11.320 --> 00:10:11.330 align:start position:0%
+that I can flip a coin and I will I I
+ 
+
+00:10:11.330 --> 00:10:14.020 align:start position:0%
+that I can flip a coin and I will I I
+will<00:10:11.930><c> get</c><00:10:12.080><c> some</c><00:10:12.320><c> outcome</c><00:10:12.800><c> and</c><00:10:13.070><c> past</c><00:10:13.580><c> outcomes</c>
+
+00:10:14.020 --> 00:10:14.030 align:start position:0%
+will get some outcome and past outcomes
+ 
+
+00:10:14.030 --> 00:10:16.540 align:start position:0%
+will get some outcome and past outcomes
+are<00:10:14.150><c> not</c><00:10:14.330><c> going</c><00:10:14.720><c> to</c><00:10:14.839><c> condition</c><00:10:15.550><c> future</c>
+
+00:10:16.540 --> 00:10:16.550 align:start position:0%
+are not going to condition future
+ 
+
+00:10:16.550 --> 00:10:20.260 align:start position:0%
+are not going to condition future
+outcomes<00:10:17.089><c> there</c><00:10:17.720><c> is</c><00:10:18.550><c> the</c><00:10:19.550><c> outcomes</c><00:10:20.089><c> are</c>
+
+00:10:20.260 --> 00:10:20.270 align:start position:0%
+outcomes there is the outcomes are
+ 
+
+00:10:20.270 --> 00:10:23.710 align:start position:0%
+outcomes there is the outcomes are
+deleted<00:10:21.080><c> away</c><00:10:21.350><c> so</c><00:10:21.860><c> I</c><00:10:22.160><c> may</c><00:10:22.640><c> get</c><00:10:22.850><c> three</c><00:10:23.300><c> straight</c>
+
+00:10:23.710 --> 00:10:23.720 align:start position:0%
+deleted away so I may get three straight
+ 
+
+00:10:23.720 --> 00:10:27.370 align:start position:0%
+deleted away so I may get three straight
+tails<00:10:24.080><c> and</c><00:10:24.470><c> then</c><00:10:25.370><c> I</c><00:10:25.610><c> will</c><00:10:26.060><c> obtain</c><00:10:26.690><c> some</c><00:10:27.110><c> heads</c>
+
+00:10:27.370 --> 00:10:27.380 align:start position:0%
+tails and then I will obtain some heads
+ 
+
+00:10:27.380 --> 00:10:29.440 align:start position:0%
+tails and then I will obtain some heads
+but<00:10:27.800><c> the</c><00:10:27.920><c> heads</c><00:10:28.100><c> are</c><00:10:28.280><c> not</c><00:10:28.310><c> coming</c><00:10:28.820><c> because</c><00:10:28.970><c> I</c>
+
+00:10:29.440 --> 00:10:29.450 align:start position:0%
+but the heads are not coming because I
+ 
+
+00:10:29.450 --> 00:10:32.290 align:start position:0%
+but the heads are not coming because I
+obtain<00:10:29.780><c> tails</c><00:10:30.080><c> before</c><00:10:30.610><c> outcomes</c><00:10:31.610><c> are</c><00:10:31.760><c> deleted</c>
+
+00:10:32.290 --> 00:10:32.300 align:start position:0%
+obtain tails before outcomes are deleted
+ 
+
+00:10:32.300 --> 00:10:34.840 align:start position:0%
+obtain tails before outcomes are deleted
+away<00:10:32.540><c> so</c><00:10:33.200><c> this</c><00:10:33.589><c> example</c><00:10:33.950><c> of</c><00:10:34.339><c> a</c><00:10:34.520><c> process</c>
+
+00:10:34.840 --> 00:10:34.850 align:start position:0%
+away so this example of a process
+ 
+
+00:10:34.850 --> 00:10:37.240 align:start position:0%
+away so this example of a process
+without<00:10:35.240><c> memory</c><00:10:35.900><c> now</c><00:10:36.589><c> suppose</c><00:10:37.010><c> that</c><00:10:37.040><c> I</c>
+
+00:10:37.240 --> 00:10:37.250 align:start position:0%
+without memory now suppose that I
+ 
+
+00:10:37.250 --> 00:10:41.829 align:start position:0%
+without memory now suppose that I
+introduce<00:10:37.880><c> a</c><00:10:38.089><c> a</c><00:10:38.750><c> microchip</c><00:10:39.850><c> into</c><00:10:40.850><c> the</c><00:10:41.570><c> coin</c>
+
+00:10:41.829 --> 00:10:41.839 align:start position:0%
+introduce a a microchip into the coin
+ 
+
+00:10:41.839 --> 00:10:45.550 align:start position:0%
+introduce a a microchip into the coin
+and<00:10:42.790><c> depending</c><00:10:43.790><c> on</c><00:10:43.880><c> outcomes</c><00:10:44.450><c> now</c><00:10:45.170><c> the</c><00:10:45.230><c> coin</c>
+
+00:10:45.550 --> 00:10:45.560 align:start position:0%
+and depending on outcomes now the coin
+ 
+
+00:10:45.560 --> 00:10:50.800 align:start position:0%
+and depending on outcomes now the coin
+is<00:10:45.950><c> going</c><00:10:46.520><c> to</c><00:10:46.760><c> rebalance</c><00:10:47.120><c> some</c><00:10:47.630><c> mass</c><00:10:47.900><c> to</c><00:10:49.810><c> to</c>
+
+00:10:50.800 --> 00:10:50.810 align:start position:0%
+is going to rebalance some mass to to
+ 
+
+00:10:50.810 --> 00:10:55.690 align:start position:0%
+is going to rebalance some mass to to
+obtain<00:10:52.120><c> some</c><00:10:53.120><c> other</c><00:10:53.740><c> outcome</c><00:10:54.740><c> that</c><00:10:55.160><c> is</c>
+
+00:10:55.690 --> 00:10:55.700 align:start position:0%
+obtain some other outcome that is
+ 
+
+00:10:55.700 --> 00:10:59.620 align:start position:0%
+obtain some other outcome that is
+conditioned<00:10:56.120><c> by</c><00:10:56.150><c> previous</c><00:10:57.040><c> behavior</c><00:10:58.630><c> well</c>
+
+00:10:59.620 --> 00:10:59.630 align:start position:0%
+conditioned by previous behavior well
+ 
+
+00:10:59.630 --> 00:11:02.830 align:start position:0%
+conditioned by previous behavior well
+that's<00:10:59.930><c> the</c><00:11:00.050><c> case</c><00:11:00.260><c> of</c><00:11:00.500><c> memory</c><00:11:01.040><c> and</c>
+
+00:11:02.830 --> 00:11:02.840 align:start position:0%
+that's the case of memory and
+ 
+
+00:11:02.840 --> 00:11:05.740 align:start position:0%
+that's the case of memory and
+the<00:11:03.560><c> difference</c><00:11:04.070><c> in</c><00:11:04.340><c> financial</c><00:11:04.970><c> terms</c><00:11:05.240><c> is</c>
+
+00:11:05.740 --> 00:11:05.750 align:start position:0%
+the difference in financial terms is
+ 
+
+00:11:05.750 --> 00:11:09.730 align:start position:0%
+the difference in financial terms is
+enormous<00:11:06.170><c> because</c><00:11:07.540><c> the</c><00:11:08.540><c> Newton</c><00:11:08.840><c> way</c><00:11:09.140><c> that</c>
+
+00:11:09.730 --> 00:11:09.740 align:start position:0%
+enormous because the Newton way that
+ 
+
+00:11:09.740 --> 00:11:12.150 align:start position:0%
+enormous because the Newton way that
+does<00:11:10.070><c> not</c><00:11:10.340><c> contradict</c><00:11:11.030><c> your</c><00:11:11.270><c> bets</c>
+
+00:11:12.150 --> 00:11:12.160 align:start position:0%
+does not contradict your bets
+ 
+
+00:11:12.160 --> 00:11:17.470 align:start position:0%
+does not contradict your bets
+however<00:11:13.160><c> memory</c><00:11:13.900><c> actively</c><00:11:14.900><c> undoes</c><00:11:15.580><c> what</c><00:11:16.580><c> what</c>
+
+00:11:17.470 --> 00:11:17.480 align:start position:0%
+however memory actively undoes what what
+ 
+
+00:11:17.480 --> 00:11:22.270 align:start position:0%
+however memory actively undoes what what
+has<00:11:18.310><c> according</c><00:11:19.310><c> past</c><00:11:19.550><c> so</c><00:11:20.920><c> investing</c><00:11:21.920><c> in</c><00:11:22.160><c> a</c>
+
+00:11:22.270 --> 00:11:22.280 align:start position:0%
+has according past so investing in a
+ 
+
+00:11:22.280 --> 00:11:27.040 align:start position:0%
+has according past so investing in a
+process<00:11:22.880><c> with</c><00:11:23.660><c> memory</c><00:11:24.140><c> means</c><00:11:24.920><c> that</c><00:11:25.900><c> you</c><00:11:26.900><c> are</c>
+
+00:11:27.040 --> 00:11:27.050 align:start position:0%
+process with memory means that you are
+ 
+
+00:11:27.050 --> 00:11:29.260 align:start position:0%
+process with memory means that you are
+going<00:11:27.290><c> to</c><00:11:27.500><c> obtain</c><00:11:27.590><c> outcomes</c><00:11:28.340><c> that</c><00:11:28.640><c> actively</c>
+
+00:11:29.260 --> 00:11:29.270 align:start position:0%
+going to obtain outcomes that actively
+ 
+
+00:11:29.270 --> 00:11:32.790 align:start position:0%
+going to obtain outcomes that actively
+go<00:11:30.260><c> against</c><00:11:30.740><c> your</c><00:11:30.920><c> bed</c><00:11:31.160><c> so</c><00:11:31.880><c> that's</c><00:11:32.180><c> why</c>
+
+00:11:32.790 --> 00:11:32.800 align:start position:0%
+go against your bed so that's why
+ 
+
+00:11:32.800 --> 00:11:37.480 align:start position:0%
+go against your bed so that's why
+overfitting<00:11:34.480><c> in</c><00:11:35.530><c> combination</c><00:11:36.530><c> with</c><00:11:36.980><c> memory</c>
+
+00:11:37.480 --> 00:11:37.490 align:start position:0%
+overfitting in combination with memory
+ 
+
+00:11:37.490 --> 00:11:40.570 align:start position:0%
+overfitting in combination with memory
+effects<00:11:38.060><c> is</c><00:11:38.450><c> especially</c><00:11:38.870><c> damaging</c><00:11:39.680><c> are</c><00:11:40.460><c> you</c>
+
+00:11:40.570 --> 00:11:40.580 align:start position:0%
+effects is especially damaging are you
+ 
+
+00:11:40.580 --> 00:11:42.910 align:start position:0%
+effects is especially damaging are you
+saying<00:11:40.880><c> that</c><00:11:41.030><c> in</c><00:11:41.210><c> finance</c><00:11:41.720><c> these</c><00:11:42.320><c> memory</c>
+
+00:11:42.910 --> 00:11:42.920 align:start position:0%
+saying that in finance these memory
+ 
+
+00:11:42.920 --> 00:11:44.980 align:start position:0%
+saying that in finance these memory
+effects<00:11:43.610><c> are</c><00:11:43.760><c> it's</c><00:11:44.000><c> just</c><00:11:44.240><c> inherent</c><00:11:44.780><c> in</c>
+
+00:11:44.980 --> 00:11:44.990 align:start position:0%
+effects are it's just inherent in
+ 
+
+00:11:44.990 --> 00:11:46.600 align:start position:0%
+effects are it's just inherent in
+finance<00:11:45.440><c> so</c><00:11:45.710><c> there's</c><00:11:45.890><c> no</c><00:11:46.040><c> getting</c><00:11:46.370><c> around</c>
+
+00:11:46.600 --> 00:11:46.610 align:start position:0%
+finance so there's no getting around
+ 
+
+00:11:46.610 --> 00:11:48.460 align:start position:0%
+finance so there's no getting around
+that's<00:11:47.060><c> not</c><00:11:47.120><c> getting</c><00:11:47.360><c> around</c><00:11:47.750><c> it</c><00:11:48.050><c> there</c><00:11:48.380><c> are</c>
+
+00:11:48.460 --> 00:11:48.470 align:start position:0%
+that's not getting around it there are
+ 
+
+00:11:48.470 --> 00:11:50.500 align:start position:0%
+that's not getting around it there are
+many<00:11:48.620><c> examples</c><00:11:48.770><c> like</c><00:11:49.700><c> mean</c><00:11:50.210><c> reverting</c>
+
+00:11:50.500 --> 00:11:50.510 align:start position:0%
+many examples like mean reverting
+ 
+
+00:11:50.510 --> 00:11:53.770 align:start position:0%
+many examples like mean reverting
+processes<00:11:51.260><c> and</c><00:11:51.650><c> other</c><00:11:52.520><c> very</c><00:11:53.240><c> well-known</c>
+
+00:11:53.770 --> 00:11:53.780 align:start position:0%
+processes and other very well-known
+ 
+
+00:11:53.780 --> 00:11:57.250 align:start position:0%
+processes and other very well-known
+situations<00:11:55.510><c> whenever</c><00:11:56.510><c> there</c><00:11:56.720><c> is</c><00:11:56.750><c> serial</c>
+
+00:11:57.250 --> 00:11:57.260 align:start position:0%
+situations whenever there is serial
+ 
+
+00:11:57.260 --> 00:12:00.970 align:start position:0%
+situations whenever there is serial
+correlation<00:11:58.780><c> meaning</c><00:11:59.780><c> that</c><00:11:59.930><c> some</c><00:12:00.470><c> outcomes</c>
+
+00:12:00.970 --> 00:12:00.980 align:start position:0%
+correlation meaning that some outcomes
+ 
+
+00:12:00.980 --> 00:12:02.140 align:start position:0%
+correlation meaning that some outcomes
+are<00:12:01.160><c> conditioned</c><00:12:01.610><c> by</c><00:12:01.700><c> previous</c><00:12:02.000><c> behavior</c>
+
+00:12:02.140 --> 00:12:02.150 align:start position:0%
+are conditioned by previous behavior
+ 
+
+00:12:02.150 --> 00:12:05.080 align:start position:0%
+are conditioned by previous behavior
+there<00:12:02.990><c> is</c><00:12:03.110><c> memory</c><00:12:03.350><c> and</c><00:12:03.770><c> as</c><00:12:04.250><c> a</c><00:12:04.280><c> result</c><00:12:04.760><c> when</c><00:12:05.060><c> we</c>
+
+00:12:05.080 --> 00:12:05.090 align:start position:0%
+there is memory and as a result when we
+ 
+
+00:12:05.090 --> 00:12:08.140 align:start position:0%
+there is memory and as a result when we
+over<00:12:05.720><c> fit</c><00:12:05.960><c> on</c><00:12:06.230><c> those</c><00:12:06.950><c> samples</c><00:12:07.580><c> the</c>
+
+00:12:08.140 --> 00:12:08.150 align:start position:0%
+over fit on those samples the
+ 
+
+00:12:08.150 --> 00:12:11.320 align:start position:0%
+over fit on those samples the
+consequence<00:12:08.720><c> is</c><00:12:08.840><c> going</c><00:12:08.900><c> to</c><00:12:09.230><c> be</c><00:12:09.380><c> that</c><00:12:09.740><c> our</c><00:12:10.330><c> bets</c>
+
+00:12:11.320 --> 00:12:11.330 align:start position:0%
+consequence is going to be that our bets
+ 
+
+00:12:11.330 --> 00:12:15.490 align:start position:0%
+consequence is going to be that our bets
+are<00:12:11.630><c> going</c><00:12:12.020><c> to</c><00:12:12.320><c> be</c><00:12:12.820><c> contradicted</c><00:12:13.820><c> by</c><00:12:14.500><c> by</c>
+
+00:12:15.490 --> 00:12:15.500 align:start position:0%
+are going to be contradicted by by
+ 
+
+00:12:15.500 --> 00:12:17.560 align:start position:0%
+are going to be contradicted by by
+future<00:12:15.890><c> outcomes</c><00:12:16.400><c> and</c><00:12:16.580><c> this</c><00:12:17.000><c> may</c><00:12:17.210><c> be</c><00:12:17.240><c> one</c><00:12:17.540><c> of</c>
+
+00:12:17.560 --> 00:12:17.570 align:start position:0%
+future outcomes and this may be one of
+ 
+
+00:12:17.570 --> 00:12:21.240 align:start position:0%
+future outcomes and this may be one of
+the<00:12:17.780><c> reasons</c><00:12:18.110><c> why</c><00:12:18.290><c> so</c><00:12:19.190><c> many</c><00:12:19.250><c> systemic</c><00:12:20.180><c> funds</c>
+
+00:12:21.240 --> 00:12:21.250 align:start position:0%
+the reasons why so many systemic funds
+ 
+
+00:12:21.250 --> 00:12:24.790 align:start position:0%
+the reasons why so many systemic funds
+do<00:12:22.250><c> not</c><00:12:22.280><c> very</c><00:12:22.820><c> well</c><00:12:23.060><c> and</c><00:12:24.020><c> this</c><00:12:24.260><c> is</c><00:12:24.410><c> something</c>
+
+00:12:24.790 --> 00:12:24.800 align:start position:0%
+do not very well and this is something
+ 
+
+00:12:24.800 --> 00:12:26.860 align:start position:0%
+do not very well and this is something
+that<00:12:24.920><c> is</c><00:12:25.040><c> passing</c><00:12:25.550><c> because</c><00:12:25.730><c> you</c><00:12:26.600><c> know</c><00:12:26.720><c> the</c>
+
+00:12:26.860 --> 00:12:26.870 align:start position:0%
+that is passing because you know the
+ 
+
+00:12:26.870 --> 00:12:31.600 align:start position:0%
+that is passing because you know the
+same<00:12:27.050><c> math</c><00:12:27.290><c> that</c><00:12:27.530><c> is</c><00:12:27.650><c> used</c><00:12:28.210><c> in</c><00:12:29.210><c> aircraft</c><00:12:30.610><c> for</c>
+
+00:12:31.600 --> 00:12:31.610 align:start position:0%
+same math that is used in aircraft for
+ 
+
+00:12:31.610 --> 00:12:34.990 align:start position:0%
+same math that is used in aircraft for
+forecasting<00:12:32.240><c> weather</c><00:12:32.450><c> for</c><00:12:33.460><c> really</c><00:12:34.460><c> solving</c>
+
+00:12:34.990 --> 00:12:35.000 align:start position:0%
+forecasting weather for really solving
+ 
+
+00:12:35.000 --> 00:12:39.880 align:start position:0%
+forecasting weather for really solving
+hard<00:12:35.630><c> problems</c><00:12:37.690><c> does</c><00:12:38.690><c> not</c><00:12:38.840><c> appear</c><00:12:39.170><c> to</c><00:12:39.200><c> work</c><00:12:39.620><c> in</c>
+
+00:12:39.880 --> 00:12:39.890 align:start position:0%
+hard problems does not appear to work in
+ 
+
+00:12:39.890 --> 00:12:42.240 align:start position:0%
+hard problems does not appear to work in
+many<00:12:40.190><c> financial</c><00:12:40.790><c> applications</c><00:12:41.390><c> and</c><00:12:41.600><c> is</c>
+
+00:12:42.240 --> 00:12:42.250 align:start position:0%
+many financial applications and is
+ 
+
+00:12:42.250 --> 00:12:46.120 align:start position:0%
+many financial applications and is
+passing<00:12:44.020><c> one</c><00:12:45.020><c> of</c><00:12:45.170><c> the</c><00:12:45.290><c> explanations</c><00:12:45.470><c> may</c><00:12:46.070><c> be</c>
+
+00:12:46.120 --> 00:12:46.130 align:start position:0%
+passing one of the explanations may be
+ 
+
+00:12:46.130 --> 00:12:49.390 align:start position:0%
+passing one of the explanations may be
+particularly<00:12:47.000><c> in</c><00:12:47.480><c> that</c><00:12:48.050><c> that</c><00:12:48.410><c> that</c><00:12:48.980><c> we</c><00:12:49.190><c> are</c>
+
+00:12:49.390 --> 00:12:49.400 align:start position:0%
+particularly in that that that we are
+ 
+
+00:12:49.400 --> 00:12:54.220 align:start position:0%
+particularly in that that that we are
+all<00:12:49.670><c> over</c><00:12:50.480><c> feeding</c><00:12:51.880><c> strategies</c><00:12:52.880><c> on</c><00:12:53.230><c> processes</c>
+
+00:12:54.220 --> 00:12:54.230 align:start position:0%
+all over feeding strategies on processes
+ 
+
+00:12:54.230 --> 00:12:56.980 align:start position:0%
+all over feeding strategies on processes
+with<00:12:54.830><c> memory</c><00:12:55.190><c> ok</c><00:12:56.180><c> so</c><00:12:56.240><c> it's</c><00:12:56.420><c> fair</c><00:12:56.630><c> to</c><00:12:56.780><c> say</c><00:12:56.840><c> that</c>
+
+00:12:56.980 --> 00:12:56.990 align:start position:0%
+with memory ok so it's fair to say that
+ 
+
+00:12:56.990 --> 00:13:00.820 align:start position:0%
+with memory ok so it's fair to say that
+memory<00:12:57.770><c> facts</c><00:12:58.220><c> coupled</c><00:12:58.730><c> with</c><00:12:59.800><c> coupled</c><00:13:00.800><c> with</c>
+
+00:13:00.820 --> 00:13:00.830 align:start position:0%
+memory facts coupled with coupled with
+ 
+
+00:13:00.830 --> 00:13:03.400 align:start position:0%
+memory facts coupled with coupled with
+overfitting<00:13:01.820><c> are</c><00:13:02.240><c> definitely</c><00:13:03.020><c> gonna</c><00:13:03.110><c> lead</c><00:13:03.290><c> to</c>
+
+00:13:03.400 --> 00:13:03.410 align:start position:0%
+overfitting are definitely gonna lead to
+ 
+
+00:13:03.410 --> 00:13:07.060 align:start position:0%
+overfitting are definitely gonna lead to
+losses<00:13:03.620><c> yet</c><00:13:04.310><c> on</c><00:13:04.810><c> selection</c><00:13:05.810><c> bias</c><00:13:05.990><c> and</c><00:13:06.830><c> it's</c>
+
+00:13:07.060 --> 00:13:07.070 align:start position:0%
+losses yet on selection bias and it's
+ 
+
+00:13:07.070 --> 00:13:08.410 align:start position:0%
+losses yet on selection bias and it's
+the<00:13:07.250><c> three</c><00:13:07.490><c> like</c><00:13:07.730><c> you're</c><00:13:07.910><c> talking</c><00:13:08.240><c> when</c><00:13:08.390><c> you</c>
+
+00:13:08.410 --> 00:13:08.420 align:start position:0%
+the three like you're talking when you
+ 
+
+00:13:08.420 --> 00:13:09.970 align:start position:0%
+the three like you're talking when you
+talk<00:13:08.630><c> about</c><00:13:08.660><c> non</c><00:13:09.080><c> normality</c><00:13:09.680><c> and</c><00:13:09.740><c> this</c><00:13:09.890><c> is</c>
+
+00:13:09.970 --> 00:13:09.980 align:start position:0%
+talk about non normality and this is
+ 
+
+00:13:09.980 --> 00:13:11.770 align:start position:0%
+talk about non normality and this is
+just<00:13:10.160><c> a</c><00:13:10.250><c> stupid</c><00:13:10.610><c> question</c><00:13:10.760><c> are</c><00:13:11.180><c> we</c><00:13:11.330><c> talking</c>
+
+00:13:11.770 --> 00:13:11.780 align:start position:0%
+just a stupid question are we talking
+ 
+
+00:13:11.780 --> 00:13:13.810 align:start position:0%
+just a stupid question are we talking
+about<00:13:11.870><c> that</c><00:13:12.050><c> issue</c><00:13:12.440><c> with</c><00:13:12.830><c> a</c><00:13:13.070><c> memory</c><00:13:13.520><c> effects</c>
+
+00:13:13.810 --> 00:13:13.820 align:start position:0%
+about that issue with a memory effects
+ 
+
+00:13:13.820 --> 00:13:15.850 align:start position:0%
+about that issue with a memory effects
+in<00:13:14.150><c> fact</c><00:13:14.450><c> yes</c><00:13:14.660><c> so</c>
+
+00:13:15.850 --> 00:13:15.860 align:start position:0%
+in fact yes so
+ 
+
+00:13:15.860 --> 00:13:18.730 align:start position:0%
+in fact yes so
+non-normality<00:13:16.670><c> of</c><00:13:17.060><c> course</c><00:13:17.360><c> the</c><00:13:18.320><c> consequence</c>
+
+00:13:18.730 --> 00:13:18.740 align:start position:0%
+non-normality of course the consequence
+ 
+
+00:13:18.740 --> 00:13:21.840 align:start position:0%
+non-normality of course the consequence
+of<00:13:18.950><c> memory</c><00:13:19.340><c> okay</c><00:13:20.240><c> they</c><00:13:20.660><c> are</c><00:13:20.690><c> connected</c><00:13:21.200><c> okay</c>
+
+00:13:21.840 --> 00:13:21.850 align:start position:0%
+of memory okay they are connected okay
+ 
+
+00:13:21.850 --> 00:13:24.400 align:start position:0%
+of memory okay they are connected okay
+in<00:13:22.850><c> your</c><00:13:23.060><c> article</c><00:13:23.510><c> you</c><00:13:23.810><c> introduce</c><00:13:24.170><c> a</c><00:13:24.290><c> new</c>
+
+00:13:24.400 --> 00:13:24.410 align:start position:0%
+in your article you introduce a new
+ 
+
+00:13:24.410 --> 00:13:26.440 align:start position:0%
+in your article you introduce a new
+metric<00:13:24.770><c> called</c><00:13:25.130><c> the</c><00:13:25.280><c> deflated</c><00:13:25.700><c> Sharpe</c><00:13:25.970><c> ratio</c>
+
+00:13:26.440 --> 00:13:26.450 align:start position:0%
+metric called the deflated Sharpe ratio
+ 
+
+00:13:26.450 --> 00:13:28.950 align:start position:0%
+metric called the deflated Sharpe ratio
+how<00:13:26.960><c> does</c><00:13:27.140><c> that</c><00:13:27.230><c> work</c><00:13:27.410><c> what</c><00:13:27.650><c> does</c><00:13:27.800><c> it</c><00:13:27.920><c> build</c><00:13:28.130><c> on</c>
+
+00:13:28.950 --> 00:13:28.960 align:start position:0%
+how does that work what does it build on
+ 
+
+00:13:28.960 --> 00:13:31.810 align:start position:0%
+how does that work what does it build on
+the<00:13:29.960><c> deflated</c><00:13:30.320><c> Sharpe</c><00:13:30.680><c> ratio</c><00:13:31.010><c> attempts</c><00:13:31.640><c> to</c>
+
+00:13:31.810 --> 00:13:31.820 align:start position:0%
+the deflated Sharpe ratio attempts to
+ 
+
+00:13:31.820 --> 00:13:34.260 align:start position:0%
+the deflated Sharpe ratio attempts to
+correct<00:13:32.210><c> for</c><00:13:32.570><c> the</c><00:13:32.690><c> three</c><00:13:32.960><c> main</c><00:13:33.380><c> sources</c><00:13:33.680><c> of</c>
+
+00:13:34.260 --> 00:13:34.270 align:start position:0%
+correct for the three main sources of
+ 
+
+00:13:34.270 --> 00:13:37.420 align:start position:0%
+correct for the three main sources of
+inform<00:13:35.270><c> of</c><00:13:35.720><c> performance</c><00:13:36.380><c> inflation</c><00:13:36.890><c> and</c>
+
+00:13:37.420 --> 00:13:37.430 align:start position:0%
+inform of performance inflation and
+ 
+
+00:13:37.430 --> 00:13:40.720 align:start position:0%
+inform of performance inflation and
+these<00:13:37.610><c> three</c><00:13:38.270><c> main</c><00:13:38.450><c> sources</c><00:13:38.660><c> are</c><00:13:39.730><c> non</c>
+
+00:13:40.720 --> 00:13:40.730 align:start position:0%
+these three main sources are non
+ 
+
+00:13:40.730 --> 00:13:43.390 align:start position:0%
+these three main sources are non
+normality<00:13:41.360><c> and</c><00:13:41.750><c> serial</c><00:13:42.320><c> correlation</c><00:13:42.530><c> that's</c>
+
+00:13:43.390 --> 00:13:43.400 align:start position:0%
+normality and serial correlation that's
+ 
+
+00:13:43.400 --> 00:13:45.490 align:start position:0%
+normality and serial correlation that's
+something<00:13:44.090><c> that</c><00:13:44.240><c> has</c><00:13:44.660><c> been</c><00:13:44.870><c> known</c><00:13:45.110><c> for</c>
+
+00:13:45.490 --> 00:13:45.500 align:start position:0%
+something that has been known for
+ 
+
+00:13:45.500 --> 00:13:49.870 align:start position:0%
+something that has been known for
+decades<00:13:45.800><c> and</c><00:13:46.490><c> there</c><00:13:46.910><c> has</c><00:13:47.060><c> been</c><00:13:48.010><c> procedures</c><00:13:49.010><c> to</c>
+
+00:13:49.870 --> 00:13:49.880 align:start position:0%
+decades and there has been procedures to
+ 
+
+00:13:49.880 --> 00:13:52.330 align:start position:0%
+decades and there has been procedures to
+correct<00:13:50.270><c> them</c><00:13:50.480><c> and</c><00:13:50.810><c> two</c><00:13:51.410><c> additional</c><00:13:51.860><c> sources</c>
+
+00:13:52.330 --> 00:13:52.340 align:start position:0%
+correct them and two additional sources
+ 
+
+00:13:52.340 --> 00:13:56.710 align:start position:0%
+correct them and two additional sources
+that<00:13:52.610><c> are</c><00:13:52.790><c> let's</c><00:13:53.510><c> say</c><00:13:54.880><c> not</c><00:13:55.880><c> necessarily</c><00:13:56.090><c> new</c>
+
+00:13:56.710 --> 00:13:56.720 align:start position:0%
+that are let's say not necessarily new
+ 
+
+00:13:56.720 --> 00:13:58.900 align:start position:0%
+that are let's say not necessarily new
+but<00:13:56.750><c> that</c><00:13:57.290><c> there</c><00:13:57.620><c> are</c><00:13:57.710><c> now</c><00:13:57.980><c> new</c><00:13:58.280><c> approaches</c><00:13:58.880><c> to</c>
+
+00:13:58.900 --> 00:13:58.910 align:start position:0%
+but that there are now new approaches to
+ 
+
+00:13:58.910 --> 00:14:01.930 align:start position:0%
+but that there are now new approaches to
+deal<00:13:59.420><c> with</c><00:13:59.630><c> them</c><00:13:59.810><c> and</c><00:14:00.230><c> these</c><00:14:00.590><c> are</c><00:14:00.940><c> overfitting</c>
+
+00:14:01.930 --> 00:14:01.940 align:start position:0%
+deal with them and these are overfitting
+ 
+
+00:14:01.940 --> 00:14:05.890 align:start position:0%
+deal with them and these are overfitting
+and<00:14:02.420><c> selection</c><00:14:03.260><c> bias</c><00:14:03.590><c> so</c><00:14:04.070><c> our</c><00:14:04.430><c> goal</c><00:14:04.760><c> with</c><00:14:05.720><c> this</c>
+
+00:14:05.890 --> 00:14:05.900 align:start position:0%
+and selection bias so our goal with this
+ 
+
+00:14:05.900 --> 00:14:08.200 align:start position:0%
+and selection bias so our goal with this
+new<00:14:06.140><c> performance</c><00:14:06.920><c> evaluation</c><00:14:07.670><c> metric</c><00:14:08.060><c> the</c>
+
+00:14:08.200 --> 00:14:08.210 align:start position:0%
+new performance evaluation metric the
+ 
+
+00:14:08.210 --> 00:14:11.650 align:start position:0%
+new performance evaluation metric the
+deflated<00:14:08.600><c> Sharpe</c><00:14:08.960><c> ratio</c><00:14:09.290><c> was</c><00:14:09.860><c> to</c><00:14:10.450><c> adjust</c><00:14:11.450><c> the</c>
+
+00:14:11.650 --> 00:14:11.660 align:start position:0%
+deflated Sharpe ratio was to adjust the
+ 
+
+00:14:11.660 --> 00:14:13.510 align:start position:0%
+deflated Sharpe ratio was to adjust the
+Sharpe<00:14:11.900><c> ratio</c><00:14:11.930><c> which</c><00:14:12.500><c> is</c><00:14:12.650><c> the</c><00:14:12.680><c> gold</c><00:14:12.950><c> standard</c>
+
+00:14:13.510 --> 00:14:13.520 align:start position:0%
+Sharpe ratio which is the gold standard
+ 
+
+00:14:13.520 --> 00:14:17.350 align:start position:0%
+Sharpe ratio which is the gold standard
+of<00:14:13.670><c> performance</c><00:14:14.390><c> evaluation</c><00:14:15.370><c> and</c><00:14:16.370><c> to</c><00:14:16.700><c> correct</c>
+
+00:14:17.350 --> 00:14:17.360 align:start position:0%
+of performance evaluation and to correct
+ 
+
+00:14:17.360 --> 00:14:20.230 align:start position:0%
+of performance evaluation and to correct
+these<00:14:18.050><c> three</c><00:14:18.400><c> to</c><00:14:19.400><c> correct</c><00:14:19.700><c> the</c><00:14:20.000><c> Sharpe</c><00:14:20.210><c> ratio</c>
+
+00:14:20.230 --> 00:14:20.240 align:start position:0%
+these three to correct the Sharpe ratio
+ 
+
+00:14:20.240 --> 00:14:22.120 align:start position:0%
+these three to correct the Sharpe ratio
+for<00:14:20.690><c> these</c><00:14:20.870><c> three</c><00:14:21.140><c> main</c><00:14:21.530><c> sources</c><00:14:21.920><c> of</c>
+
+00:14:22.120 --> 00:14:22.130 align:start position:0%
+for these three main sources of
+ 
+
+00:14:22.130 --> 00:14:24.580 align:start position:0%
+for these three main sources of
+inflation<00:14:22.910><c> is</c><00:14:23.360><c> it</c><00:14:23.570><c> easy</c><00:14:23.780><c> to</c><00:14:23.900><c> use</c><00:14:24.230><c> is</c><00:14:24.470><c> it</c>
+
+00:14:24.580 --> 00:14:24.590 align:start position:0%
+inflation is it easy to use is it
+ 
+
+00:14:24.590 --> 00:14:27.340 align:start position:0%
+inflation is it easy to use is it
+accessible<00:14:24.940><c> it's</c><00:14:25.940><c> very</c><00:14:26.180><c> easy</c><00:14:26.360><c> to</c><00:14:26.480><c> use</c><00:14:26.600><c> the</c>
+
+00:14:27.340 --> 00:14:27.350 align:start position:0%
+accessible it's very easy to use the
+ 
+
+00:14:27.350 --> 00:14:33.280 align:start position:0%
+accessible it's very easy to use the
+idea<00:14:27.590><c> is</c><00:14:28.480><c> we</c><00:14:29.480><c> want</c><00:14:29.510><c> to</c><00:14:30.230><c> compute</c><00:14:31.390><c> how</c><00:14:32.390><c> relevant</c>
+
+00:14:33.280 --> 00:14:33.290 align:start position:0%
+idea is we want to compute how relevant
+ 
+
+00:14:33.290 --> 00:14:35.440 align:start position:0%
+idea is we want to compute how relevant
+how<00:14:33.470><c> is</c><00:14:33.620><c> statistically</c><00:14:34.310><c> significant</c><00:14:35.000><c> the</c>
+
+00:14:35.440 --> 00:14:35.450 align:start position:0%
+how is statistically significant the
+ 
+
+00:14:35.450 --> 00:14:38.740 align:start position:0%
+how is statistically significant the
+Sharpe<00:14:35.750><c> ratio</c><00:14:35.810><c> is</c><00:14:36.320><c> given</c><00:14:37.220><c> that</c><00:14:37.670><c> a</c><00:14:38.060><c> certain</c>
+
+00:14:38.740 --> 00:14:38.750 align:start position:0%
+Sharpe ratio is given that a certain
+ 
+
+00:14:38.750 --> 00:14:41.620 align:start position:0%
+Sharpe ratio is given that a certain
+amount<00:14:38.990><c> of</c><00:14:39.140><c> trials</c><00:14:39.530><c> have</c><00:14:39.770><c> taken</c><00:14:40.130><c> place</c><00:14:40.630><c> given</c>
+
+00:14:41.620 --> 00:14:41.630 align:start position:0%
+amount of trials have taken place given
+ 
+
+00:14:41.630 --> 00:14:45.550 align:start position:0%
+amount of trials have taken place given
+that<00:14:42.850><c> the</c><00:14:43.850><c> distribution</c><00:14:44.150><c> of</c><00:14:44.540><c> returns</c><00:14:44.690><c> is</c><00:14:45.260><c> not</c>
+
+00:14:45.550 --> 00:14:45.560 align:start position:0%
+that the distribution of returns is not
+ 
+
+00:14:45.560 --> 00:14:48.790 align:start position:0%
+that the distribution of returns is not
+a<00:14:45.730><c> exhibits</c><00:14:46.730><c> non-normality</c><00:14:47.180><c> I</c><00:14:47.660><c> should</c><00:14:48.650><c> say</c>
+
+00:14:48.790 --> 00:14:48.800 align:start position:0%
+a exhibits non-normality I should say
+ 
+
+00:14:48.800 --> 00:14:51.640 align:start position:0%
+a exhibits non-normality I should say
+that<00:14:48.980><c> there</c><00:14:49.100><c> is</c><00:14:49.220><c> no</c><00:14:49.510><c> silver</c><00:14:50.510><c> bullet</c><00:14:50.690><c> so</c><00:14:51.320><c> these</c>
+
+00:14:51.640 --> 00:14:51.650 align:start position:0%
+that there is no silver bullet so these
+ 
+
+00:14:51.650 --> 00:14:56.650 align:start position:0%
+that there is no silver bullet so these
+are<00:14:51.860><c> very</c><00:14:52.220><c> complex</c><00:14:52.730><c> topics</c><00:14:53.540><c> and</c><00:14:55.360><c> there</c><00:14:56.360><c> is</c><00:14:56.480><c> no</c>
+
+00:14:56.650 --> 00:14:56.660 align:start position:0%
+are very complex topics and there is no
+ 
+
+00:14:56.660 --> 00:14:59.910 align:start position:0%
+are very complex topics and there is no
+particular<00:14:57.290><c> question</c><00:14:57.860><c> that</c><00:14:58.070><c> is</c><00:14:58.340><c> going</c><00:14:58.430><c> to</c>
+
+00:14:59.910 --> 00:14:59.920 align:start position:0%
+particular question that is going to
+ 
+
+00:14:59.920 --> 00:15:03.580 align:start position:0%
+particular question that is going to
+just<00:15:00.920><c> to</c><00:15:01.490><c> prevent</c><00:15:02.210><c> you</c><00:15:02.420><c> from</c><00:15:02.450><c> every</c><00:15:03.350><c> possible</c>
+
+00:15:03.580 --> 00:15:03.590 align:start position:0%
+just to prevent you from every possible
+ 
+
+00:15:03.590 --> 00:15:06.400 align:start position:0%
+just to prevent you from every possible
+problem<00:15:04.400><c> the</c><00:15:05.270><c> same</c><00:15:05.480><c> with</c><00:15:05.690><c> a</c><00:15:05.720><c> deflected</c><00:15:06.230><c> shot</c>
+
+00:15:06.400 --> 00:15:06.410 align:start position:0%
+problem the same with a deflected shot
+ 
+
+00:15:06.410 --> 00:15:10.180 align:start position:0%
+problem the same with a deflected shot
+ratio<00:15:06.710><c> by</c><00:15:06.860><c> the</c><00:15:06.920><c> way</c><00:15:07.160><c> it</c><00:15:07.400><c> is</c><00:15:07.670><c> one</c><00:15:07.910><c> approach</c><00:15:09.190><c> it</c>
+
+00:15:10.180 --> 00:15:10.190 align:start position:0%
+ratio by the way it is one approach it
+ 
+
+00:15:10.190 --> 00:15:13.240 align:start position:0%
+ratio by the way it is one approach it
+is<00:15:10.400><c> helpful</c><00:15:10.760><c> but</c><00:15:11.150><c> it's</c><00:15:11.300><c> not</c><00:15:11.480><c> going</c><00:15:11.720><c> to</c><00:15:12.250><c> prevent</c>
+
+00:15:13.240 --> 00:15:13.250 align:start position:0%
+is helpful but it's not going to prevent
+ 
+
+00:15:13.250 --> 00:15:15.580 align:start position:0%
+is helpful but it's not going to prevent
+you<00:15:13.460><c> from</c><00:15:13.490><c> every</c><00:15:14.180><c> case</c><00:15:14.420><c> of</c><00:15:14.720><c> overfitting</c><00:15:15.290><c> or</c>
+
+00:15:15.580 --> 00:15:15.590 align:start position:0%
+you from every case of overfitting or
+ 
+
+00:15:15.590 --> 00:15:18.070 align:start position:0%
+you from every case of overfitting or
+selection<00:15:16.010><c> bias</c><00:15:16.190><c> or</c><00:15:16.550><c> non</c><00:15:16.820><c> normality</c><00:15:17.390><c> but</c><00:15:17.540><c> I</c>
+
+00:15:18.070 --> 00:15:18.080 align:start position:0%
+selection bias or non normality but I
+ 
+
+00:15:18.080 --> 00:15:20.170 align:start position:0%
+selection bias or non normality but I
+would<00:15:18.500><c> say</c><00:15:18.680><c> that</c><00:15:18.710><c> the</c><00:15:19.010><c> important</c><00:15:19.460><c> is</c><00:15:19.670><c> for</c>
+
+00:15:20.170 --> 00:15:20.180 align:start position:0%
+would say that the important is for
+ 
+
+00:15:20.180 --> 00:15:23.110 align:start position:0%
+would say that the important is for
+investors<00:15:20.690><c> to</c><00:15:20.920><c> be</c><00:15:21.920><c> aware</c><00:15:22.280><c> of</c><00:15:22.340><c> this</c><00:15:22.790><c> problem</c>
+
+00:15:23.110 --> 00:15:23.120 align:start position:0%
+investors to be aware of this problem
+ 
+
+00:15:23.120 --> 00:15:27.850 align:start position:0%
+investors to be aware of this problem
+and<00:15:23.300><c> to</c><00:15:24.370><c> confer</c><00:15:25.370><c> to</c><00:15:25.450><c> ask</c><00:15:26.450><c> questions</c><00:15:27.260><c> to</c><00:15:27.620><c> their</c>
+
+00:15:27.850 --> 00:15:27.860 align:start position:0%
+and to confer to ask questions to their
+ 
+
+00:15:27.860 --> 00:15:28.800 align:start position:0%
+and to confer to ask questions to their
+portfolio<00:15:28.280><c> manager</c>
+
+00:15:28.800 --> 00:15:28.810 align:start position:0%
+portfolio manager
+ 
+
+00:15:28.810 --> 00:15:31.680 align:start position:0%
+portfolio manager
+and<00:15:29.050><c> to</c><00:15:29.650><c> see</c><00:15:30.310><c> what</c><00:15:30.490><c> the</c><00:15:30.580><c> answers</c><00:15:30.910><c> are</c><00:15:31.120><c> I</c><00:15:31.360><c> do</c><00:15:31.420><c> the</c>
+
+00:15:31.680 --> 00:15:31.690 align:start position:0%
+and to see what the answers are I do the
+ 
+
+00:15:31.690 --> 00:15:35.430 align:start position:0%
+and to see what the answers are I do the
+answers<00:15:32.080><c> make</c><00:15:32.500><c> sense</c><00:15:33.630><c> for</c><00:15:34.630><c> instance</c><00:15:34.960><c> if</c><00:15:35.170><c> a</c>
+
+00:15:35.430 --> 00:15:35.440 align:start position:0%
+answers make sense for instance if a
+ 
+
+00:15:35.440 --> 00:15:38.340 align:start position:0%
+answers make sense for instance if a
+performer<00:15:35.950><c> manager</c><00:15:36.570><c> does</c><00:15:37.570><c> not</c><00:15:37.780><c> know</c><00:15:37.960><c> how</c><00:15:38.290><c> many</c>
+
+00:15:38.340 --> 00:15:38.350 align:start position:0%
+performer manager does not know how many
+ 
+
+00:15:38.350 --> 00:15:43.130 align:start position:0%
+performer manager does not know how many
+trials<00:15:40.020><c> took</c><00:15:41.020><c> to</c><00:15:41.490><c> to</c><00:15:42.490><c> reach</c><00:15:42.670><c> a</c><00:15:42.790><c> particular</c>
+
+00:15:43.130 --> 00:15:43.140 align:start position:0%
+trials took to to reach a particular
+ 
+
+00:15:43.140 --> 00:15:46.440 align:start position:0%
+trials took to to reach a particular
+finding<00:15:44.140><c> most</c><00:15:44.650><c> likely</c><00:15:45.130><c> those</c><00:15:45.760><c> findings</c><00:15:46.240><c> are</c>
+
+00:15:46.440 --> 00:15:46.450 align:start position:0%
+finding most likely those findings are
+ 
+
+00:15:46.450 --> 00:15:47.490 align:start position:0%
+finding most likely those findings are
+overfilled
+
+00:15:47.490 --> 00:15:47.500 align:start position:0%
+overfilled
+ 
+
+00:15:47.500 --> 00:15:50.460 align:start position:0%
+overfilled
+if<00:15:48.100><c> this</c><00:15:48.490><c> portfolio</c><00:15:48.850><c> manager</c><00:15:49.390><c> is</c><00:15:49.600><c> not</c><00:15:49.900><c> keeping</c>
+
+00:15:50.460 --> 00:15:50.470 align:start position:0%
+if this portfolio manager is not keeping
+ 
+
+00:15:50.470 --> 00:15:53.760 align:start position:0%
+if this portfolio manager is not keeping
+a<00:15:50.590><c> research</c><00:15:51.310><c> log</c><00:15:51.700><c> of</c><00:15:52.120><c> all</c><00:15:52.990><c> the</c><00:15:53.350><c> steps</c><00:15:53.680><c> that</c>
+
+00:15:53.760 --> 00:15:53.770 align:start position:0%
+a research log of all the steps that
+ 
+
+00:15:53.770 --> 00:16:00.210 align:start position:0%
+a research log of all the steps that
+took<00:15:54.130><c> to</c><00:15:55.200><c> to</c><00:15:56.610><c> distill</c><00:15:57.610><c> a</c><00:15:57.850><c> particular</c><00:15:58.590><c> model</c><00:15:59.590><c> it</c>
+
+00:16:00.210 --> 00:16:00.220 align:start position:0%
+took to to distill a particular model it
+ 
+
+00:16:00.220 --> 00:16:01.710 align:start position:0%
+took to to distill a particular model it
+probably<00:16:00.700><c> means</c><00:16:00.910><c> that</c><00:16:01.030><c> the</c><00:16:01.240><c> result</c><00:16:01.570><c> is</c>
+
+00:16:01.710 --> 00:16:01.720 align:start position:0%
+probably means that the result is
+ 
+
+00:16:01.720 --> 00:16:03.660 align:start position:0%
+probably means that the result is
+overfilled<00:16:02.140><c> so</c><00:16:02.410><c> I</c><00:16:02.440><c> would</c><00:16:02.830><c> say</c><00:16:03.010><c> that</c><00:16:03.220><c> there</c><00:16:03.550><c> is</c>
+
+00:16:03.660 --> 00:16:03.670 align:start position:0%
+overfilled so I would say that there is
+ 
+
+00:16:03.670 --> 00:16:10.800 align:start position:0%
+overfilled so I would say that there is
+no<00:16:04.740><c> silver</c><00:16:05.740><c> bullet</c><00:16:05.920><c> is</c><00:16:06.430><c> more</c><00:16:06.970><c> of</c><00:16:07.240><c> a</c><00:16:07.900><c> game</c><00:16:08.710><c> to</c><00:16:09.810><c> to</c>
+
+00:16:10.800 --> 00:16:10.810 align:start position:0%
+no silver bullet is more of a game to to
+ 
+
+00:16:10.810 --> 00:16:13.170 align:start position:0%
+no silver bullet is more of a game to to
+know<00:16:11.020><c> the</c><00:16:11.440><c> property</c><00:16:12.280><c> research</c><00:16:12.640><c> process</c>
+
+00:16:13.170 --> 00:16:13.180 align:start position:0%
+know the property research process
+ 
+
+00:16:13.180 --> 00:16:15.180 align:start position:0%
+know the property research process
+involved<00:16:13.600><c> in</c><00:16:13.720><c> a</c><00:16:13.780><c> particular</c><00:16:13.960><c> discovery</c><00:16:14.710><c> so</c>
+
+00:16:15.180 --> 00:16:15.190 align:start position:0%
+involved in a particular discovery so
+ 
+
+00:16:15.190 --> 00:16:16.410 align:start position:0%
+involved in a particular discovery so
+and<00:16:15.340><c> somebody</c><00:16:15.580><c> who</c><00:16:15.730><c> just</c><00:16:15.910><c> wants</c><00:16:16.120><c> to</c><00:16:16.240><c> play</c>
+
+00:16:16.410 --> 00:16:16.420 align:start position:0%
+and somebody who just wants to play
+ 
+
+00:16:16.420 --> 00:16:17.820 align:start position:0%
+and somebody who just wants to play
+around<00:16:16.690><c> with</c><00:16:16.900><c> this</c><00:16:17.110><c> concept</c><00:16:17.650><c> now</c><00:16:17.710><c> I</c>
+
+00:16:17.820 --> 00:16:17.830 align:start position:0%
+around with this concept now I
+ 
+
+00:16:17.830 --> 00:16:19.710 align:start position:0%
+around with this concept now I
+understand<00:16:18.280><c> that</c><00:16:18.310><c> they</c><00:16:18.490><c> can</c><00:16:18.670><c> go</c><00:16:18.790><c> to</c><00:16:18.820><c> the</c>
+
+00:16:19.710 --> 00:16:19.720 align:start position:0%
+understand that they can go to the
+ 
+
+00:16:19.720 --> 00:16:21.020 align:start position:0%
+understand that they can go to the
+Lawrence<00:16:19.990><c> Berkeley</c><00:16:20.140><c> National</c><00:16:20.350><c> Laboratory</c>
+
+00:16:21.020 --> 00:16:21.030 align:start position:0%
+Lawrence Berkeley National Laboratory
+ 
+
+00:16:21.030 --> 00:16:24.480 align:start position:0%
+Lawrence Berkeley National Laboratory
+website<00:16:22.030><c> and</c><00:16:22.360><c> actually</c><00:16:22.870><c> access</c><00:16:23.560><c> a</c><00:16:23.590><c> tool</c><00:16:23.920><c> that</c>
+
+00:16:24.480 --> 00:16:24.490 align:start position:0%
+website and actually access a tool that
+ 
+
+00:16:24.490 --> 00:16:26.460 align:start position:0%
+website and actually access a tool that
+helps<00:16:24.730><c> them</c><00:16:24.850><c> understand</c><00:16:25.300><c> these</c><00:16:26.140><c> issues</c>
+
+00:16:26.460 --> 00:16:26.470 align:start position:0%
+helps them understand these issues
+ 
+
+00:16:26.470 --> 00:16:29.310 align:start position:0%
+helps them understand these issues
+better<00:16:26.680><c> that's</c><00:16:27.280><c> right</c><00:16:27.460><c> so</c><00:16:28.050><c> Lawrence</c><00:16:29.050><c> Berkeley</c>
+
+00:16:29.310 --> 00:16:29.320 align:start position:0%
+better that's right so Lawrence Berkeley
+ 
+
+00:16:29.320 --> 00:16:32.010 align:start position:0%
+better that's right so Lawrence Berkeley
+National<00:16:29.410><c> Laboratory</c><00:16:29.950><c> has</c><00:16:30.430><c> many</c><00:16:31.390><c> decades</c><00:16:31.750><c> of</c>
+
+00:16:32.010 --> 00:16:32.020 align:start position:0%
+National Laboratory has many decades of
+ 
+
+00:16:32.020 --> 00:16:35.880 align:start position:0%
+National Laboratory has many decades of
+experience<00:16:32.530><c> in</c><00:16:32.710><c> empirical</c><00:16:33.580><c> research</c><00:16:34.710><c> this</c><00:16:35.710><c> is</c>
+
+00:16:35.880 --> 00:16:35.890 align:start position:0%
+experience in empirical research this is
+ 
+
+00:16:35.890 --> 00:16:39.000 align:start position:0%
+experience in empirical research this is
+helpful<00:16:36.190><c> because</c><00:16:36.310><c> as</c><00:16:36.940><c> I</c><00:16:37.060><c> say</c><00:16:37.300><c> these</c><00:16:37.900><c> are</c><00:16:38.010><c> this</c>
+
+00:16:39.000 --> 00:16:39.010 align:start position:0%
+helpful because as I say these are this
+ 
+
+00:16:39.010 --> 00:16:44.250 align:start position:0%
+helpful because as I say these are this
+topic<00:16:39.520><c> that</c><00:16:39.670><c> is</c><00:16:40.980><c> rather</c><00:16:41.980><c> complicated</c><00:16:42.900><c> is</c><00:16:43.900><c> not</c>
+
+00:16:44.250 --> 00:16:44.260 align:start position:0%
+topic that is rather complicated is not
+ 
+
+00:16:44.260 --> 00:16:49.940 align:start position:0%
+topic that is rather complicated is not
+generally<00:16:44.740><c> taught</c><00:16:44.980><c> in</c><00:16:45.490><c> schools</c><00:16:47.220><c> you</c><00:16:48.220><c> can</c><00:16:48.400><c> find</c>
+
+00:16:49.940 --> 00:16:49.950 align:start position:0%
+generally taught in schools you can find
+ 
+
+00:16:49.950 --> 00:16:54.690 align:start position:0%
+generally taught in schools you can find
+very<00:16:52.740><c> you</c><00:16:53.740><c> can</c><00:16:53.770><c> find</c><00:16:54.100><c> very</c><00:16:54.370><c> senior</c>
+
+00:16:54.690 --> 00:16:54.700 align:start position:0%
+very you can find very senior
+ 
+
+00:16:54.700 --> 00:16:57.900 align:start position:0%
+very you can find very senior
+mathematicians<00:16:55.390><c> on</c><00:16:56.100><c> offices</c><00:16:57.100><c> who</c><00:16:57.400><c> may</c><00:16:57.580><c> not</c><00:16:57.760><c> be</c>
+
+00:16:57.900 --> 00:16:57.910 align:start position:0%
+mathematicians on offices who may not be
+ 
+
+00:16:57.910 --> 00:17:01.590 align:start position:0%
+mathematicians on offices who may not be
+aware<00:16:58.120><c> of</c><00:16:58.180><c> these</c><00:16:58.390><c> problems</c><00:16:58.810><c> so</c><00:17:00.240><c> to</c><00:17:01.240><c> partner</c>
+
+00:17:01.590 --> 00:17:01.600 align:start position:0%
+aware of these problems so to partner
+ 
+
+00:17:01.600 --> 00:17:02.520 align:start position:0%
+aware of these problems so to partner
+with<00:17:01.630><c> Lawrence</c><00:17:02.140><c> Berkeley</c><00:17:02.500><c> National</c>
+
+00:17:02.520 --> 00:17:02.530 align:start position:0%
+with Lawrence Berkeley National
+ 
+
+00:17:02.530 --> 00:17:05.699 align:start position:0%
+with Lawrence Berkeley National
+Laboratory<00:17:02.950><c> was</c><00:17:03.670><c> really</c><00:17:04.709><c> advantageous</c>
+
+00:17:05.699 --> 00:17:05.709 align:start position:0%
+Laboratory was really advantageous
+ 
+
+00:17:05.709 --> 00:17:07.740 align:start position:0%
+Laboratory was really advantageous
+because<00:17:06.069><c> they</c><00:17:06.490><c> have</c><00:17:06.699><c> a</c><00:17:06.730><c> lot</c><00:17:07.060><c> of</c><00:17:07.089><c> experience</c><00:17:07.569><c> in</c>
+
+00:17:07.740 --> 00:17:07.750 align:start position:0%
+because they have a lot of experience in
+ 
+
+00:17:07.750 --> 00:17:10.199 align:start position:0%
+because they have a lot of experience in
+empirical<00:17:08.140><c> research</c><00:17:08.459><c> they</c><00:17:09.459><c> are</c><00:17:09.939><c> very</c>
+
+00:17:10.199 --> 00:17:10.209 align:start position:0%
+empirical research they are very
+ 
+
+00:17:10.209 --> 00:17:13.829 align:start position:0%
+empirical research they are very
+familiar<00:17:10.329><c> with</c><00:17:10.780><c> the</c><00:17:10.900><c> topic</c><00:17:11.260><c> of</c><00:17:12.630><c> practice</c><00:17:13.630><c> over</c>
+
+00:17:13.829 --> 00:17:13.839 align:start position:0%
+familiar with the topic of practice over
+ 
+
+00:17:13.839 --> 00:17:17.370 align:start position:0%
+familiar with the topic of practice over
+feeling<00:17:14.020><c> my</c><00:17:14.680><c> co-author</c><00:17:15.010><c> David</c><00:17:15.579><c> Bailey</c><00:17:16.380><c> is</c>
+
+00:17:17.370 --> 00:17:17.380 align:start position:0%
+feeling my co-author David Bailey is
+ 
+
+00:17:17.380 --> 00:17:19.699 align:start position:0%
+feeling my co-author David Bailey is
+very<00:17:18.310><c> well</c><00:17:18.550><c> known</c><00:17:18.579><c> Authority</c><00:17:19.360><c> in</c>
+
+00:17:19.699 --> 00:17:19.709 align:start position:0%
+very well known Authority in
+ 
+
+00:17:19.709 --> 00:17:24.059 align:start position:0%
+very well known Authority in
+experimental<00:17:20.709><c> mathematics</c><00:17:21.339><c> so</c><00:17:23.069><c> partnering</c>
+
+00:17:24.059 --> 00:17:24.069 align:start position:0%
+experimental mathematics so partnering
+ 
+
+00:17:24.069 --> 00:17:27.660 align:start position:0%
+experimental mathematics so partnering
+with<00:17:24.189><c> Parrilla</c><00:17:25.680><c> allow</c><00:17:26.680><c> us</c><00:17:26.890><c> to</c><00:17:27.069><c> develop</c><00:17:27.189><c> some</c>
+
+00:17:27.660 --> 00:17:27.670 align:start position:0%
+with Parrilla allow us to develop some
+ 
+
+00:17:27.670 --> 00:17:31.200 align:start position:0%
+with Parrilla allow us to develop some
+online<00:17:28.120><c> online</c><00:17:28.750><c> tools</c><00:17:29.470><c> that</c><00:17:30.220><c> allow</c><00:17:30.610><c> investors</c>
+
+00:17:31.200 --> 00:17:31.210 align:start position:0%
+online online tools that allow investors
+ 
+
+00:17:31.210 --> 00:17:36.600 align:start position:0%
+online online tools that allow investors
+to<00:17:31.860><c> to</c><00:17:32.860><c> really</c><00:17:33.850><c> get</c><00:17:34.120><c> a</c><00:17:34.990><c> good</c><00:17:35.650><c> understanding</c><00:17:35.920><c> of</c>
+
+00:17:36.600 --> 00:17:36.610 align:start position:0%
+to to really get a good understanding of
+ 
+
+00:17:36.610 --> 00:17:41.159 align:start position:0%
+to to really get a good understanding of
+how<00:17:37.020><c> overfitting</c><00:17:38.020><c> of</c><00:17:38.230><c> course</c><00:17:38.470><c> how</c><00:17:38.740><c> easy</c><00:17:39.300><c> is</c><00:17:40.300><c> to</c>
+
+00:17:41.159 --> 00:17:41.169 align:start position:0%
+how overfitting of course how easy is to
+ 
+
+00:17:41.169 --> 00:17:43.769 align:start position:0%
+how overfitting of course how easy is to
+to<00:17:41.710><c> overfeed</c><00:17:42.250><c> the</c><00:17:42.400><c> back</c><00:17:42.580><c> this</c><00:17:42.789><c> how</c><00:17:43.270><c> hard</c><00:17:43.600><c> is</c>
+
+00:17:43.769 --> 00:17:43.779 align:start position:0%
+to overfeed the back this how hard is
+ 
+
+00:17:43.779 --> 00:17:47.039 align:start position:0%
+to overfeed the back this how hard is
+not<00:17:43.809><c> to</c><00:17:44.500><c> overfeed</c><00:17:45.279><c> the</c><00:17:45.400><c> practice</c><00:17:45.850><c> and</c><00:17:46.090><c> we're</c>
+
+00:17:47.039 --> 00:17:47.049 align:start position:0%
+not to overfeed the practice and we're
+ 
+
+00:17:47.049 --> 00:17:48.539 align:start position:0%
+not to overfeed the practice and we're
+really<00:17:47.230><c> pleased</c><00:17:47.500><c> and</c><00:17:47.679><c> thing</c><00:17:47.890><c> I'm</c><00:17:48.220><c> thankful</c>
+
+00:17:48.539 --> 00:17:48.549 align:start position:0%
+really pleased and thing I'm thankful
+ 
+
+00:17:48.549 --> 00:17:51.180 align:start position:0%
+really pleased and thing I'm thankful
+that<00:17:48.779><c> Berkeley</c><00:17:49.779><c> like</c><00:17:49.960><c> helped</c><00:17:50.230><c> us</c><00:17:50.380><c> do</c><00:17:50.559><c> it</c><00:17:50.650><c> and</c>
+
+00:17:51.180 --> 00:17:51.190 align:start position:0%
+that Berkeley like helped us do it and
+ 
+
+00:17:51.190 --> 00:17:53.460 align:start position:0%
+that Berkeley like helped us do it and
+how<00:17:51.429><c> where</c><00:17:51.909><c> does</c><00:17:52.120><c> Finance</c><00:17:52.750><c> stand</c><00:17:53.169><c> in</c><00:17:53.380><c> the</c>
+
+00:17:53.460 --> 00:17:53.470 align:start position:0%
+how where does Finance stand in the
+ 
+
+00:17:53.470 --> 00:17:54.810 align:start position:0%
+how where does Finance stand in the
+scheme<00:17:53.710><c> of</c><00:17:53.860><c> things</c><00:17:54.130><c> when</c><00:17:54.309><c> you</c><00:17:54.429><c> look</c><00:17:54.460><c> at</c><00:17:54.669><c> other</c>
+
+00:17:54.810 --> 00:17:54.820 align:start position:0%
+scheme of things when you look at other
+ 
+
+00:17:54.820 --> 00:17:56.789 align:start position:0%
+scheme of things when you look at other
+industries<00:17:54.909><c> like</c><00:17:55.450><c> the</c><00:17:55.720><c> pharma</c><00:17:56.169><c> industry</c><00:17:56.320><c> for</c>
+
+00:17:56.789 --> 00:17:56.799 align:start position:0%
+industries like the pharma industry for
+ 
+
+00:17:56.799 --> 00:17:59.970 align:start position:0%
+industries like the pharma industry for
+example<00:17:56.860><c> in</c><00:17:57.520><c> terms</c><00:17:58.090><c> of</c><00:17:58.570><c> this</c><00:17:59.320><c> movement</c>
+
+00:17:59.970 --> 00:17:59.980 align:start position:0%
+example in terms of this movement
+ 
+
+00:17:59.980 --> 00:18:02.010 align:start position:0%
+example in terms of this movement
+towards<00:18:00.250><c> understanding</c><00:18:00.460><c> the</c><00:18:01.240><c> process</c><00:18:01.750><c> and</c>
+
+00:18:02.010 --> 00:18:02.020 align:start position:0%
+towards understanding the process and
+ 
+
+00:18:02.020 --> 00:18:05.180 align:start position:0%
+towards understanding the process and
+performance<00:18:02.679><c> inflation</c><00:18:03.580><c> the</c><00:18:04.360><c> answer</c><00:18:04.690><c> is</c>
+
+00:18:05.180 --> 00:18:05.190 align:start position:0%
+performance inflation the answer is
+ 
+
+00:18:05.190 --> 00:18:10.169 align:start position:0%
+performance inflation the answer is
+pharma<00:18:06.870><c> had</c><00:18:07.870><c> the</c><00:18:08.080><c> Great</c><00:18:08.320><c> Awakening</c><00:18:09.179><c> probably</c>
+
+00:18:10.169 --> 00:18:10.179 align:start position:0%
+pharma had the Great Awakening probably
+ 
+
+00:18:10.179 --> 00:18:12.390 align:start position:0%
+pharma had the Great Awakening probably
+like<00:18:10.330><c> 10</c><00:18:10.510><c> years</c><00:18:10.720><c> ago</c><00:18:10.830><c> when</c><00:18:11.830><c> they</c><00:18:11.950><c> realized</c>
+
+00:18:12.390 --> 00:18:12.400 align:start position:0%
+like 10 years ago when they realized
+ 
+
+00:18:12.400 --> 00:18:17.370 align:start position:0%
+like 10 years ago when they realized
+that<00:18:13.740><c> they</c><00:18:14.740><c> had</c><00:18:14.950><c> to</c><00:18:15.190><c> open</c><00:18:15.880><c> up</c><00:18:16.210><c> and</c><00:18:16.539><c> provide</c><00:18:17.140><c> all</c>
+
+00:18:17.370 --> 00:18:17.380 align:start position:0%
+that they had to open up and provide all
+ 
+
+00:18:17.380 --> 00:18:20.940 align:start position:0%
+that they had to open up and provide all
+trials<00:18:18.059><c> in</c><00:18:19.059><c> order</c><00:18:19.210><c> to</c><00:18:19.539><c> assess</c><00:18:19.950><c> the</c>
+
+00:18:20.940 --> 00:18:20.950 align:start position:0%
+trials in order to assess the
+ 
+
+00:18:20.950 --> 00:18:24.180 align:start position:0%
+trials in order to assess the
+effectiveness<00:18:21.309><c> of</c><00:18:21.789><c> some</c><00:18:22.299><c> drugs</c><00:18:22.860><c> this</c><00:18:23.860><c> has</c><00:18:24.039><c> not</c>
+
+00:18:24.180 --> 00:18:24.190 align:start position:0%
+effectiveness of some drugs this has not
+ 
+
+00:18:24.190 --> 00:18:26.789 align:start position:0%
+effectiveness of some drugs this has not
+occurred<00:18:24.220><c> yet</c><00:18:24.490><c> in</c><00:18:24.789><c> finance</c><00:18:25.210><c> he</c><00:18:26.140><c> has</c><00:18:26.380><c> two</c><00:18:26.559><c> core</c>
+
+00:18:26.789 --> 00:18:26.799 align:start position:0%
+occurred yet in finance he has two core
+ 
+
+00:18:26.799 --> 00:18:31.740 align:start position:0%
+occurred yet in finance he has two core
+definitely<00:18:27.490><c> because</c><00:18:27.850><c> as</c><00:18:29.580><c> a</c><00:18:30.580><c> great</c><00:18:31.450><c> colleague</c>
+
+00:18:31.740 --> 00:18:31.750 align:start position:0%
+definitely because as a great colleague
+ 
+
+00:18:31.750 --> 00:18:35.190 align:start position:0%
+definitely because as a great colleague
+professor<00:18:32.880><c> Campbell</c><00:18:33.880><c> Harvey</c><00:18:34.390><c> from</c><00:18:34.779><c> Duke</c>
+
+00:18:35.190 --> 00:18:35.200 align:start position:0%
+professor Campbell Harvey from Duke
+ 
+
+00:18:35.200 --> 00:18:39.060 align:start position:0%
+professor Campbell Harvey from Duke
+University<00:18:36.630><c> he</c><00:18:37.630><c> has</c><00:18:37.750><c> a</c><00:18:37.899><c> fantastic</c><00:18:38.679><c> research</c>
+
+00:18:39.060 --> 00:18:39.070 align:start position:0%
+University he has a fantastic research
+ 
+
+00:18:39.070 --> 00:18:43.130 align:start position:0%
+University he has a fantastic research
+that<00:18:39.700><c> shows</c><00:18:39.970><c> that</c><00:18:41.370><c> effectively</c><00:18:42.370><c> most</c>
+
+00:18:43.130 --> 00:18:43.140 align:start position:0%
+that shows that effectively most
+ 
+
+00:18:43.140 --> 00:18:46.500 align:start position:0%
+that shows that effectively most
+research<00:18:44.140><c> findings</c><00:18:44.740><c> in</c><00:18:45.370><c> quantity</c><00:18:46.090><c> defying</c>
+
+00:18:46.500 --> 00:18:46.510 align:start position:0%
+research findings in quantity defying
+ 
+
+00:18:46.510 --> 00:18:49.649 align:start position:0%
+research findings in quantity defying
+finance<00:18:47.110><c> are</c><00:18:47.260><c> likely</c><00:18:47.770><c> wrong</c><00:18:48.270><c> this</c><00:18:49.270><c> is</c><00:18:49.450><c> really</c>
+
+00:18:49.649 --> 00:18:49.659 align:start position:0%
+finance are likely wrong this is really
+ 
+
+00:18:49.659 --> 00:18:52.049 align:start position:0%
+finance are likely wrong this is really
+a<00:18:49.690><c> tragedy</c><00:18:50.080><c> because</c><00:18:50.440><c> you</c><00:18:50.710><c> have</c><00:18:50.950><c> really</c><00:18:51.730><c> smart</c>
+
+00:18:52.049 --> 00:18:52.059 align:start position:0%
+a tragedy because you have really smart
+ 
+
+00:18:52.059 --> 00:18:54.899 align:start position:0%
+a tragedy because you have really smart
+people<00:18:52.240><c> who</c><00:18:52.600><c> have</c><00:18:53.529><c> been</c><00:18:53.770><c> working</c><00:18:54.279><c> really</c><00:18:54.789><c> hard</c>
+
+00:18:54.899 --> 00:18:54.909 align:start position:0%
+people who have been working really hard
+ 
+
+00:18:54.909 --> 00:18:57.720 align:start position:0%
+people who have been working really hard
+for<00:18:55.360><c> decades</c><00:18:55.779><c> and</c><00:18:56.049><c> published</c><00:18:56.679><c> in</c><00:18:56.860><c> excellent</c>
+
+00:18:57.720 --> 00:18:57.730 align:start position:0%
+for decades and published in excellent
+ 
+
+00:18:57.730 --> 00:19:01.080 align:start position:0%
+for decades and published in excellent
+papers<00:18:58.120><c> and</c><00:18:58.390><c> the</c><00:18:59.200><c> reality</c><00:18:59.679><c> is</c><00:18:59.860><c> these</c><00:19:00.640><c> findings</c>
+
+00:19:01.080 --> 00:19:01.090 align:start position:0%
+papers and the reality is these findings
+ 
+
+00:19:01.090 --> 00:19:04.789 align:start position:0%
+papers and the reality is these findings
+may<00:19:01.390><c> or</c><00:19:01.990><c> may</c><00:19:02.230><c> not</c><00:19:02.260><c> be</c><00:19:02.620><c> correct</c><00:19:03.010><c> but</c><00:19:03.789><c> what</c><00:19:04.510><c> is</c>
+
+00:19:04.789 --> 00:19:04.799 align:start position:0%
+may or may not be correct but what is
+ 
+
+00:19:04.799 --> 00:19:08.220 align:start position:0%
+may or may not be correct but what is
+almost<00:19:05.799><c> certain</c><00:19:06.490><c> is</c><00:19:06.760><c> that</c><00:19:07.029><c> the</c><00:19:07.600><c> empirical</c>
+
+00:19:08.220 --> 00:19:08.230 align:start position:0%
+almost certain is that the empirical
+ 
+
+00:19:08.230 --> 00:19:11.909 align:start position:0%
+almost certain is that the empirical
+evidence<00:19:08.409><c> presented</c><00:19:09.399><c> was</c><00:19:10.210><c> four</c><00:19:10.710><c> so</c><00:19:11.710><c> in</c><00:19:11.860><c> the</c>
+
+00:19:11.909 --> 00:19:11.919 align:start position:0%
+evidence presented was four so in the
+ 
+
+00:19:11.919 --> 00:19:13.680 align:start position:0%
+evidence presented was four so in the
+pharma<00:19:12.220><c> industry</c><00:19:12.340><c> they</c><00:19:12.730><c> had</c><00:19:12.940><c> what's</c><00:19:13.210><c> called</c><00:19:13.299><c> I</c>
+
+00:19:13.680 --> 00:19:13.690 align:start position:0%
+pharma industry they had what's called I
+ 
+
+00:19:13.690 --> 00:19:16.350 align:start position:0%
+pharma industry they had what's called I
+believe<00:19:13.720><c> the</c><00:19:14.320><c> all</c><00:19:14.500><c> trials</c><00:19:14.950><c> movement</c><00:19:15.370><c> is</c><00:19:16.000><c> there</c>
+
+00:19:16.350 --> 00:19:16.360 align:start position:0%
+believe the all trials movement is there
+ 
+
+00:19:16.360 --> 00:19:18.990 align:start position:0%
+believe the all trials movement is there
+something<00:19:17.110><c> afoot</c><00:19:17.409><c> and</c><00:19:17.679><c> finance</c><00:19:18.159><c> akin</c><00:19:18.850><c> to</c><00:19:18.970><c> that</c>
+
+00:19:18.990 --> 00:19:19.000 align:start position:0%
+something afoot and finance akin to that
+ 
+
+00:19:19.000 --> 00:19:23.720 align:start position:0%
+something afoot and finance akin to that
+it<00:19:19.510><c> could</c><00:19:19.779><c> so</c><00:19:20.409><c> I</c><00:19:21.690><c> have</c><00:19:22.690><c> discussed</c><00:19:23.110><c> this</c>
+
+00:19:23.720 --> 00:19:23.730 align:start position:0%
+it could so I have discussed this
+ 
+
+00:19:23.730 --> 00:19:25.950 align:start position:0%
+it could so I have discussed this
+situation<00:19:24.730><c> with</c><00:19:24.880><c> some</c><00:19:25.059><c> colleagues</c><00:19:25.270><c> and</c><00:19:25.630><c> they</c>
+
+00:19:25.950 --> 00:19:25.960 align:start position:0%
+situation with some colleagues and they
+ 
+
+00:19:25.960 --> 00:19:27.930 align:start position:0%
+situation with some colleagues and they
+think<00:19:26.230><c> that</c><00:19:26.289><c> it</c><00:19:27.100><c> will</c><00:19:27.309><c> never</c><00:19:27.460><c> happen</c><00:19:27.700><c> in</c>
+
+00:19:27.930 --> 00:19:27.940 align:start position:0%
+think that it will never happen in
+ 
+
+00:19:27.940 --> 00:19:32.490 align:start position:0%
+think that it will never happen in
+finance<00:19:28.360><c> as</c><00:19:28.510><c> a</c><00:19:28.539><c> result</c><00:19:29.470><c> of</c><00:19:30.840><c> you</c><00:19:31.840><c> know</c><00:19:31.870><c> secrecy</c>
+
+00:19:32.490 --> 00:19:32.500 align:start position:0%
+finance as a result of you know secrecy
+ 
+
+00:19:32.500 --> 00:19:34.800 align:start position:0%
+finance as a result of you know secrecy
+and<00:19:32.950><c> they</c><00:19:33.070><c> need</c><00:19:33.220><c> to</c><00:19:33.399><c> keep</c><00:19:33.580><c> the</c>
+
+00:19:34.800 --> 00:19:34.810 align:start position:0%
+and they need to keep the
+ 
+
+00:19:34.810 --> 00:19:38.890 align:start position:0%
+and they need to keep the
+trading<00:19:35.810><c> secrets</c><00:19:36.280><c> confidential</c><00:19:37.280><c> well</c><00:19:37.900><c> guess</c>
+
+00:19:38.890 --> 00:19:38.900 align:start position:0%
+trading secrets confidential well guess
+ 
+
+00:19:38.900 --> 00:19:41.110 align:start position:0%
+trading secrets confidential well guess
+what<00:19:39.110><c> infernal</c><00:19:39.860><c> informant</c><00:19:40.460><c> they</c><00:19:40.550><c> have</c><00:19:40.760><c> also</c>
+
+00:19:41.110 --> 00:19:41.120 align:start position:0%
+what infernal informant they have also
+ 
+
+00:19:41.120 --> 00:19:43.150 align:start position:0%
+what infernal informant they have also
+the<00:19:41.450><c> same</c><00:19:41.630><c> problems</c><00:19:42.020><c> to</c><00:19:42.170><c> develop</c><00:19:42.530><c> a</c><00:19:42.620><c> a</c><00:19:42.920><c> drag</c>
+
+00:19:43.150 --> 00:19:43.160 align:start position:0%
+the same problems to develop a a drag
+ 
+
+00:19:43.160 --> 00:19:46.660 align:start position:0%
+the same problems to develop a a drag
+takes<00:19:44.170><c> billions</c><00:19:45.170><c> of</c><00:19:45.290><c> dollars</c><00:19:45.620><c> and</c><00:19:45.860><c> decades</c><00:19:46.550><c> of</c>
+
+00:19:46.660 --> 00:19:46.670 align:start position:0%
+takes billions of dollars and decades of
+ 
+
+00:19:46.670 --> 00:19:50.290 align:start position:0%
+takes billions of dollars and decades of
+research<00:19:46.910><c> so</c><00:19:48.040><c> this</c><00:19:49.040><c> is</c><00:19:49.190><c> not</c><00:19:49.370><c> confidentiality</c>
+
+00:19:50.290 --> 00:19:50.300 align:start position:0%
+research so this is not confidentiality
+ 
+
+00:19:50.300 --> 00:19:52.290 align:start position:0%
+research so this is not confidentiality
+it's<00:19:50.390><c> not</c><00:19:50.540><c> a</c><00:19:50.570><c> problem</c><00:19:50.930><c> particular</c><00:19:51.650><c> to</c><00:19:51.800><c> finance</c>
+
+00:19:52.290 --> 00:19:52.300 align:start position:0%
+it's not a problem particular to finance
+ 
+
+00:19:52.300 --> 00:19:56.500 align:start position:0%
+it's not a problem particular to finance
+I<00:19:53.300><c> think</c><00:19:54.140><c> that</c><00:19:54.230><c> the</c><00:19:54.760><c> body's</c><00:19:55.760><c> really</c><00:19:56.090><c> doable</c>
+
+00:19:56.500 --> 00:19:56.510 align:start position:0%
+I think that the body's really doable
+ 
+
+00:19:56.510 --> 00:19:58.840 align:start position:0%
+I think that the body's really doable
+and<00:19:56.870><c> practical</c><00:19:57.380><c> is</c><00:19:57.560><c> for</c><00:19:58.040><c> investors</c><00:19:58.580><c> to</c><00:19:58.730><c> be</c>
+
+00:19:58.840 --> 00:19:58.850 align:start position:0%
+and practical is for investors to be
+ 
+
+00:19:58.850 --> 00:20:00.850 align:start position:0%
+and practical is for investors to be
+aware<00:19:59.090><c> of</c><00:19:59.150><c> this</c><00:19:59.300><c> problem</c><00:19:59.720><c> and</c><00:20:00.500><c> to</c><00:20:00.680><c> make</c><00:20:00.830><c> sure</c>
+
+00:20:00.850 --> 00:20:00.860 align:start position:0%
+aware of this problem and to make sure
+ 
+
+00:20:00.860 --> 00:20:05.650 align:start position:0%
+aware of this problem and to make sure
+that<00:20:01.930><c> they</c><00:20:02.930><c> have</c><00:20:03.170><c> a</c><00:20:03.830><c> due</c><00:20:04.370><c> diligence</c><00:20:04.550><c> when</c><00:20:05.510><c> they</c>
+
+00:20:05.650 --> 00:20:05.660 align:start position:0%
+that they have a due diligence when they
+ 
+
+00:20:05.660 --> 00:20:07.810 align:start position:0%
+that they have a due diligence when they
+speak<00:20:06.080><c> to</c><00:20:06.110><c> their</c><00:20:06.470><c> portfolio</c><00:20:06.740><c> manager</c><00:20:07.280><c> they</c>
+
+00:20:07.810 --> 00:20:07.820 align:start position:0%
+speak to their portfolio manager they
+ 
+
+00:20:07.820 --> 00:20:09.190 align:start position:0%
+speak to their portfolio manager they
+are<00:20:07.880><c> not</c><00:20:08.090><c> just</c><00:20:08.300><c> throwing</c><00:20:08.570><c> money</c><00:20:08.780><c> at</c><00:20:08.930><c> whatever</c>
+
+00:20:09.190 --> 00:20:09.200 align:start position:0%
+are not just throwing money at whatever
+ 
+
+00:20:09.200 --> 00:20:11.470 align:start position:0%
+are not just throwing money at whatever
+practice<00:20:09.770><c> is</c><00:20:09.920><c> presented</c><00:20:10.430><c> to</c><00:20:10.460><c> them</c><00:20:10.670><c> but</c><00:20:11.300><c> they</c>
+
+00:20:11.470 --> 00:20:11.480 align:start position:0%
+practice is presented to them but they
+ 
+
+00:20:11.480 --> 00:20:14.110 align:start position:0%
+practice is presented to them but they
+really<00:20:11.990><c> ask</c><00:20:12.230><c> relevant</c><00:20:12.890><c> questions</c><00:20:13.190><c> to</c>
+
+00:20:14.110 --> 00:20:14.120 align:start position:0%
+really ask relevant questions to
+ 
+
+00:20:14.120 --> 00:20:16.870 align:start position:0%
+really ask relevant questions to
+determine<00:20:14.270><c> whether</c><00:20:15.170><c> a</c><00:20:15.560><c> particular</c><00:20:15.880><c> strategy</c>
+
+00:20:16.870 --> 00:20:16.880 align:start position:0%
+determine whether a particular strategy
+ 
+
+00:20:16.880 --> 00:20:20.530 align:start position:0%
+determine whether a particular strategy
+is<00:20:17.240><c> a</c><00:20:17.300><c> fluke</c><00:20:17.840><c> or</c><00:20:18.190><c> a</c><00:20:19.190><c> reservist</c><00:20:19.700><c> or</c><00:20:19.970><c> is</c><00:20:20.150><c> really</c>
+
+00:20:20.530 --> 00:20:20.540 align:start position:0%
+is a fluke or a reservist or is really
+ 
+
+00:20:20.540 --> 00:20:23.200 align:start position:0%
+is a fluke or a reservist or is really
+profiting<00:20:21.020><c> from</c><00:20:21.080><c> signal</c><00:20:21.760><c> okay</c><00:20:22.760><c> thanks</c><00:20:23.090><c> a</c><00:20:23.180><c> lot</c>
+
+00:20:23.200 --> 00:20:23.210 align:start position:0%
+profiting from signal okay thanks a lot
+ 
+
+00:20:23.210 --> 00:20:24.910 align:start position:0%
+profiting from signal okay thanks a lot
+for<00:20:23.540><c> sharing</c><00:20:23.690><c> all</c><00:20:23.960><c> those</c><00:20:24.200><c> ideas</c><00:20:24.410><c> with</c><00:20:24.770><c> us</c>
+
+00:20:24.910 --> 00:20:24.920 align:start position:0%
+for sharing all those ideas with us
+ 
+
+00:20:24.920 --> 00:20:26.310 align:start position:0%
+for sharing all those ideas with us
+today<00:20:25.190><c> thank</c><00:20:25.910><c> you</c>
+
+00:20:26.310 --> 00:20:26.320 align:start position:0%
+today thank you
+ 
+
+00:20:26.320 --> 00:20:29.320 align:start position:0%
+today thank you
+selection<00:20:27.320><c> bias</c><00:20:27.560><c> backtest</c><00:20:28.490><c> overfitting</c><00:20:29.030><c> and</c>
+
+00:20:29.320 --> 00:20:29.330 align:start position:0%
+selection bias backtest overfitting and
+ 
+
+00:20:29.330 --> 00:20:31.450 align:start position:0%
+selection bias backtest overfitting and
+non-normality<00:20:29.990><c> these</c><00:20:30.530><c> aren't</c><00:20:30.710><c> new</c><00:20:30.980><c> problems</c>
+
+00:20:31.450 --> 00:20:31.460 align:start position:0%
+non-normality these aren't new problems
+ 
+
+00:20:31.460 --> 00:20:34.120 align:start position:0%
+non-normality these aren't new problems
+in<00:20:31.640><c> finance</c><00:20:32.150><c> and</c><00:20:32.450><c> they're</c><00:20:32.960><c> not</c><00:20:33.080><c> going</c><00:20:33.320><c> away</c><00:20:33.560><c> to</c>
+
+00:20:34.120 --> 00:20:34.130 align:start position:0%
+in finance and they're not going away to
+ 
+
+00:20:34.130 --> 00:20:36.040 align:start position:0%
+in finance and they're not going away to
+learn<00:20:34.310><c> more</c><00:20:34.580><c> pick</c><00:20:35.300><c> up</c><00:20:35.450><c> the</c><00:20:35.660><c> journal</c><00:20:35.990><c> of</c>
+
+00:20:36.040 --> 00:20:36.050 align:start position:0%
+learn more pick up the journal of
+ 
+
+00:20:36.050 --> 00:20:37.720 align:start position:0%
+learn more pick up the journal of
+portfolio<00:20:36.200><c> management</c><00:20:36.560><c> 40th</c><00:20:37.550><c> anniversary</c>
+
+00:20:37.720 --> 00:20:37.730 align:start position:0%
+portfolio management 40th anniversary
+ 
+
+00:20:37.730 --> 00:20:41.950 align:start position:0%
+portfolio management 40th anniversary
+issue<00:20:38.380><c> thanks</c><00:20:39.380><c> for</c><00:20:39.530><c> joining</c><00:20:39.710><c> us</c>
+

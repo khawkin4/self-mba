@@ -1,0 +1,2080 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.020
+chat with traders episode 52 the biggest
+secret of the best riders in the world
+
+00:00:05.020 --> 00:00:09.420
+is that they're just like everyone else
+however they've worked hard to learn the
+
+00:00:09.420 --> 00:00:12.099
+markets and discover what works and what
+doesn't
+
+00:00:12.099 --> 00:00:15.280
+but how can you hear about these
+journeys in getting on the strategies
+
+00:00:15.280 --> 00:00:20.910
+and tactics they use you can do it by
+listening to chat with traders your host
+
+00:00:20.910 --> 00:00:23.910
+Aaron Fifield
+
+00:00:27.750 --> 00:00:32.500
+what's going on traders I hope you doing
+right and welcome to the podcast this
+
+00:00:32.500 --> 00:00:32.960
+way
+
+00:00:32.960 --> 00:00:38.610
+episode 52 and I had the great pleasure
+of speaking with dr. Ernest chair while
+
+00:00:38.610 --> 00:00:42.500
+many traders in the quantitative rainout
+will already be familiar with early I'll
+
+00:00:42.500 --> 00:00:46.550
+give just a quick 30 second in charge
+and then we'll get into the interview
+
+00:00:46.550 --> 00:00:51.760
+sorry I guess you could say he had
+somewhat of and unconventional
+
+00:00:51.760 --> 00:00:57.449
+introduction to trading he started out
+on a research team at IBM using machine
+
+00:00:57.449 --> 00:01:01.420
+learning and artificial intelligence
+techniques teaching computers to
+
+00:01:01.420 --> 00:01:06.850
+understand human languages before
+joining a prop trading group today and
+
+00:01:06.850 --> 00:01:10.720
+he has upwards of fifteen years of
+points in the techniques to the demand
+
+00:01:10.720 --> 00:01:15.500
+of finance and trading working with
+multiple problems and hedge funds across
+
+00:01:15.500 --> 00:01:20.680
+his career and as of right now is the
+managing member of qts Capital
+
+00:01:20.680 --> 00:01:25.800
+Management just the top it off and he
+has also written two books quantitative
+
+00:01:25.800 --> 00:01:31.560
+trading and algorithmic trading and he
+speaks at conferences regularly some of
+
+00:01:31.560 --> 00:01:36.430
+the topics we cover gender set-aside
+diversification capital allocation
+
+00:01:36.430 --> 00:01:41.630
+generating strategy ideas back testing
+and I whole lot more and you can get a
+
+00:01:41.630 --> 00:01:48.070
+full recap on this episode at Chavez
+child is dot com 452 are you can find
+
+00:01:48.070 --> 00:01:50.920
+everything they are all in one place our
+cause
+
+00:01:50.920 --> 00:01:55.380
+let's do this on your house Aaron Falk
+field this is the chapters podcast and
+
+00:01:55.380 --> 00:02:04.729
+here is my guest from Toronto Canada any
+chance many as 800 I'm fine thanks for
+
+00:02:04.729 --> 00:02:10.679
+talking to me no trouble whatsoever it's
+nice to be speaking with you thanks for
+
+00:02:10.679 --> 00:02:15.459
+doing this already came to to dig in and
+get some of you insight on how he'd had
+
+00:02:15.459 --> 00:02:19.920
+such great success in markets have been
+looking forward to this so let's begin
+
+00:02:19.920 --> 00:02:23.010
+by talking about how it all began for
+you
+
+00:02:23.010 --> 00:02:26.530
+firstly you graduated with a PhD in
+physics where did you go from there
+
+00:02:28.060 --> 00:02:32.630
+well I went to IBM research to do some
+
+00:02:33.820 --> 00:02:39.450
+something quite different in the field
+of machine learning and artificial
+
+00:02:39.450 --> 00:02:47.849
+intelligence and you know about three
+years as the resurgent there before I
+
+00:02:47.849 --> 00:02:52.400
+move on to finance I came up with some
+of the tasks that you were working on
+
+00:02:52.400 --> 00:02:57.489
+their with your eye on machine learning
+as well
+
+00:02:57.489 --> 00:03:05.819
+focus on teaching the computer to
+understand human language in all of his
+
+00:03:05.819 --> 00:03:13.160
+manifestation such as machine
+translation speech recognition and
+
+00:03:13.160 --> 00:03:20.140
+natural language understanding meaning
+that understanding how the response to
+
+00:03:20.140 --> 00:03:31.150
+human greed like nowadays iPhone Siri
+whatever you do that's the part of the
+
+00:03:31.150 --> 00:03:36.290
+research we did and and also how to
+retrive
+
+00:03:36.290 --> 00:03:41.650
+information in response to a human
+language really like what Google is
+
+00:03:41.650 --> 00:03:46.629
+doing today so but bear in mind that was
+in 1994 at that time
+
+00:03:46.629 --> 00:03:53.000
+google did not exist and that Apple does
+not have the iPhone yet so we were quite
+
+00:03:53.000 --> 00:04:01.450
+early early stages of this kind of
+applications but the interesting thing
+
+00:04:01.450 --> 00:04:07.180
+is that the group pic of purely
+statistical approach we you know do not
+
+00:04:07.180 --> 00:04:11.510
+have too many many people actually that
+really understanding quiz takes on
+
+00:04:11.510 --> 00:04:21.489
+anything everything is based on Massa's
+mortals like dat ik yeah I mean I can
+
+00:04:21.489 --> 00:04:26.349
+imagine a lot has changed since since
+that time so share with us how did you
+
+00:04:26.349 --> 00:04:35.300
+actually get into trading well I p.m. I
+decided to move to live in New York City
+
+00:04:36.040 --> 00:04:42.040
+IBM so he's a great organization has a
+resource headquarter a really in the
+
+00:04:42.040 --> 00:04:49.140
+middle of nowhere and I more urban
+lifestyle so I moved to Manhattan and
+
+00:04:49.140 --> 00:04:54.800
+did much D only kind of jobs in
+Manhattan at that time that suitable
+
+00:04:54.800 --> 00:05:07.220
+person with my background in finance so
+I joined the data mining and internal
+
+00:05:07.220 --> 00:05:12.780
+consulting group that that console for
+many different business units however
+
+00:05:12.780 --> 00:05:19.030
+one of the business that we consult
+water trading desk in san the end at
+
+00:05:19.030 --> 00:05:23.920
+that and so we have given some
+opportunity to develop trading models
+
+00:05:23.920 --> 00:05:31.220
+and you know to see if they could be
+useful to some mobile firms traders
+
+00:05:31.220 --> 00:05:43.660
+that's really my first introduction to
+trading of me sort of supplying machine
+
+00:05:43.660 --> 00:05:50.080
+learning algorithms for trading research
+for trading strategies research ik so up
+
+00:05:50.080 --> 00:05:54.580
+until that point you hadn't really had
+any interest or desire to really become
+
+00:05:54.580 --> 00:05:58.530
+a trader was more just days but the jobs
+that were available at the time is that
+
+00:05:58.530 --> 00:06:05.970
+right that's right my interest was in
+machine learning and efficient engines
+
+00:06:05.970 --> 00:06:11.240
+it's not necessary in whatever domain
+that can be applied you I'm more
+
+00:06:11.240 --> 00:06:17.930
+interested in the in the approach the
+subject matter so whether the subject
+
+00:06:17.930 --> 00:06:23.050
+matter he's human language or financial
+data doesn't make too much difference to
+
+00:06:23.050 --> 00:06:27.720
+me I can you that's really interesting
+that's actually something I was going to
+
+00:06:27.720 --> 00:06:32.080
+ask you about me to it is is that still
+the case
+
+00:06:32.080 --> 00:06:43.080
+well I retain my interest but I more so
+you know
+
+00:06:43.080 --> 00:06:54.310
+evidently after focusing on one domain
+which is trading about how many years
+
+00:06:54.310 --> 00:07:03.120
+that would be maybe about more than 15
+seventy years obviously I'm now you know
+
+00:07:03.120 --> 00:07:10.009
+very interested in financial market so
+yes my my interest has narrowed
+
+00:07:10.009 --> 00:07:22.610
+considerably 21 domain which which is
+financed but I'm still needs and not on
+
+00:07:22.610 --> 00:07:27.580
+application products for use other than
+finance sure sure
+
+00:07:27.580 --> 00:07:31.300
+following your position at Morgan
+Stanley I mean what was the next step
+
+00:07:31.300 --> 00:07:34.699
+from there onwards
+
+00:07:34.699 --> 00:07:44.210
+well the human mind any sort of scatter
+a little bit after I joined name because
+
+00:07:44.210 --> 00:07:50.090
+the main sponsor of the group was hired
+away by Deutsche Bank to head up there
+
+00:07:50.090 --> 00:07:52.240
+global equities trading
+
+00:07:52.240 --> 00:07:58.839
+become a very scenic sector even I mean
+he was saying he was the head of the UN
+
+00:07:58.839 --> 00:08:03.969
+Security trading at morgan fuck doggy
+bang he becomes a global head of
+
+00:08:03.969 --> 00:08:08.139
+equities trading so you know he's a step
+up for him but we've often speaks
+
+00:08:08.139 --> 00:08:12.259
+concept behind out we had a loss
+
+00:08:12.259 --> 00:08:20.210
+finding clients so some of our
+colleagues at his side to leave and go
+
+00:08:20.210 --> 00:08:26.659
+on to Credit Suisse and stopped 25 your
+trading cool so that's I was asked to
+
+00:08:26.659 --> 00:08:34.680
+join them you know we went off to keep
+operating in credit cease to apply this
+
+00:08:34.680 --> 00:08:43.329
+technique that we we have been residing
+along like a good one now I usually ask
+
+00:08:43.329 --> 00:08:48.959
+this question and I'm not sure it's
+quite so relevant to your background but
+
+00:08:48.959 --> 00:08:52.140
+I'm gonna ask anyone you can you can
+give me your thoughts
+
+00:08:52.140 --> 00:08:56.520
+let's say in the period of your first
+five years being involved with financial
+
+00:08:56.520 --> 00:09:00.690
+markets what was some of the greatest
+difficulties encountered that that
+
+00:09:00.690 --> 00:09:08.710
+really challenged you well I mean as
+many of the recent trading model is the
+
+00:09:08.710 --> 00:09:16.590
+greatest difficulty is that you know you
+can can can look very good on on the
+
+00:09:16.590 --> 00:09:26.870
+back as pieces but you know very hard to
+know to perform well and you know I
+
+00:09:26.870 --> 00:09:32.730
+apply these techniques to trading
+obviously I have died or have a lot of
+
+00:09:32.730 --> 00:09:38.860
+experience and intuition about financial
+markets and so I approached it you need
+
+00:09:38.860 --> 00:09:46.450
+to see radical mechanical manner and it
+turns out that actually almost every
+
+00:09:46.450 --> 00:09:51.240
+model that I we didn't work
+
+00:09:51.850 --> 00:10:03.550
+live trading perfectly on you know back
+test basis but fail so that's a big
+
+00:10:03.550 --> 00:10:07.780
+challenge I can hear that makes sense so
+so pretty much what you sign is that
+
+00:10:07.780 --> 00:10:12.970
+even if you do have the you know the
+knowledge of machine learning and IR and
+
+00:10:12.970 --> 00:10:14.720
+those types of things
+
+00:10:14.720 --> 00:10:18.700
+applying them to financial markets it
+still was very beneficial to have an
+
+00:10:18.700 --> 00:10:22.980
+understanding of how at the market
+operates its not just as black and white
+
+00:10:22.980 --> 00:10:27.820
+as that's you know a different data set
+that you know working with yes because
+
+00:10:27.820 --> 00:10:32.020
+the at that time at least the keys
+
+00:10:32.740 --> 00:10:40.779
+4444 financial markets very poss
+compared to other sort of machine
+
+00:10:40.779 --> 00:10:49.190
+learning data sets you know typically we
+would feed millions of articles to teach
+
+00:10:49.190 --> 00:10:57.459
+you to understand human language and
+wheres for financial data especially
+
+00:10:57.459 --> 00:11:02.660
+training they needed and not high
+frequency trading but there aren't
+
+00:11:02.660 --> 00:11:05.779
+enough later
+
+00:11:05.779 --> 00:11:14.420
+really trained a system properly and so
+I find was necessary to really
+
+00:11:14.420 --> 00:11:24.089
+constrained systems that can sensible
+even with very limited to eradicate yeah
+
+00:11:24.089 --> 00:11:30.180
+that's really interesting now any help
+would you describe your style of trying
+
+00:11:30.180 --> 00:11:34.200
+to anyone who is completely unfamiliar
+with your work so share with us maybe
+
+00:11:34.200 --> 00:11:40.430
+the frequency that your trading markets
+and just a little bit more insight to
+
+00:11:40.430 --> 00:11:43.279
+your quantitative approach
+
+00:11:43.279 --> 00:11:52.029
+well our focus is really the intraday
+trading but not high frequency trading
+
+00:11:52.029 --> 00:12:05.620
+the reason for that particular time
+frame is dead and I would suggest that
+
+00:12:05.620 --> 00:12:12.390
+we know that whatever result we are
+seeing is not pure luck trades to
+
+00:12:12.390 --> 00:12:16.589
+convince us that we are doing something
+correctly
+
+00:12:16.589 --> 00:12:22.680
+not not just so you know random random
+luck but not high fees you joining
+
+00:12:22.680 --> 00:12:29.790
+because I'm enjoying the quiet much
+hired investment structure at that
+
+00:12:30.640 --> 00:12:38.550
+has had its not justify so yeah we focus
+on the kids enjoyed a training that
+
+00:12:38.550 --> 00:12:47.200
+holds the average and we've focused
+initially on four acts because that's
+
+00:12:47.200 --> 00:12:56.750
+the most liquid market and and later on
+we added the futures models and models
+
+00:12:56.750 --> 00:13:05.260
+so and now we actually options as well
+so we are constantly looking for new
+
+00:13:05.260 --> 00:13:10.780
+models and we do not restrict ourselves
+in terms of what markets we we we can
+
+00:13:10.780 --> 00:13:19.550
+trade on ok so trading such a wide range
+of markets do you find a strategy as you
+
+00:13:19.550 --> 00:13:24.870
+develop each market Abbas the different
+or is it sometimes the case that a
+
+00:13:24.870 --> 00:13:33.040
+strategy for stocks may also work
+effectively on futures the charges are
+
+00:13:33.040 --> 00:13:41.700
+vastly different you know we we I know
+that there are for example believe that
+
+00:13:41.700 --> 00:13:48.810
+you can trade on juice future the same
+way as you trade your gold futures and
+
+00:13:48.810 --> 00:13:57.140
+the same way that you can trade oil
+futures confined water or power to them
+
+00:13:57.140 --> 00:14:03.510
+so we have a separate model for every
+future and you might say well that
+
+00:14:03.510 --> 00:14:10.420
+sounds like overfitting to the
+particular user well so you know that we
+
+00:14:10.420 --> 00:14:17.500
+focus on each market has a very decent
+operational and season we tried so and
+
+00:14:17.500 --> 00:14:19.350
+we have been running it for a while
+
+00:14:19.350 --> 00:14:26.000
+life and and it will not work on any
+other market just saying the markets for
+
+00:14:26.000 --> 00:14:29.450
+every spectacle of every single
+instrument we have a separate model for
+
+00:14:29.450 --> 00:14:35.120
+ok and I mean how do you deal with that
+when you come to market such as just the
+
+00:14:35.120 --> 00:14:36.940
+equities in stocks market
+
+00:14:36.940 --> 00:14:44.470
+as well as options remain or do you have
+your strategies operate on a basket of
+
+00:14:44.470 --> 00:14:50.050
+stocks were they still individual
+strategies for individual stocks yes
+
+00:14:50.050 --> 00:14:57.230
+stars are different because we typically
+run stocks market neutral strategy so
+
+00:14:57.230 --> 00:15:07.830
+tomorrow so we have won 10 to select was
+by and so every day and so indeed the
+
+00:15:07.830 --> 00:15:13.630
+same selection model is applicable for
+stocks like a running multiple
+
+00:15:13.630 --> 00:15:18.780
+strategies any given time in your
+opinion what are the benefits of doing
+
+00:15:18.780 --> 00:15:23.150
+this and could you give us an idea on
+how many different strategies are
+
+00:15:23.150 --> 00:15:24.370
+running
+
+00:15:24.370 --> 00:15:33.550
+we run over seven or eight regional some
+of them are large delegation so they're
+
+00:15:33.550 --> 00:15:42.160
+not equally capitalize so some of them
+are experimental stage which will
+
+00:15:42.160 --> 00:15:55.660
+benefit of course is diversification
+portfolio are subject to many risks due
+
+00:15:55.660 --> 00:16:00.580
+to leave you alone lease portfolio of
+course it will be subject to market risk
+
+00:16:00.580 --> 00:16:09.380
+market neutral but somehow overlooked
+over waited on that's the one sector of
+
+00:16:09.380 --> 00:16:15.870
+socks and underwear and the other second
+you know so you will have some factories
+
+00:16:15.870 --> 00:16:22.300
+and even if and and there some other
+reason at an Oslo parents and for
+
+00:16:22.300 --> 00:16:31.990
+example you have fun if you're running
+options you know you might be you may be
+
+00:16:31.990 --> 00:16:43.589
+negative so you might be sensitive to
+240 leaves only partially goes up
+
+00:16:44.700 --> 00:16:54.740
+down or you might be some interest rate
+goes up so every strategy has these sort
+
+00:16:54.740 --> 00:17:00.670
+of sensitivity risk quality interest
+rate market research factories or not
+
+00:17:00.670 --> 00:17:08.920
+and the goal of a balanced portfolio
+that you want to neutralize so you know
+
+00:17:08.920 --> 00:17:14.990
+and you can't do that with just one so I
+do have a soft spot and he's going to be
+
+00:17:14.990 --> 00:17:18.420
+vulnerable to particular risk but if
+you're running multiple strategies
+
+00:17:18.420 --> 00:17:23.790
+hopefully their sensitivity neutralize
+each other so and simple example
+
+00:17:23.790 --> 00:17:29.660
+long shot photo neutralize market list
+with a long political benefit from
+
+00:17:29.660 --> 00:17:41.270
+increasing salt but negative but some of
+the two sides of portfolio will have
+
+00:17:41.270 --> 00:17:47.810
+practically have no risk market neutral
+you will not be affected by the movement
+
+00:17:47.810 --> 00:17:52.750
+of the market index and the same can be
+applied to any of these respective
+
+00:17:52.750 --> 00:18:00.090
+whether it's closer to the great so far
+and that's the goal is to be neutral to
+
+00:18:00.090 --> 00:18:07.110
+any almost disrespect and now of course
+we are not as smart we cannot we really
+
+00:18:07.110 --> 00:18:11.800
+haven't figure out exactly some real
+circumstances some reason that we have
+
+00:18:11.800 --> 00:18:16.930
+not neutralized by some of the obvious
+risk we have eliminated because of a
+
+00:18:16.930 --> 00:18:20.090
+diversification
+
+00:18:20.090 --> 00:18:26.380
+yeah that's that's excellent now let's
+imagine an entry level has created a
+
+00:18:26.380 --> 00:18:31.070
+trading system there were single
+strategy and a satisfied with the
+
+00:18:31.070 --> 00:18:35.860
+results from testing is it was for them
+to try this without having other
+
+00:18:35.860 --> 00:18:43.890
+strategies to diversify yes I mean you
+you can't just sit and wait for
+
+00:18:48.250 --> 00:18:51.800
+ready to go before we start trading
+solely when we started
+
+00:18:53.110 --> 00:19:00.420
+fund traded once tried yet obviously
+very risky portfolio and so we had to be
+
+00:19:00.420 --> 00:19:10.200
+caught on so that was unfortunate but we
+have lowered our leverage a lot so until
+
+00:19:10.200 --> 00:19:17.520
+we get that was advice oh yes I mean you
+have just one strategy trading it but
+
+00:19:17.520 --> 00:19:20.520
+you know undergone over lever
+
+00:19:21.660 --> 00:19:30.280
+yes that's very well said and now I
+understand your strategies are designed
+
+00:19:30.280 --> 00:19:36.620
+to catch momentum and then some also
+designed to capitalize on mean reverting
+
+00:19:36.620 --> 00:19:41.850
+to you have to decide which strategy
+taught at best for the current market
+
+00:19:41.850 --> 00:19:46.669
+conditions by turn them on and off or is
+this something that's programmed into
+
+00:19:46.669 --> 00:19:56.200
+your algorithms we have not found a way
+to be able to predict the next month
+
+00:19:56.200 --> 00:20:03.900
+whether momentum Shardul voting so I G
+it is very easy of course to do it in
+
+00:20:03.900 --> 00:20:11.390
+hindsight oh geez this last month we
+should have just run the momentum but
+
+00:20:11.390 --> 00:20:16.710
+how do you tell next month whether you
+should do so we have not found a model
+
+00:20:16.710 --> 00:20:21.850
+that can do that a lot of people claim
+that they have these kind of regime
+
+00:20:21.850 --> 00:20:31.080
+again all the power to them but equal so
+what we do is that we as I said we run
+
+00:20:31.080 --> 00:20:36.640
+multiple models same time so that know
+someone who will listen some will gain
+
+00:20:36.640 --> 00:20:45.299
+and hopefully the model that Blues will
+lose less than the ones that game that's
+
+00:20:45.299 --> 00:20:49.470
+a delicate balance of course we don't
+always do it right here we do have some
+
+00:20:49.470 --> 00:20:56.919
+down once we are not able to compete
+every month that would be wonderful but
+
+00:20:56.919 --> 00:21:03.780
+you know we didn't get to that action
+yet but so far has been the case that
+
+00:21:04.280 --> 00:21:09.750
+month and diamonds
+
+00:21:11.220 --> 00:21:19.930
+much less much less than the office so
+they do not suffer big drawdown in a
+
+00:21:19.930 --> 00:21:28.200
+well balanced fund portfolio and so you
+know it's coach at least worked way he's
+
+00:21:28.200 --> 00:21:35.100
+an extent right so with that being said
+there any discretionary elements to your
+
+00:21:35.100 --> 00:21:40.780
+trading style but there is some
+discretion in terms of the allocation to
+
+00:21:40.780 --> 00:21:48.410
+the particular reason for that is that
+we constantly you know some of our
+
+00:21:48.410 --> 00:21:55.660
+strategies lucky enough to have work day
+one and although they had been drawdown
+
+00:21:55.660 --> 00:22:02.340
+never stop working so trading it for
+more than four years and the backbone of
+
+00:22:02.340 --> 00:22:09.070
+our fund but there are two strategies
+that we started and read my full year
+
+00:22:09.070 --> 00:22:19.150
+and become quite weak and not to lose
+money and we need to reduce their
+
+00:22:19.150 --> 00:22:23.390
+leverage well in that sense is somewhat
+systematically we do we deal with them
+
+00:22:23.390 --> 00:22:34.840
+based on their their loss but they are
+just created now we have a new strategy
+
+00:22:34.840 --> 00:22:45.760
+you never know how much I would say that
+it is important to to immediately and ok
+
+00:22:45.760 --> 00:22:51.190
+just based on back tears all discharges
+to al-qaida based on the back test
+
+00:22:51.190 --> 00:22:56.440
+operation I think that would be included
+because no matter how well it back to
+
+00:22:56.440 --> 00:23:07.400
+eight overstating biased and be ready to
+change so the lives and also thirdly you
+
+00:23:07.400 --> 00:23:17.150
+don't know exactly what a marketing
+practices trade size so careful when you
+
+00:23:17.150 --> 00:23:17.750
+start
+
+00:23:17.750 --> 00:23:24.890
+a new strategy always starting it at a
+very low average and gradually increase
+
+00:23:24.890 --> 00:23:30.600
+it to the proper education and that
+process East discretionary because I
+
+00:23:30.600 --> 00:23:38.500
+don't see that Daisy that's no way to
+systematically increasing usually
+
+00:23:38.500 --> 00:23:40.880
+because whatever
+
+00:23:40.880 --> 00:23:47.120
+systematic way that you can come on and
+the backtest already says that this is
+
+00:23:47.120 --> 00:23:47.930
+great
+
+00:23:47.930 --> 00:23:51.790
+whole battle point that we don't believe
+the better since we don't completely
+
+00:23:51.790 --> 00:24:07.520
+believe the back there's necessary
+discretion so that part in phase of
+
+00:24:07.520 --> 00:24:14.050
+dynamically changing sides some of them
+are buying some of them are getting born
+
+00:24:14.050 --> 00:24:26.880
+dad Paul says he's now ask you more
+about backtesting actually a little bit
+
+00:24:26.880 --> 00:24:30.810
+but right now I would like to ask you a
+couple questions about some of the less
+
+00:24:30.810 --> 00:24:34.800
+obvious differences between
+discretionary and quantitative trading
+
+00:24:34.800 --> 00:24:39.800
+so let me ask you this how does profit
+distribution differ between
+
+00:24:39.800 --> 00:24:44.360
+discretionary and quantitative
+strategies and the reason I ask is
+
+00:24:44.360 --> 00:24:48.680
+because some discretionary traders will
+say their profits are quite lumpy so
+
+00:24:48.680 --> 00:24:51.680
+they'll say that ninety percent of
+profits come from 10 percent of their
+
+00:24:51.680 --> 00:24:52.850
+trades
+
+00:24:52.850 --> 00:24:57.580
+do you find this is also the case with
+Quan trading strategies or is equity
+
+00:24:57.580 --> 00:25:05.370
+curve somewhat smoother well I think
+that the differences between these
+
+00:25:05.370 --> 00:25:10.450
+questionnaires waiting all worth
+explaining the differences between being
+
+00:25:10.450 --> 00:25:15.790
+the voting and momentum strategies
+typically the characteristics of a media
+
+00:25:15.790 --> 00:25:22.520
+hora strategy that the Prophet hour of
+every trade is very similar and almost
+
+00:25:22.520 --> 00:25:24.840
+every trade will be accepted
+
+00:25:24.840 --> 00:25:31.929
+a few trades very rare trades that will
+lose maybe ten times the typical
+
+00:25:33.159 --> 00:25:36.919
+that's the country's
+
+00:25:37.990 --> 00:25:46.110
+whether you're running a min averted by
+discretion I would have the same
+
+00:25:46.110 --> 00:25:53.400
+countries doing the opposite momentum
+drive you home in saudi such that a lot
+
+00:25:53.400 --> 00:25:56.929
+of trees will not be successfully
+infected with was a little bit of money
+
+00:25:56.929 --> 00:26:04.960
+but once in awhile there will be a rare
+trait that will make ten times as well
+
+00:26:04.960 --> 00:26:13.750
+maybe more than typical losses so yeah I
+would say that the sort of the polls out
+
+00:26:13.750 --> 00:26:21.760
+of that you described really I was a
+differentiated by this wedding band room
+
+00:26:21.760 --> 00:26:30.140
+now each question or not I think that
+the the problem with discretion
+
+00:26:30.140 --> 00:26:35.270
+now there's pros and cons to this
+question would think about this question
+
+00:26:36.049 --> 00:26:39.049
+trading is that you can take you to
+contacts
+
+00:26:39.730 --> 00:26:47.690
+macroeconomics a lot of variables that
+you can take into context like a major
+
+00:26:47.690 --> 00:27:02.549
+has happened did some major decision
+must be made in your model where you
+
+00:27:02.549 --> 00:27:08.600
+went but human can so you know that
+humans and say well they obviously did
+
+00:27:08.600 --> 00:27:16.669
+they may be a major the form that
+looming over Greece and you don't want
+
+00:27:16.669 --> 00:27:29.899
+to trade more sensible but you would
+never know that's the good thing about
+
+00:27:29.899 --> 00:27:36.990
+trading that you know you can contact
+and particularly rare events but the
+
+00:27:36.990 --> 00:27:38.370
+problem with this question
+
+00:27:38.370 --> 00:27:43.870
+trading is that each human brain can
+focus on a few things at a time and
+
+00:27:43.870 --> 00:27:49.510
+research has shown that the multitasking
+doesn't work you do multitasking all you
+
+00:27:49.510 --> 00:27:56.250
+get is degraded performance in every
+time that we do so these questions very
+
+00:27:56.250 --> 00:28:02.470
+unlikely to be able to manage mornin
+small handful of strategies and as a
+
+00:28:02.470 --> 00:28:07.760
+result the Africa Cup will not be
+terribly small and that unless you're
+
+00:28:07.760 --> 00:28:13.650
+just running very high I mean 15 you but
+because of the lack of diversification
+
+00:28:15.700 --> 00:28:20.309
+discretionary trader it is very unlikely
+that you're shopping
+
+00:28:20.309 --> 00:28:33.340
+hi well divers and and indeed will look
+kind of rocket and that might be why one
+
+00:28:33.340 --> 00:28:39.500
+might see different shape of there being
+no that's moving training is simply a
+
+00:28:39.500 --> 00:28:46.220
+consequence of that was the lack of
+diversification is question I'd rather
+
+00:28:46.220 --> 00:28:56.740
+run in seven innings I don't know how
+they would be able to do that very well
+
+00:28:56.740 --> 00:29:04.570
+said thank you for explaining that you
+mentioned in there that you can take old
+
+00:29:04.570 --> 00:29:12.420
+music macro events into consideration do
+you take some of these news events and
+
+00:29:12.420 --> 00:29:17.400
+sentiment into consideration when
+developing strategies or is it purely
+
+00:29:17.400 --> 00:29:19.550
+always just buy stock price
+
+00:29:19.550 --> 00:29:30.770
+well we developing the strategy we have
+not be able to take into account the
+
+00:29:30.770 --> 00:29:37.429
+news but sunny now they are more and
+more vendors of the new sentiment data
+
+00:29:37.429 --> 00:29:42.710
+we may be able to incorporate that going
+forward but even so to backtest that's
+
+00:29:42.710 --> 00:29:47.910
+not incorporate new sentiment there are
+some exceptional you bands that we would
+
+00:29:47.910 --> 00:29:48.820
+take into account
+
+00:29:48.820 --> 00:29:57.669
+training immortalize some rare occasion
+would override immortal because we don't
+
+00:29:57.669 --> 00:30:08.019
+believe that the model has to dole's
+events that coming up and so management
+
+00:30:08.019 --> 00:30:14.419
+one of you we will not trade because of
+those events such as natural disaster or
+
+00:30:14.419 --> 00:30:24.269
+major economic events so yeah that's a
+great question would come in because our
+
+00:30:24.269 --> 00:30:34.340
+newspaper we feel that it is prudent to
+sometimes override immoral or trade
+
+00:30:34.340 --> 00:30:40.220
+because of them except ok yeah I mean
+that makes sense now let's talk a little
+
+00:30:40.220 --> 00:30:44.570
+bit about generating I did something you
+probably get off the squirt regulate
+
+00:30:44.570 --> 00:30:49.039
+that what your process of finding ideas
+for viable trading strategies
+
+00:30:49.919 --> 00:30:57.159
+well you know I'm sort of vacuum cleaner
+of ideas out there in the public and you
+
+00:30:57.159 --> 00:31:04.429
+know I have a follow-on humble tree.com
+and these are all accounts which
+
+00:31:04.429 --> 00:31:07.350
+regularly on a daily basis
+
+00:31:07.350 --> 00:31:16.100
+operation the headlines on new articles
+on finance and trade so I would always
+
+00:31:16.100 --> 00:31:21.690
+make no properly looked interesting and
+I will read them when I have time and
+
+00:31:21.690 --> 00:31:33.090
+get ideas from some of them I also
+always books on on trading volume Valley
+
+00:31:33.090 --> 00:31:42.159
+Elementary box to box depth stands with
+questions or background where you
+
+00:31:42.159 --> 00:31:50.269
+consume them and and then also cause of
+life trading oftentimes you will
+
+00:31:50.269 --> 00:31:55.519
+absolutely dominant form you can
+download and that's one thing that we
+
+00:31:55.519 --> 00:32:00.870
+distinguish between age a daughter that
+just sit in the office and
+
+00:32:00.870 --> 00:32:09.620
+research and look at previous look at
+data sources a traitor who actually
+
+00:32:09.620 --> 00:32:17.410
+watching the market real time because
+the information sometimes you you you're
+
+00:32:17.410 --> 00:32:21.450
+you're praying would capture information
+when we owe money is that you would
+
+00:32:21.450 --> 00:32:27.120
+never be able to capture he feeds just
+backed out so I often would get
+
+00:32:27.120 --> 00:32:35.520
+inspiration from some particularly
+unusual during the day that can be that
+
+00:32:35.520 --> 00:32:37.830
+can be utilized
+
+00:32:37.830 --> 00:32:48.570
+nutri more so so yes all these dreams
+that's a really great point I'm glad you
+
+00:32:48.570 --> 00:32:54.710
+highlighted that how do you feel about
+academic research on market studies in
+
+00:32:54.710 --> 00:32:58.110
+that type of thing I mean I think he
+kind of mentioned it there but I mean
+
+00:32:58.110 --> 00:33:04.710
+things off kind of heard about academic
+research is one of the precautions that
+
+00:33:04.710 --> 00:33:10.120
+you should take is that it's not
+necessarily realistic to replicate those
+
+00:33:10.120 --> 00:33:15.550
+results had it been taken in a lot of
+market in Maine is there any precum
+
+00:33:15.550 --> 00:33:21.440
+precautions that china should be aware
+of if rating academic research yes
+
+00:33:21.440 --> 00:33:29.830
+obviously you no one should not assume
+that these research are comical and
+
+00:33:29.830 --> 00:33:34.550
+their main reason they may not turn out
+to be more some of them because they
+
+00:33:34.550 --> 00:33:36.500
+being over it
+
+00:33:36.500 --> 00:33:44.170
+pager others because you know they have
+not taken into account transaction costs
+
+00:33:44.170 --> 00:33:56.500
+and yet others just not good enough so
+so so yes mostly search and you try to
+
+00:33:56.500 --> 00:34:05.040
+replicated it might not work after you
+fix some of the however same time once
+
+00:34:05.040 --> 00:34:06.020
+in a while you will
+
+00:34:06.020 --> 00:34:12.880
+come across some ideas that and even
+after back testing and you know he's
+
+00:34:12.880 --> 00:34:20.030
+still stand up to scrutiny and you know
+and you traded I've and continue to look
+
+00:34:20.030 --> 00:34:25.429
+and you know we have to have been
+training one such as that's proved that
+
+00:34:25.429 --> 00:34:33.140
+occasionally research that's important
+point that I have made my folks is that
+
+00:34:33.140 --> 00:34:42.380
+a judge that come from the academic
+research might work that's not exactly
+
+00:34:42.380 --> 00:34:56.020
+as described in the paper so ideas we
+generate greeting card reform it does
+
+00:34:56.020 --> 00:35:03.890
+not mean that we are just come you know
+like a slavish copy what we have read
+
+00:35:03.890 --> 00:35:12.050
+always means that we have to make major
+modification so anything we read in the
+
+00:35:12.050 --> 00:35:15.160
+public domain is to be treated as an
+inspiration
+
+00:35:15.160 --> 00:35:21.430
+it is not to be treated as the recipe
+and I made it very clear in michael also
+
+00:35:21.430 --> 00:35:27.550
+that I've quite many strategies and
+there are occasionally reader would come
+
+00:35:27.550 --> 00:35:30.980
+back
+
+00:35:30.980 --> 00:35:40.920
+couple of years been working you know
+what's going on I say well first of all
+
+00:35:40.920 --> 00:35:45.100
+I'm trading that's where you live and
+continues to work why is it that work
+
+00:35:45.100 --> 00:35:46.180
+for me but not for you
+
+00:35:46.180 --> 00:35:52.020
+the reason is that I make modifications
+that slightly different from what I
+
+00:35:52.020 --> 00:36:01.340
+wrote a book and I encourage a new
+reader to do the same and I make sure
+
+00:36:01.340 --> 00:36:06.830
+that they don't copy anybody not meet
+anybody not even
+
+00:36:06.830 --> 00:36:16.180
+academic researchers in its entirety
+because obviously very few people will
+
+00:36:16.180 --> 00:36:24.440
+be will be foolish enough to just you
+know he's 100% of their trade secrets
+
+00:36:24.440 --> 00:36:30.570
+he's not even there could be souter I
+can tell you that responded with many
+
+00:36:30.570 --> 00:36:37.410
+attempts and II they are not only just
+doing research but they may have an
+
+00:36:37.410 --> 00:36:44.230
+interest in the hedge fund or maybe they
+are trading for some details that they
+
+00:36:44.230 --> 00:36:58.380
+have withheld and so I and i soldi so it
+is very critical not just save it s
+
+00:36:58.380 --> 00:37:05.040
+written on the net book in the paper but
+always make sure that you have Modifieds
+
+00:37:05.040 --> 00:37:14.670
+and scrutinizing using your own
+experience and I qiryat before you trade
+
+00:37:14.670 --> 00:37:20.390
+IKC mentioned in there that you have
+made modifications to go strategies
+
+00:37:20.390 --> 00:37:25.790
+overtime what's an example of white
+making a modification like when you
+
+00:37:25.790 --> 00:37:31.510
+decide if it's a good time to make a
+modification and I mean is there a
+
+00:37:31.510 --> 00:37:33.850
+difference between just making a
+modification
+
+00:37:33.850 --> 00:37:39.570
+and dropping that strategy to because it
+no longer works like how do you know
+
+00:37:39.570 --> 00:37:46.450
+when to make a modification and when to
+stop trading the strategy well they are
+
+00:37:46.450 --> 00:37:56.500
+occasions where it is quite obvious what
+is causing those trying to to lose money
+
+00:37:56.500 --> 00:38:16.340
+for example you might be running again
+in Japan and you might find that the
+
+00:38:16.340 --> 00:38:28.640
+volatility increased so that you know
+what our previous with to narrow to be
+
+00:38:28.640 --> 00:38:35.920
+appropriate for the current high for
+regime change to make your wardrobe and
+
+00:38:35.920 --> 00:38:42.560
+perhaps a look back shorter more
+responsive to the party or not away
+
+00:38:42.560 --> 00:38:50.070
+might be to imposing minimum volatility
+snapple just say for sure you follow
+
+00:38:50.070 --> 00:39:00.790
+what's the past North Hollywood you
+would still be setting it at least with
+
+00:39:00.790 --> 00:39:10.030
+that would be an example of energy to
+deal with bigger problem and of course
+
+00:39:10.030 --> 00:39:16.650
+this bright idea how to improve their
+strategy at some future or make some
+
+00:39:16.650 --> 00:39:23.990
+modifications you can also use one we we
+must also backed Estes occasionally not
+
+00:39:23.990 --> 00:39:28.580
+just saying that I believe that this
+place is going to do it well what we
+
+00:39:28.580 --> 00:39:37.090
+have to go back and get to see things
+now oftentimes when it happens is that
+
+00:39:37.090 --> 00:39:42.010
+it doesn't necessary to return but it
+might decrease the risk
+
+00:39:42.550 --> 00:39:45.550
+and that might be acceptable
+
+00:39:46.880 --> 00:39:54.650
+just lowering the reason often times he
+has a great thing you don't have to
+
+00:39:54.650 --> 00:39:58.710
+return sure I K
+
+00:39:58.710 --> 00:40:02.610
+yeah that's that's really great point
+and while we're on the subject of
+
+00:40:02.610 --> 00:40:06.270
+backtesting I mean let's let's just dive
+into it so what are some of the major
+
+00:40:06.270 --> 00:40:14.080
+pitfalls traders can experience when
+backtesting well a big boy these data
+
+00:40:14.080 --> 00:40:22.680
+snooping bias as we have experienced led
+many times more simply too complicated
+
+00:40:22.680 --> 00:40:31.140
+and it's just the historical data
+farewell but it has no predictive power
+
+00:40:31.140 --> 00:40:39.420
+that's usually a problem with respect
+asking and a cure for that is typically
+
+00:40:39.420 --> 00:40:44.540
+to make sure that the model is simple
+enough and it actually sensible not just
+
+00:40:44.540 --> 00:40:51.760
+use good result but you know sometimes
+you have to make sure that sensible is
+
+00:40:51.760 --> 00:40:59.430
+capturing such an environment phenomenon
+that perhaps well discussed elsewhere so
+
+00:40:59.430 --> 00:41:05.570
+had to restore confidence that the model
+is picking up to say no not the noise
+
+00:41:05.570 --> 00:41:11.200
+yeah I mean I guess iconic comes back to
+what we hit on a little bit earlier
+
+00:41:11.200 --> 00:41:17.780
+about how it's important to understand
+how the market operates as well as you
+
+00:41:17.780 --> 00:41:25.190
+know the programming knowledge so let me
+ask you to what extend can aback tests
+
+00:41:25.190 --> 00:41:29.070
+show you the likelihood of a strategy
+producing similar results in the future
+
+00:41:29.070 --> 00:41:37.310
+like how much do you rely on a back test
+where we we really got a back tears as
+
+00:41:37.310 --> 00:41:39.040
+some sort of a hypothesis
+
+00:41:39.040 --> 00:41:50.370
+rejection of a number of words we want
+to backtest to at least not reduce
+
+00:41:50.370 --> 00:41:53.650
+negative results because it would
+produce negative
+
+00:41:53.650 --> 00:41:55.780
+pretty much
+
+00:41:55.780 --> 00:42:05.870
+you don't have to spend more time and
+money on it but she has a duty diesel
+
+00:42:05.870 --> 00:42:16.670
+shop much significance has the highest
+operational most striking has a high
+
+00:42:16.670 --> 00:42:28.240
+positive operational really means that
+we are much more confident that mean
+
+00:42:28.240 --> 00:42:38.220
+that but a high operational back has
+enabled us to high now
+
+00:42:38.220 --> 00:42:45.280
+overheated very quickly you live tree
+because if you have a shot for example
+
+00:42:45.280 --> 00:42:55.330
+has astronomical shop 10 practically
+every day every week if not every day
+
+00:42:55.330 --> 00:43:01.580
+you have a shop age of 10 that's pretty
+much guarantee that every week and
+
+00:43:01.580 --> 00:43:08.150
+practically every day so if you run
+destroyed lie just one month you can
+
+00:43:08.150 --> 00:43:14.290
+really tell whether your practice rather
+because
+
+00:43:14.290 --> 00:43:19.090
+practically every day you available and
+then you wonderful Monday you find that
+
+00:43:19.090 --> 00:43:22.130
+it has joined on three weeks
+
+00:43:22.130 --> 00:43:31.930
+well media tells you that you're back
+test is not completely realistic what's
+
+00:43:31.930 --> 00:43:36.530
+your God to factory and transaction
+costs to your back test so when I say
+
+00:43:36.530 --> 00:43:41.430
+transaction costs you obviously
+referring to like slippage commissions
+
+00:43:41.430 --> 00:43:45.710
+and market impact that sort of thing how
+do you factor that into your back tears
+
+00:43:45.710 --> 00:44:02.440
+well what causes and two more that one
+need to use data to back as and that's
+
+00:44:02.440 --> 00:44:05.860
+one of my article
+
+00:44:05.860 --> 00:44:11.270
+also why sometimes tried you back
+testing me quite as high fees because
+
+00:44:11.270 --> 00:44:19.570
+you need to be spread in order to figure
+out exactly what price are going to
+
+00:44:19.570 --> 00:44:29.950
+execute it just having trade prices that
+kind of beyond that you have we have to
+
+00:44:29.950 --> 00:44:37.470
+look at the top of full size a lot of
+this strategy particularly high for
+
+00:44:37.470 --> 00:44:42.310
+instance rival that look very good on
+paper and particularly favored by
+
+00:44:42.310 --> 00:44:53.530
+academic researcher you will find out
+and that you know that your trading just
+
+00:44:53.530 --> 00:45:04.560
+one hundred years but once you intend to
+execute 10,000 shares sold 10,000 shares
+
+00:45:04.560 --> 00:45:10.570
+this completely gone completely for pot
+
+00:45:11.110 --> 00:45:15.450
+cause you know when you have to take
+more than a top
+
+00:45:16.410 --> 00:45:29.470
+walls and more money he brings back a
+crucial work so that's sold price but
+
+00:45:29.470 --> 00:45:37.890
+you also need to know what size and then
+not to mention even more problematic
+
+00:45:37.890 --> 00:45:44.830
+issues such as you know market impact
+you know why don't you take the couple
+
+00:45:44.830 --> 00:45:51.170
+liquidity how fast the plan to all of
+you could out a limit order there there
+
+00:45:51.170 --> 00:45:57.750
+is a substantial size a factory
+orderable these issues really in a
+
+00:45:57.750 --> 00:46:02.090
+domain of high-frequency trading even
+though you may not be a high risk
+
+00:46:02.090 --> 00:46:09.829
+greater discretion and you you you tend
+to hold for at least a couple of
+
+00:46:09.829 --> 00:46:17.200
+hours this position but if you order
+into their own a book that is much
+
+00:46:17.200 --> 00:46:22.940
+larger than the typical size you are
+going to a fact and you are going to
+
+00:46:22.940 --> 00:46:35.299
+have a career and that kind of modeling
+nowadays being conducted by Hype music
+
+00:46:35.299 --> 00:46:40.839
+and a lot of very complicated
+mathematical models coming out of that
+
+00:46:40.839 --> 00:47:12.729
+process but that's the kind of walk much
+more difficult questions things down
+
+00:47:12.729 --> 00:47:22.529
+some of the common misconceptions around
+quantitative trading misconceptions well
+
+00:47:22.529 --> 00:47:27.699
+so here's an example let me let me ask
+you this is quantitative trading just
+
+00:47:27.699 --> 00:47:32.170
+for an elite few who I math wizards what
+do you honestly believe it's an angle
+
+00:47:32.170 --> 00:47:38.099
+that can be implemented by anyone
+willing to put in the work I do believe
+
+00:47:38.099 --> 00:47:45.519
+that it is suitable for practically
+anybody willing to at least learn how to
+
+00:47:45.519 --> 00:47:50.890
+use an Excel spreadsheet I have
+collaborated with some very successful
+
+00:47:50.890 --> 00:47:57.069
+traders before that indeed have no
+programming skills except programming in
+
+00:47:57.069 --> 00:48:02.039
+Excel spreadsheet not naturally they're
+not doing high fees trading they had
+
+00:48:02.039 --> 00:48:07.979
+doing training that and her wonder day
+but that doesn't mean it's not gonna
+
+00:48:07.979 --> 00:48:15.130
+take it quantitative trading very slow
+trading could be could be holding the
+
+00:48:15.130 --> 00:48:18.650
+position false one quarter one year
+
+00:48:21.300 --> 00:48:30.270
+so no one does not need to be math does
+not need to be a gaming computer with a
+
+00:48:30.270 --> 00:48:36.370
+draining all one needs to do is to be
+able to gather later and back taxes no
+
+00:48:36.370 --> 00:48:44.710
+matter what would be awesome except ok
+so trader who wants to get started in
+
+00:48:44.710 --> 00:48:49.860
+quantitative treanor really wants to
+dive deeper into the subject and you
+
+00:48:49.860 --> 00:48:56.900
+know give it a real shot where should
+they start I would suggest that they
+
+00:48:56.900 --> 00:49:03.250
+should stop back trying to backtest some
+of these simple strategies that they
+
+00:49:03.250 --> 00:49:10.530
+know about all they read about in any
+sort of trading magazine or block or
+
+00:49:10.530 --> 00:49:19.030
+books and a manual and I have seen that
+I'm really simple you know why I wear a
+
+00:49:19.030 --> 00:49:22.680
+lot of training books where the
+strategies extremism
+
+00:49:23.860 --> 00:49:38.030
+such as by I'm gonna be simpler than
+that but that's a stop and all of you
+
+00:49:38.030 --> 00:49:43.660
+suggesting that we should always buy
+when prices drop below 210 be moving out
+
+00:49:43.660 --> 00:49:53.830
+and say something like that that can be
+quite ready back task and once you gain
+
+00:49:53.830 --> 00:50:03.540
+confidence back as method you might want
+to make a simple language you know i i i
+
+00:50:03.540 --> 00:50:18.840
+SAT by using six but that doesn't mean
+best to improve your ability to trade on
+
+00:50:18.840 --> 00:50:27.020
+22 sort of expand your repertoire
+quantities once did learning Arabic
+
+00:50:27.020 --> 00:50:33.820
+language then Excel namely and I I
+always recommend one of three languages
+
+00:50:34.370 --> 00:50:40.490
+at dawn in Matlab so so that's the next
+ones you have some confidence back
+
+00:50:40.490 --> 00:50:47.210
+testing using Excel well not to look too
+so that you can back as wide a variety
+
+00:50:47.210 --> 00:50:50.210
+of especially
+
+00:50:50.930 --> 00:50:55.720
+yeah that's a really great on me and
+just on the language is there she
+
+00:50:55.720 --> 00:51:03.120
+mentioned MATLAB part on how do you feel
+about languages such is tried stations
+
+00:51:03.120 --> 00:51:09.420
+AZ language what's the pros and cons of
+going in the direction of Morgan open
+
+00:51:09.420 --> 00:51:13.870
+source language even though I know you
+have to do pay for Matlab to use that
+
+00:51:13.870 --> 00:51:18.160
+but Python in both open source languages
+
+00:51:18.730 --> 00:51:24.800
+how do you feel about comparing dogs to
+call it a proprietary language like
+
+00:51:24.800 --> 00:51:29.690
+TradeStation season which what are the
+pros and cons there was a problem
+
+00:51:29.690 --> 00:51:35.820
+languished at a pro-kurdish trading
+platform why is that you can be very
+
+00:51:35.820 --> 00:51:43.750
+easily time ally trading system so you
+can back to us and trade life using
+
+00:51:43.750 --> 00:51:50.350
+exactly the same call and generate
+real-time waters that's very convenient
+
+00:51:52.430 --> 00:51:57.990
+problem is that you want to switch broke
+all the script written before doesn't
+
+00:51:57.990 --> 00:51:59.530
+work anymore
+
+00:51:59.530 --> 00:52:09.710
+direct brokers easy language we have no
+use and and not a problem with those
+
+00:52:09.710 --> 00:52:19.830
+languages is that they tend to be
+broader limiting a on not design and
+
+00:52:19.830 --> 00:52:28.830
+converse so quickly very extreme example
+let's say you want to be a new generator
+
+00:52:28.830 --> 00:52:38.960
+I challenge you to do that I don't
+believe it possible because if you all
+
+00:52:38.960 --> 00:52:45.050
+wanna be with your network from scratch
+it will probably take months and maybe
+
+00:52:46.210 --> 00:52:56.680
+would because many parts machine
+learning MATLAB trader or Python traitor
+
+00:52:56.680 --> 00:53:01.440
+or later we would not be doing in your
+network from scratch
+
+00:53:02.490 --> 00:53:08.960
+we would be using a library that is
+degrading me in order to generate so
+
+00:53:08.960 --> 00:53:17.440
+that shows you the flexibility of these
+languages where you know you want to use
+
+00:53:17.440 --> 00:53:20.589
+this a new life new language that work
+
+00:53:21.220 --> 00:53:30.310
+language well we have to wait until
+train station development which will
+
+00:53:30.310 --> 00:53:34.380
+thanks for something that I know you've
+got to published books one is
+
+00:53:34.380 --> 00:53:37.830
+quantitative trading and the second is
+called algorithmic trading
+
+00:53:38.560 --> 00:53:41.560
+traders expect to learn from reading
+your two books here
+
+00:53:42.930 --> 00:53:50.400
+well I think particularly answer some of
+the questions raised only about how to
+
+00:53:50.400 --> 00:53:58.210
+get started it all maybe you never
+traded before you know maybe someone
+
+00:53:58.210 --> 00:54:10.230
+used it all came from a different
+business let's say they are trading time
+
+00:54:10.230 --> 00:54:21.250
+job back to football that people really
+start on the basics the second both
+
+00:54:21.250 --> 00:54:30.130
+these more often more focus and perhaps
+into some of the more there and some of
+
+00:54:30.130 --> 00:54:34.520
+the techniques also more complicated
+seems like common fielder
+
+00:54:36.700 --> 00:54:39.940
+regression models
+
+00:54:42.700 --> 00:54:51.369
+stop or maybe a bit off-putting to
+complete nor has training but they would
+
+00:54:51.369 --> 00:54:58.599
+be useful to someone who has traded it
+for a while but would like to learn new
+
+00:54:58.599 --> 00:55:07.250
+techniques so that's what the 2nd ed
+using something a bit more and more
+
+00:55:07.250 --> 00:55:14.609
+focused and more complicated to the
+trainers who already have been reading
+
+00:55:14.609 --> 00:55:21.880
+already i cant yeah I mean by size books
+on my list to rate and I hope to get
+
+00:55:21.880 --> 00:55:25.900
+stuck into those very soon so I'll link
+to those in the show notes chat with
+
+00:55:25.900 --> 00:55:31.190
+traders dot com anywhere canisters guard
+find out more about you and where can i
+
+00:55:31.190 --> 00:55:32.230
+connect with you
+
+00:55:32.230 --> 00:55:43.050
+well I run Apple blocks long thought
+come and open to comments
+
+00:55:43.050 --> 00:55:56.690
+anybody can come and try to answer them
+very very rapidly questions I also knew
+
+00:55:56.690 --> 00:55:59.940
+I i have been used to updating the law
+
+00:55:59.940 --> 00:56:04.500
+new article was read and now but now I'm
+writing you both so I don't have much
+
+00:56:04.500 --> 00:56:12.080
+time to update its old but these by not
+an article published every month it
+
+00:56:12.080 --> 00:56:19.570
+doesn't mean that I don't answer
+comments that's a great idea
+
+00:56:19.570 --> 00:56:29.670
+ottoman on my website and outcome i
+reset my email and a lot of leaders
+
+00:56:29.670 --> 00:56:32.940
+communicate with me just by
+
+00:56:32.940 --> 00:56:38.700
+so that's why I sometimes when we do ask
+me questions that I would direct them to
+
+00:56:38.700 --> 00:56:43.859
+the ball because I like to answer
+questions that many people benefit but
+
+00:56:43.859 --> 00:56:49.500
+other times just want to ask for advice
+on a particular situation that they have
+
+00:56:51.210 --> 00:57:02.450
+direct and so yeah I know I run courses
+online and you know some of the people
+
+00:57:02.450 --> 00:57:09.230
+who have read my books come to
+disseminate and we would have a real
+
+00:57:09.230 --> 00:57:12.280
+time conversation
+
+00:57:12.280 --> 00:57:17.400
+yea well linked to voice your blog and
+your website in the shower now it's also
+
+00:57:17.400 --> 00:57:24.160
+a deafening carriage to head on over and
+check out those links really great
+
+00:57:24.160 --> 00:57:32.480
+resources there earlier also on Twitter
+I blaze that's right yeah my even my
+
+00:57:32.480 --> 00:57:39.390
+blog I oftentimes my 32 feet and I don't
+drink very often don't want to you know
+
+00:57:39.390 --> 00:57:48.349
+I love you have any information but I do
+treat once in awhile when I see out
+
+00:57:48.349 --> 00:58:00.790
+there so feel free to follow I can and
+what your hand or change P A N P like a
+
+00:58:00.790 --> 00:58:04.010
+good one and you mentioned you've got a
+new book coming out when can we expect
+
+00:58:04.010 --> 00:58:10.839
+that well thats should be out well for
+years who can I just started very
+
+00:58:10.839 --> 00:58:18.440
+recently so and you know you're adding
+reviewing and then production and
+
+00:58:18.440 --> 00:58:28.339
+marketing tools we probably very CO and
+what's it about is it a carry on from
+
+00:58:28.339 --> 00:58:36.130
+you lost her yes the topics will be
+largely different before it will
+
+00:58:36.130 --> 00:58:41.119
+following the second goal in two
+techniques that I had not discussed
+
+00:58:41.119 --> 00:58:50.960
+before example machine learning options
+trading auctions which I have not
+
+00:58:50.960 --> 00:58:56.510
+touched on wall and so far so you will
+be more advanced techniques and what
+
+00:58:56.510 --> 00:59:00.000
+i've discuss one also however I will
+
+00:59:00.500 --> 00:59:07.320
+just sort of look back to some of the
+strategies that I discuss and see how
+
+00:59:07.320 --> 00:59:22.690
+they did polls more who died and we will
+find some that then done either yet that
+
+00:59:22.690 --> 00:59:26.470
+sounds really good and I'm sure many
+people eager to get their hands on that
+
+00:59:26.470 --> 00:59:30.480
+so many thank you very much for doing
+this i really appreciate you taking the
+
+00:59:30.480 --> 00:59:34.750
+time it was it was a lot of fun speaking
+with you and I mean I shall show a lot
+
+00:59:34.750 --> 00:59:37.140
+details site yet
+
+00:59:37.140 --> 00:59:42.920
+big thanks for doing this and let's
+speak again so great I enjoy talking to
+
+00:59:42.920 --> 00:59:52.240
+you too goodnight alright also thank you
+honey you've come to the end of this
+
+00:59:52.240 --> 00:59:56.290
+episode of chat with traders but don't
+worry more great episodes are on the way
+
+00:59:56.290 --> 01:00:00.300
+to stay updated with each great new
+episode be sure to subscribe to the
+
+01:00:00.300 --> 01:00:04.610
+podcast in iTunes and we'd love it if
+you leave us a rating and review will
+
+01:00:04.610 --> 01:00:06.640
+see you next time on chat with traders
+

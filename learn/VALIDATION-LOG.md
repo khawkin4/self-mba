@@ -71,3 +71,22 @@ are untested by design.
 ground truth is a real beginner reading Unit 01 and telling us where they actually got lost — which is
 the one thing the proxy structurally can't certify.
 
+
+---
+
+## Turn 6 — Unit 09 (capital-light / "royalty" businesses), single rep
+New unit folded from the media-research pull (Ackman's "royalty business," via
+`notes/media-practitioner-playbook` §3). Validated once, severity-gated, blockers-only — per the
+convergence argument above (don't chase the proxy's pedantry ceiling).
+
+**Verdict: PASS — zero findings (no blocking/minor/cosmetic), clarity 4.5/5.**
+- **Accuracy:** every figure + every derived ratio (net margin, capex/revenue, assets-per-$1-revenue,
+  profit-per-$1-assets) checked against SEC EDGAR 10-K ground truth for DPZ & TXRH (FY2025). All match;
+  no arithmetic errors. This is the bar that matters most — the unit is built on *verified real data*,
+  not the fabrication the project exists to prevent.
+- **Pedagogy:** four-pillar intact; jargon defined before use; math shown; no test-before-teach.
+- **Honesty:** fairly notes the trade-offs (Domino's negative equity / debt; TXRH's real-estate control) —
+  does not oversell "franchising wins."
+- Data pulled live via `_ingest/edgar.py facts` + the SEC companyconcept API (capex/net-income series).
+
+Confirms the flywheel works as a *fast pre-human gate* on new units, not just retroactively.

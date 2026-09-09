@@ -58,7 +58,11 @@ Then we widen to growth, value, and the competitive landscape, which hands off t
 
 **Arc C — The landscape (why some businesses are just better):**
 - [x] `unit-07-the-landscape-moats.md` — moats / competitive advantage. Mastercard's durable margins vs cruise lines. Bridge to `notes/canon`.
+- [x] `unit-09-capital-light-businesses.md` — capital-light / "royalty" businesses (pairs with 07). Domino's vs Texas Roadhouse: same industry, opposite capital model. From Ackman via `notes/media-practitioner-playbook` §3.
 - [x] `unit-08-reading-the-words.md` — reading the 10-K's words (risk factors & MD&A) — qualitative literacy.
+
+**Arc D — Your own balance sheet (personal finance):**
+- [ ] `unit-10-personal-finance-operating-system.md` — turn the same investor lens on *yourself*: index funds, automation + 401k match, emergency fund, the 30×/4% targets, family-office-of-one cadence. From the Tiger Sisters PF-101 episode (`notes/tiger-sisters-insights`). **⚠ not yet run through `VALIDATION.md` flywheel** — arithmetic manually checked (all "Check yourself" answers correct), but beginner-clarity + objective-alignment gates pending.
 
 **Then → climb the ladder:** `lessons/` (taught courses) → `notes/canon` (frameworks) → `acumen/`
 (the case method: make real calls, get red-teamed).

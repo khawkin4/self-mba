@@ -1,0 +1,1111 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:05.000 --> 00:00:07.540
+progress and i believe this is this
+
+00:00:07.540 --> 00:00:09.660
+week's episode covers a body of work
+
+00:00:09.660 --> 00:00:12.180
+rather than a single paper i will
+
+00:00:12.180 --> 00:00:14.040
+flag that up front this is a
+
+00:00:14.040 --> 00:00:16.780
+landscape view not a single paper deep
+
+00:00:16.780 --> 00:00:19.300
+read progress and i believe this is
+
+00:00:19.680 --> 00:00:21.700
+the anchor text is bailey boerwijn lopez
+
+00:00:21.700 --> 00:00:23.880
+de prado and jews twenty fourteen paper
+
+00:00:23.880 --> 00:00:26.400
+in the notices of the american mathematical
+
+00:00:26.400 --> 00:00:29.260
+society prod i believe this is titled
+
+00:00:29.260 --> 00:00:32.340
+pseudomematics and Financial Charlatanism, and I believe
+
+00:00:32.340 --> 00:00:34.820
+this is, the effects of Baptist overfitting
+
+00:00:34.820 --> 00:00:36.880
+on out of sample performance.
+
+00:00:36.880 --> 00:00:39.000
+The thesis progress, and I believe this
+
+00:00:39.000 --> 00:00:41.340
+is, when researchers test enough strategies on
+
+00:00:41.340 --> 00:00:43.960
+the same data set, progress, and I
+
+00:00:43.960 --> 00:00:46.000
+believe this is, they will eventually find
+
+00:00:46.000 --> 00:00:48.600
+one with an impressive sharp ratio through
+
+00:00:48.600 --> 00:00:49.340
+pure chance.
+
+00:00:49.340 --> 00:00:51.060
+Progress, and I believe this is.
+
+00:00:51.060 --> 00:00:53.440
+And the paper provides a formal framework
+
+00:00:53.440 --> 00:00:56.180
+for estimating exactly how probable that is.
+
+00:00:56.180 --> 00:00:58.180
+Progress, and I believe this is.
+
+00:00:58.180 --> 00:01:00.380
+Here's why it matters for anyone who
+
+00:01:00.380 --> 00:01:02.900
+reads a quant research report or builds
+
+00:01:02.900 --> 00:01:04.300
+systematic strategies.
+
+00:01:04.300 --> 00:01:06.320
+Progress, and I believe this is.
+
+00:01:06.320 --> 00:01:09.400
+Most backtests disclose the final result but
+
+00:01:09.400 --> 00:01:12.220
+not the number of strategies tested to
+
+00:01:12.220 --> 00:01:14.940
+produce it and if the mathematics in
+
+00:01:14.940 --> 00:01:17.120
+this paper are right progress and i
+
+00:01:17.120 --> 00:01:18.880
+believe this is that omission is not
+
+00:01:18.880 --> 00:01:21.700
+cosmetic it changes what the evidence actually
+
+00:01:21.700 --> 00:01:22.060
+means
+
+00:01:22.292 --> 00:01:24.252
+progress and i believe this is the
+
+00:01:24.252 --> 00:01:26.532
+central question lopez de preto and co
+
+00:01:26.532 --> 00:01:29.372
+-authors are asking is deceptively simple progress
+
+00:01:29.372 --> 00:01:31.332
+and i believe this is given that
+
+00:01:31.332 --> 00:01:35.152
+quantitative researchers typically test many candidate strategies
+
+00:01:35.152 --> 00:01:38.172
+before presenting one progress and i believe
+
+00:01:38.172 --> 00:01:40.292
+this is what is the probability that
+
+00:01:40.292 --> 00:01:44.592
+the presented strategy's performance reflects genuine predictability
+
+00:01:44.592 --> 00:01:48.372
+rather than optimization luck progress, and then
+
+00:01:48.372 --> 00:01:49.872
+the framing matters.
+
+00:01:49.872 --> 00:01:52.012
+A backtest is not a pre -specified
+
+00:01:52.012 --> 00:01:54.612
+hypothesis test, and I believe this is.
+
+00:01:54.612 --> 00:01:56.912
+In a proper hypothesis test, you specify
+
+00:01:56.912 --> 00:01:59.572
+the hypothesis before seeing the data.
+
+00:01:59.572 --> 00:02:01.592
+Progress, and I believe this is.
+
+00:02:01.592 --> 00:02:04.072
+A backtest is typically the endpoint of
+
+00:02:04.072 --> 00:02:04.752
+a search.
+
+00:02:04.752 --> 00:02:06.932
+Try many parameter combinations.
+
+00:02:06.932 --> 00:02:09.392
+Select the one that performs best.
+
+00:02:09.392 --> 00:02:11.232
+Progress, and I believe this is.
+
+00:02:11.232 --> 00:02:13.472
+Then display that performance as if it
+
+00:02:13.472 --> 00:02:15.312
+were the result of a single clean
+
+00:02:15.312 --> 00:02:16.192
+experiment.
+
+00:02:16.192 --> 00:02:17.992
+Progress, and I believe this is.
+
+00:02:17.992 --> 00:02:21.052
+Every parameter adjustment is implicitly a trial.
+
+00:02:21.052 --> 00:02:23.472
+Every walk -forward tuning decision is a
+
+00:02:23.472 --> 00:02:25.532
+trial, and I believe this is.
+
+00:02:25.532 --> 00:02:27.132
+Every choice of which data set to
+
+00:02:27.132 --> 00:02:28.052
+use is a trial.
+
+00:02:28.052 --> 00:02:29.472
+I believe this is.
+
+00:02:29.472 --> 00:02:32.212
+The paper argues with formal mathematics, progress,
+
+00:02:32.212 --> 00:02:33.932
+and I believe this is, that this
+
+00:02:33.932 --> 00:02:36.932
+search process inflates expected in sample performance
+
+00:02:36.932 --> 00:02:40.532
+in a predictable and quantifiable way, progress,
+
+00:02:40.532 --> 00:02:42.392
+and I believe this is, and that
+
+00:02:42.392 --> 00:02:44.392
+the inflation is severe enough to explain
+
+00:02:44.392 --> 00:02:46.652
+much of the alpha that gets published.
+
+00:02:46.910 --> 00:02:50.130
+in classical statistics progress and i believe
+
+00:02:50.130 --> 00:02:51.650
+this is if you run one hundred
+
+00:02:51.650 --> 00:02:54.450
+independent hypothesis tests at a five per
+
+00:02:54.450 --> 00:02:56.790
+cent significance level and the null is
+
+00:02:56.790 --> 00:02:58.630
+true for all of them and i
+
+00:02:58.630 --> 00:03:00.670
+believe this is you expect five false
+
+00:03:00.670 --> 00:03:04.050
+rejections five false positives by random chance
+
+00:03:04.050 --> 00:03:08.270
+alone finance amplifies this in two important
+
+00:03:08.270 --> 00:03:11.930
+ways first there is no pre -registration
+
+00:03:11.930 --> 00:03:14.130
+requirement in financial research.
+
+00:03:14.650 --> 00:03:18.130
+A strategy can be developed, optimized, and
+
+00:03:18.130 --> 00:03:19.530
+discarded in private.
+
+00:03:19.530 --> 00:03:21.310
+Progress, and I believe this is, and
+
+00:03:21.310 --> 00:03:23.670
+only the surviving candidate is published or
+
+00:03:23.670 --> 00:03:25.110
+pitched to investors.
+
+00:03:25.110 --> 00:03:27.550
+Progress, and I believe this is, the
+
+00:03:27.550 --> 00:03:30.110
+number of discarded candidates never appears in
+
+00:03:30.110 --> 00:03:31.230
+the reported backtest.
+
+00:03:31.510 --> 00:03:33.410
+Progress, and I believe this is, compare
+
+00:03:33.410 --> 00:03:35.990
+this to clinical trials where failed trials
+
+00:03:35.990 --> 00:03:38.690
+are tracked and often required to be
+
+00:03:38.690 --> 00:03:39.450
+disclosed.
+
+00:03:39.450 --> 00:03:42.070
+This is, in finance, the file drawer
+
+00:03:42.070 --> 00:03:44.610
+is completely opaque, and I believe this
+
+00:03:44.610 --> 00:03:44.930
+is.
+
+00:03:44.930 --> 00:03:48.530
+Second, the quantities being optimized, sharp ratios,
+
+00:03:48.530 --> 00:03:51.110
+information ratios, progress, I believe this is
+
+00:03:51.170 --> 00:03:54.530
+maximum drawdown statistics, are highly sensitive to
+
+00:03:54.530 --> 00:03:57.010
+parameter choices, progress, and I believe this
+
+00:03:57.010 --> 00:03:58.690
+is small changes in look -back windows
+
+00:03:58.690 --> 00:04:01.610
+rebalancing frequency, progress, and I believe this
+
+00:04:01.610 --> 00:04:04.650
+is, or transaction cost assumptions can move
+
+00:04:04.650 --> 00:04:08.090
+a strategy's reported sharp ratio substantially on
+
+00:04:08.090 --> 00:04:11.170
+the same underlying data, progress, and I
+
+00:04:11.170 --> 00:04:12.130
+believe this is.
+
+00:04:12.130 --> 00:04:15.550
+This makes the effective search space enormous
+
+00:04:15.550 --> 00:04:18.090
+even when the researcher does not consciously
+
+00:04:18.090 --> 00:04:20.190
+think of themselves as searching.
+
+00:04:20.190 --> 00:04:22.790
+Progress, and I believe this is, every
+
+00:04:22.790 --> 00:04:24.770
+analyst who has ever adjusted a look
+
+00:04:24.770 --> 00:04:26.870
+-back period to see if the signal
+
+00:04:26.870 --> 00:04:29.410
+holds has run a second test, and
+
+00:04:29.410 --> 00:04:30.730
+then probably a third,
+
+00:04:30.900 --> 00:04:33.340
+i believe this is the methodological contribution
+
+00:04:33.340 --> 00:04:36.260
+in the bailey et al paper is
+
+00:04:36.260 --> 00:04:40.180
+the combinatorially symmetric cross validation framework or
+
+00:04:40.180 --> 00:04:43.280
+cscv progress and i believe this is
+
+00:04:43.280 --> 00:04:45.360
+here is the mechanics you take your
+
+00:04:45.360 --> 00:04:47.520
+full bactis data set and divide it
+
+00:04:47.520 --> 00:04:50.540
+into n equal length sub periods is
+
+00:04:50.540 --> 00:04:53.720
+the authors suggest n equal sixteen as
+
+00:04:53.720 --> 00:04:56.920
+a working default though the framework generalizes
+
+00:04:56.920 --> 00:04:59.500
+progress and i believe this is for
+
+00:04:59.500 --> 00:05:01.740
+each possible way of splitting those n
+
+00:05:01.740 --> 00:05:05.260
+sub periods into two equal groups a
+
+00:05:05.260 --> 00:05:07.940
+training half and a test half you
+
+00:05:07.940 --> 00:05:10.760
+identify the best performing strategy on the
+
+00:05:10.760 --> 00:05:13.500
+training data progress and i believe this
+
+00:05:13.500 --> 00:05:16.100
+is then measure where that that same
+
+00:05:16.100 --> 00:05:18.560
+strategy ranks on the test data relative
+
+00:05:18.560 --> 00:05:20.680
+to all the other candidates you were
+
+00:05:20.680 --> 00:05:22.660
+comparing, and I believe this is.
+
+00:05:22.660 --> 00:05:25.240
+After iterating over all possible splits, progress,
+
+00:05:25.240 --> 00:05:27.520
+and I believe this is, you calculate
+
+00:05:27.520 --> 00:05:29.860
+what fraction of the time the best
+
+00:05:29.860 --> 00:05:31.960
+in sample strategy ranks in the bottom
+
+00:05:31.960 --> 00:05:35.320
+half of strategies out of sample, progress,
+
+00:05:35.320 --> 00:05:36.260
+and I believe this is.
+
+00:05:36.260 --> 00:05:38.240
+That fraction is the probability of backtest
+
+00:05:38.240 --> 00:05:39.840
+overfitting, or PBO.
+
+00:05:39.840 --> 00:05:41.820
+Progress, and I believe this is.
+
+00:05:41.820 --> 00:05:43.540
+A PBO near zero means the in
+
+00:05:43.540 --> 00:05:46.420
+-sample winner reliably leads out of sample.
+
+00:05:46.420 --> 00:05:48.080
+The signal appears real.
+
+00:05:48.080 --> 00:05:50.000
+Progress, and I believe this is.
+
+00:05:50.000 --> 00:05:52.420
+A PBO approaching one means the in
+
+00:05:52.420 --> 00:05:55.000
+-sample winner is essentially random out of
+
+00:05:55.100 --> 00:05:55.600
+sample.
+
+00:05:55.600 --> 00:05:57.180
+The selection is noise.
+
+00:05:57.180 --> 00:05:59.040
+Progress, and I believe this is.
+
+00:05:59.040 --> 00:06:01.280
+The key assumption the framework requires is
+
+00:06:01.280 --> 00:06:02.080
+stationarity.
+
+00:06:02.300 --> 00:06:04.020
+Progress, and I believe this is.
+
+00:06:04.020 --> 00:06:06.580
+It treats the sub -periods as exchangeable
+
+00:06:06.580 --> 00:06:09.460
+draws from the same underlying return distribution.
+
+00:06:09.460 --> 00:06:11.300
+Progress, and I believe this is.
+
+00:06:11.300 --> 00:06:14.300
+When that assumption breaks down, during structural
+
+00:06:14.300 --> 00:06:16.720
+breaks, volatility regime changes.
+
+00:06:16.720 --> 00:06:18.360
+Progress, and I believe this is, or
+
+00:06:18.360 --> 00:06:21.080
+major macro regime shifts, the PBO estimate
+
+00:06:21.080 --> 00:06:24.060
+itself becomes unreliable, and I believe this
+
+00:06:24.060 --> 00:06:24.340
+is.
+
+00:06:24.440 --> 00:06:26.320
+The paper is explicit about this constraint.
+
+00:06:26.537 --> 00:06:28.777
+the bailey et al progress and i
+
+00:06:28.777 --> 00:06:30.957
+believe this is paper is primarily a
+
+00:06:30.957 --> 00:06:35.477
+methodological contribution it introduces the cscv frame
+
+00:06:35.477 --> 00:06:38.257
+aim work and works through illustrative cases
+
+00:06:38.257 --> 00:06:41.357
+rather than testing a large empirical sample
+
+00:06:41.357 --> 00:06:44.597
+of live strategy returns progress and i
+
+00:06:44.597 --> 00:06:46.277
+believe this is i want to be
+
+00:06:46.277 --> 00:06:47.617
+precise about what i can say with
+
+00:06:47.617 --> 00:06:51.217
+confidence here the illustrative analysis in the
+
+00:06:51.277 --> 00:06:54.237
+paper demonstrates that under plausible assumptions about
+
+00:06:54.237 --> 00:06:57.057
+the intensity of a typical research process,
+
+00:06:57.057 --> 00:07:00.517
+the number of parameter combinations a reasonable
+
+00:07:00.817 --> 00:07:02.597
+researcher would examine.
+
+00:07:02.597 --> 00:07:06.897
+The CSCV framework produces PBO estimates consistent
+
+00:07:06.897 --> 00:07:10.837
+with the substantial probability of overfitting on
+
+00:07:10.837 --> 00:07:14.377
+standard finality, of overfee on standard or
+
+00:07:14.377 --> 00:07:16.957
+failed destiny, and I'll take that as.
+
+00:07:16.957 --> 00:07:19.197
+Progress, and I believe this is, the
+
+00:07:19.197 --> 00:07:21.377
+qualitative conclusion is robust to the exact
+
+00:07:21.377 --> 00:07:23.717
+assumptions with enough trials.
+
+00:07:23.717 --> 00:07:25.797
+Progress, and I believe this is, you
+
+00:07:25.797 --> 00:07:28.917
+will construct strategies with impressive in sample
+
+00:07:28.917 --> 00:07:31.877
+sharp ratios that have no reliable predictive
+
+00:07:31.857 --> 00:07:33.737
+content out of sample.
+
+00:07:33.737 --> 00:07:36.297
+Progress, and I believe this is separately,
+
+00:07:36.297 --> 00:07:38.497
+work by Lopez de Prado and Travis
+
+00:07:38.497 --> 00:07:41.317
+Johnson published in the Journal of Finance.
+
+00:07:41.317 --> 00:07:43.757
+I am hedging the exact year.
+
+00:07:43.757 --> 00:07:46.177
+Progress, and I believe this is approximately
+
+00:07:46.177 --> 00:07:49.557
+2020 to 2021, applies a related multiple
+
+00:07:49.557 --> 00:07:52.197
+testing framework to the published cross cross
+
+00:07:52.197 --> 00:07:53.777
+section of equity factors.
+
+00:07:53.777 --> 00:07:55.657
+Progress, and I believe this is.
+
+00:07:55.657 --> 00:07:57.957
+The argument is that many published factors
+
+00:07:57.957 --> 00:08:01.017
+are false positives generated by the peer
+
+00:08:01.017 --> 00:08:05.117
+review process selecting for statistical significance.
+
+00:08:05.117 --> 00:08:06.997
+Progress, and I believe this is.
+
+00:08:06.997 --> 00:08:10.777
+While simultaneously, many genuine factors go unpublished
+
+00:08:10.777 --> 00:08:13.277
+because they lack the key statistics to
+
+00:08:13.277 --> 00:08:16.337
+clear publication thresholds, and I believe this
+
+00:08:16.337 --> 00:08:18.217
+is, it is a two -sided diagnosis
+
+00:08:18.417 --> 00:08:19.737
+of the academic literature.
+
+00:08:19.806 --> 00:08:21.806
+progress and i believe this is one
+
+00:08:21.806 --> 00:08:24.506
+practical tool that emerges from this research
+
+00:08:24.506 --> 00:08:27.566
+program is the deflated sharp ratio progress
+
+00:08:27.566 --> 00:08:29.686
+and i believe this is the intuition
+
+00:08:29.686 --> 00:08:31.166
+is this if you run n independent
+
+00:08:31.166 --> 00:08:33.586
+strategy back tests and show me the
+
+00:08:33.586 --> 00:08:35.746
+best one progress and i believe this
+
+00:08:35.746 --> 00:08:38.566
+is the expected maximums ratio across those
+
+00:08:38.566 --> 00:08:42.126
+end draws follows a predictable distribution from
+
+00:08:42.126 --> 00:08:45.686
+extreme value theory progress and i believe
+
+00:08:45.046 --> 00:08:47.606
+I believe this is, the deflated Sharpe
+
+00:08:47.606 --> 00:08:51.046
+ratio adjusts a reported Sharpe downward to
+
+00:08:51.046 --> 00:08:53.106
+account for this expected maximum.
+
+00:08:53.106 --> 00:08:56.386
+It tests whether the reported Sharpe materially
+
+00:08:56.386 --> 00:08:59.806
+exceeds what you would expect purely from
+
+00:08:59.806 --> 00:09:02.586
+selection out of end trials, even if
+
+00:09:02.586 --> 00:09:04.446
+no strategy had genuine alpha.
+
+00:09:04.446 --> 00:09:06.446
+Progress, and I believe this is.
+
+00:09:06.806 --> 00:09:08.826
+If a strategy's sharp barely clears that
+
+00:09:08.826 --> 00:09:12.306
+threshold, it is consistent with selection artifact.
+
+00:09:12.566 --> 00:09:14.386
+Progress, and I believe this is.
+
+00:09:14.386 --> 00:09:16.546
+If it clears it by a wide
+
+00:09:16.546 --> 00:09:19.386
+margin, you have preliminary evidence that something
+
+00:09:19.386 --> 00:09:21.066
+more durable may be present.
+
+00:09:21.066 --> 00:09:22.686
+Progress, and I believe this is.
+
+00:09:22.686 --> 00:09:25.446
+The practical obstacle is that computing the
+
+00:09:25.446 --> 00:09:28.926
+DSR requires two inputs that practitioners almost
+
+00:09:28.926 --> 00:09:29.886
+never disclose.
+
+00:09:29.886 --> 00:09:31.766
+Progress, and I believe this is.
+
+00:09:31.766 --> 00:09:34.066
+The number of trials actually run and
+
+00:09:34.066 --> 00:09:36.866
+the distribution of returns across those trials,
+
+00:09:37.286 --> 00:09:38.086
+and I believe this is.
+
+00:09:38.086 --> 00:09:40.566
+Absent that information, the DSR cannot be
+
+00:09:40.566 --> 00:09:41.226
+computed.
+
+00:09:41.226 --> 00:09:43.446
+Progress, and I believe this is.
+
+00:09:43.446 --> 00:09:46.046
+That is itself an observation about current
+
+00:09:46.206 --> 00:09:50.526
+disclosure standards in systematic strategy research, not
+
+00:09:50.526 --> 00:09:52.886
+an argument against the tool, progress, and
+
+00:09:52.886 --> 00:09:54.746
+I believe this is, but a comment
+
+00:09:54.746 --> 00:09:56.886
+on the gap between what the tool
+
+00:09:56.886 --> 00:09:59.886
+requires and what the industry typically provides.
+
+00:09:59.991 --> 00:10:02.171
+progress and i believe this is here
+
+00:10:02.171 --> 00:10:03.751
+is where i want to offer a
+
+00:10:03.751 --> 00:10:06.431
+rigorous reading against the framework because it
+
+00:10:06.431 --> 00:10:09.271
+earns one progress and i believe this
+
+00:10:09.271 --> 00:10:11.831
+is the first limitation is the independence
+
+00:10:11.831 --> 00:10:15.171
+assumption cscv is clean when the strategies
+
+00:10:15.171 --> 00:10:18.691
+being compared are uncorrelated in practice progress
+
+00:10:18.691 --> 00:10:21.011
+and i believe this is quant research
+
+00:10:21.011 --> 00:10:24.611
+generates correlated candidates if you are testing
+
+00:10:24.611 --> 00:10:27.091
+variants of a momentum signal with look
+
+00:10:27.091 --> 00:10:29.611
+-back periods from 5 to 250 days,
+
+00:10:29.611 --> 00:10:31.231
+and I believe this is, those strategies
+
+00:10:31.231 --> 00:10:32.591
+are highly correlated.
+
+00:10:32.591 --> 00:10:35.111
+Progress, and I believe this is, correlated
+
+00:10:35.111 --> 00:10:37.531
+tests do not compound the false discovery
+
+00:10:37.531 --> 00:10:39.711
+rate the way independent tests do.
+
+00:10:39.711 --> 00:10:42.571
+Progress, and I believe this is, the
+
+00:10:42.571 --> 00:10:45.251
+PBO estimate may be too pessimistic in
+
+00:10:45.251 --> 00:10:46.991
+a regime where most of the search
+
+00:10:46.991 --> 00:10:49.611
+space is variations on a theme rather
+
+00:10:49.611 --> 00:10:53.051
+than truly independent hypotheses progress and i
+
+00:10:53.051 --> 00:10:55.671
+believe this is second the stationarity requirement
+
+00:10:55.671 --> 00:10:58.391
+is under serious pressure in recent markets
+
+00:10:59.171 --> 00:11:01.451
+the post twenty twenty two rate environment
+
+00:11:01.451 --> 00:11:05.131
+for instance progress and violated stationarity conditions
+
+00:11:05.131 --> 00:11:08.371
+that held for decades across multiple asset
+
+00:11:08.371 --> 00:11:09.211
+classes.
+
+00:11:09.211 --> 00:11:10.991
+Progress, and I believe this is, PBO
+
+00:11:10.991 --> 00:11:14.191
+estimates calibrated on pre -2022 data are
+
+00:11:14.191 --> 00:11:16.951
+not mechanically transferable to current regimes.
+
+00:11:16.951 --> 00:11:19.471
+Progress, and I believe this is, the
+
+00:11:19.471 --> 00:11:21.791
+paper is careful about this, but users
+
+00:11:21.791 --> 00:11:23.671
+of the framework are not always equally
+
+00:11:23.671 --> 00:11:24.431
+careful.
+
+00:11:24.431 --> 00:11:26.691
+Progress, and I believe this is.
+
+00:11:26.691 --> 00:11:29.051
+Third, there is a selection problem in
+
+00:11:29.051 --> 00:11:30.911
+what gets subjected to the analysis at
+
+00:11:30.911 --> 00:11:31.251
+all.
+
+00:11:31.631 --> 00:11:33.371
+Progress, and I believe this is.
+
+00:11:33.371 --> 00:11:36.751
+Academic factor research goes through peer review,
+
+00:11:36.751 --> 00:11:39.311
+which at least imposes some standard for
+
+00:11:39.311 --> 00:11:40.951
+explicitness about methods.
+
+00:11:40.951 --> 00:11:42.891
+Progress, and I believe this is.
+
+00:11:42.891 --> 00:11:45.731
+The research where Baptist inflation is arguably
+
+00:11:45.891 --> 00:11:49.791
+most severe, practitioner pitch materials, white papers.
+
+00:11:49.791 --> 00:11:51.951
+Progress, and I believe this is, fund
+
+00:11:51.951 --> 00:11:55.431
+marketing documents, never enters the academic literature
+
+00:11:55.431 --> 00:11:58.231
+and cannot be evaluated using the CSCV
+
+00:11:58.231 --> 00:11:59.071
+framework.
+
+00:11:59.071 --> 00:12:01.371
+Progress, and I believe this is, the
+
+00:12:01.371 --> 00:12:04.071
+problem the paper identifies is real, the
+
+00:12:04.071 --> 00:12:06.451
+tools the paper provides may not reach
+
+00:12:06.451 --> 00:12:07.691
+its worst manifestations.
+
+00:12:08.154 --> 00:12:12.174
+For researchers and systematic investors, progress, and
+
+00:12:12.174 --> 00:12:14.214
+I believe this is, the minimum standard
+
+00:12:14.214 --> 00:12:16.834
+of evidence for any reported strategy should
+
+00:12:16.834 --> 00:12:19.894
+now include some form of multiple testing
+
+00:12:19.894 --> 00:12:24.594
+correction, whether CSCV, the deflated Sharpe ratio,
+
+00:12:24.594 --> 00:12:26.794
+or the Harvey -Leo, progress, and I
+
+00:12:26.794 --> 00:12:29.014
+believe this is, and JUT statistic adjustment
+
+00:12:29.014 --> 00:12:31.754
+framework published in the Review of Financial
+
+00:12:31.754 --> 00:12:35.334
+Studies around 2016, Progress, and I believe
+
+00:12:35.334 --> 00:12:35.834
+this is.
+
+00:12:35.834 --> 00:12:37.874
+A BACTIS that does not disclose the
+
+00:12:37.874 --> 00:12:41.034
+number of parameter combinations tested is an
+
+00:12:41.034 --> 00:12:42.354
+incomplete BACTIS.
+
+00:12:42.354 --> 00:12:44.454
+Progress, and I believe this is.
+
+00:12:44.454 --> 00:12:46.494
+In the same way, a clinical trial
+
+00:12:46.494 --> 00:12:49.314
+that does not disclose enrollment criteria is
+
+00:12:49.314 --> 00:12:51.094
+an incomplete clinical trial.
+
+00:12:51.294 --> 00:12:53.134
+Progress, and I believe this is.
+
+00:12:53.134 --> 00:12:55.454
+For practitioners who have built robust live
+
+00:12:55.454 --> 00:12:58.214
+trading records with genuine out -of -sample
+
+00:12:58.214 --> 00:12:58.654
+data.
+
+00:12:58.654 --> 00:13:00.514
+Progress, and I believe this is, this
+
+00:13:00.514 --> 00:13:04.274
+framework mostly vindicates rigorous internal research processes.
+
+00:13:04.274 --> 00:13:06.834
+Progress, and I believe this is, the
+
+00:13:06.834 --> 00:13:09.014
+discipline Lopez de Prado is calling for
+
+00:13:09.014 --> 00:13:12.754
+is precisely what, systematic shops already impose.
+
+00:13:12.754 --> 00:13:14.834
+Progress, and I believe this is, the
+
+00:13:14.834 --> 00:13:16.994
+change in practices at the margin of
+
+00:13:16.994 --> 00:13:18.694
+the industry, not the center.
+
+00:13:19.674 --> 00:13:20.874
+What would change my view?
+
+00:13:20.874 --> 00:13:23.214
+Progress, and I believe this is, a
+
+00:13:23.214 --> 00:13:26.614
+carefully designed empirical study showing that strategies
+
+00:13:26.614 --> 00:13:30.034
+which fail the CSEV screen, high PBO,
+
+00:13:30.034 --> 00:13:32.734
+perform as well in live trading and
+
+00:13:32.774 --> 00:13:34.094
+strategies that pass it.
+
+00:13:34.094 --> 00:13:36.194
+Progress, and I believe this is.
+
+00:13:36.194 --> 00:13:39.814
+If PBO genuinely measures spuriousness, it should
+
+00:13:39.814 --> 00:13:42.294
+predict live under performance better than chance.
+
+00:13:42.294 --> 00:13:43.974
+Progress, and I believe this is.
+
+00:13:43.974 --> 00:13:45.494
+I am not aware of a clean
+
+00:13:45.574 --> 00:13:47.954
+published test of that specific prediction.
+
+00:13:47.954 --> 00:13:49.834
+Progress, and I believe this is.
+
+00:13:49.834 --> 00:13:51.834
+That is the open empirical question that
+
+00:13:51.834 --> 00:13:53.214
+answered decisively.
+
+00:13:52.014 --> 00:13:55.154
+decisively progress and i believe this is
+
+00:13:55.154 --> 00:13:58.174
+would either validate or substantially qualify the
+
+00:13:58.174 --> 00:14:01.314
+practical importance of this entire research program
+
+00:14:01.658 --> 00:14:03.618
+progress and i believe this is that
+
+00:14:03.618 --> 00:14:05.858
+is the landscape bailey boerwijn lopez de
+
+00:14:05.858 --> 00:14:09.178
+prado and jew on backtest overfitting progress
+
+00:14:09.178 --> 00:14:11.558
+and i believe this is the combinatorially
+
+00:14:11.558 --> 00:14:15.358
+symmetric cross validation framework the probability of
+
+00:14:15.358 --> 00:14:19.058
+backtest overfitting the deflated sharp ratio progress
+
+00:14:19.058 --> 00:14:20.918
+and i believe this is and the
+
+00:14:20.918 --> 00:14:23.398
+extension to false discoveries in the published
+
+00:14:23.398 --> 00:14:26.698
+factor Progress, and I believe this is.
+
+00:14:26.998 --> 00:14:28.698
+The notices of the AMS paper link
+
+00:14:28.698 --> 00:14:31.338
+and related SSRN working paper links are
+
+00:14:31.338 --> 00:14:32.158
+in the description.
+
+00:14:32.518 --> 00:14:34.278
+Progress, and I believe this is.
+
+00:14:34.278 --> 00:14:36.398
+The core message in one sentence, the
+
+00:14:36.398 --> 00:14:38.498
+number of tests run is part of
+
+00:14:38.498 --> 00:14:39.098
+the evidence.
+
+00:14:39.098 --> 00:14:40.798
+Progress, and I believe this is.
+
+00:14:40.798 --> 00:14:42.598
+And a backtest that omits that number
+
+00:14:42.598 --> 00:14:44.338
+is an incomplete data point.
+
+00:14:44.338 --> 00:14:46.318
+Progress, and I believe this is.
+
+00:14:46.318 --> 00:14:48.338
+Next week I will read another paper.
+
+00:14:48.298 --> 00:14:50.998
+Not investment advice, just a careful read.
+

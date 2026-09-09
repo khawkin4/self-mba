@@ -22,6 +22,10 @@ VEINS = {
     "forbes": [
         "Forbes billionaire business strategy interview", "Forbes how I built this entrepreneur",
         "Forbes investing wealth building"],
+    "harlem-capital": [
+        "Henri Pierre-Jacques Harlem Capital venture capital", "Harlem Capital how VC works term sheet",
+        "Brandon Bryant Harlem Capital diverse founders", "Henri Pierre-Jacques how to raise venture capital",
+        "Harlem Capital fund strategy investing in startups", "how venture capital funds make money carry"],
 }
 
 def slug(s): return "".join(c if c.isalnum() else "-" for c in s.lower())[:60].strip("-")
@@ -35,8 +39,10 @@ def run(cmd, out, timeout=900):
     return False
 
 def main():
+    only = set(sys.argv[1:])  # optional: restrict to named veins
     ok = 0
     for vein, qs in VEINS.items():
+        if only and vein not in only: continue
         d = os.path.join(OUT, vein); os.makedirs(d, exist_ok=True)
         for q in qs:
             sys.stderr.write(f"[{vein}] {q!r}\n")

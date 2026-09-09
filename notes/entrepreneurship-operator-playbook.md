@@ -83,6 +83,19 @@
   (utility tied to supply) → ~$1.7B. *(See [[canon-parker-platform-revolution]], [[canon-hagiu-wright-multi-sided-platforms]].)*
 - **Underrated buildable moats:** customer-controlled switching costs; concierge service (Zappos).
 
+## 8 · The other seat — how VCs think (the investor-side mirror)
+Everything above is the **founder's** seat. The **allocator's** seat is in **[[harlem-capital-vc-insights]]**
+(Henri Pierre-Jacques / Brandon Bryant, Harlem Capital — 17 videos). The pairings that matter most:
+- **"Is it venture?"** — VCs reject great cash-flow businesses as "not venture" (need $100M–$1B+ via
+  IPO/acquisition + 50%+ growth). A "no" is often a *classification*, not a judgment. *(↔ §5.)*
+- **Fund size dictates the check** — sub-$50M funds run 5–8% ownership; $100M+ funds *must* own 10–20%, so a
+  small check from a big fund breaks *their* math. Match your raise to their portfolio construction. *(↔ §5.)*
+- **LPs buy process over a lucky home run; carry is $0 if the fund misses full-carry mode** (European
+  waterfall: LPs whole first → 8% hurdle → catch-up → 80/20). Markups are leading indicators that can
+  evaporate 70%. This is *why* VCs push for 100–1,000× and "light capital on fire." *(↔ §5.)*
+- **Brand/trust is sourcing** — VCs "track founders for years before they have a company"; be the first
+  call. "Document, don't create." *(↔ "distribution is the new moat" below.)*
+
 ## Two cross-cutting patterns
 - **Distribution is the new moat** — AI makes the product easy; getting attention is the defensible part.
 - **Sell the outcome, not the mechanism** — *"post a job photo, Google finds your next customer"* beat
