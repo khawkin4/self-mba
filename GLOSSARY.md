@@ -1,231 +1,461 @@
 # Glossary & Concept Index
 
-> Every key term, framework, and model in the program — where it's **defined**, where it's
-> **applied** to real data, and where it **argues** with other ideas. This is the navigational
-> layer that connects the four tiers: `learn/` → `lessons/` → `notes/canon/` → `acumen/`.
+> Every key term, framework, and model in the program — what it means, where it comes from,
+> and where it connects. This is the navigational layer that ties together `learn/` → `lessons/`
+> → `notes/canon/` → `acumen/`.
 >
-> **How to use:** look up any concept. Follow the links to see it taught, see it in action on
-> real companies, and see where other thinkers disagree. The disagreements are the compounding.
+> **How to use:** look up any concept. Read the definition, follow the source link for depth,
+> check the applied-to examples for real-world use, and follow the "argues with" threads
+> to see where other thinkers disagree. The disagreements are the compounding.
 
 ---
 
 ## Financial Statements & Accounting
 
-| Term | Defined | Applied | Argues with |
-|------|---------|---------|-------------|
-| **Revenue** (top line) | [Unit 01](learn/unit-01-reading-the-scoreboard.md) | RCL, AAPL, PTON, DPZ, TXRH, NKE | — |
-| **Costs** | [Unit 01](learn/unit-01-reading-the-scoreboard.md) | RCL (fixed costs + COVID) | — |
-| **Profit / Net income** (bottom line) | [Unit 01](learn/unit-01-reading-the-scoreboard.md) | RCL, AAPL, NKE | "Profit is an opinion; cash is a fact" → [Unit 02](learn/unit-02-cash-vs-profit.md) |
-| **Net margin** | [Unit 01](learn/unit-01-reading-the-scoreboard.md), [Unit 04](learn/unit-04-is-it-healthy.md) | RCL, MA, AAPL | — |
-| **Income statement** (P&L) | [Unit 01](learn/unit-01-reading-the-scoreboard.md) | RCL 2019/2020/2022 | — |
-| **Cash flow statement** | [Unit 02](learn/unit-02-cash-vs-profit.md) | RCL | — |
-| **Operating cash flow** (OCF) | [Unit 02](learn/unit-02-cash-vs-profit.md) | RCL, AAPL (earnings quality) | — |
-| **Depreciation** | [Unit 02](learn/unit-02-cash-vs-profit.md) | RCL (ships as non-cash charge) | — |
-| **Balance sheet** | [Unit 03](learn/unit-03-what-a-company-owns-and-owes.md) | RCL, AAPL | — |
-| **Assets / Liabilities / Equity** | [Unit 03](learn/unit-03-what-a-company-owns-and-owes.md) | RCL, AAPL | — |
-| **Accounting equation** (A = L + E) | [Unit 03](learn/unit-03-what-a-company-owns-and-owes.md) | [AAPL 10-K note](notes/01-accounting/aapl-10k-fy2025.md) | — |
-| **Leverage** (liabilities / equity) | [Unit 04](learn/unit-04-is-it-healthy.md) | RCL (capital-heavy) | — |
-| **3-minute health check** | [Unit 04](learn/unit-04-is-it-healthy.md) | RCL capstone | — |
-| **10-K** (annual report) | [Unit 01](learn/unit-01-reading-the-scoreboard.md) | [AAPL 10-K](notes/01-accounting/aapl-10k-fy2025.md), NKE | — |
-| **Risk factors** (Item 1A) | [Unit 08](learn/unit-08-reading-the-words.md) | NKE (filing-language diff) | — |
-| **MD&A** | [Unit 08](learn/unit-08-reading-the-words.md) | — | — |
-| **SEC / EDGAR** | [Unit 01](learn/unit-01-reading-the-scoreboard.md) | `_ingest/edgar.py` throughout | — |
-| **XBRL** | [CURRICULUM.md](CURRICULUM.md) | [sec-filing-intelligence](notes/sec-filing-intelligence.md) | — |
+**Revenue** (top line) — Total money a company earns from its core business before any costs are subtracted.
+*Source:* [Unit 01](learn/unit-01-reading-the-scoreboard.md) · *Applied:* RCL, AAPL, PTON, DPZ, TXRH, NKE
 
-## Valuation & Investment
+**Costs** — Everything a company spends to generate revenue: materials, labor, rent, marketing, interest.
+*Source:* [Unit 01](learn/unit-01-reading-the-scoreboard.md) · *Applied:* RCL (fixed costs + COVID impact)
 
-| Term | Defined | Applied | Argues with |
-|------|---------|---------|-------------|
-| **Growth** (durable vs spike) | [Unit 05](learn/unit-05-growth-and-returns.md) | PTON boom/bust | — |
-| **Cash burn** | [Unit 05](learn/unit-05-growth-and-returns.md) | PTON | — |
-| **Compounding** | [Unit 05](learn/unit-05-growth-and-returns.md), [Unit 10](learn/unit-10-personal-finance-operating-system.md) | 1% rule in [Atomic Habits](notes/canon/canon-clear-atomic-habits.md) | — |
-| **Value / Present value** | [Unit 06](learn/unit-06-whats-a-business-worth.md) | PTON price collapse | — |
-| **Discounted cash flow** (DCF) | [Unit 06](learn/unit-06-whats-a-business-worth.md) (intuition) | [apply-stock-picking-nke](notes/apply-stock-picking-nke.md) | — |
-| **Market cap** | [Unit 06](learn/unit-06-whats-a-business-worth.md) | — | — |
-| **Capital expenditure** (capex) | [Unit 09](learn/unit-09-capital-light-businesses.md) | DPZ vs TXRH | — |
-| **Capital-light / asset-light** | [Unit 09](learn/unit-09-capital-light-businesses.md) | DPZ (franchise model) | Capital-heavy: RCL, TXRH |
-| **Royalty business** | [Unit 09](learn/unit-09-capital-light-businesses.md), [media-practitioner](notes/media-practitioner-playbook.md) | DPZ, Chick-fil-A, ARM | Ackman thesis via Tiger Sisters |
-| **Margin of safety** | [Klarman](notes/canon/canon-klarman-margin-of-safety.md) | [NKE stock pick](notes/apply-stock-picking-nke.md), acumen case-01 | Mauboussin: process over outcome |
-| **Expectations investing** | [Mauboussin](notes/canon/canon-mauboussin-success-equation.md) | [NKE stock pick](notes/apply-stock-picking-nke.md) | — |
-| **Khan's 7-step stock-picking** | [tiger-sisters-stock-picking](notes/tiger-sisters-stock-picking.md) | [apply-stock-picking-nke](notes/apply-stock-picking-nke.md) | — |
+**Profit / Net income** (bottom line) — What's left after subtracting all costs from revenue. The accounting measure of whether a company made money.
+*Source:* [Unit 01](learn/unit-01-reading-the-scoreboard.md) · *Applied:* RCL, AAPL, NKE · *Argues with:* "Profit is an opinion; cash is a fact" → [Unit 02](learn/unit-02-cash-vs-profit.md)
 
-## Competitive Strategy & Moats
+**Net margin** — Profit as a percentage of revenue (net income ÷ revenue × 100). How many cents of profit per dollar of sales.
+*Source:* [Unit 01](learn/unit-01-reading-the-scoreboard.md), [Unit 04](learn/unit-04-is-it-healthy.md) · *Applied:* RCL, MA, AAPL
 
-| Term | Defined | Applied | Argues with |
-|------|---------|---------|-------------|
-| **Competitive advantage / Moat** | [Unit 07](learn/unit-07-the-landscape-moats.md) | MA vs RCL | Porter ↔ Helmer ↔ Christensen |
-| **Network effect** | [Unit 07](learn/unit-07-the-landscape-moats.md), [Parker](notes/canon/canon-parker-platform-revolution.md) | Crexi, Snap | — |
-| **Commodity business** | [Unit 07](learn/unit-07-the-landscape-moats.md) | Cruise lines | — |
-| **Five Forces** | [Porter](notes/canon/canon-porter-competitive-strategy.md) | [core-04 lesson](lessons/core-04-competitive-strategy.html), [JPM report](notes/jpm-software-sector-spotlight-2026.md) | Helmer: if you can't name the *barrier*, no moat |
-| **7 Powers** | [Helmer](notes/canon/canon-helmer-7-powers.md) | [JPM defensibility matrix](notes/jpm-software-sector-spotlight-2026.md), [DRAMA crossref](notes/drama-structural-crossref.md), acumen case-01 | Porter: forces vs powers |
-| **Disruptive innovation** | [Christensen](notes/canon/canon-christensen-innovators-dilemma.md) | [JPM AI disruption](notes/jpm-software-sector-spotlight-2026.md) | Porter/Helmer: not every entrant disrupts |
-| **Value stick** (WTP / WTS) | [core-04 lesson](lessons/core-04-competitive-strategy.html) | Netflix vs Disney | — |
-| **Co-opetition / Value Net** | [Brandenburger & Nalebuff](notes/canon/canon-brandenburger-nalebuff-coopetition.md) | — (gap: never applied) | Porter: zero-sum framing |
-| **Platform envelopment** | [Cusumano](notes/canon/canon-cusumano-business-of-platforms.md), [Parker](notes/canon/canon-parker-platform-revolution.md) | Amazon Basics, Sherlocking | — |
-| **PARTS** (change the game) | [Brandenburger & Nalebuff](notes/canon/canon-brandenburger-nalebuff-coopetition.md) | — (gap: never applied) | — |
+**Income statement** (P&L) — The financial report that shows revenue, costs, and profit over a period (quarter or year). A movie, not a photograph.
+*Source:* [Unit 01](learn/unit-01-reading-the-scoreboard.md) · *Applied:* RCL 2019/2020/2022
 
-## Strategy & Decision-Making
+**Cash flow statement** — The financial report that tracks actual cash moving in and out of the business. Separates operating, investing, and financing flows.
+*Source:* [Unit 02](learn/unit-02-cash-vs-profit.md) · *Applied:* RCL
 
-| Term | Defined | Applied | Argues with |
-|------|---------|---------|-------------|
-| **Strategy kernel** (diagnosis + guiding policy + action) | [Rumelt](notes/canon/canon-rumelt-good-strategy.md) | acumen case-01 | Lafley: 5 choices cascade |
-| **The Crux** | [Rumelt](notes/canon/canon-rumelt-the-crux.md) | acumen case-01, [DRAMA crossref](notes/drama-structural-crossref.md) | Goldratt: constraint |
-| **Playing to Win** (5 choices) | [Lafley & Martin](notes/canon/canon-lafley-martin-playing-to-win.md) | — (gap) | Rumelt: kernel |
-| **Mission command** (Auftragstaktik) | [Bungay](notes/canon/canon-bungay-art-of-action.md) | [media-practitioner](notes/media-practitioner-playbook.md) (Commander's Intent) | — |
-| **Knowledge / Alignment / Effects gaps** | [Bungay](notes/canon/canon-bungay-art-of-action.md) | — (gap) | — |
-| **Day 1 vs Day 2** | [Bezos](notes/canon/canon-bezos-shareholder-letters.md) | [operator playbook](notes/entrepreneurship-operator-playbook.md), Tiger Sisters | — |
-| **Two-way door / One-way door** | [Bezos](notes/canon/canon-bezos-shareholder-letters.md) | [operator playbook](notes/entrepreneurship-operator-playbook.md), acumen case-01 | — |
-| **Disagree and commit** | [Bezos](notes/canon/canon-bezos-shareholder-letters.md) | [operator playbook](notes/entrepreneurship-operator-playbook.md) | — |
-| **OKRs** | [Doerr](notes/canon/canon-doerr-measure-what-matters.md), [Grove](notes/canon/canon-grove-high-output-management.md) | Tiger Sisters | 4DX: WIGs compete |
-| **Strategic inflection point** | [Grove](notes/canon/canon-grove-only-the-paranoid-survive.md) | acumen case-01 (Intel) | — |
+**Operating cash flow** (OCF) — Cash generated by the company's actual business operations, stripping out accounting adjustments. The "did customers actually pay us" number.
+*Source:* [Unit 02](learn/unit-02-cash-vs-profit.md) · *Applied:* RCL, AAPL (earnings quality check)
 
-## Negotiation & Influence
+**Depreciation** — A non-cash accounting charge that spreads the cost of a big asset (ship, factory, building) over its useful life. Reduces reported profit but doesn't reduce cash.
+*Source:* [Unit 02](learn/unit-02-cash-vs-profit.md) · *Applied:* RCL (ships as non-cash charge)
 
-| Term | Defined | Applied | Argues with |
-|------|---------|---------|-------------|
-| **BATNA** (best alternative) | [Fisher & Ury](notes/canon/canon-fisher-ury-getting-to-yes.md) | Tiger Sisters (salary scripts) | Voss: empathy over framework |
-| **ZOPA** | [Fisher & Ury](notes/canon/canon-fisher-ury-getting-to-yes.md) | — | — |
-| **Integrative negotiation** | [Fisher & Ury](notes/canon/canon-fisher-ury-getting-to-yes.md) | Tiger Sisters ("the orange") | — |
-| **Tactical empathy / Mirroring** | [Voss](notes/canon/canon-voss-never-split-the-difference.md) | Tiger Sisters | Fisher & Ury: interests-based |
-| **Six principles of persuasion** | [Cialdini](notes/canon/canon-cialdini-influence.md) | Tiger Sisters ("because" effect) | Carnegie: sincerity |
-| **Pre-suasion** | [Cialdini](notes/canon/canon-cialdini-pre-suasion.md) | Tiger Sisters (back-channel) | — |
-| **SBI feedback** | Tiger Sisters / Scott's Radical Candor | Tiger Sisters (worked scripts) | — |
-| **Pyramid Principle** (MECE) | [Minto](notes/canon/canon-minto-pyramid-principle.md) | Tiger Sisters (SCQA), acumen memo format | Duarte: story-first |
-| **SCQA** (Situation-Complication-Question-Answer) | Tiger Sisters | Tiger Sisters (worked examples) | — |
+**Balance sheet** — A snapshot of everything a company owns (assets), owes (liabilities), and the residual belonging to shareholders (equity) at one moment in time. A photograph, not a movie.
+*Source:* [Unit 03](learn/unit-03-what-a-company-owns-and-owes.md) · *Applied:* RCL, AAPL
 
-## Behavioral & Decision Science
+**Assets** — Everything a company owns or is owed: cash, buildings, inventory, accounts receivable, intellectual property.
+*Source:* [Unit 03](learn/unit-03-what-a-company-owns-and-owes.md) · *Applied:* RCL, AAPL
 
-| Term | Defined | Applied | Argues with |
-|------|---------|---------|-------------|
-| **System 1 / System 2** | [Kahneman](notes/canon/canon-kahneman-thinking-fast-and-slow.md) | [tiger-sisters-stock-picking](notes/tiger-sisters-stock-picking.md) | Klein: trust expert intuition |
-| **Anchoring / Decoy / Endowment** | [Ariely](notes/canon/canon-ariely-predictably-irrational.md) | — (gap) | — |
-| **Nudge / Choice architecture** | [Thaler & Sunstein](notes/canon/canon-thaler-sunstein-nudge.md) | — (gap) | — |
-| **Recognition-primed decisions** | [Klein](notes/canon/canon-klein-sources-of-power.md) | — (gap) | Kahneman: biases |
-| **Noise** (judgment variability) | [Kahneman, Sibony & Sunstein](notes/canon/canon-kahneman-sibony-sunstein-noise.md) | — (gap) | — |
-| **Superforecasting** | [Tetlock](notes/canon/canon-tetlock-superforecasting.md) | [tiger-sisters-stock-picking](notes/tiger-sisters-stock-picking.md) | — |
-| **Latticework of models** | [Munger](notes/canon/canon-munger-poor-charlies-almanack.md) | [tiger-sisters-stock-picking](notes/tiger-sisters-stock-picking.md) | — |
-| **Skill vs luck** | [Mauboussin](notes/canon/canon-mauboussin-success-equation.md) | Multiple practitioner notes | — |
+**Liabilities** — Everything a company owes to others: loans, bonds, accounts payable, deferred revenue.
+*Source:* [Unit 03](learn/unit-03-what-a-company-owns-and-owes.md) · *Applied:* RCL, AAPL
 
-## Leadership & Organizations
+**Equity** — What's left for shareholders after subtracting liabilities from assets. The shock absorber — if assets drop, equity absorbs the blow before creditors lose anything.
+*Source:* [Unit 03](learn/unit-03-what-a-company-owns-and-owes.md) · *Applied:* RCL, AAPL
 
-| Term | Defined | Applied | Argues with |
-|------|---------|---------|-------------|
-| **High-output management** | [Grove](notes/canon/canon-grove-high-output-management.md) | [media-practitioner](notes/media-practitioner-playbook.md) (meetings) | — |
-| **Radical Candor** | [Scott](notes/canon/canon-scott-radical-candor.md) | Tiger Sisters (SBI scripts) | Carnegie: never criticize directly |
-| **Execution** (3 core processes) | [Bossidy & Charan](notes/canon/canon-bossidy-charan-execution.md) | — (gap) | — |
-| **Culture = what you do under pressure** | [Horowitz](notes/canon/canon-horowitz-what-you-do-is-who-you-are.md) | [media-practitioner](notes/media-practitioner-playbook.md) | Schein: artifacts/values/assumptions |
-| **Org culture layers** | [Schein](notes/canon/canon-schein-organizational-culture.md) | [media-practitioner](notes/media-practitioner-playbook.md) | Horowitz: action over analysis |
-| **8 steps of change** | [Kotter](notes/canon/canon-kotter-leading-change.md) | [media-practitioner](notes/media-practitioner-playbook.md) | Heath (Switch): Rider/Elephant/Path |
-| **Intent-based leadership** | [Marquet](notes/canon/canon-marquet-turn-the-ship-around.md) | [media-practitioner](notes/media-practitioner-playbook.md) | — |
-| **Theory of constraints** | [Goldratt](notes/canon/canon-goldratt-the-goal.md) | — (gap) | Meadows: leverage points |
-| **Lean / Toyota Production System** | [Ohno](notes/canon/canon-ohno-toyota-production-system.md) | — (gap) | — |
-| **Team production / Shirking** | [Alchian & Demsetz](notes/canon/canon-alchian-demsetz-firm.md) | [operator playbook](notes/entrepreneurship-operator-playbook.md) | — |
-| **Agency theory** | [Jensen & Meckling](notes/canon/canon-jensen-meckling-agency-theory.md) | [EYL](notes/eyl-insights.md), [Harlem Capital](notes/harlem-capital-vc-insights.md), Tiger Sisters (GP/LP) | — |
+**Accounting equation** (A = L + E) — Assets always equal liabilities plus equity. Every transaction must keep this equation balanced.
+*Source:* [Unit 03](learn/unit-03-what-a-company-owns-and-owes.md) · *Applied:* [AAPL 10-K note](notes/01-accounting/aapl-10k-fy2025.md)
 
-## Game Theory
+**Leverage** — The ratio of liabilities to equity. Higher leverage means more borrowed money relative to owner money — more upside when things go well, more risk when they don't.
+*Source:* [Unit 04](learn/unit-04-is-it-healthy.md) · *Applied:* RCL (capital-heavy business)
 
-| Term | Defined | Applied | Argues with |
-|------|---------|---------|-------------|
-| **Nash equilibrium** | [Dixit & Nalebuff](notes/canon/canon-dixit-nalebuff-thinking-strategically.md) | [canon-game-theory lesson](site/dist/canon-game-theory.html) | — |
-| **Backward induction** | [Dixit & Nalebuff](notes/canon/canon-dixit-nalebuff-thinking-strategically.md) | — (gap) | — |
-| **Tit for Tat** | [Axelrod](notes/canon/canon-axelrod-evolution-of-cooperation.md) | [canon-game-theory lesson](site/dist/canon-game-theory.html) | — |
-| **Focal points** | [Schelling](notes/canon/canon-schelling-strategy-of-conflict.md) | — (gap) | — |
-| **Credible commitment** | [Schelling](notes/canon/canon-schelling-strategy-of-conflict.md) | — (gap) | — |
-| **Complementors** | [Brandenburger & Nalebuff](notes/canon/canon-brandenburger-nalebuff-coopetition.md) | — (gap) | Porter: no complementor role |
+**3-minute health check** — A quick diagnostic combining three ratios: net margin (profitability), cash flow vs profit (earnings quality), and leverage (risk). Enough to form a first opinion on any public company.
+*Source:* [Unit 04](learn/unit-04-is-it-healthy.md) · *Applied:* RCL capstone exercise
 
-## Systems Thinking
+**10-K** — A company's annual report filed with the SEC. Contains audited financials, risk factors, management discussion, and business description. The single most important public document about any company.
+*Source:* [Unit 01](learn/unit-01-reading-the-scoreboard.md) · *Applied:* [AAPL 10-K](notes/01-accounting/aapl-10k-fy2025.md), NKE
 
-| Term | Defined | Applied | Argues with |
-|------|---------|---------|-------------|
-| **Leverage points** (12 places to intervene) | [Meadows](notes/canon/canon-meadows-leverage-points.md) | — (gap) | Goldratt: single constraint |
-| **Stocks & flows / Feedback loops** | [Meadows](notes/canon/canon-meadows-thinking-in-systems.md) | — (gap) | — |
-| **Systems archetypes** | [Senge](notes/canon/canon-senge-fifth-discipline.md) | — (gap) | — |
-| **The bullwhip effect** | [Sterman](notes/canon/canon-sterman-business-dynamics.md) | — (gap) | — |
-| **Normal accidents** | [Perrow](notes/canon/canon-perrow-normal-accidents.md) | — (gap) | — |
-| **Black Swan** | [Taleb](notes/canon/canon-taleb-black-swan.md) | [tiger-sisters-stock-picking](notes/tiger-sisters-stock-picking.md) | Tetlock: forecasting is learnable |
-| **Antifragile / Barbell strategy** | [Taleb](notes/canon/canon-taleb-antifragile.md) | [tiger-sisters-wealth-mechanics](notes/tiger-sisters-wealth-mechanics.md) | — |
-| **Friction / Fog of war** | [Clausewitz](notes/canon/canon-clausewitz-on-war.md) | — (gap) | Bungay: adapted for orgs |
-| **Culminating point** | [Clausewitz](notes/canon/canon-clausewitz-on-war.md) | — (gap) | Thucydides: overreach |
+**Risk factors** (Item 1A) — The section of a 10-K where a company lists everything that could go wrong. Changes year-over-year reveal what management is newly worried about.
+*Source:* [Unit 08](learn/unit-08-reading-the-words.md) · *Applied:* NKE (filing-language diff analysis)
 
-## Entrepreneurship & Venture
+**MD&A** (Management's Discussion and Analysis) — The section of a 10-K where management explains the numbers in their own words — what drove results, what they expect, what changed.
+*Source:* [Unit 08](learn/unit-08-reading-the-words.md)
 
-| Term | Defined | Applied | Argues with |
-|------|---------|---------|-------------|
-| **Lean Startup / MVP** | [Ries](notes/canon/canon-ries-lean-startup.md) | [operator playbook](notes/entrepreneurship-operator-playbook.md) (Concierge MVP) | Thiel: bold bets |
-| **Zero to One** | [Thiel](notes/canon/canon-thiel-zero-to-one.md) | [Harlem Capital](notes/harlem-capital-vc-insights.md), Tiger Sisters | Ries: iterate |
-| **Product discovery / 4 risks** | [Cagan](notes/canon/canon-cagan-inspired.md) | [operator playbook](notes/entrepreneurship-operator-playbook.md) | — |
-| **Sean Ellis test** (40% disappointed) | [operator playbook](notes/entrepreneurship-operator-playbook.md) | Segment, Vanta | — |
-| **LTV:CAC** (≥ 3:1) | [operator playbook](notes/entrepreneurship-operator-playbook.md) | Uber (-$0.22/ride) | — |
-| **LBO mechanics** | [tiger-sisters-private-capital](notes/tiger-sisters-private-capital-101.md) | Toys "R" Us, Hilton | — |
-| **GP/LP / Carry / J-curve** | [Harlem Capital](notes/harlem-capital-vc-insights.md) | Harlem Capital fund economics | Agency theory (Jensen-Meckling) |
-| **Platform cold-start** | [Parker](notes/canon/canon-parker-platform-revolution.md), [Cusumano](notes/canon/canon-cusumano-business-of-platforms.md) | [operator playbook](notes/entrepreneurship-operator-playbook.md) | — |
+**SEC / EDGAR** — The Securities and Exchange Commission's Electronic Data Gathering, Analysis, and Retrieval system. Every public company's filings are freely available here.
+*Source:* [Unit 01](learn/unit-01-reading-the-scoreboard.md) · *Applied:* `_ingest/edgar.py` throughout the program
 
-## Personal Effectiveness
-
-| Term | Defined | Applied | Argues with |
-|------|---------|---------|-------------|
-| **Quadrant 2** (important, not urgent) | [Covey](notes/canon/canon-covey-7-habits.md) | Tiger Sisters (calendar alignment) | — |
-| **Deep work** | [Newport](notes/canon/canon-newport-deep-work.md) | Tiger Sisters (essentialism) | — |
-| **Habit loop / 4 laws** | [Clear](notes/canon/canon-clear-atomic-habits.md) | Tiger Sisters (identity-based habits) | Covey: character-based |
-| **2-minute rule** | [Clear](notes/canon/canon-clear-atomic-habits.md) | — | — |
-
-## Personal Finance (Unit 10)
-
-| Term | Defined | Applied | Argues with |
-|------|---------|---------|-------------|
-| **Index fund** | [Unit 10](learn/unit-10-personal-finance-operating-system.md) | — | — |
-| **401k match** | [Unit 10](learn/unit-10-personal-finance-operating-system.md) | — | — |
-| **Emergency fund** (6x expenses) | [Unit 10](learn/unit-10-personal-finance-operating-system.md) | — | — |
-| **4% safe withdrawal rate** | [Unit 10](learn/unit-10-personal-finance-operating-system.md) | — | — |
-| **30x income target** | [Unit 10](learn/unit-10-personal-finance-operating-system.md) | — | — |
-| **5-layer personal finance OS** | [Unit 10](learn/unit-10-personal-finance-operating-system.md) | — | — |
-| **Mega Backdoor Roth** | [Unit 10](learn/unit-10-personal-finance-operating-system.md) | — | — |
-| **HYSA / MMF / CDs / Treasuries** | [Unit 10](learn/unit-10-personal-finance-operating-system.md) | — | — |
-| **Family office of one** | [Unit 10](learn/unit-10-personal-finance-operating-system.md), Tiger Sisters | — | — |
-
-## Communication & Storytelling
-
-| Term | Defined | Applied | Argues with |
-|------|---------|---------|-------------|
-| **Pyramid Principle** (answer first, MECE) | [Minto](notes/canon/canon-minto-pyramid-principle.md) | Tiger Sisters (SCQA) | Duarte: story, not answer first |
-| **Resonate** (what is / what could be) | [Duarte](notes/canon/canon-duarte-resonate.md) | [operator playbook](notes/entrepreneurship-operator-playbook.md) | Minto: logic first |
-| **Golden Circle** (Start with Why) | [Sinek](notes/canon/canon-sinek-start-with-why.md) | [operator playbook](notes/entrepreneurship-operator-playbook.md) | — |
-| **Data-ink ratio** | [Tufte](notes/canon/canon-tufte-visual-display.md) | — (gap) | — |
-
-## Ethics & History
-
-| Term | Defined | Applied | Argues with |
-|------|---------|---------|-------------|
-| **Right vs right** | [Badaracco](notes/canon/canon-badaracco-defining-moments.md) | — (gap) | Sandel: three lenses |
-| **Three lenses of justice** | [Sandel](notes/canon/canon-sandel-justice.md) | — (gap) | — |
-| **Newspaper test** | [Badaracco](notes/canon/canon-badaracco-defining-moments.md) | — (gap) | — |
-| **Three models of decision** (Allison) | [Allison](notes/canon/canon-allison-essence-of-decision.md) | — (gap) | — |
-| **Thinking in Time** | [Neustadt & May](notes/canon/canon-neustadt-may-thinking-in-time.md) | — (gap) | — |
-| **Thucydides Trap** | [Thucydides](notes/canon/canon-thucydides-peloponnesian-war.md) | — (gap) | — |
+**XBRL** — eXtensible Business Reporting Language. A structured data format that tags every number in a filing so machines can read it. What makes `edgar.py facts` possible.
+*Source:* [CURRICULUM.md](CURRICULUM.md) · *Applied:* [sec-filing-intelligence](notes/sec-filing-intelligence.md)
 
 ---
 
-## Terms used in learn/ but never formally defined
+## Valuation & Investment
 
-These appear in the beginner units (especially Unit 10) without a "Plain words first" definition.
-They should be defined before a true novice encounters them.
+**Growth** (durable vs spike) — An increase in revenue or earnings over time. The critical distinction: durable growth (repeatable, compounding) vs spike growth (one-time surge that reverses).
+*Source:* [Unit 05](learn/unit-05-growth-and-returns.md) · *Applied:* PTON boom/bust
 
-| Term | Where used | Suggested home |
-|------|-----------|----------------|
-| **Portfolio** | Unit 10 | Unit 10 glossary block |
-| **Diversified** | Unit 10 | Unit 10 glossary block |
-| **Principal** (invested amount) | Unit 10 | Unit 10 glossary block |
-| **Liquidity / Liquid / Illiquid** | Unit 10 | Unit 10 glossary block |
-| **Gross income** (personal) | Unit 10 | Unit 10 glossary block |
-| **Private equity** | Unit 10 | Unit 10 or link to [PE 101](notes/tiger-sisters-private-capital-101.md) |
-| **Venture capital** | Unit 10 | Unit 10 or link to [VC 101](notes/tiger-sisters-private-capital-101.md) |
-| **Roth** (IRA / 401k) | Unit 10 | Unit 10 glossary block |
-| **Tax / Tax-free** | Unit 10 | Unit 10 glossary block |
-| **Stock / Shares** | Unit 01 (implicit) | Unit 01 or 10 |
-| **Shareholder** | Unit 09 | Unit 01 |
-| **Mortgage** | Units 03, 10 | Unit 03 or 10 |
-| **Perpetuity** | Unit 10 | Unit 10 glossary block |
-| **Margin of safety** | Unit 10 (cross-ref only) | Unit 06 or 10 |
+**Cash burn** — The rate at which a company spends cash beyond what it earns. A company burning $50M/quarter with $200M in the bank has ~4 quarters of runway.
+*Source:* [Unit 05](learn/unit-05-growth-and-returns.md) · *Applied:* PTON
+
+**Compounding** — Growth on top of growth. A 1% daily improvement compounds to 37× in a year. The most powerful force in finance and learning.
+*Source:* [Unit 05](learn/unit-05-growth-and-returns.md), [Unit 10](learn/unit-10-personal-finance-operating-system.md) · *Applied:* 1% rule in [Atomic Habits](notes/canon/canon-clear-atomic-habits.md)
+
+**Present value** — What a future cash flow is worth today, discounted for the time you have to wait and the risk you won't get it. A dollar tomorrow is worth less than a dollar today.
+*Source:* [Unit 06](learn/unit-06-whats-a-business-worth.md) · *Applied:* PTON price collapse
+
+**Discounted cash flow** (DCF) — A valuation method that estimates a company's worth by projecting its future cash flows and discounting them back to today's dollars. The conceptual foundation of all valuation.
+*Source:* [Unit 06](learn/unit-06-whats-a-business-worth.md) · *Applied:* [apply-stock-picking-nke](notes/apply-stock-picking-nke.md)
+
+**Market cap** — The total value the stock market places on a company (share price × shares outstanding). What the crowd thinks the business is worth.
+*Source:* [Unit 06](learn/unit-06-whats-a-business-worth.md)
+
+**Capital expenditure** (capex) — Money spent on long-lived assets: factories, equipment, ships, stores. The cost of staying in business for capital-heavy companies.
+*Source:* [Unit 09](learn/unit-09-capital-light-businesses.md) · *Applied:* DPZ vs TXRH
+
+**Capital-light / asset-light** — A business model that generates revenue without owning expensive physical assets. Franchises, software, royalties. High margins, low reinvestment.
+*Source:* [Unit 09](learn/unit-09-capital-light-businesses.md) · *Applied:* DPZ (franchise model) · *Contrast:* Capital-heavy: RCL, TXRH
+
+**Royalty business** — A model where you own the intellectual property or brand and collect a percentage of someone else's revenue for using it. Near-zero marginal cost.
+*Source:* [Unit 09](learn/unit-09-capital-light-businesses.md), [media-practitioner](notes/media-practitioner-playbook.md) · *Applied:* DPZ, Chick-fil-A, ARM · *Via:* Ackman thesis in Tiger Sisters
+
+**Margin of safety** — The gap between what you pay and what you estimate something is worth. A buffer for being wrong. Buy a dollar for 65 cents, and you can be off by 35% and still not lose money.
+*Source:* [Klarman](notes/canon/canon-klarman-margin-of-safety.md) · *Applied:* [NKE stock pick](notes/apply-stock-picking-nke.md), acumen case-01 · *Argues with:* Mauboussin — judge the process, not the outcome
+
+**Expectations investing** — Reverse-engineering: start with the stock price, figure out what growth assumptions it implies, then ask whether those assumptions are reasonable.
+*Source:* [Mauboussin](notes/canon/canon-mauboussin-success-equation.md) · *Applied:* [NKE stock pick](notes/apply-stock-picking-nke.md)
+
+**Khan's 7-step stock-picking** — A structured process for evaluating a stock: understand the business, check the financials, assess the moat, value it, find the margin of safety, consider risks, then decide.
+*Source:* [tiger-sisters-stock-picking](notes/tiger-sisters-stock-picking.md) · *Applied:* [apply-stock-picking-nke](notes/apply-stock-picking-nke.md)
+
+---
+
+## Competitive Strategy & Moats
+
+**Competitive advantage / Moat** — Something that lets a company earn above-normal profits for a sustained period because competitors can't easily copy it.
+*Source:* [Unit 07](learn/unit-07-the-landscape-moats.md) · *Applied:* MA vs RCL · *Argues with:* Porter ↔ Helmer ↔ Christensen — three different frameworks for what moats are and how they work
+
+**Network effect** — A product or service that becomes more valuable as more people use it. Each new user makes the existing users' experience better.
+*Source:* [Unit 07](learn/unit-07-the-landscape-moats.md), [Parker](notes/canon/canon-parker-platform-revolution.md) · *Applied:* Crexi, Snap
+
+**Commodity business** — An industry where the product is interchangeable and the customer buys on price alone. No pricing power, thin margins, brutal competition.
+*Source:* [Unit 07](learn/unit-07-the-landscape-moats.md) · *Applied:* Cruise lines
+
+**Five Forces** — Porter's framework for analyzing industry profitability: threat of new entrants, supplier power, buyer power, threat of substitutes, and intensity of rivalry.
+*Source:* [Porter](notes/canon/canon-porter-competitive-strategy.md) · *Applied:* [core-04 lesson](lessons/core-04-competitive-strategy.html), [JPM report](notes/jpm-software-sector-spotlight-2026.md) · *Argues with:* Helmer — if you can't name the *barrier*, you don't have a moat
+
+**7 Powers** — Helmer's taxonomy of durable competitive advantages: scale economies, network economies, counter-positioning, switching costs, branding, cornered resource, and process power. Each requires both a benefit and a barrier.
+*Source:* [Helmer](notes/canon/canon-helmer-7-powers.md) · *Applied:* [JPM defensibility matrix](notes/jpm-software-sector-spotlight-2026.md), [DRAMA crossref](notes/drama-structural-crossref.md), acumen case-01 · *Argues with:* Porter — forces describe the battlefield; powers explain *why you win*
+
+**Counter-positioning** — Adopting a business model that an incumbent can't copy without damaging its existing business. The classic disruptor advantage.
+*Source:* [Helmer](notes/canon/canon-helmer-7-powers.md) · *Applied:* Netflix vs Blockbuster
+
+**Disruptive innovation** — When a cheaper, simpler product starts at the bottom of a market and gradually moves upmarket until it displaces the incumbent. The incumbent ignores it because it doesn't serve their best customers — until it does.
+*Source:* [Christensen](notes/canon/canon-christensen-innovators-dilemma.md) · *Applied:* [JPM AI disruption analysis](notes/jpm-software-sector-spotlight-2026.md) · *Argues with:* Porter/Helmer — not every new entrant disrupts
+
+**Value stick** (WTP / WTS) — A company creates value by raising customers' willingness-to-pay (WTP) or lowering suppliers' willingness-to-sell (WTS). Profit is the firm's share of the gap.
+*Source:* [core-04 lesson](lessons/core-04-competitive-strategy.html) · *Applied:* Netflix vs Disney
+
+**Co-opetition / Value Net** — Brandenburger & Nalebuff's framework: business is not purely competitive — competitors are also complementors who expand the pie. Map the full value net before choosing moves.
+*Source:* [Brandenburger & Nalebuff](notes/canon/canon-brandenburger-nalebuff-coopetition.md) · *Gap: never applied* · *Argues with:* Porter's zero-sum framing
+
+**PARTS** — Brandenburger & Nalebuff's five levers for changing the game: Players, Added value, Rules, Tactics, Scope.
+*Source:* [Brandenburger & Nalebuff](notes/canon/canon-brandenburger-nalebuff-coopetition.md) · *Gap: never applied*
+
+**Platform envelopment** — When a platform in one market leverages its user base and data to enter and dominate an adjacent market.
+*Source:* [Cusumano](notes/canon/canon-cusumano-business-of-platforms.md), [Parker](notes/canon/canon-parker-platform-revolution.md) · *Applied:* Amazon Basics, Apple "Sherlocking"
+
+---
+
+## Strategy & Decision-Making
+
+**Strategy kernel** — Rumelt's three-part structure of good strategy: (1) a diagnosis of the challenge, (2) a guiding policy for dealing with it, and (3) coherent actions that carry out the policy.
+*Source:* [Rumelt](notes/canon/canon-rumelt-good-strategy.md) · *Applied:* acumen case-01 · *Argues with:* Lafley — five-choice cascade instead of a kernel
+
+**The Crux** — The single most important challenge that is also solvable. The hard part of the problem that, if you crack it, unlocks everything else. Strategy is concentrating resources against the crux.
+*Source:* [Rumelt](notes/canon/canon-rumelt-the-crux.md) · *Applied:* acumen case-01, [DRAMA crossref](notes/drama-structural-crossref.md) · *Argues with:* Goldratt — the bottleneck, not the crux
+
+**Playing to Win** (5 choices) — Lafley & Martin's strategy cascade: (1) winning aspiration, (2) where to play, (3) how to win, (4) required capabilities, (5) management systems. Each must nest inside the one above.
+*Source:* [Lafley & Martin](notes/canon/canon-lafley-martin-playing-to-win.md) · *Gap: never applied* · *Argues with:* Rumelt — problem-first kernel vs aspiration-first cascade
+
+**Mission command** (Auftragstaktik) — Tell people *what* to achieve and *why*, then let them figure out *how*. Push authority to where the information lives.
+*Source:* [Bungay](notes/canon/canon-bungay-art-of-action.md) · *Applied:* [media-practitioner](notes/media-practitioner-playbook.md) (Commander's Intent)
+
+**Knowledge / Alignment / Effects gaps** — Bungay's three gaps between plan and reality: (1) you don't know enough, (2) people don't understand the plan the same way, (3) actions don't produce the intended results.
+*Source:* [Bungay](notes/canon/canon-bungay-art-of-action.md) · *Gap: never applied*
+
+**Day 1 vs Day 2** — Bezos's distinction: Day 1 is building with urgency, speed, customer obsession. Day 2 is stasis, irrelevance, decline. The goal is to always stay in Day 1.
+*Source:* [Bezos](notes/canon/canon-bezos-shareholder-letters.md) · *Applied:* [operator playbook](notes/entrepreneurship-operator-playbook.md), Tiger Sisters
+
+**Two-way door / One-way door** — Bezos's decision taxonomy: reversible decisions (two-way doors) should be made fast by individuals; irreversible decisions (one-way doors) deserve careful deliberation.
+*Source:* [Bezos](notes/canon/canon-bezos-shareholder-letters.md) · *Applied:* [operator playbook](notes/entrepreneurship-operator-playbook.md), acumen case-01
+
+**Disagree and commit** — When a team can't reach consensus, the leader picks a direction and everyone commits fully — even those who disagreed. Prevents both paralysis and passive sabotage.
+*Source:* [Bezos](notes/canon/canon-bezos-shareholder-letters.md) · *Applied:* [operator playbook](notes/entrepreneurship-operator-playbook.md)
+
+**OKRs** (Objectives and Key Results) — A goal-setting system: an Objective says *what* you want to achieve (qualitative, inspiring); Key Results say *how you'll know* you got there (quantitative, specific). Hitting 100% means you sandbagged; 70% is the sweet spot.
+*Source:* [Doerr](notes/canon/canon-doerr-measure-what-matters.md), [Grove](notes/canon/canon-grove-high-output-management.md) · *Applied:* Tiger Sisters · *Argues with:* 4DX — WIGs (Wildly Important Goals) compete with the same attention
+
+**Strategic inflection point** — The moment when a 10× force (technology, regulation, customer shift) breaks your existing strategy. Senior people are usually the last to see it because they're most invested in the current model.
+*Source:* [Grove](notes/canon/canon-grove-only-the-paranoid-survive.md) · *Applied:* acumen case-01 (Intel)
+
+---
+
+## Negotiation & Influence
+
+**BATNA** (Best Alternative To a Negotiated Agreement) — Your walk-away option. Your power in any negotiation equals how good your BATNA is. Always know yours; try to learn theirs.
+*Source:* [Fisher & Ury](notes/canon/canon-fisher-ury-getting-to-yes.md) · *Applied:* Tiger Sisters (salary negotiation scripts) · *Argues with:* Voss — empathy and emotion drive outcomes more than frameworks
+
+**ZOPA** (Zone of Possible Agreement) — The overlap between both sides' worst acceptable deals. If your ZOPA exists, a deal is possible; if it doesn't, walk away.
+*Source:* [Fisher & Ury](notes/canon/canon-fisher-ury-getting-to-yes.md)
+
+**Integrative negotiation** — Expanding the pie before dividing it. Most negotiations have compatible interests hiding behind incompatible positions — find them by asking *why*, not arguing about *what*.
+*Source:* [Fisher & Ury](notes/canon/canon-fisher-ury-getting-to-yes.md) · *Applied:* Tiger Sisters ("the orange" example)
+
+**Tactical empathy** — Voss's approach: name the other person's emotion out loud ("It seems like you're frustrated about…"). Labeling a negative emotion shrinks it; labeling a positive one reinforces it.
+*Source:* [Voss](notes/canon/canon-voss-never-split-the-difference.md) · *Applied:* Tiger Sisters · *Argues with:* Fisher & Ury — principled/interests-based approach
+
+**Mirroring** — Repeating the last 1-3 words someone said. They'll elaborate, revealing information they wouldn't have volunteered.
+*Source:* [Voss](notes/canon/canon-voss-never-split-the-difference.md) · *Applied:* Tiger Sisters
+
+**Six principles of persuasion** — Cialdini's toolkit: reciprocity, commitment/consistency, social proof, authority, liking, and scarcity. The levers that move people whether they're aware of it or not.
+*Source:* [Cialdini](notes/canon/canon-cialdini-influence.md) · *Applied:* Tiger Sisters ("because" effect) · *Argues with:* Carnegie — sincerity over mechanism
+
+**Pre-suasion** — What you do *before* making a request shapes how it's received. Prime the audience's attention toward concepts that make your message more persuasive.
+*Source:* [Cialdini](notes/canon/canon-cialdini-pre-suasion.md) · *Applied:* Tiger Sisters (back-channel prep)
+
+**SBI feedback** (Situation-Behavior-Impact) — A feedback structure: describe the Situation, the specific Behavior you observed, and its Impact. Separates observation from judgment.
+*Source:* Tiger Sisters / [Scott](notes/canon/canon-scott-radical-candor.md) · *Applied:* Tiger Sisters (worked scripts)
+
+**Pyramid Principle** (MECE) — Minto's communication structure: answer first, then support. Every supporting argument must be mutually exclusive and collectively exhaustive (MECE). The audience gets the conclusion up front.
+*Source:* [Minto](notes/canon/canon-minto-pyramid-principle.md) · *Applied:* Tiger Sisters (SCQA), acumen memo format · *Argues with:* Duarte — story-first, not answer-first
+
+**SCQA** (Situation-Complication-Question-Answer) — An opener framework: establish the Situation (what everyone agrees on), introduce the Complication (what changed), pose the Question (what we need to solve), deliver the Answer (your recommendation).
+*Source:* Tiger Sisters · *Applied:* Tiger Sisters (worked examples)
+
+---
+
+## Behavioral & Decision Science
+
+**System 1 / System 2** — Kahneman's two modes of thinking: System 1 is fast, automatic, intuitive, and effortless (but error-prone); System 2 is slow, deliberate, analytical, and effortful (but lazy).
+*Source:* [Kahneman](notes/canon/canon-kahneman-thinking-fast-and-slow.md) · *Applied:* [tiger-sisters-stock-picking](notes/tiger-sisters-stock-picking.md) · *Argues with:* Klein — expert intuition *is* System 1, and it works in regular environments
+
+**Anchoring** — Judgment pulled toward the first number you see, even if it's irrelevant. A random "65" on a spinner makes people guess higher on unrelated questions.
+*Source:* [Kahneman](notes/canon/canon-kahneman-thinking-fast-and-slow.md) · *Applied:* Tiger Sisters (salary negotiation)
+
+**Loss aversion** — Losing $100 hurts roughly twice as much as gaining $100 feels good. People will take irrational risks to avoid losses.
+*Source:* [Kahneman](notes/canon/canon-kahneman-thinking-fast-and-slow.md), [Ariely](notes/canon/canon-ariely-predictably-irrational.md)
+
+**Nudge / Choice architecture** — People's decisions are shaped by how options are presented. Defaults are the most powerful nudge — most people stick with whatever is pre-selected.
+*Source:* [Thaler & Sunstein](notes/canon/canon-thaler-sunstein-nudge.md) · *Gap: never applied*
+
+**Recognition-primed decisions** (RPD) — Klein's model of how experts actually decide: they pattern-match from experience, mentally simulate one option, and execute if it works — they don't compare alternatives. Trust this in regular environments with repeated feedback.
+*Source:* [Klein](notes/canon/canon-klein-sources-of-power.md) · *Gap: never applied* · *Argues with:* Kahneman — expert intuition is dangerous in irregular environments
+
+**Noise** — Random scatter in judgments that should be consistent. Two judges see the same case and give wildly different sentences. Unlike bias (systematic error), noise is invisible until you measure it.
+*Source:* [Kahneman, Sibony & Sunstein](notes/canon/canon-kahneman-sibony-sunstein-noise.md) · *Gap: never applied*
+
+**Superforecasting** — Tetlock's finding: a measurable minority of people forecast consistently better than experts and algorithms. What they do is learnable — think in probabilities, update incrementally, seek disconfirming evidence, keep score.
+*Source:* [Tetlock](notes/canon/canon-tetlock-superforecasting.md) · *Applied:* [tiger-sisters-stock-picking](notes/tiger-sisters-stock-picking.md)
+
+**Latticework of mental models** — Munger's prescription: you need models from many disciplines (psychology, physics, biology, economics, math) applied *in combination*. A single model is a hammer; every problem looks like a nail.
+*Source:* [Munger](notes/canon/canon-munger-poor-charlies-almanack.md) · *Applied:* [tiger-sisters-stock-picking](notes/tiger-sisters-stock-picking.md)
+
+**Inversion** — Instead of asking "how do I succeed?", ask "how would I guarantee failure?" then avoid that. Clarifies thinking by flipping the question.
+*Source:* [Munger](notes/canon/canon-munger-poor-charlies-almanack.md) · *Applied:* Tiger Sisters, acumen red-team
+
+**Skill vs luck** — Mauboussin's continuum: most outcomes mix skill and luck, but we systematically over-attribute to skill. The more skill converges across competitors, the more luck determines who wins (the paradox of skill).
+*Source:* [Mauboussin](notes/canon/canon-mauboussin-success-equation.md) · *Applied:* Multiple practitioner notes
+
+---
+
+## Leadership & Organizations
+
+**Managerial leverage** — A manager's output = the output of their team + the output of teams they influence. Some activities (1-on-1s, training, setting direction) produce far more output per unit of time than others.
+*Source:* [Grove](notes/canon/canon-grove-high-output-management.md) · *Applied:* [media-practitioner](notes/media-practitioner-playbook.md) (meetings as leverage)
+
+**Task-Relevant Maturity** (TRM) — Calibrate your management style to the person's experience with *that specific task*, not their seniority. Low TRM: be directive. High TRM: delegate and monitor.
+*Source:* [Grove](notes/canon/canon-grove-high-output-management.md) · *Applied:* [media-practitioner](notes/media-practitioner-playbook.md)
+
+**Radical Candor** — The intersection of caring personally and challenging directly. Most people default to Ruinous Empathy (caring but not challenging) — being nice instead of being honest.
+*Source:* [Scott](notes/canon/canon-scott-radical-candor.md) · *Applied:* Tiger Sisters (SBI scripts) · *Argues with:* Carnegie — never criticize directly
+
+**Execution** (3 core processes) — Bossidy & Charan's thesis: execution is a discipline, not a detail. The three core processes — people, strategy, and operations — must be linked tightly.
+*Source:* [Bossidy & Charan](notes/canon/canon-bossidy-charan-execution.md) · *Gap: never applied*
+
+**Culture = what you do under pressure** — Horowitz's definition: culture is not your stated values; it's the pattern of behavior that gets rewarded, especially in hard cases. Who you promote and fire are the loudest cultural signals.
+*Source:* [Horowitz](notes/canon/canon-horowitz-what-you-do-is-who-you-are.md) · *Applied:* [media-practitioner](notes/media-practitioner-playbook.md) · *Argues with:* Schein — diagnose the *invisible* assumptions, not just the visible behavior
+
+**Org culture layers** — Schein's three levels: (1) Artifacts (visible: office, rituals, language), (2) Espoused values (what people say they believe), (3) Basic underlying assumptions (what they actually believe, unconsciously). The dysfunction lives in the gap between 2 and 3.
+*Source:* [Schein](notes/canon/canon-schein-organizational-culture.md) · *Applied:* [media-practitioner](notes/media-practitioner-playbook.md) · *Argues with:* Horowitz — engineer the behavior; the assumptions follow
+
+**8 steps of change** — Kotter's sequence: (1) create urgency, (2) build a guiding coalition, (3) form a vision, (4) communicate it, (5) remove barriers, (6) generate short-term wins, (7) don't let up, (8) anchor in culture. Most fail at step 1 (insufficient urgency) or step 7 (declaring victory too early).
+*Source:* [Kotter](notes/canon/canon-kotter-leading-change.md) · *Applied:* [media-practitioner](notes/media-practitioner-playbook.md) · *Argues with:* Heath (Switch) — Rider/Elephant/Path works bottom-up, not top-down
+
+**Rider / Elephant / Path** — Heath & Heath's change model: the Rider (rational mind) provides direction, the Elephant (emotional mind) provides energy, the Path (environment) makes the right behavior easy. Most change efforts coach the Rider and ignore the Elephant.
+*Source:* [Heath & Heath](notes/canon/canon-heath-switch.md) · *Applied:* Tiger Sisters · *Argues with:* Kotter — 8 steps work top-down; Switch works bottom-up
+
+**Intent-based leadership** — Marquet's model: replace "leader-follower" with "leader-leader." The language shift: "I intend to…" instead of "Permission to…" Two preconditions: competence (they know enough) and clarity (they understand the purpose).
+*Source:* [Marquet](notes/canon/canon-marquet-turn-the-ship-around.md) · *Applied:* [media-practitioner](notes/media-practitioner-playbook.md)
+
+**Theory of constraints** (TOC) — Goldratt's principle: every system has one constraint (bottleneck) that limits total throughput. Optimizing anything that isn't the bottleneck is an illusion of progress. Five steps: identify, exploit, subordinate, elevate, repeat.
+*Source:* [Goldratt](notes/canon/canon-goldratt-the-goal.md) · *Gap: never applied* · *Argues with:* Meadows — systems have multiple leverage points, not one constraint
+
+**Lean / Toyota Production System** — Ohno's system: relentlessly eliminate waste (muda), build quality into the process (jidoka / "stop the line"), and produce only what's needed when it's needed (just-in-time). The seven wastes: overproduction, waiting, transport, overprocessing, inventory, motion, defects.
+*Source:* [Ohno](notes/canon/canon-ohno-toyota-production-system.md) · *Gap: never applied*
+
+**Agency theory** — Jensen & Meckling: whenever an agent acts on behalf of a principal, their interests diverge. The gap is the agency cost. Three solutions: monitoring, bonding (skin in the game), and incentive alignment.
+*Source:* [Jensen & Meckling](notes/canon/canon-jensen-meckling-agency-theory.md) · *Applied:* [EYL](notes/eyl-insights.md), [Harlem Capital](notes/harlem-capital-vc-insights.md) (GP/LP), Tiger Sisters
+
+**Team production / Shirking** — Alchian & Demsetz: when output depends on a team, individual contribution is hard to measure, so people shirk. The firm exists to solve this — the residual claimant (owner) monitors to keep the team productive.
+*Source:* [Alchian & Demsetz](notes/canon/canon-alchian-demsetz-firm.md) · *Applied:* [operator playbook](notes/entrepreneurship-operator-playbook.md)
+
+**Four team states** — Larson's diagnostic: every team is in one of four states — falling behind, treading water, repaying debt, or innovating. You cannot fix a falling-behind team by adding goals; you fix it by adding people or cutting scope.
+*Source:* [Larson](notes/canon/canon-larson-elegant-puzzle.md) · *Applied:* [media-practitioner](notes/media-practitioner-playbook.md)
+
+---
+
+## Game Theory
+
+**Nash equilibrium** — A state where no player can improve their outcome by changing their strategy alone. Everyone is doing the best they can given what everyone else is doing.
+*Source:* [Dixit & Nalebuff](notes/canon/canon-dixit-nalebuff-thinking-strategically.md) · *Applied:* [canon-game-theory lesson](site/dist/canon-game-theory.html)
+
+**Backward induction** — Solve a sequential game by starting at the end and working backward. At each step, ask: "Knowing what comes next, what would a rational player do here?"
+*Source:* [Dixit & Nalebuff](notes/canon/canon-dixit-nalebuff-thinking-strategically.md) · *Gap: never applied*
+
+**Tit for Tat** — Axelrod's finding: in repeated interactions, the winning strategy is simple — cooperate first, then mirror whatever the other player did last. Nice, retaliatory, forgiving, and clear.
+*Source:* [Axelrod](notes/canon/canon-axelrod-evolution-of-cooperation.md) · *Applied:* [canon-game-theory lesson](site/dist/canon-game-theory.html)
+
+**Focal points** (Schelling points) — When people can't communicate, they converge on the solution that seems "obvious" or "natural." Coordination without communication — meet at Grand Central, noon, at the clock.
+*Source:* [Schelling](notes/canon/canon-schelling-strategy-of-conflict.md) · *Gap: never applied*
+
+**Credible commitment** — Making your threat or promise believable by visibly limiting your own options. Burning the bridge behind you proves you won't retreat.
+*Source:* [Schelling](notes/canon/canon-schelling-strategy-of-conflict.md) · *Gap: never applied*
+
+**Complementors** — Players whose products or services make yours more valuable (and vice versa). Intel and Microsoft were complementors — better chips sold more copies of Windows.
+*Source:* [Brandenburger & Nalebuff](notes/canon/canon-brandenburger-nalebuff-coopetition.md) · *Gap: never applied* · *Argues with:* Porter — Five Forces has no role for complementors
+
+---
+
+## Systems Thinking
+
+**Leverage points** — Meadows's 12 places to intervene in a system, ranked from least to most powerful. Most people push at the bottom (tweaking numbers); the highest leverage is changing the system's goals or paradigm.
+*Source:* [Meadows](notes/canon/canon-meadows-leverage-points.md) · *Gap: never applied* · *Argues with:* Goldratt — one constraint vs 12 leverage points
+
+**Stocks & flows / Feedback loops** — Stocks are accumulations (water in a bathtub); flows are rates of change (faucet and drain). Reinforcing loops amplify; balancing loops stabilize. Most org problems are structural — replace the person but keep the structure, and you get the same behavior.
+*Source:* [Meadows](notes/canon/canon-meadows-thinking-in-systems.md) · *Gap: never applied*
+
+**Systems archetypes** — Senge's recurring structural patterns: "shifting the burden" (quick fix atrophies the real solution), "limits to growth" (success hits a constraint), "tragedy of the commons" (shared resources overused).
+*Source:* [Senge](notes/canon/canon-senge-fifth-discipline.md) · *Gap: never applied*
+
+**The bullwhip effect** — Small changes in consumer demand amplify into wild swings as you move upstream in a supply chain. Each link over-reacts to the signal from the link below it.
+*Source:* [Sterman](notes/canon/canon-sterman-business-dynamics.md) · *Gap: never applied*
+
+**Normal accidents** — Perrow's thesis: in systems that are both tightly coupled and interactively complex, serious accidents aren't anomalies — they're inevitable ("normal"). You can't engineer them away; you can only choose to reduce coupling or reduce complexity.
+*Source:* [Perrow](notes/canon/canon-perrow-normal-accidents.md) · *Gap: never applied*
+
+**Black Swan** — A rare event with three properties: (1) it's an outlier beyond normal expectations, (2) it has extreme impact, (3) after the fact, people construct explanations that make it seem predictable. We systematically blind ourselves to them.
+*Source:* [Taleb](notes/canon/canon-taleb-black-swan.md) · *Applied:* [tiger-sisters-stock-picking](notes/tiger-sisters-stock-picking.md) · *Argues with:* Tetlock — forecasting is learnable, even in fat-tailed domains
+
+**Antifragile / Barbell strategy** — Beyond robust: antifragile systems *gain* from stress and disorder. The barbell strategy: combine extreme safety (90% in boring, protected assets) with small, capped-downside, high-upside bets (10%).
+*Source:* [Taleb](notes/canon/canon-taleb-antifragile.md) · *Applied:* [tiger-sisters-wealth-mechanics](notes/tiger-sisters-wealth-mechanics.md)
+
+**Friction / Fog of war** — Clausewitz's observation: in execution, everything is harder than it looks. Plans break on contact with reality because of incomplete information (fog), resistance (friction), and chance.
+*Source:* [Clausewitz](notes/canon/canon-clausewitz-on-war.md) · *Gap: never applied* · *Argues with:* Bungay — adapted Clausewitz's military concepts for business organizations
+
+**Culminating point** — The point past which further advance becomes self-destructive. The army that overextends its supply lines; the company that expands past its competence.
+*Source:* [Clausewitz](notes/canon/canon-clausewitz-on-war.md) · *Gap: never applied* · *Argues with:* Thucydides — the Sicilian Expedition as the canonical overreach
+
+---
+
+## Entrepreneurship & Venture
+
+**Lean Startup / MVP** — Ries's method: a startup is a search vehicle under extreme uncertainty. Build the smallest thing that tests your riskiest assumption (MVP), measure whether it works (validated learning), then pivot or persevere.
+*Source:* [Ries](notes/canon/canon-ries-lean-startup.md) · *Applied:* [operator playbook](notes/entrepreneurship-operator-playbook.md) (Concierge MVP) · *Argues with:* Thiel — bold, non-incremental bets over iterative search
+
+**Zero to One** — Thiel's thesis: creating something genuinely new (0→1) is categorically different from copying what works (1→n). Competition is overrated; the goal is monopoly built on real differentiation.
+*Source:* [Thiel](notes/canon/canon-thiel-zero-to-one.md) · *Applied:* [Harlem Capital](notes/harlem-capital-vc-insights.md), Tiger Sisters · *Argues with:* Ries — iterate vs commit to a bold bet
+
+**Product discovery / 4 risks** — Cagan's framework: before building anything, assess four risks: value (will anyone want it?), usability (can they use it?), feasibility (can we build it?), and viability (does it work for the business?).
+*Source:* [Cagan](notes/canon/canon-cagan-inspired.md) · *Applied:* [operator playbook](notes/entrepreneurship-operator-playbook.md)
+
+**Sean Ellis test** — Ask users "How would you feel if you could no longer use this product?" If fewer than 40% say "very disappointed," you haven't found product-market fit yet.
+*Source:* [operator playbook](notes/entrepreneurship-operator-playbook.md) · *Applied:* Segment, Vanta
+
+**LTV:CAC** — Lifetime Value to Customer Acquisition Cost ratio. How much a customer is worth over their lifetime divided by how much it cost to acquire them. Below 3:1 is usually unsustainable.
+*Source:* [operator playbook](notes/entrepreneurship-operator-playbook.md) · *Applied:* Uber (-$0.22/ride)
+
+**LBO** (Leveraged Buyout) — Buying a company using mostly borrowed money, using the company's own cash flows to repay the debt. The buyer puts up little equity; the upside is amplified but so is the risk.
+*Source:* [tiger-sisters-private-capital](notes/tiger-sisters-private-capital-101.md) · *Applied:* Toys "R" Us (failed LBO), Hilton (successful — Blackstone)
+
+**GP/LP / Carry / J-curve** — Fund structure: General Partners (GPs) manage the fund and make investments; Limited Partners (LPs) provide the capital. Carry is the GP's share of profits (typically 20%). The J-curve: returns are negative early (fees + losses) before turning positive.
+*Source:* [Harlem Capital](notes/harlem-capital-vc-insights.md) · *Applied:* Harlem Capital fund economics · *Argues with:* Agency theory (Jensen-Meckling) — GP/LP is a principal-agent problem
+
+**Platform cold-start** — The chicken-and-egg problem: a platform needs both sides to be valuable, but neither side joins without the other. Solutions: seed one side, offer single-player utility first, recruit marquee users.
+*Source:* [Parker](notes/canon/canon-parker-platform-revolution.md), [Cusumano](notes/canon/canon-cusumano-business-of-platforms.md) · *Applied:* [operator playbook](notes/entrepreneurship-operator-playbook.md)
+
+---
+
+## Personal Effectiveness
+
+**Quadrant 2** — Covey's time-management matrix: important but not urgent tasks (exercise, learning, relationship-building, planning). Most people spend their time in Quadrant 1 (urgent + important) and Quadrant 3 (urgent + unimportant), starving Q2.
+*Source:* [Covey](notes/canon/canon-covey-7-habits.md) · *Applied:* Tiger Sisters (calendar alignment)
+
+**Deep work** — Newport's thesis: the ability to focus without distraction on a cognitively demanding task is simultaneously rare and valuable. Protect uninterrupted blocks; most people max out at ~4 hours/day.
+*Source:* [Newport](notes/canon/canon-newport-deep-work.md) · *Applied:* Tiger Sisters (essentialism)
+
+**Habit loop / 4 laws** — Clear's system for building habits: (1) make it obvious (cue), (2) make it attractive (craving), (3) make it easy (response), (4) make it satisfying (reward). Identity-based: "I am the type of person who…"
+*Source:* [Clear](notes/canon/canon-clear-atomic-habits.md) · *Applied:* Tiger Sisters (identity-based habits) · *Argues with:* Covey — character-based vs system-based change
+
+**2-minute rule** — If a new habit takes less than two minutes, you'll actually do it. Scale down any habit until the gateway version is trivially small, then build from there.
+*Source:* [Clear](notes/canon/canon-clear-atomic-habits.md)
+
+---
+
+## Personal Finance (Unit 10)
+
+**Index fund** — A fund that buys every stock in a market index (like the S&P 500) instead of trying to pick winners. Low fees, broad diversification, historically beats most active managers.
+*Source:* [Unit 10](learn/unit-10-personal-finance-operating-system.md)
+
+**401k match** — Free money from your employer: they match your retirement contributions up to a percentage. Not contributing enough to get the full match is leaving compensation on the table.
+*Source:* [Unit 10](learn/unit-10-personal-finance-operating-system.md)
+
+**Emergency fund** — 3-6 months of expenses in cash (or near-cash) so a job loss, medical bill, or car repair doesn't force you into debt. The foundation before any investing.
+*Source:* [Unit 10](learn/unit-10-personal-finance-operating-system.md)
+
+**4% safe withdrawal rate** — A rule of thumb: if you withdraw 4% of your portfolio in year one and adjust for inflation each year after, historically the money lasts 30+ years.
+*Source:* [Unit 10](learn/unit-10-personal-finance-operating-system.md)
+
+**30× income target** — A rough financial independence benchmark: accumulate ~30× your annual expenses, which at a 3-4% withdrawal rate replaces your income indefinitely.
+*Source:* [Unit 10](learn/unit-10-personal-finance-operating-system.md)
+
+**5-layer personal finance OS** — The Unit 10 architecture: (1) earn, (2) protect (emergency fund + insurance), (3) eliminate debt, (4) invest (401k → IRA → taxable), (5) optimize (tax strategies, Mega Backdoor Roth, real estate).
+*Source:* [Unit 10](learn/unit-10-personal-finance-operating-system.md)
+
+**Mega Backdoor Roth** — A strategy to contribute up to ~$69k/year to a Roth account by making after-tax 401k contributions and converting them. Only works if your employer's plan allows it.
+*Source:* [Unit 10](learn/unit-10-personal-finance-operating-system.md)
+
+**HYSA / MMF / CDs / Treasuries** — Cash-equivalent instruments for emergency funds and short-term savings. HYSAs (High-Yield Savings Accounts) and MMFs (Money Market Funds) are liquid; CDs (Certificates of Deposit) and Treasuries lock up money for slightly higher yields.
+*Source:* [Unit 10](learn/unit-10-personal-finance-operating-system.md)
+
+**Family office of one** — Running your personal finances with the discipline of a family office: consolidated view, quarterly review cadence, asset allocation policy, tax optimization, estate basics.
+*Source:* [Unit 10](learn/unit-10-personal-finance-operating-system.md), Tiger Sisters
+
+---
+
+## Communication & Storytelling
+
+**Resonate** (what is / what could be) — Duarte's presentation structure: alternate between current reality ("what is") and proposed future ("what could be"). The gap between them creates tension that pulls the audience forward. End on "the new bliss" — the future realized.
+*Source:* [Duarte](notes/canon/canon-duarte-resonate.md) · *Applied:* [operator playbook](notes/entrepreneurship-operator-playbook.md) · *Argues with:* Minto — logic first, not story first
+
+**Golden Circle** (Start with Why) — Sinek's framework: communicate from the inside out — Why (purpose/belief) → How (process) → What (product). People don't buy what you do; they buy *why* you do it.
+*Source:* [Sinek](notes/canon/canon-sinek-start-with-why.md) · *Applied:* [operator playbook](notes/entrepreneurship-operator-playbook.md)
+
+**Data-ink ratio** — Tufte's principle: in a data visualization, every mark should encode data, not decoration. Minimize "chartjunk" (gratuitous gridlines, 3-D effects, gradients). Let the data speak.
+*Source:* [Tufte](notes/canon/canon-tufte-visual-display.md) · *Gap: never applied*
+
+---
+
+## Ethics & History
+
+**Right vs right** — Badaracco's framing: the hardest ethical decisions aren't right vs wrong — they're right vs right. Two legitimate values in conflict (loyalty vs truth, individual vs community).
+*Source:* [Badaracco](notes/canon/canon-badaracco-defining-moments.md) · *Gap: never applied* · *Argues with:* Sandel — three competing lenses of justice
+
+**Three lenses of justice** — Sandel's three approaches: (1) maximize welfare (utilitarianism), (2) respect freedom (libertarian/Kantian rights), (3) cultivate virtue (Aristotelian). Each is powerful; each has a blind spot.
+*Source:* [Sandel](notes/canon/canon-sandel-justice.md) · *Gap: never applied*
+
+**Three models of decision** — Allison's thesis (from the Cuban Missile Crisis): decisions can be explained through three different lenses: (1) rational actor, (2) organizational process, (3) governmental/bureaucratic politics. Most people default to lens 1 and miss 2 and 3.
+*Source:* [Allison](notes/canon/canon-allison-essence-of-decision.md) · *Gap: never applied*
+
+**Known / Unclear / Presumed** — Neustadt & May's decision tool: separate what you *know* from what's *unclear* from what you're *presuming*. Most bad historical analogies fail because presumptions are treated as facts.
+*Source:* [Neustadt & May](notes/canon/canon-neustadt-may-thinking-in-time.md) · *Gap: never applied*
+
+**Thucydides Trap** — When a rising power threatens an established power, structural fear makes conflict likely (though not inevitable). The pattern from the Peloponnesian War applied to modern geopolitics.
+*Source:* [Thucydides](notes/canon/canon-thucydides-peloponnesian-war.md) · *Gap: never applied*
 
 ---
 
