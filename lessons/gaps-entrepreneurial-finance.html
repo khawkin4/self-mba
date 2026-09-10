@@ -1,0 +1,233 @@
+<!-- LESSON: Entrepreneurial Finance — net-new BENCHMARK-GAP lesson (the financial plumbing of startups that core-10 Entrepreneurship skips). Covers pre/post-money, cap tables, SAFEs, convertible notes, term sheets, liquidation waterfalls, dilution math, venture debt, and a composite case study. Grounded in standard VC mechanics (Y Combinator SAFE docs, Harlem Capital IC insights, Carta cap-table conventions). -->
+<p class="lead">The entrepreneurship module taught you <em>what</em> to build and <em>why</em> investors write checks. This lesson is about <b>how the money actually works</b> once those checks arrive: the arithmetic of ownership, the contracts that govern who gets paid first, and the slow, predictable erosion of a founder's stake across five rounds of funding. Every number here has a direct consequence for control, incentives, and who walks away rich (or empty-handed) at exit. If you can't read a cap table or spot a punitive liquidation preference, you are negotiating blind.</p>
+
+<h2>1 · Pre-money vs. post-money -- the split that sets the price</h2>
+<p>The single most important equation in venture financing is also the simplest. When an investor offers you $2M at a $8M pre-money valuation, you are selling exactly 20% of your company -- and many first-time founders don't realize it until the paperwork is signed.</p>
+<div class="equation">Post-money = Pre-money + New investment &nbsp;&middot;&nbsp; Investor ownership = Investment &divide; Post-money</div>
+<div class="example">
+<p><b>Worked example.</b> Founders have built a product with real traction. A VC offers $2M at an $8M pre-money valuation.</p>
+<p>Post-money = $8M + $2M = <b>$10M</b>. The investor owns $2M / $10M = <b>20%</b>. Founders retain 80%.</p>
+<p>If the same investor offered $2M at a $10M pre-money instead, post-money would be $12M and the investor would own only 16.7%. That $2M difference in pre-money valuation just saved the founders 3.3 percentage points of ownership -- worth millions at exit.</p>
+</div>
+<div class="pitfall">
+<h3>The post-money SAFE trap</h3>
+<p>Y Combinator's post-money SAFE (the standard since 2018) sets the cap as the <em>post-money</em> valuation, meaning the investor's ownership percentage is locked at signing: Investment / Cap = ownership. If you raise $500K on a $5M post-money cap, you have sold exactly 10% -- and every additional SAFE dollar at the same cap stacks on top, diluting you further before a single priced round happens. Many founders treat the cap as a pre-money number by habit and miscalculate their dilution by 15-25%.</p>
+</div>
+
+<h2>2 · The vocabulary -- flip to learn</h2>
+<p>These are the exact terms you will encounter in every term sheet, SAFE, and investor conversation. <b>Tap a card to flip it.</b></p>
+<div class="fc-grid">
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Pre-money valuation</b><span class="hint">tap to flip</span></span><span class="fc-b">What the company is worth <em>before</em> the new investment lands. The negotiated number that sets the price per share.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Post-money valuation</b><span class="hint">tap to flip</span></span><span class="fc-b">Pre-money + new cash. The total implied value of the company immediately after the round closes. Determines investor ownership percentage.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Dilution</b><span class="hint">tap to flip</span></span><span class="fc-b">The reduction in an existing shareholder's ownership percentage when new shares are issued. Not the same as losing value -- your slice shrinks but the pie grows.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Cap table</b><span class="hint">tap to flip</span></span><span class="fc-b">Capitalization table: the ledger showing every shareholder, their share count, and their ownership percentage. The single source of truth for who owns what.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>SAFE</b><span class="hint">tap to flip</span></span><span class="fc-b">Simple Agreement for Future Equity. Not debt, not equity -- a contract that converts into shares at a future priced round. No interest, no maturity date, no board seat.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Convertible note</b><span class="hint">tap to flip</span></span><span class="fc-b">Short-term debt that converts into equity at the next priced round. Carries interest (typically 2-8%) and a maturity date -- unlike a SAFE.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Term sheet</b><span class="hint">tap to flip</span></span><span class="fc-b">A non-binding summary of the key economic and control terms of an investment. The document where valuation, liquidation preference, board seats, and protective provisions are negotiated.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Liquidation preference</b><span class="hint">tap to flip</span></span><span class="fc-b">The right to get paid back first in an exit (acquisition or liquidation) before common shareholders see a dollar. Standard: 1x non-participating.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Pro rata rights</b><span class="hint">tap to flip</span></span><span class="fc-b">The right (not obligation) to invest in future rounds to maintain your ownership percentage. Prevents dilution for investors who exercise it.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Anti-dilution</b><span class="hint">tap to flip</span></span><span class="fc-b">A clause that adjusts an investor's conversion price downward if the company raises a later round at a lower valuation (a down round). Protects investors; punishes founders.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Vesting</b><span class="hint">tap to flip</span></span><span class="fc-b">The schedule by which founders or employees earn their equity over time. Standard: 4-year vesting with a 1-year cliff. Prevents someone from leaving on day two with 25% of the company.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Cliff</b><span class="hint">tap to flip</span></span><span class="fc-b">The initial period (usually 12 months) during which no equity vests at all. At the cliff date, the first tranche (typically 25%) vests in bulk.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Option pool</b><span class="hint">tap to flip</span></span><span class="fc-b">A block of shares reserved for future employee grants. Investors insist it be created from the pre-money valuation, meaning founders -- not investors -- absorb the dilution.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Drag-along</b><span class="hint">tap to flip</span></span><span class="fc-b">A provision requiring minority shareholders to sell if the majority approves a deal. Prevents a small holder from blocking an acquisition.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Tag-along</b><span class="hint">tap to flip</span></span><span class="fc-b">A provision allowing minority shareholders to join a sale on the same terms if a majority holder sells. Protects small holders from being left behind.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Down round</b><span class="hint">tap to flip</span></span><span class="fc-b">A financing round at a lower valuation than the previous round. Triggers anti-dilution adjustments and signals distress.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Bridge round</b><span class="hint">tap to flip</span></span><span class="fc-b">A small interim round (often convertible notes) to keep the company alive until it can raise a proper round. Usually from existing investors.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Venture debt</b><span class="hint">tap to flip</span></span><span class="fc-b">Loans to VC-backed startups, typically from specialized lenders (SVB, WTI, Lighter Capital). Non-dilutive but requires repayment -- used to extend runway, not replace equity.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Preferred stock</b><span class="hint">tap to flip</span></span><span class="fc-b">The class of shares investors receive. Carries special rights: liquidation preference, anti-dilution, board seats, protective provisions. Converts to common at IPO.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Common stock</b><span class="hint">tap to flip</span></span><span class="fc-b">The class of shares founders and employees hold. No liquidation preference, no special protections. Gets paid last in an exit -- but benefits most in a large outcome.</span></span></button>
+</div>
+
+<h2>3 · Cap table mechanics -- founding through Series B</h2>
+<p>A cap table is not a static document. It is a living record that changes with every round, every option grant, and every conversion. Walk through three stages of a company called <b>Relay</b> and watch how the founders' stake shrinks while the pie grows. <b>Tap each bar segment.</b></p>
+<figure class="viz">
+<svg viewBox="0 0 720 220" role="img" aria-label="Stacked bar chart showing cap table evolution from founding through Seed and Series A">
+  <text x="0" y="16" class="vlabel">Cap table evolution -- Relay, Inc.</text>
+  <!-- Founding -->
+  <text x="120" y="42" text-anchor="middle" class="vlabel">Founding</text>
+  <rect x="20" y="50" width="200" height="30" rx="3" class="bar-net" data-tip="Founders: 10M shares, 100% ownership. Two co-founders split 50/50. The only moment you own it all."/>
+  <text x="120" y="70" class="bar-txt-sm">Founders 100%</text>
+  <text x="120" y="100" text-anchor="middle" class="bar-txt-sm">10M shares &middot; $0 raised</text>
+  <!-- Seed -->
+  <text x="380" y="42" text-anchor="middle" class="vlabel">Post-Seed ($2M at $8M pre)</text>
+  <rect x="260" y="50" width="150" height="30" rx="3" class="bar-net" data-tip="Founders: 10M shares, now 75%. Pre-money was $8M; post-money $10M. Seed investor gets 20%, option pool 5%."/>
+  <text x="335" y="70" class="bar-txt-sm">Founders 75%</text>
+  <rect x="410" y="50" width="55" height="30" rx="3" class="bar-gross" data-tip="Seed investor: 2.5M new shares = 20% for $2M. Price per share = $0.80."/>
+  <text x="438" y="70" class="bar-txt-sm">Seed 20%</text>
+  <rect x="465" y="50" width="15" height="30" rx="3" class="bar-rev" data-tip="Option pool: 625K shares = 5%, reserved for early hires. Created from pre-money -- founders bear this dilution."/>
+  <text x="380" y="100" text-anchor="middle" class="bar-txt-sm">12.5M shares &middot; $2M raised</text>
+  <!-- Series A -->
+  <text x="610" y="42" text-anchor="middle" class="vlabel">Post-Series A ($10M at $30M pre)</text>
+  <rect x="500" y="50" width="108" height="30" rx="3" class="bar-net" data-tip="Founders: still 10M shares, now 52.5%. Each round dilutes the percentage even though share count stays the same."/>
+  <text x="554" y="70" class="bar-txt-sm">Founders 52.5%</text>
+  <rect x="608" y="50" width="38" height="30" rx="3" class="bar-gross" data-tip="Seed: 2.5M shares, now 13.1% (diluted from 20%). They didn't invest more, so their percentage shrank."/>
+  <text x="627" y="70" class="bar-txt-sm">Sd</text>
+  <rect x="646" y="50" width="48" height="30" rx="3" class="bar-rev" data-tip="Series A: 4.76M new shares = 25% for $10M. Post-money = $40M. Price per share = $2.10."/>
+  <text x="670" y="70" class="bar-txt-sm">A 25%</text>
+  <rect x="694" y="50" width="16" height="30" rx="3" class="bar-rev" data-tip="Expanded option pool: now ~9.4% total. Board insisted on topping up before Series A pricing."/>
+  <text x="610" y="100" text-anchor="middle" class="bar-txt-sm">19M shares &middot; $12M total raised</text>
+</svg>
+<figcaption>Same founders, same shares -- the ownership percentage drops from 100% to 75% to 52.5% as new shares are issued. Dilution is the price of growth capital.</figcaption>
+</figure>
+<p>Notice what happened to the seed investor: they went from 20% to 13.1% without selling a single share. That is <b>passive dilution</b> -- the same mechanic that erodes founder stakes. Pro rata rights exist precisely to let investors fight this by writing follow-on checks.</p>
+
+<h2>4 · SAFEs and convertible notes -- the bridge instruments</h2>
+<p>Before a startup is ready for a priced round with a formal valuation, it raises money using instruments that <em>promise</em> future equity. The two dominant forms: <b>SAFEs</b> (Y Combinator's invention, no interest, no maturity) and <b>convertible notes</b> (actual debt with interest and a due date). Both convert into preferred stock at the next priced round.</p>
+<div class="equation">Conversion price = min(Cap &divide; Pre-money shares, &nbsp;Round price &times; (1 - Discount))</div>
+<p>Investors get the <em>better</em> of the two calculations. The cap protects them if the valuation skyrockets; the discount rewards them for early risk if it doesn't.</p>
+<div class="example">
+<p><b>Conversion math.</b> An angel invests $200K via a SAFE with a $4M cap and a 20% discount. At Series A, the company prices at $10M pre-money with 10M shares outstanding.</p>
+<p><b>Cap path:</b> Conversion price = $4M / 10M shares = $0.40/share. Shares received = $200K / $0.40 = <b>500,000 shares</b>.</p>
+<p><b>Discount path:</b> Series A price = $10M / 10M = $1.00/share. Discounted = $1.00 x 0.80 = $0.80/share. Shares = $200K / $0.80 = <b>250,000 shares</b>.</p>
+<p>The cap path yields more shares, so the investor converts at $0.40. They effectively bought in at a $4M valuation while Series A investors paid $10M -- the reward for taking early risk.</p>
+</div>
+<div class="reveal">
+  <button class="reveal-q">When does a convertible note become dangerous?</button>
+  <div class="reveal-a"><p>Unlike a SAFE, a convertible note has a <b>maturity date</b> (typically 18-24 months). If you haven't raised a priced round by then, the note holder can technically demand repayment -- and if you can't pay, they can force a bankruptcy proceeding. In practice most note holders extend the maturity, but it gives them leverage in negotiations. Notes also accrue <b>interest</b> (typically 2-8% annually), which adds to the principal that converts into shares, creating extra dilution. A $500K note at 6% over 2 years becomes $561,800 at conversion.</p></div>
+</div>
+
+<h2>5 · Term sheet anatomy -- the terms that actually matter</h2>
+<p>A term sheet is 5-10 pages. Most of it is boilerplate. The terms below are where founders win or lose control and economics. <b>Tap each to understand the mechanic.</b></p>
+<div class="reveal">
+  <button class="reveal-q">Liquidation preference (1x non-participating vs. participating)</button>
+  <div class="reveal-a"><p><b>1x non-participating</b> (standard, founder-friendly): the investor gets their money back OR converts to common and shares pro rata -- whichever is higher. In a big exit, they convert. In a small exit, they take their money back and the common holders split what's left. <b>Participating preferred</b> (investor-friendly, sometimes called "double dip"): the investor gets their money back AND shares pro rata in the remainder. This means they effectively get paid twice. A 2x participating preference on a $5M investment requires $10M off the top before anyone else sees a dime, plus a share of everything after.</p></div>
+</div>
+<div class="reveal">
+  <button class="reveal-q">Anti-dilution: weighted average vs. full ratchet</button>
+  <div class="reveal-a"><p>Both protect investors in a down round by adjusting their conversion price downward. <b>Broad-based weighted average</b> (standard): the conversion price is adjusted using a formula that accounts for how much money was raised at the lower price and the total shares outstanding. The more money raised at the lower price, the bigger the adjustment. <b>Full ratchet</b> (aggressive): the conversion price drops to match the new, lower price -- regardless of how little was raised at that price. If a Series A investor paid $2.00/share and a small bridge round prices at $0.50, full ratchet reprices all their shares to $0.50, massively diluting founders. Avoid full ratchet.</p></div>
+</div>
+<div class="reveal">
+  <button class="reveal-q">Board seats and governance</button>
+  <div class="reveal-a"><p>A typical seed-stage board is 2 founders + 0 investors (or 2+1). By Series A, a standard board is 2 founders + 1 lead investor + 0-1 independent = 3-4 seats. By Series B, it often shifts to 2+2+1, and founders can lose board control. The board approves budgets, hires/fires the CEO, approves fundraising, and decides on exits. Board control is separate from share ownership -- you can own 51% of the company and still be fired by a board you don't control.</p></div>
+</div>
+<div class="reveal">
+  <button class="reveal-q">Protective provisions</button>
+  <div class="reveal-a"><p>Even without board control, preferred shareholders typically hold veto rights over specific actions: issuing new shares, selling the company, taking on debt, changing the charter, or increasing the option pool. These are <b>protective provisions</b> -- a checklist of things the company cannot do without investor consent, regardless of who controls the board. They are standard and generally reasonable, but aggressive investors sometimes expand them to cover hiring, spending, or pivoting.</p></div>
+</div>
+
+<h2>6 · The liquidation waterfall -- who gets paid, and in what order</h2>
+<p>When a company exits, cash does not flow evenly to all shareholders. It cascades through a hierarchy of preferences. Walk through a <b>$50M acquisition</b> of a company with $5M in Series A (1x non-participating) and $15M in Series B (1x non-participating), with founders and employees holding common stock.</p>
+<figure class="viz">
+<svg viewBox="0 0 720 240" role="img" aria-label="Liquidation waterfall showing how a 50M exit is distributed across investor tiers and common holders">
+  <text x="360" y="16" text-anchor="middle" class="vlabel">$50M acquisition -- 1x non-participating preferred</text>
+  <!-- Waterfall bars -->
+  <text x="0" y="48" class="vlabel">Step 1: Series B preference</text>
+  <rect x="0" y="54" width="216" height="28" rx="3" class="bar-rev" data-tip="Series B gets $15M back first (1x their investment). $50M - $15M = $35M remaining."/>
+  <text x="108" y="73" class="bar-txt-sm">Series B: $15M</text>
+  <rect x="216" y="54" width="504" height="28" rx="3" class="bar-rev" opacity="0.2"/>
+  <text x="468" y="73" class="bar-txt-sm">$35M remaining</text>
+
+  <text x="0" y="104" class="vlabel">Step 2: Series A preference</text>
+  <rect x="0" y="110" width="72" height="28" rx="3" class="bar-gross" data-tip="Series A gets $5M back (1x their investment). $35M - $5M = $30M remaining for common."/>
+  <text x="36" y="129" class="bar-txt-sm">A: $5M</text>
+  <rect x="72" y="110" width="648" height="28" rx="3" class="bar-gross" opacity="0.2"/>
+  <text x="396" y="129" class="bar-txt-sm">$30M remaining</text>
+
+  <text x="0" y="160" class="vlabel">Step 3: Common holders (founders + employees) split the rest</text>
+  <rect x="0" y="166" width="432" height="28" rx="3" class="bar-net" data-tip="Common shareholders (founders, employees, early angels who converted) split the remaining $30M. If founders own 60% of common, they get $18M."/>
+  <text x="216" y="185" class="bar-txt-sm">Common: $30M (founders, employees, converted angels)</text>
+
+  <text x="0" y="220" class="vlabel">But investors check: is converting to common worth more?</text>
+  <text x="0" y="236" class="bar-txt-sm">Series B owns 30% -- converting yields $15M (same). Series A owns 12% -- converting yields $6M (better, so they convert).</text>
+</svg>
+<figcaption>With 1x non-participating preferred, investors choose the better of preference or conversion. In large exits, conversion wins and everyone shares the upside. In small exits, preference protects investors while common holders get squeezed.</figcaption>
+</figure>
+<div class="pitfall">
+<h3>When the waterfall drowns the founders</h3>
+<p>Now imagine that same company with <b>participating preferred</b> on the Series B. Series B takes their $15M preference AND 30% of the remaining $35M = $10.5M, for a total of <b>$25.5M</b>. Series A takes $5M + 12% of $30M = <b>$8.6M</b>. Founders and employees split what's left: <b>$15.9M</b> -- nearly half what they'd get under non-participating terms. Participating preferred is the single most expensive economic term a founder can agree to.</p>
+</div>
+
+<h2>7 · Dilution math -- from 100% to 8%</h2>
+<p>Every founder starts at 100%. Here is a realistic walk through how that number shrinks. Follow the math -- each step is a real mechanism, not a simplification.</p>
+<div class="equation">Founding (100%) &rarr; Co-founder split (50%) &rarr; Option pool (42.5%) &rarr; Seed (34%) &rarr; Series A (24%) &rarr; Series B (17%) &rarr; Series C (12%) &rarr; More options (8-10%)</div>
+<div class="example">
+<p><b>Step by step for one co-founder:</b></p>
+<p><b>Day 0:</b> You own 100%. You bring on a co-founder and split 50/50. You now own <b>50%</b>.</p>
+<p><b>Seed:</b> You create a 15% option pool (from your shares, not the investor's) and sell 20% to a seed investor. Your 50% is diluted by (1 - 0.15) x (1 - 0.20) = 0.68 of its pre-round value = <b>34%</b>.</p>
+<p><b>Series A:</b> A new 5% option pool top-up and 25% to the Series A lead. Your 34% x (1 - 0.05) x (1 - 0.25) = <b>24.2%</b>.</p>
+<p><b>Series B:</b> 20% to Series B investors, 5% option pool refresh. Your 24.2% x 0.95 x 0.80 = <b>18.4%</b>.</p>
+<p><b>Series C + option grants:</b> Another 20% round plus option exercise and secondary sales. A single founder holding 8-12% at IPO is standard for a venture-backed company. Mark Zuckerberg retained 28% at Facebook's IPO -- an outlier achieved through supervoting shares and unusual leverage.</p>
+</div>
+<div class="reveal">
+  <button class="reveal-q">The option pool shuffle -- the hidden dilution</button>
+  <div class="reveal-a"><p>Investors routinely insist that the option pool be created <em>before</em> their money enters the cap table -- carved from the pre-money valuation. This means the dilution from the option pool falls entirely on existing shareholders (founders), not on the new investor. If a VC offers $5M at $15M pre-money but requires a 15% option pool, the effective pre-money for existing shareholders is $15M x (1 - 0.15) = $12.75M. The advertised $15M pre-money is a fiction -- the real founder-relevant valuation is $12.75M. Always compute the <b>effective</b> pre-money after the pool carve-out.</p></div>
+</div>
+
+<h2>8 · Venture debt and alternatives to equity</h2>
+<p>Not every dollar of startup funding needs to come with dilution. Three instruments sit between pure equity and pure bootstrapping:</p>
+<div class="reveal">
+  <button class="reveal-q">Venture debt -- when and why</button>
+  <div class="reveal-a"><p>Venture debt is a loan to a VC-backed company, typically sized at 25-50% of the last equity round. It comes with interest (Prime + 2-5%), a repayment schedule (36 months is typical), and a small <b>warrant</b> giving the lender the right to buy equity (usually 0.5-2% of the company). Use it to: (1) extend runway by 3-6 months without dilution, (2) finance specific capital expenditures (equipment, inventory), (3) bridge to profitability when you're close. Do NOT use it when: revenue is unpredictable, burn is accelerating, or you might need the covenant flexibility that equity provides. Silicon Valley Bank (before its collapse), Western Technology Investment, and Lighter Capital were major venture lenders.</p></div>
+</div>
+<div class="reveal">
+  <button class="reveal-q">Revenue-based financing (RBF)</button>
+  <div class="reveal-a"><p>You receive a lump sum and repay a fixed multiple (typically 1.3-2x) as a percentage of monthly revenue (5-10%). If revenue drops, payments shrink; if it grows, you repay faster. Zero dilution, no board seats, no personal guarantees. Best for SaaS and e-commerce companies with predictable monthly revenue above $10K+. Firms like Pipe, Clearco, and Capchase popularized this from 2019 onward. The effective APR can be high (15-40%) if you repay quickly, but many founders accept that to avoid giving up equity.</p></div>
+</div>
+<div class="reveal">
+  <button class="reveal-q">When debt kills a startup</button>
+  <div class="reveal-a"><p>Debt has a fixed obligation: you must repay regardless of outcome. If a startup takes $3M in venture debt and then misses its growth targets, the debt covenants can trigger default. The lender can call the loan, seize assets, or force a fire sale -- outcomes that equity investors never impose. The 2023 SVB collapse showed this systemically: startups that had concentrated their venture debt and banking with one institution faced existential risk when that institution failed. Rule of thumb: venture debt should extend a clear path, never substitute for one.</p></div>
+</div>
+
+<h2>9 · Case study -- NovaChem from pre-seed to Series B</h2>
+<p>NovaChem is a composite case based on real biotech and climate-tech financing patterns. Follow the economics through three rounds.</p>
+<div class="example">
+<p><b>Pre-seed (2021):</b> Two founders, 10M shares each (20M total). They raise $500K via post-money SAFE at a $5M cap. The SAFE holders will own 10% at conversion ($500K / $5M).</p>
+<p><b>Seed (2022):</b> A VC leads a $3M priced seed at $12M pre-money. Before the round, the board creates a 10% option pool (from pre-money). The SAFE converts: $500K / $5M cap = 10% of post-money shares. Post-money = $12M + $3M = $15M. Seed investor owns 20%. SAFE holders own ~10%. Option pool: ~10%. Founders' combined stake: ~60%, or 30% each.</p>
+<p><b>Series A (2024):</b> NovaChem has $2M ARR growing 3x. A top-tier firm leads $15M at $45M pre-money. Option pool topped up to 12%. Post-money = $60M. Series A gets 25%. Founders are now at ~20% combined (10% each). Seed investor diluted from 20% to ~15%. But everyone's shares are worth more: the seed investor's 15% of $60M = $9M, a 3x on $3M invested.</p>
+<p><b>The math check:</b> Founder A's 10% of $60M = $6M in paper value. They started with 50% of a company worth nothing. They now own 10% of a company worth $60M. That is the core trade of venture financing -- smaller percentage of a much larger number.</p>
+</div>
+
+<h2>10 · Check yourself</h2>
+<div class="quizq" data-correct="1">
+  <p class="q">A startup raises $3M at a $12M pre-money valuation. What percentage does the investor own?</p>
+  <button class="opt">25% -- because 3/12</button>
+  <button class="opt">20% -- because 3/(12+3)</button>
+  <button class="opt">15% -- because of the option pool</button>
+  <p class="fb">Post-money = $12M + $3M = $15M. Investor ownership = $3M / $15M = <b>20%</b>. The denominator is always post-money, not pre-money.</p>
+</div>
+<div class="quizq" data-correct="2">
+  <p class="q">An angel invests $100K on a SAFE with a $5M cap. At Series A, the company is valued at $20M pre-money with 10M shares outstanding. What conversion price does the angel get?</p>
+  <button class="opt">$2.00 -- the Series A price</button>
+  <button class="opt">$1.00 -- averaged</button>
+  <button class="opt">$0.50 -- the cap-derived price</button>
+  <p class="fb">Cap conversion price = $5M / 10M shares = <b>$0.50/share</b>. Series A price = $20M / 10M = $2.00. The angel gets the lower price ($0.50), yielding 200,000 shares instead of 50,000.</p>
+</div>
+<div class="quizq" data-correct="0">
+  <p class="q">In a $30M exit, a Series A investor holds 1x non-participating preferred with a $5M investment and owns 20% of the company. What do they choose?</p>
+  <button class="opt">Convert to common and take $6M (20% of $30M)</button>
+  <button class="opt">Take the $5M liquidation preference</button>
+  <button class="opt">Take $5M preference plus 20% of the remaining $25M</button>
+  <p class="fb">Non-participating means they choose the <b>higher</b> of preference ($5M) or conversion (20% x $30M = $6M). They convert. The third option describes <em>participating</em> preferred -- a different, more investor-friendly term.</p>
+</div>
+<div class="quizq" data-correct="1">
+  <p class="q">A VC offers $5M at $15M pre-money but requires a 15% option pool created before pricing. What is the effective pre-money for existing shareholders?</p>
+  <button class="opt">$15M -- the option pool comes after</button>
+  <button class="opt">$12.75M -- the pool reduces the effective pre-money</button>
+  <button class="opt">$20M -- the pool increases valuation</button>
+  <p class="fb">The 15% option pool is carved from pre-money: $15M x (1 - 0.15) = <b>$12.75M</b> effective pre-money. The $15M headline valuation obscures $2.25M of founder dilution.</p>
+</div>
+<div class="quizq" data-correct="2">
+  <p class="q">What is the key difference between a SAFE and a convertible note?</p>
+  <button class="opt">A SAFE gives the investor board seats; a note does not</button>
+  <button class="opt">A note converts at a higher valuation than a SAFE</button>
+  <button class="opt">A note is debt with interest and a maturity date; a SAFE is neither debt nor equity</button>
+  <p class="fb">A convertible note accrues <b>interest</b> and has a <b>maturity date</b> -- it is legally debt that converts to equity. A SAFE has no interest, no maturity, and no repayment obligation. Neither typically carries board seats at the seed stage.</p>
+</div>
+
+<div class="apply-box">
+<h3>Your move</h3>
+<p>Build a cap table in a spreadsheet for a fictional company from founding through Series B. Start with 10M shares, add a 10% option pool and a $2M seed round, then a $10M Series A. Compute every shareholder's percentage at each stage. Then model a $40M exit under both 1x non-participating and 1x participating preferred -- the difference in founder payout is the cost of one term sheet line item.</p>
+</div>
+
+<div class="src-list">
+<h4>Further reading</h4>
+<ul>
+<li><a href="https://www.ycombinator.com/documents" target="_blank" rel="noopener">Y Combinator -- SAFE documents and user guide</a></li>
+<li><a href="https://www.amazon.com/Venture-Deals-Smarter-Lawyer-Capitalist/dp/1119594820" target="_blank" rel="noopener">Brad Feld &amp; Jason Mendelson -- Venture Deals (4th ed.)</a></li>
+<li><a href="https://carta.com/blog/cap-table-101/" target="_blank" rel="noopener">Carta -- Cap Table 101</a></li>
+<li><a href="https://www.youtube.com/watch?v=VRRVKxV-rJQ" target="_blank" rel="noopener">Harlem Capital -- How VCs Evaluate Deals (IC mechanics and fund structure)</a></li>
+<li><a href="https://www.investopedia.com/terms/l/liquidation-preference.asp" target="_blank" rel="noopener">Investopedia -- Liquidation Preference</a></li>
+<li><a href="https://www.saastr.com/the-ultimate-guide-to-dilution/" target="_blank" rel="noopener">SaaStr -- The Ultimate Guide to Startup Dilution</a></li>
+</ul>
+</div>

@@ -693,6 +693,18 @@
         }
       ],
       "tickers": []
+    },
+    "entrepreneurial-finance": {
+      "yt": [
+        "entrepreneurial finance cap table dilution",
+        "term sheet anatomy startup"
+      ],
+      "reddit": [
+        {
+          "sub": "startups"
+        }
+      ],
+      "tickers": []
     }
   }
 }
