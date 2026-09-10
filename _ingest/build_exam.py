@@ -103,7 +103,6 @@ PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 .note{font:.84rem/1.6 var(--read);color:var(--dim);border-left:2px solid var(--line2);padding-left:14px;margin:18px 0}
 @media(max-width:560px){.dom-row{grid-template-columns:120px 1fr 50px}}
 </style></head><body>
-<div class="grain"></div><div class="atmos"></div>
 <div id="scorebar">
 <a href="index.html" class="home" style="font:.8rem var(--mono);color:var(--dim)">&larr; Index</a>
 <span style="font:600 .8rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink)">Diagnostic Exam</span>
@@ -133,16 +132,32 @@ function render(){
     wrap.appendChild(div);
   });
   document.querySelectorAll('.exam-opt').forEach(b=>b.addEventListener('click',function(){
-    const qi=this.dataset.q; if(document.getElementById('result').classList.contains('show'))return;
-    document.querySelectorAll('.exam-opt[data-q="'+qi+'"]').forEach(x=>x.classList.remove('sel'));
-    this.classList.add('sel'); answers[qi]=+this.dataset.o; updateProg();
+    const qi=this.dataset.q;
+    const qDiv=document.getElementById('q'+qi);
+    if(qDiv.classList.contains('done'))return;
+    qDiv.classList.add('done');
+    const q=BANK[qi], chosen=+this.dataset.o;
+    answers[qi]=chosen;
+    const opts=qDiv.querySelectorAll('.exam-opt');
+    opts.forEach((o,oi)=>{
+      o.style.pointerEvents='none';
+      if(oi===q.correct)o.classList.add('correct');
+      if(oi===chosen&&chosen!==q.correct)o.classList.add('wrong');
+    });
+    const fb=qDiv.querySelector('.exam-fb');
+    if(fb)fb.classList.add('show');
+    updateProg();
   }));
   document.getElementById('result').classList.remove('show');
   document.getElementById('result').innerHTML='';
   document.getElementById('submit').style.display=''; document.getElementById('retake').style.display='none';
   updateProg(); window.scrollTo(0,0);
 }
-function updateProg(){document.getElementById('prog').textContent=Object.keys(answers).length+' / '+BANK.length+' answered';}
+function updateProg(){
+  const n=Object.keys(answers).length;
+  const c=Object.keys(answers).filter(qi=>answers[qi]===BANK[qi].correct).length;
+  document.getElementById('prog').textContent=c+' correct · '+n+' / '+BANK.length+' answered';
+}
 function band(p){return p>=85?'Distinction':p>=70?'Pass (solid)':p>=55?'Marginal pass':'Below pass — review';}
 function grade(){
   const byDom={}; let correct=0;

@@ -3,412 +3,571 @@
 <meta name="theme-color" content="#faf7f2">
 <title>The Compounding MBA</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Literata:ital,opsz,wght@0,7..72,300..600;1,7..72,300..500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1788999576"></head><body>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1789021734"></head><body>
 <header class="hero">
 <div class="eyebrow">Self-directed · Master's level</div>
 <h1>The Compounding <em>MBA</em></h1>
 <p class="sub">A master's-level business education, distilled from elite sources into interactive, visual lessons — grounded in primary data.</p>
 <div class="stats-dash">
-<div class="stat-card"><div class="stat-num">53</div><div class="stat-label">modules</div></div>
-<div class="stat-card"><div class="stat-num">461</div><div class="stat-label">lectures</div></div>
-<div class="stat-card"><div class="stat-num">1,504,021</div><div class="stat-label">words of transcript</div></div>
-<div class="stat-card"><div class="stat-num">39</div><div class="stat-label">interactive lessons</div>
-<div class="stat-bar-wrap"><div class="stat-bar-fill" style="width:73%"></div></div>
+<div class="stat-card"><div class="stat-num" data-target="53">0</div><div class="stat-label">modules</div></div>
+<div class="stat-card"><div class="stat-num" data-target="461">0</div><div class="stat-label">lectures</div></div>
+<div class="stat-card"><div class="stat-num" data-target="1504021">0</div><div class="stat-label">words of transcript</div></div>
+<div class="stat-card"><div class="stat-num" data-target="39">0</div><div class="stat-label">interactive lessons</div>
+<div class="stat-bar-wrap"><div class="stat-bar-fill" style="width:0%" data-width="73"></div></div>
 <div class="stat-sub">73% coverage</div></div>
+</div>
+<div class="gami-bar">
+<div class="xp-display"><svg class="ic" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l2.2 4.6L15 6.3l-3.5 3.5.8 4.8L8 12.3 3.7 14.6l.8-4.8L1 6.3l4.8-.7z"/></svg> <span class="xp-num" id="xp-count">0</span> <span class="xp-label">XP</span></div>
+<div class="level-badge" id="level-badge">Analyst</div>
+<div class="streak-display" id="streak-display"><svg class="ic" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1C6.5 3.5 4 5 4 8.5a4 4 0 008 0c0-1.5-.5-2.5-1.5-3.5-.5 1-1.5 1.5-2.5 1.5C8 5 8.5 3 8 1z"/></svg> <span class="streak-num" id="streak-num">0</span> <span class="streak-label">day streak</span></div>
 </div>
 <div class="exam-links">
 <a class="exam-link" href="exam.html"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 2l3.5 3.5L5.5 14H2v-3.5z"/></svg> <span class="exam-title">Self-diagnostic</span> <span class="exam-sub">recall</span> <svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></a>
 <a class="exam-link bench" href="benchmark-exam.html"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8" cy="8" r="6.5"/><circle cx="8" cy="8" r="3.5"/><circle cx="8" cy="8" r=".8" fill="currentColor"/></svg> <span class="exam-title">Calibrated benchmark</span> <span class="exam-sub">exam-level</span> <svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></a>
 </div>
 <input id="q" placeholder="Search modules…" oninput="filt()">
+<div class="filter-chips">
+<button class="chip active" data-filter="all">All</button>
+<button class="chip" data-filter="lesson"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Has lesson</button>
+<button class="chip" data-filter="completed"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> Completed</button>
+<button class="chip" data-filter="not-started">Not started</button>
+</div>
 </header>
+<nav class="track-tabs" id="track-tabs">
+<a href="#t-core" class="tt active" data-track="core">Core</a>
+<a href="#t-exec" class="tt" data-track="exec">Executive</a>
+<a href="#t-canon" class="tt" data-track="canon">Canon</a>
+<a href="#t-gaps" class="tt" data-track="gaps">Foundations</a>
+<a href="#t-explore" class="tt" data-track="explore">Explore</a>
+</nav>
 <main>
-<div class="track-head"><span class="th-label">Core Curriculum</span><span class="th-rule"></span><span class="th-cov"><svg class="prog-ring" viewBox="0 0 44 44" width="44" height="44"><circle cx="22" cy="22" r="18" fill="none" stroke="var(--line)" stroke-width="3"/><circle cx="22" cy="22" r="18" fill="none" stroke="var(--core)" stroke-width="3" stroke-dasharray="113.1" stroke-dashoffset="0.0" stroke-linecap="round" transform="rotate(-90 22 22)"/><text x="22" y="22" text-anchor="middle" dominant-baseline="central" class="prog-pct">100%</text></svg><span class="th-cov-label">12/12 lessons</span></span><span class="th-count">12 modules</span></div>
-<div class="grid"><a class="mcard core ready" href="core-01-accounting.html" data-mod="core-01-accounting">
+<section id="t-core" class="track-section">
+<div class="track-head" data-collapse="core"><span class="th-label">Core Curriculum</span><span class="th-rule"></span><span class="th-cov"><svg class="prog-ring" viewBox="0 0 44 44" width="44" height="44"><circle cx="22" cy="22" r="18" fill="none" stroke="var(--line)" stroke-width="3"/><circle cx="22" cy="22" r="18" fill="none" stroke="var(--core)" stroke-width="3" stroke-dasharray="113.1" stroke-dashoffset="0.0" stroke-linecap="round" transform="rotate(-90 22 22)"/><text x="22" y="22" text-anchor="middle" dominant-baseline="central" class="prog-pct">100%</text></svg><span class="th-cov-label">12/12 lessons</span></span><span class="th-count">12 modules</span><button class="th-toggle" aria-label="Collapse section"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4-4 4 4"/></svg></button></div>
+<div class="grid"><a class="mcard core ready" href="core-01-accounting.html" data-mod="core-01-accounting" data-track="core">
 <div class="mcard-num">01</div>
 <div class="mcard-body">
 <h3>Accounting</h3>
+<p class="mcard-desc">Financial statements, balance sheets, income statements, cash flow — reading a 10-K like an analyst.</p><p class="mcard-src">Accounting Stuff, Hamish Hodder, Value Investors Archive</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>22,467 words</span><span>8 threads</span><span>2 filings</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-02-corporate-finance.html" data-mod="core-02-corporate-finance">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-02-corporate-finance.html" data-mod="core-02-corporate-finance" data-track="core">
 <div class="mcard-num">02</div>
 <div class="mcard-body">
 <h3>Corporate Finance &amp; Valuation</h3>
+<p class="mcard-desc">Valuation frameworks, DCF, NPV, IRR, WACC, cost of capital, and how firms make financing decisions.</p><p class="mcard-src">Aswath Damodaran, Kaplan UK, The Finance Storyteller</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>68,626 words</span><span>5 threads</span><span>2 filings</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-03-micro-strategy.html" data-mod="core-03-micro-strategy">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-03-micro-strategy.html" data-mod="core-03-micro-strategy" data-track="core">
 <div class="mcard-num">03</div>
 <div class="mcard-body">
 <h3>Microeconomics &amp; Strategy</h3>
+<p class="mcard-desc">Supply &amp; demand, elasticity, market structures, pricing power, and the economics behind strategic choices.</p><p class="mcard-src">CrashCourse, TED Archive, Big Think</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>10,183 words</span><span>8 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-04-competitive-strategy.html" data-mod="core-04-competitive-strategy">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-04-competitive-strategy.html" data-mod="core-04-competitive-strategy" data-track="core">
 <div class="mcard-num">04</div>
 <div class="mcard-body">
 <h3>Competitive Strategy</h3>
+<p class="mcard-desc">Porter&#x27;s Five Forces, competitive advantage, moats, positioning, and industry dynamics.</p><p class="mcard-src">Harvard Business Review, Kunal Cholera, Professor Wolters</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>8 lectures</span><span>17,299 words</span><span>8 threads</span><span>2 filings</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-05-marketing-brand.html" data-mod="core-05-marketing-brand">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-05-marketing-brand.html" data-mod="core-05-marketing-brand" data-track="core">
 <div class="mcard-num">05</div>
 <div class="mcard-body">
 <h3>Marketing &amp; Brand</h3>
+<p class="mcard-desc">Category design, positioning, brand strategy, customer segmentation, and go-to-market frameworks.</p><p class="mcard-src">April Dunford, Lenny&#x27;s Podcast, HubSpot Marketing</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>43,658 words</span><span>8 threads</span><span>1 filings</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-06-operations.html" data-mod="core-06-operations">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-06-operations.html" data-mod="core-06-operations" data-track="core">
 <div class="mcard-num">06</div>
 <div class="mcard-body">
 <h3>Operations &amp; Supply Chain</h3>
+<p class="mcard-desc">Supply chain design, process optimization, lean principles, capacity planning, and Six Sigma fundamentals.</p><p class="mcard-src">E-Concepts, Toyota Motor Corporation, Farhat Lectures. The # 1 CPA &amp; Accounting Courses</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>10,198 words</span><span>8 threads</span><span>2 filings</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-07-data-analytics.html" data-mod="core-07-data-analytics">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-07-data-analytics.html" data-mod="core-07-data-analytics" data-track="core">
 <div class="mcard-num">07</div>
 <div class="mcard-body">
 <h3>Data, Analytics &amp; Decisions</h3>
+<p class="mcard-desc">Statistical thinking, regression, Bayesian reasoning, decision analysis, and data-driven management.</p><p class="mcard-src">Joshua Emmanuel, Excess Returns, Wharton Human-AI Research</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>40,737 words</span><span>8 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-08-negotiation.html" data-mod="core-08-negotiation">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-08-negotiation.html" data-mod="core-08-negotiation" data-track="core">
 <div class="mcard-num">08</div>
 <div class="mcard-body">
 <h3>Negotiation</h3>
+<p class="mcard-desc">Distributive and integrative negotiation, BATNA, tactical empathy, and deal architecture.</p><p class="mcard-src">Chris Voss &amp; The Black Swan Group, Big Think, TEDx Talks</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>10,566 words</span><span>8 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-09-leadership-ob.html" data-mod="core-09-leadership-ob">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-09-leadership-ob.html" data-mod="core-09-leadership-ob" data-track="core">
 <div class="mcard-num">09</div>
 <div class="mcard-body">
 <h3>Leadership &amp; Org Behavior</h3>
+<p class="mcard-desc">Organizational behavior, team dynamics, motivation theory, culture building, and adaptive leadership.</p><p class="mcard-src">Kara Ronin, Simon Sinek, TEDx Talks</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>8,600 words</span><span>8 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-10-entrepreneurship.html" data-mod="core-10-entrepreneurship">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-10-entrepreneurship.html" data-mod="core-10-entrepreneurship" data-track="core">
 <div class="mcard-num">10</div>
 <div class="mcard-body">
 <h3>Entrepreneurship &amp; Venture</h3>
+<p class="mcard-desc">Startup formation, venture mechanics, product-market fit, funding, and scaling from zero to one.</p><p class="mcard-src">Y Combinator, Bloomberg Originals, EPM</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>26,128 words</span><span>8 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-11-global-macro.html" data-mod="core-11-global-macro">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-11-global-macro.html" data-mod="core-11-global-macro" data-track="core">
 <div class="mcard-num">11</div>
 <div class="mcard-body">
 <h3>Global Strategy &amp; Macro</h3>
+<p class="mcard-desc">Country risk, exchange rates, trade policy, capital flows, and investing in emerging markets.</p><p class="mcard-src">Aswath Damodaran, The FuturesCoachArchive, SME Strategy</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>30,453 words</span><span>8 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-12-capstone.html" data-mod="core-12-capstone">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="core-12-capstone.html" data-mod="core-12-capstone" data-track="core">
 <div class="mcard-num">12</div>
 <div class="mcard-body">
 <h3>Capstone</h3>
+<p class="mcard-desc">Integrative strategy: pulling together finance, operations, marketing, and leadership into a cohesive business view.</p><p class="mcard-src">Harvard Business Review, Helpful Professor Explains!, Digital Age Business</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>5 lectures</span><span>10,422 words</span><span>5 threads</span><span>1 filings</span></div></div></div>
+<span class="mcard-done-dot"></span>
 <span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a></div>
-<div class="track-head"><span class="th-label">Executive Track</span><span class="th-rule"></span><span class="th-cov"><svg class="prog-ring" viewBox="0 0 44 44" width="44" height="44"><circle cx="22" cy="22" r="18" fill="none" stroke="var(--line)" stroke-width="3"/><circle cx="22" cy="22" r="18" fill="none" stroke="var(--exec)" stroke-width="3" stroke-dasharray="113.1" stroke-dashoffset="0.0" stroke-linecap="round" transform="rotate(-90 22 22)"/><text x="22" y="22" text-anchor="middle" dominant-baseline="central" class="prog-pct">100%</text></svg><span class="th-cov-label">12/12 lessons</span></span><span class="th-count">12 modules</span></div>
-<div class="grid"><a class="mcard exec ready" href="exec-E1-leading-at-scale.html" data-mod="exec-E1-leading-at-scale">
+</section>
+<section id="t-exec" class="track-section">
+<div class="track-head" data-collapse="exec"><span class="th-label">Executive Track</span><span class="th-rule"></span><span class="th-cov"><svg class="prog-ring" viewBox="0 0 44 44" width="44" height="44"><circle cx="22" cy="22" r="18" fill="none" stroke="var(--line)" stroke-width="3"/><circle cx="22" cy="22" r="18" fill="none" stroke="var(--exec)" stroke-width="3" stroke-dasharray="113.1" stroke-dashoffset="0.0" stroke-linecap="round" transform="rotate(-90 22 22)"/><text x="22" y="22" text-anchor="middle" dominant-baseline="central" class="prog-pct">100%</text></svg><span class="th-cov-label">12/12 lessons</span></span><span class="th-count">12 modules</span><button class="th-toggle" aria-label="Collapse section"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4-4 4 4"/></svg></button></div>
+<div class="grid"><a class="mcard exec ready" href="exec-E1-leading-at-scale.html" data-mod="exec-E1-leading-at-scale" data-track="exec">
 <div class="mcard-num">E1</div>
 <div class="mcard-body">
 <h3>Leading at Scale</h3>
+<p class="mcard-desc">Leading organizations past the founder stage — structure, delegation, alignment, and executive decision-making.</p><p class="mcard-src">Simon Sinek, Superobservation, MIT Video Productions</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>58,067 words</span><span>8 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E2-capital-allocation.html" data-mod="exec-E2-capital-allocation">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E2-capital-allocation.html" data-mod="exec-E2-capital-allocation" data-track="exec">
 <div class="mcard-num">E2</div>
 <div class="mcard-body">
 <h3>Capital Allocation</h3>
+<p class="mcard-desc">Where to deploy capital: buybacks, dividends, M&amp;A, organic growth, and the Buffett/Thorndike playbook.</p><p class="mcard-src">The Financial Review, The Investor’s Podcast, Morningstar, Inc.</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>23,895 words</span><span>5 threads</span><span>2 filings</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E3-mergers-acquisitions.html" data-mod="exec-E3-mergers-acquisitions">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E3-mergers-acquisitions.html" data-mod="exec-E3-mergers-acquisitions" data-track="exec">
 <div class="mcard-num">E3</div>
 <div class="mcard-body">
 <h3>M&amp;A &amp; Restructuring</h3>
+<p class="mcard-desc">Deal origination, due diligence, valuation in M&amp;A, integration planning, and restructuring.</p><p class="mcard-src">StrategyExplained, Melissa Schilling, Money Uncharted</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>5 lectures</span><span>4,270 words</span><span>1 filings</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E4-governance-board.html" data-mod="exec-E4-governance-board">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E4-governance-board.html" data-mod="exec-E4-governance-board" data-track="exec">
 <div class="mcard-num">E4</div>
 <div class="mcard-body">
 <h3>Governance &amp; The Board</h3>
+<p class="mcard-desc">Board composition, fiduciary duties, shareholder activism, proxy fights, and corporate governance best practices.</p><p class="mcard-src">How Money Works, Lex Clips, Charles Schwab</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>12,183 words</span><span>2 filings</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E5-transformation.html" data-mod="exec-E5-transformation">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E5-transformation.html" data-mod="exec-E5-transformation" data-track="exec">
 <div class="mcard-num">E5</div>
 <div class="mcard-body">
 <h3>Transformation at Scale</h3>
+<p class="mcard-desc">Leading large-scale organizational change — turnarounds, digital transformation, and managing resistance.</p><p class="mcard-src">DenkProducties, Online PM Courses - Mike Clayton, Six Sigma Global Institute</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>8,342 words</span><span>8 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E6-crisis-leadership.html" data-mod="exec-E6-crisis-leadership">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E6-crisis-leadership.html" data-mod="exec-E6-crisis-leadership" data-track="exec">
 <div class="mcard-num">E6</div>
 <div class="mcard-body">
 <h3>Crisis Leadership</h3>
+<p class="mcard-desc">Leading through crises: rapid decision-making, stakeholder communication, and organizational resilience.</p><p class="mcard-src">Mindshift Movement, Big Think and Big Think Clips, Lootok</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>5 lectures</span><span>10,407 words</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E7-exec-presence-comms.html" data-mod="exec-E7-exec-presence-comms">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E7-exec-presence-comms.html" data-mod="exec-E7-exec-presence-comms" data-track="exec">
 <div class="mcard-num">E7</div>
 <div class="mcard-body">
 <h3>Executive Presence &amp; Comms</h3>
+<p class="mcard-desc">Executive communication, public speaking, storytelling, and commanding a room with authority.</p><p class="mcard-src">TEDx Talks, Stanford Graduate School of Business and Think Fast Talk Smart, BigSpeak Speakers Bureau</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>46,054 words</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E8-stakeholder-ir.html" data-mod="exec-E8-stakeholder-ir">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E8-stakeholder-ir.html" data-mod="exec-E8-stakeholder-ir" data-track="exec">
 <div class="mcard-num">E8</div>
 <div class="mcard-body">
 <h3>Stakeholder &amp; Investor Relations</h3>
+<p class="mcard-desc">Investor relations, earnings calls, shareholder communication, and managing the capital markets narrative.</p><p class="mcard-src">The Real Estate Syndication Show, YaleCourses, Hard Money Mastermind</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>28,008 words</span><span>1 filings</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E9-geopolitics-macro.html" data-mod="exec-E9-geopolitics-macro">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E9-geopolitics-macro.html" data-mod="exec-E9-geopolitics-macro" data-track="exec">
 <div class="mcard-num">E9</div>
 <div class="mcard-body">
 <h3>Geopolitics &amp; Macro</h3>
+<p class="mcard-desc">Geopolitical risk, global macro trends, trade wars, sanctions, and their impact on business strategy.</p><p class="mcard-src">Bloomberg Podcasts, Risk Takers and Crypto Banter, MIT Sloan Executive Education</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>91,099 words</span><span>8 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E10-digital-ai.html" data-mod="exec-E10-digital-ai">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E10-digital-ai.html" data-mod="exec-E10-digital-ai" data-track="exec">
 <div class="mcard-num">E10</div>
 <div class="mcard-body">
 <h3>Digital &amp; AI Transformation</h3>
+<p class="mcard-desc">Digital strategy, AI adoption, technology-driven transformation, and building tech-forward organizations.</p><p class="mcard-src">CXOTalk, TEDx Talks, MIT Corporate Relations</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>60,637 words</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E11-operating-system.html" data-mod="exec-E11-operating-system">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E11-operating-system.html" data-mod="exec-E11-operating-system" data-track="exec">
 <div class="mcard-num">E11</div>
 <div class="mcard-body">
 <h3>Personal Operating System</h3>
+<p class="mcard-desc">Personal productivity systems, mental models, energy management, and building an executive routine.</p><p class="mcard-src">Farnam Street, Chris Williamson, Autism From The Inside</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>27,296 words</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E12-culture-strategy.html" data-mod="exec-E12-culture-strategy">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard exec ready" href="exec-E12-culture-strategy.html" data-mod="exec-E12-culture-strategy" data-track="exec">
 <div class="mcard-num">E12</div>
 <div class="mcard-body">
 <h3>Culture as Strategy</h3>
+<p class="mcard-desc">Culture as competitive advantage — building, measuring, and evolving organizational culture intentionally.</p><p class="mcard-src">Simon Sinek, Entrepreneurship.org, TEDx Talks</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>8,761 words</span></div></div></div>
+<span class="mcard-done-dot"></span>
 <span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a></div>
-<div class="track-head"><span class="th-label">The Canon · Reading Layer</span><span class="th-rule"></span><span class="th-cov"><svg class="prog-ring" viewBox="0 0 44 44" width="44" height="44"><circle cx="22" cy="22" r="18" fill="none" stroke="var(--line)" stroke-width="3"/><circle cx="22" cy="22" r="18" fill="none" stroke="var(--brass)" stroke-width="3" stroke-dasharray="113.1" stroke-dashoffset="69.0" stroke-linecap="round" transform="rotate(-90 22 22)"/><text x="22" y="22" text-anchor="middle" dominant-baseline="central" class="prog-pct">39%</text></svg><span class="th-cov-label">9/23 lessons</span></span><span class="th-count">23 clusters</span></div>
-<div class="grid"><a class="mcard core" href="canon-strategy.html" data-mod="canon-strategy">
+</section>
+<section id="t-canon" class="track-section">
+<div class="track-head" data-collapse="canon"><span class="th-label">The Canon · Reading Layer</span><span class="th-rule"></span><span class="th-cov"><svg class="prog-ring" viewBox="0 0 44 44" width="44" height="44"><circle cx="22" cy="22" r="18" fill="none" stroke="var(--line)" stroke-width="3"/><circle cx="22" cy="22" r="18" fill="none" stroke="var(--brass)" stroke-width="3" stroke-dasharray="113.1" stroke-dashoffset="69.0" stroke-linecap="round" transform="rotate(-90 22 22)"/><text x="22" y="22" text-anchor="middle" dominant-baseline="central" class="prog-pct">39%</text></svg><span class="th-cov-label">9/23 lessons</span></span><span class="th-count">23 clusters</span><button class="th-toggle" aria-label="Collapse section"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4-4 4 4"/></svg></button></div>
+<div class="grid"><a class="mcard core" href="canon-strategy.html" data-mod="canon-strategy" data-track="canon">
 <div class="mcard-num">C1</div>
 <div class="mcard-body">
 <h3>Strategy</h3>
+<p class="mcard-desc">Foundational strategy texts: Good Strategy/Bad Strategy, Playing to Win, and the art of strategic clarity.</p><p class="mcard-src">Lenny&#x27;s Podcast, The Founders&#x27; Potential, ArtCenter College of Design</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag pending"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg> Sources only</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>7 lectures</span><span>38,572 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-leadership-presence.html" data-mod="canon-leadership-presence">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-leadership-presence.html" data-mod="canon-leadership-presence" data-track="canon">
 <div class="mcard-num">C2</div>
 <div class="mcard-body">
 <h3>Leadership &amp; Presence</h3>
+<p class="mcard-desc">Leadership philosophy and executive presence from Sinek, Willink, and the great leadership thinkers.</p><p class="mcard-src">Abi Tyas Tunggal, Insight Atom, Talks at Google</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag pending"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg> Sources only</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>6 lectures</span><span>16,192 words</span><span>24 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-mental-models.html" data-mod="canon-mental-models">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-mental-models.html" data-mod="canon-mental-models" data-track="canon">
 <div class="mcard-num">C3</div>
 <div class="mcard-body">
 <h3>Mental Models &amp; Thinking</h3>
+<p class="mcard-desc">Thinking tools: Munger&#x27;s latticework, Farnam Street models, and frameworks for better judgment.</p><p class="mcard-src">BuffettMungerWisdom, SXSW, The Swedish Investor</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag pending"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg> Sources only</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>8 lectures</span><span>28,976 words</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-org-design-mechanisms.html" data-mod="canon-org-design-mechanisms">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-org-design-mechanisms.html" data-mod="canon-org-design-mechanisms" data-track="canon">
 <div class="mcard-num">C4</div>
 <div class="mcard-body">
 <h3>Org Design &amp; Mechanisms</h3>
+<p class="mcard-desc">How organizations actually work — incentives, structure, bureaucracy, and mechanism design.</p><p class="mcard-src">Lenny&#x27;s Podcast, Insight Partners, Tenth Man</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag pending"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg> Sources only</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>6 lectures</span><span>39,714 words</span><span>24 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-landscape-competitive.html" data-mod="canon-landscape-competitive">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-landscape-competitive.html" data-mod="canon-landscape-competitive" data-track="canon">
 <div class="mcard-num">C5</div>
 <div class="mcard-body">
 <h3>Landscape &amp; Competitive</h3>
+<p class="mcard-desc">Competitive analysis beyond Porter: Blue Ocean, disruption theory, and strategic positioning.</p><p class="mcard-src">Lenny&#x27;s Podcast, ASYMMETRIC Podcast, MIT Video Productions</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag pending"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg> Sources only</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>8 lectures</span><span>52,213 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-negotiation-influence.html" data-mod="canon-negotiation-influence">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-negotiation-influence.html" data-mod="canon-negotiation-influence" data-track="canon">
 <div class="mcard-num">C6</div>
 <div class="mcard-body">
 <h3>Negotiation &amp; Influence</h3>
+<p class="mcard-desc">Influence, persuasion, and negotiation science from Cialdini, Voss, and behavioral research.</p><p class="mcard-src">Self Improvement Audiobooks, Escaping Ordinary (B.C Marx) , LITTLE BIT BETTER</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag pending"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg> Sources only</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>6 lectures</span><span>93,087 words</span><span>24 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-execution-operations.html" data-mod="canon-execution-operations">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-execution-operations.html" data-mod="canon-execution-operations" data-track="canon">
 <div class="mcard-num">C7</div>
 <div class="mcard-body">
 <h3>Execution &amp; Operations</h3>
+<p class="mcard-desc">The Goal, Theory of Constraints, bottleneck thinking, and the art of operational execution.</p><p class="mcard-src">Elite Compass, Successful By Design, Productivity Game</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag pending"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg> Sources only</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>8 lectures</span><span>8,103 words</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-culture-change.html" data-mod="canon-culture-change">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-culture-change.html" data-mod="canon-culture-change" data-track="canon">
 <div class="mcard-num">C8</div>
 <div class="mcard-body">
 <h3>Culture &amp; Change</h3>
+<p class="mcard-desc">Leading change: Kotter&#x27;s model, organizational transformation, and making culture shifts stick.</p><p class="mcard-src">EPM, Management Courses - Mike Clayton, Kotter International Inc</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag pending"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg> Sources only</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>6 lectures</span><span>6,908 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-risk-fragility.html" data-mod="canon-risk-fragility">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-risk-fragility.html" data-mod="canon-risk-fragility" data-track="canon">
 <div class="mcard-num">C9</div>
 <div class="mcard-body">
 <h3>Risk, Uncertainty &amp; Fragility</h3>
+<p class="mcard-desc">Taleb&#x27;s antifragility, Black Swans, risk management, and thriving under uncertainty.</p><p class="mcard-src">The Swedish Investor, MindScience 360, Lost Wisdom</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>9 lectures</span><span>13,654 words</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-product-innovation.html" data-mod="canon-product-innovation">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-product-innovation.html" data-mod="canon-product-innovation" data-track="canon">
 <div class="mcard-num">C10</div>
 <div class="mcard-body">
 <h3>Product Thinking &amp; Innovation</h3>
+<p class="mcard-desc">Product thinking, innovation frameworks, design-driven development, and the innovator&#x27;s dilemma.</p><p class="mcard-src">Made IT Podcast, Product Faculty, Dan Olsen</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag pending"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg> Sources only</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>9 lectures</span><span>60,570 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-power-politics.html" data-mod="canon-power-politics">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-power-politics.html" data-mod="canon-power-politics" data-track="canon">
 <div class="mcard-num">C11</div>
 <div class="mcard-body">
 <h3>Power &amp; Org Politics</h3>
+<p class="mcard-desc">Organizational power, political dynamics, and the realist tradition from Greene and Pfeffer.</p><p class="mcard-src">Stanford Graduate School of Business, Robert Greene , illacertus</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>6 lectures</span><span>24,889 words</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-personal-effectiveness.html" data-mod="canon-personal-effectiveness">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-personal-effectiveness.html" data-mod="canon-personal-effectiveness" data-track="canon">
 <div class="mcard-num">C12</div>
 <div class="mcard-body">
 <h3>Personal Effectiveness</h3>
+<p class="mcard-desc">Deep work, deliberate practice, time management, and the science of peak performance.</p><p class="mcard-src">Cal Newport, LITTLE BIT BETTER, Mind Pump Clips</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag pending"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg> Sources only</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>8 lectures</span><span>23,877 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-financial-literacy.html" data-mod="canon-financial-literacy">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-financial-literacy.html" data-mod="canon-financial-literacy" data-track="canon">
 <div class="mcard-num">C13</div>
 <div class="mcard-body">
 <h3>Financial Literacy for Operators</h3>
+<p class="mcard-desc">Financial literacy for non-finance operators — reading statements, thinking about value, and capital decisions.</p><p class="mcard-src">Talks at Google, Retail Investor Club, The Swedish Investor</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag pending"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg> Sources only</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>6 lectures</span><span>21,086 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-behavioral-decision.html" data-mod="canon-behavioral-decision">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-behavioral-decision.html" data-mod="canon-behavioral-decision" data-track="canon">
 <div class="mcard-num">C14</div>
 <div class="mcard-body">
 <h3>Behavioral Design &amp; Decision Science</h3>
+<p class="mcard-desc">Kahneman, Thaler, and the psychology of decisions — biases, heuristics, and nudge architecture.</p><p class="mcard-src">TEDx Talks, Sydney Executive Plus, Naturalistic Decision Making Association</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>16 lectures</span><span>32,662 words</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-game-theory.html" data-mod="canon-game-theory">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-game-theory.html" data-mod="canon-game-theory" data-track="canon">
 <div class="mcard-num">C15</div>
 <div class="mcard-body">
 <h3>Game Theory &amp; Strategic Interaction</h3>
+<p class="mcard-desc">Nash equilibrium, strategic interaction, mechanism design, and applying game theory to business.</p><p class="mcard-src">Audio Growth Library, This Place, Faizan</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>8 lectures</span><span>38,524 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-platform-strategy.html" data-mod="canon-platform-strategy">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-platform-strategy.html" data-mod="canon-platform-strategy" data-track="canon">
 <div class="mcard-num">C16</div>
 <div class="mcard-body">
 <h3>Network Effects &amp; Platform Strategy</h3>
+<p class="mcard-desc">Network effects, platform economics, two-sided markets, and winner-take-all dynamics.</p><p class="mcard-src">NFX, Talks at Google, David Halliday</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>9 lectures</span><span>21,592 words</span><span>6 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-systems-complexity.html" data-mod="canon-systems-complexity">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-systems-complexity.html" data-mod="canon-systems-complexity" data-track="canon">
 <div class="mcard-num">C17</div>
 <div class="mcard-body">
 <h3>Systems Thinking &amp; Complexity</h3>
+<p class="mcard-desc">Systems thinking, feedback loops, emergence, complexity theory, and unintended consequences.</p><p class="mcard-src">Ashley Hodgson, Readitfor.me, Niko J</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>11 lectures</span><span>13,488 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-information-communication.html" data-mod="canon-information-communication">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-information-communication.html" data-mod="canon-information-communication" data-track="canon">
 <div class="mcard-num">C18</div>
 <div class="mcard-body">
 <h3>Information &amp; Communication</h3>
+<p class="mcard-desc">Information theory, crucial conversations, feedback systems, and communication as infrastructure.</p><p class="mcard-src">Crucial Learning, Therapy in a Nutshell, techatstate</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>13 lectures</span><span>23,807 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-economics-incentives.html" data-mod="canon-economics-incentives">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-economics-incentives.html" data-mod="canon-economics-incentives" data-track="canon">
 <div class="mcard-num">C19</div>
 <div class="mcard-body">
 <h3>Economics &amp; Incentive Design</h3>
+<p class="mcard-desc">Incentive design, principal-agent problems, moral hazard, adverse selection, and market failures.</p><p class="mcard-src">Marginal Revolution University, One Minute Economics, Business School 101</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag pending"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg> Sources only</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>6 lectures</span><span>4,503 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-history-judgment.html" data-mod="canon-history-judgment">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-history-judgment.html" data-mod="canon-history-judgment" data-track="canon">
 <div class="mcard-num">C20</div>
 <div class="mcard-body">
 <h3>History &amp; Judgment</h3>
+<p class="mcard-desc">Historical case studies, pattern recognition, and developing judgment through studied experience.</p><p class="mcard-src">MindfulMoments: Nourish Your Mind on the Go, illacertus, International Kriegsspiel Society</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>16 lectures</span><span>102,943 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-communication-storytelling.html" data-mod="canon-communication-storytelling">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-communication-storytelling.html" data-mod="canon-communication-storytelling" data-track="canon">
 <div class="mcard-num">C21</div>
 <div class="mcard-body">
 <h3>Communication &amp; Storytelling</h3>
+<p class="mcard-desc">Narrative structure, business storytelling, and communicating ideas that move people to action.</p><p class="mcard-src">TEDx Talks, Stanford Graduate School of Business, StrategyU</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag pending"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg> Sources only</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>9 lectures</span><span>16,376 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-design-problem-solving.html" data-mod="canon-design-problem-solving">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core" href="canon-design-problem-solving.html" data-mod="canon-design-problem-solving" data-track="canon">
 <div class="mcard-num">C22</div>
 <div class="mcard-body">
 <h3>Design Thinking &amp; Problem-Solving</h3>
+<p class="mcard-desc">Design thinking, structured problem-solving, first-principles reasoning, and creative frameworks.</p><p class="mcard-src">Lenny&#x27;s Podcast, firmsconsulting, Ashley Hodgson</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag pending"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg> Sources only</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>10 lectures</span><span>34,403 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-ethics-judgment.html" data-mod="canon-ethics-judgment">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="canon-ethics-judgment.html" data-mod="canon-ethics-judgment" data-track="canon">
 <div class="mcard-num">C23</div>
 <div class="mcard-body">
 <h3>Ethics &amp; Judgment</h3>
+<p class="mcard-desc">Business ethics, moral reasoning, stakeholder theory, and making defensible decisions under pressure.</p><p class="mcard-src">Harvard University, Global Ethics Solutions, Full Audiobook</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>8 lectures</span><span>26,022 words</span><span>12 threads</span></div></div></div>
+<span class="mcard-done-dot"></span>
 <span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a></div>
-<div class="track-head"><span class="th-label">Technical Foundations</span><span class="th-rule"></span><span class="th-cov"><svg class="prog-ring" viewBox="0 0 44 44" width="44" height="44"><circle cx="22" cy="22" r="18" fill="none" stroke="var(--line)" stroke-width="3"/><circle cx="22" cy="22" r="18" fill="none" stroke="var(--core)" stroke-width="3" stroke-dasharray="113.1" stroke-dashoffset="0.0" stroke-linecap="round" transform="rotate(-90 22 22)"/><text x="22" y="22" text-anchor="middle" dominant-baseline="central" class="prog-pct">100%</text></svg><span class="th-cov-label">6/6 lessons</span></span><span class="th-count">6 modules</span></div>
-<div class="grid"><a class="mcard core ready" href="gaps-managerial-accounting.html" data-mod="gaps-managerial-accounting">
+</section>
+<section id="t-gaps" class="track-section">
+<div class="track-head" data-collapse="gaps"><span class="th-label">Technical Foundations</span><span class="th-rule"></span><span class="th-cov"><svg class="prog-ring" viewBox="0 0 44 44" width="44" height="44"><circle cx="22" cy="22" r="18" fill="none" stroke="var(--line)" stroke-width="3"/><circle cx="22" cy="22" r="18" fill="none" stroke="var(--core)" stroke-width="3" stroke-dasharray="113.1" stroke-dashoffset="0.0" stroke-linecap="round" transform="rotate(-90 22 22)"/><text x="22" y="22" text-anchor="middle" dominant-baseline="central" class="prog-pct">100%</text></svg><span class="th-cov-label">6/6 lessons</span></span><span class="th-count">6 modules</span><button class="th-toggle" aria-label="Collapse section"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4-4 4 4"/></svg></button></div>
+<div class="grid"><a class="mcard core ready" href="gaps-managerial-accounting.html" data-mod="gaps-managerial-accounting" data-track="gaps">
 <div class="mcard-num">G1</div>
 <div class="mcard-body">
 <h3>Managerial &amp; Cost Accounting</h3>
+<p class="mcard-desc">Cost accounting, variance analysis, budgeting, transfer pricing, and internal decision support.</p><p class="mcard-src">Edspira, Accounting Stuff, Tony Bell</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>8 lectures</span><span>17,164 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="gaps-statistics-quant.html" data-mod="gaps-statistics-quant">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="gaps-statistics-quant.html" data-mod="gaps-statistics-quant" data-track="gaps">
 <div class="mcard-num">G2</div>
 <div class="mcard-body">
 <h3>Quantitative Methods &amp; Statistics</h3>
+<p class="mcard-desc">Probability, distributions, hypothesis testing, regression, and quantitative methods for business.</p><p class="mcard-src">StatQuest with Josh Starmer, dataminingincae, numiqo</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>7 lectures</span><span>16,163 words</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="gaps-marketing-strategy.html" data-mod="gaps-marketing-strategy">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="gaps-marketing-strategy.html" data-mod="gaps-marketing-strategy" data-track="gaps">
 <div class="mcard-num">G3</div>
 <div class="mcard-body">
 <h3>Marketing Strategy &amp; Positioning</h3>
+<p class="mcard-desc">Marketing frameworks, positioning strategy, segmentation, and competitive marketing analysis.</p><p class="mcard-src">Lenny&#x27;s Podcast, Marketing Powerups, EPM</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>8 lectures</span><span>24,183 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="gaps-information-systems.html" data-mod="gaps-information-systems">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="gaps-information-systems.html" data-mod="gaps-information-systems" data-track="gaps">
 <div class="mcard-num">G4</div>
 <div class="mcard-body">
 <h3>Information Systems &amp; Data</h3>
+<p class="mcard-desc">Enterprise IT, database fundamentals, systems architecture, and technology management.</p><p class="mcard-src">IBM Technology, Software Connect, The Career Force</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>8 lectures</span><span>14,954 words</span><span>12 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="gaps-business-law.html" data-mod="gaps-business-law">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="gaps-business-law.html" data-mod="gaps-business-law" data-track="gaps">
 <div class="mcard-num">G5</div>
 <div class="mcard-body">
 <h3>The Legal Environment of Business</h3>
+<p class="mcard-desc">Contracts, torts, regulatory compliance, intellectual property, and the legal environment of business.</p><p class="mcard-src">Branigan Robertson, All Up In Yo&#x27; Business with Attorney Aiden Durham, David Jaroszewski</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>8 lectures</span><span>11,019 words</span><span>1 threads</span></div></div></div>
-<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="gaps-entrepreneurial-finance.html" data-mod="gaps-entrepreneurial-finance">
+<span class="mcard-done-dot"></span>
+<span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a><a class="mcard core ready" href="gaps-entrepreneurial-finance.html" data-mod="gaps-entrepreneurial-finance" data-track="gaps">
 <div class="mcard-num">G6</div>
 <div class="mcard-body">
 <h3>Entrepreneurial Finance</h3>
+<p class="mcard-desc">Venture financing, term sheets, cap tables, startup valuation, and investor economics.</p>
 <div class="mcard-drawer">
 <div class="mcard-top"><span class="lesson-tag"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg> Lesson ready</span><span class="done-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg> done</span></div>
 <div class="mstats"><span>0 lectures</span><span>0 words</span></div></div></div>
+<span class="mcard-done-dot"></span>
 <span class="mcard-arrow"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span></a></div>
+</section>
+<section id="t-explore" class="track-section">
+<div class="track-head">
+<span class="th-label">Explore</span><span class="th-rule"></span>
+<span class="th-count">word cloud · knowledge graph</span></div>
+<div class="explore-wrap">
+<div class="explore-panel">
+<h3 class="explore-title"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 14V8"/><path d="M6 14V4"/><path d="M10 14V9"/><path d="M14 14V2"/></svg> Concept Cloud</h3>
+<p class="explore-sub">Top terms from 1,504,021 words of transcript</p>
+<canvas id="wc-canvas"></canvas>
+</div>
+<div class="explore-panel explore-panel-wide">
+<h3 class="explore-title"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8" cy="8" r="6.5"/><circle cx="8" cy="8" r="3.5"/><circle cx="8" cy="8" r=".8" fill="currentColor"/></svg> Knowledge Graph</h3>
+<p class="explore-sub">Modules connected by shared domain concepts — drag to orbit</p>
+<div id="kg-mount"></div>
+<div class="kg-tooltip" id="kg-tip"></div>
+</div>
+</div>
+</section>
 </main>
+<div class="toast" id="toast"></div>
 <footer>Generated from <code>~/self-mba/_ingest/raw/2026-06-05</code> · rebuild with <code>python3 site/build.py</code></footer>
 <script>
 function filt(){var q=document.getElementById('q').value.toLowerCase();
+document.querySelectorAll('.chip').forEach(function(c){c.classList.remove('active');});
+document.querySelector('.chip[data-filter="all"]').classList.add('active');
 document.querySelectorAll('.mcard').forEach(function(c){
 c.style.display = c.textContent.toLowerCase().includes(q) ? '' : 'none';});}
 </script>
-<script src="index.js?v=1788999576"></script>
+<script src="index.js?v=1789021734"></script>
+<script>
+var WC_DATA=[{"w": "value", "s": 1.0}, {"w": "strategy", "s": 0.89}, {"w": "market", "s": 0.81}, {"w": "data", "s": 0.75}, {"w": "risk", "s": 0.7}, {"w": "cost", "s": 0.68}, {"w": "thinking", "s": 0.67}, {"w": "team", "s": 0.64}, {"w": "decision", "s": 0.63}, {"w": "capital", "s": 0.59}, {"w": "management", "s": 0.58}, {"w": "cash", "s": 0.58}, {"w": "customer", "s": 0.57}, {"w": "equity", "s": 0.54}, {"w": "share", "s": 0.52}, {"w": "rate", "s": 0.51}, {"w": "company", "s": 0.5}, {"w": "technology", "s": 0.49}, {"w": "business", "s": 0.48}, {"w": "theory", "s": 0.47}, {"w": "stock", "s": 0.46}, {"w": "investment", "s": 0.46}, {"w": "valuation", "s": 0.46}, {"w": "positioning", "s": 0.45}, {"w": "board", "s": 0.45}, {"w": "influence", "s": 0.43}, {"w": "marketing", "s": 0.43}, {"w": "learning", "s": 0.43}, {"w": "systems", "s": 0.43}, {"w": "leadership", "s": 0.43}, {"w": "flow", "s": 0.42}, {"w": "companies", "s": 0.42}, {"w": "balance", "s": 0.42}, {"w": "debt", "s": 0.42}, {"w": "network", "s": 0.41}, {"w": "forces", "s": 0.41}, {"w": "social", "s": 0.41}, {"w": "advantage", "s": 0.41}, {"w": "product", "s": 0.41}, {"w": "leverage", "s": 0.4}];
+var KG_DATA={"nodes": [{"id": "core-01-accounting", "label": "Accounting", "track": "core"}, {"id": "core-02-corporate-finance", "label": "Corporate Finance & Valuation", "track": "core"}, {"id": "core-04-competitive-strategy", "label": "Competitive Strategy", "track": "core"}, {"id": "core-05-marketing-brand", "label": "Marketing & Brand", "track": "core"}, {"id": "core-07-data-analytics", "label": "Data, Analytics & Decisions", "track": "core"}, {"id": "core-10-entrepreneurship", "label": "Entrepreneurship & Venture", "track": "core"}, {"id": "core-11-global-macro", "label": "Global Strategy & Macro", "track": "core"}, {"id": "exec-E1-leading-at-scale", "label": "Leading at Scale", "track": "exec"}, {"id": "exec-E2-capital-allocation", "label": "Capital Allocation", "track": "exec"}, {"id": "exec-E4-governance-board", "label": "Governance & The Board", "track": "exec"}, {"id": "exec-E8-stakeholder-ir", "label": "Stakeholder & Investor Relations", "track": "exec"}, {"id": "exec-E9-geopolitics-macro", "label": "Geopolitics & Macro", "track": "exec"}, {"id": "exec-E10-digital-ai", "label": "Digital & AI Transformation", "track": "exec"}, {"id": "exec-E11-operating-system", "label": "Personal Operating System", "track": "exec"}, {"id": "canon-strategy", "label": "Strategy", "track": "canon"}, {"id": "canon-org-design-mechanisms", "label": "Org Design & Mechanisms", "track": "canon"}, {"id": "canon-landscape-competitive", "label": "Landscape & Competitive", "track": "canon"}, {"id": "canon-negotiation-influence", "label": "Negotiation & Influence", "track": "canon"}, {"id": "canon-product-innovation", "label": "Product Thinking & Innovation", "track": "canon"}, {"id": "canon-power-politics", "label": "Power & Org Politics", "track": "canon"}, {"id": "canon-behavioral-decision", "label": "Behavioral Design & Decision Science", "track": "canon"}, {"id": "canon-game-theory", "label": "Game Theory & Strategic Interaction", "track": "canon"}, {"id": "canon-platform-strategy", "label": "Network Effects & Platform Strategy", "track": "canon"}, {"id": "canon-history-judgment", "label": "History & Judgment", "track": "canon"}, {"id": "canon-design-problem-solving", "label": "Design Thinking & Problem-Solving", "track": "canon"}, {"id": "gaps-marketing-strategy", "label": "Marketing Strategy & Positioning", "track": "gaps"}], "edges": [{"s": "exec-E9-geopolitics-macro", "t": "canon-landscape-competitive", "w": 93}, {"s": "exec-E8-stakeholder-ir", "t": "exec-E9-geopolitics-macro", "w": 87}, {"s": "exec-E9-geopolitics-macro", "t": "exec-E10-digital-ai", "w": 84}, {"s": "exec-E1-leading-at-scale", "t": "exec-E9-geopolitics-macro", "w": 81}, {"s": "exec-E1-leading-at-scale", "t": "canon-landscape-competitive", "w": 81}, {"s": "exec-E10-digital-ai", "t": "canon-landscape-competitive", "w": 81}, {"s": "exec-E9-geopolitics-macro", "t": "canon-product-innovation", "w": 80}, {"s": "core-02-corporate-finance", "t": "exec-E9-geopolitics-macro", "w": 79}, {"s": "exec-E8-stakeholder-ir", "t": "canon-landscape-competitive", "w": 79}, {"s": "exec-E9-geopolitics-macro", "t": "canon-design-problem-solving", "w": 78}, {"s": "canon-landscape-competitive", "t": "canon-design-problem-solving", "w": 78}, {"s": "exec-E9-geopolitics-macro", "t": "canon-negotiation-influence", "w": 77}, {"s": "canon-landscape-competitive", "t": "canon-product-innovation", "w": 76}, {"s": "core-02-corporate-finance", "t": "canon-landscape-competitive", "w": 74}, {"s": "core-11-global-macro", "t": "exec-E9-geopolitics-macro", "w": 74}, {"s": "exec-E9-geopolitics-macro", "t": "canon-org-design-mechanisms", "w": 74}, {"s": "exec-E10-digital-ai", "t": "canon-design-problem-solving", "w": 74}, {"s": "canon-landscape-competitive", "t": "canon-negotiation-influence", "w": 74}, {"s": "exec-E1-leading-at-scale", "t": "canon-negotiation-influence", "w": 73}, {"s": "canon-strategy", "t": "canon-landscape-competitive", "w": 73}, {"s": "exec-E1-leading-at-scale", "t": "exec-E10-digital-ai", "w": 72}, {"s": "exec-E2-capital-allocation", "t": "exec-E9-geopolitics-macro", "w": 72}, {"s": "exec-E9-geopolitics-macro", "t": "canon-strategy", "w": 72}, {"s": "canon-strategy", "t": "canon-design-problem-solving", "w": 72}, {"s": "canon-org-design-mechanisms", "t": "canon-landscape-competitive", "w": 72}, {"s": "exec-E1-leading-at-scale", "t": "canon-design-problem-solving", "w": 71}, {"s": "exec-E10-digital-ai", "t": "canon-product-innovation", "w": 71}, {"s": "core-02-corporate-finance", "t": "exec-E8-stakeholder-ir", "w": 70}, {"s": "exec-E9-geopolitics-macro", "t": "canon-history-judgment", "w": 70}, {"s": "exec-E10-digital-ai", "t": "canon-strategy", "w": 70}, {"s": "exec-E10-digital-ai", "t": "canon-negotiation-influence", "w": 70}, {"s": "canon-negotiation-influence", "t": "canon-design-problem-solving", "w": 70}, {"s": "core-07-data-analytics", "t": "exec-E9-geopolitics-macro", "w": 69}, {"s": "core-11-global-macro", "t": "exec-E10-digital-ai", "w": 69}, {"s": "core-11-global-macro", "t": "canon-landscape-competitive", "w": 69}, {"s": "exec-E1-leading-at-scale", "t": "exec-E8-stakeholder-ir", "w": 69}, {"s": "exec-E1-leading-at-scale", "t": "canon-org-design-mechanisms", "w": 69}, {"s": "exec-E8-stakeholder-ir", "t": "exec-E10-digital-ai", "w": 69}, {"s": "exec-E8-stakeholder-ir", "t": "canon-negotiation-influence", "w": 69}, {"s": "core-02-corporate-finance", "t": "core-07-data-analytics", "w": 68}, {"s": "core-02-corporate-finance", "t": "exec-E10-digital-ai", "w": 68}, {"s": "core-05-marketing-brand", "t": "exec-E9-geopolitics-macro", "w": 68}, {"s": "core-05-marketing-brand", "t": "canon-landscape-competitive", "w": 68}, {"s": "core-07-data-analytics", "t": "canon-landscape-competitive", "w": 66}, {"s": "exec-E1-leading-at-scale", "t": "canon-product-innovation", "w": 66}, {"s": "exec-E2-capital-allocation", "t": "exec-E8-stakeholder-ir", "w": 66}, {"s": "exec-E4-governance-board", "t": "exec-E9-geopolitics-macro", "w": 66}, {"s": "exec-E8-stakeholder-ir", "t": "canon-design-problem-solving", "w": 66}, {"s": "exec-E9-geopolitics-macro", "t": "exec-E11-operating-system", "w": 65}, {"s": "canon-org-design-mechanisms", "t": "canon-product-innovation", "w": 65}, {"s": "core-02-corporate-finance", "t": "core-11-global-macro", "w": 64}, {"s": "core-02-corporate-finance", "t": "canon-negotiation-influence", "w": 64}, {"s": "core-02-corporate-finance", "t": "canon-design-problem-solving", "w": 64}, {"s": "core-10-entrepreneurship", "t": "exec-E9-geopolitics-macro", "w": 64}, {"s": "core-11-global-macro", "t": "exec-E8-stakeholder-ir", "w": 64}, {"s": "exec-E2-capital-allocation", "t": "canon-landscape-competitive", "w": 64}, {"s": "exec-E8-stakeholder-ir", "t": "canon-org-design-mechanisms", "w": 64}, {"s": "exec-E10-digital-ai", "t": "canon-org-design-mechanisms", "w": 64}, {"s": "canon-org-design-mechanisms", "t": "canon-design-problem-solving", "w": 64}, {"s": "core-01-accounting", "t": "exec-E9-geopolitics-macro", "w": 63}, {"s": "canon-strategy", "t": "canon-product-innovation", "w": 63}, {"s": "canon-product-innovation", "t": "canon-design-problem-solving", "w": 63}, {"s": "core-02-corporate-finance", "t": "exec-E1-leading-at-scale", "w": 62}, {"s": "core-04-competitive-strategy", "t": "exec-E9-geopolitics-macro", "w": 62}, {"s": "core-05-marketing-brand", "t": "exec-E1-leading-at-scale", "w": 62}, {"s": "core-07-data-analytics", "t": "exec-E8-stakeholder-ir", "w": 62}, {"s": "core-07-data-analytics", "t": "exec-E10-digital-ai", "w": 62}, {"s": "core-07-data-analytics", "t": "canon-design-problem-solving", "w": 62}, {"s": "core-11-global-macro", "t": "canon-design-problem-solving", "w": 62}, {"s": "exec-E1-leading-at-scale", "t": "canon-strategy", "w": 62}, {"s": "exec-E8-stakeholder-ir", "t": "canon-product-innovation", "w": 62}, {"s": "canon-org-design-mechanisms", "t": "canon-negotiation-influence", "w": 62}, {"s": "canon-negotiation-influence", "t": "canon-history-judgment", "w": 62}, {"s": "core-05-marketing-brand", "t": "exec-E8-stakeholder-ir", "w": 61}, {"s": "core-05-marketing-brand", "t": "exec-E10-digital-ai", "w": 61}, {"s": "core-05-marketing-brand", "t": "canon-product-innovation", "w": 61}, {"s": "core-10-entrepreneurship", "t": "canon-landscape-competitive", "w": 61}, {"s": "core-11-global-macro", "t": "exec-E1-leading-at-scale", "w": 61}, {"s": "exec-E1-leading-at-scale", "t": "canon-history-judgment", "w": 61}, {"s": "exec-E4-governance-board", "t": "canon-landscape-competitive", "w": 61}, {"s": "exec-E10-digital-ai", "t": "canon-history-judgment", "w": 61}, {"s": "canon-landscape-competitive", "t": "canon-history-judgment", "w": 61}, {"s": "canon-negotiation-influence", "t": "canon-product-innovation", "w": 61}, {"s": "core-01-accounting", "t": "core-02-corporate-finance", "w": 60}, {"s": "core-01-accounting", "t": "canon-negotiation-influence", "w": 60}, {"s": "core-05-marketing-brand", "t": "gaps-marketing-strategy", "w": 60}, {"s": "core-10-entrepreneurship", "t": "exec-E10-digital-ai", "w": 60}, {"s": "exec-E4-governance-board", "t": "exec-E8-stakeholder-ir", "w": 60}, {"s": "exec-E4-governance-board", "t": "exec-E10-digital-ai", "w": 60}, {"s": "exec-E8-stakeholder-ir", "t": "canon-strategy", "w": 60}, {"s": "exec-E9-geopolitics-macro", "t": "gaps-marketing-strategy", "w": 60}, {"s": "canon-strategy", "t": "canon-org-design-mechanisms", "w": 60}, {"s": "canon-strategy", "t": "canon-negotiation-influence", "w": 60}, {"s": "canon-history-judgment", "t": "canon-design-problem-solving", "w": 60}, {"s": "core-01-accounting", "t": "exec-E10-digital-ai", "w": 59}, {"s": "core-04-competitive-strategy", "t": "canon-landscape-competitive", "w": 59}, {"s": "core-05-marketing-brand", "t": "canon-strategy", "w": 59}, {"s": "core-07-data-analytics", "t": "exec-E1-leading-at-scale", "w": 59}, {"s": "exec-E1-leading-at-scale", "t": "exec-E2-capital-allocation", "w": 59}, {"s": "exec-E9-geopolitics-macro", "t": "canon-behavioral-decision", "w": 59}, {"s": "exec-E9-geopolitics-macro", "t": "canon-game-theory", "w": 59}, {"s": "exec-E11-operating-system", "t": "canon-landscape-competitive", "w": 59}, {"s": "exec-E11-operating-system", "t": "canon-product-innovation", "w": 59}, {"s": "canon-org-design-mechanisms", "t": "canon-history-judgment", "w": 59}, {"s": "canon-landscape-competitive", "t": "canon-platform-strategy", "w": 59}, {"s": "core-01-accounting", "t": "canon-landscape-competitive", "w": 58}, {"s": "core-02-corporate-finance", "t": "canon-strategy", "w": 58}, {"s": "core-02-corporate-finance", "t": "canon-product-innovation", "w": 58}, {"s": "core-07-data-analytics", "t": "canon-negotiation-influence", "w": 58}, {"s": "core-11-global-macro", "t": "canon-org-design-mechanisms", "w": 58}, {"s": "core-11-global-macro", "t": "canon-negotiation-influence", "w": 58}, {"s": "core-11-global-macro", "t": "canon-product-innovation", "w": 58}, {"s": "exec-E8-stakeholder-ir", "t": "canon-history-judgment", "w": 58}, {"s": "exec-E9-geopolitics-macro", "t": "canon-power-politics", "w": 58}, {"s": "exec-E10-digital-ai", "t": "exec-E11-operating-system", "w": 58}, {"s": "canon-landscape-competitive", "t": "gaps-marketing-strategy", "w": 58}, {"s": "core-04-competitive-strategy", "t": "exec-E1-leading-at-scale", "w": 57}, {"s": "core-07-data-analytics", "t": "core-11-global-macro", "w": 57}, {"s": "core-07-data-analytics", "t": "canon-product-innovation", "w": 57}, {"s": "core-10-entrepreneurship", "t": "exec-E8-stakeholder-ir", "w": 57}]};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+<script src="explore.js?v=1789021734"></script>
 </body></html>

@@ -12,7 +12,8 @@ scrollable course site into site/dist/:
 Stdlib only. No server needed — open site/dist/index.html in a browser.
 Rebuild anytime after a new pull:  python3 site/build.py
 """
-import glob, html, json, os, re, time
+import glob, html, json, os, re, shutil, time
+from collections import Counter
 from datetime import date
 
 BUILD_VER = str(int(time.time()))
@@ -34,6 +35,117 @@ def load_summaries(track, mid):
         try: return json.load(open(p))
         except Exception: pass
     return {}
+
+STOP_WORDS = frozenset("""
+a about above after again against all am an and any are aren't as at be because been
+before being below between both but by can't cannot could couldn't did didn't do does
+doesn't doing don't down during each few for from further get got had hadn't has hasn't
+have haven't having he he'd he'll he's her here here's hers herself him himself his how
+how's i i'd i'll i'm i've if in into is isn't it it's its itself let's me more most
+mustn't my myself no nor not of off on once one only or other ought our ours ourselves
+out over own really right said same shan't she she'd she'll she's should shouldn't so
+some such than that that's the their theirs them themselves then there there's these they
+they'd they'll they're they've this those through to too under until up us very was
+wasn't we we'd we'll we're we've were weren't what what's when when's where where's
+which while who who's whom why why's will with won't would wouldn't you you'd you'll
+you're you've your yours yourself yourselves also just like going gonna know think well
+yeah yes actually going get gets got way things thing make much many even still also
+want kind lot really much just like think going know would could well right sort
+never okay look take give need come called tell maybe often feel find help done
+might mean means always better best another first next last long every back around
+nbsp didn doesn didn didn wasn weren hadn hasn isn aren couldn wouldn shouldn
+work time different example little great three part book today something trying making
+point good course important question number made talk person understand years
+people come called start problem maybe often information feel long today
+every something doesn back last point mean good find trying making done
+might person understand help always better best means around world look give
+take need come called tell maybe often feel long today little great three part
+year years second life case idea five game break sheet forward effects
+call used talking sure real hard must model system based high able
+without everything getting looking fact saying build keep goes seen open
+place means quite across whole already enough using given works says
+comes less times four questions working hand terms type making play
+sense line single left through talk number write read show level move
+wrong makes create focus true same trying
+""".split())
+
+DOMAIN_TERMS = frozenset("""
+valuation revenue profit margin equity debt capital asset liability cash flow
+npv irr wacc dcf ebitda roi balance sheet income statement dividend bond stock
+share market portfolio risk return investment strategy competitive advantage
+moat pricing brand marketing customer acquisition retention churn funnel
+segmentation positioning differentiation supply chain operations logistics
+inventory capacity lean six sigma agile scrum leadership management team
+culture innovation disruption entrepreneurship startup venture scaling
+negotiation persuasion influence stakeholder governance compliance regulation
+ethics corporate social responsibility merger acquisition restructuring
+synergy due diligence integration economics micro macro gdp inflation monetary
+fiscal policy trade globalization exchange rate geopolitics analytics data
+statistics regression correlation hypothesis bayesian machine learning ai
+digital transformation automation technology blockchain fintech communication
+presentation executive presence board director ceo cfo coo strategy framework
+porter five forces swot pestel value chain competitive dynamics game theory
+nash equilibrium principal agent moral hazard adverse selection behavioral
+decision heuristic bias prospect theory anchoring framing nudge systems
+thinking complexity network effects platform two sided market switching cost
+accounting accrual depreciation amortization goodwill impairment audit tax
+budget variance cost allocation transfer pricing break even contribution
+leverage beta capm arbitrage hedge option derivative futures forward swap
+""".split())
+
+def extract_wordcloud(flat):
+    """Extract top words from all transcripts, return list of {word, size}."""
+    freq = Counter()
+    for _, _, vids, _, _ in flat:
+        for v in vids:
+            text = (v.get("transcript") or "").lower()
+            words = re.findall(r"[a-z]{4,}", text)
+            for w in words:
+                if w not in STOP_WORDS:
+                    freq[w] += 1
+    # Score: domain terms get 5x boost; filter out low-signal words
+    scored = {}
+    for w, c in freq.items():
+        if w in DOMAIN_TERMS:
+            scored[w] = c * 5
+        elif c > 300:
+            scored[w] = c
+    top = sorted(scored.items(), key=lambda x: -x[1])[:40]
+    if not top:
+        return []
+    mx = top[0][1]
+    return [{"w": w, "s": round(0.3 + 0.7 * c / mx, 2)} for w, c in top]
+
+def extract_graph(flat, modules):
+    """Build a knowledge graph: nodes = modules, edges = shared key terms."""
+    mod_terms = {}
+    for track, mid, vids, _, _ in flat:
+        key = f"{track}-{mid}"
+        text = " ".join((v.get("transcript") or "") for v in vids).lower()
+        words = set(re.findall(r"[a-z]{3,}", text))
+        mod_terms[key] = words & DOMAIN_TERMS
+
+    nodes = []
+    for track, mid, vids, _, _ in flat:
+        key = f"{track}-{mid}"
+        nodes.append({"id": key, "label": TITLES.get(mid, mid), "track": track})
+
+    edges = []
+    keys = list(mod_terms.keys())
+    for i in range(len(keys)):
+        for j in range(i + 1, len(keys)):
+            shared = mod_terms[keys[i]] & mod_terms[keys[j]]
+            if len(shared) >= 5:
+                edges.append({"s": keys[i], "t": keys[j], "w": len(shared)})
+
+    edges.sort(key=lambda e: -e["w"])
+    edges = edges[:120]
+    connected = set()
+    for e in edges:
+        connected.add(e["s"])
+        connected.add(e["t"])
+    nodes = [n for n in nodes if n["id"] in connected]
+    return {"nodes": nodes, "edges": edges}
 
 # Discussions (curated Reddit) didn't earn its place as a standalone section — the
 # practitioner signal is better woven into lessons. Data stays on disk; flip to re-enable.
@@ -89,6 +201,66 @@ TITLES.update({
 GAP_ORDER = ["managerial-accounting", "statistics-quant", "marketing-strategy", "information-systems", "business-law", "entrepreneurial-finance"]
 GAP_CODE = {slug: f"G{i+1}" for i, slug in enumerate(GAP_ORDER)}
 
+DESCRIPTIONS = {
+    # --- Core ---
+    "01-accounting": "Financial statements, balance sheets, income statements, cash flow — reading a 10-K like an analyst.",
+    "02-corporate-finance": "Valuation frameworks, DCF, NPV, IRR, WACC, cost of capital, and how firms make financing decisions.",
+    "03-micro-strategy": "Supply & demand, elasticity, market structures, pricing power, and the economics behind strategic choices.",
+    "04-competitive-strategy": "Porter's Five Forces, competitive advantage, moats, positioning, and industry dynamics.",
+    "05-marketing-brand": "Category design, positioning, brand strategy, customer segmentation, and go-to-market frameworks.",
+    "06-operations": "Supply chain design, process optimization, lean principles, capacity planning, and Six Sigma fundamentals.",
+    "07-data-analytics": "Statistical thinking, regression, Bayesian reasoning, decision analysis, and data-driven management.",
+    "08-negotiation": "Distributive and integrative negotiation, BATNA, tactical empathy, and deal architecture.",
+    "09-leadership-ob": "Organizational behavior, team dynamics, motivation theory, culture building, and adaptive leadership.",
+    "10-entrepreneurship": "Startup formation, venture mechanics, product-market fit, funding, and scaling from zero to one.",
+    "11-global-macro": "Country risk, exchange rates, trade policy, capital flows, and investing in emerging markets.",
+    "12-capstone": "Integrative strategy: pulling together finance, operations, marketing, and leadership into a cohesive business view.",
+    # --- Executive ---
+    "E1-leading-at-scale": "Leading organizations past the founder stage — structure, delegation, alignment, and executive decision-making.",
+    "E2-capital-allocation": "Where to deploy capital: buybacks, dividends, M&A, organic growth, and the Buffett/Thorndike playbook.",
+    "E3-mergers-acquisitions": "Deal origination, due diligence, valuation in M&A, integration planning, and restructuring.",
+    "E4-governance-board": "Board composition, fiduciary duties, shareholder activism, proxy fights, and corporate governance best practices.",
+    "E5-transformation": "Leading large-scale organizational change — turnarounds, digital transformation, and managing resistance.",
+    "E6-crisis-leadership": "Leading through crises: rapid decision-making, stakeholder communication, and organizational resilience.",
+    "E7-exec-presence-comms": "Executive communication, public speaking, storytelling, and commanding a room with authority.",
+    "E8-stakeholder-ir": "Investor relations, earnings calls, shareholder communication, and managing the capital markets narrative.",
+    "E9-geopolitics-macro": "Geopolitical risk, global macro trends, trade wars, sanctions, and their impact on business strategy.",
+    "E10-digital-ai": "Digital strategy, AI adoption, technology-driven transformation, and building tech-forward organizations.",
+    "E11-operating-system": "Personal productivity systems, mental models, energy management, and building an executive routine.",
+    "E12-culture-strategy": "Culture as competitive advantage — building, measuring, and evolving organizational culture intentionally.",
+    # --- Canon ---
+    "strategy": "Foundational strategy texts: Good Strategy/Bad Strategy, Playing to Win, and the art of strategic clarity.",
+    "leadership-presence": "Leadership philosophy and executive presence from Sinek, Willink, and the great leadership thinkers.",
+    "mental-models": "Thinking tools: Munger's latticework, Farnam Street models, and frameworks for better judgment.",
+    "org-design-mechanisms": "How organizations actually work — incentives, structure, bureaucracy, and mechanism design.",
+    "landscape-competitive": "Competitive analysis beyond Porter: Blue Ocean, disruption theory, and strategic positioning.",
+    "negotiation-influence": "Influence, persuasion, and negotiation science from Cialdini, Voss, and behavioral research.",
+    "execution-operations": "The Goal, Theory of Constraints, bottleneck thinking, and the art of operational execution.",
+    "culture-change": "Leading change: Kotter's model, organizational transformation, and making culture shifts stick.",
+    "risk-fragility": "Taleb's antifragility, Black Swans, risk management, and thriving under uncertainty.",
+    "product-innovation": "Product thinking, innovation frameworks, design-driven development, and the innovator's dilemma.",
+    "power-politics": "Organizational power, political dynamics, and the realist tradition from Greene and Pfeffer.",
+    "personal-effectiveness": "Deep work, deliberate practice, time management, and the science of peak performance.",
+    "financial-literacy": "Financial literacy for non-finance operators — reading statements, thinking about value, and capital decisions.",
+    "behavioral-decision": "Kahneman, Thaler, and the psychology of decisions — biases, heuristics, and nudge architecture.",
+    "game-theory": "Nash equilibrium, strategic interaction, mechanism design, and applying game theory to business.",
+    "platform-strategy": "Network effects, platform economics, two-sided markets, and winner-take-all dynamics.",
+    "systems-complexity": "Systems thinking, feedback loops, emergence, complexity theory, and unintended consequences.",
+    "information-communication": "Information theory, crucial conversations, feedback systems, and communication as infrastructure.",
+    "economics-incentives": "Incentive design, principal-agent problems, moral hazard, adverse selection, and market failures.",
+    "history-judgment": "Historical case studies, pattern recognition, and developing judgment through studied experience.",
+    "communication-storytelling": "Narrative structure, business storytelling, and communicating ideas that move people to action.",
+    "design-problem-solving": "Design thinking, structured problem-solving, first-principles reasoning, and creative frameworks.",
+    "ethics-judgment": "Business ethics, moral reasoning, stakeholder theory, and making defensible decisions under pressure.",
+    # --- Technical Foundations ---
+    "managerial-accounting": "Cost accounting, variance analysis, budgeting, transfer pricing, and internal decision support.",
+    "statistics-quant": "Probability, distributions, hypothesis testing, regression, and quantitative methods for business.",
+    "marketing-strategy": "Marketing frameworks, positioning strategy, segmentation, and competitive marketing analysis.",
+    "information-systems": "Enterprise IT, database fundamentals, systems architecture, and technology management.",
+    "business-law": "Contracts, torts, regulatory compliance, intellectual property, and the legal environment of business.",
+    "entrepreneurial-finance": "Venture financing, term sheets, cap tables, startup valuation, and investor economics.",
+}
+
 # ---------- SVG icon system (replaces all emoji) ----------
 IC = {
     'check': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg>',
@@ -107,6 +279,9 @@ IC = {
     'doc': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 1.5h6.5l3.5 3.5v9.5h-10z"/><path d="M10 1.5v3.5h3.5"/><path d="M6 7h4M6 9.5h4M6 12h2.5"/></svg>',
     'lesson': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="2" y="1" width="12" height="14" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h3"/></svg>',
     'folder': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M1.5 3.5h4.5l2 2h6v8.5h-13z"/></svg>',
+    'flame': '<svg class="ic" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1C6.5 3.5 4 5 4 8.5a4 4 0 008 0c0-1.5-.5-2.5-1.5-3.5-.5 1-1.5 1.5-2.5 1.5C8 5 8.5 3 8 1z"/></svg>',
+    'star': '<svg class="ic" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1l2.2 4.6L15 6.3l-3.5 3.5.8 4.8L8 12.3 3.7 14.6l.8-4.8L1 6.3l4.8-.7z"/></svg>',
+    'trophy': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M5 14h6M8 11v3M4 1h8v5a4 4 0 01-8 0V1z"/><path d="M4 3H2v2a2 2 0 002 2M12 3h2v2a2 2 0 01-2 2"/></svg>',
 }
 
 import math
@@ -188,7 +363,7 @@ HEAD = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="theme-color" content="#faf7f2">
 <title>{title}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Literata:ital,opsz,wght@0,7..72,300..600;1,7..72,300..500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{css}?v=""" + BUILD_VER + """"></head><body>"""
 
 def render_video(v, summary=None):
@@ -283,28 +458,40 @@ def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None, summar
             f'<p class="section-obj"><span class="obj-tag">Apply</span> The real SEC filings <b>behind the worked example above.</b> Run <code>edgar.py company TICKER</code> to do your own analysis.</p>'
             f'{render_edgar(edgar)}</section>')
     pn = ""
-    if prevnext[0]: pn += f'<a class="pn" href="{prevnext[0][0]}">{IC["arrow-l"]} {esc(prevnext[0][1])}</a>'
-    if prevnext[1]: pn += f'<a class="pn next" href="{prevnext[1][0]}">{esc(prevnext[1][1])} {IC["arrow-r"]}</a>'
+    if prevnext[0]:
+        pn += f'<a class="pn" href="{prevnext[0][0]}"><span class="pn-dir">{IC["arrow-l"]} Previous</span><span class="pn-title">{esc(prevnext[0][1])}</span><span class="pn-key">←</span></a>'
+    if prevnext[1]:
+        pn += f'<a class="pn next" href="{prevnext[1][0]}"><span class="pn-dir">Next {IC["arrow-r"]}</span><span class="pn-title">{esc(prevnext[1][1])}</span><span class="pn-key">→</span></a>'
     done_btn = (f'<button id="mark-done" data-mod="{track}-{mid}.html"><span class="cp-tick">{IC["check"]}</span> '
                 f'<span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button>') if lesson else ""
     track_name = {"exec": "Executive Track", "canon": "The Canon · Reading Layer",
                   "gaps": "Technical Foundations"}.get(track, "Core Curriculum")
+    track_tab = {"exec": "#t-exec", "canon": "#t-canon", "gaps": "#t-gaps"}.get(track, "#t-core")
+    desc = DESCRIPTIONS.get(mid, "")
+    desc_html = f'<p class="mod-desc">{esc(desc)}</p>' if desc else ""
     return HEAD.format(title=f"{c} · {title}", css="style.css") + f"""
 {'<div id="progress"></div>' if lesson else ''}
 <header class="mod-header {('exec' if track=='exec' else 'core')}">
-<a href="index.html" class="home">{IC['arrow-l']} Index</a>
-<div class="eyebrow"><span class="num">{esc(c)}</span> {track_name}</div>
+<nav class="breadcrumb">
+<a href="index.html">Index</a><span class="sep">›</span>
+<a href="index.html{track_tab}">{track_name}</a><span class="sep">›</span>
+<span class="current">{esc(c)} {esc(title)}</span>
+</nav>
 <h1>{esc(title)}</h1>
+{desc_html}
 <div class="hairline"></div></header>
 <nav class="toc">{" ".join(toc)}</nav>"""+f"""
 <main>{"".join(sections)}</main>
 <div class="done-wrap">{done_btn}</div>
-<div class="pn-wrap">{pn}</div>
+<div class="toast" id="toast"></div>
+<div class="pn-bar"><div class="pn-wrap">{pn}</div></div>
 <a href="#" class="top">{IC['arrow-up']}</a>
+<script src="chart.min.js"></script>
 <script src="lesson.js?v={BUILD_VER}"></script>
+<script>document.body.classList.add('mod-enter');</script>
 </body></html>"""
 
-def render_index(modules, stats):
+def render_index(modules, stats, wc_data=None, graph_data=None, sources=None):
     # Compute lesson coverage per track
     cov = {}
     for track in ("core", "exec", "canon", "gaps"):
@@ -325,32 +512,46 @@ def render_index(modules, stats):
             metas = [f"{len(v)} lectures", f"{words:,} words"]
             if r: metas.append(f"{len(r)} threads")
             if e: metas.append(f"{len(e)} filings")
-            out.append(f"""<a class="mcard {('exec' if track=='exec' else 'core')}{' ready' if ready else ''}" href="{track}-{mid}.html" data-mod="{track}-{mid}">
+            desc = DESCRIPTIONS.get(mid, "")
+            desc_html = f'<p class="mcard-desc">{esc(desc)}</p>' if desc else ""
+            src = (sources or {}).get(mid, [])
+            src_html = f'<p class="mcard-src">{", ".join(esc(s) for s in src)}</p>' if src else ""
+            out.append(f"""<a class="mcard {('exec' if track=='exec' else 'core')}{' ready' if ready else ''}" href="{track}-{mid}.html" data-mod="{track}-{mid}" data-track="{track}">
 <div class="mcard-num">{esc(c)}</div>
 <div class="mcard-body">
 <h3>{esc(title)}</h3>
+{desc_html}{src_html}
 <div class="mcard-drawer">
 <div class="mcard-top">{lesson_tag}<span class="done-tick">{IC["check"]} done</span></div>
 <div class="mstats">{"".join(f'<span>{m}</span>' for m in metas)}</div></div></div>
+<span class="mcard-done-dot"></span>
 <span class="mcard-arrow">{IC["arrow-r"]}</span></a>""")
         return "".join(out)
 
     def track_head(label, track, count_label, color="var(--core)"):
         r, t, pct = cov[track]
         ring = svg_progress_ring(pct, r=18, sw=3, color=color)
-        return (f'<div class="track-head">'
+        return (f'<div class="track-head" data-collapse="{track}">'
                 f'<span class="th-label">{label}</span><span class="th-rule"></span>'
                 f'<span class="th-cov">{ring}<span class="th-cov-label">{r}/{t} lessons</span></span>'
-                f'<span class="th-count">{count_label}</span></div>')
+                f'<span class="th-count">{count_label}</span>'
+                f'<button class="th-toggle" aria-label="Collapse section">{IC["arrow-up"]}</button></div>')
 
-    # Visual stats dashboard
+    # Visual stats dashboard (data-target for animated counters)
     stats_viz = f"""<div class="stats-dash">
-<div class="stat-card"><div class="stat-num">{stats['modules']}</div><div class="stat-label">modules</div></div>
-<div class="stat-card"><div class="stat-num">{stats['videos']}</div><div class="stat-label">lectures</div></div>
-<div class="stat-card"><div class="stat-num">{stats['words']:,}</div><div class="stat-label">words of transcript</div></div>
-<div class="stat-card"><div class="stat-num">{total_lessons}</div><div class="stat-label">interactive lessons</div>
-<div class="stat-bar-wrap"><div class="stat-bar-fill" style="width:{overall_pct}%"></div></div>
+<div class="stat-card"><div class="stat-num" data-target="{stats['modules']}">0</div><div class="stat-label">modules</div></div>
+<div class="stat-card"><div class="stat-num" data-target="{stats['videos']}">0</div><div class="stat-label">lectures</div></div>
+<div class="stat-card"><div class="stat-num" data-target="{stats['words']}">0</div><div class="stat-label">words of transcript</div></div>
+<div class="stat-card"><div class="stat-num" data-target="{total_lessons}">0</div><div class="stat-label">interactive lessons</div>
+<div class="stat-bar-wrap"><div class="stat-bar-fill" style="width:0%" data-width="{overall_pct}"></div></div>
 <div class="stat-sub">{overall_pct}% coverage</div></div>
+</div>"""
+
+    # Gamification bar
+    gami_bar = f"""<div class="gami-bar">
+<div class="xp-display">{IC['star']} <span class="xp-num" id="xp-count">0</span> <span class="xp-label">XP</span></div>
+<div class="level-badge" id="level-badge">Analyst</div>
+<div class="streak-display" id="streak-display">{IC['flame']} <span class="streak-num" id="streak-num">0</span> <span class="streak-label">day streak</span></div>
 </div>"""
 
     return HEAD.format(title="The Compounding MBA", css="style.css") + f"""
@@ -359,29 +560,78 @@ def render_index(modules, stats):
 <h1>The Compounding <em>MBA</em></h1>
 <p class="sub">A master's-level business education, distilled from elite sources into interactive, visual lessons — grounded in primary data.</p>
 {stats_viz}
+{gami_bar}
 <div class="exam-links">
 <a class="exam-link" href="exam.html">{IC['pencil']} <span class="exam-title">Self-diagnostic</span> <span class="exam-sub">recall</span> {IC['arrow-r']}</a>
 <a class="exam-link bench" href="benchmark-exam.html">{IC['target']} <span class="exam-title">Calibrated benchmark</span> <span class="exam-sub">exam-level</span> {IC['arrow-r']}</a>
 </div>
 <input id="q" placeholder="Search modules…" oninput="filt()">
+<div class="filter-chips">
+<button class="chip active" data-filter="all">All</button>
+<button class="chip" data-filter="lesson">{IC['lesson']} Has lesson</button>
+<button class="chip" data-filter="completed">{IC['check']} Completed</button>
+<button class="chip" data-filter="not-started">Not started</button>
+</div>
 </header>
+<nav class="track-tabs" id="track-tabs">
+<a href="#t-core" class="tt active" data-track="core">Core</a>
+<a href="#t-exec" class="tt" data-track="exec">Executive</a>
+<a href="#t-canon" class="tt" data-track="canon">Canon</a>
+<a href="#t-gaps" class="tt" data-track="gaps">Foundations</a>
+<a href="#t-explore" class="tt" data-track="explore">Explore</a>
+</nav>
 <main>
+<section id="t-core" class="track-section">
 {track_head('Core Curriculum', 'core', '12 modules', 'var(--core)')}
 <div class="grid">{cards('core')}</div>
+</section>
+<section id="t-exec" class="track-section">
 {track_head('Executive Track', 'exec', '12 modules', 'var(--exec)')}
 <div class="grid">{cards('exec')}</div>
+</section>
+<section id="t-canon" class="track-section">
 {track_head('The Canon · Reading Layer', 'canon', '23 clusters', 'var(--brass)')}
 <div class="grid">{cards('canon')}</div>
+</section>
+<section id="t-gaps" class="track-section">
 {track_head('Technical Foundations', 'gaps', f'{len(modules["gaps"])} modules', 'var(--core)')}
 <div class="grid">{cards('gaps')}</div>
+</section>
+<section id="t-explore" class="track-section">
+<div class="track-head">
+<span class="th-label">Explore</span><span class="th-rule"></span>
+<span class="th-count">word cloud · knowledge graph</span></div>
+<div class="explore-wrap">
+<div class="explore-panel">
+<h3 class="explore-title">{IC['chart']} Concept Cloud</h3>
+<p class="explore-sub">Top terms from {stats['words']:,} words of transcript</p>
+<canvas id="wc-canvas"></canvas>
+</div>
+<div class="explore-panel explore-panel-wide">
+<h3 class="explore-title">{IC['target']} Knowledge Graph</h3>
+<p class="explore-sub">Modules connected by shared domain concepts — drag to orbit</p>
+<div id="kg-mount"></div>
+<div class="kg-tooltip" id="kg-tip"></div>
+</div>
+</div>
+</section>
 </main>
+<div class="toast" id="toast"></div>
 <footer>Generated from <code>~/self-mba/_ingest/raw/{stats['date']}</code> · rebuild with <code>python3 site/build.py</code></footer>
 <script>
 function filt(){{var q=document.getElementById('q').value.toLowerCase();
+document.querySelectorAll('.chip').forEach(function(c){{c.classList.remove('active');}});
+document.querySelector('.chip[data-filter="all"]').classList.add('active');
 document.querySelectorAll('.mcard').forEach(function(c){{
 c.style.display = c.textContent.toLowerCase().includes(q) ? '' : 'none';}});}}
 </script>
 <script src="index.js?v=""" + BUILD_VER + """"></script>
+<script>
+var WC_DATA=""" + json.dumps(wc_data or []) + """;
+var KG_DATA=""" + json.dumps(graph_data or {"nodes":[],"edges":[]}) + """;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+<script src="explore.js?v=""" + BUILD_VER + """"></script>
 </body></html>"""
 
 CSS = """
@@ -391,7 +641,7 @@ CSS = """
 --ink:#1c1917;--ink2:#3d3833;--dim:#8a837a;
 --brass:#9a7b2e;--brass2:#7a6121;--core:#2d7a4a;--exec:#b86e1a;
 --wrong:#c4372a;
---serif:'Fraunces',Georgia,serif;--read:'Literata',Georgia,serif;--mono:'IBM Plex Mono',ui-monospace,monospace;
+--serif:'Lexend',system-ui,sans-serif;--read:'Lexend',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace;
 --wrap:920px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink2);font:19px/1.78 var(--read);-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -447,6 +697,8 @@ a{color:inherit}main{max-width:var(--wrap);margin:0 auto;padding:0 24px 100px;po
 .mcard-body{flex:1;padding:18px 14px 18px 6px}
 .mcard h3{font:400 1.18rem/1.25 var(--serif);color:var(--ink);margin:0 0 0;letter-spacing:-.01em;transition:color .2s}
 .mcard:hover h3{color:var(--brass)}.mcard.exec:hover h3{color:var(--exec)}
+.mcard-desc{font:.82rem/1.5 var(--read);color:var(--dim);margin:5px 0 0;letter-spacing:-.005em}
+.mcard-src{font:500 .68rem/1 var(--mono);color:var(--brass);margin:6px 0 0;letter-spacing:.02em;text-transform:uppercase;opacity:.7}
 .mcard-drawer{max-height:0;overflow:hidden;transition:max-height .35s ease,opacity .3s;opacity:0}
 .mcard:hover .mcard-drawer{max-height:120px;opacity:1}
 .mcard-top{display:flex;align-items:center;gap:8px;margin-top:8px;min-height:0}
@@ -461,9 +713,8 @@ a{color:inherit}main{max-width:var(--wrap);margin:0 auto;padding:0 24px 100px;po
 /* ---------- MODULE PAGE ---------- */
 .mod-header{max-width:var(--wrap);margin:0 auto;padding:clamp(40px,8vh,80px) 24px 0;position:relative;z-index:2}
 .home{font:500 .74rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--dim);text-decoration:none;transition:color .2s}.home:hover{color:var(--brass)}
-.mod-header .eyebrow{margin-top:26px;color:var(--dim)}.mod-header .eyebrow .num{color:var(--brass);font-weight:600}
-.mod-header.exec .eyebrow .num{color:var(--exec)}
-.mod-header h1{font:300 clamp(2.6rem,6vw,4.2rem)/1 var(--serif);color:var(--ink);letter-spacing:-.02em;margin:.18em 0 .5em}
+.mod-header h1{font:300 clamp(2.6rem,6vw,4.2rem)/1 var(--serif);color:var(--ink);letter-spacing:-.02em;margin:.18em 0 .3em}
+.mod-desc{font:.92rem/1.6 var(--read);color:var(--dim);margin:0 0 .5em;max-width:560px}
 .hairline{height:1px;background:linear-gradient(90deg,var(--brass),transparent 70%)}
 .mod-header.exec .hairline{background:linear-gradient(90deg,var(--exec),transparent 70%)}
 .toc{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 90%,transparent);max-width:var(--wrap);margin:0 auto;padding:16px 24px;border-bottom:1px solid var(--line);display:flex;gap:24px;flex-wrap:wrap}
@@ -484,15 +735,29 @@ section>h2{font:300 clamp(1.7rem,3.5vw,2.3rem) var(--serif);color:var(--ink);let
 .lec-pts li{position:relative;padding-left:22px;margin:8px 0;color:var(--ink2);line-height:1.55}
 .lec-pts li::before{content:"→";position:absolute;left:0;color:var(--core);font-weight:600}
 .tr{margin-top:14px}.tr summary{cursor:pointer;font:500 .74rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim);list-style:none}.tr summary:hover{color:var(--brass)}.tr summary::-webkit-details-marker{display:none}.tr summary::before{content:"▸ ";color:var(--brass)}.tr[open] summary::before{content:"▾ "}
-.tr-body{margin-top:14px;font:1.12rem/1.85 var(--read);color:var(--ink2);border-left:2px solid var(--brass);padding-left:22px;max-height:580px;overflow:auto}
+.tr-body{margin-top:14px;font:1.08rem/1.9 var(--read);color:var(--ink2);border-left:2px solid var(--brass);padding-left:22px;column-count:1}
+@media(min-width:860px){.tr-body{column-count:2;column-gap:36px;column-rule:1px solid var(--line)}}
 .tr-body p{margin:0 0 16px}.no-tr{margin-top:10px;color:var(--dim);font-style:italic;font-size:.92rem}
 .excerpt{color:var(--ink2);font-size:1rem;margin:12px 0 0;opacity:.85}
 .edgar{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px;margin:14px 0;font:.84rem/1.6 var(--mono);color:var(--ink2);white-space:pre-wrap}
 .edgar h3{font:600 1.1rem var(--mono);color:var(--ink);margin:0 0 6px}.edgar h4{font:.95rem var(--mono);color:var(--brass);margin:16px 0 4px}
 .empty{color:var(--dim);font-style:italic}
-.pn-wrap{max-width:var(--wrap);margin:50px auto;padding:0 24px;display:flex;justify-content:space-between;gap:14px;position:relative;z-index:2}
-.pn{flex:1;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px;text-decoration:none;color:var(--dim);font:500 .82rem var(--mono);letter-spacing:.04em;transition:.2s}
-.pn.next{text-align:right}.pn:hover{border-color:var(--brass);color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+/* breadcrumb */
+.breadcrumb{display:flex;align-items:center;gap:6px;font:500 .72rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim);flex-wrap:wrap}
+.breadcrumb a{color:var(--dim);text-decoration:none;transition:color .2s}.breadcrumb a:hover{color:var(--brass)}
+.breadcrumb .sep{opacity:.4;font-size:.6rem}
+.breadcrumb .current{color:var(--ink)}
+/* prev/next bar — sticky bottom */
+.pn-bar{position:sticky;bottom:0;z-index:15;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--line);margin-top:40px}
+.pn-wrap{max-width:var(--wrap);margin:0 auto;padding:12px 24px;display:flex;justify-content:space-between;gap:14px;position:relative;z-index:2}
+.pn{flex:1;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;text-decoration:none;color:var(--dim);transition:.2s;display:flex;flex-direction:column;gap:3px}
+.pn-dir{font:600 .62rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--brass);display:flex;align-items:center;gap:4px}
+.pn-dir .ic{width:.7em;height:.7em}
+.pn-title{font:400 .88rem var(--read);color:var(--ink);line-height:1.3}
+.pn.next{text-align:right;align-items:flex-end}
+.pn:hover{border-color:var(--brass);box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.pn-key{font:.58rem var(--mono);color:var(--dim);opacity:.5;margin-top:2px}
+@media(max-width:640px){.pn-wrap{flex-direction:column}.pn-key{display:none}}
 .top{position:fixed;bottom:26px;right:26px;z-index:40;background:var(--brass);color:#fff;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.15);font-size:1.1rem}
 footer{max-width:var(--wrap);margin:0 auto;padding:36px 24px;color:var(--dim);font:.78rem/1.8 var(--mono);text-align:center;border-top:1px solid var(--line);position:relative;z-index:2}
 footer code{color:var(--ink2)}
@@ -509,6 +774,9 @@ footer code{color:var(--ink2)}
 figure.viz{margin:28px 0;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:26px}
 figure.viz svg{width:100%;height:auto}
 figure.viz figcaption{font:.92rem/1.5 var(--read);font-style:italic;color:var(--dim);margin-top:14px;text-align:center}
+figure.chart-wrap{margin:28px 0;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px 20px 14px}
+figure.chart-wrap canvas{max-height:340px}
+figure.chart-wrap figcaption{font:.86rem/1.5 var(--read);font-style:italic;color:var(--dim);margin-top:10px;text-align:center}
 .vlabel{font:500 12px var(--mono);fill:var(--dim);text-transform:uppercase;letter-spacing:.04em}.vlabel-in{font:600 12px var(--mono);fill:var(--brass)}
 .bar-txt{font:600 13px var(--mono);fill:var(--ink);text-anchor:middle}.bar-txt-sm{font:600 11px var(--mono);fill:var(--ink);text-anchor:middle}
 .bar-asset{fill:color-mix(in srgb,var(--core) 30%,var(--bg2))}.bar-liab{fill:var(--exec)}.bar-eq{fill:var(--core)}
@@ -534,17 +802,18 @@ figure.viz figcaption{font:.92rem/1.5 var(--read);font-style:italic;color:var(--
 .tip{position:absolute;z-index:60;background:var(--surface);border:1px solid var(--line2);color:var(--ink);font:.84rem/1.45 var(--read);padding:10px 14px;border-radius:8px;max-width:280px;pointer-events:none;opacity:0;transform:translate(-50%,-100%);transition:opacity .12s;box-shadow:0 6px 20px rgba(0,0,0,.1)}
 .tip.show{opacity:1}
 .hot{cursor:pointer;transition:opacity .15s}.hot:hover{opacity:.82}.hot.active{stroke:var(--ink);stroke-width:2}
-.fc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(172px,1fr));gap:14px;margin:24px 0}
-.fc{position:relative;display:block;background:none;border:0;padding:0;height:152px;cursor:pointer;font:inherit;text-align:left}
-.fc-inner{display:block;position:relative;width:100%;height:100%}
-.fc-f,.fc-b{position:absolute;inset:0;border:1px solid var(--line);border-radius:8px;padding:16px;display:flex;flex-direction:column;justify-content:space-between;transition:opacity .35s,transform .35s}
+.fc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin:24px 0}
+.fc{position:relative;display:block;background:none;border:0;padding:0;min-height:180px;cursor:pointer;font:inherit;text-align:left}
+.fc-inner{display:block;position:relative;width:100%;height:100%;min-height:inherit}
+.fc-f,.fc-b{position:absolute;inset:0;border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;transition:opacity .3s cubic-bezier(0,0,.2,1),transform .3s cubic-bezier(0,0,.2,1)}
 .fc-f{background:var(--surface);box-shadow:0 1px 3px rgba(0,0,0,.04)}
-.fc:hover .fc-f{border-color:var(--brass);box-shadow:0 3px 10px rgba(0,0,0,.07)}
-.fc-f b{font:400 1.34rem var(--serif);color:var(--ink)}
-.fc-f .hint{font:.6rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--brass);white-space:nowrap;opacity:.85}
-.fc-b{background:var(--core);color:#fff;font-size:.95rem;line-height:1.46;justify-content:center;opacity:0;transform:scale(.97);pointer-events:none;border-color:var(--core)}
+.fc:hover .fc-f{border-color:var(--brass);box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.fc-f b{font:400 1.28rem var(--serif);color:var(--ink)}
+.fc-f .hint{font:.58rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--brass);white-space:nowrap;opacity:.7}
+.fc-b{background:var(--core);color:#fff;font:.88rem/1.6 var(--read);justify-content:center;opacity:0;transform:scale(.97);pointer-events:none;border-color:var(--core);padding:22px 20px}
 .fc.flipped .fc-f{opacity:0;transform:scale(.97)}
 .fc.flipped .fc-b{opacity:1;transform:none}
+@media(hover:hover){.fc:hover .fc-f{opacity:0;transform:scale(.97)}.fc:hover .fc-b{opacity:1;transform:none}}
 .reveal{border:1px solid var(--line);border-radius:8px;margin:12px 0;overflow:hidden;background:var(--surface);transition:border-color .2s}.reveal.open{border-color:var(--brass)}
 .reveal-q{width:100%;text-align:left;background:none;border:0;padding:18px 20px;font:400 1.2rem var(--serif);color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px}
 .reveal-q::after{content:"+";color:var(--brass);font:300 1.6rem var(--serif);flex:none}.reveal.open .reveal-q::after{content:"–"}
@@ -571,8 +840,91 @@ figure.viz figcaption{font:.92rem/1.5 var(--read);font-style:italic;color:var(--
 #mark-done:hover{border-color:var(--core);color:var(--ink)}
 #mark-done.checked{background:var(--core);color:#fff;border-color:var(--core)}
 #mark-done.checked .cp-tick{opacity:1}#mark-done.checked .cp-on{display:inline}#mark-done.checked .cp-off{display:none}
-@media(max-width:640px){.grid{grid-template-columns:1fr;gap:10px}.mcard-num{font-size:1.6rem;min-width:48px;padding-left:16px}.stats-dash{gap:10px}.stat-card{min-width:0;padding:16px}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+/* ---------- STICKY TRACK TABS ---------- */
+.track-tabs{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(12px);max-width:100%;padding:10px 24px;display:flex;gap:4px;border-bottom:1px solid var(--line);justify-content:center}
+.tt{font:500 .72rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-decoration:none;padding:8px 18px;border-radius:20px;transition:color .2s,background .2s;white-space:nowrap}
+.tt:hover{color:var(--ink);background:var(--surface)}
+.tt.active{color:var(--brass);background:color-mix(in srgb,var(--brass) 10%,transparent)}
+.track-section{scroll-margin-top:60px}
+.th-toggle{background:none;border:1px solid var(--line);border-radius:6px;padding:4px 8px;cursor:pointer;color:var(--dim);transition:.2s;display:flex;align-items:center;margin-left:8px}
+.th-toggle:hover{color:var(--brass);border-color:var(--brass)}
+.th-toggle .ic{transition:transform .25s cubic-bezier(0,0,.2,1)}
+.track-section.collapsed .th-toggle .ic{transform:rotate(180deg)}
+.track-section.collapsed .grid{display:none}
+/* ---------- FILTER CHIPS ---------- */
+.filter-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;animation:rise .8s .55s both}
+.chip{font:500 .68rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim);background:transparent;border:1px solid var(--line);border-radius:20px;padding:6px 14px;cursor:pointer;transition:.2s;display:inline-flex;align-items:center;gap:5px}
+.chip .ic{width:.7em;height:.7em}
+.chip:hover{border-color:var(--brass);color:var(--ink)}
+.chip.active{background:var(--brass);color:#fff;border-color:var(--brass)}
+/* ---------- GAMIFICATION ---------- */
+.gami-bar{display:flex;align-items:center;gap:20px;margin:20px 0 8px;animation:rise .8s .42s both;flex-wrap:wrap}
+.xp-display{display:flex;align-items:center;gap:6px;font:600 .78rem var(--mono);color:var(--brass);letter-spacing:.06em}
+.xp-display .ic{width:1.1em;height:1.1em;color:var(--brass)}
+.xp-num{font:700 1.3rem var(--serif);color:var(--brass)}
+.xp-label{font:500 .64rem var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--dim)}
+.level-badge{font:600 .66rem var(--mono);letter-spacing:.1em;text-transform:uppercase;background:linear-gradient(135deg,var(--brass),var(--core));color:#fff;padding:5px 14px;border-radius:20px;white-space:nowrap}
+.streak-display{display:flex;align-items:center;gap:5px;font:500 .72rem var(--mono);color:var(--exec);letter-spacing:.06em}
+.streak-display .ic{width:1em;height:1em;color:var(--exec)}
+.streak-num{font:700 1.1rem var(--serif)}
+.streak-label{font:500 .64rem var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--dim)}
+/* toast notification */
+.toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(80px);z-index:100;background:var(--core);color:#fff;font:500 .8rem var(--mono);letter-spacing:.06em;padding:14px 28px;border-radius:40px;box-shadow:0 8px 30px rgba(0,0,0,.18);opacity:0;transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .4s;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.toast .xp-plus{margin-left:10px;font-weight:700;color:color-mix(in srgb,#fff 85%,var(--brass))}
+/* --- Material motion: deceleration curve (0,0,.2,1) --- */
+@keyframes card-enter{from{opacity:0;transform:translateY(16px) scale(.94)}to{opacity:1;transform:none}}
+.mcard{opacity:0}.mcard.card-enter{animation:card-enter .35s cubic-bezier(0,0,.2,1) both}
+/* container transform: card click */
+@keyframes card-exit{to{transform:scale(1.04);opacity:0}}
+.mcard.navigating{animation:card-exit .2s cubic-bezier(.4,0,1,1) forwards;pointer-events:none}
+/* shared z-axis: module page entry */
+@keyframes page-enter{from{opacity:0;transform:translateY(24px) scale(.95)}to{opacity:1;transform:none}}
+body.mod-enter .mod-header,body.mod-enter main,body.mod-enter .pn-bar{animation:page-enter .4s cubic-bezier(0,0,.2,1) both}
+body.mod-enter main{animation-delay:.08s}
+body.mod-enter .pn-bar{animation-delay:.14s}
+/* fade through: tab landing highlight */
+@keyframes section-land{0%{background:color-mix(in srgb,var(--brass) 8%,transparent)}100%{background:transparent}}
+.track-section.landing .track-head{animation:section-land .8s ease both}
+/* completion visible at rest */
+.mcard.completed{border-left:3px solid var(--core);background:color-mix(in srgb,var(--core) 4%,transparent)}
+.mcard-done-dot{width:8px;height:8px;border-radius:50%;background:var(--core);position:absolute;top:12px;right:12px;opacity:0;transition:opacity .3s,box-shadow .3s}
+.mcard.completed .mcard-done-dot{opacity:1}
+@keyframes pulse-dot{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--core) 40%,transparent)}50%{box-shadow:0 0 0 8px transparent}}
+.mcard.just-completed .mcard-done-dot{animation:pulse-dot .8s ease 3}
+/* stat counter glow */
+@keyframes count-glow{0%{text-shadow:0 0 0 transparent}50%{text-shadow:0 0 14px color-mix(in srgb,var(--brass) 25%,transparent)}100%{text-shadow:0 0 0 transparent}}
+.stat-num.counted{animation:count-glow .8s ease}
+/* level-up bounce */
+@keyframes level-pop{0%{transform:scale(1)}40%{transform:scale(1.18)}100%{transform:scale(1)}}
+.level-badge.level-up{animation:level-pop .5s ease}
+/* module done button celebration */
+@keyframes check-bounce{0%{transform:scale(1)}30%{transform:scale(1.25)}60%{transform:scale(.9)}100%{transform:scale(1)}}
+#mark-done.just-checked{animation:check-bounce .5s ease}
+/* confetti burst */
+@keyframes confetti-fall{0%{transform:translateY(0) rotate(0);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+.confetti{position:fixed;top:-10px;z-index:200;width:8px;height:8px;border-radius:2px;pointer-events:none;animation:confetti-fall 2.5s ease-in forwards}
+/* ---------- EXPLORE: WORD CLOUD + KNOWLEDGE GRAPH ---------- */
+.explore-wrap{display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:900px){.explore-wrap{grid-template-columns:1fr 1fr}}
+.explore-panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:28px;position:relative;overflow:hidden;min-width:0;min-height:400px}
+.explore-panel-wide{overflow:visible}
+.explore-title{font:500 .82rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 4px;display:flex;align-items:center;gap:8px}
+.explore-title .ic{color:var(--brass)}
+.explore-sub{font:.78rem var(--read);color:var(--dim);margin:0 0 20px}
+#wc-canvas{width:100%;height:auto;display:block;border-radius:8px;min-height:320px}
+#kg-mount{width:100%;aspect-ratio:4/3;border-radius:8px;overflow:hidden;cursor:grab;position:relative;min-height:360px}
+@media(min-width:900px){#kg-mount{aspect-ratio:1/1}}
+#kg-mount:active{cursor:grabbing}
+#kg-mount canvas{display:block;width:100%!important;height:100%!important;border-radius:8px}
+.kg-tooltip{position:absolute;z-index:10;background:var(--surface);border:1px solid var(--line2);border-radius:8px;padding:10px 14px;font:.82rem var(--read);color:var(--ink);pointer-events:none;opacity:0;transition:opacity .15s;box-shadow:0 4px 16px rgba(0,0,0,.1);max-width:240px;white-space:nowrap}
+.kg-tooltip.show{opacity:1}
+@media(min-width:760px){.explore-wrap{grid-template-columns:1fr 1.6fr}}
+/* mobile fallback: show drawer on touch devices */
+@media(hover:none){.mcard-drawer{max-height:120px;opacity:1}.mcard-arrow{opacity:.5;transform:none}}
+@media(max-width:640px){.grid{grid-template-columns:1fr;gap:10px}.mcard-num{font-size:1.6rem;min-width:48px;padding-left:16px}.stats-dash{gap:10px}.stat-card{min-width:0;padding:16px}.gami-bar{gap:12px}.track-tabs{gap:2px;padding:8px 12px}.tt{padding:6px 12px;font-size:.65rem}.filter-chips{gap:6px}.chip{padding:5px 10px;font-size:.62rem}}
+@media(max-width:480px){.track-tabs{overflow-x:auto;justify-content:flex-start;-webkit-overflow-scrolling:touch}.track-tabs::-webkit-scrollbar{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}.mcard{opacity:1}}
 """
 
 LESSON_JS = r"""
@@ -581,6 +933,14 @@ LESSON_JS = r"""
   if(bar){addEventListener('scroll',function(){
     var h=document.documentElement,sc=h.scrollTop,mx=h.scrollHeight-h.clientHeight;
     bar.style.width=(mx>0?100*sc/mx:0)+'%';},{passive:true});}
+  // keyboard nav: ← → for prev/next
+  var prevLink=document.querySelector('.pn:not(.next)');
+  var nextLink=document.querySelector('.pn.next');
+  document.addEventListener('keydown',function(e){
+    if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA'||e.target.isContentEditable)return;
+    if(e.key==='ArrowLeft'&&prevLink){prevLink.click();}
+    if(e.key==='ArrowRight'&&nextLink){nextLink.click();}
+  });
   // flip cards
   document.querySelectorAll('.fc').forEach(function(c){
     c.addEventListener('click',function(){c.classList.toggle('flipped');});});
@@ -613,14 +973,515 @@ LESSON_JS = r"""
   var done=document.getElementById('mark-done');
   if(done){var key='mba-done-'+(done.dataset.mod||location.pathname.split('/').pop());
     if(localStorage.getItem(key)==='1')done.classList.add('checked');
-    done.addEventListener('click',function(){done.classList.toggle('checked');
-      localStorage.setItem(key,done.classList.contains('checked')?'1':'0');});}
+    done.addEventListener('click',function(){
+      done.classList.toggle('checked');
+      localStorage.setItem(key,done.classList.contains('checked')?'1':'0');
+      if(done.classList.contains('checked')){
+        done.classList.add('just-checked');
+        setTimeout(function(){done.classList.remove('just-checked');},600);
+        // update streak
+        try{
+          var today=new Date().toISOString().slice(0,10);
+          var sk=JSON.parse(localStorage.getItem('mba-streak')||'{"d":0,"last":""}');
+          var yesterday=new Date(Date.now()-864e5).toISOString().slice(0,10);
+          if(sk.last!==today){
+            sk.d=(sk.last===yesterday)?sk.d+1:1;
+            sk.last=today;
+            localStorage.setItem('mba-streak',JSON.stringify(sk));}
+        }catch(e){}
+        // toast
+        var toast=document.getElementById('toast');
+        if(toast){
+          var track=(done.dataset.mod||'').split('-')[0];
+          var xpVal={core:100,exec:120,canon:80,gaps:90}[track]||80;
+          toast.innerHTML='Module complete! <span class="xp-plus">+'+xpVal+' XP</span>';
+          toast.classList.add('show');
+          setTimeout(function(){toast.classList.remove('show');},2800);
+          // confetti burst
+          for(var i=0;i<24;i++){
+            var c=document.createElement('div');c.className='confetti';
+            c.style.left=Math.random()*100+'vw';
+            c.style.background=['#9a7b2e','#2d7a4a','#b86e1a','#c4372a','#4a90d9'][i%5];
+            c.style.animationDelay=Math.random()*0.8+'s';
+            c.style.animationDuration=(2+Math.random()*1.5)+'s';
+            c.style.width=(6+Math.random()*6)+'px';
+            c.style.height=(6+Math.random()*6)+'px';
+            document.body.appendChild(c);
+            setTimeout(function(el){el.remove();},(4000),c);}
+        }
+      }
+    });}
+  // ====== Chart.js auto-init ======
+  if(typeof Chart!=='undefined'){
+    var COLORS={brass:'#9a7b2e',core:'#84ad8a',exec:'#b86e1a',dim:'#7a7568',ink:'#2c2a25',
+      line:'#d9d4cb',surface:'#f2ede6',red:'#cf6a5a',blue:'#4a90d9',teal:'#2d8a7a',
+      purple:'#7a5fa0',orange:'#d4842a'};
+    Chart.defaults.font.family="'Lexend',sans-serif";
+    Chart.defaults.color=COLORS.dim;
+    Chart.defaults.plugins.legend.labels.usePointStyle=true;
+    Chart.defaults.plugins.legend.labels.boxWidth=8;
+    Chart.defaults.elements.bar.borderRadius=4;
+    Chart.defaults.elements.bar.borderSkipped=false;
+    Chart.defaults.scale.grid={color:'rgba(0,0,0,.06)'};
+    Chart.defaults.scale.border={display:false};
+    function patchCallbacks(obj){
+      if(!obj||typeof obj!=='object')return;
+      Object.keys(obj).forEach(function(k){
+        if(k==='callback'&&obj[k]==='PERCENT'){obj[k]=function(v){return v+'%'};}
+        else if(k==='callback'&&obj[k]==='DOLLAR'){obj[k]=function(v){return '$'+v+'B'};}
+        else if(k==='callback'&&obj[k]==='DOLLAR_PLAIN'){obj[k]=function(v){return '$'+v};}
+        else if(k==='callback'&&obj[k]==='PLAIN'){obj[k]=function(v){return v.toLocaleString()};}
+        else patchCallbacks(obj[k]);
+      });
+    }
+    document.querySelectorAll('canvas[data-chart]').forEach(function(cvs){
+      try{
+        var cfg=JSON.parse(cvs.dataset.chart);
+        patchCallbacks(cfg);
+        if(!cfg.options)cfg.options={};
+        if(cfg.options.animation===undefined){
+          cfg.options.animation={duration:800,easing:'easeOutQuart'};
+        }
+        if(!cfg.options.plugins)cfg.options.plugins={};
+        if(!cfg.options.plugins.tooltip)cfg.options.plugins.tooltip={};
+        cfg.options.plugins.tooltip.backgroundColor='rgba(44,42,37,.92)';
+        cfg.options.plugins.tooltip.cornerRadius=6;
+        cfg.options.plugins.tooltip.padding=10;
+        new Chart(cvs,cfg);
+      }catch(e){console.warn('Chart init error:',e);}
+    });
+  }
 })();
 """
 
 INDEX_JS = r"""
-(function(){document.querySelectorAll('.mcard[data-mod]').forEach(function(c){
-  if(localStorage.getItem('mba-done-'+c.dataset.mod+'.html')==='1')c.classList.add('completed');});})();
+(function(){
+  // --- Completion state ---
+  document.querySelectorAll('.mcard[data-mod]').forEach(function(c){
+    if(localStorage.getItem('mba-done-'+c.dataset.mod+'.html')==='1')c.classList.add('completed');
+  });
+
+  // --- XP + Level system ---
+  var XP={core:100,exec:120,canon:80,gaps:90};
+  var LVL=[[0,'Analyst'],[300,'Associate'],[700,'Senior Associate'],[1200,'VP'],
+    [2000,'Director'],[3000,'SVP'],[4200,'Managing Director'],[5000,'C-Suite']];
+  function calcXP(){
+    var xp=0;
+    document.querySelectorAll('.mcard.completed').forEach(function(c){
+      xp+=(XP[c.dataset.track]||80);});
+    return xp;}
+  function getLevel(xp){
+    var lv=LVL[0];
+    for(var i=0;i<LVL.length;i++){if(xp>=LVL[i][0])lv=LVL[i];}
+    return lv;}
+  var xp=calcXP(),lv=getLevel(xp);
+  var xpEl=document.getElementById('xp-count');
+  var lvlEl=document.getElementById('level-badge');
+  if(xpEl){
+    var cur=0,target=xp,dur=800,st=null;
+    function stepXP(ts){
+      if(!st)st=ts;var p=Math.min((ts-st)/dur,1);
+      var e=1-Math.pow(1-p,3);
+      xpEl.textContent=Math.floor(target*e);
+      if(p<1)requestAnimationFrame(stepXP);}
+    requestAnimationFrame(stepXP);}
+  if(lvlEl)lvlEl.textContent=lv[1];
+
+  // --- Streak ---
+  try{
+    var today=new Date().toISOString().slice(0,10);
+    var sk=JSON.parse(localStorage.getItem('mba-streak')||'{"d":0,"last":""}');
+    var sEl=document.getElementById('streak-num');
+    if(sEl){
+      var yesterday=new Date(Date.now()-864e5).toISOString().slice(0,10);
+      if(sk.last===today)sEl.textContent=sk.d;
+      else if(sk.last===yesterday)sEl.textContent=sk.d;
+      else sEl.textContent=0;
+    }
+  }catch(e){}
+
+  // --- Animated stat counters ---
+  function animNum(el){
+    var raw=el.dataset.target;if(!raw)return;
+    var t=parseInt(raw.replace(/,/g,''),10);
+    if(isNaN(t)){el.textContent=raw;return;}
+    var dur=1400,st=null;
+    function step(ts){
+      if(!st)st=ts;var p=Math.min((ts-st)/dur,1);
+      el.textContent=Math.floor(t*(1-Math.pow(1-p,3))).toLocaleString();
+      if(p<1)requestAnimationFrame(step);
+      else{el.textContent=t.toLocaleString();el.classList.add('counted');}
+    }
+    requestAnimationFrame(step);
+  }
+  var sObs=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){animNum(e.target);sObs.unobserve(e.target);}
+    });},{threshold:0.3});
+  document.querySelectorAll('.stat-num[data-target]').forEach(function(el){sObs.observe(el);});
+
+  // --- Animate stat bar fill ---
+  var barFill=document.querySelector('.stat-bar-fill[data-width]');
+  if(barFill){
+    var bObs=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.style.width=e.target.dataset.width+'%';
+          bObs.unobserve(e.target);}
+      });},{threshold:0.3});
+    bObs.observe(barFill);}
+
+  // --- Card entrance stagger (per-section, Material deceleration) ---
+  var sections=document.querySelectorAll('.track-section');
+  sections.forEach(function(sec){
+    var idx=0;
+    var obs=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.style.animationDelay=(idx%12)*0.04+'s';
+          e.target.classList.add('card-enter');
+          idx++;obs.unobserve(e.target);}
+      });},{threshold:0.05,rootMargin:'40px'});
+    sec.querySelectorAll('.mcard').forEach(function(c){obs.observe(c);});
+  });
+
+  // --- Container transform: card click animation ---
+  document.querySelectorAll('.mcard[href]').forEach(function(c){
+    c.addEventListener('click',function(e){
+      e.preventDefault();
+      try{sessionStorage.setItem('mba-scroll',window.scrollY);
+        var active=document.querySelector('.tt.active');
+        if(active)sessionStorage.setItem('mba-tab',active.getAttribute('data-track'));
+      }catch(x){}
+      c.classList.add('navigating');
+      var href=c.getAttribute('href');
+      setTimeout(function(){window.location.href=href;},180);
+    });
+  });
+
+  // --- Scroll + tab restoration on return ---
+  try{
+    var savedScroll=sessionStorage.getItem('mba-scroll');
+    if(savedScroll!==null){
+      window.scrollTo(0,parseInt(savedScroll,10));
+      sessionStorage.removeItem('mba-scroll');
+      document.querySelectorAll('.mcard').forEach(function(c){c.style.animation='none';c.style.opacity='1';});
+    }
+    var savedTab=sessionStorage.getItem('mba-tab');
+    if(savedTab){sessionStorage.removeItem('mba-tab');}
+  }catch(x){}
+
+  // --- Sticky tabs scroll spy ---
+  var tabs=document.querySelectorAll('.tt');
+  var secs=document.querySelectorAll('.track-section');
+  if(tabs.length&&secs.length){
+    var spy=function(){
+      var pos=window.scrollY+140,act=0;
+      secs.forEach(function(s,i){if(s.offsetTop<=pos)act=i;});
+      tabs.forEach(function(t,i){t.classList.toggle('active',i===act);});};
+    window.addEventListener('scroll',spy,{passive:true});
+    tabs.forEach(function(t){
+      t.addEventListener('click',function(e){
+        e.preventDefault();
+        var sec=document.querySelector(t.getAttribute('href'));
+        if(sec){
+          window.scrollTo({top:sec.offsetTop-60,behavior:'smooth'});
+          sec.classList.remove('landing');
+          void sec.offsetWidth;
+          sec.classList.add('landing');
+        }
+      });
+    });
+  }
+
+  // --- Filter chips ---
+  document.querySelectorAll('.chip').forEach(function(chip){
+    chip.addEventListener('click',function(){
+      document.querySelectorAll('.chip').forEach(function(c){c.classList.remove('active');});
+      chip.classList.add('active');
+      var f=chip.dataset.filter;
+      document.querySelectorAll('.mcard').forEach(function(c){
+        var show=true;
+        if(f==='lesson')show=c.classList.contains('ready');
+        else if(f==='completed')show=c.classList.contains('completed');
+        else if(f==='not-started')show=!c.classList.contains('completed');
+        c.style.display=show?'':'none';
+      });
+      document.getElementById('q').value='';
+    });
+  });
+  // --- Track section collapse/expand ---
+  document.querySelectorAll('.th-toggle').forEach(function(btn){
+    btn.addEventListener('click',function(e){
+      e.preventDefault();
+      var sec=btn.closest('.track-section');
+      sec.classList.toggle('collapsed');
+      var track=btn.closest('.track-head').dataset.collapse;
+      if(track){
+        try{
+          var st=JSON.parse(localStorage.getItem('mba-collapsed')||'{}');
+          st[track]=sec.classList.contains('collapsed');
+          localStorage.setItem('mba-collapsed',JSON.stringify(st));
+        }catch(e){}
+      }
+    });
+  });
+  try{
+    var st=JSON.parse(localStorage.getItem('mba-collapsed')||'{}');
+    Object.keys(st).forEach(function(track){
+      if(st[track]){
+        var head=document.querySelector('.track-head[data-collapse="'+track+'"]');
+        if(head)head.closest('.track-section').classList.add('collapsed');
+      }
+    });
+  }catch(e){}
+})();
+"""
+
+EXPLORE_JS = r"""
+(function(){
+  var COLORS={core:[45,122,74],exec:[184,110,26],canon:[154,123,46],gaps:[122,97,33]};
+  var BG=[250,247,242];
+
+  // ====== WORD CLOUD — canvas spiral packing, 0° + 90° ======
+  var wcCvs=document.getElementById('wc-canvas');
+  if(wcCvs && typeof WC_DATA!=='undefined' && WC_DATA.length){
+    var panel=wcCvs.parentElement;
+    var pw=panel.clientWidth-56;
+    var W=Math.max(pw,260),H=Math.round(W*1.1);
+    var dpr=window.devicePixelRatio||1;
+    wcCvs.width=W*dpr;wcCvs.height=H*dpr;
+    wcCvs.style.width=W+'px';wcCvs.style.height=H+'px';
+    var ctx=wcCvs.getContext('2d');
+    ctx.scale(dpr,dpr);
+    var placed=[];
+    var sorted=WC_DATA.slice().sort(function(a,b){return b.s-a.s;});
+    var ck=['core','exec','canon','gaps','core'];
+    function colorFor(i){var c=COLORS[ck[i%5]]||COLORS.core;return 'rgb('+c[0]+','+c[1]+','+c[2]+')';}
+    function measure(word,size,rot){
+      ctx.font=(size>18?'600 ':'500 ')+size+'px Lexend,system-ui,sans-serif';
+      var m=ctx.measureText(word);
+      var tw=m.width+4,th=size*1.1+2;
+      return rot?{w:th,h:tw,tw:tw,th:th}:{w:tw,h:th,tw:tw,th:th};
+    }
+    function overlaps(x,y,w,h){
+      for(var i=0;i<placed.length;i++){
+        var p=placed[i];
+        if(x<p.x+p.w&&x+w>p.x&&y<p.y+p.h&&y+h>p.y)return true;
+      }
+      return false;
+    }
+    sorted.forEach(function(d,i){
+      var size=Math.round(13+d.s*22);
+      var rot=i>2&&Math.random()<0.3;
+      var m=measure(d.w,size,rot);
+      var cx=W/2,cy=H/2;
+      var step=3,angle=0,r=0,found=false;
+      for(var tries=0;tries<800;tries++){
+        var px=cx+Math.cos(angle)*r-m.w/2;
+        var py=cy+Math.sin(angle)*r-m.h/2;
+        if(px>=0&&py>=0&&px+m.w<=W&&py+m.h<=H&&!overlaps(px,py,m.w,m.h)){
+          placed.push({x:px,y:py,w:m.w,h:m.h,word:d.w,size:size,rot:rot,color:colorFor(i),s:d.s});
+          found=true;break;
+        }
+        angle+=0.6;r+=step*0.12;
+      }
+    });
+    function drawCloud(){
+      ctx.clearRect(0,0,W,H);
+      placed.forEach(function(p){
+        ctx.save();
+        ctx.font=((p.size>18?'600 ':'500 ')+p.size+'px Lexend,system-ui,sans-serif');
+        ctx.fillStyle=p.color;
+        ctx.globalAlpha=0.5+p.s*0.5;
+        if(p.rot){
+          ctx.translate(p.x+p.w/2,p.y+p.h/2);
+          ctx.rotate(-Math.PI/2);
+          ctx.textAlign='center';ctx.textBaseline='middle';
+          ctx.fillText(p.word,0,0);
+        }else{
+          ctx.textAlign='left';ctx.textBaseline='top';
+          ctx.fillText(p.word,p.x+2,p.y+1);
+        }
+        ctx.restore();
+      });
+    }
+    var wcObs=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){drawCloud();wcObs.unobserve(e.target);}});
+    },{threshold:0.1});
+    wcObs.observe(wcCvs);
+  }
+
+  // ====== 3D KNOWLEDGE GRAPH (Three.js) ======
+  var mount=document.getElementById('kg-mount');
+  var tip=document.getElementById('kg-tip');
+  if(!mount||typeof THREE==='undefined'||typeof KG_DATA==='undefined'||!KG_DATA.nodes.length)return;
+
+  var rect=mount.getBoundingClientRect();
+  var W3=Math.round(rect.width)||500,H3=Math.round(W3*10/16);
+  var scene=new THREE.Scene();
+  scene.background=new THREE.Color(BG[0]/255,BG[1]/255,BG[2]/255);
+  var camera=new THREE.PerspectiveCamera(50,W3/H3,1,2000);
+  camera.position.set(0,0,220);
+  var renderer=new THREE.WebGLRenderer({antialias:true});
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(W3,H3);
+  mount.appendChild(renderer.domElement);
+
+  var ambient=new THREE.AmbientLight(0xffffff,0.6);
+  scene.add(ambient);
+  var dir=new THREE.DirectionalLight(0xffffff,0.8);
+  dir.position.set(100,200,150);scene.add(dir);
+
+  var tcHex={core:0x2d7a4a,exec:0xb86e1a,canon:0x9a7b2e,gaps:0x7a6121};
+  var maxW=Math.max.apply(null,KG_DATA.edges.map(function(e){return e.w;}))||1;
+  var nodeObjs=[],nodeMap={},edgeLines=[];
+
+  KG_DATA.nodes.forEach(function(n,i){
+    var phi=Math.acos(-1+2*i/KG_DATA.nodes.length);
+    var theta=Math.sqrt(KG_DATA.nodes.length*Math.PI)*phi;
+    var R=60+Math.random()*20;
+    var geo=new THREE.SphereGeometry(2.5,16,12);
+    var mat=new THREE.MeshPhongMaterial({color:tcHex[n.track]||0x8a837a,shininess:80});
+    var mesh=new THREE.Mesh(geo,mat);
+    mesh.position.set(R*Math.sin(phi)*Math.cos(theta),R*Math.sin(phi)*Math.sin(theta),R*Math.cos(phi));
+    mesh.userData={id:n.id,label:n.label,track:n.track,vx:0,vy:0,vz:0};
+    scene.add(mesh);
+    nodeObjs.push(mesh);
+    nodeMap[n.id]=mesh;
+  });
+
+  KG_DATA.edges.forEach(function(e){
+    var s=nodeMap[e.s],t=nodeMap[e.t];
+    if(!s||!t)return;
+    var geo=new THREE.BufferGeometry().setFromPoints([s.position,t.position]);
+    var op=0.06+0.14*(e.w/maxW);
+    var mat=new THREE.LineBasicMaterial({color:0x9a7b2e,transparent:true,opacity:op});
+    var line=new THREE.Line(geo,mat);
+    line.userData={s:s,t:t,w:e.w,baseOp:op};
+    scene.add(line);
+    edgeLines.push(line);
+  });
+
+  // 3D force simulation
+  function tick3D(){
+    var damp=0.9,rep=800,k=0.006;
+    for(var i=0;i<nodeObjs.length;i++){
+      var n=nodeObjs[i],p=n.position,d=n.userData;
+      d.vx-=p.x*0.0008;d.vy-=p.y*0.0008;d.vz-=p.z*0.0008;
+      for(var j=i+1;j<nodeObjs.length;j++){
+        var m=nodeObjs[j],q=m.position,md=m.userData;
+        var dx=p.x-q.x,dy=p.y-q.y,dz=p.z-q.z;
+        var d2=dx*dx+dy*dy+dz*dz+1;
+        var f=rep/d2,dist=Math.sqrt(d2);
+        var fx=dx/dist*f,fy=dy/dist*f,fz=dz/dist*f;
+        d.vx+=fx;d.vy+=fy;d.vz+=fz;
+        md.vx-=fx;md.vy-=fy;md.vz-=fz;
+      }
+    }
+    for(var i=0;i<edgeLines.length;i++){
+      var e=edgeLines[i],sp=e.userData.s.position,tp=e.userData.t.position;
+      var dx=tp.x-sp.x,dy=tp.y-sp.y,dz=tp.z-sp.z;
+      var dist=Math.sqrt(dx*dx+dy*dy+dz*dz)||1;
+      var ideal=25+15*(1-e.userData.w/maxW);
+      var f=(dist-ideal)*k;
+      var fx=dx/dist*f,fy=dy/dist*f,fz=dz/dist*f;
+      e.userData.s.userData.vx+=fx;e.userData.s.userData.vy+=fy;e.userData.s.userData.vz+=fz;
+      e.userData.t.userData.vx-=fx;e.userData.t.userData.vy-=fy;e.userData.t.userData.vz-=fz;
+    }
+    for(var i=0;i<nodeObjs.length;i++){
+      var n=nodeObjs[i],d=n.userData;
+      d.vx*=damp;d.vy*=damp;d.vz*=damp;
+      n.position.x+=d.vx;n.position.y+=d.vy;n.position.z+=d.vz;
+    }
+    edgeLines.forEach(function(line){
+      var pts=[line.userData.s.position,line.userData.t.position];
+      line.geometry.setFromPoints(pts);
+    });
+  }
+
+  // Manual orbit controls
+  var isDrag=false,prevX=0,prevY=0;
+  var spherical={theta:0,phi:Math.PI/2,r:220};
+  function updateCam(){
+    camera.position.set(
+      spherical.r*Math.sin(spherical.phi)*Math.cos(spherical.theta),
+      spherical.r*Math.cos(spherical.phi),
+      spherical.r*Math.sin(spherical.phi)*Math.sin(spherical.theta));
+    camera.lookAt(0,0,0);
+  }
+  mount.addEventListener('pointerdown',function(e){isDrag=true;prevX=e.clientX;prevY=e.clientY;mount.setPointerCapture(e.pointerId);});
+  mount.addEventListener('pointermove',function(e){
+    if(!isDrag)return;
+    spherical.theta-=(e.clientX-prevX)*0.008;
+    spherical.phi=Math.max(0.1,Math.min(Math.PI-0.1,spherical.phi-(e.clientY-prevY)*0.008));
+    prevX=e.clientX;prevY=e.clientY;
+    updateCam();
+  });
+  mount.addEventListener('pointerup',function(){isDrag=false;});
+  mount.addEventListener('wheel',function(e){
+    e.preventDefault();
+    spherical.r=Math.max(80,Math.min(500,spherical.r+e.deltaY*0.3));
+    updateCam();
+  },{passive:false});
+
+  // Raycaster for hover
+  var raycaster=new THREE.Raycaster();
+  raycaster.params.Points={threshold:5};
+  var mouse=new THREE.Vector2();
+  var hovMesh=null;
+  mount.addEventListener('mousemove',function(e){
+    if(isDrag)return;
+    var r=mount.getBoundingClientRect();
+    mouse.x=((e.clientX-r.left)/r.width)*2-1;
+    mouse.y=-((e.clientY-r.top)/r.height)*2+1;
+    raycaster.setFromCamera(mouse,camera);
+    var hits=raycaster.intersectObjects(nodeObjs);
+    var newHov=hits.length?hits[0].object:null;
+    if(newHov!==hovMesh){
+      if(hovMesh)hovMesh.scale.set(1,1,1);
+      hovMesh=newHov;
+      if(hovMesh){
+        hovMesh.scale.set(1.8,1.8,1.8);
+        edgeLines.forEach(function(l){
+          var conn=l.userData.s===hovMesh||l.userData.t===hovMesh;
+          l.material.opacity=conn?0.6:0.03;
+        });
+        nodeObjs.forEach(function(n){
+          if(n===hovMesh){n.material.emissive.setHex(0x333300);return;}
+          var conn=false;
+          edgeLines.forEach(function(l){if((l.userData.s===hovMesh&&l.userData.t===n)||(l.userData.t===hovMesh&&l.userData.s===n))conn=true;});
+          n.material.opacity=conn?1:0.15;n.material.transparent=!conn&&n!==hovMesh;
+        });
+        if(tip){
+          var conns=edgeLines.filter(function(l){return l.userData.s===hovMesh||l.userData.t===hovMesh;}).length;
+          tip.innerHTML='<b>'+hovMesh.userData.label+'</b><br><span style="color:var(--dim);font-size:.72rem">'+conns+' connections · '+hovMesh.userData.track+'</span>';
+          tip.classList.add('show');
+          tip.style.left=(e.clientX-mount.getBoundingClientRect().left+14)+'px';
+          tip.style.top=(e.clientY-mount.getBoundingClientRect().top-36)+'px';
+        }
+      }else{
+        edgeLines.forEach(function(l){l.material.opacity=l.userData.baseOp;});
+        nodeObjs.forEach(function(n){n.material.opacity=1;n.material.transparent=false;n.material.emissive.setHex(0);});
+        if(tip)tip.classList.remove('show');
+      }
+    }
+  });
+  mount.addEventListener('click',function(){
+    if(hovMesh)window.location.href=hovMesh.userData.id+'.html';
+  });
+
+  var simSteps=0,maxSim=200;
+  function animate(){
+    requestAnimationFrame(animate);
+    if(simSteps<maxSim){tick3D();simSteps++;}
+    renderer.render(scene,camera);
+  }
+  var kgObs=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){animate();kgObs.unobserve(e.target);}});
+  },{threshold:0.05});
+  kgObs.observe(mount);
+})();
 """
 
 def main():
@@ -631,6 +1492,10 @@ def main():
     open(os.path.join(DIST, "style.css"), "w").write(CSS)
     open(os.path.join(DIST, "lesson.js"), "w").write(LESSON_JS)
     open(os.path.join(DIST, "index.js"), "w").write(INDEX_JS)
+    open(os.path.join(DIST, "explore.js"), "w").write(EXPLORE_JS)
+    chart_src = os.path.join(ROOT, "site", "chart.min.js")
+    if os.path.exists(chart_src):
+        shutil.copy2(chart_src, os.path.join(DIST, "chart.min.js"))
 
     modules = {"core": [], "exec": [], "canon": [], "gaps": []}
     order = []  # (track, mid, filename, title)
@@ -659,7 +1524,15 @@ def main():
         "threads": sum(len(r) for _,_,_,r,_ in flat),
         "filings": sum(len(e) for _,_,_,_,e in flat),
     }
-    open(os.path.join(DIST, "index.html"), "w", encoding="utf-8").write(render_index(modules, stats))
+    sources = {}
+    for track, mid, v, _, _ in flat:
+        ch = Counter(x.get("channel", "") for x in v if x.get("channel"))
+        sources[mid] = [name for name, _ in ch.most_common(3)]
+
+    wc_data = extract_wordcloud(flat)
+    graph_data = extract_graph(flat, modules)
+    print(f"  word cloud: {len(wc_data)} terms · knowledge graph: {len(graph_data['nodes'])} nodes, {len(graph_data['edges'])} edges")
+    open(os.path.join(DIST, "index.html"), "w", encoding="utf-8").write(render_index(modules, stats, wc_data, graph_data, sources))
     # regenerate the diagnostic + calibrated-benchmark exams
     import subprocess
     subprocess.run(["python3", os.path.join(INGEST, "build_exam.py")], check=False)

@@ -3,17 +3,21 @@
 <meta name="theme-color" content="#faf7f2">
 <title>C14 · Behavioral Design & Decision Science</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Literata:ital,opsz,wght@0,7..72,300..600;1,7..72,300..500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1788999576"></head><body>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1789021734"></head><body>
 <div id="progress"></div>
 <header class="mod-header core">
-<a href="index.html" class="home"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> Index</a>
-<div class="eyebrow"><span class="num">C14</span> The Canon · Reading Layer</div>
+<nav class="breadcrumb">
+<a href="index.html">Index</a><span class="sep">›</span>
+<a href="index.html#t-canon">The Canon · Reading Layer</a><span class="sep">›</span>
+<span class="current">C14 Behavioral Design &amp; Decision Science</span>
+</nav>
 <h1>Behavioral Design &amp; Decision Science</h1>
+<p class="mod-desc">Kahneman, Thaler, and the psychology of decisions — biases, heuristics, and nudge architecture.</p>
 <div class="hairline"></div></header>
 <nav class="toc"><a href="#lesson">Lesson</a> <a href="#videos">Lectures · learn</a></nav>
 <main><section id="lesson" class="lesson"><!-- LESSON: Behavioral Design & Decision Science — net-new canon lesson (no existing course home). Grounded in the canon/behavioral-decision corpus: Dan Ariely (TED "Are we in control of our decisions?" 9X68dm92HVI; FightMediocrity summary -8qIpRRi4cU; TEDxMidwest wfcro5iM5vw), Richard Thaler (Sydney Executive Plus AZExnUKfik0; Pete Judo fA5eGIMZTRQ; Fatter Wallets zXUk2PUhiyw), Gary Klein (Lootok _BIMU8zPcrM; TEDxDayton n5OO9L67jL4; DecisionSkills 6-O5ITf0PzQ). Teaches the canon cluster: Thaler & Sunstein (Nudge), Ariely (Predictably Irrational), Cialdini (Pre-Suasion), Kahneman/Sibony/Sunstein (Noise), Klein (Sources of Power), March (A Primer on Decision Making). -->
-<p class="lead">The earlier courses assumed a tidy decider: someone who knows what they want, weighs the options, and picks the best one. <b>Behavioral decision science is what happens when you replace that fiction with a real human being.</b> Real people don't know their own preferences, get pushed around by the first number they see, stick with whatever's pre-checked, and reach different conclusions on Tuesday than they did on Monday — and they do all of this <em>predictably</em>. The single habit of this whole field is to stop asking "what's the rational choice?" and start asking "how is this choice being <b>shaped</b> — by the default, the anchor, the frame — and who's doing the shaping?" This lesson builds that habit from a visual illusion, a bread maker that wouldn't sell, a firefighter who never compared options, and an organ-donation form. Tap the cards, the diagrams, and the quizzes as you go.</p>
+<p class="lead">The earlier courses assumed a tidy decider: someone who knows what they want, weighs the options, and picks the best one. <b>Behavioral decision science is what happens when you replace that fiction with a real human being.</b> Real people don't know their own preferences, get pushed around by the first number they see, stick with whatever's pre-checked, and reach different conclusions on Tuesday than they did on Monday — and they do all of this <em>predictably</em>. The single habit of this whole field is to stop asking "what's the rational choice?" and start asking "how is this choice being <b>shaped</b> — by the default, the anchor, the frame — and who's doing the shaping?" This lesson builds that habit from a visual illusion, a bread maker that wouldn't sell, a firefighter who never compared options, and an organ-donation form. Hover the cards, scan the diagrams, and take the quizzes as you go.</p>
 
 <h2>1 · The founding move: irrationality is systematic, not random</h2>
 <p>Dan Ariely opens <em>Predictably Irrational</em> with the most important reframe in the field. We aren't irrational the way static is random noise — we're irrational the way an <b>optical illusion</b> is: everyone gets fooled the same way, in the same direction, every time. That's what makes the mistakes useful — and exploitable.</p>
@@ -26,7 +30,7 @@
 <p>The deepest of Ariely's effects is that <b>we have almost no absolute sense of value</b> — only relative comparisons. Drop a deliberately inferior option next to your target and the target suddenly looks like a steal. A bread-maker company learned this by accident:</p>
 <blockquote class="srcq"><p>"They came out with another more expensive bread maker so that they could start selling the less expensive one… This is the power of relativity. We have no idea about how much things should cost. Should a bread maker cost $49, $99, $199? Who knows?"</p>
 <cite><a href="https://www.youtube.com/watch?v=-8qIpRRi4cU" target="_blank" rel="noopener">— FightMediocrity, "Predictably Irrational by Dan Ariely"</a> · in your corpus</cite></blockquote>
-<p>Ariely's classic lab version is the <em>Economist</em> subscription page: a useless middle option (print-only at the same price as print + web) exists only to make the target look like a gift. <b>Tap each bar</b> to see how the decoy works.</p>
+<p>Ariely's classic lab version is the <em>Economist</em> subscription page: a useless middle option (print-only at the same price as print + web) exists only to make the target look like a gift. <b>Click each bar</b> to see how the decoy works.</p>
 <figure class="viz">
 <svg viewBox="0 0 720 220" role="img" aria-label="The Economist subscription decoy: a print-only option priced to make the print-plus-web bundle look like a fantastic deal">
   <text x="0" y="16" class="vlabel">Web only — $59</text>
@@ -53,7 +57,7 @@
 <blockquote class="srcq"><p>"Countries who have opt-out organ donation — in other words, by default you're donating your organs — have significantly higher rates of organ donation compared to countries where this is an opt-in decision."</p>
 <cite><a href="https://www.youtube.com/watch?v=fA5eGIMZTRQ" target="_blank" rel="noopener">— Pete Judo, "Nudge explained in less than 10 minutes"</a> · in your corpus</cite></blockquote>
 <div class="reveal">
-  <button class="reveal-q">🤔 If both groups are the same people, why does the default move them so much?</button>
+  <button class="reveal-q">If both groups are the same people, why does the default move them so much?</button>
   <div class="reveal-a"><p>Because opting out costs something — attention, a moment of decision, a tiny act of will — and most people never spend it. The default isn't a <em>recommendation</em> people evaluate; it's the outcome that happens when they do nothing, and doing nothing is the most common human behavior. That's why Thaler's operating rule is blunt: <b>want a behavior → make it the default; want to prevent one → add friction.</b> A reminder or an exhortation barely moves the needle compared to changing what happens automatically.</p></div>
 </div>
 
@@ -70,17 +74,17 @@
 <p>Thaler's discipline — the line that keeps a nudge from becoming a trick — became his mantra running the UK's first nudge unit: <em>"if you want people to do something, make it easy."</em> Lower the friction on the good path; don't preach.</p>
 
 <h2>5 · The vocabulary — flip to learn</h2>
-<p>The exact terms the canon uses. <b>Tap a card to flip it.</b></p>
+<p>The exact terms the canon uses. <b>Hover a card to reveal it.</b></p>
 <div class="fc-grid">
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Predictable Irrationality</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Our errors aren't random — they're systematic, in the same direction, like an optical illusion. That's what makes them exploitable (Ariely).</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Relativity / Decoy</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">We judge value only by comparison. Add a strictly-worse option and the target looks like a deal (the Economist print-only decoy).</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Anchoring</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">We over-rely on the first number we hear. Ask for $400 vs. $5 and the average gift moves — the reference point pre-loads the answer.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Default</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The pre-selected option people get by doing nothing. The single most powerful nudge — opt-out beats opt-in, same people.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Choice Architecture</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The design of the environment in which we choose. Never neutral — "to a first approximation everything matters" (Thaler).</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Sludge</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A nudge's evil twin: friction added to make the choice that serves <em>you</em> harder (one-click signup, maze-like cancellation).</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Social vs. Market Norms</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Favors and goodwill run on social norms; money runs on market norms. Mix them and "you can't go back" (Ariely).</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Noise</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Bias's overlooked twin: random scatter in judgment. Same facts, different deciders (or days) → different verdicts (Kahneman/Sibony/Sunstein).</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Recognition-Primed Decision</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Klein's RPD: experts don't compare options — they pattern-match to one course of action and mentally simulate it.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Predictable Irrationality</b><span class="hint">hover to reveal</span></span><span class="fc-b">Our errors aren't random — they're systematic, in the same direction, like an optical illusion. That's what makes them exploitable (Ariely).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Relativity / Decoy</b><span class="hint">hover to reveal</span></span><span class="fc-b">We judge value only by comparison. Add a strictly-worse option and the target looks like a deal (the Economist print-only decoy).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Anchoring</b><span class="hint">hover to reveal</span></span><span class="fc-b">We over-rely on the first number we hear. Ask for $400 vs. $5 and the average gift moves — the reference point pre-loads the answer.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Default</b><span class="hint">hover to reveal</span></span><span class="fc-b">The pre-selected option people get by doing nothing. The single most powerful nudge — opt-out beats opt-in, same people.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Choice Architecture</b><span class="hint">hover to reveal</span></span><span class="fc-b">The design of the environment in which we choose. Never neutral — "to a first approximation everything matters" (Thaler).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Sludge</b><span class="hint">hover to reveal</span></span><span class="fc-b">A nudge's evil twin: friction added to make the choice that serves <em>you</em> harder (one-click signup, maze-like cancellation).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Social vs. Market Norms</b><span class="hint">hover to reveal</span></span><span class="fc-b">Favors and goodwill run on social norms; money runs on market norms. Mix them and "you can't go back" (Ariely).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Noise</b><span class="hint">hover to reveal</span></span><span class="fc-b">Bias's overlooked twin: random scatter in judgment. Same facts, different deciders (or days) → different verdicts (Kahneman/Sibony/Sunstein).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Recognition-Primed Decision</b><span class="hint">hover to reveal</span></span><span class="fc-b">Klein's RPD: experts don't compare options — they pattern-match to one course of action and mentally simulate it.</span></span></button>
 </div>
 
 <h2>6 · The dark twin, and the line you don't cross</h2>
@@ -105,7 +109,7 @@
 <cite><a href="https://www.youtube.com/watch?v=n5OO9L67jL4" target="_blank" rel="noopener">— Gary Klein, "Lightbulb Moment | TEDxDayton"</a> · in your corpus</cite></blockquote>
 
 <h2>8 · The synthesis: design the environment, but know your domain</h2>
-<p>Put it together and you get a decision tree for <em>how</em> to decide. <b>Tap each stage</b> in the funnel.</p>
+<p>Put it together and you get a decision tree for <em>how</em> to decide. <b>Click each stage</b> in the funnel.</p>
 <figure class="viz">
 <svg viewBox="0 0 720 230" role="img" aria-label="A funnel for designing decisions: spot the shaping forces, design the default, add hygiene for repeated judgments, and trust expert intuition only in feedback-rich domains">
   <text x="0" y="16" class="vlabel">1 · See the shaping forces (anchor, decoy, default, frame)</text>
@@ -152,22 +156,22 @@
 </div>
 
 <div class="pitfall">
-<h3>⚠️ These effects are real, but smaller than the demos suggest</h3>
+<h3>These effects are real, but smaller than the demos suggest</h3>
 <p>The biggest error is building a business on one cute lab effect. Many behavioral findings have <b>shaky replication</b> — the <em>direction</em> usually holds, but the <em>size</em> shrinks outside the lab, and over-used decoys eventually read as manipulation once customers wise up. The durable leverage isn't any single bias; it's the <b>system of defaults and friction</b> (choice architecture), which is why Thaler reframes the whole game away from "exploit a bias" toward "design the environment." And remember Klein's check on the noise-reduction crowd: aggressive algorithmization can flatten exactly the case-sensitive expertise that makes good fast decisions — telling real expert intuition apart from mere noise is the field's hardest unsolved problem.</p>
 </div>
 
 <div class="pitfall subtle">
-<h3>🔎 One subtlety → your bridge to the rest of the shelf</h3>
+<h3>One subtlety → your bridge to the rest of the shelf</h3>
 <p>Notice the throughline: in every example, the decider's <em>own preferences weren't fixed</em> — they were discovered, on the spot, from whatever the environment made focal. That single fact ("preferences are constructed, not retrieved," as March and Ariely both insist) is the hidden engine under marketing (you're shaping the frame, not just stating facts), negotiation (the first anchor pre-loads the deal), and leadership (the loudest voice in the room sets the noise). The deepest skill here isn't memorizing biases — it's noticing that <b>you are always a choice architect</b>, whether you meant to be or not, and deciding to design on purpose, on the right side of the sludge line.</p>
 </div>
 
 <div class="apply-box">
-<h3>🎯 Your move</h3>
+<h3>Your move</h3>
 <p>Pick one real choice you design for others (a pricing page, an onboarding flow, a form, a team decision, even a family routine). On paper: (1) <b>name the forces</b> already shaping it — where's the anchor, the decoy, the default, the framing? (2) Change <b>one default</b> or add/remove <b>one point of friction</b> to make the good path easier — not a reminder, an actual structural change; (3) run the <b>sludge test</b>: is the exit as easy as the entrance? If you also make a <em>repeated</em> judgment (hiring, grading, pricing), add one hygiene step — have people score independently before they confer — and measure the spread. You'll almost always find a move you couldn't see while assuming everyone was rational.</p>
 </div>
 
 <div class="src-list">
-<h4>📚 Taught from these sources in your corpus</h4>
+<h4>Taught from these sources in your corpus</h4>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=9X68dm92HVI" target="_blank" rel="noopener">TED — Are we in control of our decisions? | Dan Ariely (illusions, relativity/decoy, defaults)</a></li>
 <li><a href="https://www.youtube.com/watch?v=-8qIpRRi4cU" target="_blank" rel="noopener">FightMediocrity — Predictably Irrational by Dan Ariely (bread maker, social vs. market norms)</a></li>
@@ -213,7 +217,10 @@
 <div class="card-head"><span class="ttl">The RPD Model: An Intro to Recognition Primed Decision Making</span> </div>
 <div class="meta">DecisionSkills · 3:20 · 20,487 views · <a class="watch" href="https://www.youtube.com/watch?v=6-O5ITf0PzQ" target="_blank" rel="noopener">Watch ↗</a></div><div class="no-tr">No transcript available — watch on YouTube.</div></article></section></main>
 <div class="done-wrap"><button id="mark-done" data-mod="canon-behavioral-decision.html"><span class="cp-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg></span> <span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button></div>
-<div class="pn-wrap"><a class="pn" href="canon-financial-literacy.html"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> C13 Financial Literacy for Operators</a><a class="pn next" href="canon-game-theory.html">C15 Game Theory &amp; Strategic Interaction <svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></a></div>
+<div class="toast" id="toast"></div>
+<div class="pn-bar"><div class="pn-wrap"><a class="pn" href="canon-financial-literacy.html"><span class="pn-dir"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> Previous</span><span class="pn-title">C13 Financial Literacy for Operators</span><span class="pn-key">←</span></a><a class="pn next" href="canon-game-theory.html"><span class="pn-dir">Next <svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span><span class="pn-title">C15 Game Theory &amp; Strategic Interaction</span><span class="pn-key">→</span></a></div></div>
 <a href="#" class="top"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4-4 4 4"/></svg></a>
-<script src="lesson.js?v=1788999576"></script>
+<script src="chart.min.js"></script>
+<script src="lesson.js?v=1789021734"></script>
+<script>document.body.classList.add('mod-enter');</script>
 </body></html>

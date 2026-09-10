@@ -3,42 +3,46 @@
 <meta name="theme-color" content="#faf7f2">
 <title>07 · Data, Analytics & Decisions</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Literata:ital,opsz,wght@0,7..72,300..600;1,7..72,300..500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1788999576"></head><body>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1789021734"></head><body>
 <div id="progress"></div>
 <header class="mod-header core">
-<a href="index.html" class="home"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> Index</a>
-<div class="eyebrow"><span class="num">07</span> Core Curriculum</div>
+<nav class="breadcrumb">
+<a href="index.html">Index</a><span class="sep">›</span>
+<a href="index.html#t-core">Core Curriculum</a><span class="sep">›</span>
+<span class="current">07 Data, Analytics &amp; Decisions</span>
+</nav>
 <h1>Data, Analytics &amp; Decisions</h1>
+<p class="mod-desc">Statistical thinking, regression, Bayesian reasoning, decision analysis, and data-driven management.</p>
 <div class="hairline"></div></header>
 <nav class="toc"><a href="#lesson">Lesson</a> <a href="#videos">Lectures · learn</a></nav>
 <main><section id="lesson" class="lesson"><!-- LESSON: Data, Analytics & Decisions — interactive, visual-first, grounded in the 07-data-analytics corpus. No financial data; teaches via frameworks and real examples. -->
-<p class="lead">Data doesn't make decisions — <b>people do</b>. This module is about the two skills that separate a data-literate manager from someone who just stares at dashboards: <b>running experiments to learn what actually works</b>, and <b>weighing evidence honestly before you act</b>. This is hands-on — <b>tap the cards, the diagrams, and the quizzes</b> as you go.</p>
+<p class="lead">Data doesn't make decisions — <b>people do</b>. This module is about the two skills that separate a data-literate manager from someone who just stares at dashboards: <b>running experiments to learn what actually works</b>, and <b>weighing evidence honestly before you act</b>. This is hands-on — <b>hover the cards, scan the diagrams, and take the quizzes</b> as you go.</p>
 
 <h2>1 · Two ways to turn data into decisions</h2>
-<p>Almost every analytics question is really a <em>decision</em> question in disguise. The corpus teaches two complementary engines for it. Tap each 👇</p>
+<p>Almost every analytics question is really a <em>decision</em> question in disguise. The corpus teaches two complementary engines for it. Click each</p>
 <div class="reveal">
-  <button class="reveal-q">🧪 Run an experiment (A/B testing)</button>
+  <button class="reveal-q">Run an experiment (A/B testing)</button>
   <div class="reveal-a"><p><b>"Which option actually causes the better outcome?"</b> You <em>randomly</em> split users into groups, show each a different version, and measure the result. Randomization is the only reliable way to prove <em>cause and effect</em> rather than coincidence.</p></div>
 </div>
 <div class="reveal">
-  <button class="reveal-q">🎲 Reason under uncertainty (base rates & expected value)</button>
+  <button class="reveal-q">Reason under uncertainty (base rates & expected value)</button>
   <div class="reveal-a"><p><b>"Given what usually happens, what should I expect?"</b> Before trusting your own analysis, ask what happened to <em>everyone else</em> in this same situation. Then think in <em>ranges and probabilities</em>, not single guesses.</p></div>
 </div>
 <blockquote class="srcq"><p>"a b testing is the practice of using randomized experiments for making business decisions"</p>
 <cite><a href="https://www.youtube.com/watch?v=Z85waabCGJQ" target="_blank" rel="noopener">— Wharton Human-AI Research, "The Art & Science of A/B Testing for Business Decisions"</a> · in your corpus</cite></blockquote>
 
 <h2>2 · The vocabulary — flip to learn</h2>
-<p>These are the exact terms practitioners use. <b>Tap a card to flip it.</b></p>
+<p>These are the exact terms practitioners use. <b>Hover a card to reveal it.</b></p>
 <div class="fc-grid">
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>A/B Test</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A controlled experiment: randomly split users between version A and version B, then compare a chosen metric. More than two options = "A/B/n testing."</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Randomization</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Assigning users to groups by chance. It makes all the hidden factors (weather, payday, traffic source) average out equally — so the only systematic difference left is the thing you're testing.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Causal Inference</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Measuring true cause and effect, not just correlation. "Conversions rose <em>because</em> we changed the page" — not merely "rose <em>after</em>."</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Effect Size / Lift</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">How much better one version performed vs. the baseline. The number that actually drives the decision — big effects are easy to spot, small ones rarely matter.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>p-value</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The chance you'd see a result this extreme <em>if there were truly no difference</em>. Lower = stronger evidence. It is NOT "the probability A beats B."</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Base Rate</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">What usually happens to the whole reference class. The "outside view" — what happened to other people/companies who were in your exact position before.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Expected Value</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Each possible outcome weighted by its probability. Forces you to plan for a <em>range</em> of scenarios instead of betting on one guess.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Inside vs. Outside View</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Inside = your own detailed analysis of this case. Outside = the base rate from similar past cases. Good decisions use both; most people skip the outside view.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>A/B Test</b><span class="hint">hover to reveal</span></span><span class="fc-b">A controlled experiment: randomly split users between version A and version B, then compare a chosen metric. More than two options = "A/B/n testing."</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Randomization</b><span class="hint">hover to reveal</span></span><span class="fc-b">Assigning users to groups by chance. It makes all the hidden factors (weather, payday, traffic source) average out equally — so the only systematic difference left is the thing you're testing.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Causal Inference</b><span class="hint">hover to reveal</span></span><span class="fc-b">Measuring true cause and effect, not just correlation. "Conversions rose <em>because</em> we changed the page" — not merely "rose <em>after</em>."</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Effect Size / Lift</b><span class="hint">hover to reveal</span></span><span class="fc-b">How much better one version performed vs. the baseline. The number that actually drives the decision — big effects are easy to spot, small ones rarely matter.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>p-value</b><span class="hint">hover to reveal</span></span><span class="fc-b">The chance you'd see a result this extreme <em>if there were truly no difference</em>. Lower = stronger evidence. It is NOT "the probability A beats B."</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Base Rate</b><span class="hint">hover to reveal</span></span><span class="fc-b">What usually happens to the whole reference class. The "outside view" — what happened to other people/companies who were in your exact position before.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Expected Value</b><span class="hint">hover to reveal</span></span><span class="fc-b">Each possible outcome weighted by its probability. Forces you to plan for a <em>range</em> of scenarios instead of betting on one guess.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Inside vs. Outside View</b><span class="hint">hover to reveal</span></span><span class="fc-b">Inside = your own detailed analysis of this case. Outside = the base rate from similar past cases. Good decisions use both; most people skip the outside view.</span></span></button>
 </div>
 
 <h2>3 · Why randomization is the magic ingredient</h2>
@@ -70,7 +74,7 @@
 <b>5. Evaluate</b> — judge against the criteria you set, then ship the winner.</p>
 </div>
 <div class="pitfall">
-<h3>⚠️ The p-value trap</h3>
+<h3>The p-value trap</h3>
 <p>Most tools report "95% confidence" when the p-value hits 0.05 — and that phrasing is misleading. A p-value answers a backwards question: <em>"if there were no real difference, how often would I see a result this extreme?"</em> It is <b>not</b> the probability that A beats B. In the lecturer's large e-commerce dataset, a p-value of 0.05 corresponded to only a <b>~42% chance</b> of a true difference. If you genuinely need high confidence, demand p-values closer to <b>0.001</b> — not 0.05.</p>
 </div>
 
@@ -103,7 +107,7 @@
 <p>Experiments tell you what works when you can run a test. But many decisions can't be A/B tested — you only get one shot. For those, the corpus offers a second tool from investor <b>Michael Mauboussin</b>: anchor on the <b>base rate</b>.</p>
 <p>Your instinct is to gather facts about <em>this</em> case and project forward — the <b>inside view</b>. The base rate forces the <b>outside view</b>: treat your situation as one instance of a larger reference class and ask what happened to everyone else.</p>
 <div class="reveal">
-  <button class="reveal-q">📊 Worked example: the "20× sales" company</button>
+  <button class="reveal-q">Worked example: the "20× sales" company</button>
   <div class="reveal-a"><p>Your inside view says a hot startup trading at 20× sales has amazing growth and is worth buying. The outside view asks: <em>"Historically, what returns did investors get on ALL companies trading at 20× sales or more?"</em> The answer is sobering — that reference class has performed poorly. You might still be right, but the base rate tells you the odds you're fighting.</p></div>
 </div>
 <blockquote class="srcq"><p>"I'm going to basically ask what happened when other people or organizations were in this position before"</p>
@@ -134,17 +138,17 @@
 </div>
 
 <div class="pitfall subtle">
-<h3>🔎 One subtlety → your bridge to the rest of the program</h3>
+<h3>One subtlety → your bridge to the rest of the program</h3>
 <p>Notice both engines fight the same enemy: <b>overconfidence in a single story</b>. A/B testing replaces "I know which design is best" with a coin-flip and a measurement; base rates replace "this time is different" with "what usually happens?" That humility — <em>thinking in probabilities and ranges</em> — is exactly the discipline you'll carry into <b>Marketing</b> (testing campaigns), <b>Strategy</b> (scenario planning), and any decision where the data is noisy.</p>
 </div>
 
 <div class="apply-box">
-<h3>🎯 Your move</h3>
+<h3>Your move</h3>
 <p>Take one decision you're facing this week (a pricing tweak, a hiring choice, a feature). Write two columns. <b>Left — Inside view:</b> your specific analysis. <b>Right — Outside view:</b> the base rate ("what usually happens to people in this exact spot?"). Then ask: can I turn this into a small, randomized test instead of one big bet? If yes, design the 5-step experiment. If no, write a bear / base / bull scenario with rough probabilities.</p>
 </div>
 
 <div class="src-list">
-<h4>📚 Taught from these sources in your corpus</h4>
+<h4>Taught from these sources in your corpus</h4>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=Z85waabCGJQ" target="_blank" rel="noopener">Wharton Human-AI Research — The Art & Science of A/B Testing for Business Decisions</a></li>
 <li><a href="https://www.youtube.com/watch?v=Yb4P-dFCz84" target="_blank" rel="noopener">Excess Returns — Practical Lessons from Michael Mauboussin (Multiples, Base Rates and Expectations Investing)</a></li>
@@ -173,7 +177,10 @@
 <div class="card-head"><span class="ttl">Payoff Table: Expected Value and Perfect Information for Costs</span> </div>
 <div class="meta">Joshua Emmanuel · 2:58 · 246,802 views · <a class="watch" href="https://www.youtube.com/watch?v=TwG_xRj9S_0" target="_blank" rel="noopener">Watch ↗</a></div><details class="tr"><summary>Read transcript · ~422 words</summary><div class="tr-body"><p>Welcome! In this video, I will briefly show how to make decision based on Expected Value using this Payoff Table consisting of costs. I will also show how to calculate the Expected Value of Perfect Information when payoffs are costs. To calculate expected values, we need the probabilities of the states of nature. Suppose the probability for s1 is 0.3, 0.5 for s2, and since the probabilities must add up to 1, we know that the probability for s3 is 0.2. The expected value for the decision alternative d1 is calculated as 0.3*12 + 0.5*9 + 0.2*13 and that gives 10.7. For d2, the expected value is 11.6.</p><p>And for d3, it is 12.5. Since payoffs are costs, we make a decision by choosing the alternative with the lowest expected value. And that in this case is 10.7 So the decision is d1. Now, the expected value of perfect information is calculated as the absolute value of the difference between the expected value with perfect information and the expected value without perfect information. That is, if we have perfect information about the states of nature, how much is that information really worth, on average. The best expected value obtained earlier, that is, 10.7 is the expected value without perfect information.</p><p>The expected value with perfect information, EVwPI, is calculated based on the idea that we know the state of nature that will occur with certainty before making the decision. So if we know s1 is going to occur, we will choose d3 because it has the lowest cost of 5. If we’re certain s2 will occur, we choose d1 since it has the lowest cost of 9. And if we’re sure it is s3, we choose d2 at the lowest cost of 8. The expected value with perfect information is thus calculated as .3*5 + .5*9 + .2*8 And that gives 7.6. So EVPI is calculated as the absolute value of 7.6 minus 10.7. Which gives the absolute value of -3.1 and that gives 3.1 Note that, in profit problems, EVwPI is generally higher than EVwoPI so the absolute value may not be required.</p><p>But it is important in cost problems because EVwPI is usually less or equal to EVwoPI in cost problems. And that’s it. Thanks for watching.</p></div></details></article></section></main>
 <div class="done-wrap"><button id="mark-done" data-mod="core-07-data-analytics.html"><span class="cp-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg></span> <span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button></div>
-<div class="pn-wrap"><a class="pn" href="core-06-operations.html"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> 06 Operations &amp; Supply Chain</a><a class="pn next" href="core-08-negotiation.html">08 Negotiation <svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></a></div>
+<div class="toast" id="toast"></div>
+<div class="pn-bar"><div class="pn-wrap"><a class="pn" href="core-06-operations.html"><span class="pn-dir"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> Previous</span><span class="pn-title">06 Operations &amp; Supply Chain</span><span class="pn-key">←</span></a><a class="pn next" href="core-08-negotiation.html"><span class="pn-dir">Next <svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span><span class="pn-title">08 Negotiation</span><span class="pn-key">→</span></a></div></div>
 <a href="#" class="top"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4-4 4 4"/></svg></a>
-<script src="lesson.js?v=1788999576"></script>
+<script src="chart.min.js"></script>
+<script src="lesson.js?v=1789021734"></script>
+<script>document.body.classList.add('mod-enter');</script>
 </body></html>

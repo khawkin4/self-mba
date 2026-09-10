@@ -1,5 +1,5 @@
 <!-- LESSON: Managerial & Cost Accounting — net-new BENCHMARK-GAP lesson (decision-support accounting a 10-K never shows). Grounded in the gaps/managerial-accounting corpus: Accounting Stuff "Financial vs Managerial" (qISkyoiGHcI); Edspira/Roberts-style CVP "calculating the Break Even Point" (Nw2IioaF6Lc) + "MA22 Breakeven & CVP" (tuKLU6aQnJg, Airbnb case); "MA15 Activity Based Costing Explained" cupcake example (uIyydrCcWiM) + "Activity Based Costing full-length example" tents/packs (QaVlWoaBytQ); "What is Standard Costing? What is Variance?" (6S4N08BmRMs) + "Standard Costs and Variance Analysis" popcorn case (yWOdzhjHNSM). Practitioner reality-check: r/Accounting community. Teaches the canon cluster: Garrison/Noreen/Brewer (Managerial Accounting), Kaplan & Cooper (ABC / Cost & Effect), Horngren (Cost Accounting), Goldratt (The Goal / throughput). -->
-<p class="lead">Every financial statement you've read so far was built for <em>outsiders</em> — investors, lenders, the IRS — and it answers exactly one question: <b>what happened last quarter?</b> <b>Managerial and cost accounting is the photo-negative of that book.</b> It's internal, forward-looking, unconstrained by GAAP, and it answers the only questions an operator actually loses sleep over: <em>How many do I need to sell to stop losing money? What does this product really cost me? Did the overspend come from paying too much, or using too much?</em> The single habit of this whole field is to stop sorting costs by what an accountant calls them and start sorting them by <b>how they behave</b> — fixed or variable, traceable or shared — because that's the only cut that lets you make a decision. This lesson builds that habit from a sub shop, an Airbnb, a cupcake bakery, and a movie theater's popcorn bucket. Tap the cards, the charts, and the quizzes as you go.</p>
+<p class="lead">Every financial statement you've read so far was built for <em>outsiders</em> — investors, lenders, the IRS — and it answers exactly one question: <b>what happened last quarter?</b> <b>Managerial and cost accounting is the photo-negative of that book.</b> It's internal, forward-looking, unconstrained by GAAP, and it answers the only questions an operator actually loses sleep over: <em>How many do I need to sell to stop losing money? What does this product really cost me? Did the overspend come from paying too much, or using too much?</em> The single habit of this whole field is to stop sorting costs by what an accountant calls them and start sorting them by <b>how they behave</b> — fixed or variable, traceable or shared — because that's the only cut that lets you make a decision. This lesson builds that habit from a sub shop, an Airbnb, a cupcake bakery, and a movie theater's popcorn bucket. Hover the cards, scan the charts, and take the quizzes as you go.</p>
 
 <h2>1 · The founding split: managerial accounting answers a different question</h2>
 <p>Financial accounting reports to the outside world under strict rules. Managerial accounting serves the people <em>inside</em> the building, and it bends to whatever helps them decide. The corpus draws the line cleanly:</p>
@@ -13,7 +13,7 @@
 <blockquote class="srcq"><p>"We're going to subtract from the price these variable costs and that spread is something that we're going to call the contribution margin… $5 minus $3 is $2. So that spread is going to be contributed toward the remaining fixed costs."</p>
 <cite><a href="https://www.youtube.com/watch?v=Nw2IioaF6Lc" target="_blank" rel="noopener">— "Cost Volume Profit Analysis (CVP): calculating the Break Even Point"</a> · in your corpus</cite></blockquote>
 <div class="equation">Contribution margin = Price − Variable cost &nbsp;·&nbsp; Break-even (units) = Fixed costs ÷ CM per unit</div>
-<p>With $20,000 of fixed costs and a $2 contribution margin per sub, the sub shop must sell <b>$20,000 ÷ $2 = 10,000 sandwiches</b> just to reach zero. Below that line it bleeds; above it, each extra sub drops $2 straight toward profit. <b>Tap each band</b> to see how revenue and total cost cross.</p>
+<p>With $20,000 of fixed costs and a $2 contribution margin per sub, the sub shop must sell <b>$20,000 ÷ $2 = 10,000 sandwiches</b> just to reach zero. Below that line it bleeds; above it, each extra sub drops $2 straight toward profit. <b>Click each band</b> to see how revenue and total cost cross.</p>
 <figure class="viz">
 <svg viewBox="0 0 720 260" role="img" aria-label="A break-even chart for the sub shop: total cost and revenue lines crossing at 10,000 units">
   <text x="360" y="16" text-anchor="middle" class="vlabel">Sub shop — break-even at 10,000 subs ($50,000 sales)</text>
@@ -38,11 +38,30 @@
 </svg>
 <figcaption>Below 10,000 subs the total-cost line sits above revenue (loss); they cross at break-even; beyond it, the $2-per-unit gap is pure profit. Numbers from the sub-shop CVP example in your corpus.</figcaption>
 </figure>
+<figure class="chart-wrap">
+<canvas data-chart='{
+  "type": "line",
+  "data": {
+    "labels": ["0", "2k", "4k", "6k", "8k", "10k", "12k", "14k", "16k"],
+    "datasets": [
+      {"label": "Revenue ($5/sub)", "data": [0, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000], "borderColor": "#84ad8a", "backgroundColor": "rgba(132,173,138,0.05)", "fill": false, "tension": 0, "pointRadius": 3},
+      {"label": "Total Cost ($20k + $3/sub)", "data": [20000, 26000, 32000, 38000, 44000, 50000, 56000, 62000, 68000], "borderColor": "#cf6a5a", "backgroundColor": "rgba(207,106,90,0.05)", "fill": false, "tension": 0, "pointRadius": 3},
+      {"label": "Fixed Cost ($20k)", "data": [20000, 20000, 20000, 20000, 20000, 20000, 20000, 20000, 20000], "borderColor": "#7a7568", "borderDash": [6,4], "fill": false, "tension": 0, "pointRadius": 0}
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {"title": {"display": true, "text": "Break-Even Analysis: Sub Shop CVP", "font": {"size": 14, "weight": "600"}}},
+    "scales": {"y": {"beginAtZero": true, "ticks": {"callback": "DOLLAR"}}, "x": {"title": {"display": true, "text": "Sandwiches sold"}}}
+  }
+}'></canvas>
+<figcaption>The lines cross at 10,000 units / $50,000. Every sub beyond that drops $2 of contribution margin straight to profit.</figcaption>
+</figure>
 <p>There's a second flavor for when you don't sell in neat units: divide fixed costs by the <b>contribution-margin ratio</b> (CM ÷ price) to get break-even in <em>sales dollars</em>. Here $2 ÷ $5 = 0.40, so $20,000 ÷ 0.40 = <b>$50,000 in sales</b> — the same break-even, expressed in revenue.</p>
 <blockquote class="srcq"><p>"CVP analysis I find to be so useful as a sniff test — is this a good idea or does this idea stink? That's what CVP analysis will help us to determine."</p>
 <cite><a href="https://www.youtube.com/watch?v=tuKLU6aQnJg" target="_blank" rel="noopener">— "MA22 — Breakeven Point and CVP Analysis Explained" (the Airbnb case)</a> · in your corpus</cite></blockquote>
 <div class="reveal">
-  <button class="reveal-q">🤔 If I want a target profit, not just break-even, how does the formula change?</button>
+  <button class="reveal-q">If I want a target profit, not just break-even, how does the formula change?</button>
   <div class="reveal-a"><p>Treat the desired profit like an extra chunk of fixed cost you must cover: <b>Units for target profit = (Fixed costs + Target profit) ÷ CM per unit.</b> In the corpus's Airbnb case, a night rents for $150 with $50 of variable cost (CM = $100) and fixed costs of $2,000/month, so break-even is 2,000 ÷ 100 = <b>20 nights</b>. If she wants $1,000 of monthly profit, she needs (2,000 + 1,000) ÷ 100 = <b>30 nights</b>. The instructor's whole point: break-even isn't the goal — "she didn't do it to break even, she wanted to make a profit." Break-even is the floor; the target-profit version is the actual plan.</p></div>
 </div>
 
@@ -53,7 +72,7 @@
 <p>One rate works until two products consume overhead <em>differently</em>. A simple, low-volume product and a fiddly, support-heavy one can use identical labor hours yet impose wildly different real costs — and a single rate quietly subsidizes the expensive one. The tell, from the corpus: "selling more products but making less money… something smells funny here." <b>Activity-based costing (ABC)</b> fixes this by replacing one rate with several — one per <b>activity</b>, each with its own <b>cost driver</b>:</p>
 <blockquote class="srcq"><p>"An activity-based costing system says one overhead rate is not enough — we need several. We have so many different kinds of overhead… maybe direct labor hours isn't a good proxy; maybe it's the number of setups."</p>
 <cite><a href="https://www.youtube.com/watch?v=uIyydrCcWiM" target="_blank" rel="noopener">— "MA15 — Activity Based Costing Explained"</a> · in your corpus</cite></blockquote>
-<p>The full-length corpus example splits a factory's $1,000,000 of overhead into <b>cost pools</b> — assembly (driven by units produced), order processing (driven by number of orders), customer support (driven by support calls) — and charges each product only for the activities it actually triggers. <b>Tap each pool</b> to see how the driver routes the money.</p>
+<p>The full-length corpus example splits a factory's $1,000,000 of overhead into <b>cost pools</b> — assembly (driven by units produced), order processing (driven by number of orders), customer support (driven by support calls) — and charges each product only for the activities it actually triggers. <b>Click each pool</b> to see how the driver routes the money.</p>
 <figure class="viz">
 <svg viewBox="0 0 720 240" role="img" aria-label="Activity-based costing: one pool of overhead split into three activity cost pools, each with its own driver">
   <text x="360" y="16" text-anchor="middle" class="vlabel">ABC: $1,000,000 overhead → 3 activity pools, each with its own driver</text>
@@ -75,7 +94,7 @@
   <line x1="160" y1="126" x2="240" y2="160" stroke="currentColor" stroke-width="1"/>
   <line x1="360" y1="126" x2="300" y2="160" stroke="currentColor" stroke-width="1"/>
   <line x1="560" y1="126" x2="480" y2="160" stroke="currentColor" stroke-width="1"/>
-  <text x="360" y="222" text-anchor="middle" class="vlabel">Each product is charged only for the activities it actually triggers · tap a box</text>
+  <text x="360" y="222" text-anchor="middle" class="vlabel">Each product is charged only for the activities it actually triggers · click a box</text>
 </svg>
 <figcaption>ABC trades simplicity for accuracy: instead of one rate, each activity gets its own driver, so a low-volume but support-heavy product stops hiding behind a high-volume one. Pools and drivers from the tents-and-packs example in your corpus.</figcaption>
 </figure>
@@ -100,17 +119,17 @@
 </div>
 
 <h2>5 · The vocabulary — flip to learn</h2>
-<p>The exact terms the corpus uses. <b>Tap a card to flip it.</b></p>
+<p>The exact terms the corpus uses. <b>Hover a card to reveal it.</b></p>
 <div class="fc-grid">
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Fixed vs. Variable Cost</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Fixed costs don't move with volume (rent, insurance, salaries); variable costs move one-for-one per unit (ingredients, shipping). The split that powers every decision.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Contribution Margin</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Price − variable cost. The slice of each sale left to cover fixed costs, then profit. Per unit, or as a ratio (CM ÷ price).</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Break-Even Point</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Fixed costs ÷ CM per unit. The volume where you stop losing money. Add target profit to the top for the real plan.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Predetermined Overhead Rate</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Estimated overhead ÷ estimated activity (e.g. $100k ÷ 10k labor hrs = $10/hr). The simple single-rate way to apply shared cost.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Cost Pool &amp; Cost Driver</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">ABC's building blocks: group overhead by activity (assembly, orders, support), then charge it out by what causes it (units, orders, calls).</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Activity-Based Costing</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">"One rate isn't enough." Replace a single overhead rate with one per activity. More accurate, more work — a managerial-only tool.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Standard Cost</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">A pre-set benchmark for what an input should cost and how much you should use. The yardstick you measure actuals against.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Variance (Price vs. Quantity)</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Standard − actual, split two ways: price (paid too much?) and quantity (used too much?). The split turns a number into a cause.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Favorable / Unfavorable</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">F = actual better than standard; U = worse. Not the same as good/bad — a favorable variance can hide cut corners.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Fixed vs. Variable Cost</b><span class="hint">hover to reveal</span></span><span class="fc-b">Fixed costs don't move with volume (rent, insurance, salaries); variable costs move one-for-one per unit (ingredients, shipping). The split that powers every decision.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Contribution Margin</b><span class="hint">hover to reveal</span></span><span class="fc-b">Price − variable cost. The slice of each sale left to cover fixed costs, then profit. Per unit, or as a ratio (CM ÷ price).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Break-Even Point</b><span class="hint">hover to reveal</span></span><span class="fc-b">Fixed costs ÷ CM per unit. The volume where you stop losing money. Add target profit to the top for the real plan.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Predetermined Overhead Rate</b><span class="hint">hover to reveal</span></span><span class="fc-b">Estimated overhead ÷ estimated activity (e.g. $100k ÷ 10k labor hrs = $10/hr). The simple single-rate way to apply shared cost.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Cost Pool &amp; Cost Driver</b><span class="hint">hover to reveal</span></span><span class="fc-b">ABC's building blocks: group overhead by activity (assembly, orders, support), then charge it out by what causes it (units, orders, calls).</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Activity-Based Costing</b><span class="hint">hover to reveal</span></span><span class="fc-b">"One rate isn't enough." Replace a single overhead rate with one per activity. More accurate, more work — a managerial-only tool.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Standard Cost</b><span class="hint">hover to reveal</span></span><span class="fc-b">A pre-set benchmark for what an input should cost and how much you should use. The yardstick you measure actuals against.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Variance (Price vs. Quantity)</b><span class="hint">hover to reveal</span></span><span class="fc-b">Standard − actual, split two ways: price (paid too much?) and quantity (used too much?). The split turns a number into a cause.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Favorable / Unfavorable</b><span class="hint">hover to reveal</span></span><span class="fc-b">F = actual better than standard; U = worse. Not the same as good/bad — a favorable variance can hide cut corners.</span></span></button>
 </div>
 
 <h2>6 · Check yourself</h2>
@@ -137,22 +156,22 @@
 </div>
 
 <div class="pitfall">
-<h3>⚠️ These numbers guide decisions — they don't tie to the income statement</h3>
+<h3>These numbers guide decisions — they don't tie to the income statement</h3>
 <p>The classic trap is treating managerial figures like GAAP truth. They aren't. Contribution margin isn't gross profit; a "standard cost" is a planning benchmark, not what you'll report; ABC allocations are <em>useful fictions</em> for decisions, not audited numbers. Two deeper cautions: <b>(1) "favorable" ≠ "good."</b> A favorable material-price variance can mean someone bought cheaper, lower-quality popcorn that then over-fills (or under-fills) buckets and wrecks the quantity variance — chase one and you create the other. <b>(2) Break-even assumes the world holds still</b> — constant price, constant variable cost, a clean fixed/variable split. The corpus is explicit that these are conservative "back-of-the-napkin" estimates, deliberately padded; treat the output as a sniff test, not a guarantee.</p>
 </div>
 
 <div class="pitfall subtle">
-<h3>🔎 One subtlety → your bridge to the rest of the MBA</h3>
+<h3>One subtlety → your bridge to the rest of the MBA</h3>
 <p>Notice the throughline: every tool here exists to answer a <em>decision</em>, and the right cost depends entirely on the question. Fixed-vs-variable powers pricing and operating leverage (your <b>finance</b> course will call the same split the driver of a firm's risk). Contribution margin is the hinge of <b>pricing strategy</b> — discount to fill empty capacity only if price still beats variable cost. ABC is really a question about <b>unit economics and which customers to fire</b>. And the deepest lesson — Goldratt's <em>The Goal</em> lurks here — is that "cost" is never one number: a sunk cost is irrelevant to tomorrow's choice, an allocated overhead can be a phantom, and the only cost that matters is the one that <em>changes because of the decision in front of you</em>. Learning to ask "which cost is relevant to <em>this</em> choice?" is the skill that outlives every formula above.</p>
 </div>
 
 <div class="apply-box">
-<h3>🎯 Your move</h3>
+<h3>Your move</h3>
 <p>Pick one real thing you sell, run, or are thinking of starting (a side project, a service, even a bake sale). On paper: (1) <b>split every cost</b> into fixed (doesn't move with volume) and variable (per unit); (2) compute your <b>contribution margin</b> (price − variable) and your <b>break-even</b> (fixed ÷ CM) — then add a target profit on top and ask whether the required volume is realistic, the "sniff test"; (3) if you sell more than one thing, ask the <b>ABC question</b>: which product or customer secretly eats your overhead (orders, support, setups) that a single average rate is hiding? Then, next month, pick one input, set a <b>standard</b> for price and quantity, and at month-end <b>split the variance</b> — was your miss about price or usage? You'll find a decision you couldn't see from the income statement alone.</p>
 </div>
 
 <div class="src-list">
-<h4>📚 Taught from these sources in your corpus</h4>
+<h4>Taught from these sources in your corpus</h4>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=qISkyoiGHcI" target="_blank" rel="noopener">Accounting Stuff — Financial vs Managerial Accounting (internal vs external; the founding split)</a></li>
 <li><a href="https://www.youtube.com/watch?v=Nw2IioaF6Lc" target="_blank" rel="noopener">Cost Volume Profit Analysis (CVP): calculating the Break Even Point (the $5 sub shop)</a></li>

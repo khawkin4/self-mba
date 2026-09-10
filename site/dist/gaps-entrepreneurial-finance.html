@@ -3,13 +3,17 @@
 <meta name="theme-color" content="#faf7f2">
 <title>G6 · Entrepreneurial Finance</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Literata:ital,opsz,wght@0,7..72,300..600;1,7..72,300..500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1788999576"></head><body>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1789021734"></head><body>
 <div id="progress"></div>
 <header class="mod-header core">
-<a href="index.html" class="home"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> Index</a>
-<div class="eyebrow"><span class="num">G6</span> Technical Foundations</div>
+<nav class="breadcrumb">
+<a href="index.html">Index</a><span class="sep">›</span>
+<a href="index.html#t-gaps">Technical Foundations</a><span class="sep">›</span>
+<span class="current">G6 Entrepreneurial Finance</span>
+</nav>
 <h1>Entrepreneurial Finance</h1>
+<p class="mod-desc">Venture financing, term sheets, cap tables, startup valuation, and investor economics.</p>
 <div class="hairline"></div></header>
 <nav class="toc"><a href="#lesson">Lesson</a> <a href="#videos">Lectures · learn</a></nav>
 <main><section id="lesson" class="lesson"><!-- LESSON: Entrepreneurial Finance — net-new BENCHMARK-GAP lesson (the financial plumbing of startups that core-10 Entrepreneurship skips). Covers pre/post-money, cap tables, SAFEs, convertible notes, term sheets, liquidation waterfalls, dilution math, venture debt, and a composite case study. Grounded in standard VC mechanics (Y Combinator SAFE docs, Harlem Capital IC insights, Carta cap-table conventions). -->
@@ -29,32 +33,32 @@
 </div>
 
 <h2>2 · The vocabulary -- flip to learn</h2>
-<p>These are the exact terms you will encounter in every term sheet, SAFE, and investor conversation. <b>Tap a card to flip it.</b></p>
+<p>These are the exact terms you will encounter in every term sheet, SAFE, and investor conversation. <b>Hover a card to reveal it.</b></p>
 <div class="fc-grid">
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Pre-money valuation</b><span class="hint">tap to flip</span></span><span class="fc-b">What the company is worth <em>before</em> the new investment lands. The negotiated number that sets the price per share.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Post-money valuation</b><span class="hint">tap to flip</span></span><span class="fc-b">Pre-money + new cash. The total implied value of the company immediately after the round closes. Determines investor ownership percentage.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Dilution</b><span class="hint">tap to flip</span></span><span class="fc-b">The reduction in an existing shareholder's ownership percentage when new shares are issued. Not the same as losing value -- your slice shrinks but the pie grows.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Cap table</b><span class="hint">tap to flip</span></span><span class="fc-b">Capitalization table: the ledger showing every shareholder, their share count, and their ownership percentage. The single source of truth for who owns what.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>SAFE</b><span class="hint">tap to flip</span></span><span class="fc-b">Simple Agreement for Future Equity. Not debt, not equity -- a contract that converts into shares at a future priced round. No interest, no maturity date, no board seat.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Convertible note</b><span class="hint">tap to flip</span></span><span class="fc-b">Short-term debt that converts into equity at the next priced round. Carries interest (typically 2-8%) and a maturity date -- unlike a SAFE.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Term sheet</b><span class="hint">tap to flip</span></span><span class="fc-b">A non-binding summary of the key economic and control terms of an investment. The document where valuation, liquidation preference, board seats, and protective provisions are negotiated.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Liquidation preference</b><span class="hint">tap to flip</span></span><span class="fc-b">The right to get paid back first in an exit (acquisition or liquidation) before common shareholders see a dollar. Standard: 1x non-participating.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Pro rata rights</b><span class="hint">tap to flip</span></span><span class="fc-b">The right (not obligation) to invest in future rounds to maintain your ownership percentage. Prevents dilution for investors who exercise it.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Anti-dilution</b><span class="hint">tap to flip</span></span><span class="fc-b">A clause that adjusts an investor's conversion price downward if the company raises a later round at a lower valuation (a down round). Protects investors; punishes founders.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Vesting</b><span class="hint">tap to flip</span></span><span class="fc-b">The schedule by which founders or employees earn their equity over time. Standard: 4-year vesting with a 1-year cliff. Prevents someone from leaving on day two with 25% of the company.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Cliff</b><span class="hint">tap to flip</span></span><span class="fc-b">The initial period (usually 12 months) during which no equity vests at all. At the cliff date, the first tranche (typically 25%) vests in bulk.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Option pool</b><span class="hint">tap to flip</span></span><span class="fc-b">A block of shares reserved for future employee grants. Investors insist it be created from the pre-money valuation, meaning founders -- not investors -- absorb the dilution.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Drag-along</b><span class="hint">tap to flip</span></span><span class="fc-b">A provision requiring minority shareholders to sell if the majority approves a deal. Prevents a small holder from blocking an acquisition.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Tag-along</b><span class="hint">tap to flip</span></span><span class="fc-b">A provision allowing minority shareholders to join a sale on the same terms if a majority holder sells. Protects small holders from being left behind.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Down round</b><span class="hint">tap to flip</span></span><span class="fc-b">A financing round at a lower valuation than the previous round. Triggers anti-dilution adjustments and signals distress.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Bridge round</b><span class="hint">tap to flip</span></span><span class="fc-b">A small interim round (often convertible notes) to keep the company alive until it can raise a proper round. Usually from existing investors.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Venture debt</b><span class="hint">tap to flip</span></span><span class="fc-b">Loans to VC-backed startups, typically from specialized lenders (SVB, WTI, Lighter Capital). Non-dilutive but requires repayment -- used to extend runway, not replace equity.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Preferred stock</b><span class="hint">tap to flip</span></span><span class="fc-b">The class of shares investors receive. Carries special rights: liquidation preference, anti-dilution, board seats, protective provisions. Converts to common at IPO.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Common stock</b><span class="hint">tap to flip</span></span><span class="fc-b">The class of shares founders and employees hold. No liquidation preference, no special protections. Gets paid last in an exit -- but benefits most in a large outcome.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Pre-money valuation</b><span class="hint">hover to reveal</span></span><span class="fc-b">What the company is worth <em>before</em> the new investment lands. The negotiated number that sets the price per share.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Post-money valuation</b><span class="hint">hover to reveal</span></span><span class="fc-b">Pre-money + new cash. The total implied value of the company immediately after the round closes. Determines investor ownership percentage.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Dilution</b><span class="hint">hover to reveal</span></span><span class="fc-b">The reduction in an existing shareholder's ownership percentage when new shares are issued. Not the same as losing value -- your slice shrinks but the pie grows.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Cap table</b><span class="hint">hover to reveal</span></span><span class="fc-b">Capitalization table: the ledger showing every shareholder, their share count, and their ownership percentage. The single source of truth for who owns what.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>SAFE</b><span class="hint">hover to reveal</span></span><span class="fc-b">Simple Agreement for Future Equity. Not debt, not equity -- a contract that converts into shares at a future priced round. No interest, no maturity date, no board seat.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Convertible note</b><span class="hint">hover to reveal</span></span><span class="fc-b">Short-term debt that converts into equity at the next priced round. Carries interest (typically 2-8%) and a maturity date -- unlike a SAFE.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Term sheet</b><span class="hint">hover to reveal</span></span><span class="fc-b">A non-binding summary of the key economic and control terms of an investment. The document where valuation, liquidation preference, board seats, and protective provisions are negotiated.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Liquidation preference</b><span class="hint">hover to reveal</span></span><span class="fc-b">The right to get paid back first in an exit (acquisition or liquidation) before common shareholders see a dollar. Standard: 1x non-participating.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Pro rata rights</b><span class="hint">hover to reveal</span></span><span class="fc-b">The right (not obligation) to invest in future rounds to maintain your ownership percentage. Prevents dilution for investors who exercise it.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Anti-dilution</b><span class="hint">hover to reveal</span></span><span class="fc-b">A clause that adjusts an investor's conversion price downward if the company raises a later round at a lower valuation (a down round). Protects investors; punishes founders.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Vesting</b><span class="hint">hover to reveal</span></span><span class="fc-b">The schedule by which founders or employees earn their equity over time. Standard: 4-year vesting with a 1-year cliff. Prevents someone from leaving on day two with 25% of the company.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Cliff</b><span class="hint">hover to reveal</span></span><span class="fc-b">The initial period (usually 12 months) during which no equity vests at all. At the cliff date, the first tranche (typically 25%) vests in bulk.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Option pool</b><span class="hint">hover to reveal</span></span><span class="fc-b">A block of shares reserved for future employee grants. Investors insist it be created from the pre-money valuation, meaning founders -- not investors -- absorb the dilution.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Drag-along</b><span class="hint">hover to reveal</span></span><span class="fc-b">A provision requiring minority shareholders to sell if the majority approves a deal. Prevents a small holder from blocking an acquisition.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Tag-along</b><span class="hint">hover to reveal</span></span><span class="fc-b">A provision allowing minority shareholders to join a sale on the same terms if a majority holder sells. Protects small holders from being left behind.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Down round</b><span class="hint">hover to reveal</span></span><span class="fc-b">A financing round at a lower valuation than the previous round. Triggers anti-dilution adjustments and signals distress.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Bridge round</b><span class="hint">hover to reveal</span></span><span class="fc-b">A small interim round (often convertible notes) to keep the company alive until it can raise a proper round. Usually from existing investors.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Venture debt</b><span class="hint">hover to reveal</span></span><span class="fc-b">Loans to VC-backed startups, typically from specialized lenders (SVB, WTI, Lighter Capital). Non-dilutive but requires repayment -- used to extend runway, not replace equity.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Preferred stock</b><span class="hint">hover to reveal</span></span><span class="fc-b">The class of shares investors receive. Carries special rights: liquidation preference, anti-dilution, board seats, protective provisions. Converts to common at IPO.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Common stock</b><span class="hint">hover to reveal</span></span><span class="fc-b">The class of shares founders and employees hold. No liquidation preference, no special protections. Gets paid last in an exit -- but benefits most in a large outcome.</span></span></button>
 </div>
 
 <h2>3 · Cap table mechanics -- founding through Series B</h2>
-<p>A cap table is not a static document. It is a living record that changes with every round, every option grant, and every conversion. Walk through three stages of a company called <b>Relay</b> and watch how the founders' stake shrinks while the pie grows. <b>Tap each bar segment.</b></p>
+<p>A cap table is not a static document. It is a living record that changes with every round, every option grant, and every conversion. Walk through three stages of a company called <b>Relay</b> and watch how the founders' stake shrinks while the pie grows. <b>Click each bar segment.</b></p>
 <figure class="viz">
 <svg viewBox="0 0 720 220" role="img" aria-label="Stacked bar chart showing cap table evolution from founding through Seed and Series A">
   <text x="0" y="16" class="vlabel">Cap table evolution -- Relay, Inc.</text>
@@ -84,6 +88,26 @@
 </svg>
 <figcaption>Same founders, same shares -- the ownership percentage drops from 100% to 75% to 52.5% as new shares are issued. Dilution is the price of growth capital.</figcaption>
 </figure>
+<figure class="chart-wrap">
+<canvas data-chart='{
+  "type": "bar",
+  "data": {
+    "labels": ["Founding", "Post-Seed", "Post-Series A"],
+    "datasets": [
+      {"label": "Founders", "data": [100, 75, 52.5], "backgroundColor": "rgba(154,123,46,0.75)", "borderColor": "#9a7b2e", "borderWidth": 1},
+      {"label": "Seed Investor", "data": [0, 20, 13.1], "backgroundColor": "rgba(132,173,138,0.75)", "borderColor": "#84ad8a", "borderWidth": 1},
+      {"label": "Series A", "data": [0, 0, 25], "backgroundColor": "rgba(74,144,217,0.75)", "borderColor": "#4a90d9", "borderWidth": 1},
+      {"label": "Option Pool", "data": [0, 5, 9.4], "backgroundColor": "rgba(122,117,104,0.5)", "borderColor": "#7a7568", "borderWidth": 1}
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {"title": {"display": true, "text": "Cap Table Dilution: Relay, Inc.", "font": {"size": 14, "weight": "600"}}},
+    "scales": {"x": {"stacked": true}, "y": {"stacked": true, "beginAtZero": true, "max": 100, "ticks": {"callback": "PERCENT"}}}
+  }
+}'></canvas>
+<figcaption>Founders keep the same number of shares but own a shrinking slice. The pie grows with each round -- dilution is the price of growth capital.</figcaption>
+</figure>
 <p>Notice what happened to the seed investor: they went from 20% to 13.1% without selling a single share. That is <b>passive dilution</b> -- the same mechanic that erodes founder stakes. Pro rata rights exist precisely to let investors fight this by writing follow-on checks.</p>
 
 <h2>4 · SAFEs and convertible notes -- the bridge instruments</h2>
@@ -102,7 +126,7 @@
 </div>
 
 <h2>5 · Term sheet anatomy -- the terms that actually matter</h2>
-<p>A term sheet is 5-10 pages. Most of it is boilerplate. The terms below are where founders win or lose control and economics. <b>Tap each to understand the mechanic.</b></p>
+<p>A term sheet is 5-10 pages. Most of it is boilerplate. The terms below are where founders win or lose control and economics. <b>Click each to understand the mechanic.</b></p>
 <div class="reveal">
   <button class="reveal-q">Liquidation preference (1x non-participating vs. participating)</button>
   <div class="reveal-a"><p><b>1x non-participating</b> (standard, founder-friendly): the investor gets their money back OR converts to common and shares pro rata -- whichever is higher. In a big exit, they convert. In a small exit, they take their money back and the common holders split what's left. <b>Participating preferred</b> (investor-friendly, sometimes called "double dip"): the investor gets their money back AND shares pro rata in the remainder. This means they effectively get paid twice. A 2x participating preference on a $5M investment requires $10M off the top before anyone else sees a dime, plus a share of everything after.</p></div>
@@ -246,7 +270,10 @@
 </ul>
 </div></section><div class="source-divider"><span>How to go deeper</span></div><p class="loop-line">The lesson above was <b>distilled from the sources below.</b> Use them to <b>learn</b> the theory (Lectures).</p><section id="videos"><h2>Lectures <span class="count">0</span></h2><p class="section-obj"><span class="obj-tag">Learn</span> The frameworks taught above come from these talks — watch any to go deeper on a concept.</p><p class='empty'>No lectures pulled.</p></section></main>
 <div class="done-wrap"><button id="mark-done" data-mod="gaps-entrepreneurial-finance.html"><span class="cp-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg></span> <span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button></div>
-<div class="pn-wrap"><a class="pn" href="gaps-business-law.html"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> G5 The Legal Environment of Business</a></div>
+<div class="toast" id="toast"></div>
+<div class="pn-bar"><div class="pn-wrap"><a class="pn" href="gaps-business-law.html"><span class="pn-dir"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> Previous</span><span class="pn-title">G5 The Legal Environment of Business</span><span class="pn-key">←</span></a></div></div>
 <a href="#" class="top"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4-4 4 4"/></svg></a>
-<script src="lesson.js?v=1788999576"></script>
+<script src="chart.min.js"></script>
+<script src="lesson.js?v=1789021734"></script>
+<script>document.body.classList.add('mod-enter');</script>
 </body></html>

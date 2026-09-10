@@ -1,5 +1,5 @@
 <!-- LESSON: Quantitative Methods & Statistics (BENCHMARK-GAP) — net-new "Ivy & Ink" lesson. Grounded ONLY in the statistics-quant corpus: StatQuest/Josh Starmer — Linear Regression Clearly Explained (7ArmBVF2dCs), Hypothesis Testing & The Null Hypothesis (0oc49DyA3hU), p-values (vemZtEM63GY), Confidence Intervals (TqOeMYtOc1w); plus business-stats regression intros (owI7zxCqNY0, -JTKf-a1JpU). Teaches the FOCUS: linear regression, hypothesis testing, p-values and confidence intervals — turning "decision science" into the actual math, StatQuest-style. -->
-<p class="lead">Most business advice stops at "be data-driven." This lesson is the math underneath that slogan. <b>Four ideas do almost all the work in applied quant: a fitted line, an R², a p-value, and a confidence interval.</b> Together they answer two questions every operator faces — <em>"how are these two things related?"</em> and <em>"is this difference real, or did I just get lucky with my sample?"</em> We'll build all four StatQuest-style: least squares fits a line by rotating until the squared errors are smallest; R² says how much that line explains; the p-value scores how surprised you should be if nothing's really going on; the confidence interval draws that test as a picture. Real numbers, real formulas, no hand-waving. Tap the cards, the regression line, and the quizzes as you go.</p>
+<p class="lead">Most business advice stops at "be data-driven." This lesson is the math underneath that slogan. <b>Four ideas do almost all the work in applied quant: a fitted line, an R², a p-value, and a confidence interval.</b> Together they answer two questions every operator faces — <em>"how are these two things related?"</em> and <em>"is this difference real, or did I just get lucky with my sample?"</em> We'll build all four StatQuest-style: least squares fits a line by rotating until the squared errors are smallest; R² says how much that line explains; the p-value scores how surprised you should be if nothing's really going on; the confidence interval draws that test as a picture. Real numbers, real formulas, no hand-waving. Hover the cards, scan the regression line, and take the quizzes as you go.</p>
 
 <h2>1 · Regression is just fitting a line — by least squares</h2>
 <p>Strip away the jargon and <b>linear regression is fitting a straight line through a cloud of points</b> so you can predict one thing from another. StatQuest's running example: you measure a bunch of mice — their weight and their size — and you want weight to predict size. The recipe is three steps, and only the first one fits the line:</p>
@@ -8,7 +8,7 @@
 <p>How does "least squares" actually find the line? You draw a line, measure the vertical gap from each point to the line — that gap is called a <b>residual</b> — square each one, and add them up. Then you rotate the line a hair and do it again. Keep rotating; plot the total against the angle; pick the rotation with the <em>smallest</em> sum of squared residuals. That's the fit.</p>
 <blockquote class="srcq"><p>"Terminology alert: the distance from the line to the data point is called a residual… rotate the line a little bit, measure the residuals, square them, and then sum up the squares… lastly you find the rotation that has the least sum of squares."</p>
 <cite><a href="https://www.youtube.com/watch?v=7ArmBVF2dCs" target="_blank" rel="noopener">— StatQuest, "Linear Regression, Clearly Explained!!!"</a> · in your corpus</cite></blockquote>
-<p>The output is an equation for a line, <code>ŷ = intercept + slope · x</code>. Least squares hands you two numbers: a <b>y-intercept</b> and a <b>slope</b>. The slope is the whole point — it's how much <em>y</em> moves for each one-unit move in <em>x</em>. <b>Tap the line and the residuals below.</b></p>
+<p>The output is an equation for a line, <code>ŷ = intercept + slope · x</code>. Least squares hands you two numbers: a <b>y-intercept</b> and a <b>slope</b>. The slope is the whole point — it's how much <em>y</em> moves for each one-unit move in <em>x</em>. <b>Click the line and the residuals below.</b></p>
 <figure class="viz">
 <svg viewBox="0 0 720 300" role="img" aria-label="A scatter of points with a least-squares regression line and vertical residuals from points to the line">
   <text x="360" y="16" text-anchor="middle" class="vlabel">Least squares: rotate the line until total squared residuals are smallest</text>
@@ -24,7 +24,7 @@
   <circle cx="170" cy="200" r="5" class="bar-gross"/><circle cx="320" cy="140" r="5" class="bar-gross"/>
   <circle cx="470" cy="135" r="5" class="bar-gross"/><circle cx="560" cy="108" r="5" class="bar-gross"/>
   <circle cx="240" cy="172" r="5" class="bar-gross"/><circle cx="630" cy="92" r="5" class="bar-gross"/>
-  <text x="500" y="240" class="bar-txt-sm">red ticks = residuals · tap the blue line</text>
+  <text x="500" y="240" class="bar-txt-sm">red ticks = residuals · click the blue line</text>
 </svg>
 <figcaption>Fit = the line that minimizes the sum of <em>squared</em> residuals. Squaring keeps positive and negative errors from cancelling and punishes big misses harder. The mouse weight→size example is taught in your corpus.</figcaption>
 </figure>
@@ -42,7 +42,7 @@
 <cite><a href="https://www.youtube.com/watch?v=0oc49DyA3hU" target="_blank" rel="noopener">— StatQuest, "Hypothesis Testing and The Null Hypothesis"</a> · in your corpus</cite></blockquote>
 <p>Two outcomes only: <b>reject</b> the null (the data is too surprising for "nothing's going on" to survive) or <b>fail to reject</b> it (the data is consistent with chance — note you never "accept" or "prove" the null, you just couldn't knock it down). This asymmetry is the grammar of every A/B test, every clinical trial, every "is this campaign actually working?" question.</p>
 <div class="reveal">
-  <button class="reveal-q">🤔 Why "fail to reject" instead of just saying "the drugs are the same"?</button>
+  <button class="reveal-q">Why "fail to reject" instead of just saying "the drugs are the same"?</button>
   <div class="reveal-a"><p>Because absence of evidence isn't evidence of absence. When drug C's repeated experiments gave 12 hours, then 13.5 hours, those results were <em>different from the 13-hour hypothesis but also from each other</em> — not different enough to reject, but not tight enough to confirm 13 either. The honest verdict is "I couldn't rule out chance," which is weaker than "they're identical." A bigger, cleaner sample might still reveal a real effect. Saying "no difference" claims more than your data earned.</p></div>
 </div>
 
@@ -50,7 +50,7 @@
 <p>The p-value puts a number on "how surprising." Formally: <b>if the null were true (no real difference), how often would you see a result at least this extreme, just from random noise?</b> Small p = "this would rarely happen by chance" = reject the null. The single most-used threshold is <b>0.05</b>:</p>
 <blockquote class="srcq"><p>"The threshold value actually used most often is 0.05… if there is no difference between drug A and drug B, only 5% of the trials will have a p-value less than 0.05. This 5% experiment (wrong experiment) is called a false positive."</p>
 <cite><a href="https://www.youtube.com/watch?v=vemZtEM63GY" target="_blank" rel="noopener">— StatQuest, "p-values: What they are and how to interpret them"</a> · in your corpus</cite></blockquote>
-<p>So p &lt; 0.05 doesn't mean "95% sure I'm right." It means: <em>if nothing were going on, I'd only see data this extreme 5% of the time</em> — surprising enough to act on. And 0.05 isn't sacred. It's a cost-of-being-wrong dial. <b>Tap each tier.</b></p>
+<p>So p &lt; 0.05 doesn't mean "95% sure I'm right." It means: <em>if nothing were going on, I'd only see data this extreme 5% of the time</em> — surprising enough to act on. And 0.05 isn't sacred. It's a cost-of-being-wrong dial. <b>Click each tier.</b></p>
 <figure class="viz">
 <svg viewBox="0 0 720 220" role="img" aria-label="Three p-value thresholds tuned to how costly a false positive is">
   <text x="0" y="16" class="vlabel">Loose — threshold 0.2 · cheap mistakes (will the ice-cream truck be on time?)</text>
@@ -82,17 +82,17 @@
 <p>Non-overlap is conclusive (significant); overlap is <em>inconclusive</em> (run the real test). And a 99% interval is wider than a 95% one — more confidence costs you precision. That trade-off is the whole personality of statistics.</p>
 
 <h2>6 · The vocabulary — flip to learn</h2>
-<p>The exact terms the corpus uses. <b>Tap a card to flip it.</b></p>
+<p>The exact terms the corpus uses. <b>Hover a card to reveal it.</b></p>
 <div class="fc-grid">
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Dependent vs. Independent</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Y is what you predict (dependent); X is what you predict from (independent / predictor). "Mouse weight (X) predicts mouse size (Y)."</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Residual</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The vertical gap from a data point to the line. Least squares squares every residual and minimizes the total.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Least Squares</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Rotate the line until the sum of squared residuals is smallest. Outputs an intercept and a slope.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Slope</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">How much Y changes per one-unit change in X. A non-zero slope means X actually helps predict Y.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>R²</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Share of variation in Y explained by X. R² = 0.6 → "weight explains 60% of the variation in size." 0 = useless, 1 = perfect.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Null Hypothesis</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">The default "nothing's going on / no difference." You try to reject it; you never prove it.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>p-value</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">If the null were true, how often you'd see data this extreme by chance. Small p = reject. Common threshold 0.05.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>False Positive</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Calling a difference real when it isn't. At threshold 0.05, this happens 5% of the time when nothing's going on.</span></span></button>
-  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Confidence Interval</b><span class="hint">tap to flip ↻</span></span><span class="fc-b">Range covering 95% of plausible values. A visual test: outside it → p &lt; 0.05. Non-overlapping CIs = significant.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Dependent vs. Independent</b><span class="hint">hover to reveal</span></span><span class="fc-b">Y is what you predict (dependent); X is what you predict from (independent / predictor). "Mouse weight (X) predicts mouse size (Y)."</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Residual</b><span class="hint">hover to reveal</span></span><span class="fc-b">The vertical gap from a data point to the line. Least squares squares every residual and minimizes the total.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Least Squares</b><span class="hint">hover to reveal</span></span><span class="fc-b">Rotate the line until the sum of squared residuals is smallest. Outputs an intercept and a slope.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Slope</b><span class="hint">hover to reveal</span></span><span class="fc-b">How much Y changes per one-unit change in X. A non-zero slope means X actually helps predict Y.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>R²</b><span class="hint">hover to reveal</span></span><span class="fc-b">Share of variation in Y explained by X. R² = 0.6 → "weight explains 60% of the variation in size." 0 = useless, 1 = perfect.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Null Hypothesis</b><span class="hint">hover to reveal</span></span><span class="fc-b">The default "nothing's going on / no difference." You try to reject it; you never prove it.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>p-value</b><span class="hint">hover to reveal</span></span><span class="fc-b">If the null were true, how often you'd see data this extreme by chance. Small p = reject. Common threshold 0.05.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>False Positive</b><span class="hint">hover to reveal</span></span><span class="fc-b">Calling a difference real when it isn't. At threshold 0.05, this happens 5% of the time when nothing's going on.</span></span></button>
+  <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Confidence Interval</b><span class="hint">hover to reveal</span></span><span class="fc-b">Range covering 95% of plausible values. A visual test: outside it → p &lt; 0.05. Non-overlapping CIs = significant.</span></span></button>
 </div>
 
 <h2>7 · Two jobs regression does: measure, and forecast</h2>
@@ -128,22 +128,22 @@
 </div>
 
 <div class="pitfall">
-<h3>⚠️ "Statistically significant" ≠ "important," and p &lt; 0.05 ≠ "95% sure I'm right"</h3>
+<h3>"Statistically significant" ≠ "important," and p &lt; 0.05 ≠ "95% sure I'm right"</h3>
 <p>Two errors sink most data-driven decisions. First, the <b>misread p-value</b>: p &lt; 0.05 does <em>not</em> mean "95% probability my hypothesis is true." It means "if nothing were going on, I'd see data this extreme only 5% of the time." Subtle, but it's the difference between sound and superstitious reasoning. Second, <b>significance is not magnitude</b>: with a huge sample, a conversion lift of 0.001% can be "statistically significant" and still worthless to the business — always look at the <em>effect size</em> (the slope, the actual gap), not just whether p cleared a line. And remember the false-positive math: run twenty independent tests at 0.05 and, by chance alone, about one will look "significant." Mine enough data and you'll always find a sparkle that's really just noise.</p>
 </div>
 
 <div class="pitfall subtle">
-<h3>🔎 One subtlety → your bridge to the rest of the MBA</h3>
+<h3>One subtlety → your bridge to the rest of the MBA</h3>
 <p>Notice the throughline: every tool here exists to separate <b>signal from sampling noise</b>. You never see the whole population — only a sample — so the real question is always "would this pattern survive if I drew a different sample?" That single idea is the hidden engine under the rest of the shelf: a finance NPV is a forecast with an unstated confidence interval; a marketing test is a null hypothesis about whether the campaign moved anything; an ops control chart is a p-value drawn in real time; the behavioral-decision lessons warn you that humans see signal in pure noise (the gambler's fallacy, the hot hand). The deepest quant skill isn't computing a p-value — it's the reflex to ask, before you trust any number, <b>"how much of this could just be luck?"</b></p>
 </div>
 
 <div class="apply-box">
-<h3>🎯 Your move</h3>
+<h3>Your move</h3>
 <p>Grab one real relationship you suspect in your work (ad spend → signups, headcount → output, price → churn). On paper or in a spreadsheet: (1) name your <b>X and Y</b> — which is the predictor, which is the outcome? (2) Plot the points and let the tool fit a <b>least-squares line</b>; read the <b>slope</b> (does Y really move with X?) and the <b>R²</b> (how much does X explain — 0.1 or 0.8?). (3) Write the <b>null hypothesis</b> out loud ("X has no effect on Y"), pick your <b>threshold before looking</b> (0.05 unless the stakes are unusual), and check the <b>p-value</b> and the <b>confidence interval</b> on the slope — does the interval include zero? If it does, you can't rule out "no effect." You'll almost always discover either a relationship you can now quantify, or a story you were telling yourself that the data won't support.</p>
 </div>
 
 <div class="src-list">
-<h4>📚 Taught from these sources in your corpus</h4>
+<h4>Taught from these sources in your corpus</h4>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=7ArmBVF2dCs" target="_blank" rel="noopener">StatQuest — Linear Regression, Clearly Explained!!! (least squares, residuals, R²)</a></li>
 <li><a href="https://www.youtube.com/watch?v=0oc49DyA3hU" target="_blank" rel="noopener">StatQuest — Hypothesis Testing and The Null Hypothesis (reject vs. fail to reject)</a></li>
