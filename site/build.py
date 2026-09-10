@@ -617,7 +617,7 @@ def render_index(modules, stats, wc_data=None, graph_data=None, sources=None):
 </section>
 </main>
 <div class="toast" id="toast"></div>
-<footer>Generated from <code>~/self-mba/_ingest/raw/{stats['date']}</code> · rebuild with <code>python3 site/build.py</code></footer>
+<footer></footer>
 <script>
 function filt(){{var q=document.getElementById('q').value.toLowerCase();
 document.querySelectorAll('.chip').forEach(function(c){{c.classList.remove('active');}});
