@@ -131,7 +131,19 @@
 *Source:* [24/5 trading](notes/market-structure-24-5-trading.md)
 
 **Evaluated pricing** — How illiquid bonds get marked when they haven't traded: a vendor model (BVAL, ICE) infers a price from comparable trades and quotes. Under 24/5 it starts ingesting overnight *ETF* prints — so a thin equity-session price becomes an input to the valuation of trillions in credit.
-*Source:* [24/5 trading](notes/market-structure-24-5-trading.md)
+*Source:* [24/5 trading](notes/market-structure-24-5-trading.md) · [Tradeweb Ai-Price](notes/tradeweb-ai-price.md)
+
+**TRACE** — FINRA's tape for US corporate-bond trades. Dealers must report within 15 minutes (a reporting deadline, not a dissemination delay); each print carries a side flag (customer buy, customer sell, dealer-to-dealer), and sizes are capped on the public tape at "5MM+" for IG and "1MM+" for HY. The ground truth every bond-pricing model is scored against.
+*Source:* [Tradeweb Ai-Price](notes/tradeweb-ai-price.md)
+
+**Liquidity score** — A vendor's rank of how easily a bond trades, built from depth, bid-offer, trade frequency and size. No common scale: Tradeweb 1–10, S&P 1–5, Bloomberg LQA and ICE 0–100. Accuracy claims bucketed by "liquidity score" are only comparable within one vendor.
+*Source:* [Tradeweb Ai-Price](notes/tradeweb-ai-price.md)
+
+**Last-print baseline** — Scoring a pricing model against "the next trade will equal the last trade." The floor any model should beat. Unless the last print is matched to the same side (bid vs offer), the baseline absorbs bid/ask bounce and flatters the model.
+*Source:* [Tradeweb Ai-Price](notes/tradeweb-ai-price.md) · *Lens:* [Tetlock](notes/canon/canon-tetlock-superforecasting.md) (score against the right comparison class)
+
+**Reference price** — The price the rest of the workflow keys off: auto-execution thresholds, RFQ evaluation, TCA, fund NAVs. Whoever supplies it collects recurring data revenue and switching costs. In credit: CP+ (MarketAxess, being acquired by ICE), Ai-Price (Tradeweb), BVAL, ICE, S&P (which licenses CP+).
+*Source:* [Tradeweb Ai-Price](notes/tradeweb-ai-price.md) · *Lens:* [Shapiro & Varian](notes/canon/canon-shapiro-varian-information-rules.md)
 
 **Overnight risk premium** — The empirical finding that most of the historical US equity return accrued between the close and the next open rather than during the session. 24/5 makes it directly tradable — and therefore a candidate for arbitrage away.
 *Source:* [24/5 trading](notes/market-structure-24-5-trading.md) · *Relevant to:* `quant-backtesting/`
