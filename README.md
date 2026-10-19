@@ -22,7 +22,7 @@ Or deploy to GitHub Pages (see below).
 
 - [learn/](learn/) — 10 four-pillar units (concept → plain language → real EDGAR example → exercise)
 
-**Study the canon** — 82 distilled books across 23 clusters with cross-links:
+**Study the canon** — 83 distilled books across 23 clusters with cross-links:
 
 - [notes/canon/CANON.md](notes/canon/CANON.md)
 
@@ -39,7 +39,7 @@ learn/                   Beginner on-ramp (10 units, zero to financial literacy)
   VALIDATION.md          Teaching quality flywheel
 lessons/                 Interactive HTML lesson fragments (generated, per-module)
 notes/
-  canon/                 82 distilled books across 23 clusters
+  canon/                 83 distilled books across 23 clusters
     CANON.md             Index with cross-cluster argument spines
     canon-*.md           Individual book notes (standard template)
   01-accounting/         Course-specific data notes (real 10-K analysis)
@@ -94,7 +94,7 @@ quant-backtesting/       Quantitative backtesting research (academic + practitio
 | E11 | Personal Operating System | The Knowledge Project, WorkLife |
 | E12 | Culture as Strategy | HBR, WorkLife, Masters of Scale |
 
-### The Canon — 82 books across 23 clusters
+### The Canon — 83 books across 23 clusters
 
 The reading backbone. Each distilled into a note with: core claim, framework, "applies when," "breaks when," practitioner counterpoint, and cross-links. Clusters include Strategy, Leadership, Mental Models, Negotiation, Game Theory, Platform Strategy, Systems Thinking, and more. Full index: [notes/canon/CANON.md](notes/canon/CANON.md).
 
@@ -116,7 +116,7 @@ learn/          zero → financial literacy (the on-ramp)
     ↓
 lessons/        taught course material (interactive HTML)
     ↓
-notes/canon/    the 82-book framework library
+notes/canon/    the 83-book framework library
     ↓
 acumen/         the case method: make real calls, get red-teamed
 ```
@@ -180,7 +180,7 @@ To enable: go to the repo's **Settings → Pages → Source** and select **GitHu
 ## Stats
 
 - **24 modules** (12 core + 12 executive)
-- **82 distilled books** across 23 clusters
+- **83 distilled books** across 23 clusters
 - **10 beginner units** with real EDGAR examples
 - **55 interactive HTML pages** with lessons, flip cards, quizzes
 - **~1.5M words** of ingested source material

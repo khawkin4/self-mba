@@ -172,7 +172,7 @@ Strategy before you can read a balance sheet.
 ## The Canon (the reading layer)
 
 > Video and podcasts teach frameworks *fast*; books teach them *deep*. The Canon is the book
-> backbone — **82 distilled books across 23 clusters**, each as a note in `notes/canon/` using the
+> backbone — **83 distilled books across 23 clusters**, each as a note in `notes/canon/` using the
 > standard template, with the compounding fields the raw summaries lacked: **"Breaks when"** and
 > **`[[links]]`**. Index: [`notes/canon/CANON.md`](notes/canon/CANON.md).
 
@@ -357,7 +357,10 @@ python3 edgar.py search "going concern"    # full-text search across ALL filers
 - [x] **Primary data array** — SEC EDGAR backbone + Damodaran/FRED/etc. (above)
 - [x] **Ingestion pipeline** — `_ingest/edgar.py` (built, tested on live SEC data) + `_ingest/README.md`
 - [x] **Course 01 seed** — worked 10-K note from real EDGAR data (`notes/01-accounting/aapl-10k-fy2025.md`)
-- [x] **The Canon** — 82 distilled books across 23 clusters in `notes/canon/` + index (`notes/canon/CANON.md`)
+- [x] **The Canon** — 83 distilled books across 23 clusters in `notes/canon/` + index (`notes/canon/CANON.md`)
 - [x] **Applied-MBA media batch** — Tiger Sisters Podcast: 72 episodes ingested (`_ingest/raw/2026-06-29/media/tiger-sisters/`) + distilled into a hub (`notes/tiger-sisters-insights`), 4 deep-dive teaching notes, `learn/unit-10`, and a worked Apply rep (`notes/apply-stock-picking-nke`, real SEC data via `edgar.py`)
+- [x] **Capital-markets media batch** — The Wall Street Skinny: 449-video catalog, 392 transcripts ingested (`_ingest/raw/2026-10-04/media/wall-street-skinny/`), distilled into a hub (`notes/wall-street-skinny-insights`) + 7 concept notes (`notes/wss-*`: rates-macro, credit-distressed, capital-markets-ma, private-markets-wealth, ai-economics, trading-hedge-funds, technicals-career) + a Capital Markets, Credit & Rates section in `GLOSSARY.md`. Maps to Courses 02/11, Exec E2/E3/E8/E9. Two distillation passes complete. Applied to seed VC in `notes/apply-wss-to-venture` with `notes/primary-venture-partners-insights` (27 transcripts, `_ingest/raw/2026-10-04/media/primary-vp/`).
+- [x] **Market-structure batch** — 24/5 trading (`notes/market-structure-24-5-trading`, `notes/market-structure-24-5-institutional-response`), trading-floor mechanics (`notes/trading-floor-mechanics`), Bloomberg terminal workflows (`notes/bloomberg-terminal-instrumentation`, manuals in `_ingest/raw/2026-09-26/docs/`), and services leverage (`notes/professional-services-leverage`, folded into `learn/unit-09`)
+- [x] **Acumen mechanism** — `acumen/MECHANISM.md` (results, inputs, inspection) + 5 briefed cases (Intel, Boeing, Carvana, Disney, a sealed-key 2022 seed fund) + `CASE-TEMPLATE.md`; red-team workflow (`_ingest/acumen_redteam_workflow.js`); a backtest population sampled on the decision, not the outcome (`_ingest/backtest_population.py` → `acumen/backtest/`); FRED regime classifier (`_ingest/regimes.py`) for the `notes/wss-scenario-map` regimes. Baseline rep still unscored. See `acumen/JUDGMENT-LEDGER.md`
 - [ ] **Compounding loop** — `/schedule`d weekly auto-pull so content accumulates hands-free
 - [ ] **Research-skill wiring** — first transcript + Reddit batch per course (needs `/research` run)
