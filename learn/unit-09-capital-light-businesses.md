@@ -98,6 +98,17 @@ relative to **Revenues** (lower assets per dollar of revenue = lighter). No setu
 4. Name one reason capital-light isn't automatically "better." *(It can carry heavy debt; owning hard
    assets gives control and can appreciate.)*
 
+### Counterpoint — capital-light is necessary, not sufficient
+A law firm or consultancy is the *most* capital-light business there is: near-zero capex, no inventory, no
+plant. By this unit's logic it should be the ideal asset. It isn't — because its revenue is bounded by
+**people × hours × rate**, and all three are linear and hour-capped. Domino's collects royalties that grow
+*without* adding people at the centre; a law firm has to hire another body for every extra dollar.
+
+So add a **second axis** to the test: not just *how much capex does growth require*, but **is the unit of
+production a human hour?** Royalty businesses pass both. Professional services pass only the first — which
+is exactly why they're profitable but never compound like a royalty. Full treatment:
+[professional-services leverage](../notes/professional-services-leverage.md).
+
 ### What's next
 You can now read a company three ways: the scoreboard (Units 01–04), what it's *worth* (Units 05–06), and
 the *quality* of the business — its moat (Unit 07) and its capital model (this unit). **Unit 08 — Reading
