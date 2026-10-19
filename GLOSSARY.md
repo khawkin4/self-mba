@@ -51,8 +51,8 @@
 **Accounting equation** (A = L + E) — Assets always equal liabilities plus equity. Every transaction must keep this equation balanced.
 *Source:* [Unit 03](learn/unit-03-what-a-company-owns-and-owes.md) · *Applied:* [AAPL 10-K note](notes/01-accounting/aapl-10k-fy2025.md)
 
-**Leverage** — The ratio of liabilities to equity. Higher leverage means more borrowed money relative to owner money — more upside when things go well, more risk when they don't.
-*Source:* [Unit 04](learn/unit-04-is-it-healthy.md) · *Applied:* RCL (capital-heavy business)
+**Leverage** (financial) — The ratio of liabilities to equity. Higher leverage means more borrowed money relative to owner money — more upside when things go well, more risk when they don't.
+*Source:* [Unit 04](learn/unit-04-is-it-healthy.md) · *Applied:* RCL (capital-heavy business) · *Disambiguate:* one of **three** distinct meanings — financial (here), **managerial** (Grove, Leadership section), **staff/pyramid** ([[professional-services-leverage]], Competitive Strategy section)
 
 **3-minute health check** — A quick diagnostic combining three ratios: net margin (profitability), cash flow vs profit (earnings quality), and leverage (risk). Enough to form a first opinion on any public company.
 *Source:* [Unit 04](learn/unit-04-is-it-healthy.md) · *Applied:* RCL capstone exercise
@@ -112,6 +112,101 @@
 **Khan's 7-step stock-picking** — A structured process for evaluating a stock: understand the business, check the financials, assess the moat, value it, find the margin of safety, consider risks, then decide.
 *Source:* [tiger-sisters-stock-picking](notes/tiger-sisters-stock-picking.md) · *Applied:* [apply-stock-picking-nke](notes/apply-stock-picking-nke.md)
 
+**24/5 trading** — U.S. equities trading continuously from Sunday 8pm to Friday 8pm ET. Only as "open" as its least-open layer: venue → tape (SIP) → clearing (NSCC 24x5, live June 2026) → settlement/funding (still 9-to-5) → humans. Equities converging on the structure Treasuries and FX already have.
+*Source:* [24/5 trading](notes/market-structure-24-5-trading.md)
+
+**Closing auction** — The single 4pm ET match where index funds, mutual-fund NAVs, options settlement and VWAP benchmarks all coordinate. A Schelling focal point: extended hours haven't diluted it because everyone expects everyone else there.
+*Source:* [24/5 trading](notes/market-structure-24-5-trading.md) · *Lens:* [Schelling](notes/canon/canon-schelling-strategy-of-conflict.md)
+
+**Adverse selection (in market making)** — A market maker's core risk: the trader on the other side may know something. Thin sessions raise the ratio of informed to uninformed flow, so dealers widen spreads and cut depth — the "lemons premium" you pay to trade at 2am.
+*Source:* [24/5 trading](notes/market-structure-24-5-trading.md) · *Lens:* [Akerlof](notes/canon/canon-akerlof-market-for-lemons.md)
+
+**ETF premium / discount to NAV** — The gap between an ETF's traded price and the value of its holdings. Normally arbitraged away by authorized participants; when the underlying market is closed (credit bonds overnight) it can't be, and the ETF price *becomes* the price discovery for the asset class.
+*Source:* [24/5 trading](notes/market-structure-24-5-trading.md)
+
+**Trade date roll** — Under NSCC 24x5 the "trade date" changes at 8pm ET, not midnight: a 9pm Monday trade is a Tuesday trade for settlement, ex-dividend and record-date purposes.
+*Source:* [24/5 trading](notes/market-structure-24-5-trading.md)
+
+**Overnight Protected Hours** — 9:00pm–4:00am ET, Sun–Thu. Under LULD Amendment No. 27 (SEC approved Aug 2026, effective Dec 6, 2026), trades and quotes outside ±20% bands are prevented. No automatic trading pause — but a discretionary Regulatory Halt **does not reopen until the next session**. A kill switch, not a circuit breaker.
+*Source:* [24/5 trading](notes/market-structure-24-5-trading.md)
+
+**Evaluated pricing** — How illiquid bonds get marked when they haven't traded: a vendor model (BVAL, ICE) infers a price from comparable trades and quotes. Under 24/5 it starts ingesting overnight *ETF* prints — so a thin equity-session price becomes an input to the valuation of trillions in credit.
+*Source:* [24/5 trading](notes/market-structure-24-5-trading.md)
+
+**Overnight risk premium** — The empirical finding that most of the historical US equity return accrued between the close and the next open rather than during the session. 24/5 makes it directly tradable — and therefore a candidate for arbitrage away.
+*Source:* [24/5 trading](notes/market-structure-24-5-trading.md) · *Relevant to:* `quant-backtesting/`
+
+**Business date as a first-class event** — The 24/5 refactor pattern: replace the implicit "today" every post-trade system assumes with lifecycle events (session open/close, trade-date roll, clearing cutoff) emitted by one clock owner onto an ordered log, which every ledger, recon and report consumes. The diagnostic: grep the codebase for the business date.
+*Source:* [24/5 institutional response](notes/market-structure-24-5-institutional-response.md)
+
+**Follow-the-sun** — Operating model where regional teams hand off support across time zones with full context, so 2am ET is a shift, not an exception. Cboe's stated model for 24x5; OCC evaluating. The org half of the 24/5 problem.
+*Source:* [24/5 institutional response](notes/market-structure-24-5-institutional-response.md) · *Lens:* [Larson](notes/canon/canon-larson-elegant-puzzle.md)
+
+**Cell-based architecture** — Partition a system into independent cells (by symbol range, account, region) so maintenance and failure affect one cell, not the whole. How you do change without a maintenance window. Pairs with canary-by-partition.
+*Source:* [24/5 institutional response](notes/market-structure-24-5-institutional-response.md)
+
+---
+
+## Market Institutions & Roles
+
+**Sell side** — Raises capital for companies and sells securities to investors; advises on deals. Earns **fees and commissions**, so the incentive runs to volume. Investment banks and brokers. Entry-level roles are plentiful here.
+*Source:* [trading-floor-mechanics §2](notes/trading-floor-mechanics.md) · *Note:* banks run buy-side arms too — "sell side" means the investment banking division specifically
+
+**Buy side** — Invests other people's money. Earns a **management fee** regardless of outcome plus a **performance fee**, typically ~20% of gains. Asset managers, hedge funds, PE, VC, pension funds. Usually wants 2–4 years of experience first.
+*Source:* [trading-floor-mechanics §2](notes/trading-floor-mechanics.md) · *Applied:* [[tiger-sisters-private-capital-101]]
+
+**Front / middle / back office** — The client-contact axis. **Front** (IB, S&T, research) faces clients and generates revenue; **middle** (risk, compliance, finance control) exists to *constrain the front office*; **back** (technology, operations) makes it run. A bank's org chart is substantially a risk-control artifact.
+*Source:* [trading-floor-mechanics §2](notes/trading-floor-mechanics.md)
+
+**Trader vs. salesperson** — On a bank floor these are different jobs. The **trader** makes the price and owns the risk; the **salesperson** owns the client relationship. Pricing and relationship are deliberately separated. Traders are only **15–20%** of a "trading floor."
+*Source:* [trading-floor-mechanics §4](notes/trading-floor-mechanics.md)
+
+**Flow trader** — Executes large client orders by sourcing liquidity on both sides. Explicitly *not* an investor — a middleman earning commission and bid-ask spread. Distinct from a **prop trader**, who trades the firm's own capital.
+*Source:* [trading-floor-mechanics §3](notes/trading-floor-mechanics.md)
+
+**Agency vs. principal execution** — In **agency**, the bank works your order into the market as your agent. In **principal** (the facilitation desk), the bank buys your line onto its own book and wears the risk — more expensive, but it gets size done now.
+*Source:* [trading-floor-mechanics §4](notes/trading-floor-mechanics.md) · *Relates to:* [24/5 trading](notes/market-structure-24-5-trading.md)
+
+**Block trade** — A single large transaction, threshold ~$10m **or more than one day's average volume**, negotiated privately rather than worked into the market. The market sees 5–10 small blocks a day; large ones come weekly to quarterly.
+*Source:* [trading-floor-mechanics §4](notes/trading-floor-mechanics.md) · *Applied:* Auckland Airport $1.3bn sell-down
+
+**Wall crossing** — Bringing a counterparty inside the information barrier by giving them material non-public information under restriction, so a block can be sourced privately. Routine in block trading, and the reason information barriers exist at all.
+*Source:* [trading-floor-mechanics §4](notes/trading-floor-mechanics.md)
+
+**Information barrier** (Chinese wall) — Separation between parts of a firm that must not share information. Best implemented **structurally** rather than as policy: UBS uses carpet colour for physical zones and holds its 7:30 flow meeting and 7:45 research meeting separately so client flow cannot leak into research.
+*Source:* [trading-floor-mechanics §4](notes/trading-floor-mechanics.md) · *Lens:* [[canon-meadows-thinking-in-systems]] — build the rule into the structure
+
+**Daily stop** — A bounded, pre-set daily loss limit that also serves as the *unit of account* for discussing P&L ("I was up two daily stops, got out for half a daily stop"). Normalizes outcomes onto a comparable scale before they are ever debated.
+*Source:* [trading-floor-mechanics §5](notes/trading-floor-mechanics.md)
+
+**Accept the facts, refuse the judgment, build your own** — The program's method, arrived at independently by three sources: a data architecture, an academic, and a working buy-side analyst. Take Layer 1 (reported facts) from any source; decline anyone else's derived conclusions; construct the drivers and assumptions yourself. Consult consensus *after* you have a number — before, it anchors you.
+*Source:* [trading-floor-mechanics §3c](notes/trading-floor-mechanics.md) · *See spine 12* · *Lens:* [[canon-kahneman-thinking-fast-and-slow]]
+
+---
+
+## Research Instrumentation & Data Access
+
+**Bloomberg Terminal** — The institutional financial data platform (~$25–30k/yr per seat). Command grammar is `TICKER <asset key> FUNCTION <GO>`; ~210 core function mnemonics. Its moat is not data — it is switching costs (muscle memory in the mnemonics) plus network economies (the `IB` messaging network the profession standardized on).
+*Source:* [bloomberg-terminal-instrumentation](notes/bloomberg-terminal-instrumentation.md) · *Argues with:* [sec-filing-intelligence](notes/sec-filing-intelligence.md) on whether public filings equalize access
+
+**Information latency** — The lag between a fact becoming true and a given observer being able to see it. Distinct from information *access*. A 13F discloses an institutional position up to 45 days after quarter-end; a block print is visible on a terminal in seconds. Same legal disclosure regime, ~7-week spread.
+*Source:* [bloomberg-terminal-instrumentation §3](notes/bloomberg-terminal-instrumentation.md) · *Argues with:* the "no information-asymmetry barrier" claim in [sec-filing-intelligence](notes/sec-filing-intelligence.md) — **the corpus is symmetric; the clock is not** · *Why it matters:* defines the boundary of what this program can instrument
+
+**Do-nothing counterfactual** — The return from taking no action over the same window, computed *before* reading any strategy's result. A Bollinger strategy on MMM (2010–21) returned 133%; buy-and-hold returned 215% with dividends. Without the counterfactual, the interface presents an 82-point underperformance as a win.
+*Source:* [bloomberg-terminal-instrumentation §5](notes/bloomberg-terminal-instrumentation.md) · *Applied:* `quant-backtesting/` · *Argues with:* nothing — it is the base rate [[canon-mauboussin-success-equation]] demands and [[canon-kahneman-thinking-fast-and-slow]] WYSIATI suppresses
+
+**Consensus estimates** — The aggregated forecast of sell-side analysts for a company's future revenue and earnings. The number a company "beats" or "misses." Not in EDGAR — filings are historical, estimates are forward.
+*Source:* [bloomberg-terminal-instrumentation §2](notes/bloomberg-terminal-instrumentation.md) · *Terminal:* `EEO` `ANR` `EE`
+
+**Short interest** — The percentage of a company's freely-tradeable shares (float) that have been sold short. A crowding and sentiment measure. FINRA publishes biweekly and lagged; terminals show it live.
+*Source:* [bloomberg-terminal-instrumentation §2](notes/bloomberg-terminal-instrumentation.md) · *Terminal:* `SI` `SIA`
+
+**Supply-chain graph** — A mapped network of a company's suppliers and customers with the revenue and cost exposure attached to each. Reveals concentration risk before it appears in results. Reconstructable from 10-K major-customer disclosure, one company at a time, expensively.
+*Source:* [bloomberg-terminal-instrumentation](notes/bloomberg-terminal-instrumentation.md) · *Terminal:* `SPLC` · *Relates to:* [Unit 07 moats](learn/unit-07-the-landscape-moats.md), customer concentration as a moat *inverse*
+
+**Constraint audit** — Asking of any analytical call: *did this depend on data the analyst could not have obtained, and was the dependency acknowledged?* A call resting silently on unobtainable data is not uncertain — it is unfounded, and should score differently.
+*Source:* [bloomberg-terminal-instrumentation §6](notes/bloomberg-terminal-instrumentation.md) · *Applied:* proposed red-team input for `acumen/MECHANISM.md`
+
 ---
 
 ## Competitive Strategy & Moats
@@ -120,7 +215,7 @@
 *Source:* [Unit 07](learn/unit-07-the-landscape-moats.md) · *Applied:* MA vs RCL · *Argues with:* Porter ↔ Helmer ↔ Christensen — three different frameworks for what moats are and how they work
 
 **Network effect** — A product or service that becomes more valuable as more people use it. Each new user makes the existing users' experience better.
-*Source:* [Unit 07](learn/unit-07-the-landscape-moats.md), [Parker](notes/canon/canon-parker-platform-revolution.md) · *Applied:* Crexi, Snap
+*Source:* [Unit 07](learn/unit-07-the-landscape-moats.md), [Parker](notes/canon/canon-parker-platform-revolution.md) · *Applied:* [24/5 trading](notes/market-structure-24-5-trading.md), Crexi, Snap
 
 **Commodity business** — An industry where the product is interchangeable and the customer buys on price alone. No pricing power, thin margins, brutal competition.
 *Source:* [Unit 07](learn/unit-07-the-landscape-moats.md) · *Applied:* Cruise lines
@@ -135,7 +230,7 @@
 *Source:* [Helmer](notes/canon/canon-helmer-7-powers.md) · *Applied:* Netflix vs Blockbuster
 
 **Disruptive innovation** — When a cheaper, simpler product starts at the bottom of a market and gradually moves upmarket until it displaces the incumbent. The incumbent ignores it because it doesn't serve their best customers — until it does.
-*Source:* [Christensen](notes/canon/canon-christensen-innovators-dilemma.md) · *Applied:* [JPM AI disruption analysis](notes/jpm-software-sector-spotlight-2026.md) · *Argues with:* Porter/Helmer — not every new entrant disrupts
+*Source:* [Christensen](notes/canon/canon-christensen-innovators-dilemma.md) · *Applied:* [24/5 trading](notes/market-structure-24-5-trading.md), [JPM AI disruption analysis](notes/jpm-software-sector-spotlight-2026.md) · *Argues with:* Porter/Helmer — not every new entrant disrupts
 
 **Value stick** (WTP / WTS) — A company creates value by raising customers' willingness-to-pay (WTP) or lowering suppliers' willingness-to-sell (WTS). Profit is the firm's share of the gap.
 *Source:* [core-04 lesson](lessons/core-04-competitive-strategy.html) · *Applied:* Netflix vs Disney
@@ -148,6 +243,18 @@
 
 **Platform envelopment** — When a platform in one market leverages its user base and data to enter and dominate an adjacent market.
 *Source:* [Cusumano](notes/canon/canon-cusumano-business-of-platforms.md), [Parker](notes/canon/canon-parker-platform-revolution.md) · *Applied:* Amazon Basics, Apple "Sherlocking"
+
+**Staff leverage** (professional-services leverage) — The ratio of fee-earners below an equity partner to equity partners. The partner originates and supervises; associates execute; the firm bills their hours at a multiple of what it pays for them. Revenue scales with *headcount under the partner*, not with partner effort. The operating model of law, consulting, accounting, and agencies.
+*Source:* [professional-services leverage](notes/professional-services-leverage.md) · *Applied:* Kirkland & Ellis (~5–6:1, $10.56B rev) vs. Wachtell Lipton (~2.4:1) · *Argues with:* Grove — staff leverage multiplies *billings* (margin capture), managerial leverage multiplies *output* (value creation); not the same claim
+
+**Cravath system** — Paul Cravath's early-20th-century template for the tiered firm: recruit a large class from brand-name schools into codified training, promote only a select few to partnership. Structurally a **tournament** — the deferred prize buys 2,000+ billable hours a year at a fraction of the realized bill rate. It is what *produces* the pyramid; the pyramid is not an accident of growth.
+*Source:* [professional-services leverage](notes/professional-services-leverage.md) · *Breaks when:* promotion odds visibly collapse, or growth flattens and the base stops widening
+
+**Billable hour** — Pricing by units of expert time. The complement to staff leverage: leverage supplies the bodies, the hour is the meter that converts bodies into revenue. Because comp is fixed, each fee-earner has a breakeven hour count past which marginal hours are near-pure profit — and below which they are near-pure loss.
+*Source:* [professional-services leverage](notes/professional-services-leverage.md) · *Argues with:* fixed/outcome pricing — an attack on the pricing *unit* is an attack on the leverage model itself (the AI thesis)
+
+**Profits per equity partner** (PPP) — A partnership's profit pool ÷ equity partners. The Big Law scoreboard, and a **ratio with a small denominator**: it measures how good a seat is, not how large or durable the franchise is. Wachtell's >$12M beats Kirkland's ~$11M while Kirkland's absolute profit pool is roughly an order of magnitude larger. The same error as judging a company by EPS while ignoring share count.
+*Source:* [professional-services leverage](notes/professional-services-leverage.md) · *Applied:* Kirkland vs. Wachtell 2025
 
 ---
 
@@ -172,7 +279,16 @@
 *Source:* [Bezos](notes/canon/canon-bezos-shareholder-letters.md) · *Applied:* [operator playbook](notes/entrepreneurship-operator-playbook.md), Tiger Sisters
 
 **Two-way door / One-way door** — Bezos's decision taxonomy: reversible decisions (two-way doors) should be made fast by individuals; irreversible decisions (one-way doors) deserve careful deliberation.
-*Source:* [Bezos](notes/canon/canon-bezos-shareholder-letters.md) · *Applied:* [operator playbook](notes/entrepreneurship-operator-playbook.md), acumen case-01
+*Source:* [Bezos](notes/canon/canon-bezos-shareholder-letters.md) · *Applied:* [24/5 institutional response](notes/market-structure-24-5-institutional-response.md), [operator playbook](notes/entrepreneurship-operator-playbook.md), acumen case-01
+
+**Reversibility as a durability axis** (labor-economics extension of the above) — A role's durability equals the share of its value sitting at a **one-way door**: an irreversible, accountable, high-magnitude act. Reversible work (drafts, research, review — anything a second pass can undo) gets absorbed by AI; irreversible accountability does not. Sorts jobs better than "routine vs. creative," since much creative work is reversible and much dull work (the attestation) is not. Roles *split* rather than vanish — the reversible half is absorbed, the remainder concentrates at the gate.
+*Source:* [professional-services leverage §6](notes/professional-services-leverage.md) (own framework) · *Applied:* junior associates (heavy compression) vs. partners (durable, fewer seats) · *Extends:* Bezos — same axis, but the dependent variable is *job durability*, not decision speed
+
+**Accountability wall** (licensure as moat) — Where law requires a *licensed human* to be accountable for an irreversible act — the lawyer's signature, the CPA's attestation, the PE's stamp, the fiduciary's liability — agents cannot cross by capability, only by deregulation. Licensure stops being merely a barrier to entry and becomes the wall around the one-way door. This is the **floor** under professional-services leverage compression: the pyramid thins toward a credentialed apex rather than disappearing.
+*Source:* [professional-services leverage §6b](notes/professional-services-leverage.md) · *Applied:* Harvey disclaims output accuracy; the partner's signature remains the liable act
+
+**Apprenticeship collapse** — The reversible tasks AI absorbs *are* the entry rungs, which are simultaneously the automatable tier and the training pipeline to the durable senior apex. **The pipeline from entry rung to door-owner is itself a one-way door** — a broken skill ladder rebuilds slowly and with fidelity loss. The pyramid's unpriced second product is *partners*; automating the base optimizes revenue while destroying the succession function.
+*Source:* [professional-services leverage §6d](notes/professional-services-leverage.md) · *Evidence:* hiring of 22–25-year-olds into exposed roles down ~14% while senior roles hold · *Argues with:* [Goldratt](notes/canon/canon-goldratt-the-goal.md) — optimizing a local metric against system throughput
 
 **Disagree and commit** — When a team can't reach consensus, the leader picks a direction and everyone commits fully — even those who disagreed. Prevents both paralysis and passive sabotage.
 *Source:* [Bezos](notes/canon/canon-bezos-shareholder-letters.md) · *Applied:* [operator playbook](notes/entrepreneurship-operator-playbook.md)
@@ -256,7 +372,7 @@
 ## Leadership & Organizations
 
 **Managerial leverage** — A manager's output = the output of their team + the output of teams they influence. Some activities (1-on-1s, training, setting direction) produce far more output per unit of time than others.
-*Source:* [Grove](notes/canon/canon-grove-high-output-management.md) · *Applied:* [media-practitioner](notes/media-practitioner-playbook.md) (meetings as leverage)
+*Source:* [Grove](notes/canon/canon-grove-high-output-management.md) · *Applied:* [media-practitioner](notes/media-practitioner-playbook.md) (meetings as leverage) · *Argues with:* **staff leverage** ([[professional-services-leverage]]) — Grove multiplies output and needs no one under-compensated; the pyramid multiplies billings on a spread
 
 **Task-Relevant Maturity** (TRM) — Calibrate your management style to the person's experience with *that specific task*, not their seniority. Low TRM: be directive. High TRM: delegate and monitor.
 *Source:* [Grove](notes/canon/canon-grove-high-output-management.md) · *Applied:* [media-practitioner](notes/media-practitioner-playbook.md)
@@ -283,10 +399,10 @@
 *Source:* [Marquet](notes/canon/canon-marquet-turn-the-ship-around.md) · *Applied:* [media-practitioner](notes/media-practitioner-playbook.md)
 
 **Theory of constraints** (TOC) — Goldratt's principle: every system has one constraint (bottleneck) that limits total throughput. Optimizing anything that isn't the bottleneck is an illusion of progress. Five steps: identify, exploit, subordinate, elevate, repeat.
-*Source:* [Goldratt](notes/canon/canon-goldratt-the-goal.md) · *Gap: never applied* · *Argues with:* Meadows — systems have multiple leverage points, not one constraint
+*Source:* [Goldratt](notes/canon/canon-goldratt-the-goal.md) · *Applied:* [24/5 trading](notes/market-structure-24-5-trading.md) · *Argues with:* Meadows — systems have multiple leverage points, not one constraint
 
 **Lean / Toyota Production System** — Ohno's system: relentlessly eliminate waste (muda), build quality into the process (jidoka / "stop the line"), and produce only what's needed when it's needed (just-in-time). The seven wastes: overproduction, waiting, transport, overprocessing, inventory, motion, defects.
-*Source:* [Ohno](notes/canon/canon-ohno-toyota-production-system.md) · *Gap: never applied*
+*Source:* [Ohno](notes/canon/canon-ohno-toyota-production-system.md) · *Applied:* [24/5 institutional response](notes/market-structure-24-5-institutional-response.md)
 
 **Agency theory** — Jensen & Meckling: whenever an agent acts on behalf of a principal, their interests diverge. The gap is the agency cost. Three solutions: monitoring, bonding (skin in the game), and incentive alignment.
 *Source:* [Jensen & Meckling](notes/canon/canon-jensen-meckling-agency-theory.md) · *Applied:* [EYL](notes/eyl-insights.md), [Harlem Capital](notes/harlem-capital-vc-insights.md) (GP/LP), Tiger Sisters
@@ -295,7 +411,25 @@
 *Source:* [Alchian & Demsetz](notes/canon/canon-alchian-demsetz-firm.md) · *Applied:* [operator playbook](notes/entrepreneurship-operator-playbook.md)
 
 **Four team states** — Larson's diagnostic: every team is in one of four states — falling behind, treading water, repaying debt, or innovating. You cannot fix a falling-behind team by adding goals; you fix it by adding people or cutting scope.
-*Source:* [Larson](notes/canon/canon-larson-elegant-puzzle.md) · *Applied:* [media-practitioner](notes/media-practitioner-playbook.md)
+*Source:* [Larson](notes/canon/canon-larson-elegant-puzzle.md) · *Applied:* [24/5 institutional response](notes/market-structure-24-5-institutional-response.md), [media-practitioner](notes/media-practitioner-playbook.md)
+
+**Mechanism** — Not a process or a policy: a *complete* loop with three legs — a **tool**, driven **adoption** of the tool, and **inspection** of the results, feeding course corrections. It takes controllable inputs and turns them into ongoing outputs on a *recurring* problem. Drop any leg and you have a good intention: tool without adoption = shelfware; tool + adoption without inspection = theatre.
+*Source:* [AWS — Building Mechanisms & the ORR](notes/canon/canon-aws-mechanisms-orr.md), [Bezos](notes/canon/canon-bezos-shareholder-letters.md) · *Applied:* [learn/VALIDATION.md](learn/VALIDATION.md) (all three legs), [acumen/MECHANISM.md](acumen/MECHANISM.md) (rebuilt after the legs were missing) · *Argues with:* Doerr — OKRs set direction but carry no adoption or inspection leg; the mechanism is what makes an OKR actually happen
+
+**Mechanism vs. guardrail** — A guardrail is a wall that engages only in an emergency; a mechanism is a slope that re-centres you continuously. The image is a train wheel: the flange touches the rail only in a crisis, while the sloped tread re-centres the train on every rotation. Design the slope, not the wall.
+*Source:* [AWS — Building Mechanisms](notes/canon/canon-aws-mechanisms-orr.md) · *Argues with:* Thaler & Sunstein — the same insight from behavioural economics: a default beats a mandate
+
+**Input metric vs. output metric** — An **output metric** is the scoreboard (revenue, customers, margin): lagging, and if it falls it doesn't tell you what to do. An **input metric** is one you can change through your own actions *this week* and that shows up in the customer's experience. Two tests for a good input: **controllable** and **customer-facing**. A third, negative test: if it can be moved by manipulating it rather than by doing the work, it will be.
+*Source:* [AWS — Building Mechanisms & the ORR](notes/canon/canon-aws-mechanisms-orr.md) · *Applied:* [acumen/JUDGMENT-LEDGER.md](acumen/JUDGMENT-LEDGER.md) (reps/week, unprompted crux rate, calibration error — replacing corpus-size counts) · *Argues with:* Walsh — "the standard of performance is the input; the score is a lagging byproduct"; 4DX calls the same thing a *lead measure*
+
+**Meta-inspection (correction of error)** — The question that audits the mechanism rather than the work: *would this mechanism have prevented the last failure?* AWS's incident template asks "would any ORR recommendations have reduced or avoided the impact of this event?", so every failure grades the thing meant to prevent it. Without it, a mechanism's compliance rate gets reported while the outcome it exists to move never does.
+*Source:* [AWS — Building Mechanisms & the ORR](notes/canon/canon-aws-mechanisms-orr.md) · *Applied:* [acumen/MECHANISM.md](acumen/MECHANISM.md) — "which canon note, had I read it, would have changed this memo?" · *Argues with:* Bezos — "the process can become the thing"; this is the only defence in the material
+
+**Incentive compatibility** — A mechanism is incentive-compatible when telling the truth is each party's best strategy *regardless of what anyone else does*. The practical test: if a mechanism runs on numbers self-reported by the people those numbers judge, it rewards misreporting. Its companion is **information privacy** — you rarely need the private information, only the party's *response* to a proposal, so iterate offers instead of demanding disclosure.
+*Source:* [AWS — Building Mechanisms & the ORR](notes/canon/canon-aws-mechanisms-orr.md) (Amazon Science, VCG + Consensus Planning Protocol) · *Argues with:* Jensen & Meckling — agency theory solves divergence by *monitoring*; incentive compatibility removes the need to monitor by making honesty dominant
+
+**Value mapping** — Turning an outcome you owe into a controllable input you can move, explicitly enough to be proven wrong. One row: outcome → output metric → measured baseline with a date → controllable input → expected direction and size of effect → owner → instrumentation → mechanism → inspection cadence. An empty cell is the work; an unfillable *instrumentation* cell means you cannot tell whether the bet paid off.
+*Source:* [AWS — Building Mechanisms & the ORR](notes/canon/canon-aws-mechanisms-orr.md) · *Argues with:* Rumelt — the map is worthless without a diagnosis; naming inputs is not a substitute for naming the crux
 
 ---
 
@@ -311,7 +445,7 @@
 *Source:* [Axelrod](notes/canon/canon-axelrod-evolution-of-cooperation.md) · *Applied:* [canon-game-theory lesson](site/dist/canon-game-theory.html)
 
 **Focal points** (Schelling points) — When people can't communicate, they converge on the solution that seems "obvious" or "natural." Coordination without communication — meet at Grand Central, noon, at the clock.
-*Source:* [Schelling](notes/canon/canon-schelling-strategy-of-conflict.md) · *Gap: never applied*
+*Source:* [Schelling](notes/canon/canon-schelling-strategy-of-conflict.md) · *Applied:* [24/5 trading](notes/market-structure-24-5-trading.md)
 
 **Credible commitment** — Making your threat or promise believable by visibly limiting your own options. Burning the bridge behind you proves you won't retreat.
 *Source:* [Schelling](notes/canon/canon-schelling-strategy-of-conflict.md) · *Gap: never applied*
@@ -336,13 +470,13 @@
 *Source:* [Sterman](notes/canon/canon-sterman-business-dynamics.md) · *Gap: never applied*
 
 **Normal accidents** — Perrow's thesis: in systems that are both tightly coupled and interactively complex, serious accidents aren't anomalies — they're inevitable ("normal"). You can't engineer them away; you can only choose to reduce coupling or reduce complexity.
-*Source:* [Perrow](notes/canon/canon-perrow-normal-accidents.md) · *Gap: never applied*
+*Source:* [Perrow](notes/canon/canon-perrow-normal-accidents.md) · *Applied:* [24/5 trading](notes/market-structure-24-5-trading.md)
 
 **Black Swan** — A rare event with three properties: (1) it's an outlier beyond normal expectations, (2) it has extreme impact, (3) after the fact, people construct explanations that make it seem predictable. We systematically blind ourselves to them.
 *Source:* [Taleb](notes/canon/canon-taleb-black-swan.md) · *Applied:* [tiger-sisters-stock-picking](notes/tiger-sisters-stock-picking.md) · *Argues with:* Tetlock — forecasting is learnable, even in fat-tailed domains
 
 **Antifragile / Barbell strategy** — Beyond robust: antifragile systems *gain* from stress and disorder. The barbell strategy: combine extreme safety (90% in boring, protected assets) with small, capped-downside, high-upside bets (10%).
-*Source:* [Taleb](notes/canon/canon-taleb-antifragile.md) · *Applied:* [tiger-sisters-wealth-mechanics](notes/tiger-sisters-wealth-mechanics.md)
+*Source:* [Taleb](notes/canon/canon-taleb-antifragile.md) · *Applied:* [24/5 trading](notes/market-structure-24-5-trading.md), [tiger-sisters-wealth-mechanics](notes/tiger-sisters-wealth-mechanics.md)
 
 **Friction / Fog of war** — Clausewitz's observation: in execution, everything is harder than it looks. Plans break on contact with reality because of incomplete information (fog), resistance (friction), and chance.
 *Source:* [Clausewitz](notes/canon/canon-clausewitz-on-war.md) · *Gap: never applied* · *Argues with:* Bungay — adapted Clausewitz's military concepts for business organizations
@@ -459,6 +593,124 @@
 
 ---
 
+## Capital Markets, Credit & Rates (Wall Street Skinny batch)
+
+**Enterprise value** (EV) — What it costs to buy the whole business: equity value plus net debt. The price of the operations regardless of how they are financed; equity value is just the slice belonging to shareholders.
+*Source:* [[wss-capital-markets-ma]], [[wss-technicals-career]] · *Applied:* X/xAI ($33B equity + $12B debt) · *Argues with:* equity-value-only multiples in [Unit 06](learn/unit-06-whats-a-business-worth.md)
+
+**Equity check** — The share of a buyout funded with the buyer's own money. Sets who takes the first loss; falls as purchase multiples rise relative to what lenders will fund.
+*Source:* [[wss-technicals-career]], [[wss-credit-distressed]] · *Applied:* TXU ~18% vs. EA ~65%
+
+**Accretion / dilution** — Whether an acquisition raises or lowers the buyer's earnings per share. Compares the target's earnings yield with the after-tax cost of whatever pays for it (cash, debt or stock).
+*Source:* [[wss-capital-markets-ma]] · *Applied:* Netflix/WBD all-cash switch
+
+**IPO pop** — First-day price jump above the offer price. Good PR, but it is value transferred from the company to the investors allocated shares.
+*Source:* [[wss-capital-markets-ma]] · *Applied:* Figma (~$3B left on the table)
+
+**Greenshoe** (overallotment option) — Underwriters sell up to 15% more shares than the base deal and cover by buying in the market (supporting the price) or exercising the option (if it rises).
+*Source:* [[wss-capital-markets-ma]] · *Applied:* SpaceX IPO
+
+**Rollover equity** — Sellers reinvest part of their proceeds into the post-buyout company, cutting the cash needed and keeping founders aligned.
+*Source:* [[wss-capital-markets-ma]]
+
+**Private credit / direct lending** — Loans made directly by non-bank funds to companies, held to maturity rather than syndicated or traded. Floating-rate, usually senior secured, priced at a premium for illiquidity and speed.
+*Source:* [[wss-credit-distressed]] · *Applied:* EA buyout, First Brands, Lakers/Delaware Life
+
+**PIK** (payment-in-kind) — Interest paid by adding to the loan balance instead of in cash. A borrower-stress signal when switched on mid-life.
+*Source:* [[wss-credit-distressed]]
+
+**BDC** (business development company) / **gating** — Fund vehicles that hold private loans and offer periodic liquidity, typically capped ~5% of NAV per quarter. Gating is enforcing the cap when redemption requests exceed it.
+*Source:* [[wss-credit-distressed]], [[wss-private-markets-wealth]] · *Applied:* BCRED, Blue Owl
+
+**Liability management exercise** (LME) — Out-of-court maneuvers that let some creditors jump the queue: uptiers, drop-downs of assets into new subsidiaries, guarantee releases. Creditor-on-creditor conflict.
+*Source:* [[wss-credit-distressed]] · *Applied:* Caesars · *Argues with:* [[canon-jensen-meckling-agency-theory]] (the debt side of agency costs)
+
+**Recovery rate** — Cents on the dollar lenders get back after default. First-lien recoveries have fallen from ~80 to ~60 as loan-only structures removed junior cushions.
+*Source:* [[wss-credit-distressed]]
+
+**Credit default swap** (CDS) — Insurance on a borrower's default. The spread divided by loss-given-default approximates annual default probability.
+*Source:* [[wss-credit-distressed]], [[wss-ai-economics]] · *Applied:* Oracle as the "anti-AI trade"
+
+**Duration / DV01** — Duration: a bond's price sensitivity to yield, in years. DV01: dollar change in value for a one-basis-point move. The unit macro traders size risk in.
+*Source:* [[wss-rates-macro]], [[wss-trading-hedge-funds]]
+
+**Convexity** — Duration changes as yields move; positive convexity means gains on falling yields exceed losses on rising ones. Mortgages are negatively convex because borrowers refinance.
+*Source:* [[wss-rates-macro]]
+
+**Yield curve / steepener** — Yields across maturities. A steepener profits when long rates rise relative to short rates.
+*Source:* [[wss-rates-macro]]
+
+**QE vs. reserve management vs. Treasury buybacks** — QE: the Fed buys long bonds to push down long rates. Reserve management: buying bills to keep bank reserves ample, not a policy signal. Treasury buybacks: the Treasury retiring old bonds, whose effect depends on how they are funded.
+*Source:* [[wss-rates-macro]]
+
+**CPI vs. PCE** — Two inflation measures. The Fed targets PCE (broader, reweights as people substitute); CPI weighs housing more heavily and runs higher.
+*Source:* [[wss-rates-macro]]
+
+**SOFR** — The overnight secured rate on Treasury-backed repo; the benchmark that replaced LIBOR for floating-rate loans and swaps.
+*Source:* [[wss-rates-macro]]
+
+**Basis trade** — Long cash Treasuries, short Treasury futures, funded in repo, capturing a small price gap with high leverage. Blows up when repo funding or margins tighten.
+*Source:* [[wss-trading-hedge-funds]]
+
+**Pod shop** (multi-manager hedge fund) — Many small teams with tight stop-losses and central risk control (Citadel, Millennium). Pass-through fees let the platform charge for costs.
+*Source:* [[wss-trading-hedge-funds]]
+
+**Sharpe ratio** — Excess return divided by volatility; return per unit of risk.
+*Source:* [[wss-trading-hedge-funds]] · *Argues with:* [quant-backtesting/](quant-backtesting/) on overfit Sharpe
+
+**Put/call ratio** — Volume of puts relative to calls; extreme lows read as complacency.
+*Source:* [[wss-trading-hedge-funds]]
+
+**TVPI / DPI** — Total value to paid-in (marks plus cash returned) vs. distributions to paid-in (cash actually returned). DPI is the one that pays LPs.
+*Source:* [[wss-private-markets-wealth]]
+
+**Secondaries / continuation fund** — LP-led: an investor sells its fund stake. GP-led: the manager moves assets it still likes into a new vehicle, giving old LPs an exit.
+*Source:* [[wss-private-markets-wealth]]
+
+**Denominator effect** — When public stocks fall faster than private marks, private assets become overweight, forcing institutions to pause commitments or sell.
+*Source:* [[wss-private-markets-wealth]] · *Applied:* Yale's ~$6bn sale
+
+**Evergreen / semi-liquid fund** — Open-ended private-markets fund sold to individuals with periodic, capped redemptions. Carry is often charged annually on unrealized gains.
+*Source:* [[wss-private-markets-wealth]]
+
+**Project finance / SPV** — Funding one asset in a separate entity whose debt is repaid by that asset's cash flows, keeping it off the sponsor's balance sheet.
+*Source:* [[wss-ai-economics]], [[wss-private-markets-wealth]] · *Applied:* Meta Hyperion, xAI
+
+**Vendor financing / backstop** — A supplier guaranteeing or funding its customers' purchases. Grows sales; couples supplier and customer risk.
+*Source:* [[wss-ai-economics]] · *Applied:* NVIDIA and OpenAI data centers
+
+**Useful-life debate** (AI chips) — Depreciating GPUs over 5–6 years instead of 2–3 flatters earnings if the chips are obsolete sooner.
+*Source:* [[wss-ai-economics]] · *Applied:* Burry vs. Meta/Oracle
+
+
+**ETF creation / redemption** — Authorized participants swap baskets of the underlying securities for ETF shares (and back) in kind. This arbitrage keeps the price near NAV and lets the fund shed low-basis stock without realizing gains, which is the source of the ETF tax advantage.
+*Source:* [[wss-trading-hedge-funds]]
+
+**Cheapest-to-deliver** (CTD) — Treasury futures can be settled with any bond from an eligible basket; the short delivers whichever is cheapest after the conversion factor. Futures DV01 ≈ CTD DV01 ÷ conversion factor.
+*Source:* [[wss-rates-macro]], [[wss-trading-hedge-funds]]
+
+**Carry trade** — Borrowing in a low-yielding currency or rate and investing in a higher-yielding one, earning the spread until the funding currency jumps. The yen carry unwind of 2024 is the channel's case.
+*Source:* [[wss-rates-macro]]
+
+**Unitranche** — A single blended loan from a direct lender replacing separate senior and junior tranches; one document, one lender group, leverage up to ~7x in the channel's examples.
+*Source:* [[wss-credit-distressed]]
+
+**Capital solutions** — Bespoke financing for companies that are stressed or unusual rather than bankrupt (e.g. lending against a law firm's case book). Where distressed-debt capital went during a decade with few defaults.
+*Source:* [[wss-credit-distressed]]
+
+**Direct listing** — Going public by listing existing shares without an underwritten offering or bookbuild; no IPO discount, but no new money (unless a primary direct listing) and no greenshoe price support.
+*Source:* [[wss-capital-markets-ma]] · *Applied:* Spotify
+
+**Block trade** — A large sale of existing shares (typically 1–10% of a company) placed overnight by a bank at a discount, often bought by the bank at risk.
+*Source:* [[wss-capital-markets-ma]]
+
+**Liquidation preference** — Venture preferred stock's right to get its money back before common in a sale. Later rounds often rank senior, so in a sale below the last valuation early investors act like a junior tranche.
+*Source:* [[wss-private-markets-wealth]], [[apply-wss-to-venture]]
+
+**Continuation vehicle** — A new fund a GP creates to buy assets from its own older fund, priced by secondary buyers, so existing LPs can sell or roll. ~$70bn of the $160bn 2024 secondaries market was GP-led.
+*Source:* [[wss-private-markets-wealth]] · *Contrast:* opportunity funds such as Primary Select add capital instead ([[primary-venture-partners-insights]])
+---
+
 ## Cross-cluster argument spines (where the books fight)
 
 These are the most valuable threads in the program — follow them to see how frameworks
@@ -474,6 +726,8 @@ contradict, refine, and build on each other. Each spine is a path through the ca
 8. **Surviving the tails:** Taleb-Black Swan → Taleb-Antifragile → Klarman (margin of safety) → Ries (small capped bets)
 9. **Why moats exist (rigorous):** Mankiw (markets) → Akerlof (asymmetry/signaling) → Helmer (switching/network) → Shapiro/Varian (lock-in) → Parker/Cusumano/Hagiu (platforms)
 10. **The personal OS:** Covey (Q2) → Newport (deep work) → Clear (habit systems)
+11. **Does public disclosure level the field?** [sec-filing-intelligence](notes/sec-filing-intelligence.md) (mandatory disclosure ⇒ no asymmetry barrier) ↔ [bloomberg-terminal-instrumentation](notes/bloomberg-terminal-instrumentation.md) (symmetric corpus, asymmetric clock) → Shannon (content vs. channel) → Klarman (a long horizon is what makes the latency gap survivable)
+12. **What is the analyst's actual job?** [sec-filing-intelligence](notes/sec-filing-intelligence.md) (Layer 1 is commodity, Layer 3 is the product) → Damodaran, from a live Terminal (take the raw data, refuse the computed cost of capital — *"it's my job to estimate"*) → a working buy-side analyst (take the financials, rebuild the drivers, hold consensus at arm's length) → **accept the facts, refuse the judgment, build your own** — see [trading-floor-mechanics §3c](notes/trading-floor-mechanics.md)
 
 ---
 

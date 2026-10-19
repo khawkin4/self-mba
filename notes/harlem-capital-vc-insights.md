@@ -7,6 +7,8 @@
 > [[entrepreneurship-operator-playbook]]. Maps to **Course 10 (Entrepreneurship & Venture)** and the
 > capital-allocation thread in [[canon-bezos-shareholder-letters]] / [[canon-jensen-meckling-agency-theory]].
 
+> **See also:** [[primary-venture-partners-insights]] (the scaled-seed counterpart, with a side-by-side table) and [[apply-wss-to-venture]] (how rates, credit, the IPO window and the distribution drought reach both firms).
+
 ## 1 · Fund economics — the bedrock mechanics
 - **2-and-20:** ~2% annual management fee (a $500M fund → $10M/yr for salaries/offices/diligence) +
   **20% carried interest** = the GP's cut of *profits* (elite funds 30%; challengers waive/taper the fee).
