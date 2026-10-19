@@ -68,7 +68,8 @@
     Ever | Jeff Bezos" (youtube.com/watch?v=EctzLTFrktc) · r/ExperiencedDevs "I'm giving up;
     Becoming a yes man" (1,668↑) · r/managers "The 'silent resignation' nobody notices" (9,401↑),
     "you stop getting 'real' feedback" (3,334↑).
-- **Links:** [[canon-doerr-measure-what-matters]] · [[canon-drucker-effective-executive]] ·
+- **Links:** [[canon-aws-mechanisms-orr]] *(the construction method behind "mechanisms, not intentions")* ·
+  [[canon-doerr-measure-what-matters]] · [[canon-drucker-effective-executive]] ·
   [[canon-kahneman-thinking-fast-and-slow]] · [[canon-walsh-score-takes-care-of-itself]] ·
   [[canon-christensen-innovators-dilemma]]
 

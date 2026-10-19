@@ -131,6 +131,16 @@ it introduces. Add stock/shares/shareholder definitions to Unit 01.
 an LBO (Klarman + Jensen-Meckling), a platform cold-start (Parker + Helmer), a crisis
 (Taleb + Grove), a negotiation (Fisher/Ury + Voss), and a change initiative (Kotter + Heath).
 
+> **Addendum 2026-09-26.** Re-diagnosed: this is not a "needs more cases" gap. The tool was complete on
+> 2026-06-06 and produced 0 scored reps in 16 weeks, because the gym had a tool and no adoption or
+> inspection leg — while `learn/VALIDATION.md`, which has all three, turned five documented times in the
+> same period. Adoption and inspection are now specified in [acumen/MECHANISM.md](acumen/MECHANISM.md)
+> (case-size menu, skipped weeks logged as rows, input metrics, and a meta-question that ranks the
+> reading list by evidence). Harness: `_ingest/acumen_redteam_workflow.js`. Gaps 1 and 2 above (33
+> unapplied books, 14 sources-only clusters) are downstream of this one — the meta-question generates
+> that queue from real reps instead of from coverage, so they should be re-measured after the first five
+> scored reps rather than worked as separate backlogs.
+
 ### 5. Course coverage imbalance
 
 From the canon → course mapping:

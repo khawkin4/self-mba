@@ -1,7 +1,7 @@
 # The Canon — book backbone of The Compounding MBA
 
 > The **reading layer** that sits alongside the program's video / podcast / Reddit sources.
-> **82 distilled books across 23 clusters**, each in the standard note template — with the two fields
+> **83 distilled books across 23 clusters**, each in the standard note template — with the two fields
 > that make a note *compound*: **"Breaks when"** (failure modes) and **`[[links]]`** into the graph.
 > Started: 2026-06-05 · Format mirrors `notes/01-accounting/aapl-10k-fy2025.md`.
 
@@ -42,6 +42,7 @@ in the cross-links — read one note, follow its `[[ ]]` to the two or three it 
 | **Larson — An Elegant Puzzle** | Orgs are systems with throughput; fix a falling-behind team with people/scope, not goals. | [[canon-larson-elegant-puzzle]] |
 | **Bezos — Shareholder Letters** | Mechanisms over intentions; Day 1, two-way doors, 70% decisions, disagree-and-commit. | [[canon-bezos-shareholder-letters]] |
 | **Doerr — Measure What Matters** | OKRs for alignment/focus/accountability — a direction tool, not a task list; ~70% is the target. | [[canon-doerr-measure-what-matters]] |
+| **AWS — Building Mechanisms & the ORR** *(method note, primary sources)* | A mechanism = tool + adoption + inspection, looping; the seven steps for building one, and mechanism-vs-guardrail. | [[canon-aws-mechanisms-orr]] |
 
 ## Cluster 5 · Landscape & Competitive Awareness → Course 04, E9, Course 10
 | Book | One-line claim | Note |
@@ -80,6 +81,7 @@ in the cross-links — read one note, follow its `[[ ]]` to the two or three it 
 | **Taleb — The Black Swan** | Rare high-impact events dominate; don't predict them, survive them; avoid fatal downside. | [[canon-taleb-black-swan]] |
 | **Taleb — Antifragile** | Some things gain from disorder; use the barbell, optionality, via negativa, skin in the game. | [[canon-taleb-antifragile]] |
 | **Tetlock — Superforecasting** | Forecasting is a learnable skill: probabilities, incremental updates, keep score. | [[canon-tetlock-superforecasting]] |
+| **Duke — Thinking in Bets** | Every decision is a bet; judge the decision, not the outcome ("resulting"); separate skill from luck. | [[canon-duke-thinking-in-bets]] |
 
 ## Cluster 10 · Product Thinking & Innovation → Course 10, E10, 04
 | Book | One-line claim | Note |
@@ -190,7 +192,7 @@ in the cross-links — read one note, follow its `[[ ]]` to the two or three it 
 ## The cross-cluster spine (where the books argue with each other)
 - **Diagnosis → execution:** Rumelt (kernel) → Bungay (intent) → Marquet (authority) → Larson (load) → Bossidy/Charan (the discipline) → 4DX (protect it from the whirlwind).
 - **Advantage, sharpening:** Porter (forces) → Christensen (disruption) → Grove-Paranoid (inflection) → Helmer (the 7 powers) → Thiel (monopoly via differentiation).
-- **Judgment under uncertainty:** Kahneman (biases) → Munger (avoid stupidity) → Parrish (toolkit) → Tetlock (calibrate + keep score) → Mauboussin (skill vs. luck) → Bezos (70% + reversibility).
+- **Judgment under uncertainty:** Kahneman (biases) → Munger (avoid stupidity) → Parrish (toolkit) → Tetlock (calibrate + keep score) → Duke (state it as a bet; don't judge by the result) → Mauboussin (skill vs. luck) → Bezos (70% + reversibility).
 - **Leverage & standards:** Drucker (effectiveness) → Grove-HOM (leverage, the OKR seed) → Doerr (OKRs) → Walsh (standards as culture).
 - **Persuasion, two schools:** Fisher/Ury (interests + BATNA, rational) ⇄ Voss (tactical empathy, emotional); Cialdini (the levers) → Carnegie (sincerity) ⇄ Greene/Pfeffer (raw power) — read each pair *against* the other.
 - **The flow constraint:** Goldratt (the one bottleneck) → Ohno (eliminate waste / pull) → Meadows (leverage points) → Larson (org throughput).
@@ -218,6 +220,7 @@ For each canon framework, pull *one real company's data* and apply it:
 - Goldratt → map a real process and find its single bottleneck.
 - Klarman → put a margin of safety band around the DCF you build in Course 02.
 - Mauboussin → re-grade one outcome on *process* quality, not result.
+- Duke → restate one live recommendation as a bet: odds, stake, and what would make you lose.
 - Fisher/Ury → write your BATNA before a real negotiation.
 - Jensen/Meckling → read a real DEF 14A and judge whether exec comp aligns or invites gaming (`edgar.py filings <TICKER> --form "DEF 14A"`).
 - Akerlof → name what buyers *can't* see about your product, and which signal closes the gap.

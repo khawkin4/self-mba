@@ -62,7 +62,7 @@
     Tetlock (and rap star Jay Z)" (youtube.com/watch?v=GTwQaB68r0s) · The Swedish Investor —
     "ANTIFRAGILE SUMMARY (BY NASSIM TALEB)" (youtube.com/watch?v=-MMLea-_ifw). *(No reddit threads:
     the r/decisionmaking pull returned empty again this round; YouTube coverage is solid.)*
-- **Links:** [[canon-kahneman-thinking-fast-and-slow]] · [[canon-taleb-black-swan]] ·
+- **Links:** [[canon-kahneman-thinking-fast-and-slow]] · [[canon-taleb-black-swan]] · [[canon-duke-thinking-in-bets]] ·
   [[canon-mauboussin-success-equation]] · [[canon-munger-poor-charlies-almanack]]
 
 ---

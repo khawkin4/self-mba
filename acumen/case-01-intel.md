@@ -1,8 +1,9 @@
 # Case 01 — Intel (INTC): the capital-allocation crux
 
 > **Status:** OPEN — awaiting your memo.
-> **Rep type:** capital allocation + competitive strategy. No answer key — this is a genuinely
-> contestable, live decision. Take a position.
+> **Rep type:** capital allocation + competitive strategy.
+> **Size:** **full** (~90 min) — see the menu in [MECHANISM.md](MECHANISM.md).
+> No answer key — this is a genuinely contestable, live decision. Take a position.
 
 ## The brief
 You're advising **Intel's board**. Intel is the company Andy Grove ran — and the one his own
@@ -42,6 +43,9 @@ A **1-page board memo** to the spec in `README.md`:
 3. **Why — three reasons**, each with a real figure from the filings.
 4. **The fatal risk + mitigation** — the one thing that sinks it.
 5. **The ask** — what you want the board to approve.
+
+**Attach a forecast.** One falsifiable statement with a probability and a resolution date — that is
+what makes calibration measurable rather than a feeling.
 
 Take a side. "It depends" is a fail. When you've written it, paste it below and I red-team it.
 

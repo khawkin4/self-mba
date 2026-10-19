@@ -1,0 +1,909 @@
+{
+ "decision_year": 2021,
+ "min_usd": 2000000000.0,
+ "horizon_years": 4,
+ "population_size": 66,
+ "label_counts": {
+  "failed": 4,
+  "partial": 12,
+  "no-signal": 50
+ },
+ "cases": [
+  {
+   "cik": 1110803,
+   "company": "Illumina, Inc.",
+   "decision_usd": 2444000000,
+   "impairment_usd": 6630000000,
+   "ratio": 2.713,
+   "label": "failed",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1764046,
+   "company": "CLARIVATE PLC",
+   "decision_usd": 3930300000,
+   "impairment_usd": 5984700000,
+   "ratio": 1.523,
+   "label": "failed",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 732712,
+   "company": "Verizon Communications Inc.",
+   "decision_usd": 4065000000,
+   "impairment_usd": 5841000000,
+   "ratio": 1.437,
+   "label": "failed",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 732717,
+   "company": "AT&T INC.",
+   "decision_usd": 25453000000,
+   "impairment_usd": 24812000000,
+   "ratio": 0.975,
+   "label": "failed",
+   "impairment_years": [
+    2022
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1747079,
+   "company": "BALLY\u2019S CORPORATION",
+   "decision_usd": 2274221000,
+   "impairment_usd": 1044302000,
+   "ratio": 0.459,
+   "label": "partial",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1413329,
+   "company": "PHILIP MORRIS INTERNATIONAL INC.",
+   "decision_usd": 2111000000,
+   "impairment_usd": 860000000,
+   "ratio": 0.407,
+   "label": "partial",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 832428,
+   "company": "THE E.W. SCRIPPS COMPANY",
+   "decision_usd": 2677755000,
+   "impairment_usd": 952000000,
+   "ratio": 0.356,
+   "label": "partial",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 10456,
+   "company": "Baxter International Inc.",
+   "decision_usd": 10502000000,
+   "impairment_usd": 3722000000,
+   "ratio": 0.354,
+   "label": "partial",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1262823,
+   "company": "Westlake Corporation",
+   "decision_usd": 2554000000,
+   "impairment_usd": 855000000,
+   "ratio": 0.335,
+   "label": "partial",
+   "impairment_years": [
+    2023,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1725255,
+   "company": "AdaptHealth Corp.",
+   "decision_usd": 2931448000,
+   "impairment_usd": 971860000,
+   "ratio": 0.332,
+   "label": "partial",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "BusinessCombinationConsiderationTransferred1",
+   "attributable": null
+  },
+  {
+   "cik": 1666700,
+   "company": "DUPONT DE NEMOURS, INC.",
+   "decision_usd": 2346000000,
+   "impairment_usd": 668000000,
+   "ratio": 0.285,
+   "label": "partial",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1140859,
+   "company": "CENCORA, INC.",
+   "decision_usd": 5563040000,
+   "impairment_usd": 1217820000,
+   "ratio": 0.219,
+   "label": "partial",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1722482,
+   "company": "Avantor, Inc.",
+   "decision_usd": 4014100000,
+   "impairment_usd": 785000000,
+   "ratio": 0.196,
+   "label": "partial",
+   "impairment_years": [
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1024478,
+   "company": "Rockwell Automation, Inc",
+   "decision_usd": 2488500000,
+   "impairment_usd": 382000000,
+   "ratio": 0.154,
+   "label": "partial",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1800227,
+   "company": "IAC Inc.",
+   "decision_usd": 2699643000,
+   "impairment_usd": 303199000,
+   "ratio": 0.112,
+   "label": "partial",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 79879,
+   "company": "PPG INDUSTRIES, INC.",
+   "decision_usd": 2137000000,
+   "impairment_usd": 222000000,
+   "ratio": 0.104,
+   "label": "partial",
+   "impairment_years": [
+    2022,
+    2023,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1468174,
+   "company": "HYATT HOTELS CORPORATION",
+   "decision_usd": 2916000000,
+   "impairment_usd": 170000000,
+   "ratio": 0.058,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2024
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1632127,
+   "company": "Cable One, Inc.",
+   "decision_usd": 2065982000,
+   "impairment_usd": 88783000,
+   "ratio": 0.043,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1492426,
+   "company": "Horizon Therapeutics Public Ltd Co",
+   "decision_usd": 2843275000,
+   "impairment_usd": 56171000,
+   "ratio": 0.02,
+   "label": "no-signal",
+   "impairment_years": [
+    2022
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 43196,
+   "company": "GRAY TELEVISION INC",
+   "decision_usd": 3765000000,
+   "impairment_usd": 73000000,
+   "ratio": 0.019,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1053507,
+   "company": "American Tower Corporation",
+   "decision_usd": 19303900000,
+   "impairment_usd": 80000000,
+   "ratio": 0.004,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1144980,
+   "company": "ASBURY AUTOMOTIVE GROUP,\u00a0INC",
+   "decision_usd": 3660400000,
+   "impairment_usd": 16200000,
+   "ratio": 0.004,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 70866,
+   "company": "NCR VOYIX CORPORATION",
+   "decision_usd": 2473000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 200406,
+   "company": "JOHNSON & JOHNSON",
+   "decision_usd": 7300000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "BusinessCombinationConsiderationTransferred1",
+   "attributable": null
+  },
+  {
+   "cik": 858877,
+   "company": "CISCO SYSTEMS, INC.",
+   "decision_usd": 7500000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "BusinessCombinationConsiderationTransferred1",
+   "attributable": null
+  },
+  {
+   "cik": 1141391,
+   "company": "Mastercard Incorporated",
+   "decision_usd": 4700000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "BusinessCombinationConsiderationTransferred1",
+   "attributable": null
+  },
+  {
+   "cik": 33185,
+   "company": "EQUIFAX\u00a0INC.",
+   "decision_usd": 2935600000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 49071,
+   "company": "HUMANA INC.",
+   "decision_usd": 4187000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 51143,
+   "company": "INTERNATIONAL BUSINESS MACHINES CORPORATION",
+   "decision_usd": 3293000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 93556,
+   "company": "STANLEY BLACK\u00a0& DECKER, INC.",
+   "decision_usd": 2043800000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 97745,
+   "company": "THERMO FISHER SCIENTIFIC INC.",
+   "decision_usd": 19395000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 313616,
+   "company": "DANAHER CORPORATION",
+   "decision_usd": 10901000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 318154,
+   "company": "Amgen Inc.",
+   "decision_usd": 2529000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 712515,
+   "company": "ELECTRONIC ARTS INC.",
+   "decision_usd": 3391000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 713676,
+   "company": "PNC FINANCIAL SERVICES GROUP, INC",
+   "decision_usd": 10511000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 731766,
+   "company": "UnitedHealth Group Incorporated",
+   "decision_usd": 4821000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 796343,
+   "company": "ADOBE INC.",
+   "decision_usd": 2682000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 820313,
+   "company": "AMPHENOL CORPORATION",
+   "decision_usd": 2225400000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 860731,
+   "company": "TYLER TECHNOLOGIES, INC.",
+   "decision_usd": 2089706000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 877890,
+   "company": "CITRIX SYSTEMS, INC.",
+   "decision_usd": 2022304000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 885725,
+   "company": "BOSTON SCIENTIFIC CORPORATION",
+   "decision_usd": 2258000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 895421,
+   "company": "MORGAN STANLEY",
+   "decision_usd": 2648000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 896878,
+   "company": "INTUIT INC.",
+   "decision_usd": 3064000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 916076,
+   "company": "MARTIN MARIETTA MATERIALS, INC.",
+   "decision_usd": 3109200000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1018724,
+   "company": "AMAZON.COM, INC.",
+   "decision_usd": 7696000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1023128,
+   "company": "Lithia Motors, Inc.",
+   "decision_usd": 2699300000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1050915,
+   "company": "Quanta Services, Inc.",
+   "decision_usd": 2451703000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1059556,
+   "company": "MOODY\u2019S CORPORATION",
+   "decision_usd": 2179000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1094285,
+   "company": "TELEDYNE TECHNOLOGIES INC",
+   "decision_usd": 3723300000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1108524,
+   "company": "Salesforce, Inc.",
+   "decision_usd": 14876000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1113169,
+   "company": "PRICE T ROWE GROUP INC",
+   "decision_usd": 2450800000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1120193,
+   "company": "Nasdaq, Inc.",
+   "decision_usd": 2430000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1156039,
+   "company": "ELEVANCE HEALTH, INC.",
+   "decision_usd": 3476000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1163165,
+   "company": "ConocoPhillips",
+   "decision_usd": 8290000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1232524,
+   "company": "Jazz Pharmaceuticals plc",
+   "decision_usd": 6234792000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1324948,
+   "company": "RBC BEARINGS INCORPORATED",
+   "decision_usd": 2908200000,
+   "impairment_usd": 0.5,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2024
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1378789,
+   "company": "AerCap Holdings\u00a0N.V.",
+   "decision_usd": 22493195000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1383312,
+   "company": "BROADRIDGE FINANCIAL SOLUTIONS, INC.",
+   "decision_usd": 2603600000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1402057,
+   "company": "CDW CORP",
+   "decision_usd": 2705600000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1543151,
+   "company": "UBER TECHNOLOGIES, INC.",
+   "decision_usd": 2314000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1551182,
+   "company": "EATON CORPORATION plc",
+   "decision_usd": 4500000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1633917,
+   "company": "PayPal Holdings, Inc.",
+   "decision_usd": 2763000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1659166,
+   "company": "FORTIVE CORPORATION",
+   "decision_usd": 2570100000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1692115,
+   "company": "Southwest Gas Holdings, Inc.",
+   "decision_usd": 2354260000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1835632,
+   "company": "MARVELL TECHNOLOGY, INC",
+   "decision_usd": 3555000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [
+    2022
+   ],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  },
+  {
+   "cik": 1974138,
+   "company": "NCR ATLEOS CORPORATION",
+   "decision_usd": 2346000000,
+   "impairment_usd": 0,
+   "ratio": 0.0,
+   "label": "no-signal",
+   "impairment_years": [],
+   "decision_tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+   "attributable": null
+  }
+ ]
+}

@@ -16,6 +16,7 @@ Usage:
   python3 edgar.py filings AAPL --form 10-K --n 5
   python3 edgar.py facts AAPL            # dump selected XBRL fundamentals as JSON
   python3 edgar.py search "going concern" --n 10   # full-text search across filings
+  python3 edgar.py search "intrinsic value" --forms DFAN14A --start 2019-01-01 --end 2021-12-31
 """
 import json, os, sys, time, urllib.request, urllib.parse, argparse
 
@@ -60,9 +61,14 @@ def company_facts(cik):
     cik10 = str(cik).zfill(10)
     return json.loads(_get(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik10}.json"))
 
-def full_text_search(q, n=10):
-    url = "https://efts.sec.gov/LATEST/search-index?" + urllib.parse.urlencode({"q": q})
+def full_text_search(q, n=10, forms=None, start=None, end=None):
+    params = {"q": q}
+    if forms: params["forms"] = forms      # e.g. "DFAN14A" or "SC 13D,PREC14A"
+    if start: params["startdt"] = start    # YYYY-MM-DD
+    if end:   params["enddt"] = end
+    url = "https://efts.sec.gov/LATEST/search-index?" + urllib.parse.urlencode(params)
     data = json.loads(_get(url))
+    total = data.get("hits", {}).get("total", {}).get("value")
     hits = data.get("hits", {}).get("hits", [])[:n]
     out = []
     for h in hits:
@@ -72,6 +78,7 @@ def full_text_search(q, n=10):
             "company": (s.get("display_names") or ["?"])[0],
             "date": s.get("file_date"),
             "id": h.get("_id"),
+            "total": total,
         })
     return out
 
@@ -155,8 +162,11 @@ def cmd_facts(args):
     print(json.dumps(latest_facts(company_facts(cik)), indent=2))
 
 def cmd_search(args):
-    for h in full_text_search(args.query, args.n):
-        print(f"{h['date']}  {str(h['form']):8s}  {h['company']}")
+    hits = full_text_search(args.query, args.n, args.forms, args.start, args.end)
+    if hits:
+        print(f"# {hits[0]['total']} matching filings; showing {len(hits)}")
+    for h in hits:
+        print(f"{h['date']}  {str(h['form']):10s}  {h['company']}")
 
 def main():
     p = argparse.ArgumentParser(description="SEC EDGAR fetcher for the Compounding MBA")
@@ -164,7 +174,11 @@ def main():
     c = sub.add_parser("company"); c.add_argument("ticker"); c.set_defaults(fn=cmd_company)
     f = sub.add_parser("filings"); f.add_argument("ticker"); f.add_argument("--form"); f.add_argument("--n", type=int, default=10); f.set_defaults(fn=cmd_filings)
     x = sub.add_parser("facts"); x.add_argument("ticker"); x.set_defaults(fn=cmd_facts)
-    s = sub.add_parser("search"); s.add_argument("query"); s.add_argument("--n", type=int, default=10); s.set_defaults(fn=cmd_search)
+    s = sub.add_parser("search"); s.add_argument("query"); s.add_argument("--n", type=int, default=10)
+    s.add_argument("--forms", help='comma-separated form types, e.g. "DFAN14A" or "SC 13D,PREC14A"')
+    s.add_argument("--start", help="filed on or after, YYYY-MM-DD")
+    s.add_argument("--end", help="filed on or before, YYYY-MM-DD")
+    s.set_defaults(fn=cmd_search)
     args = p.parse_args()
     args.fn(args)
 

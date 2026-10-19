@@ -68,7 +68,7 @@
     generic recent-listings snapshot — Berkshire portfolio, SaaS, Q3 letters — with no skill-vs-luck /
     process-over-outcome discussion, so nothing from it is cited here.)*
 - **Links:** [[canon-tetlock-superforecasting]] · [[canon-kahneman-thinking-fast-and-slow]] ·
-  [[canon-klarman-margin-of-safety]] · [[canon-bezos-shareholder-letters]]
+  [[canon-klarman-margin-of-safety]] · [[canon-bezos-shareholder-letters]] · [[canon-duke-thinking-in-bets]]
 
 ---
 ### Rep

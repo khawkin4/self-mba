@@ -30,10 +30,27 @@
    sinks you in the boardroom.
 5. **Learn the exposed gap** — the red-team surfaces exactly what you didn't understand. *That* is the
    next study target — just-in-time, motivated, retained. This is how knowledge → understanding.
-6. **Log** — update `JUDGMENT-LEDGER.md` with the score + the recurring pattern. This is how it
-   compounds — we watch your soft spots harden over cases.
+6. **Answer the meta-question** — *which canon note, had you actually read it, would have changed this
+   memo?* One note. It goes in the Shelf debt table in `JUDGMENT-LEDGER.md`. This is the leg that
+   audits the shelf instead of the rep: a book stays unapplied until a rep needs it, and then it jumps
+   the queue. Three mentions of the same note promotes it to next-read.
+7. **Log** — update `JUDGMENT-LEDGER.md`: the six scores, whether the crux was named unprompted, the
+   forecast, and the recurring pattern. This is how it compounds — we watch your soft spots harden
+   over cases.
 
-**Cadence:** ~1 case/week (or as fast as you want the reps). Difficulty escalates as scores rise.
+**Cadence — one rep a week, from a menu of three sizes.** The menu exists so the streak survives a bad
+week; the mandate is the thing that broke last time (the tool shipped 2026-06-06 and sat unused for 16
+weeks because skipping cost nothing).
+
+| Size | Time | Deliverable |
+|---|---|---|
+| **Full** | ~90 min | The 1-page board memo below |
+| **Crux-only** | ~25 min | The crux in two sentences + the one figure proving it + the bear case in one line |
+| **Single-figure call** | ~10 min | One figure from the filings, what it decides, your call. Three sentences |
+
+A 10-minute rep scores and counts. A skipped 90-minute rep does not — and gets logged as a `skipped`
+row in the ledger, so the gap is visible. Difficulty escalates as scores rise. Full spec of the
+mechanism, including the input metrics that actually matter: [MECHANISM.md](MECHANISM.md).
 
 ## The deliverable spec — a 1-page board memo
 Keep it to one page. Exec altitude. Every claim backed by a real number from the filings.
@@ -43,11 +60,17 @@ Keep it to one page. Exec altitude. Every claim backed by a real number from the
 4. **The fatal risk + mitigation** — the one thing that, if wrong, sinks the plan; and what you'd do.
 5. **The ask** — what you want the board to approve/decide.
 
+Plus, on every rep regardless of size: **attach one forecast** — a falsifiable statement with a
+probability and a resolution date ("70% that gross margin is below X% by FY-end"). That is what makes
+calibration measurable rather than a feeling. Then **size it**: pass / probe / commit, in one line, and
+why that size fits that probability. Being right about direction and wrong about size is how people
+with tomorrow's newspaper still went bust ([bet-sizing-conviction](../notes/bet-sizing-conviction.md)).
+
 ## The rubric (how I grade, 1–5 each)
 | Dimension | The question a sharp partner asks |
 |---|---|
 | **Diagnosis** | Did you find the *real* crux, or restate the obvious? |
-| **Conviction** | Did you *recommend*, or hide in a tradeoffs matrix? |
+| **Conviction** | Did you *recommend*, or hide in a tradeoffs matrix? And does the *size* of the commitment match the forecast's probability? |
 | **Evidence & execution** | Are the numbers right and the frameworks correctly applied? |
 | **Landscape** | Did you read the competitive / market / macro reality? |
 | **Communication** | Exec altitude, BLUF, brief — would a CFO buy it in 90 seconds? |
@@ -58,5 +81,9 @@ Below-a-masters tells: framework dumping, no recommendation, vanity metrics, ign
 treating a presumption as a fact.
 
 ## Files
+- `MECHANISM.md` — the mechanism: countable results, controllable input metrics, the three legs, the
+  meta-question, and the amendment log. Read this if the gym stops running.
+- `CASE-TEMPLATE.md` — skeleton for a new case, so standing one up costs minutes.
 - `case-NN-<company>.md` — the case brief + where you paste your memo + my red-team.
-- `JUDGMENT-LEDGER.md` — running scorecard + recurring strengths/gaps across cases.
+- `JUDGMENT-LEDGER.md` — the instrument: rep log (including skipped weeks), scores, input metrics,
+  shelf debt, recurring strengths/gaps.
