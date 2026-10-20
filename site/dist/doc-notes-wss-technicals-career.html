@@ -1,0 +1,1563 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Wall Street Skinny — technicals &amp; career: how deals are priced, financed, and paid for · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Wall Street Skinny — technicals &amp; career: how deals are priced, financed, and paid for</h1>
+<div class="doc-meta"><span>77 min read</span><span>17,806 words</span><span>Updated 2026-10-19</span><span class="doc-src">notes/wss-technicals-career.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#what-this-adds-to-the-program">What this adds to the program</a></li><li class="l2"><a href="#concept-map">Concept map</a></li><li class="l2"><a href="#4-concepts">4 · Concepts</a></li><li class="l3"><a href="#41-the-three-statement-model-and-when-you-dont-need-one">4.1 The three-statement model, and when you don't need one</a></li><li class="l3"><a href="#42-equity-value-vs-enterprise-value">4.2 Equity value vs. enterprise value</a></li><li class="l3"><a href="#43-the-dcf-intrinsic-value-and-the-interview-answer">4.3 The DCF: intrinsic value, and the interview answer</a></li><li class="l3"><a href="#44-the-wacc-cost-of-debt-cost-of-equity-and-choosing-a-beta">4.4 The WACC: cost of debt, cost of equity, and choosing a beta</a></li><li class="l3"><a href="#45-capital-structure-how-adding-debt-changes-the-wacc">4.5 Capital structure: how adding debt changes the WACC</a></li><li class="l3"><a href="#46-ebit-vs-ebitda-and-the-interest-deductibility-cap">4.6 EBIT vs. EBITDA, and the interest-deductibility cap</a></li><li class="l3"><a href="#47-the-lbo-and-the-equity-check">4.7 The LBO and the equity check</a></li><li class="l3"><a href="#48-paper-lbo-irr-and-the-rule-of-72">4.8 Paper LBO, IRR and the rule of 72</a></li><li class="l3"><a href="#49-sources-uses-cash-free-debt-free-and-rollover-equity">4.9 Sources &amp; uses, cash-free debt-free, and rollover equity</a></li><li class="l3"><a href="#410-who-funds-the-debt-syndication-clo-private-credit">4.10 Who funds the debt: syndication → CLO → private credit</a></li><li class="l3"><a href="#411-club-deals-vs-co-invest">4.11 Club deals vs. co-invest</a></li><li class="l3"><a href="#412-collateral-covenants-recovery-and-the-bankruptcy-chapters">4.12 Collateral, covenants, recovery, and the bankruptcy chapters</a></li><li class="l3"><a href="#413-shorting-bonds-repo-haircuts-and-settlement-fails">4.13 Shorting bonds, repo haircuts, and settlement fails</a></li><li class="l3"><a href="#414-treasury-auctions">4.14 Treasury auctions</a></li><li class="l3"><a href="#415-ipo-pricing-the-pop-lockups-and-the-direct-listing">4.15 IPO pricing, the pop, lockups, and the direct listing</a></li><li class="l3"><a href="#416-private-marks-and-related-party-valuation">4.16 Private marks and related-party valuation</a></li><li class="l3"><a href="#417-sell-side-research-economics">4.17 Sell-side research economics</a></li><li class="l3"><a href="#418-elite-boutique-vs-bulge-bracket-two-business-models-for-selling-advice">4.18 Elite boutique vs. bulge bracket: two business models for selling advice</a></li><li class="l3"><a href="#419-banker-and-buy-side-comp-structure">4.19 Banker and buy-side comp structure</a></li><li class="l3"><a href="#420-carry-economics-by-fund-size">4.20 Carry economics by fund size</a></li><li class="l3"><a href="#421-the-career-pipeline-222-on-cycle-recruiting-and-the-mba">4.21 The career pipeline: 2+2+2, on-cycle recruiting, and the MBA</a></li><li class="l3"><a href="#422-folded-in-from-the-culture-other-recaps-industry-succession-strangers">4.22 Folded in from the culture-other recaps (Industry / Succession / Strangers)</a></li><li class="l2"><a href="#5-how-the-concepts-connect">5 · How the concepts connect</a></li><li class="l2"><a href="#6-retrieval-questions">6 · Retrieval questions</a></li><li class="l2"><a href="#7-gaps-titles-to-fold-in-later">7 · Gaps — titles to fold in later</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p><strong>Part of <a class="wiki" href="doc-notes-wall-street-skinny-insights.html">wall street skinny insights</a></strong> (hub). Sibling notes: <a class="wiki" href="doc-notes-wss-ai-economics.html">wss ai economics</a> <a class="wiki" href="doc-notes-wss-capital-markets-ma.html">wss capital markets ma</a> <a class="wiki" href="doc-notes-wss-credit-distressed.html">wss credit distressed</a> <a class="wiki" href="doc-notes-wss-private-markets-wealth.html">wss private markets wealth</a> <a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> <a class="wiki" href="doc-notes-wss-trading-hedge-funds.html">wss trading hedge funds</a></p>
+<p><strong>Sources:</strong> Pass 1: 29 items in the <code>technicals-career</code> cluster (5 long videos, 24 shorts) + the High
+Yield Harry compensation episode (<code>FErYd8yHf18</code>) + a keyword scan of <code>culture-other</code>. <strong>Pass 2:</strong> the 30
+newly recovered <code>technicals-career</code> files (11 long videos, 19 shorts; 11 shorts are music-only), four
+gap titles routed elsewhere (<em>Elite Boutique vs. Bulge Bracket</em> <code>zEnUJLR29OE</code>, <em>Industry S2E7</em>
+<code>5yDEBpGLofI</code>, <em>Bankers vs. Lawyers</em> <code>4K9ZjBkSTT4</code>, <em>#1 of Top 5 Technical Questions</em> <code>NTF9MY-817E</code>), and
+a full read of the second half of <code>culture-other</code> (10 long videos, 23 shorts). Roughly 95 transcripts
+in total. Raw: <code>_ingest/raw/2026-10-04/media/wall-street-skinny/</code>.</p>
+<p><strong>Maps to:</strong> Course <strong>01</strong> (the three statements, as a model), Course <strong>02</strong> (Corporate Finance &amp;
+Valuation: DCF, WACC, capital structure, EV, LBO arithmetic, IRR), Course <strong>03</strong> (incentive design:
+deferral, clawbacks, bonus caps), Course <strong>09</strong> (career/org: the 2+2+2 pipeline, golden handcuffs,
+boutique vs. bulge bracket), Course <strong>11</strong> (credit cycles, rates plumbing), <strong>E2</strong> (Capital Allocation),
+<strong>E3</strong> (M&amp;A, Deals &amp; Restructuring: LBO structure, sources &amp; uses, rollover, Chapter 7 vs. 11, IPO vs.
+direct listing), <strong>E4</strong> (Governance: related-party marks, research conflicts, audit), <strong>E8</strong> (Investor
+Relations).</p>
+<p><strong>Pass 2 replaced the reconstructions.</strong> The DCF, WACC (cost of debt, cost of equity, beta choice, how
+debt changes WACC), three-statement build, LBO and cash-free/debt-free sections are now taught from the
+channel's own dedicated videos, with the hosts' numbers. Still self-derived and labeled as such: the
+WACC weighting example (Part 1 of the WACC series has no transcript), the rule-of-72 cross-check, and
+the EA paper-LBO extension in §4.8. The <em>Top 8 Technicals</em> shorts exist but are music-only.</p>
+<p>⚠ <strong>Bias:</strong> both hosts are ex-Morgan Stanley sell side (Kristen: IBD / financial sponsors / CLO desk;
+Jen: rates S&amp;T) and sell courses and boot camps in nearly every episode. Watch for: (1) instinctive
+defense of the bank-intermediated system (CLOs "are not 2008", the Centerview analyst is probably in
+"the wrong job"); (2) guests talking their book — Spotify's SVP on Spotify's model, Citi's head of
+research on why research still matters, High Yield Harry selling a comp-data platform; (3) comp data
+that is self-reported and anonymous (Buyside Hub), so it skews toward people proud of their number.</p>
+</blockquote>
+<hr />
+<h2 id="what-this-adds-to-the-program">What this adds to the program</h2>
+<ul>
+<li><strong>The valuation toolkit, from the channel's own interview series.</strong> The repo builds a DCF from scratch
+  (<a class="wiki" href="doc-learn-unit-06-whats-a-business-worth.html">unit 06 whats a business worth</a>) but has no WACC, CAPM or beta anywhere. New here: the channel's
+  worked cost of debt (7% × 0.75 = 5.25%) and cost of equity (4.25% + 1.25 × 5.5% = 11.125%), the
+  theory-vs-practice split on beta (forward Barra vs. Bloomberg adjusted, and why the sell side
+  standardizes for litigation), the U-shaped answer to "how does debt change WACC," and the earnings-yield
+  vs. cost-of-equity confusion that conflates EPS accretion with valuation.</li>
+<li><strong>Enterprise value has no home in the repo.</strong> <code>GLOSSARY.md</code> and <code>learn/unit-06</code> teach DCF as
+  "discount the cash" but never separate <em>equity</em> value from <em>firm</em> value. The channel's X/xAI
+  short is the cleanest demonstration available: a "$33B" deal and a "$44B" deal that are the
+  <strong>same price</strong>. This note adds EV, and why every LBO/M&amp;A headline must be decoded through it.</li>
+<li><strong>The LBO is in the repo only as a house analogy</strong> (<a class="wiki" href="doc-notes-tiger-sisters-private-capital-101.html">tiger sisters private capital 101</a>, Toys "R"
+  Us). New here: Kristen's worked LBO ($3M equity → $9M, 3.0x, ~25% IRR, decomposed into EBITDA growth
+  vs. debt paydown), the <strong>equity check as the real risk dial</strong> (TXU ~18% vs. EA ~65%), sources &amp; uses,
+  cash-free/debt-free and rollover equity (Skechers), and who actually funds the debt.</li>
+<li><strong>How finance people are paid, with numbers.</strong> <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> says entry pay is
+  "roughly six figures" and stops. New here: the base/bonus split by level (IB vs. PE/private credit),
+  the <strong>one-third cash / one-third deferred cash / one-third deferred stock</strong> structure, why deferral
+  makes seniors expensive to poach, how the EU bonus cap <em>raised</em> fixed pay, and carry economics by
+  fund size. This is applied agency theory (<a class="wiki" href="doc-canon-canon-jensen-meckling-agency-theory.html">canon jensen meckling agency theory</a>).</li>
+<li><strong>Failure modes and firm models</strong>: First Brands (double-pledged receivables), the "11,000-to-1"
+  Treasury short, JPMorgan's $20B sole underwrite, 2008's bilateral-swap contagion; the IPO pop as a
+  transfer to allocated investors (Figma ≈ $3B); and Scott Bok on why advice-only boutiques exist and
+  why he sold Greenhill into Mizuho anyway.</li>
+</ul>
+<hr />
+<h2 id="concept-map">Concept map</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Concept</th>
+<th>One line</th>
+<th>Why it matters</th>
+<th>In repo?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Three-statement model</td>
+<td>IS → CFS → BS, linked so every assumption balances</td>
+<td>Base of every DCF/LBO; you don't always need it</td>
+<td>partial</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Equity value vs. enterprise value</td>
+<td>Equity + net debt = the price of the whole business</td>
+<td>Headline deal prices are usually the wrong number</td>
+<td><strong>n</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>The DCF</td>
+<td>Project unlevered FCF, add terminal value, discount at WACC</td>
+<td>The intrinsic valuation; the #1 interview question</td>
+<td>partial</td>
+</tr>
+<tr>
+<td>4</td>
+<td>The WACC and beta</td>
+<td>Weighted after-tax cost of debt and CAPM cost of equity</td>
+<td>The discount rate is where judgment hides</td>
+<td><strong>n</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Capital structure and WACC</td>
+<td>Debt lowers WACC until distress risk raises it</td>
+<td>Interview staple; CFO financing choice</td>
+<td><strong>n</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>EBIT vs. EBITDA &amp; the interest cap</td>
+<td>Tax law lets you deduct interest up to 30% of one of them</td>
+<td>Decides the size of the debt tax shield</td>
+<td><strong>n</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td>The LBO and the equity check</td>
+<td>Buy with debt; the equity share sets who eats the first loss</td>
+<td>The dial behind TXU's bankruptcy and EA's cushion</td>
+<td>partial</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Paper LBO, IRR, rule of 72</td>
+<td>Back-of-envelope return math in your head</td>
+<td>How PE screens a deal in 3 minutes</td>
+<td><strong>n</strong></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Sources &amp; uses, CFDF, rollover</td>
+<td>The buyout budget; cash and debt settled at close</td>
+<td>Where fees and the equity check are computed</td>
+<td><strong>n</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Who funds the debt: syndication → CLO → private credit</td>
+<td>Banks originate risk and then distribute or hold it</td>
+<td>Determines where losses land in a downturn</td>
+<td>partial</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Club deals vs. co-invest</td>
+<td>Many sponsors vs. one sponsor plus LPs</td>
+<td>Governance of the buyer, and fee economics for LPs</td>
+<td><strong>n</strong></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Collateral, covenants, recovery, bankruptcy chapters</td>
+<td>What lenders hold and when they can act</td>
+<td>Why loans recover ~70c and fraud surfaces late</td>
+<td>partial</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Shorting bonds, repo haircuts, settlement fails</td>
+<td>Borrow, sell, return; the haircut prices the client</td>
+<td>Where a tiny fund put $250M of loss on the street</td>
+<td>partial</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Treasury auctions</td>
+<td>Single-price (Dutch) auction; WI, tail, stop-through</td>
+<td>The supply events that move the rates market</td>
+<td><strong>n</strong></td>
+</tr>
+<tr>
+<td>15</td>
+<td>IPO pricing, the pop, lockups, direct listings</td>
+<td>Banks underprice ~15%; anything above is a transfer</td>
+<td>Figma's ~$3B gift to allocated buyers</td>
+<td><strong>n</strong></td>
+</tr>
+<tr>
+<td>16</td>
+<td>Private marks &amp; related-party valuation</td>
+<td>A private price set by an interested party</td>
+<td>xAI/X; also how private credit "marks at par"</td>
+<td>partial</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Sell-side research economics</td>
+<td>Analysts sell insight to investors and access to companies</td>
+<td>Why coverage stops when a bank is mandated</td>
+<td>partial</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Elite boutique vs. bulge bracket</td>
+<td>Advice-only vs. advice plus balance sheet</td>
+<td>Conflicts, cyclicality, where juniors learn</td>
+<td><strong>n</strong></td>
+</tr>
+<tr>
+<td>19</td>
+<td>Banker &amp; buy-side comp structure</td>
+<td>Base fixed, bonus variable, seniors deferred</td>
+<td>Incentives, retention, poaching costs</td>
+<td><strong>n</strong></td>
+</tr>
+<tr>
+<td>20</td>
+<td>Carry economics by fund size</td>
+<td>20% of profits split in basis points</td>
+<td>Why small funds hand out carry and megafunds don't</td>
+<td>partial</td>
+</tr>
+<tr>
+<td>21</td>
+<td>The career pipeline (2+2+2, on-cycle)</td>
+<td>IB as PE's outsourced training program</td>
+<td>Explains recruiting games and the "last chopper" at ~30</td>
+<td>partial</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Culture-other teaching</td>
+<td>Mechanisms embedded in TV recaps</td>
+<td>Axes, 2008 plumbing, fraud patterns, gating</td>
+<td>partial</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="4-concepts">4 · Concepts</h2>
+<h3 id="41-the-three-statement-model-and-when-you-dont-need-one">4.1 The three-statement model, and when you don't need one</h3>
+<ul>
+<li><strong>What it is:</strong> A linked projection of a company's income statement, cash flow statement and balance
+  sheet in Excel, so that one assumption change (say, revenue growth) flows through profit, cash and
+  the balance sheet at once. It is the "language" Kristen says bankers speak; the DCF, the LBO and the
+  merger model are all built on top of its outputs.</li>
+<li><strong>How it works (Kristen, <em>ESSENTIALS for Building a 3 Statement Financial Model</em>):</strong> She orders the
+  statements <strong>income statement → cash flow statement → balance sheet</strong>, not the textbook IS → BS → CFS,
+  because that is the path one dollar takes: net income closes the income statement and opens the cash
+  flow statement (the <em>indirect method</em>); the cash flow statement converts it to a change in cash; that
+  cash lands on the balance sheet. Her build sequence:
+  1. Income statement from sales down to net income, <strong>leaving holes</strong> for interest expense and interest
+     income (they need the debt and cash balances, which don't exist yet) and for D&amp;A (needs capex).
+  2. Balance sheet line by line through <strong>supporting schedules</strong> (working capital, PP&amp;E, debt), top to
+     bottom, with cash left for last.
+  3. Every balance sheet projection has a twin on the cash flow statement (more PP&amp;E is capex; more
+     receivables is a cash outflow). "You can't do one without the other": if a line moves on one
+     statement and not the other, the model won't balance, and you lose hours finding it.
+  Once the schedules exist the holes fill and the model closes (interest depends on cash, which depends
+  on interest: the circularity analysts switch on iterative calculation for, which the hosts don't
+  name).</li>
+<li><strong>Business significance:</strong> A <strong>DCF does not need the full linked model</strong>: it uses only unlevered
+  cash flows, so you can pull EBITDA, D&amp;A, capex and the change in working capital into an output tab and
+  skip the debt and the balance sheet. Some LBOs on the sponsors desk were run on cash flows plus a debt
+  schedule only. But a PE modeling test will expect the full three statements. And her teaching
+  observation: students say two days building one taught them more accounting than a semester of class.</li>
+<li><strong>Forces &amp; impact (the <em>Financial Modeling &amp; Excel MUST KNOWS</em> episode):</strong> Banking models are valued
+  because they are a <strong>transferable representation of a business</strong>, unlike trading-desk models
+  (convertible pricing with Monte Carlo engines, CDO models) that programmers build, nobody formats
+  because no client sees them, and whose skill doesn't travel. Conventions are near-universal: <strong>blue
+  inputs, black formulas, green links to other sheets</strong>. Keyboard over mouse because a model is thousands
+  of formulas; Windows over Mac Excel; learn native shortcuts for interviews (you won't have your add-ins
+  on someone else's machine), then load productivity add-ins on the job. Excel inertia is structural:
+  Morgan Stanley was still on Excel 2003 in 2010 because the ribbon broke everyone's key sequences.
+  The model's output is a <em>conversation with a CEO</em>, not a P&amp;L position, so presentation is part of the
+  substance.</li>
+<li><strong>With vs. without:</strong> With linked statements, every assumption is forced to be internally consistent
+  (growth needs working capital and capex, which need funding). Without them, a cash-flow-only model can
+  assume growth for free; the balance sheet is the check that catches it.</li>
+<li><strong>Applies when</strong> you need debt capacity, credit stats, or EPS (LBO, merger, restructuring). <strong>Breaks
+  when</strong> it's overkill: a quick DCF or a screening valuation.</li>
+<li><strong>Channel example:</strong> <em>ESSENTIALS for Building a 3 Statement Financial Model</em>; <em>Financial Modeling &amp;
+  Excel MUST KNOWS for Investment Banking x Macabacus</em> (with Macabacus founder Ryan McGregor, ex-Lehman,
+  who built the tool in 2008 after being laid off; acquired by CFI in 2021).</li>
+<li><strong>Counterpoint:</strong> The modeling episode is partly an ad (Macabacus is a sponsor; the hosts were
+  launching their own modeling course). The craft claims hold, but "you can knock out a model in 20
+  minutes to an hour" is Kristen-speed, not analyst-speed.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-learn-unit-02-cash-vs-profit.html">unit 02 cash vs profit</a> (why net income isn't cash); <a class="wiki" href="doc-learn-unit-03-what-a-company-owns-and-owes.html">unit 03 what a company owns and owes</a>
+  (the balance sheet); <a class="wiki" href="doc-notes-01-accounting-aapl-10k-fy2025.html">aapl 10k fy2025</a> (a real set of statements to model).</li>
+</ul>
+<h3 id="42-equity-value-vs-enterprise-value">4.2 Equity value vs. enterprise value</h3>
+<ul>
+<li><strong>What it is:</strong> <em>Equity value</em> is what the shares are worth. <em>Enterprise value</em> (EV) is what the
+  whole operating business is worth: equity plus debt (strictly, plus debt and preferred, minus
+  cash). Buying a company means buying the equity <em>and</em> taking on its debt, so EV is the real price.</li>
+<li><strong>How it works:</strong> The hosts' house analogy (<em>#1 Top 5 Technical Questions</em>): a $5M house bought with
+  $1M down and a $4M mortgage. You didn't buy a $1M house; you bought a $5M one, financed 20/80. The
+  X/xAI short applies it: xAI bought X in an all-stock deal at <strong>$33B equity value</strong>, but X carried
+  <strong>~$12B of debt</strong> (mostly from Musk's 2022 buyout), so EV ≈ <strong>$45B</strong>. In 2022 Musk paid <strong>$44B</strong>
+  when X had <strong>~$0.6B</strong> of debt, EV ≈ $44.6B. Arithmetic: 33 + 12 = 45 vs. 44 + 0.6 = 44.6. Same price;
+  the "markdown" was a financing change, not a valuation change.</li>
+<li><strong>Business significance:</strong> Every multiple that matters to a buyer (EV/EBITDA, the LBO's 20x for EA)
+  is EV-based, because EBITDA is earned for <em>all</em> capital providers. Equity multiples (P/E) belong to
+  shareholders only. Mixing them is the commonest error in deal headlines, and the hosts note that
+  TXU is reported as both a "$30B" and a "$45B" LBO for exactly this reason.</li>
+<li><strong>Forces &amp; impact:</strong> Leverage moves value between the two lines. Pile on debt and, for the same EV,
+  equity shrinks; this is the whole engine of §4.7. Second-order: a falling "valuation" can be pure
+  re-leveraging, and a rising one can be debt paydown.</li>
+<li><strong>With vs. without:</strong> Without EV, a company with $40B of debt and $5B of market cap looks "cheap"
+  next to a debt-free $20B one. With it you see the first costs $45B.</li>
+<li><strong>Applies when</strong> comparing businesses with different capital structures, or acquisitions. <strong>Breaks
+  when</strong> "debt" is ambiguous: leases, pensions, off-balance-sheet obligations (First Brands, §4.12),
+  minority interests. EV is only as honest as the debt list.</li>
+<li><strong>Channel example:</strong> <em>The Truth About the $33Bn Elon Musk's xAI Paid for X</em>; <em>#1 of Top 5 Technical
+  Questions</em>.</li>
+<li><strong>Counterpoint:</strong> The short says "true value is EV." Value to <em>whom</em> matters: xAI's outside
+  shareholders paid in stock, so their question is the relative value of two private stocks, both
+  marked by a party on both sides (§4.16). EV arithmetic doesn't fix a soft mark.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-learn-unit-06-whats-a-business-worth.html">unit 06 whats a business worth</a> (cash-flow logic this sits on); GLOSSARY "Leverage".</li>
+</ul>
+<h3 id="43-the-dcf-intrinsic-value-and-the-interview-answer">4.3 The DCF: intrinsic value, and the interview answer</h3>
+<ul>
+<li><strong>What it is:</strong> One of the three standard ways to value a company, alongside public comparables
+  (what similar listed companies trade at) and precedent transactions (what similar companies were
+  bought for). The discounted cash flow analysis is the <strong>intrinsic</strong> one: value comes from the cash
+  this business will produce, not from what other businesses fetch.</li>
+<li><strong>How it works (Kristen, <em>Walk Me Through the DCF in Under 3 Minutes</em>):</strong> Three steps.
+  1. Project <strong>unlevered free cash flow</strong> (cash generated for all capital providers, before interest)
+     for 5, 10 or 15 years. Academically you project until the company reaches steady state; in
+     practice you stop at 5–15.
+  2. Add a <strong>terminal value</strong> for everything after the projection: either the <strong>perpetuity growth
+     method</strong> (grow the last year's cash flow forever at a constant rate) or the <strong>exit multiple
+     method</strong> (assume the business is sold at a multiple, usually of EBITDA). Academics dislike the
+     second, she notes; banks use it routinely.
+  3. Discount every cash flow and the terminal value back at the <strong>WACC</strong> (§4.4) and add them up. The
+     sum is <strong>enterprise value</strong> (§4.2), not equity value.
+  Why discount (<em>DCF in Investment Banking: Theory vs. Reality</em>): inflation, the risk the cash never
+  arrives, and opportunity cost (money today could sit in a ~5% Treasury). Kristen's point on effort:
+  she could explain the DCF in one three-minute video; the WACC took three.</li>
+<li><strong>Business significance:</strong> The DCF is the methodology that answers "what is this worth to <em>anyone</em>,"
+  which is why it anchors fairness opinions and buy-side underwriting. For a banker it is one bar on the
+  football field next to comps and precedents; the episode on modeling stresses it's part of a
+  <em>holistic</em> picture shown to a CEO, not a trading model.</li>
+<li><strong>Forces &amp; impact:</strong> Rates move the discount rate; the terminal value usually carries most of the
+  value, so the exit multiple quietly imports market pricing back into an "intrinsic" method. The
+  hosts' recurring <em>Industry</em> joke makes the second-order point: lower the WACC and the valuation goes
+  up, so a DCF can be tuned toward the answer the client wants to hear (§4.4 on why banks standardize
+  inputs).</li>
+<li><strong>With vs. without:</strong> With a DCF, a buyer has a value independent of a frothy comp set. Without it,
+  every valuation is relative, and a sector-wide bubble looks "fairly priced" against itself.</li>
+<li><strong>Applies when</strong> cash flows are forecastable (mature, positive FCF). <strong>Breaks when</strong> the terminal
+  value is most of the answer, cash flows are negative for years (early-stage), or the exit multiple
+  method turns it back into a comps analysis.</li>
+<li><strong>Channel example:</strong> <em>Walk Me Through the DCF in Under 3 Minutes</em>; <em>DCF in Investment Banking:
+  Theory vs. Reality</em>.</li>
+<li><strong>Counterpoint:</strong> The three-minute answer is an interview script; it doesn't say how sensitive the
+  output is. A 1-point change in WACC or terminal growth can move value 15–25% on a typical model,
+  which is why the football field shows ranges, not points (standard practice, not stated by the hosts).</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-learn-unit-06-whats-a-business-worth.html">unit 06 whats a business worth</a> (the repo's DCF built from scratch);
+  <a class="wiki" href="doc-notes-bloomberg-terminal-instrumentation.html">bloomberg terminal instrumentation</a> (<code>XLTP</code> DCF template).</li>
+</ul>
+<h3 id="44-the-wacc-cost-of-debt-cost-of-equity-and-choosing-a-beta">4.4 The WACC: cost of debt, cost of equity, and choosing a beta</h3>
+<ul>
+<li><strong>What it is:</strong> The <strong>weighted average cost of capital</strong> is the DCF's discount rate: the blended
+  return that lenders and shareholders require, weighted by how much of the business each funds.
+  WACC = %debt × after-tax cost of debt + %equity × cost of equity.</li>
+<li><strong>How it works (the channel's three-part WACC series plus the beta segment of <em>Theory vs. Reality</em>):</strong></li>
+<li><strong>Cost of debt.</strong> Use what the company would pay to borrow <strong>today</strong>: the <strong>yield to maturity</strong> on
+    its long-dated bonds, not the coupon. A bond issued in 2020 with a 3% coupon may now yield 7%,
+    because its price fell when rates rose. Interest is tax-deductible, so multiply by (1 − t). Tax
+    rate: 21% US federal plus 1–5% state and local, so ~<strong>25%</strong> is the standard assumption (use local
+    rates for a foreign company). <strong>7% × (1 − 25%) = 5.25%.</strong></li>
+<li><strong>Cost of equity</strong> isn't observable, so banks use <strong>CAPM</strong>: risk-free rate + levered beta × market
+    risk premium. Risk-free = 10- or 20-year Treasury yield (for euro cash flows, the safest euro
+    sovereign: the German Bund). <strong>Beta</strong> = how much the stock moves per 1% move in the market (β 1.25
+    → +1.25% when the S&amp;P rises 1%). <strong>Market risk premium</strong> comes from the Duff &amp; Phelps (now Kroll)
+    valuation handbook, typically <strong>3–7%</strong>, or from NYU's Aswath Damodaran, who publishes his free.
+    Channel numbers: <strong>4.25% + 1.25 × 5.5% = 11.125%.</strong></li>
+<li><strong>Weighting</strong> (illustration, not the channel's): at 30% debt / 70% equity,
+    0.3 × 5.25% + 0.7 × 11.125% = 1.58% + 7.79% ≈ <strong>9.4%</strong>. The series ends with Kristen's joke that
+    after all this the MD says the rate looks high and to use equity research's number.</li>
+<li><strong>Which beta (Theory vs. Reality).</strong> Academics say use a <strong>forward-looking (predicted) beta</strong>,
+    because you are discounting future cash flows; Barra publishes them, but they are a black box.
+    Sell-side bankers mostly use <strong>historical</strong> beta from Bloomberg's <code>BETA</code> screen: two years of weekly
+    returns regressed against the S&P; the slope is <strong>raw beta</strong>, and <strong>R²</strong> says how much of the stock's
+    movement the market explains. Most banks then use <strong>adjusted beta = ⅔ × raw + ⅓ × 1.0</strong> (Blume's
+    observation that betas drift toward 1). Low R², a short trading history, or a private company →
+    use peers: <strong>unlever</strong> each peer's beta to an asset beta (stripping out their leverage), take the
+    mean or median, <strong>relever</strong> at your company's capital structure. (The standard formula, which the
+    hosts reference but don't state: βL = βU × [1 + (1 − t) × D/E].)</li>
+<li><strong>Business significance:</strong> The WACC is where judgment hides inside a "mechanical" valuation. The
+  sell side standardizes inputs for liability reasons: a bank writing a fairness opinion may have to
+  defend its beta under oath, and Kristen cites a figure that <strong>75%</strong> of acquisitions end in lawsuits.
+  The buy side, not defending anything in court, can use R² and judgment to pick the beta that best
+  describes the business. Same formula, different incentives.</li>
+<li><strong>Forces &amp; impact:</strong> Rates feed in twice (risk-free rate and cost of debt), so a rising-rate
+  environment lowers every DCF value even if the business is unchanged. Tax policy feeds the debt leg
+  (§4.6). Bloomberg access itself is a barrier: the hosts put a terminal at ~$28k a year.</li>
+<li><strong>With vs. without:</strong> With a defensible WACC, two banks valuing the same company land in a similar
+  range. Without standard inputs, the discount rate becomes the dial that delivers the client's number.</li>
+<li><strong>Applies when</strong> the company's risk resembles its history or its peers'. <strong>Breaks when</strong> the capital
+  structure is about to change (an LBO: the historical beta describes a different company), or when
+  peers aren't really peers.</li>
+<li><strong>Channel example:</strong> <em>Breaking Down the Cost of Equity in the WACC for a DCF</em>; <em>#1 Top Technical
+  Finance Concept…WACC Part 3</em> (cost of debt); <em>DCF in Investment Banking: Theory vs. Reality</em>. Part 1
+  (the weighting) has no transcript.</li>
+<li><strong>Counterpoint / check:</strong> The 75% lawsuit figure fits <em>public-company</em> deals in the 2010s merger
+  litigation wave, not acquisitions generally. The 3–7% MRP range is wide enough that the "source"
+  barely constrains you: 3% vs. 7% on β 1.25 is a 5-point swing in cost of equity. And a 25% tax rate
+  in the cost of debt assumes the interest is fully deductible, which §4.6's cap can deny.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-notes-bloomberg-terminal-instrumentation.html">bloomberg terminal instrumentation</a> (<code>BETA</code> returns the regression, not just a
+  number; why not to take the terminal's <code>WACC</code>); <a class="wiki" href="doc-learn-unit-06-whats-a-business-worth.html">unit 06 whats a business worth</a>.</li>
+</ul>
+<h3 id="45-capital-structure-how-adding-debt-changes-the-wacc">4.5 Capital structure: how adding debt changes the WACC</h3>
+<ul>
+<li><strong>What it is:</strong> The interview question <em>"How does increasing debt impact the WACC?"</em> The channel's
+  answer: debt is cheaper than equity, so adding it <strong>lowers</strong> the WACC (and raises value) up to a
+  point, after which rising default risk makes both debt and equity more expensive and the WACC
+  <strong>rises</strong>.</li>
+<li><strong>How it works (Kristen, <em>How Does Increasing Debt Impact the WACC</em>):</strong></li>
+<li><strong>Why debt is cheaper.</strong> Lenders are paid before shareholders and stand first in bankruptcy. She
+    cites Fitch data: average recovery ~<strong>76%</strong> for first-lien loans, ~<strong>40%</strong> for bonds; equity in
+    Bed Bath &amp; Beyond was essentially wiped out. Lower risk, lower required return, plus the tax
+    deduction.</li>
+<li><strong>The deduction has limits</strong> since the 2017 tax law (§4.6).</li>
+<li><strong>Three theories.</strong> <em>Trade-off/traditional</em>: an optimal mix exists. <em>Pecking order</em>: fund from
+    retained earnings first, then debt, then new equity as a last resort, because issuing stock signals
+    management thinks it's overvalued (she saw this on the converts desk). <em>Modigliani–Miller</em>: with no
+    taxes, more debt raises the cost of equity exactly enough that value can't change; with taxes,
+    debt adds value through the tax shield, which she reframes as a <strong>transfer from taxpayers</strong> to the
+    company, not value creation.</li>
+<li><strong>What MM leaves out:</strong> bankruptcy costs; issuance costs (IPO fees ~<strong>6–7%</strong> vs. <strong>12–40bp</strong> on
+    Meta's 2023 bond deal, per the underwriting discount she looked up); the discipline debt imposes;
+    and the fact that borrowing costs rise in <strong>steps</strong> at rating thresholds, not smoothly.</li>
+<li><strong>The converts-desk chart.</strong> For CFOs she drew cost of capital (y) against the stock's expected
+    five-year CAGR (x). Debt is a flat line: its cost doesn't depend on the share price. Equity is a 45°
+    line: if your stock compounds 20% a year, that is what selling stock cost you. A convertible is debt
+    below some growth rate and equity issued at a premium above it. Moral: if you expect your stock to
+    do badly, issue equity; if you expect it to soar, issue debt, which is exactly the signal the
+    pecking order says investors read.</li>
+<li><strong>The commenter's error.</strong> A viewer argued cost of equity is now <em>below</em> cost of debt for
+    investment-grade firms, using earnings ÷ price. That's the <strong>earnings yield</strong> (1/PE), not a cost of
+    equity: it ignores growth and payout. It is a legitimate <strong>accretion/dilution</strong> tool: at PE 20 the
+    earnings yield is 5%, below a 5.25% after-tax cost of debt, so funding a deal with stock dilutes EPS
+    less than funding it with debt. EPS is an accounting, equity-only metric; WACC is a valuation input.</li>
+<li><strong>Business significance:</strong> Capital structure is a CFO's main financial lever and the whole premise of
+  the LBO (§4.7). The EPS-vs-WACC confusion is common in boardrooms too: a deal can be accretive and
+  still destroy value.</li>
+<li><strong>Forces &amp; impact:</strong> Tax rates and the interest cap set the size of the shield; rates and spreads set
+  the cost of debt; the stock's valuation sets the attractiveness of equity (a high PE makes stock cheap
+  currency for acquisitions, §4.22 on AOL/Time Warner).</li>
+<li><strong>With vs. without:</strong> With a tax shield, leverage is subsidized and companies carry more debt than MM
+  alone predicts. Without it (pure MM), financing is irrelevant and only operations create value.</li>
+<li><strong>Applies when</strong> the firm has taxable profits to shield and stable cash flow. <strong>Breaks when</strong> distress
+  costs bite: past the optimum, each turn of leverage adds more expected bankruptcy cost than shield.</li>
+<li><strong>Channel example:</strong> <em>CRITICAL Investment Banking Interview Question: How Does Increasing Debt Impact
+  the WACC</em>.</li>
+<li><strong>Counterpoint / corrections:</strong> Kristen says Modigliani and Miller won the Nobel together in 1985;
+  Modigliani won in 1985, Miller in 1990. She describes the 30%-of-EBITDA cap as running 2018–2021 with
+  EBIT from 2022, while the channel's interest-deductibility short says 2018–2022 and 2023; the statute
+  switched to EBIT for tax years beginning in <strong>2022</strong>. Her worked number is also off: 30% of a $150
+  EBITDA is $45, not $50. The "debt is cheaper" line is right on a required-return basis but says
+  nothing about <em>total</em> cost once distress risk is priced into equity.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-canon-canon-jensen-meckling-agency-theory.html">canon jensen meckling agency theory</a> (debt as discipline on managers);
+  <a class="wiki" href="doc-notes-wss-capital-markets-ma.html">wss capital markets ma</a> (converts, accretion/dilution in live deals).</li>
+</ul>
+<h3 id="46-ebit-vs-ebitda-and-the-interest-deductibility-cap">4.6 EBIT vs. EBITDA, and the interest-deductibility cap</h3>
+<ul>
+<li><strong>What it is:</strong> EBIT is operating profit. EBITDA adds back depreciation and amortization (D&amp;A),
+  non-cash charges, so it approximates operating cash flow and is always ≥ EBIT. US tax law (since
+  2017) caps how much interest a company may deduct at <strong>30% of a profit measure</strong>, and <em>which</em>
+  measure it is matters a lot to anyone running a leveraged balance sheet.</li>
+<li><strong>How it works (the short's numbers):</strong> EBIT $100, D&amp;A $50, so EBITDA $150; interest expense $100.</li>
+<li>Pre-2018: deduct all $100 → taxable income <strong>$0</strong>.</li>
+<li>EBITDA era (cap = 30% × EBITDA = $45): taxable = 100 − 45 = <strong>$55</strong>.</li>
+<li>EBIT era (cap = 30% × EBIT = $30): taxable = 100 − 30 = <strong>$70</strong>.
+  The channel dates the switch two ways: the short says 2018–2022 then 2023; Kristen's WACC video says
+  2018–2021 then 2022. The statute moved to EBIT for tax years beginning in <strong>2022</strong>; the video is right.
+  Same company, same debt, taxable income up 27% from a definitional change, while rates were rising
+  so interest bills grew too. PE lobbied to restore D&A; the short cites a Treasury estimate of
+  roughly <strong>$180B</strong> of added deficit over ten years.</li>
+<li><strong>Business significance:</strong> The tax shield on interest is one of the reasons debt is "cheaper" than
+  equity in the WACC (after-tax cost of debt = rate × (1 − t); the channel's 7% × 0.75 = 5.25%, §4.4). Cap the deduction and the effective
+  cost of debt rises, the optimal leverage falls, and LBO returns fall. The cap hits capital-intensive,
+  high-D&amp;A businesses hardest under the EBIT version.</li>
+<li><strong>Forces &amp; impact:</strong> Tax policy and rates compound: higher coupons × lower cap = shrinking shield.
+  The companion short (<em>Real Reason AI Companies are Rushing to Raise</em>) makes the mirror-image point
+  on the asset side: 100% immediate expensing of capex pulls spending forward while the rule lasts.</li>
+<li><strong>With vs. without:</strong> With an unlimited deduction, the tax code subsidizes leverage, and the
+  marginal LBO is partly a tax trade. With a tight cap, deals must earn their return operationally.</li>
+<li><strong>Applies when</strong> the borrower's interest exceeds the cap (high-leverage, high-rate). <strong>Breaks when</strong>
+  the company has little taxable income anyway (losses, NOLs): the cap then costs nothing today.</li>
+<li><strong>Channel example:</strong> <em>Private Equity LBO Modeling Basics: Changes to Interest Deductibility Rules</em>;
+  <em>How Does Increasing Debt Impact the WACC</em> (same mechanics, 150/100 example).</li>
+<li><strong>Counterpoint / dated:</strong> The short was recorded while the restoration was still being lobbied.
+  The 2025 tax law (OBBBA) restored the EBITDA-based cap and 100% bonus depreciation — verify the
+  current Section 163(j) text before using either figure. The short also frames this as PE's issue;
+  the cap binds any leveraged company, including utilities and telecoms.</li>
+<li><strong>Links:</strong> GLOSSARY "Leverage"; §4.4–4.5 (where the shield enters the WACC).</li>
+</ul>
+<h3 id="47-the-lbo-and-the-equity-check">4.7 The LBO and the equity check</h3>
+<ul>
+<li><strong>What it is:</strong> A leveraged buyout buys a company with a small slice of sponsor equity and a large
+  slice of debt that the target's own cash flow must service. The <strong>equity check</strong> (equity ÷ total
+  price) is the dial: it decides how much the sponsor's return is magnified and how much room there
+  is before lenders lose money.</li>
+<li><strong>How it works.</strong> The channel's definition (<em>LBO in Under 3 Minutes</em>): buying a company financed
+  mostly with debt, like buying an investment house with a mortgage, renovating it, and selling it.
+  The sponsor raises value by growing sales and cutting costs, which lifts <strong>EBITDA</strong>; the company's
+  cash flow pays down debt meanwhile; the sponsor cares about return on <em>its own</em> cash, not the rise in
+  the house's price (worked numbers in §4.8). The live-deal version (hosts' figures, <em>Eerie
+  Similarities…EA and 2007 TXU</em>):</li>
+</ul>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th></th>
+<th>TXU (2007)</th>
+<th>Electronic Arts (2025)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sponsors</td>
+<td>KKR, TPG, Goldman Sachs Capital Partners (club)</td>
+<td>Silver Lake + Saudi PIF + Affinity Partners (co-invest)</td>
+</tr>
+<tr>
+<td>Enterprise value</td>
+<td>~$45B</td>
+<td>~$55B</td>
+</tr>
+<tr>
+<td>Sponsor equity</td>
+<td>~$8B (<strong>~17–20%</strong>)</td>
+<td>~$36B (<strong>~65%</strong>)</td>
+</tr>
+<tr>
+<td>Debt</td>
+<td>~$36B (24B senior secured loans syndicated; ~11B high yield via bridge)</td>
+<td>~$20B (≈$18B funded at close), <strong>JPMorgan sole underwriter</strong></td>
+</tr>
+<tr>
+<td>Leverage (debt / LTM EBITDA)</td>
+<td>~8.5x</td>
+<td>~7.5x</td>
+</tr>
+<tr>
+<td>Purchase multiple</td>
+<td>utility-low</td>
+<td><strong>~20x EBITDA</strong></td>
+</tr>
+<tr>
+<td>Outcome</td>
+<td>one of the largest bankruptcies ever</td>
+<td>TBD</td>
+</tr>
+</tbody>
+</table></div>
+<p>Why tech used to be un-LBO-able, in the hosts' arithmetic: if a company costs <strong>20x</strong> EBITDA and
+  banks lend only <strong>7–8x</strong>, the other <strong>12–13 turns (60–65%) must be equity</strong>, but sponsors dislike
+  going above ~30% equity because it dilutes returns. EA's 65% equity is that math forced through.
+  Silver Lake's 2013 Dell buyout is the precedent they cite for tech LBOs working.
+- <strong>Business significance:</strong> Lenders get paid first; equity absorbs the first loss. A thin check
+  (TXU) means a modest fall in enterprise value wipes out the sponsor and hits lenders; a fat one
+  (EA) protects banks but makes sponsor returns hard to hit (see §4.8). Value is created by EBITDA
+  growth, debt paydown, and multiple expansion; it is <em>captured</em> by whoever holds the levered slice.
+- <strong>Forces &amp; impact:</strong> Credit appetite (spreads near all-time tights per the hosts), rates (Fed funds
+  ~5.25% in 2007 vs. ~4–4.25% at recording), regulatory leverage guidance (~6x), and the multiple
+  paid. Second-order: when purchase multiples outrun what lenders will fund, equity checks balloon
+  and the "LBO" becomes a levered growth-equity deal.
+- <strong>With vs. without:</strong> Without leverage, a sponsor buying at 20x earns roughly the business's
+  unlevered return. With TXU-style leverage, small changes in value swing equity by multiples
+  (energy prices fell, the equity was gone).
+- <strong>Applies when</strong> cash flow is stable and predictable enough to service fixed claims. <strong>Breaks when</strong>
+  cash flow is cyclical or commodity-linked (TXU: natural gas collapsed), or when the multiple paid
+  needs growth the debt schedule can't wait for.
+- <strong>Channel example:</strong> <em>LBO in Under 3 Minutes</em>; <em>Eerie Similarities Between Record Setting 2025 LBO (EA)
+  and 2007 TXU LBO</em>; <em>Largest LBO EVER!!! Harbinger of another 2008?</em>
+- <strong>Counterpoint:</strong> Kristen's heuristic that 8.5x leverage means "about 8.5 years to repay" uses
+  EBITDA as if it were all free cash flow. After interest, tax, and capex, payback is far longer, and
+  at TXU-era rates interest alone ate much of the EBITDA. The "under 6x" benchmark she attributes
+  vaguely ("SEC?") is the 2013 US bank regulators' leveraged-lending guidance (Fed/OCC/FDIC), relaxed
+  after 2018. And the PIF's motive (influence, not IRR, per the hosts) means EA's equity may accept
+  returns a pure financial buyer wouldn't; the 65% check is partly a strategic subsidy.
+- <strong>Links:</strong> <a class="wiki" href="doc-notes-tiger-sisters-private-capital-101.html">tiger sisters private capital 101</a> (LBO intro, Toys "R" Us); GLOSSARY "LBO".</p>
+<h3 id="48-paper-lbo-irr-and-the-rule-of-72">4.8 Paper LBO, IRR and the rule of 72</h3>
+<ul>
+<li><strong>What it is:</strong> A paper LBO is the mental-math version of a buyout model used in PE interviews:
+  entry price, debt, exit price, and the resulting multiple of money (MOIC) and internal rate of
+  return (IRR). The <strong>rule of 72</strong> says money doubles in ~72 ÷ r years at r% a year.</li>
+<li><strong>How it works (Kristen's numbers, <em>LBO in Under 3 Minutes</em>):</strong></li>
+</ul>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th></th>
+<th>Entry</th>
+<th>Exit (year 5)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EBITDA</td>
+<td>$1.0M</td>
+<td>$1.5M (sales up, costs cut)</td>
+</tr>
+<tr>
+<td>Multiple</td>
+<td>10x</td>
+<td>10x (held flat)</td>
+</tr>
+<tr>
+<td>Enterprise value</td>
+<td><strong>$10M</strong></td>
+<td><strong>$15M</strong></td>
+</tr>
+<tr>
+<td>Debt</td>
+<td>$7M</td>
+<td>$6M ($1M of cumulative cash flow repaid)</td>
+</tr>
+<tr>
+<td>Sponsor equity</td>
+<td><strong>$3M</strong></td>
+<td><strong>$9M</strong> (15 − 6)</td>
+</tr>
+</tbody>
+</table></div>
+<p>$3M → $9M is a <strong>3.0x</strong> in five years, which she calls a <strong>25% IRR</strong> (exactly: 3^(1/5) − 1 = 24.6%).
+  Decompose the $6M equity gain: <strong>$5M from EBITDA growth</strong> at a constant multiple (83%) and <strong>$1M from
+  debt paydown</strong> (17%); multiple expansion contributed nothing. Note the leverage effect: the business
+  rose 50% in value; the equity tripled.
+  <em>Rule-of-72 check (this note's):</em> a 3.0x is ~1.6 doublings; five years ÷ 1.6 ≈ 3.2 years per doubling;
+  72 ÷ 3.2 ≈ <strong>23%</strong>, close to the true 24.6% (the rule understates at high rates). Shortcuts worth
+  memorizing: 2.0x in 5 years ≈ 15%, 2.0x in 3 ≈ 26%, 3.0x in 5 ≈ 25%.
+  <em>Applied to the hosts' EA figures (this note's arithmetic):</em> EV $55B at ~20x → EBITDA ≈ $2.75B; debt
+  $20B; equity $36B. A 2.0x in five years needs exit equity $72B → EV $92B (debt held flat), so EBITDA
+  must reach $4.6B at 20x (~11% a year) or ~$6.1B if the multiple falls to 15x (~17% a year). And
+  leverage cuts both ways: on TXU's $8B equity / $45B EV, a 10% rise in EV is a 56% equity gain; on EA's
+  $36B / $55B, only 15%. That is why a 65% check is a return problem: "harder to make the math work."
+- <strong>Business significance:</strong> IRR is how sponsors are judged and paid (carry hurdles, §4.20). Paper-LBO
+  math lets you sanity-check a pitch instantly: a sponsor promising 25% on a 65%-equity deal must be
+  assuming heroic growth, multiple expansion, or a dividend recap.
+- <strong>Forces &amp; impact:</strong> Time is in the denominator. IRR rewards fast exits, which encourages early
+  recaps and quick flips; MOIC rewards actual value created. Slow exit markets (the hosts' "exits are
+  taking longer", continuation vehicles) crush IRR even when MOIC holds.
+- <strong>With vs. without:</strong> Without leverage, Kristen's deal is $10M → $15M, a 1.5x (~8.4% IRR). With 70%
+  debt, the same operating result is a 3.0x. Without IRR discipline, a 2x over ten years (~7%) looks
+  like a win; with it, that's below the long-run equity market.
+- <strong>Applies when</strong> cash flows are lumpy (in at entry, out at exit). <strong>Breaks when</strong> interim
+  distributions and recycling make IRR gameable (early dividends inflate it), or when comparing deals
+  of different durations, where MOIC and IRR disagree.
+- <strong>Channel example:</strong> <em>LBO in Under 3 Minutes</em> (the worked deal); EA/TXU figures from <em>Eerie
+  Similarities…</em>. The dedicated <em>Paper LBO</em> and <em>Rule of 72</em> shorts still have no transcript (§7).
+- <strong>Counterpoint:</strong> Her example ignores fees (§4.9), interest cost, and taxes, and $1M of cash flow over
+  five years is conservative for a business earning $1–1.5M of EBITDA a year; real debt paydown would
+  usually be larger and returns higher. The flat 10x multiple is the honest assumption; sponsors'
+  models often quietly assume expansion.
+- <strong>Links:</strong> GLOSSARY "IRR"; <a class="wiki" href="doc-notes-tiger-sisters-private-capital-101.html">tiger sisters private capital 101</a>.</p>
+<h3 id="49-sources-uses-cash-free-debt-free-and-rollover-equity">4.9 Sources &amp; uses, cash-free debt-free, and rollover equity</h3>
+<ul>
+<li><strong>What it is:</strong> The <strong>sources and uses table</strong> is the one-page budget of a buyout: where every dollar
+  comes from (debt tranches, sponsor equity, the target's own cash) and where it goes (buying the
+  business, refinancing its debt, fees). <strong>Cash-free, debt-free</strong> is the convention for buying a
+  private company: the buyer pays for the business as if it had no cash and no debt; the seller keeps
+  its cash and pays off its own debt. <strong>Rollover equity</strong> is when sellers take part of their price as
+  equity in the new private company instead of cash.</li>
+<li><strong>How it works (Kristen, <em>Cash Free Debt Free EXPLAINED</em>):</strong> The house again: you buy the whole house;
+  if the seller has a mortgage, it gets paid off at closing; a safe full of cash in the living room
+  leaves with the seller.</li>
+<li><em>Private target (cash-free, debt-free).</em> <strong>Uses:</strong> purchase of the enterprise + transaction fees
+    (bankers, lawyers) + financing fees (cost of raising the debt) + <strong>minimum cash</strong> the business needs
+    to operate. <strong>Sources:</strong> senior debt + subordinated debt + sponsor equity.</li>
+<li><em>Public target.</em> <strong>Uses:</strong> buy every share, usually at a <strong>premium</strong> + <strong>refinance</strong> the existing
+    debt + transaction and financing fees. There is no minimum-cash line: the cash comes with the shares
+    you bought. So it shows up on the <strong>sources</strong> side as <strong>excess cash</strong>: everything on the balance
+    sheet above what the business needs (she uses ~$10–25M as the keep-back) helps fund the deal,
+    alongside senior debt, sub debt and sponsor equity.</li>
+<li>The two framings reconcile to the same economics "99% of the time."
+  <strong>Rollover (Skechers, <em>Skechers' $9B deal…A Primer on Rollover Equity</em>):</strong> 3G Capital offered
+  shareholders either <strong>$63 cash</strong> or <strong>$57 cash + one equity unit</strong> in the private company (unlisted,
+  untradeable). Rollover is capped at <strong>20%</strong> of the equity so 3G owns at least <strong>80%</strong>. Anyone electing
+  the unit is implicitly valuing it above <strong>$6</strong>. Normally rollover is reserved for management; offering
+  it to all holders lets those sitting on a ~20% loss (tariff uncertainty) keep upside instead of
+  crystallizing it. Jen's analogy: selling your house to a flipper for $450k instead of $500k in
+  exchange for a share of the $1M resale.</li>
+<li><strong>Business significance:</strong> S&amp;U is where the equity check (§4.7) is actually computed, and fees are
+  visible as a cost the sponsor must earn back. Rollover reduces the cash the sponsor must raise,
+  aligns sellers with the buyer, and signals the seller's confidence; for the buyer it is cheaper
+  equity with no fee load.</li>
+<li><strong>Forces &amp; impact:</strong> In public-to-private deals, the premium is the price of control; excess cash
+  on the target's balance sheet is free financing, which makes cash-rich public companies attractive
+  targets. Going private also removes quarterly disclosure, which is the management-side reason
+  (Skechers working through tariffs out of public view).</li>
+<li><strong>With vs. without:</strong> Without the cash-free, debt-free convention, every private deal would argue over
+  how much the seller's cash and debt are "worth"; with it, price is set on the business and the balance
+  sheet is settled mechanically (in practice via a working-capital adjustment at close). Without
+  rollover, sellers must choose between full exit and no deal.</li>
+<li><strong>Applies when</strong> buying a whole business whose capital structure will be replaced. <strong>Breaks when</strong>
+  "debt-like items" are contested (deferred revenue, unfunded pensions, accrued bonuses), which is where
+  real-world CFDF disputes live, and for rollover when minority holders end up locked in a private
+  company with no liquidity and no control.</li>
+<li><strong>Channel example:</strong> <em>Cash Free Debt Free EXPLAINED</em>; <em>Skechers' $9B deal shows why in LBOs, cash isn't
+  always king</em>.</li>
+<li><strong>Counterpoint:</strong> The short treats the private-company case as the "cleanest" and skips the
+  working-capital peg and debt-like-item fights that actually consume the negotiation. On Skechers, the
+  hosts frame the unit as upside participation; it is also illiquid, subordinated to a large new debt
+  load, and controlled by 3G.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-notes-tiger-sisters-private-capital-101.html">tiger sisters private capital 101</a> (LBO structure); §4.2 (EV: what the "uses" buy).</li>
+</ul>
+<h3 id="410-who-funds-the-debt-syndication-clo-private-credit">4.10 Who funds the debt: syndication → CLO → private credit</h3>
+<ul>
+<li><strong>What it is:</strong> A bank that "underwrites" an LBO commits to provide the money, but traditionally it
+  doesn't keep it. It <strong>syndicates</strong> term loans to other banks and institutional buyers (the broadly
+  syndicated loan, BSL, market), bridges the high-yield bonds until they can be sold, and sells loan
+  pieces into <strong>CLOs</strong> (collateralized loan obligations: pools of senior secured loans financed by
+  tranches of debt plus an equity slice). Private credit is the alternative: one lender, holding.</li>
+<li><strong>How it works:</strong> TXU: Citi, JPMorgan, Goldman structured ~$24B of senior secured loans and
+  syndicated them across Credit Suisse, Morgan Stanley and others; ~$11B was to be high-yield bonds,
+  bridged by the banks. CLO managers bought loans first into a bank-financed <strong>warehouse</strong>, then the
+  CLO priced and took the loans off bank balance sheets. Jen's analogy: a car maker stockpiling parts
+  for orders that may be cancelled; the bank earns the markup and carry, until buyers vanish and it is
+  left with "8,000 steering wheels" (2007–08, hung deals, fire sales). EA: JPMorgan alone committed
+  <strong>$20B</strong>, the largest single-bank buyout underwrite ever per the hosts, backed by ~<strong>$50B</strong> of its
+  own direct-lending capacity as a fallback if it can't syndicate.</li>
+<li><strong>Business significance:</strong> Distribution is what lets a bank lend again; Jen's point is that
+  securitization exists so lenders don't "face" one borrower forever. Fees accrue at each handoff
+  (underwriting, warehouse carry, CLO structuring). Private credit charges more (one lender, more
+  customization) but offers certainty and privacy.</li>
+<li><strong>Forces &amp; impact:</strong> Rates and spreads (floating-rate loans get cheaper as rates fall), bank capital
+  rules, and investor demand for yield. When demand is strong, concentration feels safe; when it
+  turns, concentrated holders are forced sellers.</li>
+<li><strong>With vs. without:</strong> Without syndication, the largest deals can't be done by any one bank, and each
+  bank carries undiversified risk. With it, risk is spread, but in 2007 it was spread into buyers who
+  were simultaneously exposed to mortgage CDOs, so they all disappeared at once.</li>
+<li><strong>Applies when</strong> the risk can be sold to diversified holders. <strong>Breaks when</strong> the distribution
+  channel freezes (2007–08) or when the originator chooses to hold (EA), concentrating risk in one
+  balance sheet.</li>
+<li><strong>Channel example:</strong> <em>Eerie Similarities…</em>; <em>Largest LBO EVER!!!</em> (Part 2 on what "underwriting"
+  means is in the missing short <em>Largest Debt Commitment in History for LBO by ONE BANK</em>).</li>
+<li><strong>Counterpoint:</strong> Kristen defends CLOs hard: underlying loans are senior secured with covenants,
+  ~70c recovery, managers often hold the equity tranche, and corporate defaults were modest even in
+  2008. That's largely right historically, but she concedes covenant protection has eroded
+  (covenant-lite, incurrence-only tests, §4.12), which weakens exactly the protection she relies on.
+  Jen's counter is the fair one: a private-credit book can't be checked from outside ("okay, you say
+  so").</li>
+<li><strong>Links:</strong> GLOSSARY "CLO"; <a class="wiki" href="doc-notes-market-structure-24-5-institutional-response.html">market structure 24 5 institutional response</a>.</li>
+</ul>
+<h3 id="411-club-deals-vs-co-invest">4.11 Club deals vs. co-invest</h3>
+<ul>
+<li><strong>What it is:</strong> A <strong>club deal</strong> pools several PE firms as co-sponsors. A <strong>co-invest</strong> has one lead
+  sponsor that runs the business while its limited partners (LPs) or strategic investors put extra
+  equity directly into the deal alongside the fund.</li>
+<li><strong>How it works:</strong> TXU was a classic club (KKR + TPG + GSCP, $8B). EA looks like a club but the hosts
+  read it as co-invest: Silver Lake is the operator; PIF (&gt;$1T AUM) supplies most of the $36B;
+  Affinity Partners (~$5B AUM, founded 2021) is the puzzle. Even a large sponsor fund (~$25B, the
+  rough ceiling they cite) won't put $36B, or even a big fraction of its fund, into one deal. The LP
+  gets exposure <strong>without paying 2-and-20</strong> on that capital.</li>
+<li><strong>Business significance:</strong> Clubs blurred accountability; the hosts point to Caesars (Apollo and
+  TPG), where sponsors fought over direction and litigation followed. Co-invest keeps one decision
+  maker and gives big LPs cheaper exposure, which is why it displaced clubs.</li>
+<li><strong>Forces &amp; impact:</strong> Sovereign wealth with non-financial goals (PIF's image-building, LIV Golf) is
+  now a major equity source; its return hurdle may be lower, which lets prices rise.</li>
+<li><strong>With vs. without:</strong> Without co-invest, $50B+ buyouts require multiple sponsors and their
+  governance friction; with it, one sponsor can do a deal several times its own appetite.</li>
+<li><strong>Applies when</strong> a trusted operator and deep-pocketed LPs coexist. <strong>Breaks when</strong> the co-investor's
+  goals diverge (influence vs. IRR), or the lead gets preferential economics that misalign it with
+  co-investors (the hosts speculate Silver Lake may get a sweetened structure).</li>
+<li><strong>Channel example:</strong> <em>Eerie Similarities…</em></li>
+<li><strong>Counterpoint:</strong> The Affinity/PIF roles are speculation on air ("according to ChatGPT" for the AUM
+  figure). Treat the motive analysis as opinion.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-notes-tiger-sisters-wealth-mechanics.html">tiger sisters wealth mechanics</a> (club deals in family-office context).</li>
+</ul>
+<h3 id="412-collateral-covenants-recovery-and-the-bankruptcy-chapters">4.12 Collateral, covenants, recovery, and the bankruptcy chapters</h3>
+<ul>
+<li><strong>What it is:</strong> Secured lenders lend against <strong>collateral</strong> (receivables, inventory, buildings) and
+  protect themselves with <strong>covenants</strong>: <em>maintenance</em> covenants are tested every quarter (e.g.,
+  leverage below X), <em>incurrence</em> covenants only bite when the borrower takes an action (new debt,
+  dividends). In distress, <strong>Chapter 11</strong> reorganizes the company so it continues; <strong>Chapter 7</strong>
+  liquidates it and pays lenders from the proceeds.</li>
+<li><strong>How it works:</strong> First Brands (auto parts) filed Chapter 11 on Sept 28 after failing to refinance
+  ~<strong>$6B</strong> of maturing debt (the transcript says "$6 million" once, then "$6 billion"; billions is
+  right). Investigators found roughly <strong>$2.3B of assets</strong> that "evaporated": receivables apparently
+  pledged to more than one financier (invoice factoring done off the books, "hidden factoring"),
+  plus off-balance-sheet liabilities, for <strong>~$10–11B</strong> of total liabilities. Exposed: Jefferies'
+  Point Bonita private-credit fund and UBS O'Connor (reportedly <strong>~30%</strong> of one portfolio). Tricolor
+  (subprime auto lending) went straight to Chapter 7. The same short set: Bed Bath &amp; Beyond liquidated
+  in bankruptcy, sold its brand to Overstock, and the renamed Overstock is now bidding <strong>$150M</strong> for The
+  Container Store; the "company" is a brand bought at auction, not a revived business.</li>
+<li><strong>Business significance:</strong> Collateral is why a CLO model assumes <strong>~70c on the dollar</strong> recovery
+  for senior loans vs. ~0 for equity. But collateral is a claim on a document; if the same invoice
+  backs three loans, two lenders hold nothing.</li>
+<li><strong>Forces &amp; impact:</strong> In a yield-hungry market, lenders trade protections for spread (maintenance →
+  incurrence), so problems surface later. Kristen: fraud is easy to hide when things go well and
+  hard when they don't. Jen: private credit is "designed in a way that obfuscates stress" because a
+  single lender can quietly renegotiate.</li>
+<li><strong>With vs. without:</strong> With maintenance covenants, a lender sees trouble at the first bad quarter and
+  can renegotiate from strength. Without them, the first signal is a missed refinancing, when the
+  collateral may already be gone.</li>
+<li><strong>Applies when</strong> collateral is verifiable and uniquely pledged. <strong>Breaks when</strong> receivables are
+  double-pledged, off-balance-sheet obligations are hidden, or covenants are light enough that no one
+  is looking.</li>
+<li><strong>Channel example:</strong> <em>First Brands Bankruptcy, Gold at Record Highs &amp; Banking Analyst Suing Over
+  Sleep</em>; <em>How can Bed Bath &amp; Beyond…bid $150M for The Container Store?</em></li>
+<li><strong>Counterpoint:</strong> Both hosts say outright they're not distressed experts. "History rhymes" with
+  2007 is suggestive; First Brands is so far an alleged fraud, not evidence of a systemic private
+  credit failure. Two auto names don't make a cycle.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> (risk vs. client split); GLOSSARY "CLO".</li>
+</ul>
+<h3 id="413-shorting-bonds-repo-haircuts-and-settlement-fails">4.13 Shorting bonds, repo haircuts, and settlement fails</h3>
+<ul>
+<li><strong>What it is:</strong> To short a bond you borrow it (via a reverse repo with a dealer), sell it, and hope
+  to buy it back cheaper. The dealer lends against collateral with a <strong>haircut</strong> sized to the client's
+  creditworthiness, e.g., lend $95, $90, or $80 of bonds per $100. <strong>DV01</strong> is the dollar change in a
+  position per one-basis-point move in yield.</li>
+<li><strong>How it works:</strong> In Feb 2020 a small fund (the hosts call it a parody name; Black Brook) sold short
+  <strong>$2.6B</strong> of 30-year Treasuries, "spraying the street" in clips across several dealers so none saw
+  the full size. Jen's DV01: ~<strong>$4.2M per bp</strong>. The fund never sourced the borrow, failed to deliver,
+  and COVID triggered a rally: 30-year yields fell from ~3.7% to ~3.2%, about <strong>50bp</strong>. 50 × $4.2M ≈
+  <strong>$210M</strong> (the reported street loss was <strong>~$250M</strong>), borne by dealers who had hedged by going short
+  themselves and then were never delivered the bonds. "11,000-to-1": $2.6B ÷ 11,000 ≈ $240k of
+  actual capital.</li>
+<li><strong>Business significance:</strong> Dealers make markets on trust and post-trade controls. The salesperson
+  doesn't check a BlackRock's balance sheet per trade; onboarding, credit limits and settlement
+  monitoring do that "behind the scenes." When those controls miss, the dealer is the one who is
+  short.</li>
+<li><strong>Forces &amp; impact:</strong> Electronic trading and fragmented execution make "spraying" easy and the
+  aggregate invisible. Settlement (T+1) gives a one-day window where an unfunded sale looks normal.</li>
+<li><strong>With vs. without:</strong> With haircuts sized to credit, a client can't take more risk than its capital
+  supports; without enforcement, leverage is whatever the counterparty forgets to check.</li>
+<li><strong>Applies when</strong> controls are applied at onboarding and settlement. <strong>Breaks when</strong> a client splits
+  orders across dealers and no one aggregates exposure; when an exogenous shock moves the market
+  before the fail is resolved.</li>
+<li><strong>Channel example:</strong> <em>First Brands Bankruptcy…</em> (the "Ferrari-loving trader" segment).</li>
+<li><strong>Counterpoint:</strong> The transcript gives the fund's size as "less than $250 million" and "$2.5
+  million" in different breaths; the 11,000:1 headline only works with the smaller figure. Jen also
+  frames the story as boring incompetence; the more interesting lesson is that four or five dealers'
+  controls each passed a trade that was only dangerous in aggregate.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> (risk controllers, middle office); <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a>.</li>
+</ul>
+<h3 id="414-treasury-auctions">4.14 Treasury auctions</h3>
+<ul>
+<li><strong>What it is:</strong> The Treasury sells new debt on a fixed calendar through a <strong>single-price (Dutch)
+  auction</strong>: everyone who is filled pays the same clearing yield, set by the last bid needed to fill
+  the size.</li>
+<li><strong>How it works:</strong> Before the auction, the new bond trades <strong>when-issued</strong> (WI) as a yield spread to
+  the current on-the-run, so the market prices the expected clearing level. Bidders: <strong>direct</strong>
+  (needs a Treasury account), <strong>indirect</strong> (often via a bank), and <strong>dealers</strong> (the remainder).
+  Non-competitive bids max out at <strong>$10M</strong> (retail); a competitive bidder can take up to <strong>35%</strong> of the
+  auction. If $25B of 10s are offered, the yield of the bid that fills the 25th billion clears the
+  whole issue. Bids close 12:59, results just after 1pm. Clears <strong>above</strong> the WI yield → "tailed"
+  (weak); <strong>at</strong> → "on the screws"; <strong>below</strong> → "stopped through" (strong).</li>
+<li><strong>Business significance:</strong> Auctions are scheduled supply shocks to the world's benchmark asset; a
+  tail can trigger a sell-off, a stop-through a scramble rally. Dealers are obliged to absorb what
+  others don't, which ties dealer balance sheets to fiscal deficits.</li>
+<li><strong>Forces &amp; impact:</strong> Deficit size sets auction sizes; foreign and domestic demand sets the clearing
+  yield. The paired short on mortgage rates adds the transmission: the Fed sets overnight rates, but
+  30-year mortgages price off the long end, which the market sets (and which QE can push down). The
+  administration's directive for Fannie/Freddie to buy <strong>$200B</strong> of MBS is small against a <strong>~$9T</strong>
+  agency MBS market; Kristen calls it a signal more than a lever.</li>
+<li><strong>With vs. without:</strong> A discriminatory auction (each pays their own bid) pushes bidders to shade
+  bids and favors insiders; the single price draws more aggressive, honest bidding.</li>
+<li><strong>Applies when</strong> the market is deep and the calendar predictable. <strong>Breaks when</strong> dealer balance
+  sheets are constrained, so tails widen.</li>
+<li><strong>Channel example:</strong> <em>The best explanation of Treasury auctions you'll find on the internet</em>;
+  <em>Who Controls Mortgage Rates?</em></li>
+<li><strong>Counterpoint:</strong> The rates side is covered more deeply in the rates-macro cluster; this is the
+  minimum a deal person needs.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-notes-market-structure-24-5-institutional-response.html">market structure 24 5 institutional response</a>; <a class="wiki" href="doc-notes-bloomberg-terminal-instrumentation.html">bloomberg terminal instrumentation</a>.</li>
+</ul>
+<h3 id="415-ipo-pricing-the-pop-lockups-and-the-direct-listing">4.15 IPO pricing, the pop, lockups, and the direct listing</h3>
+<ul>
+<li><strong>What it is:</strong> In an IPO, underwriting banks build a book of investor demand, set a price, buy
+  the shares from the issuer and resell them. <strong>Primary</strong> shares raise money for the company;
+  <strong>secondary</strong> shares let existing holders sell. A <strong>direct listing</strong> skips the underwritten offering:
+  existing shares simply begin trading, priced by an opening auction.</li>
+<li><strong>How it works (Figma short):</strong> <strong>12.5M primary + 24.5M secondary = 37M</strong> shares sold, against
+  <strong>585M</strong> fully diluted shares (~<strong>6%</strong> float, ignoring the greenshoe). Priced at <strong>$33</strong> (→ <strong>$19.3B</strong>
+  valuation). Banks aim for a ~<strong>15%</strong> first-day pop, i.e., price ~15% below expected trading value.
+  Figma closed day one near <strong>$115</strong>: +$82/share × 37M ≈ <strong>$3B</strong> that went to the allocated buyers
+  instead of Figma and its selling VCs (proceeds were ~$1.2B). Holders who didn't sell enjoy the
+  markup but face a <strong>~180-day lockup</strong>. Spotify (2018) instead did a direct listing: no new shares,
+  secondary only; it had a public investor day anyone could watch; opening was delayed about half a day
+  while the exchange found the clearing price. Its SVP's critique of IPOs: allocations favor bank
+  relationships, middlemen arbitrage the price, retail is shut out.</li>
+<li><strong>Business significance:</strong> The pop is a cost of capital paid to allocated investors (largely the
+  bank's best clients). Banks benefit both ways: fees from the issuer and goodwill from the buyers
+  who get the cheap shares.</li>
+<li><strong>Forces &amp; impact:</strong> Banks are paid by the issuer but repeat-play with buyers, so they lean toward
+  underpricing. Brand-strong companies that don't need cash (Spotify) can skip them. The hosts also
+  note the SEC review step means a government shutdown can stall the IPO pipeline.</li>
+<li><strong>With vs. without:</strong> Without the underwritten process, price discovery happens live, which works
+  for well-known names and is risky for obscure ones; the company raises no new money in a pure
+  direct listing.</li>
+<li><strong>Applies when</strong> there's real uncertainty about demand (bookbuilding reveals it). <strong>Breaks when</strong>
+  demand is so lopsided that the "discount" becomes a 250% gift.</li>
+<li><strong>Channel example:</strong> <em>Why Figma's stock price tripling the day of its IPO [is] a BAD THING</em>; <em>How
+  Spotify Turned a Free Product into a $100 Billion Company</em>.</li>
+<li><strong>Counterpoint:</strong> Figma's sellers sold ~6% of the company; the pop re-marked the other ~94% at ~3.5x
+  overnight, which helps follow-on raises and employee equity. And Spotify's SVP is describing his
+  own company's choice; few have copied it, which suggests the underwritten IPO solves problems
+  (stabilization, a committed buyer base) he doesn't mention.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-notes-sec-filing-intelligence.html">sec filing intelligence</a> (S-1 reading).</li>
+</ul>
+<h3 id="416-private-marks-and-related-party-valuation">4.16 Private marks and related-party valuation</h3>
+<ul>
+<li><strong>What it is:</strong> A private company has no market price; its "valuation" is the last price at which
+  someone bought shares. If an interested party sets that price, the mark is only as good as the
+  independence of the buyer.</li>
+<li><strong>How it works:</strong> X raised equity at a <strong>$33B</strong> valuation weeks before xAI bought it at the same
+  figure in stock. Musk participated in that round and controls both companies, so he helped set the
+  price at which one of his companies bought the other. Outside xAI shareholders bear the
+  consequence of that exchange ratio. Same pattern in private credit: loans "marked at par" by the
+  manager who earns fees on the NAV (Jen's "it's marked par, we say it is").</li>
+<li><strong>Business significance:</strong> Fees, carry, and fund performance are computed on marks. Citi's head of
+  research describes the information gap: privates have no audited quarterly filings, and coverage
+  is moving there anyway because the investable universe has "de-equitized" (fewer listed stocks,
+  more value in a handful of megacaps and in large private unicorns).</li>
+<li><strong>Forces &amp; impact:</strong> Longer private holding periods → more value sits at marks → more pressure to
+  democratize access to private assets (retail products), which raises the cost of a bad mark.</li>
+<li><strong>With vs. without:</strong> With independent price setters and audits, the mark approximates a market.
+  Without them, it can be the controlling party's number.</li>
+<li><strong>Applies when</strong> there's a real arm's-length round. <strong>Breaks when</strong> insiders lead the round or the
+  manager marks its own book.</li>
+<li><strong>Channel example:</strong> <em>The Truth About the $33Bn Elon Musk's xAI Paid for X</em>; <em>Citi's Global Head of
+  Research…Covering Private Companies</em>.</li>
+<li><strong>Counterpoint:</strong> The short says "who cares" if one person owns most of both. The answer is the
+  minority holders, and they presumably priced the governance risk when they invested.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-canon-canon-akerlof-market-for-lemons.html">canon akerlof market for lemons</a>; <a class="wiki" href="doc-notes-tiger-sisters-private-capital-101.html">tiger sisters private capital 101</a>.</li>
+</ul>
+<h3 id="417-sell-side-research-economics">4.17 Sell-side research economics</h3>
+<ul>
+<li><strong>What it is:</strong> Sell-side analysts build forecasts and ratings, and sell two things: insight to
+  investors ("where is consensus wrong?") and access/judgment to companies. They work behind
+  information barriers from bankers.</li>
+<li><strong>How it works (Lucy Baldwin, Citi):</strong> ~<strong>800</strong> research staff cover ~<strong>3,500</strong> listed equities
+  plus rates, FX, commodities, credit (as baskets, not single names), and lately crypto and large
+  private companies. Rule: once the bank is <strong>mandated</strong> on a transaction, its analysts stop
+  publishing on that company. Her claim: commodity coverage is now table stakes (an LLM can produce
+  it); value has shifted to star analysts that C-suites call. Research → banking used to be a
+  common senior path; regulation made it harder; juniors now exit directly to PE and, in 2024–25,
+  private credit.</li>
+<li><strong>Business significance:</strong> Research is a cost center that supports trading flow and banking
+  relationships. Regulation (the 2003 Global Settlement in the US; MiFID II unbundling in Europe) cut
+  the direct link between research and banking fees, which is why coverage shrank and why the
+  survivors push into new areas.</li>
+<li><strong>Forces &amp; impact:</strong> AI raises capacity per analyst; de-equitization shrinks the public universe;
+  the growth of sponsors (PE/private credit owning IPO candidates) changes who research serves.</li>
+<li><strong>With vs. without:</strong> With independent research, investors get a dissenting voice on company
+  narratives. Without the barrier, research becomes marketing for the bank's deals (the pre-2003
+  problem).</li>
+<li><strong>Applies when</strong> analysts can publish freely. <strong>Breaks when</strong> the bank is mandated (silence) or when
+  coverage of private targets drifts into pre-IPO marketing.</li>
+<li><strong>Channel example:</strong> <em>Citi's Global Head of Research…</em></li>
+<li><strong>Counterpoint:</strong> A head of research arguing the value of human analysts is talking her book. She
+  dismisses the conflict in covering private IPO candidates as "easily mitigated." The pre-2003
+  history suggests otherwise.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> §3c (buy-side vs. sell-side research), §4 (information
+  barriers).</li>
+</ul>
+<h3 id="418-elite-boutique-vs-bulge-bracket-two-business-models-for-selling-advice">4.18 Elite boutique vs. bulge bracket: two business models for selling advice</h3>
+<ul>
+<li><strong>What it is:</strong> A <strong>bulge bracket</strong> is a universal bank (Morgan Stanley, Goldman, JPMorgan) that sells
+  advice <em>and</em> lends, underwrites, trades and holds a balance sheet. An <strong>elite boutique</strong> (Greenhill,
+  Lazard, Evercore, Centerview) sells only advice (M&amp;A, restructuring) and has no balance sheet.</li>
+<li><strong>How it works (Scott Bok, Greenhill chairman, <em>Elite Boutique vs. Bulge Bracket</em>):</strong></li>
+<li><em>History.</em> Charging for M&amp;A advice is recent: Wall Street once earned its money underwriting and gave
+    merger advice away; Bob Greenhill built Morgan Stanley's M&amp;A department with about four people. In
+    the 1980s–90s consolidation (Glass-Steagall erosion; the British merchant banks absorbed; tech
+    specialists like Robertson Stephens and Alex. Brown bought) left roughly <strong>nine</strong> firms owning
+    investment banking. Boutiques were the backlash: clients began to doubt that a bank selling them
+    loans, bonds and hedges was purely on their side. The boutique sells <strong>conflict-free advice</strong>. Bok's
+    mentor's image of advice inside a trading firm: the hot dog stand in front of the casino, which has a
+    bad day whenever the traders do.</li>
+<li><em>Risk.</em> With no balance sheet or trading book, the firm was "our phones and our desks": the worst case
+    is less work, not losses. Scale matters for firms holding volatile assets or deposits (he cites SVB),
+    not for advisers.</li>
+<li><em>Diversifying within advice.</em> Greenhill added <strong>restructuring in 2001</strong> as a countercyclical hedge
+    (bankruptcy work peaks when M&amp;A dies); most boutiques followed. Geography is the other hedge
+    (Australia held up while Europe's banks sank after 2008).</li>
+<li><em>Greenhill's IPO.</em> Founded 1996, ~$100M revenue for several years; IPO in 2004 at ~100 people, ~<strong>16x</strong>
+    oversubscribed, ~<strong>$500M</strong> value at the end of day one, ~<strong>$2B</strong> within 18 months for ~125 people.
+    Lazard and Evercore listed in the next two years. During 2008 its stock hit an all-time high the week
+    Lehman failed: "best house in a bad neighborhood."</li>
+<li><em>The reversal.</em> After 25 years many firms looked like Greenhill; Bok sold to <strong>Mizuho</strong> (2023) because
+    inside a multi-product bank, trading does well in volatility while M&amp;A clients freeze, which smooths
+    the cycle. The episode gives no price (outside sources: ~$550M including debt).</li>
+<li><em>Today.</em> The industry has "refragmented": elite boutiques, single-industry or single-country
+    specialists, and foreign banks (Mizuho, RBC, Nomura) building US advisory.</li>
+<li><strong>Business significance:</strong> The two models capture value differently. The bulge bracket can bundle a
+  financing commitment with the advice (JPMorgan's $20B on EA, §4.10), which wins mandates and earns
+  fees on several products, at the cost of conflicts and capital. The boutique earns on reputation and
+  senior attention alone, so its pitch is independence, and its value is concentrated in a few rainmakers.
+  For juniors: entry pay is nearly identical (§4.22: boutiques maybe ~$10k more), but the experience
+  differs. Bok's test is to join a "Navy SEALs" unit, not a "General Motors factory," which can be a
+  small group inside a mega-bank, and never to choose on brand or an extra $5,000 of base.</li>
+<li><strong>Forces &amp; impact:</strong> M&amp;A cycles hit pure advisers hardest; restructuring and geography are their only
+  hedges. Regulation since 2008 (bank capital rules Bok calls "generals fighting the last war") raised
+  the cost of the universal model and helped boutiques win share. The cycle can also run the other way:
+  public boutiques face quarterly scrutiny, and the halving of US listed companies (take-privates,
+  mergers) shrinks the client base.</li>
+<li><strong>With vs. without:</strong> Without boutiques, every major board's adviser would also want to lend to,
+  underwrite and trade against it. With them, boards hire a boutique for the opinion and a bulge bracket
+  for the money, which is now common on large deals.</li>
+<li><strong>Applies when</strong> a client values independence and senior attention (boards, special committees,
+  restructurings). <strong>Breaks when</strong> the deal needs a financing commitment, or a downturn hits a firm with
+  no other revenue.</li>
+<li><strong>Channel example:</strong> <em>Elite Boutique vs. Bulge Bracket Investment Banks feat. Greenhill Chairman, Scott
+  Bok</em>.</li>
+<li><strong>Counterpoint:</strong> Bok sold his boutique into a bank, which is itself a verdict on the pure model at
+  subscale. The episode never covers fees (retainer vs. success), deal-size bands, or analyst pay, so the
+  title promises more comparison than it delivers. "Conflict-free" is also relative: boutiques have
+  conflicts of their own (success fees reward getting <em>a</em> deal done).</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-notes-professional-services-leverage.html">professional services leverage</a> (partner-driven firms); <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a>
+  (the trading side of the universal bank); <a class="wiki" href="doc-canon-canon-jensen-meckling-agency-theory.html">canon jensen meckling agency theory</a> (adviser incentives).</li>
+</ul>
+<h3 id="419-banker-and-buy-side-comp-structure">4.19 Banker and buy-side comp structure</h3>
+<ul>
+<li><strong>What it is:</strong> Wall Street pay = <strong>base salary</strong> (fixed, bi-weekly, roughly standardized across firms
+  and cities at junior levels) + <strong>bonus</strong> (performance-based, discretionary, and the part that grows
+  with seniority). Senior bonuses are partly <strong>deferred</strong> and subject to <strong>clawback</strong>.</li>
+<li><strong>How it works (Buyside Hub data via High Yield Harry; hosts read averages):</strong></li>
+</ul>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Level</th>
+<th>IB base</th>
+<th>IB bonus</th>
+<th>IB total (avg / 75th pct)</th>
+<th>PE/private credit total (avg / 75th)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Analyst</td>
+<td>$111k</td>
+<td>$52k</td>
+<td>$163k / $185k</td>
+<td>$165k / $191k</td>
+</tr>
+<tr>
+<td>Senior analyst (3rd yr)</td>
+<td>—</td>
+<td>—</td>
+<td>$202k / $217.5k</td>
+<td>$182.5k / $196k</td>
+</tr>
+<tr>
+<td>Associate</td>
+<td>$165k</td>
+<td>$114k</td>
+<td>$280k / $328k</td>
+<td>$251k / $291k</td>
+</tr>
+<tr>
+<td>Senior associate</td>
+<td>—</td>
+<td>—</td>
+<td>— / $430k</td>
+<td>$309k / ~$350k</td>
+</tr>
+<tr>
+<td>VP</td>
+<td>$257k</td>
+<td>$150k</td>
+<td>$409k / $500k</td>
+<td>$423k / $485k (ex-carry)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Hosts' starting base in 2006–07: ~$55–60k. Bottom-bucket juniors may get a "donut" (zero bonus, a
+  signal to leave without severance) or more often <strong>$15–25k</strong>. MDs: base perhaps ~$200k, total in
+  the millions; cash comp often &gt;$1M.
+  <strong>Deferral:</strong> a VP's ~$500k bonus might pay <strong>one-third cash, one-third deferred cash</strong> (invested but
+  inaccessible), <strong>one-third deferred stock</strong> vesting over <strong>3–5 years</strong>. Unvested deferrals are
+  forfeited on leaving, so a new employer must "buy out" the deferred balance. By ~30 that balance is
+  large enough to make you an expensive hire, hence the "last chopper out" window. Jefferies is cited
+  for clawback periods.
+  <strong>EU bonus cap</strong> (<em>How a law capping Wall Street bonuses RAISED their pay</em>): post-crisis rules limited
+  bonuses to 2x base (1x without shareholder approval); European banks raised bases to stay
+  competitive, so total pay held, fixed pay rose, and a bad actor now got paid <em>more</em> for doing
+  nothing, because the base is guaranteed. Jen's verdict: a rule meant to rein in risk-takers ended up
+  guaranteeing their pay.
+  <strong>How bonuses are set and told (Industry S1E6, S1E7, S1E3 recaps):</strong> numbers are fixed in December
+  and paid January–March depending on the firm. Analysts start in July, so their first payout is a
+  pro-rated <strong>stub</strong>, and they stay on a summer cycle for about two years before a stub catches them
+  up to the winter cycle at promotion (Jen's 2008 Barclays stub was "little more than a cup of
+  coffee"). Analyst bonuses are <strong>tiered</strong> (Kristen guesses ~five buckets), and juniors now learn the
+  tiers through anonymous polls. Senior variable pay is a function of personal, desk, division and firm
+  results against the desk <strong>budget</strong>; the range widens from ~$200k to $2M+ with seniority. "Don't talk
+  about your comp" survives as policy, and the hosts call it a control tool: without comparisons you
+  can't tell you're underpaid. Kristen calls VP pay of ~$500k "public domain." Clawbacks at banks are
+  rare in practice: deferred pay is forfeited if you're fired for cause, kept if you resign; the
+  realistic punishment is a donut next year. MDs may not top up juniors from their own pockets; excess
+  pay must come from the pool. Hedge funds are different: clawbacks can be contractual (Jen's
+  illustration: paid $80M, asked for $79M back after a down year).
+  <strong>Guarantees when switching (Industry S2E7):</strong> a trader moving firms typically asks for a <strong>two-year
+  guarantee</strong>; all-cash with no deferral is "not happening" today. A guarantee borrows from future pay:
+  when it expires you are almost always "paid down," because the new bank stretched to hire you.
+  Battlefield promotions (more responsibility without the title or pay) are why switching is often the
+  only way to reset comp.
+- <strong>Business significance:</strong> Deferral aligns senior pay with multi-year outcomes and creates
+  retention ("golden" or, for mid-levels, "silver handcuffs"). Bonus pools flex with revenue, so the
+  bank's cost base flexes too. Desks cross-subsidize: a star on a bad-year desk is paid less, and a
+  weak performer on a good-year desk is carried.
+- <strong>Forces &amp; impact:</strong> Deal volume (2025 was "the year of the banker": IPOs and M&amp;A back), buy-side
+  fundraising (tight, so the sell side is more competitive than in the ZIRP years), regulation.
+  Second-order: buy-side comp at junior levels is roughly <em>equal to or below</em> IB before carry, which
+  undercuts the old "exit ASAP" logic.
+- <strong>With vs. without:</strong> Without deferral, a trader can take risk that pays this year and blows up
+  next, then leave; clawbacks plus deferral make him wear the tail. Without a bonus cap, pay flexes
+  with performance; the cap's unintended effect was guaranteed pay, the opposite of its aim.
+- <strong>Applies when</strong> comparing like-for-like (an MBA associate vs. a first-year big-law lawyer at
+  ~$250–400k, per the hosts). <strong>Breaks when</strong> carry enters (§4.20) or for top-bucket outliers.
+- <strong>Channel example:</strong> <em>EXACTLY How Much Investment Bankers &amp; Private Equity Get Paid feat. High Yield
+  Harry</em>; <em>Why I walked away from over $200k of my bonus at Morgan Stanley</em>; <em>How a law capping Wall
+  Street bonuses RAISED their pay</em>; <em>Industry S1E6 "Nutcracker"…Bonus Season</em>; <em>Industry S1E7 "Pre Crisis
+  Activity"…Bonus Clawbacks</em>; <em>Industry S2E7 "Lone Wolf and Cub"…How Investment Bankers Get Paid</em>.
+- <strong>Counterpoint / dated:</strong> Survey data is self-reported. The hosts flag the VP figure as low versus
+  their anecdotal S&amp;T experience (+$100–200k). The UK scrapped the cap in late 2023; the EU's remains.
+  The hosts' framing ("bonus is a misnomer, it's performance pay") is accurate but also defends
+  their old industry from a public perception problem. In S2E7 the team-pricing arithmetic doesn't
+  close (half of 4 × $1M is $2M, not the "$4–8M" Jen lands on). Jen's FTC non-compete point (S1E7) is
+  dated: the 2024 ban was struck down and later abandoned. TARP is the Troubled Asset <em>Relief</em>
+  Program, not "Recovery" (S1E7).
+- <strong>Links:</strong> <a class="wiki" href="doc-canon-canon-jensen-meckling-agency-theory.html">canon jensen meckling agency theory</a>; <a class="wiki" href="doc-notes-professional-services-leverage.html">professional services leverage</a> (fixed
+  associate pay at law firms, the comparison case).</p>
+<h3 id="420-carry-economics-by-fund-size">4.20 Carry economics by fund size</h3>
+<ul>
+<li><strong>What it is:</strong> PE and credit funds charge <strong>"2 and 20"</strong>: ~2% a year of assets as a management fee
+  and ~20% of profits as <strong>carried interest</strong> (carry), usually after a return hurdle. Individuals get
+  slices of the carry pool, quoted in basis points (bips) of the fund's carry, vesting over ~5 years.</li>
+<li><strong>How it works (hosts' arithmetic):</strong> A <strong>$10B</strong> fund earns <strong>$200M</strong> a year in fees; a <strong>$1B</strong> fund
+  earns <strong>$20M</strong>. If each doubles its money, carry is <strong>$2B</strong> vs. <strong>$200M</strong>. Buyside Hub: at
+  ~$4–5B funds, mid-levels get ~<strong>20–40bps</strong> of carry; at ~$8–10B, ~<strong>30–50bps</strong> starting at senior
+  associate; at <strong>$200–500M</strong> lower-middle-market funds, <strong>100–500bps</strong> (1–5%), and a junior associate
+  may get a point or more. Megafunds (Apollo, Thoma Bravo) give associates <strong>no</strong> carry. Sub-$5B funds
+  may add <strong>$50–500k</strong> of other equity incentives. Hours: private credit ~55–60/wk, PE ~65–70,
+  megafund PE can match banking.</li>
+<li><strong>Business significance:</strong> 100% of zero is zero (Jen). A big carry percentage at a small fund can
+  be worth less than a small slice at a megafund, and carry is paid years later if at all. Small funds
+  substitute carry for cash because they can't match the fee-funded salaries.</li>
+<li><strong>Forces &amp; impact:</strong> Exit slowdowns and continuation vehicles stretch the carry timeline; fundraising
+  difficulty makes senior seats sticky ("top-heavy"), so juniors stall. Private credit comp has
+  plateaued, per Harry, as seats fill with PE refugees.</li>
+<li><strong>With vs. without:</strong> Without carry, buy-side pay is IB-like or lower. With it, the payoff is a
+  call option on fund performance, which is the real reason to move.</li>
+<li><strong>Applies when</strong> the fund performs and you stay through vesting. <strong>Breaks when</strong> the fund
+  underperforms the hurdle, or you leave before vesting.</li>
+<li><strong>Channel example:</strong> <em>EXACTLY How Much Investment Bankers &amp; Private Equity Get Paid</em>.</li>
+<li><strong>Counterpoint:</strong> Harry runs a comp-data platform; "you can go to the table on carry" is also his
+  product's pitch. The 2x-in-a-period illustration ignores hurdles and the time value of carry.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-notes-tiger-sisters-private-capital-101.html">tiger sisters private capital 101</a> (2 and 20); <a class="wiki" href="doc-notes-harlem-capital-vc-insights.html">harlem capital vc insights</a>
+  (European vs. American waterfalls, clawbacks to LPs).</li>
+</ul>
+<h3 id="421-the-career-pipeline-222-on-cycle-recruiting-and-the-mba">4.21 The career pipeline: 2+2+2, on-cycle recruiting, and the MBA</h3>
+<ul>
+<li><strong>What it is:</strong> The traditional elite path was <strong>2 years</strong> as an IB analyst → <strong>2 years</strong> at a PE
+  firm → <strong>2 years</strong> of MBA → back to PE. <strong>On-cycle recruiting</strong> is the compressed, megafund-led window
+  in which PE firms interview first-year analysts for associate jobs starting ~18 months out.</li>
+<li><strong>How it works:</strong> In 2006–07 on-cycle came about six months into the job, after a first review.
+  Game theory pushed it earlier ("if Apollo does it, we must"), until firms interviewed analysts
+  before they'd started work, effectively hiring on school pedigree. JPMorgan responded by requiring
+  new analysts to attest they wouldn't recruit elsewhere in their first months. PE firms began hiring
+  straight from undergrad to stop paying banks' recruiting premium (banks spend heavily to train
+  analysts), and per the hosts some are unhappy with results. Banks now try to <em>keep</em> analysts. The MBA
+  as a career-switch tool: High Yield Harry calls it "LBOing yourself" (borrowing to buy an option on
+  a better career), worth it mainly if you lack the network.
+  <strong>The undergrad funnel (<em>From Intern to Offer</em>):</strong> applications for a junior-summer internship now
+  open as early as January of sophomore year, a rolling ~16–18-month window; sophomore internships
+  almost never convert, and the junior internship is the real 10-week interview. Offers are a ranking
+  market: at a ~150-person bulge-bracket S&amp;T program, interns rank desks and desks rank interns, and
+  "if no desk ranks you first" an offer is hard to justify. Programs hire more summers than full-time
+  seats, then attrition (firings, quits, visa failures) reopens seats for the senior-fall cycle. Offers
+  are rarely rescinded, Jen argues, because juniors are cheap options: firms "overhire and overfire"
+  (Lehman honored incoming offers through bankruptcy). Training then takes 2–3 months, including a
+  two-week modeling bootcamp (Mindy Kaling reaction episode); interview technicals have inflated from
+  "how do you value a company" (Kristen, 2007) to deferred taxes. The PE conveyor (sophomore PE,
+  junior IB, PE offer starting two years later) selects on resumes, not observed work; Kristen on her
+  own early hire: "on paper though, I looked great."
+  <strong>Other doors:</strong> alumni outreach beats cold LinkedIn (<em>Our Number One Tip</em>); the MBA is the main reset
+  for career switchers because associate classes have hundreds of seats built for non-finance people;
+  sector expertise can enter via equity research. Licensing: the <strong>SIE</strong> ($80, no sponsor needed, often
+  expected before day one), then Series 7/79/63; the <strong>CFA</strong> (three levels, ~40% average Level I pass
+  rate, ~$1,000 registration) fits asset management and S&amp;T better than IBD, where modeling is a
+  footnote (<em>CFA for Investment Banking</em>). S&amp;T is more a career than a two-year program: banks barely
+  recruit S&amp;T from MBAs, and it has become a talent farm for hedge funds, where a senior bank trader's
+  "couple million" can become tens of millions. Trading interviews test thinking under adverse
+  selection: a counterparty offering you a bet is itself information (<em>Sneak peek into the interview
+  for one of Wall Street's highest-paid jobs</em>).</li>
+<li><strong>Business significance:</strong> IB is PE's outsourced training and screening program; on-cycle is PE
+  free-riding on that screen. Deferral (§4.19) makes the window close around 30.</li>
+<li><strong>Forces &amp; impact:</strong> Hours (Centerview analyst lawsuit over a sleep accommodation, not dismissed;
+  the hosts doubt it changes practice), AI threat to junior work, and buy-side fundraising.</li>
+<li><strong>With vs. without:</strong> Without the analyst program, PE would have to train and screen itself (it's
+  trying); without on-cycle, PE would hire on observed performance instead of pedigree.</li>
+<li><strong>Applies when</strong> buy-side seats are plentiful. <strong>Breaks when</strong> fundraising stalls, so senior seats
+  freeze and the "+2" step vanishes.</li>
+<li><strong>Channel example:</strong> <em>EXACTLY How Much…</em>; <em>Is an MBA worth it?</em>; <em>First Brands…</em> (Centerview
+  segment); <em>Citi's Global Head of Research</em> (research exits); <em>From Intern to Offer: The Unwritten Rules
+  of Wall Street Success</em>; <em>Our Number One Tip to Break Into Investment Banking</em>; <em>CFA for Investment
+  Banking</em> (with Kaplan's Joyce Schnur); <em>How to Network Like a Pro feat. Jen Prosek</em> (networking as
+  "giving to receive": make introductions and ask nothing; judge conferences by meetings that convert
+  within six months).</li>
+<li><strong>Counterpoint:</strong> The hosts' Centerview take ("wrong job") is the generation that survived the
+  system judging it. They acknowledge deaths from overwork and still frame an 8-hour sleep request as
+  9-to-5 entitlement; reasonable people disagree. Their own suggestion (follow-the-sun global teams,
+  AI) is the more useful idea. Kaplan's guest is selling exam prep and misstates details: CFA Level I
+  has 180 questions, not 150; the SIE launched in 2018; the charter also needs ~4,000 hours of work
+  experience; licenses lapse after two years out of the industry (extendable), not immediately.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> (seat comparison); <a class="wiki" href="doc-notes-professional-services-leverage.html">professional services leverage</a>
+  (Cravath tournament: the same pyramid logic).</li>
+</ul>
+<h3 id="422-folded-in-from-the-culture-other-recaps-industry-succession-strangers">4.22 Folded in from the culture-other recaps (Industry / Succession / Strangers)</h3>
+<p>The TV recaps hold more real teaching than their titles suggest. Only the mechanisms not already
+covered above are listed here, compressed. Source episodes: Succession S3 Part 1 (<code>E-wsDCA0I5I</code>) and
+Part 2 (<code>2aT4Mofm8ho</code>); Strangers (<code>3fbWStK44P0</code>, <code>I3XGEgKGDLI</code>); Industry S3E6 (<code>H2jaqoTmfzY</code>), S3E8,
+S4 premiere, S4E4, S4E5, S4E8. Pass 2 read the second half in full: the Mindy Kaling reaction
+(<code>RFFok3hycaQ</code>), Bankers vs. Doctors (<code>Yc25Hc4AeaY</code>), Industry S1E3 (<code>xYByha9veu0</code>), S3E1 (<code>XYoNNAlefC8</code>),
+S3E7 (<code>WaQm3U-mjwM</code>), S4E1 (<code>n7YeX2tgykQ</code>), S4E2 (<code>Rig7FMhill8</code>), S4E6 (<code>YXfRCC0il58</code>), S4E7
+(<code>bywWURDpNWI</code>), <em>Uppity Working Women</em> (<code>jjH3Wtiz9EE</code>) and the remaining culture shorts. S1E3 and
+<em>Uppity Working Women</em> are garbled machine translations (S1E3 also cuts off mid-sentence), so check
+their figures; <em>Uppity Working Women</em> and S4E2 contain almost no finance. The bulge-bracket vs.
+boutique teardown now has its own section (§4.18).</p>
+<ul>
+<li><strong>Deferred stock is a bet on your employer (Industry S3E6).</strong> Juniors are paid mostly in cash. The
+  stock share and the deferral length both grew after 2008. Jen watched Lehman colleagues' locked-up net
+  worth go to zero, so her rule is to take as much cash as possible if you work at a bank. That's the
+  employee's view of §4.19: deferral aligns you with the firm, and it also concentrates your wealth in
+  the firm.</li>
+<li><strong>Hedge fund clawbacks and crystallization (Strangers; Industry S4E8).</strong> Hedge funds claw back pay
+  more than banks do. At pod shops (Millennium, Citadel, Point72) a PM can have one great year, blow up
+  the next, and be clawed back and out. Performance fees usually crystallize in December, but fund
+  documents can allow earlier payouts. Worked example on $250M AUM: 2% fee ≈ $5M, plus 20% of $110M
+  profit = $22M, so ≈ $27M earned. "Points" (1% of firm profits) are the hedge fund version of carry.</li>
+<li><strong>Fee compression (Strangers).</strong> Their 2-and-20 example: $100M AUM pays a $2M management fee. Grow it
+  to $150M and 20% of the $50M gain is $10M. Fund-of-funds fees fell from 1-and-10 to roughly 50bp
+  flat once allocators did manager diligence themselves. The average hedge fund fee is ~1.67%,
+  citing a Goldman prime-brokerage report. Long-only managers earn ~50–75bp. The fee you can charge
+  tracks how much alpha you deliver that clients can't replicate themselves.</li>
+<li><strong>First-loss structures (Industry S4E4).</strong> The manager absorbs the first losses in exchange for a
+  larger share of upside (a friend's fund gets ~50% of the upside). Used for market-neutral funds.
+  This is §4.7's equity check applied to a fund: whoever takes the first loss is paid for leverage.</li>
+<li><strong>Gross leverage and the margin spiral (Industry S4E4–S4E5).</strong> Gross leverage = (|longs| + |shorts|)
+  ÷ NAV. On a 2x short, a 7% rise in the stock costs 14% of NAV (~$35M on $250M), which wipes out a
+  $10M first-loss tranche. The prime broker then sells other positions to meet margin. Shorting
+  requires a located borrow, a borrow fee, restricted proceeds and extra collateral (cf. §4.13 for
+  bonds). Their line: the market can stay irrational longer than you can stay solvent.</li>
+<li><strong>Total return swaps and Archegos (Industry S4E5).</strong> Post ~10–20% margin for 5–10x synthetic
+  exposure: pay SOFR plus a spread, receive the stock's return. The bank holds the shares, so nothing
+  is publicly disclosed. Archegos spread the same bet across several prime brokers, the §4.13 "spraying"
+  problem at equity scale. A 2021 Viacom share issuance triggered margin calls. Morgan Stanley and
+  Goldman sold first; Credit Suisse lost ~$5B. Wirecard (€1.9B of nonexistent cash, forged bank
+  confirmations) is their template for fraud found late, cf. §4.12.</li>
+<li><strong>M&amp;A consideration and control (Succession S3).</strong> Offer premiums run ~20–40%. Merger-arb funds
+  buy the gap between the trading price and the offer, while long-only "real money" sells. All-stock
+  deals need no financing, but the seller is paid in the buyer's currency. AOL/Time Warner is the
+  warning: AOL paid in bubble-priced stock. A cash mix is capped by debt capacity: ~6–7x EBITDA even
+  for a stable company, less for a weaker one. Termination fees compensate the counterparty for
+  diligence and financing costs. Twitter's was ~$1B on $44B. In the proxy fight each side spent
+  ~$100M, and the settlement took the form of board seats plus a standstill (no takeover attempt).
+  Valuing a company from a stake: a $350M loss is 10% of a 4% stake, so the stake is $3.5B and the
+  company ~$87.5B. <em>Flag:</em> the hosts call Disney/Fox an "$85B" deal; the final price was ~$71B.</li>
+<li><strong>Convertible vs. CoCo (Industry S4E4).</strong> A convertible is debt if the stock falls and equity if it
+  rises, which protects the investor. A CoCo (contingent convertible) converts or is written off when
+  the issuer is under stress, which protects the issuing bank's capital (Credit Suisse AT1s were wiped
+  out). An outside investor would demand the convertible, not the CoCo.</li>
+<li><strong>Big Law vs. banking pay (Strangers).</strong> Bulge-bracket entry pay is nearly identical across firms,
+  and elite boutiques pay perhaps ~$10k more. Law adds ~$250k of tuition and three years of lost
+  earnings. Profits per equity partner in 2025, per the hosts: Wachtell over $12M, Kirkland ~$11M,
+  Davis Polk ~$9.8M. Their thesis is that elite firms became "alpha providers" by finding the loopholes
+  behind liability-management exercises, so they are now paid like risk-takers. This extends
+  <a class="wiki" href="doc-notes-professional-services-leverage.html">professional services leverage</a>.</li>
+<li><strong>S&amp;T pay runs on budgets and sales credits (Industry S1E3; short k7ZuBMq2Sl4).</strong> Salespeople are not
+  on commission. They earn internal "sales credits" set by a grid of product × size × trade type. Desks
+  can double the credits on trades they want done (axes), and some banks (not all: Jen's first had
+  none, her next did) charge negative credits, e.g. when a client "showers the street." Figures: ~2,000 credits for
+  $100M of 5-year Treasuries vs. $0.5–1M for one structured cross-asset trade. The bonus pool depends on
+  results against the desk budget. Making $120M on a $100M budget pays well; making $60M hands rivals
+  ammunition to take pool for their own division. Sales and trading fight every year over whether the
+  revenue came from bringing in the risk or taking it.</li>
+<li><strong>What an axe really is, at three levels (Industry S1E3, Jen).</strong> A desk is axed when client flow
+  leaves it with more risk than it wants or can cheaply hedge. <em>Inventory:</em> bonds quoted 99/101 offered
+  at 100 to move them, like a grocer marking down bananas. <em>Derivative risk:</em> a 2-year swap hedges with
+  2-year Treasuries plus a spread, but an 8-year point has no Treasury (only 7s and 10s), so it needs a
+  5-7-10 butterfly; quietly offering the risk to clients is cheaper than paying spreads on three
+  illiquid hedges. <em>Information:</em> traders post axes just to learn what clients are doing, which is
+  worth paying up for. Electronic trading compresses spreads on plain products, so desks push
+  <strong>correlation trades</strong> (e.g., a payer swaption, effectively a put on bonds, that pays only if gold and
+  the S&amp;P behave a certain way): conditional exposure the client buys more cheaply than the legs, with
+  wide bid-offer because there's no liquid market. Jen's critique of Harper's "structure" (index put +
+  gold call + builder CDS) is that the put and the CDS are the same bet at two points in the capital
+  structure: a portfolio, not a structure.</li>
+<li><strong>Deferred pay when switching firms (Industry S3E7).</strong> The new firm usually pays a guarantee and buys
+  out the deferred cash and stock left behind. When the old employer's stock crashes, the deferred
+  balance shrinks and the person becomes cheaper to hire. This is the §4.19 "expensive by 30" logic run
+  in reverse. Options in a takeover: assume they all vest; in a stock deal they convert at the exchange
+  ratio, in a cash deal you exercise at the strike. Goldman keeps a partner tier above MD, and because
+  part of bank pay is stock, bankers own equity from associate level "whether you want to or not."</li>
+<li><strong>IPO mechanics, the full version (Industry S3E1, "Lumi is WeWork 2.0").</strong> Typical float is 10–20%.
+  Price comes from bookbuilding, not a model. The target discount is ~15%, and the pop follows from
+  oversubscription (e.g., $200 of orders for $100 of shares), because partially filled buyers then buy
+  in the market. The <strong>greenshoe</strong>: the bank sells ~15% more than the deal size and buys shares back in
+  the market if the price weakens, which supports trading for the first weeks. The 180-day lockup is
+  often followed by a follow-on offering. The bank's real stake is reputation: a broken first deal
+  costs fees on the rest of its pipeline (they cite Facebook's IPO). Lumi itself priced at 430 against an
+  expected ~480 close, only a ~10% discount. Banks' bake-off valuations give way to research analysts'
+  models once they're wall-crossed, and investor orders set the final price; the S3E1 funding ladder
+  runs friends and family ($5–25k checks) → angels → VC → growth equity → IPO, with secondary anywhere
+  from 0% to 100% of the offering. Wall crossing: an S&amp;T person brought over the information barrier
+  can be frozen in personal positions. Kristen puts Volcker's limit on banks' fund investing at ~1% of
+  Tier 1; the rule is 3% of any one fund and 3% of Tier 1 in aggregate. Adds to §4.15.</li>
+<li><strong>Net vs. gross leverage, and EBITDA games (Industry S3E1).</strong> Net debt = debt minus cash. Lumi made
+  its net debt look smaller by counting uncollectable receivables as cash. EBITDA isn't GAAP, so it can
+  be massaged, as with WeWork's "community-adjusted EBITDA." LBO practice quotes gross leverage because
+  lenders want the worst case. What counts as cash: money-market funds yes (cash equivalents are
+  instruments under ~3 months at purchase); receivables never, since net-30 terms can stretch to 60–90
+  days. $100M of debt with $10M of cash ≈ $90M of debt and none. Ties to §4.2's caveat that EV is only
+  as honest as the debt list. Kristen's power-stack aside (same episode): nuclear and coal run
+  constantly, wind and solar when they can, and gas plants are the flexible marginal unit, so <strong>gas sets
+  the power price</strong>, and a gas spike <em>raises</em> a solar generator's margin (the show has it backwards).</li>
+<li><strong>Valuation hygiene (Industry S3E7, S4E6–S4E7).</strong> Match numerator to denominator: equity value with
+  net income / EPS, EV with sales / EBITDA / EBIT ("EV per share" doesn't exist). Banks trade on
+  price-to-book because their balance sheets are marked to market. Equity can be worth zero, but the
+  whole firm cannot. Accretion/dilution refers to the <em>buyer's</em> EPS. Stock consideration exposes the
+  seller to the buyer's share price before closing; Netflix–Warner Bros is cited as moving to all-cash
+  to speed the deal up (S4E7: from roughly 90% cash to all cash; reported terms were nearer 84/16).
+  Disclosure thresholds: 5% in the US, 3% in the UK. Porsche/VW 2008 combined ~42% of the shares with
+  31.5% in cash-settled options; the counterparty banks delta-hedged by buying real shares, each just
+  under 3%, and "cash-settled" could be switched to physical by agreement. Synthetic positions carry no
+  vote or dividend but leave a paper trail (collateral, ISDAs, confirmations), which is how a fake stake
+  gets exposed. A bid turns <strong>hostile</strong> only after the board rejects it and the bidder goes to
+  shareholders (bear-hug letter). The house version of equity-vs-firm (S4E6): $1M house, $800k mortgage,
+  $200k equity; sell at $750k and the equity is zero while lenders still recover most of their money.
+  Hence Kristen's sum-of-the-parts correction: a £12/share base case built on £2–3B of legitimate EV
+  stays £12 when the fake acquisitions are valued at zero; it doesn't fall to zero.</li>
+<li><strong>Bank capital stacks (Industry S3E7, S4E6).</strong> Preferred equity has no principal to repay and is
+  subordinated. TARP and Buffett's Goldman investment were structured this way, hence the hosts' "a
+  capital injection, not a bailout." In 2008 MUFG put $9B into Morgan Stanley, mostly convertible
+  preferred with a 10% dividend and a ~$31.25 conversion price, for 21%. Basel III minimums: 4.5% CET1,
+  6% Tier 1, 8% total capital; big banks run 10–14%. The show repeatedly confuses four instruments:
+  putable bonds (investor's trigger), callable bonds (issuer's option), convertibles and CoCos.</li>
+<li><strong>2008 plumbing and rescues (Industry S3E7).</strong> Pre-2008 swaps were bilateral under a CSA (Credit
+  Support Annex; Jen calls it a "collateral services agreement"). If Lehman owed MS $10M and failed, MS
+  lost the $10M <em>and</em> its offsetting hedge was suddenly unhedged, so losses chained bank to bank; that is
+  why most derivatives are now centrally cleared. Lehman's 2008 was a run on <strong>liquidity</strong> (clearing banks
+  and repo counterparties demanding collateral), not deposits, after ~$10B of capital raises (a $4B
+  convertible preferred in April, $6B after a $2.8B Q2 loss) failed to restore confidence. Barclays
+  bought the US business for its IBD/ECM and the 745 Seventh Ave building, not its FICC, so FICC staff
+  were cut and everyone reinterviewed for their own jobs. The 2008 short-sale ban covered <em>all</em> shorting
+  of financials, which blew up convertible-arb funds that hedge by shorting stock. Morgan Stanley stayed
+  independent on CIC's $5B mandatory convertible (Dec 2007) plus MUFG's $9B. Kristen's TARP case: three
+  programs, below-market preferred dividends, and MS/GS forced to take it for system confidence; TARP
+  is often confused with QE, which is what actually drove 2009–10 bank profits. SVB (Treasuries marked
+  down as rates rose) and Credit Suisse (a 2022 Saudi/QIA raise, then a refusal of more support, then a
+  forced weekend sale to UBS with AT1s wiped) are her modern rhymes. Distress is defined as <strong>inability
+  to refinance</strong>, not a falling share price. <em>Flags:</em> the TARP disbursed figure is ~$443B (authority cut
+  from $700B to $475B), not her "60%" or "50% untouched"; the equity-method threshold is 20%, not 21%.</li>
+<li><strong>Liquidity matching and gating (Industry S4E1).</strong> PE locks capital up 5–7 years to match illiquid
+  assets; hedge funds offer monthly or quarterly liquidity (multi-manager platforms lock up 3+ years).
+  Redemptions force fire sales that can kill a fund whose thesis is right. <strong>Gating</strong> suspends outflows
+  so stayers aren't hurt by forced selling, and it wrecks future fundraising. Allocators on the Yale
+  model buy market beta cheaply and use hedge funds for uncorrelated absolute return, so a short-only
+  fund is a hedge, not a market-beater; an SMA runs the client's constraints while a fund pools capital
+  behind the manager's view. Shorting stock: locate a borrow through prime brokerage, pay the borrow fee
+  plus any dividends owed to the lender; illiquid mid-caps are expensive to borrow. Cover in small clips
+  across dealers so you don't squeeze yourself (S4E7). Ties to the private-credit gating discussion in
+  <a class="wiki" href="doc-notes-wss-credit-distressed.html">wss credit distressed</a>.</li>
+<li><strong>Fraud patterns and audit (Industry S4E6).</strong> Kristen's taxonomy. <em>Enron</em> (~$70B peak cap): booked a
+  10–15-year contract's full value on day one, hid debt and losses in SPEs, round-tripped trades to
+  inflate revenue; Arthur Andersen died with it, and Sarbanes-Oxley (2002) created the PCAOB, CEO/CFO
+  certification and auditor-independence rules. <em>Valeant</em>: R&amp;D ~3% of sales vs. a 15–20% industry norm;
+  bought drugs and raised prices (one +525%, another +2,700%); channel stuffing through Philidor; Ackman
+  lost ~$4B. <em>Luckin</em>: simply fabricated sales, caught by store-traffic video and receipts. Lesson:
+  complexity is cover; "the cash flow statement tells the truth." A legitimate SPV for contrast: Meta's
+  Hyperion data center, owned and controlled by Blue Owl with Meta holding ~20% and leasing it, which
+  keeps the debt off Meta's balance sheet. Audit outcomes: clean, qualified, adverse (and disclaimer,
+  which she omits). <em>Flags:</em> Luckin's video evidence was ~11,000 hours, not "92,000"; Liberation Day
+  was April 2, 2025, not April 9.</li>
+<li><strong>Bankruptcy waterfall and UK regulators (Industry S4E7).</strong> Senior secured → senior unsecured →
+  subordinated → equity; Kristen's training firm recovered ~12c on the dollar on unpaid Lehman invoices,
+  trickling in over ~10 years (the unsecured-creditor reality behind §4.12's ~70c secured figure). Bank
+  M&amp;A priced at ~1.2x book with a 90-day clawback works like an earn-out. UK map: the SFO prosecutes
+  fraud (LIBOR), the FCA is roughly SEC plus CFPB, the PRA licenses banks, and a Section 166
+  "skilled person review" lets the regulator compel an outside firm to review governance and controls.</li>
+<li><strong>Insurance as tail-risk pricing (shorts).</strong> A-Rod's 2001 10-year, $252M contract was spread across 17
+  insurers; nobody would cover the last three years (performance falls after ~34), so Buffett did:
+  the back-end years carry the risk, and the premium is the price of a tail. War-risk marine cover is
+  priced per transit at roughly 0.25–0.30% of hull value (~$250–300k on a $100M ship), lower with armed
+  guards, and insurers can simply withdraw cover.</li>
+<li><strong>Sell company stock when it vests (Industry S4E7).</strong> Your salary already makes you long your
+  employer, so holding its stock as well doubles the risk. This is blanket advice; the hosts don't
+  mention taxes. Taylor Swift masters (short): Scooter Braun bought for ~$140M and sold 17 months later
+  for $300M. Shamrock held from 2020 to 2025, putting in $300M and selling for $360M while collecting
+  ~$30M a year of income, about 12% a year before financing.</li>
+<li><strong>Doctors vs. bankers (Yc25Hc4AeaY).</strong> No lifetime-earnings model, but the shape is clear: residents
+  earn ~$50–60k (NYC is now nearer $70–90k), a general pediatrician posting paid $125k, and "real money"
+  arrives around 31–32. NYC academic medicine pays around the national median, a prestige discount.
+  Pediatric emergency medicine pays in the low-to-mid $200ks, <strong>$50–100k less</strong> than adult EM despite
+  more training, because insurers set pediatric reimbursement lower decades ago; incentives follow
+  reimbursement, so cash-pay, 9-to-5 specialties (sleep, allergy) are now the competitive ones. A few
+  surgical services subsidize the rest of the hospital. Insurers can pay up to a year late, claw back,
+  or downcode (one paid ~$200 for a breast reduction that includes three months of post-op care), which
+  pushes surgeons to cash pay, collected before surgery. Surgery is compared to project-based IBD and
+  the ER to reactive S&amp;T. <em>Flag:</em> $80k a year of college is $320k over four years, not the "$240k" said.
+  Household math (short): $1M a year in NYC with three kids leaves ~$100–200k after ~$350k federal plus
+  ~$100k state, city and payroll tax, $25–40k of health premiums, ~$200k of housing on a $2.5M apartment,
+  and $40–72k per child of preschool plus a nanny.</li>
+<li><strong>Bankers vs. lawyers (<code>4K9ZjBkSTT4</code>, with a Wachtell M&amp;A partner and a Davis Polk capital-markets
+  partner).</strong> M&amp;A law covers <em>control</em> transactions; capital markets covers raising money without
+  selling control, and is collegial because issuer and underwriter want the same outcome, while M&amp;A
+  risk allocation is zero-sum. Bankers set price and consideration; lawyers set structure (direct vs.
+  reverse triangular merger), shareholder-vote consequences, termination and reverse termination fees,
+  and antitrust efforts covenants. Big Law first-years earn ~<strong>$225k</strong> base with a small bonus (pay
+  weighted to base, consistent with more risk-averse people); banking pays a lower base and larger
+  bonus, with MDs at $1–5M. Partnership takes ~8–10 years by qualitative vote, and partners buy in with
+  capital. Most contracts are never re-read; the ones that are (a buyer trying to walk) are why the best
+  drafters are hired up front. <em>Flag:</em> the vote trigger he simplifies as the cash/stock mix is really
+  the exchange rule on issuing ≥20% of the acquirer's shares.</li>
+<li><strong>Sports franchises as assets (<code>0Un7W_aL1H4</code>, Eli Manning and David Adelman; routed to this cluster).</strong>
+  Valuation tracks how much revenue is shared nationally. NFL: a ~$110B, 11-year national TV deal split
+  equally across 32 teams plus a hard cap, so big- and small-market teams converge in value. NBA: ~60/40
+  national/local with a soft cap, a luxury tax and two "aprons" that add penalties and roster limits.
+  MLB: mostly local revenue and no cap, so value depends on market and only a handful of teams make real
+  money. The NFL now admits an approved list of PE funds (Arctos, Ares, Sixth Street, a Blackstone/Carlyle
+  consortium) for minority stakes, which pushed money down into smaller sports assets. Adelman's point:
+  owning the arena captures building revenue and the fan experience (the 76ers' 50/50 arena with Comcast,
+  ~$1.5B, opening 2031), and the surrounding real estate counts toward team value. <em>Flags:</em> $110B/11/32 is
+  ~$312M a team a year from TV alone, not "$400M"; Kristen's 4.2x apron "fine" is invented (the tax is
+  tiered ~1.5–4.75x on the overage); the NBA deal is ~$76B over 11 years; Packers shares carry no
+  economic rights, so "publicly traded" is wrong.</li>
+<li><strong>One-sidedness flags (culture-other).</strong> The two Strangers episodes contradict each other on AUM,
+  fee terms and roles. Their claim that a short over 5% becomes public is wrong: 13D/G covers long
+  positions, and EU/UK net-short disclosure starts at 0.1–0.5%. Their "~57% NY marginal tax" is high;
+  the top combined federal/state/city rate is ~52%. Jen's "TARP wasn't technically a bailout" is
+  opinion stated as fact.</li>
+</ul>
+<hr />
+<h2 id="5-how-the-concepts-connect">5 · How the concepts connect</h2>
+<pre><code> three statements (§4.1) ──► unlevered FCF ──► DCF (§4.3) ──► ENTERPRISE VALUE (§4.2) ◄── comps / precedents
+                                                  ▲
+               WACC (§4.4): rf + β × MRP for equity; YTM × (1 − t) for debt
+                                                  ▲
+         tax shield, capped at 30% of EBIT(DA) (§4.6) ──► capital structure (§4.5): debt cheap until distress
+                                                  │
+ purchase multiple ──► debt capacity (turns of EBITDA) ──► EQUITY CHECK (§4.7) ──► sources &amp; uses (§4.9)
+                                                  │                   │
+         who holds the debt: syndicate → CLO → private credit (§4.10)  ▼
+                    │                                     paper LBO: IRR / MOIC (§4.8)
+       covenants, collateral, recovery (§4.12)                        │
+       yield-hungry market → covenant-lite → fraud found late         ▼
+                                                     carry (§4.20) ──► comp: base, bonus, deferral (§4.19)
+ exit: IPO (pop = transfer, §4.15) / sale / continuation;                  │
+ private marks (§4.16) bridge the years with no price                       ▼
+                                          who sells the advice: boutique vs. bulge bracket (§4.18)
+                                          and who climbs the ladder: career pipeline (§4.21)
+</code></pre>
+<p>The causal spine: <strong>the three statements produce the cash flows; the WACC prices them, and the tax
+treatment of debt bends the WACC; the price paid and debt capacity set the equity check; the equity
+check decides both the return and who eats the first loss; the holder of the debt decides where that
+loss lands; and the return decides carry, which is what the whole career ladder is climbing toward.</strong>
+Two recurring tensions run across the chain. First, every "mechanical" step hides a judgment the seat
+shapes: the sell side standardizes beta and the MRP to survive a lawsuit, the buy side uses judgment,
+and an <em>Industry</em> banker lowers the WACC to please a client. Second, controls at every link
+(covenants, haircuts, research barriers, central clearing, deferral, clawbacks) each exist because a
+past failure at that link was expensive: TXU and hung bridges, Lehman's bilateral swaps, the pre-2003
+research scandals, the 2008 bonus-for-blowup problem.</p>
+<hr />
+<h2 id="6-retrieval-questions">6 · Retrieval questions</h2>
+<ol>
+<li><strong>A headline says Company A was "sold for $20B less" than two years ago. What two numbers do you
+   ask for before believing it?</strong> — Debt (and cash) at both dates. The price of the business is EV;
+   an equity-value drop can be pure added leverage (X/xAI: 33+12 ≈ 44+0.6).</li>
+<li><strong>Why does Kristen put the cash flow statement in the middle of a three-statement model, and why
+   can a DCF skip the balance sheet?</strong> — It follows one dollar: net income opens the CFS, which ends in
+   the change in cash that lands on the balance sheet. A DCF needs only unlevered cash flows (EBITDA,
+   D&amp;A, capex, ΔNWC), not debt or a balancing balance sheet.</li>
+<li><strong>A company's 2020 bonds carry a 3% coupon but yield 7% today; the tax rate is 25%. What is its
+   cost of debt for the WACC, and why not 3%?</strong> — 7% × 0.75 = 5.25%. The WACC needs today's marginal
+   cost of borrowing; the coupon reflects 2020 rates.</li>
+<li><strong>A sell-side banker and a buy-side investor value the same company. Why might they choose different
+   betas?</strong> — The banker may defend a fairness opinion in court, so uses a standard (Bloomberg adjusted
+   beta, ⅔ raw + ⅓ × 1); the investor can weigh R², use peer asset betas relevered, or a forward beta.</li>
+<li><strong>A viewer says cost of equity is 5% because the stock trades at 20x earnings. What is right and
+   wrong about that?</strong> — 1/PE is the earnings yield, useful for EPS accretion (stock at 5% vs. debt at
+   5.25% after tax), but it ignores growth and payout and is not a required return. Equity is junior to
+   debt (loan recoveries ~76%, equity often zero), so it must cost more.</li>
+<li><strong>Under Modigliani–Miller with taxes, adding debt raises firm value. Where does the value come from,
+   per Kristen?</strong> — From taxpayers, through the interest deduction; it's a transfer, not created value.
+   Bankruptcy and issuance costs (IPO fees 6–7% vs. bond fees 12–40bp) are what MM leaves out.</li>
+<li><strong>In Kristen's LBO ($10M at 10x, $3M equity, EBITDA $1M → $1.5M, $1M of debt repaid), how much of the
+   equity gain came from operations vs. debt paydown, and what would the unlevered return be?</strong> — $5M of
+   the $6M gain from EBITDA growth, $1M from paydown; 3.0x ≈ 25% IRR levered vs. 1.5x ≈ 8% unlevered.</li>
+<li><strong>Why could PE not LBO most tech companies in 2007, in one sentence of arithmetic?</strong> — At ~20x
+   EBITDA with lenders funding 7–8x, equity must fill 60–65%, far above the ~30% that makes LBO returns
+   work.</li>
+<li><strong>In a public-to-private LBO, why is there no "minimum cash" line in uses, and where does the
+   target's cash go?</strong> — Buying the shares buys the cash; excess cash above the operating keep-back
+   appears as a <em>source</em> funding the deal. In a private cash-free/debt-free deal, the seller keeps its
+   cash and repays its debt.</li>
+<li><strong>Skechers holders could take $63 cash or $57 + one private unit. What are electors betting, and
+    what are they giving up?</strong> — That the unit is worth more than $6 after 3G's turnaround; they give up
+    liquidity, control and seniority (the unit sits under the new debt), within a 20% rollover cap.</li>
+<li><strong>Why did JPMorgan's sole $20B commitment worry Jen more than TXU's syndicate did?</strong> — Distribution
+    spreads risk; a single holder concentrates it on one systemically important balance sheet.</li>
+<li><strong>Why does a boutique add restructuring, and why did Greenhill still sell to Mizuho?</strong> — Restructuring
+    peaks when M&amp;A dies, the only hedge an advice-only firm has; inside a universal bank, trading's
+    volatility profits offset M&amp;A droughts, and the boutique model had been widely copied.</li>
+<li><strong>Why did the EU bonus cap increase guaranteed pay, and what does a two-year switching guarantee do
+    to pay in year three?</strong> — Banks raised bases to hold total comp, so less pay was at risk. Guarantees
+    borrow from the future: after they expire you are usually "paid down."</li>
+<li><strong>How did Lehman's failure hurt Morgan Stanley even on a swap where MS was owed money?</strong> — MS lost
+    the receivable <em>and</em> its offsetting hedge with another party was suddenly unhedged; bilateral
+    exposure chained losses across banks, which is why most swaps are now centrally cleared.</li>
+</ol>
+<hr />
+<h2 id="7-gaps-titles-to-fold-in-later">7 · Gaps — titles to fold in later</h2>
+<p>Still missing after pass 2 (catalog <code>wss_all_videos.json</code> / <code>wss_all_shorts.json</code> vs. files present):</p>
+<ul>
+<li><strong>Technicals:</strong> <em>Paper LBO must know for PE interviews</em> (<code>J9xh-sNosSM</code>) · <em>Private Equity Interview MUST
+  KNOW: The Rule of 72</em> (<code>h57N5mP-qn8</code>) · <em>8 must know technicals for sales and trading interviews</em>
+  (<code>AjVQNEWc5pc</code>) · <em>Largest Debt Commitment in History for LBO by ONE BANK</em> (<code>fZQP_mQ_2sg</code>, EA Part 2) ·
+  WACC Part 1 (the weighting video; no catalog match found). <em>Top 8 Technicals</em> (<code>qAzAguiaTJ0</code>,
+  <code>VXrEMy8w83M</code>) exist but are music-only, so their content is unrecoverable from transcripts.</li>
+<li><strong>Industry &amp; equity offerings:</strong> <em>S2E2 "Giant Squid": Block Trades, IPOs vs. Other Equity Offerings</em>
+  (<code>beSAafxvKn0</code>) · <em>How Lumi's IPO was Saved By Shady Tricks (Industry S3E2)</em> (<code>HHHy4hPhDG0</code>) ·
+  <em>Investment banking vs. Private equity</em> (<code>6kiO6Tc1Qf8</code>) · <em>Doctors vs. Investment bankers</em>
+  (<code>nSm30CMe2Hg</code>) · <em>Investment Banking vs. Sales and Trading Lifestyle</em> (<code>IZJjGRQqm4E</code>) · several Excel
+  shortcut shorts (<code>Y3FC14q5-OI</code>, <code>QR7T5q4bt34</code>, <code>XmmJ6VXft7Q</code>, <code>pp8BOfKkZxQ</code>, <code>ogGE4l4H2Mw</code>,
+  <code>9JSFOpy1zOU</code>).</li>
+<li><strong>Present but owned by sibling notes</strong> (not folded here to avoid duplication): <em>Private Equity 102</em>,
+  <em>PE Secondaries 101/201</em>, <em>Private Equity vs. Private Credit in 90 seconds</em> → <a class="wiki" href="doc-notes-wss-private-markets-wealth.html">wss private markets wealth</a>;
+  <em>The HIDDEN Cost of SPACs</em>, <em>Industry S2E3: Block Trades</em> → <a class="wiki" href="doc-notes-wss-capital-markets-ma.html">wss capital markets ma</a>. <em>PE Associate
+  Tell-All</em> (<code>8W5DEMasd3k</code>), <em>Growth Equity Value Creation w/ Sixth Street</em> (<code>EY3HcYOB2No</code>) and <em>The One
+  Fatal Flaw with Private Equity</em> (<code>vy6iPkxcBFM</code>) now have transcripts and are candidates for §4.21 or
+  the private-markets note on a later pass.</li>
+<li><strong>Content the episodes didn't deliver:</strong> the Bok interview never covers boutique fee structures
+  (retainer vs. success fee), deal-size bands or analyst pay, and gives no Mizuho price; those need a
+  non-channel source.</li>
+</ul></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-wss-scenario-map.html"><span>Previous</span>The WSS scenario map — the seven concept notes reorganized by market regime</a><a class="doc-next" href="doc-notes-wss-trading-hedge-funds.html"><span>Next</span>Hedge funds and trading: how liquid capital is raised, risked, levered and blown up</a></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

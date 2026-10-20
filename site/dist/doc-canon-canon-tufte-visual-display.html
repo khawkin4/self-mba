@@ -1,0 +1,104 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Note · Tufte — The Visual Display of Quantitative Information · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="canon">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-canon.html">Canon Notes</a></nav>
+<div class="doc-kicker">The reading backbone</div>
+<h1 class="doc-title">Note · Tufte — The Visual Display of Quantitative Information</h1>
+<div class="doc-meta"><span>4 min read</span><span>832 words</span><span>Updated 2026-06-06</span><span class="doc-src">notes/canon/canon-tufte-visual-display.md</span></div>
+</header>
+<div class="doc-layout">
+
+<article class="prose">
+<blockquote>
+<p>Canon · Cluster: Information &amp; Communication · Maps to <strong>Course 07</strong> (Data &amp; Decision-Making)</p>
+</blockquote>
+<ul>
+<li><strong>Source:</strong> Edward Tufte, <em>The Visual Display of Quantitative Information</em> (1983)</li>
+<li><strong>Core claim:</strong> Data visualization is a discipline with principles: <strong>let the data speak, strip
+  everything that doesn't.</strong></li>
+<li><strong>Framework:</strong></li>
+<li><strong>Maximize the data-ink ratio</strong> — every mark on the page should encode data, not decoration.</li>
+<li><strong>Chartjunk</strong> — gratuitous gridlines, 3-D effects, gradients — doesn't just look bad, it
+    <em>actively interferes</em> with understanding. Erase it.</li>
+<li><strong>Small multiples</strong> — repeating the same chart structure across categories/time; one of the most
+    powerful and <em>underused</em> techniques (the eye learns the frame once, then compares).</li>
+<li><strong>The lie factor</strong> — the ratio of the visual effect's size to the data's actual change; &gt;1 means
+    the graphic distorts (truncated axes, area-for-length).</li>
+<li><strong>Applies when:</strong> presenting any quantitative argument — dashboards, board decks, analyses — where
+  the format can either reveal or obscure the message.</li>
+<li><strong>Breaks when:</strong> Tufte's <strong>minimalism can go too far</strong> — maximal data-ink isn't always maximal
+  <em>comprehension</em>; some redundancy, labeling, or "junk" (a reference line, light gridlines, a touch
+  of color) genuinely <strong>aids</strong> a non-expert audience, and modern research on <em>preattentive</em> cues and
+  even "chart-junk that aids memorability" pushes back on purity. The principles also assume a
+  <strong>reader studying a static page</strong>; interactive/dashboard/mobile contexts change the rules.</li>
+<li><strong>Practitioner counterpoint:</strong> <em>(researched 2026-06-05 — r/dataisbeautiful corpus + Tufte/dataviz transcripts)</em>
+  What actually goes viral on r/dataisbeautiful confirms Tufte's "substance over decoration" thesis:
+  the top-voted posts are <strong>dense, honest, low-junk</strong> charts — "<strong>Homophobic views have declined
+  around the world</strong>" (50,879↑), "<strong>Government shutdowns in the U.S.</strong>" (37,775↑), and a hand-kept
+  "<strong>15 years of counting kids on Halloween, Excel</strong>" (28,747↑) that wins on data, not gloss. The
+  lie-factor lesson shows up in the wild too: "<strong>The Staircase of Denial</strong>" (25,992↑) was <em>built</em>
+  to defeat the truncated-axis "it hasn't warmed in X years" trick by showing warming "<strong>inside
+  normal variations</strong>." But the transcript instructors keep the practitioner caveat alive — the
+  educator video reframes Tufte's law as "<strong>substance over design</strong>," i.e. erase junk <em>in service of
+  the message</em>, not as an aesthetic end in itself. Pairs with Minto for the <em>narrative</em> around the
+  chart (<a class="wiki" href="doc-canon-canon-minto-pyramid-principle.html">canon minto pyramid principle</a>) and Shannon on fidelity (<a class="wiki" href="doc-canon-canon-shannon-information-theory.html">canon shannon information theory</a>).</li>
+<li><strong>Researched layer</strong> <em>(2026-06-05)</em></li>
+<li><strong>Canonical explanation (sourced):</strong> Tufte frames the whole discipline as a cognitive one —
+    <em>"the goal of analytical design is to make people smarter… make our information displays worthy
+    of the routine capabilities of the human eye-brain system"</em> (Tech@State keynote, Edward Tufte).
+    The optic nerve carries ~10 megabits/sec, so under-loaded displays <em>waste</em> the reader: ESPN
+    tables average <em>"150 to 200 numbers… per table; the average number of numbers on the government
+    slide is 12"</em> — hence push <strong>data density</strong> up and <strong>chartjunk</strong> out. The instructional gloss:
+    <em>"a large share of ink on a graphic should present data… data-ink is the non-erasable core of a
+    graphic, the non-redundant ink arranged in response to variation in the numbers"</em> ("Edward
+    Tufte Principles" lecture, Erik B).</li>
+<li><strong>Real application (mined):</strong> the rule the corpus rates above chartjunk is <strong>honesty</strong> —
+    <em>"number one is that our graphs should display our data honestly… we don't predetermine the
+    outcome we want and then cherry-pick the data"</em> (Research By Design). On r/dataisbeautiful this
+    is exactly what gets rewarded: "<strong>The Staircase of Denial</strong>" (25,992↑) was engineered to expose
+    the truncated-window distortion (the lie factor in the wild) by plotting record years "<strong>inside
+    normal variations</strong>," and the top viral posts are high-density honest charts ("Homophobic views
+    have declined…", 50,879↑) rather than glossy 3-D ones.</li>
+<li><strong>Where the corpus pushes back on the book:</strong> the educators reframe data-ink as <strong>substance over
+    design</strong> — <em>"no one is that impressed by how pretty you make your chart"</em> — i.e. the goal is the
+    message, not minimalist purity; redundancy and labeling are fine when they <em>support the text</em>.
+    (<em>Corpus thin on this point — flagged for re-pull:</em> the r/dataisbeautiful pull is all [OC]
+    submissions, not the practitioner-debate threads where Tufte purism vs. memorability/accessibility
+    actually gets argued.)</li>
+<li><strong>Sources in corpus:</strong> techatstate — "Tech@State: Data Visualization — Keynote by Dr Edward
+    Tufte" (youtube.com/watch?v=g9Y4SxgfGCg) · Erik B — "'Edward Tufte Principles' lecture"
+    (youtube.com/watch?v=UuL6wPGTJZQ) · Research By Design — "Graphical EXCELLENCE: Presenting Data
+    Clearly by Tufte (4-5)" (youtube.com/watch?v=T4_ja1VAhUs) · r/dataisbeautiful "Homophobic views
+    have declined around the world" (50,879↑), "Government shutdowns in the U.S." (37,775↑), "The
+    Staircase of Denial" (25,992↑), "15 years of counting kids on Halloween, Excel" (28,747↑).</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-canon-canon-minto-pyramid-principle.html">canon minto pyramid principle</a> · <a class="wiki" href="doc-canon-canon-shannon-information-theory.html">canon shannon information theory</a> ·
+  <a class="wiki" href="doc-canon-canon-duarte-resonate.html">canon duarte resonate</a></li>
+</ul>
+<hr />
+<h3 id="rep">Rep</h3>
+<p>Take one chart you'll present. Delete every element that isn't data (gridlines, 3-D, legend clutter).
+Could it become a <strong>small-multiple</strong> instead of one busy chart? Check the axis for a <strong>lie factor</strong>.</p></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-canon-canon-thucydides-peloponnesian-war.html"><span>Previous</span>Note · Thucydides — History of the Peloponnesian War</a><a class="doc-next" href="doc-canon-canon-voss-never-split-the-difference.html"><span>Next</span>Note · Voss — Never Split the Difference</a></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

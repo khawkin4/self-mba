@@ -1,9 +1,6 @@
 
 (function(){
-  var bar=document.getElementById('progress');
-  if(bar){addEventListener('scroll',function(){
-    var h=document.documentElement,sc=h.scrollTop,mx=h.scrollHeight-h.clientHeight;
-    bar.style.width=(mx>0?100*sc/mx:0)+'%';},{passive:true});}
+  // (reading-progress bar is driven by site.js)
   // keyboard nav: ← → for prev/next
   var prevLink=document.querySelector('.pn:not(.next)');
   var nextLink=document.querySelector('.pn.next');
@@ -87,13 +84,16 @@
     var COLORS={brass:'#9a7b2e',core:'#84ad8a',exec:'#b86e1a',dim:'#7a7568',ink:'#2c2a25',
       line:'#d9d4cb',surface:'#f2ede6',red:'#cf6a5a',blue:'#4a90d9',teal:'#2d8a7a',
       purple:'#7a5fa0',orange:'#d4842a'};
+    try{var cs=getComputedStyle(document.documentElement);
+      COLORS.dim=cs.getPropertyValue('--dim').trim()||COLORS.dim;
+      COLORS.ink=cs.getPropertyValue('--ink').trim()||COLORS.ink;}catch(e){}
     Chart.defaults.font.family="'Lexend',sans-serif";
     Chart.defaults.color=COLORS.dim;
     Chart.defaults.plugins.legend.labels.usePointStyle=true;
     Chart.defaults.plugins.legend.labels.boxWidth=8;
     Chart.defaults.elements.bar.borderRadius=4;
     Chart.defaults.elements.bar.borderSkipped=false;
-    Chart.defaults.scale.grid={color:'rgba(0,0,0,.06)'};
+    Chart.defaults.scale.grid={color:(document.documentElement.getAttribute('data-theme')==='dark'||(!document.documentElement.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme:dark)').matches))?'rgba(255,255,255,.08)':'rgba(0,0,0,.06)'};
     Chart.defaults.scale.border={display:false};
     function patchCallbacks(obj){
       if(!obj||typeof obj!=='object')return;

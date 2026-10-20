@@ -358,13 +358,41 @@ def sig_badge(s):
     return f'<span class="{cls}">signal {s}</span>'
 
 # ---------- page rendering ----------
+IC.update({
+    'search': '<svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg>',
+    'sun': '<svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg>',
+    'moon': '<svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg>',
+})
+
+# Global chrome: one sticky nav on every page (home, modules, library, exams).
+SITE_NAV = f"""<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search">{IC['search']}<span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode">{IC['sun']}{IC['moon']}</button>
+</div></header>"""
+
+FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+         '<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500'
+         '&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">')
+
 HEAD = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#faf7f2">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
 <title>{title}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{css}?v=""" + BUILD_VER + """"></head><body>"""
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}}catch(e){{}}</script>
+""" + FONTS + """
+<link rel="stylesheet" href="{css}?v=""" + BUILD_VER + """"></head><body>
+""" + SITE_NAV
+FOOT = '<script src="site.js?v=' + BUILD_VER + '"></script></body></html>'
 
 def render_video(v, summary=None):
     tr = (v.get("transcript") or "").strip()
@@ -470,10 +498,10 @@ def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None, summar
     desc = DESCRIPTIONS.get(mid, "")
     desc_html = f'<p class="mod-desc">{esc(desc)}</p>' if desc else ""
     return HEAD.format(title=f"{c} · {title}", css="style.css") + f"""
-{'<div id="progress"></div>' if lesson else ''}
+<div id="progress"></div>
 <header class="mod-header {('exec' if track=='exec' else 'core')}">
 <nav class="breadcrumb">
-<a href="index.html">Index</a><span class="sep">›</span>
+<a href="index.html">Home</a><span class="sep">›</span>
 <a href="index.html{track_tab}">{track_name}</a><span class="sep">›</span>
 <span class="current">{esc(c)} {esc(title)}</span>
 </nav>
@@ -489,9 +517,9 @@ def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None, summar
 <script src="chart.min.js"></script>
 <script src="lesson.js?v={BUILD_VER}"></script>
 <script>document.body.classList.add('mod-enter');</script>
-</body></html>"""
+""" + FOOT
 
-def render_index(modules, stats, wc_data=None, graph_data=None, sources=None):
+def render_index(modules, stats, wc_data=None, graph_data=None, sources=None, library=None):
     # Compute lesson coverage per track
     cov = {}
     for track in ("core", "exec", "canon", "gaps"):
@@ -528,79 +556,112 @@ def render_index(modules, stats, wc_data=None, graph_data=None, sources=None):
 <span class="mcard-arrow">{IC["arrow-r"]}</span></a>""")
         return "".join(out)
 
-    def track_head(label, track, count_label, color="var(--core)"):
+    def track_head(label, track, count_label, color="var(--core)", kicker=""):
         r, t, pct = cov[track]
-        ring = svg_progress_ring(pct, r=18, sw=3, color=color)
+        ring = svg_progress_ring(pct, r=16, sw=3, color=color)
         return (f'<div class="track-head" data-collapse="{track}">'
-                f'<span class="th-label">{label}</span><span class="th-rule"></span>'
+                f'<span class="th-label"><small>{esc(kicker)}</small>{label}</span><span class="th-rule"></span>'
                 f'<span class="th-cov">{ring}<span class="th-cov-label">{r}/{t} lessons</span></span>'
                 f'<span class="th-count">{count_label}</span>'
                 f'<button class="th-toggle" aria-label="Collapse section">{IC["arrow-up"]}</button></div>')
 
-    # Visual stats dashboard (data-target for animated counters)
+    # ---- hero: compact numbers + progress card ----
     stats_viz = f"""<div class="stats-dash">
 <div class="stat-card"><div class="stat-num" data-target="{stats['modules']}">0</div><div class="stat-label">modules</div></div>
 <div class="stat-card"><div class="stat-num" data-target="{stats['videos']}">0</div><div class="stat-label">lectures</div></div>
-<div class="stat-card"><div class="stat-num" data-target="{stats['words']}">0</div><div class="stat-label">words of transcript</div></div>
+<div class="stat-card"><div class="stat-num" data-target="{(library or {}).get('doc_count', 0)}">0</div><div class="stat-label">library docs</div></div>
 <div class="stat-card"><div class="stat-num" data-target="{total_lessons}">0</div><div class="stat-label">interactive lessons</div>
 <div class="stat-bar-wrap"><div class="stat-bar-fill" style="width:0%" data-width="{overall_pct}"></div></div>
 <div class="stat-sub">{overall_pct}% coverage</div></div>
 </div>"""
-
-    # Gamification bar
-    gami_bar = f"""<div class="gami-bar">
+    progress_card = f"""<div class="progress-card">
+<div class="gami-bar">
 <div class="xp-display">{IC['star']} <span class="xp-num" id="xp-count">0</span> <span class="xp-label">XP</span></div>
 <div class="level-badge" id="level-badge">Analyst</div>
 <div class="streak-display" id="streak-display">{IC['flame']} <span class="streak-num" id="streak-num">0</span> <span class="streak-label">day streak</span></div>
-</div>"""
-
-    return HEAD.format(title="The Compounding MBA", css="style.css") + f"""
-<header class="hero">
-<div class="eyebrow">Self-directed · Master's level</div>
-<h1>The Compounding <em>MBA</em></h1>
-<p class="sub">A master's-level business education, distilled from elite sources into interactive, visual lessons — grounded in primary data.</p>
-{stats_viz}
-{gami_bar}
+</div>
+<div class="continue" id="continue"><div class="continue-label">Continue where you left off</div><a href="#" id="continue-link"><span id="continue-title"></span>{IC['arrow-r']}</a></div>
 <div class="exam-links">
 <a class="exam-link" href="exam.html">{IC['pencil']} <span class="exam-title">Self-diagnostic</span> <span class="exam-sub">recall</span> {IC['arrow-r']}</a>
-<a class="exam-link bench" href="benchmark-exam.html">{IC['target']} <span class="exam-title">Calibrated benchmark</span> <span class="exam-sub">exam-level</span> {IC['arrow-r']}</a>
-</div>
-<input id="q" placeholder="Search modules…" oninput="filt()">
+<a class="exam-link bench" href="benchmark-exam.html">{IC['target']} <span class="exam-title">Benchmark</span> <span class="exam-sub">exam-level</span> {IC['arrow-r']}</a>
+</div></div>"""
+
+    # ---- the path: five stages read as one program ----
+    lib_by = {c['slug']: c for c in (library or {}).get('collections', [])}
+    def stage(n, key, href, kicker, title, desc, meta, pct=None):
+        bar = f'<span class="stage-bar"><i data-width="{pct}"></i></span>' if pct is not None else ''
+        pct_lbl = f'<span>{pct}%</span>' if pct is not None else ''
+        return (f'<li class="stage" data-stage="{key}"><a href="{href}">'
+                f'<span class="stage-top"><span class="stage-kicker">{esc(kicker)}</span><span class="stage-n">{n}</span></span>'
+                f'<b>{esc(title)}</b><p class="stage-desc">{esc(desc)}</p>'
+                f'<span class="stage-meta"><span>{esc(meta)}</span>{pct_lbl}</span>{bar}</a></li>')
+    learn = lib_by.get('learn', {}); acumen = lib_by.get('acumen', {})
+    stages = "".join([
+        stage(0, 'learn', 'lib-learn.html', 'On-ramp', 'Zero to financial literacy',
+              'Ten four-pillar units: concept, plain language, a real filing, an exercise.',
+              f"{learn.get('count', 10)} units"),
+        stage(1, 'core', '#t-core', 'Core', 'The twelve-course curriculum',
+              'Accounting to capstone — interactive lessons distilled from lectures and filings.',
+              f"{cov['core'][1]} courses", cov['core'][2]),
+        stage(2, 'exec', '#t-exec', 'Executive', 'Leading at scale',
+              'Capital allocation, M&A, governance, crisis — the operator-to-executive turn.',
+              f"{cov['exec'][1]} courses", cov['exec'][2]),
+        stage(3, 'canon', '#t-canon', 'Canon', 'The reading layer',
+              'Twenty-three book clusters, each with its core claim, framework and failure modes.',
+              f"{cov['canon'][1]} clusters", cov['canon'][2]),
+        stage(4, 'acumen', 'lib-acumen.html', 'Acumen Gym', 'Judgment under uncertainty',
+              'Live cases, no answer key. Memos that get red-teamed, scored in a ledger.',
+              f"{acumen.get('count', 0)} cases"),
+    ])
+    path_html = f"""<section id="path" class="path">
+<div class="sec-head"><span class="kicker">The path</span><h2>Five stages, one program.</h2>
+<p>Start wherever your foundation is. Lessons compound: each stage assumes the one before and feeds the next.</p></div>
+<ol class="stages">{stages}</ol>
+<div class="path-aside">
+<a class="aside-card" href="#t-gaps"><span class="kicker">As needed</span><span><b>Technical Foundations</b> · {cov['gaps'][1]} prerequisite modules — cost accounting, statistics, law, venture finance.</span></a>
+<a class="aside-card" href="#t-library"><span class="kicker">Alongside</span><span><b>Library</b> · {(library or {}).get('doc_count', 0)} documents: field notes, canon distillations, quant lab, glossary.</span></a>
+</div></section>"""
+
+    toolbar = f"""<div class="toolbar">
+<input id="q" placeholder="Filter modules…" oninput="filt()" aria-label="Filter modules">
 <div class="filter-chips">
 <button class="chip active" data-filter="all">All</button>
 <button class="chip" data-filter="lesson">{IC['lesson']} Has lesson</button>
 <button class="chip" data-filter="completed">{IC['check']} Completed</button>
 <button class="chip" data-filter="not-started">Not started</button>
-</div>
+</div></div>"""
+
+    return HEAD.format(title="The Compounding MBA", css="style.css") + f"""
+<header class="hero">
+<div class="eyebrow">Self-directed · Master's level · Updated {max(stats['date'], (library or {}).get('latest',[{}])[0].get('updated',''))}</div>
+<h1>The Compounding <em>MBA</em></h1>
+<p class="sub">A master's-level business education distilled from elite sources into interactive lessons, a reading canon and a library of practitioner notes — grounded in primary data.</p>
+<div class="hero-grid">{stats_viz}{progress_card}</div>
 </header>
-<nav class="track-tabs" id="track-tabs">
-<a href="#t-core" class="tt active" data-track="core">Core</a>
-<a href="#t-exec" class="tt" data-track="exec">Executive</a>
-<a href="#t-canon" class="tt" data-track="canon">Canon</a>
-<a href="#t-gaps" class="tt" data-track="gaps">Foundations</a>
-<a href="#t-explore" class="tt" data-track="explore">Explore</a>
-</nav>
 <main>
-<section id="t-core" class="track-section">
-{track_head('Core Curriculum', 'core', '12 modules', 'var(--core)')}
+{path_html}
+{toolbar}
+<section id="t-core" class="track-section" data-track="core">
+{track_head('Core Curriculum', 'core', '12 courses', 'var(--core)', 'Stage 1')}
 <div class="grid">{cards('core')}</div>
 </section>
-<section id="t-exec" class="track-section">
-{track_head('Executive Track', 'exec', '12 modules', 'var(--exec)')}
+<section id="t-exec" class="track-section" data-track="exec">
+{track_head('Executive Track', 'exec', '12 courses', 'var(--exec)', 'Stage 2')}
 <div class="grid">{cards('exec')}</div>
 </section>
-<section id="t-canon" class="track-section">
-{track_head('The Canon · Reading Layer', 'canon', '23 clusters', 'var(--brass)')}
+<section id="t-canon" class="track-section" data-track="canon">
+{track_head('The Canon', 'canon', '23 clusters', 'var(--canon)', 'Stage 3 · Reading layer')}
 <div class="grid">{cards('canon')}</div>
 </section>
-<section id="t-gaps" class="track-section">
-{track_head('Technical Foundations', 'gaps', f'{len(modules["gaps"])} modules', 'var(--core)')}
+<section id="t-gaps" class="track-section" data-track="gaps">
+{track_head('Technical Foundations', 'gaps', f'{len(modules["gaps"])} modules', 'var(--gaps)', 'Prerequisites · as needed')}
 <div class="grid">{cards('gaps')}</div>
 </section>
-<section id="t-explore" class="track-section">
+{library_html(library)}
+<section id="t-explore" class="track-section" data-track="explore">
 <div class="track-head">
-<span class="th-label">Explore</span><span class="th-rule"></span>
-<span class="th-count">word cloud · knowledge graph</span></div>
+<span class="th-label"><small>Map</small>Explore</span><span class="th-rule"></span>
+<span class="th-count">concept cloud · knowledge graph</span></div>
 <div class="explore-wrap">
 <div class="explore-panel">
 <h3 class="explore-title">{IC['chart']} Concept Cloud</h3>
@@ -617,7 +678,7 @@ def render_index(modules, stats, wc_data=None, graph_data=None, sources=None):
 </section>
 </main>
 <div class="toast" id="toast"></div>
-<footer></footer>
+<footer>Built from {stats['videos']} lectures · {stats['words']:,} transcript words · {stats['filings']} SEC filings · {(library or {}).get('doc_count', 0)} library documents. Press <kbd>⌘K</kbd> to search anything.</footer>
 <script>
 function filt(){{var q=document.getElementById('q').value.toLowerCase();
 document.querySelectorAll('.chip').forEach(function(c){{c.classList.remove('active');}});
@@ -632,307 +693,32 @@ var KG_DATA=""" + json.dumps(graph_data or {"nodes":[],"edges":[]}) + """;
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
 <script src="explore.js?v=""" + BUILD_VER + """"></script>
-</body></html>"""
+""" + FOOT
 
-CSS = """
-:root{
---bg:#faf7f2;--bg2:#f3efe8;--surface:#ffffff;--surface2:#f0ece5;
---line:#e2ddd4;--line2:#d0c9be;
---ink:#1c1917;--ink2:#3d3833;--dim:#8a837a;
---brass:#9a7b2e;--brass2:#7a6121;--core:#2d7a4a;--exec:#b86e1a;
---wrong:#c4372a;
---serif:'Lexend',system-ui,sans-serif;--read:'Lexend',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace;
---wrap:920px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink2);font:19px/1.78 var(--read);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-::selection{background:var(--brass);color:#fff}
-a{color:inherit}main{max-width:var(--wrap);margin:0 auto;padding:0 24px 100px;position:relative;z-index:2}
-/* ---------- SVG ICON SYSTEM ---------- */
-.ic{display:inline-block;width:1em;height:1em;vertical-align:-.125em;flex-shrink:0}
-.ic-signal{width:1.1em}
-.lesson-tag .ic,.exam-link .ic,.done-tick .ic,.home .ic,.mcard-arrow .ic,.pn .ic,.top .ic,.cp-tick .ic{width:.85em;height:.85em}
-.top .ic{width:1.2em;height:1.2em;vertical-align:-.1em}
-@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-/* ---------- HERO / INDEX ---------- */
-.hero{max-width:var(--wrap);margin:0 auto;padding:clamp(56px,10vh,100px) 24px 36px;position:relative;z-index:2}
-.eyebrow{font:500 .72rem/1 var(--mono);letter-spacing:.32em;text-transform:uppercase;color:var(--brass);animation:rise .7s .05s both}
-.hero h1{font:300 clamp(3rem,9vw,5.5rem)/.94 var(--serif);color:var(--ink);letter-spacing:-.025em;margin:.28em 0 .12em;animation:rise .9s .12s both}
-.hero h1 em{font-style:italic;font-weight:400;color:var(--brass)}
-.sub{font-size:1.2rem;line-height:1.6;color:var(--dim);max-width:38ch;margin:0 0 32px;animation:rise .8s .26s both}
-/* stats dashboard */
-.stats-dash{display:flex;flex-wrap:wrap;gap:20px;margin-bottom:32px;animation:rise .8s .35s both}
-.stat-card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px 24px;flex:1;min-width:130px;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:border-color .2s,box-shadow .2s}
-.stat-card:hover{border-color:var(--line2);box-shadow:0 4px 12px rgba(0,0,0,.07)}
-.stat-num{font:600 clamp(1.6rem,4vw,2.2rem) var(--serif);color:var(--brass);letter-spacing:-.02em}
-.stat-label{font:500 .7rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-top:4px}
-.stat-bar-wrap{height:4px;background:var(--line);border-radius:4px;margin-top:10px;overflow:hidden}
-.stat-bar-fill{height:100%;background:linear-gradient(90deg,var(--core),var(--brass));border-radius:4px;transition:width .6s ease}
-.stat-sub{font:500 .64rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--core);margin-top:6px}
-/* exam links */
-.exam-links{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px;animation:rise .8s .45s both}
-.exam-link{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border:1px solid var(--line2);border-radius:8px;color:var(--ink2);text-decoration:none;font:600 .8rem var(--mono);letter-spacing:.05em;transition:.2s}
-.exam-link:hover{border-color:var(--brass);color:var(--ink);background:var(--surface);box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.exam-link.bench{border-color:color-mix(in srgb,var(--brass) 50%,transparent);color:var(--brass)}
-.exam-link.bench:hover{border-color:var(--brass);background:color-mix(in srgb,var(--brass) 6%,transparent)}
-.exam-title{text-transform:uppercase}.exam-sub{color:var(--dim);font-weight:400}
-.exam-link .ic:last-child{opacity:.4;transition:opacity .2s}.exam-link:hover .ic:last-child{opacity:1}
-/* progress rings */
-.prog-ring{flex-shrink:0}
-.prog-pct{font:600 .6rem var(--mono);fill:var(--ink2);letter-spacing:.02em}
-#q{width:100%;max-width:440px;padding:14px 4px;border:0;border-bottom:1px solid var(--line2);background:transparent;color:var(--ink);font:1.1rem var(--read);animation:rise .8s .5s both;transition:border-color .2s}
-#q::placeholder{color:var(--dim);font-style:italic}#q:focus{outline:0;border-color:var(--brass)}
-/* track header */
-.track-head{display:flex;align-items:center;gap:14px;max-width:var(--wrap);margin:48px auto 18px;padding:0 24px}
-.th-label{font:500 .82rem/1 var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--ink);white-space:nowrap}
-.th-rule{flex:1;height:1px;background:var(--line)}
-.th-cov{display:flex;align-items:center;gap:8px;white-space:nowrap}
-.th-cov-label{font:.68rem var(--mono);color:var(--dim);letter-spacing:.04em;text-transform:uppercase}
-.th-count{font:.78rem var(--mono);color:var(--dim);white-space:nowrap}
-/* module cards — file-cabinet drawer */
-.grid{max-width:var(--wrap);margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
-.mcard{display:flex;align-items:center;gap:0;text-decoration:none;background:var(--surface);border:1px solid var(--line2);border-radius:10px;position:relative;overflow:hidden;animation:rise .6s both;box-shadow:0 1px 4px rgba(0,0,0,.06);transition:border-color .25s,box-shadow .25s}
-.mcard:hover{border-color:var(--brass);box-shadow:0 6px 20px rgba(0,0,0,.09)}
-.mcard-num{font:300 2rem/1 var(--serif);color:var(--line2);padding:18px 0 18px 20px;min-width:60px;transition:color .25s}
-.mcard:hover .mcard-num{color:var(--brass)}.mcard.exec:hover .mcard-num{color:var(--exec)}
-.mcard-body{flex:1;padding:18px 14px 18px 6px}
-.mcard h3{font:400 1.18rem/1.25 var(--serif);color:var(--ink);margin:0 0 0;letter-spacing:-.01em;transition:color .2s}
-.mcard:hover h3{color:var(--brass)}.mcard.exec:hover h3{color:var(--exec)}
-.mcard-desc{font:.82rem/1.5 var(--read);color:var(--dim);margin:5px 0 0;letter-spacing:-.005em}
-.mcard-src{font:500 .68rem/1 var(--mono);color:var(--brass);margin:6px 0 0;letter-spacing:.02em;text-transform:uppercase;opacity:.7}
-.mcard-drawer{max-height:0;overflow:hidden;transition:max-height .35s ease,opacity .3s;opacity:0}
-.mcard:hover .mcard-drawer{max-height:120px;opacity:1}
-.mcard-top{display:flex;align-items:center;gap:8px;margin-top:8px;min-height:0}
-.mstats{display:flex;flex-wrap:wrap;gap:0 12px;font:.7rem/1.6 var(--mono);color:var(--dim);text-transform:uppercase;letter-spacing:.04em;margin-top:4px}
-.mcard-arrow{align-self:center;padding-right:18px;color:var(--brass);font-size:1.1rem;opacity:0;transform:translateX(-6px);transition:.25s}
-.mcard:hover .mcard-arrow{opacity:1;transform:none}.mcard.exec .mcard-arrow{color:var(--exec)}
-.lesson-tag{font:500 .62rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--core);border:1px solid color-mix(in srgb,var(--core) 35%,transparent);border-radius:20px;padding:3px 8px}
-.exec .lesson-tag{color:var(--exec);border-color:color-mix(in srgb,var(--exec) 35%,transparent)}
-.lesson-tag.pending{color:var(--dim);border-color:var(--line2)}
-.done-tick{margin-left:auto;font:500 .62rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--core);opacity:0}
-.mcard.completed .done-tick{opacity:1}.mcard.completed{background:color-mix(in srgb,var(--core) 5%,transparent)}
-/* ---------- MODULE PAGE ---------- */
-.mod-header{max-width:var(--wrap);margin:0 auto;padding:clamp(40px,8vh,80px) 24px 0;position:relative;z-index:2}
-.home{font:500 .74rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--dim);text-decoration:none;transition:color .2s}.home:hover{color:var(--brass)}
-.mod-header h1{font:300 clamp(2.6rem,6vw,4.2rem)/1 var(--serif);color:var(--ink);letter-spacing:-.02em;margin:.18em 0 .3em}
-.mod-desc{font:.92rem/1.6 var(--read);color:var(--dim);margin:0 0 .5em;max-width:560px}
-.hairline{height:1px;background:linear-gradient(90deg,var(--brass),transparent 70%)}
-.mod-header.exec .hairline{background:linear-gradient(90deg,var(--exec),transparent 70%)}
-.toc{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 90%,transparent);max-width:var(--wrap);margin:0 auto;padding:16px 24px;border-bottom:1px solid var(--line);display:flex;gap:24px;flex-wrap:wrap}
-.toc a{font:500 .74rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--dim);text-decoration:none;transition:color .2s}.toc a:hover{color:var(--brass)}
-section{margin-top:56px}
-section>h2{font:300 clamp(1.7rem,3.5vw,2.3rem) var(--serif);color:var(--ink);letter-spacing:-.01em;border-bottom:1px solid var(--line);padding-bottom:12px;display:flex;align-items:baseline;gap:12px}
-.count{font:.72rem var(--mono);color:var(--dim);letter-spacing:.08em}
-/* source cards */
-.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px;margin:14px 0;transition:border-color .2s,box-shadow .2s}.card:hover{border-color:var(--line2);box-shadow:0 2px 8px rgba(0,0,0,.04)}
-.card-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-.ttl{font:500 1.18rem/1.35 var(--read);color:var(--ink);text-decoration:none}.ttl:hover{color:var(--brass)}
-.meta{font:.74rem/1.6 var(--mono);color:var(--dim);text-transform:uppercase;letter-spacing:.03em;margin-top:7px}
-.sig,.sig-hi{font:.64rem var(--mono);letter-spacing:.08em;text-transform:uppercase;border-radius:30px;padding:3px 9px;color:var(--brass);border:1px solid color-mix(in srgb,var(--brass) 40%,transparent);white-space:nowrap}.sig-hi{color:var(--brass);background:color-mix(in srgb,var(--brass) 10%,transparent)}
-.watch{font:.7rem var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--brass);text-decoration:none;white-space:nowrap}.watch:hover{color:var(--brass2)}
-.lec-sum{margin-top:14px;border-left:2px solid var(--core);padding-left:18px}
-.lec-gist{font:500 1.08rem/1.5 var(--read);color:var(--ink);margin:0 0 10px}
-.lec-pts{margin:0;padding-left:0;list-style:none}
-.lec-pts li{position:relative;padding-left:22px;margin:8px 0;color:var(--ink2);line-height:1.55}
-.lec-pts li::before{content:"→";position:absolute;left:0;color:var(--core);font-weight:600}
-.tr{margin-top:14px}.tr summary{cursor:pointer;font:500 .74rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim);list-style:none}.tr summary:hover{color:var(--brass)}.tr summary::-webkit-details-marker{display:none}.tr summary::before{content:"▸ ";color:var(--brass)}.tr[open] summary::before{content:"▾ "}
-.tr-body{margin-top:14px;font:1.08rem/1.9 var(--read);color:var(--ink2);border-left:2px solid var(--brass);padding-left:22px;column-count:1}
-@media(min-width:860px){.tr-body{column-count:2;column-gap:36px;column-rule:1px solid var(--line)}}
-.tr-body p{margin:0 0 16px}.no-tr{margin-top:10px;color:var(--dim);font-style:italic;font-size:.92rem}
-.excerpt{color:var(--ink2);font-size:1rem;margin:12px 0 0;opacity:.85}
-.edgar{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px;margin:14px 0;font:.84rem/1.6 var(--mono);color:var(--ink2);white-space:pre-wrap}
-.edgar h3{font:600 1.1rem var(--mono);color:var(--ink);margin:0 0 6px}.edgar h4{font:.95rem var(--mono);color:var(--brass);margin:16px 0 4px}
-.empty{color:var(--dim);font-style:italic}
-/* breadcrumb */
-.breadcrumb{display:flex;align-items:center;gap:6px;font:500 .72rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim);flex-wrap:wrap}
-.breadcrumb a{color:var(--dim);text-decoration:none;transition:color .2s}.breadcrumb a:hover{color:var(--brass)}
-.breadcrumb .sep{opacity:.4;font-size:.6rem}
-.breadcrumb .current{color:var(--ink)}
-/* prev/next bar — sticky bottom */
-.pn-bar{position:sticky;bottom:0;z-index:15;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--line);margin-top:40px}
-.pn-wrap{max-width:var(--wrap);margin:0 auto;padding:12px 24px;display:flex;justify-content:space-between;gap:14px;position:relative;z-index:2}
-.pn{flex:1;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;text-decoration:none;color:var(--dim);transition:.2s;display:flex;flex-direction:column;gap:3px}
-.pn-dir{font:600 .62rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--brass);display:flex;align-items:center;gap:4px}
-.pn-dir .ic{width:.7em;height:.7em}
-.pn-title{font:400 .88rem var(--read);color:var(--ink);line-height:1.3}
-.pn.next{text-align:right;align-items:flex-end}
-.pn:hover{border-color:var(--brass);box-shadow:0 2px 10px rgba(0,0,0,.06)}
-.pn-key{font:.58rem var(--mono);color:var(--dim);opacity:.5;margin-top:2px}
-@media(max-width:640px){.pn-wrap{flex-direction:column}.pn-key{display:none}}
-.top{position:fixed;bottom:26px;right:26px;z-index:40;background:var(--brass);color:#fff;border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.15);font-size:1.1rem}
-footer{max-width:var(--wrap);margin:0 auto;padding:36px 24px;color:var(--dim);font:.78rem/1.8 var(--mono);text-align:center;border-top:1px solid var(--line);position:relative;z-index:2}
-footer code{color:var(--ink2)}
-/* ---------- LESSON TYPOGRAPHY ---------- */
-.lesson{font-size:1.16rem;line-height:1.78}
-.lesson h2{font:300 clamp(1.8rem,4vw,2.6rem) var(--serif);color:var(--ink);letter-spacing:-.015em;margin:52px 0 14px;padding-top:14px;border-top:1px solid var(--line)}
-.lesson h3{font:500 1.15rem var(--read);color:var(--ink);margin:0 0 8px}
-.lesson p{margin:0 0 18px}
-.lead{font:300 1.5rem/1.5 var(--read);color:var(--ink);margin-bottom:8px!important}
-.lead::first-letter{font:600 4.2rem/.8 var(--serif);float:left;color:var(--brass);padding:6px 12px 0 0}
-.lesson em{font-style:italic;color:var(--brass)}
-.lesson b{color:var(--ink);font-weight:600}
-.equation{font:400 clamp(1.6rem,5vw,2.4rem) var(--serif);text-align:center;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:26px;margin:24px 0;color:var(--ink);letter-spacing:.01em;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-figure.viz{margin:28px 0;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:26px}
-figure.viz svg{width:100%;height:auto}
-figure.viz figcaption{font:.92rem/1.5 var(--read);font-style:italic;color:var(--dim);margin-top:14px;text-align:center}
-figure.chart-wrap{margin:28px 0;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px 20px 14px}
-figure.chart-wrap canvas{max-height:340px}
-figure.chart-wrap figcaption{font:.86rem/1.5 var(--read);font-style:italic;color:var(--dim);margin-top:10px;text-align:center}
-.vlabel{font:500 12px var(--mono);fill:var(--dim);text-transform:uppercase;letter-spacing:.04em}.vlabel-in{font:600 12px var(--mono);fill:var(--brass)}
-.bar-txt{font:600 13px var(--mono);fill:var(--ink);text-anchor:middle}.bar-txt-sm{font:600 11px var(--mono);fill:var(--ink);text-anchor:middle}
-.bar-asset{fill:color-mix(in srgb,var(--core) 30%,var(--bg2))}.bar-liab{fill:var(--exec)}.bar-eq{fill:var(--core)}
-.bar-rev{fill:color-mix(in srgb,var(--core) 30%,var(--bg2))}.bar-gross{fill:var(--core)}.bar-net{fill:var(--brass)}
-.bar-asset~.bar-txt,.bar-rev~.bar-txt{fill:var(--ink)}
-.example{background:color-mix(in srgb,var(--core) 5%,transparent);border-left:3px solid var(--core);border-radius:0 8px 8px 0;padding:18px 24px;margin:22px 0}
-.example p{margin:10px 0}
-.pitfall{background:color-mix(in srgb,var(--exec) 6%,transparent);border:1px solid color-mix(in srgb,var(--exec) 25%,transparent);border-radius:8px;padding:18px 24px;margin:22px 0}
-.pitfall.subtle{background:var(--surface);border-color:var(--line)}.pitfall h3{color:var(--exec);margin-bottom:6px}.pitfall.subtle h3{color:var(--brass)}
-.apply-box{background:color-mix(in srgb,var(--brass) 8%,transparent);border:1px solid color-mix(in srgb,var(--brass) 30%,transparent);border-radius:8px;padding:22px 26px;margin:32px 0}
-.apply-box h3{color:var(--brass);margin-bottom:6px}
-.apply-box code,.lesson code,.lead code{background:var(--bg2);border:1px solid var(--line);padding:2px 7px;border-radius:4px;font:.88rem var(--mono);color:var(--brass)}
-.source-divider{text-align:center;margin:60px 0 10px;border-top:1px solid var(--line)}
-.source-divider span{position:relative;top:-11px;background:var(--bg);padding:0 18px;font:500 .74rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);display:inline-block}
-.loop-line{max-width:62ch;margin:0 auto 8px;text-align:center;font:1.02rem/1.6 var(--read);color:var(--dim)}.loop-line b{color:var(--ink2)}
-.section-obj{font:1rem/1.55 var(--read);color:var(--dim);margin:0 0 18px;padding:12px 16px;background:var(--surface);border-radius:4px;border-left:3px solid var(--line2)}
-.section-obj b{color:var(--ink2)}.section-obj code{background:var(--bg);border:1px solid var(--line);padding:1px 6px;border-radius:4px;font:.84rem var(--mono);color:var(--brass2)}
-#videos .section-obj{border-left-color:var(--core)}#discuss .section-obj{border-left-color:var(--exec)}#fin .section-obj{border-left-color:var(--brass)}
-.obj-tag{display:inline-block;font:600 .64rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--bg);padding:3px 9px;border-radius:30px;margin-right:8px;vertical-align:middle}
-#videos .obj-tag{background:var(--core)}#discuss .obj-tag{background:var(--exec)}#fin .obj-tag{background:var(--brass)}
-/* ---------- INTERACTIVE COMPONENTS ---------- */
-#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--brass),var(--core));z-index:50;transition:width .1s}
-.tip{position:absolute;z-index:60;background:var(--surface);border:1px solid var(--line2);color:var(--ink);font:.84rem/1.45 var(--read);padding:10px 14px;border-radius:8px;max-width:280px;pointer-events:none;opacity:0;transform:translate(-50%,-100%);transition:opacity .12s;box-shadow:0 6px 20px rgba(0,0,0,.1)}
-.tip.show{opacity:1}
-.hot{cursor:pointer;transition:opacity .15s}.hot:hover{opacity:.82}.hot.active{stroke:var(--ink);stroke-width:2}
-.fc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin:24px 0}
-.fc{position:relative;display:block;background:none;border:0;padding:0;min-height:180px;cursor:pointer;font:inherit;text-align:left}
-.fc-inner{display:block;position:relative;width:100%;height:100%;min-height:inherit}
-.fc-f,.fc-b{position:absolute;inset:0;border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;transition:opacity .3s cubic-bezier(0,0,.2,1),transform .3s cubic-bezier(0,0,.2,1)}
-.fc-f{background:var(--surface);box-shadow:0 1px 3px rgba(0,0,0,.04)}
-.fc:hover .fc-f{border-color:var(--brass);box-shadow:0 4px 14px rgba(0,0,0,.08)}
-.fc-f b{font:400 1.28rem var(--serif);color:var(--ink)}
-.fc-f .hint{font:.58rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--brass);white-space:nowrap;opacity:.7}
-.fc-b{background:var(--core);color:#fff;font:.88rem/1.6 var(--read);justify-content:center;opacity:0;transform:scale(.97);pointer-events:none;border-color:var(--core);padding:22px 20px}
-.fc.flipped .fc-f{opacity:0;transform:scale(.97)}
-.fc.flipped .fc-b{opacity:1;transform:none}
-@media(hover:hover){.fc:hover .fc-f{opacity:0;transform:scale(.97)}.fc:hover .fc-b{opacity:1;transform:none}}
-.reveal{border:1px solid var(--line);border-radius:8px;margin:12px 0;overflow:hidden;background:var(--surface);transition:border-color .2s}.reveal.open{border-color:var(--brass)}
-.reveal-q{width:100%;text-align:left;background:none;border:0;padding:18px 20px;font:400 1.2rem var(--serif);color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px}
-.reveal-q::after{content:"+";color:var(--brass);font:300 1.6rem var(--serif);flex:none}.reveal.open .reveal-q::after{content:"–"}
-.reveal-a{max-height:0;overflow:hidden;transition:max-height .35s ease}.reveal-a p{padding:0 20px;margin:0 0 18px}.reveal.open .reveal-a{max-height:360px}
-.quizq{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:22px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.03)}
-.quizq .q{font:500 1.12rem var(--read);color:var(--ink);margin:0 0 14px}
-.opt{display:block;width:100%;text-align:left;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:13px 16px;margin:8px 0;font:1rem var(--read);color:var(--ink2);cursor:pointer;transition:.15s}
-.opt:hover{border-color:var(--brass);color:var(--ink)}.quizq.done .opt{cursor:default}
-.opt.right{background:color-mix(in srgb,var(--core) 12%,transparent);border-color:var(--core);color:var(--ink);position:relative;padding-right:36px}
-.opt.right::after{content:"";position:absolute;right:14px;top:50%;transform:translateY(-50%);width:16px;height:16px;background:var(--core);-webkit-mask:url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8.5l3.5 3.5 6.5-7'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8.5l3.5 3.5 6.5-7'/%3E%3C/svg%3E") center/contain no-repeat}
-.opt.wrong{background:color-mix(in srgb,var(--wrong) 16%,transparent);border-color:var(--wrong)}
-.fb{display:none;margin:14px 0 0;padding:14px 16px;background:var(--bg2);border-left:3px solid var(--brass);border-radius:0 6px 6px 0;font-size:.98rem}
-.fb.show{display:block;animation:rise .4s both}
-.srcq{margin:22px 0;padding:18px 22px;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--exec);border-radius:0 4px 4px 0}
-.srcq p{margin:0 0 10px;font:italic 1.18rem/1.55 var(--read);color:var(--ink)}
-.srcq cite{font:.76rem var(--mono);letter-spacing:.03em;text-transform:uppercase;color:var(--dim);font-style:normal}
-.srcq cite a{color:var(--exec);text-decoration:none}.srcq cite a:hover{color:var(--brass2)}
-.src-list{background:var(--surface);border:1px solid var(--line);border-radius:5px;padding:18px 24px;margin:22px 0}
-.src-list h4{font:500 .8rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--brass);margin:0 0 10px}
-.src-list ul{margin:0;padding-left:18px}.src-list li{margin:6px 0}.src-list a{color:var(--ink2);text-decoration:none}.src-list a:hover{color:var(--brass2)}
-.done-wrap{max-width:var(--wrap);margin:40px auto 0;padding:0 24px;text-align:center;position:relative;z-index:2}
-#mark-done{background:transparent;border:1px solid var(--line2);border-radius:40px;padding:14px 30px;font:500 .8rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim);cursor:pointer;transition:.2s}
-#mark-done .cp-tick{opacity:.35;display:inline-flex}#mark-done .cp-on{display:none}
-#mark-done:hover{border-color:var(--core);color:var(--ink)}
-#mark-done.checked{background:var(--core);color:#fff;border-color:var(--core)}
-#mark-done.checked .cp-tick{opacity:1}#mark-done.checked .cp-on{display:inline}#mark-done.checked .cp-off{display:none}
-/* ---------- STICKY TRACK TABS ---------- */
-.track-tabs{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(12px);max-width:100%;padding:10px 24px;display:flex;gap:4px;border-bottom:1px solid var(--line);justify-content:center}
-.tt{font:500 .72rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-decoration:none;padding:8px 18px;border-radius:20px;transition:color .2s,background .2s;white-space:nowrap}
-.tt:hover{color:var(--ink);background:var(--surface)}
-.tt.active{color:var(--brass);background:color-mix(in srgb,var(--brass) 10%,transparent)}
-.track-section{scroll-margin-top:60px}
-.th-toggle{background:none;border:1px solid var(--line);border-radius:6px;padding:4px 8px;cursor:pointer;color:var(--dim);transition:.2s;display:flex;align-items:center;margin-left:8px}
-.th-toggle:hover{color:var(--brass);border-color:var(--brass)}
-.th-toggle .ic{transition:transform .25s cubic-bezier(0,0,.2,1)}
-.track-section.collapsed .th-toggle .ic{transform:rotate(180deg)}
-.track-section.collapsed .grid{display:none}
-/* ---------- FILTER CHIPS ---------- */
-.filter-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;animation:rise .8s .55s both}
-.chip{font:500 .68rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim);background:transparent;border:1px solid var(--line);border-radius:20px;padding:6px 14px;cursor:pointer;transition:.2s;display:inline-flex;align-items:center;gap:5px}
-.chip .ic{width:.7em;height:.7em}
-.chip:hover{border-color:var(--brass);color:var(--ink)}
-.chip.active{background:var(--brass);color:#fff;border-color:var(--brass)}
-/* ---------- GAMIFICATION ---------- */
-.gami-bar{display:flex;align-items:center;gap:20px;margin:20px 0 8px;animation:rise .8s .42s both;flex-wrap:wrap}
-.xp-display{display:flex;align-items:center;gap:6px;font:600 .78rem var(--mono);color:var(--brass);letter-spacing:.06em}
-.xp-display .ic{width:1.1em;height:1.1em;color:var(--brass)}
-.xp-num{font:700 1.3rem var(--serif);color:var(--brass)}
-.xp-label{font:500 .64rem var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--dim)}
-.level-badge{font:600 .66rem var(--mono);letter-spacing:.1em;text-transform:uppercase;background:linear-gradient(135deg,var(--brass),var(--core));color:#fff;padding:5px 14px;border-radius:20px;white-space:nowrap}
-.streak-display{display:flex;align-items:center;gap:5px;font:500 .72rem var(--mono);color:var(--exec);letter-spacing:.06em}
-.streak-display .ic{width:1em;height:1em;color:var(--exec)}
-.streak-num{font:700 1.1rem var(--serif)}
-.streak-label{font:500 .64rem var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--dim)}
-/* toast notification */
-.toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(80px);z-index:100;background:var(--core);color:#fff;font:500 .8rem var(--mono);letter-spacing:.06em;padding:14px 28px;border-radius:40px;box-shadow:0 8px 30px rgba(0,0,0,.18);opacity:0;transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .4s;pointer-events:none}
-.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-.toast .xp-plus{margin-left:10px;font-weight:700;color:color-mix(in srgb,#fff 85%,var(--brass))}
-/* --- Material motion: deceleration curve (0,0,.2,1) --- */
-@keyframes card-enter{from{opacity:0;transform:translateY(16px) scale(.94)}to{opacity:1;transform:none}}
-.mcard{opacity:0}.mcard.card-enter{animation:card-enter .35s cubic-bezier(0,0,.2,1) both}
-/* container transform: card click */
-@keyframes card-exit{to{transform:scale(1.04);opacity:0}}
-.mcard.navigating{animation:card-exit .2s cubic-bezier(.4,0,1,1) forwards;pointer-events:none}
-/* shared z-axis: module page entry */
-@keyframes page-enter{from{opacity:0;transform:translateY(24px) scale(.95)}to{opacity:1;transform:none}}
-body.mod-enter .mod-header,body.mod-enter main,body.mod-enter .pn-bar{animation:page-enter .4s cubic-bezier(0,0,.2,1) both}
-body.mod-enter main{animation-delay:.08s}
-body.mod-enter .pn-bar{animation-delay:.14s}
-/* fade through: tab landing highlight */
-@keyframes section-land{0%{background:color-mix(in srgb,var(--brass) 8%,transparent)}100%{background:transparent}}
-.track-section.landing .track-head{animation:section-land .8s ease both}
-/* completion visible at rest */
-.mcard.completed{border-left:3px solid var(--core);background:color-mix(in srgb,var(--core) 4%,transparent)}
-.mcard-done-dot{width:8px;height:8px;border-radius:50%;background:var(--core);position:absolute;top:12px;right:12px;opacity:0;transition:opacity .3s,box-shadow .3s}
-.mcard.completed .mcard-done-dot{opacity:1}
-@keyframes pulse-dot{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--core) 40%,transparent)}50%{box-shadow:0 0 0 8px transparent}}
-.mcard.just-completed .mcard-done-dot{animation:pulse-dot .8s ease 3}
-/* stat counter glow */
-@keyframes count-glow{0%{text-shadow:0 0 0 transparent}50%{text-shadow:0 0 14px color-mix(in srgb,var(--brass) 25%,transparent)}100%{text-shadow:0 0 0 transparent}}
-.stat-num.counted{animation:count-glow .8s ease}
-/* level-up bounce */
-@keyframes level-pop{0%{transform:scale(1)}40%{transform:scale(1.18)}100%{transform:scale(1)}}
-.level-badge.level-up{animation:level-pop .5s ease}
-/* module done button celebration */
-@keyframes check-bounce{0%{transform:scale(1)}30%{transform:scale(1.25)}60%{transform:scale(.9)}100%{transform:scale(1)}}
-#mark-done.just-checked{animation:check-bounce .5s ease}
-/* confetti burst */
-@keyframes confetti-fall{0%{transform:translateY(0) rotate(0);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
-.confetti{position:fixed;top:-10px;z-index:200;width:8px;height:8px;border-radius:2px;pointer-events:none;animation:confetti-fall 2.5s ease-in forwards}
-/* ---------- EXPLORE: WORD CLOUD + KNOWLEDGE GRAPH ---------- */
-.explore-wrap{display:grid;grid-template-columns:1fr;gap:24px}
-@media(min-width:900px){.explore-wrap{grid-template-columns:1fr 1fr}}
-.explore-panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:28px;position:relative;overflow:hidden;min-width:0;min-height:400px}
-.explore-panel-wide{overflow:visible}
-.explore-title{font:500 .82rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 4px;display:flex;align-items:center;gap:8px}
-.explore-title .ic{color:var(--brass)}
-.explore-sub{font:.78rem var(--read);color:var(--dim);margin:0 0 20px}
-#wc-canvas{width:100%;height:auto;display:block;border-radius:8px;min-height:320px}
-#kg-mount{width:100%;aspect-ratio:4/3;border-radius:8px;overflow:hidden;cursor:grab;position:relative;min-height:360px}
-@media(min-width:900px){#kg-mount{aspect-ratio:1/1}}
-#kg-mount:active{cursor:grabbing}
-#kg-mount canvas{display:block;width:100%!important;height:100%!important;border-radius:8px}
-.kg-tooltip{position:absolute;z-index:10;background:var(--surface);border:1px solid var(--line2);border-radius:8px;padding:10px 14px;font:.82rem var(--read);color:var(--ink);pointer-events:none;opacity:0;transition:opacity .15s;box-shadow:0 4px 16px rgba(0,0,0,.1);max-width:240px;white-space:nowrap}
-.kg-tooltip.show{opacity:1}
-@media(min-width:760px){.explore-wrap{grid-template-columns:1fr 1.6fr}}
-/* mobile fallback: show drawer on touch devices */
-@media(hover:none){.mcard-drawer{max-height:120px;opacity:1}.mcard-arrow{opacity:.5;transform:none}}
-@media(max-width:640px){.grid{grid-template-columns:1fr;gap:10px}.mcard-num{font-size:1.6rem;min-width:48px;padding-left:16px}.stats-dash{gap:10px}.stat-card{min-width:0;padding:16px}.gami-bar{gap:12px}.track-tabs{gap:2px;padding:8px 12px}.tt{padding:6px 12px;font-size:.65rem}.filter-chips{gap:6px}.chip{padding:5px 10px;font-size:.62rem}}
-@media(max-width:480px){.track-tabs{overflow-x:auto;justify-content:flex-start;-webkit-overflow-scrolling:touch}.track-tabs::-webkit-scrollbar{display:none}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}.mcard{opacity:1}}
-"""
+def library_html(lib):
+    if not lib: return ""
+    cards = "".join(f'''<a class="lcard" href="lib-{c['slug']}.html" data-coll="{c['slug']}">
+<span class="lcard-kicker">{esc(c['kicker'])}</span><h3>{esc(c['label'])}</h3><p>{esc(c['desc'])}</p>
+<span class="lcard-meta">{c['count']} docs · {c['words']:,} words · {c['updated']}</span></a>''' for c in lib["collections"])
+    latest = "".join(f'''<li><a href="{d['href']}"><span class="lt-coll">{esc(d['coll'])}</span><span class="lt-title">{esc(d['title'])}</span><span class="lt-date">{d['updated']}</span></a></li>''' for d in lib["latest"])
+    return f'''<section id="t-library" class="track-section" data-track="library">
+<div class="track-head"><span class="th-label"><small>Alongside the path</small>Library</span><span class="th-rule"></span>
+<span class="th-count">{lib['doc_count']} documents · {lib['doc_words']:,} words</span></div>
+<div class="lib-grid">
+<div class="lgrid">{cards}</div>
+<div class="latest"><div class="latest-label">Latest additions</div><ol class="latest-list">{latest}</ol></div>
+</div>
+</section>'''
+
+
+# Stylesheet lives in site/style.css (copied to dist by main()); shared runtime in site/site.js.
+CSS = open(os.path.join(ROOT, "site", "style.css"), encoding="utf-8").read()
+SITE_JS = open(os.path.join(ROOT, "site", "site.js"), encoding="utf-8").read()
+
 
 LESSON_JS = r"""
 (function(){
-  var bar=document.getElementById('progress');
-  if(bar){addEventListener('scroll',function(){
-    var h=document.documentElement,sc=h.scrollTop,mx=h.scrollHeight-h.clientHeight;
-    bar.style.width=(mx>0?100*sc/mx:0)+'%';},{passive:true});}
+  // (reading-progress bar is driven by site.js)
   // keyboard nav: ← → for prev/next
   var prevLink=document.querySelector('.pn:not(.next)');
   var nextLink=document.querySelector('.pn.next');
@@ -1016,13 +802,16 @@ LESSON_JS = r"""
     var COLORS={brass:'#9a7b2e',core:'#84ad8a',exec:'#b86e1a',dim:'#7a7568',ink:'#2c2a25',
       line:'#d9d4cb',surface:'#f2ede6',red:'#cf6a5a',blue:'#4a90d9',teal:'#2d8a7a',
       purple:'#7a5fa0',orange:'#d4842a'};
+    try{var cs=getComputedStyle(document.documentElement);
+      COLORS.dim=cs.getPropertyValue('--dim').trim()||COLORS.dim;
+      COLORS.ink=cs.getPropertyValue('--ink').trim()||COLORS.ink;}catch(e){}
     Chart.defaults.font.family="'Lexend',sans-serif";
     Chart.defaults.color=COLORS.dim;
     Chart.defaults.plugins.legend.labels.usePointStyle=true;
     Chart.defaults.plugins.legend.labels.boxWidth=8;
     Chart.defaults.elements.bar.borderRadius=4;
     Chart.defaults.elements.bar.borderSkipped=false;
-    Chart.defaults.scale.grid={color:'rgba(0,0,0,.06)'};
+    Chart.defaults.scale.grid={color:(document.documentElement.getAttribute('data-theme')==='dark'||(!document.documentElement.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme:dark)').matches))?'rgba(255,255,255,.08)':'rgba(0,0,0,.06)'};
     Chart.defaults.scale.border={display:false};
     function patchCallbacks(obj){
       if(!obj||typeof obj!=='object')return;
@@ -1120,16 +909,24 @@ INDEX_JS = r"""
     });},{threshold:0.3});
   document.querySelectorAll('.stat-num[data-target]').forEach(function(el){sObs.observe(el);});
 
-  // --- Animate stat bar fill ---
-  var barFill=document.querySelector('.stat-bar-fill[data-width]');
-  if(barFill){
-    var bObs=new IntersectionObserver(function(es){
-      es.forEach(function(e){
-        if(e.isIntersecting){
-          e.target.style.width=e.target.dataset.width+'%';
-          bObs.unobserve(e.target);}
-      });},{threshold:0.3});
-    bObs.observe(barFill);}
+  // --- Animate bar fills (hero coverage + path stage bars) ---
+  var bObs=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.style.width=e.target.dataset.width+'%';
+        bObs.unobserve(e.target);}
+    });},{threshold:0.3});
+  document.querySelectorAll('.stat-bar-fill[data-width],.stage-bar i[data-width]').forEach(function(el){bObs.observe(el);});
+
+  // --- "Continue where you left off" (set by site.js on module + document pages) ---
+  try{
+    var last=JSON.parse(localStorage.getItem('mba-last')||'null');
+    var cont=document.getElementById('continue');
+    if(last&&last.h&&cont){
+      document.getElementById('continue-link').href=last.h;
+      document.getElementById('continue-title').textContent=(last.c?last.c+' · ':'')+last.t;
+      cont.classList.add('show');}
+  }catch(e){}
 
   // --- Card entrance stagger (per-section, Material deceleration) ---
   var sections=document.querySelectorAll('.track-section');
@@ -1227,9 +1024,9 @@ INDEX_JS = r"""
     });
   });
   try{
-    var st=JSON.parse(localStorage.getItem('mba-collapsed')||'{}');
-    Object.keys(st).forEach(function(track){
-      if(st[track]){
+    var cst=JSON.parse(localStorage.getItem('mba-collapsed')||'{}');
+    Object.keys(cst).forEach(function(track){
+      if(cst[track]){
         var head=document.querySelector('.track-head[data-collapse="'+track+'"]');
         if(head)head.closest('.track-section').classList.add('collapsed');
       }
@@ -1241,7 +1038,13 @@ INDEX_JS = r"""
 EXPLORE_JS = r"""
 (function(){
   var COLORS={core:[45,122,74],exec:[184,110,26],canon:[154,123,46],gaps:[122,97,33]};
-  var BG=[250,247,242];
+  // Panel background follows the theme (word cloud + graph render on var(--surface)).
+  var BG=[255,255,255];
+  try{var hex=getComputedStyle(document.documentElement).getPropertyValue('--surface').trim();
+    if(/^#[0-9a-f]{6}$/i.test(hex))BG=[parseInt(hex.slice(1,3),16),parseInt(hex.slice(3,5),16),parseInt(hex.slice(5,7),16)];
+    var isDark=BG[0]<128;
+    if(isDark){COLORS={core:[93,185,129],exec:[221,143,63],canon:[207,167,82],gaps:[127,158,197]};}
+  }catch(e){}
 
   // ====== WORD CLOUD — canvas spiral packing, 0° + 90° ======
   var wcCvs=document.getElementById('wc-canvas');
@@ -1493,6 +1296,7 @@ def main():
     open(os.path.join(DIST, "lesson.js"), "w").write(LESSON_JS)
     open(os.path.join(DIST, "index.js"), "w").write(INDEX_JS)
     open(os.path.join(DIST, "explore.js"), "w").write(EXPLORE_JS)
+    open(os.path.join(DIST, "site.js"), "w").write(SITE_JS)
     chart_src = os.path.join(ROOT, "site", "chart.min.js")
     if os.path.exists(chart_src):
         shutil.copy2(chart_src, os.path.join(DIST, "chart.min.js"))
@@ -1529,11 +1333,23 @@ def main():
         ch = Counter(x.get("channel", "") for x in v if x.get("channel"))
         sources[mid] = [name for name, _ in ch.most_common(3)]
 
+    import library as _library
+    lib = _library.build(ROOT, DIST, HEAD, FOOT)
+    # Global search index (⌘K): library docs + every module + the exams.
+    track_label = {"core": "Core", "exec": "Executive", "canon": "Canon", "gaps": "Foundations"}
+    search = [dict(t=TITLES.get(mid, mid), h=f"{track}-{mid}.html", c=track_label[track], k=code(track, mid))
+              for track, mid, _, _, _ in flat]
+    search += [dict(t="Self-diagnostic exam", h="exam.html", c="Exams", k=""),
+               dict(t="Calibrated benchmark exam", h="benchmark-exam.html", c="Exams", k="")]
+    search += lib["search"]
+    open(os.path.join(DIST, "search-index.json"), "w", encoding="utf-8").write(json.dumps(search))
+
     wc_data = extract_wordcloud(flat)
     graph_data = extract_graph(flat, modules)
     print(f"  word cloud: {len(wc_data)} terms · knowledge graph: {len(graph_data['nodes'])} nodes, {len(graph_data['edges'])} edges")
-    open(os.path.join(DIST, "index.html"), "w", encoding="utf-8").write(render_index(modules, stats, wc_data, graph_data, sources))
-    # regenerate the diagnostic + calibrated-benchmark exams
+    open(os.path.join(DIST, "index.html"), "w", encoding="utf-8").write(render_index(modules, stats, wc_data, graph_data, sources, lib))
+    # regenerate the diagnostic + calibrated-benchmark exams (they pick up the shared chrome)
+    json.dump({"head": HEAD, "foot": FOOT}, open(os.path.join(DIST, "_chrome.json"), "w"))
     import subprocess
     subprocess.run(["python3", os.path.join(INGEST, "build_exam.py")], check=False)
     subprocess.run(["python3", os.path.join(INGEST, "build_benchmark.py")], check=False)

@@ -1,0 +1,1316 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Hedge funds and trading: how liquid capital is raised, risked, levered and blown up · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Hedge funds and trading: how liquid capital is raised, risked, levered and blown up</h1>
+<div class="doc-meta"><span>72 min read</span><span>16,512 words</span><span>Updated 2026-10-19</span><span class="doc-src">notes/wss-trading-hedge-funds.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#what-this-adds-to-the-program">What this adds to the program</a></li><li class="l2"><a href="#concept-map">Concept map</a></li><li class="l2"><a href="#1-the-hedge-fund-business-model-2-and-20-on-redeemable-capital">1 · The hedge fund business model: 2-and-20 on redeemable capital</a></li><li class="l2"><a href="#2-the-strategy-taxonomy-what-each-fund-is-actually-selling">2 · The strategy taxonomy: what each fund is actually selling</a></li><li class="l2"><a href="#3-indices-and-benchmarks-what-the-market-means">3 · Indices and benchmarks: what "the market" means</a></li><li class="l2"><a href="#4-etfs-a-basket-that-trades-like-a-stock-kept-honest-by-arbitrage">4 · ETFs: a basket that trades like a stock, kept honest by arbitrage</a></li><li class="l2"><a href="#5-beta-vs-alpha-dont-pay-2-and-20-for-the-market">5 · Beta vs. alpha: don't pay 2-and-20 for the market</a></li><li class="l2"><a href="#6-the-sharpe-ratio-relative-risk-metrics-and-the-arithmetic-of-losses">6 · The Sharpe ratio, relative-risk metrics, and the arithmetic of losses</a></li><li class="l2"><a href="#7-options-payoffs-how-a-dealer-prices-them-and-what-they-reveal">7 · Options: payoffs, how a dealer prices them, and what they reveal</a></li><li class="l2"><a href="#8-fundamental-longshort-and-the-research-supply-chain">8 · Fundamental long/short and the research supply chain</a></li><li class="l2"><a href="#9-short-selling-and-squeezes-why-shorts-are-fragile">9 · Short selling and squeezes: why shorts are fragile</a></li><li class="l2"><a href="#10-multi-manager-pod-shops-many-small-bets-tight-leashes-big-footprint">10 · Multi-manager pod shops: many small bets, tight leashes, big footprint</a></li><li class="l2"><a href="#11-quant-investing-systematic-judgment-and-its-failure-modes">11 · Quant investing: systematic judgment and its failure modes</a></li><li class="l2"><a href="#12-leverage-margin-and-forced-selling-why-being-right-is-not-enough">12 · Leverage, margin and forced selling: why being right is not enough</a></li><li class="l2"><a href="#13-duration-and-dv01-converting-basis-points-into-dollars">13 · Duration and DV01: converting basis points into dollars</a></li><li class="l2"><a href="#14-repo-bank-capital-and-the-non-bank-dealer">14 · Repo, bank capital and the non-bank dealer</a></li><li class="l2"><a href="#15-the-treasury-basis-trade-short-volatility-dressed-as-arbitrage">15 · The Treasury basis trade: short volatility dressed as arbitrage</a></li><li class="l2"><a href="#16-reading-the-rates-market-implied-fed-odds-qe-vs-not-qe-and-the-10-year">16 · Reading the rates market: implied Fed odds, QE vs. not-QE, and the 10-year</a></li><li class="l2"><a href="#17-global-macro-trading-countries-and-the-soros-template">17 · Global macro: trading countries, and the Soros template</a></li><li class="l2"><a href="#18-commodities-the-marginal-barrel-gold-as-anti-fiat-and-the-pit-as-a-market">18 · Commodities: the marginal barrel, gold as anti-fiat, and the pit as a market</a></li><li class="l2"><a href="#19-capital-raising-and-the-allocators-seat">19 · Capital raising and the allocator's seat</a></li><li class="l2"><a href="#20-moneyball-as-a-trading-playbook-mispriced-traits-sample-size-edge-decay">20 · Moneyball as a trading playbook: mispriced traits, sample size, edge decay</a></li><li class="l3"><a href="#side-note-catastrophe-bonds-insurance-risk-sold-to-hedge-funds">Side note: catastrophe bonds (insurance risk sold to hedge funds)</a></li><li class="l3"><a href="#side-note-home-equity-investments">Side note: home-equity investments</a></li><li class="l2"><a href="#how-the-concepts-connect">How the concepts connect</a></li><li class="l2"><a href="#retrieval-questions">Retrieval questions</a></li><li class="l2"><a href="#gaps-still-missing-after-pass-2">Gaps (still missing after pass 2)</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p><strong>Part of <a class="wiki" href="doc-notes-wall-street-skinny-insights.html">wall street skinny insights</a></strong> (hub). Sibling notes: <a class="wiki" href="doc-notes-wss-ai-economics.html">wss ai economics</a> <a class="wiki" href="doc-notes-wss-capital-markets-ma.html">wss capital markets ma</a> <a class="wiki" href="doc-notes-wss-credit-distressed.html">wss credit distressed</a> <a class="wiki" href="doc-notes-wss-private-markets-wealth.html">wss private markets wealth</a> <a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> <a class="wiki" href="doc-notes-wss-technicals-career.html">wss technicals career</a></p>
+<p><strong>Sources:</strong> <strong>35 long-form videos + 23 shorts</strong> from The Wall Street Skinny (Kristen Kelly, ex-Morgan
+Stanley IBD/converts; Jen Saarbach, ex-Morgan Stanley and Lehman rates sales). Raw at
+<code>_ingest/raw/2026-10-04/media/wall-street-skinny/</code> (cluster <code>trading-hedge-funds</code> in <code>_clusters.json</code>
+and <code>_clusters_pass2.json</code>). Pass 1 (13 videos, 19 shorts) covered the Situational Awareness blow-up,
+Imperium IR (Kate Bauman), Fortress (Elizabeth Burton), <em>Moneyball</em>, Soros vs. the BoE, Citadel's
+white-label S&amp;T, Millennium's stops, PE vs. hedge fund careers, Tacora HEIs and AB Commodities on
+Hormuz. Pass 2 added the primary sources that pass 1 had to reconstruct: <em>Options Trading 101</em> (Andis
+Tanner, 20 years an equity-options market maker), <em>Trading Equities and Options 101</em> (Dan Nathan),
+<em>ETFs 101</em> (Brian Weinstein, Morgan Stanley Investment Management), <em>Index Trading Basics</em>, <em>Hedge
+Funds 101: L/S Equity</em> (David Sensa, Islander Capital), <em>The Real-Life "Billions"</em> (Kat Sosnick, ex-Tiger,
+Pequot, Perry), the contrarian L/S episode (Avery Sheffield, VantageRock), <em>Equity Research 101</em> (Steve
+Haggerty, ex-BofA Merrill), the global macro PM episode (Ashish Goyal), Bridgewater co-CIO Karen
+Karniol-Tambour, Pete Muller (PDT Partners), <em>Quant Investing 101</em> (Stacie Mintz, PGIM), Sarah Kapnick
+(JPMorgan climate advisory), <em>Credit Trading 101</em>, <em>Fixed Income S&amp;T 101</em>, Industry S2E8 (Soros, insider
+trading) and a Sharpe short. Read from other clusters because they fill this note's gaps: the
+basis-trade blowup episode, <em>Commodities feat. Guy Adami</em>, Industry S2E6 (GameStop), the Treasury
+futures DV01 short and the 10-year block-trade short. Three Industry recaps (S2E5, S1E4, S1E2) were
+skimmed; they are plot-heavy and changed nothing. Several transcripts are machine-translated and
+garbled, so read quotes as paraphrase.</p>
+<p><strong>Maps to:</strong> Course 02 (Corporate Finance: risk, return, leverage, cost of capital), Course 07 (Data &amp;
+Decisions: Sharpe, sample size, base rates, factor models), Course 11 (Global Strategy &amp; Macro: rates,
+central banks, oil, gold), Exec <strong>E2</strong> (Capital Allocation: the allocator's seat), <strong>E6</strong> (Crisis: forced
+selling, squeezes, margin spirals), <strong>E8</strong> (Stakeholder &amp; Investor Relations: raising and keeping LP
+capital), <strong>E9</strong> (Geopolitics &amp; Macro).</p>
+<p>⚠ <strong>Bias:</strong> both hosts are ex-sell-side, and Jen's career was covering hedge funds. They admire the
+<em>risk machinery</em> of the big pod shops and are skeptical of bank regulation and of private marks. Guests
+talk their book: Bauman sells an event-driven fund, Burton sells Fortress credit, Weinstein sells
+active and options-income ETFs, Mintz sells quant equity as a "complement", Lascaratos calls his firm
+"the Citadel of commodities", and Nathan and Adami are TV pundits whose bear case is a brand. The
+L/S guests' best stories (Netflix 2012, Amazon 1997, Rexall) are survivor anecdotes; nobody describes
+their worst trade in detail. Where a figure is a guest's marketing claim, it is flagged.</p>
+</blockquote>
+<hr />
+<h2 id="what-this-adds-to-the-program">What this adds to the program</h2>
+<p>The repo already has the <strong>org chart</strong> of a trading business (<a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a>: buy/sell side,
+front/middle/back office, the three sell-side seats, the prop desk as a learning machine). It has the
+<strong>statistics of backtests</strong> (<code>quant-backtesting/</code>: deflated Sharpe, overfitting, Carver's vol targeting,
+factor models) and <strong>2-and-20 as PE carry</strong> (<a class="wiki" href="doc-notes-tiger-sisters-private-capital-101.html">tiger sisters private capital 101</a>). The rates sibling
+(<a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a>) teaches DV01, repo, swaps and the basis trade from the market's side. What the
+program lacked was the <em>economics and failure modes of liquid, levered capital</em>, and the instruments
+those funds use. This note adds:</p>
+<ul>
+<li><strong>The hedge fund as a business, not a strategy.</strong> The 2% keeps the lights on and AUM drives everything
+  else. Liquidity terms decide who survives a drawdown. PDT's seven-year lockup shows the other end of the
+  spectrum: a fund confident enough to plan to give its investors' money back.</li>
+<li><strong>The instruments explained by the people who make markets in them.</strong> How a dealer prices 10,000 calls
+  in two minutes, why 16 vol means 1% a day, how a straddle reveals the market's earnings forecast, and how
+  ETF creation/redemption keeps a price honest and makes the wrapper tax-efficient.</li>
+<li><strong>The death and squeeze mechanics.</strong> Leverage, then margin, then forced selling. Short borrow that can be
+  recalled, gamma squeezes, and pod stop-losses that make short interest a poor guide to how far a stock
+  can run. Situational Awareness, GameStop, the 2007 quant quake and the basis trade are one causal story.</li>
+<li><strong>Three ways to pick stocks, compared.</strong> Fundamental L/S (variant perception, catalysts, primary research),
+  factor quant (systematized fundamentals across 40,000 stocks) and stat-arb quant (forecasting minutes to a
+  year). Each has a characteristic way of failing.</li>
+<li><strong>Regulatory displacement as a general law.</strong> Every constraint on banks moves the activity somewhere less
+  regulated: prop trading to hedge funds (Volcker), market making to HFT firms (balance sheet), lending to
+  private credit. The hosts and guests reach this independently.</li>
+</ul>
+<h2 id="concept-map">Concept map</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Concept</th>
+<th>One-line definition</th>
+<th>Why it matters</th>
+<th>In repo?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Hedge fund business model</td>
+<td>2% on AUM plus 20% of gains on <em>redeemable</em> capital</td>
+<td>Fees, liquidity and lockups decide strategy and survival</td>
+<td>partial (PE 2-and-20)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Strategy taxonomy</td>
+<td>L/S, macro, RV, credit, event, quant, multi-strat</td>
+<td>Each sells a different return stream to a different sleeve</td>
+<td>partial</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Indices and benchmarks</td>
+<td>Rule-based baskets that define "the market"</td>
+<td>Every alpha claim is relative to one</td>
+<td>partial (closing auction in GLOSSARY)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>ETFs: creation, redemption, arbitrage</td>
+<td>A basket that trades like a stock, kept honest by APs</td>
+<td>Passive flows, tax efficiency, bond-market structure</td>
+<td>partial (24/5 note, GLOSSARY)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Beta vs. alpha</td>
+<td>Market return vs. skill return</td>
+<td>Don't pay hedge fund fees for beta</td>
+<td>partial</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Sharpe and relative-risk metrics</td>
+<td>Return per unit of volatility; tracking error, IR</td>
+<td>The metrics capital is allocated on</td>
+<td>partial (deflated Sharpe)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Options: payoffs, pricing, uses</td>
+<td>Rights to buy/sell; vol, skew, Greeks, implied move</td>
+<td>Hedging, leverage, sentiment, and dealer flows</td>
+<td>n</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Fundamental L/S and the research supply chain</td>
+<td>Variant perception plus catalysts, sized by conviction</td>
+<td>The classic hedge fund; what research is for</td>
+<td>partial (stock-picking, research economics)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Short selling and squeezes</td>
+<td>Borrowing to sell; recall, rebate, gamma</td>
+<td>Why shorts are fragile and squeezes violent</td>
+<td>partial (bond shorts in technicals)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Multi-manager pod shops</td>
+<td>Many small PMs, tight stops, fund leverage</td>
+<td>The dominant form; now moves the market</td>
+<td>partial (Citadel pods)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Quant investing</td>
+<td>Factor and stat-arb models applied systematically</td>
+<td>Removes emotion; fails when crowded</td>
+<td>partial (<code>quant-backtesting/</code>)</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Leverage, margin &amp; forced selling</td>
+<td>Borrowed exposure a lender can call</td>
+<td>Why being right is not enough</td>
+<td>n</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Duration &amp; DV01</td>
+<td>Converting a rate move into dollars</td>
+<td>Sizing per basis point; futures DV01</td>
+<td>y (<a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> §2)</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Repo, bank capital &amp; non-bank dealers</td>
+<td>Financing bonds with bonds; Basel; Citadel Securities</td>
+<td>How leverage is manufactured and where it migrates</td>
+<td>partial</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Treasury basis trade</td>
+<td>Cash vs. futures convergence, short volatility</td>
+<td>The most crowded levered trade in rates</td>
+<td>y (<a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> §11)</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Reading rates</td>
+<td>Futures-implied Fed odds, QE vs. not, the 10-year</td>
+<td>Prices as probabilities</td>
+<td>y (<a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> §4, §7)</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Global macro and central-bank credibility</td>
+<td>"Trading countries"; Soros vs. the BoE</td>
+<td>Asymmetric payoffs against unsustainable policy</td>
+<td>n</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Commodities: physical, gold, floor</td>
+<td>Marginal barrel, spreads, gold as anti-fiat</td>
+<td>Real-economy prices; the pit as a market</td>
+<td>n</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Capital raising &amp; the allocator's seat</td>
+<td>IR as revenue, ODD, lockups, governance</td>
+<td>E8 in practice</td>
+<td>n</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Moneyball as a trading playbook</td>
+<td>Mispriced traits, sample size, edge decay</td>
+<td>Statistical edge and why copying kills it</td>
+<td>partial (Mauboussin)</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="1-the-hedge-fund-business-model-2-and-20-on-redeemable-capital">1 · The hedge fund business model: 2-and-20 on redeemable capital</h2>
+<p><strong>What it is.</strong> A hedge fund is a pool of investor (LP) money that can trade almost anything, long or
+short, with leverage and derivatives. It typically charges about 2% of assets and about 20% of profits.
+What separates it from PE is not the fee. It is that <strong>the capital can leave</strong>: redemptions can be daily,
+quarterly or annual, against PE's 5–10 year lock.</p>
+<p><strong>How it works.</strong>
+- Fee arithmetic, from the hosts: $1bn AUM pays $20m a year in management fees, win or lose. Turn $1bn
+  into $3bn and the 20% performance fee earns $400m. Growing AUM from $1bn to $10bn "10x's" the fee
+  base, which pays for better traders, which attracts more capital. The IR guest calls this a flywheel.
+- <strong>Hurdles</strong> (a minimum return before the 20% applies) and <strong>high-water marks</strong> (no performance fee after
+  a loss until the old peak is regained). So in Bauman's words the 2% keeps the lights on.
+- Hedge funds are judged on <em>annual</em> marked-to-market returns. PE is judged over 5–7 years on appraisals.
+- <strong>Lockup as a strategic weapon.</strong> Pete Muller's pitch after PDT's 2012 spin-out from Morgan Stanley: one
+  institution, $500m, "our fees are higher than anybody else", and a <strong>seven-year lockup</strong>, because PDT
+  intended to take the fund fully internal and hand the money back. It did exactly that after seven years
+  (the RenTech Medallion path). Other LPs asked for the same deal and were refused. BlueCrest made the same
+  move in 2015, becoming a family office; Ashish Goyal notes its headline returns (150% in one year) come
+  from levering partners' own capital.
+- <strong>Fee compression</strong>: hedge funds "paid not to be correlated" lagged the zero-rate bull market and cut
+  fees. PE, effectively levered long the same market, did not.
+- <strong>Tax</strong>: carried interest gets long-term capital-gains treatment. TCJA (2017) set a 3-year holding period
+  for that treatment, which bites short-horizon hedge funds and not 5-year PE holds.
+- <strong>Payout vs. a bank.</strong> Jen's comparison: a bank trader who makes $100m is paid a small slice, because
+  profits are netted across the division; a prop shop keeps what it makes; a hedge fund pays out far more
+  per dollar than a bank but can fire you the same day.</p>
+<p><strong>Business significance / value.</strong> Value is captured by the GP through fees on scale. Because the
+management fee scales with AUM rather than skill, a hedge fund's equity value is mostly a function of
+<em>sticky AUM</em>. Hence the push into longer-locked products, SMAs and funds of one (§19). The firms with the
+best records do the opposite: they shrink outside capital to keep the edge for themselves.</p>
+<p><strong>Forces &amp; impact.</strong> Low rates helped levered-beta strategies (PE) and hurt hedge funds whose job was to
+hedge beta away. Higher rates and wider dispersion bring demand back. At iConnections 2026 equity L/S and
+macro funds were getting the meetings while private credit was "less sexy". Second-order: a talent war,
+with reported $100m sign-on packages for PMs moving between Citadel, Millennium and Balyasny.</p>
+<p><strong>With vs. without.</strong> Without redeemable capital, hedge funds could hold through drawdowns the way PE does,
+but they would lose their selling point (liquidity) and their discipline (public marks). PDT's lockup shows
+a third path: patient capital bought with a track record. The structure is a trade between
+<strong>accountability and survivability</strong>.</p>
+<p><strong>Applies when / Breaks when.</strong> Works when returns are uncorrelated enough to justify fees and LPs are
+patient. Breaks when a drawdown triggers redemptions, which force sales, which deepen the drawdown: a run
+on the bank, in the hosts' words.</p>
+<p><strong>Channel example.</strong> <em>Private Equity vs. Hedge Funds</em> (2023); <em>Head of Investor Relations at $3 Billion
+Hedge Fund Tells All</em>; <em>Pete Muller on Building… PDT Partners</em>; <em>Portfolio Manager at World's Top Hedge
+Funds… Global Macro</em> (BlueCrest).</p>
+<p><strong>Counterpoint.</strong> The hosts frame PE's structure as superior. Since 2023 PE has had its own liquidity
+reckoning (continuation funds, gated evergreen vehicles): locked capital postpones the reckoning rather than
+removing it. Muller's seven-year pitch worked because PDT already had a 20-year record inside Morgan
+Stanley. It is not a template for a new manager.</p>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-tiger-sisters-private-capital-101.html">tiger sisters private capital 101</a> · <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> §2, §5 ·
+<a class="wiki" href="doc-canon-canon-jensen-meckling-agency-theory.html">canon jensen meckling agency theory</a> · <code>quant-backtesting/research/renaissance-technologies.md</code>.</p>
+<hr />
+<h2 id="2-the-strategy-taxonomy-what-each-fund-is-actually-selling">2 · The strategy taxonomy: what each fund is actually selling</h2>
+<p><strong>What it is.</strong> "Hedge fund" is a legal and fee wrapper, not a strategy. Each style produces a different
+return stream and sits in a different allocator bucket.</p>
+<p><strong>How it works.</strong>
+- <strong>Equity long/short.</strong> Long the companies you like, short the ones you don't (§8). Two sub-species
+  (Sensa): <em>long-biased</em> single-manager funds that keep net long exposure and want some market beta, and
+  <em>beta- or factor-neutral</em> pods whose long and short books match by size, sector and factor (§10).
+- <strong>Global macro.</strong> Ashish Goyal: macro is "trading countries". For each of the G7 and EM Asia he reads the
+  cycle, the central bank, the fiscal position and external balances, then asks whether the curve, the long
+  end, the currency and the equity index are priced right (§17).
+- <strong>Relative value.</strong> Two related instruments mispriced against each other, levered heavily: the basis trade
+  (§15), oil time spreads (§18), index vs. single-stock volatility (dispersion, §7).
+- <strong>Credit, convertible arbitrage.</strong> Ken Griffin started Citadel as a convert-arb fund. In 2008 convert-arb
+  funds that delta-hedged bank convertibles blew up when the short-selling ban removed the hedge.
+- <strong>Event-driven</strong> (Imperium, ~$3bn, per Bauman), five buckets: transactional (mergers), structural
+  (spin-offs), stressed/distressed, legal/regulatory, and activist (Imperium avoids it). The first two are
+  pro-cyclical, the third counter-cyclical, so a diversified event book has a built-in hedge.
+- <strong>Quant</strong> (§11). Mintz's three types: high-frequency (nanoseconds), trend-following, and fundamental factor
+  investing. Muller adds statistical arbitrage over horizons "from a minute to a year".
+- <strong>Multi-strat / multi-manager</strong> (§10). Goyal: teams are sliced by asset class (equity, credit, commodities,
+  macro) and by style (directional, relative value, systematic), in any combination.
+- <strong>"Hedge funds that aren't."</strong> Burton notes credit managers who never short, and funds that drop the word
+  "hedge" when allocators exclude the label.</p>
+<p><strong>Business significance / value.</strong> Allocators buy <em>a role in a portfolio</em>, not a fund. Bauman's advice is to
+arrive with the LP's memo already written: which role you fill and what you replace.</p>
+<p><strong>Forces &amp; impact.</strong> Rate regimes and deal cycles rotate which buckets are "on". Labels follow allocator
+fashion: after 2008 "distressed" became "special situations", then "credit opportunities".</p>
+<p><strong>With vs. without.</strong> Without the taxonomy an LP compares a merger-arb fund's 8% to the S&amp;P's 20% and fires
+it, missing that the fund's return stream is uncorrelated and its drawdowns shallow.</p>
+<p><strong>Applies when / Breaks when.</strong> Useful until style drift: a "macro" fund that is really levered long tech, or
+an RV book whose two legs both lose (Situational Awareness, §12).</p>
+<p><strong>Channel example.</strong> <em>Hedge Funds 101 | Long/Short Equity Edition</em>; <em>Global Macro</em> (Goyal); <em>Quant Investing
+101</em>; <em>Head of IR at $3 Billion Hedge Fund</em>.</p>
+<p><strong>Counterpoint.</strong> Bauman's "all five buckets firing" is a fundraising line delivered at a capital-intro
+conference. The taxonomy also understates convergence: pods now run L/S, macro and RV teams under one roof.</p>
+<p><strong>Links:</strong> <code>quant-backtesting/research/citadel.md</code>, <code>…/bridgewater.md</code>, <code>…/renaissance-technologies.md</code> ·
+<a class="wiki" href="doc-notes-sec-filing-intelligence.html">sec filing intelligence</a>.</p>
+<hr />
+<h2 id="3-indices-and-benchmarks-what-the-market-means">3 · Indices and benchmarks: what "the market" means</h2>
+<p><strong>What it is.</strong> An index is a rule-based list of securities with weights, published as a single number. "The
+market went up" almost always means the S&amp;P 500. You cannot buy an index directly; you buy a fund, an ETF
+(§4) or a futures contract that tracks it. Indices exist for two reasons: to give passive investors the
+market's return cheaply, and to give active managers a yardstick.</p>
+<p><strong>How it works.</strong>
+- <strong>Construction, as the hosts describe it.</strong> The S&amp;P 500 is market-cap weighted and committee-selected, with
+  size, liquidity and profitability screens (positive earnings over the last four quarters). So it is "a
+  little better than other stocks": a quality filter, not a neutral sample. The Nasdaq indices lean to tech.
+- <strong>The bond equivalent</strong> is the Bloomberg (formerly Lehman, then Barclays) Aggregate: market-value weighted,
+  investment grade only (BBB-/Baa3 or better), at least a year to maturity, a minimum issue size, and a large
+  Treasury share, so it moves with monetary policy. It also holds agencies, MBS and ABS.
+- <strong>Benchmark vs. absolute return.</strong> Long-only mutual funds and pension sleeves are judged against an index;
+  most hedge funds are judged on absolute return, depending on the mandate. The hosts' endowment example:
+  35–40% equities, 10–15% bonds, 30–35% alternatives.
+- <strong>Concentration.</strong> Karniol-Tambour, the day after DeepSeek (January 2025): the Magnificent 7 were about a
+  third of the S&amp;P 500, other tech about 12% more. Almost half the "diversified" index was a bet on one
+  theme, which is why a single AI headline moved it.
+- <strong>Access.</strong> Retail uses index funds and ETFs; institutions also use index futures, which need margin, are
+  levered and come in large contract sizes. Dan Nathan's first job had a phone line to the CME floor for
+  index futures beside one to the NYSE.</p>
+<p><strong>Business significance / value.</strong> Index providers sell licenses; fund sponsors sell cheap access; active
+managers sell beating it. The index's rules decide who must buy a stock (inclusion) and therefore move prices
+on their own (see <a class="wiki" href="doc-notes-wss-capital-markets-ma.html">wss capital markets ma</a> §8 on index inclusion).</p>
+<p><strong>Forces &amp; impact.</strong> Passive flows buy every day regardless of news. Guy Adami and Avery Sheffield both
+argue this, plus a perceived Fed backstop, explains a market that "takes the stairs up and the elevator
+down". Adami's warning: "when passive becomes active", it is on the way down. Concentration raises single-name
+risk inside nominally diversified products.</p>
+<p><strong>With vs. without.</strong> Without indices, "beat the market" is unmeasurable and passive investing impossible.
+With cap-weighted indices, money flows to what has already risen, so the benchmark itself becomes a
+momentum strategy.</p>
+<p><strong>Applies when / Breaks when.</strong> A benchmark is meaningful when it matches the manager's opportunity set. It
+breaks when a manager picks a flattering one, or when concentration turns the index into a sector bet.</p>
+<p><strong>Channel example.</strong> <em>Index Trading (SPX, NASDAQ, etc.) Basics and Why You Should Care</em>; <em>Bridgewater Co-CIO
+Karen Karniol-Tambour</em>; <em>Commodities feat. Guy Adami</em>.</p>
+<p><strong>Counterpoint.</strong> The index episode is short, machine-translated and loose: it calls the S&amp;P ETF "SPX" (the
+index ticker; the ETF is SPY), puts Treasuries at "about a third" of the Agg (closer to 40–45%) and garbles
+the hedge fund fee. The actual S&amp;P earnings rule requires a positive sum over four quarters <em>and</em> a positive
+latest quarter. Treat it as orientation only.</p>
+<p><strong>Links:</strong> GLOSSARY "Closing auction" · <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> · <a class="wiki" href="doc-notes-wss-capital-markets-ma.html">wss capital markets ma</a> §8 ·
+<a class="wiki" href="doc-learn-unit-10-personal-finance-operating-system.html">unit 10 personal finance operating system</a>.</p>
+<hr />
+<h2 id="4-etfs-a-basket-that-trades-like-a-stock-kept-honest-by-arbitrage">4 · ETFs: a basket that trades like a stock, kept honest by arbitrage</h2>
+<p><strong>What it is.</strong> An exchange-traded fund is a wrapper that delivers a basket of securities (stocks, bonds,
+commodities, options strategies) in a single share that trades on an exchange all day. Weinstein's two
+distinguishing features versus a mutual fund: <strong>intraday trading</strong> and <strong>tax efficiency</strong>. The US market is
+roughly $11–12tn across about 10,000 funds, per the hosts.</p>
+<p><strong>How it works.</strong>
+- <strong>The mutual fund problem.</strong> A mutual fund prices once, at the 4pm NAV. If $100 comes in and $50 goes
+  out, the PM must invest the net $50 (or sell holdings to meet net redemptions). Those sales realize
+  capital gains that every holder is taxed on.
+- <strong>The ETF's three cases</strong> (Weinstein):
+  1. <em>Normal day</em>: buyers and sellers trade existing shares with each other on the exchange. The underlying
+     never moves and the PM never sees it.
+  2. <em>Excess demand</em>: an <strong>authorized participant</strong> or lead market maker (Jane Street, Citadel, Virtu, some
+     banks) <strong>creates</strong> shares by delivering the basket (say the 500 S&amp;P stocks at index weights) to the fund
+     in exchange for new ETF shares.
+  3. <em>Excess selling</em>: the AP <strong>redeems</strong> ETF shares and receives the basket back; the shares are destroyed.
+- <strong>Arbitrage keeps the price honest.</strong> If the ETF trades above the value of its basket, the AP buys the
+  basket, creates shares and sells them; below, it does the reverse. Kristen recalls Michael Lewis's
+  "ham sandwich" from <em>Going Infinite</em>: Jane Street buying the bread and ham when they were cheaper than the
+  sandwich. Holdings are published daily (mutual funds publish monthly or quarterly), because market makers
+  cannot hedge what they cannot see. Non-transparent ETFs have largely failed for this reason.
+- <strong>Premiums and discounts are the price of liquidity.</strong> If everyone wants out, a basket worth $100 may only
+  fetch $98. Bond ETFs traded at deep discounts in March 2020; when the Fed announced it would buy
+  investment-grade bonds, they flipped to premiums because APs could not source bonds fast enough.
+- <strong>The tax trick.</strong> In a redemption the fund can hand the AP its lowest-cost-basis lots. The gains leave the
+  fund without a sale, so they are never realized. This matters most in equities, where gains are larger.
+- <strong>Pricing.</strong> Market makers' algorithms continuously value the basket. Where the underlying trades often, the
+  spread can be a penny or "locked". Weinstein's "garage ETF" of Uruguayan local bonds might be fair at 50
+  but quoted 47 bid, 53 offered, and nobody trades. "Trading begets trading."
+- <strong>Launch and primary/secondary.</strong> Launching is like an IPO: issue, say, 10,000 shares at $50 to the market
+  maker, cash goes into "the box", then secondary trading follows. Creates and redeems are the ongoing
+  primary market. Before launch the sponsor's capital-markets team lines up the lead market maker; if market
+  makers won't quote it, the fund dies. Big blocks ($100m of a loan ETF) are priced as risk by a market
+  maker who hedges with HY or S&amp;P exposure for days.
+- <strong>Fees.</strong> LQD's expense ratio is 14bp; active fixed-income ETFs run roughly 15–40bp; old mutual funds were
+  over 1%. Weinstein says fees have now stabilized.
+- <strong>Leveraged and inverse ETFs</strong> (TBT, 2x short the long bond) "don't move like you'd predict": daily
+  rebalancing means they buy on up days and sell on down days. Tanner adds that this rebalancing amplified
+  MicroStrategy's volatility. For hedging, not holding.
+- <strong>Why mutual funds survive.</strong> Most 401(k) plans still use them, some investors want privacy, and Europe's
+  UCITS/SICAV wrappers are mutual-fund style.
+- <strong>Hot categories (2024).</strong> Options-income ETFs that own an index and sell calls (Weinstein calls them the
+  cousin of 0DTE), hedged-equity ETFs that buy puts, and active bond ETFs.</p>
+<p><strong>Business significance / value.</strong> Scale and first-mover advantage dominate. Once one S&amp;P or IG ETF is the
+liquid one, a clone has little reason to exist, though dozens of new issuers launch hundreds of funds a year.
+The arbitrage profit goes to the APs and market makers; the sponsor earns the expense ratio. The structure
+<strong>changed the bond market</strong>: LQD, HYG and TLT let investors trade baskets of credit and duration that were
+untradeable as individual bonds. Weinstein's line: if you don't know the price of a basket of bonds, you
+probably shouldn't be trading bonds.</p>
+<p><strong>Forces &amp; impact.</strong>
+- SEC Rule 6c-11 (2019; the transcript says "60/11") let managers launch ETFs without individual exemptions,
+  which opened the door to active and mutual-fund-clone ETFs.
+- Post-2008 balance-sheet rules explain who the market makers are: Weinstein says in 2006 the banks would
+  have done it; now it is too balance-sheet intensive, so HFT firms dominate.
+- Passive concentration gives a few sponsors (BlackRock, Vanguard, State Street, Fidelity) most proxy votes.
+  Weinstein calls it a real issue, not an evil empire.
+- Under 24/5 trading, bond ETFs become the only credit price at 2am (<a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a>).</p>
+<p><strong>With vs. without.</strong> Without ETFs, retail diversification means mutual funds (end-of-day prices, embedded
+tax drag) and institutions trade bonds one CUSIP at a time. With them, a liquidity mismatch appears: a share
+that trades every second wrapped around bonds that trade weekly. In calm markets the AP absorbs it; in a
+panic the discount shows it.</p>
+<p><strong>Applies when / Breaks when.</strong> Works when the underlying is liquid enough for APs to hedge and the basket is
+transparent. Breaks when the underlying market shuts or seizes (March 2020 credit, emerging markets), when
+the AP steps back, or when a leveraged ETF meets a choppy market.</p>
+<p><strong>Channel example.</strong> <em>Exchange Traded Funds (ETFs) 101</em> (Brian Weinstein, MSIM, November 2024).</p>
+<p><strong>Counterpoint.</strong> Weinstein runs an ETF business and pitches his own funds (Parametric's options-income ETF,
+Eaton Vance active bond ETFs) on air, including a "best tax treatment" claim against unnamed competitors.
+His statement that ETFs are "not really allowed" in 401(k)s overstates it: the barrier is plan design and
+recordkeeping, not a legal ban. One quote ("QQQ at 109.48") is garbled: the ticker he was reading was a
+bond ETF, given his own description. Treat the ETF-vs-mutual-fund fee gap as partly selective: large passive
+mutual funds can be as cheap.</p>
+<p><strong>Links:</strong> GLOSSARY "ETF premium / discount to NAV" · <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> ·
+<a class="wiki" href="doc-notes-wss-capital-markets-ma.html">wss capital markets ma</a> §8 · <a class="wiki" href="doc-notes-wss-private-markets-wealth.html">wss private markets wealth</a> §8 (semi-liquid wrappers, the same
+liquidity-mismatch problem in private assets).</p>
+<hr />
+<h2 id="5-beta-vs-alpha-dont-pay-2-and-20-for-the-market">5 · Beta vs. alpha: don't pay 2-and-20 for the market</h2>
+<p><strong>What it is.</strong> <strong>Beta</strong> is how much a portfolio moves with the market: 1 moves with it, above 1 amplifies it,
+below 1 dampens it. <strong>Alpha</strong> is the return left after beta, attributed to skill.</p>
+<p><strong>How it works.</strong> Bauman: beta can be bought almost free through an index ETF (§4), so hedge fund fees are
+only justified by alpha. Imperium targets a <strong>beta of 0 to 0.1</strong> by hedging out industry and macro exposure,
+with 20–35 positions carrying 70–80% of the risk in "less followed" companies of a couple of billion dollars.
+Weinstein's version for long-only: pay basis points for beta, pay more for active only where it can earn its
+keep (high yield, loans, EM, small caps). Mintz: in large-cap US "you're not getting a ton of alpha", so take
+little risk there. Karniol-Tambour adds a sharper claim (§6): a benchmark-hugging portfolio "inherits" the
+benchmark, so the same skill earns more when unconstrained.</p>
+<p><strong>Business significance / value.</strong> Beta neutrality is what the LP pays for. A beta-0 fund returning 8% adds
+return without adding market risk. Apollo's investor-day meme shows the fight over attribution.</p>
+<p><strong>Forces &amp; impact.</strong> In a one-way bull market beta was cheap and good, and alpha looked expensive. When
+dispersion rises, stock selection matters again. Karniol-Tambour: correlations between individual stocks are
+low even when indices feel tightly linked, so the opportunity exists below index level.</p>
+<p><strong>With vs. without.</strong> Without the split, a levered-long manager in a bull market looks like a genius and
+charges alpha fees for beta.</p>
+<p><strong>Applies when / Breaks when.</strong> Beta is estimated from history. It breaks when correlations jump in a crisis
+and "low beta" books suddenly move with the market because everyone sells the same crowded names.</p>
+<p><strong>Channel example.</strong> <em>Head of IR at $3 Billion Hedge Fund</em>; <em>ETFs 101</em>; <em>Quant Investing 101</em>; <em>Bridgewater
+Co-CIO</em>.</p>
+<p><strong>Counterpoint.</strong> A beta of 0.1 "to the S&amp;P" can hide factor betas (momentum, crowding) that behave like market
+risk in a squeeze (§10, §11). Measured alpha is only as good as the benchmark chosen.</p>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-bloomberg-terminal-instrumentation.html">bloomberg terminal instrumentation</a> · <code>quant-backtesting/research/aqr-capital.md</code> (factors as
+"alternative beta") · <code>…/factor-models-regime-detection.md</code>.</p>
+<hr />
+<h2 id="6-the-sharpe-ratio-relative-risk-metrics-and-the-arithmetic-of-losses">6 · The Sharpe ratio, relative-risk metrics, and the arithmetic of losses</h2>
+<p><strong>What it is.</strong> The Sharpe ratio is excess return over the risk-free rate divided by the volatility of returns:
+how much you earned per unit of turbulence. Above 1 is good, 2 better, 3 excellent. Benchmark-relative
+managers use the cousins: <strong>tracking error</strong> (how far returns deviate from the benchmark) and the
+<strong>information ratio</strong> (outperformance per unit of tracking error).</p>
+<p><strong>How it works.</strong> Jen's arithmetic: risk-free 5%, fund returns 10%, excess 5%.
+- Divide by 2% volatility: Sharpe 2.5, "you look like a hero".
+- Divide by 20% volatility: Sharpe 0.25, like clinging to a mechanical bull.</p>
+<p>Reported figures (WSJ, summarized by the hosts): Millennium about <strong>2.6</strong> on $69bn AUM with one down year;
+peers about <strong>1.1</strong>; the S&amp;P about <strong>0.3</strong>.</p>
+<p>Why volatility deserves the penalty: losses compound asymmetrically. Down 50% then up 25% leaves you at
+0.5 × 1.25 = 0.625, still down 37.5%. Recovering −50% takes +100%.</p>
+<p><strong>Win rates are low even for the best.</strong> Dan Nathan: the best traders win about 52% of the time. Steve
+Haggerty cites Alpha Theory's data that only about half the stocks in a typical PM's portfolio move the right
+way. Returns come from sizing winners bigger than losers, not from being right often.</p>
+<p><strong>Relative metrics in practice.</strong> Mintz (PGIM quant equity, ~$60bn): clients care about tracking error and
+information ratio, "bang for your buck". Karniol-Tambour's Bridgewater research: with the same stock-picking
+signal, a benchmark-relative portfolio beats the benchmark reliably by about 3% a year (the transcript says
+"every day") but inherits everything else the benchmark does; an unconstrained portfolio has huge tracking
+error but outperforms more.</p>
+<p><strong>Business significance / value.</strong> Sharpe is the metric capital is allocated on inside pod shops (§10) and by
+LPs (§19). A smooth 5% stream can be levered into 15%, which is the pod-shop model. Tracking error is the
+budget long-only allocators give active managers.</p>
+<p><strong>Forces &amp; impact.</strong> Higher risk-free rates raise the bar. Sharpe rewards <em>suppressing visible volatility</em>,
+which pushes managers toward strategies with smooth returns and rare large losses (short volatility, §15) and
+toward illiquid assets marked infrequently. Tracking-error budgets push long-only managers toward index
+hugging, which Karniol-Tambour argues wastes their skill.</p>
+<p><strong>With vs. without.</strong> Without a risk-adjusted metric, raw return wins, and raw return is easiest to get by
+adding leverage or selling tail risk.</p>
+<p><strong>Applies when / Breaks when.</strong> Valid for roughly normal, frequently marked returns. Breaks for (a) nickels in
+front of steamrollers, (b) appraisal-marked private assets, (c) backtests where many trials inflate the best
+Sharpe (deflated Sharpe in <code>quant-backtesting/</code>).</p>
+<p><strong>Channel example.</strong> <em>How do Sharpe Ratios work?</em> (short); <em>Apollo's Quest to Double AUM, Sharpe Ratios, and
+the CAIS Summit</em>; <em>Quant Investing 101</em>; <em>Bridgewater Co-CIO</em>.</p>
+<p><strong>Counterpoint.</strong> The S&amp;P's "0.3" depends on the period; long-run estimates are nearer 0.4–0.5. Millennium's
+2.6 is self-reported via press and net of a pass-through expense model the hosts don't mention.
+Karniol-Tambour's unconstrained-portfolio claim is also the case for Bridgewater's own product.</p>
+<p><strong>Links:</strong> <code>quant-backtesting/research/lopez-de-prado.md</code> · <code>…/harvey-liu-zhu-backtesting-pitfalls.md</code> ·
+<code>…/robert-carver-systematic-trading.md</code> · <a class="wiki" href="doc-canon-canon-taleb-black-swan.html">canon taleb black swan</a> · <a class="wiki" href="doc-canon-canon-mauboussin-success-equation.html">canon mauboussin success equation</a>.</p>
+<hr />
+<h2 id="7-options-payoffs-how-a-dealer-prices-them-and-what-they-reveal">7 · Options: payoffs, how a dealer prices them, and what they reveal</h2>
+<p><strong>What it is.</strong> A <strong>call</strong> is the right to buy at a set price (the strike) by a set date; a <strong>put</strong> is the right
+to sell. The buyer pays a <strong>premium</strong> and can lose no more than that. The seller collects the premium and takes
+the risk. An option's price depends on the stock price, strike, time, rates and above all <strong>implied
+volatility</strong>: the market's estimate of how much the stock will move.</p>
+<p><strong>How it works.</strong>
+- <strong>Three uses for an investor</strong> (Nathan, with Microsoft at $100 as the running example):
+  1. <em>Yield enhancement.</em> Own the stock long term and sell an out-of-the-money call every couple of months: a
+     "synthetic dividend". You keep the premium if the stock stays below the strike.
+  2. <em>Leverage with defined risk.</em> Buy calls into catalysts (earnings next week, a user conference after). The
+     most you lose is the premium.
+  3. <em>Insurance.</em> Buy the 95 put for $2: below $93 (strike minus premium) you are protected, so the worst
+     case is $7. Doing it constantly drags returns, because you want the insurance to expire worthless.
+  - <em>Zero-cost collar</em>: sell the 110 call for $2, buy the 90 put for $2. You keep gains up to $110 and are
+    protected below $90. The same structure protects the stock leg of an M&amp;A offer (<a class="wiki" href="doc-notes-wss-capital-markets-ma.html">wss capital markets ma</a>
+    §12: Netflix/WBD's $4.50 stock component and its 0.046 fixed ratio below $97.91).
+- <strong>Two Greeks that matter to most people</strong> (Nathan): <strong>delta</strong>, how much the option moves per $1 in the stock,
+  and <strong>theta</strong>, how much value it loses each day. A call that doesn't rise with the stock is delta and theta
+  at work.
+- <strong>The 16 rule</strong> (Tanner): annualized vol ÷ 16 ≈ daily move, because there are about 256 trading days and
+  √256 = 16. So <strong>16 vol ≈ 1% a day, 32 vol ≈ 2%</strong>, and 100 vol ≈ 6% a day, every day, which almost no stock
+  sustains. MicroStrategy traded around 120 vol.
+- <strong>The implied move from a straddle</strong> (Nathan): with Microsoft at $100 reporting Thursday night, the Friday
+  $100 call costs $2 and the put $2. A straddle (both) costs $4, so the stock must close above $104 or below
+  $96 to profit: a <strong>4% implied move</strong>. If it has averaged 2% over eight quarters with a 4% maximum, the
+  options are expensive. Rule: at-the-money straddle ÷ strike ≈ expected move.
+- <strong>How a dealer prices a request</strong> (Tanner, 20 years a single-stock market maker). A hedge fund wants 10,000
+  Target calls a week before earnings and asks three banks. In about two minutes the trader weighs existing
+  inventory in Target and correlated retailers (Walmart, Costco), how much stock the hedge needs and what it
+  costs, the loss if the stock moves 50%, and who else might sell. He shows $2.00 against rivals' $2.05 and
+  $2.10, wins, earns a few cents, then <strong>delta-hedges</strong> by trading stock. Index desks get asked for $5–10bn of
+  S&amp;P puts; the binding constraint is the bank's loss limit if the S&amp;P falls 10%.
+- <strong>Pricing earnings with no history.</strong> Instacart's first report: the desk used DoorDash, Grubhub and
+  similar-sized tech names, adjusted for financial and operating leverage, got 9–11%, and offered at about a
+  13% implied move (the transcript's "133%" is a garble). The client didn't trade: too wide.
+- <strong>OTC vs. listed.</strong> Big banks prefer over-the-counter trades because nobody else sees the 10,000 calls, which
+  buys time to hedge. Tanner's split: about 50/50 OTC at a bulge bracket, about 95% listed at a small bank.
+  Clients accept bulge terms because the same bank controls IPO allocations, prime financing and corporate
+  access. A client who "sprays the street" leaves a footprint and gets policed.
+- <strong>Skew as sentiment</strong> (Nathan). Normally downside puts cost more than equally distant calls, because
+  investors pay for protection. In 2024 Nvidia's 10% out-of-the-money calls cost more than its puts: demand to
+  own it any way possible.
+- <strong>Put/call ratio</strong> (pass 1). The equity ratio normally ran about 0.6–0.7 (CBOE 2006–2019); 0.4 means far
+  more call buying than usual. The contrarian read: crowded positioning sets up disappointment.
+- <strong>Index puts don't hedge single names (dispersion).</strong> Index vol is lower than the vol of its members because
+  their moves offset. Desks trade the gap as a basis (long single-name vol, short index vol). Situational
+  Awareness hedged a concentrated AI book with S&amp;P puts that barely moved (§12).
+- <strong>The evolution of expiries.</strong> Monthly (third Friday), then quarterly, LEAPs (about two years), weeklies,
+  and now daily (0DTE), mostly on SPY. Listed single-stock options go out about 2.5 years; S&amp;P options to 10
+  years for variable-annuity hedgers. Convertibles run five years, so convert-arb funds hedge a long option
+  with shorter ones.</p>
+<p><strong>Business significance / value.</strong> End users: hedge funds (the main single-stock buyers, around catalysts),
+insurers (variable annuities), pensions and mutual funds (protection and income). The dealer earns the spread
+and the <strong>volatility risk premium</strong>: Sensa's blunt version is that implied vol is usually higher than
+realized, so buyers overpay and dealers "should always come out ahead" if they hedge well. Since 2006 the flow
+has shifted from hedge funds buying options to investors <em>selling</em> them for yield, amplified by zero rates.
+Retail made options a profit center for brokers: Nathan cites Robinhood getting about half its quarterly
+revenue from options, because stocks now trade at zero spread while options still have one.</p>
+<p><strong>Forces &amp; impact.</strong>
+- Spreads compressed from nickels, dimes and quarters to pennies; Citadel, Jane Street and Susquehanna took
+  share from banks.
+- <strong>Dealer hedging moves the underlying.</strong> A dealer short calls must buy stock as it rises. In thin names this
+  is decisive: Tanner's example is a $200m company where a client wants $10m of options, 5% of the company.
+  In May–June 2020, bankrupt energy names (Chesapeake, Oasis; Hertz outside energy) ran 10–20x on retail
+  buying, and desks short calls had to buy stock at a $3–4bn market cap in companies they knew were worth
+  nothing. This is the gamma squeeze GameStop made famous (§9).
+- Buffett sold long-dated index puts (S&amp;P, Nikkei, Euro Stoxx) before 2008 on the view that long-dated vol
+  was overpriced and the premium was useful float.</p>
+<p><strong>With vs. without.</strong> Without options, a fund hedges only by selling or shorting, which is crude, taxable and
+capital-hungry. Without implied vol and skew, the market's forecast of an event's size is invisible.</p>
+<p><strong>Applies when / Breaks when.</strong> Options price risk well when the dealer can hedge continuously in a liquid
+underlying. They break when the hedge itself moves the market (small caps, squeezes), when realized vol
+explodes past implied (short-vol sellers), or when index hedges meet dispersion.</p>
+<p><strong>Channel example.</strong> <em>Options Trading 101</em> (Andis Tanner); <em>Trading Equities and Options 101</em> (Dan Nathan,
+August 2024); <em>Hedge Funds 101</em> (Sensa on rarely using options); short <em>Equity Put/Call Ratio at Extreme
+Lows</em>.</p>
+<p><strong>Counterpoint.</strong> Both guests say most people should not trade options (Tanner: 98–99% of retail and 75% of
+professionals). That is honest, but they also come from the selling side of a business that profits from
+retail buying. Nathan's Robinhood figure is closer to half of <em>transaction-based</em> revenue (Q2 2024), not
+half of total revenue. The 16 rule is an approximation (√252 ≈ 15.9) and assumes normal moves; earnings days
+are not normal.</p>
+<p><strong>Links:</strong> <a class="wiki" href="doc-canon-canon-kahneman-thinking-fast-and-slow.html">canon kahneman thinking fast and slow</a> (herding) · <a class="wiki" href="doc-canon-canon-tetlock-superforecasting.html">canon tetlock superforecasting</a> (implied
+move as a forecast to score) · <a class="wiki" href="doc-canon-canon-taleb-black-swan.html">canon taleb black swan</a> · <a class="wiki" href="doc-notes-wss-capital-markets-ma.html">wss capital markets ma</a> §12 ·
+<code>quant-backtesting/research/main-compilation.md</code>.</p>
+<hr />
+<h2 id="8-fundamental-longshort-and-the-research-supply-chain">8 · Fundamental long/short and the research supply chain</h2>
+<p><strong>What it is.</strong> Fundamental L/S funds buy companies whose value they think the market underrates and short
+those it overrates, using their own research. The edge they claim is a <strong>variant perception</strong>: a view that
+differs from consensus, is right, and has a <strong>catalyst</strong> that will make the market notice. Sell-side research
+is one input; it is not the edge.</p>
+<p><strong>How it works.</strong>
+- <strong>Portfolio shape</strong> (Sensa, Islander Capital, long-biased TMT). Per $100 of capital: a long book of about
+  $100 across 15–20 names, half the money in the top five or six, held for years; a short book of $40–60
+  across 10–20 more catalyst-driven names, held for under a year. <strong>Gross exposure</strong> (long + short) stays at
+  150% or less; <strong>net exposure</strong> (long − short) around 40–60%. Pods run gross at 300–500% (§10). Sosnick ran
+  a consumer book of up to $1bn at Perry Capital with 20–30% leverage.
+- <strong>Primary research is the differentiator.</strong> Sensa: models and DCFs are table stakes ("if our business was as
+  simple as building a model computers would do it"). The edge comes from networks: CEOs and CFOs (be one of
+  the few investors they remember, by knowing what keeps them up at night), former executives, disruptors.
+  Sell-side analysts are used to read <em>other investors</em>: they talk to 50 funds and know both the bull and bear
+  case. Sosnick's version is shoe-leather: store visits with Costco's CEO and CFO every six weeks, and her
+  "back of the plane" rule (watch what ordinary travelers wear and open first when Wi-Fi returns).
+- <strong>Case: Netflix 2012</strong> (Sensa). After the Qwikster botch, 35 sell-side analysts covered it, three rated it a
+  buy, short interest was over 20%, and the company was worth about $3bn. His fund bought about 1% of it. The
+  inputs: Disney, CBS and Fox said Netflix was no threat and they would sell it more content (playing the
+  quarterly game while Netflix played the ten-year one); AMC's shows gained about 100% in new-season viewers
+  after their back seasons hit Netflix. The math: about 25m subscribers heading to 30m; HBO had about 30m US
+  subscribers and its US business was worth $8–10bn; so "the HBO of the web" at $3bn was cheap. He rebuilt in
+  2016 when a post-launch churn spike in new markets was misread as maturity; the stock roughly doubled in 12
+  months. The lesson he draws: public markets over-extrapolate every data point.
+- <strong>Case: Amazon 1997</strong> (Sosnick at Pequot). She nearly skipped the roadshow ("selling books online?"), stayed
+  after hearing Bezos laugh, and then attended every breakfast and one-on-one because <strong>IPO allocation depends
+  on fund size and how many meetings you show up for</strong>.
+- <strong>Contrarian process</strong> (Sheffield). Stocks now move less on fundamental value than on the data point the
+  crowd anchors to. Her process reverse-engineers that: where is value, what is the anchor, what catalyst
+  shifts it, and how much pain sits on the other side. <strong>Asymmetry</strong> is not just a low multiple; it is how
+  crowded the other side is and how big the move after the catalyst. Her August 2024 example: US legacy
+  airlines at 4–6x earnings and European carriers at low single digits after a summer of overcapacity, while
+  weak low-cost rivals were restructuring and an activist was forcing capacity cuts. Capacity down, fares
+  stabilize, multiples re-rate; the stocks rallied. Idea sourcing starts at the extremes of valuation and
+  sentiment, then waits for real-time data (weekly capacity and pricing feeds) or a management statement
+  ("we're serious about spending") to turn.
+- <strong>The research supply chain</strong> (Haggerty, ex-head of research at BofA Merrill). The analyst's job is to decide
+  whether a stock is <strong>mispriced</strong> against intrinsic value, not whether a quarter beats. "The sell side advises
+  and the buy side invests." Sector teams of 3–5 cover 15–25 stocks, about six per person, chosen by size and
+  liquidity because the bank earns from trading them. Research has no P&amp;L of its own; it is paid through
+  commissions on trades the ideas generate, prime brokerage, and contributions from banking and wealth
+  management (<a class="wiki" href="doc-notes-wss-technicals-career.html">wss technicals career</a> §4.17 covers the economics). Its three functions: inform, advise,
+  facilitate (corporate access). Funds steer commissions to banks for research, models and conferences;
+  small funds outsource execution (Sensa uses BTIG).
+- <strong>Filings and disclosure.</strong> Managers above the 13F threshold file their US long holdings within 45 days of
+  quarter end (March 31 → May 15); shorts, cash and most derivatives are excluded. Some European countries
+  require short disclosure, privately at one threshold and publicly at a higher one. Companies can also watch
+  custodial reports and see stock leaving a prime broker.</p>
+<p><strong>Business significance / value.</strong> This is the hedge fund most people picture, and the training ground for
+Tiger, its "cubs" (Sosnick reported to Steve Mandel, later Lone Pine) and most of today's single managers.
+Value is created when research changes the price toward the truth; it is captured by the fund through
+concentration in its best ideas. Sensa's view of the PM's job: know which five ideas have a near-term variant
+perception and put the capital there.</p>
+<p><strong>Forces &amp; impact.</strong>
+- Information arbitrage is gone. Haggerty used to collect GM's earnings release in the GM building lobby; Reg FD
+  (2000), Bloomberg, FactSet and email erased that edge, so it moved to models, conferences, expert calls,
+  and now unstructured data with Python and LLMs. Nathan, who started at SAC, calls qualitative stock picking
+  largely "out the window".
+- Large-cap volatility has risen (Netflix ±15% in a day, Meta +10% after hours), which lets big funds generate
+  alpha in liquid names (Sosnick).
+- Companies stay private longer (about 1,200 unicorns), so public L/S funds meet growth later; Fidelity,
+  Wellington and T. Rowe now run private research teams and crossover funds (Haggerty).
+- Pods' factor-neutral, levered books create non-fundamental volatility (§10). For a long-biased fund with a
+  healthy balance sheet, Sensa calls that opportunity.</p>
+<p><strong>With vs. without.</strong> Without fundamental L/S, prices are set by index flows, momentum and factor models, with
+nobody paid to find the Netflix of 2012 or short the Rexall of 1999 (§9). With it, the market gets price
+discovery, but from funds that are themselves fragile to squeezes and redemptions.</p>
+<p><strong>Applies when / Breaks when.</strong> Works when the variant view is right <em>and</em> a catalyst arrives within the
+fund's holding period. Breaks when the market anchors elsewhere longer than you can wait (Sheffield: stocks
+whose earnings haven't changed since 2022 doubled), when a secular decline masquerades as a dip (Sosnick: Bed
+Bath &amp; Beyond was a falling knife, Disney+ panic was a dip), or when you mistake charisma for analysis.</p>
+<p><strong>Channel example.</strong> <em>Hedge Funds 101 | Long/Short Equity Edition</em> (David Sensa; transcript spelling varies);
+<em>The Real-Life "Billions"</em> (Kat Sosnick); <em>Succeeding as a Contrarian Equity L/S PM</em> (Avery Sheffield, January
+2025); <em>Equity Research 101</em> (Steve Haggerty).</p>
+<p><strong>Counterpoint.</strong> Every case on air is a winner told years later. Sosnick frames the Amazon call as intuition
+(and as a female edge); she also misdates it, saying Amazon listed as the bubble was deflating, when it IPO'd
+in May 1997, years before the peak. Sensa's Netflix math is a back-of-envelope comp to HBO; it worked because
+the business then grew far beyond HBO, not because the comp was precise. Haggerty's claim that hedge funds
+won't hire sell-side analysts with more than 3–4 years is a generalization, as Sheffield's own path shows.</p>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-tiger-sisters-stock-picking.html">tiger sisters stock picking</a> · <a class="wiki" href="doc-notes-wss-technicals-career.html">wss technicals career</a> §4.17 · <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> §3c ·
+<a class="wiki" href="doc-notes-sec-filing-intelligence.html">sec filing intelligence</a> · <a class="wiki" href="doc-canon-canon-klarman-margin-of-safety.html">canon klarman margin of safety</a> · <a class="wiki" href="doc-canon-canon-munger-poor-charlies-almanack.html">canon munger poor charlies almanack</a>.</p>
+<hr />
+<h2 id="9-short-selling-and-squeezes-why-shorts-are-fragile">9 · Short selling and squeezes: why shorts are fragile</h2>
+<p><strong>What it is.</strong> To short a stock you borrow shares (through a prime broker, from a long holder who lends
+them), sell them, and later buy them back to return. You profit if the price falls. The loss is unbounded if it
+rises. A <strong>short squeeze</strong> is when rising prices force shorts to buy, which pushes prices higher, which forces
+more buying.</p>
+<p><strong>How it works.</strong>
+- <strong>The mechanics</strong> (Sensa). The lender can <strong>recall</strong> the shares at any time; you must then buy them back or
+  re-borrow elsewhere. You pay a <strong>borrow fee</strong>: cheap for easy-to-borrow "GC" names, expensive and volatile for
+  crowded shorts (1% today, 5% next week). On a 1% fee on a $100 stock you pay $1 a year, and the bank and the
+  lender split it. You also pay any dividend if you are short on the record date (no daily accrual, unlike bond
+  coupons). Offsetting that, you earn a <strong>rebate</strong>: interest on the cash from the sale. At zero rates it was
+  worth nothing; at 5% it exceeds most borrow costs, which Sensa says made shorting "more lucrative" again.
+- <strong>Shorts as alpha, not hedge.</strong> Sosnick, nicknamed "the Grim Reaper" at Pequot, ran shorts as a profit source
+  because consumer companies have finite life cycles. Her Rexall Sundown short: a one-product vitamin company
+  (glucosamine) rose about 60% when Walmart took the product; the short ran against her and she kept adding
+  until her boss flagged that short losses have no ceiling. She drove to Walmarts in four or five cities and
+  found the back rooms stacked with unsold Rexall boxes: channel stuffing. The stock collapsed two quarters
+  later.
+- <strong>GameStop, January 2021</strong> (Industry S2E6 breakdown). Keith Gill ("Roaring Kitty", a CFA) bought about $53k
+  of calls in 2019 on a turnaround view. Short interest was public and enormous; Melvin Capital had published
+  bearish research. Ryan Cohen joining the board gave Reddit's WallStreetBets a trigger. Between January 11 and
+  27 the stock rose over 1,500%, from about $17 to an intraday print near $500; Gill's stake was reportedly
+  worth $48m; US share volume on January 27 exceeded the October 2008 peak. Melvin lost about half its capital
+  in the month, took a rescue from Citadel and Point72 and closed in 2022; D1 lost about 20%. The hosts add the
+  <strong>gamma squeeze</strong>: dealers who sold calls had to buy stock to stay hedged, compounding the move (§7).
+- <strong>Earlier squeezes.</strong> Volkswagen 2008 (Porsche cornered the float, VW briefly became the world's most valuable
+  company while markets crashed) and the bankrupt energy names of mid-2020 that Tanner's desk lived through.
+- <strong>Short interest no longer measures squeeze risk</strong> (Sheffield). If the shorts are pods with stop-losses, a
+  small adverse move triggers stops, algorithms chase, passive follows, and the stock overshoots far beyond
+  what the short-interest number suggested.
+- <strong>Bond shorts</strong> work through repo and reverse repo, with recall and settlement-fail risk; the Ferrari-trader
+  short (§13) is a fail-to-deliver story. See <a class="wiki" href="doc-notes-wss-technicals-career.html">wss technicals career</a> §4.13.</p>
+<p><strong>Business significance / value.</strong> Shorts finance the market's skepticism: they find frauds and channel
+stuffing, and they lend liquidity. Prime brokers earn borrow fees and lend against the proceeds. Kristen's
+counterpoint to the anti-short mood of 2021: propping up a company with no future misallocates capital that
+could go somewhere productive.</p>
+<p><strong>Forces &amp; impact.</strong> Retail coordination, call buying and dealer hedging made squeezes faster. Pods made them
+more frequent. The result, per Sosnick and Sheffield, is that few fundamental L/S funds still run dedicated
+short books; some run none. Fewer shorts means less price discovery on the downside.</p>
+<p><strong>With vs. without.</strong> Without short selling, overvaluation and fraud persist longer (Rexall, Theranos-style
+stories). With it, the short seller bears unbounded loss and a lender who can end the trade.</p>
+<p><strong>Applies when / Breaks when.</strong> Works when the thesis has a nearer catalyst than the squeeze, borrow is stable,
+and the position is small relative to float. Breaks when float is cornered, borrow is recalled, a retail
+crowd or dealer hedging takes over, or stop-loss-driven shorts all cover at once.</p>
+<p><strong>Channel example.</strong> <em>Hedge Funds 101</em> (borrow, rebate, recall); <em>The Real-Life "Billions"</em> (Rexall);
+<em>Industry S2E6 "Short to the Point of Pain"</em> (GameStop); <em>Options Trading 101</em> (energy squeezes, VW).</p>
+<p><strong>Counterpoint.</strong> The GameStop figures are relayed from press; the intraday high was about $483 on January 28.
+Sosnick's Rexall story is a single anecdote; a field check that shows unsold stock can also mean a seasonal
+build. "Unlimited loss" is true but overstated as a description of how professional shorts are run: position
+sizing and stops cap it, at the cost of being forced out early.</p>
+<p><strong>Links:</strong> <a class="wiki" href="doc-canon-canon-taleb-antifragile.html">canon taleb antifragile</a> · <a class="wiki" href="doc-canon-canon-perrow-normal-accidents.html">canon perrow normal accidents</a> (tight coupling: stops, dealers,
+algos) · <a class="wiki" href="doc-canon-canon-akerlof-market-for-lemons.html">canon akerlof market for lemons</a> · <a class="wiki" href="doc-notes-wss-technicals-career.html">wss technicals career</a> §4.13.</p>
+<hr />
+<h2 id="10-multi-manager-pod-shops-many-small-bets-tight-leashes-big-footprint">10 · Multi-manager pod shops: many small bets, tight leashes, big footprint</h2>
+<p><strong>What it is.</strong> A multi-manager ("pod shop": Millennium, Citadel, Balyasny, Point72) splits capital among dozens
+or hundreds of PMs. Each runs a small, low-beta, risk-limited book. Losers are cut fast, and the firm survives
+any single PM's failure.</p>
+<p><strong>How it works.</strong>
+- <strong>Leverage stacks.</strong> Kristen's sketch: $100 from LPs, about 5x at fund level, about $500 to PMs, then
+  instrument leverage on top. Sensa: $100 of capital, $500 of notional across long and short books.
+- <strong>Factor neutrality</strong> (Sensa). If 60% of your long book is large cap, 60% of your short book must be. If 30%
+  of longs are healthcare, so are 30% of shorts. What remains is meant to be pure stock-specific return.
+- <strong>Stop-losses as capital allocation.</strong> WSJ example: a PM given $1bn who loses $50m (5%) gets "a tap on the
+  shoulder" and maybe a 50% capital cut; another $25m and he may be fired. Goyal on how this tightened: 15
+  years ago a $100m book could lose $10–12m before being unwound; now $4–5m, perhaps $6m after two or three
+  serious conversations.
+- <strong>The Buffett test.</strong> Goyal: Buffett's October 2008 "buy American" call would have been stopped out "55
+  times" at a modern multi-strat. (Pass 1 relayed this second-hand as "five times in the first 12 minutes";
+  the primary source says 55.) The distinction he draws is macro <em>investing</em> versus macro <em>trading</em>: if six
+  rate cuts are priced and you think three, the market can price eight before the Fed delivers three, and half
+  the industry is stopped out first.
+- <strong>Fund-level risk.</strong> Committees set limits by asset class and curve bucket (5y, 10y, 30y; euro, sterling,
+  yuan) above individual PM limits. A <strong>management book</strong> hedges crowding: if eight of ten pods are long
+  10-year Treasuries, the risk committee buys options or a correlated hedge at fund level. Some funds require
+  PMs to keep risk deployed on average through the year; one asked Goyal to make 8% a month.
+- <strong>The center book.</strong> Sensa: if a PM is known to be good at trading Procter &amp; Gamble, the platform's
+  algorithm can buy alongside her, "a box behind her", which amplifies every move.
+- <strong>Roles.</strong> Analyst, sub-PM, junior PM, associate PM; who takes risk varies by fund. Goyal: perhaps four of
+  60 pods make the outsized money.
+- <strong>Origins.</strong> Citadel nearly failed in 2008 and is credited with surviving through term financing and
+  two-year capital locks. Jen calls the pod shop "the Billy Beane of trading" (§20).</p>
+<p><strong>Business significance / value.</strong> If each PM's Sharpe is modest and PMs are uncorrelated, portfolio Sharpe
+rises with roughly the square root of the number of independent bets. That is how Millennium reports about 2.6
+while individual PMs are ordinary. The firm captures that value; the PM bears the career risk.</p>
+<p><strong>Forces &amp; impact.</strong>
+- Strong 2022 returns brought huge 2023–24 inflows (Sensa). Their footprint changed the market: "when
+  platforms sneeze, everybody gets the coronavirus", in Sensa's paraphrased line. A disappointing Tesla print
+  sends all of tech swinging.
+- Sheffield thinks pods, more than passive, are the biggest post-COVID change: their PMs are valuation-agnostic
+  (long at 100, short at 99), levered and stopped out together, so squeezes and air pockets follow (§9).
+- The talent war pushes PM pay, and so pass-through costs to LPs, sharply higher.</p>
+<p><strong>With vs. without.</strong> Without tight leashes, one PM's conviction trade can sink the fund (Situational Awareness
+was effectively one book at 4x, §12). With them, the firm cannot hold long-horizon, high-volatility theses: it
+gives up Buffett-style returns to buy survival.</p>
+<p><strong>Applies when / Breaks when.</strong> Works when PM returns are truly independent and markets liquid enough to cut
+fast. Breaks when every pod is in the same trade and stops trigger together; the stop-loss then becomes the
+contagion mechanism.</p>
+<p><strong>Channel example.</strong> <em>Hedge Funds 101</em> (factor rules); <em>Global Macro PM</em> (Goyal: stops, risk buckets, management
+book); <em>Contrarian L/S PM</em> (Sheffield); <em>Apollo's Quest to Double AUM</em> (Millennium stops).</p>
+<p><strong>Counterpoint.</strong> The hosts present the pod shop as risk management perfected. Its stability depends on leverage
+that is only safe while its trades stay uncrowded, and the same structure that saves the firm fires the people.
+If the best long-term trade of 2008 is unholdable, the format selects for short-horizon edge, not truth.</p>
+<p><strong>Links:</strong> <code>quant-backtesting/research/citadel.md</code> · <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> §5 ·
+<a class="wiki" href="doc-canon-canon-taleb-antifragile.html">canon taleb antifragile</a> · <a class="wiki" href="doc-canon-canon-perrow-normal-accidents.html">canon perrow normal accidents</a>.</p>
+<hr />
+<h2 id="11-quant-investing-systematic-judgment-and-its-failure-modes">11 · Quant investing: systematic judgment and its failure modes</h2>
+<p><strong>What it is.</strong> Quant investing uses mathematical models to find opportunities, build portfolios and control
+risk, with little day-to-day human discretion: humans build the models, the models trade. Mintz's case for it:
+humans are emotional and biased in the moment, models apply the same expertise across tens of thousands of
+stocks every day.</p>
+<p><strong>How it works.</strong>
+- <strong>Types</strong> (Mintz): high-frequency (capturing tiny price changes in microseconds), trend-following, and
+  <strong>fundamental factor investing</strong>, PGIM's style: a systematic version of what a discretionary manager does,
+  buying good growth and high quality at a reasonable price. Muller's PDT does <strong>statistical arbitrage</strong>:
+  forecasts over horizons from a minute to a year using any data, careful controls against overfitting, a
+  model of its own market impact, and optimization for "dollars made per unit of risk".
+- <strong>Factors.</strong> A factor is a scored characteristic compared across companies. A P/E relative to peers or
+  history was "quant 101 thirty years ago". Today PGIM's innovation factor runs natural-language processing
+  over news, 10-Ks and earnings transcripts, cleans the data and converts it to a score.
+- <strong>Theory first.</strong> PGIM wants a fundamental reason a signal works, because a backtest alone doesn't say why it
+  should persist. Each new factor must have a realistic decay rate, not be crowded, and not double-count an
+  existing factor; adding one dilutes the others' weights. A biweekly research meeting presses the researcher,
+  and three people decide.
+- <strong>What the quant does all day.</strong> Juniors scrub data, watch cash flows to stay fully invested, and run the
+  stock-selection and portfolio-construction models for the PM. Research juniors build factors with seniors.
+- <strong>Clients and use.</strong> Quant equity sells consistency: "we're not going to surprise on the upside or the
+  downside" (Mintz). It complements concentrated managers: PGIM built a pension an emerging-markets-ex-LatAm
+  portfolio around its favorite LatAm manager. Some clients put all their equity in quant to spend their risk
+  budget elsewhere (private credit, real estate).
+- <strong>The emotional edge</strong> (Muller). In a systematic fund the only decision is whether to trust or change the
+  model. He still feels overconfidence and fear after 33 years; he just doesn't act on them. His poker lesson:
+  recognize when you are "on tilt" and walk away.</p>
+<p><strong>Business significance / value.</strong> Quant firms capture scale economies in research: one model covers 40,000
+stocks. The best (RenTech, PDT) end up running their own money. Their staff are physicists, mathematicians and
+computer scientists in what Muller calls a research lab; Kapnick notes her climate-science PhD cohort went to
+Millennium, Citadel and D.E. Shaw. The culture problem is getting brilliant people to collaborate.</p>
+<p><strong>Forces &amp; impact.</strong> Quant strategies scale, so success attracts capital and crowding.
+- <strong>The August 2007 quant quake</strong> (Muller). After years of success everyone piled into similar quant trades with
+  rising leverage. One overlevered firm began liquidating as credit stress built; relative valuations "went
+  crazy" while the index barely moved, so non-quants didn't notice. Several funds blew up; PDT "lost our entire
+  year in a week" and recovered to finish the year fine.
+- <strong>The quant winter, 2018–20</strong> (Mintz). Many models leaned on value (cheapness). Value underperformed "worse
+  than we thought it could get" for years; PGIM cut its value weight and strengthened quality and growth.
+- <strong>Shocks</strong> like Liberation Day (April 2025) or COVID detach prices from fundamentals; factor models lag, then
+  recover as data reflects reality. The discipline is not to "freak out".
+- Generative AI: PGIM uses NLP in its models but not generative AI, because it wants to know <em>why</em> it owns a
+  stock; it uses AI for code and summaries.</p>
+<p><strong>With vs. without.</strong> Without quants, markets lose cheap, emotionless liquidity and broad price discipline
+across thousands of small names. With them, crowding creates a hidden common factor that unwinds violently,
+invisible at the index level.</p>
+<p><strong>Applies when / Breaks when.</strong> Works when signals have an economic reason, are not crowded, and the regime
+resembles the training data. Breaks in crowded deleveraging (2007), long regime shifts (value 2018–20) and
+narrative shocks.</p>
+<p><strong>Channel example.</strong> <em>Quant Investing 101 feat. PGIM's Stacie Mintz</em> (October 2025); <em>Pete Muller on Building…
+PDT Partners</em>; short <em>Highest Paid Hedge Fund Manager… You CAN Beat the Market</em>; <em>Sarah Kapnick</em>.</p>
+<p><strong>Counterpoint.</strong> Mintz is selling a product designed to be complementary and low-surprise; "theory first" is
+also good marketing against black-box rivals. Muller's account of 2007 and 2008 is the founder's; the spin-out
+"incredibly amicable" story omits what he calls the most painful negotiation of his life. For the statistics of
+whether a backtested edge is real, do not rely on the channel: use <code>quant-backtesting/</code>.</p>
+<p><strong>Links:</strong> <code>quant-backtesting/research/lopez-de-prado.md</code> · <code>…/harvey-liu-zhu-backtesting-pitfalls.md</code> ·
+<code>…/academic-frameworks-multiple-testing.md</code> · <code>…/factor-models-regime-detection.md</code> · <code>…/aqr-capital.md</code> ·
+<code>…/de-shaw.md</code> · <code>…/renaissance-technologies.md</code> · <a class="wiki" href="doc-canon-canon-mauboussin-success-equation.html">canon mauboussin success equation</a>.</p>
+<hr />
+<h2 id="12-leverage-margin-and-forced-selling-why-being-right-is-not-enough">12 · Leverage, margin and forced selling: why being right is not enough</h2>
+<p><strong>What it is.</strong> Leverage means controlling more exposure than your equity, using borrowed money, borrowed
+securities or derivatives. The lender, usually a <strong>prime broker</strong>, marks positions daily and demands more
+collateral (<strong>margin</strong>) when they fall. If you cannot post it, you sell, and selling a large book pushes prices
+against you.</p>
+<p><strong>How it works.</strong>
+- <strong>Prime broker guardrails</strong> (Sensa): exposure limits, single-name and sector thresholds, all designed against
+  an Archegos, the family office that hid leverage in swaps across several banks, none of which saw the whole
+  book. The banks lost billions.
+- <strong>Situational Awareness, as the channel reconstructs it</strong> (July 2026):
+  - Leopold Aschenbrenner launched the fund in 2024 with about $225m from Stripe's founders and others.
+  - Leverage about <strong>4:1</strong>. Reported "AUM" peaked around $45bn on July 1 and fell to about $10bn by month-end;
+    that figure is gross exposure, not money raised.
+  - Book: long energy, neoclouds and data centers, memory (SK Hynix, SanDisk); short logic chips (Nvidia, AMD,
+    Qualcomm) and application software (Workday, Adobe, Intuit, Salesforce).
+  - <strong>Both legs lost at once</strong>: AI infrastructure fell up to about 50% while software held up.
+  - Margin calls followed; Jane Street and Millennium passed; <strong>Citadel bought the public book</strong> on July 30.
+  - Spillover: SK Hynix and Samsung's memory unit are over half the KOSPI; about 1.2m Korean accounts got margin
+    calls. The fund was reportedly still up about 80% on the year.
+- <strong>Comparables:</strong> LTCM (over 25:1, right but margin-called before convergence), Lehman (about 32:1), FTX/Alameda.
+  The 2007 quant quake (§11) and GameStop (§9) are the same mechanism in other markets.
+- <strong>Leverage norms:</strong> 4–5:1 on single stocks is large; 20–50:1 on Treasuries is routine because they move far
+  less (§13).</p>
+<p><strong>Business significance / value.</strong> Prime brokerage lends cash and securities against collateral. The forced
+seller's loss is the patient buyer's gain: Citadel buying a distressed book at a discount is a
+liquidity-provision business.</p>
+<p><strong>Forces &amp; impact.</strong> Rising volatility raises margin, which forces sales, which raises volatility. Concentrated
+books in small markets turn one fund's deleveraging into a national event. Once a cause can be named ("just one
+fund blew up"), sentiment can snap back fast.</p>
+<p><strong>With vs. without.</strong> Without leverage, Situational Awareness would have had a bad month and kept its thesis.
+With it, timing mattered more than truth: the market can stay irrational longer than you can stay solvent.</p>
+<p><strong>Applies when / Breaks when.</strong> Works while volatility is low and funding stable. Breaks when volatility jumps,
+correlations go to 1 and the lender, who ranks ahead of you, decides your holding period.</p>
+<p><strong>Channel example.</strong> <em>The Biggest Hedge Fund Blow-Up of 2026 EXPLAINED: Situational Awareness</em> plus two shorts;
+<em>Hedge Funds 101</em> (Archegos).</p>
+<p><strong>Counterpoint.</strong> The two shorts disagree on details; the figures are press reports, not filings. The ad hominem
+jokes about the founder's age don't survive the hosts' own concession that the thesis was +80% YTD and the
+failure was risk management. "Being early is the same as being wrong" is true for levered capital and false for
+unlevered capital, and that distinction is the whole lesson.</p>
+<p><strong>Links:</strong> <a class="wiki" href="doc-canon-canon-perrow-normal-accidents.html">canon perrow normal accidents</a> · <a class="wiki" href="doc-canon-canon-taleb-black-swan.html">canon taleb black swan</a> · <a class="wiki" href="doc-canon-canon-klarman-margin-of-safety.html">canon klarman margin of safety</a> ·
+<code>acumen/</code> (right thesis, wrong sizing).</p>
+<hr />
+<h2 id="13-duration-and-dv01-converting-basis-points-into-dollars">13 · Duration and DV01: converting basis points into dollars</h2>
+<p><strong>What it is.</strong> A bond's price moves opposite to its yield, and longer bonds move more. <strong>Duration</strong> is the
+conversion factor; <strong>DV01</strong> is the dollar P&amp;L for a one-basis-point move. Professionals size in DV01, not
+notional. The rates sibling teaches the mechanics in depth (<a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> §2); this section keeps the
+fund-seat examples.</p>
+<p><strong>How it works.</strong>
+- Jen's Iran-war example: $100m of 2-years (duration ≈ 1.8, +60bp) loses about <strong>$1.08m</strong>; $100m of 10-years
+  (duration ≈ 8, +50bp) loses <strong>$4m</strong>. The smaller move lost almost 4x more.
+- Sizing by DV01 (Citadel episode): to make $1m on a 10bp move in 2-years you need $100k/bp, about <strong>$555m of
+  2-year notes</strong>, more than half a $1bn fund. So it is financed in repo (§14): this is where 20:1 comes from.
+- <strong>Futures DV01</strong> (short, worked by Jen). A futures contract has no coupon; its DV01 comes from the
+  cheapest-to-deliver bond, adjusted by a conversion factor. With an illustrative CTD DV01 of 6.6 and a
+  conversion factor of 0.99, futures DV01 ≈ 6.53 per $100 face. Someone sold <strong>78,000</strong> 10-year (TY)
+  contracts at $100k face each: 6.534 ÷ 10,000 × 78,000 × $100,000 ≈ <strong>$5.1m per basis point</strong>. When yields
+  rose 5–10bp that day, the seller was up $25–50m, if it wasn't a hedge (perhaps against heavy call open
+  interest).
+- <strong>What DV01 costs when a hedge fails</strong> (the "Ferrari-loving trader" short). A client sold about $2.6bn of long
+  bonds he didn't own; dealers bought, hedged by going short, and waited for delivery that never came. COVID
+  lockdowns sparked a rally instead of a sell-off. Jen's math: DV01 about $4.2m × a 50bp rally ≈ <strong>$210m</strong>; the
+  street's reported loss was about $250m.</p>
+<p><strong>Business significance / value.</strong> DV01 is the common currency across bonds, swaps and futures: it lets a desk
+add up risk, hedge and set limits.</p>
+<p><strong>Forces &amp; impact.</strong> Long-end volatility (30-year yields above 5% for the longest stretch since 2007) and war
+headlines hurt long-duration holders most, which is why macro funds blow up on geopolitics.</p>
+<p><strong>With vs. without.</strong> Without DV01, 20:1 on 2-years looks reckless and 4:1 on 10-years looks prudent, when they
+are risk-equivalent.</p>
+<p><strong>Applies when / Breaks when.</strong> First-order approximation; breaks for large moves (convexity), callables and
+mortgages, and curve twists.</p>
+<p><strong>Channel example.</strong> Shorts <em>Duration &amp; DV01</em>, <em>How to Calculate Treasury Futures DV01</em>, <em>Largest 10 Year Treasury
+Futures Block Trade EVER?</em>, <em>Ferrari Loving Trader Cost Wall Street a Quarter Billion</em>; <em>The Skinny on Citadel
+White Label S&amp;T</em>.</p>
+<p><strong>Counterpoint.</strong> Jen's futures formula multiplies by the conversion factor; the usual convention divides the
+CTD's DV01 by it. With a factor near 0.99 the difference is about 2%. The "$100m of 10-years at DV01 7.5 =
+$775,000" line in the short is a garble for $75,000. The Ferrari short gives yields of "3.72% to 3.2%" for
+February–March 2020; long-bond yields were nearer 2% falling to about 1%, though the 50bp × DV01 arithmetic
+stands.</p>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> §2, §11 · <a class="wiki" href="doc-learn-unit-06-whats-a-business-worth.html">unit 06 whats a business worth</a> · <code>quant-backtesting/research/bloomberg-tradeweb.md</code>.</p>
+<hr />
+<h2 id="14-repo-bank-capital-and-the-non-bank-dealer">14 · Repo, bank capital and the non-bank dealer</h2>
+<p><strong>What it is.</strong> <strong>Repo</strong> is a collateralized loan: buy bonds, lend them to a bank as collateral, borrow cash to
+pay for them. Banks fund this from a balance sheet that must be backed by capital. When that capital is
+expensive, dealing and lending migrate outside bank regulation. <a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> §10 covers repo, SOFR and
+swap mechanics.</p>
+<p><strong>How it works.</strong>
+- A $1bn fund wanting $555m of 2-years (§13) repos them; that is how hedge funds are levered.
+- Basel III "endgame" raises the capital charge on repo, inventory and derivatives, so dealers ration balance
+  sheet; liquidity thins, spreads widen.
+- <strong>Citadel Securities</strong> is a broker-dealer and market maker outside bank capital rules. Bloomberg reported it
+  might offer <strong>white-label S&amp;T to banks</strong>, letting them outsource dealing without the balance-sheet charge,
+  mirroring banks outsourcing lending to private credit. In the basis-trade episode Jen notes Citadel is both
+  dealer and hedge fund: "the basis trader and the prime broker".
+- <strong>The same displacement in other markets.</strong> ETF market making went to Jane Street, Citadel and Virtu because
+  it became too balance-sheet intensive for banks (§4). Equity options market making went the same way (§7).
+  Bank prop trading moved to hedge funds after the Volcker rule (Goyal, Muller; <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> §5).
+  Credit desks shifted from principal risk to agency matching (<a class="wiki" href="doc-notes-wss-credit-distressed.html">wss credit distressed</a> §4).
+- <strong>Electronification:</strong> clients now send RFQs to about ten dealers at once, compressing spreads and sales
+  headcount. Equity commissions fell from about 6 cents a share (Adami, Goldman late 1990s) to fractions of a
+  cent. Adami's explanation for why clients ever paid 6 cents: access to the IPO calendar, research, and the
+  dealer's willingness to take the occasional big block ("bid wanted 5 million GE").</p>
+<p><strong>Business significance / value.</strong> Balance sheet is the scarce input of market making. Whoever has cheap balance
+sheet captures spread: banks before 2008, non-bank market makers and private credit now. A cost imposed on
+incumbents is a subsidy to their unregulated substitutes.</p>
+<p><strong>Forces &amp; impact.</strong> Regulation aimed at 2008 pushes leverage into shadow banking. Burton's traffic analogy:
+adding highway lanes floods someone else's basement. The policy lever in the other direction is SLR relief,
+which would make it cheaper for banks to hold Treasuries (§15).</p>
+<p><strong>With vs. without.</strong> With bank capital rules, banks are safer, markets less liquid and risk moves to non-banks.
+Without them, 2008-style bank leverage. Neither removes the risk; they choose where it sits.</p>
+<p><strong>Applies when / Breaks when.</strong> Displacement holds while the activity is profitable and an unregulated vehicle
+exists. It breaks when regulators follow the activity (the SEC's Treasury central-clearing mandate).</p>
+<p><strong>Channel example.</strong> <em>The Skinny on Citadel White Label Sales and Trading</em>; <em>Fortress Chief Strategist</em>; <em>ETFs
+101</em>; <em>Commodities feat. Guy Adami</em>.</p>
+<p><strong>Counterpoint.</strong> This is the hosts' strongest bias; both are ex-bank and resent post-2008 rules. Kristen pushes
+back on air that regulation "on the whole" makes things safer. The white-label rumor is one Bloomberg report.</p>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> · <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> §4, §5 · <a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> §10 ·
+<a class="wiki" href="doc-notes-wss-credit-distressed.html">wss credit distressed</a> §4 · <a class="wiki" href="doc-canon-canon-meadows-thinking-in-systems.html">canon meadows thinking in systems</a>.</p>
+<hr />
+<h2 id="15-the-treasury-basis-trade-short-volatility-dressed-as-arbitrage">15 · The Treasury basis trade: short volatility dressed as arbitrage</h2>
+<p><strong>What it is.</strong> Treasury futures structurally trade rich to the cash bonds deliverable into them. A fund buys the
+cash bonds (repo-financed), sells the futures, and waits for the two to converge at delivery. It is close to
+riskless <em>if held to the end</em> and <strong>implicitly short volatility</strong>, because anything that widens the gap first
+creates mark-to-market losses. <a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> §11 teaches the contract and CTD mechanics; this section is
+the fund's view.</p>
+<p><strong>How it works.</strong>
+- <strong>Why futures are rich</strong> (Jen). There are three ways to get $100m of 10-year exposure: spend $100m on bonds
+  (most balance sheet), finance bonds in repo (put up, say, $10m and borrow $90m), or use derivatives (futures
+  on small exchange margin, or a receive-fixed swap with no cash up front). Real-money investors and banks
+  prefer the derivatives because they use least balance sheet, so futures and swaps trade rich and cash bonds
+  cheap. That is also why swap spreads are negative.
+- <strong>The trade.</strong> The gap is a couple of basis points, so it is levered about 20:1 "or significantly more" (Matt
+  Levine's podcast: up to 100x). Carry example: a 5% coupon financed at 4% repo earns 1%, plus roll-down; a repo
+  spike to 6–10% turns it negative.
+- <strong>The failure path.</strong> A shock cheapens cash Treasuries against futures. The cash leg marks down, amplified by
+  leverage; if futures rally, margin is due on the short too. The PM stops out and dumps cash bonds into a
+  falling market.
+- <strong>April 2025.</strong> Apollo's Torsten Slok estimated the trade at about <strong>$800bn</strong> (from hedge fund futures shorts
+  and prime-brokerage repo). Reported damage that week: one PM stopped out for about $140m, another $30m, a
+  rumored $400m; Jen had worked with all three. Against $36tn of debt and a $39bn 10-year auction, that was not
+  systemic.
+- <strong>Jen's verdict: symptom, not cause.</strong> The cause was a repricing of US assets after the tariffs, with no
+  flight to quality into Treasuries. Her evidence: swap spreads collapsed (30-year near −100bp), meaning
+  investors preferred derivatives to cash Treasuries across the board, not just that one crowded trade unwound.
+- <strong>Fixes.</strong> The biggest lever is SLR relief to make bank Treasury holdings cheaper; others are QE, direct Fed
+  bidding at auctions (never done) and repo facilities. Rate cuts matter least, "like filing your nails to lose
+  ten pounds".
+- Goyal: RV fixed income, including the basis, is a "bread-and-butter" business at multi-strats, run straight
+  through COVID.</p>
+<p><strong>Business significance / value.</strong> Basis traders supply balance sheet to the Treasury market: asset managers
+who want duration buy futures, basis funds hold the bonds. Useful liquidity, paid for by a carry spread, that
+can vanish when needed.</p>
+<p><strong>Forces &amp; impact.</strong> Rising Treasury supply and constrained dealers grow the trade. Its size makes it systemic.
+Public marks plus redemption rights turn temporary losses into realized ones.</p>
+<p><strong>With vs. without.</strong> Without basis traders, futures trade persistently rich and funding the deficit costs more.
+With them, the Treasury market has a large, levered, crowded weak point.</p>
+<p><strong>Applies when / Breaks when.</strong> Works in calm funding markets. Breaks in a dash for cash (March 2020) or a
+safe-haven break (April 2025), when repo haircuts rise and everyone exits together.</p>
+<p><strong>Channel example.</strong> <em>Bond Market Chaos: Unpacking the Basis Trade Blowup Theory. Cause… or Convenient Excuse?</em>
+(April 2025); short <em>The Most Profitable Trade on Wall Street That Keeps Blowing Up Hedge Funds</em>.</p>
+<p><strong>Counterpoint.</strong> Calling it arbitrage understates the tail: a trade profitable until a liquidity crisis is
+selling insurance. Jen's "symptom" view rests on one week's reported losses; she concedes such damage can take
+time to surface. Slok's $800bn is an estimate from positioning data, not a measured book.</p>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> §10, §11, §16 · §6 (high Sharpe, hidden tail) · §12 · <a class="wiki" href="doc-canon-canon-taleb-black-swan.html">canon taleb black swan</a>.</p>
+<hr />
+<h2 id="16-reading-the-rates-market-implied-fed-odds-qe-vs-not-qe-and-the-10-year">16 · Reading the rates market: implied Fed odds, QE vs. not-QE, and the 10-year</h2>
+<p><strong>What it is.</strong> Market prices encode forecasts. Fed funds futures imply the odds of a rate change; balance-sheet
+operations are often called "QE" when they are not; Burton anchors everything on the 10-year. The full treatment
+is <a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> §4 and §7; this keeps the trader's angle.</p>
+<p><strong>How it works.</strong>
+- <strong>Implied hike odds</strong> (short <em>Will the Fed Hike Rates?</em>). Effective rate 3.63%; the September contract at 96.29
+  implies 3.71% for the month; with the meeting on day 16 of 30, (30 × 3.71 − 16 × 3.63) / 14 = <strong>3.80%</strong>, so
+  (3.80 − 3.63) / 0.25 = <strong>68% odds of a hike</strong>.
+- <strong>Not QE.</strong> The Fed rolling about $71bn of $76bn maturing debt is reinvestment; Treasury buybacks reshuffle debt.
+  QE means expanding the balance sheet with new reserves.
+- <strong>The 10-year as master variable</strong> (Burton): it embeds inflation expectations and prices mortgages and DCF
+  discount rates. Adami's curve warning (March 2024): the record inversion is not what hurts, the re-steepening
+  is.
+- <strong>Trading the gap between priced and expected</strong> (Goyal, early 2024): six cuts priced for 2024; if you think
+  three or four, express it in Fed funds futures, 2-year SOFR, 2-year Treasuries or options, whichever is most
+  mispriced. By airing, three or four were priced.</p>
+<p><strong>Business significance / value.</strong> Implied probabilities turn macro noise into numbers you can size, matching
+<code>acumen/</code>'s probabilistic discipline.</p>
+<p><strong>Forces &amp; impact.</strong> Record open interest around the July 2026 meeting; Citadel Securities' hike call moved odds
+from about 20% to 40%. Adami: with $9–10tn of debt rolling in 2024 and a BoJ that hiked yet saw the yen weaken,
+foreign selling could push US yields up even with a dovish Fed, because the Fed controls only the front end.</p>
+<p><strong>With vs. without.</strong> Without futures-implied odds, "the market expects a hike" is opinion; with them it is a
+number that can be wrong in a measurable way.</p>
+<p><strong>Applies when / Breaks when.</strong> The odds math assumes a 25bp increment and no risk premium.</p>
+<p><strong>Channel example.</strong> Shorts <em>Will the Fed Hike Rates?</em>, <em>Did the Fed Secretly Start QE Again?</em>, <em>Is the Treasury
+Secretly Doing QE?</em>; <em>$53 Billion Hedge Fund Chief Strategist</em>; <em>Global Macro PM</em>; <em>Commodities feat. Guy Adami</em>.</p>
+<p><strong>Counterpoint.</strong> Burton's aside that Black-Litterman is "an adjustment to Black-Scholes" is wrong (it is a
+portfolio-allocation model). Adami's "rates go higher, not lower" view is a pundit's call; check it against what
+happened.</p>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> §4, §7, §17 · <a class="wiki" href="doc-learn-unit-06-whats-a-business-worth.html">unit 06 whats a business worth</a> · <a class="wiki" href="doc-canon-canon-tetlock-superforecasting.html">canon tetlock superforecasting</a>.</p>
+<hr />
+<h2 id="17-global-macro-trading-countries-and-the-soros-template">17 · Global macro: trading countries, and the Soros template</h2>
+<p><strong>What it is.</strong> Global macro funds take positions on whole economies through rates, currencies, equity indices
+and commodities. The classic opportunity is a policy the economy cannot sustain, such as a currency <strong>peg</strong>:
+either nothing happens or the currency drops sharply, an <strong>asymmetric</strong> payoff.</p>
+<p><strong>How it works.</strong>
+- <strong>The modern process</strong> (Goyal, Citadel/BlueCrest/Balyasny). For each country: where is it in the cycle; is the
+  curve priced right; does the fiscal position make the long end safe; is the currency cheap on growth,
+  inflation and rate models; is the index fairly valued. Then choose the expression with the best relative value
+  (§16). Since the 2011 euro crisis, geopolitics has become a core input.
+- <strong>What changed.</strong> "Want to be the next George Soros" now gets you laughed out of an interview: macro funds add
+  momentum, relative value and small drawdown limits, so <em>timing</em> matters as much as the view (§10). The skill
+  Goyal calls macro's biggest alpha is scaling risk up when you have a view and down when you don't.
+- <strong>The Soros trade, 1992</strong> (told twice on the channel):
+  1. The ERM (1979) pegged European currencies while each kept its own central bank. The UK joined in 1990,
+     already slipping into recession.
+  2. German reunification pulled capital into Deutsche marks; the Bundesbank refused to cut rates.
+  3. A roughly 30-year-old analyst (Scott Bessent, now Treasury Secretary) flagged it; Soros and Stanley
+     Druckenmiller built a short reported at <strong>£15bn</strong>. The peg capped the downside.
+  4. On <strong>September 16, 1992</strong>, the UK hiked from 10% to 12%, then announced another 300bp, and bought sterling in
+     $300m–$1bn clips from about $40bn of reserves.
+  5. The UK left the ERM; sterling fell sharply. The fund made about $1bn on the trade, likely more across other
+     expressions. The world learned a month later from a Fiat CEO quip and a Daily Mail front page.</p>
+<p><strong>Business significance / value.</strong> Macro funds profit when policy and economics diverge; the social value argued
+is faster price discovery. The cost fell on UK reserves and credibility. The hosts' link to now: Bessent
+understands better than anyone how central-bank credibility is spent.</p>
+<p><strong>Forces &amp; impact.</strong> Capital mobility, divergent growth and policy rigidity drove 1992. Goyal's 2024 macro view
+shows the same toolkit applied to China (no large stimulus after COVID, unlike 2009) and to US savings that
+lasted longer than expected. Second-order effects of 1992: inflation targeting in the UK and the case for full
+monetary union rather than half-pegs.</p>
+<p><strong>With vs. without.</strong> Without speculators, the UK might have defended longer at higher social cost. Without the
+peg, there is no one-way bet.</p>
+<p><strong>Applies when / Breaks when.</strong> Anti-peg trades work when reserves are finite and the economy cannot bear high
+rates. They fail against a credible defender with deep reserves or capital controls, where the short just pays
+carry. Modern macro breaks on timing: the right trade at the wrong time is the wrong trade.</p>
+<p><strong>Channel example.</strong> <em>Portfolio Manager at World's Top Hedge Funds (and 1st Blind Trader) Breaks Down Global Macro
+Trading</em> (Ashish Goyal, early 2024; pass 1 spelled him "Goel"); <em>The Craziest Hedge Fund Trade of All Time</em>;
+<em>Industry S2E8</em> (which adds Rob Johnson executing trades from his car phone).</p>
+<p><strong>Counterpoint.</strong> The Soros figures are folklore-grade: the position is often cited at about $10bn, the second
+hike never took effect, and sterling's one-day fall against the DM was smaller than 15%. Goyal's "S&amp;P is the
+wrong benchmark for hedge funds" is true and convenient for a hedge fund PM.</p>
+<p><strong>Links:</strong> <a class="wiki" href="doc-canon-canon-schelling-strategy-of-conflict.html">canon schelling strategy of conflict</a> · <a class="wiki" href="doc-canon-canon-neustadt-may-thinking-in-time.html">canon neustadt may thinking in time</a> ·
+<a class="wiki" href="doc-canon-canon-allison-essence-of-decision.html">canon allison essence of decision</a> · <a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> §14, §15.</p>
+<hr />
+<h2 id="18-commodities-the-marginal-barrel-gold-as-anti-fiat-and-the-pit-as-a-market">18 · Commodities: the marginal barrel, gold as anti-fiat, and the pit as a market</h2>
+<p><strong>What it is.</strong> Commodities are physical goods (oil, gas, metals, grains) traded both as cargoes and as futures.
+Prices are set by the marginal unit, and traders profit from the spreads between grades, places and dates.
+Gold is the exception: a monetary asset more than an industrial one.</p>
+<p><strong>How it works.</strong>
+- <strong>Physical oil</strong> (Lascaratos, pass 1). WTI usually trades below Brent; the world burns about 100m barrels a day
+  with 4–5m spare; shale needs about $50; Hormuz carries about 20% of supply. VLCC rates jumped from $30–40k to
+  about $200k a day when the Iran war began. <strong>Contango</strong> (futures above spot) pays storage; <strong>backwardation</strong>
+  (spot above futures) says scarcity now, calm later; oil was about $10 backwardated. The trading house is
+  "physically informed, derivatives enhanced", with about four derivative trades per physical cargo.
+- <strong>Gold</strong> (Adami, March 2024, gold at an all-time high). Central banks have been quietly adding reserves, which
+  he reads as "hedging their own ineptitude". Gold hedges inflation, but only when the Fed isn't credibly fighting
+  it (it lagged in 2022); it also hedges geopolitics and fiat money. Bitcoin is a bet against central bankers;
+  its first top (late 2021) coincided with the Fed abandoning zero rates.
+- <strong>Relative value across metals.</strong> The gold/silver ratio historically mean-reverted, but silver sat about 50%
+  below its high while gold made new ones; silver lost industrial demand when film (Kodak) died. Copper is a
+  construction proxy; a copper breakout contradicted the Fed's "inflation slain" story.
+- <strong>The pit.</strong> Trading Places' NYMEX scene was accurate. Floor traders watched futures; upstairs desks traded the
+  futures-vs-cash arbitrage with clients. <strong>Self-policing</strong>: a local who reneged on a $15 trade that closed at $14
+  was let off once, then nobody in the ring would trade with him again. Electronic trading cut NYSE floor
+  headcount to a small fraction of the 1980s level.
+- <strong>Commodities desks make two-way markets</strong>: a client like Sir James Goldsmith would never say whether he was
+  buying or selling, unlike equity agency orders.
+- <strong>Weather as an input.</strong> Merrill's Houston energy desk had two ex-National Weather Service meteorologists to get
+  models faster (Tanner). Kapnick built seasonal winter forecasts that predict gas demand.</p>
+<p><strong>Business significance / value.</strong> The trading house earns by knowing where the barrel is needed and getting it
+there; now that drones count inventories, edge has moved to structure and risk-taking. Gold and copper act as
+the market's independent check on central-bank narratives.</p>
+<p><strong>Forces &amp; impact.</strong> Geopolitics moves the marginal barrel and shipping together; sanctions created a "dark
+fleet". Central-bank gold buying reflects distrust of reserve currencies.</p>
+<p><strong>With vs. without.</strong> Without traders, refiners depend on single producers. Without spread markets, there is no
+signal to store, ship or switch fuels. Without the floor, markets are more efficient and lose the reputational
+policing and the apprenticeship Adami values.</p>
+<p><strong>Applies when / Breaks when.</strong> Relative value works while spread relationships hold; breaks when flows stop
+(insurance cancelled), when futures force delivery you can't take (negative WTI, April 2020), or when ratios stop
+mean-reverting because the underlying demand changed (silver).</p>
+<p><strong>Channel example.</strong> <em>"Citadel of Oil &amp; Gas Shipping and Trading" CEO</em>; <em>What YOU Must Know About Commodities feat.
+Guy Adami</em>; <em>Options Trading 101</em> (Houston rotation); <em>Sarah Kapnick</em>.</p>
+<p><strong>Counterpoint.</strong> Several Lascaratos figures are garbled (Hormuz is about 20m bpd; "$67 per barrel for the ship"
+should be about $4). Adami's "cumulative inflation of almost 20% under Biden" is roughly right on CPI but offered
+as politics. The gold-as-ineptitude-hedge story is a narrative; central-bank buying also reflects sanctions risk
+on dollar reserves after 2022.</p>
+<p><strong>Links:</strong> <a class="wiki" href="doc-canon-canon-mankiw-principles-of-economics.html">canon mankiw principles of economics</a> · <a class="wiki" href="doc-canon-canon-goldratt-the-goal.html">canon goldratt the goal</a> · <a class="wiki" href="doc-canon-canon-taleb-antifragile.html">canon taleb antifragile</a> ·
+Course 06 (supply chain).</p>
+<hr />
+<h2 id="19-capital-raising-and-the-allocators-seat">19 · Capital raising and the allocator's seat</h2>
+<p><strong>What it is.</strong> Hedge funds get capital from <strong>allocators</strong> (pensions, endowments, sovereign funds, insurers,
+family offices, wealth platforms) through IR teams, placement agents or capital introduction. The allocator
+underwrites the manager; IR translates between PMs and money.</p>
+<p><strong>How it works.</strong>
+- <strong>IR is a revenue seat</strong> (Bauman): know the target's portfolio, write their memo, show the 4–5 things that
+  differentiate you and who they will stack you against, and above all a <strong>repeatable process</strong>.
+- <strong>The lifecycle:</strong> months to years (one investor took seven); capital-intro conferences (iConnections: about
+  19,000 meetings); then operational due diligence, risk meetings and consultant gatekeepers.
+- <strong>No deadline</strong>: hedge funds are evergreen, so urgency has to be manufactured. <strong>Diversify the investor base</strong>
+  by size, type and region, and call investors <em>before</em> bad news.
+- <strong>Lockups as a negotiated asset</strong> (Muller, §1): a track record buys a seven-year lock at top fees.
+- <strong>The allocator side</strong> (Burton): a Black-Litterman sanity check showed a famous fund needed about 25% a year to
+  justify its weight against about 2% realized; allocators are fully invested, so every new allocation is
+  one-in-one-out; exclusion rules push the same risk into SMAs; public pensions are locked out of top VC by FOIA.
+- <strong>Governance drives passive</strong> (Karniol-Tambour): CIOs privately know concentration is bad but avoid the
+  governance hassle; being right 70% of the time still gets you called an idiot for not staying passive.
+- <strong>Completion mandates</strong> (Mintz): quant managers build portfolios around a client's concentrated managers.
+- <strong>Distribution to wealth</strong>: platforms digitize subscription documents as megafunds chase retail capital.</p>
+<p><strong>Business significance / value.</strong> Fees scale with AUM (§1), so the capital raiser sits in the revenue line. Every
+incentive problem in the chain (GP fees, consultant gatekeeping, pension headline-aversion) shows up in what
+gets funded.</p>
+<p><strong>Forces &amp; impact.</strong> Full allocation makes fundraising a share-shift game. AI speeds diligence and widens the gap
+between nimble and slow allocators. Governance pressure pushes institutions toward passive just as concentration
+raises its risk.</p>
+<p><strong>With vs. without.</strong> Without ODD and consultants, frauds get funded. Without base diversification, one LP's
+redemption can force the liquidation in §12.</p>
+<p><strong>Applies when / Breaks when.</strong> Relationship raising works with repeat players and breaks when performance does.</p>
+<p><strong>Channel example.</strong> <em>Head of Investor Relations at $3 Billion Hedge Fund Tells All</em>; <em>$53 Billion Hedge Fund
+Chief Strategist</em>; <em>Pete Muller</em>; <em>Bridgewater Co-CIO</em>; <em>Quant Investing 101</em>.</p>
+<p><strong>Counterpoint.</strong> The most promotional material in the cluster: Bauman pitches on camera, CAIS is close to a
+sponsored spot. Burton is the corrective, doubting allocators' own rules. Fortress describes itself as a credit
+manager, not the hosts' "$53bn hedge fund".</p>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> · <a class="wiki" href="doc-canon-canon-cialdini-influence.html">canon cialdini influence</a> · <a class="wiki" href="doc-canon-canon-jensen-meckling-agency-theory.html">canon jensen meckling agency theory</a> ·
+<a class="wiki" href="doc-canon-canon-march-primer-decision-making.html">canon march primer decision making</a> · <a class="wiki" href="doc-notes-wss-private-markets-wealth.html">wss private markets wealth</a> §9.</p>
+<hr />
+<h2 id="20-moneyball-as-a-trading-playbook-mispriced-traits-sample-size-edge-decay">20 · Moneyball as a trading playbook: mispriced traits, sample size, edge decay</h2>
+<p><strong>What it is.</strong> In the hosts' reading, <em>Moneyball</em> is a finance book: a budget-constrained team found traits the
+market underpriced, bought them cheaply and won, until everyone copied it.</p>
+<p><strong>How it works.</strong>
+- <strong>Efficiency metric.</strong> A minimum-wage roster cost about $7m and would win about 49 games; the playoffs need about
+  95. The A's paid about <strong>$500k per win</strong> against the Rangers' about <strong>$3m</strong>; ($40m − $7m) / (103 − 49) ≈ <strong>$611k
+  per marginal win</strong>.
+- <strong>Mispriced traits.</strong> On-base percentage correlated most with winning; in DePodesta's model a point of OBP was
+  worth <strong>3x</strong> a point of slugging, against conventional sabermetrics' 1.5x and scouts' near-zero.
+- <strong>Sample size.</strong> A .300 and a .275 hitter differ by about one hit every two weeks; over 15 games the .275 hitter
+  out-hits the .300 hitter about 40% of the time. Nathan's 52% win rate (§6) is the trading version.
+- <strong>Edge decay.</strong> The Red Sox copied it and won in 2004; now the method is table stakes.
+- <strong>The postseason lesson.</strong> A best-of-7 is a small sample; in trading there is no World Series, so never
+  manufacture one by betting the book.</p>
+<p><strong>Business significance / value.</strong> The cleanest case of capital efficiency under constraint. Rich teams overpay for
+consensus; too much money removes the pressure to be smart (the hosts' SoftBank/WeWork link).</p>
+<p><strong>Forces &amp; impact.</strong> Data availability spread the insight. League economics set the stakes (MLB's weak revenue
+sharing vs. the NFL's cap).</p>
+<p><strong>With vs. without.</strong> Without statistical valuation, scarce capital pays the "looks the part" premium. Without
+small-sample humility, a good season is mistaken for skill.</p>
+<p><strong>Applies when / Breaks when.</strong> Works while a measurable trait is mispriced and samples are large. Breaks once
+copied (quant crowding, §11) and in small-sample, winner-take-all settings.</p>
+<p><strong>Channel example.</strong> <em>Parallels Between Managing a Hedge Fund and a Baseball Team | "Moneyball" Deep Dive</em>.</p>
+<p><strong>Counterpoint.</strong> The hosts' curse and clutch stories are the anecdote the book debunks; their NFL TV numbers are
+loose; the book's A's never won a title.</p>
+<p><strong>Links:</strong> <a class="wiki" href="doc-canon-canon-mauboussin-success-equation.html">canon mauboussin success equation</a> · <a class="wiki" href="doc-canon-canon-kahneman-thinking-fast-and-slow.html">canon kahneman thinking fast and slow</a> ·
+<a class="wiki" href="doc-canon-canon-dixit-nalebuff-thinking-strategically.html">canon dixit nalebuff thinking strategically</a> · <a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a> ·
+<code>quant-backtesting/research/harvey-liu-zhu-backtesting-pitfalls.md</code>.</p>
+<hr />
+<h3 id="side-note-catastrophe-bonds-insurance-risk-sold-to-hedge-funds">Side note: catastrophe bonds (insurance risk sold to hedge funds)</h3>
+<p>Kapnick structured cat bonds at Goldman during Katrina. A <strong>cat bond</strong> transfers a defined peril (hurricane,
+earthquake, European windstorm, flood) from an insurer or reinsurer to capital-markets investors. If the event
+crosses a preset trigger (a wind speed, a Category 3 landfall, a flood level), some or all of the principal goes
+to the sponsor to pay claims; otherwise investors collect a high coupon. Buyers want the return because it is
+<strong>uncorrelated</strong> with markets. Jen's challenge: triggers can be drafted so narrowly that they rarely pay, unlike a
+CDS that triggers on a missed coupon (<a class="wiki" href="doc-notes-wss-credit-distressed.html">wss credit distressed</a> §17). Kapnick's challenge to the models: they are
+calibrated on past data for a 3–5 year risk in a changing climate. Her probability lesson applies to any tail
+trade: a "1-in-100-year" event has a 1% chance each year, about 4.9% over five years and <strong>26% over a 30-year
+mortgage</strong> (1 − 0.99³⁰), and more if the climate is shifting.</p>
+<h3 id="side-note-home-equity-investments">Side note: home-equity investments</h3>
+<p>A hedge fund acting as a specialty lender (Tacora Capital, Keri Findley): buy a share of a homeowner's future
+equity for cash today. The worked example ($50k for a third of the equity, a $133k claim on day one) and the
+risks are in <a class="wiki" href="doc-notes-wss-private-markets-wealth.html">wss private markets wealth</a> §13.</p>
+<hr />
+<h2 id="how-the-concepts-connect">How the concepts connect</h2>
+<pre><code>Fee model (1): 2% on AUM -&gt; AUM growth is the business -&gt; IR as revenue (19)
+        |                                         \-- best records shrink outside capital (PDT, BlueCrest)
+        v
+Allocator demands uncorrelated alpha (5) -&gt; judged on Sharpe / tracking error (6) vs. an index (3)
+        |                                     \-- cheap beta via ETFs (4) -&gt; passive flows lift the index
+        v
+Three ways to find alpha: fundamental L/S (8) | quant factors / stat arb (11) | macro (17)
+        |          \-- shorts (9) need borrow; options (7) express and hedge views
+        v
+High Sharpe + low beta -&gt; justifies LEVERAGE (10 pods; 13 DV01 sizing; 14 repo)
+        |           \-- bank capital rules push dealing to HFT/non-banks (14): ETFs, options, Citadel
+        v
+Crowded &quot;safe&quot; trades: basis (15), factor-neutral pods (10), quant factors (11), RV books (12)
+        |
+        v
+Shock (war, tariffs, Fed surprise (16), AI sell-off, retail squeeze) -&gt; correlations -&gt; 1
+        |      \-- index puts miss dispersion (7); dealers short gamma chase (7, 9)
+        v
+Stops + margin + redemptions + recalls (1, 9, 10, 12) -&gt; forced buying/selling into own footprint
+        |      \-- short interest understates squeeze risk when shorts are stopped-out pods (9)
+        v
+Patient balance sheet buys the book at a discount (Citadel, 12)
+   = the asymmetry Soros exploited against a forced defender (17)
+
+Warnings in advance: put/call at 0.4 and call skew (7), record Fed-futures open interest (16),
+ETF discounts (4), backwardation, copper vs. gold (18). Moneyball (20) is the counter-discipline:
+many small bets, no &quot;World Series&quot; wagers, humility about 52% win rates.
+</code></pre>
+<p>The common thread: <strong>the holding period belongs to whoever funds you.</strong> LPs decide it through redemptions, the
+prime broker through margin, the stock lender through recall, the risk committee through stops. Strategy quality
+matters only within the holding period your capital structure allows, which is why the firms that could (PDT,
+RenTech, BlueCrest) chose to fund themselves.</p>
+<hr />
+<h2 id="retrieval-questions">Retrieval questions</h2>
+<ol>
+<li><strong>A beta-0.1 fund returned 9% while the S&amp;P returned 22%. Why might an allocator still prefer it?</strong> Its return
+   is mostly alpha and uncorrelated; beta can be bought for basis points via an ETF. The question is Sharpe and
+   portfolio role, not raw return.</li>
+<li><strong>An ETF holding illiquid bonds trades at a 3% discount in a panic. Who could close the gap, and why don't
+   they?</strong> APs could buy the cheap ETF and redeem it for bonds, but they must then sell those bonds into a frozen
+   market or hold them on balance sheet. The discount is the price of the liquidity the ETF promised.</li>
+<li><strong>Why is an ETF usually more tax-efficient than an identical mutual fund?</strong> Redemptions are met in kind; the
+   fund hands APs its lowest-basis lots, so gains leave without a sale. A mutual fund must sell to meet net
+   redemptions and distributes the gains.</li>
+<li><strong>A stock is at $100; the weekly at-the-money call and put cost $2.50 each. What move is priced, and what would
+   make you sell the straddle?</strong> About 5% ($5 / $100). Sell if its realized earnings moves have averaged well below
+   5% and nothing suggests this quarter is different.</li>
+<li><strong>Implied vol is 48. Roughly how big a daily move does that imply?</strong> 48 ÷ 16 ≈ 3% a day.</li>
+<li><strong>Why did desks short calls on bankrupt energy stocks in 2020 lose money on companies they knew were worth
+   zero?</strong> Delta-hedging forced them to buy stock as retail pushed prices up; risk limits fixed their holding
+   period before fundamentals could win.</li>
+<li><strong>A long-biased L/S fund is 100% long and 50% short. What are its gross and net exposure, and what does each
+   tell you?</strong> Gross 150% (total risk and leverage), net 50% (market direction). A pod might be 250% long and 250%
+   short: 500% gross, zero net.</li>
+<li><strong>Why did higher interest rates make shorting more attractive?</strong> The short seller earns a rebate on the sale
+   proceeds; at 5% it can exceed the borrow fee, so a flat stock now pays carry instead of costing it.</li>
+<li><strong>Why might short interest of 15% understate how far a squeeze can run?</strong> If the shorts are pods with tight
+   stops, small moves trigger mass covering, algorithms chase and dealers short calls buy stock.</li>
+<li><strong>Why does losing 7.5% get a Millennium PM fired when it's a routine month for a retail investor?</strong> The PM's
+    capital is levered several times at fund level; tight stops keep hundreds of levered books from producing a
+    fund-level loss.</li>
+<li><strong>What happened in August 2007 that index investors barely noticed?</strong> Crowded, levered quant funds unwound
+    similar long/short books at once; relative values blew out while the index was flat.</li>
+<li><strong>Situational Awareness ran a "market-neutral" L/S book. How did it lose on both sides, and why did leverage
+    turn a bad month into a forced sale?</strong> The legs were separate bets, not hedges, and both reversed; at 4:1 a 25%
+    gross loss wipes out equity, and margin fixes the holding period.</li>
+<li><strong>78,000 TY contracts with a futures DV01 of about 6.5 per $100 face. What is the position's risk per basis
+    point?</strong> 6.5 / 10,000 × 78,000 × $100,000 ≈ $5.1m.</li>
+<li><strong>Why is the basis trade "short volatility" if it's an arbitrage, and why did Jen call its April 2025 unwind a
+    symptom?</strong> Convergence is certain only at delivery; shocks widen the gap first and force exits. Swap spreads
+    collapsing across the board showed a broad flight from cash Treasuries, not one crowded trade.</li>
+<li><strong>The September Fed funds future is 96.29, the effective rate 3.63%, the meeting on day 16 of 30. Implied hike
+    odds?</strong> (30 × 3.71 − 16 × 3.63) / 14 = 3.80; (3.80 − 3.63) / 0.25 ≈ 68%.</li>
+<li><strong>Why did Soros's sterling short have such favorable risk/reward, and why would Goyal's employers still stop
+    him out of a similar view today?</strong> The peg capped the upside of sterling and the UK lacked room for high
+    rates. Modern multi-strats impose small drawdown limits, so a correct view that moves against you first is
+    cut before it pays.</li>
+<li><strong>A 1-in-100-year flood. What's the chance of at least one over a 30-year mortgage?</strong> 1 − 0.99³⁰ ≈ 26%, in a
+    static climate.</li>
+<li><strong>The A's paid about $611k per marginal win. Why did the strategy stop working, and what's the trading
+    analogue?</strong> It was copied; mispriced traits got repriced. Published or crowded quant factors decay the same
+    way (value 2018–20).</li>
+</ol>
+<hr />
+<h2 id="gaps-still-missing-after-pass-2">Gaps (still missing after pass 2)</h2>
+<p>Pass 2 recovered every primary source pass 1 had to reconstruct (options, ETFs, index trading, Sharpe, L/S,
+equity research, macro PM, Bridgewater, PDT, PGIM quant, the basis blowup, commodities). Still without a
+transcript in the catalog:</p>
+<ul>
+<li><strong>Industry S2E2 "Giant Squid"</strong> (block trades, IPOs vs. other equity offerings).</li>
+<li>Shorts: <em>Wellington's Head of U.S. Macro with one simple rule for trading the long end</em>; <em>What are inflation
+  breakevens in bond trading?</em>; <em>8 must know technicals for sales and trading interviews</em>; <em>Tell me a Wall Street
+  trader is on his mandatory two-week vacation…</em> (the compliance rule that forces traders away from their books);
+  <em>Investment Banking vs. Sales and Trading Lifestyle</em>; <em>Hedge Funds vs. PE</em>; <em>The Most Lucrative Wall Street
+  Careers: PE vs. Hedge Funds</em>.</li>
+</ul>
+<p>Present in the folder but owned by the rates sibling and not folded in here (see <a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a>): Steve
+Eisman on tariff panic, Matt Hornbach's <em>Fixed Income Strategy 101</em>, the Wellington and "$1 trillion firm" macro
+episodes, <em>Finance, Philosophy, and the Yen Carry Trade</em>, Jamie Patton (TCW), <em>It Wasn't Equity Turmoil That
+Spooked Trump</em>, and the FX and Dimon shorts.</p></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-wss-technicals-career.html"><span>Previous</span>Wall Street Skinny — technicals &amp; career: how deals are priced, financed, and paid for</a><span></span></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

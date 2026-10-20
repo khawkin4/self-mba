@@ -1,0 +1,296 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>lopez-de-prado · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="quant">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-quant.html">Quant Lab</a></nav>
+<div class="doc-kicker">Backtesting research</div>
+<h1 class="doc-title">lopez-de-prado</h1>
+<div class="doc-meta"><span>10 min read</span><span>2,216 words</span><span>Updated 2026-09-09</span><span class="doc-src">quant-backtesting/research/lopez-de-prado.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#1-key-publications">1. KEY PUBLICATIONS</a></li><li class="l3"><a href="#a-the-deflated-sharpe-ratio-correcting-for-selection-bias-backtest-overfitting-and-non-normality">A. "The Deflated Sharpe Ratio: Correcting for Selection Bias, Backtest Overfitting, and Non-Normality"</a></li><li class="l3"><a href="#b-advances-in-financial-machine-learning-wiley-2018">B. "Advances in Financial Machine Learning" (Wiley, 2018)</a></li><li class="l3"><a href="#c-the-probability-of-backtest-overfitting-pbo">C. "The Probability of Backtest Overfitting" (PBO)</a></li><li class="l3"><a href="#d-pseudo-mathematics-and-financial-charlatanism-the-effects-of-backtest-overfitting-on-out-of-sample-performance">D. "Pseudo-Mathematics and Financial Charlatanism: The Effects of Backtest Overfitting on Out-of-Sample Performance"</a></li><li class="l3"><a href="#e-full-ssrn-paper-inventory-backtestingoverfitting-cluster">E. Full SSRN Paper Inventory (Backtesting/Overfitting cluster)</a></li><li class="l2"><a href="#2-current-affiliation">2. CURRENT AFFILIATION</a></li><li class="l2"><a href="#3-talks-presentations-and-interviews">3. TALKS, PRESENTATIONS, AND INTERVIEWS</a></li><li class="l3"><a href="#youtube-talks">YouTube Talks</a></li><li class="l3"><a href="#major-interview">Major Interview</a></li><li class="l3"><a href="#conference-keynotes">Conference Keynotes</a></li><li class="l3"><a href="#full-lecture-archive-2012-2026">Full Lecture Archive (2012-2026)</a></li><li class="l3"><a href="#notable-quote-from-xtwitter-2019">Notable Quote (from X/Twitter, 2019)</a></li><li class="l2"><a href="#books-complete-list">Books (Complete List)</a></li></ol></details></nav>
+<article class="prose"><p>I now have comprehensive material. Let me compile the full report.</p>
+<hr />
+<p>Here is the complete research report on Marcos Lopez de Prado's work on backtest overfitting and related topics.</p>
+<hr />
+<h2 id="1-key-publications">1. KEY PUBLICATIONS</h2>
+<h3 id="a-the-deflated-sharpe-ratio-correcting-for-selection-bias-backtest-overfitting-and-non-normality">A. "The Deflated Sharpe Ratio: Correcting for Selection Bias, Backtest Overfitting, and Non-Normality"</h3>
+<ul>
+<li><strong>Authors:</strong> David H. Bailey, Marcos Lopez de Prado</li>
+<li><strong>SSRN:</strong> https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2460551</li>
+<li><strong>Journal publication:</strong> The Journal of Portfolio Management, 40(5): 94-107, 2014</li>
+<li><strong>Direct PDF (Bailey's site):</strong> https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf</li>
+<li><strong>Related companion paper ("Deflating the Sharpe Ratio"):</strong> https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2465675</li>
+</ul>
+<p><strong>What it says:</strong> The DSR corrects for two leading sources of performance inflation: (1) selection bias under multiple testing -- when researchers test many strategies and report only the best, the winner is likely a statistical fluke; and (2) non-normally distributed returns (skewness and kurtosis). The DSR deflates the observed Sharpe ratio by the number of independent trials conducted, the variance of Sharpe ratio estimates across those trials, the sample length, and non-normality of returns. A strategy showing a backtested Sharpe of 1.0 might deflate to 0.4 or lower after correction. The DSR builds on the Probabilistic Sharpe Ratio (PSR), which itself adjusts for skewness, kurtosis, and sample length.</p>
+<p><strong>2025 follow-up:</strong> Lopez de Prado, Alexander Lipton, and Vincent Zoonekynd published "How to Use the Sharpe Ratio" (September 2025) synthesizing the full inference framework (PSR, MinTRL, DSR, oFDR). SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5520741 -- with replication code at https://github.com/zoonek/2025-sharpe-ratio. In 2026, he also posted seminar slides "Sharpe Ratio Inference: A New Standard for Decision-Making and Reporting" at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5950754.</p>
+<hr />
+<h3 id="b-advances-in-financial-machine-learning-wiley-2018">B. "Advances in Financial Machine Learning" (Wiley, 2018)</h3>
+<ul>
+<li><strong>Publisher page:</strong> https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086</li>
+<li><strong>SSRN Chapter 1 excerpt:</strong> https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3104847</li>
+<li><strong>ISBN:</strong> 978-1-119-48208-6</li>
+</ul>
+<p><strong>Key concepts from the book:</strong></p>
+<ol>
+<li>
+<p><strong>Fractional Differentiation</strong> -- Uses non-integer-order differencing (backshift operators with binomial-coefficient weights) to make financial time series stationary while preserving long-range memory. Finds the minimum differencing parameter d that achieves stationarity without discarding excess information. Solves the stationarity-vs-memory tradeoff that integer differencing (d=1) destroys.</p>
+</li>
+<li>
+<p><strong>Triple Barrier Method</strong> -- A labeling technique placing three barriers around each observation: a profit-take (upper), a stop-loss (lower), and an expiration (vertical/time). The label is determined by which barrier price hits first: +1 for profit target, -1 for stop loss, and sign(return) or 0 at expiration. Incorporates realistic trading mechanics (path-dependent, not just endpoint returns) and dynamically sets barriers based on per-observation volatility.</p>
+</li>
+<li>
+<p><strong>Meta-Labeling</strong> -- A two-stage classification approach. Stage 1: train a high-recall model to identify the side of the bet (buy/sell). Stage 2: train a secondary binary classifier to determine whether to actually place the bet (bet sizing). This separates directional forecasting from position-sizing decisions, correcting for low precision without sacrificing recall.</p>
+</li>
+<li>
+<p><strong>Combinatorial Purged Cross-Validation (CPCV)</strong> -- Standard k-fold CV leaks information in financial time series because labels overlap in time. Purged k-fold CV removes training samples temporally close to test samples and adds an embargo gap. CPCV generalizes this: it partitions observations into N ordered groups, selects k groups for testing (yielding C(N,k) possible splits), and combines test sets from different splits into ordered backtest paths. This generates many backtest paths, enabling direct estimation of the probability of backtest overfitting.</p>
+</li>
+<li>
+<p><strong>Information-Driven Bars</strong> -- Tick/volume/dollar imbalance bars that sample based on informed trading activity rather than fixed time intervals, producing returns with more favorable statistical properties.</p>
+</li>
+<li>
+<p><strong>Hierarchical Risk Parity (HRP)</strong> -- A portfolio construction method using graph theory and machine learning (hierarchical clustering on the correlation matrix) instead of mean-variance optimization. Does not require matrix inversion, works on singular covariance matrices, and produces lower out-of-sample variance than Markowitz CLA in Monte Carlo tests. SSRN paper: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678</p>
+</li>
+</ol>
+<hr />
+<h3 id="c-the-probability-of-backtest-overfitting-pbo">C. "The Probability of Backtest Overfitting" (PBO)</h3>
+<ul>
+<li><strong>Authors:</strong> David H. Bailey, Jonathan M. Borwein, Marcos Lopez de Prado, Qiji Jim Zhu</li>
+<li><strong>SSRN:</strong> https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2326253</li>
+<li><strong>Journal:</strong> Journal of Computational Finance, February 2015</li>
+<li><strong>Also at:</strong> https://escholarship.org/uc/item/4w1110bb and Western Michigan University: https://scholarworks.wmich.edu/math_pubs/42/</li>
+<li><strong>Mathematical Appendices:</strong> https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2568435</li>
+<li><strong>Open-source Python implementation (pypbo):</strong> https://github.com/esvhd/pypbo</li>
+</ul>
+<p><strong>What it says:</strong> Standard overfitting controls (hold-out, k-fold) are unreliable for investment backtests. The authors propose Combinatorially Symmetric Cross-Validation (CSCV), a numerical method that estimates the probability that a given backtest is overfit. CSCV partitions historical data into subsets, evaluates strategy performance across all combinatorial splits, and computes the fraction of configurations where in-sample optimality does not translate to out-of-sample performance. The framework demonstrates that the act of searching over many strategy configurations makes out-of-sample disappointment a statistically predictable outcome unless the research process is explicitly controlled and corrected.</p>
+<hr />
+<h3 id="d-pseudo-mathematics-and-financial-charlatanism-the-effects-of-backtest-overfitting-on-out-of-sample-performance">D. "Pseudo-Mathematics and Financial Charlatanism: The Effects of Backtest Overfitting on Out-of-Sample Performance"</h3>
+<ul>
+<li><strong>Authors:</strong> David H. Bailey, Jonathan M. Borwein, Marcos Lopez de Prado, Qiji Jim Zhu</li>
+<li><strong>SSRN:</strong> https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2308659</li>
+<li><strong>Published in:</strong> Notices of the American Mathematical Society, 61(5): 458-471, May 2014</li>
+<li><strong>Full text (AMS):</strong> https://www.ams.org/notices/201405/rnoti-p458.pdf</li>
+<li><strong>Western Michigan University repository:</strong> https://scholarworks.wmich.edu/math_pubs/40/</li>
+</ul>
+<p><strong>What it says:</strong> The paper proves that high simulated performance is easily achievable after backtesting a relatively small number of alternative strategy configurations. Using just five years of historical data, testing as few as 45 portfolio configurations virtually guarantees finding one with an artificially inflated Sharpe ratio that will not hold out-of-sample. Because most financial analysts and academics rarely report the number of configurations tried, investors cannot evaluate the degree of overfitting. The authors assert that backtesting overfitting is widespread in both academic finance and commercial investment products, and they criticize mathematicians for remaining silent while investment professionals misuse statistical techniques, calling that silence complicity.</p>
+<hr />
+<h3 id="e-full-ssrn-paper-inventory-backtestingoverfitting-cluster">E. Full SSRN Paper Inventory (Backtesting/Overfitting cluster)</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Paper</th>
+<th>SSRN ID</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What to Look for in a Backtest</td>
+<td>2308682</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2308682</td>
+</tr>
+<tr>
+<td>Pseudo-Mathematics and Financial Charlatanism</td>
+<td>2308659</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2308659</td>
+</tr>
+<tr>
+<td>The Probability of Backtest Overfitting</td>
+<td>2326253</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2326253</td>
+</tr>
+<tr>
+<td>The Deflated Sharpe Ratio</td>
+<td>2460551</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2460551</td>
+</tr>
+<tr>
+<td>Deflating the Sharpe Ratio</td>
+<td>2465675</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2465675</td>
+</tr>
+<tr>
+<td>Optimal Trading Rules Without Backtesting (with Peter Carr)</td>
+<td>2502613</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2502613</td>
+</tr>
+<tr>
+<td>Mathematical Appendices to PBO</td>
+<td>2568435</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2568435</td>
+</tr>
+<tr>
+<td>Backtesting (survey chapter)</td>
+<td>2606462</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2606462</td>
+</tr>
+<tr>
+<td>Determining Optimal Trading Rules Without Backtesting (with Carr, revised)</td>
+<td>2658641</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2658641</td>
+</tr>
+<tr>
+<td>Building Diversified Portfolios that Outperform Out-of-Sample (HRP)</td>
+<td>2708678</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678</td>
+</tr>
+<tr>
+<td>Stock Portfolio Design and Backtest Overfitting</td>
+<td>2739335</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2739335</td>
+</tr>
+<tr>
+<td>Backtest Overfitting in Financial Markets</td>
+<td>2731886</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2731886</td>
+</tr>
+<tr>
+<td>How Hard Is It to Pick the Right Model? MCS and Backtest Overfitting</td>
+<td>3044740</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3044740</td>
+</tr>
+<tr>
+<td>The 7 Reasons Most ML Funds Fail (slides)</td>
+<td>3031282</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3031282</td>
+</tr>
+<tr>
+<td>The 10 Reasons Most ML Funds Fail</td>
+<td>3104816</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3104816</td>
+</tr>
+<tr>
+<td>AFML Chapter 1</td>
+<td>3104847</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3104847</td>
+</tr>
+<tr>
+<td>Tactical Investment Algorithms</td>
+<td>3459866</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3459866</td>
+</tr>
+<tr>
+<td>Escaping The Sisyphean Trap</td>
+<td>3916692</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3916692</td>
+</tr>
+<tr>
+<td>Causal Factor Investing</td>
+<td>4205613</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4205613</td>
+</tr>
+<tr>
+<td>Where are the Factors in Factor Investing?</td>
+<td>4336002</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4336002</td>
+</tr>
+<tr>
+<td>Ranking Empirical Evidence in Finance</td>
+<td>4425855</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4425855</td>
+</tr>
+<tr>
+<td>Overcoming Markowitz's Instability with HRP (with Antonov, Lipton)</td>
+<td>4748151</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4748151</td>
+</tr>
+<tr>
+<td>How to Use the Sharpe Ratio (with Lipton, Zoonekynd)</td>
+<td>5520741</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5520741</td>
+</tr>
+<tr>
+<td>Sharpe Ratio Inference (2026 seminar slides)</td>
+<td>5950754</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5950754</td>
+</tr>
+</tbody>
+</table></div>
+<p>His SSRN author page: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=434076 (ranked among the 10 most-read authors in Economics on SSRN).</p>
+<hr />
+<h2 id="2-current-affiliation">2. CURRENT AFFILIATION</h2>
+<p>Your guess was correct -- both Cornell and Abu Dhabi Investment Authority. Full picture:</p>
+<ul>
+<li><strong>Abu Dhabi Investment Authority (ADIA)</strong> -- Global Head of Quantitative R&amp;D. ADIA is one of the world's largest sovereign wealth funds.</li>
+<li><strong>ADIA Lab</strong> -- Founding board member. Abu Dhabi's research center for data and computational sciences. Bio page: https://www.adialab.ae/bios/professor-marcos-lopez-de-prado</li>
+<li><strong>Cornell University</strong> -- Professor of Practice, College of Engineering (teaches ORIE 5256, Special Topics in Financial Engineering). Also FinTech Faculty at the School of Business.</li>
+<li><strong>Khalifa University of Science and Technology</strong> -- Professor of Practice, Department of Mathematics.</li>
+<li><strong>Lawrence Berkeley National Laboratory</strong> -- Research Fellow, Office of Science (U.S. Department of Energy). Has held this since 2011.</li>
+<li><strong>The Journal of Financial Data Science</strong> -- Founding co-editor.</li>
+</ul>
+<p><strong>Prior roles (not current):</strong>
+- Guggenheim Partners -- Senior Managing Director, founded Quantitative Investment Strategies (~$13B AUM, information ratio of 2.3)
+- AQR Capital Management -- Partner and first Head of Machine Learning
+- True Positive Technologies -- Founder (advisory clients with &gt;$1T combined assets, patent licensing valued at eight figures)</p>
+<p><strong>Education:</strong> Two PhDs from Universidad Complutense de Madrid -- financial econometrics (2003) and mathematical finance (2011, received Extraordinary PhD Award in 2013). Postdoctoral research at Harvard and Cornell.</p>
+<p><strong>Recent honors:</strong>
+- International Member, Spain's Royal Academy of Engineering (elected 2026) -- lifetime distinction held by only 71 scientists worldwide. Press release: http://www.prnewswire.com/news-releases/spains-royal-academy-of-engineering-elects-professor-marcos-lopez-de-prado-as-international-member-302816778.html
+- Knight Officer of the Royal Order of Civil Merit, appointed by King Felipe VI (2024)
+- Bernstein Fabozzi/Jacobs Levy Award (2024), Journal of Portfolio Management
+- Buy-Side Quant of the Year (2021), Risk.net
+- Erdos number of 2; Einstein number of 4
+- 15 patents; testified before U.S. Congress on AI policy; over 100 published journal articles</p>
+<p>Full CV: https://www.quantresearch.org/Vita.htm</p>
+<hr />
+<h2 id="3-talks-presentations-and-interviews">3. TALKS, PRESENTATIONS, AND INTERVIEWS</h2>
+<h3 id="youtube-talks">YouTube Talks</h3>
+<ul>
+<li><strong>"Dangers of Backtest Overfitting"</strong> (April 2016): https://www.youtube.com/watch?v=QxhxLwNbMMg</li>
+<li><strong>"How Overfit Is Your Backtest?"</strong> (June 2026, survey of the PBO body of work): https://www.youtube.com/watch?v=T-W0OzzoMKM</li>
+<li><strong>"The Dangers of Backtesting" (Book Chapter 11)</strong>: https://www.youtube.com/watch?v=sGcov6tOQ7k</li>
+</ul>
+<h3 id="major-interview">Major Interview</h3>
+<ul>
+<li><strong>CFA Institute: "Conversations with Frank Fabozzi, CFA" featuring Marcos Lopez de Prado</strong> (March 18, 2025). Topics: responsible AI use in finance, factor investing limitations, causal inference models. URL: https://rpc.cfainstitute.org/research/multimedia/2025/conversations-with-frank-fabozzi-featuring-marcos-lopez-de-prado (also at https://www.cfainstitute.org/insights/events/2025/frank-fabozzi-marcos-lopez-de-prado-webinar)</li>
+</ul>
+<h3 id="conference-keynotes">Conference Keynotes</h3>
+<ul>
+<li><strong>Fordham Quant</strong> keynote speaker (January 2026)</li>
+<li><strong>QuantCon 2018</strong> keynote (the "7 Reasons Most ML Funds Fail" talk; discussed on EliteTrader: https://www.elitetrader.com/et/threads/the-7-reasons-most-machine-learning-funds-fail-marcos-lopez-de-prado-from-quantcon-2018.331987/)</li>
+<li><strong>Quant Strats UK</strong>: https://www.alphaevents.com/events-quantstratsuk/speakers/marcos-lopez-de-prado</li>
+</ul>
+<h3 id="full-lecture-archive-2012-2026">Full Lecture Archive (2012-2026)</h3>
+<p>His complete lectures page at https://quantresearch.org/Lectures.htm lists 60+ presentations with SSRN slide links. Highlights by year:</p>
+<ul>
+<li><strong>2026:</strong> "What is the False Discovery Rate in Finance?"; "Sharpe Ratio Inference: A New Standard"</li>
+<li><strong>2025:</strong> "Investment Lessons from Cosmology"; "Causal AI &amp; Sustainability"; "Financial Machine Learning: An Engineering Problem"; "AI Challenges in Mathematical Investing"</li>
+<li><strong>2024:</strong> "Causal Factor Analysis"; "The Role of Causal Inference"; "Why Has Factor Investing Failed?"</li>
+<li><strong>2021:</strong> "Detection of False Investment Strategies through FWER and FDR"</li>
+<li><strong>2020:</strong> "Overfitting: Causes and Solutions"; "Three Quant Lessons from COVID-19"</li>
+<li><strong>2018:</strong> "A Practical Solution to the Multiple-Testing Crisis in Financial Research"; "How the Sharpe Ratio Died, But Came Back to Life"</li>
+<li><strong>2015:</strong> "Backtesting"; "Illegitimate Science: Why Most Empirical Discoveries in Finance Are Likely Wrong"</li>
+<li><strong>2014:</strong> "Deflating the Sharpe Ratio"; "Optimal Trading Rules Without Backtesting"</li>
+<li><strong>2013:</strong> "What to Look for in a Backtest"</li>
+</ul>
+<h3 id="notable-quote-from-xtwitter-2019">Notable Quote (from X/Twitter, 2019)</h3>
+<p>Lopez de Prado on backtesting philosophy: "If a strategy does not perform well in a backtest, do not tweak it (overfit) until the backtest looks good. Instead, investigate how the research process misled you into backtesting a false strategy. Fix the research process, not the strategy." (Source: https://x.com/lopezdeprado/status/1138716396248915968)</p>
+<hr />
+<h2 id="books-complete-list">Books (Complete List)</h2>
+<ol>
+<li><strong>Advances in Financial Machine Learning</strong> (Wiley, 2018) -- the standard graduate reference</li>
+<li><strong>Machine Learning for Asset Managers</strong> (Cambridge University Press, Elements in Quantitative Finance, 2020) -- focuses on clustering and portfolio construction for practitioners</li>
+<li><strong>Causal Factor Investing</strong> (Cambridge University Press, 2023) -- causal inference applied to factor investing</li>
+</ol></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-quant-harvey-liu-zhu-backtesting-pitfalls.html"><span>Previous</span>harvey-liu-zhu-backtesting-pitfalls</a><a class="doc-next" href="doc-quant-renaissance-technologies.html"><span>Next</span>renaissance-technologies</a></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

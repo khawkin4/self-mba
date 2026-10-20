@@ -1,0 +1,184 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Apply · Stock-Picking Framework → NIKE (NKE) · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Apply · Stock-Picking Framework → NIKE (NKE)</h1>
+<div class="doc-meta"><span>7 min read</span><span>1,590 words</span><span>Updated 2026-06-30</span><span class="doc-src">notes/apply-stock-picking-nke.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#why-nke-for-the-rep">Why NKE for the rep</a></li><li class="l2"><a href="#step-1-do-i-understand-the-business-circle-of-competence">Step 1 — Do I understand the business? (circle of competence)</a></li><li class="l2"><a href="#step-2-read-the-primary-documents-10-k-10-q-via-edgar">Step 2 — Read the primary documents (10-K / 10-Q via EDGAR)</a></li><li class="l2"><a href="#step-3-be-curious-ask-why-n">Step 3 — Be curious; ask "why" (×N)</a></li><li class="l2"><a href="#step-4-stress-test-the-consensus-the-fear-and-is-it-right">Step 4 — Stress-test the consensus (the fear, and is it right?)</a></li><li class="l2"><a href="#step-5-trust-factor-does-it-driveerode-the-multiple">Step 5 — Trust factor (does it drive/erode the multiple?)</a></li><li class="l2"><a href="#step-6-valuation-last-whats-priced-in">Step 6 — Valuation LAST (what's priced in?)</a></li><li class="l2"><a href="#step-7-verdict-sizing">Step 7 — Verdict + sizing</a></li><li class="l3"><a href="#how-id-know-im-wrong-the-disconfirming-checklist">How I'd know I'm wrong (the disconfirming checklist)</a></li><li class="l2"><a href="#what-this-rep-exercised-and-its-limits">What this rep exercised (and its limits)</a></li><li class="l2"><a href="#cross-links">Cross-links</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p><strong>An "Apply" rep, not investment advice.</strong> This runs Imran Khan's framework (<a class="wiki" href="doc-notes-tiger-sisters-stock-picking.html">tiger sisters stock picking</a>) end-to-end on a real company, using primary SEC data pulled via <code>_ingest/edgar.py</code> (CIK 320187) on 2026-06-29. All financials are from Nike's XBRL company-facts and 10-K filings; the only non-SEC input is the live share price, which the SEC doesn't carry — flagged <strong>[verify]</strong> wherever it appears. The point is the <em>process</em>, and to prove the framework produces a defensible verdict. Maps to Course 02. Pairs with <a class="wiki" href="doc-learn-unit-06-whats-a-business-worth.html">unit 06 whats a business worth</a>.</p>
+</blockquote>
+<h2 id="why-nke-for-the-rep">Why NKE for the rep</h2>
+<p>A genuine "is it <strong>cheap</strong> or is it <strong>broken</strong>?" case — exactly the setup Khan says is the only interesting one. Nike is a blue-chip brand trading far below its 2021 highs after a self-inflicted strategy error, a broad sales decline, and a CEO change. Consensus is split between "iconic brand on sale" and "structurally impaired." Perfect for the framework.</p>
+<hr />
+<h2 id="step-1-do-i-understand-the-business-circle-of-competence">Step 1 — Do I understand the business? (circle of competence)</h2>
+<p>Yes, well enough. Nike designs and markets footwear/apparel; it <strong>outsources manufacturing</strong> (mostly Vietnam, Indonesia, China) and sells through two channels: <strong>wholesale</strong> (Foot Locker, Dick's, etc.) and <strong>NIKE Direct</strong> (own stores + Nike.com / SNKRS app). The economics are brand + design + distribution, not factories. The value driver is <strong>pricing power from brand heat</strong>, and the swing factor is <strong>product innovation cadence</strong> plus <strong>channel strategy</strong>. Understandable → proceed.</p>
+<h2 id="step-2-read-the-primary-documents-10-k-10-q-via-edgar">Step 2 — Read the primary documents (10-K / 10-Q via EDGAR)</h2>
+<p>Pulled FY2025 10-K (filed 2025-07-17, FY end 2025-05-31) and FY2024 10-K (filed 2024-07-25). The verifiable empirical picture (XBRL, $B):</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Metric (FY end May 31)</th>
+<th style="text-align: right;">2021</th>
+<th style="text-align: right;">2022</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue</td>
+<td style="text-align: right;">44.54</td>
+<td style="text-align: right;">46.71</td>
+<td style="text-align: right;">51.22</td>
+<td style="text-align: right;"><strong>51.36</strong></td>
+<td style="text-align: right;">46.31</td>
+</tr>
+<tr>
+<td>Gross profit</td>
+<td style="text-align: right;">19.96</td>
+<td style="text-align: right;">21.48</td>
+<td style="text-align: right;">22.29</td>
+<td style="text-align: right;">22.89</td>
+<td style="text-align: right;">19.79</td>
+</tr>
+<tr>
+<td>Net income</td>
+<td style="text-align: right;">5.73</td>
+<td style="text-align: right;">6.05</td>
+<td style="text-align: right;">5.07</td>
+<td style="text-align: right;">5.70</td>
+<td style="text-align: right;"><strong>3.22</strong></td>
+</tr>
+<tr>
+<td>Operating cash flow</td>
+<td style="text-align: right;">6.66</td>
+<td style="text-align: right;">5.19</td>
+<td style="text-align: right;">5.84</td>
+<td style="text-align: right;">7.43</td>
+<td style="text-align: right;"><strong>3.70</strong></td>
+</tr>
+<tr>
+<td>Diluted EPS ($)</td>
+<td style="text-align: right;">3.56</td>
+<td style="text-align: right;">3.75</td>
+<td style="text-align: right;">3.23</td>
+<td style="text-align: right;">3.73</td>
+<td style="text-align: right;"><strong>2.16</strong></td>
+</tr>
+<tr>
+<td>Gross margin</td>
+<td style="text-align: right;">44.8%</td>
+<td style="text-align: right;">46.0%</td>
+<td style="text-align: right;">43.5%</td>
+<td style="text-align: right;">44.6%</td>
+<td style="text-align: right;"><strong>42.7%</strong></td>
+</tr>
+<tr>
+<td>Net margin</td>
+<td style="text-align: right;">12.9%</td>
+<td style="text-align: right;">12.9%</td>
+<td style="text-align: right;">9.9%</td>
+<td style="text-align: right;">11.1%</td>
+<td style="text-align: right;"><strong>7.0%</strong></td>
+</tr>
+<tr>
+<td>EBIT margin (10-K)</td>
+<td style="text-align: right;">14.7%</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">12.1%</td>
+<td style="text-align: right;">12.7%</td>
+<td style="text-align: right;"><strong>8.2%</strong></td>
+</tr>
+<tr>
+<td>Dividend / share ($)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">1.325</td>
+<td style="text-align: right;">1.45</td>
+<td style="text-align: right;"><strong>1.57</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>What the documents actually say (MD&amp;A): revenue <strong>−10% (−9% currency-neutral)</strong> in FY25, down across <strong>every geography</strong> (North America, EMEA, Greater China) and most product lines (Men's, Jordan, Women's, Kids'); <strong>NIKE Direct −13%</strong>, wholesale −7%; footwear −12%. This is a <strong>broad-based decline, not one bad region</strong> — the most important single fact in the filing.</p>
+<h2 id="step-3-be-curious-ask-why-n">Step 3 — Be curious; ask "why" (×N)</h2>
+<ul>
+<li><strong>Why did revenue fall off the FY24 peak?</strong> Largely self-inflicted: the prior strategy over-rotated to <strong>DTC</strong> and pulled back from wholesale accounts, ceding shelf space; plus a thin <strong>innovation pipeline</strong> (over-milking retro franchises — Air Force 1, Dunk — while On, Hoka, New Balance took share).</li>
+<li><strong>Why did net income fall <em>twice as fast</em> as revenue</strong> ($5.70B→$3.22B, −44% vs revenue −10%)? <strong>Operating deleverage + margin compression</strong>: gross margin −190bps (markdowns/discounting to clear inventory, channel mix) on a shrinking top line. Earnings are far more cyclical than sales here.</li>
+<li><strong>Why did operating cash flow halve?</strong> Working-capital unwind + lower earnings. Watch whether it rebounds as inventory normalizes.</li>
+<li><strong>Why is the dividend <em>up</em> while earnings collapsed?</strong> Payout ratio jumped to <strong>1.57 / 2.16 ≈ 73%</strong> (from ~39% in FY24). Nike is defending its dividend-growth streak through the trough — a signal of management confidence <em>or</em> of a streak being protected past the point of comfort. Either way, less cushion.</li>
+</ul>
+<h2 id="step-4-stress-test-the-consensus-the-fear-and-is-it-right">Step 4 — Stress-test the consensus (the fear, and is it right?)</h2>
+<p><strong>The embedded fear:</strong> Nike has lost its innovation edge and brand heat permanently; competitors have structurally taken share; FY25 is the new normal, not a trough.</p>
+<p>Is the consensus right or wrong? <strong>Partly right</strong> — the decline is real, broad, and self-inflicted, and the recovery is <strong>unproven</strong>. But the bear case requires believing the damage is <em>permanent</em>, and there are concrete reasons it may be cyclical/fixable:
+- <strong>A specific, reversible cause</strong> (the DTC-over-rotation + wholesale retreat) with a <strong>named fix already underway</strong>: CEO <strong>Elliott Hill</strong> returned Oct 2024 (a 30-year Nike veteran) explicitly to <strong>re-engage wholesale</strong> and <strong>refocus on sport/innovation</strong>.
+- The brand, scale, and distribution moat is intact; this isn't a balance-sheet or demand-destruction story.</p>
+<p>Khan's discipline applies here: <strong>don't be contrarian for its own sake.</strong> "Consensus can be right for 1–4 years." Even if the thesis is right, the turnaround could take multiple years and another guide-down first. <strong>Contrarian with the right timing</strong> — being early is indistinguishable from being wrong.</p>
+<h2 id="step-5-trust-factor-does-it-driveerode-the-multiple">Step 5 — Trust factor (does it drive/erode the multiple?)</h2>
+<ul>
+<li><strong>Trust intact on the balance sheet / governance</strong> — clean disclosure, no accounting red flags, investment-grade, dividend maintained.</li>
+<li><strong>Trust dented on execution</strong> — the prior strategy <em>was</em> the error, so management credibility took a real hit; the bull case rests on a <strong>new (returning) CEO's unproven turnaround</strong>.</li>
+<li><strong>Filing-language diff (FY25 vs FY24 10-K, Item 1A risk factors):</strong> risk-factor language is <strong>largely stable</strong> — Nike did <em>not</em> add dramatic new risk factors; modal usage drifted only slightly toward hedging (<strong>"may" 63→67, "will" 17→14</strong>). The substantive change is in <strong>MD&amp;A candor</strong>: FY25 lays the across-the-board decline bare and <strong>dropped the "wholesale equivalent revenues" non-GAAP metric</strong> (tied to an ERP rollout). Reading that two ways: (a) cleaner reporting, or (b) quietly retiring a flattering metric mid-decline. <em>(Caveat: my section extraction is a heuristic on the cleaned HTML; treat the modal counts as directional, not exact.)</em></li>
+</ul>
+<h2 id="step-6-valuation-last-whats-priced-in">Step 6 — Valuation LAST (what's priced in?)</h2>
+<p>Verifiable inputs: FY25 diluted EPS <strong>$2.16</strong> (trough); 5-yr "normalized" EPS ~<strong>$3.2–3.7</strong>; ~<strong>1.49B</strong> diluted shares (back-solved from $3.22B NI ÷ $2.16).</p>
+<p>The framing, not a price target: at any given share price <strong>P [verify current]</strong>, the market is choosing which earnings base to capitalize:
+- On <strong>trough</strong> EPS ($2.16), a given P looks like a high P/E → market is paying <em>up</em> for a recovery it believes is coming.
+- On <strong>normalized</strong> EPS (~$3.5), the same P is a much lower multiple → market is treating FY25 as temporary.</p>
+<p>So <strong>"is it cheap?" is really "which earnings number is real?"</strong> That's the whole debate restated as a valuation question — exactly Khan's point that <strong>valuation measures how much of the recovery is already priced in.</strong> If P implies the market already expects a full snap-back to ~$3.7 EPS, the risk/reward is poor (good news priced in, "any mistake gets hit hard"). If P implies the market is capitalizing near-trough earnings, the margin of safety is real (<a class="wiki" href="doc-canon-canon-klarman-margin-of-safety.html">canon klarman margin of safety</a>). <strong>Action item to finish the rep: pull today's price, divide by both $2.16 and ~$3.5, and see which world you're being asked to buy.</strong></p>
+<h2 id="step-7-verdict-sizing">Step 7 — Verdict + sizing</h2>
+<p><strong>Verdict: a "show-me" turnaround, not a screaming buy — and explicitly <em>not</em> a value trap on the evidence.</strong> The fear is partly true (real, broad, self-inflicted decline) but the cause is <strong>identifiable and being addressed</strong>, the moat is intact, and FY25 reads as an <strong>earnings trough</strong> rather than structural impairment. That's a <em>fixable</em> discount, which is the good kind — but the fix is unproven and could take years.
+- <strong>Disqualifier to respect:</strong> if you can't get comfortable that the innovation pipeline is genuinely reloading (not just retro re-runs) and that wholesale re-entry is regaining shelf space, it's a pass — those are the load-bearing assumptions.
+- <strong>Sizing (Khan's rule):</strong> this is a multi-year, lumpy, headline-driven name → only sizeable if your <strong>horizon is 3–5+ years and your pain tolerance</strong> can stomach another guide-down. Size to <em>your</em> parameters, not anyone's tip.</p>
+<h3 id="how-id-know-im-wrong-the-disconfirming-checklist">How I'd know I'm wrong (the disconfirming checklist)</h3>
+<ol>
+<li><strong>Gross margin keeps falling</strong> below ~42% (says it's pricing power loss, not transient markdowns).</li>
+<li><strong>NIKE Direct <em>and</em> wholesale both still shrinking</strong> 2+ more quarters (turnaround not landing).</li>
+<li><strong>Greater China keeps deteriorating</strong> (structural, not cyclical).</li>
+<li><strong>Dividend frozen or payout &gt;100%</strong> of earnings (confidence signal flips).</li>
+<li><strong>New product cycles fail to move the share trend</strong> (the brand-heat thesis breaks).</li>
+</ol>
+<hr />
+<h2 id="what-this-rep-exercised-and-its-limits">What this rep exercised (and its limits)</h2>
+<ul>
+<li><strong>Closed the README loop:</strong> research framework → <code>edgar.py</code> real data → produced output. First live use of the EDGAR engine for an analysis.</li>
+<li><strong>Real, reproducible:</strong> every number above is from SEC XBRL / 10-Ks; rerun <code>python3 _ingest/edgar.py company NKE</code> and <code>facts NKE</code> to refresh.</li>
+<li><strong>Limits:</strong> no live price (do Step 6's division yourself); risk-factor diff is heuristic; this is an educational rep, <strong>not advice</strong>; I did not model FCF or a DCF (next rep could, using <a class="wiki" href="doc-learn-unit-06-whats-a-business-worth.html">unit 06 whats a business worth</a>).</li>
+</ul>
+<h2 id="cross-links">Cross-links</h2>
+<ul>
+<li><a class="wiki" href="doc-notes-tiger-sisters-stock-picking.html">tiger sisters stock picking</a> — the framework being applied.</li>
+<li><a class="wiki" href="doc-learn-unit-06-whats-a-business-worth.html">unit 06 whats a business worth</a> — valuation-as-what's-priced-in; natural home for a follow-up DCF rep.</li>
+<li><a class="wiki" href="doc-canon-canon-klarman-margin-of-safety.html">canon klarman margin of safety</a> — "cheap for a reason" vs. genuine margin of safety; the value-trap test.</li>
+<li><a class="wiki" href="doc-canon-canon-mauboussin-success-equation.html">canon mauboussin success equation</a> — separating skill (fixable strategy error) from luck (cycle/FX); expectations vs. fundamentals.</li>
+<li><a class="wiki" href="doc-canon-canon-kahneman-thinking-fast-and-slow.html">canon kahneman thinking fast and slow</a> — guarding against the halo (great brand ⇒ must-be-fine) and recency (trough ⇒ permanent) biases.</li>
+</ul></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-01-accounting-aapl-10k-fy2025.html"><span>Previous</span>Note · AAPL 10-K FY2025 — reading the scoreboard</a><a class="doc-next" href="doc-notes-apply-wss-to-venture.html"><span>Next</span>Apply rep: the Wall Street Skinny&#x27;s capital-markets layer, run against two seed firms</a></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

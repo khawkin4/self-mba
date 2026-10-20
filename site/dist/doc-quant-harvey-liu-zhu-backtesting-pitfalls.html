@@ -1,0 +1,388 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>harvey-liu-zhu-backtesting-pitfalls · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="quant">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-quant.html">Quant Lab</a></nav>
+<div class="doc-kicker">Backtesting research</div>
+<h1 class="doc-title">harvey-liu-zhu-backtesting-pitfalls</h1>
+<div class="doc-meta"><span>15 min read</span><span>3,452 words</span><span>Updated 2026-09-09</span><span class="doc-src">quant-backtesting/research/harvey-liu-zhu-backtesting-pitfalls.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#part-1-harvey-liu-zhu-and-the-cross-section-of-expected-returns">PART 1: Harvey, Liu, Zhu -- "...and the Cross-Section of Expected Returns"</a></li><li class="l3"><a href="#the-core-paper">The Core Paper</a></li><li class="l3"><a href="#the-factor-zoo-problem">The "Factor Zoo" Problem</a></li><li class="l3"><a href="#campbell-harveys-other-work-on-this-topic">Campbell Harvey's Other Work on This Topic</a></li><li class="l2"><a href="#part-2-bailey-borwein-lopez-de-prado-zhu">PART 2: Bailey, Borwein, Lopez de Prado, Zhu</a></li><li class="l3"><a href="#probability-of-backtest-overfitting-pbo">Probability of Backtest Overfitting (PBO)</a></li><li class="l3"><a href="#the-cscv-method">The CSCV Method</a></li><li class="l3"><a href="#pseudo-mathematics-and-financial-charlatanism">"Pseudo-Mathematics and Financial Charlatanism"</a></li><li class="l3"><a href="#the-deflated-sharpe-ratio-dsr">The Deflated Sharpe Ratio (DSR)</a></li><li class="l3"><a href="#minimum-backtest-length-minbtl">Minimum Backtest Length (MinBTL)</a></li><li class="l3"><a href="#statistical-overfitting-and-backtest-performance">Statistical Overfitting and Backtest Performance</a></li><li class="l3"><a href="#lopez-de-prados-10-reasons-most-machine-learning-funds-fail">Lopez de Prado's "10 Reasons Most Machine Learning Funds Fail"</a></li><li class="l3"><a href="#advances-in-financial-machine-learning-book">Advances in Financial Machine Learning (Book)</a></li><li class="l2"><a href="#part-3-general-academic-work-on-backtesting-pitfalls">PART 3: General Academic Work on Backtesting Pitfalls</a></li><li class="l3"><a href="#walk-forward-testing-walk-forward-optimization">Walk-Forward Testing / Walk-Forward Optimization</a></li><li class="l3"><a href="#out-of-sample-validation-for-time-series">Out-of-Sample Validation for Time Series</a></li><li class="l3"><a href="#cross-validation-for-financial-time-series">Cross-Validation for Financial Time Series</a></li><li class="l3"><a href="#survivorship-bias">Survivorship Bias</a></li><li class="l3"><a href="#look-ahead-bias">Look-Ahead Bias</a></li><li class="l3"><a href="#transaction-cost-modeling-in-backtests">Transaction Cost Modeling in Backtests</a></li><li class="l3"><a href="#additional-the-seven-sins-of-quantitative-investing">Additional: The Seven Sins of Quantitative Investing</a></li><li class="l3"><a href="#additional-regime-change-non-stationarity">Additional: Regime Change / Non-Stationarity</a></li><li class="l2"><a href="#summary-of-key-ssrn-paper-links">Summary of Key SSRN Paper Links</a></li></ol></details></nav>
+<article class="prose"><p>I now have comprehensive research across all three parts. Here is the full report:</p>
+<hr />
+<h2 id="part-1-harvey-liu-zhu-and-the-cross-section-of-expected-returns">PART 1: Harvey, Liu, Zhu -- "...and the Cross-Section of Expected Returns"</h2>
+<h3 id="the-core-paper">The Core Paper</h3>
+<p><strong>Title:</strong> "...and the Cross-Section of Expected Returns"
+<strong>Authors:</strong> Campbell R. Harvey, Yan Liu, Heqing Zhu
+<strong>Publication:</strong> Review of Financial Studies, Volume 29, Issue 1, January 2016, Pages 5-68
+<strong>DOI:</strong> 10.1093/rfs/hhv059
+<strong>NBER Working Paper:</strong> No. 20592 (October 2014)
+<strong>SSRN:</strong> https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2249314 (earlier version) and https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2513152
+<strong>NBER:</strong> https://www.nber.org/papers/w20592
+<strong>PDF:</strong> https://www.nber.org/system/files/working_papers/w20592/w20592.pdf</p>
+<p><strong>Core Argument:</strong> The paper documents that researchers had published at least 316 factors claimed to predict stock returns between 1967 and 2014, with publication rates accelerating from a handful per year in the 1970s-80s to over 40 per year by the 2010s. The standard academic practice accepts factors with t-statistics above 2.0 as significant. However, when hundreds of factors are tested on overlapping datasets, approximately 16 would appear significant purely by chance even if none were real. The authors argue that most claimed research findings in financial economics are likely false -- echoing a parallel conclusion from the medical literature (Ioannidis 2005).</p>
+<p><strong>Proposed T-Statistic Thresholds:</strong>
+- Original standard: t &gt; 2.0
+- By 2012 (given cumulative testing): t &gt; 3.0 minimum for credibility
+- The threshold rises over time as cumulative testing increases false discovery risk
+- The paper provides a time series of historical significance cutoffs from 1967 forward and projects 20 years ahead</p>
+<p><strong>Statistical Framework:</strong> The paper applies three multiple testing corrections:
+- Bonferroni correction (most conservative)
+- Holm correction (moderately conservative)
+- Benjamini-Hochberg-Yekutieli method (controls false discovery rate)
+The method allows for correlation among the tests as well as missing data.</p>
+<p><strong>Factors Most Likely Genuine:</strong> Established factors like the original Fama-French factors (market, size, value) and momentum show t-statistics well above 3.0 and survive the higher threshold. Exotic or niche factors typically fail.</p>
+<p><strong>Source:</strong> https://foxholm.com/q/research/harvey-liu-zhu-cross-section/</p>
+<h3 id="the-factor-zoo-problem">The "Factor Zoo" Problem</h3>
+<p><strong>Title:</strong> "A Census of the Factor Zoo"
+<strong>Authors:</strong> Campbell R. Harvey, Yan Liu
+<strong>SSRN:</strong> https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID3712479_code16198.pdf?abstractid=3341728</p>
+<p>Harvey documented that the rate of factor production is out of control, with over 400 factors published in top journals. Many are false discoveries -- lucky findings that exploit data mining rather than genuine economic relationships. The incentive structure of academic publishing (journals prefer novel, significant results) exacerbates the problem.</p>
+<h3 id="campbell-harveys-other-work-on-this-topic">Campbell Harvey's Other Work on This Topic</h3>
+<p>Harvey's research page (https://people.duke.edu/~charvey/research.htm) lists a comprehensive body of work:</p>
+<ol>
+<li>
+<p><strong>"Backtesting"</strong> (2015) -- with Yan Liu. Journal of Portfolio Management, 42:1, 13-28. Won the 2016 Bernstein Fabozzi/Jacobs Levy Award. Proposes an alternative to the commonly practiced 50% discount applied to reported Sharpe ratios. Provides a Sharpe ratio "haircut" methodology and a profit hurdle that any strategy needs to achieve to be deemed significant.
+   - SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2345489
+   - PDF: https://people.duke.edu/~charvey/Research/Published_Papers/P120_Backtesting.PDF</p>
+</li>
+<li>
+<p><strong>"Multiple Testing in Economics"</strong> (2013) -- with Yan Liu. Proposes a framework for multiple hypothesis testing in economics research, allowing for correlation among tests and incomplete data.
+   - SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2358214</p>
+</li>
+<li>
+<p><strong>"False (and Missed) Discoveries in Financial Economics"</strong> (2020) -- with Yan Liu. Journal of Finance, 75:5, 2503-2553. Proposes a double bootstrap method to establish a t-statistic hurdle associated with a specific false discovery rate (e.g., 5%). Addresses both Type I errors (false positives) and Type II errors (missed genuine discoveries).
+   - SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3073799
+   - Wiley: https://onlinelibrary.wiley.com/doi/abs/10.1111/jofi.12951
+   - arXiv: https://arxiv.org/abs/2006.04269</p>
+</li>
+<li>
+<p><strong>"An Evaluation of Alternative Multiple Testing Methods for Finance Applications"</strong> (2020) -- with Yan Liu, Alessio Saretto. Review of Asset Pricing Studies, 10:2, 199-248.
+   - SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3480087</p>
+</li>
+<li>
+<p><strong>"Lucky Factors"</strong> (2021) -- with Yan Liu. Journal of Financial Economics, 141:2, 413-435. Proposes a bootstrap model selection framework that accounts for multiple hypothesis testing.</p>
+</li>
+<li>
+<p><strong>"A Backtesting Protocol in the Era of Machine Learning"</strong> (2019) -- with Rob Arnott and Harry Markowitz. Journal of Financial Data Science, 1:1, 64-74. Develops a research protocol for ML applications in finance, addressing p-hacking through multiple testing.
+   - SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3275654
+   - PDF: https://people.duke.edu/~charvey/Research/Published_Papers/P138_A_backtesting_protocol.pdf</p>
+</li>
+<li>
+<p><strong>"Presidential Address: The Scientific Outlook in Financial Economics"</strong> (2017). Journal of Finance, 72:4, 1399-1440. Harvey's AFA presidential address covering the broader crisis in financial economics research methodology.
+   - SSRN: https://www.ssrn.com/abstract=2893930
+   - Wiley: https://onlinelibrary.wiley.com/doi/abs/10.1111/jofi.12530</p>
+</li>
+<li>
+<p><strong>"Replication in Financial Economics"</strong> (2020). Critical Finance Review, 8:1-2, 1-9.</p>
+</li>
+</ol>
+<hr />
+<h2 id="part-2-bailey-borwein-lopez-de-prado-zhu">PART 2: Bailey, Borwein, Lopez de Prado, Zhu</h2>
+<h3 id="probability-of-backtest-overfitting-pbo">Probability of Backtest Overfitting (PBO)</h3>
+<p><strong>Title:</strong> "The Probability of Backtest Overfitting"
+<strong>Authors:</strong> David H. Bailey, Jonathan M. Borwein, Marcos Lopez de Prado, Qiji Jim Zhu
+<strong>Published:</strong> Journal of Computational Finance (Risk Journals), 2015
+<strong>Originally posted:</strong> September 1, 2013
+<strong>SSRN:</strong> https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2326253
+<strong>Full PDF:</strong> https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf
+<strong>WMU ScholarWorks:</strong> https://scholarworks.wmich.edu/math_pubs/42/
+<strong>Mathematical Appendices SSRN:</strong> https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID2568435_code434076.pdf?abstractid=2568435</p>
+<p><strong>Key Argument:</strong> Standard statistical techniques designed to prevent regression overfitting (such as hold-out) are unreliable in the context of investment backtests. The authors propose a general framework to estimate the probability that a particular backtest is overfit, using Combinatorially Symmetric Cross-Validation (CSCV).</p>
+<h3 id="the-cscv-method">The CSCV Method</h3>
+<p>CSCV works as follows:
+1. Takes a matrix M of returns across N alternative strategy configurations and T time periods
+2. Partitions the data into S sub-samples
+3. Generates all combinatorial splits into in-sample and out-of-sample halves
+4. For each split, identifies the best-performing configuration in-sample and measures its out-of-sample performance
+5. Computes PBO as the proportion of splits where the in-sample optimal configuration underperforms out-of-sample</p>
+<p><strong>Outputs:</strong>
+- PBO: probability that in-sample performance will not replicate out-of-sample
+- Performance degradation: gap between backtested and expected forward performance
+- Probability of loss: risk that the strategy will lose money
+- Stochastic dominance: comparative strategy rankings</p>
+<p><strong>R Package:</strong> The <code>pbo</code> CRAN package implements CSCV: https://cran.r-project.org/web/packages/pbo/readme/README.html
+<strong>Python Package:</strong> https://github.com/esvhd/pypbo</p>
+<h3 id="pseudo-mathematics-and-financial-charlatanism">"Pseudo-Mathematics and Financial Charlatanism"</h3>
+<p><strong>Title:</strong> "Pseudo-Mathematics and Financial Charlatanism: The Effects of Backtest Overfitting on Out-of-Sample Performance"
+<strong>Authors:</strong> David H. Bailey, Jonathan Borwein, Marcos Lopez de Prado, Qiji Jim Zhu
+<strong>Published:</strong> Notices of the American Mathematical Society, 2014
+<strong>SSRN:</strong> https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2308659
+<strong>WMU ScholarWorks:</strong> https://scholarworks.wmich.edu/math_pubs/40/</p>
+<p><strong>Key Finding:</strong> High simulated performance is easily achievable after backtesting a relatively small number of alternative strategy configurations. The higher the number of configurations tried, the greater the probability that the backtest is overfit. Because analysts rarely report the number of configurations tried, investors cannot evaluate the degree of overfitting in most investment proposals.</p>
+<h3 id="the-deflated-sharpe-ratio-dsr">The Deflated Sharpe Ratio (DSR)</h3>
+<p><strong>Title:</strong> "The Deflated Sharpe Ratio: Correcting for Selection Bias, Backtest Overfitting and Non-Normality"
+<strong>Authors:</strong> David H. Bailey, Marcos Lopez de Prado
+<strong>Published:</strong> Journal of Portfolio Management, 40(5), pp. 94-107, July 2014
+<strong>SSRN:</strong> https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2460551
+<strong>PDF:</strong> https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf</p>
+<p><strong>What It Does:</strong> The DSR corrects for two leading sources of performance inflation: (1) selection bias under multiple testing, and (2) non-normally distributed returns. It computes a probabilistic Sharpe ratio (PSR) -- the probability that an estimated SR exceeds a benchmark SR -- then deflates it to account for the number of trials conducted.</p>
+<p><strong>Related:</strong> "Deflating the Sharpe Ratio" -- SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2465675</p>
+<h3 id="minimum-backtest-length-minbtl">Minimum Backtest Length (MinBTL)</h3>
+<p>Bailey and Lopez de Prado proposed the MinBTL metric to determine the minimum number of years of backtest data needed to avoid selecting a strategy with a high in-sample Sharpe ratio but zero or negative out-of-sample performance. This directly connects to the DSR framework.</p>
+<h3 id="statistical-overfitting-and-backtest-performance">Statistical Overfitting and Backtest Performance</h3>
+<p><strong>Authors:</strong> David H. Bailey, Stephanie Ger, Marcos Lopez de Prado, Alexander Sim, Kesheng Wu
+<strong>SSRN:</strong> https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2507040
+<strong>PDF:</strong> https://sdm.lbl.gov/oapapers/ssrn-id2507040-bailey.pdf</p>
+<h3 id="lopez-de-prados-10-reasons-most-machine-learning-funds-fail">Lopez de Prado's "10 Reasons Most Machine Learning Funds Fail"</h3>
+<p><strong>Published:</strong> Journal of Portfolio Management, 44:6, 120, January 2018
+<strong>SSRN:</strong> https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3104816</p>
+<p>Key backtesting-related pitfalls include:
+1. <strong>The Sisyphus Paradigm</strong> -- siloed PhD approach where each person independently produces a strategy, leading to overfitting
+2. <strong>Research Through Backtesting</strong> -- treating backtesting as a research tool rather than a validation tool; backtesting is not research
+3. <strong>Chronological Sampling</strong> -- improper time-series splitting
+4. <strong>Cross-Validation Leakage</strong> -- standard k-fold CV leaks information in financial time series
+5. <strong>Fixed-Time Horizon Labeling</strong> -- arbitrary labeling windows
+6. <strong>Learning Side and Size Simultaneously</strong> -- conflating direction and magnitude
+7. <strong>Weighting of Non-IID Samples</strong> -- treating dependent financial observations as independent</p>
+<p>Earlier presentation version (7 reasons): SSRN https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3031282</p>
+<h3 id="advances-in-financial-machine-learning-book">Advances in Financial Machine Learning (Book)</h3>
+<p>Lopez de Prado's 2018 book (Wiley) consolidates these methods, including purged cross-validation with embargo as the recommended approach for financial ML validation.</p>
+<hr />
+<h2 id="part-3-general-academic-work-on-backtesting-pitfalls">PART 3: General Academic Work on Backtesting Pitfalls</h2>
+<h3 id="walk-forward-testing-walk-forward-optimization">Walk-Forward Testing / Walk-Forward Optimization</h3>
+<p><strong>Origin:</strong> Robert E. Pardo, "Design, Testing and Optimization of Trading Systems" (1st ed. 1992, 2nd ed. 2008, Wiley). ISBN: 0-471-55446-4 (1st ed.), 978-0-470-12801-5 (2nd ed.).</p>
+<p><strong>Methodology:</strong>
+1. Optimize strategy parameters using in-sample historical data over a defined time window
+2. Test the resulting parameters on the immediately following out-of-sample period
+3. Record results
+4. Roll forward by shifting the entire window
+5. Repeat until reaching the end of available data
+6. Aggregate all out-of-sample results to assess robustness</p>
+<p><strong>Two Variants:</strong>
+- <strong>Anchored WFO:</strong> Each walk has a common beginning point; training window grows over time
+- <strong>Non-anchored (Rolling) WFO:</strong> Each walk has a different starting point but the same training window length</p>
+<p><strong>Why It Matters:</strong> Walk-forward analysis simulates how a strategy would have actually performed if deployed with periodic reoptimization. It is the test that overfit strategies cannot pass. Unlike a single train/test split, it produces multiple out-of-sample periods, giving a distribution of performance rather than a single point estimate.</p>
+<p><strong>Sources:</strong>
+- Wikipedia: https://en.wikipedia.org/wiki/Walk_forward_optimization
+- Interactive Brokers: https://www.interactivebrokers.com/campus/ibkr-quant-news/the-future-of-backtesting-a-deep-dive-into-walk-forward-analysis/
+- QuantInsti: https://blog.quantinsti.com/walk-forward-optimization-introduction/</p>
+<h3 id="out-of-sample-validation-for-time-series">Out-of-Sample Validation for Time Series</h3>
+<p><strong>Why Standard Train/Test Splits Are Problematic:</strong>
+1. <strong>Non-stationarity:</strong> Financial time series have changing statistical properties. Parameters estimated on one period do not apply to different market dynamics.
+2. <strong>Temporal dependence:</strong> Observations are not independent; shuffling data violates the time structure.
+3. <strong>Single regime risk:</strong> A single fixed split may land entirely within one market regime, producing results that do not generalize.
+4. <strong>Look-ahead risk with random splits:</strong> Even when folds are kept ordered, cross-validation can produce runs where the validation set occurs before the training set.</p>
+<p><strong>Proper Approaches:</strong>
+- Rolling/expanding window splits with a time lag between training and test sets
+- Walk-forward validation (see above)
+- Purged cross-validation with embargo (see below)</p>
+<p><strong>Source:</strong> https://medium.com/balaena-quant-insights/train-test-split-cross-validation-and-walk-forward-testing-for-on-chain-factors-b5fcf01572e2</p>
+<h3 id="cross-validation-for-financial-time-series">Cross-Validation for Financial Time Series</h3>
+<p><strong>Why Standard K-Fold Fails:</strong>
+- Assumes observations are independent (financial observations are not)
+- Financial labels are often built over overlapping time windows
+- Random shuffling lets the model see future information, causing data leakage
+- Results in inflated performance metrics</p>
+<p><strong>Purged Cross-Validation (Lopez de Prado, 2017):</strong>
+- Developed at Guggenheim Partners / Cornell University
+- <strong>Purging:</strong> Removes from the training set any observation whose label overlaps in time with labels in the testing set
+- <strong>Embargo:</strong> Excludes training observations within a specified time window after the testing set to prevent serial correlation leakage
+- Reduces risk of inflated metrics from overlapping information
+- Ensures the model evaluates only on truly unseen data</p>
+<p><strong>Combinatorial Purged Cross-Validation (CPCV):</strong>
+- Extension using k-p folds for training where p &gt; 1 allows multiple test folds
+- Generates thousands of train/test splits so every part of the series is tested multiple times
+- Shown to have lower PBO and superior DSR test statistics compared to traditional methods
+- Overcomes the limitation of walk-forward CV that produces only a single backtest path</p>
+<p><strong>Key Sources:</strong>
+- Medium (pitfalls): https://bhakta-works.medium.com/the-pitfalls-of-standard-cross-validation-in-financial-machine-learning-aec03f672179
+- GitHub (scikit-learn compatible implementation): https://github.com/eslazarev/purged-cross-validation
+- Trading Interview: https://www.tradinginterview.com/courses/machine-learning/lessons/cross-validation-for-financial-data-purging-and-embargoing/
+- Towards AI: https://towardsai.com/p/l/the-combinatorial-purged-cross-validation-method</p>
+<h3 id="survivorship-bias">Survivorship Bias</h3>
+<p><strong>Definition:</strong> Testing strategies only on assets that exist today, ignoring those that were delisted, went bankrupt, or were acquired during the test period.</p>
+<p><strong>Key Academic Reference:</strong> Elton, Gruber, Blake -- "Survivorship Bias and Mutual Fund Performance," Review of Financial Studies, 1996, Volume 9, Pages 1097-1120.
+- SSRN: https://www.ssrn.com/abstract=6701
+- Oxford Academic: https://academic.oup.com/rfs/article-abstract/9/4/1097/1580100</p>
+<p><strong>Quantitative Impact:</strong>
+- Elton, Gruber, Blake found survivorship bias overstated average mutual fund returns by roughly 0.9% per year
+- Bianchi and Koutmos found a 2.1% annual overestimation during the 2008 financial crisis
+- Over a 10-year backtest, ~1% per year accumulates into the difference between a mediocre and apparently good strategy</p>
+<p><strong>Related Work:</strong> Carhart, Carpenter, Lynch, Musto -- "Mutual Fund Survivorship," Review of Financial Studies, 2002.
+- PDF: https://pages.stern.nyu.edu/~alynch/pdfs/rfs02cclm.pdf</p>
+<p><strong>How to Mitigate:</strong> Use survivorship-bias-free datasets (available from institutional data vendors like CRSP) that include delisted and bankrupt companies with their full return history including delisting returns.</p>
+<p><strong>Sources:</strong>
+- LuxAlgo: https://www.luxalgo.com/blog/survivorship-bias-in-backtesting-explained/
+- Bookmap: https://bookmap.com/blog/survivorship-bias-in-market-data-what-traders-need-to-know
+- CFA (AnalystPrep): https://analystprep.com/study-notes/cfa-level-2/problems-in-backtesting/
+- Apollo-8: https://www.apollo-8.ch/post/why-backtests-lie</p>
+<h3 id="look-ahead-bias">Look-Ahead Bias</h3>
+<p><strong>Definition:</strong> Using information in a backtest that would not have been available at the time the trade decision was made.</p>
+<p><strong>Common Examples:</strong>
+1. <strong>Restated earnings data:</strong> Company reports Q2 earnings in July, revises in September. If the backtest uses the revised figure when evaluating a signal generated in August, it incorporates future information.
+2. <strong>Index membership changes:</strong> Testing a strategy on "the S&amp;P 500" using today's constituents rather than the constituents as they existed on each historical date.
+3. <strong>Future price data in indicators:</strong> Computing moving averages or indicators using future closing prices.
+4. <strong>Point-in-time data issues:</strong> Using financial statement data before its actual publication date. Swiss real estate fund reports show a median 73-day delay between fiscal-year close and release.</p>
+<p><strong>Impact:</strong> Even a single bar of future data leaking into a signal calculation can produce equity curves that look institutional-grade but collapse immediately in live trading.</p>
+<p><strong>How to Mitigate:</strong> Use point-in-time databases that record the actual publication timestamp of each data item, not just the reference period. Verify all data timestamps and release dates. Conduct code reviews for time-alignment errors.</p>
+<p><strong>Sources:</strong>
+- Wall Street Mojo: https://www.wallstreetmojo.com/look-ahead-bias/
+- Michael Harris (Medium): https://mikeharrisny.medium.com/look-ahead-bias-in-backtests-and-how-to-detect-it-ad5e42d97879
+- MarketCalls: https://www.marketcalls.in/machine-learning/understanding-look-ahead-bias-and-how-to-avoid-it-in-trading-strategies.html
+- arXiv (2025, LLM-specific): https://arxiv.org/pdf/2605.24564</p>
+<h3 id="transaction-cost-modeling-in-backtests">Transaction Cost Modeling in Backtests</h3>
+<p><strong>The Problem:</strong> Ignoring trading frictions (commissions, bid-ask spreads, slippage, market impact) flatters backtest results. A strategy whose edge disappears at 20 bps of costs per trade has no genuine edge.</p>
+<p><strong>Cost Components:</strong>
+- <strong>Explicit costs:</strong> Commissions, exchange fees, taxes (fixed schedule, easily modeled)
+- <strong>Implicit costs:</strong> Market impact and slippage (account for the majority of total transaction costs, extremely challenging to model precisely)</p>
+<p><strong>Key Market Impact Models:</strong></p>
+<ol>
+<li>
+<p><strong>Almgren-Chriss (2000):</strong> Foundational framework for optimal trade execution. Balances permanent market impact (lasting price changes), temporary market impact (immediate price changes), and timing risk. Produces a closed-form optimal trading trajectory (hyperbolic sine function).
+   - Original paper: https://www.smallake.kr/wp-content/uploads/2016/03/optliq.pdf
+   - Overview: https://questdb.com/glossary/optimal-execution-strategies-almgren-chriss-model/</p>
+</li>
+<li>
+<p><strong>Almgren et al. (2005) Structural Model:</strong>
+   Cost = (I/2) x sign(n) x mu x sigma x |n/(V x T)|^(3/5)
+   With calibrated parameters gamma = 0.314, eta = 0.142</p>
+</li>
+<li>
+<p><strong>Northfield Model (2009):</strong> Square-root scaling: c = B|n| + C|n|^0.5 (R-squared = 0.7989)</p>
+</li>
+<li>
+<p><strong>Frazzini, Israel, Moskowitz (2017):</strong> Empirical study of $1.7 trillion in live trades found median transaction cost of 4.9 bps for U.S. stocks, with ~85% being permanent price impact. Costs rise to ~40 bps for trades at 10% of typical volume.</p>
+</li>
+<li>
+<p><strong>Roll (1984):</strong> Effective spread estimation from serial price correlation.</p>
+</li>
+</ol>
+<p><strong>Empirical Benchmarks:</strong> Engle, Ferstenberg, Russell (2012) found averages of 8.8 bps (NYSE) and 13.8 bps (NASDAQ).</p>
+<p><strong>Strategy-Specific Effects:</strong> Trend-following strategies suffer most from slippage; mean reversion strategies suffer least.</p>
+<p><strong>Sources:</strong>
+- BSIC Bocconi: https://bsic.it/modelling-transaction-costs-and-market-impact/
+- BSIC PDF: https://bsic.it/wp-content/uploads/2023/04/Modelling-transaction-costs-for-pdf.pdf
+- BSIC Backtesting Series: https://bsic.it/backtesting-series-episode-5-transaction-cost-modelling/
+- QuantStart: https://www.quantstart.com/articles/Successful-Backtesting-of-Algorithmic-Trading-Strategies-Part-II/
+- Exegy: https://www.exegy.com/avoiding-slippage-equities-trading-with-backtesting/
+- ResearchGate: https://www.researchgate.net/publication/384458498_The_impact_of_transactions_costs_and_slippage_on_algorithmic_trading_performance</p>
+<h3 id="additional-the-seven-sins-of-quantitative-investing">Additional: The Seven Sins of Quantitative Investing</h3>
+<p><strong>Source:</strong> Luo, Yin, M. Alvarez, S. Wang, J. Jussa, A. Wang, G. Rohal (2014). Deutsche Bank Markets Research.
+- PDF: https://hudsonthames.org/wp-content/uploads/2022/01/DB-201409-Seven_Sins_of_Quantitative_Investing.pdf
+- Summary: https://portfoliooptimizationbook.com/book/8.2-seven-sins.html</p>
+<p>The seven sins:
+1. Survivorship bias
+2. Look-ahead bias
+3. Storytelling bias (ex-post narrative creation)
+4. Overfitting and data snooping
+5. Turnover and transaction costs
+6. Outliers (strategy success depending on rare events)
+7. Asymmetric pattern and shorting cost (assuming unlimited cheap short-selling)</p>
+<h3 id="additional-regime-change-non-stationarity">Additional: Regime Change / Non-Stationarity</h3>
+<p>Strategies calibrated on one historical period learn rules specific to that era and fail when conditions change. This is a fundamental limitation of all backtesting. Detection methods include the Zivot-Andrews test (one structural break) and Bai-Perron method (multiple breaks). Segmented analysis -- splitting the series into pre- and post-break periods -- is the standard mitigation.</p>
+<p><strong>Sources:</strong>
+- arXiv: https://arxiv.org/html/2602.00073v1
+- PapersWithBacktest: https://paperswithbacktest.com/course/structural-breaks-financial-time-series</p>
+<hr />
+<h2 id="summary-of-key-ssrn-paper-links">Summary of Key SSRN Paper Links</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Paper</th>
+<th>SSRN ID</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Harvey, Liu, Zhu -- "...and the Cross-Section of Expected Returns"</td>
+<td>2249314</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2249314</td>
+</tr>
+<tr>
+<td>Harvey, Liu -- "Multiple Testing in Economics"</td>
+<td>2358214</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2358214</td>
+</tr>
+<tr>
+<td>Harvey, Liu -- "False (and Missed) Discoveries"</td>
+<td>3073799</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3073799</td>
+</tr>
+<tr>
+<td>Harvey, Liu -- "Backtesting"</td>
+<td>2345489</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2345489</td>
+</tr>
+<tr>
+<td>Harvey -- "Presidential Address"</td>
+<td>2893930</td>
+<td>https://www.ssrn.com/abstract=2893930</td>
+</tr>
+<tr>
+<td>Harvey, Liu, Saretto -- "Evaluation of Multiple Testing Methods"</td>
+<td>3480087</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3480087</td>
+</tr>
+<tr>
+<td>Harvey, Liu -- "Census of the Factor Zoo"</td>
+<td>3341728</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3341728</td>
+</tr>
+<tr>
+<td>Arnott, Harvey, Markowitz -- "Backtesting Protocol"</td>
+<td>3275654</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3275654</td>
+</tr>
+<tr>
+<td>Bailey, Borwein, LdP, Zhu -- "Probability of Backtest Overfitting"</td>
+<td>2326253</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2326253</td>
+</tr>
+<tr>
+<td>Bailey, Borwein, LdP, Zhu -- "Pseudo-Mathematics"</td>
+<td>2308659</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2308659</td>
+</tr>
+<tr>
+<td>Bailey, LdP -- "Deflated Sharpe Ratio"</td>
+<td>2460551</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2460551</td>
+</tr>
+<tr>
+<td>LdP -- "Deflating the Sharpe Ratio"</td>
+<td>2465675</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2465675</td>
+</tr>
+<tr>
+<td>Bailey et al. -- "Statistical Overfitting and Backtest Performance"</td>
+<td>2507040</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2507040</td>
+</tr>
+<tr>
+<td>LdP -- "10 Reasons ML Funds Fail"</td>
+<td>3104816</td>
+<td>https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3104816</td>
+</tr>
+<tr>
+<td>Elton, Gruber, Blake -- "Survivorship Bias"</td>
+<td>6701</td>
+<td>https://www.ssrn.com/abstract=6701</td>
+</tr>
+</tbody>
+</table></div></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-quant-factor-models-regime-detection.html"><span>Previous</span>factor-models-regime-detection</a><a class="doc-next" href="doc-quant-lopez-de-prado.html"><span>Next</span>lopez-de-prado</a></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

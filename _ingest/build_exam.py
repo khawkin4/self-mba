@@ -73,10 +73,16 @@ print(f"harvested {len(bank)} questions from {len({q['src'] for q in bank})} les
 for d, n in sorted(dist.items(), key=lambda x: -x[1]):
     print(f"  {d:28} {n}")
 
-PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Diagnostic Exam · The Compounding MBA</title>
-<link rel="stylesheet" href="style.css">
+
+def _chrome():
+    """Shared site chrome (fonts, nav, site.js) written by site/build.py; falls back to bare page."""
+    try:
+        c = json.load(open(os.path.join(DIST, "_chrome.json")))
+        return c["head"], c["foot"]
+    except Exception:
+        return ('<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n<title>{title}</title>\n<link rel="stylesheet" href="style.css">', '</body></html>')
+
+PAGE = """__HEAD__
 <style>
 .exam-wrap{max-width:760px;margin:0 auto;padding:30px 24px 120px}
 .exam-q{border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:0 0 14px;background:var(--surface)}
@@ -89,7 +95,7 @@ PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 .exam-opt.wrong{border-color:var(--wrong);background:rgba(207,106,90,.14)}
 .exam-fb{margin:10px 0 0;font:.9rem/1.55 var(--read);color:var(--dim);display:none}
 .exam-fb.show{display:block}
-#scorebar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:14px 24px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+#scorebar{position:sticky;top:var(--nav-h);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:14px 24px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
 #scorebar b{color:var(--brass2)}
 .bigbtn{padding:13px 26px;border:0;border-radius:8px;background:var(--brass);color:#0c100e;font:600 .95rem var(--mono);letter-spacing:.04em;cursor:pointer}
 .bigbtn:disabled{opacity:.4;cursor:default}
@@ -104,7 +110,7 @@ PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 @media(max-width:560px){.dom-row{grid-template-columns:120px 1fr 50px}}
 </style></head><body>
 <div id="scorebar">
-<a href="index.html" class="home" style="font:.8rem var(--mono);color:var(--dim)">&larr; Index</a>
+<a href="index.html" class="home" style="font:.8rem var(--mono);color:var(--dim)">&larr; Home</a>
 <span style="font:600 .8rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink)">Diagnostic Exam</span>
 <span id="prog" style="font:.82rem var(--mono);color:var(--dim)"></span>
 <button id="submit" class="bigbtn" style="margin-left:auto">Submit &amp; Score</button>
@@ -190,7 +196,7 @@ document.getElementById('introNote').textContent=
   BANK.length+' questions across '+new Set(BANK.map(q=>q.domain)).size+' MBA domains, drawn from every lesson\\'s comprehension checks. '+
   'Answer what you can, then Submit & Score for an overall result and a per-domain breakdown.';
 render();
-</script></body></html>"""
+</script>__FOOT__"""
 
 blueprint = {  # directional MFT-MBA emphasis (High/Med) for the report note
     "Strategy": "High", "Finance": "High", "Marketing": "High", "Accounting": "High",
@@ -198,7 +204,7 @@ blueprint = {  # directional MFT-MBA emphasis (High/Med) for the report note
     "Operations": "Med", "Information Systems": "Med", "Legal & Ethical": "Med",
     "International Business": "Med", "Communication": "Med", "Integration": "Med",
 }
-out = PAGE.replace("__BANK__", json.dumps(bank, ensure_ascii=False)).replace("__BLUEPRINT__", json.dumps(blueprint))
+out = PAGE.replace("__HEAD__", _chrome()[0].format(title="Diagnostic Exam · The Compounding MBA", css="style.css")).replace("__FOOT__", _chrome()[1]).replace("__BANK__", json.dumps(bank, ensure_ascii=False)).replace("__BLUEPRINT__", json.dumps(blueprint))
 os.makedirs(DIST, exist_ok=True)
 open(os.path.join(DIST, "exam.html"), "w", encoding="utf-8").write(out)
 print(f"\nwrote {os.path.join(DIST, 'exam.html')} ({len(bank)} questions)")

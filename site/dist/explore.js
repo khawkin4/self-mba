@@ -1,7 +1,13 @@
 
 (function(){
   var COLORS={core:[45,122,74],exec:[184,110,26],canon:[154,123,46],gaps:[122,97,33]};
-  var BG=[250,247,242];
+  // Panel background follows the theme (word cloud + graph render on var(--surface)).
+  var BG=[255,255,255];
+  try{var hex=getComputedStyle(document.documentElement).getPropertyValue('--surface').trim();
+    if(/^#[0-9a-f]{6}$/i.test(hex))BG=[parseInt(hex.slice(1,3),16),parseInt(hex.slice(3,5),16),parseInt(hex.slice(5,7),16)];
+    var isDark=BG[0]<128;
+    if(isDark){COLORS={core:[93,185,129],exec:[221,143,63],canon:[207,167,82],gaps:[127,158,197]};}
+  }catch(e){}
 
   // ====== WORD CLOUD — canvas spiral packing, 0° + 90° ======
   var wcCvs=document.getElementById('wc-canvas');

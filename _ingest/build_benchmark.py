@@ -35,10 +35,16 @@ LINKS = ('<div class="note"><b>Sit the real thing.</b> This is an original, exam
          '<a href="https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam" target="_blank" rel="noopener">CFA Level I practice</a>. '
          'See <code>notes/canon/BENCHMARK-EXTERNAL.md</code> for the full mapping.</div>')
 
-PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Calibrated Benchmark Exam · The Compounding MBA</title>
-<link rel="stylesheet" href="style.css">
+
+def _chrome():
+    """Shared site chrome (fonts, nav, site.js) written by site/build.py; falls back to bare page."""
+    try:
+        c = json.load(open(os.path.join(DIST, "_chrome.json")))
+        return c["head"], c["foot"]
+    except Exception:
+        return ('<!doctype html><html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n<title>{title}</title>\n<link rel="stylesheet" href="style.css">', '</body></html>')
+
+PAGE = """__HEAD__
 <style>
 .exam-wrap{max-width:780px;margin:0 auto;padding:26px 24px 120px}
 .exam-q{border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:0 0 14px;background:var(--surface)}
@@ -52,7 +58,7 @@ PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 .exam-opt.wrong{border-color:var(--wrong);background:rgba(207,106,90,.14)}
 .exam-fb{margin:10px 0 0;font:.9rem/1.55 var(--read);color:var(--dim);display:none}
 .exam-fb.show{display:block}
-#scorebar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:14px 24px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+#scorebar{position:sticky;top:var(--nav-h);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:14px 24px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
 .bigbtn{padding:13px 26px;border:0;border-radius:8px;background:var(--brass);color:#0c100e;font:600 .95rem var(--mono);letter-spacing:.04em;cursor:pointer}
 .result{border:1px solid var(--brass);border-radius:12px;padding:24px;margin:0 0 22px;background:var(--surface2);display:none}
 .result.show{display:block;animation:rise .5s both}
@@ -63,9 +69,8 @@ PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 .note{font:.84rem/1.65 var(--read);color:var(--dim);border-left:2px solid var(--line2);padding-left:14px;margin:18px 0}
 @media(max-width:560px){.dom-row{grid-template-columns:120px 1fr 50px}}
 </style></head><body>
-<div class="grain"></div><div class="atmos"></div>
 <div id="scorebar">
-<a href="index.html" style="font:.8rem var(--mono);color:var(--dim);text-decoration:none">&larr; Index</a>
+<a href="index.html" style="font:.8rem var(--mono);color:var(--dim);text-decoration:none">&larr; Home</a>
 <span style="font:600 .8rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink)">Calibrated Benchmark Exam</span>
 <span id="prog" style="font:.82rem var(--mono);color:var(--dim)"></span>
 <button id="submit" class="bigbtn" style="margin-left:auto">Submit &amp; Score</button>
@@ -125,9 +130,9 @@ document.getElementById('retake').addEventListener('click',render);
 document.getElementById('introNote').textContent=BANK.length+' original, application-level questions across '+new Set(BANK.map(q=>q.domain)).size+
   ' MBA domains, written to real-exam difficulty (not recall). Answer what you can, then Submit & Score.';
 render();
-</script></body></html>"""
+</script>__FOOT__"""
 
-out = PAGE.replace("__BANK__", json.dumps(bank, ensure_ascii=False)).replace("__LINKS__", LINKS)
+out = PAGE.replace("__HEAD__", _chrome()[0].format(title="Calibrated Benchmark Exam · The Compounding MBA", css="style.css")).replace("__FOOT__", _chrome()[1]).replace("__BANK__", json.dumps(bank, ensure_ascii=False)).replace("__LINKS__", LINKS)
 os.makedirs(DIST, exist_ok=True)
 open(os.path.join(DIST, "benchmark-exam.html"), "w", encoding="utf-8").write(out)
 print(f"\nwrote {os.path.join(DIST, 'benchmark-exam.html')} ({len(bank)} questions)")

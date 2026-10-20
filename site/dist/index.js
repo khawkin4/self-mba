@@ -64,16 +64,24 @@
     });},{threshold:0.3});
   document.querySelectorAll('.stat-num[data-target]').forEach(function(el){sObs.observe(el);});
 
-  // --- Animate stat bar fill ---
-  var barFill=document.querySelector('.stat-bar-fill[data-width]');
-  if(barFill){
-    var bObs=new IntersectionObserver(function(es){
-      es.forEach(function(e){
-        if(e.isIntersecting){
-          e.target.style.width=e.target.dataset.width+'%';
-          bObs.unobserve(e.target);}
-      });},{threshold:0.3});
-    bObs.observe(barFill);}
+  // --- Animate bar fills (hero coverage + path stage bars) ---
+  var bObs=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.style.width=e.target.dataset.width+'%';
+        bObs.unobserve(e.target);}
+    });},{threshold:0.3});
+  document.querySelectorAll('.stat-bar-fill[data-width],.stage-bar i[data-width]').forEach(function(el){bObs.observe(el);});
+
+  // --- "Continue where you left off" (set by site.js on module + document pages) ---
+  try{
+    var last=JSON.parse(localStorage.getItem('mba-last')||'null');
+    var cont=document.getElementById('continue');
+    if(last&&last.h&&cont){
+      document.getElementById('continue-link').href=last.h;
+      document.getElementById('continue-title').textContent=(last.c?last.c+' · ':'')+last.t;
+      cont.classList.add('show');}
+  }catch(e){}
 
   // --- Card entrance stagger (per-section, Material deceleration) ---
   var sections=document.querySelectorAll('.track-section');
@@ -171,9 +179,9 @@
     });
   });
   try{
-    var st=JSON.parse(localStorage.getItem('mba-collapsed')||'{}');
-    Object.keys(st).forEach(function(track){
-      if(st[track]){
+    var cst=JSON.parse(localStorage.getItem('mba-collapsed')||'{}');
+    Object.keys(cst).forEach(function(track){
+      if(cst[track]){
         var head=document.querySelector('.track-head[data-collapse="'+track+'"]');
         if(head)head.closest('.track-section').classList.add('collapsed');
       }

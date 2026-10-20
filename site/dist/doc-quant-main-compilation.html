@@ -1,0 +1,110 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>main-compilation · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="quant">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-quant.html">Quant Lab</a></nav>
+<div class="doc-kicker">Backtesting research</div>
+<h1 class="doc-title">main-compilation</h1>
+<div class="doc-meta"><span>9 min read</span><span>2,150 words</span><span>Updated 2026-09-09</span><span class="doc-src">quant-backtesting/research/main-compilation.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#quantitative-hedge-fund-approaches-to-backtesting-and-market-understanding">QUANTITATIVE HEDGE FUND APPROACHES TO BACKTESTING AND MARKET UNDERSTANDING</a></li><li class="l3"><a href="#1-backtesting-methodology-and-known-pitfalls">1. BACKTESTING METHODOLOGY AND KNOWN PITFALLS</a></li><li class="l3"><a href="#2-how-these-firms-understand-markets">2. HOW THESE FIRMS UNDERSTAND MARKETS</a></li><li class="l3"><a href="#3-infrastructure-and-systems">3. INFRASTRUCTURE AND SYSTEMS</a></li><li class="l3"><a href="#4-key-published-sources-and-papers">4. KEY PUBLISHED SOURCES AND PAPERS</a></li></ol></details></nav>
+<article class="prose"><p>I now have comprehensive primary-source material from all searches. Here is the compiled report.</p>
+<hr />
+<h2 id="quantitative-hedge-fund-approaches-to-backtesting-and-market-understanding">QUANTITATIVE HEDGE FUND APPROACHES TO BACKTESTING AND MARKET UNDERSTANDING</h2>
+<h3 id="1-backtesting-methodology-and-known-pitfalls">1. BACKTESTING METHODOLOGY AND KNOWN PITFALLS</h3>
+<p><strong>The Overfitting Problem</strong></p>
+<p>The single most dangerous issue in quantitative finance is backtest overfitting -- discovering patterns in historical noise rather than genuine market inefficiencies. The definitive work here comes from Marcos Lopez de Prado (formerly Guggenheim Partners, now at Cornell/Abu Dhabi Investment Authority). His paper series with Bailey, Borwein, and Zhu -- particularly "The Probability of Backtest Overfitting" (SSRN 2326253, published in Journal of Computational Finance 2015) -- introduced a formal statistical test (PBO) that computes the probability a strategy's in-sample performance is the product of data mining rather than genuine alpha. Their companion paper, "Pseudo-Mathematics and Financial Charlatanism" (Notices of the American Mathematical Society, May 2014, SSRN 2308659), demonstrated that when researchers try N strategy configurations and report only the best, the probability of selecting an overfit strategy approaches certainty as N grows. His "Deflated Sharpe Ratio" (SSRN 2460551) provides a correction to the Sharpe ratio that accounts for selection bias, non-normality, and the number of trials conducted.</p>
+<p>Lopez de Prado's book <em>Advances in Financial Machine Learning</em> (Wiley, 2018) introduced several now-standard concepts:
+- <strong>Combinatorial Purged Cross-Validation (CPCV)</strong>: Standard k-fold cross-validation fails on financial time series because adjacent folds leak information. CPCV generates multiple backtest paths using combinatorial splits with "purging" (removing training observations whose labels overlap temporally with test labels) and "embargoing" (adding a buffer zone between train/test sets).
+- <strong>Triple Barrier Method</strong>: Labels trades not by fixed forward returns but by which of three barriers price hits first -- upper take-profit, lower stop-loss, or time expiration.
+- <strong>Meta-Labeling</strong>: A two-stage approach where a primary model generates trade direction and a secondary ML model decides position sizing/whether to take the trade at all.
+- <strong>Fractional Differentiation</strong>: A method for making price series stationary while preserving memory, solving the tension between stationarity (needed for ML) and information preservation.</p>
+<p><strong>The Multiple Testing Crisis</strong></p>
+<p>Harvey, Liu, and Zhu's landmark paper "...and the Cross-Section of Expected Returns" (Review of Financial Studies, 2016, SSRN 2249314) documented that researchers had published at least 316 factors claiming to predict stock returns. They demonstrated that the conventional t-statistic threshold of 2.0 is grossly insufficient when hundreds of factors have been tested; the appropriate threshold should be above 3.0. Their conclusion echoed medical research: most claimed findings in financial economics are likely false.</p>
+<p><strong>Walk-Forward Testing and Time Series Validation</strong></p>
+<p>Walk-forward optimization (WFO) is the institutional standard for out-of-sample validation. Unlike static backtesting, WFO rolls forward through time: optimize parameters on window 1, test on the subsequent out-of-sample period, then slide the window forward and repeat. This reveals whether a strategy's edge persists when parameters are continuously recalibrated -- reflecting how traders actually operate. Key biases WFO addresses include look-ahead bias (using future information), survivorship bias (excluding failed assets or delisted securities from the universe), and data-snooping bias (reporting only the best of many tested configurations).</p>
+<p><strong>AQR's Contribution to Rigor</strong></p>
+<p>Cliff Asness and AQR have been the most prolific publishers among hedge funds. Their research culture stems from Asness's training under Eugene Fama at Chicago, where the directive was: "If it's in the data, write the paper." Key contributions include:
+- "Value and Momentum Everywhere" (Asness, Moskowitz, Pedersen -- Journal of Finance, 2013): Documented consistent value and momentum premia across eight asset classes globally, showing these factors correlate more across asset classes than passive exposures do, and that value and momentum are negatively correlated with each other.
+- Asness's public writings on the dangers of factor timing -- warning that there is powerful incentive to oversell timing ability and that investors systematically underestimate how punishing drawdowns can be (his letter "The Long Run is Lying to You").</p>
+<p>Ernest Chan's books (<em>Quantitative Trading</em>, <em>Algorithmic Trading</em>, <em>Machine Trading</em>) emphasize simple, linear strategies as an antidote to overfitting. His framework stresses mean reversion testing via cointegration and Hurst exponent, and deliberately caps model complexity.</p>
+<hr />
+<h3 id="2-how-these-firms-understand-markets">2. HOW THESE FIRMS UNDERSTAND MARKETS</h3>
+<p><strong>Signal Processing and Pattern Recognition (Renaissance Technologies)</strong></p>
+<p>What is publicly known about RenTech's Medallion Fund comes primarily from Gregory Zuckerman's <em>The Man Who Solved the Market</em> and Jim Simons's public talks. The approach is fundamentally data-first: "We don't start with models. We start with data. We don't have any preconceived notions. We look for things that can be replicated thousands of times." The firm hires physicists, mathematicians, and signal processing experts rather than finance professionals. Known methodological elements include hidden Markov models, statistical arbitrage, and pattern recognition applied to data going back to the 1700s. The fund is closed to outside investors and details remain proprietary, but its ~66% annualized gross returns (before fees) over decades remain the most extraordinary track record in finance.</p>
+<p><strong>Market Microstructure (Citadel Securities)</strong></p>
+<p>Citadel Securities is involved in roughly one of every four U.S. equity trades and handles nearly 40% of all retail order flow. Their approach to market understanding is grounded in market microstructure -- the mechanics of how orders arrive, interact, and move prices. Ken Griffin founded Citadel on the belief that advanced quantitative analytics could unlock capital market opportunities. The firm uses volatility-based position sizing, price-signal-driven decisions (not fundamental predictions), and operates high-frequency infrastructure co-located at exchanges. They blend data-driven strategies with precise risk management across commodities, macro, and equity market making.</p>
+<p><strong>Computational Hybrid Approach (DE Shaw)</strong></p>
+<p>David Shaw, a Stanford CS PhD and former Columbia professor, pioneered applying computational methods to finance when he founded the firm in 1988. DE Shaw's distinctive feature is its hybrid approach: integrating quantitative/systematic strategies with fundamental analysis on the same platform, allowing the firm to capture opportunities that purely systematic or purely discretionary approaches miss. Trading signals are derived from over twenty different predictive techniques, and the firm identifies statistically robust market inefficiencies through what they describe as a scientific approach to research.</p>
+<p><strong>Systematic Macro and Risk Parity (Bridgewater)</strong></p>
+<p>Ray Dalio's "How the Economic Machine Works" framework decomposes the economy into two cycles (short-term debt cycle ~5-8 years, long-term debt cycle ~75-100 years) plus productivity growth. Bridgewater pioneered two institutional frameworks: alpha-beta separation (1990) -- separating market exposure from manager skill -- and risk parity (1996). The All Weather portfolio was designed to perform in any of four economic environments: rising growth, falling growth, rising inflation, falling inflation. Assets are weighted not by dollar amount but by their risk contribution, so no single regime dominates portfolio performance. Dalio's core principle: build 10-15 uncorrelated return streams and accept that you cannot predict the future.</p>
+<p><strong>Data Science at Scale (Two Sigma)</strong></p>
+<p>Two Sigma uses over 10,000 datasets and employs techniques spanning classical statistical methods, gradient-boosted trees, deep learning, and reinforcement learning. They were early adopters of cloud infrastructure for burst computing capacity, allowing researchers to spin up thousands of cores for a single backtest. They sponsor Kaggle competitions, publish research, and host data science events. Their research spans machine learning, NLP for financial text, and alternative data integration.</p>
+<p><strong>Factor Models and Regime Detection</strong></p>
+<p>The academic foundation is the Fama-French factor model progression (3-factor adding size and value to market beta; 5-factor adding profitability and investment). Barra risk models decompose portfolio risk into systematic factor exposures for institutional risk management. Hidden Markov Models are increasingly used for regime detection -- a Student-t HMM can detect moderate crises that Gaussian models miss, and regime-switching factor strategies can rotate between leveraged long-only value (in calm markets) and market-neutral Fama-French positioning (in crises).</p>
+<p><strong>Alternative Data</strong></p>
+<p>78% of hedge funds now integrate alternative data. The top 20 spend $40-60M annually on it. Credit card transaction data is the most consistently useful category (direct revenue proxies weeks before filings). Satellite imagery of retail parking lots has produced notable successes (UBS Walmart analysis) but ROI is inconsistent unless the fund runs a specific sector strategy. Web scraping, app usage data, and geolocation data round out the primary categories.</p>
+<hr />
+<h3 id="3-infrastructure-and-systems">3. INFRASTRUCTURE AND SYSTEMS</h3>
+<p><strong>Backtesting Architecture</strong></p>
+<p>Professional quant infrastructure uses two complementary paradigms:
+- <strong>Vectorized backtesting</strong>: Processes data in fixed time-step batches using array operations across all assets simultaneously. Orders of magnitude faster -- thousands of strategy variations in the time an event-driven engine tests one. Ideal for research/screening. Weakness: assumes fills at next bar's open/close and ignores intra-bar slippage, partial fills, and bid-ask spreads.
+- <strong>Event-driven backtesting</strong>: Simulates a live environment by sequentially handling discrete market events (ticks, bar closes). Models realistic order types, slippage, partial fills, and real-time risk checks via FillEvents. Non-negotiable for production validation. Much slower.</p>
+<p>Modern institutional practice uses vectorized for initial research and event-driven for final validation before deployment.</p>
+<p><strong>Transaction Cost Modeling</strong></p>
+<p>The Almgren-Chriss model (2000) is the standard framework for optimal execution. It decomposes market impact into temporary impact (instantaneous cost of demanding liquidity, which reverts) and permanent impact (lasting price shift reflecting information content). The model balances market impact cost against timing risk through a risk-aversion parameter, producing optimal execution schedules that trade fastest at the beginning and follow a hyperbolic decay. Kyle's lambda provides an alternative linear price-impact framework. Both are essential inputs to realistic backtesting.</p>
+<p><strong>Robert Carver's Open-Source Framework</strong></p>
+<p>Carver's <em>Systematic Trading</em> (2015) and his open-source pysystemtrade (GitHub) implement a complete backtesting-to-live-trading pipeline for futures. Key principles: forecast diversification across multiple trading rules, volatility targeting for position sizing, instrument diversification, and explicit modeling of costs. The framework runs live against Interactive Brokers via ib_async. Carver's blog (qoppac.blogspot.com) provides ongoing methodology discussion.</p>
+<p><strong>Market Data Platforms</strong></p>
+<p>Bloomberg's PORT (Portfolio &amp; Risk Analytics) platform provides AI-enhanced multi-asset risk models, factor exposure analysis, portfolio optimization (PORT OP), and backtesting capabilities with point-in-time data, accurate timestamps, and fast time-series retrieval. The terminal costs ~$32K/year and is the institutional standard. Tradeweb is the leading electronic fixed-income marketplace, serving 1,900+ institutional buy-side firms with RFQ protocols (which they invented in 1998 for U.S. Treasuries), 200+ liquidity providers, 280K+ live executable markets, and 160K+ unique fixed-income securities. Both platforms provide the data infrastructure that underlies institutional backtesting.</p>
+<hr />
+<h3 id="4-key-published-sources-and-papers">4. KEY PUBLISHED SOURCES AND PAPERS</h3>
+<p><strong>Core Papers</strong>:
+- Bailey, Borwein, Lopez de Prado, Zhu -- <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2326253">"The Probability of Backtest Overfitting"</a> (SSRN 2326253)
+- Bailey, Lopez de Prado -- <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2460551">"The Deflated Sharpe Ratio"</a> (SSRN 2460551)
+- Lopez de Prado -- <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2308682">"What to Look for in a Backtest"</a> (SSRN 2308682)
+- Bailey, Borwein, Lopez de Prado, Zhu -- <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2308659">"Pseudo-Mathematics and Financial Charlatanism"</a> (SSRN 2308659)
+- Harvey, Liu, Zhu -- <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2249314">"...and the Cross-Section of Expected Returns"</a> (Review of Financial Studies, 2016)
+- Asness, Moskowitz, Pedersen -- <a href="https://www.aqr.com/Insights/Research/Journal-Article/Value-and-Momentum-Everywhere">"Value and Momentum Everywhere"</a> (Journal of Finance, 2013)
+- Almgren, Chriss -- <a href="https://www.smallake.kr/wp-content/uploads/2016/03/optliq.pdf">"Optimal Execution of Portfolio Transactions"</a> (2000)</p>
+<p><strong>Books</strong>:
+- Lopez de Prado -- <em>Advances in Financial Machine Learning</em> (Wiley, 2018)
+- Zuckerman -- <em>The Man Who Solved the Market</em> (Penguin, 2019)
+- Carver -- <em>Systematic Trading</em> (Harriman House, 2015)
+- Chan -- <em>Algorithmic Trading: Winning Strategies and Their Rationale</em> (Wiley, 2013)
+- Chan -- <em>Quantitative Trading</em> (Wiley, 2008)
+- Dalio -- <em>Principles</em> (Simon &amp; Schuster, 2017)</p>
+<p><strong>Online Resources</strong>:
+- <a href="https://www.aqr.com/Insights/Research">AQR Research Library</a> -- extensive published papers
+- <a href="https://www.twosigma.com/type/research/">Two Sigma Research</a> and <a href="https://www.twosigma.com/topic/engineering/">Engineering Archives</a>
+- <a href="https://qoppac.blogspot.com/p/systematic-trading-start-here.html">Carver's Blog</a> and <a href="https://github.com/pst-group/pysystemtrade">pysystemtrade</a>
+- <a href="https://professional.bloomberg.com/products/bloomberg-terminal/portfolio-analytics/">Bloomberg PORT Analytics</a>
+- <a href="https://www.tradeweb.com/our-markets/institutional/">Tradeweb Institutional Platform</a>
+- <a href="https://www.quantstart.com/">QuantStart</a> -- event-driven backtesting tutorials and regime detection
+- <a href="https://navnoorbawa.substack.com/p/bridgewaters-alpha-beta-framework">Bridgewater's Alpha-Beta Framework analysis</a></p>
+<hr />
+<p><strong>Summary of key takeaways</strong>: The dominant theme across all these firms and researchers is that the backtest itself is the most dangerous part of quantitative strategy development. The technology and data are commodity; the discipline to avoid fooling yourself with historical data is the actual edge. Lopez de Prado's CPCV, Harvey's t&gt;3.0 threshold, Asness's insistence on economic rationale behind every factor, Carver's explicit cost modeling, and Bridgewater's regime-agnostic construction all converge on the same principle: the strategy that survives is the one designed to be robust to what you do not know, not optimized for what already happened.</p></article>
+</div>
+<nav class="doc-pn"><span></span><a class="doc-next" href="doc-quant-academic-frameworks-multiple-testing.html"><span>Next</span>academic-frameworks-multiple-testing</a></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

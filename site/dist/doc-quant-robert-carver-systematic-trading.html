@@ -1,0 +1,171 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>robert-carver-systematic-trading · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="quant">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-quant.html">Quant Lab</a></nav>
+<div class="doc-kicker">Backtesting research</div>
+<h1 class="doc-title">robert-carver-systematic-trading</h1>
+<div class="doc-meta"><span>8 min read</span><span>1,842 words</span><span>Updated 2026-09-09</span><span class="doc-src">quant-backtesting/research/robert-carver-systematic-trading.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#robert-carvers-systematic-trading-framework-research-report">Robert Carver's Systematic Trading Framework: Research Report</a></li><li class="l3"><a href="#background">Background</a></li><li class="l3"><a href="#1-systematic-trading-2015-key-concepts-and-framework-structure">1. "Systematic Trading" (2015) -- Key Concepts and Framework Structure</a></li><li class="l3"><a href="#2-pysystemtrade-architecture-and-capabilities">2. pysystemtrade -- Architecture and Capabilities</a></li><li class="l3"><a href="#3-backtesting-methodology-blog-and-interviews">3. Backtesting Methodology (Blog and Interviews)</a></li><li class="l3"><a href="#4-position-sizing-and-risk-management">4. Position Sizing and Risk Management</a></li><li class="l3"><a href="#5-other-books">5. Other Books</a></li><li class="l3"><a href="#summary-of-key-technical-principles">Summary of Key Technical Principles</a></li></ol></details></nav>
+<article class="prose"><p>I now have thorough coverage. Here is the complete research report.</p>
+<hr />
+<h2 id="robert-carvers-systematic-trading-framework-research-report">Robert Carver's Systematic Trading Framework: Research Report</h2>
+<h3 id="background">Background</h3>
+<p>Robert Carver spent over a decade in the City of London. He traded exotic derivative products at Barclays Investment Bank, then served as a portfolio manager at AHL (Man Group) -- one of the world's largest systematic hedge funds. At AHL he created the firm's fundamental global macro strategy and managed a multi-billion dollar fixed income portfolio. He left the industry in 2013 to trade independently and write. He holds a Bachelor's in Economics from the University of Manchester and a Master's from Birkbeck College, University of London.</p>
+<hr />
+<h3 id="1-systematic-trading-2015-key-concepts-and-framework-structure">1. "Systematic Trading" (2015) -- Key Concepts and Framework Structure</h3>
+<p>Published September 2015 by Harriman House, this is Carver's foundational book. Its central argument is that traders should build rule-based, automated systems rather than relying on discretionary judgment. The framework is modular, separating three concerns:</p>
+<p><strong>Trading rules</strong> (signal generation, independent of account size), <strong>volatility targeting</strong> (risk appetite, dependent on account size), and <strong>position sizing / instrument weighting</strong> (allocating risk across positions).</p>
+<p><strong>Three trader types.</strong> The book addresses asset allocators (buy-and-hold investors adding systematic rebalancing), semi-automatic traders (discretionary traders who use rules to discipline decisions), and staunch systems traders (fully automated). Each type uses the same framework but configures it differently.</p>
+<p><strong>Forecast scaling.</strong> All trading signals are normalized to a common scale: 0 = neutral, +10 = standard long, -10 = standard short, with extremes capped at +/-20. The average absolute forecast value is 10. This normalization allows different rules to be combined on a common basis and prevents any single rule from dominating.</p>
+<p><strong>Forecast combination.</strong> Multiple rules (e.g., EWMAC trend-following at different speeds, carry) are combined via weighted averages called "forecast weights." Carver's preferred method is "handcrafting": group rules by correlation, allocate equal weight within groups, then across groups. He explicitly warns against blind computer optimization of weights, calling equal weighting "hard to beat."</p>
+<p><strong>Diversification multiplier.</strong> When combining less-correlated forecasts, portfolio volatility drops below the weighted sum. The forecast diversification multiplier (FDM) corrects for this: FDM = target volatility / combined volatility. Example: two forecasts with 10% vol and 0.5 correlation yield 8.66% combined vol, so FDM = 1.15. Carver caps the multiplier at 2.5 and floors correlations at zero to avoid inflated values.</p>
+<p><strong>Trading rules discussed.</strong> EWMAC (exponentially weighted moving average crossover) at multiple speeds (e.g., 16/64, 32/128, 64/256 day pairs), and carry (profiting from yield differentials / term structure). He emphasizes running many variations simultaneously rather than selecting the single "best" from backtests.</p>
+<p>Sources:
+- <a href="https://www.panmacmillan.com/authors/robert-carver/systematic-trading/9780857194459">Pan Macmillan page</a>
+- <a href="https://www.goodreads.com/book/show/25900953-systematic-trading">Goodreads</a>
+- <a href="https://the7circles.uk/systematic-trading-3-frameworks-and-forecasts/">7 Circles review -- Frameworks and Forecasts</a></p>
+<hr />
+<h3 id="2-pysystemtrade-architecture-and-capabilities">2. pysystemtrade -- Architecture and Capabilities</h3>
+<p>pysystemtrade is the open-source Python implementation of the book's framework. Originally released December 2015 by Carver (GitHub: robcarver17), primary maintenance passed to Andy Geach in 2024, and in January 2026 the repository moved to the pst-group GitHub organization.</p>
+<p><strong>Three functions.</strong> (1) A backtesting engine for strategy validation. (2) An implementation of all the optimization and system design principles from Carver's books. (3) A fully automated production trading system for futures via Interactive Brokers (using the ib_async library).</p>
+<p><strong>Module architecture:</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>systems</code></td>
+<td>Strategy implementation: forecasting rules, combination, position sizing</td>
+</tr>
+<tr>
+<td><code>sysdata</code></td>
+<td>Data management and persistence layer</td>
+</tr>
+<tr>
+<td><code>sysbrokers</code></td>
+<td>Broker connection interfaces (IB)</td>
+</tr>
+<tr>
+<td><code>sysexecution</code></td>
+<td>Order routing and trade execution</td>
+</tr>
+<tr>
+<td><code>sysproduction</code></td>
+<td>Production trading orchestration</td>
+</tr>
+<tr>
+<td><code>syscontrol</code></td>
+<td>System control and scheduling</td>
+</tr>
+<tr>
+<td><code>sysquant</code></td>
+<td>Quantitative analysis utilities</td>
+</tr>
+<tr>
+<td><code>sysobjects</code></td>
+<td>Core data objects (futures contracts, positions)</td>
+</tr>
+<tr>
+<td><code>syslogdiag</code> / <code>syslogging</code></td>
+<td>Logging and diagnostics</td>
+</tr>
+<tr>
+<td><code>dashboard</code></td>
+<td>Monitoring interface</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Data sources.</strong> The system handles futures data through the <code>sysdata</code> module with specialized classes for different asset types. It supports historical data for 100+ futures instruments across bonds, equities, commodities, and currencies.</p>
+<p><strong>Optimization methods.</strong> Three approaches for computing forecast weights: (1) Bootstrapping (preferred) -- Monte Carlo resampling with configurable runs (typically 200) and sample length (e.g., 104 weeks); (2) Shrinkage -- faster, with configurable shrinkage to Sharpe ratio (~0.90) and to correlation (~0.50); (3) Single-period -- explicitly discouraged. Both weights and multipliers use EWMA smoothing to prevent excessive turnover from parameter updates.</p>
+<p><strong>License.</strong> GNU GPL v3, with explicit financial risk disclaimers.</p>
+<p>Sources:
+- <a href="https://github.com/pst-group/pysystemtrade">pysystemtrade GitHub (pst-group)</a>
+- <a href="https://qoppac.blogspot.com/p/pysystemtrade.html">Carver's blog -- pysystemtrade page</a>
+- <a href="https://qoppac.blogspot.com/2016/01/correlations-weights-multipliers.html">Carver's blog -- Correlations, Weights, Multipliers</a></p>
+<hr />
+<h3 id="3-backtesting-methodology-blog-and-interviews">3. Backtesting Methodology (Blog and Interviews)</h3>
+<p>Carver's blog "This Blog is Systematic" (qoppac.blogspot.com) is the primary extension of his books. Key methodological positions:</p>
+<p><strong>Walk-forward testing critique.</strong> Carver argues most traders use windows far too short for statistical validity. His research indicates you need approximately 10 years minimum of data to reliably judge rule profitability. One-year walk-forward windows cannot separate signal from noise.</p>
+<p><strong>Overfitting avoidance.</strong> Four criteria for a good trading rule: (1) not overfitted, (2) relatively simple (fewer parameters), (3) understandable, (4) has a plausible economic explanation. He includes the opposite of a given trading rule in backtests to avoid implicit fitting, then only carries positive-Sharpe rules into optimization.</p>
+<p><strong>Averaging beats selection.</strong> A counterintuitive finding he emphasizes: averaging multiple rule variations significantly outperforms selecting the single best performer from each backtest window. Trading returns are noisy year-to-year, so apparent "best" rules benefited from luck.</p>
+<p><strong>Continuous vs. binary signals.</strong> He advocates continuous forecasts that scale position size proportionally to signal strength, producing smoother equity curves, lower transaction costs, and better signal-to-noise ratios compared to on/off signals.</p>
+<p><strong>Alternative beta, not alpha.</strong> Carver challenges the idea of hidden alpha: "I don't really believe there are a huge number of trading rules that exist, which are doing something extraordinarily interesting." He focuses on persistent, documented market effects -- equity risk premiums, term structure premiums, trend following -- which he calls "alternative beta."</p>
+<p>Sources:
+- <a href="https://qoppac.blogspot.com/">This Blog is Systematic</a>
+- <a href="https://bettersystemtrader.com/026-robert-carver/">Better System Trader #026 -- Trading Rules and Overfitting</a>
+- <a href="https://qoppac.blogspot.com/p/systematic-trading-start-here.html">Blog start page</a></p>
+<hr />
+<h3 id="4-position-sizing-and-risk-management">4. Position Sizing and Risk Management</h3>
+<p><strong>Core principle.</strong> "Position sizing and risk management are the same thing" -- they happen simultaneously when entering a trade, not as separate afterthoughts.</p>
+<p><strong>Volatility targeting.</strong> The most important design decision. Expressed as annual standard deviation of returns. Carver's rule of thumb: your volatility target should match your expected Sharpe ratio. SR of 0.25 implies a 25% volatility target.</p>
+<p><strong>Half-Kelly.</strong> Backtested Sharpe ratios should be reduced by 25-33% for overfitting. He then applies half-Kelly sizing (half the Kelly-optimal bet), and for negative-skew strategies, quarter-Kelly (another 50% reduction).</p>
+<p><strong>Position sizing formula chain:</strong>
+1. Calculate the <strong>block value</strong> -- dollar loss per 1% price move (e.g., oil at $50, 1000-barrel contract = $500).
+2. Estimate <strong>daily volatility</strong> using an exponentially weighted moving average (he uses EMA-36, equivalent to ~25-day lookback).
+3. Calculate daily instrument currency volatility = block value x daily vol %.
+4. <strong>Volatility scalar</strong> = daily cash volatility target / daily instrument currency volatility. This gives the number of contracts for a neutral (+10) forecast.
+5. Scale by the actual forecast (e.g., forecast of +15 means 1.5x the scalar).</p>
+<p><strong>Volatility floor.</strong> To guard against low-volatility environments preceding sudden spikes, Carver sets a minimum assumed volatility based on long-run historical averages. If long-term vol averaged 10% but currently sits at 1%, he uses 5% for sizing.</p>
+<p><strong>Position inertia rule.</strong> "If an existing position is within 10% of the target position, don't trade." This reduces transaction costs without meaningful performance impact.</p>
+<p><strong>Five risk categories.</strong> Beyond market risk: liquidity risk, counterparty risk, infrastructure risk (citing Knight Capital's $440M loss), and model risk ("your model of how risk works is wrong").</p>
+<p><strong>Risk management sequence.</strong> (1) Awareness -- recognize exposure exists. (2) Measurement -- quantify expected vs. realized losses. (3) Control -- act if tolerance is breached. He favors systematic approaches over discretionary overrides, recommending incorporating option-implied volatility into risk models rather than manual intervention.</p>
+<p>Sources:
+- <a href="https://the7circles.uk/systematic-trading-4-volatility-targeting-and-position-sizing/">7 Circles -- Volatility Targeting and Position Sizing</a>
+- <a href="https://bettersystemtrader.com/070-risk-management-robert-carver/">Better System Trader #070 -- Risk Management</a>
+- <a href="https://www.toptradersunplugged.com/podcast/when-position-sizing-saves-you-ft-rob-carver">Top Traders Unplugged -- When Position Sizing Saves You</a></p>
+<hr />
+<h3 id="5-other-books">5. Other Books</h3>
+<p>Robert Carver has published four books total:</p>
+<p><strong>Smart Portfolios</strong> (September 2017, Harriman House). A practical guide to building and maintaining intelligent investment portfolios. Covers blending assets with different risk levels, portfolio construction suited to investor risk tolerance. Provides practical methods, rules of thumb, and techniques. Aimed more at long-only investors than active traders.</p>
+<p><strong>Leveraged Trading</strong> (October 2019, Harriman House). Aimed at traders using FX, stocks on margin, CFDs, spread bets, and futures. Shows how to use trading systems to manage leverage safely, with systems designed to use the correct amount of leverage and trade at suitable frequency. Bridges the gap between his institutional-grade "Systematic Trading" framework and retail traders using leveraged products.</p>
+<p><strong>Advanced Futures Trading Strategies</strong> (April 2023, Harriman House). 638 pages covering 30 fully tested strategies across 100+ tradable instruments using 50+ years of data. Builds progressively from buy-and-hold through trend following, carry, calendar spreads, breakouts, and fast mean reversion. Rated 4.19/5 on Goodreads (59 ratings). Reviewers note each strategy illustrates concepts necessary for understanding the full system, rather than being standalone. Some reviewers flagged that certain mean reversion strategies contain documented lookahead bias issues.</p>
+<p>Sources:
+- <a href="https://www.amazon.com/Smart-Portfolios-maintaining-intelligent-investment/dp/085719531X">Smart Portfolios on Amazon</a>
+- <a href="https://www.panmacmillan.com/authors/robert-carver/leveraged-trading/9780857197214">Leveraged Trading on Pan Macmillan</a>
+- <a href="https://harriman-house.com/authors/robert-carver/advanced-futures-trading-strategies/9780857199683">Advanced Futures Trading Strategies on Harriman House</a>
+- <a href="https://www.goodreads.com/en/book/show/60784531-advanced-futures-trading-strategies">Advanced Futures Trading Strategies on Goodreads</a>
+- <a href="https://www.goodreads.com/author/show/14163231.Robert_Carver">Carver author page on Goodreads</a></p>
+<hr />
+<h3 id="summary-of-key-technical-principles">Summary of Key Technical Principles</h3>
+<ol>
+<li><strong>Normalize everything to forecasts scaled -20 to +20</strong>, average absolute value 10.</li>
+<li><strong>Combine rules by averaging, not selecting.</strong> Handcraft weights by correlation grouping; equal weight within groups.</li>
+<li><strong>Volatility target = expected Sharpe ratio</strong>, then apply half-Kelly (quarter-Kelly for negative skew).</li>
+<li><strong>Position size = volatility scalar x (forecast / 10)</strong>, where the scalar is derived from daily cash vol target divided by instrument currency volatility.</li>
+<li><strong>Cap diversification multiplier at 2.5</strong>, floor correlations at zero.</li>
+<li><strong>10% position inertia buffer</strong> -- don't trade if within 10% of target.</li>
+<li><strong>Minimum 10-year data</strong> for any statistical judgment on rule profitability.</li>
+<li><strong>Run many rule variations simultaneously</strong> rather than optimizing to a single "best" rule.</li>
+<li><strong>Alternative beta, not alpha</strong> -- focus on documented, persistent market effects with clear economic rationale.</li>
+<li><strong>Volatility floor</strong> -- never size positions based on unusually low current volatility without a long-run floor.</li>
+</ol></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-quant-renaissance-technologies.html"><span>Previous</span>renaissance-technologies</a><a class="doc-next" href="doc-quant-self-mba-audit.html"><span>Next</span>self-mba-audit</a></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

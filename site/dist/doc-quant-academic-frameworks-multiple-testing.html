@@ -1,0 +1,193 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>academic-frameworks-multiple-testing · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="quant">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-quant.html">Quant Lab</a></nav>
+<div class="doc-kicker">Backtesting research</div>
+<h1 class="doc-title">academic-frameworks-multiple-testing</h1>
+<div class="doc-meta"><span>8 min read</span><span>1,798 words</span><span>Updated 2026-09-09</span><span class="doc-src">quant-backtesting/research/academic-frameworks-multiple-testing.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#academic-frameworks-and-key-papers-on-backtesting-methodology-in-finance">Academic Frameworks and Key Papers on Backtesting Methodology in Finance</a></li><li class="l3"><a href="#1-foundational-papers-on-data-snooping-and-multiple-testing">1. Foundational Papers on Data Snooping and Multiple Testing</a></li><li class="l3"><a href="#2-harvey-liu-and-zhu-the-multiple-testing-crisis">2. Harvey, Liu, and Zhu: The Multiple Testing Crisis</a></li><li class="l3"><a href="#3-bailey-and-lopez-de-prado-overfitting-quantification">3. Bailey and Lopez de Prado: Overfitting Quantification</a></li><li class="l3"><a href="#4-purged-and-embargoed-cross-validation">4. Purged and Embargoed Cross-Validation</a></li><li class="l3"><a href="#5-walk-forward-optimization">5. Walk-Forward Optimization</a></li><li class="l3"><a href="#6-backtesting-protocol-for-the-ml-era">6. Backtesting Protocol for the ML Era</a></li><li class="l3"><a href="#7-the-three-types-of-backtests">7. The Three Types of Backtests</a></li><li class="l3"><a href="#8-cfa-institute-guidelines">8. CFA Institute Guidelines</a></li><li class="l3"><a href="#9-additional-noteworthy-ssrn-papers">9. Additional Noteworthy SSRN Papers</a></li><li class="l3"><a href="#10-summary-of-multiple-testing-corrections-hierarchy">10. Summary of Multiple-Testing Corrections Hierarchy</a></li></ol></details></nav>
+<article class="prose"><p>I now have comprehensive coverage across all requested topics. Here is the full research report.</p>
+<hr />
+<h2 id="academic-frameworks-and-key-papers-on-backtesting-methodology-in-finance">Academic Frameworks and Key Papers on Backtesting Methodology in Finance</h2>
+<h3 id="1-foundational-papers-on-data-snooping-and-multiple-testing">1. Foundational Papers on Data Snooping and Multiple Testing</h3>
+<p><strong>Lo and MacKinlay (1990), "Data-Snooping Biases in Tests of Financial Asset Pricing Models"</strong>
+Published in <em>The Review of Financial Studies</em>, vol. 3(3), pp. 431-467. This is the seminal paper that formally identified the data-snooping problem in finance: when portfolios are sorted on empirically motivated characteristics (e.g., market cap), the resulting test statistics are biased. Both analytical and Monte Carlo results showed these biases to be substantial. This paper launched the entire literature on correcting for specification search in financial research.
+- SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=227465
+- Oxford Academic: https://academic.oup.com/rfs/article-abstract/3/3/431/1592120</p>
+<p><strong>White (2000), "A Reality Check for Data Snooping"</strong>
+Published in <em>Econometrica</em>, vol. 68(5), pp. 1097-1126. White introduced a bootstrap procedure that tests whether the best model from a specification search has genuine predictive superiority over a benchmark, controlling for the full universe of models examined. The null hypothesis is that no alternative model is superior to the benchmark; the bootstrap accounts for dependencies among the test statistics. This remains one of the most cited multiple-testing corrections in quantitative finance.
+- Econometrica: https://onlinelibrary.wiley.com/doi/abs/10.1111/1468-0262.00152</p>
+<p><strong>Hansen (2005), "A Test for Superior Predictive Ability"</strong>
+Published in <em>Journal of Business &amp; Economic Statistics</em>. Hansen refined White's Reality Check with the Superior Predictive Ability (SPA) test, which re-centers the null distribution and is less conservative -- specifically, it is less sensitive to the inclusion of clearly poor models that drag down power in White's original framework.
+- ResearchGate: https://www.researchgate.net/publication/4724332_A_Test_for_Superior_Predictive_Ability</p>
+<p><strong>Romano and Wolf (2005), Stepwise Multiple Testing</strong>
+Extended the framework to a stepwise procedure that controls the family-wise error rate while identifying <em>all</em> strategies that significantly outperform a benchmark, not just the single best one.</p>
+<hr />
+<h3 id="2-harvey-liu-and-zhu-the-multiple-testing-crisis">2. Harvey, Liu, and Zhu: The Multiple Testing Crisis</h3>
+<p><strong>Harvey, Liu, and Zhu (2016), "...and the Cross-Section of Expected Returns"</strong>
+Published in <em>The Review of Financial Studies</em>, vol. 29(1), pp. 5-68. This paper catalogued hundreds of published factors purporting to explain cross-sectional returns and argued that the conventional t-ratio threshold of 2.0 is far too low given the cumulative data mining. They provide a time series of historical significance cutoffs from 1967 onward (accounting for correlation among tests and publication bias) and conclude that new factors should clear a t-statistic of at least 3.0. The paper's stark conclusion: most claimed research findings in financial economics are likely false.
+- SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2249314
+- Oxford Academic: https://academic.oup.com/rfs/article/29/1/5/1843824</p>
+<p><strong>Harvey and Liu (2015), "Backtesting"</strong>
+Published in <em>The Journal of Portfolio Management</em>, Fall 2015. This companion paper operationalizes the multiple-testing framework for practitioners, introducing Sharpe ratio haircuts and in-sample/out-of-sample testing adjustments.
+- Duke PDF: https://people.duke.edu/~charvey/Research/Published_Papers/P120_Backtesting.PDF
+- SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2345489</p>
+<hr />
+<h3 id="3-bailey-and-lopez-de-prado-overfitting-quantification">3. Bailey and Lopez de Prado: Overfitting Quantification</h3>
+<p><strong>Bailey, Borwein, Lopez de Prado, and Zhu (2014/2017), "The Probability of Backtest Overfitting"</strong>
+Published in <em>Journal of Computational Finance</em>. Introduced Combinatorially Symmetric Cross-Validation (CSCV), a numerical method that estimates the probability that a backtest is overfitted by partitioning the time series into sub-matrices, fitting on half and testing on the complementary half across all symmetric combinations. The key output is PBO (Probability of Backtest Overfitting), a single number between 0 and 1 that quantifies the risk. Strategies with PBO above 0.5 are considered suspect.
+- SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2326253
+- Direct PDF: https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf</p>
+<p><strong>Bailey and Lopez de Prado (2014), "The Deflated Sharpe Ratio: Correcting for Selection Bias, Backtest Overfitting, and Non-Normality"</strong>
+Published in <em>The Journal of Portfolio Management</em>, vol. 40(5), pp. 94-107. The Deflated Sharpe Ratio (DSR) adjusts the observed Sharpe ratio for (a) the number of trials conducted (selection bias under multiple testing), (b) the non-normality of returns (skewness and kurtosis), and (c) the correlation structure of the strategies tested. It produces a deflated p-value that represents the probability of observing the reported Sharpe ratio under the null of zero skill.
+- SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2460551
+- Wikipedia: https://en.wikipedia.org/wiki/Deflated_Sharpe_ratio</p>
+<p><strong>Lopez de Prado (2018), <em>Advances in Financial Machine Learning</em> (Wiley)</strong>
+This book is the primary reference for modern ML-aware backtesting. Key chapters cover: meta-labeling, triple-barrier labeling, fractional differentiation, purged/embargoed cross-validation, combinatorial purged cross-validation, and the deflated Sharpe ratio. The book's thesis is that standard ML cross-validation fails on financial time series because of serial correlation and label leakage, and that backtesting must be treated as the final step in a carefully structured research pipeline, not a discovery tool.
+- Amazon/Wiley: https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086</p>
+<hr />
+<h3 id="4-purged-and-embargoed-cross-validation">4. Purged and Embargoed Cross-Validation</h3>
+<p>Lopez de Prado (2017) introduced two mechanisms to prevent information leakage in k-fold CV on financial time series:</p>
+<ul>
+<li>
+<p><strong>Purging</strong>: Remove from the training set any observation whose label overlaps in time with labels in the test set. Financial labels often depend on future prices (e.g., a return computed over a forward window), so a training observation near the test boundary can embed information about test-set outcomes.</p>
+</li>
+<li>
+<p><strong>Embargo</strong>: After purging, additionally exclude a buffer of training observations immediately following each test fold, accounting for serial correlation that decays over time but does not vanish at the fold boundary.</p>
+</li>
+<li>
+<p><strong>Combinatorial Purged Cross-Validation (CPCV)</strong>: The advanced extension creates C(N,k) train/test combinations from N partitions, each with purging and embargo applied, producing a distribution of out-of-sample paths rather than a single walk-forward equity curve. This allows estimation of the PBO directly from cross-validation.</p>
+</li>
+</ul>
+<p>Source: https://en.wikipedia.org/wiki/Purged_cross-validation (note: Wikipedia article was returning 404 at fetch time but the content is well-documented in Lopez de Prado's book and SSRN papers)</p>
+<hr />
+<h3 id="5-walk-forward-optimization">5. Walk-Forward Optimization</h3>
+<p>Introduced by Robert E. Pardo in <em>Design, Testing and Optimization of Trading Systems</em> (1992, expanded 2008). The procedure:
+1. Optimize strategy parameters on an in-sample window.
+2. Apply those parameters to a reserved out-of-sample window immediately following.
+3. Slide the window forward by the out-of-sample length.
+4. Repeat until data is exhausted.
+5. Concatenate out-of-sample results to form the "walk-forward equity curve."</p>
+<p>Walk-forward is now considered the gold standard for strategy validation because it preserves chronological ordering and forces re-optimization across multiple market regimes. A strategy that performs well out-of-sample across many re-optimizations is considered robust.</p>
+<p>Source: https://en.wikipedia.org/wiki/Walk_forward_optimization</p>
+<hr />
+<h3 id="6-backtesting-protocol-for-the-ml-era">6. Backtesting Protocol for the ML Era</h3>
+<p><strong>Arnott, Harvey, and Markowitz (2019), "A Backtesting Protocol in the Era of Machine Learning"</strong>
+Published in <em>Journal of Financial Data Science</em>, vol. 1(1), pp. 64-74. This paper proposes a structured protocol for quantitative researchers using ML, emphasizing: (a) economic motivation must precede data mining, (b) a research budget (number of trials) should be declared ex ante, (c) multiple-testing corrections must be applied, and (d) out-of-sample validation should follow a pre-registered plan. The paper explicitly warns that ML's ability to find patterns in noise is orders of magnitude greater than traditional econometrics, making disciplined backtesting protocols even more critical.
+- SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3275654
+- Duke PDF: https://people.duke.edu/~charvey/Research/Published_Papers/P138_A_backtesting_protocol.pdf</p>
+<hr />
+<h3 id="7-the-three-types-of-backtests">7. The Three Types of Backtests</h3>
+<p><strong>Joubert, Sestovic, Barziy, Distaso, and Lopez de Prado (2024), "The Three Types of Backtests"</strong>
+Published via ADIA Lab. This recent paper taxonomizes backtests into three categories:
+1. <strong>Walk-Forward Testing</strong> -- the most common; sequential historical replay.
+2. <strong>Resampling</strong> -- generates multiple alternative paths from historical data (bootstrap-based).
+3. <strong>Monte Carlo Simulation</strong> -- synthesizes paths from estimated distributional parameters.</p>
+<p>Each type has distinct failure modes: walk-forward suffers from single-path dependence, resampling can destroy temporal structure, and Monte Carlo depends critically on distributional assumptions. The paper recommends using all three in combination.
+- SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4897573
+- ADIA Lab: https://www.adialab.ae/research-series/the-three-types-of-backtests</p>
+<hr />
+<h3 id="8-cfa-institute-guidelines">8. CFA Institute Guidelines</h3>
+<p>The CFA Institute includes "Backtesting and Simulation" as a formal reading in the Level II curriculum (current 2026 edition). Their framework covers:</p>
+<ul>
+<li><strong>Rolling-window backtesting</strong> as the core methodology (5 steps: specify hypothesis, determine rules, form portfolio, rebalance, compute metrics).</li>
+<li><strong>Three pitfalls</strong>: survivorship bias, look-ahead bias, and data snooping.</li>
+<li><strong>Complementary techniques</strong>: historical scenario analysis, Monte Carlo simulation, sensitivity analysis.</li>
+<li><strong>Fat tails warning</strong>: asset returns exhibit negative skewness and excess kurtosis, so normal-distribution assumptions understate tail risk.</li>
+<li><strong>Ethics</strong>: CFA Standards require disclosure of material limitations and risks of hypothetical/backtested performance to clients.</li>
+</ul>
+<p>Source: https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/backtesting-and-simulation</p>
+<hr />
+<h3 id="9-additional-noteworthy-ssrn-papers">9. Additional Noteworthy SSRN Papers</h3>
+<p><strong>Arakelian et al. (2024), "A Discussion Paper for Possible Approaches to Building a Statistically Valid Backtesting Framework"</strong>
+- SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4893677</p>
+<p><strong>Arian, Norouzi, and Seco (2024), "Backtest Overfitting in the Machine Learning Era"</strong>
+Compared K-Fold, Walk-Forward, and CPCV in a synthetic controlled environment. Found that CPCV outperforms alternatives in mitigating overfitting, with lower PBO scores.
+- SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4686376
+- ScienceDirect: https://www.sciencedirect.com/science/article/abs/pii/S0950705124011110</p>
+<p><strong>Schumann (2019), "Backtesting"</strong>
+A practical survey of backtesting methods for portfolio strategies.
+- SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3374195</p>
+<hr />
+<h3 id="10-summary-of-multiple-testing-corrections-hierarchy">10. Summary of Multiple-Testing Corrections Hierarchy</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Controls</th>
+<th>Power</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bonferroni</td>
+<td>FWER (family-wise error rate)</td>
+<td>Lowest -- overly conservative</td>
+<td>Few tests, zero false-positive tolerance</td>
+</tr>
+<tr>
+<td>Holm-Bonferroni</td>
+<td>FWER (stepwise)</td>
+<td>Better than Bonferroni</td>
+<td>Moderate number of tests</td>
+</tr>
+<tr>
+<td>White's Reality Check (2000)</td>
+<td>FWER via bootstrap</td>
+<td>Moderate, but sensitive to poor models</td>
+<td>Benchmark vs. many alternatives</td>
+</tr>
+<tr>
+<td>Hansen's SPA (2005)</td>
+<td>FWER via re-centered bootstrap</td>
+<td>Higher than White's</td>
+<td>Same setting, more power</td>
+</tr>
+<tr>
+<td>Romano-Wolf Stepwise</td>
+<td>FWER, identifies all significant</td>
+<td>Highest FWER control</td>
+<td>Identifying all outperformers</td>
+</tr>
+<tr>
+<td>Benjamini-Hochberg</td>
+<td>FDR (false discovery rate)</td>
+<td>Highest overall</td>
+<td>Large-scale exploratory search</td>
+</tr>
+<tr>
+<td>Deflated Sharpe Ratio</td>
+<td>Selection bias + non-normality</td>
+<td>Strategy-specific</td>
+<td>Evaluating a single "best" strategy</td>
+</tr>
+</tbody>
+</table></div>
+<p>The field has converged on the view that <strong>any backtested result must be accompanied by a disclosure of the number of trials conducted</strong>, and that raw Sharpe ratios or t-statistics without multiple-testing adjustment are essentially meaningless for strategy selection.</p></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-quant-main-compilation.html"><span>Previous</span>main-compilation</a><a class="doc-next" href="doc-quant-aqr-capital.html"><span>Next</span>aqr-capital</a></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

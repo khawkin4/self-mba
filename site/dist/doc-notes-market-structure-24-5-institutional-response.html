@@ -1,0 +1,167 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Note · 24/5 Trading — how institutions are handling it, and the architecture pattern underneath · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Note · 24/5 Trading — how institutions are handling it, and the architecture pattern underneath</h1>
+<div class="doc-meta"><span>9 min read</span><span>2,062 words</span><span>Updated 2026-10-19</span><span class="doc-src">notes/market-structure-24-5-institutional-response.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#1-how-institutions-are-actually-handling-it-sept-2026">1. How institutions are actually handling it (Sept 2026)</a></li><li class="l2"><a href="#2-the-architecture-pattern-business-date-as-a-first-class-event">2. The architecture pattern — "business date as a first-class event"</a></li><li class="l2"><a href="#3-is-there-a-scalable-resource-here-an-honest-assessment">3. Is there a scalable resource here? An honest assessment</a></li><li class="l3"><a href="#rep">Rep</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p>Practitioner / operations note · Companion to <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> · Maps to <strong>Course 06</strong> (Operations), <strong>E-track</strong> (systems, org design) · Written 2026-09-21</p>
+</blockquote>
+<ul>
+<li><strong>Source:</strong> SEC — Commissioner Peirce, <em>Stock Around the Clock</em>, remarks at the SEC Roundtable on Preparations for 24-Hour Trading (Sept 17, 2026); Exegy — <em>23x5 Trading: The Operational Reality of No Maintenance Windows</em>; Adaptive — <em>Architecting 24/7 capital markets with high-availability sequencer designs</em>; AWS for Industries — <em>Cloud Adoption Update for FMI Providers 1H26</em>; Markets Media — <em>Cboe's "Follow the Sun" model</em>; DTCC — <em>The Shift to 24x5 Trading</em>; Capco — <em>Are You Ready for 24x5 in 2026?</em>; FinanceFeeds / FOW on OCC Ovation.</li>
+<li><strong>Core claim:</strong> Institutions are splitting into three camps — <strong>rebuild</strong> (the FMIs, on multi-year cloud programs that predate 24/5 but are what make it possible), <strong>squeeze</strong> (broker-dealers and clearing firms compressing a 12-hour batch cycle into ~1 hour), and <strong>opt out</strong> (most of the buy side, hiding behind "selective participation"). The technical crux across all three is the same: <strong>the business date is an implicit global variable in every post-trade system, and 24/5 makes it explicit, multi-valued, and event-driven.</strong> That is a refactor pattern, not a rewrite — and it's the AWS-shaped, repeatable piece.</li>
+</ul>
+<hr />
+<h2 id="1-how-institutions-are-actually-handling-it-sept-2026">1. How institutions are actually handling it (Sept 2026)</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Camp</th>
+<th>Who</th>
+<th>What they're doing</th>
+<th>Tell</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rebuild</strong></td>
+<td>DTCC, OCC, ASX, Nasdaq, BYMA</td>
+<td>Multi-year mainframe → cloud microservices. OCC <strong>Ovation</strong> (single mainframe → microservices, Vermiculus risk engine). DTCC core clearing/settlement/risk to cloud <strong>by 2030</strong>. ASX's new CHESS on AWS: 21M trades/day vs 7M on the old system. Nasdaq migrating its U.S. options markets to AWS one exchange at a time (MRX, GEMX, next one queued).</td>
+<td>NSCC delivered 24x5 clearing on June 29, 2026 <em>because</em> the modernization was already underway.</td>
+</tr>
+<tr>
+<td><strong>Squeeze</strong></td>
+<td>Broker-dealers, clearing firms, custodians, fund admins</td>
+<td>Compress "overnight batch processing cycles or critical IT maintenance into a single hour" (Peirce). Shift ledgers, margin/buying power, recon and reporting from end-of-day jobs to rolling incremental processes. Staff a follow-the-sun desk or outsource one.</td>
+<td>The complaint at the SEC roundtable was <em>back-office compression</em>, not liquidity.</td>
+</tr>
+<tr>
+<td><strong>Opt out</strong></td>
+<td>Asset managers, pension/insurance</td>
+<td>"Selective participation and robust safeguards"; governance and compliance memos explaining why they <em>won't</em> trade overnight.</td>
+<td>Peirce's own question — <em>is choosing not to trade overnight still an acceptable fiduciary decision?</em> — is the tell that most of the buy side wants the answer to be yes.</td>
+</tr>
+<tr>
+<td><strong>Vendors</strong></td>
+<td>Adaptive, Exegy, Capco, ViewTrade, Duco, Broadridge, FIS</td>
+<td>Selling readiness assessments, sequencer architectures, streaming recon, follow-the-sun runbooks.</td>
+<td>The market for the <em>fix</em> is forming faster than the market for the <em>trading</em>.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Operating-model responses now visible:</strong>
+- <strong>Follow-the-sun support</strong> (Cboe explicitly; OCC "evaluating"): regional teams with seamless handoff and full operational context. Exegy's framing: staffing 24/5 is expensive, but "staffing without consistent processes and shared tooling is even more expensive, because it introduces risk without absorbing it."
+- <strong>Event-driven workflows replacing batch</strong> (OCC): the day-roll becomes an event, not a cron.
+- <strong>Change management inversion</strong>: progressive/blue-green rollout, automated regression, fast rollback with end-to-end observability — "no longer optional."
+- <strong>Load profile change</strong>: no single predictable peak; bursts off overnight news and Asia macro; "liquidity pockets that ebb and flow unpredictably."
+- <strong>Human factors</strong>: supervision with limited humans overnight, "sleep," social-media rumors hitting a live market at 2am with a skeleton crew.</p>
+<h2 id="2-the-architecture-pattern-business-date-as-a-first-class-event">2. The architecture pattern — "business date as a first-class event"</h2>
+<p><strong>The diagnostic that finds every problem:</strong> <code>grep</code> the codebase for the business date. Every hardcoded <code>T+1</code>, every <code>if hour &lt; 16</code>, every cron at 16:15, every job named <code>EOD_*</code>, every table keyed on <code>trade_date</code> populated by <code>CURRENT_DATE</code>. Each one is a latent bug under 24/5, because the trade date now rolls at <strong>8:00pm ET</strong>, the protected session runs <strong>9pm–4am</strong>, the band reference is struck at <strong>7:45pm</strong>, and the official close is still <strong>4:00pm</strong>. Four clocks where there used to be one.</p>
+<p><strong>The pattern</strong> (Adaptive's sequencer control-message model, generalized from the matching engine to the <em>whole</em> post-trade stack):</p>
+<pre><code>┌──────────────────────────────────────────────────────────────────────┐
+│  SESSION LIFECYCLE SERVICE  (single authoritative emitter)            │
+│  events: session.open · session.close · tradeDate.roll@20:00 ·        │
+│          bandRef.snapshot@19:45 · clearing.cutoff · weekend.open      │
+└──────────────┬───────────────────────────────────────────────────────┘
+               │ control messages on the ordered log (not cron)
+               ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│  ORDERED LOG / SPINE   (MSK or Kinesis; partition by symbol/account)  │
+│  trades · fills · allocations · lifecycle markers · corporate actions │
+└───┬──────────────┬──────────────┬──────────────┬─────────────────────┘
+    ▼              ▼              ▼              ▼
+ Positions      Cash/Margin    Recon (stream   Reporting / CAT /
+ (Flink,        (Flink,        join vs DTCC/   surveillance
+  running)       running)       custodian)      (rolling windows)
+    │              │              │              │
+    └──── every consumer subscribes to lifecycle events; none owns a clock ────┘
+</code></pre>
+<p><strong>The seven decisions that follow from it:</strong></p>
+<ol>
+<li><strong>One clock owner.</strong> A Session Lifecycle Service (EventBridge + Step Functions or a small DynamoDB-backed state machine) is the <em>only</em> thing that decides what "today" is. It emits lifecycle events onto the log. Everything downstream is a state machine that consumes them. This is how you kill the implicit global.</li>
+<li><strong>The log is the spine; the day-roll is a record in it.</strong> Kinesis or MSK with per-symbol / per-account partitioning, exactly-once semantics on the ledgers. Replay = recovery. Snapshot at marker boundaries; log truncation only at snapshots (Adaptive's asynchronous-snapshot rule: one replica snapshots while the others keep processing — synchronous snapshots cause "systemic jitter").</li>
+<li><strong>Reconciliation becomes a streaming join, not a job.</strong> Managed Flink computing running positions and cash; breaks detected as they occur against the DTCC/custodian feed. This is the single highest-value piece — <strong>T0 break detection</strong> — and it's what T+1 already demanded; 24/5 just removes the last excuse.</li>
+<li><strong>Cells, not a monolith, because you can't take <em>the system</em> down.</strong> AWS cell-based architecture + shuffle sharding: partition by symbol range / clearing account / region. Maintenance = drain a cell. Canary = deploy to the low-volume cell first (Adaptive's "canary by partition" is the same idea). Blast radius becomes a design parameter.</li>
+<li><strong>Two versions live at once, always.</strong> Protocol versioning (<code>protocolId</code>, <code>protocolVersion</code>, <code>messageType</code>) with control-message handover; schema changes as expand/contract only — no breaking DDL, ever, because there's no window to run it in. Blue/green on ECS/EKS with connection draining; feature flags; automated rollback as a first-class path.</li>
+<li><strong>Test in production, continuously.</strong> You lost the window to test in staging then cut over — so AWS Fault Injection Service game-days become the regression suite. Predictive scaling keyed to the macro/earnings calendar with a <em>floor</em> (you cannot cold-start into a BoJ headline).</li>
+<li><strong>The weekend is the only irreversible window — enforce it in CI/CD.</strong> Fri 8pm → Sun 8pm ET is the last genuine pause. Deployment guardrails by time-of-week: irreversible operations (data migrations, cutovers) are only allowed then; everything else must be reversible. Policy as code, not a wiki page.</li>
+</ol>
+<p><strong>Plus the org half</strong> (the roundtable said this is as much organizational as technical): runbooks as code (Systems Manager / Incident Manager), trace context that travels with the incident so the Singapore engineer has what the New York engineer had, and an on-call model that treats 2am ET as a <em>shift</em>, not an exception.</p>
+<h2 id="3-is-there-a-scalable-resource-here-an-honest-assessment">3. Is there a scalable resource here? An honest assessment</h2>
+<p><strong>Where the gap actually is.</strong> AWS's own 1H26 FMI cloud-adoption report <strong>does not mention 24x5 or extended hours at all.</strong> The Well-Architected Financial Services Lens is generic. The matching-engine problem (sequencers, RAFT, state-machine replication) is <em>solved</em> and owned by specialists — Adaptive, Aeron, LMAX, Vermiculus, Nasdaq's own Eqlipse. Don't compete there. The <strong>post-trade / back-office</strong> problem is the unserved one, and it's the bigger population.</p>
+<p><strong>Who has the pain and no capability.</strong> Not the top five (they have armies). The middle: regional broker-dealers, correspondent clearing firms, fund administrators, RIA/wealth platforms, the OMS/PMS vendors that sell to them — and <strong>non-U.S. brokers wanting to offer U.S. overnight to Asian retail</strong>, which is the actual growth segment (75–80% of overnight flow). Hundreds of entities, identical problem, hard deadline, no in-house streaming/cloud depth.</p>
+<p><strong>Why now is defensible.</strong> Three dated forcing functions: SIP + LULD overnight go live <strong>Dec 6, 2026</strong>; NYSE Arca "late 2026"; Nasdaq H2 2026. The SEC is holding roundtables. Deadline-driven, compliance-adjacent work is the most reliably funded category in financial services.</p>
+<p><strong>The asset, in layers of increasing willingness-to-pay:</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>What it is</th>
+<th>Economics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference architecture</strong> (public)</td>
+<td>The diagram above + the seven decisions, published as a lens/whitepaper</td>
+<td>Low WTP; it's the <em>marketing</em> for the next two layers. Credibility asset.</td>
+</tr>
+<tr>
+<td><strong>24/5 Readiness Assessment</strong> (the wedge)</td>
+<td>2–3 week diagnostic: business-date grep, batch-job inventory, clock-dependency map, blast-radius map, gap report against the five-layer stack in <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a></td>
+<td>Cheap, repeatable, fixed-price. Sells the migration.</td>
+</tr>
+<tr>
+<td><strong>Migration engagement</strong></td>
+<td>Batch → streaming for recon/positions/cash on the pattern; cell partitioning; deploy-pipeline guardrails</td>
+<td>The money. Unglamorous data-model surgery, not greenfield.</td>
+</tr>
+<tr>
+<td><strong>Managed service</strong> (the product)</td>
+<td>Session Lifecycle Service + continuous recon as a service, sold to the firms that own a recon vendor already and need the <em>migration path</em></td>
+<td>Highest leverage, hardest to build; crowded adjacent space (Duco, Gresham, FIS).</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Breaks when:</strong>
+- Overnight volume stays &lt;2% and budgets get cut — then this is a compliance checkbox, not a transformation, and the assessment layer is all that sells.
+- Capco/Accenture/Broadridge/FIS and the OMS vendors productize the same thing with distribution you don't have. (They will. Speed and specificity are the only edge.)
+- The real blocker at a given client is the mainframe, not the cloud — then the pattern is right but the engagement is a five-year modernization you don't want to own.
+- Phase 2 of the LULD plan or a post-incident rule change re-batches the overnight (auctions, mandatory pauses). Then some of the "no window" urgency evaporates.</p>
+<p><strong>Practitioner counterpoint:</strong> the vendors selling readiness (Exegy, Capco, Adaptive) all agree on the <em>engineering</em> and all quietly admit the <em>org</em> is the harder half — handoffs, runbooks, who's awake. A pattern that ships only the architecture will be judged on the outage that happened at 2:40am on a Tuesday when the runbook assumed a New York engineer. The differentiated version of this offering ships the operating model with the diagram.</p>
+<ul>
+<li><strong>Links:</strong> <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> · <a class="wiki" href="doc-canon-canon-goldratt-the-goal.html">canon goldratt the goal</a> (the constraint moved to layers 4–5) · <a class="wiki" href="doc-canon-canon-perrow-normal-accidents.html">canon perrow normal accidents</a> (removing slack from a coupled system) · <a class="wiki" href="doc-canon-canon-ohno-toyota-production-system.html">canon ohno toyota production system</a> (batch → flow, and when <em>not</em> to) · <a class="wiki" href="doc-canon-canon-bezos-shareholder-letters.html">canon bezos shareholder letters</a> (two-way doors — the weekend is the only one-way door left) · <a class="wiki" href="doc-canon-canon-larson-elegant-puzzle.html">canon larson elegant puzzle</a> (org as a throughput system; follow-the-sun) · <a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a> (which layer of the asset has a barrier)</li>
+</ul>
+<hr />
+<h3 id="rep">Rep</h3>
+<p>Take one system you know well (or one client's). Run the diagnostic: list every place the business date is <em>assumed</em> rather than <em>received</em>. Sort into three buckets — (a) would produce a wrong number at 9pm ET, (b) would produce a wrong number at 8pm–9pm ET only (the seam), (c) is fine. Estimate how many are bucket (a). That number is the assessment's headline, and the pitch.</p>
+<p><strong>Sources used (2026-09-21):</strong> <a href="https://www.sec.gov/newsroom/speeches-statements/peirce-remarks-sec-roundtable-091726">SEC — Peirce, <em>Stock Around the Clock</em> (Sept 17, 2026)</a> · <a href="https://www.exegy.com/23x5-trading/">Exegy — 23x5 Trading: no maintenance windows</a> · <a href="https://weareadaptive.com/trading-resources/24-7-sequencer-architectures-capital-markets/">Adaptive — 24/7 sequencer architectures</a> · <a href="https://aws.amazon.com/blogs/industries/financial-market-infrastructure-providers-cloud-adoption-update-for-1h26/">AWS — FMI cloud adoption update 1H26</a> · <a href="https://www.marketsmedia.com/cboes-follow-the-sun-model-will-help-24x5-us-equities-trading/">Markets Media — Cboe follow-the-sun</a> · <a href="https://www.dtcc.com/-/media/Files/Downloads/Transformation/theshiftto24x5trading.pdf">DTCC — The Shift to 24x5 Trading</a> · <a href="https://www.capco.com/intelligence/capco-intelligence/us-equities-extended-trading-hours">Capco — Ready for 24x5 in 2026?</a> · <a href="https://financefeeds.com/occ-taps-vermiculus-microservice-based-solution-for-new-platform-ovation/">FinanceFeeds — OCC Ovation</a> · <a href="https://www.viewtrade.com/blog/designing-scalable-trading-infrastructure-for-24-7-and-overnight-markets/">ViewTrade — infrastructure for 24/7 markets</a> · <a href="https://docs.aws.amazon.com/pdfs/wellarchitected/latest/financial-services-industry-lens/wellarchitected-financial-services-industry-lens.pdf">AWS Well-Architected FSI Lens</a></p></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-jpm-software-sector-spotlight-2026.html"><span>Previous</span>jpm-software-sector-spotlight-2026</a><a class="doc-next" href="doc-notes-market-structure-24-5-trading.html"><span>Next</span>Note · 24/5 Trading — what &quot;always-on&quot; markets mean for equities and fixed income</a></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

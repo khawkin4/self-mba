@@ -1,0 +1,203 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>aqr-capital · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="quant">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-quant.html">Quant Lab</a></nav>
+<div class="doc-kicker">Backtesting research</div>
+<h1 class="doc-title">aqr-capital</h1>
+<div class="doc-meta"><span>9 min read</span><span>2,147 words</span><span>Updated 2026-09-09</span><span class="doc-src">quant-backtesting/research/aqr-capital.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#aqr-capital-management-research-backtesting-factor-investing-and-data-mining">AQR Capital Management Research: Backtesting, Factor Investing, and Data Mining</a></li><li class="l3"><a href="#1-cliff-asnesss-blog-posts-perspectives-on-data-mining-and-backtesting">1. CLIFF ASNESS'S BLOG POSTS / PERSPECTIVES ON DATA MINING AND BACKTESTING</a></li><li class="l3"><a href="#2-core-aqr-research-papers">2. CORE AQR RESEARCH PAPERS</a></li><li class="l3"><a href="#3-replication-crisis-and-p-hacking-papers">3. REPLICATION CRISIS AND P-HACKING PAPERS</a></li><li class="l3"><a href="#4-aqr-insight-award-winners-relevant-to-methodology">4. AQR INSIGHT AWARD WINNERS (Relevant to Methodology)</a></li><li class="l3"><a href="#5-additional-relevant-aqr-papers-and-white-papers">5. ADDITIONAL RELEVANT AQR PAPERS AND WHITE PAPERS</a></li><li class="l3"><a href="#6-cliff-asnesss-public-statements-interviews-external">6. CLIFF ASNESS'S PUBLIC STATEMENTS (INTERVIEWS / EXTERNAL)</a></li><li class="l3"><a href="#7-key-resource-pages">7. KEY RESOURCE PAGES</a></li><li class="l3"><a href="#summary-of-asnessaqr-position-on-data-mining">SUMMARY OF ASNESS/AQR POSITION ON DATA MINING</a></li></ol></details></nav>
+<article class="prose"><p>I now have comprehensive findings. Here is the full research report.</p>
+<hr />
+<h2 id="aqr-capital-management-research-backtesting-factor-investing-and-data-mining">AQR Capital Management Research: Backtesting, Factor Investing, and Data Mining</h2>
+<h3 id="1-cliff-asnesss-blog-posts-perspectives-on-data-mining-and-backtesting">1. CLIFF ASNESS'S BLOG POSTS / PERSPECTIVES ON DATA MINING AND BACKTESTING</h3>
+<p>These are from AQR's "Cliff's Perspective" blog series, authored by Cliff Asness directly.</p>
+<p><strong>A. "Lies, Damned Lies, and Data Mining"</strong> (April 12, 2017)
+- URL: https://www.aqr.com/Insights/Perspectives/Lies-Damned-Lies-and-Data-Mining
+- PDF: https://www.aqr.com/-/media/AQR/Documents/Insights/Perspectives/Lies-Damned-Lies-and-Data-Mining.pdf
+- This is the single most directly relevant piece. Asness defends AQR against Rob Arnott's Bloomberg/Businessweek accusation that AQR's factors are data-mined. Key arguments:
+  - Data mining (finding random in-sample patterns that don't repeat) is a real problem: "Random doesn't tend to repeat so data mining often fails to produce attractive real life returns going forward."
+  - AQR believes in a <strong>limited</strong> set of genuine factors meeting three criteria: (1) strong in-sample AND out-of-sample evidence across time/geography/asset classes, (2) economic stories explaining why they work, (3) theoretical models with testable implications.
+  - For equities, AQR identifies <strong>three core factors</strong>: value, momentum, and quality. Asness explicitly rejects many popular anomalies (small-firm effects, January effects).
+  - Using multiple measures per factor theme is <strong>robust measurement, not overfitting</strong>: "Averaging across a host of similar related measures can reduce [measurement] errors."
+  - Rejects Arnott's "richening" critique (that researchers mistake factor characteristic appreciation for repeatable returns) by showing turnover effects undercut the critique.</p>
+<p><strong>B. "It's Not Data Mining -- Not Even Close"</strong> (June 2, 2015)
+- URL: https://www.aqr.com/cliffs-perspective/it-is-not-data-mining-not-even-close
+- Asness presents out-of-sample performance data for SMB, HML, and UMD:
+  - In-sample (1927-1991): SMB 2.8-3.2%, HML 4.7-5.1%, UMD 8.9-10.1%
+  - Out-of-sample (1992-2015): SMB 2.6%, HML 3.6%, UMD 6.1%
+  - All spreads remained economically meaningful with statistically insignificant decay.
+- Core argument: "If a researcher discovered an empirical result only because she tortured the data until it confessed, one would not expect it to work outside the torture zone."
+- Acknowledges Fischer Black's 1990 skepticism was reasonable at the time but is now obsolete given decades of out-of-sample confirmation.</p>
+<p><strong>C. "Factor Timing is Hard"</strong> (March 15, 2017)
+- URL: https://www.aqr.com/cliffs-perspective/factor-timing-is-hard
+- PDF: https://images.aqr.com/-/media/AQR/Documents/Insights/Perspectives/Factor-Timing-is-Hard.pdf
+- Argues factor timing is harder than market timing due to higher turnover in long-short factor strategies.
+- Warns that selecting factors based on 3-5 year performance creates "poor results in a world where data mining is a problem."
+- Criticizes Research Affiliates (Arnott et al.) for "poorly designed tests" including long-horizon regressions on high-turnover factors.
+- Warns about crowding risks from growing popularity of factor investing.</p>
+<hr />
+<h3 id="2-core-aqr-research-papers">2. CORE AQR RESEARCH PAPERS</h3>
+<p><strong>A. "Value and Momentum Everywhere"</strong>
+- Authors: Cliff Asness, Tobias J. Moskowitz, Lasse H. Pedersen
+- Published: The Journal of Finance, June 2013
+- AQR page: https://www.aqr.com/Insights/Research/Journal-Article/Value-and-Momentum-Everywhere
+- SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2174501
+- NYU Stern PDF: https://pages.stern.nyu.edu/~lpederse/papers/ValMomEverywhere.pdf
+- Datasets: https://www.aqr.com/Insights/Datasets/Value-and-Momentum-Everywhere-Factors-Monthly
+- Key findings: Consistent value and momentum return premia across 8 diverse markets and asset classes. Value and momentum are negatively correlated with each other but correlate more strongly across asset classes than passive exposures. A three-factor model describes 48 global test assets. Global funding liquidity risk is a partial source of these patterns.</p>
+<p><strong>B. "Fact, Fiction and Momentum Investing"</strong>
+- Authors: Cliff Asness, Andrea Frazzini, Ronen Israel, Tobias J. Moskowitz
+- Published: The Journal of Portfolio Management, 40th Anniversary Issue, September 30, 2014
+- AQR page: https://www.aqr.com/Insights/Research/Journal-Article/Fact-Fiction-and-Momentum-Investing
+- SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2435323
+- PDF: https://images.aqr.com/-/media/AQR/Documents/Insights/Interviews/PA--Fact-Fiction-and-Momentum-Investing-FINAL.pdf
+- Supplement: https://www.aqr.com/Insights/Research/Interviews/Fact-Fiction-and-Momentum-Investing-Supplement
+- Documents momentum across 212 years of U.S. data (1801-2012), 40+ countries, and 12+ asset classes. Debunks 10 common myths about momentum investing (too small, only short-side, only small caps, can't survive trading costs, etc.).</p>
+<p><strong>C. "Fact, Fiction and Value Investing"</strong>
+- Authors: Cliff Asness, Andrea Frazzini, Ronen Israel, Tobias J. Moskowitz
+- Published: The Journal of Portfolio Management, Fall 2015
+- AQR page: https://www.aqr.com/Insights/Research/Journal-Article/Fact-Fiction-and-Value-Investing
+- PDF: https://images.aqr.com/-/media/AQR/Documents/Journal-Articles/JPM-Fact-Fiction-and-Value-Investing.pdf
+- SSRN: https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID2998011_code77768.pdf?abstractid=2595747
+- Supplement: https://www.aqr.com/Insights/Research/Journal-Article/Fact-Fiction-and-Value-Investing-Supplement
+- Won Outstanding Article in the 17th Annual Bernstein Fabozzi/Jacobs Levy Awards. Challenges misconceptions about value investing (only for concentrated portfolios, passive strategy, buying inferior companies, redundant factor, etc.).</p>
+<p><strong>D. "Fact, Fiction, and Factor Investing"</strong>
+- Authors: Michele L. Aghassi, Cliff Asness, Charles Fattouche, Tobias J. Moskowitz
+- Published: The Journal of Portfolio Management, December 31, 2022
+- AQR page: https://www.aqr.com/Insights/Research/Journal-Article/Fact-Fiction-and-Factor-Investing
+- Won 25th Annual Bernstein Fabozzi/Jacobs Levy Award for Best Article (2023).
+- Examines factor investing myths including performance challenges during 2018-2020 and subsequent recovery.
+- Practical applications: https://www.aqr.com/Insights/Research/Journal-Article/Fact-Fiction-and-Factor-Investing-Practical-Application</p>
+<hr />
+<h3 id="3-replication-crisis-and-p-hacking-papers">3. REPLICATION CRISIS AND P-HACKING PAPERS</h3>
+<p><strong>A. "Is There a Replication Crisis in Finance?"</strong>
+- Authors: Theis Ingerslev Jensen, Bryan T. Kelly, Lasse H. Pedersen
+- Published: The Journal of Finance, May 26, 2023
+- AQR page: https://www.aqr.com/Insights/Research/Working-Paper/Is-There-a-Replication-Crisis-in-Finance
+- Won a 2023 Distinguished Paper Award in the Dimensional Fund Advisors Prizes from The Journal of Finance.
+- Key findings: The majority of asset pricing factors CAN be replicated. They cluster into 13 themes. They work out-of-sample across 93 countries. The large number of observed factors actually <strong>strengthens</strong> evidence rather than weakening it (a "multiple testing paradox"). Concludes the replication crisis is overstated.</p>
+<p><strong>B. "A Data Science Solution to the Multiple-Testing Crisis in Financial Research"</strong>
+- Author: Marcos Lopez de Prado
+- Published: The Journal of Financial Data Science, January 31, 2019
+- AQR page: https://www.aqr.com/Insights/Research/Journal-Article/A-Data-Science-Solution-to-the-Multiple-Testing-Crisis-in-Financial-Research
+- Addresses "selection bias under multiple testing" (SBuMT) -- the problem of reporting only the most favorable outcome from many analyses. Proposes the <strong>Deflated Sharpe Ratio</strong> as a corrective framework.</p>
+<p><strong>C. "Corporate Bond Factors: Replication Failures and a New Framework"</strong>
+- Authors: Jens Dick-Nielsen, Peter Feldhutter, Lasse H. Pedersen, Christian Stolborg
+- Published: October 5, 2023
+- AQR page: https://www.aqr.com/Insights/Research/Working-Paper/Corporate-Bond-Factors-Replication-Failures-and-a-New-Framework
+- Documents that corporate bond factor literature suffers from "replication failures, inconsistent methodological choices, and the lack of a common error-free dataset." Most tested factors failed to replicate, though equity signals showed cross-asset predictive power.</p>
+<hr />
+<h3 id="4-aqr-insight-award-winners-relevant-to-methodology">4. AQR INSIGHT AWARD WINNERS (Relevant to Methodology)</h3>
+<p><strong>"Taming the Factor Zoo: A Test of New Factors"</strong> (2018 AQR Insight Award winner)
+- Authors: Guanhao Feng, Stefano Giglio, Dacheng Xiu
+- Published: The Journal of Finance, 2020
+- AQR-hosted PDF: https://www.aqr.com/-/media/AQR/Documents/AQR-Insight-Award/2018/Taming-the-Factor-Zoo.pdf
+- Award page: https://www.aqr.com/Insights/Perspectives/AQR-Insight-Award-2018
+- Used a factor library of 150 risk factors (1976-2017) including AQR factors. Key finding: with few exceptions (profitability, investment), new factors beyond the established set are redundant. Proposes a machine-learning-based model selection method.</p>
+<hr />
+<h3 id="5-additional-relevant-aqr-papers-and-white-papers">5. ADDITIONAL RELEVANT AQR PAPERS AND WHITE PAPERS</h3>
+<p><strong>A. "Measuring Factor Exposures: Uses and Abuses"</strong>
+- Authors: Ronen Israel, Adrienne Ross
+- Published: The Journal of Alternative Investments, Summer 2017
+- AQR page: https://www.aqr.com/Insights/Research/White-Papers/Measuring-Factor-Exposures
+- PDF: https://www.aqr.com/-/media/AQR/Documents/Insights/White-Papers/JAI_Summer_2017_AQR.PDF
+- Practical guide on measuring factor exposures. Discusses pitfalls in regression analysis and how factor construction design matters more than expected. Warns that without proper modeling, factor exposures may be misconstrued as alpha.</p>
+<p><strong>B. "Craftsmanship Alpha: An Application to Style Investing"</strong>
+- Authors: Ronen Israel, Sarah Jiang, Adrienne Ross
+- AQR page: https://www.aqr.com/Insights/Research/Journal-Article/Craftsmanship-Alpha-An-Application-to-Style-Investing
+- PDF: https://images.aqr.com/-/media/AQR/Documents/Insights/Working-Papers/AQR--Craftsmanship-Alpha.pdf
+- Discusses how implementation details ("craftsmanship") in factor strategies generate additional alpha beyond raw factor exposures.</p>
+<p><strong>C. "Understanding Style Premia"</strong>
+- AQR page: https://www.aqr.com/Insights/Research/Journal-Article/Understanding-Style-Premia
+- PDF: https://images.aqr.com/-/media/AQR/Documents/Insights/Journal-Article/Understanding-Style-Premia.pdf
+- Describes the intuition and evidence underlying investing styles and a strategy to access these returns in a liquid, market-neutral framework.</p>
+<p><strong>D. "Investing with Style"</strong>
+- Authors: A. Ilmanen, R. Israel, T. Moskowitz (2012 AQR white paper)
+- PDF: https://www.aqr.com/-/media/AQR/Documents/Insights/Journal-Article/JOIM-Investing-With-Style.pdf
+- Published in Journal of Investment Management, 2015.</p>
+<p><strong>E. "Betting Against Beta"</strong>
+- Authors: Andrea Frazzini, Lasse H. Pedersen
+- Published: Journal of Financial Economics, 111: 1-25, 2013
+- AQR page: https://www.aqr.com/Insights/Research/Journal-Article/Betting-Against-Beta
+- Dataset: https://www.aqr.com/Insights/Datasets/Betting-Against-Beta-Equity-Factors-Monthly</p>
+<p><strong>F. "The Less-Efficient Market Hypothesis"</strong>
+- Author: Cliff Asness
+- Published: The Journal of Portfolio Management
+- Won Outstanding Article recognition in the 26th Annual Bernstein Fabozzi/Jacobs Levy Awards (2025)
+- Award page: https://www.aqr.com/About-Us/News/2025/AQRs-The-Less-Efficient-Market-Hypothesis-Wins-Outstanding-Article-Recognition-in-26th-Annual-Bernstein-Fabozzi-Jacobs-Levy-Awards
+- Argues markets have become <strong>less</strong> informationally efficient over the past 30+ years in relative pricing of common stocks, particularly over medium horizons.</p>
+<p><strong>G. "Academic Alpha"</strong> (August 2026, most recent)
+- Authors: Thomas Maloney, Tobias J. Moskowitz
+- AQR page: https://www.aqr.com/Insights/Research/White-Papers/Academic-Alpha
+- Introduces style premia investing and how well-researched, skillfully implemented strategies can provide liquid, transparent, cost-effective uncorrelated returns.</p>
+<hr />
+<h3 id="6-cliff-asnesss-public-statements-interviews-external">6. CLIFF ASNESS'S PUBLIC STATEMENTS (INTERVIEWS / EXTERNAL)</h3>
+<p><strong>Hoover Institution Interview: "Cliff Asness on Factor Investing and the History of Financial Economics"</strong>
+- URL: https://www.hoover.org/research/cliff-asness-factor-investing-and-history-financial-economics
+- Key quotes and positions:
+  - "If we get half a backtest going forward, we'll be thrilled" -- acknowledging data mining effects.
+  - Factors most susceptible to disappearing are those based on legal information advantages (temporary edges from better data/faster execution), not persistent market inefficiencies.
+  - AQR's approach: trade strategies for extended periods BEFORE publishing research. "Trading first, publishing later" validates against live markets.
+  - Value and momentum are more durable because they reflect fundamental risk premiums or deep behavioral patterns.
+  - Combines empirical strength AND theoretical coherence when evaluating factors, though strong empirical results sometimes precede satisfactory explanations.</p>
+<p><strong>Chicago Booth Review: "Why Cliff Asness Believes Markets Are Getting Dumber"</strong>
+- URL: https://www.chicagobooth.edu/review/capitalisnt-why-cliff-asness-believes-markets-are-getting-dumber
+- Podcast/interview on the "Less Efficient Market Hypothesis."</p>
+<hr />
+<h3 id="7-key-resource-pages">7. KEY RESOURCE PAGES</h3>
+<ul>
+<li><strong>AQR Research Library (main page):</strong> https://www.aqr.com/Insights/Research</li>
+<li><strong>AQR White Papers index:</strong> https://www.aqr.com/Insights/Research/White-Papers</li>
+<li><strong>AQR Datasets (factor data for download):</strong> https://www.aqr.com/Insights/Datasets</li>
+<li><strong>AQR Insight Award page:</strong> https://www.aqr.com/About-Us/AQR-Insight-Award</li>
+<li><strong>AQR Further Reading (systematic equities):</strong> https://www.aqr.com/Learning-Center/Systematic-Equities/Further-Reading</li>
+</ul>
+<hr />
+<h3 id="summary-of-asnessaqr-position-on-data-mining">SUMMARY OF ASNESS/AQR POSITION ON DATA MINING</h3>
+<p>Asness's consistent position across all these writings:</p>
+<ol>
+<li>
+<p><strong>Data mining is real and dangerous</strong> -- he does not dismiss the concern. "I'm always in a panic that [our strategies are] the result of data mining or survivorship bias."</p>
+</li>
+<li>
+<p><strong>But the core factors survive the test</strong> -- value, momentum, and quality have passed out-of-sample validation across time periods (212 years for U.S. momentum), geographies (93 countries per the Jensen/Kelly/Pedersen paper), and asset classes (8 asset classes per "Value and Momentum Everywhere").</p>
+</li>
+<li>
+<p><strong>Three defenses against data mining</strong>: (a) out-of-sample replication, (b) economic rationale/theory for why the factor exists, (c) trading the strategy live before publishing.</p>
+</li>
+<li>
+<p><strong>The factor zoo is mostly redundant</strong> -- most of the 400+ published factors collapse into roughly 13 themes, and few new factors add pricing information beyond the established ones.</p>
+</li>
+<li>
+<p><strong>AQR sticks to few factors</strong> -- value, momentum, quality (and sometimes carry/defensive). They explicitly reject the proliferation approach.</p>
+</li>
+<li>
+<p><strong>Expect decay but not death</strong> -- "if we get half a backtest going forward, we'll be thrilled" -- honest acknowledgment that live performance will trail backtests, but the premium should survive.</p>
+</li>
+</ol></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-quant-academic-frameworks-multiple-testing.html"><span>Previous</span>academic-frameworks-multiple-testing</a><a class="doc-next" href="doc-quant-backtesting-architecture.html"><span>Next</span>backtesting-architecture</a></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

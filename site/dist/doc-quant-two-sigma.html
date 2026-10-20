@@ -1,0 +1,135 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>two-sigma · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="quant">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-quant.html">Quant Lab</a></nav>
+<div class="doc-kicker">Backtesting research</div>
+<h1 class="doc-title">two-sigma</h1>
+<div class="doc-meta"><span>7 min read</span><span>1,645 words</span><span>Updated 2026-09-09</span><span class="doc-src">quant-backtesting/research/two-sigma.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#two-sigma-detailed-research-findings">Two Sigma: Detailed Research Findings</a></li><li class="l3"><a href="#1-engineering-blog">1. Engineering Blog</a></li><li class="l3"><a href="#2-published-research-papers">2. Published Research Papers</a></li><li class="l3"><a href="#3-combining-data-science-with-finance">3. Combining Data Science with Finance</a></li><li class="l3"><a href="#4-alternative-data-approach">4. Alternative Data Approach</a></li><li class="l3"><a href="#5-david-siegel-and-john-overdeck-public-statements">5. David Siegel and John Overdeck: Public Statements</a></li><li class="l3"><a href="#6-technology-stack-and-infrastructure">6. Technology Stack and Infrastructure</a></li><li class="l3"><a href="#7-open-source-contributions">7. Open Source Contributions</a></li><li class="l3"><a href="#8-talks-and-presentations">8. Talks and Presentations</a></li><li class="l3"><a href="#notable-additional-details">Notable Additional Details</a></li></ol></details></nav>
+<article class="prose"><p>Here is the comprehensive research report on Two Sigma.</p>
+<hr />
+<h2 id="two-sigma-detailed-research-findings">Two Sigma: Detailed Research Findings</h2>
+<h3 id="1-engineering-blog">1. Engineering Blog</h3>
+<p>Two Sigma publishes technical articles at <a href="https://www.twosigma.com/topic/engineering/">twosigma.com/topic/engineering/</a>. Notable recent posts include:</p>
+<ul>
+<li><strong>"Treating Data as Code at Two Sigma"</strong> (Nov 2025, by Effie Baram) -- describes how Two Sigma applies software engineering principles to data management: version control for datasets, automated quality testing, CI/CD for data pipelines, Terraform for declarative pipeline definition, dbt for SQL transformations, and BigQuery as the serverless compute layer. They enforce "data contracts" and lineage tracking as the organization scales.</li>
+<li><strong>"AI in Investment Management: 2026 Outlook" (Parts I &amp; II)</strong> (Jan 2026) -- covers data science and engineering intersection.</li>
+<li><strong>"Platform Thinking: Three Views from Two Sigma Leaders"</strong> (Oct 2025) -- engineering leadership perspectives.</li>
+<li><strong>"AI Core Team Lead Mike Schuster on How to Get the Most From LLMs"</strong> (Feb 2025) -- emphasizes enduring value of programming expertise and realistic perspectives on LLM capabilities.</li>
+<li><strong>"Improving Compute Sustainability: A Case Study"</strong> (Oct 2024, by Jennifer Badolato, Peter Bang, Tim Overeem).</li>
+<li><strong>"NeurIPS 2023: Our Favorite Papers on LLMs, Statistical Learning, and More"</strong> (Mar 2024, by Alyssa Lees, Andrew Rosenfeld, Haoran Sun).</li>
+</ul>
+<p>Source: <a href="https://www.twosigma.com/topic/engineering/">Engineering Archives - Two Sigma</a></p>
+<h3 id="2-published-research-papers">2. Published Research Papers</h3>
+<p>Two Sigma researchers have published peer-reviewed work and technical papers. From their <a href="https://www.twosigma.com/type/research/">Research Archives</a>:</p>
+<ul>
+<li><strong>"Bidirectional Recurrent Neural Networks"</strong> (Jul 2022)</li>
+<li><strong>"A 24x Speedup for Reinforcement Learning with RLlib + Ray"</strong> (Aug 2021)</li>
+<li><strong>"Gradient Sparsification for Communication-Efficient Distributed Optimization"</strong> (Nov 2018)</li>
+<li><strong>"Graph Oracle Models, Lower Bounds, and Gaps for Parallel Stochastic Optimization"</strong> (Nov 2018)</li>
+<li><strong>"Sparse PCA from Sparse Linear Regression"</strong> (Nov 2018)</li>
+<li><strong>"A Secure Cloud with Minimal Provider Trust"</strong> (Nov 2018)</li>
+<li><strong>"Sundial: Harmonizing Concurrency Control and Caching in a Distributed OLTP Database Management System"</strong> (Aug 2018)</li>
+<li><strong>"Thematic Research: Forecasting Factor Returns"</strong> (May 2019)</li>
+<li><strong>"A Machine Learning Approach to Regime Modeling"</strong> -- uses Gaussian Mixture Models on 17 factors from their "Two Sigma Factor Lens" (macro + equity style factors), historical data from the 1970s through 2020, identifying four market regimes: Crisis (~15%), Steady State (~55%), Inflation (~15%), and Walking on Ice (~15%).</li>
+</ul>
+<p>Source: <a href="https://www.twosigma.com/type/research/">Research Archives - Two Sigma</a>, <a href="https://www.twosigma.com/articles/a-machine-learning-approach-to-regime-modeling/">Regime Modeling article</a></p>
+<h3 id="3-combining-data-science-with-finance">3. Combining Data Science with Finance</h3>
+<p>Two Sigma describes itself as "a technology company that applies technology to investing." Key details:</p>
+<ul>
+<li><strong>Scale</strong>: ~1,700 employees, over 700 with advanced degrees, 250+ PhDs. Over 70% come from outside finance. Two-thirds of staff are in R&amp;D roles.</li>
+<li><strong>Data</strong>: 380+ petabytes of stored data from 10,000+ sources, 110,000+ daily simulations.</li>
+<li><strong>Methodology</strong>: Hundreds of models across four categories -- fundamental analysis (financial statements), technical analysis (pricing/volume/momentum), event-driven strategies (earnings/M&amp;A), and alpha capture (systematic sell-side information).</li>
+<li><strong>Venn Platform</strong>: Two Sigma productized their factor analysis expertise into <a href="https://www.venn.twosigma.com/">Venn by Two Sigma</a>, a cloud-based portfolio analytics platform for institutional investors offering factor-based risk analysis, scenario analysis, and portfolio construction across 100,000+ public funds, ETFs, equities, and indices.</li>
+<li><strong>Computing</strong>: Infrastructure comparable to the world's top supercomputer sites; 75,000+ CPUs; traded over 300 million shares daily over 14 years.</li>
+</ul>
+<p>Sources: <a href="https://d3.harvard.edu/platform-rctom/submission/two-sigma-investments-will-machines-take-over-the-stock-market/">Harvard case study</a>, <a href="https://www.institutionalinvestor.com/article/2bsw4ehe37jv5y886qtxc/corner-office/inside-the-geeky-quirky-and-wildly-successful-world-of-quant-shop-two-sigma">Institutional Investor profile</a>, <a href="https://www.prnewswire.com/news-releases/two-sigma-and-evestment-to-provide-enhanced-investment-data-through-venn-301434847.html">Venn press release</a></p>
+<h3 id="4-alternative-data-approach">4. Alternative Data Approach</h3>
+<p>Two Sigma has an entire team devoted to alternative data collection. They analyze:</p>
+<ul>
+<li>Satellite imagery, weather patterns, shipping data</li>
+<li>Social media sentiment, news feeds (via NLP)</li>
+<li>Web scraping, sensor data, transaction flows</li>
+<li>Supply chain signals, sector-specific activity data</li>
+</ul>
+<p>Their philosophy: alternative data is used to <strong>test and enhance</strong> an investment thesis, not replace one. They invested in <strong>Crux Informatics</strong> to handle data preparation and preprocessing at scale. Their proprietary data management system houses structured and unstructured data from 10,000+ sources.</p>
+<p>Sources: <a href="https://news.ycombinator.com/item?id=21728710">Hacker News thread on Two Sigma alternative data</a>, <a href="https://trendspider.com/learning-center/two-sigma-investments/">TrendSpider profile</a>, <a href="https://d3.harvard.edu/platform-rctom/submission/two-sigma-investments-will-machines-take-over-the-stock-market/">Harvard case study</a></p>
+<h3 id="5-david-siegel-and-john-overdeck-public-statements">5. David Siegel and John Overdeck: Public Statements</h3>
+<p><strong>David Siegel's WSJ Op-Ed -- "Investing and the Scientific Method":</strong>
+Core thesis: "The most effective way to address hard problems like forecasting asset prices or optimizing portfolios is...the same as for any other extraordinarily complex challenge: Use the scientific method." He argues that massive datasets and powerful technologies "heighten the need" for systematic methodology, not reduce it. The process involves "formulation of carefully crafted hypotheses, followed by a recurring process of measurement, learning, and adjustment." Scientific rigor counteracts "harmful cognitive and emotional biases."</p>
+<p><strong>Siegel on AI and Data Science:</strong>
+"I believe that AI technology will allow far more human-like comprehension and reasoning than we've achieved today." However, he notes deep learning lacks "common sense reasoning" and that "we're still in the early days of what these methods can do."</p>
+<p><strong>John Overdeck</strong> and Siegel co-founded Two Sigma after meeting at D.E. Shaw in the 1990s, with initial capital from Paul Tudor Jones. They served as co-CEOs until September 2024, when they transitioned to co-chairmen, with Carter Lyons and Scott Hoffman assuming CEO roles.</p>
+<p><strong>Paul Tudor Jones on the founders</strong>: "John and David have intellectual horsepower, the ability to recruit outstanding people, and a rigorous approach."</p>
+<p>Sources: <a href="https://www.twosigma.com/articles/wsj-op-ed-by-david-siegel-investing-and-the-scientific-method/">Siegel WSJ Op-Ed</a>, <a href="https://www.twosigma.com/articles/david-siegel-on-the-future-of-ai-data-science-and-more/">Siegel on AI</a>, <a href="https://en.wikipedia.org/wiki/Two_Sigma">Wikipedia</a></p>
+<h3 id="6-technology-stack-and-infrastructure">6. Technology Stack and Infrastructure</h3>
+<ul>
+<li><strong>Languages</strong>: Python (primary for research, modeling, ML -- heavy use of pandas, NumPy, scikit-learn); Java and C++ for performance-critical systems (execution engines, risk management, real-time data processing).</li>
+<li><strong>Infrastructure</strong>: 380+ petabytes stored data; 75,000+ CPUs; 110,000+ daily simulations; proprietary data pipelines, backtesting frameworks, execution platforms.</li>
+<li><strong>Cloud/Data</strong>: BigQuery (serverless), Terraform (infrastructure-as-code), dbt (data transformations).</li>
+<li><strong>Custom tooling</strong>: Internal package management, CI/CD systems, monitoring tools, proprietary data management system.</li>
+<li><strong>Scale</strong>: 157 technologies in use (per RocketReach tech profile). Computing capacity comparable to top global supercomputer sites.</li>
+<li><strong>Name origin</strong>: lowercase sigma (volatility) + uppercase Sigma (summation) -- signal amplification across positions.</li>
+</ul>
+<p>Sources: <a href="https://www.quantt.co.uk/resources/two-sigma-guide">Quantt guide</a>, <a href="https://rocketreach.co/two-sigma-technology-stack_b5c674d9f42e0c84">RocketReach tech stack</a>, <a href="https://www.twosigma.com/articles/treating-data-as-code-at-two-sigma/">Treating Data as Code</a></p>
+<h3 id="7-open-source-contributions">7. Open Source Contributions</h3>
+<p>Two Sigma maintains <strong>71 repositories</strong> on <a href="https://github.com/twosigma">GitHub (github.com/twosigma)</a>. Major projects:</p>
+<ul>
+<li><strong>BeakerX</strong> (2.9k stars) -- Jupyter Notebook extensions supporting six languages and interactive widgets.</li>
+<li><strong>Flint</strong> (1.2k stars) -- Time series library for Apache Spark with locality-based optimizations.</li>
+<li><strong>Cook</strong> (369 stars, archived) -- Fair job scheduler on Kubernetes/Mesos for batch workloads and Spark.</li>
+<li><strong>Waiter</strong> (86 stars, archived) -- Web service manager with autoscaling on Mesos/Kubernetes.</li>
+<li><strong>git-meta</strong> (231 stars) -- Monorepo construction using Git submodules.</li>
+<li><strong>nsncd</strong> (77 stars) -- nscd-compatible daemon in Rust.</li>
+<li><strong>uberjob</strong> (33 stars) -- Python call graph builder/runner.</li>
+<li><strong>Halite</strong> -- AI programming competition (2016-2018) where players build bots in any language to compete on a 2D board.</li>
+<li><strong>OpenJDK fork</strong> -- Contributions to upstream JDK.</li>
+<li><strong>Frost</strong> -- FPGA RISC-V open-sourced in SystemVerilog.</li>
+</ul>
+<p><strong>Two Sigma Open</strong> is their internal workshop/hackathon series where engineers contribute to projects the firm depends on: pandas (2016), Jupyter/IPython (2017), scikit-learn (2018), Flask (2019), Node.js and Open Props (2023). Two Sigma Open Source, LLC (TSOS) manages these initiatives. Colleagues include original creators of Apache Arrow and pandas.</p>
+<p>Sources: <a href="https://github.com/twosigma">Two Sigma GitHub</a>, <a href="https://www.twosigma.com/open-source/projects">Open Source Projects page</a>, <a href="https://www.twosigma.com/articles/two-sigma-open-giving-back-to-the-open-source-community">Two Sigma Open article</a></p>
+<h3 id="8-talks-and-presentations">8. Talks and Presentations</h3>
+<p>Two Sigma researchers regularly attend and present at major ML/AI conferences:</p>
+<ul>
+<li><strong>NeurIPS</strong>: Sponsored since 2014; "several dozen" researchers/engineers attending and presenting. Published roundups of favorite papers from NeurIPS 2017, 2019, 2023.</li>
+<li><strong>ICLR</strong>: Sponsored 2019 (New Orleans) and 2021 (virtual). Researchers Austin Shin, Nick Petosa, and Raoul Khouri published curated paper selections.</li>
+<li><strong>ICML</strong>: Senior researcher Satrajit Chatterjee summarized ICML 2017 papers. Published ICML 2025 highlights.</li>
+<li><strong>NIPS 2017</strong>: Researchers Firdaus Janoos and Eric Allen selected 25 favorite papers/presentations.</li>
+<li><strong>The Discovery: Two Sigma PhD Symposium</strong> -- internal event hosting distinguished professors to share latest research.</li>
+<li><strong>Dev Interrupted Podcast</strong> -- Matt Greenwood (engineering) appeared in May 2025.</li>
+</ul>
+<p>Sources: <a href="https://www.twosigma.com/articles/neurips-2019-highlights-key-themes-and-papers/">NeurIPS 2019 Highlights</a>, <a href="https://www.twosigma.com/articles/our-favorite-deep-learning-papers-and-talks-from-iclr-2021/">ICLR 2021 Favorites</a>, <a href="https://www.twosigma.com/articles/25-of-our-favorite-papers-talks-presentations-and-workshops-from-nips-2017/">NIPS 2017 Favorites</a>, <a href="https://www.twosigma.com/events/the-discovery-two-sigma-phd-symposium/">PhD Symposium</a>, <a href="https://www.twosigma.com/articles/meet-our-engineers-at-upcoming-tech-conferences/">Meet Engineers at Conferences</a></p>
+<h3 id="notable-additional-details">Notable Additional Details</h3>
+<ul>
+<li><strong>AUM trajectory</strong>: $8B (2011) to $23B (2014) to $50B+ (2017) to <strong>$70B (2025)</strong>.</li>
+<li><strong>Legal/controversies</strong>: Employee Kang Gao pled guilty (2014-15) to stealing proprietary models; SEC investigated unauthorized trading model modifications (Oct 2023); DOJ indicted former researcher Jian Wu (Sep 2025) for manipulating algorithms causing $165M in client losses.</li>
+<li><strong>Leadership transition</strong>: Overdeck and Siegel stepped down as co-CEOs in September 2024; Carter Lyons and Scott Hoffman took over.</li>
+<li><strong>Blockchain</strong>: Became a Chainlink node operator in October 2022.</li>
+</ul>
+<p>Source: <a href="https://en.wikipedia.org/wiki/Two_Sigma">Wikipedia - Two Sigma</a></p></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-quant-self-mba-audit.html"><span>Previous</span>self-mba-audit</a><span></span></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

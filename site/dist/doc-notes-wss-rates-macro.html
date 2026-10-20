@@ -1,0 +1,1541 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Rates &amp; macro: how the price of money is set, moved and transmitted (Wall Street Skinny) · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Rates &amp; macro: how the price of money is set, moved and transmitted (Wall Street Skinny)</h1>
+<div class="doc-meta"><span>87 min read</span><span>20,058 words</span><span>Updated 2026-10-19</span><span class="doc-src">notes/wss-rates-macro.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#what-this-adds-to-the-program">What this adds to the program</a></li><li class="l2"><a href="#concept-map">Concept map</a></li><li class="l2"><a href="#1-bond-priceyield-and-the-yield-stack">1 · Bond price/yield and the yield stack</a></li><li class="l2"><a href="#2-duration-dv01-and-convexity">2 · Duration, DV01 and convexity</a></li><li class="l2"><a href="#3-yield-curve-term-premium-and-curve-trades">3 · Yield curve, term premium, and curve trades</a></li><li class="l2"><a href="#4-the-fomc-and-market-implied-rate-odds">4 · The FOMC and market-implied rate odds</a></li><li class="l2"><a href="#5-neutral-rate-the-taylor-rule-and-financial-conditions">5 · Neutral rate, the Taylor rule, and financial conditions</a></li><li class="l2"><a href="#6-fed-independence-the-chair-transition-and-the-third-mandate">6 · Fed independence, the chair transition, and the "third mandate"</a></li><li class="l2"><a href="#7-qe-vs-qt-vs-reserve-management-the-balance-sheet-and-its-plumbing">7 · QE vs. QT vs. reserve management: the balance sheet and its plumbing</a></li><li class="l2"><a href="#8-treasury-auctions-and-who-buys-the-debt">8 · Treasury auctions and who buys the debt</a></li><li class="l2"><a href="#9-treasury-buybacks-and-debt-management">9 · Treasury buybacks and debt management</a></li><li class="l2"><a href="#10-repo-sofr-and-interest-rate-swaps">10 · Repo, SOFR and interest-rate swaps</a></li><li class="l2"><a href="#11-treasury-futures-cheapest-to-deliver-and-the-basis-trade">11 · Treasury futures, cheapest-to-deliver, and the basis trade</a></li><li class="l2"><a href="#12-mortgage-rate-drivers-and-housing-policy">12 · Mortgage-rate drivers and housing policy</a></li><li class="l2"><a href="#13-inflation-measurement-and-pass-through">13 · Inflation measurement and pass-through</a></li><li class="l2"><a href="#14-fx-and-the-dollar">14 · FX and the dollar</a></li><li class="l2"><a href="#15-carry-and-the-yen-carry-trade">15 · Carry and the yen carry trade</a></li><li class="l2"><a href="#16-tariffs-and-the-april-2025-safe-haven-break">16 · Tariffs and the April 2025 safe-haven break</a></li><li class="l2"><a href="#17-recession-indicators">17 · Recession indicators</a></li><li class="l2"><a href="#how-the-concepts-connect">How the concepts connect</a></li><li class="l2"><a href="#retrieval-questions">Retrieval questions</a></li><li class="l2"><a href="#gaps">Gaps</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p><strong>Part of <a class="wiki" href="doc-notes-wall-street-skinny-insights.html">wall street skinny insights</a></strong> (hub). Sibling notes: <a class="wiki" href="doc-notes-wss-ai-economics.html">wss ai economics</a> <a class="wiki" href="doc-notes-wss-capital-markets-ma.html">wss capital markets ma</a> <a class="wiki" href="doc-notes-wss-credit-distressed.html">wss credit distressed</a> <a class="wiki" href="doc-notes-wss-private-markets-wealth.html">wss private markets wealth</a> <a class="wiki" href="doc-notes-wss-technicals-career.html">wss technicals career</a> <a class="wiki" href="doc-notes-wss-trading-hedge-funds.html">wss trading hedge funds</a></p>
+<p><strong>Sources:</strong> 84 transcripts read from the <code>rates-macro</code> cluster across two passes; 77 used (33 long
+videos, 44 shorts), from <em>The Wall Street Skinny</em> (Jen Saarbach, a decade as a rates specialist at Morgan Stanley / Lehman /
+Barclays; Kristen Kelly, ex-Morgan Stanley IBD). Guests whose material is used: <strong>Mike Medeiros</strong>
+(Head of US Macro, Wellington; two episodes, Jan 2026 and Sep 2026), <strong>Elizabeth Burton</strong> (Chief
+Strategist, Fortress), <strong>Alicia Levine</strong> (BNY Wealth), <strong>Guy Adami</strong> (CNBC / RiskReversal), an oil
+and shipping trading CEO, and a 90-second Q&amp;A clip with <strong>Treasury Secretary Scott Bessent</strong>. Pass 2
+adds <strong>Matt Hornbach</strong> (global head of macro strategy, Morgan Stanley; Sep 2025), <strong>John Normand</strong>
+(ex-JPM cross-asset strategy, now AustralianSuper; 2024), <strong>Jamie Patton</strong> (co-head of global rates,
+TCW; Sep 2024), <strong>Steve Eisman</strong> (<em>The Big Short</em>; Apr 2025) and <strong>Ashish Goyal</strong> (global macro PM;
+2024), plus the hosts' own emergency episodes on the April 2025 tariff panic, the basis trade, Fed
+independence and the end of QT. One short from the <code>culture-other</code> cluster (<code>GbZpAPJwCdY</code>, on reserves and the 2019 repo spike) is borrowed
+for §7. Raw at <code>_ingest/raw/2026-10-04/media/wall-street-skinny/</code>. Seven cluster files had nothing on
+rates (a pay survey, a SPAC breakdown, a PE leverage episode, career shorts, an ad) and are only
+skimmed; seven pass-2 files added nothing new (listed under Gaps).</p>
+<p><strong>Time window:</strong> mostly April 2025 (tariff panic) to September 2026 (the first Warsh hike), with
+earlier anchors (the LIBOR end in July 2023, 2023 "101" episodes, Normand and Goyal in 2024, the Sep
+2024 first cut). The transcripts follow one cycle all the way through, and that cycle is the note's spine: Powell cuts → Iran-war oil
+shock → chair transition → Bessent buybacks → hike. Dates are worked out from the episodes; figures are
+as stated on air.</p>
+<p><strong>Maps to:</strong> <strong>Course 11</strong> (Global Strategy &amp; Macro: this note is the rates layer the
+core-11 lesson points to but never builds), <strong>E9</strong>
+(Geopolitics &amp; Macro: the E9 lesson traces
+chokepoint → oil → inflation → rates → assets and then stops; this note picks up from "rates"),
+<strong>Course 02</strong> (the 10-year is the risk-free input to every DCF), <strong>E2</strong> (capital allocation: funding
+cost, duration of liabilities), <strong>Course 07</strong> (reading probabilities off prices).</p>
+<p>⚠ <strong>Bias:</strong> both hosts are ex-sell-side, and Jen's training shows. She is good on mechanics, quick to
+call something a crisis, and she <em>labels</em> her own speculation ("conspiracy corner"); the note keeps
+those labels. In April 2025 she calls herself the "leader of the panicking party," and the note airs
+Eisman's calm counter-case alongside. Two segments are <strong>paid ads</strong> (the Public.com bond account behind the 6.7% corporate-bond
+examples; Ground News), so read their framing as marketing even where the arithmetic is right. Medeiros
+works at a long-only asset manager and argued "not restrictive / sell bonds" consistently across both
+appearances. Hornbach runs sell-side strategy; Patton was long duration at TCW when she argued that
+cuts transmit weakly; Normand works for a pension fund and argues stay-invested. Burton runs strategy at a credit shop and argues that the risk is in PE, not credit. The
+hosts clearly admire Bessent and Warsh, so policy-maker motives get a charitable reading. Several stated
+figures are wrong or dated; each one is flagged where it appears.</p>
+</blockquote>
+<hr />
+<h2 id="what-this-adds-to-the-program">What this adds to the program</h2>
+<ul>
+<li><strong>A rates layer the repo did not have.</strong> <code>GLOSSARY.md</code>, <code>learn/</code> and <code>notes/</code> contain nothing on bond
+  math, duration, the yield curve, the Fed's machinery or Treasury debt management. Core-11 teaches
+  country risk and scenario planning, and E9 stops at "the Fed looks less likely to cut." This note
+  supplies the next link in the chain: <em>how</em> a policy rate, a bond auction or a buyback reprices a
+  mortgage, a corporate bond or a DCF.</li>
+<li><strong>The practitioner conversion factor.</strong> Bond P&amp;L is duration × Δyield × notional, and desks size
+  trades in <strong>DV01</strong> (dollars per basis point), not in notional. With that one idea you can read every
+  "macro fund blew up" headline.</li>
+<li><strong>Fed ≠ Treasury ≠ GSEs.</strong> There are three separate levers on long rates: Fed QE, Treasury buybacks
+  and issuance mix, and Fannie/Freddie MBS buying. In 2026 they pointed in <em>different directions</em>. That
+  split is the most useful framework in the cluster and the one the media got most wrong.</li>
+<li><strong>Reading probabilities off prices.</strong> The fed-funds-futures arithmetic behind "68% chance of a hike"
+  is worked in full. It applies Course 07 and <a class="wiki" href="doc-canon-canon-tetlock-superforecasting.html">canon tetlock superforecasting</a> to a market that sets
+  the price of money.</li>
+<li><strong>The plumbing behind "the bond market broke."</strong> Cash vs. futures vs. swaps, why futures trade rich,
+  how the basis trade levers that gap, why swap spreads are negative, and what LIBOR → SOFR changed (§10,
+  §11). <a class="wiki" href="doc-notes-wss-trading-hedge-funds.html">wss trading hedge funds</a> covers the same basis trade from the fund seat.</li>
+<li><strong>Carry and tariffs as rate stories.</strong> The yen carry trade (§15) and the April 2025 episode in which
+  tariffs made Treasuries, stocks and the dollar fall together (§16), with Eisman's counter-case.</li>
+<li><strong>A dated case study of institutional stress.</strong> It covers a chair transition, a criminal probe of a
+  sitting chair, a hawkish appointee who surprised everyone, and the Taylor-rule framework for
+  measuring "independence" with a number rather than adjectives.</li>
+</ul>
+<hr />
+<h2 id="concept-map">Concept map</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Concept</th>
+<th>One line</th>
+<th>Why it matters to a business</th>
+<th>In repo?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Bond price/yield &amp; the yield stack</td>
+<td>Yield = risk-free rate + credit spread; price moves opposite to yield</td>
+<td>It is your borrowing cost, and it moves for two separate reasons</td>
+<td>partial (core-11 risk-free/CDS cards)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Duration, DV01, convexity</td>
+<td>A conversion factor from a rate move to a dollar P&amp;L</td>
+<td>Sizes interest-rate risk on any asset or liability</td>
+<td>n</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Yield curve, term premium, curve trades</td>
+<td>The price of money at each maturity, and bets on its shape</td>
+<td>The Fed sets one point; you borrow at the others</td>
+<td>n</td>
+</tr>
+<tr>
+<td>4</td>
+<td>FOMC &amp; market-implied odds</td>
+<td>A 12-vote committee sets an overnight range; futures price its path</td>
+<td>Tells you what is already priced in before you act</td>
+<td>n</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Neutral rate, Taylor rule, financial conditions</td>
+<td>Is policy actually tight? Measure it, don't assert it</td>
+<td>Separates "rates are high" from "rates are restrictive"</td>
+<td>n</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Fed independence &amp; the "third mandate"</td>
+<td>Political pressure to fund the government cheaply</td>
+<td>It decides whether the long end trusts the central bank</td>
+<td>n</td>
+</tr>
+<tr>
+<td>7</td>
+<td>QE vs QT vs reserve management</td>
+<td>The Fed's balance sheet as a second policy tool, and its plumbing</td>
+<td>Long rates, mortgage rates and funding stress</td>
+<td>n</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Treasury auctions &amp; who buys</td>
+<td>How $-trillions of debt is sold, and the new bill buyers</td>
+<td>Auction results move the whole curve in minutes</td>
+<td>n</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Treasury buybacks &amp; debt management</td>
+<td>The Treasury reshaping its own debt</td>
+<td>A quiet lever on long yields, distinct from QE</td>
+<td>n</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Repo, SOFR, swaps, swap spreads</td>
+<td>Funding, and the synthetic bond that lets you skip it</td>
+<td>Every floating-rate loan and every hedge prices here</td>
+<td>n</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Treasury futures, CTD, basis trade</td>
+<td>Exchange-traded duration, its DV01, and the levered cash-futures arbitrage</td>
+<td>Liquidity in the risk-free market depends on levered funds</td>
+<td>partial (<a class="wiki" href="doc-notes-wss-trading-hedge-funds.html">wss trading hedge funds</a> §9; GLOSSARY "Basis trade")</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Mortgage-rate drivers &amp; housing policy</td>
+<td>30y mortgage ≈ 10y Treasury + spread, not the 30y</td>
+<td>Explains why Fed cuts don't lower mortgage rates</td>
+<td>n</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Inflation measurement &amp; pass-through</td>
+<td>CPI vs PCE, base effects, real vs nominal, breakevens</td>
+<td>The input that drives the Fed's reaction function</td>
+<td>partial (E9 oil→inflation chain)</td>
+</tr>
+<tr>
+<td>14</td>
+<td>FX &amp; the dollar</td>
+<td>Rate differentials, pegs, hedging costs, the dollar as relief valve</td>
+<td>Imported costs, foreign demand for your debt</td>
+<td>partial (E9 tariffs)</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Carry &amp; the yen carry trade</td>
+<td>Borrow cheap money, own expensive money, until the elevator drops</td>
+<td>FX gaps can erase an asset's return in a quarter</td>
+<td>n</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Tariffs &amp; the April 2025 safe-haven break</td>
+<td>Who pays a tariff, the reciprocal formula, and why Treasuries fell with stocks</td>
+<td>Input costs, and proof the risk-free rate has a credibility term</td>
+<td>partial (E9 tariffs)</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Recession indicators</td>
+<td>The curve, payroll breakevens, and the folklore</td>
+<td>When to de-risk, and when <em>not</em> to</td>
+<td>n</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="1-bond-priceyield-and-the-yield-stack">1 · Bond price/yield and the yield stack</h2>
+<p><strong>What it is.</strong> A bond is a loan. You pay a price today and receive fixed coupons plus principal later.
+The <strong>yield</strong> is the return those fixed cash flows imply at today's price, so when market yields rise
+the price of an existing bond falls, and the reverse. For a company, the yield it pays splits into two
+parts: a <strong>risk-free rate</strong> (the Treasury yield of the same maturity) plus a <strong>credit spread</strong>, which
+compensates the lender for the chance the company doesn't pay.</p>
+<p><strong>How it works.</strong> The hosts' figures (Public bond-account ad, 2024): a 5-year Treasury at <strong>5%</strong> plus a
+<strong>170bp</strong> spread gives a <strong>6.7%</strong> corporate yield. Two separate things can make you money:
+- <em>Rates rally:</em> the risk-free part falls and every fixed-rate bond gains (sized in §2).
+- <em>Spreads tighten:</em> Treasuries stay at 5% but the spread compresses 170 → 150bp, so new bonds price at
+  6.5% and your locked-in 6.7% bond is worth more. You gain with no change in Fed policy.</p>
+<p>The tariff short shows the other direction: Treasuries at <strong>4%</strong> + 150bp = <strong>5.5%</strong>, and tariffs widen
+the spread. The channel is <strong>covenants</strong>. With $400mm of debt and $100mm of EBITDA, leverage is
+400/100 = <strong>4.0×</strong>, inside a 6× maintenance covenant. If tariffs halve EBITDA to $50mm, leverage becomes
+400/50 = <strong>8.0×</strong> and the covenant is breached <em>without borrowing another dollar</em>.</p>
+<p><strong>Business significance.</strong> Every corporate borrowing decision reflects both legs. A CFO who watches only
+the Fed misses half the cost. In April 2025 Treasury yields fell (a flight to safety) while corporate
+all-in costs <em>rose</em>, because the spread leg widened more than the base leg fell. The hosts' summary:
+what's good for the US government is not necessarily good for companies.</p>
+<p><strong>Forces &amp; impact.</strong> The base rate follows policy expectations, inflation and term premium (§3). The
+spread follows default risk, which is driven by input costs, demand, and how close covenants are to
+tripping. It also follows <strong>demand for income</strong>: in August 2025 IG spreads were at 30-year tights despite
+tariff uncertainty, and Jen calls it a "cash trap". With rate cuts priced in, few IPO exits, and equities
+"priced on the moon", money has nowhere to go except high-grade bonds, which compresses spreads.
+Second-order effect: tight spreads remove the cushion, so repricing comes "up by the stairs, down by the
+elevator shaft."</p>
+<p><strong>With vs. without.</strong> Without a separate credit spread, every borrower would pay the sovereign rate and
+lenders would have no price at which to take default risk. Credit would then be rationed by
+relationship, not price, which is roughly how bank lending worked before deep bond markets. When the
+mechanism breaks (spreads gap wider all at once), refinancing windows close, and the companies that
+most need to roll debt are shut out first.</p>
+<p><strong>Applies when / Breaks when.</strong> The decomposition holds whenever a liquid sovereign curve exists. It
+breaks when the "risk-free" leg itself carries risk (§6: the US is rated AA, below Microsoft and J&amp;J,
+which the hosts point out), or when spreads are too tight to carry information. Burton's point is that
+OAS and the MOVE index can tell contradictory stories in the same week.</p>
+<p><strong>Channel example.</strong> <em>Tariff Fallout: Why Are Credit Spreads Widening?</em> (short); <em>How Does Investing in
+Corporate Bonds Work?</em> (short, ad); <em>Chamath's New SPAC… The Fed vs. FOMC</em> (Aug 2025, 30-year-tight
+spreads); <em>Oracle CDS: the "Anti-AI Trade"</em> (Nov 2025: Oracle CDS wider by ~95bp versus a modest move in
+CDX IG, which made Oracle the market's chosen hedge against AI).</p>
+<p><strong>Counterpoint.</strong> The 6.7%-yield examples are ad copy, and a 10-bond "IG and high-yield" basket is not
+risk-free carry. The covenant example assumes maintenance covenants. Much 2021–25 issuance was
+covenant-lite, which, as Medeiros notes, is itself a late-cycle sign.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-canon-canon-klarman-margin-of-safety.html">canon klarman margin of safety</a> (reaching for yield = no margin) ·
+core-11 lesson (sovereign CDS, risk-free rate) · the sibling
+<a class="wiki" href="doc-notes-wss-credit-distressed.html">wss credit distressed</a> for private credit and PIK.</p>
+<hr />
+<h2 id="2-duration-dv01-and-convexity">2 · Duration, DV01 and convexity</h2>
+<p><strong>What it is.</strong> If an oil stock rises 1%, you make 1%. Bonds don't work that way. <strong>Duration</strong> converts
+a change in yield into a percentage change in price; textbook-wise it is the weighted-average time to
+get your money back. A 10-year zero-coupon bond has duration 10. A 10-year coupon bond pays cash
+earlier, so its duration is lower (~8). <strong>DV01</strong> ("dollar value of an 01") is the same idea in dollars:
+how much you make or lose per one-basis-point move. <strong>Convexity</strong> is the curvature that duration's
+straight line misses.</p>
+<p><strong>How it works.</strong> Rule of thumb: <strong>P&amp;L ≈ −duration × Δyield × notional.</strong>
+- <em>The blackjack-table framing</em> (DV01 short): before you sit down you pick the $10 table or the $1,000
+  table. Duration is how a trader picks the table. A 10-year Treasury with a 5% semi-annual coupon has
+  duration ~<strong>7.5</strong> (a 10-year zero would be 10). On <strong>$100mm</strong>, a 1bp rally (5.00% → 4.99%) earns
+  7.5 × 0.0001 × $100mm = <strong>$75,000</strong>.
+- <em>Sizing runs the formula backwards:</em> a trader who wants "$100k per bp" buys $100,000 / (7.5 × 0.0001)
+  = <strong>~$133mm</strong> of 10s. Conviction is expressed in DV01; the notional is whatever falls out.
+- <em>The issuer's side of the same number</em> (Apr 2025): a <strong>$25B</strong> 10-year auction carries roughly
+  $25B × 7.5 × 0.0001 = <strong>$18.75mm per bp</strong>. A 50bp backup into an auction is therefore close to
+  <strong>$1B</strong> of extra present-value interest cost to the Treasury on one auction alone.
+- <em>$1,000 corporate bond, duration 4.3</em> (Public ad): each 1bp move is worth 4.3bp of price, or <strong>$0.43</strong>
+  per $1,000. Yields fall 100bp (6.7% → 5.7%), so the gain ≈ 4.3 × 1.00% × $1,000 = <strong>$43</strong>, a little
+  more in practice because of convexity.
+- <em>Convexity, intuitively</em> (Public ad, short): in the duration formula the yield sits in the
+  denominator. When yields fall to 5.7%, you divide by a smaller number, so duration rises (say 4.3 →
+  4.4): you make money <em>faster</em> as rates rally. When yields rise, duration shrinks: you lose money
+  <em>more slowly</em>. That curved price-yield line is <strong>positive convexity</strong>, and it is a property of
+  option-free bonds.
+- <em>A dealer's DV01 gone wrong</em> (short, Feb–Mar 2020): a trader facilitated a client who sold <strong>$2.6B</strong>
+  of long bonds, hedged by going short, and was then never delivered the bonds. The position carried
+  ~<strong>$4.2mm DV01</strong>; as COVID hit, long bonds rallied ~50bp instead of selling off, and 4.2 × 50 ≈
+  <strong>$210mm</strong>, with the hosts putting the final loss near <strong>$250mm</strong>. A "flat" market maker can lose a
+  quarter of a billion dollars when the risk it thought was hedged is not.
+- <em>Iran war, March 2026, two traders each long $100mm</em> (DV01 short):
+  - 2-year: yield 3.40% → 4.00% (+60bp), duration 1.8 → 1.8 × 0.60% × $100mm ≈ <strong>−$1.1mm</strong>
+  - 10-year: 3.96% → 4.45% (+~50bp), duration 8 → 8 × 0.50% × $100mm = <strong>−$4.0mm</strong></p>
+<p>The smaller yield move lost nearly 4× more money. This is why desks <strong>flip the question</strong>. They don't
+  ask "how much did $100mm lose?" They ask "how many bonds give me $100k per bp?" A fund that wants
+  "$1mm per bp" ends up with enormous notionals, and the hosts' tagline was that this is why the Iran
+  war blew up macro funds.</p>
+<p><strong>Business significance.</strong> Duration is the unit of interest-rate risk on <em>both</em> sides of a balance
+sheet: a pension's liabilities, a bank's securities book (SVB's 2023 failure was a duration mismatch),
+an insurer's annuities, a homeowner's fixed mortgage. Matching DV01 is how a CFO hedges a planned bond
+issue. It is also how a "duration-weighted" curve trade (§3) becomes indifferent to the level of rates.</p>
+<p><strong>Forces &amp; impact.</strong> Duration rises as coupon falls, maturity lengthens and yields drop, so low-rate
+eras manufacture duration risk. The 1.375% Aug-2050 Treasury issued in 2020 trades near <strong>46 cents on
+the dollar</strong> (§9) because its duration was huge when rates rose 400bp. Second order: when everyone
+sizes in DV01, a vol spike forces simultaneous de-risking across funds.</p>
+<p><strong>With vs. without.</strong> Without a duration-type conversion, a "$100mm 2-year" and a "$100mm 10-year" look
+like the same risk. Sizing by notional systematically under-hedges long bonds and over-hedges short
+ones. Convexity is the tell when the approximation fails: mortgages have <strong>negative convexity</strong> (§12)
+because borrowers refinance when rates fall, so the holder's gains are capped while losses aren't.</p>
+<p><strong>Applies when / Breaks when.</strong> Duration works for small parallel moves in option-free bonds. It breaks
+for large moves (convexity dominates), for bonds with embedded options (callables, MBS), and for
+non-parallel curve moves, which is why §12 uses <em>partial</em> (key-rate) durations.</p>
+<p><strong>Channel example.</strong> <em>Duration &amp; DV01: the best explanation of the magic conversion factor</em> (short,
+Mar 2026); <em>What is "DV01" and how is it used? An intuitive explanation</em> (short); <em>Convexity Intuition
+Explained</em> (short, Public ad); <em>How do bonds work?</em> (Public ad, 2024); <em>Ferrari Loving Trader Cost Wall
+Street a Quarter Billion Dollars</em> (short); <em>It Wasn't Equity Turmoil That Spooked Trump</em> (Apr 2025,
+auction DV01).</p>
+<p><strong>Counterpoint.</strong> The shorts loosely conflate modified duration and DV01. Strictly, DV01 = modified
+duration × price × 0.0001, a dollar figure, not a percentage; the futures video (§11) gets the
+Macaulay → modified → dollar sequence right. "Blew up because of duration" is also incomplete: the
+losses came from leverage <em>on</em> duration plus crowded curve positioning (§3). <strong>Likely error in the
+Ferrari short:</strong> it puts long-bond yields at ~3.72% in Feb 2020 falling to ~3.2%. The 30-year was
+nearer <strong>2.0% → 1.2%</strong> over that window, so the bp move was larger than stated and the yield levels are
+wrong; the order of magnitude of the loss is still plausible. The auction "$1B" is a present-value
+cost to the issuer only if the Treasury could otherwise have sold at the pre-backup yield.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-canon-canon-taleb-antifragile.html">canon taleb antifragile</a> (convexity as the shape of payoffs; negative convexity = fragile)
+· <a class="wiki" href="doc-canon-canon-perrow-normal-accidents.html">canon perrow normal accidents</a> (tightly coupled, uniformly sized risk) · Course 02 (discounting is
+the same math run in reverse).</p>
+<hr />
+<h2 id="3-yield-curve-term-premium-and-curve-trades">3 · Yield curve, term premium, and curve trades</h2>
+<p><strong>What it is.</strong> The <strong>yield curve</strong> plots yields from overnight to 30 years. Normally it slopes upward,
+because lending for longer means more opportunity cost, more inflation risk and (for non-sovereigns)
+more default risk. The extra yield for duration is the <strong>term premium</strong>. A <strong>curve trade</strong> bets on the
+<em>shape</em> of the curve rather than its level.</p>
+<p><strong>How it works.</strong>
+- <em>Normal vs. inverted:</em> 2s at 4.00% and 10s at 4.50% is a +50bp normal curve. 2s at 4.50% and 10s at
+  4.00% is a −50bp inversion.
+- <em>Steepener:</em> buy 2s, sell 10s, duration-weighted so a parallel move is P&amp;L-neutral. You profit if the
+  spread widens. A <strong>bull steepener</strong> comes from the front end rallying (the Fed cuts). A <strong>bear
+  steepener</strong> comes from the long end selling off (fiscal or inflation fear). The <strong>flatteners</strong> are
+  the mirror images.
+- <em>2025, US:</em> after the "One Big Beautiful Bill", the curve steepened, but <strong>bull</strong>, with 2s falling on
+  cut expectations, not 30s rising. <em>Europe at the same time:</em> the ECB cut ~8 times (~200bp total) and
+  long-end Bund/OAT/Gilt yields <em>rose</em>, a <strong>bear</strong> steepener driven by term premium on fiscal
+  expansion. The policy rate and the long end can move in opposite directions.
+- <em>Sep 2024, the dovish cut that steepened the wrong way</em> (Jamie Patton, TCW): pricing was split
+  ~50/50 between 25 and 50bp; the Fed went 50 but the dots kept the <em>total</em> easing unchanged, only
+  front-loaded. Faster-but-not-bigger easing should not rally the long end, so 2s rallied, 10s sold off
+  (a <strong>bear steepener</strong>) and mortgage borrowers got nothing.
+- <em>Sep 2025, carry as rent</em> (Matt Hornbach, Morgan Stanley): the one thing to watch for the curve is
+  the Fed, because cuts pull short rates down more than long rates. The 2025 steepening was a <strong>bull</strong>
+  steepener on that pattern. Carry is "the rent you pay" to hold a position; a steepener is a
+  <strong>negative-carry</strong> trade, so Morgan Stanley chose <strong>3s/30s in Treasuries</strong> to keep the rent low (the
+  SOFR swap version cost more, §10) and to avoid paying for timing it could not control.
+- <em>Aug 2025, steepening from both ends:</em> the attempt to fire Governor Cook produced a bull move at the
+  front (more cuts) and a bear move at the long end (less discipline) at the same time.
+- <em>2026:</em> "long steepeners" was the consensus trade going into the year. The curve had been a "Nike
+  swoosh" (funds 3.50–3.75%, a dip to ~3⅜% at 2 years, then up). The March Iran-war oil shock turned
+  one priced cut into ~two priced <em>hikes</em> and the curve <strong>bear-flattened</strong> globally, which "carted
+  everybody out" (Jen); Caxton reportedly lost ~<strong>$1.3B</strong> on long-gilt steepeners. After the September
+  Warsh hike the curve bear-flattened again: 2s and 5s rose, and 30s held.</p>
+<p><strong>Business significance.</strong> The Fed sets one point. Companies, homeowners and governments borrow
+everywhere else on the curve. Banks earn the slope, borrowing short and lending long, so a flattening
+curve hits bank equities even when the Fed hikes (Medeiros, Sep 2026). Issuers choose a tenor by reading
+the curve: term out when long rates are cheap, stay short when the curve is steep.</p>
+<p><strong>Forces &amp; impact.</strong> The front end follows policy expectations. The long end follows growth, inflation
+expectations, term premium, supply, and credibility (§6). Medeiros's structural case for steepening is
+fiscal: public debt replaced private debt after 2008, so the <em>private</em> economy is less rate-sensitive
+(private debt-service ratios near 30-year lows) while the <em>public</em> balance sheet is more exposed. Global
+long ends are rising together. US 30s held above 5% for the longest stretch since 2007. German 30s
+underperformed US 30s over 12 months. Term premium rose <em>most in the countries that cut most</em> while
+inflation was still above target. Dutch pension reform removes a structural receiver of long-dated
+swaps, and the hosts cite an estimate of <strong>~$20mm DV01</strong> of effective paying as those positions unwind.</p>
+<p><strong>With vs. without.</strong> Without a term structure there is one price for all money, so a 30-year factory
+gets financed as if it were an overnight loan, and nobody is paid to hold duration. When the long end
+"comes unglued", as with Gilts in 2022 or US Treasuries in April 2025 ("essentially bidless for three
+or four weeks", Medeiros), mortgage rates, corporate long-bond costs and the government's own interest
+bill all reprice at once, whatever the central bank does.</p>
+<p><strong>Applies when / Breaks when.</strong> Curve trades work when the macro driver is identified correctly: a
+bull steepener needs cuts, a bear steepener needs a fiscal or inflation scare. They break on crowding.
+When everyone holds the same steepener, a labor-market surprise that prices <em>out</em> cuts bear-flattens
+the curve and stops everyone out at once (Medeiros's Jan 2026 warning, which came true in March).</p>
+<p><strong>Channel example.</strong> <em>What is a yield curve steepener?</em> (short); <em>From Fixed Income Sales to the Buy
+Side feat. Jamie Patton</em> (Sep 2024); <em>Fixed Income Strategy 101 feat. Matt Hornbach</em> (Sep 2025); <em>Is
+This the End of the Federal Reserve?</em> (Aug 2025); <em>Chamath's New SPAC… Europe's Yield Curve Warning</em>
+(Aug 2025); <em>Head of US Macro at $1 Trillion Firm: 4 Forces…</em> (Jan 2026); <em>Wall Street is Watching
+Something More Concerning than Oil</em> (Mar 2026); <em>Why Stocks Could Drop 10% Before Year-End</em> (Sep 2026).</p>
+<p><strong>Counterpoint.</strong> "Term premium" is model-dependent (ACM vs. Kim-Wright estimates differ) and is often
+used as a residual name for "whatever we can't explain." Medeiros's "countries that cut most saw the
+largest term-premium rise" is a correlation across a handful of countries, and fiscal expansion is a
+plausible common cause.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-canon-canon-meadows-thinking-in-systems.html">canon meadows thinking in systems</a> (front end = policy stock, long end = expectations
+loop) · <a class="wiki" href="doc-canon-canon-sterman-business-dynamics.html">canon sterman business dynamics</a> (delays: curve signals lead the real economy by 18–36
+months, see §17).</p>
+<hr />
+<h2 id="4-the-fomc-and-market-implied-rate-odds">4 · The FOMC and market-implied rate odds</h2>
+<p><strong>What it is.</strong> "Fed" is short for Federal Reserve, not an acronym. The acronym is <strong>FOMC</strong>, the Federal
+Open Market Committee, which votes by majority to set a <strong>target range</strong> for the overnight rate at which
+banks lend reserves to each other. The chair leads the messaging but has <strong>no veto</strong>. The fed funds
+futures market turns traders' bets on those votes into prices, and therefore into probabilities.</p>
+<p><strong>How it works.</strong>
+- <em>Composition (as the hosts gave it):</em> 12 voters out of 19 participants. The 7 Board governors serve
+  14-year terms, the chair (also a governor) a renewable 4-year term as chair, and regional bank
+  presidents rotate in. The <strong>dot plot</strong> (Summary of Economic Projections) shows each participant's
+  rate path anonymously.
+- <em>Futures arithmetic</em> (short, Sep 2026, target 3.50–3.75%, effective rate <strong>3.63%</strong>, meeting on the
+  16th of a 30-day month):
+  - The contract settles to the month's average effective rate, so implied rate = 100 − price =
+    100 − 96.29 = <strong>3.71%</strong>
+  - Known days: 16 at 3.63. Solve for the post-meeting rate: (30 × 3.71 − 16 × 3.63) / 14 =
+    (111.30 − 58.08) / 14 = <strong>3.80%</strong>
+  - Expected change: 3.80 − 3.63 = 17bp; 17 / 25 = <strong>68%</strong> odds of a 25bp hike
+  - Year-end: the January contract (no meeting until late January, so it captures December's
+    decision) implies 4.10%, and (4.10 − 3.63) / 0.25 = <strong>1.88 hikes</strong> priced
+- <em>Outcome:</em> the FOMC hiked 25bp to <strong>3.75–4.00%</strong>, unanimously. It was ~90% priced by meeting day after
+  a hot CPI (Medeiros).
+- <em>Who can be appointed, and why it matters</em> (Aug 2025 emergency episode): all 12 regional presidents'
+  5-year terms expire together on <strong>Feb 28, 2026</strong>, and presidents need Board approval. Control a Board
+  majority (Waller, Bowman, Miran in Kugler's seat, plus Cook's seat if she could be removed = 4 of 7)
+  and you influence who the presidents are, and therefore the whole committee.
+- <em>Reading the package, not the headline</em> (Hornbach, Sep 2025 cut): the median dot moved to 75bp of
+  2025 cuts, a dovish first read, but only on a razor's edge; the only dissent was Miran (for 50), not
+  Waller or Bowman. The SEP put Q4 unemployment at an <em>average</em> of <strong>4.5%</strong> against 4.3% at the time, which
+  implies a December print near 4.6%, yet showed only one 2026 cut. Hornbach found that hard to square.
+- <em>Forward guidance trumps the move</em> (Patton, Sep 2024): the market trades the Fed's action <em>versus
+  what was priced</em> and the path the dots imply. A 50bp cut with unchanged total easing read as "bigger
+  now, slower later."
+- <em>Fed-day craft:</em> desks diff the new statement against the old one word by word ("may" vs "will",
+  where the comma sits), then trade the press conference separately; under Powell the two often gave
+  opposite vibes (Hornbach, Jen).</p>
+<p><strong>Business significance.</strong> Every floating-rate borrower (SOFR loans, credit cards, leveraged loans)
+reprices off this rate. More important, the <em>pricing</em> tells you what is already in the market. A CFO
+deciding whether to lock a rate is trading against the futures-implied path, not against the headline.
+Two days before Warsh's first meeting, a 25bp hike was priced, so the move itself carried little
+information. The surprise was in the <em>guidance</em> (one more hike signaled, versus three priced).</p>
+<p><strong>Forces &amp; impact.</strong> The dual mandate (maximum employment, ~2% inflation) drives the reaction function.
+Communication is a policy tool in its own right. Powell ran an open Fed, with dots, frequent speeches and
+public dissent. Jen argues this lowered event-day risk but added noise, because his press conferences
+sometimes contradicted the statement. <strong>Warsh wants the opposite</strong>: "do less", fewer forward-guidance
+crutches, disagreements settled behind closed doors before a unified statement. The second-order effect
+Jen derives from option pricing: if all information arrives on FOMC days, those days need higher
+<strong>event-day variance weighting</strong> in short-dated options. Medeiros (Sep 2026) adds that forward guidance
+is a zero-lower-bound tool and doesn't fit 3%-plus inflation, so front-end vol should rise structurally.</p>
+<p><strong>With vs. without.</strong> Without futures, "what's priced" is guesswork assembled from surveys and pundits.
+With them, any reader can extract a market probability in three lines of arithmetic. Without a
+committee structure, a single appointee could set rates, which is the fear behind the 2025–26
+independence fight (§6). The committee is the main reason one dovish appointee (Miran) could only
+dissent, not cut.</p>
+<p><strong>Applies when / Breaks when.</strong> The arithmetic assumes 25bp increments, a stable effective rate inside
+the range, and no term or risk premium in the futures price. It breaks around liquidity events, when the
+effective rate drifts within the range (§7), and for far-dated contracts, where risk premia blur
+"expectation" into "price."</p>
+<p><strong>Channel example.</strong> <em>Will the Fed hike rates? Wall Street trading demystified</em> (short, Sep 2026); <em>Is
+This the End of the Federal Reserve? Emergency Episode</em> (Aug 2025); <em>Fixed Income Strategy 101 feat.
+Matt Hornbach</em> (Sep 2025); <em>From Fixed Income Sales to the Buy Side feat. Jamie Patton</em> (Sep 2024); <em>Who
+truly controls interest rate cuts</em> (short); <em>Every New Fed Chair Has Crashed the Market</em> (Apr 30 2026:
+4 dissents at Powell's last meeting, Miran dovish; Hammack, Logan and Kashkari objecting to easing
+language); <em>Trump's new Fed chair shocks the market</em> (short, Warsh's first FOMC: "we will deliver price
+stability", yet rates sold off only ~8bp because, as Jen put it, anyone listening to his actual words
+expected it).</p>
+<p><strong>Counterpoint.</strong> <strong>Inconsistency across episodes:</strong> in one 2026 episode the hosts count 7 governors + 4
+rotating presidents = 11. The Aug 2025 episode gets it right: the 12th voter is the <strong>New York Fed
+president, a permanent voter</strong>. That episode also says the dot plot projects "five years" out; it covers
+the current and next 2–3 year-ends plus a longer-run dot. The press's "most dissents since 1992" was
+disputed on air by the hosts themselves. And "68% chance" is a risk-neutral price, not a forecast. It
+embeds hedging demand, which is the gap between market odds and real odds that
+<a class="wiki" href="doc-canon-canon-tetlock-superforecasting.html">canon tetlock superforecasting</a> warns about.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-canon-canon-allison-essence-of-decision.html">canon allison essence of decision</a> (the FOMC as an organizational and bureaucratic-politics
+actor, not a unitary rational one) · <a class="wiki" href="doc-canon-canon-schelling-strategy-of-conflict.html">canon schelling strategy of conflict</a> (forward guidance as a
+coordinating focal point; Warsh's withdrawal of it) · <a class="wiki" href="doc-canon-canon-tetlock-superforecasting.html">canon tetlock superforecasting</a>.</p>
+<hr />
+<h2 id="5-neutral-rate-the-taylor-rule-and-financial-conditions">5 · Neutral rate, the Taylor rule, and financial conditions</h2>
+<p><strong>What it is.</strong> The <strong>neutral rate (r*)</strong> is the policy rate that is "not too hot, not too cold". It
+keeps nominal growth stable with no inflation or employment pressure. Nobody observes it. The <strong>Taylor
+rule</strong> is a formula that outputs where policy "should" be from r*, the inflation gap and the
+unemployment gap. <strong>Financial conditions</strong> (stocks, credit spreads, the dollar, long yields) are the
+channel through which the policy rate reaches the real economy.</p>
+<p><strong>How it works.</strong> Medeiros's two cross-checks:
+- <em>Jan 2026:</em> the 10-year at ~<strong>4.15%</strong> versus Q3 nominal GDP growth of <strong>~8%</strong>, nearly 300bp below.
+  Borrowing costs far below the economy's nominal growth rate are not restrictive. Policy is loose.
+- <em>Jan 2026, independence gauge:</em> the policy rate was ~<strong>150bp</strong> below the Taylor rule, which is within
+  history. The 1970s averaged 200–300bp below, and Japan in 2026 was ~200–250bp below.
+- <em>Sep 2026:</em> the gap had widened to ~<strong>200bp</strong>. Warsh said three times that financial conditions were
+  too loose. Medeiros maps one more hike before year-end to <strong>5–10% lower</strong> S&amp;P, as conditions tighten
+  to close the gap.
+- <em>Nobody knows r*:</em> in Sep 2024 the FOMC's longer-run dots ranged from <strong>2.375% to 3.75%</strong>, with no
+  more than three participants at any level. Patton's image: 19 pilots promising a soft landing who
+  can't agree on the runway's elevation.
+- <em>Hornbach's R − G rule for risk assets:</em> in a Gordon-growth framing, the discount rate on future cash
+  flows is the <strong>real rate minus growth expectations</strong>. If real rates rise and growth expectations rise
+  by the same amount, the discount rate is unchanged and equities need not fall. In Sep 2025 real rates
+  were inching down while growth expectations rose, which he offered as the reason stocks kept going up.
+- <em>When cheap credit doesn't bite:</em> Hornbach's formative read in Japan was Richard Koo's <strong>balance-sheet
+  recession</strong>. Lowering the <em>price</em> of credit need not raise <em>demand</em> for it if borrowers are
+  structurally insolvent and using cash flow to repay debt (Japanese corporates in the 1990s; US
+  households after 2008). That view made him a long-running Treasury bull after the GFC.
+- <em>Demand as evidence:</em> record IG issuance at the tights and hyperscaler debt absorbed at higher yields
+  means rates have not yet found the level that bites. Price discovery continues until demand breaks.</p>
+<p><strong>Business significance.</strong> "Rates are high" and "rates are restrictive" are different claims. A 4% 10-year
+with 8% nominal growth means revenue grows faster than funding costs, which is supportive of leverage,
+capex and equity multiples. Treating level as tightness was the 2023–25 consensus error behind the
+recession calls that "never happened" (Levine).</p>
+<p><strong>Forces &amp; impact.</strong> Medeiros argues r* is higher than the 2010s because of fiscal deficits, AI capex,
+deregulation (~0.5% of GDP) and a labor force shrinking as immigration reverses. When policy stays
+below rule-implied levels, the short-run effect is good for stocks. The longer-run reflex runs through
+the long end and the <strong>dollar, "the relief valve"</strong>, and then into inflation expectations.</p>
+<p><strong>With vs. without.</strong> Without a rule-based yardstick, "Fed independence" and "tight policy" remain
+adjectives argued along partisan lines. With one, you can rank countries by the gap and position
+accordingly. Medeiros's mentor's rule: <em>buy the long end of central banks guarding against inflation,
+sell the long end of those that aren't.</em></p>
+<p><strong>Applies when / Breaks when.</strong> Useful as a gap signal, not a target. No central bank follows Taylor
+mechanically, and the output depends entirely on the r* you plug in. It breaks at structural breaks
+(pandemic labor data, supply shocks) where the output gap is mis-measured.</p>
+<p><strong>Channel example.</strong> <em>Head of US Macro at $1 Trillion Firm</em> (Jan 2026); <em>Why Stocks Could Drop 10% Before
+Year-End</em> (Sep 2026); <em>Fixed Income Strategy 101 feat. Matt Hornbach</em> (Sep 2025: R − G, Koo); <em>From Fixed
+Income Sales to the Buy Side feat. Jamie Patton</em> (Sep 2024: dot dispersion).</p>
+<p><strong>Counterpoint.</strong> Comparing the 10-year to <em>one quarter</em> of nominal GDP (8%, boosted by a post-shutdown
+rebound) flatters the "loose" case; trend nominal growth was closer to 5%. Medeiros was early. His Jan
+2026 "neither cut nor hike" became a hike only after an oil shock he did not forecast. Burton's
+counter-view from April 2026 is that inflation would <em>calm down</em> after March. Hornbach admits the R − G
+rule cannot be tested: there is no time series of growth expectations, only his read of the room.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-canon-canon-mankiw-principles-of-economics.html">canon mankiw principles of economics</a> (money, inflation, the Phillips trade-off) ·
+<a class="wiki" href="doc-canon-canon-meadows-leverage-points.html">canon meadows leverage points</a> (the policy rate as a parameter; financial conditions as the loop it
+acts through).</p>
+<hr />
+<h2 id="6-fed-independence-the-chair-transition-and-the-third-mandate">6 · Fed independence, the chair transition, and the "third mandate"</h2>
+<p><strong>What it is.</strong> The Fed is designed to be insulated from the executive so it can raise rates when that is
+unpopular. The pressure point is the so-called <strong>third mandate</strong>. The Federal Reserve Act really does
+list three goals: maximum employment, stable prices and <em>moderate long-term interest rates</em>. Powell's
+reading (Sep 2025, via Hornbach) is that moderate long rates are the <em>result</em> of the first two, and
+Hornbach adds that "moderate" does not mean low. The political version reads it as keeping Treasury
+interest costs manageable. When that becomes the only mandate, monetary policy is being used to solve a
+fiscal problem (<strong>fiscal dominance</strong>).</p>
+<p><strong>How it works.</strong> The 2025–26 sequence as the transcripts record it:
+- Apr 2025: during the tariff panic Powell (Chicago, Apr 16) declines to offer a "Fed put"; Trump posts
+  that Powell's "termination cannot come fast enough," the WSJ reports he is asking advisers about it,
+  stocks fall back toward post-Liberation-Day lows and the dollar hits a 3-year low, and within a day
+  the President walks it back. Jen's read: the market, not advisers, stayed his hand. Her line in the
+  short: fire the chair and the "laws of physics" stop holding, so even a low policy rate won't produce
+  low long rates once confidence in the bond market goes.
+- <em>The independence argument is about perception</em> (Aug 2025): if a governor can be removed on an
+  accusation, every later decision is read as political whether or not it is. "Don't fight the Fed"
+  only works when the Fed is believed; a Fed seen as captured invites the market to fight it.
+- Aug 2025: Governor Kugler resigns early, and <strong>Stephen Miran</strong> (a tariff theorist favoring lower rates)
+  fills the seat through Jan 31 2026. The administration moves against Governor <strong>Lisa Cook</strong> over
+  alleged mortgage fraud. The hosts note that she is a Biden appointee and that the press reads it as
+  political.
+- Early 2026: the DOJ opens a criminal probe of <strong>Powell</strong> over Fed headquarters renovation costs.
+  Senator <strong>Tillis</strong> blocks any nominee until it is dropped, and Murkowski and others back him. Medeiros
+  reads this Congressional check as "the system working," and it made him <em>less</em> worried about the long
+  end.
+- Powell's chair term ends <strong>May 15 2026</strong>, but his governor term runs to <strong>2028</strong>. He chooses to stay as
+  a governor, which is unprecedented in the modern era.
+- <strong>Kevin Warsh</strong> is confirmed. He is a 2006–11 governor, a balance-sheet hawk who opposed and then
+  joined Bernanke's QE, and Druckenmiller-trained, as is Bessent. His agenda: steer with short rates, not
+  the balance sheet ("indirect… hits financial instruments first"), keep the Fed out of fiscal policy,
+  and run a unified, less talkative Fed. Jen's read: expect a <strong>cut-plus-steeper-curve</strong> regime.
+- Result: Warsh's first FOMC was hawkish, and he <strong>hiked</strong> in September 2026. Jen: "once and for all"
+  this ended the sock-puppet narrative.
+- <em>Why the third mandate tempts:</em> on Jen's April 2025 numbers, a 25bp cut across the whole curve saves
+  0.25% × $9.1T = <strong>$22.8B/yr</strong>, and 100bp saves <strong>$91B</strong>, against a <strong>$1.8T</strong> deficit. The weighted
+  average maturity of the debt is ~<strong>6 years</strong>, so short-rate cuts alone barely touch the bill. Long
+  rates have to fall and stay down through a year of auctions.</p>
+<p><strong>Business significance.</strong> Credibility sets the long end, and the long end sets mortgage rates,
+corporate term funding and DCF discount rates. A central bank seen to be funding the government gets a
+lower front end and a <em>higher</em> long end plus a weaker currency, which is the worst mix for anyone
+borrowing long or importing.</p>
+<p><strong>Forces &amp; impact.</strong> Debt (~$37T at the Warsh hearing, $40T crossed by Sep 2026, on the hosts' figures),
+an electorate that won't accept either tax rises or entitlement cuts, and midterms. Jen's own drift is
+the honest part. A rates purist all her career, she says aloud the US has "crossed the Rubicon", and asks
+how the debt gets financed <em>without</em> monetary policy. She offers a heroin/methadone analogy, and lists
+the tail options: "polite defaults", retroactive call features, the Fed buying directly at auction. The
+channel works through two of them in detail. An <em>Odd Lots</em> episode (Apr 2025) asked how ironclad
+Treasury documentation really is and floated a pen-stroke swap of all outstanding debt into 100-year
+paper; Jeffrey Gundlach's "polite default" (Mar 2026) would force-extend short debt to 30 years at the
+same coupon or cut coupons outright. Jen: "hard pass," because you get to break that glass exactly once,
+and then no one buys your next auction. Kristen maps it to private-equity liability-management
+exercises ("creditor-on-creditor violence," the Caesars restructuring).</p>
+<p><strong>With vs. without.</strong> With independence, the long end trusts that inflation will be fought, so the
+government borrows long at a modest term premium. Without it you get the 1970s template (policy 200–300bp
+below Taylor), currency weakness and inflation expectations that come loose, and Medeiros's rule says
+sell that country's long bonds. The "chairman's curse" episode is the market version of the same
+uncertainty: Greenspan (1987, Black Monday), Bernanke (2006, curve inverts on day one), Powell (Feb 2018,
+"Volmageddon" on his first day).</p>
+<p><strong>Applies when / Breaks when.</strong> Independence is protected by institutions (governor terms, a committee,
+Senate confirmation) only as long as Congress enforces them. It breaks when the confirmation process
+selects for loyalty, or when debt service crowds out other spending enough that markets <em>expect</em>
+accommodation regardless of who sits in the chair.</p>
+<p><strong>Channel example.</strong> <em>Is This the End of the Federal Reserve? Emergency Episode</em> (Aug 2025, Cook);
+<em>Jerome Powell Isn't Coming to Save Us</em> (Apr 18 2025); <em>FX101, Operation Twist and Yale's $6bn Sale</em>
+(Apr 2025, the termination post and walk-back, the 100-year swap idea); <em>Why Firing the Fed Chair May Not
+Lead to Low Rates</em> (short); <em>Fixed Income Strategy 101 feat. Matt Hornbach</em> (Sep 2025, the statutory
+third mandate); <em>Wall Street is Watching Something More Concerning than Oil</em> (Mar 2026, polite default);
+<em>Kevin Warsh's Senate Hearing: What You Need to Know</em> (short, Apr 2026); <em>Why is
+Trump trying to fire Fed Chair Powell?</em> (short, Apr 2026); <em>Every New Fed Chair Has Crashed the Market</em>
+(Apr 30 2026); <em>The truth behind the debt-refinancing theory</em> (short, Apr 2025); <em>New Fed Governor
+Miran</em> (short, Aug 2025).</p>
+<p><strong>Counterpoint.</strong> The "chairman's curse" is three anecdotes with no base rate, and the hosts overstate
+it: on Black Monday the S&amp;P fell <strong>~20.5%</strong>, not "~26%" (the Dow fell 22.6%). Volmageddon was a
+short-vol ETP blowup (XIV), not caused by Powell. The $9.1T base in the refinancing math looks like the
+debt <em>rolling</em> within a year, not the total stock, so the savings arithmetic is narrower than "rates
+across the curve" implies. The ⚠ here is that the hosts' admiration for Warsh as a "serious person" is
+earned on his track record, but it is still a prior.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-canon-canon-neustadt-may-thinking-in-time.html">canon neustadt may thinking in time</a> (the 1970s analogy and its limits) ·
+<a class="wiki" href="doc-canon-canon-jensen-meckling-agency-theory.html">canon jensen meckling agency theory</a> (principal-agent: who the Fed works for) · <a class="wiki" href="doc-canon-canon-taleb-black-swan.html">canon taleb black swan</a>.</p>
+<hr />
+<h2 id="7-qe-vs-qt-vs-reserve-management-the-balance-sheet-and-its-plumbing">7 · QE vs. QT vs. reserve management: the balance sheet and its plumbing</h2>
+<p><strong>What it is.</strong> <strong>Quantitative easing (QE)</strong> is the Fed buying long-dated Treasuries and MBS (and
+briefly corporate bonds in 2020) and paying with newly created bank reserves. It pushes long yields down
+and puts cash in banks' hands. <strong>Quantitative tightening (QT)</strong> lets those holdings mature without
+reinvestment. <strong>Reserve management purchases</strong> buy <em>bills</em> to keep reserves "ample" for the plumbing.
+They expand the balance sheet without targeting long rates.</p>
+<p><strong>How it works.</strong>
+- <em>QE transmission (2008):</em> the Fed cannot set mortgage rates. Mortgages have an expected life of ~5–7
+  years, so the Fed bought 5s, 7s and 10s (and 30s, "the whole curve") to pull down the risk-free rate
+  off which mortgages price. Kristen explains why it's called "printing money": a dealer sells bonds to
+  the Fed and finds new money in its account that didn't exist before.
+- <em>QT and SOMA reinvestment (May 2025 short):</em> QT allowed up to <strong>$25B/month</strong> of Treasury runoff, cut to
+  <strong>$5B</strong> from April 2025. In a refunding month with <strong>$76B</strong> of SOMA Treasuries maturing, the Fed buying
+  ~<strong>$71B</strong> at auction (e.g. $20B 3s, ~$15B 10s) is <em>replacement</em>, so the balance sheet still shrinks.
+  The internet called it "secret QE." It was not.
+- <em>Reserves (Aug 2025 short, borrowed):</em> the balance sheet was down ~$2.5T from peak, almost all of it
+  drained from the <strong>reverse repo facility</strong>. That left bank reserves (~$3.3T) as the system's buffer,
+  with ~10% of GDP as a rough floor. Tax days drain reserves, and in Sep 2019 that produced the "repo
+  spike": GC jumped from ~2–2.5% to ~6% in a day, "collapsed the basis trade" and, on the hosts' telling, created the
+  <strong>Standing Repo Facility</strong> (see Counterpoint for the actual sequence).
+- <em>Operation Twist</em> (FX101 episode, Apr 2025): balance-sheet <em>composition</em> is a tool separate from size.
+  By 2011 the Fed's QE holdings had aged toward the front end, so rather than grow the balance sheet it
+  sold short-dated Treasuries and bought long-dated ones, about <strong>$667B</strong> in total (the maturity
+  extension program), to push long yields down relative to short ones. Jen is candid that the later
+  flattening and inversion had many causes besides Twist.
+- <em>How QE actually happened on a desk:</em> clients' offers were written on paper sheets before an 11am
+  cutoff and run to whoever had a Fed terminal; the Fed picked levels. Always in the secondary market:
+  the Fed cannot buy new-money debt directly from the Treasury, and it cannot forgive Treasury debt it
+  holds. At auctions it only <strong>rolls maturing SOMA holdings</strong> (the "SOMA add-on" line in results).
+- <em>Hornbach's critique</em> (Sep 2025): the first QE rounds answered a deflationary shock, but the later
+  rounds, including the maturity extension program, were spent chasing ~30bp of core-PCE shortfall
+  (1.7% vs 2%). The mandate is stable prices, not exactly 2%, and he enjoyed a decade of predictable
+  prices living in Japan.
+- <em>Oct 29 2025: QT ends.</em> Alongside a priced-in 25bp cut, the Fed ended runoff effective Dec 1, which
+  Hornbach had told the hosts six weeks earlier it would not do. The tell was in funding markets: fed
+  funds minus SOFR went from about −6/−7bp to about <strong>−30bp</strong> at October month-end, and standing repo
+  usage rose. Agency MBS paydowns now roll into <strong>bills</strong>. Jen's second-order chain: Fed bill demand
+  richens the front end, nudges the Treasury toward more bills and fewer 20s/30s, which also richens the
+  long end and shortens the debt's maturity. "Not an Operation Twist, but a step in that direction."
+- <em>Dec 2025:</em> a 25bp cut plus <strong>reserve management purchases</strong> of bills through April. April is tax-day
+  inflows to the TGA, and also Powell's last month as chair (Jen).
+- Medeiros: the Fed thinks ample reserves ≈ <strong>10–12% of GDP</strong>; the balance sheet ≈ 25% of GDP. It is not
+  technically QE, but "the balance sheet is not going down. So you can call it whatever you want."</p>
+<p><strong>Business significance.</strong> QE lowered every long-dated funding cost, including 2–3% mortgages, cheap
+LBO debt and zero-rate SPAC mania (Jen ties the 2020 SPAC boom to ZIRP). Reserve scarcity is a quieter
+risk. When repo spikes, every levered holder of Treasuries (hedge funds in the basis trade, dealers)
+faces margin calls at the same moment.</p>
+<p><strong>Forces &amp; impact.</strong> QE is break-glass. Jen and Kristen argue that its normalization from 2008 onward,
+and its repetition in 2020, created both the 9% CPI print and the housing-affordability crisis (house
+prices roughly doubled 2018→2025 on their figures). Warsh's whole program is to stop using the balance
+sheet. Second order: a smaller-balance-sheet Fed leaves the long end to the market and the Treasury (§9),
+so expect a steeper curve and more term-premium volatility.</p>
+<p><strong>With vs. without.</strong> Without QE in 2008–09, the hosts concede, the bottom would have fallen out "into a
+depression and not a recession." With QE as a permanent tool, asset prices embed a central-bank put and
+inflation risk. Without ample reserves, the funding market seizes (2019). With permanently ample
+reserves, Medeiros warns, you have "created permissive [conditions] for risk."</p>
+<p><strong>Applies when / Breaks when.</strong> QE works when there is a disinflationary crisis and a transmission
+blockage. Using it during real inflation would be "pouring gasoline on the fire" (Jen, Mar 2026). Reserve
+management works as long as the Fed can find the scarcity point <em>before</em> it is hit. In 2019 it couldn't.</p>
+<p><strong>Channel example.</strong> <em>Did the Fed secretly start QE again?</em> (short, May 2025); <em>The Fed: is this new QE?</em>
+(short, Dec 2025); <em>Who controls mortgage rates?</em> (short, Mar 2026); <em>The potential financial crisis
+that no one is talking about</em> (short, Aug 2025, <code>culture-other</code> cluster); <em>FX101, Operation Twist and
+Yale's $6bn Sale</em> (Apr 2025); <em>Meta &amp; xAI as Project Finance 101 PLUS… the Fed's Insane Press Conference</em>
+(Oct 31 2025, end of QT); <em>Fixed Income Strategy 101 feat. Matt Hornbach</em> (Sep 2025); <em>Wall Street is
+Watching Something More Concerning than Oil</em> (Mar 2026, open market operations and SOMA add-ons).</p>
+<p><strong>Counterpoint.</strong> "QE caused 9% inflation" overstates it. 2021–22 also had fiscal transfers, supply
+shocks and energy. Japan ran QE for two decades without that outcome, though Burton's answer is that
+"the US is not Japan." The hosts' 2019 numbers are approximate: SOFR printed ~5.25% with intraday GC
+trades near 10%. Jen also admits on air that her Aug-2025 "precipice of crisis" call was dramatic, and
+that the Fed simply ended QT. <strong>Sequence error:</strong> in 2019 the Fed responded with temporary repo
+operations and bill purchases; the Standing Repo Facility was created in <strong>July 2021</strong>. The Aug 2025
+episode also puts interest on reserves <em>at</em> the floor; it is set inside the range, with the reverse repo
+rate at the bottom. Hornbach's "QT won't end this year" call (Sep 2025) was wrong within six weeks, a
+reminder that even the most senior strategist's balance-sheet forecasts are guesses about a committee.
+The Oct 2025 episode implies runoff was MBS-only; Treasury runoff (capped at $5B/month) ended too.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> (Treasury central clearing, repo mandate 2027, Fedwire
+hours: the same plumbing) · <a class="wiki" href="doc-canon-canon-perrow-normal-accidents.html">canon perrow normal accidents</a> (tight coupling in funding markets) ·
+<a class="wiki" href="doc-canon-canon-taleb-antifragile.html">canon taleb antifragile</a>.</p>
+<hr />
+<h2 id="8-treasury-auctions-and-who-buys-the-debt">8 · Treasury auctions and who buys the debt</h2>
+<p><strong>What it is.</strong> The US Treasury sells debt on a published calendar: bills weekly, 2s/3s/5s/7s monthly,
+and new 10s, 20s and 30s quarterly at the <strong>refunding</strong> (February, May, August, November) with smaller
+<strong>reopenings</strong> in the following months. Auctions are <strong>single-price ("Dutch")</strong>: everyone pays the
+yield at which the last dollar clears.</p>
+<p><strong>How it works.</strong>
+- Bonds trade before they exist as <strong>when-issued (WI)</strong> securities, quoted as a spread to the current
+  on-the-run, so traders can price the "roll".
+- <em>Bidders:</em> <strong>direct</strong> (an account with the Treasury), <strong>indirect</strong> (bidding through a primary dealer
+  or, in practice, the NY Fed), and <strong>dealers</strong>, who are obliged to bid. Competitive bids are capped at
+  <strong>35%</strong> of the auction and non-competitive bids at <strong>$10mm</strong> (retail).
+- <em>Example:</em> $25B 10s are offered, and the yield on the 25-billionth dollar is the clearing level for all.
+  Results come out just after <strong>1:00pm</strong>. Clearing above the 1pm WI yield is a <strong>tail</strong> (weak), at it is
+  <strong>on the screws</strong>, below it means it <strong>stopped through</strong> (strong).
+- <em>Pricing the WI</em> (Mar 2026 episode): with the on-the-run 5-year at <strong>4.00%</strong>, the new 5-year adds a
+  month of term premium plus a supply concession, worth ~1bp, so the WI trades at <strong>4.01%</strong>. Clearing at
+  3.99 is a 2bp stop-through; 4.01 is on the screws; 4.03 is a 2bp tail. Context matters: a 2bp
+  stop-through after a 10bp pre-auction concession is not strong. Primary dealers must bid, so a high
+  <strong>dealer takedown</strong> means end demand was missing; dealers then "puke" the paper into the market.
+- <em>April 2025 sequence</em> (Apr 11 episode): the 10-year went from ~3.9% after Liberation Day to ~4.5%. The
+  3-year tailed ~2.5–3bp with the lowest direct share since COVID. The 10-year cheapened <strong>18bp</strong> into
+  its auction, stopped through, but showed <strong>1.4%</strong> direct versus a ~17.5% recent average. Ten minutes
+  later the 90-day tariff pause was announced. The 30-year the next day drew ~30% direct, which Jen read
+  as the world signalling approval. Her frame: foreigners hold ~25–30% of US debt and can "vote with
+  their wallets" at auction.
+- <em>March 2026, the front end:</em> 2s, 5s and 7s all tailed during the Iran oil shock; dealer takedown in
+  the 2-year was ~<strong>24%</strong> against a ~10% 12-month average. Jen notes 2-years carry little DV01, so front-end
+  tails matter less than long-end ones.
+- <em>The 20-year is the wrong canary</em> (short): the 20-year was reintroduced only in 2020 and has little
+  natural demand, a "size 10⅛ shoe," so it structurally trades cheap to 10s and 30s; a 1¼bp tail there is
+  ordinary, not a confidence crisis.
+- <em>July 2025 7-year:</em> <strong>33% direct</strong>, a record, and stopped <strong>2.5bp through</strong> after rallying into the
+  auction. Jen "ate her words" from April, when low direct takedown fed fears of a foreign buyer strike.
+- <em>New bill buyers (stablecoins):</em> the GENIUS Act (July 2025) requires stablecoins to be backed by
+  T-bills and similar assets. Stablecoins outstanding were ~<strong>$260B</strong> (July 2025), and Bessent projected
+  <strong>$2T</strong>. More stablecoins mean a structural <strong>bid for bills</strong>, which pushes front-end yields down
+  without a Fed cut. Kristen calls it a "chip-maker" business model: hold yielding bills, issue a
+  non-yielding token.</p>
+<p><strong>Business significance.</strong> Auctions are the largest recurring supply events in global finance, so a tail
+can reprice the whole curve, and with it mortgage rates and corporate issuance windows, within minutes.
+Corporate treasurers time issuance around auction weeks and refunding months. Weak foreign demand is the
+single scariest signal for a deficit country, because "there'll always be a buyer of US debt, the
+question is at what rate" (Adami).</p>
+<p><strong>Forces &amp; impact.</strong> Supply: deficits and the issuance mix (§9). Demand: foreign reserve managers, banks
+(balance-sheet capacity), money funds (bills), pensions and insurers (long end), and now stablecoins.
+Second order: if stablecoins become the marginal bill buyer, the Treasury is pushed to issue shorter,
+which raises rollover risk. Jen's labeled speculation: weakening the dollar → crypto revival → stablecoin
+growth → more bill demand, with a Trump family stablecoin business adding a conflict of interest.</p>
+<p><strong>With vs. without.</strong> Without a predictable calendar the market would have to price issuance-surprise
+risk into every yield. That predictability is why Jen bristles at influencers calling auction <em>sizes</em>
+surprising: only the <em>outcomes</em> are news. Without single-price auctions, bidders would shade bids to
+avoid the winner's curse and raise the government's cost.</p>
+<p><strong>Applies when / Breaks when.</strong> The bidder-mix signal works only if categories map to real investor
+types. Auctions function smoothly until dealer balance sheets are full (§9) or a buyer class retreats
+together (April 2025).</p>
+<p><strong>Channel example.</strong> <em>The best explanation of Treasury auctions</em> (short); <em>It Wasn't Equity Turmoil That
+Spooked Trump — It Was the Bond Market</em> (Apr 11 2025); <em>Wall Street is Watching Something More Concerning
+than Oil</em> (Mar 31 2026); <em>Why the 20 year US Treasury bond auction isn't the canary in the coal mine</em>
+(short); <em>AI Collusion in Trading,
+Figma IPO and Could Stablecoins Lower Interest Rates?</em> (late July 2025); <em>If the Fed won't cut,
+could stablecoins be the key?</em> (short, 2025).</p>
+<p><strong>Counterpoint.</strong> <strong>Likely error:</strong> Jen treats <em>direct</em> bidder share as the proxy for foreign
+governments ("you automatically think China"). The standard reading is the reverse. Foreign official
+accounts usually bid through the NY Fed and show up as <strong>indirect</strong>, and directs are largely domestic
+money managers. Treat her foreign-demand inferences from direct takedown with caution. This matters for
+the April 2025 story: the April 9 10-year with its tiny direct share also drew a near-record <strong>indirect</strong>
+share (~88%) and low dealer takedown, which is the opposite of a foreign buyer strike. The stress that
+week was in the secondary market, swap spreads and basis unwinds (§10, §11), so "the auctions forced the
+pause" is a stronger claim than the auction data supports. Stablecoin sizing
+comes from interested parties (Bessent, Circle's CEO at $10T), and Jen herself flags that as bias.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> (dealer balance sheets, sales vs. trading roles) ·
+<a class="wiki" href="doc-canon-canon-akerlof-market-for-lemons.html">canon akerlof market for lemons</a> (why single-price design reduces adverse selection in bidding).</p>
+<hr />
+<h2 id="9-treasury-buybacks-and-debt-management">9 · Treasury buybacks and debt management</h2>
+<p><strong>What it is.</strong> The Treasury can repurchase its own old bonds and fund the purchase with new issuance
+elsewhere on the curve. It is <strong>not QE</strong>: no new money is created, and the total debt is unchanged. What
+changes is <em>where</em> the duration sits and who has to hold it.</p>
+<p><strong>How it works.</strong>
+- <em>The "cash for clunkers" problem:</em> old off-the-run bonds such as the <strong>1.375% Aug-2050</strong>, issued in
+  2020 near zero rates, trade near <strong>46 cents</strong> after a 400bp+ selloff. Nobody trades them. They clog
+  dealer balance sheets that primary dealers need for mandatory auction bidding.
+- <em>Program:</em> started in 2024 at ~$2B a month (barely noticed). On <strong>Aug 19 2026</strong> Bessent announced it
+  would at least double long-end (10–30y) buybacks, to ~$4B+. The Treasury can reject offers it
+  considers rich, unlike the Fed's price-insensitive QE.
+- <em>Three ways to fund it, three different effects</em> (Jen):
+  1. <strong>Bills:</strong> moves supply to where demand is deepest, almost no duration, a rounding error at bill
+     scale.
+  2. <strong>2s/5s:</strong> adds duration at the front end. Front yields rise and the curve flattens, a <strong>stealth
+     hike</strong> that does Warsh's tightening while the headline reads "Treasury supports bonds."
+  3. <strong>Treasury General Account cash:</strong> injects cash that wasn't in the system. That is effectively QE by
+     the Treasury, and it would undo the logic above.
+- Jen's "Prestige" thesis (labeled speculation): the market saw yield suppression, while the real trick
+  was option 2, Bessent doing "Warsh's dirty work." Medeiros (Sep 2026) expects options 1 and 2. He
+  doubts option 3 because of the 2027 debt ceiling: draining the TGA in extraordinary measures risks an
+  "accidental default."
+- Bessent in his own words: his job is to "truncate the very bad outcome", meaning a liquidity failure.
+  Economics is "biology", not physics, and the Treasury slows things down while hedge funds speed them
+  up.</p>
+<p><strong>Business significance.</strong> The issuance mix is a lever on long yields, and hence on mortgages and
+corporate long bonds, that doesn't need the Fed. The buyback increase came just before September's heavy
+IG calendar, including AI hyperscaler issuance. 30-year bonds from Meta were ~40bp wider and Oracle /
+SpaceX ~60bp wider within a month of issue. Making room in the long end matters for every issuer.</p>
+<p><strong>Forces &amp; impact.</strong> It <strong>shortens the weighted-average maturity</strong> of the debt. Bessent had criticized
+Yellen for not terming out at 1% in 2020. Kristen defends Yellen with hindsight bias (everyone,
+including her own ARM refinancings, assumed zero rates forever). Jen defends Bessent: terming out <em>now</em>,
+at 20-year-high yields, could itself trigger a refinancing crisis. The cost is rollover risk: debt that
+needed no attention for 30 years now needs refinancing in 2–5. "Not kicking the can down the road…
+kicking the can across the room."</p>
+<p><strong>With vs. without.</strong> Without buybacks, illiquid off-the-runs sit on dealer balance sheets, shrinking
+auction capacity, which in a stress event turns into a failed or badly tailed auction. With aggressive
+buybacks funded short, long yields get a modest anchor, at the price of a structurally shorter debt
+profile and more frequent refinancing at whatever rates prevail.</p>
+<p><strong>Applies when / Breaks when.</strong> It is a liquidity tool when used in size. As a yield-control tool it
+is limited by scale: $4B a month against ~$20B per long-bond auction. It breaks into quasi-QE if funded
+from the TGA.</p>
+<p><strong>Channel example.</strong> <em>I got the chance to ask Scott Bessent ONE question</em> (Sep 3 2026, with the
+90-second clip as a short); <em>The truth about Bessent's Treasury buybacks</em> (short); <em>Is the Treasury
+secretly doing QE?</em> (short).</p>
+<p><strong>Counterpoint.</strong> The "stealth hike" depends on the funding choice, which won't be known until the
+refunding announcement after the midterms. Druckenmiller (in a WSJ op-ed) argued the move damaged
+Treasury credibility. The hosts answer with an AI-detection score on his op-ed, which is a jab at the
+messenger and doesn't address his argument. Buying back bonds at 46 does <em>not</em> "save half the money" in
+any real sense: the Treasury pays market value and then refinances at today's higher coupons.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-canon-canon-dixit-nalebuff-thinking-strategically.html">canon dixit nalebuff thinking strategically</a> (Treasury and Fed as players with different
+payoffs) · §7 (QE contrast) · §12 (why long yields = mortgage politics).</p>
+<hr />
+<h2 id="10-repo-sofr-and-interest-rate-swaps">10 · Repo, SOFR and interest-rate swaps</h2>
+<p><strong>What it is.</strong> <strong>Repo</strong> (repurchase agreement) is a short-term loan secured by a bond: you sell
+Treasuries to a dealer and agree to buy them back tomorrow at a slightly higher price, and that price
+difference is the overnight <strong>general collateral (GC)</strong> rate. <strong>SOFR</strong> (Secured Overnight Financing
+Rate) is the benchmark computed from those trades. It replaced LIBOR and now sits under most
+floating-rate loans and swaps. An <strong>interest-rate swap</strong> exchanges fixed for floating payments on a
+notional. A <em>receive-fixed</em> swap is a <strong>synthetic bond funded at SOFR</strong>.</p>
+<p><strong>How it works.</strong>
+- <em>Three ways to own 10-year duration</em> (basis-trade episode, Apr 2025), from most to least balance
+  sheet: (1) pay <strong>$100mm cash</strong> for the bonds; (2) put ~10% down and <strong>finance $90mm in repo</strong>,
+  pledging the bonds as collateral, "just like buying a house"; (3) go synthetic with <strong>futures</strong> (§11)
+  or a <strong>receive-fixed swap</strong>. Real-money investors default to the derivatives because they consume the
+  least balance sheet.
+- <em>Carry and roll-down on the repo route:</em> a bond with a <strong>5%</strong> coupon financed at <strong>4%</strong> GC earns
+  <strong>1%</strong> a year if nothing moves. That is positive <strong>carry</strong>. On an upward-sloping curve the bond also
+  <strong>rolls down</strong> to a lower-yielding maturity as it ages, so its price drifts up even with an unchanged
+  curve. The risk is the floating leg: if overnight repo jumps to 6–10%, the 5% coupon no longer covers
+  the funding.
+- <em>Synthetic route:</em> receive fixed / pay SOFR on $100mm notional. Same cash flows, no principal, no cash
+  up front (a <strong>par swap</strong> has zero NPV at inception), but both sides post margin as the NPV moves.
+  After 2008, swaps moved from bilateral contracts to central clearing, because a positive-NPV swap
+  facing Lehman became an unsecured claim in bankruptcy.
+- <em>LIBOR → SOFR</em> (<em>What is SOFR??</em>, filmed the day after the last USD LIBOR fixing, June 30 2023).
+  LIBOR was a panel of banks <em>self-reporting</em> where they would lend to each other <em>unsecured</em> for terms
+  of 3, 6 or 12 months, so it carried a bank-credit component and could be rigged (and was). SOFR differs
+  in three ways: it is <strong>secured</strong> by Treasuries (no bank credit risk), it is <strong>computed from actual
+  trades</strong> rather than submissions, and it is <strong>overnight and backward-looking</strong>, "basically the same
+  as GC." Fed funds, by contrast, is banks lending <em>reserves</em> to each other <strong>unsecured</strong>, which is why
+  the two can decouple under stress.
+- <em>What the switch broke:</em> <strong>term SOFR</strong> (anything longer than overnight) is a bespoke, bilaterally
+  traded rate available only to some users, with no interdealer market for dealers to hedge in; legacy
+  LIBOR loans needed <strong>credit spread adjustments</strong> bolted on to compensate lenders for losing the bank-
+  credit component.
+- <em>Swap spreads</em> = 10y swap rate − 10y on-the-run Treasury yield. Under LIBOR they were <strong>positive</strong>
+  (swap rates carried bank credit; Treasuries were risk-free): at a 10bp spread and 10s at 5%, you could
+  pay or receive fixed for 10 years at 5.10%. With QE in 2008 they went <strong>negative for the first time</strong>,
+  30-year spreads collapsing to roughly <strong>−60bp</strong>, meaning the market would rather face interbank credit
+  than hold 30-year US credit and its balance-sheet cost. Post-crisis capital rules kept them negative.
+  In April 2025 30-year spreads got close to <strong>−100bp</strong>.
+- <em>The sign trap:</em> desk language still treats spreads as if positive, so −20 → −10 is "widening" and
+  −20 → −30 is "tightening."
+- <em>Swap spreads as a diagnostic</em> (July 2026): if Treasuries were selling off because of <em>idiosyncratic</em>
+  supply (crowding out by tech debt), swap spreads would tighten. They didn't. Jen concludes it wasn't
+  Treasury-specific: "nobody wants anything", meaning insufficient risk premium across asset classes.
+- <em>Expressing a view in swaps vs. Treasuries</em> (Hornbach, Sep 2025): a curve steepener in the SOFR swap
+  curve would cost "much more" negative carry than the same steepener in Treasuries, so Morgan Stanley
+  recommended the Treasury version (§3).</p>
+<p><strong>Business significance.</strong> Every corporate floating-rate loan is SOFR + spread, so swaps are how a CFO
+turns floating into fixed (or the reverse) without refinancing. Pensions and insurers <em>receive</em> fixed
+in long swaps to match liabilities, which is why Dutch pension reform matters for long-end rates (§3).
+Swap pricing is also the market's cleanest read on whether a Treasury move is about rates or about
+Treasury supply and balance sheet. Repo is the hinge of the whole system: Eisman's argument that the
+dollar's reserve status is safe rests on overnight repo being a multi-trillion-dollar market that runs
+almost entirely on Treasury collateral (§16).</p>
+<p><strong>Forces &amp; impact.</strong> Repo rates track Fed policy and reserve scarcity (§7). The Fed keeps the effective
+rate inside its target range with administered rates: a <strong>floor</strong> from interest on reserve balances
+(banks only) and the reverse repo facility (money funds and others lend cash to the Fed), and a
+<strong>ceiling</strong> from the standing repo facility and the discount window (the Fed lends cash). Swap spreads
+track Treasury supply versus dealer balance-sheet capacity and regulation (the supplementary leverage
+ratio, the central-clearing mandate). When balance sheet is scarce, the synthetic gets relatively more
+valuable and Treasuries cheapen versus swaps, which is the negative-swap-spread world.</p>
+<p><strong>With vs. without.</strong> Without swaps, every hedge needs physical bonds and the balance sheet to carry
+them. Duration management would be costlier and concentrated in the few institutions with balance
+sheet. Without a deep repo market, Treasuries lose their "cash-equivalent" status, because you can't
+borrow against them overnight, and their yields must rise to compensate. Without SOFR's transaction
+base, the benchmark under trillions of loans is whatever a dozen banks say it is.</p>
+<p><strong>Applies when / Breaks when.</strong> The synthetic-bond equivalence holds while repo funds smoothly. It
+breaks in funding stress (2019, March 2020), when GC jumps above SOFR expectations, and levered basis and
+swap-spread positions get hit together. It also breaks when the <em>collateral itself</em> is doubted: Jen
+reads April 2025's collapse in swap spreads as investors preferring any derivative to owning a cash
+Treasury.</p>
+<p><strong>Channel example.</strong> <em>Bond Market Chaos: Unpacking the Basis Trade Blowup Theory</em> (Apr 2025); <em>What is
+SOFR??</em> (July 2023); <em>How does an interest rate swap work?</em> (2024); <em>Fixed Income Strategy 101 feat.
+Matt Hornbach</em> (Sep 2025); <em>Why Jamie Dimon Won't Buy Stocks OR Bonds Right Now</em> (July 2026, swap-spread
+read).</p>
+<p><strong>Counterpoint.</strong> The swap-spread inference is sound in direction but swap spreads also move on
+regulation and dealer capacity, not only on Treasury-specific supply, so "nobody wants Treasuries" and
+"nobody has balance sheet for Treasuries" look identical on the screen. The 2008 explanation (fear of
+a QE-driven debt trap) is the hosts' story; the standard account puts more weight on dealer balance-sheet
+collapse and on swap demand from hedgers. The SOFR video's worries about term-SOFR liquidity date from
+2023 and have eased as CME term SOFR became the loan market default.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> (SEC Treasury clearing mandate: cash Dec 2026, repo June
+2027) · <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> · <a class="wiki" href="doc-canon-canon-akerlof-market-for-lemons.html">canon akerlof market for lemons</a> (why an unsecured,
+self-reported benchmark invited manipulation).</p>
+<hr />
+<h2 id="11-treasury-futures-cheapest-to-deliver-and-the-basis-trade">11 · Treasury futures, cheapest-to-deliver, and the basis trade</h2>
+<p><strong>What it is.</strong> A <strong>Treasury futures contract</strong> is an exchange-traded promise to deliver Treasuries at
+a future date (quarterly expiries). It is not tied to one bond: at expiry the short may deliver any bond
+from a <strong>basket of eligible securities</strong>, and one of them is mathematically the <strong>cheapest to deliver
+(CTD)</strong>. The <strong>basis</strong> is the price gap between that cash bond and the futures contract. The <strong>basis
+trade</strong> buys the cheap cash bond, finances it in repo, and sells the rich future, waiting for the two to
+converge at expiry.</p>
+<p><strong>How it works.</strong>
+- <em>Contract mechanics:</em> the 10-year contract (<strong>TY</strong>) is <strong>$100,000</strong> face per contract. You post a
+  small margin to the exchange and are marked daily, so a futures position is inherently levered. A
+  forward is the same promise negotiated bilaterally and unmargined; futures are standardized, cleared
+  and margined (the hosts sort this out on air).
+- <em>The basket:</em> TY delivers aged notes, not the on-the-run 10-year: recent 7-years, 10-years issued ~3
+  years ago, even old 30-year bonds with ~7 years left. Jen says the contract really trades like the
+  <strong>7-year</strong> point.
+- <em>Why one bond is "cheapest":</em> deliver the barrels of oil sitting in your backyard, not the ones you
+  have to ship from overseas. For Treasuries the "shipping cost" is the financing, measured as the
+  <strong>implied repo rate</strong>. To compare bonds with different coupons and maturities, each gets a
+  <strong>conversion factor</strong>: its price per $1 face if it yielded <strong>6%</strong>. A 5¾% bond trades below par at a 6%
+  yield, so its factor is a little under 1 (the video uses <strong>0.99</strong>).
+- <em>Futures DV01</em> (<em>How to Calculate Treasury Futures DV01</em>): start from the CTD's Macaulay duration,
+  convert to modified duration, then to dollars using price. Take a CTD DV01 of ~<strong>6.6</strong> (per 100 face)
+  and the video computes 6.6 × 0.99 = <strong>6.534</strong>, so 6.534 / 10,000 × <strong>78,000</strong> contracts × $100,000 =
+  <strong>~$5.1mm per bp</strong>.
+- <em>The trade that prompted it</em> (short, Apr 2025): someone sold <strong>78,000</strong> June TY contracts in thin
+  London hours, the largest Treasury futures block in at least 12 years. At ~$5.1mm per bp, a
+  5–10bp selloff put the seller up <strong>$25–50mm</strong> in a day, plus ~$25mm more on the next 5bp. Jen could
+  not tell whether it was an outright short or a hedge against heavy call open interest.
+- <em>Why futures are structurally rich:</em> real-money buyers (asset managers, pensions, insurers) prefer
+  futures and receive-fixed swaps because they need far less cash and balance sheet than physical bonds
+  (§10). So futures trade rich to the deliverable cash bonds, and the aged bonds in the basket are
+  illiquid ("locked up in the hands of a little retiree here and a pension fund there").
+- <em>The basis trade:</em> a hedge fund buys the cheap cash bonds, finances them in repo, and sells futures
+  against them. Convergence at expiry is near-certain, but the gap is "only a couple of basis points,"
+  so it must be levered <strong>~20:1</strong> on average and, per the <em>Money Stuff</em> podcast the hosts cite, up to
+  <strong>100:1</strong>. Apollo's chief economist Torsten Sløk estimated the trade at <strong>~$800B</strong> (from hedge-fund
+  futures shorts and prime-brokerage repo).
+- <em>How it breaks:</em> the trade needs two things to stay true, futures rich to cash, and the ability to
+  hold until convergence. A shock that makes cash Treasuries cheapen sharply <em>against</em> futures (a tariff
+  announcement, a repo spike) produces mark-to-market losses multiplied by the leverage, margin calls on
+  the futures leg, and forced selling of the illiquid cash leg, which cheapens it further. March 2020 was
+  the last full blowup; September 2019's repo spike was the funding version (§7).</p>
+<p><strong>Business significance.</strong> The basis trade is how a cash-futures arbitrage becomes a <strong>source of
+Treasury market liquidity</strong>: basis funds absorb the cash bonds that real money doesn't want to hold and
+supply the futures real money does want. That keeps Treasury yields lower than they would otherwise be,
+which matters to every borrower priced off them. The cost is a concentrated, levered, short-volatility
+position sitting in the plumbing of the risk-free asset. For a corporate treasurer, futures DV01 is also
+the practical hedge unit: pre-hedging a bond issue means shorting the number of contracts whose DV01
+matches the planned issue.</p>
+<p><strong>Forces &amp; impact.</strong> Size grows with the structural richness of futures, which grows with
+balance-sheet regulation (SLR, Basel endgame) and with real money's preference for derivatives. Risk
+rises with leverage, repo volatility and reserve scarcity. Jen's April 2025 list of what the Fed could do
+to relieve the pressure, in order of impact: <strong>loosen SLR</strong> so banks can hold Treasuries more cheaply;
+reverse QT into <strong>QE</strong>; bid directly at auctions; and only last, cut rates ("filing my nails" to lose
+ten pounds). Her central call is that the basis unwind was <strong>a symptom, not the cause</strong>: the reported
+blowups (one PM out <strong>$140mm</strong>, another <strong>$30mm</strong>, an unconfirmed <strong>$400mm</strong>) were large for people and
+tiny against a $36T market, while the simultaneous collapse in swap spreads pointed to a broad aversion
+to cash Treasuries.</p>
+<p><strong>With vs. without.</strong> Without basis traders, futures would trade persistently rich, cash Treasuries
+cheap, and the cost of the deficit would be higher. With them, the market works well until a shock
+forces them all to sell the same illiquid bonds at once, which is why the Fed ended up buying Treasuries
+in size in March 2020. The policy argument that followed (central clearing, SLR reform, a standing repo
+facility) is an argument about whether to keep the liquidity and socialize the tail.</p>
+<p><strong>Applies when / Breaks when.</strong> Convergence holds at expiry by construction. The trade breaks when the
+path to expiry is intolerable: repo spikes, margin increases, or a sudden repricing of Treasuries as an
+asset class rather than of one bond.</p>
+<p><strong>Channel example.</strong> <em>Bond Market Chaos: Unpacking the Basis Trade Blowup Theory. Cause… or Convenient
+Excuse?</em> (Apr 2025); <em>Largest 10 Year Treasury Futures Block Trade EVER?</em> (short, Apr 2025); <em>How to
+Calculate Treasury Futures DV01 (Calculating &amp; Converting DV01 of the Cheapest to Deliver)</em>; <em>Head of US
+Macro…</em> (Jan 2026: the trade back to sizes "not seen since… 2019").</p>
+<p><strong>Counterpoint.</strong> <strong>Formula error in the DV01 video:</strong> the futures contract tracks the CTD <em>divided</em>
+by its conversion factor, so futures DV01 ≈ CTD DV01 <strong>÷</strong> CF, not ×. With CF 0.99 the answer is 6.6 /
+0.99 ≈ 6.67, or ~$5.2mm per bp: barely different here, very different for low-coupon CTDs with factors
+far below 1. The video's "6½ to just under 8 years" basket is the practical CTD zone; the CME
+specification for TY runs from 6½ to 10 years remaining. Jen is careful to say she cannot see the flows
+and knew the PMs involved, which is honest, but "symptom not cause" is also the view most comfortable
+for someone who thinks the real story is a repricing of US policy. The <em>Money Stuff</em> "100:1" is an
+upper-tail anecdote, not a market average.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-notes-wss-trading-hedge-funds.html">wss trading hedge funds</a> (§9 there treats the same trade as short volatility dressed as
+arbitrage, from the hedge-fund seat) · <a class="wiki" href="doc-canon-canon-perrow-normal-accidents.html">canon perrow normal accidents</a> (tight coupling: one shock,
+many identical positions) · <a class="wiki" href="doc-canon-canon-taleb-antifragile.html">canon taleb antifragile</a> (picking up nickels in front of a steamroller) ·
+<a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> (central clearing).</p>
+<hr />
+<h2 id="12-mortgage-rate-drivers-and-housing-policy">12 · Mortgage-rate drivers and housing policy</h2>
+<p><strong>What it is.</strong> A US 30-year fixed mortgage is a risk-free rate plus a spread, and the risk-free rate is
+the <strong>10-year Treasury, not the 30-year</strong>. Borrowers move or refinance, so the mortgage's effective life
+and rate sensitivity are much shorter than its stated term.</p>
+<p><strong>How it works.</strong>
+- Banks originate mortgages, securitize them (with a Fannie/Freddie guarantee taking out most credit
+  risk), and sell the MBS so they can lend again.
+- MBS investors bear rate risk, (guaranteed-away) credit risk, and <strong>prepayment risk</strong>. US borrowers can
+  prepay without penalty, which makes the holder short an option, so MBS have <strong>negative convexity</strong>.
+- <em>Partial durations:</em> decompose MBS price sensitivity by curve point (2y, 5y, 10y, 30y), measured
+  empirically. Hornbach's figures (Sep 2025): only ~<strong>10%</strong> of a secondary-market 30-year mortgage's
+  rate sensitivity sits on the 30-year Treasury, ~<strong>40%</strong> on the 10-year, and the remaining ~<strong>50%</strong> on
+  the 2- and 5-year. So mortgages trade roughly as <strong>10y + spread</strong>, with real front-end exposure, and
+  pushing only the 30-year down 100bp would barely move housing. If Bessent wants cheaper mortgages, he
+  wants <em>all</em> yields lower, not a flatter curve.
+- <em>Why Fed cuts transmit less than they used to</em> (Patton, Sep 2024): of an ~$8T agency mortgage market,
+  ~35% was adjustable before the GFC (her figure, likely the origination peak), so policy moves hit
+  household payments directly; today under 1% floats. TCW estimated <strong>85%</strong> of mortgages in the Bloomberg
+  Agg would not be economic to refinance until rates fell another ~100bp. That is lock-in measured.
+- <em>The predatory mechanics of 2006</em> (Steve Eisman): subprime loans carried a 2–3 year teaser (say 3%)
+  resetting to LIBOR + 600 (~9%), underwritten to the teaser the borrower could afford, with ~4 points
+  of origination fees rolled into principal against ~1 point on a prime loan. At reset the lender offered
+  a refinance into the same structure for another 4 points, so the borrower never escaped and the
+  originator earned fees on a loop. Subprime origination went from ~<strong>$50B</strong> (2002) to ~<strong>$500B</strong> (2006),
+  2% to 20% of the market. Rising delinquencies in 2006-vintage securitizations were his signal.
+- <em>Iran war, March 2026:</em> the Fed <em>held</em>, yet 30y mortgages rose from <strong>5.75%</strong> (end Feb) to <strong>6.5%</strong>,
+  because oil-driven inflation fear lifted the long end. The Fed sets overnight rates. The market sets
+  the long end.
+- <em>GSE purchases:</em> Trump directed Fannie/Freddie to buy <strong>$200B</strong> of MBS. The agency market is <strong>$9T+</strong>,
+  and one estimate cited puts the effect at ~<strong>15bp</strong> of spread. The purchases also push the GSEs toward
+  post-2008 retained-portfolio caps. Jen reads it as a midterm signal more than a rate fix.
+- <em>50-year mortgage:</em> roughly <strong>15% lower</strong> annual payment than a 30-year at the then-current curve. In
+  an amortizing loan, early payments are almost all interest, so equity barely builds ("almost like
+  you're renting"). The <em>portable</em> variant breaks the collateral logic of lending (a $1mm loan moving to
+  a $500k house) and makes the borrower's option close to certain to be worth exercising, so lenders
+  would charge a much higher rate.</p>
+<p><strong>Business significance.</strong> Housing is the largest household asset and a main transmission channel. The
+2020 lock-in (2% mortgages nobody will give up) freezes turnover, labor mobility, and the revenue of
+brokers, builders and movers. For the Fed, falling mortgage rates now risk re-igniting house prices and
+rents, which had been the main source of disinflation. That is why Medeiros says <strong>Treasury and Fed
+want opposite things</strong> for mortgage rates in 2026.</p>
+<p><strong>Forces &amp; impact.</strong> Long-end term premium (the dominant 2025–26 driver, more than spreads), MBS
+spreads, GSE policy, and lock-in. Every proposal on the table (GSE buying, the 50-year, portability,
+banning institutional single-family purchases) is <strong>demand-side</strong>. With supply fixed, more buying power
+means higher prices. Housing starts and permits per capita sit near <strong>50-year lows</strong>. Institutional
+investors took ~<strong>18%</strong> of single-family purchases (flow, Redfin, ~12 months) but hold only ~<strong>1%</strong> of
+the stock.</p>
+<p><strong>With vs. without.</strong> Without GSE guarantees and free prepayment, the US would look like most countries:
+shorter fixes, more floating-rate risk on households, and a smaller, more volatile housing market.
+Without the 2008 and 2020 QE, the hosts argue, prices would not be where they are. Medeiros: the
+proposals make him <em>more</em> bullish on house prices troughing in 12–18 months, and no better on
+affordability.</p>
+<p><strong>Applies when / Breaks when.</strong> "10y + spread" holds in normal prepayment regimes. It breaks when the
+lock-in collapses prepayment speeds (MBS extend toward longer duration), or when spreads, not
+Treasuries, drive the move (2008).</p>
+<p><strong>Channel example.</strong> <em>The best explanation of what drives mortgage rates</em> (short); <em>Who controls
+mortgage rates?</em> (short, Mar 2026); <em>Oracle CDS… plus 50-Year Mortgages</em> (Nov 2025); <em>Why 50-year
+mortgages won't solve affordability</em> (short); <em>Fixed Income Strategy 101 feat. Matt Hornbach</em> (Sep
+2025, partial durations); <em>From Fixed Income Sales to the Buy Side feat. Jamie Patton</em> (Sep 2024, ARM
+share and lock-in); <em>Steve Eisman… on Tariff Panic and Lessons From the 2008 Crisis</em> (Apr 2025).</p>
+<p><strong>Counterpoint.</strong> In <em>Every New Fed Chair…</em>, Jen says 10–30y yields are what mortgages price off, which
+overstates the 30-year's role and contradicts Hornbach's 10% figure. The original version of this note
+put the partial-duration hotspot at 7–10y from a short; Hornbach's breakdown gives the front end more
+weight than that, and the two are model-dependent estimates that shift with prepayment speeds.
+Patton's "under 1% floating" and "85% out of the money" are TCW's claims and unverified; TCW was long
+duration at the time, so a story about weak transmission suited its book. The hosts' "let prices
+correct" view is easy to hold as homeowners with low leverage. Kristen pushes back that lower rates
+could also <em>unlock supply</em> by freeing locked-in owners.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-canon-canon-meadows-thinking-in-systems.html">canon meadows thinking in systems</a> (demand subsidies feeding the price loop) ·
+<a class="wiki" href="doc-canon-canon-sterman-business-dynamics.html">canon sterman business dynamics</a> (supply response delays) · <a class="wiki" href="doc-canon-canon-taleb-antifragile.html">canon taleb antifragile</a> (negative
+convexity).</p>
+<hr />
+<h2 id="13-inflation-measurement-and-pass-through">13 · Inflation measurement and pass-through</h2>
+<p><strong>What it is.</strong> Inflation is the <em>rate of change</em> in prices, not their level: "the height of each
+stair." The US has two baskets. <strong>CPI</strong> (BLS) is household-survey based with fixed annual weights.
+<strong>PCE</strong> (BEA) is business-receipts based, its weights shift continuously, and it includes spending made
+on consumers' behalf (e.g. employer health care). The Fed targets <strong>PCE</strong>, watches <strong>core</strong> (ex food and
+energy) and "supercore" (core services ex housing), and uses CPI for direction.</p>
+<p><strong>How it works.</strong>
+- <em>Substitution:</em> beef triples in price. CPI still assumes you eat burgers, while PCE registers the
+  switch to chicken (or, on Burton's evidence, a husband who has bought pork at Wegmans every week).
+- <em>Receipts vs. survey:</em> ask three patients what an MRI costs and you hear $300, $1,500 or $0. The
+  hospital records $1,500 each time.
+- <em>Base effects:</em> readings are year-over-year, so a soft print last March makes this March look hot.
+  Burton expected a mid-to-high-3s March 2026 CPI partly for that reason. Prices can stay elevated while
+  measured inflation reads zero.
+- <em>Tariff pass-through:</em> inventory days = inventory / COGS × days. Nike: $7.5B / $6.6B × 90 = <strong>~102
+  days</strong> of cushion before tariffs hit shelf prices. Munchkin (made in China, 145% tariff): $100k of goods
+  now costs <strong>$245k</strong> landed, with the <strong>US importer</strong> paying the tariff. Medeiros estimates <strong>~60%</strong>
+  pass-through, a stated rate of ~18% but an effective rate nearer <strong>~10%</strong> after exemptions.
+- <em>Oil:</em> jet fuel → airfares is the second-round effect the Fed fears when household expectations are
+  already elevated. The oil CEO's rule of thumb is transcribed as "every 10 cents ≈ 0.2% of global
+  inflation", almost certainly <strong>$10/bbl</strong>, not 10 cents.
+- <em>Nominal vs. real, and what a breakeven is:</em> John Normand's definition (2024): the nominal rate is
+  what you observe; the <strong>real rate</strong> is nominal minus inflation, your gain in purchasing power. In
+  2024 the US had positive real rates and Japan negative ones, the widest gap in ~30 years (§15). The
+  market's version uses <strong>TIPS</strong>: a 10-year nominal Treasury yield minus the 10-year TIPS real yield is
+  the <strong>breakeven</strong>, the inflation rate at which the two pay the same. (The channel's dedicated breakeven
+  video is not in the transcript set, so this decomposition is supplied here, not taught on air.) The
+  hosts' July 2026 reference to real yields "low-to-mid 2%" is a reading of this market. Hornbach, who
+  made markets in cash TIPS in 2005–06, calls it the worst market-making job on the Street: a handful of
+  dealers, thin liquidity, and drawdowns management has to stomach.
+- <em>One-time level shift vs. ongoing inflation</em> (Hornbach, Kristen, Sep 2025): a tariff, like Japan's
+  consumption-tax rises, should lift the price <em>level</em> once and then drop out of the year-over-year rate
+  (base effects again), while cutting real demand. What keeps it inflationary is uncertainty: nobody
+  knows the split between exporter, importer and consumer, or whether the rate will change next month.</p>
+<p><strong>Business significance.</strong> The Fed's reaction function runs on these numbers, so every pricing, wage and
+debt decision indirectly reads PCE. For operators, inventory days are the lead indicator for when a cost
+shock reaches the P&amp;L. They also give you a window to reprice, re-source or pre-buy.</p>
+<p><strong>Forces &amp; impact.</strong> Supply shocks (oil, tariffs), demand (fiscal impulse), expectations, and base
+effects. Second order: exogenous shocks the Fed can't control show up in headline inflation, and the
+policy question is whether they bleed into core. Since 2019 inflation has been higher everywhere
+(Levine), as every government spent and cut rates at once in 2020–21.</p>
+<p><strong>With vs. without.</strong> Without PCE's substitution adjustment, measured inflation overstates the cost of
+living and the Fed over-tightens. Without core measures, the Fed would react to every oil spike it can't
+control. The cost is that core can look benign while households feel the headline. That is Kristen's
+Main Street point: flights she bought for $350 now cost ~$1,000.</p>
+<p><strong>Applies when / Breaks when.</strong> Core is a good guide when shocks are transitory. It fails when shocks
+persist long enough to reset expectations ("half a decade of transitory," Medeiros).</p>
+<p><strong>Channel example.</strong> <em>The truth about inflation: CPI vs PCE</em> (short); <em>$53 Billion Hedge Fund Chief
+Strategist</em> (Apr 2026, base effects); <em>The real pain from tariffs is coming soon: inventory days</em>
+(short, 2025); <em>Why Stocks Could Drop 10%</em> (Sep 2026, oil second-round effects); <em>"Sorry, Mr.
+President: that's not how it works"</em> (short, base effects); <em>Finance, Philosophy, and the Yen Carry Trade
+feat. John Normand</em> (2024, real vs nominal); <em>Fixed Income Strategy 101 feat. Matt Hornbach</em> (Sep 2025,
+TIPS desk, consumption-tax analogy).</p>
+<p><strong>Counterpoint.</strong> The short claims CPI housing at "45%" of the basket. That is an illustrative number;
+shelter is ~35% of CPI and ~15% of PCE, which is the bigger and more important difference between the
+two. Burton's "inflation will calm down" (Apr 2026) was followed by a September hike.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-canon-canon-mankiw-principles-of-economics.html">canon mankiw principles of economics</a> · E9 lesson
+(Hormuz → oil → inflation chain) · <a class="wiki" href="doc-notes-apply-stock-picking-nke.html">apply stock picking nke</a> (the Nike inventory figures in a filings
+context).</p>
+<hr />
+<h2 id="14-fx-and-the-dollar">14 · FX and the dollar</h2>
+<p><strong>What it is.</strong> An exchange rate is the price of one currency in another. It is driven by growth,
+inflation, central-bank policy, fiscal policy, political stability, and above all <strong>rate
+differentials</strong>. Raising rates should strengthen a currency.</p>
+<p><strong>How it works.</strong>
+- <em>Rate differential:</em> the dollar strengthened through the 2022–23 Fed hiking cycle. The yen kept
+  weakening even as the BOJ hiked, because the <em>gap</em> stayed wide (Adami).
+- <em>Reserve recycling:</em> decades of US trade deficits shipped dollars abroad, and those dollars were
+  recycled into Treasuries. Tariffs that shrink those flows also shrink foreign demand for US debt (Jen,
+  Apr 2025).
+- <em>Defending a currency without dumping Treasuries:</em> Japan, the largest foreign holder, can pledge
+  Treasuries in the Fed's foreign repo facility for cash instead of selling them. Jen notes Bessent had
+  pushed to expand it. In summer 2026 the US and Japan ran the largest coordinated intervention in
+  decades; Bessent's "to-do list: buy 5–10 billion yen" became a meme.
+- <em>Why a weak dollar tempts:</em> US debt is fixed in nominal dollars, so a weaker dollar transfers value away
+  from foreign holders. Officially "we want a strong dollar" (Bessent); unofficially, Jen notes, Trump
+  says the quiet part out loud.
+- <em>De-dollarization:</em> after the 2022 sanctions on Russia's central bank, non-aligned central banks
+  bought <strong>gold</strong> instead of Treasuries (Levine). That flow accelerated after April 2 2025. The dollar
+  fell ~<strong>10%</strong> in H1 2025.
+- <em>Pegs, crawling pegs and the RMB</em> (FX101 episode and short, Apr 2025): China's renminbi (units: yuan)
+  is not free-floating. From the mid-1990s it was pegged to the dollar at an artificially low rate,
+  maintained by buying dollars, which built China into an export power. In 2005 it moved to an
+  undisclosed basket within a tight band (a "dirty float" or crawling peg), effectively re-pegged in
+  2008, and devalued in 2015 and 2019, each feeding US "currency manipulator" charges. When an
+  influencer cited the yuan at an 18-year low as proof the US was "winning" the trade war, Jen's answer
+  was that the dollar was falling too: "we are losing together."
+- <em>Who wins from a weak dollar:</em> a weaker currency helps a country that depends on exports and hurts its
+  consumers abroad (Kristen's vacation framing). For a consumption-heavy importer like the US it is a
+  strange goal, which is why the hosts read dollar weakness in April 2025 as a warning rather than a win.
+- <em>Hedging costs drive flows</em> (Hornbach, Sep 2025): a Japanese investor who buys US stocks and sells the
+  dollars forward to strip out FX risk pays roughly the rate differential to do so. As the Fed cuts, that
+  hedge gets cheaper, foreigners hedge more, and hedging means <em>selling</em> dollars forward. Morgan Stanley
+  called the dollar down from early 2025 (against consensus) and saw ~10% more to go.
+- <em>Trade construction (FX desk short):</em> "short cable" means short GBP/USD at ~1.30, target 1.25, stop
+  1.35. The trainee is mocked for a symmetric, coin-flip risk/reward with no thesis. Jen's lesson: the
+  manager should have coached the inputs and logic rather than hazing her.</p>
+<p><strong>Business significance.</strong> For importers the dollar sets landed cost. For exporters it sets
+competitiveness. For the Treasury it sets foreign appetite for its auctions. Medeiros calls the dollar
+<strong>the relief valve</strong>: if markets start to believe policy will be set well below where it should be,
+the dollar falls first, and then inflation expectations follow.</p>
+<p><strong>Forces &amp; impact.</strong> Policy credibility (§6), rate gaps, capital repatriation (US equities lagged the
+rest of the developed world over 12 months to Jan 2026 even with AI), and sanctions risk. Second order:
+a weaker dollar helps gold, crypto and (on Jen's speculation) stablecoins, which feeds back into bill
+demand (§8).</p>
+<p><strong>With vs. without.</strong> Without the dollar's reserve role, the US would borrow at a higher term premium
+and could not run persistent deficits as cheaply. The hosts treat losing it as the tail risk behind
+April 2025: "for the first time in my lifetime." Without intervention capacity, Japan's only defense
+would be selling Treasuries, which would push US yields up (Adami).</p>
+<p><strong>Applies when / Breaks when.</strong> The rate-differential rule holds in normal regimes. It breaks when
+credibility or fiscal fear dominates. In 2025 the dollar fell even as US rates stayed high.</p>
+<p><strong>Channel example.</strong> <em>I got the chance to ask Scott Bessent</em> (Sep 2026, intervention and de-dollarization);
+<em>What You Must Know About Commodities feat. Guy Adami</em> (2024, yen); <em>Time to Sell? feat. Alicia Levine</em>
+(Jan 2026, gold and central banks); <em>FX desk hazing rituals</em> (short); <em>FX101, Operation Twist and Yale's
+$6bn Sale</em> (Apr 2025); <em>Essential FX 101 (USD / RMB) for Understanding the US / China Trade War</em> (short);
+<em>Fixed Income Strategy 101 feat. Matt Hornbach</em> (Sep 2025).</p>
+<p><strong>Counterpoint.</strong> "A weak dollar means we owe foreigners less" is true of their purchasing power. It also
+raises US import prices and future borrowing costs, so it is not a free deleveraging. Lloyd Blankfein's
+retort, relayed by Kristen, is the strongest counter to de-dollarization panic: where else would they
+put the money? Jen's RMB history is self-described cliff notes ("not an FX expert"); the broad
+sequence is right, though the 1994 unification and the 2005–08 managed appreciation (~20%) are
+compressed. Hornbach's 2020 short-dollar call took months to work, which he concedes.</p>
+<p><strong>Links.</strong> E9 lesson (tariffs as value swings) ·
+<a class="wiki" href="doc-canon-canon-meadows-thinking-in-systems.html">canon meadows thinking in systems</a> (the dollar → expectations → inflation loop; reflexivity proper,
+à la Soros, is not yet in the canon).</p>
+<hr />
+<h2 id="15-carry-and-the-yen-carry-trade">15 · Carry and the yen carry trade</h2>
+<p><strong>What it is.</strong> <strong>Carry</strong> is what a position earns (or costs) if nothing moves: the difference between
+the rate you receive on what you own and the rate you pay to fund it. Jen's correction of the
+private-equity usage: carry here is the gap between where you invest and where you fund, not carried
+interest. A <strong>carry trade</strong> borrows in a low-yielding currency and invests in a high-yielding one. The
+<strong>yen carry trade</strong> is the canonical version: borrow yen near zero, buy dollars (or Aussie dollars, or
+emerging-market currencies) and pocket the differential.</p>
+<p><strong>How it works.</strong>
+- <em>Exchange rate as the price of two monies</em> (John Normand, ex-JPM head of cross-asset strategy, now
+  at AustralianSuper; spring 2024): one money pays X, the other pays Y, and a lot of cash simply moves
+  from low yield to high yield. In 2024 US real rates were positive and Japan's negative, a gap near a
+  <strong>30-year wide</strong>, and dollar/yen sat near a 30-year high. That is the carry trade showing up in the
+  spot rate.
+- <em>Why the yen:</em> after the Nikkei bubble burst in 1989–90, deflation pinned Japanese rates near zero for
+  three decades, so the yen became the safe <strong>funding currency</strong>.
+- <em>The payoff shape:</em> "up by the stairs, down by the elevator shaft." Long stretches of low-volatility
+  gains in the high-yielder, then a macro shock in the high-yield economy (commodities halving in the GFC
+  crushed the Brazilian real, Mexican peso, Aussie and Kiwi) wipes out years of carry in weeks. The skill
+  is timing the shock, and most people don't.
+- <em>Normand's 2024 forecast:</em> Fed cuts ~75bp over the cycle, the BOJ hikes ~100bp once a quarter, the
+  differential narrows but still favors the dollar, global demand for US AI equities keeps the dollar
+  bid, and the yen appreciates <strong>5–10% at most</strong>.
+- <em>Carry elsewhere in this note:</em> a bond financed in repo (5% coupon − 4% GC = <strong>+1%</strong>, plus roll-down,
+  §10); a curve steepener as <strong>negative</strong> carry, paid as rent while you wait (§3); Eisman's 2006 subprime
+  short, where shorting New Century stock cost ~<strong>20%</strong> a year in dividends plus borrow while buying
+  protection on the BBB− tranche two floors up the "building" cost ~<strong>3%</strong>. Same view, one-seventh the
+  carry.
+- <em>2026 coda</em> (Feb 2026 episode): the BOJ hiking, Japanese underlying inflation near target and a weak
+  yen while the Nikkei set records. For Japan, after decades fighting deflation, higher rates read as
+  good news, and the summer 2026 joint US–Japan intervention (§14) was the policy response to the yen end
+  of the trade.</p>
+<p><strong>Business significance.</strong> Carry trades move trillions across borders, so they set exchange rates for
+every importer, exporter and foreign investor. An equity investor who ignores the currency can see a
+good stock trade turned into a bad one by a 20% FX gap in a quarter (Normand). For a corporate treasurer,
+borrowing in the low-rate currency is the same trade: cheap until the funding currency jumps.</p>
+<p><strong>Forces &amp; impact.</strong> Rate differentials (central-bank paths in both countries), volatility (carry
+works when vol is low and dies when it spikes), risk appetite, and capital flows into the high-yielder's
+assets. Second order: because everyone is short the same funding currency, an unwind forces simultaneous
+buying of it, so the funding currency rallies into a crisis, and the move feeds on itself.</p>
+<p><strong>With vs. without.</strong> Without carry trades, interest-rate gaps would sit unarbitraged and currencies
+would track trade flows more closely; high-rate economies would attract less foreign capital. With
+them, capital flows to yield in calm times and stampedes back in shocks, which exports one country's
+easy money into another's asset prices.</p>
+<p><strong>Applies when / Breaks when.</strong> Works when the differential is wide and stable and volatility is low.
+Breaks on a shock to the high-yielder, on a surprise from the funding central bank, or when positioning
+gets crowded enough that a small move forces stop-outs.</p>
+<p><strong>Channel example.</strong> <em>Finance, Philosophy, and the Yen Carry Trade feat. John Normand</em> (2024); <em>Tariffs
+101</em> (Apr 2025, carry as the reason a dovish Fed should weaken the dollar); <em>Steve Eisman, the Real-Life
+"Big Short" Investor</em> (Apr 2025, negative carry of the New Century short); <em>SaaS-pocalypse, misleading
+jobs data, and Japanese equities breaking records</em> (Feb 2026).</p>
+<p><strong>Counterpoint.</strong> Normand's "5–10% max" was overrun within months: in July–September 2024 dollar/yen fell
+from ~161 to ~140, roughly 13%, in a violent carry unwind after a BOJ hike and weak US data, which is
+the elevator shaft he described arriving faster than he forecast. Kristen's phrase "intervention from
+the Bank of Japan" is loose: Japan's Ministry of Finance decides FX intervention and the BOJ executes it.
+Normand works for a pension fund and is selling a long-horizon, stay-invested view; carry is one input
+to currencies, not the whole model, as he says himself.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-canon-canon-taleb-black-swan.html">canon taleb black swan</a> (steady gains, rare crushing losses) ·
+<a class="wiki" href="doc-canon-canon-taleb-antifragile.html">canon taleb antifragile</a> (carry as short optionality) · <a class="wiki" href="doc-notes-wss-trading-hedge-funds.html">wss trading hedge funds</a> (macro funds and
+crowding) · <a class="wiki" href="doc-canon-canon-perrow-normal-accidents.html">canon perrow normal accidents</a>.</p>
+<hr />
+<h2 id="16-tariffs-and-the-april-2025-safe-haven-break">16 · Tariffs and the April 2025 safe-haven break</h2>
+<p><strong>What it is.</strong> A <strong>tariff</strong> is a tax on imports, paid by the <em>importing business</em> to its <em>own</em>
+government. Who ultimately bears it depends on who gives up margin. The April 2025 "reciprocal" tariffs
+turned that textbook question into a market event: for the first time in the hosts' careers, US stocks,
+Treasuries and the dollar sold off <em>together</em>, which is not what a safe haven does.</p>
+<p><strong>How it works.</strong>
+- <em>Incidence, in three branches</em> (Tariffs 101 and short): a foreign maker sells a microphone to a US
+  importer for <strong>$50</strong>; the importer marks it up <strong>$50</strong>; the consumer pays <strong>$100</strong>. Add a <strong>$10</strong>
+  tariff, paid to US Customs, and either the foreign maker cuts to $40, or the US importer cuts its markup
+  to $40, or the consumer pays <strong>$110</strong> (or buys something else). Most near-term cost was expected to land
+  on US firms and consumers, because exporters weren't willing parties and many US firms run thin margins.
+- <em>The reciprocal formula</em> (Apr 2 2025): take US goods imports from a country minus US exports to it,
+  divide by imports, call that the country's "tariff rate," then halve it. Imports $200, exports $100:
+  (200 − 100) / 200 = 50%, halved to <strong>25%</strong>. Floor of <strong>10%</strong> on everyone. Results: China <strong>34%</strong> on top
+  of an existing 20%, EU <strong>20%</strong>, Japan <strong>24%</strong>, autos <strong>25%</strong>, Canada and Mexico already at <strong>25%</strong>
+  (Canadian energy 10%), and an uninhabited penguin island on the list. The formula measures the goods
+  trade <em>deficit</em>, not any tariff the other country charges, and ignores services, where the US runs a
+  surplus.
+- <em>History the hosts used:</em> the Fordney–McCumber Act (1922) took average import duties to ~40%;
+  Smoot–Hawley (1930) added ~20% more on everything, drew retaliation and deepened the Depression; the
+  Reciprocal Tariff Act (1934), postwar GATT and the WTO then ran a century of liberalization. Trump's
+  first term (2018: washing machines and solar at 30–50%, steel and aluminum 10–25%) was largely kept by
+  Biden.
+- <em>The macro read:</em> tariffs mean slower growth and higher prices, i.e. <strong>stagflation</strong>. Markets priced
+  the Fed fighting the growth side (more cuts), and Jen predicted a <strong>steeper curve</strong>: companies would
+  "lever their way out" rather than grow out.
+- <em>The break</em> (Apr 2–11 2025): equities fell, the 10-year rallied briefly to ~<strong>3.9%</strong> and then sold off
+  to ~<strong>4.5%</strong>, the dollar hit a 3-year low and gold soared. With a risk-off move, safe-haven demand
+  should have strengthened the dollar and pulled yields down. It did neither. The hosts read it as the
+  market pricing a real chance that the dollar loses reserve status, plus the auction evidence in §8;
+  the 90-day pause came minutes after the 10-year auction.
+- <em>The plumbing link:</em> the world earns dollars by selling to the US and recycles them into dollar assets,
+  mainly Treasuries (foreigners hold ~25–30%). Fewer imports mean fewer recycled dollars, so trade policy
+  is also Treasury-demand policy (§14).
+- <em>The "deliberate crash to refinance" theory</em> (short and Apr 11 episode): ~$9.1T of debt rolls each year
+  out of $36.2T, so lower rates would help. But the Fed sets only the front end, the rolling debt is
+  mostly bills, and long yields <em>rose</em>. The hosts treat the theory as debunked by the price action.
+- <em>GDP fallout</em> (Apr 30 2025 episode): Q1 GDP contracted (advance −0.3%) as firms pulled imports forward
+  ahead of tariffs, with net exports subtracting ~5 points. Jen expected the same next quarter.
+- <em>The fiscal contradiction:</em> if tariffs are a negotiating tactic ending in a few 5–20% deals, they raise
+  too little to dent the deficit; if they are meant to fund tax cuts, they must be high and permanent.
+  The equity market was pricing both at once.</p>
+<p><strong>Business significance.</strong> For operators, the questions are incidence and lead time: who in your
+supply chain eats the tax, and how many days of inventory you have before it reaches shelf prices (§13).
+Small importers are hit hardest because large firms can lobby for carve-outs. For capital markets, the
+episode is the clearest live demonstration that the US "risk-free" rate has a credibility component.</p>
+<p><strong>Forces &amp; impact.</strong> Trade balances, retaliation, inventory cycles, the reserve-currency recycling loop,
+and political feedback (the administration reversed course when bond and equity markets moved together).
+Second order: higher input costs tighten leverage covenants and widen credit spreads (§1), private
+equity exits stall, and LPs over-allocated to illiquid assets seek secondaries.</p>
+<p><strong>With vs. without.</strong> Without tariffs since the 1930s, the US built the world's deepest consumer market
+and the dollar's reserve role on trade deficits recycled into Treasuries. With sweeping tariffs imposed
+at once, that recycling loop is put at risk, and the hosts' fear is a vacuum filled by a basket of
+allied currencies or gold.</p>
+<p><strong>Applies when / Breaks when.</strong> Incidence logic always applies; the split depends on pricing power and
+substitutes. The safe-haven assumption applies while the US is seen as the safest counterparty; it broke,
+briefly, when US policy itself became the shock.</p>
+<p><strong>Channel example.</strong> <em>Tariffs 101: Why the Markets and U.S. Dollar Are Tanking</em> (Apr 4 2025); <em>What are
+tariffs and how do they work?</em> and <em>Is Trump deliberately trying to crash the U.S. stock markets?</em>
+(shorts); <em>It Wasn't Equity Turmoil That Spooked Trump — It Was the Bond Market</em> (Apr 11 2025); <em>Steve
+Eisman, the Real-Life "Big Short" Investor, on Tariff Panic</em> (Apr 11 2025); <em>From Intern to Offer…
+(Plus Some Markets and Tariff Talk)</em> (Apr 30 2025).</p>
+<p><strong>Counterpoint.</strong> <strong>Steve Eisman</strong>, recorded the same afternoon, is the strongest counter and the hosts
+air him in full. His case: the tariffs answer a real grievance (NAFTA and China's WTO entry grew GDP but
+hollowed out towns), and the US holds the cards because exports are only ~<strong>11%</strong> of US GDP versus ~19%
+officially for China (he guesses ~30% counting transshipment), 30%+ for Europe, 40%+ for Germany and
+~35% for Canada and Mexico, 25 points of it to the US. Partners will negotiate. On the dollar: the global
+financial system runs on Treasuries, overnight repo is trillions of dollars collateralized by them, and
+"there is no alternative." He told Jen she sounded hysterical, and she owned it ("I'm a bond girl").
+The market partly agreed with him: equities recovered to near pre-April levels within weeks. Other
+corrections: the GDP discussion leaves investment out of the GDP identity (inventories absorbed
+much of the import surge), and Jen's "another hit next quarter" was wrong, as Q2 printed about +3% when
+imports collapsed. The 1970s "rates north of 20%" was 1980–81 under Volcker. And the hosts' insistence
+that they are apolitical sits awkwardly with episodes that are, by their own account, mostly opinion on
+a policy.</p>
+<p><strong>Links.</strong> E9 lesson (tariffs, chokepoints, value
+swings) · <a class="wiki" href="doc-canon-canon-schelling-strategy-of-conflict.html">canon schelling strategy of conflict</a> (the "bazooka" as a commitment device) ·
+<a class="wiki" href="doc-canon-canon-dixit-nalebuff-thinking-strategically.html">canon dixit nalebuff thinking strategically</a> (who saved something for the swim back) ·
+<a class="wiki" href="doc-canon-canon-mankiw-principles-of-economics.html">canon mankiw principles of economics</a> (tax incidence) · <a class="wiki" href="doc-notes-wss-private-markets-wealth.html">wss private markets wealth</a> (denominator
+effect and secondaries).</p>
+<hr />
+<h2 id="17-recession-indicators">17 · Recession indicators</h2>
+<p><strong>What it is.</strong> These are signals that the cycle is turning. The serious ones are the inverted yield
+curve, labor-market breakevens, and credit and financial conditions. The folklore ones are
+consumer-behavior proxies that sometimes rhyme with spending stress.</p>
+<p><strong>How it works.</strong>
+- <em>Curve:</em> every inversion has preceded a recession by <strong>18–36 months</strong>. Adami's refinement is that the
+  <em>re-steepening</em> after a long inversion is the danger signal, not the inversion itself. The 2022–24
+  inversion was the longest on record, and there was no recession.
+- <em>Labor breakeven:</em> 90% of labor-force growth since Q3 2023 was foreign-born. With immigration
+  reversing, the payroll gain needed to hold unemployment steady falls to ~<strong>40–50k/month</strong> (Medeiros,
+  Jan 2026). 75k a month is then <em>tightening</em>, not weakness. Payroll headlines must be read against a
+  moving breakeven.
+- <em>First prints vs. revisions</em> (Feb 2026): January payrolls printed <strong>+130k</strong> against ~70k expected and
+  the market priced out a March cut. Jen's point was the revisions: 2025's monthly average gain was cut
+  from ~49k to ~15k, with Challenger layoffs at post-GFC highs. Discount first prints when the pattern is
+  revision after negative revision.
+- <em>How a macro PM trades the print</em> (Ashish Goyal, ex-BlueCrest/Citadel/Balyasny, early 2024): a
+  250k payroll against 200k expected moves front-end yields 5–15bp, about one cut priced out. If the
+  broader trend still points to cuts, keep receiving into the move. The hard part is surviving the path:
+  stop-losses on a $100mm book shrank from ~$10–12mm fifteen years ago to ~$4–6mm.
+- <em>GDP is backward-looking</em> (Apr 2025): Q1 2025's contraction was mostly tariff front-running in
+  imports, and reversed the next quarter. Confidence surveys and inflation expectations are the
+  forward-looking exceptions.
+- <em>Folklore (two shorts):</em> the hemline index (1926), lipstick (Lauder, 2001), high heels, cardboard-box
+  demand ("very real", reportedly watched by the Fed), men's underwear (attributed to Greenspan), plus
+  the hosts' own joke "Bravo index" (Real Housewives 2008; Scandoval and SVB 2023).
+- <em>Allocator rule (Levine):</em> the question is not "will stocks fall?" but "is there a recession?" At
+  ≤30% recession probability, stay invested. In 2025 the S&amp;P returned <strong>16.5%</strong> fully invested and
+  roughly <strong>−12%</strong> if you missed the 10 best days, all of which followed the worst days in April. Buying
+  at all-time highs has historically not lowered 1/3/5-year returns (BNY study).</p>
+<p><strong>Business significance.</strong> Recession probability sets hiring plans, inventory, capex timing and debt
+tenor. Getting the <em>breakeven</em> wrong means misreading a healthy labor market as weak (or the reverse) and
+cutting too early.</p>
+<p><strong>Forces &amp; impact.</strong> Curve signals work through bank margins and credit supply with long lags. In 2023–25
+the lag was broken by fiscal support and a private sector that had locked in low rates, which made the
+economy less rate-sensitive (§3). AI could change the growth–employment relationship ("a coefficient
+shift"), which would make historical breakevens unreliable.</p>
+<p><strong>With vs. without.</strong> Without leading indicators, firms react to recessions after the layoffs. With
+overfit indicators, they de-risk into a boom, which is the 2023 "recession that never happened"
+(Levine: "we're still waiting for the recession of 2020").</p>
+<p><strong>Applies when / Breaks when.</strong> The curve works when the inversion reflects restrictive policy. It
+weakens when the long end is suppressed by QE or flight-to-quality, or when term premium is
+structurally changing. The folklore indices are entertainment. The hosts present them that way, and
+only cardboard-box demand has a plausible economic mechanism.</p>
+<p><strong>Channel example.</strong> <em>Top 5 wildest recession indicators</em> / <em>Top 10… signs</em> (shorts); <em>Every New Fed
+Chair…</em> (curve inversion 2006); <em>Commodities feat. Guy Adami</em> (2024); <em>Time to Sell? feat. Alicia
+Levine</em> (Jan 2026); <em>SaaS-pocalypse, misleading jobs data…</em> (Feb 2026); <em>Portfolio Manager at World's
+Top Hedge Funds… Breaks Down Global Macro Trading</em> (2024); <em>From Intern to Offer…</em> (Apr 2025).</p>
+<p><strong>Counterpoint.</strong> Levine runs a wealth-management business whose clients stay invested, so "stay
+invested" is good advice <em>and</em> good for her business. The 10-best-days stat ignores that you also miss
+the worst days, and that the two cluster together. "Every inversion preceded a recession" survives
+only if 2022–24 is still "early." Jen's "January is a head fake" was a labeled view, and the
+revision arithmetic as transcribed (~43k total) doesn't match a 49k → 15k monthly cut, which implies
+~400k over a year; check the BLS benchmark before reusing it.</p>
+<p><strong>Links.</strong> <a class="wiki" href="doc-canon-canon-taleb-black-swan.html">canon taleb black swan</a> (indicator overfitting) · <a class="wiki" href="doc-canon-canon-kahneman-thinking-fast-and-slow.html">canon kahneman thinking fast and slow</a>
+(narrative fallacy in folklore indices) · <a class="wiki" href="doc-canon-canon-tetlock-superforecasting.html">canon tetlock superforecasting</a> (base rates for "inversion →
+recession").</p>
+<hr />
+<h2 id="how-the-concepts-connect">How the concepts connect</h2>
+<pre><code>Tariffs (§16) / oil shock ──► headline inflation (§13) ──► Fed reaction function (§4, §5)
+     │        │                                                   │
+     │        │                          front end reprices ◄─────┘  (futures odds, DV01 losses §2)
+     │        ▼
+     │  inflation expectations ──► long-end term premium (§3) ◄── deficits, long-end supply,
+     │        │                         ▲                         hyperscaler issuance, pension unwind
+     │        │        credibility / independence (§6) ──► the dollar = relief valve (§14)
+     │        │                                                   │
+     │        │                    rate gaps ──► carry trades (§15) ──► elevator-shaft unwinds
+     ▼        ▼
+fewer recycled dollars ──► weaker auction demand (§8) ──► 10-year yield
+                                                              │
+     ┌────────────────────────────────────────────────────────┤
+     ▼                                                        ▼
+mortgage = 10y + spread (§12)                corporate yield = 10y + credit spread (§1)
+     │                                                        │
+housing politics ──► GSE buying               covenant math ──► spreads widen
+                                                              │
+Treasury response: buybacks + issuance mix (§9) ──► shorter WAM ──► rollover risk
+     │                                     │
+bill supply ◄── stablecoins, Fed bill      repo / reserves plumbing (§7, §10)
+     reinvestment (§7, §8)                       │
+                                                 ▼
+             cash vs futures vs swaps (§10, §11): balance sheet decides who holds duration
+                                                 │
+                     levered basis trade (§11) ──► forced selling when repo or cash cheapens
+                                                    (2019, Mar 2020, Apr 2025 template)
+</code></pre>
+<p>April 2025 ran across the top of this chart: tariffs threatened the dollar-recycling loop, so
+Treasuries, the dollar and stocks fell together; swap spreads collapsed and basis trades unwound as
+cash Treasuries cheapened against derivatives; and the administration paused within a week. The 2026
+sequence ran down the middle. The Iran oil spike lifted 2s and 10s 50–60bp (macro funds lost on DV01 and
+crowded steepeners). Mortgages rose 75bp with the Fed on hold. Political pressure to "do something" about
+affordability produced GSE buying and Treasury buybacks. The Treasury's issuance choice may have
+tightened the front end even as it supported the back. And a balance-sheet-hawk chair hiked because
+financial conditions, not the policy rate, were the true measure of tightness. Underneath both, the
+question of <em>who has balance sheet to hold duration</em> (real money in futures and swaps, levered funds in
+cash bonds, dealers forced to take down auctions) decides how violently a shock moves yields. <strong>The
+single recurring lesson: the Fed controls one point on the curve. Everything a business actually borrows
+at is set by the market, and in 2025–26 by the Treasury, the GSEs and the plumbing as well.</strong></p>
+<hr />
+<h2 id="retrieval-questions">Retrieval questions</h2>
+<ol>
+<li><strong>The Fed holds rates steady but mortgage rates jump 75bp. How?</strong> Mortgages price off the 10-year
+   plus a spread. An oil shock lifted inflation expectations and term premium at the long end, which the
+   Fed doesn't set.</li>
+<li><strong>Two traders each lose on a $100mm Treasury position. The 2-year moved 60bp, the 10-year 50bp. Who
+   lost more, and why do desks avoid this comparison?</strong> The 10-year trader: duration 8 vs. 1.8, so ~$4mm
+   vs. ~$1.1mm. Desks size by DV01, not notional, so risk is comparable across maturities.</li>
+<li><strong>Treasury yields fall in a tariff panic. Why might a leveraged company's borrowing cost still
+   rise?</strong> Its yield = risk-free + credit spread. Lower EBITDA pushes leverage toward covenant limits
+   (4× → 8× on unchanged debt), and spreads widen more than Treasuries fall.</li>
+<li><strong>Fed funds futures for a 30-day month price at 96.29, the effective rate is 3.63, and the meeting is
+   on day 16. What hike probability is priced?</strong> (30×3.71 − 16×3.63)/14 = 3.80; (3.80−3.63)/0.25 ≈ 68%.</li>
+<li><strong>Why is a Fed buying $71B of Treasuries at auction during QT not QE?</strong> It is reinvesting most of $76B
+   of maturing SOMA holdings. The balance sheet still shrinks, and no net new reserves are created to
+   push long yields down.</li>
+<li><strong>The Treasury doubles long-end buybacks. Under which funding choice is this a stealth <em>tightening</em>,
+   and under which is it QE-like?</strong> Funded with 2s/5s it adds front-end duration supply, which raises
+   front yields and flattens the curve. Funded from TGA cash it injects new liquidity, which looks like
+   QE.</li>
+<li><strong>Why can a dovish appointee not simply cut rates?</strong> The FOMC is a 12-vote majority committee, and the
+   chair has no veto. Miran could only dissent.</li>
+<li><strong>Medeiros says policy is loose with the 10-year at 4.15%. What is his evidence, and its weakness?</strong>
+   10y yields ~300bp below nominal GDP growth, easing financial conditions, IG demand at the tights. The
+   weakness: one quarter's 8% NGDP flatters it, and trend nominal growth is lower.</li>
+<li><strong>Why would a portable 50-year mortgage carry a much higher rate than a 30-year?</strong> The collateral can
+   change, and the borrower's option to keep a low rate becomes near-certain to be valuable, so the
+   lender is short a much more expensive option. The DV01 difference between 30 and 50 years is small.</li>
+<li><strong>The curve bull-steepens in the US and bear-steepens in Europe in the same year. What different
+    stories do they tell?</strong> US: front-end yields fell on expected cuts. Europe: long-end yields rose on
+    fiscal-driven term premium despite ~200bp of ECB cuts. The policy rate and the long end decoupled.</li>
+<li><strong>Why does the Fed prefer PCE to CPI?</strong> It captures substitution in real time and spending made on
+    consumers' behalf, so it describes total consumer spending, the behavior rate policy targets.</li>
+<li>
+<p><strong>A record share of direct bidders at a 7-year auction. What can and can't you infer?</strong> Strong
+    demand (it stopped 2.5bp through). Foreign official demand mostly shows up as <em>indirect</em> bids via the
+    NY Fed, so reading "direct = China" is unreliable.</p>
+</li>
+<li>
+<p><strong>A real-money manager can get 10-year exposure by paying cash, financing in repo, buying futures or
+    receiving fixed in a swap. Why does that choice make futures trade rich to cash bonds?</strong> Futures and
+    swaps use far less balance sheet, so real money crowds into them; the deliverable cash bonds are left
+    cheap, which is the gap basis traders lever up to capture.</p>
+</li>
+<li><strong>Why can a near-riskless convergence trade blow up a hedge fund?</strong> The gap is a few bp, so it needs
+    20:1 or more leverage; a shock that cheapens cash against futures, or a repo spike, produces
+    mark-to-market losses and margin calls before expiry, forcing sales of illiquid bonds into a falling
+    market.</li>
+<li><strong>You are short 78,000 TY contracts; the CTD has DV01 6.6 and conversion factor 0.99. What is your
+    risk per bp, and what is wrong with the video's method?</strong> ≈ 6.6 / 0.99 / 10,000 × 78,000 × $100,000
+    ≈ $5.2mm. The video multiplies by the factor (≈ $5.1mm); futures track the CTD price divided by its
+    factor.</li>
+<li><strong>Swap spreads go from −20bp to −30bp. Is that widening or tightening, and what might it say?</strong>
+    Tightening, by desk convention inherited from the positive-spread LIBOR era. Treasuries are
+    cheapening against swaps: scarce dealer balance sheet, heavy supply, or aversion to holding cash
+    Treasuries (April 2025).</li>
+<li><strong>Why did SOFR replace LIBOR, and what did the switch remove from the benchmark?</strong> LIBOR was
+    self-reported, unsecured and manipulable; SOFR is computed from secured overnight Treasury repo
+    trades. The switch removed the bank-credit and term components, which is why legacy loans needed
+    credit spread adjustments and term SOFR is thin.</li>
+<li><strong>A carry trade has earned steady returns for three years. What does its history say about the next
+    month?</strong> Little, except that losses arrive suddenly: carry pays "up by the stairs" and unwinds "down
+    the elevator shaft" when the high-yielder suffers a shock or the funding currency's central bank
+    surprises (yen, summer 2024).</li>
+<li><strong>A $10 tariff lands on a $100 product built from a $50 import. Name the three ways it can be
+    absorbed, and say why April 2025 broke a market rule.</strong> Foreign margin, US importer margin, or the
+    consumer price. Stocks, Treasuries and the dollar fell together, so the "risk-free" asset behaved like
+    a risk asset; the market was pricing US policy credibility.</li>
+<li><strong>The reciprocal tariff on a country with $200 of US imports and $100 of US exports?</strong>
+    (200 − 100) / 200 = 50%, halved to 25% (floor 10%). It measures the bilateral goods deficit, not the
+    country's own tariffs, and ignores services.</li>
+<li><strong>Why do Fed cuts move mortgage payments less today than in 2006?</strong> Almost no outstanding mortgages
+    float (Patton: under 1% vs ~35% pre-GFC), most borrowers are locked in below market, and only ~10% of
+    a mortgage's rate sensitivity sits on the 30-year point, while long yields can rise even as the Fed
+    cuts (Sep 2024).</li>
+</ol>
+<hr />
+<h2 id="gaps">Gaps</h2>
+<p>Pass 2 recovered nearly every title the first version listed as missing; the dedicated videos on the
+basis trade, SOFR, futures DV01/CTD, the yen carry trade, Hornbach, Patton, Operation Twist, tariffs and
+the April 2025 bond-market episode are now folded in. <strong>Still missing from the folder</strong> (checked by video
+ID against <code>wss_all_videos.json</code> / <code>wss_all_shorts.json</code>):</p>
+<ul>
+<li><em>What are inflation breakevens in bond trading?</em> (<code>kkKIq_WxWnU</code>): §13 supplies the TIPS decomposition
+  itself; the channel's explanation and numbers are still unseen</li>
+<li><em>How are Trump's reciprocal tariffs calculated?</em> (<code>ynHja5RlMN4</code>): the formula is taught in <em>Tariffs
+  101</em> (§16), so this short likely adds little</li>
+<li><em>Do you know the answer to this bond math 101 question?</em> (<code>Zxy3I26G2nI</code>)</li>
+<li><em>Wellington's Head of U.S. Macro with one simple rule for trading the long end</em> (<code>ztEWvYczl8w</code>):
+  almost certainly a clip of the Jan 2026 Medeiros episode already used in §5</li>
+</ul>
+<p><strong>Read, little or no change:</strong> <em>Pete Muller on Building… PDT</em> and <em>Quant Investing 101 feat. Stacie
+Mintz</em> (quant equity; only the 2007 quant unwind and Liberation Day as a factor shock); <em>Who needs karate
+when you have the DCF</em> (no content); <em>The most underrated show on TV</em> (prop trading vs client flow,
+covered in <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a>); <em>Why Jamie Dimon Won't Buy Stocks OR Bonds</em> (already used);
+<em>Debt Capital Markets 101</em> and <em>Fixed Income Sales &amp; Trading 101</em> (2023 beginner material on the yield
+stack and price/yield inversion that §1 already teaches; their 5% Treasury and 98/100 bid-offer figures
+are illustrative).</p>
+<p><strong>Concept gaps the transcripts still leave open:</strong> breakeven and real-yield <em>levels</em> over the cycle; how
+the Taylor rule is computed (inputs named, never shown); the 2026 dot plot's median path; the implied
+repo rate and how CTD switches as yields cross 6%; options and swaptions as a way to express rate views
+(mentioned by Jen and Goyal, never taught); why foreign official demand shows up as indirect bids (the
+hosts treat it as direct).</p></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-wss-private-markets-wealth.html"><span>Previous</span>Private markets &amp; the wealth channel: how the money is pooled, priced, levered and sold (Wall Street Skinny)</a><a class="doc-next" href="doc-notes-wss-scenario-map.html"><span>Next</span>The WSS scenario map — the seven concept notes reorganized by market regime</a></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

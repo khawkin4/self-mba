@@ -1,0 +1,205 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Note · Tradeweb Ai-Price — what a &quot;30% better&quot; bond-pricing claim does and doesn&#x27;t prove · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Note · Tradeweb Ai-Price — what a &quot;30% better&quot; bond-pricing claim does and doesn&#x27;t prove</h1>
+<div class="doc-meta"><span>15 min read</span><span>3,439 words</span><span>Updated 2026-10-19</span><span class="doc-src">notes/tradeweb-ai-price.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#1-what-the-model-is">1. What the model is</a></li><li class="l2"><a href="#2-what-the-accuracy-test-shows">2. What the accuracy test shows</a></li><li class="l2"><a href="#3-what-it-doesnt-prove-the-five-gaps">3. What it doesn't prove — the five gaps</a></li><li class="l2"><a href="#4-the-landscape-whos-building-the-reference-price">4. The landscape — who's building the reference price</a></li><li class="l2"><a href="#5-sp-global-the-evaluator-that-bought-its-ai-instead-of-building-it">5. S&amp;P Global — the evaluator that bought its AI instead of building it</a></li><li class="l2"><a href="#6-market-structure-context-why-this-matters-now">6. Market structure context — why this matters now</a></li><li class="l2"><a href="#7-canon-lenses">7. Canon lenses</a></li><li class="l2"><a href="#8-practitioner-counterpoint">8. Practitioner counterpoint</a></li><li class="l2"><a href="#9-what-to-look-for-in-the-promised-whitepaper">9. What to look for in the promised whitepaper</a></li><li class="l3"><a href="#rep">Rep</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p>Practitioner / market-structure note · Maps to <strong>Course 02</strong> (Corporate Finance &amp; Valuation), <strong>Course 05</strong> (Quant &amp; Stats — benchmarks, out-of-sample testing), <strong>Course 11</strong> (Global Strategy &amp; Macro), <strong>E-track</strong> competitive strategy · Written 2026-10-19</p>
+</blockquote>
+<ul>
+<li><strong>Source:</strong> Tradeweb blog, <em>Tradeweb Ai-Price: Evolving Credit Pricing for Today's Market</em> (undated, read 2026-10-19), plus the Sept 22, 2026 Ai-Price upgrade release, vendor filings, Coalition Greenwich / The DESK market-structure data, FINRA rule filings and the academic literature (full list at the bottom).</li>
+<li><strong>Core claim:</strong> Ai-Price beats the naive "next trade = last trade" predictor by <strong>~30%</strong> on median error, in both IG and HY, across all liquidity buckets. That is real but it is the <strong>floor</strong> test for any pricing model. The claim that would matter — beating CP+, BVAL, ICE and Trumid on a side-matched, out-of-sample, stress-inclusive test — has not been published by Tradeweb or by anyone else. The more interesting story is strategic: <strong>pricing models are becoming the reference price that automated execution keys off</strong>, and whoever owns that price owns a recurring data business.</li>
+</ul>
+<hr />
+<h2 id="1-what-the-model-is">1. What the model is</h2>
+<ul>
+<li><strong>Method (per Tradeweb):</strong> a <em>mixture of Gaussians</em> models the <strong>change since the previous trade</strong>, separately for the <strong>bid</strong> and the <strong>offer</strong>. Separate neural networks for IG and HY predict the <strong>mean and standard deviation</strong> of that change. So the output is a distribution, not just a point.</li>
+<li><strong>Inputs:</strong> TRACE, Tradeweb's own trading data (Tradeweb Direct, RFQ flow), Tradeweb's UST / CDS / swap composites, trade size, counterparty type, bid/ask imbalance. The <strong>Sept 22, 2026 upgrade</strong> added <strong>European institutional credit flow</strong> (to help when US bonds trade infrequently), upgraded the ML models, and moved to more intraday-responsive pricing. EM corporates are "next", not live.</li>
+<li><strong>Lineage:</strong> described in a March 2020 whitepaper; ~19,000 corporates updated every 30s by May 2020; munis (~880k bonds, end-of-day) April 2022; "nearly 30,000 corporate bonds" by June 2024; Sept 2026 upgrade. Feeds <strong>AiEX</strong> (automated execution), pre-trade cost estimates, RFQ evaluation and post-trade TCA, and the <strong>TARA</strong> AI assistant (June 2026).</li>
+<li><strong>Distribution:</strong> Tradeweb terminal/APIs, and non-exclusively through <strong>LSEG</strong> (Workspace, DataScope, Pricing Service, Tick History) under a licence restated Nov 2025 → Oct 2028. No MCP / AI-agent distribution found.</li>
+</ul>
+<h2 id="2-what-the-accuracy-test-shows">2. What the accuracy test shows</h2>
+<p>Test design: next TRACE print as the target; dealer-to-client prints &gt; $50k; Jan 2025 – Jun 2026; model bid/offer compared to the matching-side trade; bucketed by Tradeweb liquidity score (1 = least liquid); headline averaged across buckets <strong>weighted by trade count</strong>.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th></th>
+<th>Liquidity 1 (illiquid)</th>
+<th>Liquidity 10 (liquid)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IG</strong> (median error, bps of spread)</td>
+<td>2.55 vs 4.30 → <strong>~40% better</strong></td>
+<td>0.72 vs 0.90 → <strong>~20% better</strong></td>
+</tr>
+<tr>
+<td><strong>HY</strong> (median error, $ price)</td>
+<td>0.125 vs 0.232 → <strong>~46% better</strong></td>
+<td>0.048 vs 0.081 → <strong>~41% better</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Values read off the published charts by eye.</em></p>
+<ul>
+<li><strong>IG:</strong> the edge shrinks as liquidity rises. In liquid IG the last print is already a good price; the model earns its keep in the illiquid tail.</li>
+<li><strong>HY:</strong> U-shaped (~46% → ~30% mid-bucket → ~41%). The last-trade line flattens at ~$0.09 for scores 6–9 while the model keeps improving — consistent with HY's last print being <em>structurally</em> noisy (bid/ask bounce), not just stale.</li>
+<li><strong>Units are convention, not a trick:</strong> IG trades on spread (bps), HY on price ($).</li>
+<li><strong>Trade-count weighting</strong> pulls the headline toward the liquid buckets, where the IG edge is smallest.</li>
+</ul>
+<h2 id="3-what-it-doesnt-prove-the-five-gaps">3. What it doesn't prove — the five gaps</h2>
+<ol>
+<li><strong>The baseline is the weakest one available.</strong> "Last print" is the random-walk floor. Every serious vendor beats it. No head-to-head against CP+, BVAL, ICE CEP or Trumid FVMP.</li>
+<li><strong>Bid/ask bounce may be doing much of the work.</strong> The model predicts each side; if the previous print was the <em>other</em> side, the baseline is wrong by a full bid-ask spread before anything moves. A fair baseline is the <strong>last same-side print</strong> or a <strong>side-adjusted</strong> last print. The blog doesn't say which was used. (Bessembinder, Kahle, Maxwell &amp; Xu, RFS 2009, show that naive last-price measures are weak in exactly this way.) HY's flat baseline in buckets 6–9 is the tell to probe.</li>
+<li><strong>Median hides the tails.</strong> Errors cost money in stress. The sample's only real stress window — the <strong>April 2025 tariff shock</strong> (HY OAS 3.42% → 4.61% on Apr 7 → 3.67% by Apr 25; IG OAS 0.96% → 1.21%; HY CDX 476bp, IG CDX 81bp on Apr 8) — is ~3 weeks of an 18-month sample, so a full-period median barely registers it. Ask for p90/p99 and a stress-window cut.</li>
+<li><strong>Out-of-sample and point-in-time aren't stated.</strong> Was the model trained on Jan 2025 – Jun 2026? Inputs must be what was knowable at the time. Note that TRACE's <strong>15 minutes is a reporting deadline, not a dissemination delay</strong> — prints go out when reported — so a platform that sees its own RFQ flow in real time has a genuine information edge, and a genuine leakage risk if timestamps are sloppy. (Dickerson, Robotti &amp; Rossetti, 2026, show TRACE measurement error and ex-post filtering inflating published bond results.)</li>
+<li><strong>The best output is unscored.</strong> The model predicts a standard deviation. Calibration — do ~68% / ~95% of next trades land inside ±1σ / ±2σ? — is never shown. That σ is what lets a desk say "this dealer offer is 1.8σ rich," which is the real product for RFQ evaluation and auto-execution thresholds.</li>
+</ol>
+<p>Two smaller ones: <strong>capped prints</strong> (TRACE disseminates IG &gt; $5mm as "5MM+", HY &gt; $1mm as "1MM+", so true size is unknown inside the &gt; $50k filter), and <strong>reflexivity</strong> (if traders anchor on Ai-Price, accuracy measured on Tradeweb-adjacent trades is flattered).</p>
+<p><strong>Is Tradeweb unusual here?</strong> No. Trumid's FVMP whitepaper also benchmarks against the last TRACE print; Bloomberg's IBVAL back-test reports only that prices are "centered" and that 92% of trades fall inside CBBT bid/ask; MarketAxess publishes no error statistic for CP+; ICE back-tests CEP against the next round-lot trade but publishes no figure; SOLVE's April 2026 whitepaper back-tests on 7.3M trades with no error numbers. <strong>No vendor publishes a same-side or side-adjusted baseline.</strong> The only vendor-vs-vendor claim found is Trumid's: FVMP beats CP+ by 11% (methodology not verified).</p>
+<p><strong>The only independent bake-off:</strong> SS&amp;C's <em>Fixed Income Evaluations Vendor Benchmark Study 2025</em> (~340k trades, ~25k securities, end-of-day evals vs same-day trades over three months) covers BVAL, Cambridge, ICE, PricingDirect, LSEG, MarketAxess, S&amp;P, Trumid and Confluence. <strong>Tradeweb isn't in it.</strong></p>
+<h2 id="4-the-landscape-whos-building-the-reference-price">4. The landscape — who's building the reference price</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Product</th>
+<th>Published accuracy</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tradeweb</strong></td>
+<td>Ai-Price</td>
+<td>~30% vs last print (median)</td>
+<td>Platform data + TRACE; feeds AiEX; LSEG distributes</td>
+</tr>
+<tr>
+<td><strong>MarketAxess</strong></td>
+<td>CP+</td>
+<td>none; target is "zero average difference" to next trade</td>
+<td>350k+ bonds, ~15s updates. <strong>Being acquired by ICE</strong> ($167/sh cash, ~$5.7B EV, signed Jul 29 2026, close H1 2027)</td>
+</tr>
+<tr>
+<td><strong>ICE</strong></td>
+<td>Continuous Evaluated Pricing, Compass (AI pre-trade, 2026)</td>
+<td>none published</td>
+<td>FY25 fixed-income data &amp; analytics revenue $1,234M; with CP+ it would own the largest pricing stack</td>
+</tr>
+<tr>
+<td><strong>Bloomberg</strong></td>
+<td>BVAL / IBVAL</td>
+<td>"centered"; 92% inside CBBT bid/ask</td>
+<td>BVAL Score explicitly <em>not</em> an accuracy measure</td>
+</tr>
+<tr>
+<td><strong>Trumid</strong></td>
+<td>FVMP</td>
+<td>beats CP+ by 11% (self-reported)</td>
+<td>targets next D2D print; claims #1 in SS&amp;C 2026 study (not found publicly)</td>
+</tr>
+<tr>
+<td><strong>LSEG</strong></td>
+<td>Pricing Service</td>
+<td>—</td>
+<td>3M+ securities; its own 2025 review says AI pricing "mostly remain[s] in development." Also Tradeweb's controlling shareholder and Ai-Price distributor</td>
+</tr>
+<tr>
+<td><strong>S&amp;P Global</strong></td>
+<td>Evaluated pricing, PriceViewer, iBoxx</td>
+<td>none published</td>
+<td>quote/composite-driven; licenses <strong>MarketAxess CP+</strong> for corporates (see §5)</td>
+</tr>
+<tr>
+<td>SOLVE, BondCliQ, 7 Chord, Overbond</td>
+<td>AI / quote-based pricing</td>
+<td>no recent figures</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="5-sp-global-the-evaluator-that-bought-its-ai-instead-of-building-it">5. S&amp;P Global — the evaluator that bought its AI instead of building it</h2>
+<ul>
+<li><strong>What it has (from IHS Markit, merger closed Feb 28 2022):</strong> evaluated bond pricing (86,500+ corporates on 4M+ price observations in the 2022 data sheet; 1.2M+ corporate/sovereign/muni bonds by 2024; 7 regional snapshots a day); liquidity scores on a <strong>1–5</strong> scale (market depth, bid-offer, activity) with the inputs exposed; <strong>PriceViewer</strong> (110k+ bonds, some streaming); <strong>iBoxx</strong> indices (multi-source dealer prices under the iBoxx Pricing Rules, bid for constituents, last price carried forward when none); and ownership of <strong>CDX and iTraxx</strong>, the CDS indices both IG and HY credit hedging runs on.</li>
+<li><strong>Method is the mirror image of Ai-Price.</strong> S&amp;P is <em>quote- and composite-driven</em> (dealer quotes, parsed runs, with TRACE/MSRB as one input) and built for <strong>regulatory valuation</strong> — fund NAVs, IFRS 13 / ASC 820 fair-value levels, UCITS, prudent valuation — with an auditable price-challenge trail. Ai-Price is <em>trade-driven</em>, intraday, and built to <strong>predict the next print</strong> for execution. One is evidence for an auditor; the other is a signal for a trader.</li>
+<li><strong>No in-house ML model, no published accuracy.</strong> Instead, in <strong>Oct 2024 S&amp;P and MarketAxess struck a two-way deal</strong>: S&amp;P reference data into MarketAxess products; <strong>CP+ real-time prices ("powered by AI", two-sided, every 15–60s) into S&amp;P's evaluated pricing</strong>. By Sept 2025 S&amp;P described "exclusive access to MarketAxess CP+" so end-of-day evaluations line up with the levels traders see; munis next. <em>(Exclusivity terms unverified.)</em></li>
+<li><strong>The twist: ICE is buying MarketAxess.</strong> When that closes (H1 2027), S&amp;P's corporate evaluated pricing will rest on a feed owned by <strong>ICE — one of its two largest evaluated-pricing competitors</strong> (ICE FY25 FI data &amp; analytics: $1,234M). That is the single most important open question for S&amp;P in this market: does the CP+ deal survive change of control, and on what terms?</li>
+<li><strong>Where it sits organisationally:</strong> the July 2026 Market Intelligence reorg put pricing &amp; reference data in <em>Enterprise Solutions</em> (under Lending Solutions, beside ClearPar and WSO) — filed as workflow infrastructure, not a growth line. Kensho is now MI's "data and AI-delivery layer" (LLM-ready APIs, MCP connectors) but has no pricing model. MI FY25 revenue $4,916M; Indices $1,850M (+14%). Pricing revenue isn't broken out.</li>
+<li><strong>Ties to Tradeweb are about indices, not prices:</strong> iBoxx TRS and CDX/iTraxx trade on Tradeweb's SEF; InvestorAccess links to Tradeweb in European primary. Tradeweb's benchmark-price partner is FTSE Russell (LSEG), not S&amp;P.</li>
+<li><strong>The read (inference):</strong> the reference-price contest is sorting along venue lines — <strong>S&amp;P ↔ MarketAxess</strong> (soon ICE), <strong>LSEG/FTSE ↔ Tradeweb</strong>, <strong>ICE and Bloomberg vertically integrated</strong>. Trade-driven AI prices threaten S&amp;P's <em>evaluated pricing</em>; they don't touch its <em>index royalties</em> (iBoxx, CDX/iTraxx), which is where S&amp;P's moat in credit actually is.</li>
+</ul>
+<h2 id="6-market-structure-context-why-this-matters-now">6. Market structure context — why this matters now</h2>
+<ul>
+<li><strong>Electronification has plateaued in share, grown in size.</strong> ~44% of US corporate volume e-traded in 2024 (IG 48%, HY 33%); flat in 2025 (IG just under 50%, HY 32%). But ADV rose 11% to $51bn and average trade size 8.8% to $398k (Coalition Greenwich via The DESK). Barclays data: ~35% of IG blocks ≥ $5mm now trade via e-RFQ or mostly electronic PT, vs ~7% a decade ago.</li>
+<li><strong>Portfolio trading and all-to-all are the growth channels.</strong> MarketAxess US credit PT share a record 21% in FY25; Tradeweb credit PT ADV +56% YoY (Sept 2026). All-to-all was 11% of market volume in April 2025, up from 6% two years earlier. A portfolio trade prices hundreds of bonds at once — <strong>every one of them needs a model price</strong>.</li>
+<li><strong>Share has flipped.</strong> Tradeweb Sept 2026: 29.8% of US HG TRACE (21.9% fully electronic), 9.9% HY. The DESK's June 2026 calc: Tradeweb 18.0% vs MarketAxess 16.0% of IG+HY TRACE ADV, Tradeweb's widest lead yet. MarketAxess stays stronger in HY.</li>
+<li><strong>The economics:</strong> fees per trade are compressing (MarketAxess fee per million down 7.6% in FY25) while data revenue grows (Tradeweb market data $76.5M FY20 → $133.7M FY25, Q2 2026 +22.6%; ~$105M of FY26 expected from the LSEG contract). <strong>Pricing models are how a trading venue turns flow into a recurring, high-margin data line.</strong></li>
+<li><strong>The "$10mm auto-quote" claim</strong> comes only from Tradeweb's blog; no dealer or regulatory source found. Buy-side surveys rank better auto-quoting first among what they want from dealers, and banks switched auto-quoters off in March 2020 — the stress case again.</li>
+<li><strong>TRACE rules (as of 2026):</strong> 15-minute reporting stays. The SEC approved one-minute reporting for electronic trades in Sept 2024, FINRA never set an effective date, and SR-FINRA-2025-008 (approved Sept 16 2025) kept 15 minutes. Dissemination caps unchanged ($5mm IG / $1mm HY).</li>
+</ul>
+<h2 id="7-canon-lenses">7. Canon lenses</h2>
+<ul>
+<li><strong>Information goods &amp; lock-in</strong> (<a class="wiki" href="doc-canon-canon-shapiro-varian-information-rules.html">canon shapiro varian information rules</a>): a pricing model is a high-fixed-cost, near-zero-marginal-cost information good. The lock-in isn't the data — it's that clients <strong>tune auto-execution thresholds and baseline years of TCA history</strong> against one vendor's price. Switching means re-tuning both.</li>
+<li><strong>Counter-positioning &amp; scale economies</strong> (<a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a>): venues own proprietary flow that pure evaluators (S&amp;P, LSEG, Bloomberg's quotes) can't see. ICE buying MarketAxess is the evaluator buying the flow; Tradeweb is the flow building the evaluator.</li>
+<li><strong>Calibration</strong> (<a class="wiki" href="doc-canon-canon-tetlock-superforecasting.html">canon tetlock superforecasting</a>): a forecast with a stated σ can be scored on calibration, not just error. Tradeweb produces the σ and then doesn't score it — the Tetlock move would be to publish the reliability diagram.</li>
+<li><strong>Noise</strong> (<a class="wiki" href="doc-canon-canon-kahneman-sibony-sunstein-noise.html">canon kahneman sibony sunstein noise</a>): Cici, Gibson &amp; Merrick (JFE 2011) found mutual funds mark the <em>same bond</em> at different prices, widest for low-rated, long, small and volatile bonds. A shared model price reduces that noise — and concentrates the error when the model is wrong.</li>
+<li><strong>Tail blindness</strong> (<a class="wiki" href="doc-canon-canon-taleb-black-swan.html">canon taleb black swan</a>): a median over 18 calm-ish months says little about the three weeks that matter.</li>
+</ul>
+<h2 id="8-practitioner-counterpoint">8. Practitioner counterpoint</h2>
+<ul>
+<li>Tradeweb's framing: a state-of-the-art model, adaptive to market conditions, used across the trade lifecycle. That's plausible — its proprietary RFQ flow and European data are real inputs competitors lack, and the Sept 2026 upgrade is substantive.</li>
+<li>The skeptic's framing: a blog post that beats the floor and promises a whitepaper. Every vendor publishes this way; none submits to a common side-matched benchmark. <strong>Buy-side due diligence (and Rule 2a-5 fair-value testing) has to do the work vendors won't.</strong></li>
+<li>Both are right: the model is probably good; the evidence published so far can't tell you whether it's better than the one you already pay for.</li>
+</ul>
+<h2 id="9-what-to-look-for-in-the-promised-whitepaper">9. What to look for in the promised whitepaper</h2>
+<ol>
+<li>Same-side or side-adjusted last-print baseline, not just raw last print</li>
+<li>Head-to-head against at least one competitor (CP+, BVAL, ICE, FVMP) on the same trades</li>
+<li>Time-split out-of-sample results; point-in-time inputs</li>
+<li>p90/p99 errors and an April 2025 stress-window cut</li>
+<li>σ calibration (coverage at ±1σ / ±2σ)</li>
+<li>Results by trade size, and how capped prints are treated</li>
+<li>Entry into the SS&amp;C vendor study</li>
+</ol>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> (bonds trade OTC by RFQ — the setting where a model price stands in for a quote) · <a class="wiki" href="doc-notes-wss-credit-distressed.html">wss credit distressed</a> · <a class="wiki" href="doc-notes-wss-trading-hedge-funds.html">wss trading hedge funds</a> · <a class="wiki" href="doc-notes-bloomberg-terminal-instrumentation.html">bloomberg terminal instrumentation</a> · <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> · <a class="wiki" href="doc-notes-wss-scenario-map.html">wss scenario map</a> · <a class="wiki" href="doc-canon-canon-shapiro-varian-information-rules.html">canon shapiro varian information rules</a> · <a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a> · <a class="wiki" href="doc-canon-canon-tetlock-superforecasting.html">canon tetlock superforecasting</a> · <a class="wiki" href="doc-canon-canon-kahneman-sibony-sunstein-noise.html">canon kahneman sibony sunstein noise</a> · <a class="wiki" href="doc-canon-canon-taleb-black-swan.html">canon taleb black swan</a></p>
+<hr />
+<h3 id="rep">Rep</h3>
+<p>Pick one liquid IG bond and one HY bond. From FINRA's free TRACE pages (finra-markets.morningstar.com), pull a day of prints. For each customer trade, compute the error of (a) the previous print of <em>any</em> side and (b) the previous print of the <em>same</em> side, against the trade. Report the median of each. The gap between (a) and (b) is your estimate of how much of a "beats last print" claim is bid/ask bounce. One paragraph: would Tradeweb's 30% survive a same-side baseline?</p>
+<p><strong>Sources used (2026-10-19):</strong>
+Tradeweb — <a href="https://www.tradeweb.com/newsroom/media-center/insights/blog/tradeweb-ai-price-evolving-credit-pricing-for-todays-market/">Ai-Price blog</a> · <a href="https://www.tradeweb.com/newsroom/media-center/news-releases/tradeweb-enhances-ai-price-advancing-corporate-bond-pricing/">Sept 22 2026 upgrade</a> · <a href="https://www.tradeweb.com/499a19/globalassets/newsroom/media-center/aiprice-whitepaper/tradeweb_aiprice_white_paper_march2020_final.pdf">2020 whitepaper</a> · <a href="https://tradeweb.com/newsroom/media-center/insights/blog/liquidity-is-in-the-eye-of-the-beholder2">Liquidity scores</a> · <a href="https://www.tradeweb.com/newsroom/media-center/news-releases/tradeweb-launches-a.i.-pricing-service-for-the-u.s.-municipal-bond-market">Muni Ai-Price (2022)</a> · <a href="https://www.tradeweb.com/newsroom/media-center/news-releases/tradeweb-announces-new-market-data-licensing-agreement-with-lseg/">LSEG licence (2023)</a> · <a href="https://www.tradeweb.com/4a22bd/globalassets/newsroom/07.29.26-earnings/tw-2026-q2_news-release.pdf">Q2 2026 results</a> · <a href="https://www.tradeweb.com/4a8230/globalassets/newsroom/10.06.26-mar/september-2026-tradeweb-monthly-data-report.pdf">Sept 2026 monthly data</a> · <a href="https://www.sec.gov/Archives/edgar/data/1758730/000175873026000015/tw-20251231.htm">FY25 10-K</a>
+Competitors — <a href="https://ir.theice.com/press/news-details/2026/Intercontinental-Exchange-to-Acquire-MarketAxess-Creating-a-Premier-Fixed-Income-Marketplace/default.aspx">ICE to acquire MarketAxess</a> · <a href="https://www.sec.gov/Archives/edgar/data/1278021/000119312526067009/mktx-20251231.htm">MKTX FY25 10-K</a> · <a href="https://www.trumid.com/fvmp-white-paper/">Trumid FVMP whitepaper</a> · <a href="https://www.bloomberg.com/professional/insights/data/pricing-insights-analyzing-quote-data-across-global-credit-markets">Bloomberg IBVAL back-test</a> · <a href="https://www.fi-desk.com/ice-size-adjusted-pricing-sap/">ICE CEP / SAP</a> · <a href="https://ir.theice.com/press/news-details/2026/ICE-Launches-AI-Powered-Fixed-Income-Pre-Trade-Analytics-for-Buyside-Investors/default.aspx">ICE Compass</a> · <a href="https://www.lseg.com/en/insights/data-analytics/lookback-2025-volatility-and-technology-drive-pricing-trends">LSEG 2025 pricing lookback</a> · <a href="https://solvefixedincome.com/resources/ai-driven-confidence-in-corporate-bond-pricing/">SOLVE AI confidence</a> · <a href="https://www.ssctech.com/blog/evaluating-fixed-income-pricing-vendors">SS&amp;C vendor study</a>
+S&amp;P Global — <a href="https://cdn.ihs.com/www/pdf/Pricing-Data-Bonds.pdf">Pricing Data – Bonds sheet</a> · <a href="https://cdn.ihs.com/www/pdf/Pricing-Data-Liquidity-Services.pdf">Liquidity services sheet</a> · <a href="https://s201.q4cdn.com/767283836/files/doc_news/2024/Oct/31/SPGMI-and-MarketAxess-Announce-Strategic-Fixed-Income-Data-Partnership-Final.pdf">S&amp;P–MarketAxess partnership (Oct 2024)</a> · <a href="https://www.spglobal.com/spdji/en/documents/methodologies/methodology-iboxx-usd-liquid-5-9-to-50-index-full.pdf">iBoxx USD methodology</a> · <a href="https://www.spglobal.com/spdji/en/indices/products/markit-cdx.html">CDX product page</a> · <a href="https://press.spglobal.com/2026-07-06-S-P-Global-Evolves-Market-Intelligence-Operating-Model-to-Accelerate-Agentic-Solutions,-Platform-Capabilities-and-Innovation-Announces-Executive-Leadership-Changes">MI reorg (Jul 2026)</a> · <a href="https://www.sec.gov/Archives/edgar/data/64040/000006404026000007/a4q2025earningsrelease.htm">Q4 2025 results</a> · <a href="https://press.spglobal.com/2021-12-27-S-P-Global-and-IHS-Markit-Announce-Agreements-to-Sell-Base-Chemicals-and-CUSIP-Businesses">2021 divestitures</a>
+Market structure — <a href="https://coalitiongreenwich.crisil.com/en/homepage/what-we-do/latest-thinking/blogs/2025/Ten-years-of-fixed-income-market-structure-evolution.html">Coalition Greenwich: ten years of FI structure</a> · <a href="https://www.fi-desk.com/?p=27374">The DESK: 2025 e-trading</a> · <a href="https://www.fi-desk.com/marketaxess-loses-grip-on-us-credit-e-trading/">The DESK: MarketAxess loses grip</a> · <a href="https://www.thetradenews.com/?p=100205">All-to-all 11%</a> · <a href="https://news.bgov.com/banking-law/wall-street-is-trusting-bots-with-biggest-corporate-bond-trades">Bots and big bond trades (Bloomberg)</a> · <a href="https://www.finra.org/rules-guidance/rule-filings/sr-finra-2025-008">SR-FINRA-2025-008</a> · <a href="https://fred.stlouisfed.org/data/BAMLH0A0HYM2">FRED HY OAS</a> · <a href="https://fred.stlouisfed.org/data/BAMLC0A0CM">FRED IG OAS</a> · <a href="https://www.spglobal.com/spdji/en/documents/commentary/market-commentary-fixed-income-index-products-annual-report-2025.pdf">S&amp;P DJI 2025 FI annual report</a>
+Academic — <a href="https://papers.ssrn.com/ab_id=1478813">Bessembinder et al. (RFS 2009)</a> · <a href="https://ideas.repec.org/a/eee/jfinec/v101y2011i1p206-226.html">Cici, Gibson &amp; Merrick (JFE 2011)</a> · <a href="https://www.sfi.ch/en/publications/n-20-110-the-cross-sectional-pricing-of-corporate-bonds-using-big-data-and-machine-learning">Bali et al., Merton Meets ML</a> · <a href="https://www.aqr.com/Insights/Research/Working-Paper/Modeling-Corporate-Bond-Returns">Kelly, Palhares &amp; Pruitt (JF 2023)</a> · <a href="https://arxiv.org/abs/2604.07880">Dickerson, Robotti &amp; Rossetti (2026)</a> · <a href="https://www.arxiv.org/abs/1601.01987">Sirignano, deep order-book models</a></p></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-tiger-sisters-wealth-mechanics.html"><span>Previous</span>Wealth-Building Deal Mechanics — de León &amp; Codie Sanchez (Tiger Sisters)</a><a class="doc-next" href="doc-notes-trading-floor-mechanics.html"><span>Next</span>Trading floor mechanics — how the institutions on the other side of the trade are actually organized</a></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

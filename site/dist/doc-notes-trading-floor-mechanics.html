@@ -1,0 +1,667 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Trading floor mechanics — how the institutions on the other side of the trade are actually organized · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Trading floor mechanics — how the institutions on the other side of the trade are actually organized</h1>
+<div class="doc-meta"><span>19 min read</span><span>4,346 words</span><span>Updated 2026-10-19</span><span class="doc-src">notes/trading-floor-mechanics.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#1-two-institutions-two-shapes">1 · Two institutions, two shapes</a></li><li class="l2"><a href="#2-the-two-axes-that-organize-the-entire-industry">2 · The two axes that organize the entire industry</a></li><li class="l3"><a href="#axis-1-buy-side-vs-sell-side">Axis 1 — buy side vs. sell side</a></li><li class="l3"><a href="#axis-2-front-middle-back-office">Axis 2 — front / middle / back office</a></li><li class="l2"><a href="#3-three-sell-side-seats-compared">3 · Three sell-side seats, compared</a></li><li class="l3"><a href="#the-day-hour-by-hour">The day, hour by hour</a></li><li class="l3"><a href="#3c-buy-side-vs-sell-side-research-and-the-principle-underneath">3c · Buy-side vs. sell-side research — and the principle underneath</a></li><li class="l2"><a href="#4-the-bank-floor-as-an-organizational-machine">4 · The bank floor as an organizational machine</a></li><li class="l3"><a href="#the-split-that-defines-everything-risk-vs-client">The split that defines everything: risk vs. client</a></li><li class="l3"><a href="#information-barriers-are-physical-and-temporal-not-just-policy">Information barriers are physical and temporal, not just policy</a></li><li class="l3"><a href="#sound-as-an-instrument">Sound as an instrument</a></li><li class="l3"><a href="#how-large-orders-actually-move-the-part-the-program-cant-see-from-filings">How large orders actually move — the part the program can't see from filings</a></li><li class="l3"><a href="#verification-discipline">Verification discipline</a></li><li class="l3"><a href="#on-ai-from-someone-deploying-it">On AI, from someone deploying it</a></li><li class="l2"><a href="#5-the-prop-desk-as-a-learning-machine-and-the-mechanism-finding">5 · The prop desk as a learning machine — and the mechanism finding</a></li><li class="l2"><a href="#6-what-crosses-over-and-what-does-not">6 · What crosses over, and what does not</a></li><li class="l2"><a href="#7-where-the-terminal-actually-sits-on-a-floor">7 · Where the Terminal actually sits on a floor</a></li><li class="l2"><a href="#8-what-this-gives-the-program">8 · What this gives the program</a></li><li class="l2"><a href="#9-links">9 · Links</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p><strong>Sources — two filmed institutions:</strong> <em>Inside UBS' $3b-a-day Sydney trading floor</em> (Markets with
+Madison, ~27k chars), a tour of a 117-person bank floor with the executive who runs it; <em>Inside One
+of the World's Top Proprietary Trading Desks</em> (SMB Capital, ~16k chars), a 50-trader prop firm
+filmed across one intern's day. <strong>Plus six role-structure sources</strong> (~49k chars): a former J.P.
+Morgan analyst comparing IB / equity research / S&T; a buy-side equity research analyst in
+conversation; a Morgan Stanley S&amp;T VP's hour-by-hour day; front/middle/back office; buy-side vs
+sell-side; S&amp;T explained. Raw at <code>_ingest/raw/2026-09-26/media/{workflows,institutional}/</code>.</p>
+<p><strong>Why this note exists:</strong> the program can read any company's filings and price any security, and has
+no picture of the <strong>institution on the other side of the trade</strong> — how a floor is divided, who
+actually decides, how information is walled off, and how professional judgment is drilled. That is
+tacit, organizational knowledge; it is not in EDGAR and not in the canon. It is also the layer that
+<a class="wiki" href="doc-notes-bloomberg-terminal-instrumentation.html">bloomberg terminal instrumentation</a> kept gesturing at without describing: the <code>IB</code> network and
+the $30k seat only make sense once you can see the floor they sit on. Maps to <strong>Course 06</strong>
+(Operations), <strong>Course 09</strong> (Leadership &amp; Org Behavior), <strong>Course 11</strong> (Global Strategy &amp; Macro),
+<strong>E8</strong> (Stakeholder &amp; Investor Relations), and — most usefully — to <code>acumen/MECHANISM.md</code>.</p>
+<p><strong>Provenance:</strong> §§1–5 and §7 are from the sources. §6 is this note's own comparison; §8 is the
+program-integration argument and the triangulation in §3c is this note's, not any source's.</p>
+<p>⚠ <strong>Every institution here is self-presented.</strong> The SMB film is a recruitment video ending in a hard
+sales pitch; its headline statistics are marketing and are flagged as such in §5. The UBS film is a
+sanctioned PR tour on a literally prescribed route. The role-structure sources are career-content
+creators, several selling something. Read all of it as <em>shape</em>, not as audit — hours, pay bands and
+headcounts especially.</p>
+</blockquote>
+<hr />
+<h2 id="1-two-institutions-two-shapes">1 · Two institutions, two shapes</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th></th>
+<th><strong>UBS Sydney</strong></th>
+<th><strong>SMB Capital</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type</td>
+<td>Bank markets division</td>
+<td>Proprietary trading firm</td>
+</tr>
+<tr>
+<td>Headcount</td>
+<td>117 on the floor</td>
+<td>50+ traders</td>
+</tr>
+<tr>
+<td>Whose money</td>
+<td>Clients', plus principal risk</td>
+<td>The firm's</td>
+</tr>
+<tr>
+<td>Turnover</td>
+<td>A$8–10bn securities/day, ~20% of ASX</td>
+<td>Not disclosed</td>
+</tr>
+<tr>
+<td>Organizing unit</td>
+<td>Three businesses, 22 risk buckets</td>
+<td>Desks + intern teams</td>
+</tr>
+<tr>
+<td>What it optimizes</td>
+<td>Risk-adjusted return <strong>and</strong> client service</td>
+<td>Trader development</td>
+</tr>
+<tr>
+<td>Traders as share of staff</td>
+<td><strong>15–20%</strong></td>
+<td>Nearly all</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row is the one that reframes everything. On a bank "trading floor," four in five people are
+not traders. The rest are research, sales-trading, advisory sales, and support — roughly <strong>40
+distinct jobs</strong>. The program's mental image of finance is almost entirely the 15%.</p>
+<hr />
+<h2 id="2-the-two-axes-that-organize-the-entire-industry">2 · The two axes that organize the entire industry</h2>
+<p>Everything in finance sits somewhere on two independent axes. Learn these and most job titles decode
+themselves.</p>
+<h3 id="axis-1-buy-side-vs-sell-side">Axis 1 — buy side vs. sell side</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Sell side</strong></th>
+<th><strong>Buy side</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Does what</td>
+<td>Raises capital for companies, sells securities, advises on deals</td>
+<td>Invests other people's money</td>
+</tr>
+<tr>
+<td>Earns from</td>
+<td>Fees and commissions — <em>volume</em></td>
+<td>Management fee (regardless of outcome) <strong>+ performance fee, typically ~20% of gains</strong></td>
+</tr>
+<tr>
+<td>Incentive it creates</td>
+<td>Sell more, to more clients</td>
+<td>Be right, and be right in a way you can hold</td>
+</tr>
+<tr>
+<td>Who</td>
+<td>Investment banks, brokers</td>
+<td>Asset managers, hedge funds, PE, VC, pension funds</td>
+</tr>
+<tr>
+<td>Entry-level roles</td>
+<td><strong>Plentiful</strong> — IB, ER, S&amp;T all recruit undergrads</td>
+<td>Scarce; typically wants 2–4 years first</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two depend on each other completely: the sell side prices and distributes what the buy side buys.
+And the naming is genuinely confusing — <strong>the big banks run both.</strong> J.P. Morgan, Goldman and UBS all
+have asset management arms that are buy side. When someone says "sell side," they mean the investment
+banking division specifically.</p>
+<p>The compensation difference at entry is small (both roughly six figures including bonus); the <em>skill</em>
+divergence is large and arrives with seniority. <strong>Senior sell side becomes a salesperson. Senior buy
+side becomes a researcher and modeller.</strong> That is the fork worth knowing before choosing a first job.</p>
+<h3 id="axis-2-front-middle-back-office">Axis 2 — front / middle / back office</h3>
+<p>Orthogonal to the first, and it is purely about client contact:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th></th>
+<th>Who</th>
+<th>Job</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Front</strong></td>
+<td>IB, S&amp;T, research</td>
+<td>Face the client. Generate revenue</td>
+</tr>
+<tr>
+<td><strong>Middle</strong></td>
+<td>Risk management, compliance, finance control, strategy</td>
+<td><strong>Check the front office</strong> — ensure it isn't out of compliance or taking risk the bank shouldn't hold</td>
+</tr>
+<tr>
+<td><strong>Back</strong></td>
+<td>Technology, operations</td>
+<td>Make it run. No client contact</td>
+</tr>
+</tbody>
+</table></div>
+<p>The middle office exists to constrain the front office, which means the bank is deliberately built
+with an internal adversary. Worth holding next to §4's carpet and meeting separation: <strong>a bank's
+org chart is substantially a risk-control artifact</strong>, not a productivity one.</p>
+<hr />
+<h2 id="3-three-sell-side-seats-compared">3 · Three sell-side seats, compared</h2>
+<p>The clearest single source here is a former J.P. Morgan analyst comparing the three front-office
+tracks. Condensed:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Investment Banking</strong></th>
+<th><strong>Equity Research</strong></th>
+<th><strong>Sales &amp; Trading</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Core output</td>
+<td>M&amp;A and capital raising</td>
+<td>Reports that inform investors</td>
+<td>Execution and market making</td>
+</tr>
+<tr>
+<td>Junior does</td>
+<td>Excel models, PowerPoint pitchbooks, filing/industry research, meetings</td>
+<td>The research, the operating models, the write-ups</td>
+<td>Learns the book, the flow, the clients</td>
+</tr>
+<tr>
+<td>Senior does</td>
+<td>Originates deals</td>
+<td>Relationships with management teams and investors</td>
+<td>Relationships and risk</td>
+</tr>
+<tr>
+<td>Hours</td>
+<td><strong>70–100/wk</strong> as analyst; 60–90 associate; 50–80 VP; 40–60 director</td>
+<td>60–70 average, <strong>spiking past 100 at earnings</strong></td>
+<td>Market hours — early start, hard stop</td>
+</tr>
+<tr>
+<td>Weekends</td>
+<td>0–20 hrs, only on live deals</td>
+<td><strong>Saturdays are sacred</strong></td>
+<td>Largely free</td>
+</tr>
+<tr>
+<td>Team shape</td>
+<td>One analyst + one associate per deal</td>
+<td>3–6 people covering 10–30 companies</td>
+<td>Flat — analysts sit beside MDs</td>
+</tr>
+<tr>
+<td>Tools</td>
+<td><em>"PowerPoint and Excel"</em></td>
+<td><em>"Word docs and Excel"</em></td>
+<td><strong><em>"Bloomberg and your phone"</em></strong></td>
+</tr>
+<tr>
+<td>Exit options</td>
+<td><strong>Widest</strong> — PE, hedge funds, corp dev, IR, operations</td>
+<td>Same minus PE; many to hedge funds</td>
+<td><strong>Narrowest</strong> — markets only</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three structural facts that matter more than the table:</p>
+<p><strong>1. The banking hours are driven by secrecy, not volume.</strong> M&amp;A is confidential to a handful of
+C-suite executives, so deals are compressed to limit leakage — and each deal team is <em>one analyst and
+one associate.</em> The 100-hour week is a consequence of a small team holding a fast, secret process. And
+it is bursty: with no live deal, analysts leave at 8–10pm with no weekend work.</p>
+<p><strong>2. Two of the three seats are structurally shrinking.</strong> Equity research is contracting <em>"due to
+data being so widespread and accessible via the internet"</em> — the exact thesis this program is built
+on, eroding an industry from underneath. And S&amp;T is contracting through automation, with one figure
+that should be read twice: <strong>Goldman's cash equities desk went from ~600 traders in 2000 to 2.</strong></p>
+<p><strong>3. Hierarchy is near-identical in IB and S&amp;T</strong> — analyst → associate → VP → director → MD, roughly
+2–3 years to VP and 3–5 more to MD — but equity research is idiosyncratic: you <em>start</em> as an associate,
+get promoted <em>to</em> analyst, and every level above (VP, SVP, director, MD) is still called an analyst.</p>
+<h3 id="the-day-hour-by-hour">The day, hour by hour</h3>
+<p>A Morgan Stanley S&amp;T VP's actual schedule, which is the most concrete artifact in the corpus:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>04:00</td>
+<td>Up</td>
+</tr>
+<tr>
+<td>06:00</td>
+<td>At the desk. Breakfast there</td>
+</tr>
+<tr>
+<td>07:00</td>
+<td><strong>Global S&amp;T call</strong> — clients, markets, urgent updates</td>
+</tr>
+<tr>
+<td>08:00</td>
+<td><strong>Team meeting</strong>, ~30 min</td>
+</tr>
+<tr>
+<td>08:30–09:30</td>
+<td>Overnight email from a global team. <em>"Even if you don't have answers, let people know you've read them"</em></td>
+</tr>
+<tr>
+<td>09:30–12:00</td>
+<td>Yesterday's unfinished work</td>
+</tr>
+<tr>
+<td>12:00</td>
+<td><strong>Lunch at the desk</strong> — protocol, because everyone woke at 4</td>
+</tr>
+<tr>
+<td>12:30–14:00</td>
+<td>New projects</td>
+</tr>
+<tr>
+<td>14:00</td>
+<td>Coffee run, ~15 min</td>
+</tr>
+<tr>
+<td>14:30–close</td>
+<td><strong>Meetings and 1:1s</strong> — the only window, because colleagues are with clients until then</td>
+</tr>
+<tr>
+<td>17:45–18:00</td>
+<td>Out</td>
+</tr>
+</tbody>
+</table></div>
+<p>Sleep: four and a half to five hours, <em>"my entire tenure there from associate through VP."</em> Note the
+shape rather than the heroics — <strong>the only uninterrupted work block is 09:30 to 12:00</strong>, and meetings
+are pushed to the back of the day because client duty owns the front of it.</p>
+<hr />
+<h3 id="3c-buy-side-vs-sell-side-research-and-the-principle-underneath">3c · Buy-side vs. sell-side research — and the principle underneath</h3>
+<p>The two do the same nominal job and are not the same activity at all. From a buy-side analyst
+describing the difference directly:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Sell-side report</strong></th>
+<th><strong>Buy-side report</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shape</td>
+<td><em>"Here's what happened, here's kind of what we think, here's a target price"</em></td>
+<td><em>"What are the actual drivers… why does this company exist, who are they taking money from, how would you estimate the actual market"</em></td>
+</tr>
+<tr>
+<td>Length</td>
+<td>Initiation 20–100pp; updates 1–10pp</td>
+<td>Initiation <strong>40–50pp</strong>, and denser</td>
+</tr>
+<tr>
+<td>Published?</td>
+<td>Yes — that's the product</td>
+<td><strong>No.</strong> Proprietary, written for the PM</td>
+</tr>
+<tr>
+<td>Being wrong costs</td>
+<td><em>"Maybe affects your ranking on Bloomberg, but that's about it"</em></td>
+<td><em>"How much money can you lose, and how much would that lose for clients"</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Note the asymmetry in the last row. It is the entire explanation for why buy-side work is more
+qualitative and more paranoid: <strong>the consequence of error is denominated differently.</strong></p>
+<p>And then the practice that should be lifted into this program wholesale. Buy-side analysts <em>do</em> take
+the sell-side model — but only the reported financials, because <em>"it's hard to mess that up"</em> — and
+then <strong>rebuild the drivers tab themselves</strong>, refusing the assumptions entirely:</p>
+<blockquote>
+<p><em>"You want to have your own unbiased opinion… otherwise you don't have an opinion. If you're always
+consensus, just take their target price — you don't have to model it."</em></p>
+</blockquote>
+<p>You may look at the other analyst's conclusion <strong>afterwards</strong>, as a challenge to your own: <em>"why are
+you guys higher by this much, how'd you get to this valuation, I'm getting something different."</em>
+Order matters. Consensus consulted after you have a view is a stress test; consulted before, it is an
+anchor. Straight <a class="wiki" href="doc-canon-canon-kahneman-thinking-fast-and-slow.html">canon kahneman thinking fast and slow</a>.</p>
+<blockquote>
+<p><strong>The triangulation.</strong> Three independent sources, three different seats, one principle:</p>
+<ul>
+<li><a class="wiki" href="doc-notes-sec-filing-intelligence.html">sec filing intelligence</a> — Layer 1 (facts) is a commodity; Layer 3 (judgment) is the product.</li>
+<li><strong>Damodaran</strong>, from a live Terminal — take the raw data; refuse Bloomberg's computed cost of capital because it is opaque; <em>"it's my job to estimate"</em> those (<a class="wiki" href="doc-notes-bloomberg-terminal-instrumentation.html">bloomberg terminal instrumentation</a> §1).</li>
+<li><strong>A working buy-side analyst</strong> — take the reported financials; rebuild the drivers; hold consensus at arm's length until you have your own number.</li>
+</ul>
+<p><strong>Accept the facts. Refuse the judgment. Build your own.</strong> That is one sentence, arrived at
+independently by a data architecture, an academic, and a practitioner — and it is, exactly, what
+this program is for. It is also the sharpest available argument that <code>learn/</code>'s insistence on
+hand-computation (<code>learn/README.md</code> rule 2) is not pedagogical fussiness but professional practice.</p>
+</blockquote>
+<p>One scale marker to keep the romance out of it: a PM in this analyst's firm tracks <strong>50–100 companies</strong>
+and works most weekends, covering an international fund across Asian market hours as well.</p>
+<hr />
+<h2 id="4-the-bank-floor-as-an-organizational-machine">4 · The bank floor as an organizational machine</h2>
+<h3 id="the-split-that-defines-everything-risk-vs-client">The split that defines everything: risk vs. client</h3>
+<blockquote>
+<p><em>"Responsibility sits with the trader to take all of the risk, and then the client servicing group
+works around that trading business… The salesperson in each division is client-facing, the other's
+managing the risk. They're different roles."</em></p>
+</blockquote>
+<p>The floor's own analogy: the salesperson is who you meet at the car yard; the trader is the person
+who owns the lot and is actually buying and selling the car. <strong>Pricing and risk sit with one person;
+the relationship sits with another.</strong> Every other structure on the floor — meetings, seating,
+information barriers — follows from keeping those two things apart.</p>
+<h3 id="information-barriers-are-physical-and-temporal-not-just-policy">Information barriers are physical and temporal, not just policy</h3>
+<p>The single most instructive detail in either source. UBS's Chinese walls are implemented in <strong>carpet
+colour</strong>:</p>
+<ul>
+<li><strong>Dark grey carpet</strong> — no phones, no cameras. Sensitive market information is on the screens.</li>
+<li><strong>Light grey carpet</strong> — visitors may walk and talk.</li>
+</ul>
+<p>And in <strong>the meeting calendar</strong>:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Meeting</th>
+<th>Why it is separate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5:30–5:45am</td>
+<td>Equities team arrives</td>
+<td>—</td>
+</tr>
+<tr>
+<td>7:30</td>
+<td><strong>Flow</strong> meeting</td>
+<td>Client flow</td>
+</tr>
+<tr>
+<td>7:45</td>
+<td><strong>Research analyst</strong> meeting</td>
+<td><em>"Those groups need to be segregated. We keep client flow away from different parts of the business."</em></td>
+</tr>
+<tr>
+<td>8:00</td>
+<td><strong>Rates</strong> meeting</td>
+<td>Macro, after the bottom-up</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two meetings fifteen minutes apart that could trivially be one, held separately <em>because</em> combining
+them would leak client flow into research. The compliance requirement has been converted into
+architecture and calendar rather than a policy nobody reads. That is a systems-design lesson worth
+more than the finance content: <a class="wiki" href="doc-canon-canon-meadows-thinking-in-systems.html">canon meadows thinking in systems</a> — when you want a rule obeyed,
+build it into the structure so that breaking it requires deliberate effort, rather than relying on
+the agent's intention.</p>
+<p>Note also the sequence: <strong>bottom-up before macro.</strong> Equities flow and research at 7:30/7:45, rates
+and macro at 8:00.</p>
+<h3 id="sound-as-an-instrument">Sound as an instrument</h3>
+<blockquote>
+<p><em>"Those different sounds reflect a different trade… by hearing that sound you don't need to look at
+what's happened, you know what's happened."</em> … <em>"When it gets really loud, you hear that sound
+you're used to hearing over and above every other sound."</em></p>
+</blockquote>
+<p>The floor is audibly encoded — a futures contract trading sounds different from an equities print,
+and traders are tuned to their own. This is a redundant sensory channel deliberately maintained for
+exactly the conditions where the visual channel saturates. The stated reason:</p>
+<blockquote>
+<p><em>"When it's crazy, that's when mistakes happen… it's a bit like a sporting team. You can train all
+you like, but in a grand final in the last five minutes, that's when the game's won or lost. So we
+try and hardcode individuals to operate under stress."</em></p>
+</blockquote>
+<h3 id="how-large-orders-actually-move-the-part-the-program-cant-see-from-filings">How large orders actually move — the part the program can't see from filings</h3>
+<p>This is the concrete mechanics behind <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a>'s liquidity arguments:</p>
+<ul>
+<li><strong>Block threshold:</strong> ~$10m, <em>or</em> more than one day's average trading volume.</li>
+<li><strong>Frequency:</strong> the market sees 5–10 smaller blocks a day; the large ones come weekly, monthly, or quarterly.</li>
+<li><strong>Timeline:</strong> a $262m block took two to three days to source and negotiate. The largest NZ block cited — Auckland Council's $1.3bn Auckland Airport sell-down — was a negotiated transaction, not a market order.</li>
+<li><strong>Wall crossing:</strong> sourcing a block privately means handing a counterparty material non-public information under restriction. Named explicitly as routine.</li>
+<li><strong>Six execution platforms</strong> for a single equity order. The choice is a four-way trade-off: <em>commission, speed, size, discretion.</em></li>
+<li><strong>The facilitation desk</strong> takes principal risk — the bank buys your line onto its own book. <em>"Probably not the cheapest way to get it done, but it gets what you want done."</em></li>
+</ul>
+<p>And a candid statement of why scale is itself discretion: <em>"It's hard to see a high-volume trade when
+UBS is involved, when you're 20% market share."</em> Market share functions as camouflage. That is a
+<a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a> scale economy operating as a <em>client-facing feature</em>, not a cost advantage.</p>
+<h3 id="verification-discipline">Verification discipline</h3>
+<blockquote>
+<p><em>"Your first reaction isn't the right reaction. It's an emotional reaction based on something you've
+seen. Is what you've seen accurate and verified?… Generally we'll need things verified before
+acting. Particularly if a client's orders are involved. We're not about to risk that on the sake of
+an X headline."</em></p>
+</blockquote>
+<p>News no longer arrives only through the Terminal. The institutional response is not faster
+consumption but an interposed verification step — a deliberate latency <em>added</em> on the client-order
+path. Worth sitting next to <a class="wiki" href="doc-notes-bloomberg-terminal-instrumentation.html">bloomberg terminal instrumentation</a> §3: institutions pay enormous sums
+to reduce latency and then voluntarily reinstate some of it where being wrong is unrecoverable.</p>
+<h3 id="on-ai-from-someone-deploying-it">On AI, from someone deploying it</h3>
+<p>117 Copilot licences across the team. The honest part:</p>
+<blockquote>
+<p><em>"I think we're still grappling with how we monetize it… It makes what we do more efficient and
+quicker, which is great for clients. I can't see people paying for that improved efficiency. It's
+just expected. We're in the service industry."</em></p>
+</blockquote>
+<p>Efficiency gains in a service business are competed away into client expectation rather than captured
+as margin. Direct counterpoint to <a class="wiki" href="doc-notes-professional-services-leverage.html">professional services leverage</a> §6 — and the same structural
+question, asked by someone paying for the licences.</p>
+<hr />
+<h2 id="5-the-prop-desk-as-a-learning-machine-and-the-mechanism-finding">5 · The prop desk as a learning machine — and the mechanism finding</h2>
+<p>SMB's daily loop, as filmed:</p>
+<ol>
+<li><strong>AM meeting</strong> — the setups to be traded that day are named and their conditions specified. (<em>"You need to understand the setup where this is going to work exceptionally well, because otherwise you're subjecting yourself to all sorts of things that you can't control."</em>)</li>
+<li><strong>The open</strong> — traded live, with the whole desk on a voice channel and a text channel simultaneously. Ideas and reads are shared intraday.</li>
+<li><strong>11am meeting</strong> — teams present. The explicit instruction: <em>"As we go through the teams, please talk about a trade that did not work."</em></li>
+<li><strong>Daily report card</strong>, reviewed every day, with a coach.</li>
+</ol>
+<blockquote>
+<p><strong>This is a working instance of the exact three-leg mechanism <code>acumen/MECHANISM.md</code> specifies — and
+it turns every single day.</strong></p>
+</blockquote>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Leg</th>
+<th><code>acumen/MECHANISM.md</code></th>
+<th>SMB, observed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tool</strong></td>
+<td>Six-dimension rubric, memo spec</td>
+<td>The playbook: setups with defined core metrics, graded <strong>A+ / A / B / C</strong></td>
+</tr>
+<tr>
+<td><strong>Adoption</strong></td>
+<td>One scored rep/week, skipped weeks logged</td>
+<td>AM meeting → live trade → 11am presentation. Daily, mandatory, and <strong>competitive</strong> (teams contest a sword)</td>
+</tr>
+<tr>
+<td><strong>Inspection</strong></td>
+<td>Rubric score, monthly ledger read</td>
+<td>Daily report card with a coach who presses on the decision narrative</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three design features worth stealing:</p>
+<p><strong>1. The agenda item is failure.</strong> The meeting does not ask "what did you do." It asks for <em>a trade
+that did not work.</em> Disconfirming evidence is not something the reviewer must extract — it is the
+price of admission to the room. <code>MECHANISM.md</code> scores what you did; this <strong>selects for what didn't</strong>,
+which is a structurally different and stronger inspection leg.</p>
+<p><strong>2. The review target is the narrative, not the outcome.</strong> The coach:</p>
+<blockquote>
+<p><em>"Map out what was that mental story you were telling yourself during that execution, and key in on
+what was that key thing that made you hold for longer than you should have."</em></p>
+</blockquote>
+<p>The intern's own account of the mechanism working: he held a failed breakout through three separate
+exit signals, lost half a daily stop, and the lesson extracted was <em>"when I see these strong signs to
+exit, I should just exit — if a better setup presents itself I can always re-enter."</em> The reviewable
+unit is the decision process at the moment of the decision, recoverable only because it was written
+down the same day.</p>
+<p><strong>3. The stated objective is calibration, in plain language.</strong></p>
+<blockquote>
+<p><em>"The gap between what's actually happening and our perception of what's happening is pretty large
+almost all the time. Especially for developing traders, your goal is to narrow that gap."</em></p>
+</blockquote>
+<p>That is <code>MECHANISM.md</code>'s <strong>calibration error</strong> input, stated as the entire purpose of the training
+program rather than as one metric among five. Also straight <a class="wiki" href="doc-canon-canon-kahneman-thinking-fast-and-slow.html">canon kahneman thinking fast and slow</a>.</p>
+<p>Two further transferable details: interns build playbooks as <strong>graded taxonomies</strong> (define the setup,
+define the metrics that distinguish an A+ from a C, then defend classifications with examples) — which
+is a rubric-construction exercise, not a content exercise. And risk is discussed in <strong>units of daily
+stop</strong> (<em>"I was up like two daily stops on this, but ended up only getting out for half a daily
+stop"</em>), which normalizes P&amp;L into a bounded, comparable scale before it is ever discussed.</p>
+<p>⚠ <strong>Marketing, not evidence.</strong> The video closes by claiming a UC Davis study of "tens of millions of
+trades spanning 15 years" showing 99% of active retail traders never reach consistent profitability,
+and that SMB's traders succeed at "20 to 40 times the rate" of retail. Both appear inside a sales
+pitch for a paid product; neither is sourced on screen. The underlying academic literature
+(Barber &amp; Odean and the Brazilian day-trading studies) supports <em>directionally</em> poor retail outcomes
+but not these specific figures, and a firm's self-reported success multiple against an unmatched
+comparison group is not a measurement. <strong>Do not cite these numbers.</strong> The mechanism above stands on
+its own without them.</p>
+<hr />
+<h2 id="6-what-crosses-over-and-what-does-not">6 · What crosses over, and what does not</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th></th>
+<th>Bank floor</th>
+<th>Prop desk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary constraint</td>
+<td>Regulation, client duty, reputation</td>
+<td>Firm capital</td>
+</tr>
+<tr>
+<td>Failure mode feared</td>
+<td>A compliance breach or a client's order mishandled</td>
+<td>A trader who never becomes profitable</td>
+</tr>
+<tr>
+<td>Barriers</td>
+<td>Enforced <em>between</em> groups (carpet, meetings)</td>
+<td>Deliberately <em>removed</em> (voice channel all day)</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>Risk systems, oversight, "microscopically overseen"</td>
+<td>Daily coached review of the decision narrative</td>
+</tr>
+<tr>
+<td>Information sharing</td>
+<td>Restricted by design</td>
+<td>Maximized by design</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two are near-inversions on information flow, and for a coherent reason: the bank's risk is that
+information moves <em>between the wrong groups</em>; the prop desk's risk is that it fails to move <em>between
+the right people fast enough</em>. <strong>Neither is a best practice. Each is a response to a different
+liability.</strong> Copying the open voice channel into an organization with client duties would be a
+compliance incident; copying the carpet into a 50-person prop desk would destroy its only edge.</p>
+<p>The transferable layer is narrower than it looks, and it is the SMB review loop (§3) — because that
+addresses individual judgment formation, which is what <code>acumen/</code> exists to do.</p>
+<hr />
+<h2 id="7-where-the-terminal-actually-sits-on-a-floor">7 · Where the Terminal actually sits on a floor</h2>
+<p>Both films quietly answer a question <a class="wiki" href="doc-notes-bloomberg-terminal-instrumentation.html">bloomberg terminal instrumentation</a> could only assert.</p>
+<p>The Terminal is <strong>not the floor's nervous system.</strong> At UBS the primary real-time channels are
+proprietary risk systems, the squawk, the ambient sound of the room, and the phone; news increasingly
+arrives via X and is <em>deliberately slowed down</em> for verification. At SMB the traders execute through
+<strong>internal execution software</strong>, not a vendor terminal, and coordinate on a voice channel. Neither
+source mentions a Bloomberg function by name during live trading.</p>
+<p>This sharpens rather than contradicts the earlier note. The Terminal's institutional role is
+<strong>research, reference, analytics, and — above all — <code>IB</code>, the inter-firm messaging layer.</strong> That
+matches §2 of the instrumentation note exactly: the moat is the network, not the data. What these
+films add is that during the minutes that actually matter, a professional's attention is on systems
+the $30k seat does not provide and a retail user could never buy.</p>
+<hr />
+<h2 id="8-what-this-gives-the-program">8 · What this gives the program</h2>
+<p><strong>1. A rubric upgrade for <code>acumen/</code>.</strong> Add the SMB inspection design to <code>MECHANISM.md</code>: the rep's
+presentation slot should require <em>a call that did not work</em>, and the review should target the
+decision narrative at the moment of decision — not the outcome. Pair with the existing constraint
+audit from <a class="wiki" href="doc-notes-bloomberg-terminal-instrumentation.html">bloomberg terminal instrumentation</a> §7. Both are cheap, and both attack the failure
+mode the mechanism file already diagnosed.</p>
+<p><strong>2. A missing unit's worth of vocabulary.</strong> <code>learn/</code> teaches a beginner to read a company. Nothing in
+the program teaches who is on the other side of the trade. Block thresholds, wall crossing, principal
+vs. agency execution, facilitation, the sales/trader split, the sell-side research relationship — these
+are the terms that make <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> legible, and several are now in <code>GLOSSARY.md</code>.</p>
+<p><strong>3. An honest picture for Course 09 and E8.</strong> The floor is a management system: 22 risk buckets, 40
+job types, a "head coach" whose stated job is hardcoding people to perform under stress, and an
+explicit trade-off between information barriers and information flow. That is org design with a
+scoreboard attached — rarer and more useful than another leadership framework.</p>
+<p><strong>4. A correction to the program's mental model.</strong> Traders are 15–20% of a trading floor. If the
+curriculum's image of institutional finance is a person with six monitors, it is picturing a minority
+of a minority, and mis-pricing which careers and which skills the field actually consumes.</p>
+<p><strong>5. The strongest available validation of the program's method — and it is §3c.</strong> <em>Accept the facts,
+refuse the judgment, build your own</em> is now attested by a data architecture, by the academic the
+curriculum already cites, and by a working buy-side analyst, none of whom were talking to each other.
+That single sentence is a better statement of what this program does than anything currently in
+<code>README.md</code>, and it belongs in the argument spines rather than buried in a practitioner note.</p>
+<p><strong>6. A live warning about the destination.</strong> Two of the three front-office seats are shrinking, and
+for the reason this program depends on: equity research is contracting <em>because</em> data became
+"widespread and accessible via the internet," and Goldman's cash equities desk went from ~600 traders
+to 2. The free-data thesis is not only a student's convenience — it is dissolving the jobs that used
+to be the payoff for learning this. Worth stating plainly wherever the curriculum implies a career.</p>
+<hr />
+<h2 id="9-links">9 · Links</h2>
+<p><strong>Repo:</strong> <a class="wiki" href="doc-notes-bloomberg-terminal-instrumentation.html">bloomberg terminal instrumentation</a> (§5 here places the Terminal on a real floor; §6
+extends that note's constraint audit) · <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> (block trades, dark pools,
+VWAP and the closing auction, now with the desk-level mechanics underneath) ·
+<a class="wiki" href="doc-notes-market-structure-24-5-institutional-response.html">market structure 24 5 institutional response</a> · <a class="wiki" href="doc-notes-professional-services-leverage.html">professional services leverage</a> (§2's AI
+efficiency argument is the same question from the buyer's side) · <a class="wiki" href="doc-notes-sec-filing-intelligence.html">sec filing intelligence</a> (what
+filings <em>cannot</em> show you: this) · <code>acumen/MECHANISM.md</code> (§3 and §6 — the main contribution)</p>
+<p><strong>Canon:</strong> <a class="wiki" href="doc-canon-canon-meadows-thinking-in-systems.html">canon meadows thinking in systems</a> (barriers built into structure rather than policy) ·
+<a class="wiki" href="doc-canon-canon-kahneman-thinking-fast-and-slow.html">canon kahneman thinking fast and slow</a> (the perception/reality gap, stated as a training objective) ·
+<a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a> (market share as discretion — a scale economy sold as a client feature) ·
+<a class="wiki" href="doc-canon-canon-grove-high-output-management.html">canon grove high output management</a> (the floor as a production system; the "head coach" framing) ·
+<a class="wiki" href="doc-canon-canon-klein-sources-of-power.html">canon klein sources of power</a> (the audible channel — recognition-primed decision under saturation) ·
+<a class="wiki" href="doc-canon-canon-mauboussin-success-equation.html">canon mauboussin success equation</a> (why a firm's self-reported success multiple is not a measurement)</p></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-tradeweb-ai-price.html"><span>Previous</span>Note · Tradeweb Ai-Price — what a &quot;30% better&quot; bond-pricing claim does and doesn&#x27;t prove</a><a class="doc-next" href="doc-notes-wall-street-skinny-insights.html"><span>Next</span>The Wall Street Skinny — Insight Extraction (the capital-markets plumbing layer)</a></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>

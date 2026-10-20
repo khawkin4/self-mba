@@ -1,0 +1,163 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Note · AWS — Building Mechanisms &amp; the Operational Readiness Review · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="canon">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-canon.html">Canon Notes</a></nav>
+<div class="doc-kicker">The reading backbone</div>
+<h1 class="doc-title">Note · AWS — Building Mechanisms &amp; the Operational Readiness Review</h1>
+<div class="doc-meta"><span>6 min read</span><span>1,391 words</span><span>Updated 2026-10-19</span><span class="doc-src">notes/canon/canon-aws-mechanisms-orr.md</span></div>
+</header>
+<div class="doc-layout">
+
+<article class="prose">
+<blockquote>
+<p>Canon · Cluster: Org Design &amp; Mechanisms · Maps to <strong>E11</strong> (Personal Operating System), <strong>E5</strong>
+(Transformation), <strong>Course 06</strong> (Operations), <strong>E1</strong> (Leading at Scale)</p>
+<p><strong>Primary-source method note, not a book.</strong> The cluster already holds the <em>assertion</em> that
+mechanisms beat intentions (<a class="wiki" href="doc-canon-canon-bezos-shareholder-letters.html">canon bezos shareholder letters</a>) and a <em>goal-setting</em> tool
+(<a class="wiki" href="doc-canon-canon-doerr-measure-what-matters.html">canon doerr measure what matters</a>). Neither tells you how to build one. This note is the
+construction method, taken from the only place AWS publishes it in full.</p>
+</blockquote>
+<ul>
+<li><strong>Source:</strong> AWS Well-Architected, <em>Building mechanisms</em> + <em>The ORR mechanism</em> (tool / adoption /
+  inspection / iteration / Appendix A) · AWS Enterprise Strategy, <em>Strategy is a winding road;
+  mechanisms keep you on track</em> · AWS Prescriptive Guidance, <em>Theme 8: Implement mechanisms for manual
+  processes</em> · <em>Elements of Amazon's Day 1 Culture</em> (Daniel Slater, AWS, 2023) · Amazon Science, <em>How
+  mechanism design theory helps optimize Amazon vendor collaboration</em></li>
+<li>
+<p><strong>Core claim:</strong> A mechanism is not a process or a policy. Verbatim: <em>"A mechanism is a complete
+  process where you create a <strong>tool</strong>, drive <strong>adoption</strong> of the tool, and <strong>inspect</strong> the results in
+  order to make course corrections… It takes controllable <strong>inputs</strong> and transforms them into ongoing
+  <strong>outputs</strong> to address a recurring business challenge."</em> Drop any one of the three legs and what you
+  have is a good intention with paperwork.</p>
+</li>
+<li>
+<p><strong>Framework — the seven steps, as AWS actually built the ORR:</strong>
+  1. <strong>Work backwards from the challenge</strong> and state the outputs as <em>countable</em> results. AWS wanted
+     availability, so it named three: incidents that are <strong>fewer, shorter, smaller</strong>. Not a vision
+     statement — three things you can count, or you cannot inspect later.
+  2. <strong>Name the controllable inputs.</strong> For the ORR, <em>"the design and operations of those services are
+     the inputs."</em> Skipping this step is the usual reason a mechanism never moves anything.
+  3. <strong>Build the smallest tool.</strong> The ORR's tool is a <em>checklist of questions</em> — each one a question, a
+     paragraph of guidance, and answers carrying a risk rating (<em>"Do any of your hosts pin
+     certificates?"</em> → ☐ Yes | High Risk, ☐ No | No Risk). The web service came years later.
+  4. <strong>Source the content from your own failures.</strong> Appendix A walks a real incident (a manual IAM
+     change never written back into the CloudFormation template) into one checklist question. A mature
+     mechanism is a compiled history of your own outages.
+  5. <strong>Get adoption by embedding in a lifecycle that already exists.</strong> Despite the name, the ORR is not
+     a pre-launch gate — it is <em>"built into the entire Software Development Lifecycle."</em> New gates get
+     routed around.
+  6. <strong>Inspect at three altitudes.</strong> <em>Cadence</em>: a weekly ops metrics meeting up to SVP level, where one
+     inspected number is when a team last ran an ORR and how many action items are open. <em>Per instance</em>:
+     a written narrative reviewed with leadership; high-criticality findings escalate into a go / no-go.
+     <em>Meta</em>: the correction-of-error template asks <em>"When was your last ORR performed?"</em> and <em>"Would any
+     ORR recommendations have reduced or avoided the impact of this event?"</em> — every failure audits the
+     mechanism meant to prevent it.
+  7. <strong>Iterate, with a standing owner.</strong> <em>"It's unlikely that a mechanism will operate as designed from
+     day one."</em> A specialist community ("Operational Champions") both challenges answers during reviews
+     and curates the question list — checking each question asks the right thing and that its result can
+     be measured.</p>
+</li>
+<li>
+<p><strong>Second framework — mechanism vs. guardrail:</strong> a guardrail is a wall that engages only in an
+  emergency; a mechanism is a slope that re-centres you continuously. The image is a train wheel: the
+  flange touches the rail only in a crisis, while the sloped tread quietly re-centres the train on
+  every rotation. <strong>Design the slope.</strong> The cleanest example is a cloud migration run with <em>no
+  deadline</em>: remaining on-premises costs were allocated across whatever applications stayed, so each
+  team's bill rose as its neighbours left. Nobody was ordered to migrate; migrating became cheaper.</p>
+</li>
+<li>
+<p><strong>Third framework — when incentives are in play</strong> (Amazon Science): if the mechanism spans parties
+  with private information, you need <strong>incentive compatibility</strong> — truthful reporting must be each
+  party's best strategy <em>"regardless of what the other side does"</em> — and <strong>information privacy</strong>: the
+  vendor <em>"never reveals its cost structure, only its responses to iterative queries."</em> The transferable
+  moves are: price the deviation and charge it to whoever causes it; iterate proposals instead of
+  demanding disclosure; <strong>offer a menu, not a mandate</strong>.</p>
+</li>
+<li>
+<p><strong>Applies when:</strong> the problem <strong>recurs</strong>, you have a countable output, and the behaviour you want
+  currently depends on someone remembering. Also the diagnostic use: given anything called a process,
+  name its tool, its adoption route, and its inspection — the missing leg is the answer.</p>
+</li>
+<li>
+<p><strong>Breaks when:</strong></p>
+</li>
+<li><strong>The problem is one-off.</strong> A mechanism on a non-recurring problem is pure overhead; that is a
+    project. AWS is explicit that the cyclic form <em>"is best suited for solving recurring problems."</em></li>
+<li><strong>Inspection has no gravity.</strong> The guide's own warning: <em>"you will need to create an inspection
+    process that has the gravity to drive both cultural change and adoption of the mechanism's tool."</em>
+    Without a forum senior people already attend, steps 1–5 decay into paperwork. Theme 8 makes the same
+    point from the other side, naming executive sponsorship and named owners as prerequisites.</li>
+<li><strong>The process becomes the thing.</strong> Bezos, 2016: <em>"You stop looking at outcomes and just make sure
+    you're doing the process right… do we own the process or does the process own us?"</em> This is the
+    mechanism's own Day-2 failure, and the meta-inspection question in step 6 is the only defence in the
+    material.</li>
+<li><strong>Aggregate reporting hides the tail.</strong> The Day 1 whitepaper: average growth <em>"may mask underlying
+    trends and drivers that affect a meaningful number of customers."</em> A single contradicting anecdote is
+    data about the tail. Pairs with <a class="wiki" href="doc-canon-canon-tufte-visual-display.html">canon tufte visual display</a> and
+    <a class="wiki" href="doc-canon-canon-kahneman-thinking-fast-and-slow.html">canon kahneman thinking fast and slow</a> on what a summary statistic destroys.</li>
+<li>
+<p><strong>The metric is self-reported by someone it judges.</strong> Then you have built a machine that rewards
+    misreporting — see the incentive-compatibility framework above.</p>
+</li>
+<li>
+<p><strong>Practitioner counterpoint:</strong> <em>(not yet mined from the Reddit / YouTube corpus — run
+  <code>python3 _ingest/pull.py</code> before claiming an outside practitioner read.)</em> Two counterpoints are
+  available honestly without it. First, the mined corpus already in
+  <a class="wiki" href="doc-canon-canon-bezos-shareholder-letters.html">canon bezos shareholder letters</a> shows the <em>dissent</em> mechanism is the one that reliably rots:
+  r/ExperiencedDevs <em>"I'm giving up; becoming a yes man"</em> (1,668↑) and r/managers <em>"the 'silent
+  resignation' nobody notices"</em> (9,401↑) document Day-2 stasis arriving not from bad mechanisms but from
+  <strong>misaligned rewards underneath good ones</strong>. Second, and more usefully, <strong>this repository is itself a
+  failed-mechanism case study</strong>: <code>acumen/</code> shipped a complete tool on 2026-06-06 — six-dimension rubric,
+  red-team protocol, memo spec, pass thresholds — and produced zero scored reps in sixteen weeks,
+  because nothing cost anything when a week was skipped. <code>learn/VALIDATION.md</code>, which has all three
+  legs, produced five documented turns of improvement in the same period. Same author, same repo; the
+  difference is adoption and inspection. Written up in <code>acumen/MECHANISM.md</code>.</p>
+</li>
+<li>
+<p><strong>Shelf gap (deliberate, do not fake it):</strong> Bryar &amp; Carr's <em>Working Backwards</em> is the book-length
+  treatment of this material and the source of the PR/FAQ mechanism. It is cited <em>inside</em>
+  <a class="wiki" href="doc-canon-canon-bezos-shareholder-letters.html">canon bezos shareholder letters</a> but has no note of its own. It should get one — from an actual
+  read, not from summaries.</p>
+</li>
+<li>
+<p><strong>Links:</strong> <a class="wiki" href="doc-canon-canon-bezos-shareholder-letters.html">canon bezos shareholder letters</a> · <a class="wiki" href="doc-canon-canon-doerr-measure-what-matters.html">canon doerr measure what matters</a> ·
+  <a class="wiki" href="doc-canon-canon-4dx-four-disciplines-execution.html">canon 4dx four disciplines execution</a> (lead measures = controllable inputs) ·
+  <a class="wiki" href="doc-canon-canon-walsh-score-takes-care-of-itself.html">canon walsh score takes care of itself</a> (the standard of performance is the input; results lag) ·
+  <a class="wiki" href="doc-canon-canon-grove-high-output-management.html">canon grove high output management</a> (indicator pairing, leading indicators) ·
+  <a class="wiki" href="doc-canon-canon-goldratt-the-goal.html">canon goldratt the goal</a> (build the mechanism at the constraint, nowhere else) ·
+  <a class="wiki" href="doc-canon-canon-meadows-leverage-points.html">canon meadows leverage points</a> (inspection is a feedback loop; which loop you add is the leverage
+  choice) · <a class="wiki" href="doc-canon-canon-thaler-sunstein-nudge.html">canon thaler sunstein nudge</a> (the slope, not the wall — defaults over mandates) ·
+  <a class="wiki" href="doc-canon-canon-jensen-meckling-agency-theory.html">canon jensen meckling agency theory</a> (why self-reported metrics fail) ·
+  <a class="wiki" href="doc-canon-canon-clear-atomic-habits.html">canon clear atomic habits</a> (the one-person version: systems over willpower)</p>
+</li>
+</ul>
+<hr />
+<h3 id="rep">Rep</h3>
+<p>Take one thing you call a process. Write down its tool, who actually adopts it, and who inspects the
+result — with a date for the last inspection. Whichever of the three you cannot fill in is why it isn't
+working. Then add the meta-question to whatever template records your failures: <em>would this mechanism
+have prevented the last one?</em></p></article>
+</div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-canon-canon-ariely-predictably-irrational.html"><span>Previous</span>Note · Ariely — Predictably Irrational</a><a class="doc-next" href="doc-canon-canon-axelrod-evolution-of-cooperation.html"><span>Next</span>Note · Axelrod — The Evolution of Cooperation</a></nav>
+</div><script src="site.js?v=1792450065"></script></body></html>
