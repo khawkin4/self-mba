@@ -365,7 +365,8 @@ IC.update({
 })
 
 # Global chrome: one sticky nav on every page (home, modules, library, exams).
-SITE_NAV = f"""<header class="site-nav"><div class="sn-inner">
+SITE_NAV = f"""<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav"><div class="sn-inner">
 <a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
 <nav class="sn-links" aria-label="Site">
 <a href="index.html#path" data-nav="path">Path</a>
@@ -445,6 +446,32 @@ def render_edgar(blocks):
         out.append('<div class="edgar">' + "\n".join(lines) + "</div>")
     return "".join(out)
 
+def slugify(text):
+    t = re.sub(r"<[^>]+>", "", text)
+    t = html.unescape(t).lower()
+    t = re.sub(r"^\s*\d+[a-z]?\s*[·.:-]\s*", "", t)  # drop leading "3 · "
+    t = re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+    return t[:60] or "section"
+
+def anchor_headings(frag):
+    """Give lesson <h2>s stable ids (deep links + search) without touching lessons/*.html."""
+    seen = {}
+    def sub(m):
+        base = slugify(m.group(2)); n = seen.get(base, 0); seen[base] = n + 1
+        sid = base if n == 0 else f"{base}-{n+1}"
+        return f'<h2 id="{sid}"{m.group(1)}>{m.group(2)}</h2>'
+    return re.sub(r"<h2((?:\s[^>]*)?)>(.*?)</h2>", sub, frag, flags=re.S)
+
+def lesson_headings(frag):
+    out, seen = [], {}
+    for m in re.finditer(r"<h2(?:\s[^>]*)?>(.*?)</h2>", frag, flags=re.S):
+        raw = m.group(1); base = slugify(raw); n = seen.get(base, 0); seen[base] = n + 1
+        sid = base if n == 0 else f"{base}-{n+1}"
+        txt = html.unescape(re.sub(r"<[^>]+>", "", raw)).strip()
+        txt = re.sub(r"^\s*\d+[a-z]?\s*[·]\s*", "", txt)
+        if txt: out.append((txt, sid))
+    return out
+
 def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None, summaries=None):
     c = code(track, mid)
     title = TITLES.get(mid, mid)
@@ -457,7 +484,7 @@ def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None, summar
     if edgar: toc.append('<a href="#fin">Data · apply</a>')
     sections = []
     if lesson:
-        sections.append(f'<section id="lesson" class="lesson">{lesson}</section>')
+        sections.append(f'<section id="lesson" class="lesson">{anchor_headings(lesson)}</section>')
         # The connective tissue: name the learning loop so the sources aren't a junk drawer.
         modes = ["<b>learn</b> the theory (Lectures)"]
         if show_disc: modes.append("<b>stress-test</b> it against reality (Discussions)")
@@ -509,10 +536,10 @@ def render_module(track, mid, vids, reddit, edgar, prevnext, lesson=None, summar
 {desc_html}
 <div class="hairline"></div></header>
 <nav class="toc">{" ".join(toc)}</nav>"""+f"""
-<main>{"".join(sections)}</main>
+<main id="main">{"".join(sections)}</main>
 <div class="done-wrap">{done_btn}</div>
 <div class="toast" id="toast"></div>
-<div class="pn-bar"><div class="pn-wrap">{pn}</div></div>
+<nav class="pn-bar" aria-label="Previous and next module"><div class="pn-wrap">{pn}</div></nav>
 <a href="#" class="top">{IC['arrow-up']}</a>
 <script src="chart.min.js"></script>
 <script src="lesson.js?v={BUILD_VER}"></script>
@@ -580,7 +607,6 @@ def render_index(modules, stats, wc_data=None, graph_data=None, sources=None, li
 <div class="level-badge" id="level-badge">Analyst</div>
 <div class="streak-display" id="streak-display">{IC['flame']} <span class="streak-num" id="streak-num">0</span> <span class="streak-label">day streak</span></div>
 </div>
-<div class="continue" id="continue"><div class="continue-label">Continue where you left off</div><a href="#" id="continue-link"><span id="continue-title"></span>{IC['arrow-r']}</a></div>
 <div class="exam-links">
 <a class="exam-link" href="exam.html">{IC['pencil']} <span class="exam-title">Self-diagnostic</span> <span class="exam-sub">recall</span> {IC['arrow-r']}</a>
 <a class="exam-link bench" href="benchmark-exam.html">{IC['target']} <span class="exam-title">Benchmark</span> <span class="exam-sub">exam-level</span> {IC['arrow-r']}</a>
@@ -588,30 +614,31 @@ def render_index(modules, stats, wc_data=None, graph_data=None, sources=None, li
 
     # ---- the path: five stages read as one program ----
     lib_by = {c['slug']: c for c in (library or {}).get('collections', [])}
-    def stage(n, key, href, kicker, title, desc, meta, pct=None):
-        bar = f'<span class="stage-bar"><i data-width="{pct}"></i></span>' if pct is not None else ''
-        pct_lbl = f'<span>{pct}%</span>' if pct is not None else ''
-        return (f'<li class="stage" data-stage="{key}"><a href="{href}">'
+    def stage(n, key, href, kicker, title, desc, meta, docs=None, track=None):
+        data = f' data-track="{track}"' if track else ''
+        if docs: data += f" data-docs='{json.dumps(docs)}'"
+        return (f'<li class="stage" data-stage="{key}"{data}><a href="{href}">'
                 f'<span class="stage-top"><span class="stage-kicker">{esc(kicker)}</span><span class="stage-n">{n}</span></span>'
                 f'<b>{esc(title)}</b><p class="stage-desc">{esc(desc)}</p>'
-                f'<span class="stage-meta"><span>{esc(meta)}</span>{pct_lbl}</span>{bar}</a></li>')
+                f'<span class="stage-meta"><span>{esc(meta)}</span><span class="stage-prog">Not started</span></span>'
+                f'<span class="stage-bar"><i data-width="0"></i></span></a></li>')
     learn = lib_by.get('learn', {}); acumen = lib_by.get('acumen', {})
     stages = "".join([
         stage(0, 'learn', 'lib-learn.html', 'On-ramp', 'Zero to financial literacy',
               'Ten four-pillar units: concept, plain language, a real filing, an exercise.',
-              f"{learn.get('count', 10)} units"),
+              f"{learn.get('count', 10)} units", docs=learn.get('hrefs')),
         stage(1, 'core', '#t-core', 'Core', 'The twelve-course curriculum',
               'Accounting to capstone — interactive lessons distilled from lectures and filings.',
-              f"{cov['core'][1]} courses", cov['core'][2]),
+              f"{cov['core'][1]} courses", track='core'),
         stage(2, 'exec', '#t-exec', 'Executive', 'Leading at scale',
               'Capital allocation, M&A, governance, crisis — the operator-to-executive turn.',
-              f"{cov['exec'][1]} courses", cov['exec'][2]),
+              f"{cov['exec'][1]} courses", track='exec'),
         stage(3, 'canon', '#t-canon', 'Canon', 'The reading layer',
               'Twenty-three book clusters, each with its core claim, framework and failure modes.',
-              f"{cov['canon'][1]} clusters", cov['canon'][2]),
+              f"{cov['canon'][1]} clusters", track='canon'),
         stage(4, 'acumen', 'lib-acumen.html', 'Acumen Gym', 'Judgment under uncertainty',
               'Live cases, no answer key. Memos that get red-teamed, scored in a ledger.',
-              f"{acumen.get('count', 0)} cases"),
+              f"{acumen.get('count', 0)} cases", docs=acumen.get('hrefs')),
     ])
     path_html = f"""<section id="path" class="path">
 <div class="sec-head"><span class="kicker">The path</span><h2>Five stages, one program.</h2>
@@ -636,9 +663,13 @@ def render_index(modules, stats, wc_data=None, graph_data=None, sources=None, li
 <div class="eyebrow">Self-directed · Master's level · Updated {max(stats['date'], (library or {}).get('latest',[{}])[0].get('updated',''))}</div>
 <h1>The Compounding <em>MBA</em></h1>
 <p class="sub">A master's-level business education distilled from elite sources into interactive lessons, a reading canon and a library of practitioner notes — grounded in primary data.</p>
+<div class="hero-cta">
+<a class="cta" id="hero-cta" href="doc-learn-unit-01-reading-the-scoreboard.html" data-start="doc-learn-unit-01-reading-the-scoreboard.html"><span class="cta-label" id="cta-label">Start the On-ramp</span><span class="cta-sub" id="cta-sub">Unit 01 · Reading the scoreboard · 15 min</span>{IC['arrow-r']}</a>
+<a class="cta-alt" href="#path">See the whole path</a>
+</div>
 <div class="hero-grid">{stats_viz}{progress_card}</div>
 </header>
-<main>
+<main id="main">
 {path_html}
 {toolbar}
 <section id="t-core" class="track-section" data-track="core">
@@ -651,7 +682,8 @@ def render_index(modules, stats, wc_data=None, graph_data=None, sources=None, li
 </section>
 <section id="t-canon" class="track-section" data-track="canon">
 {track_head('The Canon', 'canon', '23 clusters', 'var(--canon)', 'Stage 3 · Reading layer')}
-<div class="grid">{cards('canon')}</div>
+<div class="grid trunc" data-show="8">{cards('canon')}</div>
+<button class="show-all" type="button" data-for="t-canon">Show all {cov['canon'][1]} clusters {IC['arrow-up']}</button>
 </section>
 <section id="t-gaps" class="track-section" data-track="gaps">
 {track_head('Technical Foundations', 'gaps', f'{len(modules["gaps"])} modules', 'var(--gaps)', 'Prerequisites · as needed')}
@@ -699,7 +731,7 @@ def library_html(lib):
     if not lib: return ""
     cards = "".join(f'''<a class="lcard" href="lib-{c['slug']}.html" data-coll="{c['slug']}">
 <span class="lcard-kicker">{esc(c['kicker'])}</span><h3>{esc(c['label'])}</h3><p>{esc(c['desc'])}</p>
-<span class="lcard-meta">{c['count']} docs · {c['words']:,} words · {c['updated']}</span></a>''' for c in lib["collections"])
+<span class="lcard-meta"><span class="lcard-read" data-docs='{json.dumps(c.get('hrefs', []))}'></span>{c['count']} docs · {c['words']:,} words · {c['updated']}</span></a>''' for c in lib["collections"])
     latest = "".join(f'''<li><a href="{d['href']}"><span class="lt-coll">{esc(d['coll'])}</span><span class="lt-title">{esc(d['title'])}</span><span class="lt-date">{d['updated']}</span></a></li>''' for d in lib["latest"])
     return f'''<section id="t-library" class="track-section" data-track="library">
 <div class="track-head"><span class="th-label"><small>Alongside the path</small>Library</span><span class="th-rule"></span>
@@ -729,7 +761,8 @@ LESSON_JS = r"""
   });
   // flip cards
   document.querySelectorAll('.fc').forEach(function(c){
-    c.addEventListener('click',function(){c.classList.toggle('flipped');});});
+    c.setAttribute('aria-pressed','false');
+    c.addEventListener('click',function(){var on=c.classList.toggle('flipped');c.setAttribute('aria-pressed',on?'true':'false');});});
   // click-to-reveal
   document.querySelectorAll('.reveal .reveal-q').forEach(function(q){
     q.addEventListener('click',function(){q.parentNode.classList.toggle('open');});});
@@ -918,15 +951,39 @@ INDEX_JS = r"""
     });},{threshold:0.3});
   document.querySelectorAll('.stat-bar-fill[data-width],.stage-bar i[data-width]').forEach(function(el){bObs.observe(el);});
 
-  // --- "Continue where you left off" (set by site.js on module + document pages) ---
+  // --- Hero CTA: first visit → start the On-ramp; returning → continue the last item ---
   try{
     var last=JSON.parse(localStorage.getItem('mba-last')||'null');
-    var cont=document.getElementById('continue');
-    if(last&&last.h&&cont){
-      document.getElementById('continue-link').href=last.h;
-      document.getElementById('continue-title').textContent=(last.c?last.c+' · ':'')+last.t;
-      cont.classList.add('show');}
+    var cta=document.getElementById('hero-cta');
+    if(last&&last.h&&cta){
+      cta.href=last.h;cta.classList.add('is-continue');
+      document.getElementById('cta-label').textContent='Continue: '+last.t;
+      document.getElementById('cta-sub').textContent=(last.c||'Where you left off');
+    }
   }catch(e){}
+
+  // --- Path stages: the reader's own progress (modules from mba-done-*, docs from mba-read-*) ---
+  function isRead(h){try{return localStorage.getItem('mba-read-'+h)==='1';}catch(e){return false;}}
+  document.querySelectorAll('.stage').forEach(function(st){
+    var done=0,total=0;
+    if(st.dataset.track){var cs=document.querySelectorAll('.mcard[data-track="'+st.dataset.track+'"]');total=cs.length;
+      cs.forEach(function(c){if(c.classList.contains('completed'))done++;});}
+    else if(st.dataset.docs){try{var docs=JSON.parse(st.dataset.docs);total=docs.length;done=docs.filter(isRead).length;}catch(e){}}
+    var pct=total?Math.round(100*done/total):0;
+    var lbl=st.querySelector('.stage-prog'),bar=st.querySelector('.stage-bar i');
+    if(lbl)lbl.textContent=done===0?'Not started':(done===total?'Complete':done+'/'+total+' done');
+    if(bar)bar.dataset.width=pct;
+    st.classList.toggle('started',done>0);st.classList.toggle('complete',total>0&&done===total);
+  });
+
+  // --- Long sections collapsed behind "Show all" ---
+  document.querySelectorAll('.show-all').forEach(function(btn){
+    var grid=document.querySelector('#'+btn.dataset.for+' .grid');
+    btn.addEventListener('click',function(){grid.classList.remove('trunc');btn.remove();});
+  });
+  function untrunc(){document.querySelectorAll('.grid.trunc').forEach(function(g){g.classList.remove('trunc');});document.querySelectorAll('.show-all').forEach(function(b){b.remove();});}
+  var qEl=document.getElementById('q');if(qEl)qEl.addEventListener('input',untrunc,{once:true});
+  document.querySelectorAll('.chip:not([data-filter="all"])').forEach(function(c){c.addEventListener('click',untrunc,{once:true});});
 
   // --- Card entrance stagger (per-section, Material deceleration) ---
   var sections=document.querySelectorAll('.track-section');
@@ -1341,8 +1398,13 @@ def main():
               for track, mid, _, _, _ in flat]
     search += [dict(t="Self-diagnostic exam", h="exam.html", c="Exams", k=""),
                dict(t="Calibrated benchmark exam", h="benchmark-exam.html", c="Exams", k="")]
+    for track, mid, _, _, _ in flat:
+        frag = load_lesson(track, mid)
+        if not frag: continue
+        for txt, sid in lesson_headings(frag):
+            search.append(dict(t=txt, h=f"{track}-{mid}.html#{sid}", c=track_label[track], k="", p=TITLES.get(mid, mid)))
     search += lib["search"]
-    open(os.path.join(DIST, "search-index.json"), "w", encoding="utf-8").write(json.dumps(search))
+    open(os.path.join(DIST, "search-index.json"), "w", encoding="utf-8").write(json.dumps(search, separators=(",", ":")))
 
     wc_data = extract_wordcloud(flat)
     graph_data = extract_graph(flat, modules)

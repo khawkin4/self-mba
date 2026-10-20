@@ -6,7 +6,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
 <script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<link rel="stylesheet" href="style.css?v=1792455035"></head><body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-nav"><div class="sn-inner">
 <a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
 <nav class="sn-links" aria-label="Site">
@@ -30,10 +31,10 @@
 <p class="mod-desc">Statistical thinking, regression, Bayesian reasoning, decision analysis, and data-driven management.</p>
 <div class="hairline"></div></header>
 <nav class="toc"><a href="#lesson">Lesson</a> <a href="#videos">Lectures · learn</a></nav>
-<main><section id="lesson" class="lesson"><!-- LESSON: Data, Analytics & Decisions — interactive, visual-first, grounded in the 07-data-analytics corpus. No financial data; teaches via frameworks and real examples. -->
+<main id="main"><section id="lesson" class="lesson"><!-- LESSON: Data, Analytics & Decisions — interactive, visual-first, grounded in the 07-data-analytics corpus. No financial data; teaches via frameworks and real examples. -->
 <p class="lead">Data doesn't make decisions — <b>people do</b>. This module is about the two skills that separate a data-literate manager from someone who just stares at dashboards: <b>running experiments to learn what actually works</b>, and <b>weighing evidence honestly before you act</b>. This is hands-on — <b>hover the cards, scan the diagrams, and take the quizzes</b> as you go.</p>
 
-<h2>1 · Two ways to turn data into decisions</h2>
+<h2 id="two-ways-to-turn-data-into-decisions">1 · Two ways to turn data into decisions</h2>
 <p>Almost every analytics question is really a <em>decision</em> question in disguise. The corpus teaches two complementary engines for it. Click each</p>
 <div class="reveal">
   <button class="reveal-q">Run an experiment (A/B testing)</button>
@@ -46,7 +47,7 @@
 <blockquote class="srcq"><p>"a b testing is the practice of using randomized experiments for making business decisions"</p>
 <cite><a href="https://www.youtube.com/watch?v=Z85waabCGJQ" target="_blank" rel="noopener">— Wharton Human-AI Research, "The Art & Science of A/B Testing for Business Decisions"</a> · in your corpus</cite></blockquote>
 
-<h2>2 · The vocabulary — flip to learn</h2>
+<h2 id="the-vocabulary-flip-to-learn">2 · The vocabulary — flip to learn</h2>
 <p>These are the exact terms practitioners use. <b>Hover a card to reveal it.</b></p>
 <div class="fc-grid">
   <button class="fc"><span class="fc-inner"><span class="fc-f"><b>A/B Test</b><span class="hint">hover to reveal</span></span><span class="fc-b">A controlled experiment: randomly split users between version A and version B, then compare a chosen metric. More than two options = "A/B/n testing."</span></span></button>
@@ -59,7 +60,7 @@
   <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Inside vs. Outside View</b><span class="hint">hover to reveal</span></span><span class="fc-b">Inside = your own detailed analysis of this case. Outside = the base rate from similar past cases. Good decisions use both; most people skip the outside view.</span></span></button>
 </div>
 
-<h2>3 · Why randomization is the magic ingredient</h2>
+<h2 id="why-randomization-is-the-magic-ingredient">3 · Why randomization is the magic ingredient</h2>
 <p>Imagine you redesign your homepage and conversions go up. Did the redesign <em>cause</em> it? Maybe — but payday, weather, a competitor's outage, and another team's ad campaign all moved at the same time. Those are <b>confounders</b>. Randomization splits users by coin-flip, so all those hidden factors land equally in both groups. The <em>only</em> thing left different is your change.</p>
 <div class="equation">Correlation ("rose after") &nbsp;≠&nbsp; Causation ("rose because")</div>
 <figure class="viz">
@@ -78,7 +79,7 @@
 <blockquote class="srcq"><p>"experimentation is the least arrogant method of gaining knowledge"</p>
 <cite><a href="https://www.youtube.com/watch?v=Z85waabCGJQ" target="_blank" rel="noopener">— Wharton Human-AI Research, "The Art & Science of A/B Testing for Business Decisions"</a> · in your corpus</cite></blockquote>
 
-<h2>4 · The five steps of a clean experiment</h2>
+<h2 id="the-five-steps-of-a-clean-experiment">4 · The five steps of a clean experiment</h2>
 <p>The lecturer lays out a repeatable process. Skip a step and your result is suspect.</p>
 <div class="example">
 <p><b>1. Hypotheses</b> — define the versions you'll test (e.g. orange button vs. green button).<br>
@@ -92,7 +93,7 @@
 <p>Most tools report "95% confidence" when the p-value hits 0.05 — and that phrasing is misleading. A p-value answers a backwards question: <em>"if there were no real difference, how often would I see a result this extreme?"</em> It is <b>not</b> the probability that A beats B. In the lecturer's large e-commerce dataset, a p-value of 0.05 corresponded to only a <b>~42% chance</b> of a true difference. If you genuinely need high confidence, demand p-values closer to <b>0.001</b> — not 0.05.</p>
 </div>
 
-<h2>5 · Two mindsets: precision vs. optimization</h2>
+<h2 id="two-mindsets-precision-vs-optimization">5 · Two mindsets: precision vs. optimization</h2>
 <p>Here's the big idea the lecture builds toward. Experiments live on a spectrum between two goals — and most business problems sit far to the right, where managers wrongly apply the left-hand rules.</p>
 <figure class="viz">
 <svg viewBox="0 0 720 200" role="img" aria-label="Spectrum from hypothesis-testing precision mindset to metric-optimization risk mindset">
@@ -117,7 +118,7 @@
 <blockquote class="srcq"><p>"there's a lot more value if you have a you know if you have a month's period of time it's a lot more value in say running four experiments uh for one week each as opposed to running one experiment for the whole month"</p>
 <cite><a href="https://www.youtube.com/watch?v=Z85waabCGJQ" target="_blank" rel="noopener">— Wharton Human-AI Research, "The Art & Science of A/B Testing for Business Decisions"</a> · in your corpus</cite></blockquote>
 
-<h2>6 · The other engine: base rates & the outside view</h2>
+<h2 id="the-other-engine-base-rates-the-outside-view">6 · The other engine: base rates & the outside view</h2>
 <p>Experiments tell you what works when you can run a test. But many decisions can't be A/B tested — you only get one shot. For those, the corpus offers a second tool from investor <b>Michael Mauboussin</b>: anchor on the <b>base rate</b>.</p>
 <p>Your instinct is to gather facts about <em>this</em> case and project forward — the <b>inside view</b>. The base rate forces the <b>outside view</b>: treat your situation as one instance of a larger reference class and ask what happened to everyone else.</p>
 <div class="reveal">
@@ -128,7 +129,7 @@
 <cite><a href="https://www.youtube.com/watch?v=Yb4P-dFCz84" target="_blank" rel="noopener">— Excess Returns, "Practical Lessons from Michael Mauboussin"</a> · in your corpus</cite></blockquote>
 <p>Pair the base rate with <b>expected-value thinking</b>: don't forecast a single number. Build a <em>bear / base / bull</em> set of scenarios and weight them by probability — because, as Mauboussin puts it, <em>"more things can happen than will happen."</em></p>
 
-<h2>7 · Check yourself</h2>
+<h2 id="check-yourself">7 · Check yourself</h2>
 <div class="quizq" data-correct="2">
   <p class="q">Conversions rose the week after you redesigned the homepage. Why can't you conclude the redesign caused it?</p>
   <button class="opt">Because conversion rate is the wrong metric</button>
@@ -192,9 +193,9 @@
 <div class="meta">Joshua Emmanuel · 2:58 · 246,802 views · <a class="watch" href="https://www.youtube.com/watch?v=TwG_xRj9S_0" target="_blank" rel="noopener">Watch ↗</a></div><details class="tr"><summary>Read transcript · ~422 words</summary><div class="tr-body"><p>Welcome! In this video, I will briefly show how to make decision based on Expected Value using this Payoff Table consisting of costs. I will also show how to calculate the Expected Value of Perfect Information when payoffs are costs. To calculate expected values, we need the probabilities of the states of nature. Suppose the probability for s1 is 0.3, 0.5 for s2, and since the probabilities must add up to 1, we know that the probability for s3 is 0.2. The expected value for the decision alternative d1 is calculated as 0.3*12 + 0.5*9 + 0.2*13 and that gives 10.7. For d2, the expected value is 11.6.</p><p>And for d3, it is 12.5. Since payoffs are costs, we make a decision by choosing the alternative with the lowest expected value. And that in this case is 10.7 So the decision is d1. Now, the expected value of perfect information is calculated as the absolute value of the difference between the expected value with perfect information and the expected value without perfect information. That is, if we have perfect information about the states of nature, how much is that information really worth, on average. The best expected value obtained earlier, that is, 10.7 is the expected value without perfect information.</p><p>The expected value with perfect information, EVwPI, is calculated based on the idea that we know the state of nature that will occur with certainty before making the decision. So if we know s1 is going to occur, we will choose d3 because it has the lowest cost of 5. If we’re certain s2 will occur, we choose d1 since it has the lowest cost of 9. And if we’re sure it is s3, we choose d2 at the lowest cost of 8. The expected value with perfect information is thus calculated as .3*5 + .5*9 + .2*8 And that gives 7.6. So EVPI is calculated as the absolute value of 7.6 minus 10.7. Which gives the absolute value of -3.1 and that gives 3.1 Note that, in profit problems, EVwPI is generally higher than EVwoPI so the absolute value may not be required.</p><p>But it is important in cost problems because EVwPI is usually less or equal to EVwoPI in cost problems. And that’s it. Thanks for watching.</p></div></details></article></section></main>
 <div class="done-wrap"><button id="mark-done" data-mod="core-07-data-analytics.html"><span class="cp-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg></span> <span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button></div>
 <div class="toast" id="toast"></div>
-<div class="pn-bar"><div class="pn-wrap"><a class="pn" href="core-06-operations.html"><span class="pn-dir"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> Previous</span><span class="pn-title">06 Operations &amp; Supply Chain</span><span class="pn-key">←</span></a><a class="pn next" href="core-08-negotiation.html"><span class="pn-dir">Next <svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span><span class="pn-title">08 Negotiation</span><span class="pn-key">→</span></a></div></div>
+<nav class="pn-bar" aria-label="Previous and next module"><div class="pn-wrap"><a class="pn" href="core-06-operations.html"><span class="pn-dir"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> Previous</span><span class="pn-title">06 Operations &amp; Supply Chain</span><span class="pn-key">←</span></a><a class="pn next" href="core-08-negotiation.html"><span class="pn-dir">Next <svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span><span class="pn-title">08 Negotiation</span><span class="pn-key">→</span></a></div></nav>
 <a href="#" class="top"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4-4 4 4"/></svg></a>
 <script src="chart.min.js"></script>
-<script src="lesson.js?v=1792450065"></script>
+<script src="lesson.js?v=1792455035"></script>
 <script>document.body.classList.add('mod-enter');</script>
-<script src="site.js?v=1792450065"></script></body></html>
+<script src="site.js?v=1792455035"></script></body></html>

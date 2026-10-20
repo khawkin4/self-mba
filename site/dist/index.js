@@ -73,15 +73,39 @@
     });},{threshold:0.3});
   document.querySelectorAll('.stat-bar-fill[data-width],.stage-bar i[data-width]').forEach(function(el){bObs.observe(el);});
 
-  // --- "Continue where you left off" (set by site.js on module + document pages) ---
+  // --- Hero CTA: first visit → start the On-ramp; returning → continue the last item ---
   try{
     var last=JSON.parse(localStorage.getItem('mba-last')||'null');
-    var cont=document.getElementById('continue');
-    if(last&&last.h&&cont){
-      document.getElementById('continue-link').href=last.h;
-      document.getElementById('continue-title').textContent=(last.c?last.c+' · ':'')+last.t;
-      cont.classList.add('show');}
+    var cta=document.getElementById('hero-cta');
+    if(last&&last.h&&cta){
+      cta.href=last.h;cta.classList.add('is-continue');
+      document.getElementById('cta-label').textContent='Continue: '+last.t;
+      document.getElementById('cta-sub').textContent=(last.c||'Where you left off');
+    }
   }catch(e){}
+
+  // --- Path stages: the reader's own progress (modules from mba-done-*, docs from mba-read-*) ---
+  function isRead(h){try{return localStorage.getItem('mba-read-'+h)==='1';}catch(e){return false;}}
+  document.querySelectorAll('.stage').forEach(function(st){
+    var done=0,total=0;
+    if(st.dataset.track){var cs=document.querySelectorAll('.mcard[data-track="'+st.dataset.track+'"]');total=cs.length;
+      cs.forEach(function(c){if(c.classList.contains('completed'))done++;});}
+    else if(st.dataset.docs){try{var docs=JSON.parse(st.dataset.docs);total=docs.length;done=docs.filter(isRead).length;}catch(e){}}
+    var pct=total?Math.round(100*done/total):0;
+    var lbl=st.querySelector('.stage-prog'),bar=st.querySelector('.stage-bar i');
+    if(lbl)lbl.textContent=done===0?'Not started':(done===total?'Complete':done+'/'+total+' done');
+    if(bar)bar.dataset.width=pct;
+    st.classList.toggle('started',done>0);st.classList.toggle('complete',total>0&&done===total);
+  });
+
+  // --- Long sections collapsed behind "Show all" ---
+  document.querySelectorAll('.show-all').forEach(function(btn){
+    var grid=document.querySelector('#'+btn.dataset.for+' .grid');
+    btn.addEventListener('click',function(){grid.classList.remove('trunc');btn.remove();});
+  });
+  function untrunc(){document.querySelectorAll('.grid.trunc').forEach(function(g){g.classList.remove('trunc');});document.querySelectorAll('.show-all').forEach(function(b){b.remove();});}
+  var qEl=document.getElementById('q');if(qEl)qEl.addEventListener('input',untrunc,{once:true});
+  document.querySelectorAll('.chip:not([data-filter="all"])').forEach(function(c){c.addEventListener('click',untrunc,{once:true});});
 
   // --- Card entrance stagger (per-section, Material deceleration) ---
   var sections=document.querySelectorAll('.track-section');

@@ -6,7 +6,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
 <script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<link rel="stylesheet" href="style.css?v=1792455035"></head><body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-nav"><div class="sn-inner">
 <a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
 <nav class="sn-links" aria-label="Site">
@@ -30,10 +31,10 @@
 <p class="mod-desc">Valuation frameworks, DCF, NPV, IRR, WACC, cost of capital, and how firms make financing decisions.</p>
 <div class="hairline"></div></header>
 <nav class="toc"><a href="#lesson">Lesson</a> <a href="#videos">Lectures · learn</a> <a href="#fin">Data · apply</a></nav>
-<main><section id="lesson" class="lesson"><!-- LESSON: Corporate Finance & Valuation — interactive, visual-first, grounded in the 02-corporate-finance corpus (Damodaran DCF lectures + WACC explainers). Real NVDA FY2026 & KO FY2025 numbers. -->
+<main id="main"><section id="lesson" class="lesson"><!-- LESSON: Corporate Finance & Valuation — interactive, visual-first, grounded in the 02-corporate-finance corpus (Damodaran DCF lectures + WACC explainers). Real NVDA FY2026 & KO FY2025 numbers. -->
 <p class="lead">Accounting told you what a business <em>did</em>. Finance asks the harder question: <b>what is it worth right now?</b> The whole machine reduces to one idea — a dollar in the future is worth less than a dollar today, so to value anything you forecast its future cash and <b>discount it back</b>. This lesson builds that machine piece by piece, then turns it on two real companies: <b>NVIDIA</b> (high-growth) and <b>Coca-Cola</b> (a stable cash cow). Hover the cards, scan the diagrams, and take the quizzes as you go.</p>
 
-<h2>1 · The one idea everything rests on: time value of money</h2>
+<h2 id="the-one-idea-everything-rests-on-time-value-of-money">1 · The one idea everything rests on: time value of money</h2>
 <p>Would you rather have $100 today or $100 in five years? Today — obviously. You could invest it, and there's risk you never see the future money at all. So future cash must be <em>shrunk</em> to compare it with cash in your hand. That shrinking is called <b>discounting</b>, and the rate you shrink it by is the <b>discount rate</b>.</p>
 <div class="equation">Present Value&nbsp; = &nbsp;Future Cash Flow&nbsp; ÷ &nbsp;(1 + r)<sup>n</sup></div>
 <p>Here <em>r</em> is the discount rate and <em>n</em> is how many years away the cash is. The further out the cash, the harder it shrinks. <b>Click each bar</b> to watch $100 melt as it moves into the future at a 10% discount rate:</p>
@@ -79,13 +80,13 @@
   <div class="reveal-a"><p>It's the return you <em>demand</em> to part with your money, given the risk. Safe cash (a government bond) gets a low rate; risky cash (a startup's future profits) gets a high one. A higher discount rate shrinks future cash <em>harder</em> — which is exactly why risky companies are worth less per future dollar. We'll name this rate properly in Section 4.</p></div>
 </div>
 
-<h2>2 · Value vs. price — they are not the same thing</h2>
+<h2 id="value-vs-price-they-are-not-the-same-thing">2 · Value vs. price — they are not the same thing</h2>
 <p>The market <em>price</em> is what people will pay today. <b>Intrinsic value</b> is what the cash flows are actually worth. They drift apart constantly — and the gap is where investors make (or lose) money. Damodaran hammers this point: pricing and valuing are two different jobs.</p>
 <blockquote class="srcq"><p>"The only way to address the question of whether the value dropped is to actually do an intrinsic valuation... pricing and value are different processes and we need to treat them differently."</p>
 <cite><a href="https://www.youtube.com/watch?v=qbSfHQNUGqg" target="_blank" rel="noopener">— Aswath Damodaran, "Session 1: Valuation - Themes and Overview"</a> · in your corpus</cite></blockquote>
 <p>The technique for computing intrinsic value is <b>Discounted Cash Flow (DCF)</b>: forecast a company's future cash, discount each year back to today, add it all up. That sum is the value. Everything else in this lesson is plumbing for that one sentence.</p>
 
-<h2>3 · The vocabulary — flip to learn</h2>
+<h2 id="the-vocabulary-flip-to-learn">3 · The vocabulary — flip to learn</h2>
 <p>These are the exact words analysts use when they build a valuation. <b>Hover a card to reveal it.</b></p>
 <div class="fc-grid">
   <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Present Value</b><span class="hint">hover to reveal</span></span><span class="fc-b">Today's worth of money you'll receive later, after discounting. The whole point of finance.</span></span></button>
@@ -99,7 +100,7 @@
   <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Intrinsic Value</b><span class="hint">hover to reveal</span></span><span class="fc-b">What the cash flows are truly worth — vs. the market <em>price</em>, what people pay today.</span></span></button>
 </div>
 
-<h2>4 · The discount rate, named: cost of capital (WACC)</h2>
+<h2 id="the-discount-rate-named-cost-of-capital-wacc">4 · The discount rate, named: cost of capital (WACC)</h2>
 <p>A business raises money two ways — from <b>equity</b> investors (owners) and from <b>lenders</b> (banks, bondholders). Each wants a return. Damodaran frames it cleanly: you must decide <em>whose</em> cash flows you're valuing.</p>
 <blockquote class="srcq"><p>"If I take a weighted average of your cost of equity and your cost of debt... You're taking a corporate finance class, right? What's that called? The cost of capital."</p>
 <cite><a href="https://www.youtube.com/watch?v=veSXjIzTa3c" target="_blank" rel="noopener">— Aswath Damodaran, "Session 3: Intrinsic and DCF Valuation - Laying the Groundwork"</a> · in your corpus</cite></blockquote>
@@ -114,7 +115,7 @@
 <blockquote class="srcq"><p>"The combined cost is the weighted average cost of capital, which is the cost of funding the assets of the company."</p>
 <cite><a href="https://www.youtube.com/watch?v=iAYs2VFcB8g" target="_blank" rel="noopener">— Corporate Finance Institute, "Weighted Average Cost of Capital (WACC)"</a> · in your corpus</cite></blockquote>
 
-<h2>5 · Putting it together: the DCF formula</h2>
+<h2 id="putting-it-together-the-dcf-formula">5 · Putting it together: the DCF formula</h2>
 <p>Now the machine assembles. Forecast <b>free cash flow</b> each year, discount each by the WACC, and add the <b>terminal value</b> for everything beyond your forecast:</p>
 <div class="equation">Value&nbsp; = &nbsp;Σ &nbsp;FCF<sub>t</sub> ÷ (1 + WACC)<sup>t</sup>&nbsp; + &nbsp;Terminal Value ÷ (1 + WACC)<sup>n</sup></div>
 <p>The Finance Storyteller describes exactly this assembly line — and warns it only works if your forecasts do:</p>
@@ -122,7 +123,7 @@
 <cite><a href="https://www.youtube.com/watch?v=1O-DbtVueMw" target="_blank" rel="noopener">— The Finance Storyteller, "WACC explained"</a> · in your corpus</cite></blockquote>
 <p>Once you have a business value, subtract debt to get <b>equity value</b>, divide by shares, and you have a per-share intrinsic value to compare against the market price.</p>
 
-<h2>6 · Two real companies: NVIDIA vs. Coca-Cola</h2>
+<h2 id="two-real-companies-nvidia-vs-coca-cola">6 · Two real companies: NVIDIA vs. Coca-Cola</h2>
 <p>A DCF is only as good as the <em>story</em> behind the numbers — and these two companies tell opposite stories. NVIDIA is a high-growth engine; Coca-Cola is a slow, dependable cash cow. Their real, latest figures show why. <b>Click each bar.</b></p>
 <figure class="viz">
 <svg viewBox="0 0 720 230" role="img" aria-label="NVIDIA versus Coca-Cola revenue, gross profit and net income compared">
@@ -167,7 +168,7 @@
 <figcaption>NVIDIA's net income ($120B) is larger than Coca-Cola's entire revenue ($48B) — but Coca-Cola has paid dividends for 60+ consecutive years. Growth vs. stability is <b>the</b> DCF trade-off.</figcaption>
 </figure>
 
-<h2>7 · Check yourself</h2>
+<h2 id="check-yourself">7 · Check yourself</h2>
 <div class="quizq" data-correct="2">
   <p class="q">At a 10% discount rate, is $100 received in 5 years worth more, the same, or less than $100 today?</p>
   <button class="opt">More — it grows</button>
@@ -206,7 +207,7 @@
 </div>
 
 <!-- CANON-FOLD -->
-<h2>From the Canon — Klarman &amp; Mauboussin on valuing under uncertainty</h2>
+<h2 id="from-the-canon-klarman-mauboussin-on-valuing-under-uncertain">From the Canon — Klarman &amp; Mauboussin on valuing under uncertainty</h2>
 <p>The DCF above produces a <em>point estimate</em> — one crisp number for what NVIDIA or Coca-Cola is worth. The canon insists you treat that number as a guess wrapped in a fog. Klarman bolts a <b>margin of safety</b> around it so you survive being wrong; Mauboussin reminds you that the <b>skill–luck</b> mix in any single outcome means a precise DCF can still be a coin flip. Together they are the operator's humility band on everything in Sections 1–6.</p>
 <div class="fc-grid">
   <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Margin of Safety — Seth Klarman</b><span class="hint">hover to reveal</span></span><span class="fc-b">Buy only at a discount big enough that even if your DCF is wrong, you don't lose much. Risk-aversion first: "first, don't lose money."</span></span></button>
@@ -302,9 +303,9 @@
   GrossProfit              $153.46B   (FY end 2026-01-25)</div></section></main>
 <div class="done-wrap"><button id="mark-done" data-mod="core-02-corporate-finance.html"><span class="cp-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg></span> <span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button></div>
 <div class="toast" id="toast"></div>
-<div class="pn-bar"><div class="pn-wrap"><a class="pn" href="core-01-accounting.html"><span class="pn-dir"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> Previous</span><span class="pn-title">01 Accounting</span><span class="pn-key">←</span></a><a class="pn next" href="core-03-micro-strategy.html"><span class="pn-dir">Next <svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span><span class="pn-title">03 Microeconomics &amp; Strategy</span><span class="pn-key">→</span></a></div></div>
+<nav class="pn-bar" aria-label="Previous and next module"><div class="pn-wrap"><a class="pn" href="core-01-accounting.html"><span class="pn-dir"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> Previous</span><span class="pn-title">01 Accounting</span><span class="pn-key">←</span></a><a class="pn next" href="core-03-micro-strategy.html"><span class="pn-dir">Next <svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span><span class="pn-title">03 Microeconomics &amp; Strategy</span><span class="pn-key">→</span></a></div></nav>
 <a href="#" class="top"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4-4 4 4"/></svg></a>
 <script src="chart.min.js"></script>
-<script src="lesson.js?v=1792450065"></script>
+<script src="lesson.js?v=1792455035"></script>
 <script>document.body.classList.add('mod-enter');</script>
-<script src="site.js?v=1792450065"></script></body></html>
+<script src="site.js?v=1792455035"></script></body></html>

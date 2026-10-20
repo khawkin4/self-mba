@@ -6,7 +6,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
 <script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<link rel="stylesheet" href="style.css?v=1792455035"></head><body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-nav"><div class="sn-inner">
 <a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
 <nav class="sn-links" aria-label="Site">
@@ -30,17 +31,17 @@
 <p class="mod-desc">Network effects, platform economics, two-sided markets, and winner-take-all dynamics.</p>
 <div class="hairline"></div></header>
 <nav class="toc"><a href="#lesson">Lesson</a> <a href="#videos">Lectures · learn</a></nav>
-<main><section id="lesson" class="lesson"><!-- LESSON: Network Effects & Platform Strategy — net-new canon lesson (no existing course home). Grounded in the canon/platform-strategy corpus: Talks at Google "Andrew Chen | The Cold Start Problem" (TSnYO34b3TA), NFX "What Are Network Effects?" (aoeal3ljnqw), NFX "The right time to explore network effects" (PTpfi3yzgGM), David Halliday "2-Sided Markets: Platforms, Networks, & Economies of Scale" (7n_YlrAgbcg). Teaches the canon cluster: Parker/Van Alstyne/Choudary (Platform Revolution), Cusumano/Gawer/Yoffie (The Business of Platforms), Hagiu & Wright (Multi-Sided Platforms), Shapiro & Varian (Information Rules). -->
+<main id="main"><section id="lesson" class="lesson"><!-- LESSON: Network Effects & Platform Strategy — net-new canon lesson (no existing course home). Grounded in the canon/platform-strategy corpus: Talks at Google "Andrew Chen | The Cold Start Problem" (TSnYO34b3TA), NFX "What Are Network Effects?" (aoeal3ljnqw), NFX "The right time to explore network effects" (PTpfi3yzgGM), David Halliday "2-Sided Markets: Platforms, Networks, & Economies of Scale" (7n_YlrAgbcg). Teaches the canon cluster: Parker/Van Alstyne/Choudary (Platform Revolution), Cusumano/Gawer/Yoffie (The Business of Platforms), Hagiu & Wright (Multi-Sided Platforms), Shapiro & Varian (Information Rules). -->
 <p class="lead">A pipeline business makes something and sells it. A <b>platform</b> doesn't make the thing at all — it owns the <em>connection</em> between the people who do. That one shift rewrites the economics: the platform never buys inventory, takes a cut of value it doesn't produce, and gets <em>more valuable the more people use it</em>. The whole discipline reduces to one engine and one trap. The engine is the <b>network effect</b>: each new user makes the product better for every other user, so the faster you grow the faster you grow. The trap is the <b>cold start</b>: that engine produces nothing until a critical mass shows up — and nobody wants to be first. This lesson builds both halves, using an a16z investor who ran growth at Uber, the VC firm that catalogued 15 kinds of network effect, and a walk-through of how Airbnb, Visa, and the App Store actually make money. Hover the cards, scan the diagrams, and take the quizzes as you go.</p>
 
-<h2>1 · Pipelines vs. platforms: where the money comes from</h2>
+<h2 id="pipelines-vs-platforms-where-the-money-comes-from">1 · Pipelines vs. platforms: where the money comes from</h2>
 <p>Start with the business model, because it's the root of everything else. A traditional firm — call it Safeway — buys inputs, turns them into a finished good, and sells it for a markup. A platform inserts itself <em>between</em> two sides and charges a commission on a transaction it merely <b>facilitates</b>. It owns no inventory at all.</p>
 <blockquote class="srcq"><p>"The traditional business model is a company goes out, buys wholesale inputs, turns them into a finished product, and sells that finished product for a markup… Unlike Safeway, Airbnb never has a traditional cost of goods sold. Airbnb isn't buying a hotel and then renting you those rooms — Airbnb exists to facilitate that transaction."</p>
 <cite><a href="https://www.youtube.com/watch?v=7n_YlrAgbcg" target="_blank" rel="noopener">— David Halliday, "2-Sided Markets: Platforms, Networks, &amp; Economies of Scale"</a> · in your corpus</cite></blockquote>
 <div class="equation">Pipeline: profit = price − cost of goods &nbsp;|&nbsp; Platform: profit = commission × transactions it never owned</div>
 <p>This is the canon's <b>pipeline → platform</b> shift (Parker, Van Alstyne &amp; Choudary, <em>Platform Revolution</em>). It also explains the soaring valuations: software has near-zero marginal cost (Shapiro &amp; Varian, <em>Information Rules</em>), and a platform layers a network on top of that. But the model only works if both sides actually show up — which is the whole problem.</p>
 
-<h2>2 · The engine: demand-side economies of scale</h2>
+<h2 id="the-engine-demand-side-economies-of-scale">2 · The engine: demand-side economies of scale</h2>
 <p>In a pipeline, scale helps the <em>supply</em> side — make more, cost per unit drops. A platform's scale advantage runs the other way: it's on the <b>demand</b> side. Each new user is a reason for the next user to join. Andrew Chen, a general partner at a16z who ran growth at Uber, traces the idea to a 1908 line about the telephone.</p>
 <blockquote class="srcq"><p>"A telephone without a connection at the other end of the line is not even a toy or a scientific instrument. It is one of the most useless things in the world. Its value depends on the connection with the other telephone and increases with the number of connections."</p>
 <cite><a href="https://www.youtube.com/watch?v=TSnYO34b3TA" target="_blank" rel="noopener">— Theodore Vail (1908), quoted by Andrew Chen, "The Cold Start Problem," Talks at Google</a> · in your corpus</cite></blockquote>
@@ -49,7 +50,7 @@
 <cite><a href="https://www.youtube.com/watch?v=aoeal3ljnqw" target="_blank" rel="noopener">— NFX, "What Are Network Effects? (Startup Mini-Series)"</a> · in your corpus</cite></blockquote>
 <p>Note "embedding" — that's Shapiro &amp; Varian's <b>lock-in / switching costs</b> renamed for the SaaS era ("you just charge more and more every year and there's not much you can do about it"). Network effects are the strongest of the four because they don't asymptote — past a threshold they show <b>increasing returns</b>: "every new incremental person increases the rate of return to everyone else."</p>
 
-<h2>3 · Two sides, and why one of them rides free</h2>
+<h2 id="two-sides-and-why-one-of-them-rides-free">3 · Two sides, and why one of them rides free</h2>
 <p>Most powerful platforms are <b>two-sided</b>: they need <em>both</em> a producer side and a consumer side, and the value to each comes from the size of the <em>other</em>. Halliday calls this the recursive loop — the heart of platform profitability.</p>
 <blockquote class="srcq"><p>"Larger platforms attract more customers because they attract more suppliers… if there are a lot of users, that attracts suppliers; if there are a lot of suppliers, that attracts more users. It's a recursive, cyclical pattern. The two main drivers of profitability are cross-side network effects and massive economies of scale."</p>
 <cite><a href="https://www.youtube.com/watch?v=7n_YlrAgbcg" target="_blank" rel="noopener">— David Halliday, "2-Sided Markets"</a> · in your corpus</cite></blockquote>
@@ -77,7 +78,7 @@
   <div class="reveal-a"><p>Because the rule is "clearer in theory than execution" (Hagiu &amp; Wright). You have to actually <em>measure</em> the indirect network effect to know which side drives the other — and that's genuinely hard. Subsidize the wrong side, or both, and you torch capital with no flywheel (the WeWork failure mode). Worse, a heavily subsidized side is often <b>disloyal</b> — it multi-homes and never converts to the value you priced for. The pricing math is elegant; the binding constraint underneath it is usually just <em>getting the hard side to show up at all</em>.</p></div>
 </div>
 
-<h2>4 · The cold start: nobody wants to be first</h2>
+<h2 id="the-cold-start-nobody-wants-to-be-first">4 · The cold start: nobody wants to be first</h2>
 <p>Here is where most platforms die. The flywheel only spins once both sides are present — but neither side joins until the other is already there. This <b>chicken-and-egg / cold-start problem</b> is, per <em>Platform Revolution</em>, the hardest strategic problem in platform building. Chen's escape route is the opposite of "build it and they will come": you <b>hand-build the first network manually.</b></p>
 <blockquote class="srcq"><p>"They sat down, and they looked, and they had a killer product. They just needed that amazing high-quality atomic network. And they did the work to figure out how to do it. They manually did it — and then they found ways to operationalize it."</p>
 <cite><a href="https://www.youtube.com/watch?v=TSnYO34b3TA" target="_blank" rel="noopener">— Andrew Chen, "The Cold Start Problem," Talks at Google</a> · in your corpus</cite></blockquote>
@@ -86,7 +87,7 @@
 <cite><a href="https://www.youtube.com/watch?v=TSnYO34b3TA" target="_blank" rel="noopener">— Andrew Chen, "The Cold Start Problem," Talks at Google</a> · in your corpus</cite></blockquote>
 <p>Build enough atomic networks and you cross the <b>tipping point</b> — the moment you can spin up new networks on demand — and then ride <b>escape velocity</b>. Chen's five-stage arc: cold start → tipping point → escape velocity → ceiling → the <b>moat</b> ("how do you build the defensibility such that you can compete against new entrants"). One warning the canon stresses: don't confuse a network effect with a <b>viral effect</b>. NFX: "a viral effect is about acquisition… they're actually very different things." Cheap virality can fill a top-of-funnel while the network never reaches critical mass.</p>
 
-<h2>5 · The vocabulary — flip to learn</h2>
+<h2 id="the-vocabulary-flip-to-learn">5 · The vocabulary — flip to learn</h2>
 <p>The exact terms the canon uses. <b>Hover a card to reveal it.</b></p>
 <div class="fc-grid">
   <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Network Effect</b><span class="hint">hover to reveal</span></span><span class="fc-b">Each new user makes the product more valuable to every other user. The strongest of the four digital moats — it shows increasing returns instead of asymptoting.</span></span></button>
@@ -100,7 +101,7 @@
   <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Envelopment</b><span class="hint">hover to reveal</span></span><span class="fc-b">A platform competing with its own complementors ("Sherlocking"). Buys short-term revenue at long-term trust cost (Cusumano, Gawer &amp; Yoffie).</span></span></button>
 </div>
 
-<h2>6 · The strategic choices that keep a platform alive</h2>
+<h2 id="the-strategic-choices-that-keep-a-platform-alive">6 · The strategic choices that keep a platform alive</h2>
 <p>Once the flywheel spins, the canon (Cusumano, Gawer &amp; Yoffie, <em>The Business of Platforms</em>) says durable platforms deliberately manage a handful of brutal tensions. First, a type distinction: <b>innovation platforms</b> let others build <em>on top</em> of you (iOS, AWS, Salesforce); <b>transaction platforms</b> facilitate <em>exchange</em> (Uber, Airbnb). The most durable are hybrids. Then the hard choices.</p>
 <figure class="viz">
 <svg viewBox="0 0 720 200" role="img" aria-label="Four strategic levers durable platforms must manage: openness, pricing, multi-homing, and envelopment">
@@ -121,7 +122,7 @@
 <p><b>Worked example — you're launching a tutoring marketplace.</b> Don't open with "build the platform." (1) <b>Core interaction:</b> a student books a verified tutor for a subject — get that one exchange flawless before adding anything. (2) <b>Hard side:</b> tutors won't join an empty marketplace, so you <em>go get them</em> — recruit 30 great tutors in one ZIP code by hand. (3) <b>Atomic network:</b> make that one neighborhood + one subject actually liquid before expanding; a tutor who logs in to zero students churns forever. (4) <b>Pricing:</b> subsidize the scarce side (pay tutors a guarantee, or charge students nothing at first) until the cross-side loop turns. (5) <b>Moat later:</b> once liquid, raise switching costs — reviews, scheduling history, payments — so neither side multi-homes to a rival. You solved cold start by hand, then earned the network effect.</p>
 </div>
 
-<h2>7 · Check yourself</h2>
+<h2 id="check-yourself">7 · Check yourself</h2>
 <div class="quizq" data-correct="2">
   <p class="q">What fundamentally separates a platform like Airbnb from a pipeline like Safeway?</p>
   <button class="opt">Airbnb has higher marginal costs</button>
@@ -190,9 +191,9 @@
 <div class="meta">Finhance - Enhance Your Finance · 2:31 · 1 views · <a class="watch" href="https://www.youtube.com/watch?v=3xR5L8gcKS4" target="_blank" rel="noopener">Watch ↗</a></div><div class="no-tr">No transcript available — watch on YouTube.</div></article></section></main>
 <div class="done-wrap"><button id="mark-done" data-mod="canon-platform-strategy.html"><span class="cp-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg></span> <span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button></div>
 <div class="toast" id="toast"></div>
-<div class="pn-bar"><div class="pn-wrap"><a class="pn" href="canon-game-theory.html"><span class="pn-dir"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> Previous</span><span class="pn-title">C15 Game Theory &amp; Strategic Interaction</span><span class="pn-key">←</span></a><a class="pn next" href="canon-systems-complexity.html"><span class="pn-dir">Next <svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span><span class="pn-title">C17 Systems Thinking &amp; Complexity</span><span class="pn-key">→</span></a></div></div>
+<nav class="pn-bar" aria-label="Previous and next module"><div class="pn-wrap"><a class="pn" href="canon-game-theory.html"><span class="pn-dir"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> Previous</span><span class="pn-title">C15 Game Theory &amp; Strategic Interaction</span><span class="pn-key">←</span></a><a class="pn next" href="canon-systems-complexity.html"><span class="pn-dir">Next <svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10m-4-4l4 4-4 4"/></svg></span><span class="pn-title">C17 Systems Thinking &amp; Complexity</span><span class="pn-key">→</span></a></div></nav>
 <a href="#" class="top"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4-4 4 4"/></svg></a>
 <script src="chart.min.js"></script>
-<script src="lesson.js?v=1792450065"></script>
+<script src="lesson.js?v=1792455035"></script>
 <script>document.body.classList.add('mod-enter');</script>
-<script src="site.js?v=1792450065"></script></body></html>
+<script src="site.js?v=1792455035"></script></body></html>

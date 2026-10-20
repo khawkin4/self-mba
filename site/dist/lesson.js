@@ -11,7 +11,8 @@
   });
   // flip cards
   document.querySelectorAll('.fc').forEach(function(c){
-    c.addEventListener('click',function(){c.classList.toggle('flipped');});});
+    c.setAttribute('aria-pressed','false');
+    c.addEventListener('click',function(){var on=c.classList.toggle('flipped');c.setAttribute('aria-pressed',on?'true':'false');});});
   // click-to-reveal
   document.querySelectorAll('.reveal .reveal-q').forEach(function(q){
     q.addEventListener('click',function(){q.parentNode.classList.toggle('open');});});

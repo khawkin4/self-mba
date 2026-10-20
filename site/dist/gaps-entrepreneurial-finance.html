@@ -6,7 +6,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
 <script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1792450065"></head><body>
+<link rel="stylesheet" href="style.css?v=1792455035"></head><body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-nav"><div class="sn-inner">
 <a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
 <nav class="sn-links" aria-label="Site">
@@ -30,10 +31,10 @@
 <p class="mod-desc">Venture financing, term sheets, cap tables, startup valuation, and investor economics.</p>
 <div class="hairline"></div></header>
 <nav class="toc"><a href="#lesson">Lesson</a> <a href="#videos">Lectures · learn</a></nav>
-<main><section id="lesson" class="lesson"><!-- LESSON: Entrepreneurial Finance — net-new BENCHMARK-GAP lesson (the financial plumbing of startups that core-10 Entrepreneurship skips). Covers pre/post-money, cap tables, SAFEs, convertible notes, term sheets, liquidation waterfalls, dilution math, venture debt, and a composite case study. Grounded in standard VC mechanics (Y Combinator SAFE docs, Harlem Capital IC insights, Carta cap-table conventions). -->
+<main id="main"><section id="lesson" class="lesson"><!-- LESSON: Entrepreneurial Finance — net-new BENCHMARK-GAP lesson (the financial plumbing of startups that core-10 Entrepreneurship skips). Covers pre/post-money, cap tables, SAFEs, convertible notes, term sheets, liquidation waterfalls, dilution math, venture debt, and a composite case study. Grounded in standard VC mechanics (Y Combinator SAFE docs, Harlem Capital IC insights, Carta cap-table conventions). -->
 <p class="lead">The entrepreneurship module taught you <em>what</em> to build and <em>why</em> investors write checks. This lesson is about <b>how the money actually works</b> once those checks arrive: the arithmetic of ownership, the contracts that govern who gets paid first, and the slow, predictable erosion of a founder's stake across five rounds of funding. Every number here has a direct consequence for control, incentives, and who walks away rich (or empty-handed) at exit. If you can't read a cap table or spot a punitive liquidation preference, you are negotiating blind.</p>
 
-<h2>1 · Pre-money vs. post-money -- the split that sets the price</h2>
+<h2 id="pre-money-vs-post-money-the-split-that-sets-the-price">1 · Pre-money vs. post-money -- the split that sets the price</h2>
 <p>The single most important equation in venture financing is also the simplest. When an investor offers you $2M at a $8M pre-money valuation, you are selling exactly 20% of your company -- and many first-time founders don't realize it until the paperwork is signed.</p>
 <div class="equation">Post-money = Pre-money + New investment &nbsp;&middot;&nbsp; Investor ownership = Investment &divide; Post-money</div>
 <div class="example">
@@ -46,7 +47,7 @@
 <p>Y Combinator's post-money SAFE (the standard since 2018) sets the cap as the <em>post-money</em> valuation, meaning the investor's ownership percentage is locked at signing: Investment / Cap = ownership. If you raise $500K on a $5M post-money cap, you have sold exactly 10% -- and every additional SAFE dollar at the same cap stacks on top, diluting you further before a single priced round happens. Many founders treat the cap as a pre-money number by habit and miscalculate their dilution by 15-25%.</p>
 </div>
 
-<h2>2 · The vocabulary -- flip to learn</h2>
+<h2 id="the-vocabulary-flip-to-learn">2 · The vocabulary -- flip to learn</h2>
 <p>These are the exact terms you will encounter in every term sheet, SAFE, and investor conversation. <b>Hover a card to reveal it.</b></p>
 <div class="fc-grid">
   <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Pre-money valuation</b><span class="hint">hover to reveal</span></span><span class="fc-b">What the company is worth <em>before</em> the new investment lands. The negotiated number that sets the price per share.</span></span></button>
@@ -71,7 +72,7 @@
   <button class="fc"><span class="fc-inner"><span class="fc-f"><b>Common stock</b><span class="hint">hover to reveal</span></span><span class="fc-b">The class of shares founders and employees hold. No liquidation preference, no special protections. Gets paid last in an exit -- but benefits most in a large outcome.</span></span></button>
 </div>
 
-<h2>3 · Cap table mechanics -- founding through Series B</h2>
+<h2 id="cap-table-mechanics-founding-through-series-b">3 · Cap table mechanics -- founding through Series B</h2>
 <p>A cap table is not a static document. It is a living record that changes with every round, every option grant, and every conversion. Walk through three stages of a company called <b>Relay</b> and watch how the founders' stake shrinks while the pie grows. <b>Click each bar segment.</b></p>
 <figure class="viz">
 <svg viewBox="0 0 720 220" role="img" aria-label="Stacked bar chart showing cap table evolution from founding through Seed and Series A">
@@ -124,7 +125,7 @@
 </figure>
 <p>Notice what happened to the seed investor: they went from 20% to 13.1% without selling a single share. That is <b>passive dilution</b> -- the same mechanic that erodes founder stakes. Pro rata rights exist precisely to let investors fight this by writing follow-on checks.</p>
 
-<h2>4 · SAFEs and convertible notes -- the bridge instruments</h2>
+<h2 id="safes-and-convertible-notes-the-bridge-instruments">4 · SAFEs and convertible notes -- the bridge instruments</h2>
 <p>Before a startup is ready for a priced round with a formal valuation, it raises money using instruments that <em>promise</em> future equity. The two dominant forms: <b>SAFEs</b> (Y Combinator's invention, no interest, no maturity) and <b>convertible notes</b> (actual debt with interest and a due date). Both convert into preferred stock at the next priced round.</p>
 <div class="equation">Conversion price = min(Cap &divide; Pre-money shares, &nbsp;Round price &times; (1 - Discount))</div>
 <p>Investors get the <em>better</em> of the two calculations. The cap protects them if the valuation skyrockets; the discount rewards them for early risk if it doesn't.</p>
@@ -139,7 +140,7 @@
   <div class="reveal-a"><p>Unlike a SAFE, a convertible note has a <b>maturity date</b> (typically 18-24 months). If you haven't raised a priced round by then, the note holder can technically demand repayment -- and if you can't pay, they can force a bankruptcy proceeding. In practice most note holders extend the maturity, but it gives them leverage in negotiations. Notes also accrue <b>interest</b> (typically 2-8% annually), which adds to the principal that converts into shares, creating extra dilution. A $500K note at 6% over 2 years becomes $561,800 at conversion.</p></div>
 </div>
 
-<h2>5 · Term sheet anatomy -- the terms that actually matter</h2>
+<h2 id="term-sheet-anatomy-the-terms-that-actually-matter">5 · Term sheet anatomy -- the terms that actually matter</h2>
 <p>A term sheet is 5-10 pages. Most of it is boilerplate. The terms below are where founders win or lose control and economics. <b>Click each to understand the mechanic.</b></p>
 <div class="reveal">
   <button class="reveal-q">Liquidation preference (1x non-participating vs. participating)</button>
@@ -158,7 +159,7 @@
   <div class="reveal-a"><p>Even without board control, preferred shareholders typically hold veto rights over specific actions: issuing new shares, selling the company, taking on debt, changing the charter, or increasing the option pool. These are <b>protective provisions</b> -- a checklist of things the company cannot do without investor consent, regardless of who controls the board. They are standard and generally reasonable, but aggressive investors sometimes expand them to cover hiring, spending, or pivoting.</p></div>
 </div>
 
-<h2>6 · The liquidation waterfall -- who gets paid, and in what order</h2>
+<h2 id="the-liquidation-waterfall-who-gets-paid-and-in-what-order">6 · The liquidation waterfall -- who gets paid, and in what order</h2>
 <p>When a company exits, cash does not flow evenly to all shareholders. It cascades through a hierarchy of preferences. Walk through a <b>$50M acquisition</b> of a company with $5M in Series A (1x non-participating) and $15M in Series B (1x non-participating), with founders and employees holding common stock.</p>
 <figure class="viz">
 <svg viewBox="0 0 720 240" role="img" aria-label="Liquidation waterfall showing how a 50M exit is distributed across investor tiers and common holders">
@@ -190,7 +191,7 @@
 <p>Now imagine that same company with <b>participating preferred</b> on the Series B. Series B takes their $15M preference AND 30% of the remaining $35M = $10.5M, for a total of <b>$25.5M</b>. Series A takes $5M + 12% of $30M = <b>$8.6M</b>. Founders and employees split what's left: <b>$15.9M</b> -- nearly half what they'd get under non-participating terms. Participating preferred is the single most expensive economic term a founder can agree to.</p>
 </div>
 
-<h2>7 · Dilution math -- from 100% to 8%</h2>
+<h2 id="dilution-math-from-100-to-8">7 · Dilution math -- from 100% to 8%</h2>
 <p>Every founder starts at 100%. Here is a realistic walk through how that number shrinks. Follow the math -- each step is a real mechanism, not a simplification.</p>
 <div class="equation">Founding (100%) &rarr; Co-founder split (50%) &rarr; Option pool (42.5%) &rarr; Seed (34%) &rarr; Series A (24%) &rarr; Series B (17%) &rarr; Series C (12%) &rarr; More options (8-10%)</div>
 <div class="example">
@@ -206,7 +207,7 @@
   <div class="reveal-a"><p>Investors routinely insist that the option pool be created <em>before</em> their money enters the cap table -- carved from the pre-money valuation. This means the dilution from the option pool falls entirely on existing shareholders (founders), not on the new investor. If a VC offers $5M at $15M pre-money but requires a 15% option pool, the effective pre-money for existing shareholders is $15M x (1 - 0.15) = $12.75M. The advertised $15M pre-money is a fiction -- the real founder-relevant valuation is $12.75M. Always compute the <b>effective</b> pre-money after the pool carve-out.</p></div>
 </div>
 
-<h2>8 · Venture debt and alternatives to equity</h2>
+<h2 id="venture-debt-and-alternatives-to-equity">8 · Venture debt and alternatives to equity</h2>
 <p>Not every dollar of startup funding needs to come with dilution. Three instruments sit between pure equity and pure bootstrapping:</p>
 <div class="reveal">
   <button class="reveal-q">Venture debt -- when and why</button>
@@ -221,7 +222,7 @@
   <div class="reveal-a"><p>Debt has a fixed obligation: you must repay regardless of outcome. If a startup takes $3M in venture debt and then misses its growth targets, the debt covenants can trigger default. The lender can call the loan, seize assets, or force a fire sale -- outcomes that equity investors never impose. The 2023 SVB collapse showed this systemically: startups that had concentrated their venture debt and banking with one institution faced existential risk when that institution failed. Rule of thumb: venture debt should extend a clear path, never substitute for one.</p></div>
 </div>
 
-<h2>9 · Case study -- NovaChem from pre-seed to Series B</h2>
+<h2 id="case-study-novachem-from-pre-seed-to-series-b">9 · Case study -- NovaChem from pre-seed to Series B</h2>
 <p>NovaChem is a composite case based on real biotech and climate-tech financing patterns. Follow the economics through three rounds.</p>
 <div class="example">
 <p><b>Pre-seed (2021):</b> Two founders, 10M shares each (20M total). They raise $500K via post-money SAFE at a $5M cap. The SAFE holders will own 10% at conversion ($500K / $5M).</p>
@@ -230,7 +231,7 @@
 <p><b>The math check:</b> Founder A's 10% of $60M = $6M in paper value. They started with 50% of a company worth nothing. They now own 10% of a company worth $60M. That is the core trade of venture financing -- smaller percentage of a much larger number.</p>
 </div>
 
-<h2>10 · Check yourself</h2>
+<h2 id="check-yourself">10 · Check yourself</h2>
 <div class="quizq" data-correct="1">
   <p class="q">A startup raises $3M at a $12M pre-money valuation. What percentage does the investor own?</p>
   <button class="opt">25% -- because 3/12</button>
@@ -305,9 +306,9 @@
 <div class="meta">Carta · 12:00 · 12,000 views · <a class="watch" href="https://www.youtube.com/watch?v=fcrsoartpFU" target="_blank" rel="noopener">Watch ↗</a></div><div class="no-tr">No transcript available — watch on YouTube.</div></article></section></main>
 <div class="done-wrap"><button id="mark-done" data-mod="gaps-entrepreneurial-finance.html"><span class="cp-tick"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.5 3.5 6.5-7"/></svg></span> <span class="cp-on">Module complete</span><span class="cp-off">Mark module complete</span></button></div>
 <div class="toast" id="toast"></div>
-<div class="pn-bar"><div class="pn-wrap"><a class="pn" href="gaps-business-law.html"><span class="pn-dir"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> Previous</span><span class="pn-title">G5 The Legal Environment of Business</span><span class="pn-key">←</span></a></div></div>
+<nav class="pn-bar" aria-label="Previous and next module"><div class="pn-wrap"><a class="pn" href="gaps-business-law.html"><span class="pn-dir"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3m4-4l-4 4 4 4"/></svg> Previous</span><span class="pn-title">G5 The Legal Environment of Business</span><span class="pn-key">←</span></a></div></nav>
 <a href="#" class="top"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10l4-4 4 4"/></svg></a>
 <script src="chart.min.js"></script>
-<script src="lesson.js?v=1792450065"></script>
+<script src="lesson.js?v=1792455035"></script>
 <script>document.body.classList.add('mod-enter');</script>
-<script src="site.js?v=1792450065"></script></body></html>
+<script src="site.js?v=1792455035"></script></body></html>

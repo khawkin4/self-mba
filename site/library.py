@@ -161,9 +161,20 @@ def _meta_for(slug):
     return next(c for c in COLLECTIONS if c[0] == slug)
 
 
+HEADINGS = {}  # href -> [(text, id)] gathered while rendering, for the search index
+
+
 def render_doc(d, docs, by_path, by_stem, head, foot):
     slug, label, kicker, _, _ = _meta_for(d["coll"])
     body, toc = render_markdown(_rewrite_links(d["text"], d["rel"], by_path, by_stem))
+    hs = []
+    def _walk(nodes):
+        for c in nodes:
+            if c["level"] in (2, 3):
+                hs.append((re.sub(r"<[^>]+>", "", c["name"]).strip(), c["id"]))
+            if c.get("children"): _walk(c["children"])
+    _walk(toc)
+    HEADINGS[d["href"]] = hs[:60]
     # strip the leading h1: the page header carries the title
     body = re.sub(r"^\s*<h1[^>]*>.*?</h1>", "", body, count=1, flags=re.S)
     # tables scroll horizontally on narrow screens instead of breaking the page
@@ -190,6 +201,7 @@ def render_doc(d, docs, by_path, by_stem, head, foot):
 {_toc_html(toc)}
 <article class="prose">{body}</article>
 </div>
+<div class="doc-end"><button class="mark-read" type="button" data-href="{d['href']}"><span class="mr-tick">✓</span><span class="mr-off">Mark as read</span><span class="mr-on">Read</span></button><span class="doc-end-hint">Marks itself read when you reach the end.</span></div>
 {pn}
 </div>{foot}"""
 
@@ -198,8 +210,8 @@ def render_collection(slug, docs, head, foot):
     _, label, kicker, desc, _ = _meta_for(slug)
     rows = []
     for i, d in enumerate(docs[slug], 1):
-        rows.append(f"""<a class="lib-row" href="{d['href']}" data-updated="{d['updated']}">
-<span class="lib-n">{i:02d}</span>
+        rows.append(f"""<a class="lib-row" href="{d['href']}" data-updated="{d['updated']}" data-href="{d['href']}">
+<span class="lib-n">{i:02d}</span><span class="lib-tick" aria-label="Read">✓</span>
 <span class="lib-main"><span class="lib-title">{html.escape(d['title'])}</span><span class="lib-lede">{html.escape(d['lede'])}</span></span>
 <span class="lib-date">{d['updated']}</span></a>""")
     total = sum(d["words"] for d in docs[slug])
@@ -212,8 +224,8 @@ def render_collection(slug, docs, head, foot):
 <div class="doc-kicker">{html.escape(kicker)}</div>
 <h1 class="lib-h1">{html.escape(label)}</h1>
 <p class="lib-desc">{html.escape(desc)}</p>
-<div class="doc-meta"><span>{len(docs[slug])} documents</span><span>{total:,} words</span></div>
-<input class="lib-filter" placeholder="Filter {html.escape(label.lower())}…" oninput="var q=this.value.toLowerCase();document.querySelectorAll('.lib-row').forEach(function(r){{r.style.display=r.textContent.toLowerCase().includes(q)?'':'none'}})">
+<div class="doc-meta"><span>{len(docs[slug])} documents</span><span>{total:,} words</span><span class="lib-readcount" data-total="{len(docs[slug])}"></span></div>
+<input class="lib-filter" aria-label="Filter {html.escape(label.lower())}" placeholder="Filter {html.escape(label.lower())}…" oninput="var q=this.value.toLowerCase();document.querySelectorAll('.lib-row').forEach(function(r){{r.style.display=r.textContent.toLowerCase().includes(q)?'':'none'}})">
 </header>
 <div class="lib-list">{''.join(rows)}</div>
 <nav class="lib-foot" aria-label="Collections">{others}</nav>
@@ -231,11 +243,16 @@ def build(root, dist, head, foot="</body></html>"):
     for slug, label, kicker, desc, _ in COLLECTIONS:
         items = docs[slug]
         summary.append(dict(slug=slug, label=label, kicker=kicker, desc=desc, count=len(items),
-                            words=sum(d["words"] for d in items),
+                            words=sum(d["words"] for d in items), hrefs=[d["href"] for d in items],
                             updated=max((d["updated"] for d in items), default="")))
     latest = sorted((d for items in docs.values() for d in items), key=lambda d: (d["updated"], d["added"]), reverse=True)[:8]
     latest = [dict(title=d["title"], href=d["href"], updated=d["updated"], coll=_meta_for(d["coll"])[1], lede=d["lede"]) for d in latest]
     search = [dict(t=d["title"], h=d["href"], c=_meta_for(d["coll"])[1], k="") for items in docs.values() for d in items]
+    for items in docs.values():
+        for d in items:
+            for txt, hid in HEADINGS.get(d["href"], []):
+                if len(txt) < 4: continue
+                search.append(dict(t=txt, h=f"{d['href']}#{hid}", c=_meta_for(d["coll"])[1], k="", p=d["title"]))
     n = sum(len(v) for v in docs.values())
     print(f"  library: {n} documents across {len(docs)} collections")
     return dict(collections=summary, latest=latest, doc_count=n, doc_words=sum(s["words"] for s in summary), search=search)
