@@ -64,7 +64,30 @@
 4. **Self-measured scorecards.** Ai-Price measures itself against last print; the leakage paper measures A2A with Ai-Price; SNAP+ savings are "estimated"; TRACE share uses Tradeweb's own definition, and in 2026 Tradeweb argued the denominator is inflated. Independent checks exist only for share (The DESK, Coalition Greenwich), and there they broadly agree on direction. Before quoting any Tradeweb number, ask "measured how, against what?"
 5. **From builder to buyer, and from broad to selective.** 2019–2021 messaging: electronification and breadth (A2A as a "top-4 dealer"). 2026 messaging: curated dealer lists (SNAP+) and consolidation (Trumid). The two shifts fit together: a venue whose franchise is dealer relationships, facing an ICE–MarketAxess combination built on A2A, sells selectivity and buys the third credit venue. *(Inference.)*
 
-## 4. Cross-note open questions
+## 4. Related company studies
+
+Nine companies around Tradeweb were studied the same way (corpora in `_ingest/raw/<company>/`, each with a `DIGEST.md`):
+
+| Hub | Relationship to Tradeweb |
+|---|---|
+| [[lseg-hub]] | Controlling shareholder (50.9% economic / 89.9% voting), data distributor, benchmark administrator (WGBI on Tradeweb FTSE closes). Start with [[lseg-tradeweb-control]] |
+| [[ice-hub]] | The rival stack (prices + indices + clearing), now buying MarketAxess; see [[ice-marketaxess-deal]] |
+| [[marketaxess-hub]] | The all-to-all credit rival whose US core stalled; sold to ICE. See [[marketaxess-open-trading]] against [[tradeweb-a2a-information-leakage]] |
+| [[bloomberg-hub]] | Desktop, BVAL pricing, indices and venues: competes on every layer, and was a partner in the abandoned EU consolidated-tape bid |
+| [[spglobal-hub]] | Evaluated pricing, iBoxx and CDX/iTraxx; the CP+ partner that ICE now controls |
+| [[thomsonreuters-hub]] | Former owner (2004–2018), via Refinitiv to LSEG |
+| [[goldman-hub]] | Dealer, customer and co-investor in market infrastructure |
+| [[jpmc-hub]] | Founding dealer and shareholder; source of Tradeweb's short-lived President |
+| [[blackrock-hub]] | Anchor client; Aladdin is a distribution channel for every venue |
+
+**Cross-company analysis** across all ten firms:
+- [[cross-company-attention-map]]: what each firm publishes about, validated topic tagging of 4,592 items.
+- [[cross-company-say-vs-do]]: newsroom attention against FY2025 revenue mix and 10-K risk factors.
+- [[cross-company-capability-matrix]]: who owns which layer of the trade-and-data chain, and the empty cells.
+- [[cross-company-financials]]: SEC XBRL financials FY2018–Q2 2026, ROIC with and without goodwill, capital allocation, deal multiples.
+- [[cross-company-narrative-vs-numbers]]: each firm's story turned into growth, margin, reinvestment and risk claims, then tested.
+
+## 5. Cross-note open questions
 
 1. **Trumid financials**: revenue, EBITDA and the implied multiple (8-K / Oct 20 2026 investor deck), the tax assets, funding, and the antitrust read alongside ICE–MarketAxess. ([[tradeweb-strategy-financials]] §8)
 2. **Independent rulers**: will Tradeweb re-run Ai-Price, leakage or SNAP+ results on a price it doesn't build? ([[tradeweb-ai-price]] §9, [[tradeweb-a2a-information-leakage]] §8)
@@ -73,7 +96,7 @@
 5. **Frontier options**: do Kalshi, Canton/on-chain repo and Crossover move past single-trade demos by 2027?
 6. **Q3 2026 results (Oct 29 2026)**: was Q2's +9.0% growth a blip?
 
-**Links:** [[tradeweb-people]] · [[tradeweb-outside-voices]] · [[tradeweb-mission-forces]] · [[tradeweb-strategy-financials]] · [[tradeweb-credit]] · [[tradeweb-rates-em]] · [[tradeweb-derivatives-regulation]] · [[tradeweb-equities-retail]] · [[tradeweb-tech-ai-data]] · [[tradeweb-ai-price]] · [[tradeweb-a2a-information-leakage]] · [[market-structure-24-5-trading]] · [[trading-floor-mechanics]] · [[wss-capital-markets-ma]] · [[wss-rates-macro]] · [[wss-credit-distressed]] · [[sec-filing-intelligence]] · [[canon-helmer-7-powers]] · [[canon-hagiu-wright-multi-sided-platforms]] · [[canon-porter-competitive-strategy]] · [[canon-christensen-innovators-dilemma]]
+**Links:** [[lseg-hub]] · [[ice-hub]] · [[marketaxess-hub]] · [[bloomberg-hub]] · [[spglobal-hub]] · [[thomsonreuters-hub]] · [[goldman-hub]] · [[jpmc-hub]] · [[blackrock-hub]] · [[tradeweb-people]] · [[tradeweb-outside-voices]] · [[tradeweb-mission-forces]] · [[tradeweb-strategy-financials]] · [[tradeweb-credit]] · [[tradeweb-rates-em]] · [[tradeweb-derivatives-regulation]] · [[tradeweb-equities-retail]] · [[tradeweb-tech-ai-data]] · [[tradeweb-ai-price]] · [[tradeweb-a2a-information-leakage]] · [[market-structure-24-5-trading]] · [[trading-floor-mechanics]] · [[wss-capital-markets-ma]] · [[wss-rates-macro]] · [[wss-credit-distressed]] · [[sec-filing-intelligence]] · [[canon-helmer-7-powers]] · [[canon-hagiu-wright-multi-sided-platforms]] · [[canon-porter-competitive-strategy]] · [[canon-christensen-innovators-dilemma]]
 
 ---
 ### Rep

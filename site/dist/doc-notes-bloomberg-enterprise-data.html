@@ -1,0 +1,456 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Note · Bloomberg Enterprise Data — selling the Terminal&#x27;s data without the Terminal, through other people&#x27;s clouds, while keeping the licence as the leash · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792953205"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Note · Bloomberg Enterprise Data — selling the Terminal&#x27;s data without the Terminal, through other people&#x27;s clouds, while keeping the licence as the leash</h1>
+<div class="doc-meta"><span>22 min read</span><span>4,989 words</span><span>Updated 2026-10-25</span><span class="doc-src">notes/bloomberg-enterprise-data.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#1-chronology-the-spine">1. Chronology — the spine</a></li><li class="l2"><a href="#2-the-product-stack-by-how-data-leaves-bloomberg">2. The product stack, by how data leaves Bloomberg</a></li><li class="l2"><a href="#3-how-the-narrative-moved">3. How the narrative moved</a></li><li class="l2"><a href="#4-what-the-claims-dont-prove">4. What the claims don't prove</a></li><li class="l2"><a href="#5-strategic-read-inference-not-stated-by-bloomberg">5. Strategic read (inference — not stated by Bloomberg)</a></li><li class="l2"><a href="#6-canon-lenses">6. Canon lenses</a></li><li class="l2"><a href="#7-practitioner-counterpoint">7. Practitioner counterpoint</a></li><li class="l2"><a href="#8-open-questions-to-track">8. Open questions to track</a></li><li class="l3"><a href="#rep">Rep</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p>Strategy / data-business note · Maps to <strong>Course 04</strong> (Competitive Strategy: channels, coopetition, who owns the customer), <strong>Course 07</strong> (Data, Analytics &amp; Decision-Making: point-in-time data, self-reported counts, evaluation cost), <strong>Course 05</strong> (Marketing &amp; Brand: versioning, entitlements, free identifiers), <strong>E10</strong> (Digital &amp; AI Transformation: cloud, marketplaces, MCP), <strong>E3</strong> (M&amp;A, Deals &amp; Restructuring: RegTek, Second Measure, ArcticDB as a partnership in place of a purchase) · Written 2026-10-25 · Part of <a class="wiki" href="doc-notes-bloomberg-hub.html">bloomberg hub</a>; companions <a class="wiki" href="doc-notes-bloomberg-ai-strategy.html">bloomberg ai strategy</a>, <a class="wiki" href="doc-notes-bloomberg-pricing-bval-ibval.html">bloomberg pricing bval ibval</a>, <a class="wiki" href="doc-notes-bloomberg-buyside-stack.html">bloomberg buyside stack</a>, <a class="wiki" href="doc-notes-bloomberg-terminal-instrumentation.html">bloomberg terminal instrumentation</a></p>
+</blockquote>
+<ul>
+<li><strong>Source:</strong> about 45 Bloomberg items in <code>_ingest/raw/bloomberg/articles.jsonl</code> (press releases on bloomberg.com via Wayback, PR Newswire releases for 2024–26, Insights articles and one Tech-at-Bloomberg story), <strong>Aug 2019 – Oct 22 2026</strong>, each read in full for the facts used here. Bloomberg is private. There is <strong>no revenue, margin, client count or price</strong> for Enterprise Data anywhere in the corpus. The only usage figure is PORT Enterprise's "more than 600 clients" (2024-12-04). Every number below is a Bloomberg boilerplate or launch claim unless another source is named.</li>
+<li><strong>Core claim:</strong> Enterprise Data is Bloomberg's way of selling Terminal-grade content to machines that don't need the screen. Real-time data goes out as B-PIPE, bulk data as Data License, and both get managed for the client through DL+. It now reaches clients through <em>their</em> infrastructure: AWS (2019), Google Cloud (2022), a Snowflake Native App (2023), AWS/Azure/GCP for tick data (2024), Kaiko on the Canton chain (2026) and an MCP server for clients' AI agents (2026). The catalogue claim grew from <strong>50 million securities and 15,000–30,000 fields</strong> (2022–23) to <strong>100 million securities and 50,000 fields</strong> (Sep 2026). The pattern I infer: Bloomberg lets the hyperscalers, Snowflake and blockchains carry the bytes, but it never lets them hold the <strong>entitlement</strong>. Every channel checks a Bloomberg Data License before it returns data. So the marketplaces are pipes, not stores, and Bloomberg keeps the customer. Tony McManus's 2026 line sums up the pitch: "Connections were never the hard part. Readiness is".</li>
+</ul>
+<hr />
+<h2 id="1-chronology-the-spine">1. Chronology — the spine</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Event</th>
+<th>Numbers stated (Bloomberg unless noted)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2018 / Feb 2019</td>
+<td><strong>Enterprise Access Point (EAP)</strong> launches. One release dates it to 2018, another to February 2019 (§4).</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2019-08-13</td>
+<td>Buys <strong>RegTek.Solutions</strong> and folds it into <strong>RHUB</strong> (Regulatory Reporting Hub).</td>
+<td>No price</td>
+</tr>
+<tr>
+<td><strong>2019-09-12</strong></td>
+<td><strong>B-PIPE on AWS</strong> worldwide. A US-only cloud launch came first. Bloomberg calls it "one of the only cloud native real-time data products suitable for capital markets use cases".</td>
+<td>35m instruments, 330+ exchanges, 5,000+ contributors</td>
+</tr>
+<tr>
+<td><strong>2020-05-06</strong></td>
+<td><strong>Data License Plus (DL+)</strong>: a managed service that merges a client's Bloomberg data into one linked dataset. Launch was "accelerated" by COVID.</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2020-05-13</td>
+<td>EAP becomes a <strong>self-service marketplace</strong> with click-to-buy and a dataset creator.</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2020-07-06</td>
+<td>Brazil's <strong>ABNT</strong> adopts FIGI (NBR 16885:2020).</td>
+<td>"over 700 million FIGIs issued"</td>
+</tr>
+<tr>
+<td>2020-09-16</td>
+<td>EAP alt-data shelf expands.</td>
+<td><strong>60+</strong> third-party vendors, "three-fold" since launch</td>
+</tr>
+<tr>
+<td><strong>2020-12-24</strong></td>
+<td>Completes the <strong>Second Measure</strong> acquisition (card-spend analytics).</td>
+<td>No price</td>
+</tr>
+<tr>
+<td>2021-09-15</td>
+<td><strong>ASC X9.145-2021</strong> makes FIGI a US national standard (OMG standard since 2014; ABNT 2020).</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>2021-09-29</strong></td>
+<td><strong>BQuant Enterprise</strong>: a cloud Python/Jupyter platform with Bloomberg data loaded.</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2021-10-14</td>
+<td>First <strong>crypto FIGIs</strong>, with Kaiko as Certified Provider.</td>
+<td>All fiat-denominated BTC and ETH instruments</td>
+</tr>
+<tr>
+<td>2021-11-04</td>
+<td><strong>Server API (SAPI)</strong> explainer: Terminal entitlements feed a client's server apps.</td>
+<td>Four service tiers</td>
+</tr>
+<tr>
+<td>2022-01-20</td>
+<td>Sony Bank runs B-PIPE, BVAL and Data License inside its own AWS stack.</td>
+<td>DL: <strong>50m securities, 30k fields</strong></td>
+</tr>
+<tr>
+<td><strong>2022-03-10</strong></td>
+<td><strong>B-PIPE on Google Cloud</strong>.</td>
+<td>35m instruments, 330+ exchanges, <strong>80bn ticks a day</strong></td>
+</tr>
+<tr>
+<td>2022-04-27</td>
+<td>LEI Common Data Format 3.1. Bloomberg is an accredited LEI <strong>Local Operating Unit</strong> and gains a second accreditation, for funds.</td>
+<td>Six new entity-category fields</td>
+</tr>
+<tr>
+<td>2022-07-13</td>
+<td>M&amp;G picks Bloomberg <strong>sanctions data</strong>, delivered through DL+.</td>
+<td>10 jurisdictions monitored</td>
+</tr>
+<tr>
+<td>2023-02-27</td>
+<td><strong>ArcticDB</strong>: Man Group's DataFrame database goes into BQuant under a multi-year open-source agreement.</td>
+<td>"over one million downloads since 2015"</td>
+</tr>
+<tr>
+<td>2023-04-11</td>
+<td>Vancity takes PORT Enterprise and Data License.</td>
+<td>DL: 50m securities, <strong>15k fields</strong></td>
+</tr>
+<tr>
+<td>2023-06-06</td>
+<td><strong>Funds Data Solution</strong> on Data License.</td>
+<td>135,000 funds, 12,000 ETPs</td>
+</tr>
+<tr>
+<td><strong>2023-06-28</strong></td>
+<td><strong>DL+ Snowflake Native App</strong>, announced at Snowflake Summit. Clients provision their own DL subscriptions inside their Snowflake account.</td>
+<td>50m securities, <strong>40k fields</strong></td>
+</tr>
+<tr>
+<td><strong>2023-09-07</strong></td>
+<td><strong>ALTD<GO></strong> on the Terminal. Second Measure is the flagship source; Placer.ai is the launch partner.</td>
+<td>300+ public tickers. 7-day lag (story)</td>
+</tr>
+<tr>
+<td>2024-01-10</td>
+<td>BTCA Data Access API joins TCA data to DL reference and pricing data.</td>
+<td>DL: <strong>70m securities, 40k fields</strong></td>
+</tr>
+<tr>
+<td><strong>2024-04-09</strong></td>
+<td><strong>Point-in-Time</strong> company financials, estimates and pricing for quants.</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024-05-22</td>
+<td>Second Measure feeds on <strong>Data License</strong> for the first time.</td>
+<td>20m+ consumer panel. 3,000+ companies, 4,000+ brands. <strong>3-day lag</strong></td>
+</tr>
+<tr>
+<td>2024-09-09</td>
+<td><strong>BSM U.S. Consumer Spend Index</strong> in ECAN.</td>
+<td>Consumer spending ≈ "nearly 70 percent" of GDP</td>
+</tr>
+<tr>
+<td><strong>2024-09-17</strong></td>
+<td><strong>Virtual Data Room (VDR)</strong>: try bulk datasets in hosted Jupyter notebooks before subscribing.</td>
+<td>Evaluations "upwards of 90 days", over half of that admin</td>
+</tr>
+<tr>
+<td>2024-10-01</td>
+<td>OHLC bars on Tick History, "natively available on AWS, Azure and GCP".</td>
+<td>350+ exchanges, 70m+ instruments</td>
+</tr>
+<tr>
+<td>2024-11-25</td>
+<td>Baader Bank takes SFDR data.</td>
+<td>16,000+ companies</td>
+</tr>
+<tr>
+<td><strong>2024-12-04</strong></td>
+<td><strong>PORT Enterprise data to Snowflake via DL+</strong>.</td>
+<td>PORT Enterprise "more than 600 clients"</td>
+</tr>
+<tr>
+<td>2025-01-14</td>
+<td>Research-data survey of 150+ quants.</td>
+<td>37% say historical-data quality is the top challenge. 72% can evaluate ≤3 datasets at a time. 65% take ≥1 month per dataset. 62% want cloud delivery</td>
+</tr>
+<tr>
+<td>2025-01-28</td>
+<td><strong>NAIC</strong> principles-based bond classification for insurers.</td>
+<td>Four classification fields</td>
+</tr>
+<tr>
+<td>2025-02-06</td>
+<td>Vietnam Maritime Bank adopts B-PIPE.</td>
+<td>35m instruments, <strong>350+</strong> exchanges</td>
+</tr>
+<tr>
+<td>2025-06-04</td>
+<td><strong>Similarweb</strong> web traffic added to ALTD.</td>
+<td>Coverage to 3,000+ companies. 7-day lag, 5 years of history</td>
+</tr>
+<tr>
+<td>2025-09-16</td>
+<td><strong>HQLA</strong> solution extended to the UAE and Qatar.</td>
+<td>12 jurisdictions. Four core datasets</td>
+</tr>
+<tr>
+<td>2025-12-04</td>
+<td>BQuant <strong>Code Crunch</strong> in London: T. Rowe Price, Atlantic House, J.P. Morgan.</td>
+<td>Four-month programme</td>
+</tr>
+<tr>
+<td>2026-01-22</td>
+<td>Second quant survey.</td>
+<td><strong>54%</strong> have not started on GenAI. 72% want sector-specific data</td>
+</tr>
+<tr>
+<td><strong>2026-01-28</strong></td>
+<td><strong>Alt-data entitlements</strong> in ALTD: premium Placer.ai and Similarweb metrics.</td>
+<td>5,000+ KPI estimates. Lag 3–5 days entitled vs 7–14 days without</td>
+</tr>
+<tr>
+<td><strong>2026-02-26</strong></td>
+<td><strong>Kaiko + Canton</strong>: DL security master and evaluated pricing to be available on-chain for tokenized UST and repo.</td>
+<td>Phase 1 only. No live date</td>
+</tr>
+<tr>
+<td>2026-05-07</td>
+<td><strong>Point-in-time economic data</strong> on DL.</td>
+<td>3,000+ indicators, 100+ economies, history from 1997</td>
+</tr>
+<tr>
+<td>2026-09-23</td>
+<td><strong>CLO reference data</strong>, including loan-level data, on DL; ASKB access planned.</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>2026-09-29</strong></td>
+<td><strong>Enterprise MCP</strong> over DL+. McManus is now 'Global Head of Enterprise Data and Indices'.</td>
+<td><strong>100m+ securities, 50k+ fields</strong></td>
+</tr>
+<tr>
+<td>2026-09-30</td>
+<td><strong>Stablecoin dashboard</strong> (RWAS<GO>) using Allium data.</td>
+<td>Covers every coin &gt;$100m supply, "collectively more than 98% of the market". Stablecoin supply &gt;$300bn</td>
+</tr>
+<tr>
+<td>2026-10-22</td>
+<td><strong>Basel crypto exposure classification</strong> (BCBS Groups 1a–2b).</td>
+<td>~1,700 funds flagged, about half with undeclared crypto exposure. 125,000 fund tickers covered</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-the-product-stack-by-how-data-leaves-bloomberg">2. The product stack, by how data leaves Bloomberg</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Product</th>
+<th>What it sells</th>
+<th>Channel it rides</th>
+<th>Leash it keeps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Real-time</td>
+<td><strong>B-PIPE</strong>, SAPI</td>
+<td>Normalised tick data and the Terminal's real-time feed into client apps</td>
+<td>On-prem, hosted, AWS (2019), Google Cloud (2022)</td>
+<td>Exchange and Bloomberg entitlements. SAPI reuses "existing Bloomberg Terminal exchange entitlements"</td>
+</tr>
+<tr>
+<td>Bulk / batch</td>
+<td><strong>Data License</strong>, Tick History, PiT, Funds, CLO</td>
+<td>Reference, pricing, regulatory, fundamentals and history</td>
+<td>SFTP, REST, AWS/Azure/GCP, data.bloomberg.com</td>
+<td>The DL contract, per content domain</td>
+</tr>
+<tr>
+<td>Managed data</td>
+<td><strong>DL+</strong></td>
+<td>Linked, modelled 'unified data model' of what the client already licenses</td>
+<td>Snowflake Native App (2023), PORT to Snowflake (2024), MCP (2026)</td>
+<td>Provisioning of "their set of Bloomberg Data License subscriptions"</td>
+</tr>
+<tr>
+<td>Discovery</td>
+<td><strong>EAP</strong> (2018/19), <strong>VDR</strong> (2024)</td>
+<td>Catalogue, samples, click-to-buy, test-drive notebooks</td>
+<td>Bloomberg's own web</td>
+<td>Bloomberg runs the storefront itself; no third-party marketplace is named as a sales channel</td>
+</tr>
+<tr>
+<td>Compute</td>
+<td><strong>BQuant Enterprise</strong> (+ ArcticDB)</td>
+<td>Hosted research environment with the data pre-wired</td>
+<td>Bloomberg-managed cloud, client S3 buckets</td>
+<td>Data never leaves Bloomberg's entitlement model</td>
+</tr>
+<tr>
+<td>Alt data</td>
+<td>EAP shelf (60+ vendors), <strong>Second Measure</strong>, ALTD</td>
+<td>Third-party and owned alt data next to fundamentals</td>
+<td>Terminal (ALTD) and DL</td>
+<td>Owned panel (BSM) plus resold vendor entitlements</td>
+</tr>
+<tr>
+<td>Identity</td>
+<td><strong>FIGI</strong>/OpenFIGI, LEI LOU</td>
+<td>Free, open identifiers</td>
+<td>OMG, ABNT, X9, Kaiko</td>
+<td>None on the ID. The leash sits on the data joined to it</td>
+</tr>
+<tr>
+<td>Regulatory</td>
+<td>RHUB/RegTek, sanctions, SFDR, HQLA, NAIC, Basel crypto</td>
+<td>Rule-mapped classification fields</td>
+<td>DL and DL+</td>
+<td>Methodology and updates</td>
+</tr>
+<tr>
+<td>On-chain</td>
+<td>Kaiko/Canton, Allium</td>
+<td>DL data on-chain; on-chain data on the Terminal</td>
+<td>Canton Network; RWAS<GO></td>
+<td>"Entitlement controls are designed to ensure only licensed participants can access Bloomberg data, consistent with traditional data licensing frameworks."</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="3-how-the-narrative-moved">3. How the narrative moved</h2>
+<ol>
+<li><strong>2019–2020: 'same data, your deployment'.</strong> B-PIPE in the cloud gives "the same normalized, consolidated real-time market data available through the Bloomberg Terminal". The buy-side quote is about cost. Balyasny: "Connecting to B-PIPE on AWS allows us to capitalize on several operational efficiencies, while reducing our overall spend." DL+ and the EAP marketplace are framed as remote-work fixes during COVID.</li>
+<li><strong>2020–2021: build or buy alt data and quant tooling.</strong> Second Measure is acquired. EAP reaches 60+ vendors. BQuant Enterprise launches. McManus's argument is democratisation: "the high cost of entry has put the majority of firms at a disadvantage".</li>
+<li><strong>2022–2023: the client's cloud becomes the venue.</strong> Google Cloud: "Bloomberg is the only financial data provider to enable cloud-native access to tick-for-tick data." Then Snowflake. Snowflake's own executive puts the distribution logic plainly: "Bloomberg is able to distribute its app to thousands of Snowflake customers, without these customers having to move or expose their data".</li>
+<li><strong>2024–2025: quant 'readiness' products.</strong> Point-in-time data, the VDR, OHLC bars and BSM on DL. Two surveys supply the demand story (evaluation takes ≥1 month for 65%). Angana Jacob: "Without historical point-in-time data, models can overestimate returns due to survivorship bias and look ahead bias."</li>
+<li><strong>2026: data as context for agents and for chains.</strong> MCP over DL+, Kaiko on Canton, Allium. McManus: "the bottleneck facing financial institutions has shifted from model capability to data readiness". In this framing, metadata is the product: "On its own, a last price doesn’t say what currency it’s in or what kind of price it is."</li>
+</ol>
+<h2 id="4-what-the-claims-dont-prove">4. What the claims don't prove</h2>
+<ol>
+<li><strong>The counts drift, and they aren't date-matched.</strong> DL fields: <strong>30k</strong> (Sony, Jan 2022), <strong>15k</strong> (Vancity, Apr 2023), <strong>40k</strong> (Snowflake, Jun 2023 and Jan/Dec 2024), <strong>50k</strong> (MCP, Sep 2026). Securities: <strong>50m</strong> (2022–23), then <strong>70m</strong> (2024), then <strong>100m</strong> (2026). A drop from 30k to 15k fields in 15 months is a boilerplate inconsistency, not shrinkage. Treat every count as marketing copy for that date (the DIGEST flags the same problem, credibility row).</li>
+<li><strong>B-PIPE's instrument count is frozen.</strong> It is <strong>35m instruments</strong> in 2019, 2022 and 2025, while exchanges go from <strong>330+</strong> to <strong>350+</strong>. Either coverage stopped growing or nobody updated the copy. Tick History quotes <strong>70m+</strong> instruments in 2024, so the definitions differ by product.</li>
+<li><strong>Even the launch dates conflict.</strong> EAP was "launched in 2018" (May 2020) but had its "introduction in February 2019" (Sep 2020). ALTD runs on "a mere seven-day lag" (story, 2023), BSM feeds on DL at "a 3-day lag" (2024), and un-entitled ALTD runs at 7–14 days (2026). These are three products at three resolutions, sold as one dataset.</li>
+<li><strong>'Only' and 'first' claims are unverified.</strong> ‘only financial data provider’ with cloud-native tick data (2022) and "one of the only" cloud real-time products (2019) come with no competitor named. That fits the corpus-wide pattern: Bloomberg names no competitor (DIGEST §0).</li>
+<li><strong>Distribution reach is not uptake.</strong> "thousands of Snowflake customers" is Snowflake's installed base, not Bloomberg's adoption. No release gives the number of DL+ Snowflake installs, B-PIPE cloud clients or MCP users. PORT Enterprise's 600+ is the only count.</li>
+<li><strong>The surveys are self-serving.</strong> Each is ~150 respondents from Bloomberg's own client workshops. The headline (54% have not started GenAI because of 'data readiness') is the answer that sells DL+ and MCP. The release itself hedges: the gap "is likely driven less by a lack of appetite".</li>
+<li><strong>Tokenization is an intent, not a service.</strong> Kaiko/Canton is an "initiative" that is "intended to focus initially" on UST and repo. It has a beta sign-up, no go-live and no named bank user. Allium is a Terminal dashboard of someone else's on-chain data.</li>
+<li><strong>An open identifier doesn't prove open data.</strong> "over 700 million FIGIs issued" counts issuance, not use. The corpus has no comparison with CUSIP or ISIN adoption, and crypto FIGIs tie to ISINs only "with appropriate licensing".</li>
+</ol>
+<h2 id="5-strategic-read-inference-not-stated-by-bloomberg">5. Strategic read (inference — not stated by Bloomberg)</h2>
+<ul>
+<li><strong>Who owns the customer? Bloomberg still does, by design.</strong> Every hyperscaler and marketplace release reads 'bring your own licence'. The Snowflake app provisions DL subscriptions the client already holds. MCP "validates a firm’s entitlements before returning data on any agent request, under standard Data License rights." Kaiko's text keeps "IP ownership, licensing compliance, and auditability". The cloud takes the hosting cost and the integration friction. Bloomberg keeps the price list, the contract and the usage audit. That is the opposite of a marketplace in which Snowflake or AWS owns checkout.</li>
+<li><strong>But the interface is leaking.</strong> Each channel moves the client's daily attention from the Terminal to the client's own warehouse, notebook or agent. The ALTD story shows the tension: a client with many analysts "but only one of them has a Terminal subscription". Enterprise Data can grow while seats stagnate. LSEG shows the same split in its own numbers: Data &amp; Feeds grows ~7% and Workflows ~3% (context, from <a class="wiki" href="doc-notes-lseg-workspace-data.html">lseg workspace data</a>). Bloomberg's private books hide whether that is happening to it.</li>
+<li><strong>Peers made different bets on the channel.</strong> S&amp;P runs its own Marketplace and also sells through Snowflake/Xpressfeed and MCP servers inside Claude, Copilot, AWS and Google (context, from <a class="wiki" href="doc-notes-spglobal-ai-data-layer.html">spglobal ai data layer</a>). ICE delivers fixed-income data over MCP, available in Claude, prices on data value (context, from <a class="wiki" href="doc-notes-ice-fixed-income-data.html">ice fixed income data</a>). Aladdin went to Azure (2020) and Snowflake (2021) as an operating layer (context, from <a class="wiki" href="doc-notes-blackrock-aladdin-data.html">blackrock aladdin data</a>). Bloomberg's MCP is <strong>Bloomberg-hosted, client-agent-agnostic</strong>, and names no LLM partner. It also leads the MCP Financial Services Interest Group, so it shapes the standard rather than buying a slot in someone's assistant. That is a stronger position on owning the customer and a weaker one on reach.</li>
+<li><strong>Give away the key, sell the lock.</strong> FIGI is free ("available free of charge with no material impediments on use") and has been standardised three times (OMG 2014, ABNT 2020, X9 2021). Crypto FIGIs (2021) arrived before Bloomberg offered any crypto data products. S&amp;P later made its CIQ ID free on DUNL (context, from <a class="wiki" href="doc-notes-spglobal-ai-data-layer.html">spglobal ai data layer</a>): same move. The identifier lowers the cost of joining everything else to Bloomberg's data.</li>
+<li><strong>Regulation is the steadiest demand driver.</strong> Sanctions (10 jurisdictions), SFDR (16k companies), HQLA (12 jurisdictions), NAIC, EMIR/MiFID reporting via RHUB and Basel crypto groups all turn rule changes into fields that must be bought and refreshed. The NAIC piece says it outright: "This can largely be characterized as a data problem". This business is low-glamour and high-retention.</li>
+<li><strong>Alt data shows buy versus partner.</strong> Bloomberg <em>bought</em> the one dataset it calls "the most in-demand type" (card spend, Second Measure) and <em>partnered</em> for the rest: foot traffic (Placer.ai), web traffic (Similarweb) and 60+ EAP vendors. Then it <em>versioned</em> the result: free ALTD at 7–14 days, entitled at 3–5 days, DL feeds at 3 days.</li>
+<li><strong>Tokenization as data-on-chain</strong> fits the 'neutral layer' mission (DIGEST §5). Bloomberg doesn't run a chain or issue tokens. It licenses the security master and evaluated price onto whichever chain wins, with entitlements intact. Peers bet the other way, on owned rails (see <a class="wiki" href="doc-notes-jpmc-kinexys-deposit-tokens.html">jpmc kinexys deposit tokens</a>, <a class="wiki" href="doc-notes-blackrock-digital-assets.html">blackrock digital assets</a>).</li>
+</ul>
+<h2 id="6-canon-lenses">6. Canon lenses</h2>
+<ul>
+<li><strong>Information goods</strong> (<a class="wiki" href="doc-canon-canon-shapiro-varian-information-rules.html">canon shapiro varian information rules</a>): one dataset versioned by latency (ALTD 7–14 vs 3–5 days), by delivery (Terminal, SAPI, B-PIPE, DL, DL+) and by readiness (raw, linked, point-in-time, MCP metadata). Free FIGI is the classic complement to a priced good.</li>
+<li><strong>Coopetition</strong> (<a class="wiki" href="doc-canon-canon-brandenburger-nalebuff-coopetition.html">canon brandenburger nalebuff coopetition</a>): AWS, Google, Snowflake and Kaiko are complementors who could also become rivals for the customer relationship. The entitlement check is how Bloomberg keeps the value-net position.</li>
+<li><strong>Platforms</strong> (<a class="wiki" href="doc-canon-canon-cusumano-business-of-platforms.html">canon cusumano business of platforms</a>, <a class="wiki" href="doc-canon-canon-hagiu-wright-multi-sided-platforms.html">canon hagiu wright multi sided platforms</a>): EAP's 60 vendors make Bloomberg a two-sided marketplace. The Snowflake app makes Bloomberg a complementor on someone else's platform. The firm runs both postures at once.</li>
+<li><strong>Powers</strong> (<a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a>): switching costs (point-in-time history and linked IDs can't be rebuilt cheaply), cornered resource (Second Measure panel, BVAL) and process power (the 'readiness' metadata).</li>
+<li><strong>Disruption</strong> (<a class="wiki" href="doc-canon-canon-christensen-innovators-dilemma.html">canon christensen innovators dilemma</a>): warehouse-native and agent-native delivery are the low-end path by which cheaper data reaches 'good enough'. Bloomberg's answer is to sustain from above with metadata, not to cut price.</li>
+<li><strong>Noise and measurement</strong> (<a class="wiki" href="doc-canon-canon-kahneman-sibony-sunstein-noise.html">canon kahneman sibony sunstein noise</a>): field and securities counts that move ±50% between releases are noise. Score them by date, not by headline.</li>
+</ul>
+<h2 id="7-practitioner-counterpoint">7. Practitioner counterpoint</h2>
+<ul>
+<li><strong>For Bloomberg:</strong> the cloud moves are early and real. B-PIPE was on AWS in 2019, three years before the Google deal, and a bank client (Sony Bank) runs trading and risk fully in the cloud. Point-in-time data and VDR address real quant pain: 65% of survey respondents need a month or more to evaluate one dataset. Client quotes from M&amp;G ("robust trade screening process"), Morgan Stanley (Basel look-through) and MUFG AM ("allows us to drive innovation faster and more efficiently than building these systems ourselves") describe workflows, not just praise.</li>
+<li><strong>Against:</strong> the moat claims rest on self-reported counts that don't reconcile. Every channel is a cost-saving story told by the buyer (Balyasny: "reducing our overall spend"), which also means pricing pressure. And the cloud marketplaces that host Bloomberg today host LSEG, S&amp;P and FactSet next door, which lowers the cost of a side-by-side test. VDR exists because rivals are one notebook away.</li>
+<li><strong>Both:</strong> a data buyer should test Bloomberg's counts against their own entitlement (fields actually delivered, securities with non-null values) and run the VDR evaluation against a second vendor in the same Snowflake account. Treat 'readiness' as a hypothesis: measure how much reconciliation it actually removes.</li>
+</ul>
+<h2 id="8-open-questions-to-track">8. Open questions to track</h2>
+<ol>
+<li><strong>Channel economics.</strong> Does Bloomberg ever list a priced (not bring-your-own-licence) product on Snowflake, AWS or Azure Marketplace? That would be the signal that the marketplace owns checkout.</li>
+<li><strong>MCP partners.</strong> Will Enterprise MCP name an LLM or assistant channel (Claude, Copilot, Gemini), as S&amp;P and ICE already have? Will the planned real-time extension carry B-PIPE entitlements?</li>
+<li><strong>Kaiko/Canton go-live.</strong> Is there a first on-chain repo or collateral workflow using Bloomberg evaluated pricing, and with which banks?</li>
+<li><strong>Count reconciliation.</strong> Does a single, dated catalogue count (securities, fields, instruments) appear, or does the 15k/30k/40k/50k drift continue?</li>
+<li><strong>Seats vs feeds.</strong> Any sign (Terminal user counts, BI commentary) that enterprise delivery is cannibalising Terminal seats?</li>
+<li><strong>FIGI vs CUSIP.</strong> Does any regulator mandate FIGI? Note that the US Financial Data Transparency Act joint data standard was contested (context, not from Bloomberg; verify before use).</li>
+<li><strong>Regulatory pipeline.</strong> Basel crypto rules, NAIC and SEC Treasury clearing: which becomes the next DL field set?</li>
+</ol>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-bloomberg-hub.html">bloomberg hub</a> · <a class="wiki" href="doc-notes-bloomberg-ai-strategy.html">bloomberg ai strategy</a> (MCP, ASKB, readiness) · <a class="wiki" href="doc-notes-bloomberg-pricing-bval-ibval.html">bloomberg pricing bval ibval</a> (the evaluated prices that DL and Kaiko distribute) · <a class="wiki" href="doc-notes-bloomberg-buyside-stack.html">bloomberg buyside stack</a> (PORT, BTCA, AIM as data consumers) · <a class="wiki" href="doc-notes-bloomberg-private-markets.html">bloomberg private markets</a> (DLEN, Canoe as data feeds) · <a class="wiki" href="doc-notes-bloomberg-people.html">bloomberg people</a> (McManus, Lai, Doherty, Jacob) · <a class="wiki" href="doc-notes-bloomberg-mission-forces.html">bloomberg mission forces</a> · <a class="wiki" href="doc-notes-bloomberg-outside-voices.html">bloomberg outside voices</a> · <a class="wiki" href="doc-notes-bloomberg-terminal-instrumentation.html">bloomberg terminal instrumentation</a> · <a class="wiki" href="doc-notes-lseg-workspace-data.html">lseg workspace data</a> · <a class="wiki" href="doc-notes-spglobal-ai-data-layer.html">spglobal ai data layer</a> · <a class="wiki" href="doc-notes-spglobal-pricing-fixed-income.html">spglobal pricing fixed income</a> · <a class="wiki" href="doc-notes-ice-fixed-income-data.html">ice fixed income data</a> · <a class="wiki" href="doc-notes-blackrock-aladdin-data.html">blackrock aladdin data</a> · <a class="wiki" href="doc-notes-tradeweb-tech-ai-data.html">tradeweb tech ai data</a> · <a class="wiki" href="doc-notes-jpmc-kinexys-deposit-tokens.html">jpmc kinexys deposit tokens</a> · <a class="wiki" href="doc-notes-blackrock-digital-assets.html">blackrock digital assets</a> · <a class="wiki" href="doc-notes-wss-ai-economics.html">wss ai economics</a> · <a class="wiki" href="doc-canon-canon-shapiro-varian-information-rules.html">canon shapiro varian information rules</a> · <a class="wiki" href="doc-canon-canon-brandenburger-nalebuff-coopetition.html">canon brandenburger nalebuff coopetition</a> · <a class="wiki" href="doc-canon-canon-cusumano-business-of-platforms.html">canon cusumano business of platforms</a> · <a class="wiki" href="doc-canon-canon-hagiu-wright-multi-sided-platforms.html">canon hagiu wright multi sided platforms</a> · <a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a> · <a class="wiki" href="doc-canon-canon-christensen-innovators-dilemma.html">canon christensen innovators dilemma</a> · <a class="wiki" href="doc-canon-canon-kahneman-sibony-sunstein-noise.html">canon kahneman sibony sunstein noise</a></p>
+<hr />
+<h3 id="rep">Rep</h3>
+<p>Three short computations with numbers from this note.</p>
+<p><strong>(a) Catalogue growth, or copy growth?</strong> DL securities: 50m (Snowflake release, Jun 2023) → 100m (MCP, Sep 2026). Compute the implied CAGR over 3.25 years. <em>(Answer: 2^(1/3.25) − 1 ≈ <strong>23.8%</strong> a year.)</em> Fields: 40k (Jun 2023) → 50k (Sep 2026). <em>(Answer: 1.25^(1/3.25) − 1 ≈ <strong>7.1%</strong> a year.)</em> Now redo the field CAGR from Vancity's 15k (Apr 2023): <em>(50/15)^(1/3.4) − 1 ≈ <strong>42%</strong> a year.)</em> In one paragraph, say which base you would defend in front of a data-procurement committee and why a three-fold spread in the answer means you should ask for the entitlement-level count.</p>
+<p><strong>(b) What the VDR is worth.</strong> Bloomberg says a data evaluation takes up to <strong>90 days</strong>, more than half of it admin. The 2025 survey says 72% of teams can run <strong>≤3</strong> evaluations at a time. Take a team running 3 parallel evaluations of 90 days, so 12 a year. If VDR removes the admin half (90 → 45 days), how many can the team run? <em>(Answer: 3 × 365/45 ≈ <strong>24</strong> a year, double.)</em> Assume each evaluation ties up one quant at $300k a year fully loaded (assumption, not from Bloomberg) for its duration. What is the saving per evaluation? <em>(Answer: 45/365 × $300k ≈ <strong>$37k</strong>.)</em> Then ask the strategic question: who benefits more from faster evaluation, the incumbent or the challenger whose data the client is also testing?</p>
+<p><strong>(c) Alt-data lag as a product tier.</strong> A quarter is ~91 days, and the company reports ~30 days after quarter end. Un-entitled ALTD runs at <strong>7–14 days</strong> lag; entitled at <strong>3–5 days</strong>. On report day, what share of the quarter's data has each tier already shown, and how many days of 'post-quarter' lead does each give? <em>(Answer: both cover 100% of the quarter by report day. The difference is how soon after quarter end the full quarter is visible: day 14 vs day 5, so <strong>16 vs 25 days</strong> of lead before the print.)</em> Price the tier: if Lai's average fund spends "as much as $1 million" a year on alt data, what premium for 9 extra days of lead would you accept? Defend the number with a hit-rate assumption.</p>
+<hr />
+<p><strong>Sources (Bloomberg corpus, <code>_ingest/raw/bloomberg/articles.jsonl</code>, read 2026-10-25):</strong>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-acquires-regtek-solutions/">RegTek.Solutions acquisition, 2019-08-13</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-launches-real-time-data-in-the-cloud-for-global-clients/">B-PIPE on AWS, 2019-09-12</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-launches-new-data-management-solution-to-increase-operational-efficiency-for-clients/">Data License Plus, 2020-05-06</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-simplifies-data-discovery-access-and-integration/">EAP marketplace, 2020-05-13</a>
+- <a href="https://www.bloomberg.com/company/press/abnt-launches-standard-on-financial-instrument-global-identifier/">ABNT FIGI standard, 2020-07-06</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-expands-alternative-data-offering/">EAP alt data 60+ vendors, 2020-09-16</a>
+- <a href="https://www.bloomberg.com/company/press/second-measure/">Second Measure completed, 2020-12-24</a>
+- <a href="https://www.bloomberg.com/company/press/asc-x9-publishes-u-s-standard-for-the-financial-instrument-global-identifier/">ASC X9 FIGI, 2021-09-15</a>
+- <a href="https://www.bloomberg.com/company/press/bloombergs-bquant-enterprise-accelerates-financial-services-firms-time-to-market-for-generating-quantitative-investment-strategies/">BQuant Enterprise, 2021-09-29</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-and-kaiko-issue-first-financial-instrument-global-identifiers-for-crypto-assets/">Crypto FIGIs with Kaiko, 2021-10-14</a>
+- <a href="https://www.bloomberg.com/professional/insights/data/bloombergs-server-api-what-you-need-to-know/">Server API, 2021-11-04</a>
+- <a href="https://www.bloomberg.com/company/press/sony-bank-to-differentiate-its-business-by-adopting-bloombergs-value-added-data-and-cutting-edge-delivery-technology-for-fully-cloud-based-computing/">Sony Bank on AWS, 2022-01-20</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-empowers-event-driven-decision-making-with-real-time-data-access-on-google-cloud/">B-PIPE on Google Cloud, 2022-03-10</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-releases-new-common-data-format-3-1-dataset-for-legal-entity-identifiers/">LEI CDF 3.1, 2022-04-27</a>
+- <a href="https://www.bloomberg.com/company/press/mg-investments-selects-bloomberg-enterprise-data-as-sanctions-data-provider/">M&amp;G sanctions data, 2022-07-13</a>
+- <a href="https://www.bloomberg.com/company/press/man-group-brings-powerful-dataframe-database-product-arcticdb-to-market-with-bloomberg/">ArcticDB with Man Group, 2023-02-27</a>
+- <a href="https://www.bloomberg.com/company/press/vancity-investment-management-selects-bloomberg-to-streamline-portfolio-management/">Vancity, 2023-04-11</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-launches-funds-data-solution-enhancing-insights-and-connectivity-across-the-investment-lifecycle/">Funds Data Solution, 2023-06-06</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-simplifies-data-management-with-new-snowflake-native-app-in-the-data-cloud/">DL+ Snowflake Native App, 2023-06-28</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-makes-alternative-data-accessible-alongside-traditional-financial-data/">ALTD launch, 2023-09-07</a>
+- <a href="https://www.bloomberg.com/company/stories/what-took-build-altd-bloomberg-terminal-alternative-data-function/">Building ALTD (story), 2023-09-07</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-launches-data-enrichment-tool-to-enhance-transaction-cost-analysis/">BTCA Data Access, 2024-01-10</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-launches-point-in-time-data-solution-that-gives-quants-a-competitive-edge/">Point-in-Time company data, 2024-04-09</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-makes-proprietary-alternative-data-available-alongside-traditional-enterprise-content/">BSM on Data License, 2024-05-22</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-launches-bloomberg-second-measure-u-s-consumer-spend-index/">BSM Consumer Spend Index, 2024-09-09</a>
+- <a href="https://www.bloomberg.com/professional/insights/press-announcement/bloomberg-launches-virtual-data-room-to-seamlessly-evaluate-its-extensive-catalog-of-data-for-faster-decision-making/">Virtual Data Room, 2024-09-17</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-launches-fully-customizable-intraday-quant-pricing-solution-for-investment-research/">OHLC bars / Tick History, 2024-10-01</a>
+- <a href="https://www.bloomberg.com/professional/insights/press-announcement/baader-bank-selects-bloombergs-comprehensive-esg-data-for-sfdr-reporting/">Baader SFDR, 2024-11-25</a>
+- <a href="https://www.prnewswire.com/news-releases/bloomberg-announces-port-enterprise-data-delivery-to-snowflake-with-data-license-plus-dl-302321571.html">PORT to Snowflake via DL+, 2024-12-04</a>
+- <a href="https://www.bloomberg.com/company/press/coverage-timeliness-and-quality-of-data-the-key-challenge-for-quants-research-analysts-and-data-scientists-according-to-bloomberg-research-survey/">Research data survey, 2025-01-14</a>
+- <a href="https://www.bloomberg.com/professional/insights/financial-services/naic-principles-based-bond-classification-a-data-driven-approach/">NAIC classification, 2025-01-28</a>
+- <a href="https://www.bloomberg.com/company/press/vietnam-maritime-commercial-joint-stock-bank-adopts-bloomberg-bpipe-to-optimize-its-fx-pricing-engines-and-digital-transformation/">Vietnam Maritime Bank B-PIPE, 2025-02-06</a>
+- <a href="https://www.bloomberg.com/professional/insights/press-announcement/bloomberg-expands-alternative-data-offering-with-web-traffic-data-from-similarweb/">Similarweb in ALTD, 2025-06-04</a>
+- <a href="https://www.bloomberg.com/company/press/mitsubishi-ufj-asset-management-powers-digital-transformation-of-its-investment-workflows-with-bloombergs-bquant-enterprise/">MUFG AM BQuant, 2025-09-07</a>
+- <a href="https://www.bloomberg.com/company/press/fintech-gate-bloomberg-expands-hqla-solution-to-middle-east/">HQLA Middle East, 2025-09-16</a>
+- <a href="https://www.bloomberg.com/company/press/bquant-code-crunch-hackathon-in-london-showcases-cutting-edge-quant-finance-innovation/">Code Crunch London, 2025-12-04</a>
+- <a href="https://www.prnewswire.com/news-releases/quants-increase-focus-on-sector-specific-data-as-ai-adoption-evolves-bloomberg-research-data-survey-finds-302667587.html">Quant AI survey, 2026-01-22</a>
+- <a href="https://www.prnewswire.com/news-releases/bloomberg-introduces-alternative-data-entitlements-on-the-terminal-for-increased-alpha-discovery-302672684.html">Alt-data entitlements, 2026-01-28</a>
+- <a href="https://www.prnewswire.com/news-releases/bloomberg-and-kaiko-collaborate-on-initiative-to-develop-on-chain-data-access-for-tokenized-markets-302698044.html">Kaiko / Canton on-chain data, 2026-02-26</a>
+- <a href="https://www.prnewswire.com/news-releases/bloomberg-introduces-point-in-time-economic-data-to-power-quantitative-research-and-strategy-development-302765281.html">Point-in-time economic data, 2026-05-07</a>
+- <a href="https://www.prnewswire.com/news-releases/bloomberg-launches-comprehensive-clo-reference-data-solution-connecting-insights-across-the-investment-lifecycle-302886975.html">CLO reference data, 2026-09-23</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-launches-enterprise-mcp-to-seamlessly-connect-bloomberg-data-with-clients-enterprise-ai-applications/">Enterprise MCP, 2026-09-29</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-launches-stablecoin-dashboard-on-the-terminal-powered-by-data-from-allium/">Allium stablecoin dashboard, 2026-09-30</a>
+- <a href="https://www.prnewswire.com/news-releases/bloomberg-enables-scalable-crypto-asset-exposure-classification-under-basel-framework-302916012.html">Basel crypto classification, 2026-10-22</a></p></article>
+</div>
+<div class="doc-end"><button class="mark-read" type="button" data-href="doc-notes-bloomberg-enterprise-data.html"><span class="mr-tick">✓</span><span class="mr-off">Mark as read</span><span class="mr-on">Read</span></button><span class="doc-end-hint">Marks itself read when you reach the end.</span></div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-bloomberg-electronic-trading.html"><span>Previous</span>Note · Bloomberg electronic trading — venues sold as workflow, one ‘first trade’ at a time, with no market share ever disclosed</a><a class="doc-next" href="doc-notes-bloomberg-hub.html"><span>Next</span>Note · Bloomberg hub — a private firm that owns every layer except the one it is famous for being: it publishes the price, the benchmark, the identifier and the cost analysis, then sells the trades, the screens and now the AI that reference them, and never names a rival</a></nav>
+</div><script src="site.js?v=1792953205"></script></body></html>

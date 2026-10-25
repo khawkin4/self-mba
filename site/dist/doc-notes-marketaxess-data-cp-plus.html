@@ -1,0 +1,336 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Note · MarketAxess data, CP+ &amp; TraX — the venue turned its inquiry exhaust (including trades that never happened) into prices, tapes and indices, but the data line stayed small and the accuracy evidence stayed self-graded · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792953205"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Note · MarketAxess data, CP+ &amp; TraX — the venue turned its inquiry exhaust (including trades that never happened) into prices, tapes and indices, but the data line stayed small and the accuracy evidence stayed self-graded</h1>
+<div class="doc-meta"><span>22 min read</span><span>5,039 words</span><span>Updated 2026-10-25</span><span class="doc-src">notes/marketaxess-data-cp-plus.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#1-chronology-the-data-stack-as-marketaxess-states-it">1. Chronology — the data stack, as MarketAxess states it</a></li><li class="l2"><a href="#2-the-money-how-big-the-data-line-actually-is">2. The money — how big the data line actually is</a></li><li class="l2"><a href="#3-cp-machinery-what-the-inputs-are-and-what-the-accuracy-numbers-measure">3. CP+ machinery — what the inputs are and what the "accuracy" numbers measure</a></li><li class="l2"><a href="#4-trax-and-the-european-tape-selling-the-gap-between-regulation-and-usability">4. TraX and the European tape — selling the gap between regulation and usability</a></li><li class="l2"><a href="#5-how-the-narrative-moved">5. How the narrative moved</a></li><li class="l2"><a href="#6-what-the-claims-dont-prove">6. What the claims don't prove</a></li><li class="l2"><a href="#7-strategic-read-inference-not-stated-by-marketaxess">7. Strategic read (inference — not stated by MarketAxess)</a></li><li class="l2"><a href="#8-canon-lenses">8. Canon lenses</a></li><li class="l2"><a href="#9-practitioner-counterpoint">9. Practitioner counterpoint</a></li><li class="l2"><a href="#10-open-questions-to-track">10. Open questions to track</a></li><li class="l3"><a href="#rep">Rep</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p>Practitioner / market-structure note · Maps to <strong>Course 04</strong> (Competitive Strategy — data as a platform by-product, who owns the reference price), <strong>Course 07</strong> (Data, Analytics &amp; Decision-Making — what a MAD comparison does and doesn't measure, shifting denominators), <strong>Course 02</strong> (Corporate Finance &amp; Valuation — sizing a data line inside a $5.7B EV deal), <strong>E10</strong> (Digital &amp; AI Transformation — "AI-based" pricing as product and as label), <strong>E3</strong> (M&amp;A — why ICE wanted the flow) · Written 2026-10-25 · Part of <a class="wiki" href="doc-notes-marketaxess-hub.html">marketaxess hub</a>; companions <a class="wiki" href="doc-notes-marketaxess-international-rates.html">marketaxess international rates</a>, <a class="wiki" href="doc-notes-marketaxess-open-trading.html">marketaxess open trading</a>, <a class="wiki" href="doc-notes-marketaxess-ice-deal.html">marketaxess ice deal</a>, <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a>, <a class="wiki" href="doc-notes-tradeweb-tech-ai-data.html">tradeweb tech ai data</a></p>
+</blockquote>
+<ul>
+<li><strong>Source:</strong> MarketAxess corpus (<code>_ingest/raw/marketaxess/articles.jsonl</code>), <strong>~45 items, Apr 2019 – Oct 2026</strong>: IR releases (Refinitiv 2019, Regulatory Reporting Hub 2020, Axess All Prints, MKTX 400 and MSCI 2022, the three Bloomberg/MarketAxess/Tradeweb consolidated-tape statements 2022–23, S&amp;P Global 2024, muni CP+ 2024, TraX Tape 2026, Arcesium 2026), the ICE release on MSCI MarketAxess futures (Dec 2024), 32 earnings releases for the services-revenue lines, the FY19–FY25 letters, the 2021 Investor Day and Dec 2025 Goldman Sachs decks, and ~20 Knowledge Center pieces on CP+, TraX, SensAI and transparency reform. <strong>Caveats:</strong> earnings releases are cut before the financial tables, so some full-year services lines are derived by summing quarters (labelled). Most Knowledge Center dates are estimates; <em>Bringing transparency to the muni marketplace</em> is tagged 2017 but describes the Dec 2024 muni CP+ launch. The CP+ whitepaper and the SS&amp;C study itself are not in the corpus. No call transcripts.</li>
+<li><strong>Core claim:</strong> MarketAxess's data business rests on one asset rivals can't buy: the full stack of dealer responses on every inquiry, <strong>including the ones that did not trade</strong> (<em>1.6 million</em> firm prices on did-not-trade inquiries in US IG in Q4 2023 alone). From that it built <strong>CP+</strong> (launched 2017; "over 24,000 bonds" in 2019 → "more than 33,000 instruments" as the corporate boilerplate → <em>~930,000</em> munis from Dec 2024; two-sided every 15–60 seconds), the <strong>TraX</strong> post-trade/APA/ARM hub (enlarged by Deutsche Börse's Regulatory Reporting Hub, Nov 2020), the <strong>Axess All</strong> EU tapes, tradable <strong>indices</strong> (MKTX 400 → SSGA's LQIG ETF; MSCI MarketAxess indices → ICE futures) and the <strong>TraX Tape</strong> (Jun 2026). Distribution went through rivals and partners: <strong>Refinitiv</strong> (2019, now LSEG, Tradeweb's controlling shareholder), <strong>S&amp;P Global</strong> (Oct 2024, CP+ inside S&amp;P Evaluated Bond Pricing), FactSet, Arcesium. But the money stayed modest: information services were <strong>$39.3M in FY22</strong> and about <strong>$53M in FY25</strong> (derived from quarters), ~6% of revenue; all services together were a record <strong>$111.6M</strong> (13%). The accuracy story is self-graded: the headline <strong>MAD of 1.095bp vs 1.395bp</strong> compares on- vs off-platform <em>trades</em> against CP+, which MKTX itself says measures trade consistency, and the 2025 SS&amp;C study is cited only as <em>among the top</em>, with no error figure and <strong>no head-to-head against BVAL, ICE, Ai-Price or Trumid</strong>. The strategic point is the buyer: ICE, the evaluated-pricing incumbent, is buying the flow that S&amp;P's corporate evaluations now lean on.</li>
+</ul>
+<hr />
+<h2 id="1-chronology-the-data-stack-as-marketaxess-states-it">1. Chronology — the data stack, as MarketAxess states it</h2>
+<p><em>All figures are MarketAxess's (or the named partner's) unless marked derived.</em></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Event</th>
+<th>Detail (as stated)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2015</td>
+<td><strong>Axess All</strong> launched</td>
+<td>Described in 2022 as "the first intra-day trade tape for the EU and UK fixed income markets": delayed, aggregated by bond, ~7,000 instruments</td>
+</tr>
+<tr>
+<td>May 2017</td>
+<td><strong>Composite+ (CP+)</strong> launched</td>
+<td>2021 Investor Day: <em>Launched May 2017</em>; muni release: "First introduced to the market in 2017"</td>
+</tr>
+<tr>
+<td>Feb 27 2019</td>
+<td>Dutch AFM approves Trax NL as a DRSP (APA + ARM)</td>
+<td>Post-Brexit EU reporting and transparency footprint</td>
+</tr>
+<tr>
+<td>Apr 11 2019</td>
+<td><strong>Refinitiv</strong> redistributes CP+ and Axess All on Elektron</td>
+<td>CP+: "updates up to every 15 seconds on over 24,000 bonds", combining TRACE with platform and Trax data. Refinitiv's Carley: best-execution pressure means traders "need more data"</td>
+</tr>
+<tr>
+<td>Apr 2020</td>
+<td>FY19 letter calls Composite+ "our AI-based, real-time bond pricing solution"</td>
+<td>Pitched as the engine behind automation (Auto-X), not as a product line</td>
+</tr>
+<tr>
+<td>May 2020</td>
+<td><strong>Sonar</strong> (post-trade reporting surveillance)</td>
+<td>Uses the industry-wide reporting data set of "900+ clients"</td>
+</tr>
+<tr>
+<td>Sep 23 → Nov 30 2020</td>
+<td><strong>Regulatory Reporting Hub</strong> bought from Deutsche Börse via Trax NL</td>
+<td>MiFID II / EMIR transaction reporting, APA and ARM services; Germany, France, Nordics. Added <strong>$13.0M</strong> of 2021 reporting revenue</td>
+</tr>
+<tr>
+<td>Mar 9 2022</td>
+<td><strong>Axess All Prints</strong></td>
+<td>Real-time trade-by-trade prices "on over 15,000 executed trades across approximately 4,250 unique instruments"</td>
+</tr>
+<tr>
+<td>Mar 16 2022</td>
+<td><strong>MKTX US IG 400</strong>, first tradable index</td>
+<td>Built on Relative Liquidity Score and CP+; SSGA's SPDR MarketAxess IG 400 ETF (<strong>LQIG</strong>) launched May 12 2022 (release body not retrievable; named in the 2Q22 results)</td>
+</tr>
+<tr>
+<td>Apr 28 2022</td>
+<td><strong>MSCI</strong> strategic collaboration</td>
+<td>MarketAxess liquidity data (RLS, Tradability) into MSCI indexes and analytics; MSCI ESG ratings the other way. "subject to the execution of definitive agreements"</td>
+</tr>
+<tr>
+<td>Jun 22 2022</td>
+<td><strong>Bloomberg, MarketAxess and Tradeweb</strong> "jointly explore" an EU fixed-income consolidated-tape bid</td>
+<td>As a JV "established and operated independently from our respective businesses"</td>
+</tr>
+<tr>
+<td>May 23 2023</td>
+<td>JV agreement <strong>signed</strong></td>
+<td>Neil Ryan to lead; FINBOURNE chosen as technology provider</td>
+</tr>
+<tr>
+<td>Dec 8 2023</td>
+<td>JV <strong>abandoned</strong></td>
+<td>Cited "risk and complexity" and "uncertain outcomes around product definitions and structural complexities"</td>
+</tr>
+<tr>
+<td>Jan 31 2024</td>
+<td>MKTX stops publishing EM and Eurobond market share</td>
+<td>Those shares "historically have been derived from MarketAxess TraX data"; methodology under review</td>
+</tr>
+<tr>
+<td>Apr 2024</td>
+<td><em>CP+ under the hood</em></td>
+<td>On-/off-platform MAD comparison, DNT impact study (§3)</td>
+</tr>
+<tr>
+<td>Oct 31 2024</td>
+<td><strong>S&amp;P Global Market Intelligence</strong> partnership</td>
+<td>S&amp;P bond reference data into MKTX; CP+ into S&amp;P Evaluated Bond Pricing (<strong>1.2M+</strong> bonds); integration expected to start 1H25</td>
+</tr>
+<tr>
+<td>Dec 5 2024</td>
+<td><strong>CP+ for munis</strong></td>
+<td>"~930,000 municipal bonds"</td>
+</tr>
+<tr>
+<td>Dec 12 2024</td>
+<td><strong>ICE</strong> lists <strong>MSCI MarketAxess</strong> tradable corporate bond index futures</td>
+<td>Four contracts (USD IG/HY, EUR IG/HY); methodology uses MKTX Relative Liquidity Scores</td>
+</tr>
+<tr>
+<td>Jun 2 2025</td>
+<td>S&amp;P's Gonska: S&amp;P's service has "exclusive access to MarketAxess CP+"</td>
+<td>Munis named as S&amp;P's next priority</td>
+</tr>
+<tr>
+<td>2025</td>
+<td><em>CP+ ranks as a top provider in the 2025 SS&amp;C</em> study</td>
+<td>"over 350,000 firm prices back per day" (Q3 2025); covering "over 97% of market prints daily"</td>
+</tr>
+<tr>
+<td>Dec 9 2025</td>
+<td>GS deck</td>
+<td>CP+ "provided to our partner, SPGI, as input into evaluated price for large index funds/ETFs"; "400M+ responses annually"</td>
+</tr>
+<tr>
+<td>Jun 18 2026</td>
+<td><strong>TraX Tape</strong> launched (London)</td>
+<td>Consolidated, de-duplicated, direction-flagged, CP+-enriched</td>
+</tr>
+<tr>
+<td>Oct 7 2026</td>
+<td><strong>Arcesium</strong> integrates CP+ and TraX (Aquata, Opterra)</td>
+<td>TraX covers "more than 42,000 global fixed income instruments"; Repo Match: 127 firms, &gt;$700bn matched ADV</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-the-money-how-big-the-data-line-actually-is">2. The money — how big the data line actually is</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Period</th>
+<th>What MKTX reports</th>
+<th>Amount</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FY2018 → FY2019</td>
+<td><em>All other revenue</em> (information + post-trade + other)</td>
+<td>$44.7M → $47.5M</td>
+<td>FY19 increase "principally due to higher information services revenue of $2.5 million"</td>
+</tr>
+<tr>
+<td>2016 → 2Q21 TTM</td>
+<td>Market data revenue (Investor Day chart)</td>
+<td>~9% 5-year CAGR</td>
+<td>Composite+, Axess All, Trax, BondTicker and bulk data shown as one line; values not legible in extraction</td>
+</tr>
+<tr>
+<td>FY2020</td>
+<td>All other revenue</td>
+<td>$54.7M (+15.1%)</td>
+<td>Includes $3.6M of new data sales</td>
+</tr>
+<tr>
+<td>FY2021</td>
+<td>All other revenue</td>
+<td>$77.9M (+42.5%)</td>
+<td>$13.0M of the $23.3M increase is the Deutsche Börse hub</td>
+</tr>
+<tr>
+<td>FY2022</td>
+<td>Information services / post-trade services</td>
+<td><strong>$39.3M</strong> / <strong>$36.9M</strong></td>
+<td>Info +3% (≈+9% ex-FX); post-trade −5%</td>
+</tr>
+<tr>
+<td>FY2023</td>
+<td>Information + post-trade</td>
+<td>~$87M (+14%, FY23 letter)</td>
+<td>Info ≈ <strong>$46.4M</strong> (derived, sum of quarters $11.0/11.7/11.8/11.9M)</td>
+</tr>
+<tr>
+<td>FY2024</td>
+<td>Services (info + post-trade + technology)</td>
+<td><strong>$105.4M</strong> (+18%)</td>
+<td>Now includes Pragma technology services; info ≈ <strong>$50.6M</strong> (derived)</td>
+</tr>
+<tr>
+<td>FY2025</td>
+<td>Services</td>
+<td><strong>$111.6M</strong> (+6%)</td>
+<td>Info ≈ <strong>$53.3M</strong> (derived: $12.9/13.1/13.8/13.5M); post-trade ≈ $44.5M (derived)</td>
+</tr>
+<tr>
+<td>2Q26 / 3Q26</td>
+<td>Services; information services</td>
+<td>$31.5M (record) / $30.5M; info $16.1M (+$3.0M) / $15.2M (+10%)</td>
+<td>Growth "driven by net new contract revenue"</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Derived reads.</em> Information services were ~<strong>6.3%</strong> of FY25 revenue ($53.3M / $846.3M). For scale: Tradeweb's market-data line was $133.7M in FY25 (context, from <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a>), so MKTX's information line is ~<strong>40%</strong> of Tradeweb's. ICE's FY25 fixed-income data &amp; analytics revenue was $1,234M (context, from <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a>), about <strong>23×</strong> MKTX's. Valued as a stand-alone line, CP+ cannot be what ICE paid ~$5.7B for. Its value is as an <em>input</em> to execution (Auto-X, Mid-X, auctions, PT) and to someone else's much larger pricing business.</p>
+<h2 id="3-cp-machinery-what-the-inputs-are-and-what-the-accuracy-numbers-measure">3. CP+ machinery — what the inputs are and what the "accuracy" numbers measure</h2>
+<p><strong>The moat claim.</strong> CP+ "uses the entire stack of inquiry responses sent to the platform by liquidity providers, regardless of whether the bond traded or not" (SS&amp;C piece). In Q4 2023 US IG the platform saw "more than 1.6 million firm prices back on DNTs". The study finds DNTs move CP+ about as much as a real trade from elsewhere: "The magnitude of this impact is comparable to that of an off-platform trade." Its conclusion: platform context "sets CP+ apart from pricing solutions that rely solely on public trade tapes."</p>
+<p><strong>The numbers MarketAxess publishes:</strong>
+- <strong>MAD, Q4 2023, US IG, trades ≥ $150k:</strong> "the CP+ MAD was 1.095 bps for on-platform trades and 1.395 bps for off-platform trades". Off-platform dispersion is ~27% higher (derived). Read the caveat MKTX itself prints: with CP+ fixed, "comparing the MAD is effectively measuring the consistency of the traded levels on and off platform". This is a test of <strong>trade quality</strong>, not of <strong>CP+ against a rival</strong>. It also flatters on-platform trades that CP+ already sees: 96% of US IG client RFQs went to Open Trading, and CP+ prices are the reference those trades are struck against.
+- <strong>Update response:</strong> a trade 4bp inside the CP+ side moves CP+ 1.24bp (median); an on-platform trade 2bp away moves it 1.54bp; a DNT best level 5bp inside moves it 1.5bp. That shows the model <strong>shrinks</strong> toward new prints (good: no overfitting). It is not an error statistic.
+- <strong>Stress dispersion (Euro IG, 2020):</strong> "74% trade levels were within 10 cents of Composite+ side" in January, 25% in March, 65% in October. The one stress number in the corpus, and it shows the hit rate collapsing by two-thirds at the point of maximum need.
+- <strong>Retail:</strong> orders under $150k have average TCA "within 1 cent of CP+ side".
+- <strong>SS&amp;C 2025:</strong> CP+ "has once again ranked among the top pricing providers". No rank, no error, no peer names in the MKTX write-up.</p>
+<p><strong>The boilerplate drifts.</strong> Coverage is "more than 33,000 instruments" (2023–24 AxessPoints), "more than 25,000 instruments globally" (a 2025 AxessPoint), "more than 350,000 bonds globally" (the muni piece, presumably counting munis), and "~930,000" munis. Activity is "nearly 30 million levels per day", "nearly 20 million", "over 30 million" and "more than 50 million". Coverage is "90-95% of trading activity", "over 97% of market prints" and "100% coverage in its markets". None of these is wrong on its own definitions, but none comes with one.</p>
+<p><strong>Cross-check with <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a>.</strong> That note's landscape table lists CP+ with <em>none</em> published for accuracy and finds no vendor publishing a same-side baseline. Trumid claims its FVMP beats CP+ by 11% (self-reported). The MKTX corpus doesn't change any of that. It adds one thing: SS&amp;C's independent study includes MarketAxess but not Tradeweb, and MKTX publicises its placing without the numbers.</p>
+<h2 id="4-trax-and-the-european-tape-selling-the-gap-between-regulation-and-usability">4. TraX and the European tape — selling the gap between regulation and usability</h2>
+<ul>
+<li><strong>The reform.</strong> FCA and ESMA reforms lift real-time publication of corporate bond prices to an estimated <strong>80–90%</strong> of trades, from ~<strong>30%</strong>. But the two regimes create "68 distinct deferral scenarios across corporate and sovereign bonds", and MKTX estimates <strong>~15%</strong> of IG corporate volume still gets the longest deferral (three months FCA, four weeks ESMA).</li>
+<li><strong>What TraX shows that the tape doesn't.</strong> In the first week of December 2025, TraX showed <strong>€80bn</strong> a day of clean IG corporate volume versus an estimated <strong>€32bn</strong> visible from combined FCA and ESMA reporting, so public data showed ~40% of the market (derived). APAs delayed ~75% of volumes. In January 2026 TraX published <strong>233,342</strong> trades that would not have been published under either regime.</li>
+<li><strong>Quality.</strong> "nearly 40% of published trades from the top 10 APAs are not immediately usable, most commonly due to duplication" (Q1 2025 data).</li>
+<li><strong>The model.</strong> TraX Volume aggregates data from "more than 50 dealers and clients" who contribute in exchange for access. It is a <em>give-to-get</em> club. TraX covered "85% of the European" market in 2025, up from the ~75% (2Q22) and ~70% (3Q22) MKTX used as its Eurobond share denominator.</li>
+<li><strong>The pitch.</strong> "Europe’s transparency reforms promised consolidation; instead, they are delivering choice." And: the US shows the end state "is rarely “raw tape only”". Berry: "The data tells you what happened, and TraX Tape tells you what it means."</li>
+<li><strong>The consolidated-tape arc.</strong> Explore (Jun 2022) → sign (May 2023) → abandon (Dec 2023) → MKTX's own commercial tape (Jun 2026) built to sit <strong>on top of</strong> the public CTPs it once bid to run. A <em>Predictions 2023</em> piece expected a tape in "18-24 months"; per a 2026 MKTX piece, the ESMA tape's planned go-live is Q1 2027, after TraX Tape launched.</li>
+<li><strong>Post-trade AI.</strong> SensAI: "more than 1 billion trades were replayed via this ARM" in 2023, on average 243 days after trade date. The moat line: "The only other entities with access to MarketAxess’s multi-firm data set are regulators."</li>
+</ul>
+<h2 id="5-how-the-narrative-moved">5. How the narrative moved</h2>
+<ol>
+<li><strong>2019–21: data as fuel for automation.</strong> CP+ is "AI-based" (FY19 letter), then "A.I.-powered" (FY21). Its job is to set Auto-X and Mid-X levels and define Open Trading <em>provider savings</em>. Distribution goes through Refinitiv. Data revenue is buried in <em>all other revenue</em>.</li>
+<li><strong>2022–23: data as product and index.</strong> Axess All Prints, the MKTX 400, MSCI. Concannon: "MarketAxess has a unique view into the traditionally fragmented and less liquid fixed income market." Information services get their own line. The three rivals try to build the EU tape together and give up.</li>
+<li><strong>2024–25: data as someone else's valuation input.</strong> S&amp;P EVB, ICE futures, FactSet, the ETF/NAV pitch with DWS. Sweeney: the goal is to "close the gaps between best execution, intraday trading decisions and end-of-day valuation". In the FY25 letter CP+ becomes the third leg of the <em>MarketAxess advantage</em>.</li>
+<li><strong>2026: data as the asset in a sale.</strong> TraX Tape, Arcesium. Then ICE, whose data business dwarfs MKTX's, buys the flow.</li>
+</ol>
+<h2 id="6-what-the-claims-dont-prove">6. What the claims don't prove</h2>
+<ol>
+<li><strong>No head-to-head accuracy.</strong> No CP+ error statistic against BVAL, ICE CEP, S&amp;P, Ai-Price or FVMP appears anywhere in 359 items. The only external benchmark (SS&amp;C) is reported as a placing without a number.</li>
+<li><strong>The MAD test is about the trades, by MKTX's own description.</strong> Lower dispersion of on-platform trades against CP+ is also what you'd expect if on-platform trades are <em>anchored on</em> CP+ (Auto-X pegs, provider-savings definitions, Mid-X strikes). That's reflexivity, not proof of edge.</li>
+<li><strong>Undefined coverage.</strong> 25k vs 33k vs 350k vs 930k instruments; 90–95% vs 97% vs 100% coverage. Without a fixed universe, "coverage" can't be compared over time or against rivals.</li>
+<li><strong>Stress evidence cuts the other way.</strong> The one stress cut (Euro IG, March 2020: 74% → 25% within 10c) is the case for a model price, and the weakness of one, in the same chart.</li>
+<li><strong>The tape numbers are TraX measuring the public tapes TraX competes with.</strong> €80bn vs €32bn and 40% unusable come from MKTX's own cleansing algorithm on its own contributor data. Its age is also inconsistent: "refined over 10 years" (Jun 2026 release) vs "refined for over 20 years" (the 2026 research piece).</li>
+<li><strong>Index and ETF traction is never sized.</strong> No LQIG assets, no futures open interest, no index licence revenue. Announced products (Virtu eNAV in 2019) are still "upcoming" in a 2025 AxessPoint.</li>
+<li><strong>Exclusivity is S&amp;P's word, not a disclosed term.</strong> "exclusive access to MarketAxess CP+" comes from S&amp;P's Gonska. Its scope, duration and change-of-control treatment are not in the corpus.</li>
+<li><strong>Self-sourced superlatives.</strong> A What-if blog credits MKTX with an "electronic credit trading market share of over 70%" in the same paragraph that puts it at ~20% of TRACE IG volume. Whatever the denominator, it isn't stated.</li>
+</ol>
+<h2 id="7-strategic-read-inference-not-stated-by-marketaxess">7. Strategic read <em>(inference — not stated by MarketAxess)</em></h2>
+<ul>
+<li><strong>The asset is the inquiry log, not the model.</strong> Anyone can fit a gradient-boosted model to TRACE. Only the venue sees <em>who was asked, who answered, at what level, and who passed</em>. DNTs are the part of the order book that TRACE never shows. That is a cornered resource (<a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a>). It also explains the 2024 disclosure retreat: TraX-derived EM and Eurobond shares were dropped exactly as the data started being sold to others.</li>
+<li><strong>MKTX chose to be an input supplier, not a pricing brand.</strong> Rather than fight ICE and Bloomberg for evaluated-pricing mandates, it put CP+ inside S&amp;P's EVB. That brought distribution without the auditor-facing burden, but it gave up ownership of the end-of-day price that ETF NAVs and index funds settle on. It is coopetition on S&amp;P's terms (<a class="wiki" href="doc-canon-canon-brandenburger-nalebuff-coopetition.html">canon brandenburger nalebuff coopetition</a>).</li>
+<li><strong>The venue-line sort now has a crossover.</strong> <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> reads the market as S&amp;P ↔ MKTX, LSEG/FTSE ↔ Tradeweb, with ICE and Bloomberg integrated. The MKTX corpus confirms it and adds a twist: CP+'s first redistributor (2019) was Refinitiv, now LSEG. After the ICE close, <strong>S&amp;P's corporate evaluations rest on a feed owned by a direct evaluated-pricing competitor</strong>. That is the clearest antitrust and partner-retention question in <a class="wiki" href="doc-notes-marketaxess-ice-deal.html">marketaxess ice deal</a> (see also <a class="wiki" href="doc-notes-spglobal-hub.html">spglobal hub</a>, <a class="wiki" href="doc-notes-ice-hub.html">ice hub</a>, <a class="wiki" href="doc-notes-lseg-hub.html">lseg hub</a>).</li>
+<li><strong>TraX Tape is a hedge against the regulation that funded TraX.</strong> APA and ARM revenue is compliance rent. A free public CTP erodes the basic tape, so MKTX moves up a layer: direction flags, de-duplication, CP+ context. That is the TRACE-enhanced-data playbook moved to Europe. The abandoned JV suggests the rivals concluded the regulated baseline isn't where the margin is.</li>
+<li><strong>Why ICE wanted it.</strong> ICE already owns the evaluated-pricing book, index franchises and the MSCI futures that use MKTX liquidity scores. CP+ and DNT data are a real-time, trade-adjacent feed to sit under them (<a class="wiki" href="doc-canon-canon-shapiro-varian-information-rules.html">canon shapiro varian information rules</a>: near-zero marginal cost, value in bundling). The data line is small in revenue and large in <strong>option value</strong> inside a bigger stack.</li>
+</ul>
+<h2 id="8-canon-lenses">8. Canon lenses</h2>
+<ul>
+<li><strong>Information goods</strong> (<a class="wiki" href="doc-canon-canon-shapiro-varian-information-rules.html">canon shapiro varian information rules</a>): CP+ is versioned (intraday FIX, files, Excel, EOD inside S&amp;P) and priced by use case. The lock-in is that clients tune Auto-X rules and TCA history against it.</li>
+<li><strong>Cornered resource / counter-positioning</strong> (<a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a>): pure evaluators can't see DNTs. MKTX can't match their audit trail and coverage of the illiquid tail, hence the S&amp;P deal.</li>
+<li><strong>Noise</strong> (<a class="wiki" href="doc-canon-canon-kahneman-sibony-sunstein-noise.html">canon kahneman sibony sunstein noise</a>): DWS's Lenamon frames pricing skew between evaluated prices and traded levels as a tracking-error cost. A shared reference price cuts noise and concentrates model risk.</li>
+<li><strong>Calibration</strong> (<a class="wiki" href="doc-canon-canon-tetlock-superforecasting.html">canon tetlock superforecasting</a>): a two-sided price implies an uncertainty band. Publishing hit rates inside it by liquidity bucket would be the honest scorecard.</li>
+<li><strong>Coopetition</strong> (<a class="wiki" href="doc-canon-canon-brandenburger-nalebuff-coopetition.html">canon brandenburger nalebuff coopetition</a>): the three rivals co-bid for the EU tape, then each sold its own enrichment layer.</li>
+</ul>
+<h2 id="9-practitioner-counterpoint">9. Practitioner counterpoint</h2>
+<ul>
+<li><strong>For:</strong> S&amp;P chose to plug CP+ into its flagship evaluation service rather than build its own, and ICE built futures on MKTX liquidity scores. Those are revealed preferences by the two firms best placed to judge. DWS uses CP+ in its ETF create/redeem workflow, and the DNT data is genuinely unique.</li>
+<li><strong>Against:</strong> the data business is ~6% of revenue after seven years of effort, with no published head-to-head accuracy and coverage claims that move with the brochure. A buyer can't tell from the corpus whether CP+ beats BVAL on the bonds that matter (illiquid, stressed). DWS's endorsement is hedged: "a great tool to help us potentially minimize tracking error".</li>
+<li><strong>Both:</strong> CP+ is probably excellent where MKTX has flow (US IG/HY, EM hard currency) and borrowed elsewhere (S&amp;P covers "very illiquid bonds"). Its proven value is as the price that MKTX's own protocols clear against. That's why it's worth more to an owner of protocols plus evaluations (ICE) than to the market as a stand-alone feed.</li>
+</ul>
+<h2 id="10-open-questions-to-track">10. Open questions to track</h2>
+<ol>
+<li>Does the S&amp;P–CP+ arrangement survive ICE's change of control, and does S&amp;P disclose terms or a replacement plan?</li>
+<li>Will ICE publish CP+ in its own evaluated-pricing stack, or keep it as an execution-only input?</li>
+<li>Any CP+ error statistic against a named competitor, or a same-side baseline, after the merger (or in the 2026 SS&amp;C study)?</li>
+<li>TraX Tape: paying subscribers, and how it is licensed once the ESMA and FCA CTPs go live?</li>
+<li>LQIG assets and MSCI MarketAxess futures open interest: do the indices have traction or only announcements?</li>
+<li>Does post-trade (APA/ARM, SensAI) grow once deferrals shorten, or shrink as public tapes commoditise it?</li>
+<li>Will the EM and Eurobond share series (dropped Jan 2024) come back on an ICE basis?</li>
+</ol>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-marketaxess-hub.html">marketaxess hub</a> · <a class="wiki" href="doc-notes-marketaxess-international-rates.html">marketaxess international rates</a> · <a class="wiki" href="doc-notes-marketaxess-open-trading.html">marketaxess open trading</a> · <a class="wiki" href="doc-notes-marketaxess-ice-deal.html">marketaxess ice deal</a> · <a class="wiki" href="doc-notes-marketaxess-protocols-automation.html">marketaxess protocols automation</a> · <a class="wiki" href="doc-notes-marketaxess-strategy-financials.html">marketaxess strategy financials</a> · <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> · <a class="wiki" href="doc-notes-tradeweb-tech-ai-data.html">tradeweb tech ai data</a> · <a class="wiki" href="doc-notes-tradeweb-hub.html">tradeweb hub</a> · <a class="wiki" href="doc-notes-spglobal-hub.html">spglobal hub</a> · <a class="wiki" href="doc-notes-ice-hub.html">ice hub</a> · <a class="wiki" href="doc-notes-lseg-hub.html">lseg hub</a> · <a class="wiki" href="doc-notes-bloomberg-hub.html">bloomberg hub</a> · <a class="wiki" href="doc-notes-blackrock-hub.html">blackrock hub</a> · <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> · <a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a> · <a class="wiki" href="doc-canon-canon-shapiro-varian-information-rules.html">canon shapiro varian information rules</a> · <a class="wiki" href="doc-canon-canon-brandenburger-nalebuff-coopetition.html">canon brandenburger nalebuff coopetition</a> · <a class="wiki" href="doc-canon-canon-kahneman-sibony-sunstein-noise.html">canon kahneman sibony sunstein noise</a> · <a class="wiki" href="doc-canon-canon-tetlock-superforecasting.html">canon tetlock superforecasting</a></p>
+<hr />
+<h3 id="rep">Rep</h3>
+<p>You run pricing and valuation at a $60bn bond-fund complex that uses S&amp;P evaluated prices for NAV. ICE's purchase of MarketAxess closes in 1H 2027. Use only numbers from this note.</p>
+<p><strong>(a) Size the line.</strong> From the quarterly figures, compute FY25 information-services revenue and its share of FY25 revenue ($846.3M). Compare it with Tradeweb's FY25 market-data revenue ($133.7M) and ICE's FY25 fixed-income data &amp; analytics revenue ($1,234M).</p>
+<p><strong>(b) Read the MAD.</strong> CP+ MAD is 1.095bp on-platform vs 1.395bp off-platform. Compute the ratio. In one sentence, say what the comparison does and does not show about CP+ versus a competitor.</p>
+<p><strong>(c) Price the gap.</strong> TraX shows €80bn a day of IG volume vs €32bn publicly visible. What share of the market does the public tape show? If 40% of APA prints need cleaning, what share of the true market is immediately usable from public sources alone (assume the 40% applies uniformly)?</p>
+<p><strong>(d) Decide.</strong> One paragraph: do you ask S&amp;P for a contractual commitment on CP+ inputs past the ICE close, and what single number from MarketAxess would change your answer?</p>
+<p><em>Answers:</em> (a) $12.9 + 13.1 + 13.8 + 13.5 = <strong>$53.3M</strong>, ~<strong>6.3%</strong> of revenue; ~<strong>40%</strong> of Tradeweb's market-data line and ~<strong>4.3%</strong> of ICE's. (b) 1.395 / 1.095 ≈ <strong>1.27×</strong>. It shows on-platform trades sit closer to CP+ than off-platform ones. It does not compare CP+ to any other vendor's price, and by MKTX's own description it measures trade consistency. (c) 32 / 80 = <strong>40%</strong> visible. 40% × 60% clean ≈ <strong>24%</strong> of true volume usable as-is. (d) Yes, because after the close your evaluator's corporate input is owned by a competitor. The number that would change it is a published CP+ error against BVAL or ICE on the same illiquid trades. If CP+ is no better, the dependency isn't worth defending.</p>
+<hr />
+<p><strong>Sources (MarketAxess corpus, <code>_ingest/raw/marketaxess/articles.jsonl</code>, accessed 2026-10-25):</strong>
+- <a href="https://investor.marketaxess.com/news/news-details/2019/Refinitiv-to-Redistribute-MarketAxess-Award-Winning-Fixed-Income-Market-Data-Solutions-04-11-2019/default.aspx">Refinitiv to Redistribute MarketAxess’ Fixed Income Market Data Solutions, 2019-04-11</a>
+- <a href="https://s201.q4cdn.com/767283836/files/doc_financials/2019/ar/MKTX_Annual-Report_2019.pdf">2019 Annual Report: Letter to Stockholders, 2020-04-29</a> · <a href="https://s201.q4cdn.com/767283836/files/doc_financials/2021/ar/Proxy-book-2022-color.pdf">2021 Letter, 2022-04-27</a> · <a href="https://s201.q4cdn.com/767283836/files/doc_financials/2022/ar/Posting-179619_MarketAxess-Holdings_COMBO-PRoxy-AR_WEB-HOSTING_rev2_MS.pdf">2022 Letter, 2023-04-26</a> · <a href="https://s201.q4cdn.com/767283836/files/doc_financials/2023/ar/327161_MARKETAXESS-HOLDINGS-INC-_10K_2024_V1_PWO-34656_PROOF_rev3_MS_DY.pdf">2023 Letter, 2024-04-24</a> · <a href="https://s201.q4cdn.com/767283836/files/doc_financials/2025/ar/MarketAxess-Holdings-Inc-2025-10-K-ARS.pdf">2025 Letter, 2026-04-29</a>
+- <a href="https://www.marketaxess.com/articles/data-is-king">Data is king, 2020-05</a> · <a href="https://investor.marketaxess.com/news/news-details/2020/MarketAxess-to-Acquire-Regulatory-Reporting-Hub-from-Deutsche-Brse-Group-09-23-2020/default.aspx">MarketAxess to Acquire Regulatory Reporting Hub, 2020-09-23</a>
+- <a href="https://s201.q4cdn.com/767283836/files/doc_presentation/2021/09/2021-Investor-Day-Presentation.pdf">2021 Virtual Investor Day presentation, 2021-09-14</a> · <a href="https://s201.q4cdn.com/767283836/files/doc_downloads/2025/12/11/Goldman-Sachs-Financial-Services-Conference-Final.pdf">Goldman Sachs 2025 Financial Services Conference presentation, 2025-12-09</a>
+- <a href="https://investor.marketaxess.com/news/news-details/2022/MarketAxess-Launches-Axess-All-Prints-Offering-Real-Time-Price-Transparency-for-EU-and-UK-Fixed-Income-Markets-03-09-2022/default.aspx">Axess All Prints launch, 2022-03-09</a> · <a href="https://investor.marketaxess.com/news/news-details/2022/MarketAxess-Expands-Data-Intelligence-Suite-With-Launch-of-Tradable-Index-03-16-2022/default.aspx">Launch of Tradable Index (MKTX 400), 2022-03-16</a> · <a href="https://investor.marketaxess.com/news/news-details/2022/MSCI-and-MarketAxess-Announce-Strategic-Collaboration-on-Liquid-Fixed-Income-Indexes-Portfolio-Construction-Solutions-and-ESG-Data-04-28-2022/default.aspx">MSCI and MarketAxess Strategic Collaboration, 2022-04-28</a>
+- <a href="https://s201.q4cdn.com/767283836/files/doc_news/2023/03/bloomberg-marketaxess-and-tradeweb-explore-eu-consolidated-tape-for-fixed-income_22-june-2022.pdf">Bloomberg, MarketAxess and Tradeweb Explore EU Consolidated Tape, 2022-06-22</a> · <a href="https://investor.marketaxess.com/news/news-details/2023/Bloomberg-MarketAxess-and-Tradeweb-Sign-Joint-Venture-Agreement/default.aspx">Sign Joint Venture Agreement, 2023-05-23</a> · <a href="https://investor.marketaxess.com/news/news-details/2023/Statement-from-Bloomberg-MarketAxess-and-Tradeweb-on-Joint-Venture-Agreement/default.aspx">Statement on Joint Venture Agreement, 2023-12-08</a>
+- <a href="https://www.marketaxess.com/articles/use-ai-and-be-more-human">Use AI and be more human, 2022</a> · <a href="https://www.marketaxess.com/articles/regulatory-reporting-inaccuracies-its-better-to-know-than-be-told">Regulatory reporting inaccuracies, 2023</a> · <a href="https://www.marketaxess.com/articles/will-2023-be-the-year-of-transparency-in-fixed-income-markets">Predictions: Will 2023 be the year of transparency, 2023</a>
+- <a href="https://www.marketaxess.com/articles/cp-plus-under-the-hood-how-trades-and-inquiries-impact-pricing">CP+ under the hood, 2024-04</a> · <a href="https://www.marketaxess.com/articles/axesspoint_euro-investment-grade-price-dispersion-during-volatility">AxessPoint: Euro IG price dispersion during volatility, undated (2020)</a> · <a href="https://www.marketaxess.com/articles/what-if-fixed-income-index-constituents-were-accurately-priced-in-real-time">What if fixed income index constituents were accurately priced in real-time?, undated</a> · <a href="https://www.marketaxess.com/articles/the-power-of-data-in-trading-protocol-selection">The power of data in trading protocol selection, undated</a>
+- <a href="https://investor.marketaxess.com/news/news-details/2024/SP-Global-Market-Intelligence-and-MarketAxess-Announce-Strategic-Fixed-Income-Data-Partnership-2024-RkDUQUX-8E/default.aspx">S&amp;P Global MI and MarketAxess Strategic Fixed-Income Data Partnership, 2024-10-31</a> · <a href="https://www.marketaxess.com/articles/sp-global-market-intelligence-marketaxess-collaborate">S&amp;P Global MI × MarketAxess collaborate (Traders Magazine), 2025-06-02</a> · <a href="https://www.marketaxess.com/articles/cp-for-etfs-improving-etf-portfolio-management-with-predictive-pricing">CP+ for ETFs, 2026</a>
+- <a href="https://investor.marketaxess.com/news/news-details/2024/MarketAxess-Expands-AI-Powered-Pricing-Engine-to-Cover-Municipal-Bonds/default.aspx">CP+ expands to Municipal Bonds, 2024-12-05</a> · <a href="https://www.marketaxess.com/articles/bringing-transparency-to-the-muni-marketplace-with-ai-powered-pricing">Bringing transparency to the muni marketplace (tagged 2017, ~2024–25)</a>
+- <a href="https://ir.theice.com/press/news-details/2024/ICE-Launches-MSCI-MarketAxess-Tradable-Corporate-Bond-Index-Futures-to-Help-Investors-Hedge-Corporate-Bond-Exposure/default.aspx">ICE Launches MSCI MarketAxess Tradable Corporate Bond Index Futures, 2024-12-12</a>
+- <a href="https://www.marketaxess.com/articles/cp-ranks-as-a-top-provider-in-the-2025-ss-and-c-fixed-income-study">CP+ ranks as a top provider in the 2025 SS&amp;C study, 2025</a> · <a href="https://www.marketaxess.com/articles/axesspoint-the-new-era-of-corporate-bond-trading-for-retail-investors">AxessPoint: retail corporate bond trading, 2025</a>
+- <a href="https://www.marketaxess.com/articles/europe-s-bond-transparency-regimes-put-data-in-the-spotlight">Europe’s bond transparency regimes put data in the spotlight, 2025</a> · <a href="https://www.marketaxess.com/articles/the-market-is-adapting-what-six-months-of-transparency-reform-reveal-about-how-bonds-trade">The market is adapting: six months of transparency reform, 2026</a> · <a href="https://www.marketaxess.com/articles/enhancing-data-usability-and-market-visibility-under-new-regulatory-changes">Enhancing data usability under new regulatory changes, 2026</a> · <a href="https://investor.marketaxess.com/news/news-details/2026/MarketAxess-Introduces-TraX-Tape-Delivering-an-Enriched-View-of-Bond-Market-Activity/default.aspx">MarketAxess Introduces TraX Tape, 2026-06-18</a> · <a href="https://investor.marketaxess.com/news/news-details/2026/Arcesium-Integrates-Additional-MarketAxess-Data-and-Analytics-to-Enhance-Fixed-Income-Workflows-2026-kGl0BkGatP/default.aspx">Arcesium Integrates Additional MarketAxess Data, 2026-10-07</a>
+- Earnings releases for services revenue: 4Q18, 4Q19, 4Q20, 4Q21, 4Q22, 1Q23–4Q23, 1Q24–4Q24, 1Q25–4Q25, 1Q26–3Q26 (investor.marketaxess.com, 2019-01-30 → 2026-10-23)</p></article>
+</div>
+<div class="doc-end"><button class="mark-read" type="button" data-href="doc-notes-marketaxess-data-cp-plus.html"><span class="mr-tick">✓</span><span class="mr-off">Mark as read</span><span class="mr-on">Read</span></button><span class="doc-end-hint">Marks itself read when you reach the end.</span></div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-market-structure-24-5-trading.html"><span>Previous</span>Note · 24/5 Trading — what &quot;always-on&quot; markets mean for equities and fixed income</a><a class="doc-next" href="doc-notes-marketaxess-hub.html"><span>Next</span>Note · MarketAxess hub — the all-to-all pioneer that taught bonds to trade electronically, then sold itself to an exchange group when its home market stopped compounding</a></nav>
+</div><script src="site.js?v=1792953205"></script></body></html>

@@ -1,0 +1,125 @@
+{
+  "_doc": "Shared topic taxonomy for the cross-company attention map. Each topic has a plain-English definition (used for blind validation) and case-insensitive regex keywords (used by attention.py). Multi-label: an article can carry several topics.",
+  "topics": {
+    "credit": {
+      "label": "Credit & corporate bonds",
+      "definition": "Corporate, high-yield, EM, municipal and convertible bonds; credit trading protocols (RFQ, all-to-all, portfolio trading); CDS on single names or indices when discussed as credit trading.",
+      "keywords": ["corporate bond", "credit market", "credit trading", "high[- ]yield", "investment[- ]grade", "\\bIG\\b", "\\bHY\\b", "all[- ]to[- ]all", "open trading", "portfolio trad", "municipal", "\\bmunis?\\b", "convertible", "TRACE", "\\bCDS\\b", "credit default swap", "eurobond", "emerging[- ]markets? (bond|debt|credit)"]
+    },
+    "rates": {
+      "label": "Rates, government bonds, repo & money markets",
+      "definition": "Treasuries, gilts, Bunds and other sovereign debt; repo; money market funds and T-bills; agency/TBA mortgages as a traded rates product; SOFR/LIBOR as rates.",
+      "keywords": ["treasur(y|ies)", "government bond", "sovereign", "\\bgilts?\\b", "\\bbunds?\\b", "\\brepo\\b", "repurchase agreement", "money market", "t-bill", "\\bTBA\\b", "\\bSOFR\\b", "\\bLIBOR\\b", "\\bSONIA\\b", "\\b€STR\\b", "interest rate", "yield curve", "WGBI"]
+    },
+    "derivs_clearing": {
+      "label": "Derivatives, futures & clearing",
+      "definition": "Swaps, swaptions, futures and options as products; central clearing houses (LCH, ICE Clear, OCC), margin, compression; swap execution facilities.",
+      "keywords": ["\\bswaps?\\b", "swaption", "futures", "\\boptions\\b", "derivative", "clearing", "clearinghouse", "\\bCCP\\b", "\\bLCH\\b", "SwapClear", "\\bmargin(s|ing)?\\b", "compression", "\\bSEF\\b", "swap execution"]
+    },
+    "equities_etf": {
+      "label": "Equities & ETFs",
+      "definition": "Cash equities, stock exchanges' equity trading, ETFs and ETF trading, iShares as an ETF business.",
+      "keywords": ["\\bequit(y|ies)\\b", "\\bstocks?\\b", "\\bETFs?\\b", "exchange[- ]traded fund", "iShares", "\\bshares traded\\b"]
+    },
+    "commodities_energy": {
+      "label": "Commodities & energy",
+      "definition": "Oil, gas, power, metals, agriculture, carbon/emissions markets, and benchmarks for them (Brent, TTF, Platts).",
+      "keywords": ["\\boil\\b", "crude", "\\bBrent\\b", "natural gas", "\\bTTF\\b", "\\bLNG\\b", "\\bpower\\b markets?", "commodit", "\\bPlatts\\b", "metals?\\b", "agricultur", "emissions? (allowance|market)", "carbon (credit|market|allowance)", "\\benergy\\b"]
+    },
+    "mortgage_lending": {
+      "label": "Mortgages & lending technology",
+      "definition": "Mortgage origination and servicing technology, loan data, residential lending, consumer and commercial lending as a business line.",
+      "keywords": ["mortgage", "\\bloans?\\b origination", "originat(e|ion|or)", "servicing", "Ellie Mae", "Black Knight", "\\bMERS\\b", "homebuyer", "housing finance", "\\blending\\b", "\\bloan\\b"]
+    },
+    "listings_ipo": {
+      "label": "Listings, IPOs & primary markets",
+      "definition": "Exchange listings, IPOs, issuer services, new-issue bond primary markets, capital raising on exchanges.",
+      "keywords": ["\\blistings?\\b", "\\bIPOs?\\b", "initial public offering", "\\bissuers?\\b", "new issue", "primary market", "debut on the", "rings? the (opening|closing) bell", "\\bNYSE\\b"]
+    },
+    "indices_benchmarks": {
+      "label": "Indices & benchmarks",
+      "definition": "Index families and index licensing (S&P 500, FTSE Russell, iBoxx, Bloomberg Agg, ICE BofA), benchmark administration, reference rates and closing prices used as benchmarks.",
+      "keywords": ["\\bindex\\b", "\\bindices\\b", "indexes", "benchmark", "S&P 500", "FTSE Russell", "\\bRussell\\b", "iBoxx", "\\bAgg\\b", "Aggregate Index", "rebalanc", "closing prices?", "reference rate", "index provider"]
+    },
+    "pricing_data": {
+      "label": "Pricing, reference data & analytics",
+      "definition": "Evaluated pricing (BVAL, CP+, Ai-Price, ICE CEP, S&P evaluations), reference data, market data feeds and licensing, analytics, ratings data, research data products.",
+      "keywords": ["evaluated pric", "\\bBVAL\\b", "CP\\+", "Ai-Price", "\\bpricing (data|service|model)", "reference data", "market data", "data feed", "\\bdata (licen|product|service|set|business)", "analytics", "datasets?", "\\bdata\\b"]
+    },
+    "workflow_desktop": {
+      "label": "Workflow software, desktops & buy-side tech",
+      "definition": "Terminals and desktops (Bloomberg Terminal, Workspace, Eikon), order/execution management systems, Aladdin, portfolio and risk software, APIs and integrations sold as software.",
+      "keywords": ["terminal", "Workspace", "\\bEikon\\b", "Aladdin", "\\bOMS\\b", "\\bEMS\\b", "order management", "execution management", "\\bsoftware\\b", "\\bSaaS\\b", "platform for (investors|clients)", "\\bAPIs?\\b", "workflow", "desktop"]
+    },
+    "electronification": {
+      "label": "Electronic trading & automation",
+      "definition": "Moving trading from voice to electronic, trading protocols, automation and rules-based execution (AiEX, Auto-X), algos, streaming prices, liquidity and market structure of trading venues.",
+      "keywords": ["electronic trading", "electronif", "e-trading", "\\bautomat", "\\balgo(rithm)?s?\\b", "\\bAiEX\\b", "Auto-X", "\\bRFQ\\b", "request[- ]for[- ]quote", "protocol", "streaming", "\\bliquidity\\b", "market structure", "execution quality", "\\bvenue\\b"]
+    },
+    "ai": {
+      "label": "AI & machine learning",
+      "definition": "Artificial intelligence, machine learning, LLMs and generative AI, AI assistants and agents, AI governance, as products or internal tools.",
+      "keywords": ["\\bAI\\b", "artificial intelligence", "machine learning", "\\bML\\b", "generative", "\\bGenAI\\b", "\\bLLMs?\\b", "large language model", "\\bagentic\\b", "\\bAI agents?\\b", "\\bGPT\\b", "\\bcopilot\\b", "neural", "\\bMCP\\b"]
+    },
+    "digital_assets": {
+      "label": "Digital assets, crypto & tokenization",
+      "definition": "Crypto, stablecoins, tokenized securities and funds, blockchain/DLT, on-chain settlement, deposit tokens, prediction markets.",
+      "keywords": ["crypto", "bitcoin", "\\bether(eum)?\\b", "stablecoin", "tokeni[sz]", "\\btokens?\\b", "blockchain", "distributed ledger", "\\bDLT\\b", "on-?chain", "digital assets?", "\\bCanton\\b", "Kinexys", "\\bOnyx\\b", "JPM Coin", "\\bBUIDL\\b", "prediction market", "Kalshi"]
+    },
+    "private_markets": {
+      "label": "Private markets & private credit",
+      "definition": "Private equity, private credit, infrastructure, alternatives, private-company data (Preqin, PitchBook-like), private markets trading.",
+      "keywords": ["private (markets?|credit|equity|capital|assets)", "alternatives?\\b", "infrastructure (fund|invest)", "\\bGIP\\b", "\\bHPS\\b", "Preqin", "direct lending", "private debt"]
+    },
+    "esg_climate": {
+      "label": "Sustainability, ESG & climate",
+      "definition": "ESG, sustainability, climate risk and transition, net zero, stewardship and proxy voting on ESG, sustainable finance products.",
+      "keywords": ["\\bESG\\b", "sustainab", "climate", "net[- ]zero", "decarboni", "transition (finance|risk)", "stewardship", "green bond", "carbon (emissions|footprint|neutral)", "\\bdiversity\\b"]
+    },
+    "regulation_policy": {
+      "label": "Regulation & public policy",
+      "definition": "Regulators and rules (SEC, CFTC, FINRA, FCA, ESMA, Basel, MiFID, EMIR), policy positions, consultations, mandates, lobbying, government relations.",
+      "keywords": ["\\bSEC\\b", "\\bCFTC\\b", "\\bFINRA\\b", "\\bFCA\\b", "\\bESMA\\b", "regulat", "\\bBasel\\b", "MiFID", "\\bEMIR\\b", "Dodd-Frank", "consultation", "mandate", "policymaker", "Congress", "legislat", "supervis"]
+    },
+    "deals_capital": {
+      "label": "M&A, results & capital return",
+      "definition": "Acquisitions, divestitures, mergers, earnings results, guidance, dividends, buybacks, debt raising, investor days.",
+      "keywords": ["acqui(re|sition)", "merger", "divest", "to buy\\b", "agreed to (buy|sell|acquire)", "\\bearnings\\b", "results\\b", "\\bguidance\\b", "dividend", "buyback", "share repurchase", "investor day", "\\bEPS\\b", "\\brevenue\\b"]
+    },
+    "people_culture": {
+      "label": "People, leadership & culture",
+      "definition": "Executive appointments and departures, succession, board changes, employees, culture, talent, diversity programmes, workplace.",
+      "keywords": ["appoint", "\\bnamed (as )?(chief|head|president|CEO)", "\\bjoins? (as|the)\\b", "succession", "chief executive", "\\bboard of directors\\b", "\\bemployees\\b", "\\bculture\\b", "\\btalent\\b", "\\bhir(e|ing)\\b", "\\bcolleagues\\b", "steps down", "retire"]
+    },
+    "fees_pricing_power": {
+      "label": "Fees, pricing power & costs",
+      "definition": "What the company charges and earns per unit: fee rates, fee per million, price increases or cuts, take rates, client cost savings, the company's own cost cuts and expense synergies.",
+      "keywords": ["fee per million", "\\bFPM\\b", "fee (rate|capture|pressure|plan|compression)", "price increase", "pricing power", "take rate", "\\bdiscount(s|ed)?\\b", "cost savings", "expense synerg", "cost (cut|reduction)", "headcount reduction", "subscription price"]
+    },
+    "risk_resilience": {
+      "label": "Operational risk, cyber & resilience",
+      "definition": "Cybersecurity, outages, operational resilience, business continuity, fraud, data breaches, systemic risk and market stress handling by the company itself.",
+      "keywords": ["cyber", "outage", "operational resilien", "business continuity", "disaster recovery", "breach", "\\bfraud\\b", "ransomware", "downtime", "incident", "\\bresilien"]
+    },
+    "international": {
+      "label": "International & emerging-market expansion",
+      "definition": "Expansion into specific countries/regions, China, Asia-Pacific, Middle East, Latin America, EM access programmes, local-market licences.",
+      "keywords": ["\\bChina\\b", "Chinese", "Bond Connect", "\\bAsia\\b", "APAC", "\\bJapan", "\\bKorea", "\\bIndia\\b", "Saudi", "Middle East", "\\bUAE\\b", "Latin America", "\\bBrazil", "\\bMexic", "emerging market", "\\bEMEA\\b"]
+    },
+    "retail_wealth": {
+      "label": "Retail, wealth & consumer",
+      "definition": "Retail investors and advisors, wealth management, consumer banking and cards, retirement savers, mass-market products.",
+      "keywords": ["\\bretail\\b", "wealth", "financial advis", "\\badvisors?\\b", "consumer", "retirement", "\\b401\\(k\\)", "\\bcards?\\b", "\\bbranch(es)?\\b", "Marcus", "savers"]
+    },
+    "payments_banking": {
+      "label": "Payments, treasury & transaction banking",
+      "definition": "Payments, cash management, corporate treasury services, deposits, FX payments, transaction banking.",
+      "keywords": ["payments?\\b", "cash management", "treasury services", "transaction banking", "\\bdeposits?\\b", "corporate treasur", "liquidity management", "cross-border"]
+    },
+    "ratings_research": {
+      "label": "Credit ratings & research",
+      "definition": "Credit ratings and ratings agencies as a business, sell-side or house research publications and economic outlooks.",
+      "keywords": ["\\bratings?\\b (agency|business|action)", "credit rating", "Moody", "\\bFitch\\b", "\\bresearch\\b (report|note|team)", "outlook", "economist"]
+    }
+  }
+}

@@ -1,0 +1,394 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Note · MarketAxess protocols &amp; automation — Concannon imported equity microstructure into bonds; every protocol shipped, adoption was the constraint · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792953205"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Note · MarketAxess protocols &amp; automation — Concannon imported equity microstructure into bonds; every protocol shipped, adoption was the constraint</h1>
+<div class="doc-meta"><span>21 min read</span><span>4,897 words</span><span>Updated 2026-10-25</span><span class="doc-src">notes/marketaxess-protocols-automation.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#1-chronology-protocol-by-protocol-promised-vs-delivered-vs-adopted">1. Chronology — protocol by protocol: promised vs delivered vs adopted</a></li><li class="l2"><a href="#2-the-three-channel-framework-feb-2025-with-the-gs-decks-market-map">2. The three-channel framework (Feb 2025 →) with the GS deck's market map</a></li><li class="l2"><a href="#3-dealer-algos-the-liquidity-the-protocols-run-on">3. Dealer algos — the liquidity the protocols run on</a></li><li class="l2"><a href="#4-automation-economics-what-marketaxess-says-it-saves">4. Automation economics — what MarketAxess says it saves</a></li><li class="l2"><a href="#5-opening-closing-auctions-the-cleanest-import-and-its-adoption-test">5. Opening &amp; Closing Auctions — the cleanest import, and its adoption test</a></li><li class="l2"><a href="#6-the-x-pro-rebuild-five-years-in-five-quotes">6. The X-Pro rebuild — five years in five quotes</a></li><li class="l2"><a href="#7-why-each-import-worked-technically-but-adoption-was-the-constraint-inference-not-stated-by-marketaxess">7. Why each import worked technically but adoption was the constraint (inference — not stated by MarketAxess)</a></li><li class="l2"><a href="#8-compared-with-tradewebs-workflow-wiring">8. Compared with Tradeweb's workflow wiring</a></li><li class="l2"><a href="#9-what-the-claims-dont-prove">9. What the claims don't prove</a></li><li class="l2"><a href="#10-canon-lenses">10. Canon lenses</a></li><li class="l2"><a href="#11-practitioner-counterpoint">11. Practitioner counterpoint</a></li><li class="l2"><a href="#12-open-questions-to-track">12. Open questions to track</a></li><li class="l3"><a href="#rep">Rep</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p>Practitioner / market-structure note · Maps to <strong>Course 04</strong> (Competitive Strategy — protocol breadth vs workflow depth, imitation vs fit), <strong>Course 06</strong> (Operations — automation, platform rebuilds, throughput), <strong>Course 03</strong> (Microeconomics — auctions, two-sided liquidity, dealer economics), <strong>E5</strong> (Transformation &amp; Change Management at Scale — the five-year rebuild), <strong>E10</strong> (Digital &amp; AI Transformation — algos, AI dealer selection), <strong>E1</strong> (Leading at Scale — an operator-CEO's playbook) · Written 2026-10-25 · Part of <a class="wiki" href="doc-notes-marketaxess-hub.html">marketaxess hub</a>; companions <a class="wiki" href="doc-notes-marketaxess-open-trading.html">marketaxess open trading</a>, <a class="wiki" href="doc-notes-marketaxess-strategy-financials.html">marketaxess strategy financials</a>, <a class="wiki" href="doc-notes-tradeweb-credit.html">tradeweb credit</a></p>
+</blockquote>
+<ul>
+<li><strong>Source:</strong> MarketAxess corpus (<code>_ingest/raw/marketaxess/articles.jsonl</code>), about <strong>45 items</strong> used: 12 product and partner news releases (Live Markets 2019 → Mid-X 2025 → auctions 2025), 14 earnings releases (2021–3Q26, narrative only), the FY2020–FY2025 letters, the 2021 Investor Day and Dec 2025 Goldman Sachs decks, and about 15 Knowledge Center pieces on automation, blocks, PT, Mid-X and auctions (including Bloomberg, The TRADE, Markets Media and WatersTechnology reprints). Range <strong>May 2019 – Oct 2026</strong>. Caveats: there are <strong>no standalone releases for the X-Pro launch (2023) or the PT launch (2019)</strong>; they appear only in letters and earnings text. Several Knowledge Center dates are estimates. <strong>No volumes are ever disclosed for Live Markets, Adaptive Auto-X or the auctions.</strong> No call transcripts.</li>
+<li><strong>Core claim:</strong> Chris Concannon (ex-Bats/Cboe; President &amp; COO from Jan 2019, CEO from Apr 2023) brought exchange and ETF microstructure to an RFQ venue: a <strong>central limit order book</strong> (Live Markets, announced May 2019 for 2H19, launched summer 2020), <strong>portfolio trading</strong> (announced for autumn 2019; only <em>more than 50</em> trades by Jun 2021; <strong>$92B</strong> in 2022), <strong>algorithmic execution</strong> (Adaptive Auto-X 2023, <strong>Pragma</strong> bought Oct 2023), <strong>mid-point matching</strong> for dealers (Mid-X, relaunched in US credit Sep 2025), <strong>targeted block RFQ</strong> (late 2024) and <strong>opening &amp; closing auctions</strong> (Nov 2025). Every one of them shipped. Most shipped late, and the ones with disclosed adoption grew mainly where <strong>dealers</strong> wanted them (Mid-X, dealer RFQ) or where they rode existing RFQ flow (Auto-X: <strong>28%</strong> of credit trade count but only <strong>11%</strong> of volume in FY25). The rebuild behind it, promised as a <em>fully redesigned trading experience</em> for <strong>1Q22</strong>, became X-Pro (2023), a <em>build</em> year (2024) and <em>still have work to do</em> (FY25), and needed a new CTO (2026). Meanwhile the GS deck admits US credit revenue shrank <strong>2% a year</strong> over 2020–24. Tradeweb took share by wiring the workflow around the existing RFQ (net spotting, early PT; <a class="wiki" href="doc-notes-tradeweb-credit.html">tradeweb credit</a>) rather than by adding protocols.</li>
+</ul>
+<hr />
+<h2 id="1-chronology-protocol-by-protocol-promised-vs-delivered-vs-adopted">1. Chronology — protocol by protocol: promised vs delivered vs adopted</h2>
+<p>Figures as MarketAxess states them unless marked <em>derived</em>.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Protocol (import from)</th>
+<th>Announced / promised</th>
+<th>Actually live</th>
+<th>Adoption metric MKTX discloses</th>
+<th>Volume disclosed?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Live Markets CLOB</strong> (equity order book)</td>
+<td>2019-05-09: "expected to launch in the second half of 2019"</td>
+<td>"Launched in the summer of 2020" (~1 year late); UST version later; <em>Live Markets Match</em> (CP+-range matching)</td>
+<td>Market makers: <strong>Goldman</strong> (Oct 2020), <strong>Barclays</strong> (May 2021), one unnamed systematic firm, <strong>Flow Traders</strong> (HY, Dec 2021). Hedge fund interactions +275% since launch. Embedded in <strong>BlackRock Aladdin</strong> (Sep 2024)</td>
+<td><strong>Never</strong></td>
+</tr>
+<tr>
+<td><strong>Portfolio trading</strong> (ETF-style basket risk transfer)</td>
+<td>2019-06-19: "expected to launch in the Autumn of 2019"</td>
+<td>Real release "late-May" 2021</td>
+<td>Jun 2021: "more than 50 portfolio trades" (17 investors, 9 dealers). $29B (2021) → <strong>$92B</strong> (2022, ~31% of e-traded PT in 4Q22). Share of US HG+HY PT: <strong>20.0%</strong> (3Q24) → <strong>16.2%</strong> (4Q24) → <strong>19.0%</strong> (FY25) → <strong>21%</strong> (4Q25). PT ADV $1.4B (FY25), record <strong>$2.0B</strong> (2Q26)</td>
+<td>Yes, from 2021</td>
+</tr>
+<tr>
+<td><strong>Auto-X RFQ</strong> (rules-based auto-execution)</td>
+<td>2018 launch</td>
+<td>2018</td>
+<td>17% of tickets (Q2 2021); ~20% of credit trade count (2022); "nearly 10%" of volume (2023 YTD); <strong>28% of trade count / 11% of volume</strong> (FY25); 261 clients; power users at <strong>92%</strong> (HG) / <strong>74%</strong> (HY), vs 32% / 9% in 2018</td>
+<td>Partly (shares, cumulative $)</td>
+</tr>
+<tr>
+<td><strong>Adaptive Auto-X</strong> (smart order router / parent order)</td>
+<td>2021 Investor Day: "Encouraging clients to leave the parent order with MarketAxess"</td>
+<td>Pilot Q1 2023 (CP+ Peg); first client algo trade Jun 2023; Europe pilot 2026</td>
+<td>None beyond <em>first trade</em>; in Aladdin Sep 2024</td>
+<td><strong>Never</strong></td>
+</tr>
+<tr>
+<td><strong>Pragma</strong> (equity/FX algo engine)</td>
+<td>Agreed 2023-08-07</td>
+<td>Closed 2023-10-02</td>
+<td>$31.7M of revenue in 2024 (its commissions are driven by equities, per 1Q25); becomes "the backbone of our entire system" (Tait, 2025)</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td><strong>Mid-X</strong> (IDB-style mid-point matching)</td>
+<td>Launched 2020 (FY20 letter); relaunch on Pragma promised for 2Q25 (FY24 letter)</td>
+<td>EM/Eurobonds 2024; <strong>US credit Sep 2025</strong></td>
+<td>EM/Euro 2Q25 +70% YoY; US "exceeded 2bn printed" (Dec 2025); &gt;<strong>$3B</strong> in Dec 2025 alone; ADV <strong>+168%</strong> (Q1 2026); 60+ dealer firms, up to 6 sessions a day</td>
+<td>Partly</td>
+</tr>
+<tr>
+<td><strong>Dealer RFQ / DealerAxess</strong> (dealer-to-dealer via OT)</td>
+<td>—</td>
+<td>DealerAxess late Q1 2024</td>
+<td>Dealer RFQ ADV $1.2B (2024), $1.8B (1Q25); dealer-initiated ADV <strong>$1.7B</strong> (FY25, +33%), record $1.9B (1Q26)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Targeted block RFQ</strong> (block desks, curated)</td>
+<td><em>Block Trading</em> on the 2021 Investor Day slide</td>
+<td>Oct–Nov 2024 (EM/Euro); US credit 2Q25</td>
+<td>Block ADV <strong>$5B</strong> (FY25, +24%), record <strong>$6.6B</strong> (1Q26, +35%), $5.4B (3Q26); US block e-penetration est. <strong>10–20%</strong> (GS deck)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Targeted Axes</strong> (disclosed axe distribution)</td>
+<td>—</td>
+<td>Pilot Nov 2025</td>
+<td>"strong feedback"</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Opening &amp; Closing Auctions</strong> (exchange closing cross)</td>
+<td>2025-11-05: available "in the coming weeks"</td>
+<td>Nov 2025, US HG/HY on X-Pro</td>
+<td>600+ webinar attendees; still advertising "as participation continues to grow" (May 2026)</td>
+<td><strong>Never</strong></td>
+</tr>
+<tr>
+<td><strong>X-Pro</strong> (platform rebuild)</td>
+<td>2021 Investor Day: "Fully redesigned trading experience being rolled out starting 1Q22"</td>
+<td>2023 (PT first); international 3Q24; Dealer RFQ + Mid-X on Pragma 2H25; enhanced X-Pro RFQ for US credit <strong>3Q26</strong></td>
+<td>Share of PT on X-Pro: 18.2% (3Q23) → 30.3% (4Q23) → 56% (2Q24) → 59% (3Q24) → 71% (4Q24) → <strong>85%</strong> (1Q25)</td>
+<td>n/a</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Pattern.</strong> The protocols aimed at the buy side as a new way to trade (CLOB, Adaptive Auto-X, auctions) have no disclosed volumes. The protocols with disclosed growth either serve dealers' risk recycling (Mid-X, dealer RFQ, DealerAxess), sit on top of the existing RFQ (Auto-X, targeted block RFQ), or followed the market rather than led it (PT, once X-Pro could carry it).</p>
+<h2 id="2-the-three-channel-framework-feb-2025-with-the-gs-decks-market-map">2. The three-channel framework (Feb 2025 →) with the GS deck's market map</h2>
+<p>Concannon's FY24 letter: "We have a clear strategy to return to market share growth in U.S. credit across these three channels". The Dec 2025 Goldman Sachs deck sizes them:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Channel</th>
+<th>Market ADV (Nov 2025 TTM)</th>
+<th>Est. e-penetration</th>
+<th>MKTX's tools</th>
+<th>MKTX's own metric (FY25 unless noted)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Client-initiated RFQ</strong></td>
+<td><strong>$11.6bn</strong></td>
+<td>~40–45%</td>
+<td>RFQ, OT, Auto-X, AI dealer selection</td>
+<td>Automation 28% of trade count</td>
+</tr>
+<tr>
+<td>— of which <strong>high-touch / block</strong></td>
+<td><strong>$19.4bn</strong> (block trade size)</td>
+<td>est. <strong>10–20%</strong></td>
+<td>Targeted RFQ, Smart Select, Targeted Axes</td>
+<td>Block ADV $5B (all regions)</td>
+</tr>
+<tr>
+<td><strong>Portfolio trading</strong></td>
+<td><strong>$6.1bn</strong></td>
+<td><strong>~80%</strong></td>
+<td>X-Pro PT, CP+ in PT, ETF overlays</td>
+<td>US PT share 19.0% → US PT ADV $1.1B</td>
+</tr>
+<tr>
+<td><strong>Dealer-initiated</strong></td>
+<td><strong>$14.5</strong> (unit missing in the deck; $bn assumed)</td>
+<td>~25%</td>
+<td>Dealer RFQ, Mid-X, DealerAxess</td>
+<td>Dealer-initiated ADV $1.7B</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Derived:</strong> the four rows sum to about <strong>$51.6bn</strong> of US credit ADV. Roughly <strong>$34bn</strong> of it (blocks + dealer-initiated) is less than a quarter electronic, which is where the deck says the growth is. US PT share × market PT ADV = 19% × $6.1bn ≈ <strong>$1.16bn</strong>, which matches the $1.1B reported (consistency check, <em>derived</em>).</li>
+<li><strong>The deck's own verdict:</strong> "A return to U.S. credit revenue growth is fundamental to our future success". US credit revenue CAGR <strong>(2%)</strong> over 2020–24, against <strong>+15%</strong> outside US credit.</li>
+<li><strong>Read:</strong> the channel frame moves the scoreboard from <em>share of TRACE</em> (falling) to <em>ADV per channel</em> (rising). It is also honest about the opportunity. The underpenetrated pools are blocks and dealer-to-dealer, which are exactly where a buy-side RFQ venue has least natural access and where IDBs and Tradeweb are strong.</li>
+</ul>
+<h2 id="3-dealer-algos-the-liquidity-the-protocols-run-on">3. Dealer algos — the liquidity the protocols run on</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Metric (MKTX says)</th>
+<th>Value</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Share of client RFQs that algos respond to (US/EUR HG &amp; HY)</td>
+<td><strong>96%</strong></td>
+<td><em>Algos in block trading</em> (2025)</td>
+</tr>
+<tr>
+<td>Algo counterparty share of US HG trades</td>
+<td><strong>88%</strong> (Q1 2025), +21pp vs Q1 2021; 11 responses per inquiry</td>
+<td>same</td>
+</tr>
+<tr>
+<td>Algo share of US HG responses, $5–10mm</td>
+<td>12% → 37%</td>
+<td>same</td>
+</tr>
+<tr>
+<td>Dealer algo win rate on credit blocks</td>
+<td>10% (2023) → 25% (2025)</td>
+<td><em>From fringe to familiar</em></td>
+</tr>
+<tr>
+<td>Algo share of prices, April 2025 tariff shock</td>
+<td>~<strong>80%</strong>, vs a fall from 60% to 50% in COVID</td>
+<td><em>April volatility</em> AxessPoint</td>
+</tr>
+<tr>
+<td>EUR HG responses from algos</td>
+<td>65% (2025); responses per RFQ 5.4 → 7.1; €3–5mm algo responses 10% → 22%</td>
+<td><em>European credit automation</em> (2026)</td>
+</tr>
+<tr>
+<td>Dealer algo responses</td>
+<td>23.7M in 2022 (+29.2%)</td>
+<td>FY22 letter</td>
+</tr>
+</tbody>
+</table></div>
+<p>"It is becoming clear that algos are dominating the liquidity pool". <strong>Inference:</strong> every new protocol (Auto-X, Mid-X, auctions, PT) depends on the same small set of bank pricing engines. That makes the platform more resilient in a tariff-style shock (algos stayed on) and more concentrated in a deeper one.</p>
+<h2 id="4-automation-economics-what-marketaxess-says-it-saves">4. Automation economics — what MarketAxess says it saves</h2>
+<ul>
+<li><strong>Time.</strong> In Q2 2021, Auto-X RFQ saved "approximately 131 seconds per inquiry", "over 3600 hours" and 410,000 clicks in the quarter (about 400 trading days), assuming 60 seconds of trader validation per trade.</li>
+<li><strong>Persistence in stress.</strong> The <em>no-touch</em> rate was 7% in COVID and 36% during SVB/Credit Suisse (2023). Override rates fell from 50% to 21%.</li>
+<li><strong>Speed.</strong> Median time to trade is 43 seconds in EUR IG vs 10 minutes in USD IG (2023): "There is little benefit to delay the timers as similar trading outcomes can be obtained with shorter timers."</li>
+<li><strong>Scale.</strong> Auto-X passed $1tn cumulative (2024). Some clients use the strategies for "over 90% of their trading volumes" (Schiffman, Sep 2024). In Europe the largest clients automated 75% of tickets up to €5m in Q1 2026, and "Automation in European credit trading is no longer experimental, it’s becoming the norm."</li>
+<li><strong>The gap that matters (derived):</strong> automation is 28% of credit trade count but 11% of volume (FY25), so the average automated ticket is about a third the size of the average ticket ((11/28) ÷ (89/72) ≈ 0.32). Automation has electronified the small tickets the platform already had. It has not yet won the blocks, which is why blocks became a separate channel.</li>
+</ul>
+<h2 id="5-opening-closing-auctions-the-cleanest-import-and-its-adoption-test">5. Opening &amp; Closing Auctions — the cleanest import, and its adoption test</h2>
+<ul>
+<li><strong>Design (MKTX says).</strong> Book-building and imbalance phases; pegged, limit and <em>offsetting-only</em> orders. It "clears at the price that maximizes total trading volume". Pegged orders fill first, then limit, then offsetting. Built on the Pragma engine in X-Pro, the <em>first front-to-back implementation</em> of X-Pro and Pragma (GS deck, paraphrased). Advisory group: <strong>AllianceBernstein, BlackRock, DWS, State Street Investment Management</strong> (<a class="wiki" href="doc-notes-blackrock-hub.html">blackrock hub</a>).</li>
+<li><strong>The case.</strong> "31% of U.S. high-grade TRACE is executed between 4 – 5 PM ET on month-ends" (GS deck). Concannon: 25% of a month-end day's IG volume trades in the last hour, and "almost 15%" on a normal day. CP+ bid-ask "collapses by 35% between the first and last hour of the trading day". ETF trading is over $10bn a day, ten times a decade ago. Sweeney: the equity closing auction is "about 10% of total trading volume".</li>
+<li><strong>The claims.</strong> Concannon: "There’s no tradeable true auctions. This is the first." Sweeney: "Within the next couple of years, this could be the dominant protocol in the market" and "we’re now in the beginning of the snowball phase." BlackRock's Veiner says it "represents a meaningful advancement in the modernisation of the bond market."</li>
+<li><strong>The cautions, from inside the same coverage.</strong> Bloomberg: "the worry is there’s a tradeoff if it squeezes dealer profits tied to the very inefficiencies it would eliminate." Concannon himself: "success will depend on adoption" without deep dealer and buy-side participation. Sweeney: "We have to make sure the auction is a liquid event". Concannon's answer to dealers: "Dealers can exit inventory on an auction or they can be a liquidity provider in an auction".</li>
+<li><strong>Read:</strong> this is the import with the strongest structural logic, because indexation and ETFs really do concentrate flow at the close. It is also the most exposed to the CLOB problem. A single clearing price helps whoever is on the wrong side of the information gap, and it takes away dealers' end-of-day pricing edge. Six months after launch the company was still running ads asking people to join a Wednesday auction. No volume has been published.</li>
+</ul>
+<h2 id="6-the-x-pro-rebuild-five-years-in-five-quotes">6. The X-Pro rebuild — five years in five quotes</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Statement</th>
+<th>Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sep 2021 (Investor Day)</td>
+<td>"Fully redesigned trading experience being rolled out starting 1Q22"</td>
+<td>The promise</td>
+</tr>
+<tr>
+<td>Apr 2024 (FY23 letter)</td>
+<td>"order-centric trading platform, MarketAxess X-Pro" launched in 2023; PT first</td>
+<td>~1.5 years late, and only PT at first</td>
+</tr>
+<tr>
+<td>Apr 2025 (FY24 letter)</td>
+<td>"2024 was primarily a “build” year in our technology transformation"</td>
+<td>Year three</td>
+</tr>
+<tr>
+<td>Dec 2025 (Mid-X interview)</td>
+<td>"we’re integrating Pragma technology as the backbone of our entire system"</td>
+<td>A second re-architecture inside the first</td>
+</tr>
+<tr>
+<td>Apr 2026 (FY25 letter)</td>
+<td>"We still have work to do"; new CTO William Quan to "strengthen technology execution across the enterprise"</td>
+<td>Year five, new technology leadership reporting to the COO</td>
+</tr>
+<tr>
+<td>Oct 2026 (3Q26)</td>
+<td>Enhanced X-Pro RFQ brings "AI-powered dealer selection into a single modern interface"</td>
+<td>The core US credit RFQ, the biggest franchise, migrates last</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Inference:</strong> the sequencing put the new protocols (PT, then dealer tools, then auctions) on the new stack before the core client RFQ. That made sense for share recovery in PT, where X-Pro share rose from 18% to 85% of MKTX PT and PT share recovered to 21%. But the highest-revenue workflow ran on the legacy UI until late 2026, while Tradeweb took IG share (context, from <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> §6: The DESK, Jun 2026, Tradeweb 18.0% vs MKTX 16.0% of IG+HY TRACE).</p>
+<h2 id="7-why-each-import-worked-technically-but-adoption-was-the-constraint-inference-not-stated-by-marketaxess">7. Why each import worked technically but adoption was the constraint (inference — not stated by MarketAxess)</h2>
+<ol>
+<li><strong>Order books need committed liquidity providers, and corporate bonds do not have them by default.</strong> Schiffman said so in 2021: "a streaming order book requires commitment from all participants to succeed." Three or four dedicated market makers on the most active IG names is a showcase, not a market. No volume was ever published.</li>
+<li><strong>The imports took dealer edge away.</strong> Auctions (a single closing price), Live Markets (pre-trade transparency) and OT (anonymity) all make the market fairer for the buy side and cost dealers information rents. Dealers adopted what helped them (Mid-X to recycle PT risk, dealer RFQ into OT, algos that answer at scale) and were slow on what didn't. The 2025–26 product list, with DealerAxess, Mid-X, Targeted Axes and the curation tools, reads as MKTX bargaining for dealer participation.</li>
+<li><strong>The buy side is already on the RFQ, so new protocols compete with a habit.</strong> Adaptive Auto-X needs clients to "leave the parent order" with the venue. Block desks needed "a more contained environment" (Burke, EM TRFQ). In practice traders add a protocol only when it is in the same ticket and the same OMS, hence the push into Aladdin, the IMTC OMS and X-Pro as <em>one container</em>.</li>
+<li><strong>Technology was the binding constraint on the ones clients did want.</strong> PT was announced in 2019 but stalled until a real release in 2021 and X-Pro in 2023–24. Tradeweb launched PT in Jan 2019 and did <strong>$43bn</strong> that year and <strong>$123bn</strong> in 2020 (context, from <a class="wiki" href="doc-notes-tradeweb-credit.html">tradeweb credit</a> §1), while MKTX had done <em>more than 50</em> trades by mid-2021.</li>
+<li><strong>Low-fee protocols dilute the fee line.</strong> PT, blocks, Mid-X and auctions all carry lower fees per million than single-name RFQ. Credit FPM fell from $184.78 (FY21) to $127 (3Q26) (<a class="wiki" href="doc-notes-marketaxess-strategy-financials.html">marketaxess strategy financials</a>). So even the protocols that won adoption grew ADV faster than revenue.</li>
+</ol>
+<h2 id="8-compared-with-tradewebs-workflow-wiring">8. Compared with Tradeweb's workflow wiring</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th></th>
+<th>MarketAxess (this note)</th>
+<th>Tradeweb (context, from <a class="wiki" href="doc-notes-tradeweb-credit.html">tradeweb credit</a>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Strategy</td>
+<td>Add <strong>new protocols</strong> from equities and ETFs (CLOB, auctions, algos, matching)</td>
+<td>Electronify the <strong>work around the existing RFQ</strong> (Treasury spotting → Net Spotting → MCNS; voice processing; PT; AiEX)</td>
+</tr>
+<tr>
+<td>PT</td>
+<td>Announced Jun 2019; scaled 2022 ($92B); X-Pro-dependent; share 16–21% (2024–25)</td>
+<td>First mover Jan 2019; $43bn (2019) → $123bn (2020) → &gt;$270bn (2022); &gt;$1tn market PT by 2024</td>
+</tr>
+<tr>
+<td>Hedging</td>
+<td>Net spotting via LiquidityEdge (bought 2019), integrated in PT 2021</td>
+<td>Net Spotting <strong>$818bn</strong> submitted (2020); the <em>rates adjacency</em> moat</td>
+</tr>
+<tr>
+<td>Auto-execution</td>
+<td>Auto-X 17% of tickets (2021), 28% of trade count (FY25)</td>
+<td>AiEX ≈ <strong>54%</strong> of IG RFQ tickets (Nov 2021)</td>
+</tr>
+<tr>
+<td>A2A</td>
+<td>OT, the brand</td>
+<td>AllTrade, added <em>without changing anyone's workflow</em></td>
+</tr>
+<tr>
+<td>Price ruler</td>
+<td>CP+</td>
+<td>Ai-Price</td>
+</tr>
+<tr>
+<td>Result</td>
+<td>Protocol breadth; US HG share 22.8% (4Q20) → 18.4% (4Q24)</td>
+<td>HG TRACE share 11.8% (2019) → 22.5% (Q1 2022); fully electronic HG record 19.7% (Apr 2024)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read:</strong> in Goldratt's terms (<a class="wiki" href="doc-canon-canon-goldratt-the-goal.html">canon goldratt the goal</a>), Tradeweb attacked the binding constraint in IG execution, the Treasury hedge and its phone delay, inside the trader's existing ticket. MarketAxess opened new channels next to the ticket. Both approaches are rational. In a relationship market the one that changes the fewest habits wins first.</p>
+<h2 id="9-what-the-claims-dont-prove">9. What the claims don't prove</h2>
+<ol>
+<li><strong>Launch ≠ adoption.</strong> Live Markets, Adaptive Auto-X and the auctions are described in launch releases and features, never in volumes. <em>First</em> claims ("fixed income's first", "first standardized market-wide auction protocol") are unverified inside the corpus.</li>
+<li><strong>Records in low-fee channels.</strong> Record block, PT and Mid-X ADV comes with a falling credit FPM. ADV growth by channel is not revenue growth, and the deck says US credit revenue shrank.</li>
+<li><strong>The denominators move.</strong> PT share is quoted as <em>% of e-traded PT</em> (~31%, 4Q22), as <em>% of HG+HY TRACE PT</em> (20.0%/16.2%, 2024), and as <em>US credit PT</em> (19.0%, FY25). The April 2025 letter said PT share was "tracking 320 basis points above" FY24, and the year closed at +270bp. From 2024 the releases also footnote the effect of single-dealer PT on reported share.</li>
+<li><strong>Automation is measured by ticket.</strong> Trade-count shares (17%, 20%, 28%) flatter automation against volume share (10%, 11%).</li>
+<li><strong>Self-measured TCA.</strong> Block TCA (<em>Blockbusting</em> Part 4: 26% at CP+ mid or better) and PT precision (HY median absolute deviation to CP+ $0.17 → $0.10) are scored on CP+ (see <a class="wiki" href="doc-notes-marketaxess-open-trading.html">marketaxess open trading</a> §5).</li>
+</ol>
+<h2 id="10-canon-lenses">10. Canon lenses</h2>
+<ul>
+<li><strong>Sustaining vs disruptive</strong> (<a class="wiki" href="doc-canon-canon-christensen-innovators-dilemma.html">canon christensen innovators dilemma</a>): CLOBs and auctions are <em>disruptive</em> to dealer economics and were sold to the dealers they disrupt. Auto-X and dealer RFQ are <em>sustaining</em>, and they are the ones that grew.</li>
+<li><strong>Multi-sided platforms and chicken-and-egg</strong> (<a class="wiki" href="doc-canon-canon-hagiu-wright-multi-sided-platforms.html">canon hagiu wright multi sided platforms</a>, <a class="wiki" href="doc-canon-canon-parker-platform-revolution.html">canon parker platform revolution</a>): an order book or auction is worth joining only if the other side is there. MKTX seeded with named market makers (Goldman, Barclays, Flow Traders) and an advisory group (BlackRock et al.), the textbook subsidy-the-hard-side move, without disclosed results.</li>
+<li><strong>Transformation at scale</strong> (<a class="wiki" href="doc-canon-canon-kotter-leading-change.html">canon kotter leading change</a>, E5): a five-year platform rebuild with a re-architecture in the middle (Pragma), two CFO changes and a new CTO shows how execution risk compounds when the rebuild and the strategy change at once.</li>
+<li><strong>Theory of the constraint</strong> (<a class="wiki" href="doc-canon-canon-goldratt-the-goal.html">canon goldratt the goal</a>): see §8.</li>
+<li><strong>Power</strong> (<a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a>): protocols are copyable. Durable power comes from switching costs (TCA history on CP+, OMS integration) and from scale in liquidity, which neither the CLOB nor the auctions reached.</li>
+</ul>
+<h2 id="11-practitioner-counterpoint">11. Practitioner counterpoint</h2>
+<ul>
+<li><strong>For MarketAxess:</strong> the imports were the right bets on where credit is going. Indexation, ETFs, algos and systematic funds are real, and MKTX built the plumbing early. Automation numbers (92% power-user Auto-X, algos at 80% of prices in April 2025, 36% no-touch through SVB) show a platform that holds up in stress. Mid-X and dealer-initiated ADV (+33%) show dealers <em>will</em> adopt tools that help them recycle risk.</li>
+<li><strong>Against:</strong> a venue cannot import a market structure that the participants with the information advantage don't want. The undisclosed CLOB and auction volumes, the five-year rebuild and the 2% annual US credit revenue decline say the portfolio of protocols did not move the core. The equity analogy is weak: bonds have thousands of CUSIPs per issuer and no natural continuous two-sided interest.</li>
+<li><strong>Both:</strong> judge each protocol by <strong>disclosed volume and fee per million</strong>, not by launch. For auctions, the test is whether S&amp;P or other evaluators adopt the closing print as a mark, as Sweeney hopes. That would make it a benchmark, not just a protocol.</li>
+</ul>
+<h2 id="12-open-questions-to-track">12. Open questions to track</h2>
+<ol>
+<li>Will ICE publish closing-auction, Live Markets and Adaptive Auto-X volumes, or fold them into ICE Bonds' protocols? (<a class="wiki" href="doc-notes-marketaxess-ice-deal.html">marketaxess ice deal</a>, <a class="wiki" href="doc-notes-ice-hub.html">ice hub</a>)</li>
+<li>Does the auction close become an evaluated-pricing input (S&amp;P, <a class="wiki" href="doc-notes-marketaxess-data-cp-plus.html">marketaxess data cp plus</a>)?</li>
+<li>Does the enhanced X-Pro RFQ (3Q26) stop US HG share falling?</li>
+<li>Blocks: does US block e-penetration move from 10–20% toward the ~40–45% of client RFQ?</li>
+<li>What happens to Mid-X and DealerAxess if ICE's own dealer and retail networks overlap them?</li>
+</ol>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-marketaxess-hub.html">marketaxess hub</a> · <a class="wiki" href="doc-notes-marketaxess-open-trading.html">marketaxess open trading</a> · <a class="wiki" href="doc-notes-marketaxess-strategy-financials.html">marketaxess strategy financials</a> · <a class="wiki" href="doc-notes-marketaxess-data-cp-plus.html">marketaxess data cp plus</a> · <a class="wiki" href="doc-notes-marketaxess-ice-deal.html">marketaxess ice deal</a> · <a class="wiki" href="doc-notes-marketaxess-people.html">marketaxess people</a> · <a class="wiki" href="doc-notes-tradeweb-credit.html">tradeweb credit</a> · <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> · <a class="wiki" href="doc-notes-tradeweb-a2a-information-leakage.html">tradeweb a2a information leakage</a> · <a class="wiki" href="doc-notes-tradeweb-hub.html">tradeweb hub</a> · <a class="wiki" href="doc-notes-blackrock-hub.html">blackrock hub</a> · <a class="wiki" href="doc-notes-ice-hub.html">ice hub</a> · <a class="wiki" href="doc-notes-goldman-hub.html">goldman hub</a> · <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> · <a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> · <a class="wiki" href="doc-canon-canon-christensen-innovators-dilemma.html">canon christensen innovators dilemma</a> · <a class="wiki" href="doc-canon-canon-hagiu-wright-multi-sided-platforms.html">canon hagiu wright multi sided platforms</a> · <a class="wiki" href="doc-canon-canon-parker-platform-revolution.html">canon parker platform revolution</a> · <a class="wiki" href="doc-canon-canon-goldratt-the-goal.html">canon goldratt the goal</a> · <a class="wiki" href="doc-canon-canon-kotter-leading-change.html">canon kotter leading change</a> · <a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a></p>
+<hr />
+<h3 id="rep">Rep</h3>
+<p><strong>Closing-auction economics.</strong> Use the GS deck sum of US credit ADV (~$51.6bn, <em>derived</em>), Concannon's "almost 15%" of a normal day's volume in the last hour, and FY25 credit FPM of <strong>$139</strong>.
+(a) How much US credit ADV trades in the last hour on a normal day? (b) If the auction captures 5% of that last-hour flow, what annual volume (252 days) and revenue does that imply at the FY25 FPM? Compare it with FY25 revenue of $846M. (c) A client trades $10mm of a bond with spread duration 7 whose CP+ bid-ask is 2bp in the first hour. Using the "collapses by 35%" claim, what does trading at the close save in half-spread cost? (d) One paragraph: why (b) is probably an upper bound on revenue but (c) is why the buy side, and BlackRock, want the auction anyway.</p>
+<p><em>(a) 15% × $51.6bn ≈ <strong>$7.7bn</strong>. (b) 5% × $7.7bn ≈ $387m a day × 252 ≈ <strong>$97.5bn</strong> a year × $139/mm ≈ <strong>$13.6M</strong>, about <strong>1.6%</strong> of FY25 revenue. (c) First-hour half-spread 1bp → $10,000,000 × 7 × 0.0001 = <strong>$7,000</strong>. Close half-spread 0.65bp → <strong>$4,550</strong>. Saving ≈ <strong>$2,450</strong> per trade (all derived). (d) Auction fees are unlikely to match single-name RFQ FPM, and auction volume partly cannibalises close-of-day RFQ and PT already on the platform. The value goes to the buy side as tighter spreads and less tracking error, and to MKTX as a benchmark and data product (a closing mark for S&amp;P and ETFs). That is why "success will depend on adoption" is the real test, not fee revenue.</em></p>
+<hr />
+<p><strong>Sources (MarketAxess corpus, <code>_ingest/raw/marketaxess/articles.jsonl</code>, accessed 2026-10-25):</strong>
+- <a href="https://investor.marketaxess.com/news/news-details/2019/MarketAxess-Developing-Live-Order-Book-for-Institutional-Fixed-Income-Market-05-09-2019/default.aspx">Live Markets announced, 2019-05-09</a> · <a href="https://investor.marketaxess.com/news/news-details/2019/MarketAxess-Brings-Efficiency-to-Portfolio-Trading-Protocols-06-19-2019/default.aspx">PT announced, 2019-06-19</a> · <a href="https://investor.marketaxess.com/news/news-details/2020/Goldman-Sachs-Adds-Streaming-Firm-Pricing-to-MarketAxess-Live-Markets-Order-Book-10-21-2020/default.aspx">Goldman Sachs on Live Markets, 2020-10-21</a> · <a href="https://investor.marketaxess.com/news/news-details/2021/Barclays-Adds-Streaming-Firm-Pricing-To-MarketAxess-Live-Markets-Order-Book-05-27-2021/default.aspx">Barclays on Live Markets, 2021-05-27</a> · <a href="https://investor.marketaxess.com/news/news-details/2021/MarketAxess-Adds-New-Efficiency-and-Cost-Saving-Enhancements-to-Portfolio-Trading-Capabilities-06-23-2021/default.aspx">PT enhancements, 2021-06-23</a> · <a href="https://investor.marketaxess.com/news/news-details/2021/Flow-Traders-Takes-a-New-Market-Position-as-an-Active-Liquidity-Provider-on-MarketAxess-12-07-2021/default.aspx">Flow Traders, 2021-12-07</a>
+- <a href="https://s201.q4cdn.com/767283836/files/doc_presentation/2021/09/2021-Investor-Day-Presentation.pdf">2021 Investor Day, 2021-09-14</a> · <a href="https://s201.q4cdn.com/767283836/files/doc_downloads/2025/12/11/Goldman-Sachs-Financial-Services-Conference-Final.pdf">GS Financial Services Conference deck, 2025-12-09</a>
+- <a href="https://s201.q4cdn.com/767283836/files/doc_financials/2020/ar/MKTX_Annual-Report_2020.pdf.pdf">2020 letter, 2021-04-28</a> · <a href="https://s201.q4cdn.com/767283836/files/doc_financials/2022/ar/Posting-179619_MarketAxess-Holdings_COMBO-PRoxy-AR_WEB-HOSTING_rev2_MS.pdf">2022 letter, 2023-04-26</a> · <a href="https://s201.q4cdn.com/767283836/files/doc_financials/2023/ar/327161_MARKETAXESS-HOLDINGS-INC-_10K_2024_V1_PWO-34656_PROOF_rev3_MS_DY.pdf">2023 letter, 2024-04-24</a> · <a href="https://s201.q4cdn.com/767283836/files/doc_financials/2024/ar/388651_P20013_MKTX_2025-Proxy_PROOF_MS_COLOR.pdf">2024 letter, 2025-04-23</a> · <a href="https://s201.q4cdn.com/767283836/files/doc_financials/2025/ar/MarketAxess-Holdings-Inc-2025-10-K-ARS.pdf">2025 letter, 2026-04-29</a>
+- <a href="https://investor.marketaxess.com/news/news-details/2023/MarketAxess-Announces-First-Client-Algo-Trade-Using-Adaptive-Auto-X/default.aspx">Adaptive Auto-X first trade, 2023-06-22</a> · <a href="https://investor.marketaxess.com/news/news-details/2023/MarketAxess-to-Acquire-Algorithmic-Trading-Provider-Pragma/default.aspx">Pragma agreement, 2023-08-07</a> · <a href="https://investor.marketaxess.com/news/news-details/2023/MarketAxess-Completes-Acquisition-of-Pragma/default.aspx">Pragma close, 2023-10-02</a> · <a href="https://investor.marketaxess.com/news/news-details/2024/MarketAxess-Announces-Expanded-Partnership-with-BlackRock-to-Deliver-Enhanced-Connectivity-and-Efficiency-to-Global-Credit-Markets/default.aspx">BlackRock Aladdin, 2024-09-09</a> · <a href="https://investor.marketaxess.com/news/news-details/2025/MarketAxess-Announces-the-Launch-of-Mid-X-in-US-Credit/default.aspx">Mid-X in US credit, 2025-08-05</a> · <a href="https://investor.marketaxess.com/news/news-details/2026/William-Quan-to-Join-MarketAxess-as-Chief-Technology-Officer/default.aspx">William Quan CTO, 2026-02-25</a>
+- Earnings: <a href="https://investor.marketaxess.com/news/news-details/2024/MarketAxess-Reports-First-Quarter-2024-Financial-Results/default.aspx">1Q24</a> · <a href="https://investor.marketaxess.com/news/news-details/2024/MarketAxess-Reports-Second-Quarter-2024-Financial-Results/default.aspx">2Q24</a> · <a href="https://investor.marketaxess.com/news/news-details/2024/MarketAxess-Reports-Third-Quarter-2024-Financial-Results/default.aspx">3Q24</a> · <a href="https://investor.marketaxess.com/news/news-details/2025/MarketAxess-Reports-Fourth-Quarter-and-Full-Year-2024-Financial-Results/default.aspx">4Q24</a> · <a href="https://investor.marketaxess.com/news/news-details/2025/MarketAxess-Reports-Third-Quarter-2025-Financial-Results/default.aspx">3Q25</a> · <a href="https://investor.marketaxess.com/news/news-details/2026/MarketAxess-Reports-Fourth-Quarter-and-Full-Year-2025-Financial-Results/default.aspx">4Q25</a> · <a href="https://investor.marketaxess.com/news/news-details/2026/MarketAxess-Reports-First-Quarter-2026-Financial-Results/default.aspx">1Q26</a> · <a href="https://investor.marketaxess.com/news/news-details/2026/MarketAxess-Reports-Second-Quarter-2026-Financial-Results/default.aspx">2Q26</a> · <a href="https://investor.marketaxess.com/news/news-details/2026/MarketAxess-Reports-Third-Quarter-2026-Financial-Results/default.aspx">3Q26</a> · <a href="https://investor.marketaxess.com/news/news-details/2024/MarketAxess-Reports-Fourth-Quarter-and-Full-Year-2023-Results/default.aspx">4Q23</a>
+- Auctions: <a href="https://investor.marketaxess.com/news/news-details/2025/MarketAxess-Unveils-Fixed-Incomes-First-Opening--Closing-Auctions-Designed-to-Improve-Pricing-and-Liquidity/default.aspx">release, 2025-11-05</a> · <a href="https://www.marketaxess.com/articles/corporate-bond-world-set-to-get-first-daily-closing-auction">Bloomberg reprint, 2025-11-05</a> · <a href="https://www.marketaxess.com/articles/unlocking-liquidity-how-marketaxess-opening-and-closing-auctions-are-reshaping-bond-trading">Unlocking liquidity, 2025-11</a> · <a href="https://www.marketaxess.com/articles/history-in-the-making-a-closer-look-at-marketaxess-newly-launched-opening-and-closing-auctions">The TRADE, 2025-12-15</a> · <a href="https://www.marketaxess.com/whats-new/whats-new-closing-auction">Closing Auction ad, 2026</a>
+- Automation &amp; dealers: <a href="https://www.marketaxess.com/articles/axesspoint_quantifying-the-efficiency-opportunity-for-automation">Quantifying the efficiency opportunity, 2021</a> · <a href="https://www.marketaxess.com/articles/persistence-of-automation-through-volatility">Persistence of automation, 2023</a> · <a href="https://www.marketaxess.com/articles/axesspoint-speed-of-trading-algos-and-velocity">Speed of trading, 2023</a> · <a href="https://www.marketaxess.com/articles/the-future-of-fixed-income-trading-is-intelligent-automation">Intelligent Automation, 2024-05</a> · <a href="https://www.marketaxess.com/articles/axesspoint-the-expanding-role-of-algos-in-block-trading-and-market-liquidity">Algos in block trading, 2025</a> · <a href="https://www.marketaxess.com/articles/from-fringe-to-familiar-the-automation-frontier-in-trading">From fringe to familiar, 2025</a> · <a href="https://www.marketaxess.com/articles/the-rise-of-european-credit-automation">European credit automation, 2026</a> · <a href="https://www.marketaxess.com/articles/marketaxess-enhances-dealer-value-through-its-new-dealeraxess-service">DealerAxess (WatersTechnology), 2025-09-16</a> · <a href="https://www.marketaxess.com/articles/marketaxess-expands-mid-x-protocol">Mid-X expands (Markets Media), 2025-12-03</a> · <a href="https://www.marketaxess.com/articles/more-block-trades-are-going-electronic">More block trades are going electronic, ~2026</a> · <a href="https://www.marketaxess.com/articles/targeted-axes-precision-control-and-efficiency">Targeted axes, 2026-02</a> · <a href="https://www.marketaxess.com/articles/live-markets-and-the-innovative-hedge-funds-using-it">Live Markets and hedge funds, undated</a></p></article>
+</div>
+<div class="doc-end"><button class="mark-read" type="button" data-href="doc-notes-marketaxess-protocols-automation.html"><span class="mr-tick">✓</span><span class="mr-off">Mark as read</span><span class="mr-on">Read</span></button><span class="doc-end-hint">Marks itself read when you reach the end.</span></div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-marketaxess-people.html"><span>Previous</span>Note · MarketAxess&#x27;s people — a founder whose all-to-all conviction defined the firm handed power to an exchange operator who rebuilt it to trade like equities; the C-suite churned, the chair split, the board turned over, and the story ended in a sale to ICE</a><a class="doc-next" href="doc-notes-marketaxess-strategy-financials.html"><span>Next</span>Note · MarketAxess strategy &amp; financials — a high-margin compounder whose engine stopped compounding while every headline still said &quot;record&quot;</a></nav>
+</div><script src="site.js?v=1792953205"></script></body></html>

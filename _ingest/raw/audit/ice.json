@@ -1,0 +1,326 @@
+{
+ "company": "Intercontinental Exchange, Inc. (ICE)",
+ "fiscal_years": [
+  2019,
+  2025
+ ],
+ "revenue_lines": [
+  {
+   "line": "Exchanges – Energy futures and options",
+   "fy2019": 992,
+   "fy2025": 2182,
+   "topic": "commodities_energy",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Exchanges – Agricultural and metals futures and options",
+   "fy2019": 251,
+   "fy2025": 233,
+   "topic": "commodities_energy",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Exchanges – Financial futures and options",
+   "fy2019": 332,
+   "fy2025": 608,
+   "topic": "derivs_clearing",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Exchanges – Cash equities and equity options",
+   "fy2019": 1643,
+   "fy2025": 3176,
+   "topic": "equities_etf",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Exchanges – OTC and other",
+   "fy2019": 233,
+   "fy2025": 395,
+   "topic": "derivs_clearing",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Exchanges – Data and connectivity services",
+   "fy2019": 752,
+   "fy2025": 1031,
+   "topic": "pricing_data",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Exchanges – Listings",
+   "fy2019": 449,
+   "fy2025": 495,
+   "topic": "listings_ipo",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Fixed Income and Data Services – Fixed income execution",
+   "fy2019": 83,
+   "fy2025": 125,
+   "topic": "credit",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Fixed Income and Data Services – CDS clearing",
+   "fy2019": 214,
+   "fy2025": 338,
+   "topic": "derivs_clearing",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Fixed Income and Data Services – Fixed income data and analytics",
+   "fy2019": 969,
+   "fy2025": 1234,
+   "topic": "pricing_data",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Fixed Income and Data Services – Data and network technology (FY2019: 'Other data and network services')",
+   "fy2019": 490,
+   "fy2025": 722,
+   "topic": "workflow_desktop",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Mortgage Technology – Origination technology",
+   "fy2019": 0,
+   "fy2025": 738,
+   "topic": "mortgage_lending",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Mortgage Technology – Closing solutions",
+   "fy2019": 135,
+   "fy2025": 223,
+   "topic": "mortgage_lending",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Mortgage Technology – Servicing software",
+   "fy2019": null,
+   "fy2025": 871,
+   "topic": "mortgage_lending",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Mortgage Technology – Data and analytics",
+   "fy2019": 0,
+   "fy2025": 269,
+   "topic": "mortgage_lending",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  },
+  {
+   "line": "Mortgage Technology – Other",
+   "fy2019": 4,
+   "fy2025": null,
+   "topic": "mortgage_lending",
+   "source": "FY2021 10-K (filed 2022-02-03), Note 'Segment Reporting' table for year ended Dec 31, 2019 (recast to 2021 segment structure); FY2025 10-K (filed 2026-02-05), Note 'Segment Reporting' table, year ended Dec 31, 2025"
+  }
+ ],
+ "total_revenue": {
+  "fy2019": 6547,
+  "fy2025": 12640,
+  "net_of_transaction_based_expenses": {
+   "fy2019": 5202,
+   "fy2025": 9931
+  }
+ },
+ "segment_totals": {
+  "Exchanges": {
+   "fy2019": 4652,
+   "fy2025": 8120
+  },
+  "Fixed Income and Data Services": {
+   "fy2019": 1756,
+   "fy2025": 2419
+  },
+  "Mortgage Technology": {
+   "fy2019": 139,
+   "fy2025": 2101
+  }
+ },
+ "risk_factors": [
+  {
+   "heading": "Global economic, political and financial market events or conditions have at times in the past negatively impacted, and may in the future negatively impact, our business.",
+   "theme": "market_volatility_dependence",
+   "order": 1
+  },
+  {
+   "heading": "Our business is subject to the impact of interest rate and inflation levels and volatility and financial markets volatility, which are caused by conditions that are beyond our control.",
+   "theme": "macro_rates",
+   "order": 2
+  },
+  {
+   "heading": "Our role in the global financial system positions us at a greater risk for cyberattacks, cyberterrorism and other cybersecurity risks.",
+   "theme": "cyber",
+   "order": 3
+  },
+  {
+   "heading": "We may be at greater risk from terrorism than other companies.",
+   "theme": "other",
+   "order": 4
+  },
+  {
+   "heading": "Systems failures in the derivatives and securities trading industry and mortgage technology industry have in the past negatively impacted us, and could in the future negatively impact us.",
+   "theme": "operational_outage",
+   "order": 5
+  },
+  {
+   "heading": "Owning clearing houses exposes us to risks, including risks related to defaults by clearing members, risks related to investing margin and guaranty funds and the cost of operating the clearing houses.",
+   "theme": "other",
+   "order": 6
+  },
+  {
+   "heading": "If the value of collateral held as margin or guaranty fund contributions by our clearing houses declines or a collateral issuer defaults, clearing members may be at risk of defaulting, which could adversely impact our clearing houses.",
+   "theme": "other",
+   "order": 7
+  },
+  {
+   "heading": "Owning and operating cash equity and options exchanges exposes us to risks, including the regulatory responsibilities to which these businesses are subject.",
+   "theme": "regulation",
+   "order": 8
+  },
+  {
+   "heading": "Fluctuations in foreign currency exchange rates could adversely affect our financial results.",
+   "theme": "international_fx_geopolitics",
+   "order": 9
+  },
+  {
+   "heading": "We may have difficulty executing our growth strategy and maintaining our growth effectively.",
+   "theme": "other",
+   "order": 10
+  },
+  {
+   "heading": "We may not be successful in offering new products or technologies or in identifying opportunities.",
+   "theme": "technology_change_ai",
+   "order": 11
+  },
+  {
+   "heading": "Climate-related risks pose operational, commercial, reputational, regulatory and financial risks.",
+   "theme": "climate_esg",
+   "order": 12
+  },
+  {
+   "heading": "We face reputational, regulatory and financial risks related to our ability to respond to diverse stakeholder expectations and requirements on sustainability-related topics, including in connection with a transition to clean and renewable energy.",
+   "theme": "climate_esg",
+   "order": 13
+  },
+  {
+   "heading": "We have in the past been, and may in the future be, required to recognize impairments of our goodwill, other intangible assets or investments.",
+   "theme": "acquisitions_integration",
+   "order": 14
+  },
+  {
+   "heading": "Our ownership of a digital asset custody business may introduce additional risks to our business due to its evolving business model.",
+   "theme": "other",
+   "order": 15
+  },
+  {
+   "heading": "Pandemics and other public health emergencies could adversely affect our business, results of operations and financial condition.",
+   "theme": "other",
+   "order": 16
+  },
+  {
+   "heading": "Our businesses and those of many of our clients have been and continue to be subject to extensive legislation and regulatory scrutiny, and we face the risk of changes to our regulatory environment and business in the future.",
+   "theme": "regulation",
+   "order": 17
+  },
+  {
+   "heading": "Our compliance and risk management methods, as well as our fulfillment of our regulatory obligations, may not be effective, which could lead to enforcement actions by our regulators or other legal proceedings.",
+   "theme": "regulation",
+   "order": 18
+  },
+  {
+   "heading": "Regulatory developments or court rulings may have an adverse impact on our ability to derive revenue from market and mortgage data and technology and connectivity fees.",
+   "theme": "fee_pressure",
+   "order": 19
+  },
+  {
+   "heading": "Ongoing impacts and uncertainty following the U.K.'s exit from the EU, commonly referred to as Brexit, could adversely impact our business, results of operations and financial condition.",
+   "theme": "international_fx_geopolitics",
+   "order": 20
+  },
+  {
+   "heading": "Risks relating to the administration of benchmarks and indices, and changes to, cessations of and the replacement of, or transition from, benchmarks and indices may result in legal risks and could adversely affect our business.",
+   "theme": "regulation",
+   "order": 21
+  },
+  {
+   "heading": "We may face liability for content contained in our data products and services.",
+   "theme": "data_ip_licensing",
+   "order": 22
+  },
+  {
+   "heading": "We are subject to significant litigation and liability risks, including enforcement actions by our regulators.",
+   "theme": "litigation",
+   "order": 23
+  },
+  {
+   "heading": "Our systems and those of our third-party service providers are vulnerable to cyberattacks, hacking and other cybersecurity risks, which could result in wrongful manipulation, disclosure, destruction, or use of our information or that of a third party, or which could …",
+   "theme": "cyber",
+   "order": 24
+  },
+  {
+   "heading": "Our business has in the past been, and may in the future be, harmed by computer and communication systems failures and delays.",
+   "theme": "operational_outage",
+   "order": 25
+  },
+  {
+   "heading": "An interruption or cessation of an important service, data or content supplied by any third party, or the loss of an exclusive license, could have a material adverse effect on our business.",
+   "theme": "data_ip_licensing",
+   "order": 26
+  },
+  {
+   "heading": "Our emerging technology initiatives under development and the use of artificial intelligence in certain of our existing products may be unsuccessful and may give rise to various risks, which could adversely affect our business, reputation or operating results.",
+   "theme": "technology_change_ai",
+   "order": 27
+  },
+  {
+   "heading": "Our success largely depends on key personnel, including our senior management, and having adequate succession plans in place. We may not be able to attract, retain and develop the highly skilled employees we need to support our business, which could …",
+   "theme": "talent_key_people",
+   "order": 28
+  },
+  {
+   "heading": "We currently have a substantial amount of outstanding indebtedness which could adversely affect our financial condition and operations and restrict our activities or our ability to satisfy our debt service obligations.",
+   "theme": "debt_leverage",
+   "order": 29
+  },
+  {
+   "heading": "We face intense competition, and if we fail to keep up with rapid changes in technology and client preferences, it could negatively impact our competitive position.",
+   "theme": "competition",
+   "order": 30
+  },
+  {
+   "heading": "Damage to our reputation could damage our business.",
+   "theme": "other",
+   "order": 31
+  },
+  {
+   "heading": "We may fail to realize the anticipated cost savings, growth opportunities and synergies and other benefits anticipated from our past or future acquisitions and strategic investments, which could adversely affect our business and the value of our common stock.",
+   "theme": "acquisitions_integration",
+   "order": 32
+  },
+  {
+   "heading": "We are a holding company and depend on our subsidiaries for dividends, distributions and other payments.",
+   "theme": "other",
+   "order": 33
+  },
+  {
+   "heading": "Provisions of our organizational documents and Delaware law may delay or deter a change of control of ICE.",
+   "theme": "other",
+   "order": 34
+  },
+  {
+   "heading": "Our use of \"open source\" software could negatively impact our ability to sell our products and services and subject us to litigation.",
+   "theme": "data_ip_licensing",
+   "order": 35
+  },
+  {
+   "heading": "A failure to protect our intellectual property rights, or allegations that we have infringed the intellectual property rights of others, could adversely affect our business.",
+   "theme": "data_ip_licensing",
+   "order": 36
+  }
+ ],
+ "notes": "USD M as reported (10-K tables in millions). Revenues are gross; Exchanges revenues include transaction-based expenses (Section 31 fees, cash-equity rebates) of $1,345M (2019) and $2,709M (2025), so cash equities is heavily inflated vs net. Segment change: ICE moved from Trading & Clearing / Data & Listings segments (FY2019 10-K) to Exchanges / Fixed Income & Data Services / Mortgage Technology in 2021; FY2019 figures here are the recast comparatives in the FY2021 10-K (the FY2019 10-K itself was not used for lines). FY2025 'Data and network technology' is a rename of 'Other data and network services' (no measurement change, per FY2025 10-K). Mortgage Technology: 2019 = Simplifile only (Closing solutions); Origination technology and mortgage Data & analytics show '—' in 2019 (recorded 0) — Ellie Mae acquired Sept 2020; 'Servicing software' line from Black Knight (acquired Sept 2023) not presented for 2019 (null); 2019 'Other' $4M has no FY2025 line. Total consolidated revenue 2019 = $6,547M ties to original FY2019 reporting. Topic for Data and network technology = workflow_desktop (feeds, connectivity, desktops). Risk factors = all 36 bold-italic subheadings in FY2025 Item 1(A)."
+}

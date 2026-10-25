@@ -14,3 +14,7 @@ _ingest/*.tmp
 .obsidian/workspace*
 .trash/
 site/_shots/
+
+# Raw SEC downloads (re-fetchable with _ingest/edgar.py / _ingest/financials.py)
+_ingest/raw/audit/edgar/
+_ingest/raw/financials/facts_*.json

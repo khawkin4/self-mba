@@ -1,0 +1,395 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Note · S&amp;P Global pricing, reference data &amp; fixed-income plumbing — an evaluator that rents other people&#x27;s prices; the real moats are the identifiers and the indices · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792953205"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Note · S&amp;P Global pricing, reference data &amp; fixed-income plumbing — an evaluator that rents other people&#x27;s prices; the real moats are the identifiers and the indices</h1>
+<div class="doc-meta"><span>18 min read</span><span>4,144 words</span><span>Updated 2026-10-25</span><span class="doc-src">notes/spglobal-pricing-fixed-income.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#1-chronology">1. Chronology</a></li><li class="l2"><a href="#2-the-coverage-numbers-do-not-reconcile">2. The coverage numbers do not reconcile</a></li><li class="l2"><a href="#3-where-the-prices-come-from">3. Where the prices come from</a></li><li class="l2"><a href="#4-identifiers-the-moat-sp-lost-and-the-ones-it-is-building">4. Identifiers: the moat S&amp;P lost, and the ones it is building</a></li><li class="l2"><a href="#5-plumbing-sp-connects-to-every-venue-rather-than-being-one">5. Plumbing: S&amp;P connects to every venue rather than being one</a></li><li class="l2"><a href="#6-the-real-moat-indices-that-derivatives-reference">6. The real moat: indices that derivatives reference</a></li><li class="l2"><a href="#7-what-the-claims-dont-prove">7. What the claims don't prove</a></li><li class="l2"><a href="#8-strategic-read-inference-not-stated-by-sp-global">8. Strategic read (inference — not stated by S&amp;P Global)</a></li><li class="l2"><a href="#9-canon-lenses">9. Canon lenses</a></li><li class="l2"><a href="#10-practitioner-counterpoint">10. Practitioner counterpoint</a></li><li class="l2"><a href="#11-open-questions-to-track">11. Open questions to track</a></li><li class="l3"><a href="#rep">Rep</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p>Practitioner / market-structure note · Maps to <strong>Course 04</strong> (Competitive Strategy — complements, standards, coopetition with venues), <strong>Course 06</strong> (Operations — settlement, loan administration, straight-through processing), <strong>Course 07</strong> (Data, Analytics &amp; Decision-Making — what a "price" is, coverage denominators), <strong>E10</strong> (Digital &amp; AI Transformation — data plumbing as the AI substrate) · Written 2026-10-25 · Part of <a class="wiki" href="doc-notes-spglobal-hub.html">spglobal hub</a>; companions <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> (§5 is the base layer for this note), <a class="wiki" href="doc-notes-spglobal-ai-data-layer.html">spglobal ai data layer</a>, <a class="wiki" href="doc-notes-spglobal-ihs-markit-merger.html">spglobal ihs markit merger</a></p>
+</blockquote>
+<ul>
+<li><strong>Source:</strong> S&amp;P Global press and IR releases in <code>_ingest/raw/spglobal/articles.jsonl</code>, specifically about 35 items on pricing, reference data, identifiers, loans and primary markets, dated Jan 2021 to Oct 2026, plus the Investor Day 2022 and 2025 decks. One Tradeweb release (2022-09-29) comes from <code>_ingest/raw/tradeweb/articles-2019-2026.jsonl</code>. <strong><a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> §5 already covers</strong> the IHS Markit pricing inheritance, liquidity scores, PriceViewer, the method contrast with Ai-Price, and the first read of the CP+ deal. This note does not repeat those points. It adds the timeline, the coverage numbers, the inputs, identifiers, plumbing and organisation that §5 does not cover.</li>
+<li><strong>Core claim:</strong> S&amp;P's evaluated-pricing business is mainly an <strong>aggregator of other firms' prices</strong>:</li>
+<li>dealer contributions (Barclays signed up in 2025),</li>
+<li>parsed quotes and composites (loans),</li>
+<li>since Oct 2024, a venue's AI price feed, MarketAxess <strong>CP+</strong>.</li>
+</ul>
+<p>It is sold mainly as <strong>regulatory evidence</strong>: SEC Rule 2a-5 diligence, fair-value support and a challenge trail. S&amp;P's own coverage figures conflict from one release to the next.</p>
+<p>In <strong>July 2026</strong> S&amp;P filed "pricing and reference data" under <strong>Enterprise Solutions</strong>. That treats pricing as infrastructure inside a loan-and-software vertical, not as a growth product.</p>
+<p>The durable assets in fixed income are elsewhere:
+  - <strong>identifiers</strong>: S&amp;P had to sell <strong>CUSIP</strong> to FactSet in 2021–22 and now pushes <strong>LXIDs</strong> and a free <strong>CIQ ID</strong>;
+  - <strong>workflow plumbing</strong>: ClearPar, WSO, Debtdomain, InvestorAccess;
+  - the <strong>indices</strong> that derivatives reference: <strong>iBoxx, CDX, iTraxx</strong>.</p>
+<p>Since ICE agreed to buy MarketAxess (Jul 2026), S&amp;P has said nothing in public about CP+.</p>
+<hr />
+<h2 id="1-chronology">1. Chronology</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Event</th>
+<th>Numbers / words stated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021-01-19</td>
+<td>CUSIP accreditation renewed by ANSI X9</td>
+<td>"more than 62.8 million CUSIP identifiers" assigned; at least 9.4M active</td>
+</tr>
+<tr>
+<td><strong>2021-12-27</strong></td>
+<td>Merger remedy: <strong>CUSIP Global Services → FactSet</strong> for <strong>$1.925B</strong>. Base Chemicals → News Corp for $295M</td>
+<td>~$1.3B aggregate net proceeds, "net of taxes and payments to CGS's industry partner"</td>
+</tr>
+<tr>
+<td>2022-03-01</td>
+<td>CUSIP sale to FactSet completed</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2022-04-04</td>
+<td>LCD and leveraged-loan indices → Morningstar ($650M; an EC condition)</td>
+<td>S&amp;P exits loan news and indices for now (see <a class="wiki" href="doc-notes-spglobal-ihs-markit-merger.html">spglobal ihs markit merger</a>)</td>
+</tr>
+<tr>
+<td>2022-07-14</td>
+<td><strong>PVR Source</strong> for <strong>SEC Rule 2a-5</strong> fair-value vendor diligence</td>
+<td>Methodology documents, back-testing, "aggregated challenge statistics"</td>
+</tr>
+<tr>
+<td>2022-09-29</td>
+<td><strong>Tradeweb integrates InvestorAccess</strong> (European credit, covered and SSA primary)</td>
+<td>Tradeweb corpus. Orders go into the syndicate's book and allocations come back</td>
+</tr>
+<tr>
+<td>2022-12-01</td>
+<td>Investor Day 2022 lists <strong>CDX, iBoxx, iTraxx, ClearPar</strong> among "Our Strengths"; MI prices "2.5M+" FI instruments daily</td>
+<td>"ETD and CDS fees correlate with volatility"</td>
+</tr>
+<tr>
+<td>2023</td>
+<td><em>Pricing, Valuations and Reference Data (MI)</em> named a key contributor to Vitality (new-product) revenue</td>
+<td>2024 AGM slides</td>
+</tr>
+<tr>
+<td>2023-04-04</td>
+<td>Equity InvestorAccess (equity primary orders and allocations)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2023-06-20</td>
+<td>FI ETF distribution forecasts built on Evaluated Bond Pricing</td>
+<td>EBP gives "daily prices on 2.3 million" government, sovereign, corporate, securitized and municipal instruments</td>
+</tr>
+<tr>
+<td><strong>2023-06-22</strong></td>
+<td><strong>Bloomberg TSOX ↔ InvestorAccess</strong> for syndicated primary bonds</td>
+<td>The main desktop rival becomes a distribution partner</td>
+</tr>
+<tr>
+<td>2023-06-28</td>
+<td>Loan pricing, analytics and liquidity scores added to Capital IQ Pro</td>
+<td>"High-quality and independent pricing across a wide range of fixed income classes is in elevated demand," (Breakstone)</td>
+</tr>
+<tr>
+<td>2024-03-13</td>
+<td>Onboarding Accelerator ↔ <strong>DTCC ALERT</strong> (settlement instructions) for <strong>T+1</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024-06-18</td>
+<td>Bond Reference Data adds sustainability fields</td>
+<td>Reference data "powers intraday and end of day pricing on 2.9 million active global securities"</td>
+</tr>
+<tr>
+<td>2024-06-20</td>
+<td>Capital IQ Pro adds "more than 19.4 million" FI securities</td>
+<td>Desktop distribution of IHS Markit content</td>
+</tr>
+<tr>
+<td><strong>2024-07-09</strong></td>
+<td><strong>Evaluated Loan Pricing</strong>: 8,000+ leveraged loans; one price per loan "be it composite or evaluated"</td>
+<td>400,000+ identifiers mapped; 20+ years of history</td>
+</tr>
+<tr>
+<td>2024-10-10</td>
+<td>Lending suite statistics</td>
+<td>"more than 32,000 active loans", "460 billion USD" private debt tracked, "more than 1 trillion USD" serviced</td>
+</tr>
+<tr>
+<td><strong>2024-10-31</strong></td>
+<td><strong>MarketAxess partnership</strong>: CP+ (two-sided, every 15–60s) goes into Evaluated Bond Pricing; S&amp;P Bond Reference Data goes into MarketAxess products</td>
+<td>EBP described as "over 1.2 million Corporate, Sovereign and Municipal bonds". Integration "expected to start in the first half of 2025"</td>
+</tr>
+<tr>
+<td>2024-11-01</td>
+<td>PrimeOne (IHS Markit) sold to TS Imagine</td>
+<td>Terms undisclosed</td>
+</tr>
+<tr>
+<td>2025-01-07</td>
+<td>4.6M munis added to Capital IQ Pro, about 6M in total; "over 26 million" FI securities</td>
+<td>Includes liquidity scores and end-of-day pricing</td>
+</tr>
+<tr>
+<td><strong>2025-06-24</strong></td>
+<td><strong>LXIDs extended to private credit</strong></td>
+<td>"over 70,000 existing LXIDs"</td>
+</tr>
+<tr>
+<td><strong>2025-07-23</strong></td>
+<td><strong>Barclays</strong> enterprise deal: Barclays "will contribute its data to S&amp;P Global's cross-asset pricing and valuation services"</td>
+<td>Bonds, loans, credit and derivatives</td>
+</tr>
+<tr>
+<td><strong>2025-09-11</strong></td>
+<td><strong>CIQ IDs published free on DUNL.org</strong></td>
+<td>"over 25 million company records"; Creative Commons</td>
+</tr>
+<tr>
+<td>2025-10-10</td>
+<td><strong>OSTTRA sold to KKR</strong> ($3.1B EV, 50/50 with CME)</td>
+<td>Post-trade exit (MarkitWire; see §5)</td>
+</tr>
+<tr>
+<td>2025-10-22</td>
+<td>Capital IQ Pro adds "nearly 3,600 new issuers" to CDS coverage</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2025-11-13</td>
+<td>Investor Day 2025: planned new MI business line <strong>Risk &amp; Valuations Services</strong> to hold <em>Pricing (Bond/CDS/Loan)</em> and <em>Valuations and Reference Data</em> after the Mobility spin</td>
+<td>Pricing grouped with front-office tools</td>
+</tr>
+<tr>
+<td>2025-11-20</td>
+<td>WSO Compliance Insights for private credit and CLO managers</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2026-01-12</td>
+<td>EDM and thinkFolio (Markit enterprise data and buy-side OMS) sold to STG</td>
+<td>Software pruning</td>
+</tr>
+<tr>
+<td>2026-03-03</td>
+<td><strong>DataXchange and AmendX</strong> for loan agents, integrated with Debtdomain</td>
+<td>"agents are still managing billion-dollar deals with Excel and email, creating massive operational risk," (Darren Thomas)</td>
+</tr>
+<tr>
+<td>2026-03-12</td>
+<td>"over 4 million structured securities" added to Capital IQ Pro</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>2026-07-06</strong></td>
+<td><strong>MI reorganisation</strong>: "Pricing and reference data, including consensus pricing and valuation methodologies across public and private markets, will be part of Enterprise Solutions"</td>
+<td><strong>Reverses the Nov 2025 plan</strong> to put pricing in Risk &amp; Valuations Services. Enterprise Solutions has "a focus on the most differentiated software assets"</td>
+</tr>
+<tr>
+<td>2026-07-16</td>
+<td>ETF Intelligence (15,000+ ETFs)</td>
+<td>Paul Wilson, <em>Head of Data, Pricing, Valuations &amp; Analytics</em></td>
+</tr>
+<tr>
+<td>2026-07-30</td>
+<td>(context, from the <a class="wiki" href="doc-notes-ice-hub.html">ice hub</a> sibling note) <strong>ICE agrees to buy MarketAxess</strong></td>
+<td><strong>No S&amp;P release mentions it, or CP+, afterwards</strong></td>
+</tr>
+<tr>
+<td>2026-10-13</td>
+<td>Tokenized <strong>iBoxx USD Liquid IG</strong> TRS on Canton</td>
+<td>See <a class="wiki" href="doc-notes-spglobal-digital-assets.html">spglobal digital assets</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-the-coverage-numbers-do-not-reconcile">2. The coverage numbers do not reconcile</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Release</th>
+<th>Figure</th>
+<th>What it counts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Investor Day 2022 / 2025</td>
+<td>"2.5M+"</td>
+<td>FI instruments "priced daily"</td>
+</tr>
+<tr>
+<td>2023-06-20</td>
+<td>2.3M</td>
+<td>EBP daily prices across government, sovereign, corporate, securitized and municipal</td>
+</tr>
+<tr>
+<td>2024-06-18</td>
+<td>2.9M</td>
+<td>Securities whose <em>reference data</em> powers intraday and end-of-day pricing</td>
+</tr>
+<tr>
+<td>2024-10-31</td>
+<td>1.2M+</td>
+<td>EBP corporate, sovereign and municipal bonds only</td>
+</tr>
+<tr>
+<td>2024-06 → 2025-01</td>
+<td>19.4M added → 26M+</td>
+<td>Securities with reference <em>and</em> pricing data on Capital IQ Pro (desktop coverage)</td>
+</tr>
+<tr>
+<td><a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> §5</td>
+<td>86,500+ corporates on 4M+ price observations (2022 data sheet)</td>
+<td>Corporate bonds with an evaluated price</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Reading (inference):</em> these are different universes. One counts instruments with any daily price, one counts corporates with an evaluation backed by observations, and one counts anything with a terms-and-conditions record. The trouble is that S&amp;P never says which is which. A buyer comparing S&amp;P with ICE or Bloomberg BVAL coverage should ask for <strong>corporates with an observation-backed price on a given day</strong>, not the headline number.</p>
+<h2 id="3-where-the-prices-come-from">3. Where the prices come from</h2>
+<ol>
+<li><strong>Dealer contributions and parsed quotes.</strong> The loan engine is "Built based on contributor-based loan pricing engines, sophisticated parsing technology, and supplemented with an evaluated methodology" (2024-07-09). Barclays now contributes for bonds, loans, credit and derivatives (2025-07-23).</li>
+<li><strong>A venue's model price.</strong> MarketAxess CP+ is "powered by AI and proprietary data", including MarketAxess's trading platform and TraX data (2024-10-31). Its own head of data, Kat Sweeney, said CP+ inside EBP would "close the gaps between best execution, intraday trading decisions and end-of-day valuation,".</li>
+<li><strong>S&amp;P's own evaluators and methodology.</strong> These are documented for auditors through PVR Source: "clients want a detailed understanding of processes and methodologies used by vendors for fair value pricing." (Shetty, 2022).</li>
+</ol>
+<p>S&amp;P owns the methodology, the client relationship and the audit trail. It does <strong>not</strong> own a trade tape. Tradeweb (Ai-Price on its own flow), ICE (an evaluator plus, once the deal closes, MarketAxess) and Bloomberg (BVAL plus its terminal flow) each own one of the inputs that S&amp;P rents.</p>
+<h2 id="4-identifiers-the-moat-sp-lost-and-the-ones-it-is-building">4. Identifiers: the moat S&amp;P lost, and the ones it is building</h2>
+<ul>
+<li><strong>Lost:</strong> CUSIP, the US identifier standard, was sold to FactSet as a merger remedy. In Jan 2021 S&amp;P was celebrating its accreditation. In Dec 2021 Peterson called the sale "an important milestone in our progress toward satisfying the required regulatory conditions". See <a class="wiki" href="doc-notes-spglobal-ihs-markit-merger.html">spglobal ihs markit merger</a>.</li>
+<li><strong>Building:</strong></li>
+<li><strong>LXIDs</strong> for loans, now for private credit. Saha: "The expansion of private credit and the emergence of secondary trading necessitates common identifiers,".</li>
+<li>The <strong>CIQ ID</strong> made free on DUNL.org, to make it "the standard company identifier for all S&amp;P Global data".</li>
+<li><em>Inference:</em> giving the key away is how you make S&amp;P's paid data the easiest data to join to. LSEG's PermID and Bloomberg's FIGI play the same game (<a class="wiki" href="doc-notes-lseg-hub.html">lseg hub</a>, <a class="wiki" href="doc-notes-bloomberg-hub.html">bloomberg hub</a>). It also feeds the AI strategy, because entity-linked data is what makes LLM answers verifiable (<a class="wiki" href="doc-notes-spglobal-ai-data-layer.html">spglobal ai data layer</a>).</li>
+</ul>
+<h2 id="5-plumbing-sp-connects-to-every-venue-rather-than-being-one">5. Plumbing: S&amp;P connects to every venue rather than being one</h2>
+<ul>
+<li><strong>Primary markets.</strong> InvestorAccess and Equity Bookbuild (from IHS Markit's Ipreo) connect to <strong>Tradeweb</strong> (2022) and to <strong>Bloomberg TSOX</strong> (2023). Tradeweb's release quotes S&amp;P's Chris Sztam: "Buy-side traders using Tradeweb are now able to send orders electronically into the orderbook being managed by the syndicate banks". S&amp;P sits underneath the venues, not beside them.</li>
+<li><strong>Loans.</strong> ClearPar settlement, WSO portfolio administration, Debtdomain, and the 2026 DataXchange/AmendX for agents. This is middle- and back-office software for the leveraged-loan and private-credit market.</li>
+<li><strong>Settlement.</strong> The DTCC ALERT link for T+1 (2024). Brittany Garland: "It will streamline a manual, antiquated process, maximizing efficiency and minimizing trade settlement failures,".</li>
+<li><strong>Post-trade derivatives: exited.</strong> OSTTRA (MarkitWire, the CME JV) was sold to KKR in Oct 2025. Tradeweb's 2026 electronic swaption and bilateral IRS terminations still confirm on MarkitWire (<a class="wiki" href="doc-notes-tradeweb-derivatives-regulation.html">tradeweb derivatives regulation</a>). Tradeweb's new bilateral business therefore depends on infrastructure that S&amp;P built and then sold.</li>
+</ul>
+<h2 id="6-the-real-moat-indices-that-derivatives-reference">6. The real moat: indices that derivatives reference</h2>
+<ul>
+<li>From Investor Day 2022: "Our indices underlie the most liquid financial products in the market for both equity and credit". <strong>CDX and iTraxx</strong> carry the CDS index market. <strong>iBoxx</strong> underlies bond ETFs, iBoxx futures and TRS.</li>
+<li>The same deck says these fees are counter-cyclical: "ETD and CDS fees correlate with volatility". An evaluator earns from calm, recurring subscriptions. An index owner also earns from turmoil.</li>
+<li>iBoxx keeps getting extended:</li>
+<li>TRS on Tradeweb's SEF (2021, Tradeweb corpus).</li>
+<li>The iBoxx USD Leveraged Loan Indices folded into the <strong>S&amp;P UBS Leveraged Loan Indices</strong> (Dec 2024).</li>
+<li>A <strong>tokenized iBoxx TRS</strong> on Canton (Oct 2026; <a class="wiki" href="doc-notes-spglobal-digital-assets.html">spglobal digital assets</a>).</li>
+<li><em>Inference:</em> a trade-driven AI price (Ai-Price, CP+) is a direct threat to the evaluator. It is no threat to the index licence. That is why §5 of <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> places S&amp;P's credit moat in index royalties, and the 2026 placement of pricing under Enterprise Solutions is consistent with that view.</li>
+</ul>
+<h2 id="7-what-the-claims-dont-prove">7. What the claims don't prove</h2>
+<ol>
+<li><strong>"Independent" pricing that relies on outside inputs.</strong> S&amp;P calls its pricing "independent", yet it now takes a venue's AI price and a dealer's contributed data. "Independent" here means <em>not the client's own mark</em>, not <em>free of input dependence</em>.</li>
+<li><strong>No accuracy evidence.</strong> No release gives back-test error, how often prices are challenged, or how much CP+ improved EBP. PVR Source hosts "back testing reports", but only for clients.</li>
+<li><strong>The CP+ result was never reported.</strong> Integration was "expected to start in the first half of 2025". No later release says it went live, what changed, or whether the partnership is exclusive (the "exclusive access" wording in <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> §5 comes from a 2025 S&amp;P web page outside this corpus).</li>
+<li><strong>The org chart changed its mind.</strong> Investor Day 2025 planned a front-office <em>Risk &amp; Valuations Services</em> line for pricing. Eight months later pricing sits in <em>Enterprise Solutions</em>. The corpus does not explain the switch.</li>
+<li><strong>Coverage numbers</strong> (§2) cannot be compared across releases.</li>
+</ol>
+<h2 id="8-strategic-read-inference-not-stated-by-sp-global">8. Strategic read (inference — not stated by S&amp;P Global)</h2>
+<ul>
+<li><strong>ICE–MarketAxess puts S&amp;P's main corporate-bond price input in a competitor's hands.</strong> ICE runs a large evaluated-pricing business (<a class="wiki" href="doc-notes-ice-hub.html">ice hub</a>). Once MarketAxess closes (H1 2027), S&amp;P's CP+ feed comes from its largest pricing rival. S&amp;P's options:
+  1. renegotiate;
+  2. lean harder on dealer contributions (the Barclays model, scaled to more banks);
+  3. license Tradeweb's Ai-Price, though Tradeweb's benchmark partner is FTSE Russell/LSEG;
+  4. buy or build a trade-derived price;
+  5. accept being a methodology-and-audit wrapper around other firms' prices.</li>
+</ul>
+<p>The 2025 Barclays deal looks like a hedge toward option 2.
+- <strong>The pricing move is a demotion, and probably a sensible one.</strong> Inside Enterprise Solutions, pricing feeds ClearPar, WSO, iLEVEL and the loan tools. That is where clients need a mark every day (loan administration, CLO compliance, private-credit valuation), and where a venue's AI price is least available. Private credit has no TRACE and no CP+, so S&amp;P's composite-plus-evaluated method has no trade-driven rival there.
+- <strong>Private credit is the battleground that suits S&amp;P.</strong> LXIDs, DataXchange/AmendX, WSO Compliance Insights, iLEVEL, With Intelligence (<a class="wiki" href="doc-notes-spglobal-strategy-financials.html">spglobal strategy financials</a>) and S&amp;P Lincoln indices (DJI) all point the same way. In private credit, the identifier, the agent's records and the valuation mark are all still being invented.</p>
+<h2 id="9-canon-lenses">9. Canon lenses</h2>
+<ul>
+<li><strong>Complements and commoditising them</strong> (<a class="wiki" href="doc-canon-canon-shapiro-varian-information-rules.html">canon shapiro varian information rules</a>): S&amp;P gives away the identifier (CIQ ID), the complement, so its priced data is easier to use. Venues do the reverse: they make prices cheap and keep the flow.</li>
+<li><strong>Coopetition</strong> (<a class="wiki" href="doc-canon-canon-brandenburger-nalebuff-coopetition.html">canon brandenburger nalebuff coopetition</a>): Bloomberg (TSOX), Tradeweb (InvestorAccess), MarketAxess (CP+) and ICE (Brent, through Platts) are all partners on one product and rivals on another. S&amp;P's value depends on staying the neutral connector.</li>
+<li><strong>Power</strong> (<a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a>): <em>switching costs</em> in loan administration and fair-value audit trails; <em>cornered resource</em> in CDX/iTraxx/iBoxx index IP. Evaluated pricing alone has weak power because its inputs are rented.</li>
+<li><strong>Bottlenecks</strong> (<a class="wiki" href="doc-canon-canon-goldratt-the-goal.html">canon goldratt the goal</a>): in loan markets the constraint is settlement and agent administration ("Excel and email"), not price discovery. S&amp;P is investing where the constraint is.</li>
+<li><strong>Five forces</strong> (<a class="wiki" href="doc-canon-canon-porter-competitive-strategy.html">canon porter competitive strategy</a>): supplier power rises sharply when the price input (MarketAxess) is bought by a rival (ICE).</li>
+</ul>
+<h2 id="10-practitioner-counterpoint">10. Practitioner counterpoint</h2>
+<ul>
+<li><strong>For S&amp;P:</strong> fund administrators, valuation committees and auditors care about a defensible, documented, challengeable price more than about the "best" intraday predictor. Most fixed-income securities trade rarely. For them an evaluated price with a challenge process <em>is</em> the product. S&amp;P's IHS Markit heritage (Markit loan pricing, iBoxx dealer pricing) is deep, and the private-credit tools have few equals.</li>
+<li><strong>Against:</strong> in liquid IG and HY, trade-driven prices (Ai-Price, CP+, BVAL fed by terminal flow) are converging on the venues. An evaluator without a tape is squeezed between venues that sell prices cheaply and a rival evaluator (ICE) that is about to own one of the best feeds.</li>
+<li><strong>Both:</strong> a buyer should ask S&amp;P for the share of daily evaluations backed by an observation, the median challenge rate, and what happens to the CP+ input if ICE ends the contract.</li>
+</ul>
+<h2 id="11-open-questions-to-track">11. Open questions to track</h2>
+<ol>
+<li>Did CP+ integration ever go live, and is it exclusive? What does the contract say about change of control at MarketAxess (<a class="wiki" href="doc-notes-marketaxess-hub.html">marketaxess hub</a>)?</li>
+<li>After the deal closes, does ICE offer CP+ to S&amp;P on the same terms, or bundle it with ICE Data Services?</li>
+<li>How many more dealers sign Barclays-style contribution deals?</li>
+<li>What is the revenue of <em>Pricing (Bond/CDS/Loan)</em>? It has never been disclosed. Does the recast segment reporting (Jul 2026) reveal Enterprise Solutions revenue?</li>
+<li>Do LXIDs become the market standard for private credit, or does a CUSIP-style utility (now owned by FactSet) win?</li>
+<li>Will S&amp;P ever license Tradeweb's Ai-Price (<a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a>), or is the FTSE Russell/LSEG tie-up exclusive in effect?</li>
+</ol>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-spglobal-hub.html">spglobal hub</a> · <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> (§5 is the base layer) · <a class="wiki" href="doc-notes-spglobal-ai-data-layer.html">spglobal ai data layer</a> · <a class="wiki" href="doc-notes-spglobal-ihs-markit-merger.html">spglobal ihs markit merger</a> (CUSIP, LCD, OSTTRA disposals) · <a class="wiki" href="doc-notes-spglobal-digital-assets.html">spglobal digital assets</a> (tokenized iBoxx) · <a class="wiki" href="doc-notes-spglobal-indices-benchmarks.html">spglobal indices benchmarks</a> · <a class="wiki" href="doc-notes-spglobal-strategy-financials.html">spglobal strategy financials</a> · <a class="wiki" href="doc-notes-tradeweb-credit.html">tradeweb credit</a> · <a class="wiki" href="doc-notes-tradeweb-derivatives-regulation.html">tradeweb derivatives regulation</a> (MarkitWire) · <a class="wiki" href="doc-notes-marketaxess-hub.html">marketaxess hub</a> · <a class="wiki" href="doc-notes-ice-hub.html">ice hub</a> · <a class="wiki" href="doc-notes-bloomberg-hub.html">bloomberg hub</a> · <a class="wiki" href="doc-notes-lseg-hub.html">lseg hub</a> · <a class="wiki" href="doc-notes-wss-credit-distressed.html">wss credit distressed</a> · <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> · <a class="wiki" href="doc-canon-canon-shapiro-varian-information-rules.html">canon shapiro varian information rules</a> · <a class="wiki" href="doc-canon-canon-brandenburger-nalebuff-coopetition.html">canon brandenburger nalebuff coopetition</a> · <a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a> · <a class="wiki" href="doc-canon-canon-goldratt-the-goal.html">canon goldratt the goal</a> · <a class="wiki" href="doc-canon-canon-porter-competitive-strategy.html">canon porter competitive strategy</a></p>
+<hr />
+<h3 id="rep">Rep</h3>
+<p>Three short computations with numbers from this note.</p>
+<p><strong>(a) Reconcile the coverage.</strong> EBP prices 2.3M instruments across government, sovereign, corporate, securitized and municipal (2023). The MarketAxess release says 1.2M+ corporate, sovereign and municipal (2024). <em>Assume</em> both are on the same basis. How many instruments are government, agency or securitized? What share of EBP does CP+ (credit, rates and EM only) touch at most? <em>(Answer: about <strong>1.1M</strong> outside the corporate/sovereign/muni set. CP+ touches at most the 1.2M, about <strong>52%</strong>. Corporates alone, at ~86,500 per <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> §5, are about <strong>4%</strong> of 2.3M. That is the slice where CP+ matters most and where TRACE gives observations.)</em></p>
+<p><strong>(b) The cost of the CUSIP remedy.</strong> Gross proceeds were CGS $1.925B + Base Chemicals $295M. S&amp;P expected about $1.3B net "of taxes and payments to CGS's industry partner". How much leaked to tax and the partner (the ABA), and what share of gross is that? <em>(Answer: $2.22B − $1.3B = <strong>~$0.92B</strong>, about <strong>41%</strong>.)</em> In one paragraph: why might losing CUSIP cost more than the $0.92B? Think about lock-in on identifiers versus a one-off sale price.</p>
+<p><strong>(c) Price frequency.</strong> CP+ updates every 15–60 seconds. <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> §5 says EBP publishes seven regional snapshots a day. Over a 6.5-hour US session, how many CP+ updates is that per bond, and how many per EBP snapshot? <em>(Answer: 390–1,560 updates; with ~7 snapshots, <strong>~56–223 CP+ ticks per snapshot</strong>.)</em> Then argue which client needs which: an auditor of a fund's NAV, an algo trading desk, a CLO manager running daily compliance tests.</p>
+<hr />
+<p><strong>Sources (S&amp;P Global press/IR unless noted; accessed 2026-10-25):</strong>
+- <a href="https://press.spglobal.com/2021-01-19-CUSIP-Global-Services-Receives-Accreditation-Renewal-for-CUSIP-Identifier-as-U-S-Standard-for-Unique-Security-Identification">CUSIP accreditation, 2021-01-19</a>
+- <a href="https://investor.spglobal.com/news-releases/news-details/2021/SP-Global-and-IHS-Markit-Announce-Agreements-to-Sell-Base-Chemicals-and-CUSIP-Businesses/default.aspx">CUSIP / Base Chemicals sale agreements, 2021-12-27</a>
+- <a href="https://investor.spglobal.com/news-releases/news-details/2022/SP-Global-Completes-Sale-of-CUSIP/default.aspx">CUSIP sale completed, 2022-03-01</a>
+- <a href="https://press.spglobal.com/2022-07-14-S-P-Global-Market-Intelligence-launches-PVR-Source-to-help-clients-comply-with-new-SEC-Rule-2a-5">PVR Source / SEC 2a-5, 2022-07-14</a>
+- <a href="https://www.tradeweb.com/newsroom/media-center/news-releases/tradeweb-collaborates-with-sp-global-market-intelligence-to-connect-primary-and-secondary-markets-in-europe/">Tradeweb × InvestorAccess (Tradeweb newsroom), 2022-09-29</a>
+- <a href="https://s29.q4cdn.com/690959130/files/doc_downloads/2022/12/S-P-Global-Investor-Day-2022-Slides-12-1-2022.pdf">Investor Day 2022 slides, 2022-12-01</a>
+- <a href="https://press.spglobal.com/2023-04-04-S-P-Global-Market-Intelligence-launches-Equity-InvestorAccess-platform-to-streamline-new-issuance-workflows">Equity InvestorAccess, 2023-04-04</a>
+- <a href="https://press.spglobal.com/2023-06-20-S-P-Global-Market-Intelligence-adds-Fixed-Income-ETF-distribution-forecasting-to-its-suite-of-Dividend-Forecasting-products">FI ETF distribution forecasting (EBP 2.3M), 2023-06-20</a>
+- <a href="https://press.spglobal.com/2023-06-22-Bloomberg-and-S-P-Global-Market-Intelligence-Launch-Integrated-Solution-to-Streamline-Syndicated-Primary-Bond-Market-Workflows">Bloomberg TSOX × InvestorAccess, 2023-06-22</a>
+- <a href="https://press.spglobal.com/2023-06-28-S-P-Global-Market-Intelligence-Launches-Loan-Pricing-and-Analytics-in-S-P-Capital-IQ-Pro-Platform-Expansion">Loan pricing on Capital IQ Pro, 2023-06-28</a>
+- <a href="https://press.spglobal.com/2024-03-13-S-P-Global-Market-Intelligence-to-Collaborate-with-DTCC-on-T-1-Offering">DTCC ALERT / T+1, 2024-03-13</a>
+- <a href="https://s29.q4cdn.com/690959130/files/doc_downloads/2025/04/S-P-Global-2024-Annual-Shareholders-Meeting-Slides-5-1-2024.pdf">2024 AGM slides (Vitality contributors), 2024-05-01</a>
+- <a href="https://press.spglobal.com/2024-06-18-S-P-Global-Market-Intelligence-expands-Reference-Bond-Data-with-addition-of-Sustainability-granularity">Bond Reference Data (2.9M), 2024-06-18</a>
+- <a href="https://press.spglobal.com/2024-06-20-S-P-Capital-IQ-Pro-Expands-Fixed-Income-and-Gen-AI-Powered-Summarization-Capabilities">Capital IQ Pro 19.4M FI securities, 2024-06-20</a>
+- <a href="https://press.spglobal.com/2024-07-09-S-P-Global-Market-Intelligence-Unveils-Expanded-Loan-Pricing-Solution">Evaluated Loan Pricing, 2024-07-09</a>
+- <a href="https://press.spglobal.com/2024-10-10-S-P-Global-Market-Intelligence-Lending-Solutions-Driving-Market-Innovation-and-Connectivity-through-an-Expanded-Product-Suite,-Enabling-Shorter-Loan-Settlement-Times">Lending Solutions, 2024-10-10</a>
+- <a href="https://press.spglobal.com/2024-10-31-S-P-Global-Market-Intelligence-and-MarketAxess-Announce-Strategic-Fixed-Income-Data-Partnership">MarketAxess CP+ partnership, 2024-10-31</a>
+- <a href="https://investor.spglobal.com/news-releases/news-details/2024/SP-Global-Completes-Sale-of-PrimeOne/default.aspx">PrimeOne sale, 2024-11-01</a>
+- <a href="https://press.spglobal.com/2024-12-04-S-P-Dow-Jones-Indices-and-UBS-Launch-S-P-UBS-Leveraged-Loan-Indices">S&amp;P UBS Leveraged Loan Indices, 2024-12-04</a>
+- <a href="https://press.spglobal.com/2025-01-07-S-P-Global-Market-Intelligence-Expands-Fixed-Income-Coverage-with-the-addition-of-4-6-Million-Municipal-Securities-on-S-P-Capital-IQ-Pro">Munis on Capital IQ Pro (26M+), 2025-01-07</a>
+- <a href="https://press.spglobal.com/2025-06-24-S-P-Global-Expands-Private-Markets-Offering-With-Private-Credit-Identifiers-Using-LoanX-IDs">LXIDs for private credit, 2025-06-24</a>
+- <a href="https://press.spglobal.com/2025-07-23-S-P-Global-and-Barclays-Partner-on-a-Multi-Year-Strategic-Agreement">Barclays agreement, 2025-07-23</a>
+- <a href="https://press.spglobal.com/2025-09-11-S-P-Global-ushers-new-era-of-open-data-access-Introduces-S-P-Capital-IQ-Identifiers-on-DUNL-org">CIQ IDs on DUNL.org, 2025-09-11</a>
+- <a href="https://press.spglobal.com/2025-10-22-S-P-Global-Redefines-Financial-Insights-with-New-AI-Powered-Multi-Document-Research-and-Analysis-Tool-in-Capital-IQ-Pro-ChatIQ">CDS coverage +3,600 issuers, 2025-10-22</a>
+- <a href="https://s29.q4cdn.com/690959130/files/doc_events/2025/SP-Global-Investor-Day-Slides-11-13-2025.pdf">Investor Day 2025 slides (Risk &amp; Valuations Services), 2025-11-13</a>
+- <a href="https://press.spglobal.com/2025-11-20-S-P-Global-Launches-WSO-Compliance-Insights-to-Streamline-Credit-Risk-Management">WSO Compliance Insights, 2025-11-20</a>
+- <a href="https://press.spglobal.com/2026-01-12-S-P-Global-Completes-Sale-of-EDM-and-thinkFolio-Businesses">EDM / thinkFolio sale, 2026-01-12</a>
+- <a href="https://press.spglobal.com/2026-03-03-S-P-Global-Launches-DataXchange-and-AmendX-to-Transform-Private-Credit-and-Syndicated-Loan-Management">DataXchange / AmendX, 2026-03-03</a>
+- <a href="https://press.spglobal.com/2026-03-12-S-P-Global-Enhances-Capital-IQ-Pro-with-Expanded-Fixed-Income,-Biopharma-and-Private-Markets-Data-Content-and-AI-Capabilities">Capital IQ Pro 4M+ structured securities, 2026-03-12</a>
+- <a href="https://investor.spglobal.com/news-releases/news-details/2026/SP-Global-Evolves-Market-Intelligence-Operating-Model-to-Accelerate-Agentic-Solutions-Platform-Capabilities-and-Innovation-Announces-Executive-Leadership-Changes/default.aspx">MI operating model (pricing → Enterprise Solutions), 2026-07-06</a>
+- <a href="https://press.spglobal.com/2026-07-16-S-P-Global-Market-Intelligence-Launches-ETF-Intelligence">ETF Intelligence, 2026-07-16</a></p></article>
+</div>
+<div class="doc-end"><button class="mark-read" type="button" data-href="doc-notes-spglobal-pricing-fixed-income.html"><span class="mr-tick">✓</span><span class="mr-off">Mark as read</span><span class="mr-on">Read</span></button><span class="doc-end-hint">Marks itself read when you reach the end.</span></div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-spglobal-people.html"><span>Previous</span>Note · S&amp;P Global&#x27;s people — a textbook CEO handover at the top, two years of churn underneath it, and a company whose acquirer handed its data division to the target</a><a class="doc-next" href="doc-notes-spglobal-strategy-financials.html"><span>Next</span>Note · S&amp;P Global strategy &amp; financials — a cyclical ratings engine bolted to subscription data, run for margin and buybacks; the merger doubled the size, then the portfolio was cut back to the core</a></nav>
+</div><script src="site.js?v=1792953205"></script></body></html>

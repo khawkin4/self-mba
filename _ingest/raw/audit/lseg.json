@@ -1,0 +1,357 @@
+{
+ "company": "London Stock Exchange Group plc (LSEG)",
+ "currency": "GBP",
+ "fiscal_years": [
+  2019,
+  2025
+ ],
+ "revenue_lines": [
+  {
+   "line": "Information Services – Real time data (FY2019)",
+   "fy2019": 97,
+   "fy2025": null,
+   "topic": "pricing_data",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m)",
+   "level": "segment",
+   "basis_note": "Old basis; FY2019 Information Services division £902m = FTSE Russell 649 + Real time data 97 + Other information 156"
+  },
+  {
+   "line": "Information Services – Other information (FY2019; UnaVista etc.)",
+   "fy2019": 156,
+   "fy2025": null,
+   "topic": "pricing_data",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m)",
+   "level": "segment",
+   "basis_note": "Old basis"
+  },
+  {
+   "line": "Post Trade Services – LCH (FY2019 division)",
+   "fy2019": 756,
+   "fy2025": null,
+   "topic": "derivs_clearing",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m)",
+   "level": "segment",
+   "basis_note": "Old basis; incl. Net Treasury Income £206m"
+  },
+  {
+   "line": "LCH – Non-OTC",
+   "fy2019": 140,
+   "fy2025": null,
+   "topic": "derivs_clearing",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m)",
+   "level": "sub"
+  },
+  {
+   "line": "LCH – Other",
+   "fy2019": 103,
+   "fy2025": null,
+   "topic": "derivs_clearing",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m)",
+   "level": "sub"
+  },
+  {
+   "line": "LCH – Net Treasury Income",
+   "fy2019": 206,
+   "fy2025": null,
+   "topic": "derivs_clearing",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m)",
+   "level": "sub"
+  },
+  {
+   "line": "Post Trade Services – CC&G and Monte Titoli (FY2019 division)",
+   "fy2019": 152,
+   "fy2025": null,
+   "topic": "derivs_clearing",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m)",
+   "level": "segment",
+   "basis_note": "Old basis; Borsa Italiana post-trade, sold to Euronext 2021"
+  },
+  {
+   "line": "CC&G – Clearing",
+   "fy2019": 43,
+   "fy2025": null,
+   "topic": "derivs_clearing",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m)",
+   "level": "sub"
+  },
+  {
+   "line": "Monte Titoli – Settlement, Custody & other",
+   "fy2019": 60,
+   "fy2025": null,
+   "topic": "derivs_clearing",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m)",
+   "level": "sub"
+  },
+  {
+   "line": "CC&G – Net Treasury Income",
+   "fy2019": 49,
+   "fy2025": null,
+   "topic": "derivs_clearing",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m)",
+   "level": "sub"
+  },
+  {
+   "line": "Capital Markets (FY2019 division)",
+   "fy2019": 426,
+   "fy2025": null,
+   "topic": "listings_ipo",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m)",
+   "level": "segment",
+   "basis_note": "Old basis"
+  },
+  {
+   "line": "Capital Markets – Primary Markets",
+   "fy2019": 151,
+   "fy2025": null,
+   "topic": "listings_ipo",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m)",
+   "level": "sub"
+  },
+  {
+   "line": "Capital Markets – Secondary Markets – Equities",
+   "fy2019": 151,
+   "fy2025": null,
+   "topic": "equities_etf",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m)",
+   "level": "sub",
+   "basis_note": "Includes Borsa Italiana cash equities (divested 2021); not comparable with FY2025 'Equities'"
+  },
+  {
+   "line": "Technology Services (FY2019 division)",
+   "fy2019": 66,
+   "fy2025": null,
+   "topic": "workflow_desktop",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m)",
+   "level": "segment"
+  },
+  {
+   "line": "FTSE Russell",
+   "fy2019": 649,
+   "fy2025": 954,
+   "topic": "indices_benchmarks",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m); LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "segment",
+   "basis_note": "FY2019 shown within Information Services; FY2025 its own division"
+  },
+  {
+   "line": "FTSE Russell – Subscriptions (FY2019 'Index – Subscription')",
+   "fy2019": 418,
+   "fy2025": 630,
+   "topic": "indices_benchmarks",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m); LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "sub"
+  },
+  {
+   "line": "FTSE Russell – Asset-based (FY2019 'Index – Asset Based')",
+   "fy2019": 231,
+   "fy2025": 324,
+   "topic": "indices_benchmarks",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m); LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "sub"
+  },
+  {
+   "line": "Secondary Markets – Fixed income, derivatives and other (FY2019) / Fixed Income, Derivatives & Other (FY2025)",
+   "fy2019": 124,
+   "fy2025": 1539,
+   "topic": "electronification",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m); LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "sub",
+   "basis_note": "Not like-for-like: FY2019 = MTS, IDEM etc.; FY2025 'primarily comprises Tradeweb' (acquired with Refinitiv, Jan 2021)"
+  },
+  {
+   "line": "LCH – OTC (FY2019) / OTC Derivatives (FY2025)",
+   "fy2019": 307,
+   "fy2025": 641,
+   "topic": "derivs_clearing",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m); LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "sub",
+   "basis_note": "Approximately comparable (SwapClear, ForexClear, CDSClear); FY2025 business lines were reorganised"
+  },
+  {
+   "line": "Net Treasury Income (Markets, FY2025; FY2019 = LCH £206m + CC&G £49m)",
+   "fy2019": 255,
+   "fy2025": 257,
+   "topic": "derivs_clearing",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m); LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "sub",
+   "basis_note": "FY2019 value summed from two divisional lines"
+  },
+  {
+   "line": "Data & Analytics (excl. recoveries)",
+   "fy2019": null,
+   "fy2025": 3978,
+   "topic": "pricing_data",
+   "source": "LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "segment",
+   "basis_note": "Ex-Refinitiv (acquired Jan 2021); no FY2019 equivalent"
+  },
+  {
+   "line": "Data & Analytics – Workflows",
+   "fy2019": null,
+   "fy2025": 1925,
+   "topic": "workflow_desktop",
+   "source": "LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "sub"
+  },
+  {
+   "line": "Data & Analytics – Data & Feeds",
+   "fy2019": null,
+   "fy2025": 1822,
+   "topic": "pricing_data",
+   "source": "LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "sub"
+  },
+  {
+   "line": "Data & Analytics – Analytics",
+   "fy2019": null,
+   "fy2025": 231,
+   "topic": "pricing_data",
+   "source": "LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "sub"
+  },
+  {
+   "line": "Risk Intelligence",
+   "fy2019": null,
+   "fy2025": 579,
+   "topic": "regulation_policy",
+   "source": "LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "segment",
+   "basis_note": "World-Check screening, identity verification, due diligence (ex-Refinitiv)"
+  },
+  {
+   "line": "Markets (total income incl. NTI)",
+   "fy2019": null,
+   "fy2025": 3467,
+   "topic": "derivs_clearing",
+   "source": "LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "segment",
+   "basis_note": "FY2025 division combining trading (Tradeweb, FX, equities) and post trade (LCH)"
+  },
+  {
+   "line": "Markets – Equities",
+   "fy2019": null,
+   "fy2025": 412,
+   "topic": "equities_etf",
+   "source": "LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "sub"
+  },
+  {
+   "line": "Markets – FX",
+   "fy2019": null,
+   "fy2025": 272,
+   "topic": "electronification",
+   "source": "LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "sub",
+   "basis_note": "FXall and FX Matching (ex-Refinitiv)"
+  },
+  {
+   "line": "Markets – Securities & Reporting",
+   "fy2019": null,
+   "fy2025": 229,
+   "topic": "derivs_clearing",
+   "source": "LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "sub"
+  },
+  {
+   "line": "Markets – Non-Cash Collateral",
+   "fy2019": null,
+   "fy2025": 117,
+   "topic": "derivs_clearing",
+   "source": "LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "sub"
+  },
+  {
+   "line": "Other",
+   "fy2019": 12,
+   "fy2025": 8,
+   "topic": "deals_capital",
+   "source": "LSEG Annual Report 2019, Segmental review (total income by segment, £m); LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "segment"
+  },
+  {
+   "line": "Recoveries (D&A, excluded from total)",
+   "fy2019": null,
+   "fy2025": 360,
+   "topic": "pricing_data",
+   "source": "LSEG Annual Report 2025, Financial review divisional tables (£m)",
+   "level": "memo"
+  }
+ ],
+ "total_revenue": {
+  "fy2019": 2314,
+  "fy2025": 8986
+ },
+ "risk_factors": [
+  {
+   "heading": "Global economic and geopolitical",
+   "theme": "international_fx_geopolitics",
+   "order": 1
+  },
+  {
+   "heading": "Sustainability",
+   "theme": "climate_esg",
+   "order": 2
+  },
+  {
+   "heading": "Reputation/Brand/IP",
+   "theme": "data_ip_licensing",
+   "order": 3
+  },
+  {
+   "heading": "Transformation",
+   "theme": "technology_change_ai",
+   "order": 4
+  },
+  {
+   "heading": "Central counterparty",
+   "theme": "other",
+   "order": 5
+  },
+  {
+   "heading": "Model risk",
+   "theme": "other",
+   "order": 6
+  },
+  {
+   "heading": "Technology",
+   "theme": "operational_outage",
+   "order": 7
+  },
+  {
+   "heading": "Information and cyber security",
+   "theme": "cyber",
+   "order": 8
+  },
+  {
+   "heading": "Business continuity",
+   "theme": "operational_outage",
+   "order": 9
+  },
+  {
+   "heading": "Third-party",
+   "theme": "operational_outage",
+   "order": 10
+  },
+  {
+   "heading": "Data",
+   "theme": "data_ip_licensing",
+   "order": 11
+  },
+  {
+   "heading": "People and talent",
+   "theme": "talent_key_people",
+   "order": 12
+  },
+  {
+   "heading": "Regulatory change and compliance",
+   "theme": "regulation",
+   "order": 13
+  },
+  {
+   "heading": "Disruptive technology (emerging risk)",
+   "theme": "technology_change_ai",
+   "order": 14
+  }
+ ],
+ "notes": "Sources: LSEG Annual Reports 2019 and 2025 from _ingest/raw/lseg/articles.jsonl (type 'Annual Report'; filtered text = strategic report + principal risks). Not on EDGAR; nothing downloaded. total_revenue is TOTAL INCOME (revenue + Net Treasury Income + other income): FY2019 £2,314m (continuing); FY2025 £8,986m excluding recoveries (£9,346m incl. £360m recoveries). FY2019 is on the OLD, pre-Refinitiv basis (Information Services, LCH, CC&G/Monte Titoli, Capital Markets, Technology Services); Refinitiv closed Jan 2021 and Borsa Italiana (incl. CC&G, Monte Titoli, MTS) was sold to Euronext in Apr 2021, so most lines have no counterpart. Lines are nulled where no comparable figure exists; bridging lines carry basis_note. FY2025 tables restate 2024 for 2025 reallocations between business lines (product-led model). LSEG's FY2025 Markets lines are: Equities 412, FIDO 1,539, FX 272, OTC Derivatives 641, Securities & Reporting 229, Non-Cash Collateral 117 (= revenue 3,210) + NTI 257. Risk headings are LSEG's 'risk category' names (13 principal risks in Strategic / Financial & Model / Non-Financial groups) plus 1 emerging risk (Disruptive technology, order 14). There is no standalone competition risk; competition appears inside Disruptive technology and Reputation/Brand/IP."
+}

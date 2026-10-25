@@ -1,0 +1,1659 @@
+{
+ "capabilities": [
+  "evaluated_pricing",
+  "indices_benchmarks",
+  "credit_ratings_research",
+  "desktop_terminal",
+  "data_distribution_feeds",
+  "buyside_oms_portfolio_tech",
+  "venue_rates",
+  "venue_credit",
+  "venue_equities_etf",
+  "venue_futures_commodities",
+  "clearing_ccp",
+  "listings_primary_markets",
+  "dealer_market_making",
+  "asset_management_products",
+  "private_markets_data_or_access",
+  "tokenization_digital_rails",
+  "ai_layer_products",
+  "mortgage_lending_tech",
+  "payments_transaction_banking"
+ ],
+ "companies": [
+  "tradeweb",
+  "ice",
+  "marketaxess",
+  "bloomberg",
+  "spglobal",
+  "lseg",
+  "thomsonreuters",
+  "goldman",
+  "jpmc",
+  "blackrock"
+ ],
+ "levels": {
+  "3": "core / market leader",
+  "2": "meaningful business",
+  "1": "small / pilot / minority stake / partnership only",
+  "0": "absent"
+ },
+ "change_codes": {
+  "→": "acquired or launched 2019-2026",
+  "↓": "divested / retreated 2019-2026",
+  "→↓": "both"
+ },
+ "as_of": "2026-10-25",
+ "cells": {
+  "tradeweb": {
+   "evaluated_pricing": {
+    "level": 2,
+    "change": "",
+    "detail": "Ai-Price model prices for credit (launched 2020, enhanced Sep 2026); claims ~30% better than last print, self-graded; distributed via LSEG",
+    "source": "notes/tradeweb-ai-price.md; tradeweb.com news 2026-09-22 'Tradeweb Enhances Ai-Price'"
+   },
+   "indices_benchmarks": {
+    "level": 2,
+    "change": "",
+    "detail": "Tradeweb FTSE closing prices (Gilts/EGB 2023, UST 2024) became WGBI price source Mar 2025; Tradeweb ICE UST closing prices (2019); D2C swap data is input to ICE Term SOFR/SONIA. FTSE/IBA are the administrators",
+    "source": "notes/lseg-tradeweb-control.md; _ingest/raw/lseg/DIGEST.md (2024-10-08); _ingest/raw/ice/DIGEST.md (2019-09-10, 2022-03-16)"
+   },
+   "credit_ratings_research": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "desktop_terminal": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "data_distribution_feeds": {
+    "level": 2,
+    "change": "",
+    "detail": "Market-data licence to LSEG (exclusive -> restated non-exclusive Nov 2025, to Oct 2028, ~$105m FY26 revenue); Kalshi prediction-market data into workflows (Jun 2026)",
+    "source": "notes/tradeweb-ai-price.md; _ingest/raw/lseg/DIGEST.md §7; tradeweb.com news 2026-06-24"
+   },
+   "buyside_oms_portfolio_tech": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "venue_rates": {
+    "level": 3,
+    "change": "→",
+    "detail": "Core franchise: UST D2C/D2D, EGBs, swaps (TW SEF), repo; bought Nasdaq US FI/eSpeed ($190M, Jun 2021) and Yieldbroker (A$125M, Aug 2023)",
+    "source": "notes/tradeweb-rates-em.md; tradeweb.com news 2021-06-25, 2023-08-31"
+   },
+   "venue_credit": {
+    "level": 3,
+    "change": "→",
+    "detail": "US credit share ~18% of IG+HY TRACE (The DESK, Jun 2026) vs MKTX 16%; portfolio trading leader; Trumid ~$1.97B agreed 2026-10-19 (close H1 2027)",
+    "source": "notes/tradeweb-credit.md; tradeweb.com news 2026-10-19 'Tradeweb to Acquire Trumid'"
+   },
+   "venue_equities_etf": {
+    "level": 2,
+    "change": "",
+    "detail": "Institutional ETF RFQ in EU (2012), US (2016), Asia; EU ETF ADV ~$1.5bn/day by 2019; Plato eBlock",
+    "source": "notes/tradeweb-equities-retail.md (Jul 2019, Mar 2020)"
+   },
+   "venue_futures_commodities": {
+    "level": 1,
+    "change": "→",
+    "detail": "Strategic partnership + stake in Kalshi (CFTC prediction-market exchange), Feb 2026; data only, no Tradeweb-run futures venue",
+    "source": "tradeweb.com news 2026-02-19 'Tradeweb and Kalshi Announce Strategic Partnership'"
+   },
+   "clearing_ccp": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "listings_primary_markets": {
+    "level": 1,
+    "change": "",
+    "detail": "Primary-market tie-ins only: S&P InvestorAccess link in European primary (2022); Trumid new-issue flow pending",
+    "source": "notes/spglobal-hub.md §4 (Tradeweb corpus 2022-09-29)"
+   },
+   "dealer_market_making": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "asset_management_products": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "private_markets_data_or_access": {
+    "level": 1,
+    "change": "→",
+    "detail": "Minority stake in MAXEX (residential mortgage loan marketplace, Feb 2026); private credit framed as '$35T addressable' (Dec 2025) with no product",
+    "source": "tradeweb.com news 2026-02-12; notes/tradeweb-mission-forces.md"
+   },
+   "tokenization_digital_rails": {
+    "level": 1,
+    "change": "→",
+    "detail": "Minority stakes/co-led rounds (Securitize 2024, Digital Asset 2025-26, Fnality, Crossover); first on-chain UST financing on Canton (Aug 2025); first strategic partner in GS DAP spin-out (Nov 2024). Pilots only",
+    "source": "tradeweb.com news 2025-08-12, 2024-11-18, 2024-05-01; notes/tradeweb-tech-ai-data.md"
+   },
+   "ai_layer_products": {
+    "level": 2,
+    "change": "→",
+    "detail": "Client-facing AI: AiEX automation (58% of tickets Q1 2026), Ai-Price, SNAP+ dealer selection (2025 pilot), TARA AI research assistant (Jun 2026)",
+    "source": "tradeweb.com news 2026-06-15 'Tradeweb Launches TARA'; notes/tradeweb-tech-ai-data.md"
+   },
+   "mortgage_lending_tech": {
+    "level": 1,
+    "change": "→",
+    "detail": "TBA-MBS trading (since 2001, a rates venue) plus MAXEX minority stake (Feb 2026); no origination/servicing tech",
+    "source": "tradeweb.com news 2026-02-12 'Tradeweb Makes Investment in MAXEX'"
+   },
+   "payments_transaction_banking": {
+    "level": 1,
+    "change": "→",
+    "detail": "ICD acquired ($785M, closed Aug 2024): multi-fund investment portal for corporate treasurers (MMFs, T-bills); treasury-cash, not payments",
+    "source": "tradeweb.com news 2024-04-08, 2024-08-01"
+   }
+  },
+  "ice": {
+   "evaluated_pricing": {
+    "level": 3,
+    "change": "",
+    "detail": "ICE Continuous Evaluated Pricing / evaluations (ex-IDC, S&P evaluations 2015-17), SEC-registered; relative accuracy claim 38% IG/79% HY 'closer to next trade'",
+    "source": "notes/ice-fixed-income-data.md"
+   },
+   "indices_benchmarks": {
+    "level": 3,
+    "change": "→↓",
+    "detail": "ICE BofA bond indices (#2 FI index provider; $794B ETF AUM by 2025), MOVE (bought Aug 2019), IBA (Term SONIA/SOFR, ICE Swap Rate), Brent; AMERIBOR/AFX bought Jan 2025; LIBOR wound down 2021-24",
+    "source": "_ingest/raw/ice/DIGEST.md (2019-08-05, 2021-07-21, 2025-01-08); notes/ice-benchmarks-iba.md"
+   },
+   "credit_ratings_research": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "desktop_terminal": {
+    "level": 1,
+    "change": "",
+    "detail": "ICE Connect desktop (Platts analytics run inside it); usage never reported",
+    "source": "notes/ice-energy-benchmarks.md; notes/ice-fixed-income-data.md"
+   },
+   "data_distribution_feeds": {
+    "level": 3,
+    "change": "→",
+    "detail": "Fixed Income & Data Services: consolidated feeds, reference data, Polymarket data distribution (2025), bond data over MCP 'available in Claude' (Jul 2026)",
+    "source": "_ingest/raw/ice/DIGEST.md (2025-10-07, 2026-07-29)"
+   },
+   "buyside_oms_portfolio_tech": {
+    "level": 1,
+    "change": "→",
+    "detail": "ICE Compass AI pre-trade dealer ranking (T. Rowe anchor, Jun 2026) and Best Ex analytics; no OMS",
+    "source": "_ingest/raw/ice/DIGEST.md (2026-06-09)"
+   },
+   "venue_rates": {
+    "level": 1,
+    "change": "",
+    "detail": "ICE Bonds/TMC offers Treasuries and MBS RFQ (Apr 2025) to retail/wealth; not an institutional rates venue",
+    "source": "notes/ice-fixed-income-data.md (2025-04-16)"
+   },
+   "venue_credit": {
+    "level": 2,
+    "change": "→",
+    "detail": "ICE Bonds (BondPoint+TMC, launched Feb 2019) leads retail munis/corporates; MarketAxess agreed 2026-07-30 (~$5.7B EV, close H1 2027) would make it 3",
+    "source": "_ingest/raw/ice/DIGEST.md (2019-02-14, 2026-07-30); notes/ice-marketaxess-deal.md"
+   },
+   "venue_equities_etf": {
+    "level": 3,
+    "change": "",
+    "detail": "NYSE (Pillar), NYSE Texas opened Mar 2025, 22-hour trading; ETF Hub (2019)",
+    "source": "notes/ice-nyse-listings-digital.md; _ingest/raw/ice/DIGEST.md (2025-03-31)"
+   },
+   "venue_futures_commodities": {
+    "level": 3,
+    "change": "→",
+    "detail": "Brent, TTF, Murban (ICE Futures Abu Dhabi, launched Mar 2021), HOU Midland WTI (2021), GPU-compute futures (2026); record 245.8M contracts Jan 2026",
+    "source": "notes/ice-energy-benchmarks.md; _ingest/raw/ice/DIGEST.md (2019-11-10, 2021-06-21)"
+   },
+   "clearing_ccp": {
+    "level": 3,
+    "change": "→",
+    "detail": "ICE Clear Credit/Europe/US; CDS clearing leader; Treasury clearing live 2026-02-03 as first alternative to FICC",
+    "source": "notes/ice-clearing-treasury.md; _ingest/raw/ice/DIGEST.md (2026-02-03)"
+   },
+   "listings_primary_markets": {
+    "level": 3,
+    "change": "",
+    "detail": "NYSE listings (~10% of revenue, brand front door); NYSE Texas 2025",
+    "source": "notes/ice-nyse-listings-digital.md"
+   },
+   "dealer_market_making": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "asset_management_products": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "private_markets_data_or_access": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "tokenization_digital_rails": {
+    "level": 1,
+    "change": "→↓",
+    "detail": "NYSE tokenized securities platform announced Jan 2026 (launch H2 2026), OKX stake Mar 2026, Polymarket up to $2B (2025); Bakkt deconsolidated 2021",
+    "source": "_ingest/raw/ice/DIGEST.md (2021-01-11, 2026-01-19, 2026-03-05)"
+   },
+   "ai_layer_products": {
+    "level": 1,
+    "change": "→",
+    "detail": "Compass AI pre-trade (Jun 2026), MCP bond data (Jul 2026), AI Center of Excellence (2024): early-stage",
+    "source": "_ingest/raw/ice/DIGEST.md (2024-08-12, 2026-06-09, 2026-07-29)"
+   },
+   "mortgage_lending_tech": {
+    "level": 3,
+    "change": "→",
+    "detail": "Life-of-loan chain: Simplifile ($335M, 2019), Ellie Mae/Encompass ($11B, 2020), Black Knight/MSP (~$11.9B, closed Sep 2023; Empower and Optimal Blue divested)",
+    "source": "notes/ice-mortgage-technology.md; _ingest/raw/ice/DIGEST.md (2019-05-01, 2020-08-06, 2023-09-05)"
+   },
+   "payments_transaction_banking": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   }
+  },
+  "marketaxess": {
+   "evaluated_pricing": {
+    "level": 2,
+    "change": "",
+    "detail": "CP+ algorithmic prices (~24k+ bonds, 15s updates) feed S&P Evaluated Bond Pricing since Oct 2024; redistributed by Refinitiv (2019)",
+    "source": "notes/marketaxess-data-cp-plus.md; press.spglobal.com 2024-10-31"
+   },
+   "indices_benchmarks": {
+    "level": 1,
+    "change": "→",
+    "detail": "MKTX US IG 400 index under SSGA LQIG ETF (Mar 2022); MSCI MarketAxess indices; closing auctions (Nov 2025)",
+    "source": "_ingest/raw/marketaxess/DIGEST.md (2022-03-16, 2025-11-05)"
+   },
+   "credit_ratings_research": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "desktop_terminal": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "data_distribution_feeds": {
+    "level": 1,
+    "change": "→",
+    "detail": "Information services ~6% of FY25 revenue; Axess All, TraX Tape (Jun 2026), Trax post-trade (DB Regulatory Reporting Hub bought Nov 2020)",
+    "source": "notes/marketaxess-data-cp-plus.md; _ingest/raw/marketaxess/DIGEST.md (2020-11-30, 2026-06-18)"
+   },
+   "buyside_oms_portfolio_tech": {
+    "level": 1,
+    "change": "→",
+    "detail": "Pragma algorithmic execution tech (closed Oct 2023), Adaptive Auto-X; execution tooling, no OMS",
+    "source": "_ingest/raw/marketaxess/DIGEST.md (2023-06-22, 2023-10-02)"
+   },
+   "venue_rates": {
+    "level": 1,
+    "change": "→",
+    "detail": "LiquidityEdge UST (~$150M, Nov 2019): 2-3.7% share, ~$4/million fee",
+    "source": "_ingest/raw/marketaxess/DIGEST.md (2019-11-01); notes/marketaxess-international-rates.md"
+   },
+   "venue_credit": {
+    "level": 3,
+    "change": "↓",
+    "detail": "Category creator, Open Trading all-to-all; US HG share fell 22.8% (4Q20) -> 18.4% (4Q24); agreed sale to ICE 2026-07-30",
+    "source": "notes/marketaxess-hub.md; _ingest/raw/marketaxess/DIGEST.md (2025-02-06, 2026-07-30)"
+   },
+   "venue_equities_etf": {
+    "level": 1,
+    "change": "→",
+    "detail": "~90% of RFQ-hub (ETFs/derivatives) May 2025; Virtu ETF partnership (2019)",
+    "source": "_ingest/raw/marketaxess/DIGEST.md (2019-04-04, 2025-05-12)"
+   },
+   "venue_futures_commodities": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "clearing_ccp": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "listings_primary_markets": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "dealer_market_making": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "asset_management_products": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "private_markets_data_or_access": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "tokenization_digital_rails": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "ai_layer_products": {
+    "level": 1,
+    "change": "→",
+    "detail": "AI Select / Smart Dealer Select, CP+ as ML price (2024-26); features, not separately sold",
+    "source": "notes/marketaxess-open-trading.md"
+   },
+   "mortgage_lending_tech": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "payments_transaction_banking": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   }
+  },
+  "bloomberg": {
+   "evaluated_pricing": {
+    "level": 3,
+    "change": "→",
+    "detail": "BVAL is 'default pricing source on the Terminal'; IBVAL Front Office ML prices ~30k USD corporates every 15s (Oct 2023); BVAL used as close in EGB MOC (Apr 2024)",
+    "source": "notes/bloomberg-pricing-bval-ibval.md; _ingest/raw/bloomberg/DIGEST.md (2023-10-17, 2024-04-24)"
+   },
+   "indices_benchmarks": {
+    "level": 3,
+    "change": "→",
+    "detail": "Bloomberg Agg (BRAIS 2016), BCOM (acquired 2020), BFIX, ISDA IBOR fallbacks, BSBY (2021), B500 equity indices (2019), TOTALFI (2025); BISL BMR-authorised",
+    "source": "notes/bloomberg-indices.md; _ingest/raw/bloomberg/DIGEST.md"
+   },
+   "credit_ratings_research": {
+    "level": 1,
+    "change": "",
+    "detail": "Bloomberg Intelligence research and own ESG scores; resells MSCI ESG ratings (Oct 2020); no credit ratings",
+    "source": "_ingest/raw/bloomberg/DIGEST.md (2020-08-11, 2020-10-13)"
+   },
+   "desktop_terminal": {
+    "level": 3,
+    "change": "",
+    "detail": "Terminal: >350,000 seats (Dec 2023); IB chat network ~40m messages/day",
+    "source": "notes/bloomberg-ai-strategy.md; notes/bloomberg-terminal-instrumentation.md"
+   },
+   "data_distribution_feeds": {
+    "level": 3,
+    "change": "→",
+    "detail": "Data License, B-PIPE (AWS 2019, GCP 2022), DL+ (2020), Snowflake (2023), Second Measure alt data (bought Dec 2020), FIGI",
+    "source": "notes/bloomberg-enterprise-data.md; _ingest/raw/bloomberg/DIGEST.md (2019-09-12, 2020-05-06, 2020-12-24)"
+   },
+   "buyside_oms_portfolio_tech": {
+    "level": 3,
+    "change": "↓",
+    "detail": "AIM/PORT/EMSX/BTCA incumbent; BI EET study shows EMSX losing EMS share (2025); Clearwater partnership instead of accounting build (Jul 2025)",
+    "source": "notes/bloomberg-buyside-stack.md"
+   },
+   "venue_rates": {
+    "level": 3,
+    "change": "→",
+    "detail": "BSEF/BMTF swaps (73% of USD swaps on Bloomberg SOFR by Feb 2022), FIT govvies, FXGO; Broadway sell-side stack bought (closed Oct 2023)",
+    "source": "notes/bloomberg-electronic-trading.md; _ingest/raw/bloomberg/DIGEST.md (2022-02-09, 2023-03-13)"
+   },
+   "venue_credit": {
+    "level": 2,
+    "change": "",
+    "detail": "FIT credit RFQ, PT Basket Builder (2021), Bridge all-to-all with Goldman (Mar 2022, no follow-up); share never disclosed",
+    "source": "_ingest/raw/bloomberg/DIGEST.md (2021-06-09, 2022-03-15)"
+   },
+   "venue_equities_etf": {
+    "level": 2,
+    "change": "",
+    "detail": "RFQe ETF RFQ, BSKT ETF primary workflow (Oct 2020), Tradebook entities",
+    "source": "notes/bloomberg-electronic-trading.md; _ingest/raw/bloomberg/DIGEST.md (2020-10-28)"
+   },
+   "venue_futures_commodities": {
+    "level": 1,
+    "change": "→",
+    "detail": "No exchange; Bloomberg credit indices underlie CME/Eurex futures (2024; 10 contracts ~$300bn notional by Dec 2025): index licensing only",
+    "source": "_ingest/raw/bloomberg/DIGEST.md (2024-06/09)"
+   },
+   "clearing_ccp": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "listings_primary_markets": {
+    "level": 1,
+    "change": "→",
+    "detail": "Bloomberg Auction System runs Qatar Central Bank primary-dealer auctions (Jan 2025); TSOX linked to S&P InvestorAccess (2023)",
+    "source": "_ingest/raw/bloomberg/DIGEST.md (2025-01-19); _ingest/raw/spglobal/DIGEST.md (2023-06-22)"
+   },
+   "dealer_market_making": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "asset_management_products": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "private_markets_data_or_access": {
+    "level": 2,
+    "change": "→",
+    "detail": "Daphne stake (Feb 2025), Hamilton Lane indices, DLEN; Canoe Intelligence acquired (agreed Jul 29, closed Oct 1 2026; 500+ clients, $11T AUS)",
+    "source": "notes/bloomberg-private-markets.md; _ingest/raw/bloomberg/DIGEST.md (2026-07-29)"
+   },
+   "tokenization_digital_rails": {
+    "level": 1,
+    "change": "→",
+    "detail": "Licenses data on-chain (Kaiko + Canton, Feb 2026), crypto FIGIs (2021), stablecoin dashboard; runs no chain",
+    "source": "_ingest/raw/bloomberg/DIGEST.md (2021-10-14, 2026-02-26)"
+   },
+   "ai_layer_products": {
+    "level": 2,
+    "change": "→",
+    "detail": "AI earnings summaries (Jan 2024), Document Search (2025), ASKB GA (2026-10-15), Enterprise MCP over DL+ (2026-09-29); no usage or revenue disclosed",
+    "source": "notes/bloomberg-ai-strategy.md; _ingest/raw/bloomberg/DIGEST.md"
+   },
+   "mortgage_lending_tech": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "payments_transaction_banking": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   }
+  },
+  "spglobal": {
+   "evaluated_pricing": {
+    "level": 2,
+    "change": "",
+    "detail": "S&P Evaluated Bond Pricing (ex-IHS Markit) now rests on dealer/venue inputs incl. MarketAxess CP+ (Oct 2024), which ICE will own; moved to Enterprise Solutions Jul 2026",
+    "source": "notes/spglobal-pricing-fixed-income.md; press.spglobal.com 2024-10-31"
+   },
+   "indices_benchmarks": {
+    "level": 3,
+    "change": "→",
+    "detail": "S&P DJI (S&P 500, DJIA; CME owns 27%), iBoxx and CDX/iTraxx via IHS Markit (closed Feb 2022), Platts benchmarks; LCD loan indices sold to Morningstar 2022",
+    "source": "notes/spglobal-indices-benchmarks.md; _ingest/raw/spglobal/DIGEST.md (2022-02-28, 2022-04-04)"
+   },
+   "credit_ratings_research": {
+    "level": 3,
+    "change": "",
+    "detail": "S&P Global Ratings, first wholly foreign-owned CRA in China (Jan 2019); Credit Analytics moved into Ratings (Jul 2026)",
+    "source": "notes/spglobal-hub.md; _ingest/raw/spglobal/DIGEST.md (2019-01-28)"
+   },
+   "desktop_terminal": {
+    "level": 3,
+    "change": "",
+    "detail": "Capital IQ Pro desktop (Farsight AI workflow added Jul 2026)",
+    "source": "notes/spglobal-ai-data-layer.md; press.spglobal.com 2026-07-23"
+   },
+   "data_distribution_feeds": {
+    "level": 3,
+    "change": "↓",
+    "detail": "Marketplace, Snowflake (2020), AWS, Databricks; CUSIP Global Services sold to FactSet ($1.925B) as merger remedy (2021-22)",
+    "source": "notes/spglobal-ai-data-layer.md; _ingest/raw/spglobal/DIGEST.md (2020-05, 2021-10-22)"
+   },
+   "buyside_oms_portfolio_tech": {
+    "level": 0,
+    "change": "↓",
+    "detail": "EDM/thinkFolio (buy-side OMS/data mgmt) and PrimeOne sold 2024-26",
+    "source": "notes/spglobal-ihs-markit-merger.md"
+   },
+   "venue_rates": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "venue_credit": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "venue_equities_etf": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "venue_futures_commodities": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "clearing_ccp": {
+    "level": 0,
+    "change": "↓",
+    "detail": "OSTTRA post-trade (MarkitWire, triReduce, traiana; not a CCP) sold to KKR $3.1B EV, 50/50 with CME (2025)",
+    "source": "_ingest/raw/spglobal/DIGEST.md (2025-04-14)"
+   },
+   "listings_primary_markets": {
+    "level": 2,
+    "change": "",
+    "detail": "Ipreo/InvestorAccess primary bond issuance workflow (linked to Bloomberg TSOX 2023, Tradeweb 2022)",
+    "source": "notes/spglobal-pricing-fixed-income.md; _ingest/raw/spglobal/DIGEST.md (2023-06-22)"
+   },
+   "dealer_market_making": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "asset_management_products": {
+    "level": 0,
+    "change": "↓",
+    "detail": "SPIAS advisory ($33B advised) sold to Goldman Sachs Asset Management (Mar 2019)",
+    "source": "_ingest/raw/spglobal/DIGEST.md (2019-03-18)"
+   },
+   "private_markets_data_or_access": {
+    "level": 2,
+    "change": "→",
+    "detail": "With Intelligence acquired $1.8B (Oct 2025); iLEVEL/Ipreo private-markets data from IHS Markit",
+    "source": "_ingest/raw/spglobal/DIGEST.md (2025-10-15)"
+   },
+   "tokenization_digital_rails": {
+    "level": 1,
+    "change": "→",
+    "detail": "Stablecoin assessments (2023), S&P 500 perps on Hyperliquid (Mar 2026), Kaiko B-2 lead, OpenZeppelin agreed (Sep 2026), tokenized iBoxx TRS on Canton (Oct 2026): licences and firsts",
+    "source": "notes/spglobal-digital-assets.md; _ingest/raw/spglobal/DIGEST.md"
+   },
+   "ai_layer_products": {
+    "level": 2,
+    "change": "→",
+    "detail": "Kensho LLM-ready API (Nov 2024), Kensho MCP into Claude (Jul 2025) then Copilot/Gemini/Cohere; MI reorganised around Kensho Data & Platforms (Jul 2026)",
+    "source": "notes/spglobal-ai-data-layer.md; _ingest/raw/spglobal/DIGEST.md (2025-07-15, 2026-07-06)"
+   },
+   "mortgage_lending_tech": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "payments_transaction_banking": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   }
+  },
+  "lseg": {
+   "evaluated_pricing": {
+    "level": 2,
+    "change": "",
+    "detail": "Refinitiv/LSEG PRS evaluated pricing and Yield Book; FTSE FI indices priced off Refinitiv evaluations before 2023; LSEG claims #3 in pricing & reference data",
+    "source": "_ingest/raw/lseg/DIGEST.md §7; notes/lseg-hub.md pattern 5"
+   },
+   "indices_benchmarks": {
+    "level": 3,
+    "change": "",
+    "detail": "FTSE Russell (#3 index provider), WGBI gatekeeper (China 2021, Korea 2026); administers Tradeweb FTSE closing prices; >$430bn iShares on FTSE Russell",
+    "source": "notes/lseg-ftse-russell-indices.md; _ingest/raw/lseg/DIGEST.md (2021-03-29, 2024-10-08)"
+   },
+   "credit_ratings_research": {
+    "level": 2,
+    "change": "→",
+    "detail": "Octus (credit intelligence, >$300m revenue) bought $3.535bn cash, Oct 2026",
+    "source": "_ingest/raw/lseg/DIGEST.md (2026-10-13 -> 10-22); notes/lseg-capital-allocation.md"
+   },
+   "desktop_terminal": {
+    "level": 3,
+    "change": "→",
+    "detail": "Workspace (via Refinitiv, closed Jan 2021) at ~30% discount to Bloomberg; Eikon retired Jun 2025 (~350k users migrated)",
+    "source": "notes/lseg-workspace-data.md; _ingest/raw/lseg/DIGEST.md (2021-01-29, 2025-06)"
+   },
+   "data_distribution_feeds": {
+    "level": 3,
+    "change": "→",
+    "detail": "Real-time feeds #1/#2 globally via Refinitiv; Microsoft 10-yr cloud partnership (Dec 2022); 'LSEG Everywhere' MCP licensing",
+    "source": "notes/lseg-refinitiv-deal.md; _ingest/raw/lseg/DIGEST.md (2022-12-12)"
+   },
+   "buyside_oms_portfolio_tech": {
+    "level": 1,
+    "change": "",
+    "detail": "Yield Book analytics and Workspace workflows (~3% of D&A); no buy-side OMS of scale",
+    "source": "notes/lseg-workspace-data.md"
+   },
+   "venue_rates": {
+    "level": 3,
+    "change": "→↓",
+    "detail": "Controls Tradeweb (50.9% economic/89.9% voting, consolidated Jan 2021); FXall; MTS sold with Borsa Italiana to Euronext (2021)",
+    "source": "notes/lseg-tradeweb-control.md; notes/lseg-refinitiv-deal.md"
+   },
+   "venue_credit": {
+    "level": 3,
+    "change": "→",
+    "detail": "Via controlled Tradeweb (credit ~18% TRACE share); Trumid pending; Octus to be combined with Tradeweb",
+    "source": "notes/lseg-tradeweb-control.md; _ingest/raw/lseg/DIGEST.md (2026-10-22)"
+   },
+   "venue_equities_etf": {
+    "level": 3,
+    "change": "↓",
+    "detail": "London Stock Exchange, Turquoise, Tradeweb ETF RFQ; Borsa Italiana sold (€4.325bn, Oct 2020); LSE 24 (24/5) planned 2027",
+    "source": "notes/lseg-digital-markets.md; _ingest/raw/lseg/DIGEST.md (2020-10-09, 2026-07-21)"
+   },
+   "venue_futures_commodities": {
+    "level": 0,
+    "change": "↓",
+    "detail": "No meaningful futures exchange; derivatives venues (IDEM via Borsa) left with the 2021 sale",
+    "source": "notes/lseg-refinitiv-deal.md"
+   },
+   "clearing_ccp": {
+    "level": 3,
+    "change": "→",
+    "detail": "LCH SwapClear >90% share; Post Trade Solutions deal buys back bank revenue share (£1.15bn, Oct 2025); Quantile (2021); Euroclear stake sold Dec 2024",
+    "source": "notes/lseg-post-trade-clearing.md; _ingest/raw/lseg/DIGEST.md (2025-10-23)"
+   },
+   "listings_primary_markets": {
+    "level": 2,
+    "change": "↓",
+    "detail": "UK listings franchise shrinking; Borsa Italiana sold 2020; PISCES private-share venue approved Aug 2025",
+    "source": "notes/lseg-digital-markets.md"
+   },
+   "dealer_market_making": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "asset_management_products": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "private_markets_data_or_access": {
+    "level": 1,
+    "change": "→",
+    "detail": "PISCES intermittent private-company venue (2025), Floww (2022); Octus private/illiquid credit data (2026)",
+    "source": "notes/lseg-digital-markets.md; notes/lseg-tradeweb-control.md"
+   },
+   "tokenization_digital_rails": {
+    "level": 1,
+    "change": "→",
+    "detail": "DMI (Sep 2025), DiSH tokenised cash (Jan 2026), Digital Securities Depository plan (Feb 2026), tokenised equities with Kraken: 'lots of firsts, no revenue yet'",
+    "source": "notes/lseg-digital-markets.md"
+   },
+   "ai_layer_products": {
+    "level": 2,
+    "change": "→",
+    "detail": "LSEG Everywhere: data via MCP into Copilot, Claude, OpenAI (Oct-Dec 2025); Workspace in Teams; AI revenue undisclosed",
+    "source": "notes/lseg-ai-everywhere.md; _ingest/raw/lseg/DIGEST.md (2025-10-13 -> 12-03)"
+   },
+   "mortgage_lending_tech": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "payments_transaction_banking": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   }
+  },
+  "thomsonreuters": {
+   "evaluated_pricing": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "indices_benchmarks": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "credit_ratings_research": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "desktop_terminal": {
+    "level": 0,
+    "change": "↓",
+    "detail": "Eikon/F&R left via Refinitiv; LSEG-share stake (from 2021 close) fully sold May 15 2024",
+    "source": "notes/thomsonreuters-refinitiv-lseg-exit.md"
+   },
+   "data_distribution_feeds": {
+    "level": 1,
+    "change": "",
+    "detail": "Reuters News is exclusive financial news file inside LSEG Workspace to 2048 (pact expanded Jan 2023)",
+    "source": "notes/thomsonreuters-refinitiv-lseg-exit.md; _ingest/raw/thomsonreuters/DIGEST.md (2023-01-17)"
+   },
+   "buyside_oms_portfolio_tech": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "venue_rates": {
+    "level": 0,
+    "change": "↓",
+    "detail": "Indirect Tradeweb exposure via Refinitiv (~54% at 2019 IPO) converted to LSEG shares 2021 and exited May 2024",
+    "source": "notes/thomsonreuters-refinitiv-lseg-exit.md"
+   },
+   "venue_credit": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "venue_equities_etf": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "venue_futures_commodities": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "clearing_ccp": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "listings_primary_markets": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "dealer_market_making": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "asset_management_products": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "private_markets_data_or_access": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "tokenization_digital_rails": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "ai_layer_products": {
+    "level": 2,
+    "change": "→",
+    "detail": "CoCounsel (Casetext $650M, 2023) at 1M users (Feb 2026); rebuilt on Claude Agent SDK (May 2026); own $40M 'Thomson' LLM (Aug 2026). Legal/tax AI, not capital markets",
+    "source": "notes/thomsonreuters-ai-strategy.md; _ingest/raw/thomsonreuters/DIGEST.md"
+   },
+   "mortgage_lending_tech": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "payments_transaction_banking": {
+    "level": 1,
+    "change": "→",
+    "detail": "Pagero e-invoicing (~$800M, 2024): tax-compliance invoicing, adjacent to payments",
+    "source": "_ingest/raw/thomsonreuters/DIGEST.md (2024-01 to 02)"
+   }
+  },
+  "goldman": {
+   "evaluated_pricing": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "indices_benchmarks": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "credit_ratings_research": {
+    "level": 1,
+    "change": "",
+    "detail": "Sell-side research (GS Research, Top of Mind); no ratings",
+    "source": "notes/goldman-outside-voices.md; notes/goldman-ai.md"
+   },
+   "desktop_terminal": {
+    "level": 1,
+    "change": "",
+    "detail": "Marquee client platform/API storefront; MarketView redistributes LSEG, FactSet, MSCI data (Nov 2023)",
+    "source": "notes/goldman-markets-platforms.md; _ingest/raw/goldman/DIGEST.md (2023-11-14)"
+   },
+   "data_distribution_feeds": {
+    "level": 1,
+    "change": "→",
+    "detail": "GS Financial Cloud for Data with AWS (Nov 2021); Datonomy taxonomy via Marquee (2022)",
+    "source": "_ingest/raw/goldman/DIGEST.md (2021-11-30, 2022-11-03)"
+   },
+   "buyside_oms_portfolio_tech": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "venue_rates": {
+    "level": 1,
+    "change": "",
+    "detail": "Single-dealer channels/GS Principal Liquidity; launch dealer on venues (first SOFR swaption on TW SEF, Jun 2022)",
+    "source": "notes/goldman-markets-platforms.md"
+   },
+   "venue_credit": {
+    "level": 1,
+    "change": "",
+    "detail": "Intermediation desks behind Bloomberg Bridge A2A (Mar 2022); PT >$120bn by 2020 as dealer, not venue",
+    "source": "_ingest/raw/bloomberg/DIGEST.md (2022-03-15); notes/goldman-markets-platforms.md"
+   },
+   "venue_equities_etf": {
+    "level": 1,
+    "change": "",
+    "detail": "Sigma X2 ATS / Sigma X MTF; ETF Accelerator issuance platform (2023)",
+    "source": "notes/goldman-markets-platforms.md"
+   },
+   "venue_futures_commodities": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "clearing_ccp": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "listings_primary_markets": {
+    "level": 3,
+    "change": "",
+    "detail": "Top-tier underwriter/IB (role as underwriter, not a listing venue); adviser to Trumid on Tradeweb sale (Oct 2026)",
+    "source": "notes/goldman-strategy-financials.md; notes/goldman-hub.md"
+   },
+   "dealer_market_making": {
+    "level": 3,
+    "change": "",
+    "detail": "FICC+Equities dealer; financing 37% of markets revenue 2025; Q3 2026 equities financing > intermediation",
+    "source": "notes/goldman-strategy-financials.md"
+   },
+   "asset_management_products": {
+    "level": 3,
+    "change": "→",
+    "detail": "GSAM/AWM fees >$11.5bn; NN IP (2022), Innovator buffer ETFs (closed Apr 2026), NEOS (Sep 2026), T. Rowe tie-up (2025)",
+    "source": "notes/goldman-awm-private-credit.md; _ingest/raw/goldman/DIGEST.md"
+   },
+   "private_markets_data_or_access": {
+    "level": 3,
+    "change": "→",
+    "detail": "~$145bn private credit; Capital Solutions Group (Jan 2025); Industry Ventures VC secondaries (closed Jan 2026)",
+    "source": "notes/goldman-awm-private-credit.md; _ingest/raw/goldman/DIGEST.md (2025-01-13)"
+   },
+   "tokenization_digital_rails": {
+    "level": 1,
+    "change": "→↓",
+    "detail": "GS DAP (BNY tokenized MMF mirrors Jul 2025) spun out to industry-owned entity (Nov 2024, Tradeweb first partner); EIB digital bond 2021",
+    "source": "notes/goldman-digital-assets.md; _ingest/raw/goldman/DIGEST.md (2024-11-18, 2025-07-23)"
+   },
+   "ai_layer_products": {
+    "level": 1,
+    "change": "→",
+    "detail": "GS AI Assistant internal (2025); Marquee AI 'only available internally' (Aug 2026)",
+    "source": "notes/goldman-ai.md"
+   },
+   "mortgage_lending_tech": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "payments_transaction_banking": {
+    "level": 1,
+    "change": "→↓",
+    "detail": "Transaction Banking launched 2020 (~$0.3bn 2022 revenue, now inside GBM 'Other'); Apple Card to JPMorgan Chase Jan 2026",
+    "source": "notes/goldman-consumer-retreat.md; _ingest/raw/goldman/DIGEST.md (2026-01-07)"
+   }
+  },
+  "jpmc": {
+   "evaluated_pricing": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "indices_benchmarks": {
+    "level": 2,
+    "change": "",
+    "detail": "J.P. Morgan EMBI, CEMBI, GBI-EM: the EM bond benchmarks; drive venues' EM growth",
+    "source": "notes/jpmc-markets-venues.md"
+   },
+   "credit_ratings_research": {
+    "level": 1,
+    "change": "",
+    "detail": "J.P. Morgan Research (sell-side); no ratings",
+    "source": "notes/jpmc-markets-venues.md"
+   },
+   "desktop_terminal": {
+    "level": 1,
+    "change": "",
+    "detail": "J.P. Morgan Markets portal, 90k+ users",
+    "source": "notes/jpmc-markets-venues.md; _ingest/raw/jpmc/DIGEST.md §7"
+   },
+   "data_distribution_feeds": {
+    "level": 1,
+    "change": "→",
+    "detail": "Fusion buy-side data platform (May 2022), DataQuery, JPMaQS",
+    "source": "_ingest/raw/jpmc/DIGEST.md (2022-05-10)"
+   },
+   "buyside_oms_portfolio_tech": {
+    "level": 1,
+    "change": "",
+    "detail": "Fusion data/ETF servicing (~$700B BlackRock ETF servicing win 2021); no OMS",
+    "source": "notes/jpmc-hub.md §4"
+   },
+   "venue_rates": {
+    "level": 1,
+    "change": "",
+    "detail": "Single-dealer Execute, Aqua algos, UST algos hosted on Tradeweb (Oct 2025), Kinexys intraday repo",
+    "source": "notes/jpmc-markets-venues.md; _ingest/raw/jpmc/DIGEST.md (2025-10-09)"
+   },
+   "venue_credit": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "venue_equities_etf": {
+    "level": 1,
+    "change": "",
+    "detail": "JPM-X / JPB-X internalisation pools, EU systematic internaliser",
+    "source": "notes/jpmc-markets-venues.md"
+   },
+   "venue_futures_commodities": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "clearing_ccp": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "listings_primary_markets": {
+    "level": 3,
+    "change": "",
+    "detail": "Leading underwriter (role as bookrunner, e.g., joint lead on Tradeweb IPO Apr 2019 and follow-ons)",
+    "source": "_ingest/raw/jpmc/DIGEST.md (2019-04-03)"
+   },
+   "dealer_market_making": {
+    "level": 3,
+    "change": "",
+    "detail": "Largest dealer: record $35.8B Markets revenue 2025; financing/Prime-led growth",
+    "source": "notes/jpmc-hub.md; notes/jpmc-markets-venues.md"
+   },
+   "asset_management_products": {
+    "level": 3,
+    "change": "",
+    "detail": "J.P. Morgan Asset Management (client of Tradeweb; ETF issuer)",
+    "source": "notes/jpmc-markets-venues.md"
+   },
+   "private_markets_data_or_access": {
+    "level": 2,
+    "change": "→",
+    "detail": "Direct lending: up to $50B balance sheet + ~$15B co-lenders (2024-25), ~$14B deployed; MAXEX lead investor (2021)",
+    "source": "notes/jpmc-capital-allocation.md; notes/jpmc-markets-venues.md"
+   },
+   "tokenization_digital_rails": {
+    "level": 2,
+    "change": "→",
+    "detail": "Kinexys (Onyx 2020, renamed Nov 2024): >$4T cumulative, ~$7B/day; JPMD on Base (Nov 2025) and Ethereum (Oct 2026); ~0.06% of daily flow",
+    "source": "notes/jpmc-kinexys-deposit-tokens.md; _ingest/raw/jpmc/DIGEST.md (2026-10-19)"
+   },
+   "ai_layer_products": {
+    "level": 1,
+    "change": "",
+    "detail": "LLM Suite internal (200k+ users); AI benefits 'aren't observable' (3Q26); no client AI product of note",
+    "source": "notes/jpmc-ai-tech-spend.md"
+   },
+   "mortgage_lending_tech": {
+    "level": 1,
+    "change": "",
+    "detail": "Chase mortgage lending referenced only in passing (corpus skipped consumer); no mortgage tech vendor",
+    "source": "notes/jpmc-outside-voices.md (2Q26)"
+   },
+   "payments_transaction_banking": {
+    "level": 3,
+    "change": "→",
+    "detail": "Payments franchise as deposit defence; Apple Card acquired from Goldman (Jan 2026); Kinexys payments",
+    "source": "notes/jpmc-hub.md; _ingest/raw/goldman/DIGEST.md (2026-01-07)"
+   }
+  },
+  "blackrock": {
+   "evaluated_pricing": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "indices_benchmarks": {
+    "level": 1,
+    "change": "→",
+    "detail": "Index licensee (S&P, MSCI, FTSE Russell); Preqin (2024) aims to 'index private markets'",
+    "source": "notes/blackrock-aladdin-data.md"
+   },
+   "credit_ratings_research": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "desktop_terminal": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "data_distribution_feeds": {
+    "level": 1,
+    "change": "→",
+    "detail": "Aladdin Data Cloud on Snowflake (Feb 2021); Preqin data (360k+ Aladdin and Preqin users, 2025)",
+    "source": "_ingest/raw/blackrock/DIGEST.md (2021-02-22); notes/blackrock-aladdin-data.md"
+   },
+   "buyside_oms_portfolio_tech": {
+    "level": 3,
+    "change": "→",
+    "detail": "Aladdin (~$1.5B 2023 tech revenue): OEMS hub venues plug into; eFront ($1.3B, 2019); Azure (2020)",
+    "source": "notes/blackrock-aladdin-data.md; _ingest/raw/blackrock/DIGEST.md (2019-03-22)"
+   },
+   "venue_rates": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "venue_credit": {
+    "level": 0,
+    "change": "",
+    "detail": "Anchor client, not a venue; internal crossing (25% equity trades offset internally, 2025)",
+    "source": "notes/blackrock-anchor-client.md"
+   },
+   "venue_equities_etf": {
+    "level": 1,
+    "change": "→",
+    "detail": "Founding investor in Texas Stock Exchange (Jun 2024); minority stake",
+    "source": "_ingest/raw/blackrock/DIGEST.md (2024-06-05)"
+   },
+   "venue_futures_commodities": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "clearing_ccp": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "listings_primary_markets": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "dealer_market_making": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "asset_management_products": {
+    "level": 3,
+    "change": "",
+    "detail": "Largest asset manager: $15.49T AUM Q3 2026, iShares; record $698B 2025 inflows",
+    "source": "notes/blackrock-strategy-financials.md"
+   },
+   "private_markets_data_or_access": {
+    "level": 3,
+    "change": "→",
+    "detail": "GIP (~$12.55B, 2024), HPS (~$12B, Dec 2024), Preqin (~$3.2B, 2024); $400B private fundraising target by 2030",
+    "source": "notes/blackrock-private-markets.md"
+   },
+   "tokenization_digital_rails": {
+    "level": 2,
+    "change": "→",
+    "detail": "BUIDL tokenized fund on Ethereum (Mar 2024) with Securitize stake; IBIT; tokenized MMF mirrors on GS DAP (2025)",
+    "source": "notes/blackrock-digital-assets.md; _ingest/raw/blackrock/DIGEST.md (2024-03-20)"
+   },
+   "ai_layer_products": {
+    "level": 1,
+    "change": "→",
+    "detail": "Aladdin Copilot (2024-25); AI infrastructure partnership is investing, not product",
+    "source": "notes/blackrock-aladdin-data.md"
+   },
+   "mortgage_lending_tech": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   },
+   "payments_transaction_banking": {
+    "level": 0,
+    "change": "",
+    "detail": "",
+    "source": ""
+   }
+  }
+ },
+ "relationships": [
+  {
+   "from": "lseg",
+   "to": "tradeweb",
+   "type": "ownership",
+   "detail": "Controlling shareholder: 50.9% economic / 89.9% voting; consolidated since Refinitiv close",
+   "date": "2021-01-29",
+   "source": "notes/lseg-tradeweb-control.md"
+  },
+  {
+   "from": "lseg",
+   "to": "tradeweb",
+   "type": "data_licence",
+   "detail": "LSEG distributes Tradeweb data (exclusive, restated non-exclusive Nov 2025, to Oct 2028, ~$105m FY26)",
+   "date": "2023-10",
+   "source": "notes/tradeweb-ai-price.md; _ingest/raw/lseg/DIGEST.md §7"
+  },
+  {
+   "from": "lseg",
+   "to": "tradeweb",
+   "type": "partnership",
+   "detail": "FTSE Russell administers Tradeweb FTSE closing prices; WGBI price source from Mar 2025",
+   "date": "2024-10-08",
+   "source": "_ingest/raw/lseg/DIGEST.md (2024-10-08)"
+  },
+  {
+   "from": "lseg",
+   "to": "tradeweb",
+   "type": "board_interlock",
+   "detail": "Two LSEG directors on Tradeweb board; Jacques Aigrain LSEG NED -> Tradeweb chair",
+   "date": "2021",
+   "source": "_ingest/raw/lseg/DIGEST.md §7"
+  },
+  {
+   "from": "thomsonreuters",
+   "to": "tradeweb",
+   "type": "ownership_former",
+   "detail": "Thomson owned Tradeweb 2004-2018 via F&R; Refinitiv held ~54% at 2019 IPO",
+   "date": "2019-04",
+   "source": "_ingest/raw/thomsonreuters/DIGEST.md §7"
+  },
+  {
+   "from": "thomsonreuters",
+   "to": "lseg",
+   "type": "ownership_former",
+   "detail": "~15% of LSEG (82.5M shares) from Refinitiv sale; fully sold by May 15 2024 (~$8.3B gross)",
+   "date": "2024-05-15",
+   "source": "notes/thomsonreuters-refinitiv-lseg-exit.md"
+  },
+  {
+   "from": "thomsonreuters",
+   "to": "lseg",
+   "type": "data_licence",
+   "detail": "Reuters News exclusive to LSEG financial desktop until 2048; expanded pact Jan 2023",
+   "date": "2023-01-17",
+   "source": "_ingest/raw/thomsonreuters/DIGEST.md (2023-01-17)"
+  },
+  {
+   "from": "thomsonreuters",
+   "to": "lseg",
+   "type": "board_interlock",
+   "detail": "TR's Erin Brown joined LSEG board at Refinitiv close",
+   "date": "2021-01-29",
+   "source": "_ingest/raw/thomsonreuters/DIGEST.md (2021-01-29)"
+  },
+  {
+   "from": "ice",
+   "to": "marketaxess",
+   "type": "acquisition",
+   "detail": "ICE to acquire MarketAxess, $167/sh cash, ~$5.7B EV, close H1 2027",
+   "date": "2026-07-30",
+   "source": "notes/ice-marketaxess-deal.md"
+  },
+  {
+   "from": "ice",
+   "to": "marketaxess",
+   "type": "partnership",
+   "detail": "ICE Bonds (TMC) linked to MarketAxess Open Trading",
+   "date": "2024-08-05",
+   "source": "_ingest/raw/ice/DIGEST.md (2024-08-05)"
+  },
+  {
+   "from": "ice",
+   "to": "tradeweb",
+   "type": "data_licence",
+   "detail": "IBA benchmarks use Tradeweb data: UST closing prices (2019), Term SONIA L2 (2020), Term SOFR first input (2022), ICE Swap Rate inflation (2026)",
+   "date": "2019-09-10",
+   "source": "_ingest/raw/ice/DIGEST.md §7"
+  },
+  {
+   "from": "ice",
+   "to": "tradeweb",
+   "type": "competitive_overlap",
+   "detail": "Rival vertical credit stacks: ICE+MKTX (Jul 2026) vs Tradeweb+Trumid (Oct 2026); Treasury clearing CCP vs venue",
+   "date": "2026-10-19",
+   "source": "notes/ice-hub.md §4"
+  },
+  {
+   "from": "tradeweb",
+   "to": "ice",
+   "type": "people",
+   "detail": "Michael Blaugrund ex-Tradeweb -> NYSE COO (2019) -> ICE tokenization lead (2026)",
+   "date": "2019",
+   "source": "_ingest/raw/ice/DIGEST.md §7"
+  },
+  {
+   "from": "marketaxess",
+   "to": "spglobal",
+   "type": "data_licence",
+   "detail": "CP+ feeds S&P Evaluated Bond Pricing; S&P reference data to MKTX",
+   "date": "2024-10-31",
+   "source": "press.spglobal.com 2024-10-31"
+  },
+  {
+   "from": "marketaxess",
+   "to": "lseg",
+   "type": "data_licence",
+   "detail": "Refinitiv redistributes CP+ and Axess All",
+   "date": "2019-04-11",
+   "source": "_ingest/raw/marketaxess/DIGEST.md (2019-04-11)"
+  },
+  {
+   "from": "lseg",
+   "to": "marketaxess",
+   "type": "people",
+   "detail": "Dean Berry (ex-LSEG) became MarketAxess COO",
+   "date": "2025",
+   "source": "_ingest/raw/marketaxess/DIGEST.md §7"
+  },
+  {
+   "from": "bloomberg",
+   "to": "marketaxess",
+   "type": "partnership",
+   "detail": "EU bond consolidated-tape JV with Tradeweb: explored Jun 2022, signed May 2023, abandoned Dec 2023",
+   "date": "2023-12-08",
+   "source": "notes/bloomberg-consolidated-tape.md"
+  },
+  {
+   "from": "bloomberg",
+   "to": "tradeweb",
+   "type": "partnership",
+   "detail": "Same EU consolidated-tape JV (with MarketAxess), abandoned",
+   "date": "2023-12-08",
+   "source": "notes/bloomberg-consolidated-tape.md"
+  },
+  {
+   "from": "bloomberg",
+   "to": "tradeweb",
+   "type": "competitive_overlap",
+   "detail": "Competes on pricing (BVAL/IBVAL vs Ai-Price), swaps SEFs, PT; Hult: Bloomberg 'looming out there'",
+   "date": "2026-08-05",
+   "source": "_ingest/raw/bloomberg/DIGEST.md §7"
+  },
+  {
+   "from": "bloomberg",
+   "to": "tradeweb",
+   "type": "people",
+   "detail": "Bloomberg SEF CCO moved to Tradeweb as Global Head of Compliance",
+   "date": "2021-08-23",
+   "source": "_ingest/raw/bloomberg/DIGEST.md §7"
+  },
+  {
+   "from": "bloomberg",
+   "to": "goldman",
+   "type": "partnership",
+   "detail": "Bloomberg Bridge all-to-all RFQ supported by Goldman intermediation desks",
+   "date": "2022-03-15",
+   "source": "_ingest/raw/bloomberg/DIGEST.md (2022-03-15)"
+  },
+  {
+   "from": "bloomberg",
+   "to": "spglobal",
+   "type": "partnership",
+   "detail": "Bloomberg TSOX linked to S&P MI InvestorAccess for primary bond workflow",
+   "date": "2023-06-22",
+   "source": "_ingest/raw/spglobal/DIGEST.md (2023-06-22)"
+  },
+  {
+   "from": "bloomberg",
+   "to": "blackrock",
+   "type": "competitive_overlap",
+   "detail": "Bloomberg AIM vs Aladdin; Clearwater 'open and modular' partnership positioned against single-vendor Aladdin",
+   "date": "2025-07-09",
+   "source": "notes/bloomberg-buyside-stack.md"
+  },
+  {
+   "from": "bloomberg",
+   "to": "lseg",
+   "type": "competitive_overlap",
+   "detail": "Terminal vs Workspace (~30% discount); FTSE 'open meadow' vs Bloomberg 'walled garden'",
+   "date": "2024",
+   "source": "notes/lseg-workspace-data.md; notes/lseg-mission-forces.md"
+  },
+  {
+   "from": "spglobal",
+   "to": "ice",
+   "type": "partnership",
+   "detail": "Platts and ICE co-govern Brent complex consultation",
+   "date": "2021-07-21",
+   "source": "_ingest/raw/spglobal/DIGEST.md (2021-07-21)"
+  },
+  {
+   "from": "spglobal",
+   "to": "ice",
+   "type": "competitive_overlap",
+   "detail": "S&P evaluated pricing will depend on CP+ owned by evaluated-pricing rival ICE after MKTX close",
+   "date": "2026-07-30",
+   "source": "notes/spglobal-pricing-fixed-income.md"
+  },
+  {
+   "from": "spglobal",
+   "to": "tradeweb",
+   "type": "partnership",
+   "detail": "iBoxx TRS on Tradeweb SEF (2021); InvestorAccess-Tradeweb primary link (2022)",
+   "date": "2021-03-26",
+   "source": "notes/spglobal-hub.md §4"
+  },
+  {
+   "from": "spglobal",
+   "to": "goldman",
+   "type": "divestiture",
+   "detail": "SPIAS advisory sold to Goldman Sachs Asset Management",
+   "date": "2019-03-18",
+   "source": "_ingest/raw/spglobal/DIGEST.md (2019-03-18)"
+  },
+  {
+   "from": "spglobal",
+   "to": "lseg",
+   "type": "people",
+   "detail": "LSEG D&A co-head Biagini came from S&P Global",
+   "date": "2024",
+   "source": "notes/lseg-hub.md §4"
+  },
+  {
+   "from": "spglobal",
+   "to": "blackrock",
+   "type": "client",
+   "detail": "iShares licenses S&P indices; BlackRock pays index rents and hedges via Preqin",
+   "date": "2024",
+   "source": "notes/blackrock-aladdin-data.md"
+  },
+  {
+   "from": "goldman",
+   "to": "tradeweb",
+   "type": "partnership",
+   "detail": "GS DAP spin-out to industry-owned entity, Tradeweb first strategic partner",
+   "date": "2024-11-18",
+   "source": "tradeweb.com news 2024-11-18; _ingest/raw/goldman/DIGEST.md"
+  },
+  {
+   "from": "goldman",
+   "to": "tradeweb",
+   "type": "co_investment",
+   "detail": "Co-investors in Digital Asset (Canton) $135M round with Tradeweb, DRW, Citadel Securities",
+   "date": "2025-07-09",
+   "source": "_ingest/raw/goldman/DIGEST.md §7"
+  },
+  {
+   "from": "goldman",
+   "to": "tradeweb",
+   "type": "ownership_former",
+   "detail": "Founding dealer-owner; dealer stakes cut 46% -> 17.3% at Apr 2019 IPO",
+   "date": "2019-04",
+   "source": "_ingest/raw/goldman/DIGEST.md §7"
+  },
+  {
+   "from": "goldman",
+   "to": "tradeweb",
+   "type": "advisor",
+   "detail": "Goldman advised Trumid on its sale to Tradeweb",
+   "date": "2026-10-19",
+   "source": "notes/goldman-hub.md"
+  },
+  {
+   "from": "goldman",
+   "to": "jpmc",
+   "type": "divestiture",
+   "detail": "Apple Card (>$20bn book) moved from Goldman to JPMorgan Chase",
+   "date": "2026-01-07",
+   "source": "_ingest/raw/goldman/DIGEST.md (2026-01-07)"
+  },
+  {
+   "from": "goldman",
+   "to": "jpmc",
+   "type": "people",
+   "detail": "New Head of Kinexys came from Goldman Digital Assets",
+   "date": "2025",
+   "source": "notes/jpmc-hub.md §4"
+  },
+  {
+   "from": "goldman",
+   "to": "lseg",
+   "type": "people",
+   "detail": "LSEG CEO David Schwimmer is ex-Goldman",
+   "date": "2018",
+   "source": "notes/lseg-hub.md"
+  },
+  {
+   "from": "goldman",
+   "to": "blackrock",
+   "type": "partnership",
+   "detail": "Co-authored CCP-resilience paper with BlackRock, JPM, Vanguard; BlackRock tokenized MMFs on GS DAP via BNY",
+   "date": "2025-07-23",
+   "source": "_ingest/raw/goldman/DIGEST.md (2019-10-24, 2025-07-23)"
+  },
+  {
+   "from": "jpmc",
+   "to": "tradeweb",
+   "type": "ownership_former",
+   "detail": "Founding dealer-owner (stake 2002); joint lead bookrunner on Apr 2019 IPO and follow-ons",
+   "date": "2019-04-03",
+   "source": "_ingest/raw/jpmc/DIGEST.md (2019-04-03)"
+  },
+  {
+   "from": "jpmc",
+   "to": "tradeweb",
+   "type": "people",
+   "detail": "Thomas Pluta (JPM linear rates) Tradeweb President Jan 2023-Sep 2024; Enrico Bruni, chair Aigrain, director Maguire ex-JPM",
+   "date": "2022-07-13",
+   "source": "_ingest/raw/jpmc/DIGEST.md §7"
+  },
+  {
+   "from": "jpmc",
+   "to": "tradeweb",
+   "type": "client",
+   "detail": "First dealer to host UST algos on Tradeweb; JPMAM routes Treasuries via Tradeweb",
+   "date": "2025-10-09",
+   "source": "_ingest/raw/jpmc/DIGEST.md (2025-10-09)"
+  },
+  {
+   "from": "jpmc",
+   "to": "tradeweb",
+   "type": "advisor",
+   "detail": "JPM lead financial adviser to Tradeweb on ICD",
+   "date": "2024-04-08",
+   "source": "_ingest/raw/jpmc/DIGEST.md §7"
+  },
+  {
+   "from": "jpmc",
+   "to": "tradeweb",
+   "type": "co_investment",
+   "detail": "Both invested in MAXEX (JPM 2021, Tradeweb 2026) and Capitolis (2026)",
+   "date": "2026-02-12",
+   "source": "_ingest/raw/jpmc/DIGEST.md §7"
+  },
+  {
+   "from": "jpmc",
+   "to": "marketaxess",
+   "type": "advisor",
+   "detail": "J.P. Morgan advised MarketAxess on sale to ICE",
+   "date": "2026-07-30",
+   "source": "_ingest/raw/jpmc/DIGEST.md §2 (context)"
+  },
+  {
+   "from": "jpmc",
+   "to": "marketaxess",
+   "type": "people",
+   "detail": "MarketAxess chair Carlos Hernandez is ex-JPMorgan",
+   "date": "2024-11-06",
+   "source": "_ingest/raw/marketaxess/DIGEST.md (2024-11-06)"
+  },
+  {
+   "from": "jpmc",
+   "to": "lseg",
+   "type": "client",
+   "detail": "LSEG SwapAgent is a Kinexys client; JPM a SwapClear/PTS co-owner and data customer",
+   "date": "2025-10-23",
+   "source": "notes/jpmc-hub.md §4; notes/lseg-hub.md §4"
+  },
+  {
+   "from": "jpmc",
+   "to": "bloomberg",
+   "type": "data_licence",
+   "detail": "Fusion integrates Bloomberg, S&P Global and MSCI data",
+   "date": "2022-05-10",
+   "source": "notes/jpmc-hub.md §4"
+  },
+  {
+   "from": "jpmc",
+   "to": "blackrock",
+   "type": "client",
+   "detail": "~$700B iShares ETF servicing win; BlackRock a Kinexys client; first SOFR swap-spread trade JPM vs BlackRock on Tradeweb",
+   "date": "2021-12-07",
+   "source": "notes/jpmc-hub.md §4; _ingest/raw/jpmc/DIGEST.md (2021-07-08)"
+  },
+  {
+   "from": "jpmc",
+   "to": "ice",
+   "type": "partnership",
+   "detail": "ICE ETF Hub launched with BlackRock, J.P. Morgan and BofA",
+   "date": "2019-10-28",
+   "source": "_ingest/raw/ice/DIGEST.md (2019-10-28)"
+  },
+  {
+   "from": "blackrock",
+   "to": "tradeweb",
+   "type": "client",
+   "detail": "Tradeweb credit + Ai-Price in Aladdin OEMS (Dec 2022), AllTrade (Dec 2023), Mexican repo (Nov 2025)",
+   "date": "2022-12-06",
+   "source": "notes/blackrock-anchor-client.md"
+  },
+  {
+   "from": "blackrock",
+   "to": "tradeweb",
+   "type": "co_investment",
+   "detail": "BlackRock led Securitize $47M round with Tradeweb co-investing",
+   "date": "2024-05-01",
+   "source": "tradeweb.com news 2024-05-01"
+  },
+  {
+   "from": "blackrock",
+   "to": "marketaxess",
+   "type": "client",
+   "detail": "Expanded Aladdin integration; BlackRock on closing-auction advisory group; first IGB trade; ex-BlackRock Prager on MKTX board",
+   "date": "2024-09-09",
+   "source": "_ingest/raw/marketaxess/DIGEST.md (2024-09-09, 2025-11-05)"
+  },
+  {
+   "from": "blackrock",
+   "to": "ice",
+   "type": "client",
+   "detail": "Founding partner of ICE ETF Hub",
+   "date": "2019-10-28",
+   "source": "_ingest/raw/ice/DIGEST.md (2019-10-28)"
+  },
+  {
+   "from": "blackrock",
+   "to": "lseg",
+   "type": "client",
+   "detail": "iShares >$430bn on FTSE Russell indices; Aladdin data partner; Preqin supplier",
+   "date": "2024",
+   "source": "notes/lseg-hub.md §4"
+  },
+  {
+   "from": "lseg",
+   "to": "bloomberg",
+   "type": "people",
+   "detail": "D&A head Andrea Remyn Stone came from Bloomberg (2021)",
+   "date": "2021-05-27",
+   "source": "_ingest/raw/lseg/DIGEST.md (2021-05-27)"
+  },
+  {
+   "from": "goldman",
+   "to": "lseg",
+   "type": "client",
+   "detail": "Goldman/JPM among 11 banks buying 20% of LSEG Post Trade Solutions; Marquee redistributes LSEG data",
+   "date": "2025-10-23",
+   "source": "notes/lseg-hub.md §4; _ingest/raw/goldman/DIGEST.md (2023-11-14)"
+  }
+ ]
+}

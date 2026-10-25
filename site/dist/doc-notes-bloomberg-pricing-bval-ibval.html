@@ -1,0 +1,413 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Note · Bloomberg evaluated pricing (BVAL → IBVAL) — owning the reference price, then making every protocol, index and future clear against it · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792953205"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Note · Bloomberg evaluated pricing (BVAL → IBVAL) — owning the reference price, then making every protocol, index and future clear against it</h1>
+<div class="doc-meta"><span>22 min read</span><span>5,043 words</span><span>Updated 2026-10-25</span><span class="doc-src">notes/bloomberg-pricing-bval-ibval.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#1-chronology-the-spine">1. Chronology — the spine</a></li><li class="l2"><a href="#2-the-product-stack-and-what-each-layer-reuses">2. The product stack, and what each layer reuses</a></li><li class="l2"><a href="#3-how-the-narrative-moved">3. How the narrative moved</a></li><li class="l2"><a href="#4-the-loop-price-index-protocol-futures">4. The loop: price → index → protocol → futures</a></li><li class="l2"><a href="#5-competitive-frame-context-from-sibling-notes">5. Competitive frame (context, from sibling notes)</a></li><li class="l2"><a href="#6-what-the-claims-dont-prove">6. What the claims don't prove</a></li><li class="l2"><a href="#7-strategic-read-inference-not-stated-by-bloomberg">7. Strategic read (inference — not stated by Bloomberg)</a></li><li class="l2"><a href="#8-canon-lenses">8. Canon lenses</a></li><li class="l2"><a href="#9-practitioner-counterpoint">9. Practitioner counterpoint</a></li><li class="l2"><a href="#10-open-questions-to-track">10. Open questions to track</a></li><li class="l3"><a href="#rep">Rep</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p>Practitioner / market-structure note · Maps to <strong>Course 04</strong> (Competitive Strategy — cornered resource, vertical integration, who owns the ruler), <strong>Course 07</strong> (Data, Analytics &amp; Decision-Making — self-graded accuracy, coverage denominators, baselines), <strong>Course 03</strong> (Microeconomics &amp; Strategy Foundations — information asymmetry, reference-price conflicts), <strong>Course 11</strong> (Global Strategy, Macro &amp; Responsible Business — China/Hong Kong pricing roles, local valuation regimes), <strong>E10</strong> (Digital &amp; AI Transformation — ML pricing as product), <strong>E9</strong> (Geopolitics &amp; Macro — CFETS, NAFMII) · Written 2026-10-25 · Part of <a class="wiki" href="doc-notes-bloomberg-hub.html">bloomberg hub</a>; companions <a class="wiki" href="doc-notes-bloomberg-indices.html">bloomberg indices</a>, <a class="wiki" href="doc-notes-bloomberg-electronic-trading.html">bloomberg electronic trading</a>, <a class="wiki" href="doc-notes-bloomberg-enterprise-data.html">bloomberg enterprise data</a>, <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a></p>
+</blockquote>
+<ul>
+<li><strong>Source:</strong> Bloomberg corpus <code>_ingest/raw/bloomberg/articles.jsonl</code>, about <strong>35 items</strong> that mention BVAL, IBVAL, CBBT, LQA, MIPD or a market-on-close (MOC) reference, <strong>Jun 2021 – Oct 2026</strong>. They are press releases (bloomberg.com via Wayback, plus PR Newswire for 2026), Professional Insights pieces (Krein/Simek pricing series, Sharaby on credit futures, the Singapore summit write-up, APAC Regulatory Outlook 2026), one Tech-at-Bloomberg story (the IBVAL build, 2023-12-04) and Chartis award releases. One quote comes from the Tradeweb corpus (Hult). Bloomberg is private: there is <strong>no revenue, price or client count for BVAL anywhere in the corpus</strong>. The IBVAL back-test whitepaper is <em>not</em> in the corpus; its figures are cited from <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> as context.</li>
+<li><strong>Core claim:</strong> Bloomberg's fixed-income position does not depend on venue share, which it never publishes. It depends on <strong>owning the reference price</strong>. BVAL (launched 2008, "over 2.5 million" to "2.8 million" securities depending on the release) became the input to MIPD, LQA-adjacent analytics, the loan indices and the portfolio-trading (PT) basket reference. IBVAL started as "BVAL’s intraday pricing product" (2022), was relaunched as <strong>IBVAL Front Office</strong> (Oct 2023: ~30k USD corporates, as fast as every 15s, ML), was extended to Europe (Apr 2024), Asia and Australia (2025), and by Feb 2026 is described as "now the default pricing source on the Bloomberg Terminal" for &gt;90k bonds. The same price is then reused as the <strong>close in MOC list trades</strong> (EGB, Apr 2024), the engine of the <strong>Tradable Trackers</strong>, the fair-value input for <strong>CME/Eurex futures on Bloomberg indices</strong>, the yardstick for dealer responses inside Rule Builder, and a quasi-public utility (HKSAR calculating agent; BVAL on CFETS). What Bloomberg does not publish is an <strong>accuracy number</strong>. The BVAL Score measures data density, not error. The only back-test figures (‘centered’; 92% inside CBBT) grade Bloomberg against Bloomberg, and coverage counts drift from release to release.</li>
+</ul>
+<hr />
+<h2 id="1-chronology-the-spine">1. Chronology — the spine</h2>
+<p>All figures as Bloomberg states them ("BBG says") unless another source is named.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Event</th>
+<th>Numbers stated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2008</strong></td>
+<td>BVAL launched (per the 2023-12-04 story), born of the crisis need for "more robust independent pricing"</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2020-10-28</td>
+<td>BBH + Bloomberg BSKT ETF primary-market workflow. Evaluated pricing pitched as the intraday ETF tracker</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>2021-06-09</strong></td>
+<td><strong>Portfolio Trading Basket Builder (PTBB)</strong>: baskets compared to BVAL and <strong>CBBT</strong>, RFQ to up to 6 dealers via BOLT</td>
+<td>BVAL "over 2.7 million securities"</td>
+</tr>
+<tr>
+<td>2021-07-27</td>
+<td><strong>MIPD</strong> (market-implied probability of default) built on BVAL data</td>
+<td>36,000+ issuers, 1–20y term structure</td>
+</tr>
+<tr>
+<td>2021-08-02</td>
+<td>Distributes <strong>BPAM</strong> (Malaysia's accredited evaluator) on the Terminal</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2021-09-15/24</td>
+<td>Southbound Bond Connect: BVAL shown on the <strong>CFETS</strong> platform, the first time on a third-party system in China</td>
+<td>BVAL "over 2.5 million securities"</td>
+</tr>
+<tr>
+<td>2021-09-22</td>
+<td>Fixed-income pre-trade TCA model, calibrated on 5 years of trades, with the CBBT bid-ask as an input</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2022-01-20</td>
+<td>Sony Bank takes BVAL into AWS as its ‘official valuation’ for traders and middle office</td>
+<td>BVAL "&gt;2.5 million"</td>
+</tr>
+<tr>
+<td><strong>2022-06-23</strong></td>
+<td><strong>Tradable Trackers</strong> announced, priced by IBVAL, "BVAL’s intraday pricing product"</td>
+<td>First tracker 200 bonds, due Q4 2022</td>
+</tr>
+<tr>
+<td>2022-07-12 → 2023-10-25</td>
+<td>Chartis "Evaluated Pricing and Data" wins, five years running</td>
+<td>BVAL 2.5m (Jul 2022) → 2.7m (Jul 2023) → 2.8m (Oct 2023)</td>
+</tr>
+<tr>
+<td><strong>2023-10-17</strong></td>
+<td><strong>IBVAL Front Office</strong> launched on the Terminal (IBVL PCS) and B-PIPE. Engine for the Tradable Trackers</td>
+<td>~30,000 TRACE-eligible USD IG/HY, "as fast as every 15 seconds"</td>
+</tr>
+<tr>
+<td>2023-12-04</td>
+<td>Build story: ensemble of regression trees, Iceberg/Trino data lake, retrain in under 6 hours</td>
+<td>BVAL "2.8 million securities, 10 times per day". 6–7bn ticks/day ingested, 300k/s peak. 350,000+ Terminal users</td>
+</tr>
+<tr>
+<td>2024-02-21</td>
+<td>IBVAL embedded in <strong>AIM, ETOMS, Rule Builder (RBLD)</strong></td>
+<td>"nearly 30,000" USD bonds</td>
+</tr>
+<tr>
+<td><strong>2024-04-16</strong></td>
+<td><strong>IBVAL to EUR/GBP</strong> IG and HY (all bonds in the flagship Europe/UK indices). BVAL Score 1–10, I- and G-spreads added</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>2024-04-24</strong></td>
+<td><strong>First EGB MOC list trade referencing BVAL as the close</strong> (J.P. Morgan vs a European insurer, on Bloomberg's MTF, via PTBB)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024-06 / 09</td>
+<td>Credit futures on Bloomberg indices listed at CME and Eurex (see <a class="wiki" href="doc-notes-bloomberg-indices.html">bloomberg indices</a>)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024-07-02</td>
+<td>Chartis 2024</td>
+<td>IBVAL "approximately 45,000" USD/GBP/EUR credit bonds</td>
+</tr>
+<tr>
+<td>2024-09-09</td>
+<td>Krein/Simek "pricing is foundational to automation". IBVAL live in RBLD and PTBB</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024-10-15</td>
+<td><strong>US Leveraged Loan Index</strong> built on BVAL loan pricing</td>
+<td>1,300 loans, $1.3tn; 74,000 tranches priced</td>
+</tr>
+<tr>
+<td><strong>2024-12-16</strong></td>
+<td><strong>HKSAR official calculating agent</strong> (GSBP/IBP green and infrastructure bonds), indicative prices and yields twice a day since 2024-10-23</td>
+<td>HKD 5.5bn and CNY 1bn inaugural issues</td>
+</tr>
+<tr>
+<td>2025-04-10</td>
+<td>Tradable Trackers described. Used with PTBB and FAIR<GO> for futures fair value</td>
+<td>5 tickers. ~100 issuers (~200 HY), 2 bonds each. R² 99.5% vs US IG Corporate</td>
+</tr>
+<tr>
+<td>2025-07-07</td>
+<td>Krein (Pricing &amp; Valuations Summit, May 2025): PT share of US IG risk trades</td>
+<td>~25% (Mar 2025), from just over 20% (Jan)</td>
+</tr>
+<tr>
+<td>2025-07-22</td>
+<td>Global and European leveraged loan indices on BVAL</td>
+<td>GLOAN $1.8tn; 82,000+ loans</td>
+</tr>
+<tr>
+<td>2025-11-17</td>
+<td><strong>Australia</strong>: BVAL adds 600 ABS to 1,600 RMBS. IBVAL during Australian hours. Mid/ask issuer curves "from requirements" of APRA</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2025-11-26</td>
+<td>Singapore summit: IBVAL used as a dealer-response benchmark in Rule Builder. <strong>Asia coverage "50,000 to 100,000 bonds by year-end"</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>2026-02-02</strong></td>
+<td>APAC Regulatory Outlook: <strong>NAFMII bond-valuation guideline</strong> effective April 2026</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>2026-02-18</strong></td>
+<td>Sharaby: IBVAL is "now the default pricing source on the Bloomberg Terminal". Govvies every second</td>
+<td><strong>&gt;90,000 bonds globally</strong>. 10 futures, ~$300bn notional traded, OI &gt;$4.5bn (Sept 2025)</td>
+</tr>
+<tr>
+<td>2026-02-26</td>
+<td>Kaiko/Canton: Data License <strong>evaluated pricing on-chain</strong> for tokenized UST and repo</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2026-06-02</td>
+<td>Spread-to-Benchmark quoting for EUR/GBP PT baskets, alongside BVAL-referenced spread workflows</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2026-10-04</td>
+<td>First fully automated <strong>JGB MOC</strong> (BB3P/Hikene reference, not BVAL). MOC now spans UST, Canada, Gilts, EGBs, JGBs</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-the-product-stack-and-what-each-layer-reuses">2. The product stack, and what each layer reuses</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>What it is</th>
+<th>Refresh / coverage (BBG-stated)</th>
+<th>Reused by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>BVAL</strong></td>
+<td>End-of-day / multi-snapshot evaluated pricing, bonds and OTC derivatives; BVAL Score 1–10</td>
+<td>2.5m–2.8m securities, "10 times per day"</td>
+<td>MIPD, loan indices, PTBB reference, EGB MOC close, HKSAR-style roles, CFETS display, Data License, on-chain via Kaiko</td>
+</tr>
+<tr>
+<td><strong>IBVAL Front Office</strong></td>
+<td>ML (tree ensemble) intraday price, trained on TRACE plus contributed quotes and trades</td>
+<td>15s (corporates), 1s (liquid govvies); 30k → 45k → &gt;90k bonds</td>
+<td>Terminal default, B-PIPE, AIM, ETOMS, RBLD, PTBB, Tradable Trackers</td>
+</tr>
+<tr>
+<td><strong>CBBT</strong></td>
+<td>"a weighted average of dealer-contributed near real-time prices on Bloomberg’s Fixed Income Trading solution (FIT) during trading hours"</td>
+<td>—</td>
+<td>PTBB comparison, pre-trade TCA input, the automation-performance study, SOFR-liquidity evidence (2022)</td>
+</tr>
+<tr>
+<td><strong>LQA / MIPD</strong></td>
+<td>ML liquidity cost (since 2016) and market-implied default probability</td>
+<td>MIPD 36k issuers</td>
+<td>Regulatory liquidity reporting (SFC), risk</td>
+</tr>
+<tr>
+<td><strong>Tradable Trackers</strong></td>
+<td>Liquid-subset bond indices priced by IBVAL</td>
+<td>~15s</td>
+<td>Futures fair value (FAIR), PT replication, iNAV</td>
+</tr>
+<tr>
+<td><strong>MOC / list trading</strong></td>
+<td>All-or-none list at a close reference</td>
+<td>BVAL (EGB), BB3P (JGB)</td>
+<td>Bloomberg MTF, TSOX, RBLD</td>
+</tr>
+</tbody>
+</table></div>
+<p>The design choice is to make <strong>one price appear everywhere</strong>. Krein and Simek frame it as "Pricing for corporate bonds has three core principles: It must be consistent, it must be readily available, and it must be high-quality." Of the three, the corpus documents the first two at length. It does not document the third.</p>
+<h2 id="3-how-the-narrative-moved">3. How the narrative moved</h2>
+<ol>
+<li><strong>2008–2021: the independent evaluator.</strong> Boilerplate calls BVAL "independent and transparent", built for thinly traded securities, and sold to the middle office. Brad Foster's MIPD pitch is that CDS is too thin, saying "while CDS prices can serve as indicators, they are often limited with fewer issuers traded and reduced liquidity", so BVAL data stands in.</li>
+<li><strong>2021–2022: the price moves into the trade.</strong> PTBB puts BVAL and CBBT next to dealer quotes. Tradable Trackers make an index tradable intraday, with IBVAL "enhanced to bridge the gap between trading and index pricing". Sony Bank wants its traders to see the middle office's ‘official valuation’.</li>
+<li><strong>2023–2024: ML and the front office.</strong> IBVAL is relaunched as "a new offering, distinct from but complementary to Bloomberg’s leading evaluated pricing service, BVAL". O'Brien's origin story: "With the electronification of fixed income markets, plus internal needs, we recognized there was a clear demand for intraday pricing". The moat claim is scale: "it’s really the scale of our data that enables us to lead in this category and be best-in-class." Europe follows within six months, and BVAL becomes the <strong>close</strong> in an MOC protocol.</li>
+<li><strong>2024–2025: the utility role.</strong> Bloomberg is appointed HKSAR calculating agent and cites a record of "calculating and distributing reference rates on behalf of central banks, ministry of finance and market associations". It adds loan pricing and indices, and APRA-driven curves in Australia.</li>
+<li><strong>2026: the default.</strong> "IBVAL, available for more than 90,000 bonds globally, is now the default pricing source on the Bloomberg Terminal." The framing becomes a continuum: "Harmonized analytics mean that an ETF, an index and a futures contract can now be evaluated on an apples-to-apples basis in real time." No release says when the default switched or what it replaced.</li>
+</ol>
+<h2 id="4-the-loop-price-index-protocol-futures">4. The loop: price → index → protocol → futures</h2>
+<pre><code> TRACE + contributed quotes/trades + FIT/CBBT flow
+        │
+   BVAL (EOD, 2.8m) ──► Bloomberg indices (loans on BVAL; Agg family) ──► CME/Eurex credit futures
+        │                        ▲                                         │
+   IBVAL (15s, &gt;90k) ──► Tradable Trackers ──► FAIR&lt;GO&gt; fair value ◄───────┘ executed via EMSX / RFQe
+        │
+        └─► PTBB / MOC-to-BVAL / RBLD limits / dealer-response scoring ──► Bloomberg MTF, BOLT, TSOX
+</code></pre>
+<p><em>Inference:</em> each arrow lifts switching costs. A desk that sets Rule Builder tolerances against IBVAL, builds PT baskets against BVAL, closes EGB lists at BVAL and hedges with a future whose fair value comes from an IBVAL tracker has four workflows to re-baseline if it changes pricer. Tradeweb is building the same loop from the venue side (Ai-Price → AiEX → FTSE closing prices; context, from <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a>). Bloomberg builds it from the data side. Tradeweb's CEO names the threat, which Bloomberg never does: "There was always Bloomberg looming out there at a minimum as a data company that was beginning to show prices for things." (Hult, 2026-08-05, Tradeweb corpus)</p>
+<h2 id="5-competitive-frame-context-from-sibling-notes">5. Competitive frame (context, from sibling notes)</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Product</th>
+<th>Published accuracy</th>
+<th>Starting asset</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bloomberg</strong></td>
+<td>BVAL / IBVAL FO</td>
+<td>‘centered’; 92% of trades inside CBBT bid/ask (context, from <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a>); BVAL Score not an error metric</td>
+<td>Terminal flow, FIT/CBBT, TRACE, 2.8m-security history</td>
+</tr>
+<tr>
+<td><strong>ICE</strong></td>
+<td>Evaluations, CEP (since 2015)</td>
+<td>38% IG / 79% HY ‘closer to the next trade’ vs ICE's own 2018 model (context, from <a class="wiki" href="doc-notes-ice-fixed-income-data.html">ice fixed income data</a>)</td>
+<td>~3m instruments by roll-up; buying MarketAxess flow</td>
+</tr>
+<tr>
+<td><strong>MarketAxess</strong></td>
+<td>CP+</td>
+<td>MAD on-platform vs off-platform trades; no vendor head-to-head (context, from <a class="wiki" href="doc-notes-marketaxess-data-cp-plus.html">marketaxess data cp plus</a>)</td>
+<td>Inquiry exhaust incl. did-not-trade prices</td>
+</tr>
+<tr>
+<td><strong>Tradeweb</strong></td>
+<td>Ai-Price</td>
+<td>~30% better than last-print predictor (context, from <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a>)</td>
+<td>Own RFQ/PT flow</td>
+</tr>
+<tr>
+<td><strong>S&amp;P Global</strong></td>
+<td>Evaluated Bond Pricing</td>
+<td>none; rents CP+ for corporates (context, from <a class="wiki" href="doc-notes-spglobal-pricing-fixed-income.html">spglobal pricing fixed income</a>)</td>
+<td>Quotes/composites, audit trail</td>
+</tr>
+</tbody>
+</table></div>
+<p>Bloomberg is the only one that owns <strong>pricer + index administrator (BISL) + venues + desktop</strong> without a parent or a pending deal. ICE gets close only once MarketAxess closes (context, from <a class="wiki" href="doc-notes-ice-fixed-income-data.html">ice fixed income data</a>). The only independent bake-off cited anywhere in the sibling notes, SS&amp;C's 2025 vendor study, includes BVAL; no published ranking for it appears in the corpus.</p>
+<h2 id="6-what-the-claims-dont-prove">6. What the claims don't prove</h2>
+<ol>
+<li><strong>No accuracy number at all.</strong> In ~35 items, Bloomberg never states an error statistic for BVAL or IBVAL: no bp, no points, no hit rate by liquidity bucket. The words are qualitative ("high-quality", "accurate", "defensible"). The Feb 2024 piece claims IBVAL "was carefully built to address both usability and accuracy considerations". That is a design goal, not a result.</li>
+<li><strong>The BVAL Score is a data-density score.</strong> Bloomberg says so itself: "A lower score indicates there was less comparable market data available to derive the IBVAL price." A 9 means many inputs, not small error. Treating it as confidence is the client's inference.</li>
+<li><strong>The one back-test grades Bloomberg against Bloomberg.</strong> The ‘92% inside CBBT bid/ask’ figure (context, from <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a>) uses Bloomberg's own dealer composite as the ruler. A test inside a band is only as strict as the band is narrow, and for illiquid HY the CBBT band can be wide. ‘Centered’ says the bias is near zero, not that dispersion is small.</li>
+<li><strong>Awards are self-submitted.</strong> The five Chartis wins rest on a process the release itself describes: "Placement in Chartis ranking reports is determined based on the detailed research submissions of participating companies". They are not a trade-level test.</li>
+<li><strong>Coverage drifts and sometimes runs backwards.</strong>
+   - BVAL: "over 2.7 million" (Jun 2021) → "over 2.5 million" (Sept 2021, Jan 2022, Jul 2022) → 2.7m (Jul 2023) → 2.8m (Oct 2023). Different universes (all asset classes vs fixed income) are mixed without labels.
+   - IBVAL: ~30k (Oct 2023) → ~45k (Jul and Dec 2024) → Asia "from 50,000 to 100,000 bonds by year-end" (Nov 2025) → <strong>"more than 90,000 bonds globally"</strong> (Feb 2026). A global total below the Asia target means either the target slipped or the counts measure different things.
+   - Refresh: "as fast as every 15 seconds" (2023–24) vs "nearly every 15 seconds" (Dec 2024). Both are ceilings, not the median update interval for an illiquid bond.
+   - Tradable Trackers: "200 liquid bonds" (2022–23) vs ~100 issuers × 2 bonds (IG) and ~200 issuers (HY) (2025).</li>
+<li><strong>The input story wobbles.</strong> The 2023 launch lists "TRACE, contributed quotes and trades, and more". Sept 2024 says "Bond prices are the only inputs", while Feb 2024 says illiquid bonds require "adjacent bonds and market betas (such as indexes and ETFs) to establish reasonable pricing guideposts". If ETF and index betas are excluded, stress-period pricing of illiquid names is exactly where the model is least tested.</li>
+<li><strong>The reference-price conflict is never discussed.</strong> When BVAL is the MOC close on Bloomberg's own MTF, Bloomberg is pricer, venue operator and (via BISL) index administrator for the benchmark the client tracks. No release mentions governance, challenge processes for an MOC close, or what happens when BVAL is wrong at 4pm.</li>
+<li><strong>Survivorship.</strong> No piece covers BVAL or IBVAL in March 2020, the 2022 gilt crisis or April 2025. The LQA profile admits the credibility problem from the inside: "Bloomberg has long proven to its own satisfaction through backtests that its machine learning liquidity models are more accurate". Bloomberg's own TCA team writes that fixed-income raw material is "often sparse, fragmented, flat-out stale or incomplete." (2026-10-13)</li>
+<li><strong>‘Default pricing source’ is undated and undefined.</strong> The release does not say for which users, functions or asset classes, or what share of Terminal price displays it now drives.</li>
+</ol>
+<h2 id="7-strategic-read-inference-not-stated-by-bloomberg">7. Strategic read (inference — not stated by Bloomberg)</h2>
+<ul>
+<li><strong>The price is the cornered resource; the venue is the monetiser.</strong> Bloomberg never publishes credit venue share. It does not need to: if the default price on 350k+ screens is IBVAL, every RFQ on any venue is judged against a Bloomberg number. That is the counter-model to Tradeweb's flow-first play in <a class="wiki" href="doc-notes-tradeweb-credit.html">tradeweb credit</a>.</li>
+<li><strong>‘Default’ is a distribution weapon, not a quality claim.</strong> Making IBVAL the Terminal default turns a premium feed into the habit-forming baseline traders see first, the same tactic as a browser's default search engine. The sale then happens in B-PIPE and Data License, where the money is (see <a class="wiki" href="doc-notes-bloomberg-enterprise-data.html">bloomberg enterprise data</a>).</li>
+<li><strong>The loop is fragile where the input is thin.</strong> Trade-driven ML pricing is strongest in liquid USD IG, where Tradeweb, MarketAxess and ICE also see flow. Bloomberg's edge is breadth (2.8m securities, loans, ABS/RMBS, Asia). That edge is the least verifiable one, and it is the one the 2026 NAFMII guideline targets in China.</li>
+<li><strong>China is the exposure.</strong> BVAL displayed on CFETS (2021, reaffirmed 2025) is a privilege granted by a state venue. NAFMII's guideline aims to "level the playing field for valuation providers within the interbank bond market". Read with the BPAM precedent (a regulator-accredited local evaluator, which Bloomberg distributes), the likely path is local champions accredited onshore, with Bloomberg reduced to a distributor there. Bloomberg's brief reports the rule without comment.</li>
+<li><strong>Sovereign utility roles are the moat's legitimacy layer.</strong> HKSAR calculating agent, ISDA fallback agent and IBOR fallbacks (see <a class="wiki" href="doc-notes-bloomberg-indices.html">bloomberg indices</a>) make Bloomberg's numbers official. Each role is low-revenue but hard to dislodge, and it lends authority to the commercial price.</li>
+<li><strong>On-chain pricing is the same play on new rails.</strong> Kaiko/Canton puts Data License evaluated pricing on-chain so counterparties "reference a single, verifiable source, reducing reconciliation risk". Tokenized collateral needs a mark, and Bloomberg wants to be the mark rather than the chain.</li>
+</ul>
+<h2 id="8-canon-lenses">8. Canon lenses</h2>
+<ul>
+<li><strong>Cornered resource and switching costs</strong> (<a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a>): history and coverage are the cornered resource. Embedding in AIM/ETOMS/RBLD/PTBB/MOC creates switching costs that are procedural, not contractual.</li>
+<li><strong>Information goods and versioning</strong> (<a class="wiki" href="doc-canon-canon-shapiro-varian-information-rules.html">canon shapiro varian information rules</a>): BVAL EOD, multi-snapshot, IBVAL 15s, IBVAL 1s govvies, Score, curves and on-chain marks are one dataset sold at different resolutions.</li>
+<li><strong>Vertical integration and buyer power</strong> (<a class="wiki" href="doc-canon-canon-porter-competitive-strategy.html">canon porter competitive strategy</a>): pricer + index + venue + desktop reduces dependence on any one channel. It also invites the conflict question in §6.7.</li>
+<li><strong>Measurement and noise</strong> (<a class="wiki" href="doc-canon-canon-kahneman-sibony-sunstein-noise.html">canon kahneman sibony sunstein noise</a>): a vendor that sets the ruler (CBBT), the score (BVAL Score) and the default display should be treated as an unaudited forecaster until scored externally.</li>
+<li><strong>Systems loops</strong> (<a class="wiki" href="doc-canon-canon-meadows-thinking-in-systems.html">canon meadows thinking in systems</a>): price → index → future → hedge flow → TRACE prints → price is a reinforcing loop. If traders anchor on IBVAL, prints cluster near IBVAL and back-tests flatter it (reflexivity).</li>
+<li><strong>Coopetition</strong> (<a class="wiki" href="doc-canon-canon-brandenburger-nalebuff-coopetition.html">canon brandenburger nalebuff coopetition</a>): Bloomberg distributes BPAM and reports NAFMII neutrally while competing to be the onshore mark.</li>
+</ul>
+<h2 id="9-practitioner-counterpoint">9. Practitioner counterpoint</h2>
+<ul>
+<li><strong>For Bloomberg:</strong> BVAL is a 17-year, regulator-facing utility used for NAVs, risk and audit, in asset classes (ABS, RMBS, loans, munis, Asia credit) that trade-driven newcomers barely cover. The IBVAL build details (tree ensembles, retrain under six hours, 6–7bn ticks a day) are concrete and plausible. The Ortiz line, "we ultimately settled on using tree-based methods as these methods could scale better when compared to the alternatives", reads like engineering, not marketing. J.P. Morgan and BlackRock appearing as first MOC counterparties suggests large firms accept the reference.</li>
+<li><strong>Against:</strong> ‘default’ plus ‘no published error’ is a trust-me position, and so is a BVAL Score that measures inputs, not outcomes. In thin markets a model that predicts the next print may simply learn the dealer composite. Clients who use IBVAL as the referee of dealer responses inside Rule Builder ("compare dealer responses against Bloomberg’s IBVAL pricing source") are delegating best-execution judgment to an unaudited model.</li>
+<li><strong>Both:</strong> a desk should run its own <strong>side-matched, out-of-sample</strong> test (IBVAL vs CP+, CEP, Ai-Price, next round-lot TRACE print), split by liquidity bucket and stress window, before letting any vendor price set auto-ex limits or MOC closes. That is the same test <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> asks Tradeweb to publish.</li>
+</ul>
+<h2 id="10-open-questions-to-track">10. Open questions to track</h2>
+<ol>
+<li>Will Bloomberg publish an <strong>absolute IBVAL error</strong> (bp or points, by bucket, including March 2020 or April 2025), or enter SS&amp;C's ranking publicly?</li>
+<li>When did IBVAL become the <strong>Terminal default</strong>, and for which functions? Is BVAL still the default anywhere?</li>
+<li><strong>Coverage reconciliation:</strong> did Asia reach 100k? What is the universe behind "&gt;90,000 globally"?</li>
+<li><strong>NAFMII:</strong> does BVAL keep its CFETS display after April 2026? Does an onshore accredited evaluator replace it?</li>
+<li>Does <strong>MOC-to-BVAL</strong> spread beyond EGBs (UST, Gilts, credit)? What is the governance for challenging a BVAL close?</li>
+<li><strong>Credit futures:</strong> do open interest and volume on Bloomberg-index futures keep growing past ~$300bn cumulative notional? Does Cboe/ICE (MSCI MarketAxess indices) take share?</li>
+<li>After <strong>ICE–MarketAxess</strong> closes, does an ICE CEP + CP+ stack force Bloomberg to publish accuracy to defend mandates?</li>
+<li>Does on-chain evaluated pricing (Kaiko/Canton) become a reference in a live tokenized repo or collateral workflow?</li>
+</ol>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-bloomberg-hub.html">bloomberg hub</a> · <a class="wiki" href="doc-notes-bloomberg-indices.html">bloomberg indices</a> (Agg, Tradable Trackers, futures, fallbacks) · <a class="wiki" href="doc-notes-bloomberg-electronic-trading.html">bloomberg electronic trading</a> (MTF, BOLT, MOC, PTBB, RFQe) · <a class="wiki" href="doc-notes-bloomberg-enterprise-data.html">bloomberg enterprise data</a> (Data License, B-PIPE, Kaiko) · <a class="wiki" href="doc-notes-bloomberg-buyside-stack.html">bloomberg buyside stack</a> (AIM, RBLD, BTCA) · <a class="wiki" href="doc-notes-bloomberg-ai-strategy.html">bloomberg ai strategy</a> · <a class="wiki" href="doc-notes-bloomberg-mission-forces.html">bloomberg mission forces</a> · <a class="wiki" href="doc-notes-bloomberg-outside-voices.html">bloomberg outside voices</a> · <a class="wiki" href="doc-notes-bloomberg-people.html">bloomberg people</a> · <a class="wiki" href="doc-notes-bloomberg-terminal-instrumentation.html">bloomberg terminal instrumentation</a> (the Terminal as interface; not repeated here) · <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> · <a class="wiki" href="doc-notes-tradeweb-credit.html">tradeweb credit</a> · <a class="wiki" href="doc-notes-ice-fixed-income-data.html">ice fixed income data</a> · <a class="wiki" href="doc-notes-marketaxess-data-cp-plus.html">marketaxess data cp plus</a> · <a class="wiki" href="doc-notes-spglobal-pricing-fixed-income.html">spglobal pricing fixed income</a> · <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> · <a class="wiki" href="doc-notes-wss-credit-distressed.html">wss credit distressed</a> · <a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a> · <a class="wiki" href="doc-canon-canon-shapiro-varian-information-rules.html">canon shapiro varian information rules</a> · <a class="wiki" href="doc-canon-canon-porter-competitive-strategy.html">canon porter competitive strategy</a> · <a class="wiki" href="doc-canon-canon-kahneman-sibony-sunstein-noise.html">canon kahneman sibony sunstein noise</a> · <a class="wiki" href="doc-canon-canon-meadows-thinking-in-systems.html">canon meadows thinking in systems</a> · <a class="wiki" href="doc-canon-canon-brandenburger-nalebuff-coopetition.html">canon brandenburger nalebuff coopetition</a></p>
+<hr />
+<h3 id="rep">Rep</h3>
+<p>Three short computations with numbers from this note. Assumptions are labelled.</p>
+<p><strong>(a) Refresh-frequency math.</strong> IBVAL updates "as fast as every 15 seconds". Assume a 9-hour US credit session (8:00–17:00 ET; an assumption, not a Bloomberg figure). How many price updates per bond per day at the ceiling, and across 30,000 bonds (Oct 2023) and 90,000 bonds (Feb 2026)? Compare with BVAL's 2.8m securities × 10 snapshots, and with the 6–7bn ticks a day IBVAL ingests. <em>(Answer: 4/min × 540 min = <strong>2,160</strong> per bond. × 30k = <strong>64.8m</strong>; × 90k = <strong>194.4m</strong> a day. BVAL: 2.8m × 10 = <strong>28m</strong>. Ingest per output at 30k bonds: 6.5bn / 64.8m ≈ <strong>100 ticks in per price out</strong>. Then argue: for an HY bond that trades twice a week, how many of those 2,160 updates carry new information? What does "as fast as" hide?)</em></p>
+<p><strong>(b) Coverage growth and drift.</strong> IBVAL went from ~30k (Oct 2023) to &gt;90k (Feb 2026), about 2.33 years. Compute the CAGR. Then compute IBVAL's share of the BVAL universe at 2.8m. Finally, explain the inconsistency between Nov 2025's Asia target of 100k by year-end and Feb 2026's 90k global total. <em>(Answer: 3^(1/2.33) − 1 ≈ <strong>60% a year</strong>. 90k / 2.8m ≈ <strong>3.2%</strong> of BVAL's universe is priced intraday. BVAL itself: 2.7m (Jun 2021) → 2.8m (Oct 2023) ≈ <strong>+1.6% a year</strong>, essentially flat. Growth is in resolution, not breadth. Write two hypotheses for the 100k vs 90k gap and the one document that would settle each.)</em></p>
+<p><strong>(c) Who pays when the reference is off: a basket and a future.</strong> (i) A client sells a €200mm EGB list MOC-to-BVAL, and the dealer bids BVAL close − 3c (price points per 100). Cost is €200mm × 0.03/100 = <strong>€60,000</strong>. Now suppose the BVAL close is 2c <em>rich</em> to where the bonds actually clear that evening. Who gains, and by how much? <em>(Answer: the client receives a price 2c too high, so €200mm × 0.02/100 = <strong>€40,000</strong> moves from dealer to client. If BVAL is 2c cheap, the same amount moves the other way. The reference owner, Bloomberg, also runs the MTF. State the governance you'd demand.)</em> (ii) A credit index future: last index close 1,000.0; the Tradable Tracker shows −0.40% since that close in FAIR<GO>; cost of carry to expiry +0.15%. Estimate iNAV and fair future. <em>(Answer: iNAV = 1,000 × (1 − 0.004) = <strong>996.0</strong>; fair ≈ 996.0 × 1.0015 ≈ <strong>997.5</strong>. With the tracker's R² of 99.5% vs the parent index, what tracking error would you assume on a stress day, and how would that change a basis trade?)</em></p>
+<hr />
+<p><strong>Sources (Bloomberg corpus, <code>_ingest/raw/bloomberg/articles.jsonl</code>, read 2026-10-25):</strong>
+- <a href="https://www.bloomberg.com/company/press/brown-brothers-harriman-and-bloomberg-collaborate-to-develop-real-time-etf-primary-market-workflow-solution/">BBH + BSKT ETF primary market, 2020-10-28</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-launches-portfolio-trading-basket-builder-incorporating-bval/">Portfolio Trading Basket Builder incorporating BVAL, 2021-06-09</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-launches-market-driven-daily-credit-risk-indicator/">MIPD credit risk indicator, 2021-07-27</a>
+- <a href="https://www.bloomberg.com/company/press/bond-pricing-agency-malaysias-evaluated-bond-pricing-data-now-on-bloomberg-terminal/">BPAM evaluated pricing on the Terminal, 2021-08-02</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-and-cfets-jointly-launch-new-solutions-to-facilitate-trading-on-southbound-bond-connect/">Bloomberg and CFETS, Southbound Bond Connect, 2021-09-15</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-facilitated-trades-for-seven-hong-kong-market-makers-on-first-trading-day-of-southbound-bond-connect/">Southbound day one, 2021-09-24</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-introduces-new-fixed-income-pre-trade-tca-model/">Fixed income pre-trade TCA model, 2021-09-22</a>
+- <a href="https://www.bloomberg.com/company/press/sony-bank-to-differentiate-its-business-by-adopting-bloombergs-value-added-data-and-cutting-edge-delivery-technology-for-fully-cloud-based-computing/">Sony Bank BVAL on AWS, 2022-01-20</a>
+- <a href="https://www.bloomberg.com/company/press/bloombergs-tradeable-trackers-will-advance-innovation-in-the-fixed-income-markets/">Tradable Trackers announced, 2022-06-23</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-ranks-1-in-2022-chartis-risktech-buyside-50-report/">Chartis 2022, 2022-07-12</a> · <a href="https://www.bloomberg.com/company/press/bloomberg-ranks-1-in-2023-chartis-risktech-buyside-50-report/">Chartis 2023, 2023-07-06</a> · <a href="https://www.bloomberg.com/company/press/bloomberg-earns-ninth-place-overall-in-chartis-risktech100-ranking/">Chartis RiskTech100, 2023-10-25</a> · <a href="https://www.bloomberg.com/company/press/bloomberg-storm24-wins/">Chartis STORM 2024, 2024-07-02</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-launches-front-office-pricing-solution-providing-greater-visibility-into-fixed-income-trading/">IBVAL Front Office launch, 2023-10-17</a>
+- <a href="https://www.bloomberg.com/professional/insights/data/leveraging-machine-learning-to-bolster-liquidity-models/">LQA explainable ML (Risk.net licensed), 2023-11-17</a>
+- <a href="https://www.bloomberg.com/company/stories/how-bloomberg-uses-machine-learning-intraday-pricing-transparency/">How Bloomberg built IBVAL, 2023-12-04</a>
+- <a href="https://www.bloomberg.com/professional/insights/data/real-time-pricing-the-powerful-combination-of-accuracy-and-usability/">Real-time pricing: accuracy and usability, 2024-02-21</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-expands-ibval-front-office-pricing-to-europe-backed-by-contextual-metadata-for-greater-transparency/">IBVAL to Europe, 2024-04-16</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-announces-first-trade-of-egb-market-on-close-spread-to-bval-price/">First EGB MOC spread to BVAL, 2024-04-24</a>
+- <a href="https://www.bloomberg.com/professional/insights/data/pricing-insights-why-pricing-is-foundational-to-automation/">Pricing foundational to automation, 2024-09-09</a>
+- <a href="https://www.bloomberg.com/professional/insights/press-announcement/bloomberg-accelerates-its-presence-in-loans-market-with-launch-of-a-new-leveraged-loan-index-based-on-new-syndicated-loans-data-and-pricing-solution/">US Leveraged Loan Index on BVAL, 2024-10-15</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-survey-reveals-geopolitical-risk-is-top-of-mind-for-market-participants/">Risk survey, IBVAL ~45k bonds, 2024-12-11</a>
+- <a href="https://www.bloomberg.com/professional/insights/press-announcement/bloomberg-named-official-calculating-agent-for-hksar-government-sustainable-bonds-and-infrastructure-bonds/">HKSAR official calculating agent, 2024-12-16</a>
+- <a href="https://www.bloomberg.com/professional/insights/trading/tradable-trackers-realtime-bond-indices-for-volatile-markets/">Tradable Trackers for volatile markets, 2025-04-10</a>
+- <a href="https://www.bloomberg.com/professional/insights/markets/how-is-portfolio-trading-changing-the-fixed-income-landscape/">Portfolio trading podcast (Krein), 2025-07-07</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-broadens-leveraged-loan-indices-and-data-solutions-to-european-and-global-markets/">Global leveraged loan indices, 2025-07-22</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-tailors-toolkit-to-empower-southbound-bond-connect-participation/">Southbound toolkit (BVAL on CFETS), 2025-09-23</a>
+- <a href="https://www.bloomberg.com/company/press/bloomberg-expands-pricing-for-australian-bonds-with-comprehensive-coverage-intraday-access-and-enhanced-curves/">Australian bond pricing, 2025-11-17</a>
+- <a href="https://www.bloomberg.com/professional/insights/artificial-intelligence/intelligent-automation-for-front-office/">Intelligent automation for front office, 2025-11-26</a>
+- <a href="https://www.bloomberg.com/professional/insights/regulation/apac-regulatory-outlook-2026/">APAC Regulatory Outlook 2026 (NAFMII), 2026-02-02</a>
+- <a href="https://www.bloomberg.com/professional/insights/trading/how-tradable-products-and-modern-market-infrastructure-are-reshaping-credit-markets/">Tradable products reshaping credit markets, 2026-02-18</a>
+- <a href="https://www.prnewswire.com/news-releases/bloomberg-and-kaiko-collaborate-on-initiative-to-develop-on-chain-data-access-for-tokenized-markets-302698044.html">Kaiko on-chain data, 2026-02-26</a>
+- <a href="https://www.prnewswire.com/news-releases/bloomberg-introduces-spread-to-benchmark-quoting-for-eur-and-gbp-portfolio-trading-baskets-302787922.html">Spread-to-Benchmark PT baskets, 2026-06-02</a>
+- <a href="https://www.prnewswire.com/news-releases/bloomberg-electronic-markets-brings-automation-to-its-japanese-government-bond-market-on-close-functionality-302897776.html">JGB MOC automation, 2026-10-04</a>
+- <a href="https://www.bloomberg.com/professional/insights/financial-services/beyond-the-benchmark-using-advanced-analytics-to-navigate-fixed-income-trading-costs/">Beyond the benchmark (BTCA), 2026-10-13</a>
+- Context, not in corpus: <a href="https://www.bloomberg.com/professional/insights/data/pricing-insights-analyzing-quote-data-across-global-credit-markets">Bloomberg IBVAL back-test, via tradeweb-ai-price</a></p></article>
+</div>
+<div class="doc-end"><button class="mark-read" type="button" data-href="doc-notes-bloomberg-pricing-bval-ibval.html"><span class="mr-tick">✓</span><span class="mr-off">Mark as read</span><span class="mr-on">Read</span></button><span class="doc-end-hint">Marks itself read when you reach the end.</span></div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-bloomberg-people.html"><span>Previous</span>Note · Bloomberg&#x27;s people — a founder-owned firm that speaks through its product heads: the chairman talks China and diversity, the CTO talks build-not-buy, and strategy is carried by the people who run data, indices and pricing, until a 2026 CEO says out loud what the product heads had been doing</a><a class="doc-next" href="doc-notes-bloomberg-private-markets.html"><span>Next</span>Note · Bloomberg private markets — partner, then buy: build the public-to-private bridges in-house, rent the GP feeds and benchmarks, and buy only the LP document network after integrating with it first</a></nav>
+</div><script src="site.js?v=1792953205"></script></body></html>

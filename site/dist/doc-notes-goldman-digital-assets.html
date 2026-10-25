@@ -1,0 +1,324 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Note · Goldman Sachs digital assets — from a crypto access desk to permissioned collateral plumbing, ending in giving away the rail · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792953205"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Note · Goldman Sachs digital assets — from a crypto access desk to permissioned collateral plumbing, ending in giving away the rail</h1>
+<div class="doc-meta"><span>16 min read</span><span>3,685 words</span><span>Updated 2026-10-25</span><span class="doc-src">notes/goldman-digital-assets.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#1-chronology">1. Chronology</a></li><li class="l2"><a href="#2-the-three-acts-in-goldmans-words">2. The three acts, in Goldman's words</a></li><li class="l2"><a href="#3-the-silence-apr-2023-nov-2024">3. The silence, Apr 2023 – Nov 2024</a></li><li class="l2"><a href="#4-why-give-away-the-rail-the-tradeweb-canton-digital-asset-link">4. Why give away the rail? The Tradeweb / Canton / Digital Asset link</a></li><li class="l2"><a href="#5-the-skeptics-goldman-invited">5. The skeptics Goldman invited</a></li><li class="l2"><a href="#6-the-numbers-and-what-they-dont-prove">6. The numbers, and what they don't prove</a></li><li class="l2"><a href="#7-canon-lenses">7. Canon lenses</a></li><li class="l2"><a href="#8-practitioner-counterpoint">8. Practitioner counterpoint</a></li><li class="l2"><a href="#9-open-questions-to-track">9. Open questions to track</a></li><li class="l3"><a href="#rep">Rep</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p>Practitioner / strategy note · Maps to <strong>Course 04</strong> (Competitive Strategy — network adoption, why rails get mutualized, coopetition), <strong>Course 10</strong> (Entrepreneurship &amp; Venture — incubating a platform inside a bank, then spinning it out), <strong>Course 11</strong> (Global Strategy, Macro &amp; Responsible Business — stablecoin regulation, singleness of money, contagion), <strong>E10</strong> (Digital &amp; AI Transformation for Leaders — pilots vs production, tokenization as plumbing) · Written 2026-10-25 · Part of <a class="wiki" href="doc-notes-goldman-hub.html">goldman hub</a>; companions <a class="wiki" href="doc-notes-goldman-markets-platforms.html">goldman markets platforms</a>, <a class="wiki" href="doc-notes-goldman-outside-voices.html">goldman outside voices</a>; the venue-side mirror is <a class="wiki" href="doc-notes-tradeweb-tech-ai-data.html">tradeweb tech ai data</a> and <a class="wiki" href="doc-notes-tradeweb-outside-voices.html">tradeweb outside voices</a></p>
+</blockquote>
+<ul>
+<li><strong>Source:</strong> <code>_ingest/raw/goldman/articles.jsonl</code>, the <strong>15 digital-asset items</strong> (Mar 2021 – Sep 2025), plus every other item that mentions crypto, blockchain or tokenization (Solomon Jan 2022, Covello Jun/Jul 2024, Cohen Sep 2025). Coverage caveats:</li>
+<li>The Dec 2022 Top of Mind (<em>The Winter of Crypto's Discontents</em>) and its podcast are <strong>redacted scrapes</strong>: cover pull-quotes and chart captions only.</li>
+<li>The <em>Stablecoin summer</em> page (Aug 20 2025) captured the Brooks/Eichengreen podcast, not the report.</li>
+<li><em>Blockchain + The Capital Markets</em> (Jun 2021) is an empty stub.</li>
+<li>The GS DAP launch release, any DAP volume, the Digital Asset investment and Canton do <strong>not</strong> appear. Canton facts come from the Tradeweb study.</li>
+</ul>
+<p><strong>No shareholder letter (FY2019–FY2025) and neither Investor Day deck mentions crypto, blockchain or tokenization</strong> (regex check of the corpus). All voices appear on Goldman's own channels.
+- <strong>Core claim:</strong> Goldman's digital-asset story has three acts.
+  - <strong>2021:</strong> a <strong>crypto access desk</strong> justified by "client demand, pure and simple": cash-settled CME futures and NDFs, because US banks couldn't trade the physical.
+  - <strong>2022, after Terra and FTX:</strong> "digital assets" redefined as <strong>tokenized traditional assets and digital money</strong>, anchored in the 2021 EIB digital bond and pitched on settlement precision, risk reduction and efficiency.
+  - <strong>2024–25: permissioned collateral plumbing.</strong> GS DAP is to be <strong>spun out as "industry-owned"</strong> with <strong>Tradeweb as first strategic partner</strong>, and BNY uses it for <strong>mirror tokens of MMF shares</strong> "as a form of collateral".</p>
+<p>Between Act 2 and Act 3 there are <strong>18 months of near-silence</strong> (Apr 2023 – Nov 2024), during which Goldman's own head of equity research lists blockchain among hyped technologies with "few—if any—real world applications". The end state is a bank that <strong>mutualizes the ledger and keeps the trading, collateral and banking fees</strong> around it. Its invited skeptics frame the open risks: Roubini's <em>BINO</em> (Blockchain In Name Only) critique of exactly this kind of permissioned chain, Gorton's warning that interoperability imports contagion, and Eichengreen's singleness-of-money objection to stablecoins.</p>
+<hr />
+<h2 id="1-chronology">1. Chronology</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Event</th>
+<th>Terms / numbers (as stated)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2017–18</td>
+<td>GS explores digital custody and a crypto desk, then shelves both</td>
+<td>Market was "almost exclusively retail led" (McDermott, 2021)</td>
+</tr>
+<tr>
+<td>Early 2021 (described Jun 10 2021)</td>
+<td><strong>EIB first digital bond</strong>: GS co-leads with SocGen and Santander</td>
+<td>€100mn, 2-year, public Ethereum, French law, no CSD or custodian; <strong>T+1 vs the usual T+5</strong>; debt and cash as ERC-20 tokens</td>
+</tr>
+<tr>
+<td>2021-03-03 (aired Mar 5)</td>
+<td><strong>Crypto desk goes live</strong>, "quite narrow initially": CME futures and NDFs; bitcoin content on Marquee</td>
+<td>&gt;300 client conversations; survey of ~300: 40% have exposure, 61% expect holdings to rise, 76% see BTC at $40–100k by year-end, 22% &gt;$100k</td>
+</tr>
+<tr>
+<td>2021-05-24</td>
+<td>Top of Mind #98, <em>Crypto: A New Asset Class?</em></td>
+<td>NDFs cash-settled; CME BTC and ETH futures (ETH agency only); principal BTC futures next; synthetic BTC ETNs via European prime; lending, structured notes, wealth access. Apr 2020 → Apr 2021: BTC spot ~$300mn → ~$1.5bn/day; CME BTC futures ~$200mn → ~$2bn/day</td>
+</tr>
+<tr>
+<td>2022-01</td>
+<td>Solomon: CEOs ask about "technology, crypto"</td>
+<td>Only CEO mention in the corpus</td>
+</tr>
+<tr>
+<td>2022-05-18</td>
+<td>McDermott after TerraUSD: "not to group all stable coins in the same bucket"; welcomes regulation "as a regulated bank"</td>
+<td>EIB bond settled on-chain DvP against a <em>synthetic CBDC</em> (tokenized cash at the central bank); &gt;87 countries exploring CBDCs</td>
+</tr>
+<tr>
+<td><strong>2022-11-03</strong></td>
+<td><strong>Datonomy</strong> with MSCI and Coin Metrics: a GICS-style taxonomy for coins</td>
+<td>MSCI is "owner and sole administrator"; sold as a data feed via developer.gs.com</td>
+</tr>
+<tr>
+<td>2022-12-13</td>
+<td>Top of Mind #114 (redacted): FTX, Luna, Celsius</td>
+<td>Market cap down ~70% from May 2021 peak to below $900bn; BTC/ETH volumes down ~65%; DeFi TVL down ~80% to ~$42bn; "~$1.5tn" decline, ~$500bn hit to US investors</td>
+</tr>
+<tr>
+<td><strong>2023-04-17</strong></td>
+<td><strong>Visual Structuring</strong> extends to crypto options (plus equities, metals)</td>
+<td>Last digital-asset item for 19 months</td>
+</tr>
+<tr>
+<td>2024-06-27 / 07-16</td>
+<td>Covello (GS Research): blockchain is a failed hype cycle</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>2024-11-18</strong></td>
+<td><strong>GS DAP spin-out</strong> planned into "an industry-owned distributed technology solution", subject to regulatory approval; <strong>Tradeweb first strategic partner</strong></td>
+<td>DAP "leverages solutions developed by Digital Asset"; no terms, no volumes</td>
+</tr>
+<tr>
+<td>2025-06-10</td>
+<td>IB Insights (Coupal, McDermott): the US regulatory pivot</td>
+<td>Digital-asset M&amp;A $15.8B (2024) vs $1B (2019), $6.4B YTD 2025; stablecoins ~$220bn, ~1% of US M2; BCG/Ripple: tokenized RWA $18.9tn by 2033</td>
+</tr>
+<tr>
+<td>2025 (Jun or Jul)</td>
+<td><em>(context, <a class="wiki" href="doc-notes-tradeweb-outside-voices.html">tradeweb outside voices</a>)</em> <strong>Goldman joins Digital Asset's $135M round</strong>, co-led by Tradeweb and DRW</td>
+<td>Stake undisclosed; the Tradeweb notes date the round Jun 24 or Jul 9 2025</td>
+</tr>
+<tr>
+<td><strong>2025-07-23</strong></td>
+<td><strong>BNY × GS tokenized MMFs</strong>: mirror tokens of MMF shares on GS DAP via BNY LiquidityDirect</td>
+<td>BlackRock, BNY Dreyfus, Federated Hermes, Fidelity, GSAM; BNY keeps "the official books, records, and settlements"</td>
+</tr>
+<tr>
+<td>Summer 2025</td>
+<td><strong>GENIUS Act</strong> becomes law, the first federal stablecoin framework</td>
+<td>Podcast recorded Jul 14, Jul 18, Aug 7; aired Sep 2</td>
+</tr>
+<tr>
+<td><em>(context)</em> Aug 12 2025</td>
+<td>First on-chain UST financing on Canton, executed on Tradeweb (<a class="wiki" href="doc-notes-tradeweb-tech-ai-data.html">tradeweb tech ai data</a>)</td>
+<td>Roles not disclosed</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-the-three-acts-in-goldmans-words">2. The three acts, in Goldman's words</h2>
+<p><strong>Act 1 — access desk (2021).</strong>
+- The justification was "Client demand, pure and simple." Institutional demand showed "no signs of that abating", and "we've crossed the Rubicon in terms of institutional buy-in".
+- The constraint was regulatory: for US banks, "the inability to trade the physical". The workaround was derivatives "where we cash settle, so we don't trade the physical."
+- McDermott named the tail risk himself: "we're only one big fraud away from a very negative impact on the market".
+- The house view was split. Pandl saw bitcoin as a macro asset akin to gold. Currie and Sprogis saw "a high likelihood that bitcoin will eventually lose its crown" to a more useful coin.</p>
+<p><strong>Act 2 — redefinition (2021–23).</strong>
+- The EIB bond was "democratization in action", and Le Moine called it the "first proper validation of the use of this technology".
+- After Terra, McDermott conceded crypto behaved as risk-on, "a little less than the inflationary hedge". He moved the frame from price to infrastructure: "It's not too grandiose to say digital assets will bring about a paradigm shift in the financial markets and beyond."
+- Investment focus moved to "the blockchain infra". He was positive on public and private chains "with various safeguards".
+- Datonomy (2022) and Visual Structuring for crypto (2023) are Marquee products, extending the dealer's data business (<a class="wiki" href="doc-notes-goldman-markets-platforms.html">goldman markets platforms</a>). In Darling's words, data services for digital assets are "a strategic focus and natural extension to our existing business".</p>
+<p><strong>Act 3 — permissioned plumbing, given away (2024–25).</strong>
+- "We view permissioned distributed technologies as the next structural change to financial markets" (McDermott, Nov 2024).
+- The spin-out rationale is "a new, standalone company independent of Goldman Sachs" to "provide the future runway for digital financial services".
+- Tradeweb's Bruner: "a new wave of access, liquidity, and interoperability".
+- By 2025 the strategy is "client-led tokenization activities to crypto-linked product offerings and blockchain investments", plus traditional banking to the sector. The DAP ambition is now "a fully mutualized, distributed technology solution".
+- On MMF tokens: "would enable us to unlock their utility as a form of collateral and open up more seamless transferability in the future."</p>
+<h2 id="3-the-silence-apr-2023-nov-2024">3. The silence, Apr 2023 – Nov 2024</h2>
+<p>From the Visual Structuring crypto release (Apr 17 2023) to the DAP spin-out (Nov 18 2024), the corpus holds <strong>no Goldman digital-asset strategy statement at all</strong>. That window covers <em>(context, not in the corpus)</em> the Gensler-era SEC enforcement wave, and SAB 121, which per McDermott's 2025 account put custodied crypto on custodians' balance sheets. The only digital-asset mentions in it come from Goldman's AI skeptic, Jim Covello:
+- <em>Top of Mind</em>, Jun 2024: "virtual reality, the metaverse, and blockchain are prime examples of technologies that saw substantial spend but have few—if any—real world applications today."
+- <em>Exchanges</em>, Jul 2024: "Blockchain was supposed to be a big technology."</p>
+<p>Read with the regulation, the silence looks like a deliberate hold, not a retreat <em>(inference)</em>. The desk kept trading, and the corpus shows no unwind. The re-entry came after the Nov 2024 US election, with a structure (spin-out, partners) that lowers single-bank exposure. McDermott's 2025 account credits the change in tone directly: SAB 121 rescinded "to give a potential path for banks to facilitate custody", with SAB 122 "lowering the onerous regulatory capital requirements that stemmed from SAB 121".</p>
+<h2 id="4-why-give-away-the-rail-the-tradeweb-canton-digital-asset-link">4. Why give away the rail? The Tradeweb / Canton / Digital Asset link</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Who</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ledger technology</td>
+<td><strong>Digital Asset</strong> (developer of Canton)</td>
+<td>DAP "leverages solutions developed by Digital Asset" (2024, 2025 releases). Canton is never named on goldmansachs.com</td>
+</tr>
+<tr>
+<td>Ledger capital</td>
+<td>Digital Asset $135M round, <strong>co-led by Tradeweb and DRW, with Goldman</strong>, Citadel Securities, DTCC, Virtu (<a class="wiki" href="doc-notes-tradeweb-outside-voices.html">tradeweb outside voices</a>)</td>
+<td>2025; GS stake undisclosed</td>
+</tr>
+<tr>
+<td>Platform</td>
+<td><strong>GS DAP</strong>, built in-house, to be spun out "industry-owned"</td>
+<td>Nov 2024; regulatory approval pending; no completion in the corpus</td>
+</tr>
+<tr>
+<td>Execution / liquidity</td>
+<td><strong>Tradeweb</strong>, first DAP partner, bringing "trading and liquidity capabilities across the fixed income spectrum"</td>
+<td>Tradeweb also runs Canton "firsts": UST financing (Aug 2025), tokenized-Gilt repo (Feb 2026), tokenized UST vs USDCx (Jul 2026) (<a class="wiki" href="doc-notes-tradeweb-tech-ai-data.html">tradeweb tech ai data</a>)</td>
+</tr>
+<tr>
+<td>Cash / collateral asset</td>
+<td><strong>BNY</strong> mirror tokens of MMF shares; five fund managers</td>
+<td>Jul 2025; BNY remains record-keeper</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Strategic read</strong> <em>(inference)</em>:
+1. <strong>A single-bank ledger can't win network adoption.</strong> Competing dealers and clients won't onboard to a Goldman-owned rail that sees their positions. Mutualizing it follows the path of DTCC, SWIFT and, ironically, Tradeweb itself, whose dealer owners went from 46% to 17.3% at the 2019 IPO.
+2. <strong>Goldman keeps the fees that need a balance sheet or a franchise:</strong> crypto-linked trading, collateral services, IB advice to the sector (M&amp;A volumes up 16x 2019–24), and GSAM as one of the MMF issuers. This is the same mutualize-the-network, own-the-balance-sheet pattern as the CCP paper and the EU tape (<a class="wiki" href="doc-notes-goldman-markets-platforms.html">goldman markets platforms</a> §4).
+3. <strong>Goldman and Tradeweb are hedged with each other.</strong> Goldman is a co-investor in the rail Tradeweb trades on. Tradeweb is the venue on Goldman's platform. Both appear in each other's "firsts". Tradeweb's tech note calls its own stance "rail-agnostic execution". Goldman's is rail-agnostic ownership.
+4. <strong>Mirror tokens are additive, not substitutive.</strong> BNY keeps the books, so the token rides on existing transfer-agent infrastructure. That is good for adoption and weak evidence that DLT replaces anything yet.</p>
+<h2 id="5-the-skeptics-goldman-invited">5. The skeptics Goldman invited</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Voice</th>
+<th>Date</th>
+<th>Argument</th>
+<th>Hits which part of the strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nouriel Roubini</strong> (NYU)</td>
+<td>May 2021</td>
+<td>Most enterprise DLT is "BINO", because experiments are "private, centralized and permissioned". "The idea that technology can resolve the question of trust is delusional." "Any treasurer who invests in something that falls 15% in value overnight will be fired."</td>
+<td>Act 3 exactly: GS DAP is permissioned by design</td>
+</tr>
+<tr>
+<td><strong>Alan Cohen</strong> (ex-SEC, ex-GS compliance)</td>
+<td>May 2021</td>
+<td>"the anonymity promised by some crypto assets will inevitably meet intense regulatory opposition"</td>
+<td>Explains why the bank route is permissioned</td>
+</tr>
+<tr>
+<td><strong>Dan Guido</strong> (Trail of Bits)</td>
+<td>May 2021</td>
+<td>"It's a wild west out there for developers building applications on the blockchain."</td>
+<td>Smart-contract risk on public chains (the EIB bond ran on Ethereum)</td>
+</tr>
+<tr>
+<td><strong>Jay Clayton</strong> (ex-SEC)</td>
+<td>Dec 2022</td>
+<td>"The collapse of FTX is firstly an age-old lesson that unregulated markets are dangerous."</td>
+<td>Supports the regulated-bank moat</td>
+</tr>
+<tr>
+<td><strong>Timothy Massad</strong> (ex-CFTC)</td>
+<td>Dec 2022</td>
+<td>"Saying that US crypto entities are well-regulated by state laws" equals pre-1929 blue-sky laws</td>
+<td>Same</td>
+</tr>
+<tr>
+<td><strong>Gary Gorton</strong> (Yale)</td>
+<td>Dec 2022</td>
+<td>Contagion was contained because "blockchain technology isn't currently interoperable with the real world… But that lack of interoperability will eventually change."</td>
+<td>DAP, BNY MMF tokens and Tradeweb on Canton <em>are</em> the interoperability</td>
+</tr>
+<tr>
+<td><strong>Barry Eichengreen</strong> (Berkeley)</td>
+<td>Sep 2025</td>
+<td>"So, what's at risk is what economists refer to as a singleness of money." "There is nothing like a deposit insurance fund for stablecoins." Treasury demand: "marginal is the right word here."</td>
+<td>Stablecoins as the cash leg; MMF tokens are the bank-side alternative</td>
+</tr>
+<tr>
+<td><strong>Brian Brooks</strong> (ex-acting OCC)</td>
+<td>Sep 2025</td>
+<td>GENIUS mirrors bank supervision: "There's just a sense that supervision equals safety."</td>
+<td>Bull case for regulated issuers</td>
+</tr>
+<tr>
+<td><strong>Jim Covello</strong> (GS Research)</td>
+<td>Jun–Jul 2024</td>
+<td>Blockchain as a failed hype cycle</td>
+<td>The firm's own strategy, during its silence</td>
+</tr>
+</tbody>
+</table></div>
+<p>The bulls are also on the record: Novogratz in 2021 called crypto an "official asset class" and predicted that "Uniswap could become a bigger exchange than the CME or the NYSE". His forecast of a clear Gensler framework "within his first nine months" proved wrong.</p>
+<h2 id="6-the-numbers-and-what-they-dont-prove">6. The numbers, and what they don't prove</h2>
+<ol>
+<li><strong>The 2021 liquidity numbers are ratios of a boom.</strong> CME BTC futures volume rose ~10x and spot ~5x in a year (Apr 2020 → Apr 2021) <em>(derived)</em>. TOM cites "almost 900%" CME growth in April. None of it tells you Goldman's share or revenue.</li>
+<li><strong>Client surveys aren't demand.</strong> About 300 respondents, self-selected from GS clients. The 76% who expected $40–100k was a range, not a forecast. Siewert said on air they "are not Goldman Sachs predictions".</li>
+<li><strong>The winter numbers don't reconcile.</strong> A ~70% fall to below $900bn implies a peak near $3tn and a ~$2.1tn decline <em>(derived)</em>, against the "~$1.5tn" decline in the same report. A ~$1.5tn decline to $900bn would be a ~62% fall <em>(derived)</em>. The redacted scrape hides which chart each figure belongs to.</li>
+<li><strong>The forward market sizes are vendors'.</strong> The $18.9tn tokenized-RWA figure is BCG/Ripple's (Ripple sells the rails). Goldman cites it approvingly but doesn't adopt it.</li>
+<li><strong>There is no DAP volume, user count or revenue,</strong> and no completion date for the spin-out. The BNY launch is "a first step", with the official record off-chain.</li>
+<li><strong>Firsts are unsized.</strong> The EIB bond was €100mn. No notional is given for the MMF tokens or for the Tradeweb Canton trades (<a class="wiki" href="doc-notes-tradeweb-tech-ai-data.html">tradeweb tech ai data</a> §4).</li>
+<li><strong>Survivorship and selection.</strong> Goldman published nothing during the 2023–24 drawdown in sentiment. The skeptics are framed inside Goldman's own research product, and the redacted 2022 interviews leave the regulators' full arguments unread.</li>
+</ol>
+<h2 id="7-canon-lenses">7. Canon lenses</h2>
+<ul>
+<li><strong>Platform adoption and neutrality</strong> (<a class="wiki" href="doc-canon-canon-parker-platform-revolution.html">canon parker platform revolution</a>, <a class="wiki" href="doc-canon-canon-hagiu-wright-multi-sided-platforms.html">canon hagiu wright multi sided platforms</a>): a rail owned by one participant faces a chicken-and-egg problem made worse by distrust. Spinning it out is the classic neutrality fix.</li>
+<li><strong>Coopetition</strong> (<a class="wiki" href="doc-canon-canon-brandenburger-nalebuff-coopetition.html">canon brandenburger nalebuff coopetition</a>): Goldman, Tradeweb, BNY, Citadel Securities and DTCC cooperate on the ledger and compete on everything that runs over it.</li>
+<li><strong>Disruption</strong> (<a class="wiki" href="doc-canon-canon-christensen-innovators-dilemma.html">canon christensen innovators dilemma</a>): permissioned DLT is incumbent-shaped <em>sustaining</em> technology. Roubini's BINO critique is the disruptor's reply: if it's permissioned, why is it a blockchain?</li>
+<li><strong>Contagion and coupling</strong> (<a class="wiki" href="doc-canon-canon-perrow-normal-accidents.html">canon perrow normal accidents</a>): Gorton's point in systems terms. Atomic, 24/7 settlement tightens coupling, and tightly coupled systems with complex interactions fail in surprising ways.</li>
+<li><strong>Lemons</strong> (<a class="wiki" href="doc-canon-canon-akerlof-market-for-lemons.html">canon akerlof market for lemons</a>): Eichengreen's singleness of money is a lemons problem. If every dollar token must be inspected, private money trades at a discount (free-banking notes, the 2008 MMF that "broke the buck").</li>
+<li><strong>Betting under uncertainty</strong> (<a class="wiki" href="doc-canon-canon-duke-thinking-in-bets.html">canon duke thinking in bets</a>): the 2021 desk was a small, cash-settled option on a contested asset, and the 2023–24 silence a refusal to add to a losing hand in a hostile regime.</li>
+</ul>
+<h2 id="8-practitioner-counterpoint">8. Practitioner counterpoint</h2>
+<ul>
+<li><strong>Bull:</strong> the sequence is disciplined. Goldman entered narrowly (cash-settled, regulated venues), built reusable infrastructure (EIB, DAP), stayed quiet when the regime was hostile, and re-entered with partners when it turned. Collateral mobility is a real problem: MMF shares that move as collateral 24/7 save margin and funding at scale. And giving away the rail is the only way it gets adopted.</li>
+<li><strong>Skeptic:</strong> five years in, the public evidence is one €100mn bond, a taxonomy owned by MSCI, an options pricer, a planned spin-out with no closing, and mirror tokens over BNY's legacy books. That is Roubini's BINO in practice: a permissioned database with a blockchain label, sold to the same incumbents. And the moment it works, Gorton's channel opens.</li>
+<li><strong>Synthesis:</strong> score it on production metrics, not "firsts". Ask for DAP notional and participants after spin-out, the share of MMF-token collateral accepted by third parties, and whether DAP interoperates with Canton and DTCC's tokenization service. Treat each new partner announcement as an option, not a result.</li>
+</ul>
+<h2 id="9-open-questions-to-track">9. Open questions to track</h2>
+<ol>
+<li>Does the GS DAP spin-out close? Who owns it, and does Goldman keep a stake or a board seat?</li>
+<li>Do DAP and Canton converge, given that DAP already runs on Digital Asset technology and Goldman holds a Digital Asset stake?</li>
+<li>Do BNY mirror tokens become <em>legal</em> records (on-chain transfer-agent books), and are they accepted as margin at a CCP?</li>
+<li>Does Goldman issue or custody a bank stablecoin or deposit token under GENIUS, given Brooks's point that banks issue tokens to cut funding costs?</li>
+<li>With SAB 121 gone, does Goldman add spot crypto custody or principal spot trading, and does any letter finally mention digital assets?</li>
+<li>Does Tradeweb's fixed-income liquidity show up on DAP in a volume number?</li>
+<li>Stress test: in the next crypto drawdown, do tokenized MMF or Treasury positions transmit losses (Gorton) or stay ring-fenced?</li>
+</ol>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-goldman-hub.html">goldman hub</a> · <a class="wiki" href="doc-notes-goldman-markets-platforms.html">goldman markets platforms</a> (Marquee products, the mutualize-or-own pattern) · <a class="wiki" href="doc-notes-goldman-outside-voices.html">goldman outside voices</a> (the skeptics) · <a class="wiki" href="doc-notes-goldman-ai.html">goldman ai</a> (Covello) · <a class="wiki" href="doc-notes-goldman-mission-forces.html">goldman mission forces</a> · <a class="wiki" href="doc-notes-tradeweb-tech-ai-data.html">tradeweb tech ai data</a> (Canton chronology) · <a class="wiki" href="doc-notes-tradeweb-outside-voices.html">tradeweb outside voices</a> (Digital Asset round) · <a class="wiki" href="doc-notes-tradeweb-mission-forces.html">tradeweb mission forces</a> (T10 tokenization) · <a class="wiki" href="doc-notes-tradeweb-strategy-financials.html">tradeweb strategy financials</a> · <a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> (Treasuries as stablecoin reserves) · <a class="wiki" href="doc-notes-market-structure-24-5-trading.html">market structure 24 5 trading</a> (24/7 collateral) · <a class="wiki" href="doc-canon-canon-parker-platform-revolution.html">canon parker platform revolution</a> · <a class="wiki" href="doc-canon-canon-brandenburger-nalebuff-coopetition.html">canon brandenburger nalebuff coopetition</a> · <a class="wiki" href="doc-canon-canon-christensen-innovators-dilemma.html">canon christensen innovators dilemma</a> · <a class="wiki" href="doc-canon-canon-perrow-normal-accidents.html">canon perrow normal accidents</a> · <a class="wiki" href="doc-canon-canon-akerlof-market-for-lemons.html">canon akerlof market for lemons</a></p>
+<hr />
+<h3 id="rep">Rep</h3>
+<p>Four short computations, then a decision.</p>
+<p><strong>(a) Settlement risk.</strong> The EIB bond was €100mn and settled T+1 instead of T+5. If counterparty exposure during settlement scales with days outstanding, by how much does T+1 cut exposure-days? <em>(Answer: from 5 × €100mn = €500mn-days to €100mn-days, <strong>−80%</strong>; T+0 would remove it entirely.)</em> Name one risk the faster cycle <em>adds</em>.</p>
+<p><strong>(b) Reconcile the winter.</strong> Top of Mind #114 says market cap fell ~70% to below $900bn, and also that it fell "~$1.5tn from its peak". Compute the peak implied by each statement. <em>(Answer: 900 / 0.30 ≈ <strong>$3.0tn</strong>, a $2.1tn fall; or 900 + 1,500 = <strong>$2.4tn</strong>, a 62.5% fall.)</em> Which would you check first, and where?</p>
+<p><strong>(c) Stablecoins and Treasuries.</strong> Stablecoins are ~$220bn, "roughly 1% of M2" (Jun 2025). What M2 does that imply? <em>(~$22tn.)</em> Eichengreen cites a $2tn stablecoin scenario against "some $30 trillion" of Treasuries. What share of Treasuries would reserves hold if fully backed one-for-one? <em>(2 / 30 ≈ <strong>6.7%</strong>.)</em> Is "marginal" fair?</p>
+<p><strong>(d) The vendor forecast.</strong> BCG/Ripple's chart runs from ~$0.6tn (2025) to $18.9tn (2033). <em>(The year pairing is inferred from jumbled chart text.)</em> Compute the implied CAGR. <em>(Answer: (18.9 / 0.6)^(1/8) − 1 = 31.5^0.125 − 1 ≈ <strong>54% a year</strong>.)</em> Compare it with the 16x rise in digital-asset M&amp;A over 2019–24 <em>(≈74% a year, derived)</em> and say which is the better base rate.</p>
+<p><strong>Decision:</strong> as head of Digital Assets, write three sentences on whether Goldman should keep a <strong>controlling</strong> stake in spun-out DAP. Address Roubini's trust objection and Gorton's contagion objection explicitly.</p>
+<hr />
+<p><strong>Sources:</strong> <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/03-05-2021-mathew-mcdermott">Crypto desk podcast, Mar 5 2021</a> · <a href="https://www.goldmansachs.com/insights/top-of-mind/crypto-a-new-asset-class">TOM #98 Crypto, May 24 2021</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/06-01-2021-crypto-a-new-asset-class">Crypto podcast, Jun 1 2021</a> · <a href="https://www.goldmansachs.com/insights/articles/from_briefings_10-june-2021">EIB digital bond, Jun 10 2021</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/05-18-22-mathew-mcdermott">McDermott after Terra, May 18 2022</a> · <a href="https://www.goldmansachs.com/pressroom/press-releases/2022/introducing-datonomy-11-03-2022">Datonomy, Nov 3 2022</a> · <a href="https://www.goldmansachs.com/insights/top-of-mind/the-winter-of-cryptos-discontents">TOM #114 Crypto winter, Dec 13 2022</a> · <a href="https://www.goldmansachs.com/pressroom/press-releases/2023/gs-expands-visual-structuring-into-equities-crypto-and-precious-metals">Visual Structuring crypto, Apr 17 2023</a> · <a href="https://www.goldmansachs.com/insights/top-of-mind/gen-ai-too-much-spend-too-little-benefit">TOM Gen AI (Covello), Jun 27 2024</a> · <a href="https://www.goldmansachs.com/pressroom/press-releases/2024/announcement-18-nov-2024">GS DAP spin-out, Nov 18 2024</a> · <a href="https://www.goldmansachs.com/what-we-do/investment-banking/insights/articles/why-digital-asset-adoption-is-accelerating">Digital asset adoption, Jun 10 2025</a> · <a href="https://www.goldmansachs.com/pressroom/press-releases/2025/bny-goldman-sachs-launch-tokenized-money-market-funds-solution">BNY tokenized MMFs, Jul 23 2025</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/after-a-summer-of-stablecoins-whats-next">Stablecoins podcast, Sep 2 2025</a> · <a href="https://www.tradeweb.com/newsroom/media-center/in-the-news/digital-asset-raises-$135-million-to-accelerate-adoption-of-canton-network/">Digital Asset $135M (Tradeweb newsroom), Jul 9 2025</a></p></article>
+</div>
+<div class="doc-end"><button class="mark-read" type="button" data-href="doc-notes-goldman-digital-assets.html"><span class="mr-tick">✓</span><span class="mr-off">Mark as read</span><span class="mr-on">Read</span></button><span class="doc-end-hint">Marks itself read when you reach the end.</span></div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-goldman-consumer-retreat.html"><span>Previous</span>Note · Goldman Sachs consumer retreat — a greenfield bank inside an investment bank, built 2016–21 and unwound in five dated steps</a><a class="doc-next" href="doc-notes-goldman-hub.html"><span>Next</span>Note · Goldman Sachs hub — a trading house that tried to become a consumer bank, retreated, and found its &quot;durable&quot; franchise in the balance sheet it already had</a></nav>
+</div><script src="site.js?v=1792953205"></script></body></html>

@@ -1,0 +1,417 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Note · Goldman Sachs AI — developers and back office first, redeployment instead of cuts, a deliberately modest &#x27;OneGS 3.0&#x27;, and a bank that stages the AI debate while earning fees from the boom · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792953205"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Note · Goldman Sachs AI — developers and back office first, redeployment instead of cuts, a deliberately modest &#x27;OneGS 3.0&#x27;, and a bank that stages the AI debate while earning fees from the boom</h1>
+<div class="doc-meta"><span>21 min read</span><span>4,941 words</span><span>Updated 2026-10-25</span><span class="doc-src">notes/goldman-ai.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#1-chronology-argentis-arc-and-the-firms">1. Chronology — Argenti's arc and the firm's</a></li><li class="l2"><a href="#2-the-gs-ai-assistant-and-the-12000-engineers">2. The GS AI Assistant and the 12,000 engineers</a></li><li class="l2"><a href="#3-hires-from-big-tech">3. Hires from Big Tech</a></li><li class="l2"><a href="#4-marquee-ai-the-build-lessons">4. Marquee AI — the build lessons</a></li><li class="l2"><a href="#5-markets-compute-efficiency-and-ai-debt">5. Markets: compute, efficiency and AI debt</a></li><li class="l2"><a href="#6-the-staged-debate-and-the-fees">6. The staged debate — and the fees</a></li><li class="l2"><a href="#7-what-the-claims-dont-prove">7. What the claims don't prove</a></li><li class="l2"><a href="#8-strategic-read-inference">8. Strategic read (inference)</a></li><li class="l2"><a href="#9-canon-lenses">9. Canon lenses</a></li><li class="l2"><a href="#10-practitioner-counterpoint">10. Practitioner counterpoint</a></li><li class="l2"><a href="#11-open-questions-to-track">11. Open questions to track</a></li><li class="l3"><a href="#rep">Rep</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p>Technology-strategy / org note · Maps to <strong>E10</strong> (Digital &amp; AI Transformation for Leaders — sequencing use cases, build vs buy, expectation management), <strong>Course 07</strong> (Data, Analytics &amp; Decision-Making — grounding, provenance, forecast accountability), <strong>Course 09</strong> (Leadership &amp; Organizational Behavior — change management, apprenticeship, the 'no job apocalypse' promise), with touches of <strong>E5</strong> (Transformation at Scale) and <strong>E8</strong> (how the story is told to investors) · Written 2026-10-25 · Companion to <a class="wiki" href="doc-notes-goldman-hub.html">goldman hub</a>, <a class="wiki" href="doc-notes-goldman-awm-private-credit.html">goldman awm private credit</a>, <a class="wiki" href="doc-notes-goldman-markets-platforms.html">goldman markets platforms</a>, <a class="wiki" href="doc-notes-wss-ai-economics.html">wss ai economics</a>, <a class="wiki" href="doc-notes-tradeweb-tech-ai-data.html">tradeweb tech ai data</a>, <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a></p>
+</blockquote>
+<ul>
+<li><strong>Source:</strong> Goldman Sachs corpus (<code>_ingest/raw/goldman/articles.jsonl</code>), <strong>~35 items, Sep 12 2019 – Sep 8 2026</strong>: 9 hiring/office releases (Argenti/Lahtiranta, Melissa Goldman, Marcu, Vemulapalli, Kotsovinos, Keswani, Leslie as CAO, Bellevue), the 2023–2025 shareholder letters and the Investor Day 2020 deck, 7 Argenti articles, Solomon's <em>Exchanges</em> episodes (Feb 2023, Jan 2024, Jan 2025, Jan 2026), the <em>AI Exchanges</em> series (Lee/Posnett, Argenti, Osman Ali, Churchman), the Jun 2024 <em>Top of Mind</em> skeptic issue and its podcast (Covello, Acemoglu), Griffin at Apex (Jul 2026) and the AI-debt credit episode (Aug 2026). Reader maps: <code>reader-notes/notes-E1.md</code>, <code>notes-E2.md</code>, <code>notes-A.md</code>, <code>notes-C.md</code>. <strong>All of it is Goldman's own channel</strong>: the skeptics are GS's own Head of Equity Research and guests GS invited. <strong>Missing:</strong> any adoption metric (users, prompts, tickets), any cost or savings figure for the AI programme, headcount by function, Marquee usage or revenue, earnings-call Q&amp;A, and any account from staff or clients. <strong>Date quirks:</strong> the Feb 2023 Sheridan/Rangan page blurb gives two wrong dates (the transcript says recorded Feb 13 2023); the 2024 letter is dated 2024-12-31 but was published in spring 2025, after the GS AI Assistant launch; podcasts are typically published 2–20 days after recording.</li>
+<li><strong>Core claim:</strong> Goldman's AI programme is narrower and more conventional than its labels. It started where outputs are <strong>verifiable</strong> (code: "pretty much every developer" has AI in the IDE by Mar 2025), went firmwide as a chat layer (the <strong>GS AI Assistant</strong>, announced on <em>AI Exchanges</em> in Jan 2025), and is now aimed at <strong>six back-office workstreams</strong>, starting with <strong>client onboarding/KYC</strong> (OneGS 3.0, 2025 letter). Solomon frames OneGS 3.0 as smaller than it sounds ("narrower than that grand vision of reimagining the firm") and promises <strong>redeployment, not cuts</strong>: the engineer count reads <strong>~12,000 in Jan 2025 and "over 12,000" in Sep 2026</strong>, about a quarter of staff, as it was in 2019. The talent model is to <strong>hire senior builders from Big Tech</strong> (AWS, Amazon AGI, Google ×2, AMD) and open an office in <strong>Bellevue</strong> next to them. Meanwhile GS <strong>publishes its own AI bull-vs-bear debate</strong> — Lee, Rangan, Sheridan and Briggs against Covello and Acemoglu — while earning advisory, underwriting and trading fees from the capex boom (AI ~<strong>18% of 2026 IG supply</strong>). Two GS voices add the sharpest operating lessons: <strong>Osman Ali</strong> (LLM herding may make markets <em>less</em> efficient) and <strong>Chris Churchman</strong> (Marquee AI: "a demo is judged on its best day, whereas a product is judged on its worst day").</li>
+</ul>
+<hr />
+<h2 id="1-chronology-argentis-arc-and-the-firms">1. Chronology — Argenti's arc and the firm's</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Event / statement</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sep 12 2019</td>
+<td><strong>Marco Argenti</strong> joins as co-CIO from AWS (with co-CIO George Lee); <strong>Atte Lahtiranta</strong> CTO from Verizon Media</td>
+<td>Remit is cloud, core engineering, platforms: "digital platforms that seamlessly integrate execution, analytics and content will increasingly define how our clients choose to transact"</td>
+</tr>
+<tr>
+<td>Oct 2019</td>
+<td>Solomon: "more than 25 percent of the people who work here are engineers"</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Jan 29 2020</td>
+<td><strong>Investor Day</strong>: Argenti and Stephanie Cohen present <em>Innovation</em> ("Simplify the complex services we provide to clients into component pieces"); <strong>9K+ engineers</strong>; $4bn 2019 engineering spend (~53% run, ~47% change)</td>
+<td>AI is not a theme yet; platforms and APIs are</td>
+</tr>
+<tr>
+<td>Feb 2023</td>
+<td>Solomon: "we're still in the early stage of testing"</td>
+<td>Rangan (Research): "We'll all have copilots."</td>
+</tr>
+<tr>
+<td>Apr 18 2023</td>
+<td>Argenti (London): "The revolution here is the revolution of knowledge,"</td>
+<td>Printing-press analogy</td>
+</tr>
+<tr>
+<td>May 22 2023</td>
+<td><strong>AI Forward</strong> with SV Angel (~400 attendees). Argenti: "We need to think as big as we can…before AI thinks bigger than we do."</td>
+<td>Billed as sole CIO by now</td>
+</tr>
+<tr>
+<td>Dec 21 2023</td>
+<td>Argenti's 2024 predictions: hybrid AI, RAG plus prompting matching fine-tuned models in most use cases, capital shifting to the application layer</td>
+<td>"Everyone I speak with has ROI in mind as almost the first-order priority."</td>
+</tr>
+<tr>
+<td>2023 letter</td>
+<td>Solomon cites McKinsey's 20–45% developer-productivity range, then: adoption "will lag"</td>
+<td>"There’s no question that generative AI is going to disrupt a wide range of industries. But I believe it’s important to keep perspective."</td>
+</tr>
+<tr>
+<td>Jan 2024</td>
+<td>Solomon: "Euphoria cools. But that has nothing to do with the efficacy of the technology"</td>
+<td>GS has picked "a narrow set of use cases that we can really execute on"</td>
+</tr>
+<tr>
+<td>Jun 25 2024</td>
+<td><em>Top of Mind</em> #129, <em>Gen AI: too much spend, too little benefit?</em></td>
+<td>Covello and Acemoglu vs Briggs, Rangan, Sheridan</td>
+</tr>
+<tr>
+<td>Oct 7 2024</td>
+<td><strong>Melissa Goldman</strong> rejoins from Google as head of Technology Engineering for GBM</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024 letter</td>
+<td>Three-year efficiency programme "including through the use of artificial intelligence solutions"; tools named: "a developer copilot coding assistant, our natural-language GS AI assistant"</td>
+<td>Efficiencies "will allow us to further invest for growth"</td>
+</tr>
+<tr>
+<td>Jan 9 2025</td>
+<td>Argenti's 2025 predictions</td>
+<td>"The first AI “layoffs” could eventually emerge, in which AI models will be replaced by better AI tools or humans…"</td>
+</tr>
+<tr>
+<td>Jan 27–29 2025</td>
+<td>Solomon (DeepSeek week): compute "very expensive"; engineering productivity is "the most obvious" use; "we have 12,000 engineers in our organization" of 46–47,000. <strong>GS AI Assistant</strong> announced by Lee on the first <em>AI Exchanges</em> (published Feb 4)</td>
+<td>See §2</td>
+</tr>
+<tr>
+<td>Mar 6 2025 (pub. Mar 25)</td>
+<td>Argenti on <em>AI Exchanges</em>: developers are "the first area that in Goldman has gained real traction"; AI Assistant "really like your desktop for AI"; "we are all pretty much AI illiterate"</td>
+<td>Wants AI "as natural as Google" for every employee</td>
+</tr>
+<tr>
+<td>Mar 17 2025</td>
+<td><strong>Daniel Marcu</strong> from Amazon AGI as Global Head of AI Engineering and Science</td>
+<td>Mandate: "productivity and efficiency"</td>
+</tr>
+<tr>
+<td>Jul 9 2025</td>
+<td>Argenti's <em>Fortune</em> op-ed on AI natives and supervising agents</td>
+<td>"The failure mode here is not technological, it’s organizational."</td>
+</tr>
+<tr>
+<td>Oct 2025</td>
+<td>Argenti: verifiability is the bottleneck (the 'hot and cold' analogy); "We are looking at every single process in the firm right now…" Q3 results: "operate more efficiently… helped by new AI technologies"</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2025 letter</td>
+<td><strong>OneGS 3.0</strong> launched, "our new operating model propelled by AI"; six workstreams: "client onboarding/KYC, vendor management, regulatory reporting, lending, enterprise risk management, and sales enablement"</td>
+<td>Gains to be re-invested</td>
+</tr>
+<tr>
+<td>Jan 20 2026 (pub. Jan 23)</td>
+<td>Solomon resets expectations: OneGS 3.0 is "narrower than that grand vision"; KYC/onboarding first; "I'm not in the job apocalypse camp."</td>
+<td>"Changing processes in a big enterprise is hard work."</td>
+</tr>
+<tr>
+<td>Jan 22 2026</td>
+<td>Argenti's 2026 predictions: models as the new operating system, agents priced in tokens, the 'gigawatt ceiling'</td>
+<td>"As a result, those who own the models will own the new operating systems that power AI agents."</td>
+</tr>
+<tr>
+<td>Apr 6 2026</td>
+<td><strong>Archana Vemulapalli</strong> from AMD (ex-AWS, IBM) as Global Head of AI Product Management and Strategic Relations</td>
+<td>Leads engagement "with frontier AI labs and AI application providers"</td>
+</tr>
+<tr>
+<td>May 5 2026</td>
+<td><strong>Ericka Leslie</strong> becomes CAO to drive OneGS 3.0</td>
+<td>The operating overhaul gets an owner on the Management Committee</td>
+</tr>
+<tr>
+<td>Jul 6 2026</td>
+<td><strong>Evan Kotsovinos</strong> from Google (privacy, safety, security; AI safety) as head of AWM Engineering</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Aug 2026</td>
+<td>Churchman on <strong>Marquee AI</strong>, "only available internally right now"</td>
+<td>§4</td>
+</tr>
+<tr>
+<td>Sep 3 2026</td>
+<td><strong>Dinesh Keswani</strong> (Nomura CTOO; earlier HSBC, Microsoft, GoDaddy) as co-head and CTO of The Core Engineering</td>
+<td>A bank CTO, not Big Tech, for the back-office core OneGS 3.0 targets</td>
+</tr>
+<tr>
+<td>Sep 8 2026</td>
+<td><strong>Bellevue</strong> engineering office, &gt;125 seats for AI and cloud; "over 12,000 engineers… roughly one-quarter" of staff</td>
+<td>"we know our people are still this firm’s greatest asset"</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Argenti's arc in one line:</strong> platform engineer (2019) → knowledge-revolution evangelist (2023) → change-management realist (2025: "AI illiterate", "mindful disruptors") → process redesigner (late 2025: make processes machine-verifiable) → industry forecaster (2026: models as the OS, power as the limit). The constant is grounding and human judgement in the loop.</p>
+<h2 id="2-the-gs-ai-assistant-and-the-12000-engineers">2. The GS AI Assistant and the 12,000 engineers</h2>
+<ul>
+<li><strong>Launch.</strong> Lee, recorded Jan 29 2025: "We launched our GS AI Assistant which allows more people across the firm to get access to leading-edge models" and "AI is, in many ways, prolific throughout the firm, but this is the broadest and most general purpose offering we've made." He says it is built to be "safer, more reliable, and more compliant" as befits a regulated institution. By March Argenti says GS is "deploying at scale" what is "really like your desktop for AI."</li>
+<li><strong>What it is:</strong> a firm-wrapped interface to third-party frontier models, grounded on GS content. Named live uses (Argenti, Mar 2025): drafting research, PWM portfolio summaries with a 'Goldman lens', a translation tool tuned to GS jargon.</li>
+<li><strong>What isn't disclosed:</strong> user counts, usage, models used, cost, or any productivity number.</li>
+<li><strong>Engineers as the first target.</strong> Solomon (Jan 2025): "We would have more if we weren't constrained by our desire to drive returns in our business." The logic: if AI raises output per engineer, GS gets the capacity of more engineers without the cost.</li>
+</ul>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Engineer headcount</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"&gt;25 percent" of staff (~2019)</td>
+<td>Solomon, Oct 2019</td>
+</tr>
+<tr>
+<td><strong>9K+</strong></td>
+<td>Investor Day, Jan 2020</td>
+</tr>
+<tr>
+<td><strong>12,000</strong> of 46–47,000 (~26%, <em>derived</em>)</td>
+<td>Solomon, Jan 2025</td>
+</tr>
+<tr>
+<td><strong>"over 12,000"</strong>, ~one-quarter</td>
+<td>Bellevue release, Sep 2026</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read:</strong> a flat engineer count during the AI rollout supports Solomon's <em>redeploy</em> message. It also means any productivity gain shows up as more output per engineer, which the corpus never measures <em>(inference)</em>.</p>
+<h2 id="3-hires-from-big-tech">3. Hires from Big Tech</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Hire</th>
+<th>From</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2019</td>
+<td>Marco Argenti</td>
+<td>AWS (VP Technology)</td>
+<td>Co-CIO → CIO</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>Atte Lahtiranta</td>
+<td>Verizon Media</td>
+<td>CTO</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>Melissa Goldman</td>
+<td>Google (corporate engineering); ex-JPMorgan</td>
+<td>GBM Technology Engineering</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>Daniel Marcu</td>
+<td>Amazon AGI</td>
+<td>Global Head of AI Engineering and Science</td>
+</tr>
+<tr>
+<td>2026</td>
+<td>Archana Vemulapalli</td>
+<td>AMD; ex-AWS, IBM</td>
+<td>Global Head of AI Product Management and Strategic Relations</td>
+</tr>
+<tr>
+<td>2026</td>
+<td>Evan Kotsovinos</td>
+<td>Google (privacy, safety, security)</td>
+<td>Head of AWM Engineering</td>
+</tr>
+<tr>
+<td>2026</td>
+<td>Dinesh Keswani</td>
+<td>Nomura; ex-HSBC, Microsoft</td>
+<td>Co-head / CTO, The Core Engineering</td>
+</tr>
+<tr>
+<td>2026</td>
+<td>Bellevue office</td>
+<td>Next to the Amazon and Microsoft talent pool</td>
+<td>&gt;125 AI and cloud seats</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read</strong> <em>(inference)</em>: GS hires leaders from the firms that build the models and the cloud, and mostly the <em>enterprise</em> side of them (AWS product, Google corporate engineering, AMD enterprise AI), not research scientists. Vemulapalli's job is <strong>vendor management with frontier labs</strong>: GS is a buyer and integrator, not a model builder. Kotsovinos's AI-safety background in AWM signals that client-facing AI in wealth is a governance problem first. Keswani is the exception that proves the rule: the Core (back office) gets a bank CTO.</p>
+<h2 id="4-marquee-ai-the-build-lessons">4. Marquee AI — the build lessons</h2>
+<p>Chris Churchman (Head of Marquee; co-chair of the GBM AI Working Group), with George Lee and Allison Nathan, Aug 2026:
+- <strong>What it does:</strong> "Marquee AI, which is only available internally right now," breaks a question into research topics, pulls GS research, trading-floor commentary and Market View widgets ("like Pinterest for capital markets"; "millions" of expert-built widgets on vendor data), and returns sentence-level grounded answers. Lee says the plan is to "ultimately extend it to clients."
+- <strong>The paradigm:</strong> "we've gone from a world where users learn software to where software learns users."
+- <strong>Build waste:</strong> embedding pipelines and chunking became "pointless" when context windows grew to 128,000 and then a million tokens. Lesson: "Don't bet against the model, basically. That's the key."
+- <strong>Reliability:</strong> a system right 90% of the time forces the user to check every fact; a web-grounded model admitted "I'm better at sounding thorough than being thorough." So the firm builds its own grounding framework.
+- <strong>Product standard:</strong> "But like a demo is judged on its best day, whereas a product is judged on its worst day, right?"
+- <strong>The next frontier:</strong> prompt → context → agentic → environment engineering → <em>mandate engineering</em>: what agents may do "under whose authority, in whose name". Autonomy grows "once there's an insurance market or a liability market" for agents. He flags security with "Recent headlines notwithstanding."
+- <strong>The people risk:</strong> "there's a huge danger here that in the era of AI, we outsource our reasoning to these models, and we have cognitive atrophy". Automating the junior trader's price request may thin the pipeline of seniors who understand pricing.</p>
+<p><strong>Compare Tradeweb</strong> (<a class="wiki" href="doc-notes-tradeweb-tech-ai-data.html">tradeweb tech ai data</a>): Tradeweb launched <strong>TARA</strong>, a client-facing AI research assistant for credit traders, in Jun 2026, while Marquee AI was still internal in Aug 2026. The venue ships to clients first; the dealer keeps it inside until provenance is solid <em>(inference)</em>. Both are fighting for the same buy-side screen (<a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a>).</p>
+<h2 id="5-markets-compute-efficiency-and-ai-debt">5. Markets: compute, efficiency and AI debt</h2>
+<ul>
+<li><strong>Market makers' compute (Griffin, Jun 2026).</strong> Transformer models improved Citadel's ability "to both price and manage risk"; large market makers are "spending today hundreds of millions of dollars on compute", and "people who have lower margin businesses won't be able to bear that cost impact." An agentic system cut paper replication from <strong>six to eight weeks to two to three hours</strong>, with "no reduction to headcount at Citadel". He teases: "We do summarize Goldman Sachs' research, I'm sorry to say." <strong>Implication</strong> <em>(inference)</em>: compute is a new fixed cost that concentrates liquidity provision among the largest firms, GS among them.</li>
+<li><strong>AI may make markets less efficient (Osman Ali, GSAM QIS, May 2026).</strong> LLMs spread price discovery into small caps and EM, but "these models, again, in the hands of the average person will create herd behavior", making markets "probably less efficient and more predictable". Ali says "more than 50% of what we think drives the stock's return over the next 12 months is not the fundamentals of the business." The QIS team is "about a 100 person team", roughly unchanged, while using small fine-tuned models. Lee calls the thesis counter-consensus.</li>
+<li><strong>AI debt in the IG market (Lynam and Ablon, Aug 2026).</strong> Nearly <strong>$500bn</strong> of AI-related debt issued in 2026 to date; hyperscalers <strong>$194bn</strong> vs <strong>$108bn</strong> in all of 2025 (only ~40% of the AI total). AI share of IG supply: <strong>$10bn / 1% (2024) → $108bn / ~7% (2025) → ~18% (2026)</strong>. 40% of 15-year-plus IG issuance is AI-linked; <strong>Amazon is now the largest duration weight</strong> in the IG index (from #20), Google #18 (from #86). Debt funds 27% of hyperscaler capex in 2025, ~one-third in 2026, a <strong>35% peak in 2027</strong>. The AI leader basket widened from 74bp tights to nearly twice that. The binding constraint is investors' concentration limits: the largest US bank issuers each have under $175bn of index debt and under 2.3% of the index.</li>
+</ul>
+<h2 id="6-the-staged-debate-and-the-fees">6. The staged debate — and the fees</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Side</th>
+<th>Voice</th>
+<th>Claim</th>
+<th>Line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bull</td>
+<td><strong>George Lee</strong> (ex-CIO; GS Global Institute)</td>
+<td>DeepSeek-style cost collapse plus Jevons paradox means more use; firms must invest despite unclear ROI</td>
+<td>"I think this answers some of Jim's principal concerns. Not all of them but some of them."</td>
+</tr>
+<tr>
+<td>Bull</td>
+<td><strong>Kash Rangan, Eric Sheridan</strong> (Research)</td>
+<td>Infrastructure first, then platforms, then apps; capex in line with past cycles</td>
+<td>"Spending is certainly high today in absolute dollar terms. But this capex cycle seems more promising than even previous capex cycles."</td>
+</tr>
+<tr>
+<td>Bull</td>
+<td><strong>Joseph Briggs</strong> (economics)</td>
+<td>Gen AI automates 25% of tasks; +9% productivity and +6.1% GDP over a decade</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Bear</td>
+<td><strong>Jim Covello</strong> (GS Head of Global Equity Research)</td>
+<td>An expensive technology replacing cheap labour; Nvidia as a single-supplier choke point; gains competed away</td>
+<td>"So, the crucial question is: What $1tn problem will AI solve?" · "we’ve found that AI can update historical data in our company models more quickly than doing so manually, but at six times the cost."</td>
+</tr>
+<tr>
+<td>Bear</td>
+<td><strong>Daron Acemoglu</strong> (MIT)</td>
+<td>~4.6% of tasks cost-effectively automated in 10 years; ~0.5% productivity and ~0.9–1% GDP</td>
+<td>"But that impact is not a law of nature."</td>
+</tr>
+<tr>
+<td>Practitioner-skeptic</td>
+<td><strong>Ken Griffin</strong> (Citadel)</td>
+<td>AI is powerful, but CEOs' productivity stories at one dinner were about ML, optimisation and digitisation</td>
+<td>"Not one involved AI."</td>
+</tr>
+<tr>
+<td>Macro</td>
+<td><strong>Jan Hatzius</strong> (Chief Economist)</td>
+<td>+1.5pp a year productivity; 6–7% of employment displaced over time</td>
+<td>"The really important point to keep in mind is that disruption tends not to be a linear process."</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The fee side of the same firm:</strong> Solomon on the Industry Ventures close: "Technology and AI-led innovation should be a catalyst for significant capital markets activity in 2026". Posnett (Jan 2025) expects more AI-driven strategic M&A; Gutman (Mar 2026): AI is "driving a view that scale is critical". The credit desk sells AI-leader baskets and underwrites the hyperscaler bonds at ~18% of IG supply. Even Covello advised staying long the infrastructure trade because "bubbles take a long time to burst" (paraphrase).</p>
+<p><strong>Read</strong> <em>(inference)</em>: publishing both sides is good research practice and good business. GS's research credibility rises with the visible bear; its banking franchise earns on the capex either way; and its internal programme is sized cautiously, as the bear would want. The hedge is coherent. What it never does is score the debate: Covello's Jun 2024 window of 12–18 months for compelling use cases closed by end-2025 with spending still rising, and no GS item says who was right.</p>
+<h2 id="7-what-the-claims-dont-prove">7. What the claims don't prove</h2>
+<ol>
+<li><strong>No adoption or savings metric exists in the corpus.</strong> 'Every developer' and 'at scale' are not numbers. The McKinsey 20–45% figure Solomon cited is a forecast about other firms.</li>
+<li><strong>Flat headcount is consistent with two stories:</strong> redeployment to growth, or attrition-led shrinkage in targeted functions offset by hiring elsewhere. Function-level headcount (KYC, operations) would tell them apart, and it isn't disclosed.</li>
+<li><strong>OneGS 3.0's six workstreams have no stated targets</strong> in the corpus: Solomon says there are goals on efficiency, automation, client and employee experience, but none is quantified.</li>
+<li><strong>Marquee AI is internal and unmeasured.</strong> 'It doesn't hallucinate' is followed immediately by a hypothetical 90% example; no accuracy or usage data is given.</li>
+<li><strong>The bull-bear debate is curated.</strong> Both sides speak on GS channels with GS hosts; no outside bull or bear of GS's <em>own</em> AI programme appears.</li>
+<li><strong>Research forecasts move.</strong> Data-centre power demand was raised from +165% to +175% by 2030; the AI-debt share forecasts are estimates, not outcomes.</li>
+</ol>
+<h2 id="8-strategic-read-inference">8. Strategic read <em>(inference)</em></h2>
+<ul>
+<li><strong>Sequencing by verifiability is the right call.</strong> Code compiles or fails; KYC files pass or fail review. Argenti's 'hot and cold' framing explains why GS started there and why judgement-heavy work (pricing, advice) comes later. This matches the maker/checker/signer chain Jung Min says agents will take over.</li>
+<li><strong>The promise of no cuts is also a retention device.</strong> Talent competition with Big Tech is acute (§3). Telling 12,000 engineers that AI makes them more valuable, not redundant, protects the hiring pipeline.</li>
+<li><strong>The narrow label protects credibility.</strong> After the consumer reversal (<a class="wiki" href="doc-notes-goldman-consumer-retreat.html">goldman consumer retreat</a>), Solomon under-promises. If OneGS 3.0 produces savings, they will look like upside.</li>
+<li><strong>The moat is context, not models.</strong> GS buys models (Vemulapalli's lab relationships) and builds what models can't learn: entitlements, mandates, proprietary data, and the right to stand behind an answer. Churchman's "mandate engineering" is a regulated bank's comparative advantage.</li>
+<li><strong>Compute favours the big.</strong> Griffin's point applies to GS's market making: rising compute cost is a scale barrier that hurts smaller dealers more (<a class="wiki" href="doc-notes-goldman-markets-platforms.html">goldman markets platforms</a>).</li>
+<li><strong>AI risk sits in other books too.</strong> The same software borrowers AI threatens sit in private-credit portfolios (<a class="wiki" href="doc-notes-goldman-awm-private-credit.html">goldman awm private credit</a>), and the same hyperscaler bonds sit in IG indices.</li>
+</ul>
+<h2 id="9-canon-lenses">9. Canon lenses</h2>
+<ul>
+<li><strong>Change management</strong> (<a class="wiki" href="doc-canon-canon-kotter-leading-change.html">canon kotter leading change</a>): Argenti's "mindful disruptors" are a guiding coalition; Solomon's "hard work" is Kotter's warning about declaring victory early.</li>
+<li><strong>Disruption from below</strong> (<a class="wiki" href="doc-canon-canon-christensen-innovators-dilemma.html">canon christensen innovators dilemma</a>): Lee's 'faster horses versus the automobile' worry is the incumbent's dilemma. GS chooses sustaining uses (developer productivity, KYC) over business-model change.</li>
+<li><strong>Build-measure-learn</strong> (<a class="wiki" href="doc-canon-canon-ries-lean-startup.html">canon ries lean startup</a>): Churchman's demo-vs-product line and the wasted RAG work are lean lessons, minus the measurement GS doesn't publish.</li>
+<li><strong>Forecast accountability</strong> (<a class="wiki" href="doc-canon-canon-tetlock-superforecasting.html">canon tetlock superforecasting</a>): Covello's 12–18-month window, Sheridan's 6–18 months and Lee's 'deploy and scale' 2025 were checkable forecasts that nobody scored.</li>
+<li><strong>System effects and herding</strong> (<a class="wiki" href="doc-canon-canon-jervis-system-effects.html">canon jervis system effects</a>): Ali's thesis is a system effect — individually rational use of the same models produces collective predictability.</li>
+<li><strong>Information economics</strong> (<a class="wiki" href="doc-canon-canon-shapiro-varian-information-rules.html">canon shapiro varian information rules</a>): Marquee's widgets and GS research are information goods; an AI layer raises their value only if provenance survives.</li>
+<li><strong>Scale economies</strong> (<a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a>): compute as a fixed cost turns AI into a scale power in market making.</li>
+</ul>
+<h2 id="10-practitioner-counterpoint">10. Practitioner counterpoint</h2>
+<ul>
+<li><strong>Bull:</strong> GS sequenced AI sensibly, hired real builders, kept engineers, set a modest public bar and put a CAO in charge of the operating change. It earns from the boom whatever the ROI turns out to be, and its research brand gained from hosting the most-cited AI skeptic.</li>
+<li><strong>Skeptic:</strong> six years after hiring an AWS executive, GS can't give one number on what AI has saved, how many people use it, or what Marquee earns. 'Narrower than the grand vision' can be an honest reset or a pre-emptive excuse. The debate it stages is free advertising for both its research and its underwriting.</li>
+<li><strong>Synthesis:</strong> judge GS on OneGS 3.0's first disclosed metric, most likely KYC/onboarding cycle time or cost, and on whether Marquee AI reaches clients with grounding intact.</li>
+</ul>
+<h2 id="11-open-questions-to-track">11. Open questions to track</h2>
+<ol>
+<li>Any quantified OneGS 3.0 target or result (cost, cycle time, headcount by workstream), now owned by CAO Leslie.</li>
+<li>GS AI Assistant usage and the models behind it; how Vemulapalli's lab relationships are structured.</li>
+<li>Marquee AI's client launch, pricing, and accuracy disclosure vs Tradeweb's TARA.</li>
+<li>Engineer count and non-engineer headcount in 2027: does 'redeploy' hold?</li>
+<li>AI share of IG supply after the 2027 peak in debt-financed capex; AI leader basket spreads.</li>
+<li>Whether Ali's herding factor shows up in QIS performance.</li>
+<li>A Research follow-up that scores Covello's 2024 call.</li>
+</ol>
+<p><strong>Links:</strong> <a class="wiki" href="doc-notes-goldman-hub.html">goldman hub</a> · <a class="wiki" href="doc-notes-goldman-awm-private-credit.html">goldman awm private credit</a> (AI-exposed software loans; AI as deal catalyst) · <a class="wiki" href="doc-notes-goldman-markets-platforms.html">goldman markets platforms</a> (Marquee, market making, compute) · <a class="wiki" href="doc-notes-goldman-one-gs-culture.html">goldman one gs culture</a> (OneGS 3.0 as the next One GS) · <a class="wiki" href="doc-notes-goldman-people.html">goldman people</a> · <a class="wiki" href="doc-notes-goldman-outside-voices.html">goldman outside voices</a> · <a class="wiki" href="doc-notes-goldman-consumer-retreat.html">goldman consumer retreat</a> · <a class="wiki" href="doc-notes-wss-ai-economics.html">wss ai economics</a> (capex financing, power, valuation) · <a class="wiki" href="doc-notes-tradeweb-tech-ai-data.html">tradeweb tech ai data</a> (AiEX, TARA, automation as product) · <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> (pricing models and data economics) · <a class="wiki" href="doc-notes-wss-credit-distressed.html">wss credit distressed</a> · <a class="wiki" href="doc-canon-canon-kotter-leading-change.html">canon kotter leading change</a> · <a class="wiki" href="doc-canon-canon-christensen-innovators-dilemma.html">canon christensen innovators dilemma</a> · <a class="wiki" href="doc-canon-canon-ries-lean-startup.html">canon ries lean startup</a> · <a class="wiki" href="doc-canon-canon-tetlock-superforecasting.html">canon tetlock superforecasting</a> · <a class="wiki" href="doc-canon-canon-jervis-system-effects.html">canon jervis system effects</a> · <a class="wiki" href="doc-canon-canon-shapiro-varian-information-rules.html">canon shapiro varian information rules</a> · <a class="wiki" href="doc-canon-canon-helmer-7-powers.html">canon helmer 7 powers</a></p>
+<hr />
+<h3 id="rep">Rep</h3>
+<p>Using only this note's numbers:
+(a) <strong>Engineer share.</strong> Compute engineers as a share of staff in Jan 2025 (12,000 of 46–47,000). If GS kept headcount flat and AI raised engineering output by McKinsey's 20–45%, how many engineer-equivalents of extra capacity is that?
+(b) <strong>Griffin's ratio.</strong> Six to eight weeks of a researcher's time (assume 40 hours a week) became two to three hours. What is the range of the time-reduction ratio?
+(c) <strong>Hyperscaler capex from the debt numbers.</strong> 2025 hyperscaler issuance was $108bn and funded 27% of capex. What capex does that imply? If 2026 issuance ends at one-third of capex and capex is $600bn, how much more must they issue after the $194bn already done?
+(d) <strong>Judgement.</strong> As the CAO running OneGS 3.0, choose the one metric you would publish for the KYC/onboarding workstream in the first year, and say how you would prevent it from being gamed.</p>
+<p><em>Answers for (a)–(c):</em> (a) 12,000 / 46,500 ≈ <strong>25.8%</strong>; 12,000 × 0.20–0.45 = <strong>2,400–5,400</strong> engineer-equivalents, which is why Solomon calls engineering the "most obvious" use. (b) 6 × 40 = 240 hours ÷ 3 = <strong>80×</strong> at the low end; 8 × 40 = 320 hours ÷ 2 = <strong>160×</strong> at the high end. (c) $108bn ÷ 0.27 ≈ <strong>$400bn</strong> of 2025 capex <em>(derived)</em>; one-third of $600bn = $200bn, so <strong>~$6bn</strong> more after $194bn (the $600bn figure is a hypothetical for the exercise, not from GS).</p>
+<p><strong>Sources (goldmansachs.com, via <code>_ingest/raw/goldman/articles.jsonl</code>):</strong>
+<a href="https://www.goldmansachs.com/pressroom/press-releases/2019/marco-argenti-atte-lahtiranta-join-goldman-sachs">Argenti/Lahtiranta hire, Sep 12 2019</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/09-23-2019-david-solomon-first-year">Solomon year two, Oct 1 2019</a> · <a href="https://www.goldmansachs.com/investor-relations/investor-day-2020/presentations/consolidated-presentations.pdf">Investor Day 2020 deck, Jan 29 2020</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/02-21-2023-sheridan-rangan">Sheridan/Rangan, Feb 21 2023</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/02-24-2023-david-solomon">Solomon, Feb 24 2023</a> · <a href="https://www.goldmansachs.com/insights/articles/ai-could-revolutionize-human-knowledge-goldman-sachs-marco-argenti-says">Argenti, Apr 18 2023</a> · <a href="https://www.goldmansachs.com/what-we-do/investment-banking/insights/articles/ai-forward-2023">AI Forward, Jun 22 2023</a> · <a href="https://www.goldmansachs.com/insights/articles/a-new-generation-of-ai-tools-and-models-is-emerging">Argenti 2024 predictions, Dec 21 2023</a> · <a href="https://www.goldmansachs.com/investor-relations/financials/current/annual-reports/2023-annual-report/multimedia/letter-to-shareholders.pdf">2023 letter</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/01-23-24-solomon">Solomon, Jan 23 2024</a> · <a href="https://www.goldmansachs.com/insights/top-of-mind/gen-ai-too-much-spend-too-little-benefit">Top of Mind #129, Jun 25 2024</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/a-skeptical-look-at-ai-investment">Skeptic podcast, Jul 16 2024</a> · <a href="https://www.goldmansachs.com/pressroom/press-releases/2024/melissa-goldman-rejoins-goldman-sachs">Melissa Goldman, Oct 7 2024</a> · <a href="https://www.goldmansachs.com/investor-relations/financials/current/annual-reports/2024-annual-report/multimedia/letter-to-shareholders.pdf">2024 letter</a> · <a href="https://www.goldmansachs.com/insights/articles/what-to-expect-from-ai-in-2025-hybrid-workers-robotics-expert-models">Argenti 2025 predictions, Jan 9 2025</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/david-solomon-on-global-business-environment-ai-and-rise-of-private-credit">Solomon, Jan 29 2025</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/ai-exchanges-will-falling-costs-drive-new-opportunities">AI Exchanges: Lee/Posnett, Feb 4 2025</a> · <a href="https://www.goldmansachs.com/pressroom/press-releases/2025/daniel-marcu-joins-gs-as-partner-and-global-head-of-ai-engineering-and-science">Marcu, Mar 17 2025</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/ai-exchanges-cio-marco-argenti-on-the-future-of-ai-in-the-workplace">AI Exchanges: Argenti, Mar 25 2025</a> · <a href="https://www.goldmansachs.com/insights/articles/fortune-we-must-prepare-ai-natives-to-shape-the-future-of-work">Argenti in Fortune, Jul 9 2025</a> · <a href="https://www.goldmansachs.com/insights/articles/what-will-it-take-for-companies-to-capitalize-on-the-rise-of-ai">Communacopia, Oct 7 2025</a> · <a href="https://www.goldmansachs.com/pressroom/press-releases/2025/2025-10-14-q3-results">Q3 2025 results, Oct 14 2025</a> · <a href="https://www.goldmansachs.com/investor-relations/financials/current/annual-reports/2025/letter-to-shareholders.pdf">2025 letter</a> · <a href="https://www.goldmansachs.com/pressroom/press-releases/2026/goldman-sachs-completes-acquisition-of-industry-ventures">IV close, Jan 5 2026</a> · <a href="https://www.goldmansachs.com/insights/articles/what-to-expect-from-ai-in-2026-personal-agents-mega-alliances">Argenti 2026 predictions, Jan 22 2026</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/goldman-sachs-chairman-and-ceo-david-solomon-on-ai-m-and-a-and-markets">Solomon on OneGS 3.0, Jan 23 2026</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/goldman-sachs-internationals-co-ceos-on-europes-opportunity-ai-and-market-volatility">GSI co-CEOs, Mar 16 2026</a> · <a href="https://www.goldmansachs.com/pressroom/press-releases/2026/archana-vemulapalli-joins-goldman-sachs-as-partner-and-head-of-ai-product-management">Vemulapalli, Apr 6 2026</a> · <a href="https://www.goldmansachs.com/pressroom/press-releases/2026/goldman-sachs-announces-leadership-updates-may-5-2026">Leslie as CAO, May 5 2026</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/will-ai-make-markets-less-efficient">Osman Ali, May 6 2026</a> · <a href="https://www.goldmansachs.com/pressroom/press-releases/2026/evan-kotsovinos-joins-goldman-sachs-as-partner-and-head-of-asset-and-wealth-management-engineering">Kotsovinos, Jul 6 2026</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/citadels-ken-griffin-on-ai-us-china-tensions-and-us-data-centers">Griffin, Jul 9 2026</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/how-ai-debt-is-reshaping-the-credit-market">AI debt, Aug 5 2026</a> · <a href="https://www.goldmansachs.com/insights/goldman-sachs-exchanges/building-ai-systems-for-capital-markets">Churchman, Aug 24 2026</a> · <a href="https://www.goldmansachs.com/pressroom/press-releases/2026/dinesh-keswani-joins-gs-as-co-head-of-core-engineering">Keswani, Sep 3 2026</a> · <a href="https://www.goldmansachs.com/pressroom/press-releases/2026/goldman-sachs-opens-new-engineering-office-in-bellevue-washington">Bellevue, Sep 8 2026</a></p></article>
+</div>
+<div class="doc-end"><button class="mark-read" type="button" data-href="doc-notes-goldman-ai.html"><span class="mr-tick">✓</span><span class="mr-off">Mark as read</span><span class="mr-on">Read</span></button><span class="doc-end-hint">Marks itself read when you reach the end.</span></div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-fourier-use-cases.html"><span>Previous</span>Note · Fourier / frequency-domain use cases across the Compounding MBA</a><a class="doc-next" href="doc-notes-goldman-awm-private-credit.html"><span>Next</span>Note · Goldman Sachs AWM &amp; private credit — buying wrappers and channels to make fees &#x27;durable&#x27;, and sitting on both sides of the private-credit boom just as it is tested</a></nav>
+</div><script src="site.js?v=1792953205"></script></body></html>

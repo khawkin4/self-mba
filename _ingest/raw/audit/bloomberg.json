@@ -1,0 +1,25 @@
+{
+ "company": "Bloomberg L.P. (private)",
+ "fiscal_years": [2019, 2025],
+ "revenue_lines": [
+  {"line": "Bloomberg Terminal (Professional subscriptions)", "fy2019": null, "fy2025": null, "topic": "workflow_desktop", "source": "Not disclosed; private company, no 10-K"},
+  {"line": "Enterprise data, pricing & analytics (incl. BVAL, PORT, MAC3)", "fy2019": null, "fy2025": null, "topic": "pricing_data", "source": "Not disclosed"},
+  {"line": "Bloomberg indices", "fy2019": null, "fy2025": null, "topic": "indices_benchmarks", "source": "Not disclosed"},
+  {"line": "Trading & order-management solutions (AIM, sell-side, Tradebook/MTFs)", "fy2019": null, "fy2025": null, "topic": "electronification", "source": "Not disclosed"},
+  {"line": "Media (Bloomberg News, Bloomberg Media)", "fy2019": null, "fy2025": null, "topic": "ratings_research", "source": "Not disclosed"}
+ ],
+ "total_revenue": {"fy2019": null, "fy2025": null},
+ "self_disclosed_metrics": [
+  {"metric": "Employees (volunteering context)", "value": "more than 12,000 employees in 88 cities (2018)", "date": "2019-04-09", "source": "Bloomberg press release 'A Decade of Impact: Bloomberg LP Improves Energy Efficiency by 45%...', bloomberg.com/company/press"},
+  {"metric": "Terminal users", "value": "over 350,000 Terminal users (reach of intraday fixed-income pricing)", "date": "2023-12-04", "source": "Bloomberg company story 'How Bloomberg uses machine learning to bring intraday pricing transparency...'"},
+  {"metric": "Terminal users with colour-vision deficiency (estimate)", "value": "20,000 or more", "date": "2021-10-19", "source": "Bloomberg company story 'Designing the Terminal for Color Accessibility'"},
+  {"metric": "Customer support footprint", "value": "24/7 customer service in 160 countries", "date": "2022-08-19", "source": "Bloomberg insight 'The Bloomberg Terminal: An evolving icon'"},
+  {"metric": "Bloomberg AIM (buy-side OMS)", "value": "nearly 15,000 professionals at over 900 client firms in 90+ countries, managing >$17 trillion", "date": "2021-10-26 (repeated 2025-09-30)", "source": "Bloomberg press releases on AIM"},
+  {"metric": "Sell-side solutions users", "value": "more than 16,300 users", "date": "2021-09-15", "source": "Bloomberg/CFETS Southbound Bond Connect press release"},
+  {"metric": "PORT Enterprise / MAC3 risk-model clients", "value": "more than 800 clients", "date": "2026-04-02 / 2026-06-23", "source": "Bloomberg PR Newswire releases on MAC3"},
+  {"metric": "Bloomberg News output", "value": "100+ global news bureaus; over 5,000 stories a day; Terminal carries 175,000+ third-party web/social sources (1.5 million stories daily)", "date": "2025-11-24 / 2026-03-03", "source": "Bloomberg press releases (Real-Time News Feeds)"},
+  {"metric": "Education", "value": "11,000+ students from 50 countries in Bloomberg Global Trading Challenge", "date": "2026-01-27", "source": "Bloomberg for Education PR Newswire release"}
+ ],
+ "risk_factors": [],
+ "notes": "Bloomberg L.P. is privately held (majority-owned by Michael Bloomberg) and files no 10-K, so there is no audited revenue, segment data or Item 1A risk-factor list; all revenue fields are null by design. Source scanned: _ingest/raw/bloomberg/articles.jsonl (850 Bloomberg press releases, stories and insights, 2019-2026). In that corpus Bloomberg discloses no company revenue figure for any year and no current Terminal subscription count (only the 'over 350,000 Terminal users' reach figure from Dec 2023, which counts users rather than paid subscriptions). The only headcount figure is 'more than 12,000 employees' (2018, from a 2019 volunteering release). Revenue-line names above are the business lines Bloomberg describes in its own materials, listed for cross-company mapping only. Third-party revenue estimates (e.g. Burton-Taylor, press reports) deliberately excluded per audit rules; 'Bloomberg Philanthropies' figures in the corpus relate to a separate entity and were ignored."
+}

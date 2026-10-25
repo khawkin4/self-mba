@@ -1,0 +1,292 @@
+{
+ "company": "MarketAxess Holdings Inc. (MKTX)",
+ "fiscal_years": [
+  2019,
+  2025
+ ],
+ "revenue_lines": [
+  {
+   "line": "Commissions – variable transaction fees – Credit",
+   "fy2019": 362.5,
+   "fy2025": 542.0,
+   "topic": "credit",
+   "source": "FY2019 10-K (filed 2020-02-18), MD&A 'Results of Operations' revenue and commissions tables; FY2025 10-K (filed 2026-02-24), MD&A 'Results of Operations' revenue and commissions tables",
+   "line_note": "FY2019 'Total credit' = U.S. high-grade $173.9M + Other credit $188.5M"
+  },
+  {
+   "line": "Commissions – variable transaction fees – Rates",
+   "fy2019": 4.7,
+   "fy2025": 28.2,
+   "topic": "rates",
+   "source": "FY2019 10-K (filed 2020-02-18), MD&A 'Results of Operations' revenue and commissions tables; FY2025 10-K (filed 2026-02-24), MD&A 'Results of Operations' revenue and commissions tables"
+  },
+  {
+   "line": "Commissions – variable transaction fees – Other",
+   "fy2019": null,
+   "fy2025": 30.3,
+   "topic": "electronification",
+   "source": "FY2019 10-K (filed 2020-02-18), MD&A 'Results of Operations' revenue and commissions tables; FY2025 10-K (filed 2026-02-24), MD&A 'Results of Operations' revenue and commissions tables",
+   "line_note": "FY2025 only: equities/FX algorithmic trading (Pragma) and derivative/ETF commissions"
+  },
+  {
+   "line": "Commissions – fixed distribution fees – Credit",
+   "fy2019": 96.2,
+   "fy2025": 133.8,
+   "topic": "credit",
+   "source": "FY2019 10-K (filed 2020-02-18), MD&A 'Results of Operations' revenue and commissions tables; FY2025 10-K (filed 2026-02-24), MD&A 'Results of Operations' revenue and commissions tables",
+   "line_note": "FY2019 called 'Distribution fees'; 'Total credit' = U.S. high-grade $71.9M + Other credit $24.3M"
+  },
+  {
+   "line": "Commissions – fixed distribution fees – Rates",
+   "fy2019": 0.4,
+   "fy2025": 0.4,
+   "topic": "rates",
+   "source": "FY2019 10-K (filed 2020-02-18), MD&A 'Results of Operations' revenue and commissions tables; FY2025 10-K (filed 2026-02-24), MD&A 'Results of Operations' revenue and commissions tables"
+  },
+  {
+   "line": "Information services",
+   "fy2019": 30.7,
+   "fy2025": 53.2,
+   "topic": "pricing_data",
+   "source": "FY2019 10-K (filed 2020-02-18), MD&A 'Results of Operations' revenue and commissions tables; FY2025 10-K (filed 2026-02-24), MD&A 'Results of Operations' revenue and commissions tables"
+  },
+  {
+   "line": "Post-trade services",
+   "fy2019": 15.8,
+   "fy2025": 44.5,
+   "topic": "regulation_policy",
+   "source": "FY2019 10-K (filed 2020-02-18), MD&A 'Results of Operations' revenue and commissions tables; FY2025 10-K (filed 2026-02-24), MD&A 'Results of Operations' revenue and commissions tables",
+   "line_note": "regulatory transaction reporting / trade publication / matching (Trax)"
+  },
+  {
+   "line": "Technology services",
+   "fy2019": null,
+   "fy2025": 13.9,
+   "topic": "workflow_desktop",
+   "source": "FY2019 10-K (filed 2020-02-18), MD&A 'Results of Operations' revenue and commissions tables; FY2025 10-K (filed 2026-02-24), MD&A 'Results of Operations' revenue and commissions tables",
+   "line_note": "not a FY2019 line"
+  },
+  {
+   "line": "Other",
+   "fy2019": 1.0,
+   "fy2025": null,
+   "topic": "workflow_desktop",
+   "source": "FY2019 10-K (filed 2020-02-18), MD&A 'Results of Operations' revenue and commissions tables; FY2025 10-K (filed 2026-02-24), MD&A 'Results of Operations' revenue and commissions tables",
+   "line_note": "FY2019 only"
+  },
+  {
+   "line": "Commissions – variable transaction fees – U.S. high-grade",
+   "fy2019": 173.9,
+   "fy2025": null,
+   "topic": "credit",
+   "source": "FY2019 10-K (filed 2020-02-18), MD&A 'Results of Operations' revenue and commissions tables",
+   "line_note": "FY2019 sub-line of Credit above (do not add); FY2025 10-K gives no $ split, only that ~37.8% of revenues come from secondary trading in U.S. high-grade (Item 1A)"
+  },
+  {
+   "line": "Commissions – variable transaction fees – Other credit",
+   "fy2019": 188.5,
+   "fy2025": null,
+   "topic": "credit",
+   "source": "FY2019 10-K (filed 2020-02-18), MD&A 'Results of Operations' revenue and commissions tables",
+   "line_note": "FY2019 sub-line of Credit above (do not add)"
+  },
+  {
+   "line": "Commissions – distribution fees – U.S. high-grade",
+   "fy2019": 71.9,
+   "fy2025": null,
+   "topic": "credit",
+   "source": "FY2019 10-K (filed 2020-02-18), MD&A 'Results of Operations' revenue and commissions tables",
+   "line_note": "FY2019 sub-line of Credit above (do not add)"
+  },
+  {
+   "line": "Commissions – distribution fees – Other credit",
+   "fy2019": 24.3,
+   "fy2025": null,
+   "topic": "credit",
+   "source": "FY2019 10-K (filed 2020-02-18), MD&A 'Results of Operations' revenue and commissions tables",
+   "line_note": "FY2019 sub-line of Credit above (do not add)"
+  }
+ ],
+ "total_revenue": {
+  "fy2019": 511.4,
+  "fy2025": 846.3
+ },
+ "risk_factors": [
+  {
+   "heading": "Global economic, political and market factors beyond our control could reduce demand for our services, and our profitability and business could suffer.",
+   "theme": "market_volatility_dependence",
+   "order": 1
+  },
+  {
+   "heading": "Decreases in trading volumes in the fixed-income markets generally or on our platforms would harm our business and profitability.",
+   "theme": "market_volatility_dependence",
+   "order": 2
+  },
+  {
+   "heading": "The industry in which we operate is rapidly evolving. If we are unable to adapt our business effectively to keep pace with industry changes, we may not be able to compete effectively, which could have a material adverse effect on …",
+   "theme": "technology_change_ai",
+   "order": 3
+  },
+  {
+   "heading": "We face substantial competition that could reduce trading on our platforms or our market share and harm our financial performance.",
+   "theme": "competition",
+   "order": 4
+  },
+  {
+   "heading": "Neither the sustainability of our current level of business nor any future growth can be assured. Even if we do experience growth, we may not grow profitably.",
+   "theme": "other",
+   "order": 5
+  },
+  {
+   "heading": "We may enter into new fee plans, the impact of which may be difficult to evaluate; past trends in commissions are not necessarily indicative of future commissions.",
+   "theme": "fee_pressure",
+   "order": 6
+  },
+  {
+   "heading": "As we enter new markets, we may not be able to successfully attract clients and adapt our technology and marketing strategy for use in those markets.",
+   "theme": "other",
+   "order": 7
+  },
+  {
+   "heading": "We may face increasing challenges in our growing international operations that we may not be able to meet in the future.",
+   "theme": "international_fx_geopolitics",
+   "order": 8
+  },
+  {
+   "heading": "We are dependent on our broker-dealer clients, who are not restricted from using their own proprietary or third-party platforms to transact with our institutional investor clients.",
+   "theme": "key_clients_concentration",
+   "order": 9
+  },
+  {
+   "heading": "We could lose significant sources of revenue and trading volume if we lose any of our significant institutional investor clients.",
+   "theme": "key_clients_concentration",
+   "order": 10
+  },
+  {
+   "heading": "We are exposed to risks in connection with certain transactions in which we act as a matched principal intermediary.",
+   "theme": "other",
+   "order": 11
+  },
+  {
+   "heading": "Self-clearing exposes us to significant operational, liquidity, financing and regulatory risks.",
+   "theme": "other",
+   "order": 12
+  },
+  {
+   "heading": "We depend on third-party suppliers for key products and services.",
+   "theme": "operational_outage",
+   "order": 13
+  },
+  {
+   "heading": "If we acquire or invest in other businesses, products or technologies, and are unable to integrate them with our business, our financial performance may be impaired. We may not realize the anticipated financial and strategic goals for any such transactions …",
+   "theme": "acquisitions_integration",
+   "order": 14
+  },
+  {
+   "heading": "Failure to retain our senior management team or the inability to attract and retain qualified personnel could materially adversely impact our ability to operate or grow our business.",
+   "theme": "talent_key_people",
+   "order": 15
+  },
+  {
+   "heading": "Economic sanctions levied against states or individuals could expose us to significant operational and regulatory risks.",
+   "theme": "international_fx_geopolitics",
+   "order": 16
+  },
+  {
+   "heading": "Risks related to climate change or other sustainability risks could adversely affect our operations or reputation.",
+   "theme": "climate_esg",
+   "order": 17
+  },
+  {
+   "heading": "Rapid market or technological changes may render our technology obsolete or decrease the attractiveness of our products and services to our broker-dealer and institutional investor clients.",
+   "theme": "technology_change_ai",
+   "order": 18
+  },
+  {
+   "heading": "Issues related to the development and use of AI may result in reputational harm, liability, or other adverse consequences to our business operations.",
+   "theme": "technology_change_ai",
+   "order": 19
+  },
+  {
+   "heading": "Our success depends on maintaining the integrity and capacity of our electronic trading platforms, systems and infrastructure.",
+   "theme": "operational_outage",
+   "order": 20
+  },
+  {
+   "heading": "System failures, interruptions, delays in service, catastrophic events and resulting interruptions in the availability of our trading platforms could materially harm our business and reputation.",
+   "theme": "operational_outage",
+   "order": 21
+  },
+  {
+   "heading": "If we experience design defects, errors, failures or delays with our platforms, products or services, our business could suffer serious harm.",
+   "theme": "operational_outage",
+   "order": 22
+  },
+  {
+   "heading": "Malicious cyber-attacks, attempted cybersecurity breaches, and other adverse events affecting our operational systems or infrastructure, or those of third parties, could disrupt our businesses, result in the disclosure of confidential information, cause system unavailability, damage our reputation and cause losses …",
+   "theme": "cyber",
+   "order": 23
+  },
+  {
+   "heading": "Our actual or perceived failure to comply with privacy and data protection laws, regulations, and obligations could harm our business.",
+   "theme": "regulation",
+   "order": 24
+  },
+  {
+   "heading": "We may not be able to protect our intellectual property rights or technology effectively, which would allow competitors to duplicate or replicate our electronic trading platforms or any of our other current or future functionalities, products or services. This could …",
+   "theme": "data_ip_licensing",
+   "order": 25
+  },
+  {
+   "heading": "Defending against intellectual property infringement or other claims could be expensive and disruptive to our business. If we are found to infringe the proprietary rights of others, we could be required to redesign our technology, pay royalties or enter into …",
+   "theme": "data_ip_licensing",
+   "order": 26
+  },
+  {
+   "heading": "Our use of open-source software could result in litigation or require us to re-engineer our platforms or other commercial solutions.",
+   "theme": "data_ip_licensing",
+   "order": 27
+  },
+  {
+   "heading": "We operate in a highly regulated industry and we may face restrictions with respect to the way we conduct certain of our operations.",
+   "theme": "regulation",
+   "order": 28
+  },
+  {
+   "heading": "Our business and the trading businesses of many of our clients are subject to increasingly extensive government and other regulation, which may affect our trading volumes and increase our cost of doing business.",
+   "theme": "regulation",
+   "order": 29
+  },
+  {
+   "heading": "The extensive regulation of our business means we have ongoing exposure to potentially significant costs and penalties.",
+   "theme": "regulation",
+   "order": 30
+  },
+  {
+   "heading": "We are subject to the risks of litigation and securities laws liability.",
+   "theme": "litigation",
+   "order": 31
+  },
+  {
+   "heading": "If our tax filing positions were to be challenged by federal, state and local, or foreign tax jurisdictions, we may not be wholly successful in defending our tax filing positions.",
+   "theme": "other",
+   "order": 32
+  },
+  {
+   "heading": "We cannot predict our future capital needs or our ability to obtain additional financing if we need it.",
+   "theme": "debt_leverage",
+   "order": 33
+  },
+  {
+   "heading": "Our credit agreement contains restrictive and financial covenants that could limit our operating flexibility, and we may incur additional debt in the future that may include similar or additional restrictions.",
+   "theme": "debt_leverage",
+   "order": 34
+  },
+  {
+   "heading": "We maintain our cash at financial institutions, often in balances that exceed federally insured limits.",
+   "theme": "other",
+   "order": 35
+  }
+ ],
+ "notes": "USD M rounded from $000s. Product taxonomy changed: FY2019 10-K split commissions into U.S. high-grade / Other credit / Rates ('Liquid products' era); FY2025 10-K splits only Credit / Rates / Other, so the comparable lines are the Credit totals; FY2019 HG vs other-credit sub-lines are kept as separate rows with fy2025=null and must not be summed with the Credit rows (sum of non-sub-line rows = total revenue). 'Technology services' (FY2025 $13.9M) did not exist in FY2019, which had 'Other' $1.0M. 'Other' commissions (FY2025, equities/FX algos from Pragma acquisition 2024 plus ETF/derivatives) absent in FY2019. Post-trade grew via Trax; FY2019 included Trax only. Risk factors = all 35 bold-italic subheadings in FY2025 Item 1A."
+}
