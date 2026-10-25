@@ -1,0 +1,166 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Note · Fourier / frequency-domain use cases across the Compounding MBA · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1792933745"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Note · Fourier / frequency-domain use cases across the Compounding MBA</h1>
+<div class="doc-meta"><span>6 min read</span><span>1,493 words</span><span>Updated 2026-10-24</span><span class="doc-src">notes/fourier-use-cases.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#1-what-the-tests-on-our-own-data-showed">1. What the tests on our own data showed</a></li><li class="l2"><a href="#2-strong-use-cases-do-these">2. Strong use cases (do these)</a></li><li class="l2"><a href="#3-moderate-use-cases">3. Moderate use cases</a></li><li class="l2"><a href="#4-cautionary-breaks-when-material">4. Cautionary / "breaks when" material</a></li><li class="l2"><a href="#5-gaps-found-in-the-repo">5. Gaps found in the repo</a></li><li class="l2"><a href="#rep">Rep</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p>Cross-cutting tool note · Maps to <strong>Course 06</strong> (Operations), <strong>07</strong> (Data &amp; Decisions), <strong>11</strong> / <strong>E9</strong> (Macro), <strong>E8</strong> (IR), gaps <strong>Statistics &amp; Quant</strong>, canon <strong>Systems Thinking</strong>, <code>quant-backtesting/</code></p>
+</blockquote>
+<ul>
+<li><strong>Source:</strong> repo-wide sweep (CURRICULUM, lessons/, learn/, notes/, notes/canon/, acumen/, quant-backtesting/, _ingest/) + live tests on the cached FRED series, 2026-10-24</li>
+<li><strong>Core claim:</strong> Fourier is a tool for <em>when</em> and <em>how regularly</em>, not <em>what</em> or <em>why</em>. It earns its place where a <strong>numeric series</strong> has a <strong>stable cause</strong> and <strong>many cycles</strong> of data — calendars, seasons, delays in feedback loops. Everywhere else in an MBA ("credit cycles", "VC cycles", "debt cycles") it is most useful as a <strong>debunking tool</strong>.</li>
+<li><strong>Framework — sort every "cycle" first:</strong>
+  1. <strong>Deadline, not a cycle</strong> (patent expiry, statute of limitations) → event/cohort study, not Fourier.
+  2. <strong>Known schedule</strong> (FOMC, auctions, earnings season, month-end, payday, fiscal year-end) → you already know the period: <strong>fold the data on the calendar</strong> (event study). More powerful than scanning a spectrum.
+  3. <strong>Stable natural/structural rhythm</strong> (seasons, 24h, 7-day week, supply-chain delays) → periodogram, seasonal adjustment, Fourier-term forecasting.
+  4. <strong>Quasi-cycle</strong> (business cycle, bullwhip in real chains, default cycles) → broad hump, not a line; band-pass to <em>describe</em>, never to <em>time</em>.</li>
+<li><strong>Applies when:</strong> sampling is faster than 2× the rhythm (Nyquist); ≥ several full cycles; the cause doesn't move; you test peaks against a <strong>red-noise null</strong> with a <strong>multiple-testing</strong> correction.</li>
+<li><strong>Breaks when:</strong> few cycles; persistence (AR(1) / random-walk) masquerading as cycles; fat tails (variance — and so the power spectrum — may not exist; characteristic functions still do); two-sided filters used "as of" today (endpoint look-ahead); scanning hundreds of frequencies and keeping the best one (de Prado's seasonal-overfitting example).</li>
+<li><strong>Practitioner counterpoint:</strong> quants use calendar effects heavily but treat spectral "peak-hunting" in prices as data-snooping; macro shops use band-pass filters for description only.</li>
+<li><strong>Links:</strong> <a class="wiki" href="doc-canon-canon-sterman-business-dynamics.html">canon sterman business dynamics</a> <a class="wiki" href="doc-canon-canon-meadows-leverage-points.html">canon meadows leverage points</a> <a class="wiki" href="doc-canon-canon-shannon-information-theory.html">canon shannon information theory</a> <a class="wiki" href="doc-canon-canon-kahneman-sibony-sunstein-noise.html">canon kahneman sibony sunstein noise</a> <a class="wiki" href="doc-canon-canon-taleb-black-swan.html">canon taleb black swan</a> <a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> <a class="wiki" href="doc-notes-wss-trading-hedge-funds.html">wss trading hedge funds</a> <a class="wiki" href="doc-notes-sec-filing-intelligence.html">sec filing intelligence</a> <a class="wiki" href="doc-quant-lopez-de-prado.html">lopez de prado</a> <a class="wiki" href="doc-quant-factor-models-regime-detection.html">factor models regime detection</a></li>
+</ul>
+<hr />
+<h2 id="1-what-the-tests-on-our-own-data-showed">1. What the tests on our own data showed</h2>
+<p>Script: <code>python3 quant-backtesting/rhythm_fred_check.py _ingest/raw/2026-10-04/data/fred</code>
+(periodogram vs. a smoothed-background null, 1% family-wise threshold across all frequencies; plus direct calendar folds)</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Series</th>
+<th>Naive test (AR(1) null, 99% per frequency)</th>
+<th>Corrected test</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fed funds (level / change)</td>
+<td>"Cycles" at 8.6, 4.5 months</td>
+<td>Nothing significant</td>
+<td>No rate cycle</td>
+</tr>
+<tr>
+<td>NFCI financial conditions</td>
+<td>"Cycle" at ~31 weeks</td>
+<td>Nothing significant</td>
+<td>No cycle — persistence</td>
+</tr>
+<tr>
+<td>30y mortgage, Baa–10y, SLOOS</td>
+<td>Short-period "peaks"</td>
+<td>Nothing significant</td>
+<td>Noise</td>
+</tr>
+<tr>
+<td><strong>VIX daily change</strong></td>
+<td>Smeared</td>
+<td>Fold by weekday: <strong>Mon +1.5–2.2%, Fri −1.0%</strong>, same in 1990–2007 and 2008–2026</td>
+<td><strong>Real</strong> — mechanical weekend effect in implied-vol calculation</td>
+</tr>
+<tr>
+<td><strong>Core PCE m/m (already SA)</strong></td>
+<td>—</td>
+<td>Fold by month: <strong>January +0.6–0.8 ann. pts</strong> above average since 1990; first month of quarter high</td>
+<td><strong>Real</strong> — residual seasonality survives official adjustment</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Lessons:</strong> (a) the naive test finds "cycles" everywhere — the correction kills all of them in rates/conditions; (b) when you know the period, fold on it directly; (c) "seasonally adjusted" ≠ seasonality-free.</p>
+<p>Beer Game sim (<code>python3 quant-backtesting/rhythm_beer_game.py</code>, 4 stages, white-noise demand):</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Shipping delay</th>
+<th>Factory/retail variance</th>
+<th>Peak gain by frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 week</td>
+<td>1.0×</td>
+<td>10× at ~27-week period</td>
+</tr>
+<tr>
+<td>2 weeks</td>
+<td>2.1×</td>
+<td>20×</td>
+</tr>
+<tr>
+<td>4 weeks</td>
+<td>7.0×</td>
+<td>72× at ~24-week period</td>
+</tr>
+</tbody>
+</table></div>
+<p>Random demand comes out as a ~6-month oscillation at the factory — <strong>structure creates the cycle</strong>. In this parameterization the period is set mostly by forecast smoothing; the delay sets the <em>size</em>. That is Meadows' leverage points #9 (delays) and #8 (balancing-loop strength) as a two-knob experiment.</p>
+<h2 id="2-strong-use-cases-do-these">2. Strong use cases (do these)</h2>
+<ol>
+<li><strong>Bullwhip in the frequency domain</strong> — <code>lessons/canon-systems-complexity.html</code> (L14–43, 130), <code>canon-sterman-business-dynamics.md</code> (L13–16, 72), <code>canon-meadows-leverage-points.md</code> (L12). Spectrum of orders per stage, gain by frequency, cross-spectral phase = measured delay. Real data: FRED RSXFS vs AMTMNO, ISRATIO.</li>
+<li><strong>FOMC / Treasury-auction / month-end calendars</strong> — <code>wss-rates-macro.md</code> L358–364 (event-day variance weighting), L594 (FF–SOFR −30bp at month-end), <code>wss-technicals-career.md</code> L634–650 (auctions as scheduled supply shocks). Fold daily yields/repo spreads on the calendar; Lomb–Scargle for uneven FOMC spacing. Data: FRED DGS2, SOFR, EFFR, RRPONTSYD; TreasuryDirect.</li>
+<li><strong>Seasonal adjustment before anomaly flags</strong> — <code>sec-filing-intelligence.md</code> L13, 32: the quarterly anomaly flagger compares to trailing history, so retail Q4 will throw false alarms. Remove the 4-per-year seasonal (STL or seasonal indices) first. <em>Most directly useful code change.</em> Needs a quarterly mode in <code>_ingest/edgar.py</code> (currently <code>latest_facts</code> keeps only the latest annual value; Q4 = FY − Q1..Q3).</li>
+<li><strong>Operations forecasting</strong> — <code>lessons/core-06-operations.html</code> has no demand forecasting or seasonality. Add STL / Fourier-term (Prophet-style) forecasts; 24h + 7-day arrival spectra for queue staffing. Data: FRED RSAFSNA vs RSAFS; AMZN/WMT 10-Q revenue; M5 Walmart.</li>
+<li><strong>A/B tests and regressions</strong> — <code>lessons/gaps-statistics-quant.html</code> L72 ("4.6% over a week"), L98–104; <code>core-07-data-analytics.html</code>. Day-of-week cycle → test in whole weeks; deseasonalize before regressing trending series.</li>
+<li><strong>Raw vs adjusted macro</strong> — <code>core-11-global-macro.html</code>, <code>exec-E9</code> L79, <code>wss-ai-economics.md</code> L1181–1186 (January payrolls head fake). Compare PAYNSA vs PAYEMS, CPIAUCNS vs CPIAUCSL; add the residual-January PCE finding above.</li>
+<li><strong>Calendar effects in market structure</strong> — <code>wss-trading-hedge-funds.md</code> L484–487 (monthly → weekly → 0DTE expiries), <code>market-structure-24-5-trading.md</code> L27–31 (overnight returns; does the daily cycle split under 24/5?). Spectrogram of volume over 2010–2026. Needs intraday/expiry data not in the repo.</li>
+</ol>
+<h2 id="3-moderate-use-cases">3. Moderate use cases</h2>
+<ol start="8">
+<li><strong>Review cadence = sampling rate (Nyquist)</strong> — <code>canon-shannon-information-theory.md</code>, <code>canon-aws-mechanisms-orr.md</code> L37, <code>canon-4dx…</code> L15/73, <code>canon-doerr…</code> L12. A monthly board deck can't see anything faster than ~2 months and aliases weekly swings. Lead-vs-lag measure: coherence + phase lag = true lead time.</li>
+<li><strong>Personal cash rhythms</strong> — <code>learn/unit-10-personal-finance-operating-system.md</code> L15, 67. Lomb–Scargle on bank-transaction dates finds biweekly pay, monthly rent, annual lumps; shows why "6× average monthly expenses" understates lumpy months.</li>
+<li><strong>Working-capital swings</strong> — <code>learn/unit-02-cash-vs-profit.md</code> L55, <code>core-01-accounting.html</code>. Quarterly inventory/OCF for WMT, TGT, NKE: Q3 build, Q4 release.</li>
+<li><strong>Energy demand</strong> — <code>wss-trading-hedge-funds.md</code> L1151, L680 ("seasonal build" vs glut). EIA storage + heating degree days.</li>
+<li><strong>Noise audits</strong> — <code>canon-kahneman-sibony-sunstein-noise.md</code>. If repeated over many periods, split variance into drift (low frequency) vs scatter (white).</li>
+<li><strong>Acumen cases</strong> — none mention seasonality today. Carvana (<code>case-03</code> L99, 208, 307: loan-sale spread "cyclical") — test against BAA10Y / MORTGAGE30US (both showed <em>no</em> cycle above). Seed fund 2022 — pair <code>regimes.py --asof</code> with the red-noise lesson. Boeing L335 ("bullwhip two to four quarters").</li>
+<li><strong>Personal OS</strong> — <code>exec-E11-operating-system.html</code> L30–50 energy audit; habit logs (<code>canon-clear-atomic-habits</code>) show the 7-day line.</li>
+</ol>
+<h2 id="4-cautionary-breaks-when-material">4. Cautionary / "breaks when" material</h2>
+<ol start="15">
+<li><strong>Debt cycles</strong> — <code>quant-backtesting/research/bridgewater.md</code> L12–13, field guide L383: 75–100-year cycles have 2–3 observations. Unconfirmable.</li>
+<li><strong>Yield-curve → recession</strong> — <code>wss-rates-macro.md</code> L1381–1392: ~8 events; count them, don't spectrum them.</li>
+<li><strong>VC / exit / M&amp;A / credit "cycles"</strong> — <code>harlem-capital-vc-insights.md</code> L122–132, <code>wss-private-markets-wealth.md</code> L264–296, <code>wss-credit-distressed.md</code> L1090–1107. Red-noise null exercise — our NFCI/Baa tests are the template.</li>
+<li><strong>Regimes don't cycle</strong> — <code>wss-scenario-map.md</code> L108 already says it; <code>regimes.py</code> and the HMM/change-point notes are the right tools. A band-pass "cycle phase" would break the <code>--asof</code> no-hindsight rule.</li>
+<li><strong>Fat tails</strong> — <code>canon-taleb-black-swan.md</code>: spectral tools assume finite variance; the option-pricing demos (<code>fourier_pricing_demo.py</code>) show where Fourier <em>does</em> still work — via characteristic functions.</li>
+<li><strong>Seasonal overfitting</strong> — de Prado transcript ("my favorite examples come from the area of seasonal patterns"); <code>academic-frameworks-multiple-testing.md</code>. A periodogram peak is a selected trial out of hundreds.</li>
+</ol>
+<h2 id="5-gaps-found-in-the-repo">5. Gaps found in the repo</h2>
+<ul>
+<li>No lesson, learn unit or GLOSSARY entry covers seasonality, seasonal adjustment, periodograms, coherence or Nyquist (GLOSSARY has only "bullwhip effect", L481).</li>
+<li><code>fourier_pricing_demo.py</code> / <code>fourier_variations.py</code> are <strong>uncommitted</strong> and not linked from the site (<code>site/library.py:28</code> publishes only <code>quant-backtesting/research/*.md</code>).</li>
+<li><code>edgar.py</code> has no quarterly time-series mode.</li>
+<li><code>canon-ohno-toyota-production-system.md</code> lacks heijunka (production levelling = a low-pass filter on demand).</li>
+</ul>
+<h2 id="rep">Rep</h2>
+<p>Pick one strong case. State the suspected cause and its exact period <em>before</em> looking. Fold the data on that period, then run the corrected periodogram. If the peak only appears in the uncorrected test, write it up as a "breaks when".</p></article>
+</div>
+<div class="doc-end"><button class="mark-read" type="button" data-href="doc-notes-fourier-use-cases.html"><span class="mr-tick">✓</span><span class="mr-off">Mark as read</span><span class="mr-on">Read</span></button><span class="doc-end-hint">Marks itself read when you reach the end.</span></div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-eyl-insights.html"><span>Previous</span>Earn Your Leisure / Market Mondays — Full Insight Extraction</a><a class="doc-next" href="doc-notes-harlem-capital-vc-insights.html"><span>Next</span>Harlem Capital / Venture Capital — Insight Extraction (the allocator&#x27;s seat)</a></nav>
+</div><script src="site.js?v=1792933745"></script></body></html>
