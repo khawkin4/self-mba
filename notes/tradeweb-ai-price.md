@@ -101,7 +101,7 @@ Two smaller ones: **capped prints** (TRACE disseminates IG > $5mm as "5MM+", HY 
 6. Results by trade size, and how capped prints are treated
 7. Entry into the SS&C vendor study
 
-**Links:** [[market-structure-24-5-trading]] (bonds trade OTC by RFQ — the setting where a model price stands in for a quote) · [[wss-credit-distressed]] · [[wss-trading-hedge-funds]] · [[bloomberg-terminal-instrumentation]] · [[trading-floor-mechanics]] · [[wss-scenario-map]] · [[canon-shapiro-varian-information-rules]] · [[canon-helmer-7-powers]] · [[canon-tetlock-superforecasting]] · [[canon-kahneman-sibony-sunstein-noise]] · [[canon-taleb-black-swan]]
+**Links:** [[tradeweb-hub]] · [[tradeweb-a2a-information-leakage]] (Ai-Price used as the ruler for a leakage study — gap 4 applies) · [[market-structure-24-5-trading]] (bonds trade OTC by RFQ — the setting where a model price stands in for a quote) · [[wss-credit-distressed]] · [[wss-trading-hedge-funds]] · [[bloomberg-terminal-instrumentation]] · [[trading-floor-mechanics]] · [[wss-scenario-map]] · [[canon-shapiro-varian-information-rules]] · [[canon-helmer-7-powers]] · [[canon-tetlock-superforecasting]] · [[canon-kahneman-sibony-sunstein-noise]] · [[canon-taleb-black-swan]]
 
 ---
 ### Rep
