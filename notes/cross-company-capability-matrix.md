@@ -136,6 +136,8 @@
 4. Does BlackRock buy or build an index franchise for private markets?
 5. Does any stack reach level 3 in AI, meaning disclosed AI revenue, by 2028?
 
+**Demand side:** [[apply-six-problems-to-market-infrastructure]] reads each layer of this matrix as the solution to one of six derivatives problems (value, measure, hedge, counterparty, funding, compute).
+
 **Links:** [[cross-company-attention-map]] · [[cross-company-say-vs-do]] · [[tradeweb-hub]] · [[tradeweb-mission-forces]] · [[lseg-hub]] · [[lseg-tradeweb-control]] · [[ice-hub]] · [[ice-marketaxess-deal]] · [[marketaxess-hub]] · [[bloomberg-hub]] · [[spglobal-hub]] · [[spglobal-pricing-fixed-income]] · [[thomsonreuters-hub]] · [[goldman-hub]] · [[jpmc-hub]] · [[blackrock-hub]] · [[blackrock-anchor-client]] · [[blackrock-aladdin-data]] · [[blackrock-private-markets]] · [[canon-porter-competitive-strategy]] · [[canon-shapiro-varian-information-rules]] · [[canon-hagiu-wright-multi-sided-platforms]] · [[canon-parker-platform-revolution]] · [[canon-goldratt-the-goal]] · [[canon-helmer-7-powers]] · [[canon-brandenburger-nalebuff-coopetition]]
 
 ---

@@ -139,6 +139,9 @@ simulation that shows hedge slippage (P3), a barrier option by Monte Carlo vs. P
 
 ## Links
 
+**Applied:** [[apply-six-problems-to-market-infrastructure]] runs the six problems against the ten company
+studies.
+
 [[wss-rates-macro]] [[wss-credit-distressed]] [[wss-trading-hedge-funds]] [[wss-private-markets-wealth]]
 [[trading-floor-mechanics]] [[tradeweb-derivatives-regulation]] [[fourier-use-cases]]
 [[canon-taleb-black-swan]] (VaR and the turkey problem) [[canon-taleb-antifragile]]
