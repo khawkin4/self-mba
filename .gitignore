@@ -8,17 +8,14 @@ __pycache__/
 # Local ingest caches / scratch
 _ingest/cache/
 _ingest/*.tmp
-# NOTE: _ingest/raw/ is tracked (corpus backed up to GitHub by request).
+# Raw corpus: third-party transcripts, manuals and posts. This repo is public, so the
+# corpus is backed up to the private repo khawkin4/self-mba-raw (a nested git repo here).
+_ingest/raw/
 
 # Editor / vault cruft (if you later open this in Obsidian)
 .obsidian/workspace*
 .trash/
 site/_shots/
 
-# Raw SEC downloads (re-fetchable with _ingest/edgar.py / _ingest/financials.py)
-_ingest/raw/audit/edgar/
-_ingest/raw/financials/facts_*.json
-
-# Third-party LinkedIn corpus (copyrighted posts + images; local-only, repo is public)
-_ingest/raw/2026-10-31/linkedin/
+# Local copy of a third-party post library (copyrighted; never publish)
 andre-library/
