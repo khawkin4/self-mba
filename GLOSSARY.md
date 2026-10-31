@@ -721,6 +721,49 @@
 
 **Continuation vehicle** — A new fund a GP creates to buy assets from its own older fund, priced by secondary buyers, so existing LPs can sell or roll. ~$70bn of the $160bn 2024 secondaries market was GP-led.
 *Source:* [[wss-private-markets-wealth]] · *Contrast:* opportunity funds such as Primary Select add capital instead ([[primary-venture-partners-insights]])
+
+## Derivatives Pricing, Risk & XVA (Rodrigues batch)
+
+Indexed by the six problems in [[rodrigues-derivatives-problem-map]]: **P1** value it, **P2** measure the risk, **P3** hedge it, **P4** will they pay, **P5** fund it, **P6** compute it.
+
+**Replication** — Pricing a derivative as the cost of a portfolio of simpler instruments that produces the same payoff. If two portfolios pay the same in every state, they must cost the same; otherwise there is an arbitrage. (P1, P3)
+*Source:* [[rodrigues-derivatives-problem-map]]
+
+**Risk-neutral pricing** — Valuing a derivative as the expected payoff, discounted at the risk-free rate, under probabilities implied by hedging rather than by anyone's forecast. Your view on the stock does not enter the price; the cost of hedging does. (P1)
+*Source:* [[rodrigues-derivatives-problem-map]]
+
+**Black-Scholes** — The closed-form price of a European option under constant volatility, continuous trading and log-normal prices. A change of variables turns its PDE into the heat equation. It is the market's quoting language (implied volatility) more than a literal model. (P1)
+*Source:* [[rodrigues-derivatives-problem-map]]
+
+**Implied volatility / smile** — The volatility that makes Black-Scholes match a market price. It differs by strike and expiry (the smile and term structure), which is the market saying the model's assumptions are wrong. (P1, P2)
+*Source:* [[rodrigues-derivatives-problem-map]]
+
+**The Greeks** — Sensitivities of an option's value: **delta** (to price), **gamma** (delta's rate of change), **vega** (to volatility), **theta** (to time passing). They are first- and second-order terms of a Taylor expansion, so they fail on large moves, and vega at different expiries is not additive. (P2)
+*Source:* [[rodrigues-derivatives-problem-map]]
+
+**Value at Risk (VaR)** — The loss a portfolio should not exceed at a confidence level over a horizon (e.g. 99%, one day), usually estimated from history. It says nothing about how large losses get beyond that point. (P2)
+*Source:* [[rodrigues-derivatives-problem-map]] · *See:* [[canon-taleb-black-swan]]
+
+**Exotic option** — An option whose payoff depends on the path or on extra conditions: **barrier** (knocks in or out at a level), **Asian** (pays on an average), **TARF/accumulator** (stops once a profit target is hit, often with leveraged downside). Path-dependence usually removes the closed-form price and forces numerical methods. (P1, P6)
+*Source:* [[rodrigues-derivatives-problem-map]]
+
+**Monte Carlo pricing** — Simulating many random paths of the underlying and averaging the discounted payoffs. Flexible for path-dependent and multi-asset products, but slow: error falls only with the square root of the number of paths. (P1, P6)
+*Source:* [[rodrigues-derivatives-problem-map]]
+
+**XVA** — The family of valuation adjustments that move a derivative from its risk-free price to what it really costs a bank: **CVA** (counterparty default), **DVA** (own default), **FVA** (funding), **MVA** (initial margin), **KVA** (regulatory capital). Standard practice since 2008. (P4, P5)
+*Source:* [[rodrigues-derivatives-problem-map]]
+
+**CVA / DVA** — CVA is the expected loss from the counterparty defaulting while it owes you; DVA is the mirror image for your own default. DVA produces the accounting paradox where a bank books a gain when its own credit worsens, and that gain cannot be hedged directly or realized short of defaulting. (P4)
+*Source:* [[rodrigues-derivatives-problem-map]]
+
+**Copula** — A function that joins individual (marginal) distributions into a joint one, separating "how each asset behaves" from "how they move together" (Sklar's theorem). The Gaussian copula with one correlation number priced CDOs before 2008 and badly understated joint defaults. (P4)
+*Source:* [[rodrigues-derivatives-problem-map]] · *See:* [[wss-credit-distressed]]
+
+**NDF (non-deliverable forward)** — An FX forward settled in cash in a convertible currency at a fixing rate, used where the currency cannot be freely delivered (e.g. BRL). It is how exporters and offshore investors hedge restricted currencies. (P3)
+*Source:* [[rodrigues-derivatives-problem-map]]
+
+**Cupom cambial** — Brazil's onshore US dollar interest rate: the dollar yield implied by investing at the local DI rate and hedging back to dollars. It differs from SOFR because the real is not convertible. Traded through DDI futures and FRC forwards. (P3, P5)
+*Source:* [[rodrigues-derivatives-problem-map]]
 ---
 
 ## Cross-cluster argument spines (where the books fight)

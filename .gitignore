@@ -18,3 +18,7 @@ site/_shots/
 # Raw SEC downloads (re-fetchable with _ingest/edgar.py / _ingest/financials.py)
 _ingest/raw/audit/edgar/
 _ingest/raw/financials/facts_*.json
+
+# Third-party LinkedIn corpus (copyrighted posts + images; local-only, repo is public)
+_ingest/raw/2026-10-31/linkedin/
+andre-library/
