@@ -1,0 +1,331 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<title>Derivatives &amp; quant math, indexed by the problem each concept solves (André Luiz Rodrigues) · The Compounding MBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1917'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='19' fill='%23faf7f2'%3EC%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('mba-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1793581981"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav"><div class="sn-inner">
+<a class="brand" href="index.html"><span class="brand-mark">C</span><span>The Compounding MBA</span></a>
+<nav class="sn-links" aria-label="Site">
+<a href="index.html#path" data-nav="path">Path</a>
+<a href="index.html#t-library" data-nav="library">Library</a>
+<a href="index.html#t-explore" data-nav="explore">Explore</a>
+<a href="exam.html" data-nav="exam">Exams</a>
+</nav>
+<span class="sn-spacer"></span>
+<button class="sn-search" id="open-search" type="button" aria-label="Search"><svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+<button class="sn-theme" id="theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="ic ic-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></svg><svg class="ic ic-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M13.5 10A6 6 0 016 2.5a6 6 0 107.5 7.5z"/></svg></button>
+</div></header>
+<div id="progress"></div>
+<div class="doc-shell" data-coll="notes">
+<header class="doc-head">
+<nav class="crumbs"><a href="index.html">Home</a><span>/</span><a href="index.html#t-library">Library</a><span>/</span><a href="lib-notes.html">Field Notes</a></nav>
+<div class="doc-kicker">Practitioner intelligence</div>
+<h1 class="doc-title">Derivatives &amp; quant math, indexed by the problem each concept solves (André Luiz Rodrigues)</h1>
+<div class="doc-meta"><span>8 min read</span><span>1,894 words</span><span>Updated 2026-10-31</span><span class="doc-src">notes/rodrigues-derivatives-problem-map.md</span></div>
+</header>
+<div class="doc-layout">
+<nav class="doc-toc" aria-label="On this page"><details><summary>On this page</summary><ol><li class="l2"><a href="#what-this-adds-to-the-program">What this adds to the program</a></li><li class="l2"><a href="#the-six-problems-every-derivative-position-creates">The six problems every derivative position creates</a></li><li class="l3"><a href="#where-his-posts-concentrate-tag-counts-a-post-can-carry-several-problems">Where his posts concentrate (tag counts; a post can carry several problems)</a></li><li class="l2"><a href="#his-series-read-as-short-courses">His series, read as short courses</a></li><li class="l2"><a href="#where-the-problems-are-still-open-the-mba-angle">Where the problems are still open (the MBA angle)</a></li><li class="l2"><a href="#suggested-reading-path">Suggested reading path</a></li><li class="l2"><a href="#links">Links</a></li><li class="l2"><a href="#gaps">Gaps</a></li></ol></details></nav>
+<article class="prose">
+<blockquote>
+<p><strong>Sources:</strong> 252 educational LinkedIn posts by <strong>André Luiz Rodrigues</strong> (Capital Markets Technology
+Director; mathematician, ~20 years building pricing and risk systems), pulled from his activity feed on
+2026-10-31. The feed held 379 posts: 75 reposts of other authors, 1 duplicate and 51 greetings,
+certifications and announcements were dropped. Most posts carry a hand-drawn whiteboard with the
+equations (239 of 252 have a visual). Summarized in own words, not reproduced.</p>
+<p><strong>Raw corpus is local-only.</strong> His posts and images are his copyrighted work and this repo is public, so
+the corpus and its reader live in <code>_ingest/raw/2026-10-31/linkedin/andre-rodrigues/</code>, which is
+<strong>gitignored</strong>. Open <code>index.html</code> there to read every post with its whiteboard, filtered by topic,
+problem and party. <code>posts.json</code> holds the same data with tags; <code>build.py</code> regenerates both from
+<code>feed_raw.json</code>.</p>
+<p><strong>Time window:</strong> December 2025 to October 2026. Dates are approximate (worked out from LinkedIn's
+relative "3mo" labels).</p>
+<p><strong>Maps to:</strong> <strong>Course 02</strong> (valuation: discounting and the risk-free curve under every DCF), <strong>Course 07</strong>
+(models, calibration, reading probabilities off prices), <strong>Course 11 / E9</strong> (rates, FX, emerging-market
+plumbing), <strong>E2</strong> (capital allocation: funding and capital cost), <strong>E6</strong> (crisis: 2008, negative rates,
+margin spirals), <strong>E10</strong> (AI and quantum in a regulated, model-heavy industry).</p>
+<p>⚠ <strong>Bias.</strong> He is a builder of pricing and risk systems, so he frames most problems as <em>model or
+architecture</em> problems and under-weights incentives, politics and sales. Posts are written for
+LinkedIn reach: contrarian hooks ("Stop trusting N(d1)", "Stop summing your Vega") overstate the
+point, which is usually standard practitioner caution. A few posts on quantum computing and AI policy are
+more enthusiastic than evidenced. The historical failure cases in the map below are <strong>added context
+from this note</strong>, not claims from his posts.</p>
+</blockquote>
+<hr />
+<h2 id="what-this-adds-to-the-program">What this adds to the program</h2>
+<ul>
+<li><strong>A derivatives layer the repo did not have.</strong> <a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> covers bond math, DV01 and the
+  curve from a rates salesperson's seat; <a class="wiki" href="doc-notes-wss-trading-hedge-funds.html">wss trading hedge funds</a> covers options only as put/call
+  ratios. Nothing in <code>notes/</code>, <code>learn/</code> or <code>GLOSSARY.md</code> explains <em>how a derivative is priced, risked,
+  hedged and charged for credit and funding</em>. This corpus does, end to end, with the math on a whiteboard.</li>
+<li><strong>A problem-first index.</strong> Topic labels ("options", "rates") say what a post is <em>about</em>. The tags here
+  say what problem it <em>solves</em> and <em>for whom</em>, which is the question an MBA reader actually has.</li>
+<li><strong>The technologist's view.</strong> His recurring claim is that pricing errors come from architecture more
+  often than from math. That is the bridge to <a class="wiki" href="doc-notes-bloomberg-hub.html">bloomberg hub</a>, <a class="wiki" href="doc-notes-tradeweb-ai-price.html">tradeweb ai price</a> and the vendor
+  economics in the company studies.</li>
+</ul>
+<hr />
+<h2 id="the-six-problems-every-derivative-position-creates">The six problems every derivative position creates</h2>
+<p>Almost every concept he teaches answers one of six questions. They stack: each one assumes the one
+above it is solved.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Problem</th>
+<th>Who has it</th>
+<th>Concepts (his posts)</th>
+<th>What goes wrong without it (added context)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P1</strong></td>
+<td><strong>Value it.</strong> What is this contract worth today?</td>
+<td>Dealers, funds, auditors, anyone who must mark a book</td>
+<td>Risk-neutral pricing, discounting, curve building (SOFR, Fed Funds), Black-Scholes as a heat equation, PDE boundary conditions, Monte Carlo, trees</td>
+<td>No agreed value means no trading, no accounting, no collateral. The LIBOR scandal forced a decade-long rebuild of the curves under ~$300tn of contracts.</td>
+</tr>
+<tr>
+<td><strong>P2</strong></td>
+<td><strong>Measure the risk.</strong> How much do I lose if the market moves?</td>
+<td>Trading desks, risk managers, regulators</td>
+<td>Greeks and their failure modes, Taylor expansion of P&amp;L, VaR and the "turkey problem", PCA on curves, Jacobians and gradients as sensitivities, risk attribution</td>
+<td>Hidden exposure blows up in one day: short-volatility products in Feb 2018; JPMorgan's 2012 "London Whale," where a VaR model change understated risk.</td>
+</tr>
+<tr>
+<td><strong>P3</strong></td>
+<td><strong>Hedge it.</strong> How do I neutralize a risk I don't want to own?</td>
+<td>Corporates (exporters, importers), funds, the dealers who take the other side</td>
+<td>Replication and forwards, option strategies as building blocks (spreads, condors, butterflies, diagonals), futures and NDFs, Brazil's synthetic onshore dollar</td>
+<td>Hedges that are really bets. Sadia and Aracruz lost billions in 2008 on FX structures sold as protection.</td>
+</tr>
+<tr>
+<td><strong>P4</strong></td>
+<td><strong>Will they pay?</strong> What if the other side defaults?</td>
+<td>Banks with uncollateralized trades, CCPs</td>
+<td>CVA/DVA and the XVA family, copulas and joint default (Li, Sklar), Poisson default intensities</td>
+<td>2008: banks lost more from marking counterparty risk (CVA) than from actual defaults, per the Basel Committee. Archegos (2021) repeated it.</td>
+</tr>
+<tr>
+<td><strong>P5</strong></td>
+<td><strong>Fund it.</strong> Can I carry the position and meet the margin calls?</td>
+<td>Bank treasury and XVA desks, pension funds, CCPs</td>
+<td>FVA/MVA/KVA, funding curves, CDI/SELIC/SOFR as funding anchors, settlement conventions, stale pricing in private assets</td>
+<td>Solvent but illiquid: the 2022 UK pension (LDI) crisis was a margin-call spiral, not a solvency problem.</td>
+</tr>
+<tr>
+<td><strong>P6</strong></td>
+<td><strong>Compute it.</strong> Can the systems produce all of the above fast, consistently and explainably?</td>
+<td>Bank technology, vendors, fintechs</td>
+<td>Curve-engine architecture, numerical methods, physics-informed neural networks, neural curve fitting vs. Nelson-Siegel-Svensson, quantum computing</td>
+<td>Two systems disagree on one trade; an overnight risk run misses its window; nobody can explain a P&amp;L move. When rates went negative, models that assumed log-normal rates (Black-76) stopped producing prices.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>How they chain.</strong> You cannot hedge (P3) what you cannot measure (P2), and you cannot measure what you
+cannot value (P1). <strong>XVA is what P1 looks like once the clean assumptions fail</strong>: it re-prices the trade
+for P4 (default) and P5 (funding and capital). P6 sits under all of them, because every number above is
+produced by a system.</p>
+<h3 id="where-his-posts-concentrate-tag-counts-a-post-can-carry-several-problems">Where his posts concentrate (tag counts; a post can carry several problems)</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Posts</th>
+<th>Banks &amp; dealers</th>
+<th>Corporates</th>
+<th>Investors &amp; funds</th>
+<th>Regulators &amp; infra</th>
+<th>Tech &amp; vendors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P1 Value it</td>
+<td>95</td>
+<td>51</td>
+<td>10</td>
+<td>21</td>
+<td>22</td>
+<td>20</td>
+</tr>
+<tr>
+<td>P2 Measure the risk</td>
+<td>76</td>
+<td>50</td>
+<td>1</td>
+<td>24</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>P3 Hedge it</td>
+<td>93</td>
+<td>70</td>
+<td>9</td>
+<td>18</td>
+<td>29</td>
+<td>6</td>
+</tr>
+<tr>
+<td>P4 Will they pay</td>
+<td>11</td>
+<td>8</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>P5 Fund it</td>
+<td>44</td>
+<td>34</td>
+<td>3</td>
+<td>8</td>
+<td>19</td>
+<td>2</td>
+</tr>
+<tr>
+<td>P6 Compute it</td>
+<td>49</td>
+<td>13</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>40</td>
+</tr>
+</tbody>
+</table></div>
+<p>Read the gaps as much as the mass. <strong>P4 (counterparty) has 11 posts</strong> and the XVA thread only started in
+October 2026, so pair it with an XVA textbook. <strong>Corporates appear in only 13 posts</strong>, almost all in the
+Brazil series: he writes from the dealer's side of the trade.</p>
+<p>Tags are keyword-based and meant as a starting index, not a verdict. 9 posts carry no problem tag.</p>
+<hr />
+<h2 id="his-series-read-as-short-courses">His series, read as short courses</h2>
+<p>He posts in sequences. Read in order, each one is a short course on one problem.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Series</th>
+<th>When</th>
+<th>Problem</th>
+<th>What it builds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Math toolkit</strong></td>
+<td>Jan 2026, Sep 2026</td>
+<td>P1, P2, P6</td>
+<td>Gradients, Jacobians, Hessians, optimization (gradient descent to metaheuristics), PCA, Taylor expansion, Fourier, Itô, Sklar. The sensitivities in P2 <em>are</em> these derivatives.</td>
+</tr>
+<tr>
+<td><strong>Options as building blocks</strong></td>
+<td>Mar–Apr 2026</td>
+<td>P3</td>
+<td>Covered call → protective put → verticals → calendars → diagonals → butterflies → condors → double diagonal. Each structure is a different bet on price, time or volatility.</td>
+</tr>
+<tr>
+<td><strong>Greeks in practice</strong></td>
+<td>Mar 2026</td>
+<td>P2</td>
+<td>Why delta-hedged books still lose, why summing vega across expiries is wrong, gamma near expiry (0DTE), theta as the price of gamma.</td>
+</tr>
+<tr>
+<td><strong>Exotics</strong></td>
+<td>May 2026</td>
+<td>P1, P3</td>
+<td>Single → double barriers, Asians, TARFs, accumulators, quantos, PRDCs. Path-dependence breaks closed-form pricing, which pushes you into P6.</td>
+</tr>
+<tr>
+<td><strong>Curve building</strong></td>
+<td>Aug 2026</td>
+<td>P1, P5, P6</td>
+<td>Fed Funds and SOFR curves, risk-free discounting, why curve construction is system design.</td>
+</tr>
+<tr>
+<td><strong>Brazil onshore dollar</strong></td>
+<td>Oct 2026</td>
+<td>P3, P5</td>
+<td>Why a non-convertible currency forces a separate onshore dollar curve (cupom cambial), and the instruments that trade it (DDI, FRC, NDFs, CDI swaps). How a local bank absorbs an exporter's hedge.</td>
+</tr>
+<tr>
+<td><strong>Rates when models break</strong></td>
+<td>Oct 2026</td>
+<td>P1, P6</td>
+<td>Negative rates vs. log-normal models, inflation linkers, curve-slope trades and the hedge ratios that keep them direction-neutral.</td>
+</tr>
+<tr>
+<td><strong>XVA</strong></td>
+<td>Oct 2026 (ongoing)</td>
+<td>P4, P5</td>
+<td>Why pre-2008 pricing assumed risk-free funding and safe counterparties; CVA, then DVA and its "phantom profit" paradox.</td>
+</tr>
+<tr>
+<td><strong>AI and quantum in finance</strong></td>
+<td>Dec 2025–Feb 2026, Oct 2026</td>
+<td>P6</td>
+<td>Transformers and BERT vs. GPT, PINNs that respect no-arbitrage, neural nets vs. parametric curves, quantum algorithms and the encryption threat.</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="where-the-problems-are-still-open-the-mba-angle">Where the problems are still open (the MBA angle)</h2>
+<p>P1–P3 are largely solved for large banks; the money and the friction are in P4–P6 and in the
+under-served parties.</p>
+<ol>
+<li><strong>XVA compute cost (P4–P6).</strong> XVA needs portfolio-wide Monte Carlo across every counterparty and
+   scenario. Banks spend on GPUs, algorithmic differentiation and neural approximations of slow pricers
+   (his PINN and neural-curve posts). This is the vendor wedge for <a class="wiki" href="doc-notes-bloomberg-hub.html">bloomberg hub</a>-style platforms.</li>
+<li><strong>Mid-market corporate hedging (P3).</strong> The Brazil series shows a local dealer manufacturing dollar
+   liquidity for an exporter. The exporter usually cannot evaluate what it bought, and 2008 showed the cost.
+   Hedge transparency for mid-size treasurers is an open product problem. See <a class="wiki" href="doc-notes-tradeweb-derivatives-regulation.html">tradeweb derivatives regulation</a>.</li>
+<li><strong>Consistency and explainability (P6).</strong> Front office, risk and finance often run separate engines
+   that disagree. His "bad architecture, not bad math" claim is the thesis; regulators asking for every
+   number to be explained is the forcing function.</li>
+<li><strong>Liquidity under stress (P5).</strong> Margin spirals (LDI 2022, March 2020) show funding risk is
+   under-modeled outside large banks. His private-markets post adds the mirror image: smoothed private
+   marks hide volatility until a liquidity event forces a real price (<a class="wiki" href="doc-notes-wss-private-markets-wealth.html">wss private markets wealth</a>).</li>
+</ol>
+<hr />
+<h2 id="suggested-reading-path">Suggested reading path</h2>
+<ol>
+<li><strong>Math toolkit</strong> posts, alongside the textbooks: Hull, <em>Options, Futures, and Other Derivatives</em>, for
+   P1–P3; Shreve, <em>Stochastic Calculus for Finance</em>, for the notation on his whiteboards.</li>
+<li><strong>Options as building blocks</strong>, then <strong>Greeks in practice</strong> (P3 → P2).</li>
+<li><strong>Curve building</strong>, then <strong>Rates when models break</strong> (P1 at its foundation).</li>
+<li><strong>Exotics</strong>, then <strong>Numerical methods</strong> (where P1 forces P6).</li>
+<li><strong>XVA</strong> with Gregory, <em>The xVA Challenge</em> (P4–P5; his coverage is thin here).</li>
+<li><strong>Brazil onshore dollar</strong> as a case study of all six problems at once inside one market.</li>
+<li><strong>AI and quantum</strong> last, as a view on where P6 is heading.</li>
+</ol>
+<p>Each step pairs with one buildable exercise for <code>quant-backtesting/</code> or an Acumen case: a SOFR curve
+bootstrapper (P1), a Black-Scholes pricer with Greeks and a Taylor P&amp;L explain (P2), a delta-hedging
+simulation that shows hedge slippage (P3), a barrier option by Monte Carlo vs. PDE (P6), and a one-netting-set CVA (P4).
+<a class="wiki" href="doc-notes-fourier-use-cases.html">fourier use cases</a> already has a Fourier pricing demo that matches his Fourier posts.</p>
+<hr />
+<h2 id="links">Links</h2>
+<p><strong>Applied:</strong> <a class="wiki" href="doc-notes-apply-six-problems-to-market-infrastructure.html">apply six problems to market infrastructure</a> runs the six problems against the ten company
+studies.</p>
+<p><a class="wiki" href="doc-notes-wss-rates-macro.html">wss rates macro</a> <a class="wiki" href="doc-notes-wss-credit-distressed.html">wss credit distressed</a> <a class="wiki" href="doc-notes-wss-trading-hedge-funds.html">wss trading hedge funds</a> <a class="wiki" href="doc-notes-wss-private-markets-wealth.html">wss private markets wealth</a>
+<a class="wiki" href="doc-notes-trading-floor-mechanics.html">trading floor mechanics</a> <a class="wiki" href="doc-notes-tradeweb-derivatives-regulation.html">tradeweb derivatives regulation</a> <a class="wiki" href="doc-notes-fourier-use-cases.html">fourier use cases</a>
+<a class="wiki" href="doc-canon-canon-taleb-black-swan.html">canon taleb black swan</a> (VaR and the turkey problem) <a class="wiki" href="doc-canon-canon-taleb-antifragile.html">canon taleb antifragile</a>
+<a class="wiki" href="doc-canon-canon-tetlock-superforecasting.html">canon tetlock superforecasting</a> (models as maps, not truth)</p>
+<h2 id="gaps">Gaps</h2>
+<ul>
+<li><strong>Counterparty and funding (P4, P5) are thin:</strong> 11 and 44 posts. XVA started in October 2026 and is
+  ongoing; re-pull in a few months.</li>
+<li><strong>No permalinks:</strong> the activity feed did not expose links for most posts, so posts are referenced by
+  series and topic, not URL.</li>
+<li><strong>Images are capped at the sizes LinkedIn served</strong> (mostly 1280px, a few at 160–480px).</li>
+<li><strong>Tags are keyword-based.</strong> Spot-checked, not hand-labeled; expect some posts in a neighbouring bucket.</li>
+</ul></article>
+</div>
+<div class="doc-end"><button class="mark-read" type="button" data-href="doc-notes-rodrigues-derivatives-problem-map.html"><span class="mr-tick">✓</span><span class="mr-off">Mark as read</span><span class="mr-on">Read</span></button><span class="doc-end-hint">Marks itself read when you reach the end.</span></div>
+<nav class="doc-pn"><a class="doc-prev" href="doc-notes-professional-services-leverage.html"><span>Previous</span>Professional-Services Leverage — the pyramid as a business model</a><a class="doc-next" href="doc-notes-sec-filing-intelligence.html"><span>Next</span>The SEC Filing System as Intelligence Infrastructure</a></nav>
+</div><script src="site.js?v=1793581981"></script></body></html>
