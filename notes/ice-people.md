@@ -158,6 +158,24 @@ The candour channel. On Bakkt futures: “We thought there'd be a market, there 
 
 ---
 
+## How they're paid (proxy, 2026)
+
+> FY2025 pay from the DEF 14A filed 2026-03-31 (CD&A, 2025 Summary Compensation Table). Structured extract: `_ingest/raw/audit/pay/ice.json`.
+
+| Element | CEO Jeff Sprecher, FY2025 | Metric and weight |
+|---|---|---|
+| Salary | $1.40m (6%) | raised to $1.5m in 2025 |
+| Annual bonus | $4.05m (18%) = 108% of target | 70% adjusted operating income · 30% net revenue · committee discretion on MBOs (0% applied) |
+| LTI | $16.7m (75%) | 30% PSU on 3-yr TSR vs S&P 500 (25th/50th/75th pct → 50/100/200%) · 40% PSU on **year-three (2027) EBITDA** · 30% RSU |
+| Total (SCT) | **$22.1m** (2024: $19.5m) | Say-on-pay ~94% (2024: ~79%); CEO 10x salary (holds ~318x); two clawbacks |
+
+- **M&A is walled off from the formula.** “the impact of mid-year merger and acquisition activity is excluded from results and cannot be used to meet quantitative financial performance targets”, and the same rule covers the EBITDA PSU. Deals pay only through later budgets and synergy MBOs (Gardiner and Jackson were scored on Black Knight synergy targets). No adjusted EPS in pay.
+- **Integration is the LTI.** The year-three EBITDA PSU doubled from 20% to 40%, “reflecting the Company’s continued growth and its focus on effective acquisition integration”. *Predicts:* hard synergy delivery from MarketAxess inside the 2027–28 measurement windows.
+- **Shareholders tamed the one-offs.** The ~79% 2024 vote followed the “2023 Acquisition Related PSUs”; ICE dropped one-time awards and one-year PSUs and won ~94% in 2025.
+- **Ownership dwarfs the plan.** At ~318x salary in stock, Sprecher's wealth tracks the share price far more than any metric; the bonus has funded 97–109% of target five years running, a budget-hitting machine rather than a stretch lottery.
+
+---
+
 ## 6. Leadership lenses
 
 - [[canon-schein-organizational-culture]] — **Artifacts:** the podcast, the ad tagline, the Atlanta HQ, the NYSE floor. **Espoused values:** neutrality, transparency, "all-weather." **Basic assumption:** the founder's pattern-recognition is the strategy; leaders are interchangeable carriers of it. That assumption explains why roles rotate and the script repeats.

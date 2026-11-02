@@ -123,6 +123,24 @@
 | Private markets | Organic build, Conway (2023) | Bought-in leadership: Ogunlesi, Kapnick, Rao (2025) | Small, Fink |
 | Who faces investors | Fink letters plus a broad bench at the 2023 Investor Day (Ramji, Wiedman, Conway) | Small and Goldstein plus acquired founders (2025) | — |
 
+## How they're paid (proxy, 2026)
+
+*Source: DEF 14A filed 2026-04-10, FY2025. Extract in `_ingest/raw/audit/pay/blk.json`.*
+
+| Item | Fink, FY2025 |
+|---|---|
+| Board-framed pay / SCT total | $45.0m / $37.7m (SCT counts equity in the year it is granted) |
+| Mix | salary 3% · cash 23% · RSUs 19% · BPIP performance RSUs 54% · plus carried interest (no grant value) |
+| How the award is set | scorecard of 50% financial, 25% business strength, 25% organisational strength, then "context-informed judgment"; the award can move −100% to +35% a year. Fink was rated "Far Exceeds", +24% |
+| Long-term metrics | BPIP matrix over 2026–28: 3-yr avg organic revenue growth (target $1.0bn) × adjusted operating margin (target 44%); pays 0–165% on a non-GAAP basis |
+| Special awards | CEO Carry Incentive (annual); Executive Carry Program added for Goldstein and Small (Jan 2026) |
+| Say-on-pay | 67% in 2025, and the board says it "was disappointed with the outcome." |
+
+- **What the formula rewards: organic growth and margin together.** BPIP pays only on the two-axis grid. An acquisition helps only if it adds net new business revenue without diluting the adjusted margin. Expect growth framed as "organic base fee growth" and expense discipline after the GIP, HPS and Preqin deals.
+- **Carry points the top three at private markets.** Fink, Goldstein and Small get paid only if flagship funds raise money and beat their hurdles. That ties the visible bench in §1 to the fundraising story, not just the stock.
+- **Judgement stays.** The board refuses to weight individual metrics, even with 32% voting against. The pay process works like the succession process: the founder-led board keeps discretion and explains it rather than giving it up *(inference)*.
+- **Succession signal:** organisational strength (25%) includes "continuing to fortify executive succession plans". Still, nobody gets a retention or successor-style grant. The proxy names a process, not a person.
+
 ## 4. Leadership lenses
 
 - **Power** ([[canon-pfeffer-power]]): board seats and deferred stock are formal power for the acquired founders. The CFO's Investor Day role is visible power. The founder keeps both chairs.

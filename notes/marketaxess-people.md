@@ -182,6 +182,24 @@ The finance chair is nearly mute in this corpus, as Tradeweb's was ([[tradeweb-p
 
 ---
 
+## How they're paid (proxy, 2026)
+
+> FY2025 pay from the DEF 14A filed 2026-04-29; merger pay from the DEFM14A filed 2026-09-18. Structured extract: `_ingest/raw/audit/pay/mktx.json`.
+
+| Element | CEO Chris Concannon, FY2025 | Metric and weight |
+|---|---|---|
+| Salary | $0.75m (11%) | — |
+| Annual cash incentive | $1.53m (21%) | 75% adjusted operating income (up from 60%; $398.1m vs $422.7m target → 94%) · 25% individual/strategic |
+| LTI | $4.81m (68%) incl. $1.21m options | 50% PSU (1/3 U.S. credit market share, 1/3 revenue growth ex-U.S. credit, 1/3 operating margin) · 50% RSU + options |
+| Total (SCT) | **$7.1m** (pay ratio 35:1) | Say-on-pay 98%; CEO 10x salary; two clawbacks |
+
+- **Market share is in the paycheck.** A third of PSUs pays on U.S. credit share, and the 2023 PSUs “paid out in early 2026 at 43% of target” (share leg funded 22%). The plan registered the share loss before the sale did.
+- **Inorganic growth is excluded; no adjusted EPS.** Adjusted OI is operating income “before (i) unplanned inorganic activity”, PSUs are certified “adjusting for unplanned merger and acquisition activity and currency fluctuations”, and RFQ-hub is carved out of 2026 targets.
+- **The ICE sale pays through existing contracts, not new bonuses.** No retention or transaction bonuses are disclosed, and “none of MarketAxess’ executive officers have entered into any new agreement, arrangement or understanding with Parent”. In-flight PSUs convert at the greater of target or pro-rated actual, then vest on time only; severance is double-trigger. Concannon's golden-parachute estimate is **$14.6m** at $167/share, about 2x his 2025 SCT pay.
+- *Inference:* with PSUs paying below target and a target floor on conversion, the sale was a better pay outcome for management than grinding out the market-share goals.
+
+---
+
 ## 6. Leadership lenses
 
 - [[canon-kotter-leading-change]] — the founder-to-operator handover was a model guided coalition: four years as President, an announced date, the founder as Executive Chairman. The *change* that followed (protocol rebuild) lacked the second half of Kotter: short-term wins visible in the KPI the market watched (US credit share).

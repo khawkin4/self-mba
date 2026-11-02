@@ -151,6 +151,22 @@
 - **No named rivals:** in 293 items, only LexisNexis and Bloomberg Law are named as competitors, both by Beastrom in 2021. Harvey and the frontier labs as competitors are never named. The labs appear only as partners.
 - **Coined terms carry the story:** "Big 3", "build, partner, buy", "professional-grade", "Fiduciary-Grade AI™", "verification layer". Each marks a phase.
 
+## How they're paid (proxy, 2026)
+
+> FY2025 pay from the 2026 Management Proxy Circular (6-K Ex. 99.1, filed 2026-04-15; annual meeting 2026-06-10). Structured extract: `_ingest/raw/audit/pay/tri.json`.
+
+| Element | CEO Steve Hasker, FY2025 | Metric and weight |
+|---|---|---|
+| Salary | US$1.13m (10%) | C$1.605m |
+| Annual incentive | US$2.28m (20%) = ~101% of target | 1/3 organic revenue growth · 1/3 organic book of business (ACV) · 1/3 adj. EBITDA less accrued capex ("cash OI") |
+| LTI | US$8.09m (69%) incl. $2.02m options | 2025: 50% PRSU / 25% TRSU / 25% options; PRSU = 50% 3-yr avg organic revenue growth, 50% 3-yr avg FCF per share. 2026 CEO: 60% PRSU / 40% options |
+| Total (SCT) | **US$11.7m** | Say-on-pay ~99% (five-year avg ~98%); CEO 6x salary; two clawbacks |
+
+- **Organic by construction.** Organic revenue “excludes the distortive impacts of acquisitions and dispositions from not owning a business in both comparable periods”, and unplanned M&A is adjusted out of both plans. *Predicts:* the 2025 AI acquisitions must earn their keep as organic growth from year two, not as a revenue bump.
+- **Buybacks don't count.** PRSU principles neutralise “The impact of any share repurchases that were in excess of buyback amounts reflected in the original operating plan”, the opposite of S&P Global's cumulative adjusted EPS. Capital returns cannot inflate FCF-per-share payouts beyond plan.
+- **No EPS, no TSR; every metric is organic, recurring or cash.** Payouts are steady (five-year bonus average 124% of target; 2023–25 PRSUs 120%), and “no discretionary adjustments were made” in 2025.
+- **The family sits on the pay committee.** With Woodbridge at ~71%, the Board “has approved our reliance on the Nasdaq’s controlled company exemption” so Woodbridge-affiliated directors serve on the HR Committee; David Thomson attends as a guest. The say-on-pay vote is a formality; the real check is the controlling shareholder in the room.
+
 ## 5. Leadership lenses
 
 - **The outsider CEO** ([[canon-munger-poor-charlies-almanack]], [[canon-bezos-shareholder-letters]]): Hasker's record reads as an operator-allocator's. Cost program, focus, cash returns, small deals. That suits a controlled company whose owner values the dividend streak.

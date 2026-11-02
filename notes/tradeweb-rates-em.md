@@ -128,6 +128,53 @@
 
 Tradeweb's rates franchise compounds by being **first, wired-in and neutral** in each new market, and it is now converting that position into **reference data and state-sanctioned infrastructure**. Treat the volume and automation statistics as marketing. Treat the mandates (ECB, CFETS, CMA, FTSE Russell) as the real evidence.
 
+## 9. Treasury and repo TAM, sized with FY2025 data *(added 2026-11-01)*
+
+**Sources (outside the newsroom bucket):** Tradeweb's Q4/FY2025 earnings release (Feb 5 2026: revenue by asset
+class, average variable fee per $1M, ADV by product); SIFMA US Treasury statistics; OFR "Sizing the U.S. Repo Market"
+(Dec 2025). Calculations are this note's own. Variable fees only: Tradeweb also books **$280M a year of fixed rates
+fees** (subscriptions), which no volume-based figure below captures.
+
+**The inputs:**
+
+| Item | Figure | Source |
+|---|---|---|
+| Tradeweb FY25 revenue | **$2,052M**: rates $1,094M (variable $813M), money markets $174M (variable $156M) | Earnings release |
+| Variable fee per $1M, Q4 2025 | Rates cash **$2.26** (blends USTs, EGBs, mortgages); swaps ≥1Y **$3.69**; money markets (repo + other) **$0.54** | Earnings release |
+| Tradeweb UST ADV | **$237.2bn** (FY25, +11.6%); $233.6bn in Q4 | Dec 2025 monthly report |
+| Tradeweb repo ADV | **$801.4bn** (Q4 2025, +16.5%) | Earnings release |
+| Market UST trading | **$1,047bn ADV** (2025, primary dealers, +15.3%); $1,209bn through Jul 2026; $31.1tn outstanding (Jun 2026) | SIFMA |
+| US repo market | **$12.6tn** daily exposures (Q3 2025): $4.4tn cleared at FICC; ~$5.0tn non-centrally cleared bilateral ($5.9tn with forwards) | OFR |
+
+**Cash Treasuries.**
+- Market: $1,047bn × 252 days ≈ **$264tn traded a year**. At Tradeweb's rates-cash fee ($2.26), that is **~$600M a
+  year** if every dollar paid a venue fee; at $1.50 it is ~$400M. This is a ceiling on venue variable revenue, not
+  a forecast: interdealer CLOBs and dealer streams price differently, and some volume never touches a venue.
+- Tradeweb: $237bn × 252 ≈ $60tn a year → **~$135M of variable revenue** at the blended rates-cash fee. Its UST ADV is
+  **~23% of SIFMA's figure**. The two series are defined differently (dealer-reported vs. venue-reported, with
+  different double-counting), so treat that ratio as rough.
+
+**Repo.**
+- Tradeweb: $801bn × 252 × $0.54 ≈ **$109M a year**. That squares with its $156M of money-markets variable revenue,
+  which also includes other money-market products.
+- **The mandate's pool is the bilateral segment:** ~$5.0tn of non-centrally cleared repo is what the SEC rule pushes
+  toward clearing. If all of it traded on venues at $0.54, that would be **~$680M a year**, an upper bound that assumes
+  every bilateral trade moves onto a venue, which "done-with" sponsored repo makes unlikely (§7 Q6;
+  [[tradeweb-derivatives-regulation]]).
+
+**Revenue sensitivity (the useful version of the TAM):**
+
+| Extra flow on Tradeweb | Variable fee | Extra revenue a year |
+|---|---|---|
+| +$100bn/day of cash Treasuries | $2.26 per $1M | **≈ $57M** |
+| +$1tn/day of repo | $0.54 per $1M | **≈ $136M** |
+
+**Read:** Treasuries and repo are a venue revenue pool in the **hundreds of millions** a year, against Tradeweb's ~$2.05bn
+total. The clearing mandate matters through the repo line: each trillion a day that moves from bilateral onto a venue is
+worth ~$136M to whoever hosts it. Fees per $1M are falling (Q4 2025 YoY: rates cash −4.6%, money markets −5.9%), so
+growth has to come from volume. The fixed-fee line is the unmodelled upside: the mandate could raise subscription and
+connectivity revenue even if per-trade fees keep falling.
+
 **Links:** [[tradeweb-hub]] · [[tradeweb-ai-price]] · [[tradeweb-a2a-information-leakage]] · [[wss-rates-macro]] · [[market-structure-24-5-trading]] · [[market-structure-24-5-institutional-response]] · [[trading-floor-mechanics]] · [[wss-trading-hedge-funds]] · [[bloomberg-terminal-instrumentation]] · [[canon-helmer-7-powers]] · [[canon-schelling-strategy-of-conflict]] · [[canon-shapiro-varian-information-rules]] · [[canon-hagiu-wright-multi-sided-platforms]] · [[canon-brandenburger-nalebuff-coopetition]] · [[canon-perrow-normal-accidents]]
 
 ---

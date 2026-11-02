@@ -86,6 +86,7 @@ Nine companies around Tradeweb were studied the same way (corpora in `_ingest/ra
 - [[cross-company-capability-matrix]]: who owns which layer of the trade-and-data chain, and the empty cells.
 - [[cross-company-financials]]: SEC XBRL financials FY2018–Q2 2026, ROIC with and without goodwill, capital allocation, deal multiples.
 - [[cross-company-narrative-vs-numbers]]: each firm's story turned into growth, margin, reinvestment and risk claims, then tested.
+- [[cross-company-executive-pay]]: what nine boards pay their CEOs on, and how that predicts M&A and capital-return behaviour.
 
 ## 5. Cross-note open questions
 

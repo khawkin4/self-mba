@@ -89,8 +89,8 @@
 |---|---|---|---|
 | ICE ← Ellie Mae (2020) | $11B EV | ~23× EBITDA, ~12× revenue | [[ice-strategy-financials]] |
 | ICE ← Black Knight (2023) | ~$16B EV at signing | ~20× unsynergised EBITDA | [[ice-strategy-financials]] |
-| ICE ← MarketAxess (2026) | ~$5.7B EV | ~13× EBITDA before synergies (~10.6× after) | [[ice-marketaxess-deal]] |
-| Tradeweb ← Trumid (2026) | ~$1.97B (incl. ~$220M tax assets) | ~1.8× *Tradeweb's own* FY25 EBITDA; Trumid's financials undisclosed | [[tradeweb-strategy-financials]] |
+| ICE ← MarketAxess (2026) | ~$5.7B EV ($167/share) | ~13× EBITDA before synergies (~10.6× after). **Merger proxy:** ICE was the only bidder to name a price; it offered $175 (May), cut to $165 (Jul), and agreed $167 after a $170 counter. $167 is at the very bottom of J.P. Morgan's base-case DCF ($166.51–230.35). Break fee $148.8M; reverse antitrust fee $327.4M | [[ice-marketaxess-deal]], [[marketaxess-ice-deal]] |
+| Tradeweb ← Trumid (2026) | ~$1.97B ($1.75B business + ~$220M tax assets, an NPV at 7%) | ~1.8× *Tradeweb's own* FY25 EBITDA. **8-K:** Trumid's revenue and EBITDA are still undisclosed. $1.888B cash from the balance sheet, no debt, $82M in LLC units to Trumid management; $105M reverse fee if antitrust blocks; no obligation to accept remedies touching LSEG. Sellers are 16 funds including BlackRock, T. Rowe, TPG and Millennium. Matching ICE's ~13× would need ~$135M of Trumid EBITDA | [[tradeweb-strategy-financials]] |
 | LSEG ← Octus (2026) | $3.535B | ~11–12× revenue, ~29× EBITDA (inference) | [[lseg-capital-allocation]] |
 | LSEG ← Refinitiv (2021) | ~$27B EV, all-stock | — | [[lseg-refinitiv-deal]] |
 
@@ -112,11 +112,11 @@
 ## 8. Open questions and next data
 
 1. **Valuation:** add share prices to compute EV/EBITDA, P/E, FCF yield and a reverse DCF per firm. That needs a price data source; it's the next decision.
-2. **Proxy statements:** what are executives paid on (adjusted EPS, ROIC, TSR)? That predicts deal behaviour.
+2. **Proxy statements:** done. See [[cross-company-executive-pay]].
 3. **Trumid's financials** (Tradeweb 8-K / investor deck), so the deal can be put on the same basis as §5.
 4. **Q3 2026 10-Qs:** is Q2's normalisation at the venues a trend?
 
-**Links:** [[cross-company-narrative-vs-numbers]] · [[cross-company-say-vs-do]] · [[cross-company-capability-matrix]] · [[cross-company-attention-map]] · [[tradeweb-strategy-financials]] · [[marketaxess-strategy-financials]] · [[ice-strategy-financials]] · [[ice-marketaxess-deal]] · [[spglobal-strategy-financials]] · [[blackrock-strategy-financials]] · [[blackrock-private-markets]] · [[goldman-strategy-financials]] · [[jpmc-capital-allocation]] · [[lseg-capital-allocation]] · [[lseg-refinitiv-deal]] · [[thomsonreuters-capital-allocation]] · [[sec-filing-intelligence]] · [[canon-bezos-shareholder-letters]] · [[canon-munger-poor-charlies-almanack]] · [[canon-klarman-margin-of-safety]] · [[canon-mauboussin-success-equation]]
+**Links:** [[cross-company-executive-pay]] · [[marketaxess-ice-deal]] · [[cross-company-narrative-vs-numbers]] · [[cross-company-say-vs-do]] · [[cross-company-capability-matrix]] · [[cross-company-attention-map]] · [[tradeweb-strategy-financials]] · [[marketaxess-strategy-financials]] · [[ice-strategy-financials]] · [[ice-marketaxess-deal]] · [[spglobal-strategy-financials]] · [[blackrock-strategy-financials]] · [[blackrock-private-markets]] · [[goldman-strategy-financials]] · [[jpmc-capital-allocation]] · [[lseg-capital-allocation]] · [[lseg-refinitiv-deal]] · [[thomsonreuters-capital-allocation]] · [[sec-filing-intelligence]] · [[canon-bezos-shareholder-letters]] · [[canon-munger-poor-charlies-almanack]] · [[canon-klarman-margin-of-safety]] · [[canon-mauboussin-success-equation]]
 
 ---
 ### Rep

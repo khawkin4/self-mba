@@ -196,6 +196,24 @@ Product-first and sceptical of demos. "Visual Structuring aims to create a new p
 
 ---
 
+## How they're paid (proxy, 2026)
+
+*Source: DEF 14A filed 2026-03-20, FY2025. Extract in `_ingest/raw/audit/pay/gs.json`.*
+
+| Item | Solomon, FY2025 |
+|---|---|
+| Board-framed pay / SCT total | $47.0m / $118.9m (SCT includes the $80m Retention RSUs granted Jan 2025) |
+| Mix | salary 4% · cash 22% · carried interest 7% · PSUs 67% (no time-vested RSUs in annual pay) |
+| How the award is set | an Assessment Framework covering ROE, ROTE, efficiency, TSR, CET1, BVPS, EPS, clients, risk and controls, and culture, applied "without ascribing specific weight to any single factor or metric" |
+| PSUs | 3-yr avg GAAP ROE over 2026–28, absolute and relative to US/European peers: <5% pays 0, ≥16% pays 150%; capped at 100% if ROE is 5–6%. The CEO, COO and CFO are paid 50% in cash and 50% in shares |
+| Special awards | $80m Retention RSUs each to Solomon and Waldron (5-yr cliff vest, Jan 2030); 2021 SVC Awards (TSR, 5 yrs); carry program since 2025 |
+| Say-on-pay | about 66% in 2025. Some holders said off-cycle awards belong "only in exceptional circumstances" |
+
+- **The pair is locked in to 2030.** The Retention RSUs are time-vested and have no performance condition. They pay for keeping Solomon *and* Waldron together. Waldron's pay ($45m) is close to Solomon's ($47m), which fits the §5 read: an heir in position whom nobody names.
+- **ROE is the single long-term scoreboard.** The PSUs settle on reported ROE, against the 2020 Investor Day path. Expect capital-light growth (AWM, private credit) and steady pressure on the efficiency ratio. Expect less use of the balance sheet in consumer businesses.
+- **Carry makes partners into GP-style managers.** A cash slice goes into Goldman's own alternatives funds. Leaders gain when third-party alternatives fundraising does well, which reinforces the AWM pivot.
+- **Board judgement wins.** At 66% support the board made no changes. Pay is a retention tool in a market where talent goes to alternative asset managers, and the board accepts the shareholder cost *(inference)*.
+
 ## 7. Leadership lenses
 
 - [[canon-grove-high-output-management]] — Esposito's "putting the right person into an important seat" is Grove's managerial leverage. The 2025 triumvirates are leverage bought with span: three heads per business so the top two can work on the firm.

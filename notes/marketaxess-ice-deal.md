@@ -132,6 +132,87 @@ All three ignore the three-year phase-in and integration costs, which lower them
 - **For ICE it is a buy-after-build.** Context, from [[ice-marketaxess-deal]]: seven years of ICE Bonds produced ~$125M of FY25 execution revenue. Buying MKTX is the admission that institutional RFQ networks are not built from a retail order book.
 - **For MKTX's clients the data question dominates.** Dealers and asset managers generate the inquiry flow behind CP+. Under ICE, that flow feeds the owner of evaluated prices and indices. That is where pricing power — and client pushback — is most likely (inference).
 
+## What the merger proxy reveals (DEFM14A, 2026-09-18)
+
+*Sources: the definitive proxy (SEC, accession 0001193125-26-395678; page numbers are the proxy's), the DEFA14A of 2026-09-29, and the 8-Ks of 2026-10-22 (HSR) and 2026-10-23 (supplemental disclosures after lawsuits, which restate some proxy paragraphs). Structured extract: `_ingest/raw/audit/deals/mktx_ice_proxy.json`. "Derived" = my arithmetic.*
+
+**1. Background of the Merger (pp.23–29, as supplemented).**
+
+| Date | Event |
+|---|---|
+| Fall 2025 → Nov 2025 | Two financial sponsors approach MKTX separately; NDAs with standstills, non-public data shared; both drop out. "Neither financial sponsor provided a written indication of interest or any other indication of price." |
+| **Dec 9 2025** | Targets + **$300M ASR**. Supplement: JPMorgan's prior work included "the Company’s accelerated stock repurchase program announced in December 2025" |
+| **Late Dec 2025** | "Jeffrey C. Sprecher, Parent’s Chairman and Chief Executive Officer, contacted Carlos M. Hernandez, the Chairman of the Board". Supplement: ICE had never before proposed to buy MKTX |
+| Jan 29 2026 | Hernandez and Sprecher meet in Florida |
+| **Feb 1 2026** | Effective date of JPMorgan's deal engagement — the date it "began advising the Company with respect to a potential transaction" (supplement); ASR final settlement follows on Feb 4 |
+| Feb 5 / Feb 24 | NDA with ICE (no standstill); clean-team agreement; diligence runs Feb–Jul |
+| Mar–Jul 2026 | Concannon and Hernandez hold preliminary talks with "approximately six other parties, including five financial sponsors and one strategic party"; no NDAs (bar one repeat sponsor), no price |
+| **May 27** | ICE's written IOI: **$175.00** cash (33.6% over $130.94); asks for 60 days' exclusivity — never granted |
+| May 28 – Jun 9 | JPM conveys "disappointment regarding the valuation"; ICE says $175 is a full premium; talks pause |
+| Jun 1 | Finance Committee (Begleiter, Cruger, Hoornweg, Cifu) given authority to negotiate |
+| Jun 11 | Board weighs no-shop vs **go-shop**, chooses neither outreach nor go-shop: "the Company should not contact other parties at that time." Revisited at later meetings, same answer |
+| Jun 26 – Jul 1 | Board orders a **Sensitivity Case**; management models lower share, volumes and credit fee capture |
+| **Jul 17** | ICE **cuts to $165.00** (45.0% over $113.80), citing the share-price fall, lower analyst targets, higher cost of capital |
+| **Jul 18** | MKTX counters **$170**; ICE replies **$167** the same day; Hernandez asks Sprecher for more, refused |
+| Jul 21–26 | JPM: analyst targets −35% YTD vs EPS estimates −3% (a de-rating). Concannon asks for a pre-close special dividend; ICE refuses. JPM: "the maximum value reasonably obtainable without potential risk of Parent walking away at that time" |
+| Jul 29 | Fairness opinion, unanimous approval, signing; same-day amendments to Concannon's and two other officers' agreements |
+
+- **Price path:** $175 → $165 → (ask $170) → **$167**. The final price is **$8 below ICE's own opening bid**; MKTX's stock fell faster than the offer (derived: premium rose from 33.6% to 45% at $165).
+- **Other bidders:** seven parties besides ICE (two sponsors in 2025, six in 2026, one of them repeating); **none ever named a price**. No market check after ICE's bid, no go-shop.
+- **Deal protection:** no-shop with fiduciary out; **$148.8M** break fee (~2.5% of equity); ICE pays a **$327.4M** reverse fee (derived ~5.5%) if antitrust kills the deal; ICE has **no divestiture obligation**. Outside date Jul 29 2027 (+ two 6-month extensions). ICE needs ~**$6.2B** incl. fees, no financing condition.
+- **Holders:** BlackRock 11.5%, Primecap 10.0%, **North Reef Capital 9.6%** (13G), Vanguard entities 11.6% combined (derived), AQR 5.6% (p.97). No activist appears anywhere in the background.
+
+**2. Reasons (pp.29–33).** For: all-cash certainty and a ~33% premium; "the highest price that Parent was willing to pay"; standalone risk under both cases; and the view that "the public markets had not historically valued the Company in a manner commensurate with the results of its financial performance". Also cited: the JPM opinion, a fiduciary out with a fee judged not preclusive, no financing condition, and dividends continuing. Against: no upside participation, regulatory risk with ICE not required "to sell, divest, license, hold separate or otherwise dispose of any businesses or assets", remedies capped at the reverse fee, interim restrictions, and costs and disruption if the deal fails. The board compared the antitrust covenants with ICE's Black Knight deal.
+
+**3. Management projections (pp.34–37; full tables in the 10-23 supplement), $M.** These are the December 2025 targets, updated in June for actual results through May 31. Only Base Case revenue and EBITDA for 2026–28 went to ICE. No EPS line is given; 2026E net income is $302M (supplement).
+
+| | 2026E | 2027E | 2028E | 2029E | 2030E | 2031E |
+|---|---|---|---|---|---|---|
+| **Base** revenue | 886 | 971 | 1,067 | 1,145 | 1,198 | 1,222 |
+| Base EBITDA (post-SBC) | 440 | 486 | 544 | 584 | 611 | 623 |
+| Base unlevered FCF | 296 | 312 | 350 | 374 | 391 | 398 |
+| **Sensitivity** revenue | 886 | 929 | 988 | 1,037 | 1,073 | 1,095 |
+| Sensitivity EBITDA | 440 | 455 | 487 | 511 | 529 | 539 |
+| Sensitivity unlevered FCF | 296 | 290 | 311 | 326 | 336 | 342 |
+
+- **Against the public 8–9% / +75–125bp targets (derived, FY25 revenue $846.3M):** Base revenue grows +4.7% in 2026, then +9.6% and +9.9%, a **2025–28 CAGR of 8.0%**, the bottom of the range and back-loaded. Base EBITDA margin goes 49.7% → 50.1% → 51.0%, **~+65bp a year**, below the +75bp floor (on EBITDA, not operating margin), and flat after 2028. The Sensitivity Case assumes "market share increments for 2027E and 2028E assumed at 50% of the increments reflected in the Base Case Projections" plus steeper fee-per-million decline, giving a **5.3% CAGR** and ~49% margins.
+- After signing, MKTX "withdrew its 2026 financial guidance and its medium-term financial targets" (supplement).
+
+**4. Fairness opinion — J.P. Morgan only (pp.38–43; inputs from the supplement).** MKTX close $122.05 on Jul 28.
+
+| Method | Inputs | Implied $/share | $167 sits |
+|---|---|---|---|
+| Trading comps, 2026E FV/EBITDA | 9.5–20.0x × $440M; peers = **MKTX (9.6x) and Tradeweb (20.1x) only** | 120.53 – 250.17 | lower 40% |
+| Trading comps, 2026E P/E | 14.5–29.0x × $302M NI (MKTX 14.4x, TW 28.8x) | 122.83 – 245.66 | lower 40% |
+| Precedents, LTM FV/EBITDA | 13.0–20.0x × $431M; TW/ICD, Euronext/Borsa, CME/NEX, Cboe/Bats, Nasdaq/ISE | 160.45 – 245.10 | **bottom** |
+| DCF, Base Case | WACC 7–8%, perpetual growth 1.5–2.5%, net cash $115M, 35.6M FD shares | **166.51** – 230.35 | **at the floor** |
+| DCF, Sensitivity Case | same | 145.14 – 200.06 | lower half |
+
+"The cases were weighted equally." **Fees:** JPM gets ~**$65.5M**, of which **$3M** on the opinion and the rest **contingent on closing**. **Ties to ICE:** over two years JPM earned ~**$16M from ICE vs ~$2M from MKTX**. It was a bookrunner on ICE's Nov 2025 notes and is a lender and arranger on ICE's revolver (~$620K for the Aug 20 2026 amendment). JPMorgan Chase Vice Chairman **Daniel Pinto sits on ICE's board**. The board judged none of this a conflict. ICE's adviser was BofA; its fees are not disclosed.
+
+**5. Interests of directors and officers (pp.43–49).** These are Item 402(t) amounts, assuming a close on Aug 25 2026, $167, PSUs at target and termination right after close.
+
+| NEO | Cash | Equity | Benefits | **Total** |
+|---|---|---|---|---|
+| **Concannon (CEO)** | $5,341,507 | $9,197,282 | $68,306 | **$14,607,095** |
+| Berry | $1,155,512 | $6,553,079 | — | $7,708,591 |
+| McPherson | $2,376,541 | $3,414,300 | $68,817 | $5,859,658 |
+| Fiszel Bieler | $2,738,116 | $2,932,191 | $57,344 | $5,727,651 |
+| Panchal (former) | — | $949,675 | — | $949,675 |
+
+- **Concannon's cash** is a lump sum of 24 months' salary ($1.5M) plus 2× his three-year average bonus ($2.9M), plus a pro-rata bonus ($0.94M). He also holds 67,558 options. Unvested awards roll into ICE RSUs and accelerate on a qualifying termination; there is a 280G best-net cutback.
+- **Walk right:** the supplement says the merger itself is "good reason" for Concannon, Fiszel Bieler and Pintoff, because they would be "no longer having their same respective title, duties, authorities or responsibilities of a publicly traded company". That makes the double trigger close to single. No post-close agreements with ICE had been signed.
+- **Directors:** Hernandez $874K and $233K for each of eight other directors, all in RSUs.
+
+**6. Status after the proxy (to 2026-10-25).** HSR was filed Aug 26, then pulled and refiled Sep 29 "to provide the DOJ with additional time for review" (DEFA14A). The DOJ and FTC **granted early termination on Oct 21** (8-K). Still pending: FINRA, CIRO, OSC, DNB, AFM, FCA and MAS. **The vote is Oct 29 2026, so there is no result yet**, and close is still guided to 1H 2027. **Litigation:** three New York state-court suits (Oct 6–15; Robertson adds fiduciary-duty and aiding-and-abetting claims against ICE) and **15 demand letters**. MKTX issued supplemental disclosures on Oct 23 "for the purpose of mooting any alleged disclosure issues", without admitting liability; that is the source of the restated tables above.
+
+**What it changes in this note's earlier reading.**
+- **ASR vs sale talks: partly confirmed.** The ASR was announced (Dec 9) *after* a sponsor process had already run and failed (fall 2025), and *before* ICE's first call (late Dec). It was not launched with ICE in view. Its settlement (Feb 4) came *after* the Sprecher meeting and JPM's Feb 1 deal engagement, so the ASR overlapped the start of ICE talks. JPM advised on both. §4’s rough $167 ASR price and §8 item 5’s question are sharpened, not settled.
+- **Other bidders: none with a price.** ICE was the only bidder. The board ran no market check after May 27, so the "unless a second bidder exists" caveat in the Rep resolves to *no*.
+- **The DCF in §4 understated JPM's value.** JPM used a 7–8% WACC against my 10%, so the Base Case DCF begins exactly at $167. The offer is the floor of management's own plan, not "about what the plan was worth". The board's case rested on the Sensitivity Case and the de-rating.
+- **Net cash was ~$115M, not ~$0.3B,** on 35.6M diluted shares (supplement). That nudges §1's implied EV up slightly (derived).
+- **Adviser alignment is weaker than §9 assumed.** JPM's fees from ICE were 8× its fees from MKTX, ~95% of its $65.5M fee depended on closing, and a JPM vice chairman sits on ICE's board. These are disclosed, not alleged conflicts, but they belong next to §9's "governance drift" point.
+
 ## 10. Canon lenses
 
 - **M&A value creation** ([[wss-capital-markets-ma]]; E3): the acquirer pays the premium up front and earns synergies later. Here the sized synergies cover 50–89% of the premium, so the rest is a bet on revenue synergies ICE has not named.
@@ -169,4 +250,4 @@ Using only this note's numbers:
 
 ---
 **Sources (MarketAxess IR, ICE IR and annual reports, via `_ingest/raw/marketaxess/articles.jsonl`, accessed 2026-10-25):**
-[ICE to acquire MarketAxess, 2026-07-30](https://investor.marketaxess.com/news/news-details/2026/Intercontinental-Exchange-to-Acquire-MarketAxess-Creating-a-Premier-Fixed-Income-Marketplace-2026-2EKvuY2YBW/default.aspx) · [2Q26 results, 2026-07-30](https://investor.marketaxess.com/news/news-details/2026/MarketAxess-Reports-Second-Quarter-2026-Financial-Results/default.aspx) · [3Q26 results, 2026-10-23](https://investor.marketaxess.com/news/news-details/2026/MarketAxess-Reports-Third-Quarter-2026-Financial-Results/default.aspx) · [1Q26 results, 2026-05-07](https://investor.marketaxess.com/news/news-details/2026/MarketAxess-Reports-First-Quarter-2026-Financial-Results/default.aspx) · [4Q25/FY25 results, 2026-02-06](https://investor.marketaxess.com/news/news-details/2026/MarketAxess-Reports-Fourth-Quarter-and-Full-Year-2025-Financial-Results/default.aspx) · [3Q25 results, 2025-11-07](https://investor.marketaxess.com/news/news-details/2025/MarketAxess-Reports-Third-Quarter-2025-Financial-Results/default.aspx) · [Medium-term targets and ASR, 2025-12-09](https://investor.marketaxess.com/news/news-details/2025/MarketAxess-Announces-Medium-Term-Financial-Targets1-Increases-Stock-Repurchase-Authorization-to-505-million-Intends-to-Effect-an-Accelerated-Stock-Repurchase/default.aspx) · [Goldman Sachs conference deck, 2025-12-09](https://s201.q4cdn.com/767283836/files/doc_downloads/2025/12/11/Goldman-Sachs-Financial-Services-Conference-Final.pdf) · [ICE Bonds liquidity link, 2024-08-05](https://investor.marketaxess.com/news/news-details/2024/ICE-Bonds-and-MarketAxess-Connect-Liquidity-Networks-to-Bring-Greater-Efficiency-to-Municipal-and-Corporate-Bond-Markets/default.aspx) · [ICE MSCI MarketAxess futures, 2024-12-12](https://ir.theice.com/press/news-details/2024/ICE-Launches-MSCI-MarketAxess-Tradable-Corporate-Bond-Index-Futures-to-Help-Investors-Hedge-Corporate-Bond-Exposure/default.aspx) · [S&P Global data partnership, 2024-10-31](https://investor.marketaxess.com/news/news-details/2024/SP-Global-Market-Intelligence-and-MarketAxess-Announce-Strategic-Fixed-Income-Data-Partnership-2024-RkDUQUX-8E/default.aspx) · [Hernandez rejoins board, 2023-09-14](https://investor.marketaxess.com/news/news-details/2023/Carlos-Hernandez-Elected-to-MarketAxess-Board-of-Directors/default.aspx) · [McVey retires; Hernandez Chair, 2024-11-06](https://investor.marketaxess.com/news/news-details/2024/Rick-McVey-to-Retire-from-MarketAxess/default.aspx) · [Cifu and Schiciano elected, 2026-01-26](https://investor.marketaxess.com/news/news-details/2026/Douglas-Cifu-and-Kenneth-Schiciano-Elected-to-MarketAxess-Board-of-Directors/default.aspx) · [Concannon named President & COO, 2019-01-07](https://investor.marketaxess.com/news/news-details/2019/MarketAxess-Names-Chris-Concannon-as-President-and-Chief-Operating-Officer-01-07-2019/default.aspx) · [Pragma deal (Weil as counsel), 2023-08-07](https://investor.marketaxess.com/news/news-details/2023/MarketAxess-to-Acquire-Algorithmic-Trading-Provider-Pragma/default.aspx) · [FY2025 letter, 2026-04-29](https://s201.q4cdn.com/767283836/files/doc_financials/2025/ar/MarketAxess-Holdings-Inc-2025-10-K-ARS.pdf)
+[ICE to acquire MarketAxess, 2026-07-30](https://investor.marketaxess.com/news/news-details/2026/Intercontinental-Exchange-to-Acquire-MarketAxess-Creating-a-Premier-Fixed-Income-Marketplace-2026-2EKvuY2YBW/default.aspx) · [2Q26 results, 2026-07-30](https://investor.marketaxess.com/news/news-details/2026/MarketAxess-Reports-Second-Quarter-2026-Financial-Results/default.aspx) · [3Q26 results, 2026-10-23](https://investor.marketaxess.com/news/news-details/2026/MarketAxess-Reports-Third-Quarter-2026-Financial-Results/default.aspx) · [1Q26 results, 2026-05-07](https://investor.marketaxess.com/news/news-details/2026/MarketAxess-Reports-First-Quarter-2026-Financial-Results/default.aspx) · [4Q25/FY25 results, 2026-02-06](https://investor.marketaxess.com/news/news-details/2026/MarketAxess-Reports-Fourth-Quarter-and-Full-Year-2025-Financial-Results/default.aspx) · [3Q25 results, 2025-11-07](https://investor.marketaxess.com/news/news-details/2025/MarketAxess-Reports-Third-Quarter-2025-Financial-Results/default.aspx) · [Medium-term targets and ASR, 2025-12-09](https://investor.marketaxess.com/news/news-details/2025/MarketAxess-Announces-Medium-Term-Financial-Targets1-Increases-Stock-Repurchase-Authorization-to-505-million-Intends-to-Effect-an-Accelerated-Stock-Repurchase/default.aspx) · [Goldman Sachs conference deck, 2025-12-09](https://s201.q4cdn.com/767283836/files/doc_downloads/2025/12/11/Goldman-Sachs-Financial-Services-Conference-Final.pdf) · [ICE Bonds liquidity link, 2024-08-05](https://investor.marketaxess.com/news/news-details/2024/ICE-Bonds-and-MarketAxess-Connect-Liquidity-Networks-to-Bring-Greater-Efficiency-to-Municipal-and-Corporate-Bond-Markets/default.aspx) · [ICE MSCI MarketAxess futures, 2024-12-12](https://ir.theice.com/press/news-details/2024/ICE-Launches-MSCI-MarketAxess-Tradable-Corporate-Bond-Index-Futures-to-Help-Investors-Hedge-Corporate-Bond-Exposure/default.aspx) · [S&P Global data partnership, 2024-10-31](https://investor.marketaxess.com/news/news-details/2024/SP-Global-Market-Intelligence-and-MarketAxess-Announce-Strategic-Fixed-Income-Data-Partnership-2024-RkDUQUX-8E/default.aspx) · [Hernandez rejoins board, 2023-09-14](https://investor.marketaxess.com/news/news-details/2023/Carlos-Hernandez-Elected-to-MarketAxess-Board-of-Directors/default.aspx) · [McVey retires; Hernandez Chair, 2024-11-06](https://investor.marketaxess.com/news/news-details/2024/Rick-McVey-to-Retire-from-MarketAxess/default.aspx) · [Cifu and Schiciano elected, 2026-01-26](https://investor.marketaxess.com/news/news-details/2026/Douglas-Cifu-and-Kenneth-Schiciano-Elected-to-MarketAxess-Board-of-Directors/default.aspx) · [Concannon named President & COO, 2019-01-07](https://investor.marketaxess.com/news/news-details/2019/MarketAxess-Names-Chris-Concannon-as-President-and-Chief-Operating-Officer-01-07-2019/default.aspx) · [Pragma deal (Weil as counsel), 2023-08-07](https://investor.marketaxess.com/news/news-details/2023/MarketAxess-to-Acquire-Algorithmic-Trading-Provider-Pragma/default.aspx) · [FY2025 letter, 2026-04-29](https://s201.q4cdn.com/767283836/files/doc_financials/2025/ar/MarketAxess-Holdings-Inc-2025-10-K-ARS.pdf) · [MarketAxess DEFM14A merger proxy (SEC), 2026-09-18](https://www.sec.gov/Archives/edgar/data/1278021/000119312526395678/d171374ddefm14a.htm)

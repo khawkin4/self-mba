@@ -191,6 +191,24 @@ These lines run ahead of the company's own retreat from ESG language. See [[spgl
 
 ---
 
+## How they're paid (proxy, 2026)
+
+> FY2025 pay from the DEF 14A filed 2026-03-31 (CD&A, 2025 Summary Compensation Table). Structured extract: `_ingest/raw/audit/pay/spgi.json`.
+
+| Element | CEO Martina Cheung, FY2025 | Metric and weight |
+|---|---|---|
+| Salary | $1.0m (8%) | — |
+| Annual bonus (STIC) | $2.45m (19%) | 70% business (of which 70% financial: Adj. Revenue 35%, Adj. EBITA margin 35%; 30% five-category scorecard at 6% each) · 30% individual |
+| LTI | $8.98m (70%) | 70% PSU on 3-yr **cumulative non-GAAP adjusted EPS** · 30% RSU; no TSR leg |
+| Total (SCT) | **$12.8m** | Say-on-pay **68.8%** (2024: ~96%); CEO 7x salary; three clawback policies |
+
+- **Adjusted EPS dominates.** “The 2025 PSU awards are tied to performance against a three-year cumulative non-GAAP ICP Adjusted EPS goal”: roughly half of CEO pay on one adjusted number. *Predicts:* buybacks, margin discipline and portfolio pruning; the 2023–25 cycle paid 182% on a 17.6% pro-forma EPS CAGR.
+- **Portfolio moves are neutralised.** Bonus metrics carry “adjustments for the impact of changing foreign exchange rates, global and regulatory changes and acquisitions and divestitures”; the 2023 PSU was restated for the Engineering Solutions and OSTTRA sales. The Mobility spin is ring-fenced with a one-time $2m RSU for Eager.
+- **The revolt was about severance, not design.** The 68.8% vote “primarily related to a severance package for the former President of S&P Global Market Intelligence, Adam Kansler”: the bill for the 2024 handover (see Kansler above).
+- **2026 tilts to growth and the enterprise.** Adjusted Revenue's share of bonus financials rises “from 50% to 70%”, and division presidents move to 50% enterprise financials, paying for one company over divisional fiefdoms.
+
+---
+
 ## 6. Leadership lenses
 
 - [[canon-kotter-leading-change]]: the CEO change shows Kotter's guiding coalition. There was a public plan, a long overlap and a named successor. The MI reorg shows the opposite: a sudden exit, "We expect to move quickly", and a structure in place of a person.

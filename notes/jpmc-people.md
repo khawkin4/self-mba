@@ -98,6 +98,24 @@ Rachid Alaoui (global head of Equities): "Variety in trading models is a feature
 - **Business heads — the scorecard.** LOB letters lead with records, ranks and share (#1 in X for the Nth year), then a strategy list (Pinto's three words; Rohrbaugh and Petno's seven priorities). Few opinions on policy.
 - **What they rarely talk about:** venues by name ([[jpmc-markets-venues]]); Kinexys revenue; AI returns in dollars; the succession date; DEI after 2024 (the AR2025 letters use "DOI").
 
+## How they're paid (proxy, 2026)
+
+*Source: DEF 14A filed 2026-04-06, FY2025. Extract in `_ingest/raw/audit/pay/jpm.json`.*
+
+| Item | Dimon, FY2025 |
+|---|---|
+| Board-framed pay / SCT total | $43.0m / $40.6m (2024: $39m; 2023: $36m) |
+| Mix | salary $1.5m · cash $5m · PSUs $36.5m. That is 88% of variable pay in PSUs and no RSUs. Other NEOs get 40% cash, 30% RSUs, 30% PSUs |
+| How the award is set | ~50% "what" (business results: revenue, PTI ex-LLR, net income, ROTCE, TBVPS, absolute and relative) and ~50% "how" (client, risk/controls/conduct, teamwork). Cuts for a significant shortcoming are "without limits" |
+| PSUs | 3-yr avg ROTCE on unadjusted reported data: max at ≥18%, zero at <6%. Relative to 10 peers, the median pays below target. Pays 0–150%. A CET1 ratio below 8% can cut one-third. Vests after 3 yrs plus a 2-yr hold |
+| Special awards | the 2021 grant of 1.5m SARs (exercisable from 2026). Now: "No new special awards for the current CEO and former President" |
+| Say-on-pay | 91% in 2025 |
+
+- **It rewards steady, high returns on tangible equity.** Unadjusted ROTCE leaves no add-backs, and protection-based vesting cancels up to 50% if 3-yr cumulative ROTCE falls below 15% or the firm has a loss year. This pushes leaders toward the fortress balance sheet and away from growth bets that hurt returns in the near term.
+- **The relative scale makes peers the benchmark.** Above-target pay needs better ROTCE than most of BAC, GS, MS and the others. The 2022 PSUs paid the 150% maximum. Pay follows the "best-in-class" language the letters use.
+- **The pay design fits the succession plan.** The NEO list now holds both CIB co-CEOs plus Erdoes and Barnum, each paid in the same mix. The board aims for "an orderly CEO transition... in the medium-term". No candidate gets a retention grant like Goldman's, so the race stays open and nobody gets paid to stay *(inference)*.
+- **Watch:** the SARs become exercisable in July 2026. That is the first year the 2021 retention award can pay out, not a sign that he is leaving.
+
 ## 5. Leadership lenses
 
 - **Leverage through others** ([[canon-grove-high-output-management]]): Dimon's 400-executive "master class" (AR2024) and town halls (60+ a year) are Grove's managerial leverage at scale.

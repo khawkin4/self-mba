@@ -119,6 +119,22 @@ Policy advocate for UK listings and tokenisation.
 - **Manz** was the explainer, good at decomposing ASV and NTI. **Proch** is the programme manager, with targets, a "cockpit", and the margin bridge.
 - **The IR craft:** strict one-question rules, teach-in webinars for each division (Post Trade 2024, FTSE Russell 2024, Risk Intelligence 2025), and the Innovation Forum (2025) used to answer a narrative attack.
 
+## How they're paid (proxy, 2026)
+
+> FY2025 pay from the Directors' Remuneration Report in the Annual Report 2025 (pp. 82–103, Chair's statement dated 2026-02-25). UK "single total figure" counts the LTI that vested, not grant value. Structured extract: `_ingest/raw/audit/pay/lseg.json`.
+
+| Element | CEO David Schwimmer, FY2025 | Metric and weight |
+|---|---|---|
+| Salary | £1.375m (21%) | frozen for 2026 |
+| Annual bonus | £3.08m (48%) = 74.6% of max; 40% deferred 3 yrs in shares | 60% Group AOP (organic, cc) · 10% ASV & net sales · 5% strategic business cases · 15% Group Strategic Objectives · 10% personal |
+| LTI (vested) | £1.67m (26%): 2023 award at 46% | 60% average adjusted EPS growth · 20% relative TSR vs global sector peers · 20% relative TSR vs FTSE 100; 3 yrs + 2-yr hold |
+| Total (single figure) | **£6.42m** (2024: £7.86m; max £9.43m) | Remuneration report vote **69.6%**; 600% salary shareholding (holds 902%); malus and clawback |
+
+- **Adjusted EPS dominates the long term.** AEPS is “Average earnings per share, adjusted to remove any non-underlying items” (*inference:* chiefly Refinitiv purchased-intangible amortisation). It paid 77% for 2023–25 while TSR paid 0% (33rd percentile vs FTSE 100): management was paid for earnings the market did not reward.
+- **From deals to organic.** 2026 targets (5–10% AEPS CAGR) are framed as “driven primarily by organic growth, reflecting the transition from acquisition” and integration-led profitability; the bonus AOP is already organic. *Predicts:* margin and cross-sell over large new M&A until the 2027 policy review.
+- **The peer set is this repo.** The global TSR peers include CME, ICE, S&P Global, MSCI and, from 2025, MarketAxess. The 69.6% vote reflected “a range of views regarding the vesting curve for the global sector peer component”; 2026 reverts to 25% vesting at median.
+- **Controller, not controlled.** LSEG controls Tradeweb ([[tradeweb-people]]). UK caps keep Schwimmer's maximum (£9.4m) below US peers' SCT totals ($12–22m), which the 2026 pay-mix review against global sector peers is set up to address.
+
 ## 5. Leadership lenses
 
 - **Succession and outside hires** ([[canon-grove-high-output-management]], [[canon-larson-elegant-puzzle]]): five D&A leaders in five years is a structural choice about the hardest division, not bad luck. Each hire came with a mandate from a different rival.

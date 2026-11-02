@@ -201,6 +201,24 @@ Brand (Chair to Feb 2022) only ever speaks in director-welcome quotes and the su
 
 ---
 
+## How they're paid (proxy, 2026)
+
+> FY2025 pay from the DEF 14A filed 2026-03-26 (CD&A, Summary Compensation Table). Structured extract: `_ingest/raw/audit/pay/tw.json`.
+
+| Element | CEO Billy Hult, FY2025 | Metric and weight |
+|---|---|---|
+| Salary | $1.0m (5%) | — |
+| Annual bonus | $4.5m (22%) = 150% of target, max on both legs | 50% constant-currency revenue growth (17.5% vs 14.1% target) · 50% cc Adjusted EBITDA margin (53.8% vs 53.4%) |
+| LTI | $15.1m (73%) | 1/3 RSU · 1/3 PRSU (3-yr CAGR: 50% cc revenue, 50% cc Adj. EBITDA) · 1/3 PSU on **absolute** TSR (30% = target, ≥50% = 250%) |
+| Total (SCT) | **$20.6m** (2024: $16.7m) | Say-on-pay ~99% “of the outstanding shares entitled to vote”; CEO 6x salary; 10D-1 + discretionary clawback |
+
+- **Revenue is paid twice, and it is total revenue.** Bonus and PRSUs both key on “constant currency revenue growth”, i.e. total revenue ex-FX, so acquired revenue (ICD, r8fin) counts, while Adjusted EBITDA strips “merger and acquisition transaction and integration costs”. *Predicts:* the builder-to-buyer shift above is paid for, not merely tolerated.
+- **No adjusted EPS, no relative TSR.** PSUs pay on absolute TSR measured off “the Company’s highest average closing price” over any 20 trading days in year three: a rising-tide, spike-friendly design (2023 PSUs paid the 250% maximum).
+- **The CEO divides everyone else's bonus.** Other NEOs draw from a revenue-sized pool with no cap or floor, allocated on Hult's recommendation, which reinforces the insider-loyalty system this note describes.
+- **Controlled, but not using the exemption.** LSEG holds majority voting power and three LSEG executives sit as non-independent directors, yet “We currently do not rely on the exemptions available to us as a controlled company.” The ~99% vote is structurally assured.
+
+---
+
 ## 6. Leadership lenses
 
 - [[canon-grove-high-output-management]] — Olesky's claim that the leader's highest-leverage job is "to attract and retain talent" is Grove's output-of-the-organisation argument. Bruner's refusal to over-read one month is Grove's indicator discipline. The lesson for Tradeweb: the CFO and IR voices are almost silent, so the "indicators" the market hears come from product heads grading their own products.
