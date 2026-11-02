@@ -19,3 +19,6 @@ site/_shots/
 
 # Local copy of a third-party post library (copyrighted; never publish)
 andre-library/
+
+# Personal investing scenarios (own backtests and their scripts). Kept local, never published.
+private/
